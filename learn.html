@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ditoman Learn</title>
+  <meta name="description" content="Ditoman Learn. Structured educational content on blockchain, trust, systems, infrastructure, AI, and the future." />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+      color: #f4f7f8;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(4, 10, 14, 0.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #7ff5de;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #d8ffff;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7ff5de;
+    }
+
+    .hero {
+      padding: 90px 0 60px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      color: #b8d7d9;
+      font-size: 1.08rem;
+    }
+
+    .hero .cta {
+      display: inline-block;
+      padding: 14px 26px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #49e3c2, #2db7ff);
+      color: #041015;
+      font-weight: 700;
+      box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+    }
+
+    .section {
+      padding: 42px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      color: #a7c6c9;
+      margin-bottom: 28px;
+      max-width: 760px;
+    }
+
+    .featured-card {
+      background: rgba(10, 21, 28, 0.8);
+      border: 1px solid rgba(75, 226, 205, 0.18);
+      border-radius: 24px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 0;
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    .featured-image {
+      min-height: 280px;
+      background: linear-gradient(135deg, rgba(68,221,204,0.18), rgba(0,0,0,0.15)),
+                  url('images/why-bitcoin-was-created-cover.jpg') center/cover no-repeat;
+    }
+
+    .featured-content {
+      padding: 34px;
+    }
+
+    .featured-label {
+      display: inline-block;
+      color: #7ff5de;
+      font-size: 0.88rem;
+      margin-bottom: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .featured-content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+    }
+
+    .featured-content p {
+      color: #bfd6d8;
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.12);
+      border: 1px solid rgba(127, 245, 222, 0.32);
+      color: #7ff5de;
+      font-weight: 700;
+    }
+
+    .phase-block {
+      margin-top: 38px;
+    }
+
+    .phase-title {
+      font-size: 1.4rem;
+      color: #7ff5de;
+      margin-bottom: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 22px;
+      padding: 24px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(127, 245, 222, 0.34);
+    }
+
+    .card h4 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .card p {
+      color: #a8c4c7;
+      margin-bottom: 16px;
+      min-height: 78px;
+    }
+
+    .card a {
+      color: #7ff5de;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .philosophy {
+      margin-top: 20px;
+      padding: 34px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(24, 67, 89, 0.22));
+      border: 1px solid rgba(127, 245, 222, 0.18);
+      text-align: center;
+    }
+
+    .philosophy h3 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .philosophy p {
+      max-width: 780px;
+      margin: 0 auto;
+      color: #c1dbde;
+    }
+
+    .cta-bottom {
+      text-align: center;
+      padding: 24px 0 80px;
+    }
+
+    .cta-bottom h3 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .cta-bottom p {
+      color: #aecfd1;
+      margin-bottom: 22px;
+    }
+
+    .cta-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      border-top: 1px solid rgba(127, 245, 222, 0.12);
+      padding: 28px 0 40px;
+      color: #8fb2b7;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .featured-card {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">DITOMAN</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="learn.html" class="active">Learn</a>
+        <a href="index.html#whitepaper">Whitepaper</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Learn the Systems Behind the Future</h1>
+        <p>
+          Structured educational content on blockchain, trust, infrastructure, AI, energy, and the systems shaping real life.
+        </p>
+        <a class="cta" href="#learning-path">Start Learning</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Lesson</h2>
+        <p class="section-subtitle">
+          Start with the latest topic in the Ditoman education series and move through the learning path step by step.
+        </p>
+
+        <div class="featured-card">
+          <div class="featured-image"></div>
+          <div class="featured-content">
+            <span class="featured-label">Latest Lesson</span>
+            <h3>Why Bitcoin Was Created</h3>
+            <p>
+              Bitcoin did not emerge just as a digital coin. It emerged as a response to trust, control, opacity, and centralized gatekeeping.
+            </p>
+            <a class="button" href="learn/why-bitcoin-was-created.html">Read Lesson</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="learning-path">
+      <div class="container">
+        <h2 class="section-title">Learning Path</h2>
+        <p class="section-subtitle">
+          Ditoman Learn is built as a structured path, not just a collection of posts.
+        </p>
+
+        <div class="phase-block">
+          <h3 class="phase-title">Phase 1 • Foundation</h3>
+          <div class="cards">
+            <div class="card">
+              <h4>What is Blockchain</h4>
+              <p>A simple introduction to blockchain as a new way of storing and verifying information.</p>
+              <a href="learn/what-is-blockchain.html">Read More</a>
+            </div>
+            <div class="card">
+              <h4>Why Blockchain Matters</h4>
+              <p>Why blockchain is bigger than crypto and why it changes how trust works in systems.</p>
+              <a href="learn/why-blockchain-matters.html">Read More</a>
+            </div>
+            <div class="card">
+              <h4>Why Bitcoin Was Created</h4>
+              <p>The deeper problem Bitcoin responded to and why that moment changed digital history.</p>
+              <a href="learn/why-bitcoin-was-created.html">Read More</a>
+            </div>
+            <div class="card">
+              <h4>Who is Satoshi Nakamoto</h4>
+              <p>The unknown creator behind Bitcoin and why the mystery matters more than the identity.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>The Problem Bitcoin Solved</h4>
+              <p>A closer look at trust, double spending, intermediaries, and digital value transfer.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>What is Money</h4>
+              <p>A simple explanation of money, trust, value, and why systems shape economic behavior.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase-block">
+          <h3 class="phase-title">Phase 2 • Understanding</h3>
+          <div class="cards">
+            <div class="card">
+              <h4>What is Decentralization</h4>
+              <p>How decentralized systems differ from centralized ones and why that matters.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Trust in Systems</h4>
+              <p>How trust moves from institutions toward transparent rules and verifiable systems.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Transparency in Blockchain</h4>
+              <p>Why visibility and verification matter when value moves through a network.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Security in Blockchain</h4>
+              <p>A simple look at how networks protect data, transactions, and integrity.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Immutability</h4>
+              <p>What it means when records cannot be changed easily and why that changes trust.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>How Blockchain Works</h4>
+              <p>A step by step explanation of blocks, validation, distributed records, and consensus.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase-block">
+          <h3 class="phase-title">Phase 3 • Real World</h3>
+          <div class="cards">
+            <div class="card">
+              <h4>Blockchain Beyond Crypto</h4>
+              <p>Why blockchain matters outside speculation and where it can shape real systems.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Finance Use Cases</h4>
+              <p>Payments, settlement, transparency, and what blockchain changes in finance.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Digital Identity</h4>
+              <p>How systems can verify people, credentials, and access with better structure.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Supply Chains</h4>
+              <p>Tracking, visibility, and why blockchain can reduce information gaps in logistics.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Energy and Infrastructure</h4>
+              <p>The real world foundations behind AI, blockchain, computation, and digital growth.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+            <div class="card">
+              <h4>Why This Matters for the Future</h4>
+              <p>The bigger shift from isolated systems to coordinated, transparent, and participatory ones.</p>
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="philosophy">
+          <h3>We are not building content. We are building understanding.</h3>
+          <p>
+            Ditoman Learn exists to turn scattered information into structured learning. This is not just about crypto. It is about systems, awareness, participation, and direction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-bottom">
+      <div class="container">
+        <h3>Learn. Connect. Evolve.</h3>
+        <p>Follow the education path and grow with the Ditoman ecosystem.</p>
+        <div class="cta-links">
+          <a class="button" href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a class="button" href="#">Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Ditoman • Built on structure, driven by discovery.
+    </div>
+  </footer>
+
+</body>
+</html>
