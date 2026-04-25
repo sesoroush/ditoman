@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ditoman Learn</title>
   <meta name="description" content="Ditoman Learn. Structured educational content on blockchain, trust, systems, infrastructure, AI, and the future." />
+
   <style>
     * {
       box-sizing: border-box;
@@ -47,10 +47,33 @@
       padding: 18px 0;
     }
 
-    .logo {
-      font-size: 1.3rem;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: 0.3s ease;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 3px;
+      transition: 0.3s ease;
+      box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+    }
+
+    .brand:hover .brand-logo {
+      transform: scale(1.08);
+      box-shadow: 0 0 18px rgba(127, 245, 222, 0.55);
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.12em;
       color: #7ff5de;
     }
 
@@ -128,8 +151,7 @@
 
     .featured-image {
       min-height: 280px;
-      background: linear-gradient(135deg, rgba(68,221,204,0.18), rgba(0,0,0,0.15)),
-                  url('images/why-bitcoin-was-created-cover.jpg') center/cover no-repeat;
+      background: linear-gradient(135deg, rgba(68,221,204,0.18), rgba(0,0,0,0.15));
     }
 
     .featured-content {
@@ -279,6 +301,11 @@
         gap: 14px;
       }
 
+      .nav-links {
+        justify-content: center;
+        gap: 16px;
+      }
+
       .cards {
         grid-template-columns: 1fr;
       }
@@ -286,20 +313,30 @@
       .hero {
         padding-top: 70px;
       }
+
+      .brand-logo {
+        width: 38px;
+        height: 38px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <div class="container nav">
-      <div class="logo">DITOMAN</div>
+      <a class="brand" href="index.html">
+        <img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+        <div class="logo-text">DITOMAN</div>
+      </a>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="learn.html" class="active">Learn</a>
-        <a href="index.html#whitepaper">Whitepaper</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="whitepaper-v3.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+        <a href="index.html#insights">Insights</a>
+        <a href="index.html#community">Community</a>
       </nav>
     </div>
   </header>
@@ -351,26 +388,31 @@
               <p>A simple introduction to blockchain as a new way of storing and verifying information.</p>
               <a href="learn/what-is-blockchain.html">Read More</a>
             </div>
+
             <div class="card">
               <h4>Why Blockchain Matters</h4>
               <p>Why blockchain is bigger than crypto and why it changes how trust works in systems.</p>
               <a href="learn/why-blockchain-matters.html">Read More</a>
             </div>
+
             <div class="card">
               <h4>Why Bitcoin Was Created</h4>
               <p>The deeper problem Bitcoin responded to and why that moment changed digital history.</p>
               <a href="learn/why-bitcoin-was-created.html">Read More</a>
             </div>
+
             <div class="card">
               <h4>Who is Satoshi Nakamoto</h4>
               <p>The unknown creator behind Bitcoin and why the mystery matters more than the identity.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>The Problem Bitcoin Solved</h4>
               <p>A closer look at trust, double spending, intermediaries, and digital value transfer.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>What is Money</h4>
               <p>A simple explanation of money, trust, value, and why systems shape economic behavior.</p>
@@ -387,26 +429,31 @@
               <p>How decentralized systems differ from centralized ones and why that matters.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Trust in Systems</h4>
               <p>How trust moves from institutions toward transparent rules and verifiable systems.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Transparency in Blockchain</h4>
               <p>Why visibility and verification matter when value moves through a network.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Security in Blockchain</h4>
               <p>A simple look at how networks protect data, transactions, and integrity.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Immutability</h4>
               <p>What it means when records cannot be changed easily and why that changes trust.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>How Blockchain Works</h4>
               <p>A step by step explanation of blocks, validation, distributed records, and consensus.</p>
@@ -423,26 +470,31 @@
               <p>Why blockchain matters outside speculation and where it can shape real systems.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Finance Use Cases</h4>
               <p>Payments, settlement, transparency, and what blockchain changes in finance.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Digital Identity</h4>
               <p>How systems can verify people, credentials, and access with better structure.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Supply Chains</h4>
               <p>Tracking, visibility, and why blockchain can reduce information gaps in logistics.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Energy and Infrastructure</h4>
               <p>The real world foundations behind AI, blockchain, computation, and digital growth.</p>
               <a href="#">Coming Soon</a>
             </div>
+
             <div class="card">
               <h4>Why This Matters for the Future</h4>
               <p>The bigger shift from isolated systems to coordinated, transparent, and participatory ones.</p>
@@ -469,8 +521,8 @@
         <h3>Learn. Connect. Evolve.</h3>
         <p>Follow the education path and grow with the Ditoman ecosystem.</p>
         <div class="cta-links">
-          <a class="button" href="https://www.instagram.com/" target="_blank">Instagram</a>
-          <a class="button" href="#">Telegram</a>
+          <a class="button" href="https://www.instagram.com/ditoman.network/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="button" href="https://t.me/Ditoman_tm/" target="_blank" rel="noopener noreferrer">Telegram</a>
         </div>
       </div>
     </section>
