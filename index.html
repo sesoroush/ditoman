@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,10 +70,6 @@
     .brand:hover .brand-logo {
       transform: scale(1.08);
       box-shadow: 0 0 18px rgba(127, 245, 222, 0.55);
-    }
-
-    .brand:hover .logo-text {
-      color: #ffffff;
     }
 
     .logo-text {
@@ -182,6 +177,12 @@
       gap: 22px;
     }
 
+    .grid-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
     .card {
       background: rgba(8, 18, 24, 0.86);
       border: 1px solid rgba(78, 227, 206, 0.14);
@@ -280,6 +281,12 @@
       margin: 0 auto;
     }
 
+    .note {
+      margin-top: 26px;
+      color: #a7c6c9;
+      max-width: 850px;
+    }
+
     .cta-bottom {
       text-align: center;
       padding: 30px 0 85px;
@@ -305,6 +312,7 @@
 
     @media (max-width: 900px) {
       .grid,
+      .grid-two,
       .feature {
         grid-template-columns: 1fr;
       }
@@ -347,6 +355,8 @@
         <a href="learn.html">Learn</a>
         <a href="whitepaper-v3.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
         <a href="#insights">Insights</a>
+        <a href="#questions">Questions</a>
+        <a href="#rewards">Rewards</a>
         <a href="#community">Community</a>
       </nav>
     </div>
@@ -455,6 +465,116 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="questions">
+      <div class="container">
+        <h2 class="section-title">Questions</h2>
+        <p class="section-subtitle">
+          Ditoman is built around understanding. These questions explain the structure behind the project.
+        </p>
+
+        <div class="grid-two">
+          <div class="card">
+            <h3>What is Ditoman?</h3>
+            <p>
+              Ditoman is a structured learning and community network focused on technology, energy, infrastructure, economy, media, artificial intelligence, and the systems shaping real life.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Why does TMN exist?</h3>
+            <p>
+              TMN exists as a utility layer inside the Ditoman ecosystem. Its purpose is to connect participation, contribution, access, and value over time.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Why was a token burn completed?</h3>
+            <p>
+              The first on chain burn was completed as part of long term structural alignment. It was not designed as a short term market move.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>What does liquidity mean?</h3>
+            <p>
+              Liquidity helps users access and exchange a token more easily. In Ditoman, liquidity is approached gradually and responsibly.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>What is contract verification?</h3>
+            <p>
+              Contract verification makes the source code publicly visible on chain explorers such as BscScan. It is an important step for transparency and trust.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>What is the next phase?</h3>
+            <p>
+              The next phase focuses on education, community growth, transparency, and gradual development of the Ditoman ecosystem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rewards">
+      <div class="container">
+        <h2 class="section-title">Rewards</h2>
+        <p class="section-subtitle">
+          Ditoman rewards are designed to follow meaningful participation, not passive attention.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Learn</h3>
+            <p>
+              Users who follow the learning path and engage with educational content may become part of future participation based reward structures.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Ask</h3>
+            <p>
+              Useful questions help the community grow. Ditoman values curiosity, discussion, and structured understanding.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Contribute</h3>
+            <p>
+              Meaningful contribution may include sharing ideas, supporting discussions, creating useful content, or helping improve the ecosystem.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Recognition</h3>
+            <p>
+              Rewards are intended to recognize real value created through participation, consistency, and contribution.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Community Growth</h3>
+            <p>
+              As the ecosystem develops, participation may support access, visibility, recognition, and future network roles.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>No Guaranteed Returns</h3>
+            <p>
+              Future rewards will be introduced gradually. Ditoman does not promise guaranteed rewards, financial returns, or short term outcomes.
+            </p>
+          </div>
+        </div>
+
+        <p class="note">
+          Rewards are part of the long term participation model. They are intended to support education, contribution, and community value as the ecosystem matures.
+        </p>
       </div>
     </section>
 
