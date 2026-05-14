@@ -6,7 +6,7 @@
 
   <title>TMN Token | Ditoman</title>
 
-  <meta name="description" content="TMN is the utility and participation token of the Ditoman ecosystem, built on BNB Smart Chain and connected to learning, contribution, access, reputation, and future reward eligibility." />
+  <meta name="description" content="TMN is the utility and participation token of the Ditoman ecosystem, built on BNB Smart Chain and connected to learning, contribution, access, reputation, visibility, and future reward eligibility." />
 
   <style>
     * {
@@ -15,11 +15,16 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
       color: #f4f7f8;
       line-height: 1.65;
+      overflow-x: hidden;
     }
 
     a {
@@ -37,8 +42,8 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(4, 10, 14, 0.9);
-      backdrop-filter: blur(10px);
+      background: rgba(4, 10, 14, 0.92);
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(68, 221, 204, 0.18);
     }
 
@@ -47,12 +52,14 @@
       justify-content: space-between;
       align-items: center;
       padding: 18px 0;
+      gap: 24px;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 12px;
+      flex-shrink: 0;
     }
 
     .brand-logo {
@@ -76,11 +83,14 @@
       display: flex;
       gap: 22px;
       flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
     }
 
     .nav-links a {
       color: #d8ffff;
       transition: 0.25s ease;
+      white-space: nowrap;
     }
 
     .nav-links a:hover,
@@ -89,35 +99,39 @@
     }
 
     .hero {
-      padding: 90px 0 55px;
+      padding: 92px 0 60px;
       text-align: center;
+      background:
+        radial-gradient(circle at 50% 12%, rgba(127, 245, 222, 0.1), transparent 34%),
+        linear-gradient(180deg, rgba(10, 48, 52, 0.9), rgba(4, 14, 18, 0.15));
     }
 
     .hero-badge {
       display: inline-block;
-      margin-bottom: 18px;
-      padding: 8px 16px;
+      margin-bottom: 20px;
+      padding: 9px 22px;
       border-radius: 999px;
       background: rgba(127, 245, 222, 0.1);
-      border: 1px solid rgba(127, 245, 222, 0.22);
+      border: 1px solid rgba(127, 245, 222, 0.24);
       color: #7ff5de;
-      font-size: 0.9rem;
-      letter-spacing: 0.06em;
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
     h1 {
-      font-size: clamp(2.4rem, 5vw, 4.8rem);
+      font-size: clamp(2.35rem, 5vw, 4.8rem);
       line-height: 1.08;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
       color: #ffffff;
+      letter-spacing: -0.04em;
     }
 
     .hero p {
-      max-width: 850px;
-      margin: 0 auto 28px;
-      color: #b8d7d9;
-      font-size: 1.1rem;
+      max-width: 880px;
+      margin: 0 auto 30px;
+      color: #c1dcde;
+      font-size: 1.13rem;
     }
 
     .cta-row {
@@ -125,16 +139,23 @@
       justify-content: center;
       gap: 14px;
       flex-wrap: wrap;
+      margin-top: 22px;
     }
 
     .cta {
       display: inline-block;
-      padding: 14px 26px;
+      padding: 14px 28px;
       border-radius: 999px;
       background: linear-gradient(90deg, #49e3c2, #2db7ff);
       color: #041015;
-      font-weight: 700;
+      font-weight: 800;
       box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+      transition: 0.25s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 34px rgba(73, 227, 194, 0.36);
     }
 
     .button {
@@ -144,23 +165,33 @@
       background: rgba(127, 245, 222, 0.12);
       border: 1px solid rgba(127, 245, 222, 0.32);
       color: #7ff5de;
-      font-weight: 700;
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .button:hover {
+      background: rgba(127, 245, 222, 0.18);
+      transform: translateY(-2px);
     }
 
     .section {
-      padding: 48px 0;
+      padding: 52px 0;
+      scroll-margin-top: 150px;
     }
 
     .section-title {
-      font-size: 2rem;
+      font-size: clamp(1.8rem, 3vw, 2.65rem);
+      line-height: 1.15;
       color: #ffffff;
       margin-bottom: 14px;
+      letter-spacing: -0.03em;
     }
 
     .section-subtitle {
       color: #a7c6c9;
       margin-bottom: 28px;
-      max-width: 850px;
+      max-width: 900px;
+      font-size: 1.03rem;
     }
 
     .grid {
@@ -175,29 +206,37 @@
       gap: 22px;
     }
 
-    .card {
+    .card,
+    .contract-box,
+    .market-card,
+    .roadmap-card,
+    .burn-card {
       background: rgba(8, 18, 24, 0.86);
       border: 1px solid rgba(78, 227, 206, 0.14);
-      border-radius: 22px;
-      padding: 26px;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.18);
     }
 
-    .card h3 {
+    .card h3,
+    .contract-box h3,
+    .roadmap-card h3,
+    .burn-card h3 {
       color: #ffffff;
-      font-size: 1.25rem;
+      font-size: 1.24rem;
       margin-bottom: 12px;
     }
 
-    .card p {
+    .card p,
+    .contract-box p,
+    .roadmap-card p,
+    .burn-card p {
       color: #a8c4c7;
     }
 
     .market-card {
       background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
-      border: 1px solid rgba(127, 245, 222, 0.2);
-      border-radius: 26px;
-      padding: 30px;
-      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(127, 245, 222, 0.22);
     }
 
     .market-grid {
@@ -208,10 +247,11 @@
     }
 
     .market-box {
-      background: rgba(8, 18, 24, 0.78);
+      background: rgba(5, 15, 22, 0.84);
       border: 1px solid rgba(78, 227, 206, 0.14);
-      border-radius: 18px;
-      padding: 18px;
+      border-radius: 20px;
+      padding: 20px;
+      min-height: 120px;
     }
 
     .market-box span {
@@ -219,21 +259,14 @@
       color: #7ff5de;
       font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 6px;
+      letter-spacing: 0.08em;
+      margin-bottom: 9px;
     }
 
     .market-box strong {
       color: #ffffff;
-      font-size: 1.2rem;
+      font-size: 1.12rem;
       word-break: break-word;
-    }
-
-    .contract-box {
-      background: rgba(8, 18, 24, 0.86);
-      border: 1px solid rgba(78, 227, 206, 0.14);
-      border-radius: 22px;
-      padding: 26px;
     }
 
     .contract-line {
@@ -259,53 +292,161 @@
 
     .note {
       color: #8fb2b7;
-      font-size: 0.92rem;
-      margin-top: 18px;
+      font-size: 0.94rem;
+      margin-top: 20px;
+    }
+
+    .highlight {
+      color: #7ff5de;
+      font-weight: 800;
+    }
+
+    .burn-card {
+      background:
+        radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+        linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+      border: 1px solid rgba(127, 245, 222, 0.22);
+    }
+
+    .burn-number {
+      display: block;
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 1;
+      color: #ffffff;
+      font-weight: 900;
+      margin-bottom: 14px;
+      letter-spacing: -0.05em;
+    }
+
+    .mini-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.1);
+      border: 1px solid rgba(127, 245, 222, 0.2);
+      color: #7ff5de;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .disclaimer {
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 22px;
+      padding: 24px;
+      color: #9ebabe;
+      font-size: 0.95rem;
     }
 
     footer {
       border-top: 1px solid rgba(127, 245, 222, 0.12);
-      padding: 28px 0 40px;
+      padding: 30px 0 42px;
       color: #8fb2b7;
       text-align: center;
       font-size: 0.95rem;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1050px) {
+      .nav {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+
       .market-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .roadmap-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
     @media (max-width: 900px) {
       .grid,
-      .grid-two {
+      .grid-two,
+      .roadmap-grid {
         grid-template-columns: 1fr;
       }
     }
 
     @media (max-width: 640px) {
+      .container {
+        width: 88%;
+      }
+
       .nav {
-        flex-direction: column;
-        gap: 14px;
+        padding: 16px 0 15px;
+        gap: 15px;
+      }
+
+      .brand {
+        justify-content: center;
+      }
+
+      .brand-logo {
+        width: 40px;
+        height: 40px;
+      }
+
+      .logo-text {
+        font-size: 1.08rem;
       }
 
       .nav-links {
-        justify-content: center;
-        gap: 16px;
+        gap: 14px 22px;
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+
+      .hero {
+        padding: 74px 0 48px;
+      }
+
+      .hero p {
+        font-size: 1.02rem;
+      }
+
+      .section {
+        padding: 38px 0;
+        scroll-margin-top: 180px;
       }
 
       .market-grid {
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        padding-top: 70px;
+      .card,
+      .contract-box,
+      .market-card,
+      .roadmap-card,
+      .burn-card,
+      .disclaimer {
+        padding: 24px;
+        border-radius: 22px;
       }
 
-      .brand-logo {
-        width: 38px;
-        height: 38px;
+      .cta-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .cta,
+      .button {
+        width: 100%;
+        text-align: center;
       }
     }
   </style>
@@ -340,12 +481,12 @@
         <h1>TMN is the participation layer of Ditoman.</h1>
 
         <p>
-          TMN is the utility and community enablement token inside the Ditoman ecosystem. Its role is to connect learning, contribution, access, recognition, visibility, and future reward eligibility as the network develops.
+          TMN is the utility and community enablement token inside the Ditoman ecosystem. Its role is to connect learning, contribution, access, recognition, visibility, and future reward eligibility as the network develops. Two burn phases have already been completed, resulting in a total <span class="highlight">10% supply burn</span> as part of Ditoman’s long term supply discipline.
         </p>
 
         <div class="cta-row">
-          <a class="cta" href="https://pancakeswap.finance/swap?outputCurrency=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Access on PancakeSwap</a>
-          <a class="button" id="chartLink" href="https://dexscreener.com/search?q=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">View Chart</a>
+          <a class="cta" href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Access on PancakeSwap</a>
+          <a class="button" id="chartLink" href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Open Market</a>
           <a class="button" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">View Contract</a>
         </div>
       </div>
@@ -355,35 +496,41 @@
       <div class="container">
         <div class="market-card">
           <h2 class="section-title">Live Market Snapshot</h2>
+
           <p class="section-subtitle">
-            This market box attempts to read live decentralized exchange data for TMN. If the data is temporarily unavailable, use the chart button or PancakeSwap link.
+            This section attempts to read public decentralized exchange data for TMN. If live tracking is temporarily unavailable, use PancakeSwap for access and BscScan for direct contract verification.
           </p>
 
           <div class="market-grid">
             <div class="market-box">
               <span>Price USD</span>
-              <strong id="priceUsd">Loading</strong>
+              <strong id="priceUsd">Tracking pending</strong>
             </div>
 
             <div class="market-box">
               <span>Liquidity</span>
-              <strong id="liquidityUsd">Loading</strong>
+              <strong id="liquidityUsd">Tracking pending</strong>
             </div>
 
             <div class="market-box">
               <span>24h Volume</span>
-              <strong id="volume24h">Loading</strong>
+              <strong id="volume24h">Tracking pending</strong>
             </div>
 
             <div class="market-box">
               <span>24h Change</span>
-              <strong id="change24h">Loading</strong>
+              <strong id="change24h">Tracking pending</strong>
             </div>
           </div>
 
           <p class="note" id="marketStatus">
-            Market data is loading from a public DEX data source.
+            Live public market data may not always be available at this stage. Please use PancakeSwap and BscScan for direct access and verification.
           </p>
+
+          <div class="cta-row">
+            <a class="button" id="marketButton" href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Open TMN Market</a>
+            <a class="button" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Verify Contract</a>
+          </div>
         </div>
       </div>
     </section>
@@ -393,21 +540,21 @@
         <div class="card">
           <h3>Utility</h3>
           <p>
-            TMN is designed to support access, participation, recognition, visibility, and future platform features inside the Ditoman ecosystem.
+            TMN is designed to support access, participation, recognition, visibility, and future ecosystem features inside Ditoman.
           </p>
         </div>
 
         <div class="card">
           <h3>Learning</h3>
           <p>
-            Ditoman Learn is being structured so educational activity can later connect to participation scores, quizzes, reputation, and possible reward eligibility.
+            Ditoman Learn is being structured so educational activity can later connect to quizzes, participation scores, reputation layers, and possible reward eligibility.
           </p>
         </div>
 
         <div class="card">
           <h3>Community</h3>
           <p>
-            TMN is intended to support meaningful interaction, contribution, discussion, and recognition as Ditoman grows from education into participation.
+            TMN is intended to support meaningful interaction, contribution, discussion, and recognition as Ditoman grows from education into structured participation.
           </p>
         </div>
       </div>
@@ -415,6 +562,15 @@
 
     <section class="section">
       <div class="container grid-two">
+        <div class="burn-card">
+          <span class="mini-label">Supply Discipline</span>
+          <span class="burn-number">10%</span>
+          <h3>Burned in two completed phases</h3>
+          <p>
+            Ditoman has already completed two TMN burn phases, reaching a total burn of 10% of the token supply. This is part of the project’s broader supply discipline framework, focused on transparency, long term credibility, and ecosystem alignment.
+          </p>
+        </div>
+
         <div class="contract-box">
           <h2 class="section-title">Token Overview</h2>
 
@@ -424,10 +580,15 @@
             <li>Network: BNB Smart Chain</li>
             <li>Standard: BEP20</li>
             <li>Maximum Supply: 21,000,000,000,000 TMN</li>
+            <li>Completed Burn: 10% in two phases</li>
             <li>Role: Utility and participation layer</li>
           </ul>
         </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="container grid-two">
         <div class="contract-box">
           <h2 class="section-title">Contract Address</h2>
 
@@ -443,14 +604,91 @@
             <a class="button" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Open on BscScan</a>
           </div>
         </div>
+
+        <div class="contract-box">
+          <h2 class="section-title">Current Direction</h2>
+
+          <p class="section-subtitle">
+            TMN is not presented as a speculative promise. It is positioned as the enablement layer of Ditoman’s education first ecosystem, where knowledge, participation, community quality, and contribution can become part of the project structure over time.
+          </p>
+
+          <ul class="list">
+            <li>Education first development</li>
+            <li>Community participation model</li>
+            <li>Future contribution and reputation layers</li>
+            <li>AI assisted quality evaluation planned in the roadmap</li>
+            <li>Transparent supply discipline through completed and future burn logic</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Roadmap Direction from Whitepaper V4</h2>
+
+        <p class="section-subtitle">
+          Whitepaper V4 expands Ditoman from a token page into an operational ecosystem framework. The focus moves through learning, community structure, AI assisted participation, contribution quality, and long term utility.
+        </p>
+
+        <div class="roadmap-grid">
+          <div class="roadmap-card">
+            <span class="mini-label">2026</span>
+            <h3>Education Foundation</h3>
+            <p>
+              Expansion of Ditoman.com as the main public knowledge hub, continued educational publishing, bilingual learning material, and structured public communication.
+            </p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="mini-label">Participation</span>
+            <h3>Community Layer</h3>
+            <p>
+              Development of Telegram and community spaces as future discussion, learning, contribution, and participation environments.
+            </p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="mini-label">AI Systems</span>
+            <h3>Quality and Reputation</h3>
+            <p>
+              Planned AI assisted moderation, contribution scoring, knowledge ranking, discussion quality evaluation, and reputation layers.
+            </p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="mini-label">TMN Utility</span>
+            <h3>Access and Recognition</h3>
+            <p>
+              TMN is intended to evolve around access, recognition, participation, visibility, educational rewards, and future ecosystem features.
+            </p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="mini-label">Supply</span>
+            <h3>Burn Framework</h3>
+            <p>
+              Two burn phases have already been completed, reaching 10% total supply burn. The wider framework supports transparent supply discipline as the ecosystem develops.
+            </p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="mini-label">2027</span>
+            <h3>Ecosystem Expansion</h3>
+            <p>
+              Growth toward stronger community structure, broader educational depth, clearer participation logic, and more connected utility around TMN.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
         <h2 class="section-title">How to Access TMN</h2>
+
         <p class="section-subtitle">
-          TMN can be accessed through decentralized exchange tools on BNB Smart Chain. Users should always check the contract address carefully before trading.
+          TMN can be accessed through decentralized exchange tools on BNB Smart Chain. Users should always check the contract address carefully before any interaction.
         </p>
 
         <div class="grid">
@@ -464,103 +702,11 @@
           <div class="card">
             <h3>2. Open PancakeSwap</h3>
             <p>
-              Use PancakeSwap to access the TMN market. If TMN does not appear automatically, import the token contract address.
+              Use PancakeSwap to access the TMN market. If TMN does not appear automatically, import the token contract address manually.
             </p>
           </div>
 
           <div class="card">
             <h3>3. Verify First</h3>
             <p>
-              Check the contract address, network, liquidity, and market information before any interaction. This page is informational and not financial advice.
-            </p>
-          </div>
-        </div>
-
-        <div class="cta-row">
-          <a class="cta" href="https://pancakeswap.finance/swap?outputCurrency=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Access on PancakeSwap</a>
-          <a class="button" href="https://dexscreener.com/search?q=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Search on DexScreener</a>
-        </div>
-
-        <p class="note">
-          Nothing on this page is investment advice. TMN is presented as part of the Ditoman ecosystem structure, with a focus on education, participation, utility, and long term development.
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      TMN • Ditoman Token • Built on structure, driven by discovery.
-    </div>
-  </footer>
-
-  <script>
-    const tokenAddress = "0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d";
-    const apiUrl = "https://api.dexscreener.com/token-pairs/v1/bsc/" + tokenAddress;
-
-    function formatUsd(value) {
-      const number = Number(value);
-
-      if (!Number.isFinite(number)) {
-        return "Unavailable";
-      }
-
-      if (number >= 1000000) {
-        return "$" + (number / 1000000).toFixed(2) + "M";
-      }
-
-      if (number >= 1000) {
-        return "$" + (number / 1000).toFixed(2) + "K";
-      }
-
-      return "$" + number.toLocaleString(undefined, { maximumFractionDigits: 6 });
-    }
-
-    async function loadMarketData() {
-      try {
-        const response = await fetch(apiUrl);
-        const pairs = await response.json();
-
-        if (!Array.isArray(pairs) || pairs.length === 0) {
-          throw new Error("No pair data found");
-        }
-
-        const bestPair = pairs
-          .filter(pair => pair && pair.priceUsd)
-          .sort((a, b) => {
-            const liquidityA = Number(a.liquidity && a.liquidity.usd ? a.liquidity.usd : 0);
-            const liquidityB = Number(b.liquidity && b.liquidity.usd ? b.liquidity.usd : 0);
-            return liquidityB - liquidityA;
-          })[0];
-
-        if (!bestPair) {
-          throw new Error("No usable pair found");
-        }
-
-        document.getElementById("priceUsd").textContent = "$" + Number(bestPair.priceUsd).toLocaleString(undefined, { maximumSignificantDigits: 6 });
-        document.getElementById("liquidityUsd").textContent = formatUsd(bestPair.liquidity && bestPair.liquidity.usd);
-        document.getElementById("volume24h").textContent = formatUsd(bestPair.volume && bestPair.volume.h24);
-
-        const change = bestPair.priceChange && bestPair.priceChange.h24;
-        document.getElementById("change24h").textContent = Number.isFinite(Number(change)) ? Number(change).toFixed(2) + "%" : "Unavailable";
-
-        if (bestPair.url) {
-          document.getElementById("chartLink").href = bestPair.url;
-        }
-
-        document.getElementById("marketStatus").textContent = "Market data loaded from the most liquid available TMN pair on DexScreener.";
-      } catch (error) {
-        document.getElementById("priceUsd").textContent = "Unavailable";
-        document.getElementById("liquidityUsd").textContent = "Unavailable";
-        document.getElementById("volume24h").textContent = "Unavailable";
-        document.getElementById("change24h").textContent = "Unavailable";
-        document.getElementById("marketStatus").textContent = "Live data is currently unavailable. Use PancakeSwap, BscScan, or DexScreener to check manually.";
-      }
-    }
-
-    loadMarketData();
-  </script>
-
-</body>
-</html>
+              Check the contract address, network, liquidity, and market information before any interacti
