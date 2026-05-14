@@ -6,7 +6,7 @@
 
   <title>Ditoman | The Architecture of Discovery</title>
 
-  <meta name="description" content="Ditoman is a structured learning and community network focused on technology, energy, infrastructure, economy, media, AI, and the systems shaping real life." />
+  <meta name="description" content="Ditoman is a structured learning and community network focused on technology, energy, infrastructure, economy, media, AI, participation, and the systems shaping real life." />
 
   <style>
     * {
@@ -155,6 +155,18 @@
       font-weight: 700;
     }
 
+    .small-button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.1);
+      border: 1px solid rgba(127, 245, 222, 0.24);
+      color: #7ff5de;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
     .section {
       padding: 52px 0;
     }
@@ -183,6 +195,12 @@
       gap: 22px;
     }
 
+    .grid-four {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
     .card {
       background: rgba(8, 18, 24, 0.86);
       border: 1px solid rgba(78, 227, 206, 0.14);
@@ -203,6 +221,61 @@
     }
 
     .card p {
+      color: #a8c4c7;
+    }
+
+    .version-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .version-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      color: #041015;
+      background: linear-gradient(90deg, #49e3c2, #2db7ff);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .current-version {
+      border-color: rgba(127, 245, 222, 0.42);
+      box-shadow: 0 0 26px rgba(73, 227, 194, 0.12);
+    }
+
+    .roadmap {
+      display: grid;
+      gap: 18px;
+    }
+
+    .roadmap-item {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 22px;
+      align-items: start;
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .roadmap-date {
+      color: #7ff5de;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .roadmap-item h3 {
+      color: #ffffff;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .roadmap-item p {
       color: #a8c4c7;
     }
 
@@ -310,11 +383,22 @@
       font-size: 0.95rem;
     }
 
+    @media (max-width: 1000px) {
+      .grid-four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
     @media (max-width: 900px) {
       .grid,
       .grid-two,
       .feature {
         grid-template-columns: 1fr;
+      }
+
+      .roadmap-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
       }
     }
 
@@ -337,6 +421,10 @@
         width: 38px;
         height: 38px;
       }
+
+      .grid-four {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -353,7 +441,8 @@
       <nav class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="learn.html">Learn</a>
-        <a href="whitepaper-v3.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+        <a href="#whitepapers">Whitepapers</a>
+        <a href="#roadmap">Roadmap</a>
         <a href="#insights">Insights</a>
         <a href="#questions">Questions</a>
         <a href="#rewards">Rewards</a>
@@ -371,12 +460,13 @@
         <h1>Understand the systems shaping the future.</h1>
 
         <p>
-          Ditoman is a structured learning and community network focused on technology, energy, infrastructure, economy, media, artificial intelligence, and the systems shaping real life.
+          Ditoman is a structured learning and community network focused on technology, energy, infrastructure, economy, media, artificial intelligence, participation, and the systems shaping real life.
         </p>
 
         <div class="cta-row">
           <a class="cta" href="learn.html">Start Learning</a>
-          <a class="button" href="whitepaper-v3.pdf" target="_blank" rel="noopener noreferrer">Read Whitepaper</a>
+          <a class="button" href="whitepaper-v4.pdf" target="_blank" rel="noopener noreferrer">Read Whitepaper V4</a>
+          <a class="button" href="#whitepapers">View All Versions</a>
         </div>
       </div>
     </section>
@@ -385,7 +475,7 @@
       <div class="container">
         <h2 class="section-title">What is Ditoman?</h2>
         <p class="section-subtitle">
-          Ditoman is not built around noise, hype, or short term attention. It is built around structure, understanding, and meaningful participation.
+          Ditoman is not built around noise, hype, or short term attention. It is built around structure, education, meaningful participation, and long term ecosystem development.
         </p>
 
         <div class="grid">
@@ -408,6 +498,118 @@
             <p>
               A long term framework where knowledge, contribution, and participation can gradually create real value.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="whitepapers">
+      <div class="container">
+        <h2 class="section-title">Whitepaper Evolution</h2>
+        <p class="section-subtitle">
+          Ditoman has developed through several stages. Each whitepaper shows part of the project’s evolution, from early identity and structure to the current V4 operational roadmap.
+        </p>
+
+        <div class="grid-four">
+          <div class="card version-card">
+            <div class="version-label">V1</div>
+            <h3>Early Foundation</h3>
+            <p>
+              The first stage of the Ditoman concept, introducing the early direction and identity of the project.
+            </p>
+            <a class="small-button" href="whitepaper-v1.pdf" target="_blank" rel="noopener noreferrer">Read V1</a>
+          </div>
+
+          <div class="card version-card">
+            <div class="version-label">V2</div>
+            <h3>Structure and Refinement</h3>
+            <p>
+              The second stage of development, refining the project identity, technical foundation, and wider ecosystem direction.
+            </p>
+            <a class="small-button" href="whitepaper-v2.pdf" target="_blank" rel="noopener noreferrer">Read V2</a>
+          </div>
+
+          <div class="card version-card">
+            <div class="version-label">V3</div>
+            <h3>The Architecture of Discovery</h3>
+            <p>
+              The central identity of Ditoman becomes clearer, connecting technology, economy, energy, infrastructure, media, and human value.
+            </p>
+            <a class="small-button" href="whitepaper-v3.pdf" target="_blank" rel="noopener noreferrer">Read V3</a>
+          </div>
+
+          <div class="card version-card current-version">
+            <div class="version-label">Current V4</div>
+            <h3>Operational Ecosystem</h3>
+            <p>
+              The current version adds roadmap, education, transparency, burn framework, Telegram preparation, rewards, and AI assisted participation direction.
+            </p>
+            <a class="small-button" href="whitepaper-v4.pdf" target="_blank" rel="noopener noreferrer">Read V4</a>
+          </div>
+        </div>
+
+        <p class="note">
+          The current public reference is Whitepaper V4. Earlier versions remain available to show how Ditoman has evolved over time.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="container">
+        <h2 class="section-title">Operational Roadmap 2026 to 2027</h2>
+        <p class="section-subtitle">
+          The V4 roadmap moves Ditoman from identity and concept into structured execution through education, community preparation, transparency, rewards, and intelligent participation systems.
+        </p>
+
+        <div class="roadmap">
+          <div class="roadmap-item">
+            <div class="roadmap-date">April 2026</div>
+            <div>
+              <h3>Educational publishing begins</h3>
+              <p>
+                Daily educational content starts, establishing a visible rhythm around blockchain, infrastructure, AI, energy, economy, and digital systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-date">May 2026</div>
+            <div>
+              <h3>V4 restructuring and transparency review</h3>
+              <p>
+                Ditoman enters the V4 phase with ecosystem refinement, supply review, burn framework preparation, and a clearer operational direction.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-date">June to September 2026</div>
+            <div>
+              <h3>Website expansion and community preparation</h3>
+              <p>
+                The website grows into a knowledge archive, while Telegram preparation, educational structure, and visibility development continue.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-date">Q4 2026</div>
+            <div>
+              <h3>Reward infrastructure and utility testing</h3>
+              <p>
+                Educational reward infrastructure, monthly transparency rhythm, utility testing, and supply restructuring continue as the ecosystem matures.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-date">2027</div>
+            <div>
+              <h3>AI assisted participation systems</h3>
+              <p>
+                Ditoman develops toward AI assisted moderation, contribution ranking, discussion scoring, reputation layers, and deeper ecosystem integration.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -486,7 +688,7 @@
           <div class="card">
             <h3>Why does TMN exist?</h3>
             <p>
-              TMN exists as a utility layer inside the Ditoman ecosystem. Its purpose is to connect participation, contribution, access, and value over time.
+              TMN exists as a utility layer inside the Ditoman ecosystem. Its purpose is to connect participation, contribution, access, recognition, and value over time.
             </p>
           </div>
 
@@ -509,117 +711,4 @@
             <p>
               Contract verification makes the source code publicly visible on chain explorers such as BscScan. It is an important step for transparency and trust.
             </p>
-          </div>
-
-          <div class="card">
-            <h3>What is the next phase?</h3>
-            <p>
-              The next phase focuses on education, community growth, transparency, and gradual development of the Ditoman ecosystem.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="rewards">
-      <div class="container">
-        <h2 class="section-title">Rewards</h2>
-        <p class="section-subtitle">
-          Ditoman rewards are designed to follow meaningful participation, not passive attention.
-        </p>
-
-        <div class="grid">
-          <div class="card">
-            <h3>Learn</h3>
-            <p>
-              Users who follow the learning path and engage with educational content may become part of future participation based reward structures.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Ask</h3>
-            <p>
-              Useful questions help the community grow. Ditoman values curiosity, discussion, and structured understanding.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Contribute</h3>
-            <p>
-              Meaningful contribution may include sharing ideas, supporting discussions, creating useful content, or helping improve the ecosystem.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Recognition</h3>
-            <p>
-              Rewards are intended to recognize real value created through participation, consistency, and contribution.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Community Growth</h3>
-            <p>
-              As the ecosystem develops, participation may support access, visibility, recognition, and future network roles.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>No Guaranteed Returns</h3>
-            <p>
-              Future rewards will be introduced gradually. Ditoman does not promise guaranteed rewards, financial returns, or short term outcomes.
-            </p>
-          </div>
-        </div>
-
-        <p class="note">
-          Rewards are part of the long term participation model. They are intended to support education, contribution, and community value as the ecosystem matures.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="quote">
-          <h2>We are not building just a token. We are building a direction.</h2>
-          <p>
-            The token is not the center of the current phase. The priority is building useful content, real understanding, community trust, and a platform that gives people a reason to return.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="community">
-      <div class="container">
-        <h2 class="section-title">Join the Ditoman community</h2>
-        <p class="section-subtitle">
-          Follow the education series, join the discussion, and grow with the Ditoman ecosystem step by step.
-        </p>
-
-        <div class="cta-row">
-          <a class="button" href="https://www.instagram.com/ditoman.network/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a class="button" href="https://t.me/Ditoman_tm/" target="_blank" rel="noopener noreferrer">Telegram</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-bottom">
-      <div class="container">
-        <h2>Learn. Connect. Evolve.</h2>
-        <p>
-          Start with the learning path and build your understanding one step at a time.
-        </p>
-        <a class="cta" href="learn.html">Start Learning</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      Ditoman.com • Built on structure, driven by discovery.
-    </div>
-  </footer>
-
-</body>
-</html>
+          <
