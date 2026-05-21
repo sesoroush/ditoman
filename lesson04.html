@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ditoman Learn | Lesson 04 | Who Is Satoshi Nakamoto?</title>
+
+  <meta name="description" content="Ditoman Lesson 04 explains who Satoshi Nakamoto is, why the mystery matters, and why the idea behind Bitcoin became more important than the identity of its creator." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #12343b 0%, #071116 36%, #03070a 100%);
+      color: #f4f7f8;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(4, 10, 14, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 3px;
+      box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #7ff5de;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #d8ffff;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7ff5de;
+    }
+
+    .hero {
+      padding: 76px 0 34px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.1);
+      border: 1px solid rgba(127, 245, 222, 0.22);
+      color: #7ff5de;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 0 auto 28px;
+      color: #b8d7d9;
+      font-size: 1.08rem;
+    }
+
+    .hero-image {
+      margin-top: 34px;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(127, 245, 222, 0.18);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .section {
+      padding: 44px 0;
+    }
+
+    .lesson-card {
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 26px;
+      padding: 34px;
+      margin-bottom: 26px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      color: #a7c6c9;
+      margin-bottom: 24px;
+      max-width: 850px;
+    }
+
+    .lesson-meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .meta-box {
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(127, 245, 222, 0.08);
+      border: 1px solid rgba(127, 245, 222, 0.16);
+    }
+
+    .meta-box span {
+      display: block;
+      color: #7ff5de;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+
+    .meta-box strong {
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .content-block p {
+      color: #c4dcde;
+      margin-bottom: 18px;
+      font-size: 1.04rem;
+    }
+
+    .highlight {
+      color: #7ff5de;
+      font-weight: 700;
+    }
+
+    .side-box {
+      background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.14), rgba(255, 191, 73, 0.06));
+      border: 1px solid rgba(127, 245, 222, 0.18);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .side-box h3 {
+      color: #ffffff;
+      margin-bottom: 14px;
+      font-size: 1.35rem;
+    }
+
+    .side-box p {
+      color: #c1dbde;
+      margin-bottom: 14px;
+    }
+
+    .list {
+      display: grid;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .list-item {
+      background: rgba(5, 13, 18, 0.72);
+      border: 1px solid rgba(127, 245, 222, 0.14);
+      border-radius: 18px;
+      padding: 18px;
+      color: #c6dcdf;
+    }
+
+    .list-item strong {
+      display: block;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .persian {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .quiz-card {
+      background: rgba(5, 13, 18, 0.72);
+      border: 1px solid rgba(127, 245, 222, 0.14);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .quiz-card span {
+      color: #7ff5de;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .quiz-card h4 {
+      color: #ffffff;
+      margin: 8px 0;
+      font-size: 1.05rem;
+    }
+
+    .quiz-card p {
+      color: #a8c4c7;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.12);
+      border: 1px solid rgba(127, 245, 222, 0.32);
+      color: #7ff5de;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: linear-gradient(90deg, #49e3c2, #2db7ff);
+      color: #041015;
+      border: none;
+    }
+
+    footer {
+      border-top: 1px solid rgba(127, 245, 222, 0.12);
+      padding: 28px 0 40px;
+      color: #8fb2b7;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .content-grid,
+      .lesson-meta,
+      .quiz-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .hero {
+        padding-top: 62px;
+      }
+
+      .lesson-card {
+        padding: 24px;
+      }
+
+      .brand-logo {
+        width: 38px;
+        height: 38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+        <div class="logo-text">DITOMAN</div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="learn.html" class="active">Learn</a>
+        <a href="tmn.html">TMN</a>
+        <a href="index.html#whitepapers">Whitepapers</a>
+        <a href="index.html#roadmap">Roadmap</a>
+        <a href="index.html#community">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">Lesson 04 • Foundation Series</div>
+        <h1>Who Is Satoshi Nakamoto?</h1>
+        <p>
+          The unknown creator behind Bitcoin and why the mystery matters more than the identity.
+        </p>
+
+        <div class="hero-image">
+          <img src="lesson04-satoshi-nakamoto.png" alt="Who Is Satoshi Nakamoto Ditoman lesson hero image">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="lesson-card">
+          <h2 class="section-title">Lesson Overview</h2>
+          <p class="section-subtitle">
+            Satoshi Nakamoto is the name used by the person or group who introduced Bitcoin to the world. But the real importance of Satoshi is not only the mystery of identity. It is the idea that a system can continue without depending on one central person.
+          </p>
+
+          <div class="lesson-meta">
+            <div class="meta-box">
+              <span>Level</span>
+              <strong>Beginner</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Reading Time</span>
+              <strong>6 Minutes</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Learning Points</span>
+              <strong>15 LP</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Focus</span>
+              <strong>Bitcoin Origin</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="lesson-card">
+          <div class="content-grid">
+            <div class="content-block">
+              <h2 class="section-title">The Name Behind Bitcoin</h2>
+
+              <p>
+                Satoshi Nakamoto is the name attached to the creation of Bitcoin. In 2008, this name appeared with a document that explained a new kind of digital money. It was not controlled by a bank, government, or company.
+              </p>
+
+              <p>
+                The idea was simple but powerful: people could send value directly to each other through a system based on verification, cryptography, and shared rules.
+              </p>
+
+              <p>
+                Bitcoin was launched in 2009. Satoshi helped build the early software, communicated with developers, and then slowly disappeared from public activity.
+              </p>
+
+              <p>
+                This disappearance made the story even more powerful. Bitcoin did not continue because one founder controlled it. It continued because the system was open enough for others to verify, run, improve, and protect.
+              </p>
+
+              <p>
+                That is why the mystery of Satoshi matters. It shows that the strongest part of Bitcoin is not a person. It is the structure.
+              </p>
+            </div>
+
+            <div class="side-box">
+              <h3>Core Idea</h3>
+              <p>
+                Satoshi matters because Bitcoin was designed to move beyond personal authority.
+              </p>
+              <p>
+                The creator disappeared, but the system continued.
+              </p>
+              <p class="highlight">
+                This changed how people think about trust.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lesson-card">
+          <h2 class="section-title">Key Concepts</h2>
+
+          <div class="list">
+            <div class="list-item">
+              <strong>Satoshi Nakamoto</strong>
+              The name used by the unknown creator or creators of Bitcoin.
+            </div>
+
+            <div class="list-item">
+              <strong>Bitcoin Whitepaper</strong>
+              The document published in 2008 that introduced Bitcoin as a peer to peer electronic cash system.
+            </div>
+
+            <div class="list-item">
+              <strong>Decentralized Origin</strong>
+              Bitcoin became stronger because it did not remain dependent on one founder or central organization.
+            </div>
+
+            <div class="list-item">
+              <strong>Trust Through Rules</strong>
+              Bitcoin replaced personal trust with open rules, verification, and network participation.
+            </div>
+          </div>
+        </div>
+
+        <div class="lesson-card">
+          <h2 class="section-title">Learning Objectives</h2>
+
+          <div class="list">
+            <div class="list-item">
+              Understand who Satoshi Nakamoto is in the history of Bitcoin.
+            </div>
+
+            <div class="list-item">
+              Understand why Satoshi’s identity remains unknown.
+            </div>
+
+            <div class="list-item">
+              Understand why the disappearance of Satoshi made Bitcoin more decentralized.
+            </div>
+
+            <div class="list-item">
+              Understand why the idea behind Bitcoin became more important than the creator.
+            </div>
+          </div>
+        </div>
+
+        <div class="lesson-card persian">
+          <h2 class="section-title">نسخه فارسی درس</h2>
+
+          <p>
+            ساتوشی ناکاموتو نامی است که با ساخت بیت‌کوین شناخته می‌شود. هنوز مشخص نیست ساتوشی یک نفر بوده یا یک گروه، اما اهمیت اصلی ساتوشی فقط در هویت او نیست.
+          </p>
+
+          <p>
+            اهمیت ساتوشی در ایده‌ای است که معرفی کرد. ایده‌ای که نشان داد پول دیجیتال می‌تواند بدون بانک، بدون دولت، بدون شرکت مرکزی و بدون اجازه گرفتن از یک نهاد واحد کار کند.
+          </p>
+
+          <p>
+            در سال ۲۰۰۸، ساتوشی وایت‌پیپر بیت‌کوین را منتشر کرد. این متن توضیح می‌داد که چگونه مردم می‌توانند ارزش را به صورت مستقیم و با کمک یک شبکه قابل بررسی منتقل کنند.
+          </p>
+
+          <p>
+            بیت‌کوین در سال ۲۰۰۹ شروع به کار کرد. ساتوشی در مراحل اولیه به توسعه نرم‌افزار کمک کرد، با برنامه‌نویسان صحبت کرد و بعد کم‌کم از فضای عمومی کنار رفت.
+          </p>
+
+          <p>
+            همین موضوع یکی از مهم‌ترین بخش‌های داستان بیت‌کوین است. سازنده رفت، اما سیستم باقی ماند. بیت‌کوین به یک فرد وابسته نماند، بلکه به قوانین شفاف، بررسی عمومی و مشارکت شبکه تکیه کرد.
+          </p>
+
+          <p>
+            برای همین، راز ساتوشی فقط یک داستان مرموز نیست. این راز نشان می‌دهد که در سیستم‌های جدید، گاهی ایده از هویت سازنده مهم‌تر می‌شود.
+          </p>
+        </div>
+
+        <div class="lesson-card">
+          <h2 class="section-title">Knowledge Check</h2>
+          <p class="section-subtitle">
+            These questions can later become part of Ditoman quizzes, participation scores, and possible TMN reward eligibility.
+          </p>
+
+          <div class="quiz-grid">
+            <div class="quiz-card">
+              <span>Question 01</span>
+              <h4>Who is Satoshi Nakamoto?</h4>
+              <p>The unknown creator or creators who introduced Bitcoin.</p>
+            </div>
+
+            <div class="quiz-card">
+              <span>Question 02</span>
+              <h4>Why is Satoshi’s identity still important?</h4>
+              <p>Because it shows how Bitcoin grew beyond one person.</p>
+            </div>
+
+            <div class="quiz-card">
+              <span>Question 03</span>
+              <h4>What did Satoshi publish in 2008?</h4>
+              <p>The Bitcoin whitepaper.</p>
+            </div>
+
+            <div class="quiz-card">
+              <span>Question 04</span>
+              <h4>Why did Bitcoin continue after Satoshi disappeared?</h4>
+              <p>Because it was based on open rules, verification, and network participation.</p>
+            </div>
+
+            <div class="quiz-card">
+              <span>Question 05</span>
+              <h4>What is the main lesson from Satoshi’s story?</h4>
+              <p>The idea became more important than the identity.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lesson-card">
+          <h2 class="section-title">Instagram Summary</h2>
+          <p>
+            This lesson expands the official Ditoman Instagram post about Satoshi Nakamoto into a structured learning resource. The original post introduces the mystery behind Bitcoin’s creator and explains why the identity matters less than the system that continued after Satoshi disappeared.
+          </p>
+
+          <p>
+            View the original Instagram post below:
+          </p>
+
+          <div class="cta-row">
+            <a class="button" href="https://www.instagram.com/p/DXe1iTujYR6/?img_index=6&igsh=MWliNTJ3dGVhY3Qy" target="_blank" rel="noopener noreferrer">Open Instagram Post</a>
+          </div>
+        </div>
+
+        <div class="lesson-card">
+          <h2 class="section-title">Next Lesson</h2>
+          <p>
+            Lesson 05 continues with a deeper question:
+          </p>
+          <p class="highlight">
+            What Gives Bitcoin Value?
+          </p>
+
+          <div class="cta-row">
+            <a class="button primary" href="learn.html">Back to Learn</a>
+            <a class="button" href="#">Next Lesson Coming Soon</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      Ditoman • Learn. Connect. Evolve.
+    </div>
+  </footer>
+
+</body>
+</html>
