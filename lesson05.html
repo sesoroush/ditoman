@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 05 | How to Check Any Token Before You Touch It | Ditoman Learn</title>
+<meta name="description" content="Ditoman Learn Lesson 05. Five free checks anyone can run on any token before interacting with it: contract verification, holder distribution, ownership, hidden functions, and liquidity." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.check-table {
+display: grid;
+gap: 12px;
+margin: 24px 0;
+}
+.check-row {
+display: grid;
+grid-template-columns: 1fr auto;
+gap: 16px;
+align-items: center;
+padding: 16px 20px;
+border-radius: 16px;
+background: rgba(5, 15, 22, 0.7);
+border: 1px solid rgba(78, 227, 206, 0.14);
+}
+.check-row span {
+color: #c1dbde;
+}
+.check-row strong {
+font-weight: 800;
+white-space: nowrap;
+}
+.pass {
+color: #7ff5de;
+}
+.fail {
+color: #ffb74d;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+.check-row {
+grid-template-columns: 1fr;
+gap: 6px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+<div class="logo-text">DITOMAN</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html" class="active">Learn</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="lesson05-token-checklist.png" alt="How to check any token before you touch it, Ditoman lesson image">
+</div>
+<div class="lesson-badge">Lesson 05 • Security Series</div>
+<h1>How to Check Any Token Before You Touch It</h1>
+<p class="subtitle">
+Five checks. Five minutes. No cost. Most people who lose money in crypto never ran them.
+</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span>Level</span>
+<strong>Beginner</strong>
+</div>
+<div class="meta-box">
+<span>Reading Time</span>
+<strong>7 Minutes</strong>
+</div>
+<div class="meta-box">
+<span>Learning Points</span>
+<strong>15 LP</strong>
+</div>
+<div class="meta-box">
+<span>Future Quiz</span>
+<strong>5 Questions</strong>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Lesson Content</h2>
+<p class="section-subtitle">
+Read the lesson in English or Persian. This structure is designed for future quiz, score, reputation, and reward systems.
+</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">English</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>Most people who lose money on a token did not pick the wrong project. They never checked the right things.</p>
+<p>Every check below is free, public, and takes about a minute. You do not need technical knowledge. You only need to know where to look.</p>
+
+<h3><span class="check-number">01.</span> Is the contract verified?</h3>
+<p>Open the token on a block explorer such as BscScan and go to the Contract tab. If the source code is verified, you will see readable code and a confirmation mark. If it is not verified, you only see machine code, which means nobody outside the team can read what the token actually does.</p>
+<p>Unverified does not automatically mean dishonest. But it means you are trusting a promise instead of reading the rules yourself.</p>
+
+<h3><span class="check-number">02.</span> Who holds the supply?</h3>
+<p>Open the Holders tab. Look at how much of the total supply the top wallets control.</p>
+<p>If a small number of wallets hold nearly everything, then a single decision by a single person can move the entire market. Concentration is not proof of bad intent, and many young projects start this way. But it is always a risk, and it is better to know it before you act rather than after.</p>
+
+<h3><span class="check-number">03.</span> Can new tokens still be created?</h3>
+<p>In the Read Contract section, look for a function called owner. If it returns a normal wallet address, that person still controls any owner-only functions in the contract, which can include creating new tokens.</p>
+<p>If it returns an address made entirely of zeros, ownership has been renounced. Those powers are gone permanently and nobody can bring them back, including the original team.</p>
+<p>This matters because a supply that can grow without limit can dilute everyone holding the token.</p>
+
+<h3><span class="check-number">04.</span> Are there hidden restrictions?</h3>
+<p>Read the contract code for transfer taxes, pause functions, or the ability to block specific addresses. Some tokens are built so that buying works normally but selling does not.</p>
+<p>This is one of the most common traps, and it is visible in the code before you ever spend anything.</p>
+
+<h3><span class="check-number">05.</span> Is there real liquidity?</h3>
+<p>A price on a screen is not money. It only becomes money when someone is willing to trade against it.</p>
+<p>Check whether a real liquidity pool exists and how deep it is. Without liquidity there is no exit, no matter what number is displayed.</p>
+
+<h3>The habit that matters</h3>
+<p>These five checks will not make you right about which projects succeed. Nothing does that.</p>
+<p>What they do is remove the most common and most avoidable ways people lose money: tokens they could not read, supply they could not see, powers they did not know existed, and exits that were never there.</p>
+<p>Check first. Decide after.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>بیشتر کسانی که روی یک توکن ضرر می‌کنند، پروژه اشتباهی را انتخاب نکرده‌اند. آن‌ها هرگز چیزهای درست را بررسی نکرده‌اند.</p>
+<p>همه بررسی‌های زیر رایگان، عمومی و حدود یک دقیقه‌ای هستند. به دانش فنی نیاز ندارید. فقط باید بدانید کجا را نگاه کنید.</p>
+
+<h3><span class="check-number">۰۱.</span> آیا قرارداد تأیید شده است؟</h3>
+<p>توکن را در یک بلاک اکسپلورر مانند BscScan باز کنید و به بخش Contract بروید. اگر سورس کد تأیید شده باشد، کد قابل خواندن و یک علامت تأیید می‌بینید. اگر تأیید نشده باشد، فقط کد ماشین دیده می‌شود، یعنی هیچ‌کس بیرون از تیم نمی‌تواند بفهمد این توکن واقعاً چه کاری انجام می‌دهد.</p>
+<p>تأیید نشدن لزوماً به معنای نادرستی نیست. اما یعنی شما به جای خواندن قوانین، به یک وعده اعتماد می‌کنید.</p>
+
+<h3><span class="check-number">۰۲.</span> چه کسی عرضه را در اختیار دارد؟</h3>
+<p>بخش Holders را باز کنید و ببینید کیف‌پول‌های اصلی چه مقدار از کل عرضه را کنترل می‌کنند.</p>
+<p>اگر تعداد کمی کیف پول تقریباً همه چیز را در اختیار داشته باشند، یک تصمیم از یک نفر می‌تواند کل بازار را جابه‌جا کند. تمرکز عرضه به‌خودی‌خود نشانه نیت بد نیست و بسیاری از پروژه‌های تازه این‌گونه شروع می‌شوند. اما همیشه یک ریسک است، و بهتر است پیش از اقدام از آن باخبر باشید، نه بعد از آن.</p>
+
+<h3><span class="check-number">۰۳.</span> آیا هنوز می‌توان توکن جدید ساخت؟</h3>
+<p>در بخش Read Contract دنبال تابعی به نام owner بگردید. اگر یک آدرس معمولی برگرداند، آن شخص هنوز کنترل توابع مخصوص مالک را دارد که می‌تواند شامل ساخت توکن جدید باشد.</p>
+<p>اگر آدرسی که تماماً از صفر تشکیل شده برگرداند، مالکیت سلب شده است. آن اختیارات برای همیشه از بین رفته‌اند و هیچ‌کس، حتی تیم اولیه، نمی‌تواند آن‌ها را بازگرداند.</p>
+<p>این موضوع مهم است، چون عرضه‌ای که بدون محدودیت رشد کند، ارزش دارایی همه دارندگان را کاهش می‌دهد.</p>
+
+<h3><span class="check-number">۰۴.</span> آیا محدودیت پنهانی وجود دارد؟</h3>
+<p>کد قرارداد را از نظر مالیات انتقال، تابع توقف، یا امکان مسدود کردن آدرس‌های مشخص بررسی کنید. برخی توکن‌ها طوری ساخته شده‌اند که خرید به‌درستی کار می‌کند اما فروش انجام نمی‌شود.</p>
+<p>این یکی از رایج‌ترین تله‌هاست و پیش از آنکه پولی خرج کنید، در کد قابل مشاهده است.</p>
+
+<h3><span class="check-number">۰۵.</span> آیا نقدشوندگی واقعی وجود دارد؟</h3>
+<p>قیمتی که روی صفحه می‌بینید پول نیست. وقتی پول می‌شود که کسی حاضر باشد در مقابل آن معامله کند.</p>
+<p>بررسی کنید که آیا استخر نقدشوندگی واقعی وجود دارد و چه عمقی دارد. بدون نقدشوندگی، راه خروجی وجود ندارد، هر عددی هم که نمایش داده شود.</p>
+
+<h3>عادتی که اهمیت دارد</h3>
+<p>این پنج بررسی باعث نمی‌شود در تشخیص پروژه‌های موفق درست عمل کنید. هیچ چیز چنین تضمینی نمی‌دهد.</p>
+<p>کاری که انجام می‌دهند این است: رایج‌ترین و قابل‌پیشگیری‌ترین راه‌های از دست دادن پول را حذف می‌کنند. توکن‌هایی که نمی‌شد خواند، عرضه‌ای که دیده نمی‌شد، اختیاراتی که از آن‌ها خبر نداشتید، و راه خروجی که اصلاً وجود نداشت.</p>
+<p>اول بررسی کنید. بعد تصمیم بگیرید.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title">Now Run It On Us</h2>
+<p>
+A checklist is only honest if it applies to the people publishing it. Here is TMN measured against the same five checks, including the ones we do not pass.
+</p>
+<div class="check-table">
+<div class="check-row">
+<span>01. Contract source code verified on BscScan</span>
+<strong class="pass">Yes</strong>
+</div>
+<div class="check-row">
+<span>02. Supply distribution across holders</span>
+<strong class="fail">Highly concentrated</strong>
+</div>
+<div class="check-row">
+<span>03. Ownership renounced, no new tokens possible</span>
+<strong class="pass">Yes, permanent</strong>
+</div>
+<div class="check-row">
+<span>04. No transfer tax, no blacklist, no pause function</span>
+<strong class="pass">Confirmed in code</strong>
+</div>
+<div class="check-row">
+<span>05. Liquidity available</span>
+<strong class="fail">None at this stage</strong>
+</div>
+</div>
+<p>
+TMN was deployed in 2022 and was never distributed or promoted, which is why supply remains concentrated and liquidity has not been established. We state this openly rather than leaving it to be discovered, because a project asking people to verify things should be verifiable itself.
+</p>
+<p class="fa" style="display:block;">
+همین پنج بررسی را روی TMN انجام دهید. نقاط قوت و نقاط ضعف ما هر دو در این جدول آمده است. عرضه همچنان متمرکز است و نقدشوندگی هنوز شکل نگرفته، و ما این را پنهان نمی‌کنیم.
+</p>
+<div class="cta-row">
+<a class="cta" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Verify TMN on BscScan</a>
+<a class="button" href="tmn.html">TMN Token Page</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3>Key Concepts</h3>
+<ul>
+<li>Contract verification</li>
+<li>Block explorer</li>
+<li>Holder distribution</li>
+<li>Supply concentration</li>
+<li>Ownership renouncement</li>
+<li>Minting</li>
+<li>Transfer tax</li>
+<li>Blacklist function</li>
+<li>Liquidity pool</li>
+</ul>
+</div>
+<div class="card">
+<h3>Learning Objectives</h3>
+<ul>
+<li>Know where to find a token's contract and read its status.</li>
+<li>Understand why supply concentration is a risk.</li>
+<li>Check whether new tokens can still be created.</li>
+<li>Recognise hidden restrictions written into a contract.</li>
+<li>Understand why liquidity determines whether an exit exists.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Future Quiz Bank</h2>
+<p class="section-subtitle">
+These questions are prepared for the future Ditoman quiz and participation system. They may later support learning scores, reputation layers, and possible TMN reward eligibility.
+</p>
+
+<div class="quiz-list">
+<div class="quiz-item">
+<h3>Question 1</h3>
+<p>What does an unverified contract mean?</p>
+<p>A. The token is definitely a scam</p>
+<p>B. The source code cannot be read or checked by the public</p>
+<p>C. The token cannot be traded</p>
+<p>D. The token has no supply limit</p>
+<p class="answer">Correct answer: B</p>
+</div>
+
+<div class="quiz-item">
+<h3>Question 2</h3>
+<p>If the owner function returns an address of all zeros, what does that mean?</p>
+<p>A. The contract is broken</p>
+<p>B. The token has been deleted</p>
+<p>C. Ownership has been renounced and owner-only functions can no longer be used</p>
+<p>D. Anyone can now create new tokens</p>
+<p class="answer">Correct answer: C</p>
+</div>
+
+<div class="quiz-item">
+<h3>Question 3</h3>
+<p>Which of these can be discovered by reading a token's contract?</p>
+<p>A. Transfer taxes</p>
+<p>B. Blacklist or address-blocking functions</p>
+<p>C. Whether new tokens can be created</p>
+<p>D. The future price of the token</p>
+<p class="answer">Correct answers: A, B, C</p>
+</div>
+
+<div class="quiz-item">
+<h3>Question 4</h3>
+<p>True or False: A price shown on a tracking website proves you can sell the token.</p>
+<p class="answer">Correct answer: False. Without liquidity there is no exit.</p>
+</div>
+
+<div class="quiz-item">
+<h3>Question 5</h3>
+<p>Why does supply concentration matter?</p>
+<p>A. It always means the project is dishonest</p>
+<p>B. A small number of holders can move the entire market with one decision</p>
+<p>C. It makes the contract unverifiable</p>
+<p>D. It prevents the token from being listed anywhere</p>
+<p class="answer">Correct answer: B</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">Instagram Summary</h2>
+<p>
+This lesson was first introduced on Ditoman Instagram as part of the Education Series. The Instagram version gives a short visual summary, while this page provides the full learning version.
+</p>
+<p class="fa" style="display:block;">
+خلاصه تصویری این درس ابتدا در اینستاگرام Ditoman منتشر شد. نسخه اینستاگرام یک معرفی کوتاه و تصویری است، اما این صفحه نسخه کامل آموزشی آن است.
+</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">View on Instagram</a>
+<a class="button" href="learn.html">Back to Learn</a>
+<a class="button" href="lesson04.html">Previous Lesson</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+Ditoman Learn • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+</body>
+  </html>
+      
