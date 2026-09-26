@@ -1,41 +1,719 @@
-Subject: Request to Release/Reassign Token Info Update Rights — Contract 0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-Hello BscScan Support,
+  <title>Ditoman | The Architecture of Discovery</title>
 
-I am requesting help reassigning the verified ownership / Token Update Application rights for the following BEP-20 token contract, which are currently locked to a legacy BscScan account (displayed to me as "di***rk"):
+  <meta name="description" content="Ditoman is a structured learning and community network focused on technology, energy, infrastructure, economy, media, AI, participation, and the systems shaping real life." />
 
-Contract address: 0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d
-Token: DiToman (TMN)
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-Background:
-This contract was deployed in 2022. The original team account that verified ownership on BscScan ("di***rk") is no longer accessible to us — we have lost access to that account's login email. I am the founder of this project and currently control the following, which I believe demonstrates continued ownership and control of this token:
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #12343b 0%, #071116 38%, #03070a 100%);
+      color: #f4f7f8;
+      line-height: 1.6;
+    }
 
-1. The wallet that held contract ownership and executed both the ownership-renouncement and the token-burn transactions:
-Wallet: 0xAedA0cFe05FB79ce594E556f3001Ae88Dc8780e9
-- renounceOwnership transaction: 0x7d34e9bf88239da642aedb84e9c7f198c27defc00bfd4f4bd86d31ce6de4b9f9
-- burn transaction: 0x8d81df6ec4e584a3bd24048a0e48734dbdd3722b5888cd6f62b66bfd3eba10e3
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-2. Control of the project's domain (ditoman.com) and its official social channels (Instagram, Telegram), all of which link to this same contract address.
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
 
-3. Control of the wallet holding the majority of the current token supply:
-0x521bf0254e2755abf8cd5afe8c7f9af35dccf50c
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(4, 10, 14, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+    }
 
-Per the instructions in your "How to Release Contract Address Ownership" article, I have signed a message with the wallet above (0xAedA0cFe05FB79ce594E556f3001Ae88Dc8780e9) to prove ownership and to request release of the legacy account's claim on this contract. Please find the signed message details below:
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
 
-Address: 0xAedA0cFe05FB79ce594E556f3001Ae88Dc8780e9
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: 0.3s ease;
+    }
 
-Message:
-[BscScan.com 26/09/2026 14:28:00] I, hereby verify that I am the owner/creator of the token contract address 0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d and I hereby release my user account di***rk as the verified owner of 0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d.
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 3px;
+      transition: 0.3s ease;
+      box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+    }
 
-Signature (sig):
-0x15a6ff31ba05ff9e04f605758ecfb0e3b010d1cd96c626b72b46c6595771983058c5be986b9c61eabf09486128829914e442a969a4a5bb2fab04d72a43d1d28a1b
+    .brand:hover .brand-logo {
+      transform: scale(1.08);
+      box-shadow: 0 0 18px rgba(127, 245, 222, 0.55);
+    }
 
-Note: I do not have access to the original legacy account's exact username or login credentials (it displays to me only as "di***rk" in your system), which is why I am unable to log in and release it myself. I would appreciate your team's help in either releasing that legacy claim or reassigning Token Update Application rights on this contract to my current, active BscScan account (username: sesoroush, email: sesoroush@gmail.com), based on the on-chain proof above.
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #7ff5de;
+      transition: 0.3s ease;
+    }
 
-Once this is resolved, I would like to submit an updated Token Info Application for this contract with our current website, whitepaper, and social links.
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
 
-Thank you for your help.
+    .nav-links a {
+      color: #d8ffff;
+      transition: 0.25s ease;
+    }
 
-Best regards,
-Soroush
-Founder, DiToman (TMN)
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7ff5de;
+    }
+
+    .hero {
+      padding: 100px 0 70px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.1);
+      border: 1px solid rgba(127, 245, 222, 0.22);
+      color: #7ff5de;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 5vw, 5rem);
+      line-height: 1.08;
+      margin-bottom: 22px;
+      color: #ffffff;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 0 auto 30px;
+      color: #b8d7d9;
+      font-size: 1.1rem;
+    }
+
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 26px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #49e3c2, #2db7ff);
+      color: #041015;
+      font-weight: 700;
+      box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.12);
+      border: 1px solid rgba(127, 245, 222, 0.32);
+      color: #7ff5de;
+      font-weight: 700;
+    }
+
+    .small-button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.1);
+      border: 1px solid rgba(127, 245, 222, 0.24);
+      color: #7ff5de;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .section {
+      padding: 52px 0;
+    }
+
+    .section-title {
+      font-size: 2.1rem;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      color: #a7c6c9;
+      margin-bottom: 30px;
+      max-width: 780px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .grid-four {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .grid-five {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 22px;
+      padding: 26px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(127, 245, 222, 0.34);
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .card p {
+      color: #a8c4c7;
+    }
+
+    .version-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .version-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      color: #041015;
+      background: linear-gradient(90deg, #49e3c2, #2db7ff);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .current-version {
+      border-color: rgba(127, 245, 222, 0.42);
+      box-shadow: 0 0 26px rgba(73, 227, 194, 0.12);
+    }
+
+    .roadmap {
+      display: grid;
+      gap: 18px;
+    }
+
+    .roadmap-item {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 22px;
+      align-items: start;
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .roadmap-date {
+      color: #7ff5de;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .roadmap-item h3 {
+      color: #ffffff;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .roadmap-item p {
+      color: #a8c4c7;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .feature-box {
+      background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(24, 67, 89, 0.22));
+      border: 1px solid rgba(127, 245, 222, 0.18);
+      border-radius: 26px;
+      padding: 34px;
+    }
+
+    .feature-box h3 {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+
+    .feature-box p {
+      color: #c1dbde;
+      margin-bottom: 20px;
+    }
+
+    .insight-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .insight {
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .insight span {
+      color: #7ff5de;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .insight h4 {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      color: #ffffff;
+      font-size: 1.15rem;
+    }
+
+    .insight p {
+      color: #a8c4c7;
+    }
+
+    .quote {
+      text-align: center;
+      padding: 42px;
+      border-radius: 28px;
+      background: rgba(6, 16, 22, 0.78);
+      border: 1px solid rgba(127, 245, 222, 0.16);
+    }
+
+    .quote h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    .quote p {
+      color: #b8d7d9;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .note {
+      margin-top: 26px;
+      color: #a7c6c9;
+      max-width: 850px;
+    }
+
+    .cta-bottom {
+      text-align: center;
+      padding: 30px 0 85px;
+    }
+
+    .cta-bottom h2 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .cta-bottom p {
+      color: #aecfd1;
+      margin-bottom: 24px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(127, 245, 222, 0.12);
+      padding: 28px 0 40px;
+      color: #8fb2b7;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 1000px) {
+      .grid-four,
+      .grid-five {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+      .grid,
+      .grid-two,
+      .feature {
+        grid-template-columns: 1fr;
+      }
+
+      .roadmap-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .hero {
+        padding-top: 76px;
+      }
+
+      .brand-logo {
+        width: 38px;
+        height: 38px;
+      }
+
+      .grid-four,
+      .grid-five {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+        <div class="logo-text">DITOMAN</div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="tmn.html">TMN</a>
+        <a href="#whitepapers">Whitepapers</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#insights">Insights</a>
+        <a href="#questions">Questions</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#community">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">The Architecture of Discovery</div>
+
+        <h1>Understand the systems shaping the future.</h1>
+
+        <p>
+          Ditoman is a structured learning and community network focused on technology, energy, infrastructure, economy, media, artificial intelligence, participation, and the systems shaping real life.
+        </p>
+
+        <div class="cta-row">
+          <a class="cta" href="learn.html">Start Learning</a>
+          <a class="button" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Read Whitepaper V5</a>
+          <a class="button" href="#whitepapers">View All Versions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">What is Ditoman?</h2>
+        <p class="section-subtitle">
+          Ditoman is not built around noise, hype, or short term attention. It is built around structure, education, meaningful participation, and long term ecosystem development.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Learning</h3>
+            <p>
+              A simple path for understanding blockchain, trust, AI, energy, infrastructure, economy, and the systems behind modern life.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Community</h3>
+            <p>
+              A space for people to learn, discuss, question, and build stronger understanding together.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Direction</h3>
+            <p>
+              A long term framework where knowledge, contribution, and participation can gradually create real value.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tmn">
+      <div class="container">
+        <h2 class="section-title">The Ditoman Token</h2>
+        <p class="section-subtitle">
+          TMN is the utility and participation layer of the Ditoman ecosystem. It is designed to connect learning, contribution, access, recognition, visibility, and future ecosystem rewards over time.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Token Name</h3>
+            <p>Ditoman</p>
+          </div>
+
+          <div class="card">
+            <h3>Symbol</h3>
+            <p>TMN</p>
+          </div>
+
+          <div class="card">
+            <h3>Network</h3>
+            <p>BNB Smart Chain</p>
+          </div>
+        </div>
+
+        <p class="note">
+          TMN is not the destination of Ditoman. It is a tool inside the ecosystem, designed to support participation, access, recognition, and future reward eligibility as the network develops.
+        </p>
+
+        <div class="cta-row" style="margin-top: 24px;">
+          <a class="cta" href="tmn.html">View TMN Token</a>
+          <a class="button" href="https://pancakeswap.finance/swap?outputCurrency=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Access on PancakeSwap</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="whitepapers">
+      <div class="container">
+        <h2 class="section-title">Whitepaper Evolution</h2>
+        <p class="section-subtitle">
+          Ditoman has developed through several stages. Each whitepaper shows part of the project's evolution, from early identity and structure to the current V5 final direction.
+        </p>
+
+        <div class="grid-five">
+          <div class="card version-card">
+            <div class="version-label">V1</div>
+            <h3>Early Foundation</h3>
+            <p>
+              The first stage of the Ditoman concept, introducing the early direction and identity of the project.
+            </p>
+            <a class="small-button" href="whitepaper-v1.pdf" target="_blank" rel="noopener noreferrer">Read V1</a>
+          </div>
+
+          <div class="card version-card">
+            <div class="version-label">V2</div>
+            <h3>Structure and Refinement</h3>
+            <p>
+              The second stage of development, refining the project identity, technical foundation, and wider ecosystem direction.
+            </p>
+            <a class="small-button" href="whitepaper-v2.pdf" target="_blank" rel="noopener noreferrer">Read V2</a>
+          </div>
+
+          <div class="card version-card">
+            <div class="version-label">V3</div>
+            <h3>The Architecture of Discovery</h3>
+            <p>
+              The central identity of Ditoman becomes clearer, connecting technology, economy, energy, infrastructure, media, and human value.
+            </p>
+            <a class="small-button" href="whitepaper-v3.pdf" target="_blank" rel="noopener noreferrer">Read V3</a>
+          </div>
+
+          <div class="card version-card">
+            <div class="version-label">V4</div>
+            <h3>Operational Ecosystem</h3>
+            <p>
+              Adds roadmap, education, transparency, burn framework, Telegram preparation, rewards, and AI assisted participation direction.
+            </p>
+            <a class="small-button" href="whitepaper-v4.pdf" target="_blank" rel="noopener noreferrer">Read V4</a>
+          </div>
+
+          <div class="card version-card current-version">
+            <div class="version-label">Current V5</div>
+            <h3>Final Direction</h3>
+            <p>
+              The current, honest, final version: real practical education, real analysis, and real Iranian achievement, with full technical and risk disclosure.
+            </p>
+            <a class="small-button" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Read V5</a>
+          </div>
+        </div>
+
+        <p class="note">
+          The current public reference is Whitepaper V5. Earlier versions remain available to show how Ditoman has evolved over time.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="container">
+        <h2 class="section-title">Operational Roadmap 2026 to 2027</h2>
+        <p class="section-subtitle">
+          The V4 roadmap moves Ditoman from identity and concept into structured execution through education, community preparation, transparency, rewards, and intelligent participation systems.
+        </p>
+
+        <div class="roadmap">
+          <div class="roadmap-item">
+            <div class="roadmap-date">April 2026</div>
+            <div>
+              <h3>Educational publishing begins</h3>
+              <p>
+                Daily educational content starts, establishing a visible rhythm around blockchain, infrastructure, AI, energy, economy, and digital systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-date">May 2026</div>
+            <div>
+              <h3>V4 restructuring and transparency review</h3>
+              <p>
+                Ditoman enters the V4 phase with ecosystem refinement, supply review, burn framework preparation, and a clearer operational direction.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-date">June to September 2026</div>
+            <div>
+              <h3>Website expansion and community preparation</h3>
+              <p>
+                The website grows into a knowledge archive, while Telegram preparation, educational structure, and visibility development continue.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-date">Q4 2026</div>
+            <div>
+              <h3>Reward infrastructure and utility testing</h3>
+              <p>
+                Educational reward infrastructure, monthly transparency rhythm, utility testing, and supply restructuring continue as the ecosystem matures.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-date">2027</div>
+            <div>
+              <h3>AI assisted participation systems</h3>
+              <p>
+                Ditoman develops toward AI assisted moderation, contribution ranking, discussion scoring, reputation layers, and deeper ecosystem integration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container feature">
+        <div class="feature-box">
+          <h3>Learn the systems behind the future.</h3>
+          <p>
+            Ditoman Learn turns scattered information into structured education. The first phase focuses on blockchain, Bitcoin, trust, decentralization, and how digital systems change the way people interact with value and information.
+          </p>
+          <a class="button" href="learn.html">Open Learn</a>
+        </div>
+
+        <div class="feature-box">
+          <h3>From education to participation.</h3>
+          <p>
+            The long term goal is to build a learning path where users can study, complete simple quizzes, join discussions, and gradually become part of a more useful community.
+          </p>
+          <a class="button" href="#community">Join Community</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="insights">
+      <div class="container">
+        <h2 class="section-title">Ditoman Insights</h2>
+        <p class="section-subtitle">
+          Short reflections on the systems shaping technology, economy, energy, infrastructure, and human life.
+        </p>
+
+        <div class="insight-list">
+          <div class="insight">
+            <span>Blockchain</span>
+            <h4>Trust is becoming programmable.</h4>
+            <p>
+              Blockchain is not only about digital assets. It changes how information, ownership, access, and verification can work without relying only on central gatekeepers.
+            </p>
+          </div>
+
+          <div class="insight">
+            <span>Energy and AI</span>
+            <h4>Digital growth depends on real infrastructure.</h4>
+            <p>
+              Artificial intelligence, blockchain, data centers, and digital economies all depend on energy, computation, and physical systems that are often invisible to users.
+            </p>
+          </div>
+
+          <div class="insight">
+            <span>Community</span>
+            <h4>Understanding is stronger when it is shared.</h4>
+            <p>
+              Ditoman i
