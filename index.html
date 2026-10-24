@@ -3,809 +3,277 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Ditoman (TMN) | Crypto and Future Literacy in Farsi and English</title>
-
   <meta name="description" content="Ditoman is a bilingual Farsi and English education project: practical crypto literacy, AI and energy analysis, and real Iranian achievement. Home of the DiToman (TMN) token on BNB Smart Chain." />
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #12343b 0%, #071116 38%, #03070a 100%);
-      color: #f4f7f8;
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1180px;
-      margin: 0 auto;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(4, 10, 14, 0.9);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(68, 221, 204, 0.18);
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      transition: 0.3s ease;
-    }
-
-    .brand-logo {
-      width: 42px;
-      height: 42px;
-      object-fit: contain;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 3px;
-      transition: 0.3s ease;
-      box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
-    }
-
-    .brand:hover .brand-logo {
-      transform: scale(1.08);
-      box-shadow: 0 0 18px rgba(127, 245, 222, 0.55);
-    }
-
-    .logo-text {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      color: #7ff5de;
-      transition: 0.3s ease;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: #d8ffff;
-      transition: 0.25s ease;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #7ff5de;
-    }
-
-    .hero {
-      padding: 100px 0 70px;
-      text-align: center;
-    }
-
-    .hero-badge {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 8px 16px;
-      border-radius: 999px;
-      background: rgba(127, 245, 222, 0.1);
-      border: 1px solid rgba(127, 245, 222, 0.22);
-      color: #7ff5de;
-      font-size: 0.9rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.3rem, 5vw, 5rem);
-      line-height: 1.08;
-      margin-bottom: 22px;
-      color: #ffffff;
-    }
-
-    .hero p {
-      max-width: 820px;
-      margin: 0 auto 30px;
-      color: #b8d7d9;
-      font-size: 1.1rem;
-    }
-
-    .cta-row {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .cta {
-      display: inline-block;
-      padding: 14px 26px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, #49e3c2, #2db7ff);
-      color: #041015;
-      font-weight: 700;
-      box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
-    }
-
-    .button {
-      display: inline-block;
-      padding: 13px 24px;
-      border-radius: 999px;
-      background: rgba(127, 245, 222, 0.12);
-      border: 1px solid rgba(127, 245, 222, 0.32);
-      color: #7ff5de;
-      font-weight: 700;
-    }
-
-    .small-button {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 10px 18px;
-      border-radius: 999px;
-      background: rgba(127, 245, 222, 0.1);
-      border: 1px solid rgba(127, 245, 222, 0.24);
-      color: #7ff5de;
-      font-weight: 700;
-      font-size: 0.92rem;
-    }
-
-    .section {
-      padding: 52px 0;
-    }
-
-    .section-title {
-      font-size: 2.1rem;
-      margin-bottom: 14px;
-      color: #ffffff;
-    }
-
-    .section-subtitle {
-      color: #a7c6c9;
-      margin-bottom: 30px;
-      max-width: 780px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .grid-two {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .grid-four {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .grid-five {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      background: rgba(8, 18, 24, 0.86);
-      border: 1px solid rgba(78, 227, 206, 0.14);
-      border-radius: 22px;
-      padding: 26px;
-      transition: transform 0.25s ease, border-color 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(127, 245, 222, 0.34);
-    }
-
-    .card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 12px;
-      color: #ffffff;
-    }
-
-    .card p {
-      color: #a8c4c7;
-    }
-
-    .version-card {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .version-label {
-      display: inline-block;
-      margin-bottom: 14px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      color: #041015;
-      background: linear-gradient(90deg, #49e3c2, #2db7ff);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .current-version {
-      border-color: rgba(127, 245, 222, 0.42);
-      box-shadow: 0 0 26px rgba(73, 227, 194, 0.12);
-    }
-
-    .roadmap {
-      display: grid;
-      gap: 18px;
-    }
-
-    .roadmap-item {
-      display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 22px;
-      align-items: start;
-      background: rgba(8, 18, 24, 0.86);
-      border: 1px solid rgba(78, 227, 206, 0.14);
-      border-radius: 22px;
-      padding: 24px;
-    }
-
-    .roadmap-date {
-      color: #7ff5de;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-    }
-
-    .roadmap-item h3 {
-      color: #ffffff;
-      margin-bottom: 8px;
-      font-size: 1.15rem;
-    }
-
-    .roadmap-item p {
-      color: #a8c4c7;
-    }
-
-    .feature {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 26px;
-      align-items: stretch;
-    }
-
-    .feature-box {
-      background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(24, 67, 89, 0.22));
-      border: 1px solid rgba(127, 245, 222, 0.18);
-      border-radius: 26px;
-      padding: 34px;
-    }
-
-    .feature-box h3 {
-      font-size: 1.8rem;
-      margin-bottom: 14px;
-      color: #ffffff;
-    }
-
-    .feature-box p {
-      color: #c1dbde;
-      margin-bottom: 20px;
-    }
-
-    .insight-list {
-      display: grid;
-      gap: 18px;
-    }
-
-    .insight {
-      background: rgba(8, 18, 24, 0.86);
-      border: 1px solid rgba(78, 227, 206, 0.14);
-      border-radius: 20px;
-      padding: 22px;
-    }
-
-    .insight span {
-      color: #7ff5de;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .insight h4 {
-      margin-top: 8px;
-      margin-bottom: 8px;
-      color: #ffffff;
-      font-size: 1.15rem;
-    }
-
-    .insight p {
-      color: #a8c4c7;
-    }
-
-    .quote {
-      text-align: center;
-      padding: 42px;
-      border-radius: 28px;
-      background: rgba(6, 16, 22, 0.78);
-      border: 1px solid rgba(127, 245, 222, 0.16);
-    }
-
-    .quote h2 {
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      color: #ffffff;
-      margin-bottom: 14px;
-    }
-
-    .quote p {
-      color: #b8d7d9;
-      max-width: 760px;
-      margin: 0 auto;
-    }
-
-    .note {
-      margin-top: 26px;
-      color: #a7c6c9;
-      max-width: 850px;
-    }
-
-    .cta-bottom {
-      text-align: center;
-      padding: 30px 0 85px;
-    }
-
-    .cta-bottom h2 {
-      font-size: 2.2rem;
-      margin-bottom: 12px;
-    }
-
-    .cta-bottom p {
-      color: #aecfd1;
-      margin-bottom: 24px;
-    }
-
-    footer {
-      border-top: 1px solid rgba(127, 245, 222, 0.12);
-      padding: 28px 0 40px;
-      color: #8fb2b7;
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 1000px) {
-      .grid-four,
-      .grid-five {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 900px) {
-      .grid,
-      .grid-two,
-      .feature {
-        grid-template-columns: 1fr;
-      }
-
-      .roadmap-item {
-        grid-template-columns: 1fr;
-        gap: 8px;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .nav {
-        flex-direction: column;
-        gap: 14px;
-      }
-
-      .nav-links {
-        justify-content: center;
-        gap: 16px;
-      }
-
-      .hero {
-        padding-top: 76px;
-      }
-
-      .brand-logo {
-        width: 38px;
-        height: 38px;
-      }
-
-      .grid-four,
-      .grid-five {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="icon" href="ditoman-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700&family=Lalezar&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="site.css" />
 </head>
 
 <body>
 
   <header>
-    <div class="container nav">
+    <div class="wrap nav">
       <a class="brand" href="index.html">
-        <img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
-        <div class="logo-text">DITOMAN</div>
+        <img src="ditoman-logo.png" alt="" />
+        DITOMAN
       </a>
-
-      <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
+      <nav class="nav-links" aria-label="Main">
         <a href="learn.html">Learn</a>
         <a href="tmn.html">TMN</a>
-        <a href="#whitepapers">Whitepapers</a>
         <a href="#roadmap">Roadmap</a>
-        <a href="#insights">Insights</a>
-        <a href="#questions">Questions</a>
-        <a href="#rewards">Rewards</a>
+        <a href="#whitepapers">Whitepapers</a>
         <a href="#community">Community</a>
       </nav>
+      <a class="nav-cta" href="learn.html">Start learning</a>
     </div>
   </header>
 
   <main>
 
     <section class="hero">
-      <div class="container">
-        <div class="hero-badge">Est. 2022 • Farsi &amp; English</div>
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Understand the systems <span class="spectrum">shaping your future.</span></h1>
+          <p class="hero-fa" lang="fa">سیستم‌هایی را که آینده‌ات را می‌سازند، بشناس.</p>
+          <p class="hero-lede">Free, honest lessons in Farsi and English on crypto, money, AI and energy. No signals, no hype, nothing to sell you.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="learn.html">Start learning</a>
+            <a class="btn btn-ghost" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Read the whitepaper</a>
+          </div>
+        </div>
 
-        <h1>Understand the systems shaping the future.</h1>
-
-        <p>
-          Ditoman is a structured learning and community network focused on technology, energy, infrastructure, economy, media, artificial intelligence, participation, and the systems shaping real life.
-        </p>
-
-        <div class="cta-row">
-          <a class="cta" href="learn.html">Start Learning</a>
-          <a class="button" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Read Whitepaper V5</a>
-          <a class="button" href="#whitepapers">View All Versions</a>
+        <div class="map" aria-hidden="true">
+          <canvas id="networkMap"></canvas>
+          <span class="orbit-tag">Est. 2022</span>
+          <span class="orbit-tag">Farsi + English</span>
+          <span class="orbit-tag">Ownership renounced</span>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section-title">What is Ditoman?</h2>
-        <p class="section-subtitle">
-          Ditoman is not built around noise, hype, or short term attention. It is built around structure, education, meaningful participation, and long term ecosystem development.
-        </p>
+    <section class="block" id="about">
+      <div class="wrap">
+        <div class="head">
+          <h2>Three things we cover<span lang="fa">سه محور اصلی دیتومن</span></h2>
+          <p>One permanent editorial rule across all three: real knowledge and real achievement, no political commentary from any side.</p>
+        </div>
 
-        <div class="grid">
-          <div class="card">
-            <h3>Learning</h3>
-            <p>
-              A simple path for understanding blockchain, trust, AI, energy, infrastructure, economy, and the systems behind modern life.
-            </p>
-          </div>
+        <div class="pillars">
+          <article class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+              <circle cx="26" cy="26" r="24" stroke="#7ff5de" stroke-opacity=".35"/>
+              <path d="M17 31l6-8 6 5 7-10" stroke="#7ff5de" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Crypto and money, made practical</h3>
+            <span class="fa-sub" lang="fa">سواد مالی و کریپتو، کاربردی</span>
+            <p>How blockchains work, how to check a token before you touch it, and how to protect yourself from scams.</p>
+          </article>
 
-          <div class="card">
-            <h3>Community</h3>
-            <p>
-              A space for people to learn, discuss, question, and build stronger understanding together.
-            </p>
-          </div>
+          <article class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+              <circle cx="26" cy="26" r="24" stroke="#2db7ff" stroke-opacity=".35"/>
+              <path d="M28 14l-9 14h8l-3 10 10-15h-8l2-9z" stroke="#2db7ff" stroke-width="2.4" stroke-linejoin="round"/>
+            </svg>
+            <h3>AI, energy and the future of work</h3>
+            <span class="fa-sub" lang="fa">هوش مصنوعی، انرژی و آینده‌ی کار</span>
+            <p>Honest analysis of the shifts coming, read from where our audience actually stands.</p>
+          </article>
 
-          <div class="card">
-            <h3>Direction</h3>
-            <p>
-              A long term framework where knowledge, contribution, and participation can gradually create real value.
-            </p>
+          <article class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+              <circle cx="26" cy="26" r="24" stroke="#8b6cff" stroke-opacity=".45"/>
+              <path d="M26 15l3.2 6.6 7.3 1-5.3 5.1 1.3 7.2L26 31.5l-6.5 3.4 1.3-7.2-5.3-5.1 7.3-1L26 15z" stroke="#8b6cff" stroke-width="2.2" stroke-linejoin="round"/>
+            </svg>
+            <h3>Real Iranian achievement</h3>
+            <span class="fa-sub" lang="fa">دستاوردهای واقعی ایرانیان</span>
+            <p>Documenting people and businesses who keep building under pressure, on their own terms.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="story">
+      <div class="wrap story">
+        <div class="story-year" aria-hidden="true">2022</div>
+        <div>
+          <h2>Started in 2022. Quiet on purpose.<span lang="fa">از ۲۰۲۲، آرام و آگاهانه</span></h2>
+          <p>Ditoman takes its name from the Toman, the everyday name for Iranian money: a "digital Toman". TMN was deployed on BNB Smart Chain in February 2022 with one question behind it: can knowledge itself carry real value?</p>
+          <p>For nearly four years we stayed deliberately quiet. No marketing, no token sale, no launch. That history is on-chain for anyone to check, and it is the clearest sign this was never built for a quick pump.</p>
+          <div class="hero-actions">
+            <a class="btn btn-ghost" href="tmn.html#history">See the full history</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="tmn">
-      <div class="container">
-        <h2 class="section-title">The Ditoman Token</h2>
-        <p class="section-subtitle">
-          TMN is the utility and participation layer of the Ditoman ecosystem. It is designed to connect learning, contribution, access, recognition, visibility, and future ecosystem rewards over time.
-        </p>
-
-        <div class="grid">
-          <div class="card">
-            <h3>Token Name</h3>
-            <p>Ditoman</p>
-          </div>
-
-          <div class="card">
-            <h3>Symbol</h3>
-            <p>TMN</p>
-          </div>
-
-          <div class="card">
-            <h3>Network</h3>
-            <p>BNB Smart Chain</p>
-          </div>
+    <section class="block" id="learn">
+      <div class="wrap">
+        <div class="head">
+          <h2>Start with a lesson<span lang="fa">از یک درس شروع کن</span></h2>
+          <p>Short lessons by topic, about five minutes each, in both languages, each ending with a quiz.</p>
         </div>
 
-        <p class="note">
-          TMN is not the destination of Ditoman. It is a tool inside the ecosystem, designed to support participation, access, recognition, and future reward eligibility as the network develops.
-        </p>
+        <div class="lessons">
+          <a class="featured" href="lesson06.html">
+            <img src="lesson06-five-questions.png" alt="A notebook listing five questions to ask before buying any crypto asset" loading="lazy" />
+            <div class="featured-body">
+              <span class="featured-kicker">Newest lesson</span>
+              <h3>Five questions to ask before you buy</h3>
+              <p>What am I buying, why would it be worth more, and what would prove me wrong? The questions that protect you from fear of missing out.</p>
+              <span class="btn btn-ghost">Read the lesson</span>
+            </div>
+          </a>
 
-        <div class="cta-row" style="margin-top: 24px;">
-          <a class="cta" href="tmn.html">View TMN Token</a>
-          <a class="button" href="https://pancakeswap.finance/swap?outputCurrency=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Access on PancakeSwap</a>
+          <div>
+            <ol class="lesson-list">
+              <li><a href="lesson05.html"><span class="tag">Safety</span><span class="t">How to check any token before you touch it</span><span class="go" aria-hidden="true">›</span></a></li>
+              <li><a href="lesson04.html"><span class="tag">Bitcoin</span><span class="t">Who is Satoshi Nakamoto?</span><span class="go" aria-hidden="true">›</span></a></li>
+              <li><a href="lesson03.html"><span class="tag">Bitcoin</span><span class="t">Why Bitcoin was created</span><span class="go" aria-hidden="true">›</span></a></li>
+              <li><a href="lesson02.html"><span class="tag">Basics</span><span class="t">Why blockchain matters</span><span class="go" aria-hidden="true">›</span></a></li>
+              <li><a href="lesson01.html"><span class="tag">Basics</span><span class="t">What is blockchain?</span><span class="go" aria-hidden="true">›</span></a></li>
+            </ol>
+            <a class="btn btn-ghost all-lessons" href="learn.html">See all lessons</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="whitepapers">
-      <div class="container">
-        <h2 class="section-title">Whitepaper Evolution</h2>
-        <p class="section-subtitle">
-          Ditoman has developed through several stages. Each whitepaper shows part of the project's evolution, from early identity and structure to the current V5 final direction.
-        </p>
-
-        <div class="grid-five">
-          <div class="card version-card">
-            <div class="version-label">V1</div>
-            <h3>Early Foundation</h3>
-            <p>
-              The first stage of the Ditoman concept, introducing the early direction and identity of the project.
-            </p>
-            <a class="small-button" href="whitepaper-v1.pdf" target="_blank" rel="noopener noreferrer">Read V1</a>
-          </div>
-
-          <div class="card version-card">
-            <div class="version-label">V2</div>
-            <h3>Structure and Refinement</h3>
-            <p>
-              The second stage of development, refining the project identity, technical foundation, and wider ecosystem direction.
-            </p>
-            <a class="small-button" href="whitepaper-v2.pdf" target="_blank" rel="noopener noreferrer">Read V2</a>
-          </div>
-
-          <div class="card version-card">
-            <div class="version-label">V3</div>
-            <h3>The Architecture of Discovery</h3>
-            <p>
-              The central identity of Ditoman becomes clearer, connecting technology, economy, energy, infrastructure, media, and human value.
-            </p>
-            <a class="small-button" href="whitepaper-v3.pdf" target="_blank" rel="noopener noreferrer">Read V3</a>
-          </div>
-
-          <div class="card version-card">
-            <div class="version-label">V4</div>
-            <h3>Operational Ecosystem</h3>
-            <p>
-              Adds roadmap, education, transparency, burn framework, Telegram preparation, rewards, and AI assisted participation direction.
-            </p>
-            <a class="small-button" href="whitepaper-v4.pdf" target="_blank" rel="noopener noreferrer">Read V4</a>
-          </div>
-
-          <div class="card version-card current-version">
-            <div class="version-label">Current V5</div>
-            <h3>Final Direction</h3>
-            <p>
-              The current, honest, final version: real practical education, real analysis, and real Iranian achievement, with full technical and risk disclosure.
-            </p>
-            <a class="small-button" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Read V5</a>
-          </div>
-        </div>
-
-        <p class="note">
-          The current public reference is Whitepaper V5. Earlier versions remain available to show how Ditoman has evolved over time.
-        </p>
-      </div>
-    </section>
-
-    <section class="section" id="roadmap">
-      <div class="container">
-        <h2 class="section-title">Roadmap</h2>
-        <p class="section-subtitle">
-          From Whitepaper V5. Phases, not dates: Ditoman deliberately avoids timeline promises that cannot be kept, and progress is reported honestly, including what did not work.
-        </p>
-
-        <div class="roadmap">
-          <div class="roadmap-item">
-            <div class="roadmap-date">Phase 1 • Complete</div>
-            <div>
-              <h3>Foundation</h3>
-              <p>
-                Contract source verified on BscScan. Ownership renounced. 10% of supply removed on-chain. Bilingual educational publishing established. Whitepaper V5 finalised as the settled direction.
-              </p>
+    <section class="block" id="tmn">
+      <div class="wrap">
+        <div class="tmn">
+          <div class="tmn-copy">
+            <h2>TMN is a tool, not the point.</h2>
+            <p>TMN is the BEP-20 token behind Ditoman, planned for recognising real learning and contribution. It is not an investment product and we do not ask anyone to buy it.</p>
+            <p>Several unrelated tokens use the ticker TMN. This is the only official contract:</p>
+            <div class="contract">
+              <code id="contractAddr">0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d</code>
+              <button class="copy-btn" type="button" id="copyBtn">Copy</button>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tmn.html">Token facts and disclosure</a>
+              <a class="btn btn-ghost" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Verify on BscScan</a>
             </div>
           </div>
 
-          <div class="roadmap-item">
-            <div class="roadmap-date">Phase 2 • Current</div>
-            <div>
-              <h3>Community Structure</h3>
-              <p>
-                Telegram community launched with real structure, published rules, seeded educational content and clear onboarding, before any invitation or promotion. All content aligned to the three pillars.
-              </p>
-            </div>
-          </div>
+          <dl class="tmn-facts">
+            <div class="fact"><dt>Network</dt><dd>BNB Smart Chain</dd></div>
+            <div class="fact"><dt>Source code</dt><dd class="ok">Verified</dd></div>
+            <div class="fact"><dt>Ownership</dt><dd class="ok">Renounced</dd></div>
+            <div class="fact"><dt>New minting</dt><dd class="ok">Impossible</dd></div>
+            <div class="fact"><dt>Burned on-chain</dt><dd>10% of supply</dd></div>
+            <div class="fact"><dt>Liquidity</dt><dd>Very low</dd></div>
+            <div class="fact"><dt>Supply</dt><dd>Concentrated with founders</dd></div>
+            <p class="tmn-note">We list the weak points too, because our <a href="lesson05.html">token-check lesson</a> teaches you to look for them.</p>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-          <div class="roadmap-item">
-            <div class="roadmap-date">Phase 3</div>
-            <div>
-              <h3>Controlled Growth</h3>
-              <p>
-                Direct participation in existing Persian-language crypto and diaspora communities. Limited, measured distribution testing. First documented supply-removal milestone, published with transaction proof.
-              </p>
-            </div>
-          </div>
+    <section class="block" id="roadmap">
+      <div class="wrap">
+        <div class="head">
+          <h2>Roadmap<span lang="fa">نقشه‌ی راه</span></h2>
+          <p>Phases, not dates. We report progress honestly, including what did not work.</p>
+        </div>
 
-          <div class="roadmap-item">
-            <div class="roadmap-date">Phase 4</div>
-            <div>
-              <h3>Learn-and-Earn Pilot</h3>
-              <p>
-                A small-scale reward mechanism tied to verifiable learning activity, fully transparent and documented. Public review of progress against this roadmap.
-              </p>
-            </div>
+        <div class="road">
+          <div class="phase done">
+            <div class="dot">✓</div>
+            <span class="state">Complete</span>
+            <h3>Foundation</h3>
+            <p>Contract verified, ownership renounced, 10% burned, bilingual lessons published, Whitepaper V5 final.</p>
+          </div>
+          <div class="phase now">
+            <div class="dot">2</div>
+            <span class="state">In progress</span>
+            <h3>Community structure</h3>
+            <p>A Telegram community with real rules, seeded lessons and clear onboarding, before any invitation.</p>
+          </div>
+          <div class="phase">
+            <div class="dot">3</div>
+            <span class="state">Next</span>
+            <h3>Controlled growth</h3>
+            <p>Joining Persian-language crypto and diaspora communities, and the first public supply removal with proof.</p>
+          </div>
+          <div class="phase">
+            <div class="dot">4</div>
+            <span class="state">Later</span>
+            <h3>Learn-and-earn pilot</h3>
+            <p>Small, transparent rewards tied to verifiable learning, with a public review of results.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container feature">
-        <div class="feature-box">
-          <h3>Learn the systems behind the future.</h3>
-          <p>
-            Ditoman Learn turns scattered information into structured education. The first phase focuses on blockchain, Bitcoin, trust, decentralization, and how digital systems change the way people interact with value and information.
-          </p>
-          <a class="button" href="learn.html">Open Learn</a>
+    <section class="block" id="questions">
+      <div class="wrap faq">
+        <div class="head">
+          <h2>Questions<span lang="fa">پرسش‌ها</span></h2>
         </div>
 
-        <div class="feature-box">
-          <h3>From education to participation.</h3>
-          <p>
-            The long term goal is to build a learning path where users can study, complete simple quizzes, join discussions, and gradually become part of a more useful community.
-          </p>
-          <a class="button" href="#community">Join Community</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="insights">
-      <div class="container">
-        <h2 class="section-title">Ditoman Insights</h2>
-        <p class="section-subtitle">
-          Short reflections on the systems shaping technology, economy, energy, infrastructure, and human life.
-        </p>
-
-        <div class="insight-list">
-          <div class="insight">
-            <span>Blockchain</span>
-            <h4>Trust is becoming programmable.</h4>
-            <p>
-              Blockchain is not only about digital assets. It changes how information, ownership, access, and verification can work without relying only on central gatekeepers.
-            </p>
-          </div>
-
-          <div class="insight">
-            <span>Energy and AI</span>
-            <h4>Digital growth depends on real infrastructure.</h4>
-            <p>
-              Artificial intelligence, blockchain, data centers, and digital economies all depend on energy, computation, and physical systems that are often invisible to users.
-            </p>
-          </div>
-
-          <div class="insight">
-            <span>Community</span>
-            <h4>Understanding is stronger when it is shared.</h4>
-            <p>
-              Ditoman is designed to grow through structured learning, meaningful discussion, and participation instead of passive attention.
-            </p>
-          </div>
+        <div>
+          <details open>
+            <summary>What is Ditoman?</summary>
+            <p>A bilingual education project built around three pillars: practical crypto and financial literacy, honest analysis of AI, energy and the future of work, and coverage of real achievements by Iranian people and businesses.</p>
+          </details>
+          <details>
+            <summary>Should I buy TMN?</summary>
+            <p>We don't ask anyone to. TMN has very little liquidity and its supply is concentrated. Read the <a href="tmn.html">TMN page</a> and judge it with the same checks you would use for any token.</p>
+          </details>
+          <details>
+            <summary>Is this financial advice?</summary>
+            <p>No. Ditoman is an education project. Nothing here is investment advice, and the lessons are built to help you decide for yourself.</p>
+          </details>
+          <details>
+            <summary>Why no politics?</summary>
+            <p>It is a permanent editorial rule. We document real knowledge and real achievement, and stay out of political commentary from any side.</p>
+          </details>
+          <details>
+            <summary>Will learners be rewarded?</summary>
+            <p>That is the plan for Phase 4: a small learn-and-earn pilot, tested openly before anything bigger. Until it exists, we won't promise rewards.</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="section" id="questions">
-      <div class="container">
-        <h2 class="section-title">Questions</h2>
-        <p class="section-subtitle">
-          Ditoman is built around understanding. These questions explain the structure behind the project.
-        </p>
-
-        <div class="grid-two">
-          <div class="card">
-            <h3>What is Ditoman?</h3>
-            <p>
-              A structured learning and community network built around three pillars: practical crypto and financial literacy, honest analysis of AI, energy, and the future of work, and coverage of real achievements by Iranian people and businesses, without political commentary.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>What is TMN?</h3>
-            <p>
-              TMN is a BEP-20 utility token on BNB Smart Chain. It is not the point of Ditoman, it is a participation tool inside the ecosystem. Full contract facts and honest risk disclosure are in the <a href="tmn.html" style="text-decoration: underline;">TMN page</a> and the current whitepaper.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Is this financial advice?</h3>
-            <p>
-              No. Ditoman is an education and community project. Nothing here is investment advice, and the Learn lessons are built to help you evaluate any token, including TMN, for yourself.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Why no politics?</h3>
-            <p>
-              Ditoman has a permanent editorial rule: we document real achievements and real knowledge, and we stay out of political commentary. This is by design, not by avoidance.
-            </p>
-          </div>
+    <section class="block" id="whitepapers">
+      <div class="wrap">
+        <div class="head">
+          <h2>Whitepapers<span lang="fa">وایت‌پیپرها</span></h2>
+          <p>One document sets the direction. Read it before you trust anything we say.</p>
         </div>
+
+        <a class="paper-main" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">
+          <span class="v">V5</span>
+          <span>
+            <span class="paper-title">Whitepaper V5: Final direction</span>
+            <span class="paper-desc">What Ditoman is, the three pillars, full token facts, supply plan, roadmap and an honest risk disclosure. This is the reference for everything on this site.</span>
+          </span>
+          <span class="btn btn-primary">Read V5 (PDF)</span>
+        </a>
+
+        <details class="archive">
+          <summary>Earlier version (V1)</summary>
+          <p class="archive-note">The first whitepaper from 2022, kept as a public record of where the project started. Some figures and plans in it are out of date. V5 replaces it.</p>
+          <div class="papers">
+            <a class="paper" href="whitepaper-v1.pdf" target="_blank" rel="noopener noreferrer"><span class="v">V1</span><span class="name">Early foundation</span><span class="open">Open PDF</span></a>
+          </div>
+        </details>
       </div>
     </section>
 
-    <section class="section" id="rewards">
-      <div class="container">
-        <h2 class="section-title">Participation and Rewards</h2>
-        <p class="section-subtitle">
-          Ditoman is building toward a system where learning and contribution are recognized over time, not a promise of short term returns.
-        </p>
-
-        <div class="grid">
-          <div class="card">
-            <h3>Learn</h3>
-            <p>
-              Work through the Learn lessons at your own pace, from blockchain basics to evaluating any token before you buy.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Contribute</h3>
-            <p>
-              Share knowledge, ask questions, and take part in discussion across Ditoman's channels.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Recognition</h3>
-            <p>
-              As the ecosystem matures, consistent learning and contribution are the basis for future recognition and access, not speculation.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="community">
-      <div class="container">
-        <h2 class="section-title">Community</h2>
-        <p class="section-subtitle">
-          Ditoman is bilingual, Farsi and English, and active where its community already is.
-        </p>
-
-        <div class="cta-row">
-          <a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Telegram</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-bottom">
-      <div class="container">
-        <h2>Start with the basics.</h2>
-        <p>Five minutes of real learning is worth more than any promise of quick returns.</p>
-
-        <div class="cta-row">
-          <a class="cta" href="learn.html">Start Learning</a>
-          <a class="button" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Read Whitepaper V5</a>
+    <section class="closing" id="community">
+      <div class="wrap">
+        <h2>Learn with us.</h2>
+        <p class="fa-line" lang="fa">با ما یاد بگیر.</p>
+        <p>New lessons are posted on Instagram first and discussed on Telegram.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+          <a class="btn btn-ghost" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
         </div>
       </div>
     </section>
@@ -813,10 +281,37 @@
   </main>
 
   <footer>
-    <div class="container">
-      Ditoman • Learn. Connect. Evolve.
+    <div class="wrap foot">
+      <span>Ditoman • Learn. Connect. Evolve. • Est. 2022</span>
+      <nav aria-label="Footer">
+        <a href="learn.html">Learn</a>
+        <a href="tmn.html">TMN</a>
+        <a href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+      </nav>
     </div>
   </footer>
+
+  <script src="network-map.js" defer></script>
+  <script>
+    (function () {
+      var btn = document.getElementById("copyBtn");
+      var addr = document.getElementById("contractAddr").textContent.trim();
+      btn.addEventListener("click", function () {
+        var done = function () {
+          btn.textContent = "Copied";
+          setTimeout(function () { btn.textContent = "Copy"; }, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(addr).then(done, function () { btn.textContent = "Copy failed"; });
+        } else {
+          var t = document.createElement("textarea");
+          t.value = addr; document.body.appendChild(t); t.select();
+          try { document.execCommand("copy"); done(); } catch (e) { btn.textContent = "Copy failed"; }
+          document.body.removeChild(t);
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>

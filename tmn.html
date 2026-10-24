@@ -3,797 +3,289 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>DiToman (TMN) Token | Contract 0x86a5...790d | Ditoman</title>
-
   <meta name="description" content="DiToman (TMN) official token page. BEP-20 on BNB Smart Chain, contract 0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d. Source verified, ownership renounced, 9 decimals, 10% burned. Honest disclosure of liquidity and supply." />
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
-      color: #f4f7f8;
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1180px;
-      margin: 0 auto;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(4, 10, 14, 0.92);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(68, 221, 204, 0.18);
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 0;
-      gap: 24px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-shrink: 0;
-    }
-
-    .brand-logo {
-      width: 42px;
-      height: 42px;
-      object-fit: contain;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 3px;
-      box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
-    }
-
-    .logo-text {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      color: #7ff5de;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: #d8ffff;
-      transition: 0.25s ease;
-      white-space: nowrap;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #7ff5de;
-    }
-
-    .hero {
-      padding: 92px 0 60px;
-      text-align: center;
-      background:
-        radial-gradient(circle at 50% 12%, rgba(127, 245, 222, 0.1), transparent 34%),
-        linear-gradient(180deg, rgba(10, 48, 52, 0.9), rgba(4, 14, 18, 0.15));
-    }
-
-    .hero-badge {
-      display: inline-block;
-      margin-bottom: 20px;
-      padding: 9px 22px;
-      border-radius: 999px;
-      background: rgba(127, 245, 222, 0.1);
-      border: 1px solid rgba(127, 245, 222, 0.24);
-      color: #7ff5de;
-      font-size: 0.92rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: clamp(2.35rem, 5vw, 4.8rem);
-      line-height: 1.08;
-      margin-bottom: 22px;
-      color: #ffffff;
-      letter-spacing: -0.04em;
-    }
-
-    .hero p {
-      max-width: 880px;
-      margin: 0 auto 30px;
-      color: #c1dcde;
-      font-size: 1.13rem;
-    }
-
-    .cta-row {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 22px;
-    }
-
-    .cta {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, #49e3c2, #2db7ff);
-      color: #041015;
-      font-weight: 800;
-      box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
-      transition: 0.25s ease;
-    }
-
-    .cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 34px rgba(73, 227, 194, 0.36);
-    }
-
-    .button {
-      display: inline-block;
-      padding: 13px 24px;
-      border-radius: 999px;
-      background: rgba(127, 245, 222, 0.12);
-      border: 1px solid rgba(127, 245, 222, 0.32);
-      color: #7ff5de;
-      font-weight: 800;
-      transition: 0.25s ease;
-    }
-
-    .button:hover {
-      background: rgba(127, 245, 222, 0.18);
-      transform: translateY(-2px);
-    }
-
-    .section {
-      padding: 52px 0;
-      scroll-margin-top: 150px;
-    }
-
-    .section-title {
-      font-size: clamp(1.8rem, 3vw, 2.65rem);
-      line-height: 1.15;
-      color: #ffffff;
-      margin-bottom: 14px;
-      letter-spacing: -0.03em;
-    }
-
-    .section-subtitle {
-      color: #a7c6c9;
-      margin-bottom: 28px;
-      max-width: 900px;
-      font-size: 1.03rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .grid-two {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .card,
-    .contract-box,
-    .market-card,
-    .roadmap-card,
-    .burn-card {
-      background: rgba(8, 18, 24, 0.86);
-      border: 1px solid rgba(78, 227, 206, 0.14);
-      border-radius: 24px;
-      padding: 28px;
-      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.18);
-    }
-
-    .card h3,
-    .contract-box h3,
-    .roadmap-card h3,
-    .burn-card h3 {
-      color: #ffffff;
-      font-size: 1.24rem;
-      margin-bottom: 12px;
-    }
-
-    .card p,
-    .contract-box p,
-    .roadmap-card p,
-    .burn-card p {
-      color: #a8c4c7;
-    }
-
-    .market-card {
-      background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
-      border: 1px solid rgba(127, 245, 222, 0.22);
-    }
-
-    .market-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 24px;
-    }
-
-    .market-box {
-      background: rgba(5, 15, 22, 0.84);
-      border: 1px solid rgba(78, 227, 206, 0.14);
-      border-radius: 20px;
-      padding: 20px;
-      min-height: 120px;
-    }
-
-    .market-box span {
-      display: block;
-      color: #7ff5de;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 9px;
-    }
-
-    .market-box strong {
-      color: #ffffff;
-      font-size: 1.12rem;
-      word-break: break-word;
-    }
-
-    .contract-line {
-      margin-top: 14px;
-      padding: 16px;
-      border-radius: 16px;
-      background: rgba(127, 245, 222, 0.08);
-      border: 1px solid rgba(127, 245, 222, 0.14);
-      color: #d8ffff;
-      word-break: break-all;
-      font-family: monospace;
-      font-size: 0.95rem;
-    }
-
-    .list {
-      padding-left: 22px;
-      color: #a8c4c7;
-    }
-
-    .list li {
-      margin-bottom: 10px;
-    }
-
-    .note {
-      color: #8fb2b7;
-      font-size: 0.94rem;
-      margin-top: 20px;
-    }
-
-    .highlight {
-      color: #7ff5de;
-      font-weight: 800;
-    }
-
-    .burn-card {
-      background:
-        radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
-        linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
-      border: 1px solid rgba(127, 245, 222, 0.22);
-    }
-
-    .burn-number {
-      display: block;
-      font-size: clamp(2.6rem, 6vw, 5rem);
-      line-height: 1;
-      color: #ffffff;
-      font-weight: 900;
-      margin-bottom: 14px;
-      letter-spacing: -0.05em;
-    }
-
-    .mini-label {
-      display: inline-block;
-      margin-bottom: 14px;
-      padding: 7px 14px;
-      border-radius: 999px;
-      background: rgba(127, 245, 222, 0.1);
-      border: 1px solid rgba(127, 245, 222, 0.2);
-      color: #7ff5de;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .roadmap-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-      margin-top: 24px;
-    }
-
-    .disclaimer {
-      background: rgba(255, 255, 255, 0.035);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 22px;
-      padding: 24px;
-      color: #9ebabe;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      border-top: 1px solid rgba(127, 245, 222, 0.12);
-      padding: 30px 0 42px;
-      color: #8fb2b7;
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 1050px) {
-      .nav {
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .nav-links {
-        justify-content: center;
-      }
-
-      .market-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .roadmap-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 900px) {
-      .grid,
-      .grid-two,
-      .roadmap-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .container {
-        width: 88%;
-      }
-
-      .nav {
-        padding: 16px 0 15px;
-        gap: 15px;
-      }
-
-      .brand {
-        justify-content: center;
-      }
-
-      .brand-logo {
-        width: 40px;
-        height: 40px;
-      }
-
-      .logo-text {
-        font-size: 1.08rem;
-      }
-
-      .nav-links {
-        gap: 14px 22px;
-        font-size: 1rem;
-        line-height: 1.2;
-      }
-
-      .hero {
-        padding: 74px 0 48px;
-      }
-
-      .hero p {
-        font-size: 1.02rem;
-      }
-
-      .section {
-        padding: 38px 0;
-        scroll-margin-top: 180px;
-      }
-
-      .market-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .card,
-      .contract-box,
-      .market-card,
-      .roadmap-card,
-      .burn-card,
-      .disclaimer {
-        padding: 24px;
-        border-radius: 22px;
-      }
-
-      .cta-row {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .cta,
-      .button {
-        width: 100%;
-        text-align: center;
-      }
-    }
-  </style>
+  <link rel="icon" href="ditoman-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700&family=Lalezar&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
 </head>
 
 <body>
 
   <header>
-    <div class="container nav">
+    <div class="wrap nav">
       <a class="brand" href="index.html">
-        <img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
-        <div class="logo-text">DITOMAN</div>
+        <img src="ditoman-logo.png" alt="" />
+        DITOMAN
       </a>
-
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
+      <nav class="nav-links" aria-label="Main">
         <a href="learn.html">Learn</a>
         <a href="tmn.html" class="active">TMN</a>
-        <a href="index.html#whitepapers">Whitepapers</a>
         <a href="index.html#roadmap">Roadmap</a>
+        <a href="index.html#whitepapers">Whitepapers</a>
         <a href="index.html#community">Community</a>
       </nav>
+      <a class="nav-cta" href="learn.html">Start learning</a>
     </div>
   </header>
 
   <main>
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero-badge">DiToman (TMN) • BNB Smart Chain</div>
-
-        <h1>TMN is the participation layer of Ditoman.</h1>
-
-        <p>
-          TMN is a BEP-20 token on BNB Smart Chain. It is not the point of Ditoman, it is a participation tool inside an education-first project. The contract source is <span class="highlight">verified on BscScan</span>, ownership is <span class="highlight">renounced</span>, and <span class="highlight">10% of supply</span> has been burned on-chain. Everything on this page can be checked independently.
-        </p>
-
-        <div class="cta-row">
-          <a class="cta" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Verify on BscScan</a>
-          <a class="button" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Read Whitepaper V5</a>
-          <a class="button" href="lesson05.html">How to Check Any Token</a>
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>DiToman <span class="spectrum">(TMN)</span></h1>
+        <p class="hero-fa" lang="fa">توکن دیتومن، شفاف و قابل بررسی</p>
+        <p class="hero-lede">TMN is a BEP-20 token on BNB Smart Chain. It is a participation tool inside an education project, not the point of it. Everything on this page can be checked independently on BscScan.</p>
+        <div class="contract">
+          <code id="contractAddr">0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d</code>
+          <button class="copy-btn" type="button" id="copyBtn">Copy</button>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Verify on BscScan</a>
+          <a class="btn btn-ghost" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Read the whitepaper</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container grid-two">
-        <div class="contract-box">
-          <h2 class="section-title">Token Facts</h2>
-
-          <ul class="list">
-            <li>Token Name: Ditoman (DiToman)</li>
-            <li>Symbol: TMN</li>
-            <li>Network: BNB Smart Chain</li>
-            <li>Standard: BEP-20</li>
-            <li>Decimals: 9</li>
-            <li>Total Supply: 18,901,056,445,783.85 TMN (after the 10% burn)</li>
-            <li>Source Code: Verified on BscScan</li>
-            <li>Ownership: Renounced (owner is the zero address)</li>
-            <li>New Minting: Permanently impossible</li>
-            <li>Buy / Sell Tax: None</li>
-            <li>Deployed: 2022</li>
-          </ul>
+    <section class="block">
+      <div class="wrap split">
+        <div class="panel">
+          <h2>Token facts<span lang="fa">مشخصات توکن</span></h2>
+          <dl>
+            <div class="fact"><dt>Name</dt><dd>Ditoman (DiToman)</dd></div>
+            <div class="fact"><dt>Symbol</dt><dd>TMN</dd></div>
+            <div class="fact"><dt>Network</dt><dd>BNB Smart Chain</dd></div>
+            <div class="fact"><dt>Standard</dt><dd>BEP-20</dd></div>
+            <div class="fact"><dt>Decimals</dt><dd>9</dd></div>
+            <div class="fact"><dt>Total supply</dt><dd>18,901,056,445,783.85</dd></div>
+            <div class="fact"><dt>Source code</dt><dd class="ok">Verified</dd></div>
+            <div class="fact"><dt>Ownership</dt><dd class="ok">Renounced</dd></div>
+            <div class="fact"><dt>New minting</dt><dd class="ok">Impossible</dd></div>
+            <div class="fact"><dt>Buy / sell tax</dt><dd class="ok">None</dd></div>
+            <div class="fact"><dt>Deployed</dt><dd>2022</dd></div>
+          </dl>
         </div>
 
-        <div class="contract-box">
-          <h2 class="section-title">Contract Address</h2>
-
-          <p class="section-subtitle">
-            This is the only official TMN contract. Several unrelated tokens also use the ticker TMN, so always check the full address, not the symbol.
-          </p>
-
-          <div class="contract-line">
-            0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d
-          </div>
-
-          <div class="cta-row">
-            <a class="button" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Open on BscScan</a>
-            <a class="button" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d#balances" target="_blank" rel="noopener noreferrer">See All Holders</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container grid-two">
-        <div class="burn-card">
-          <span class="mini-label">Supply</span>
-          <span class="burn-number">10%</span>
-          <h3>Burned on-chain in two phases</h3>
-          <p>
-            Two burn phases removed 10% of the original supply through the contract. Ownership was then renounced, which permanently closed both minting and the contract burn function. No new TMN can ever be created by anyone.
-          </p>
-          <p class="note">
-            Any future supply removal will be done by transferring tokens from founder-held wallets to a public burn address, with every transaction hash published here. These transfers remove tokens from circulation but do not change the totalSupply figure shown by the contract, and we will describe them that way.
-          </p>
-        </div>
-
-        <div class="contract-box">
-          <span class="mini-label">Honest Disclosure</span>
-          <h2 class="section-title">What you should know</h2>
-
-          <ul class="list">
-            <li>TMN has no meaningful liquidity or trading activity at present.</li>
-            <li>Supply is highly concentrated: the large majority sits in founder-controlled wallets, visible to anyone on BscScan.</li>
-            <li>The described utility is planned, not operational yet.</li>
+        <div class="panel warn">
+          <h2>What you should know<span lang="fa">آنچه باید بدانی</span></h2>
+          <ul class="checklist">
+            <li>TMN has no meaningful liquidity or trading activity right now.</li>
+            <li>Supply is highly concentrated. Most of it sits in founder-controlled wallets, visible to anyone on BscScan.</li>
+            <li>The planned utility is not built yet.</li>
             <li>The project is run by its two founders, at small scale.</li>
             <li>TMN is not listed on CoinGecko or CoinMarketCap.</li>
+            <li>Several unrelated tokens use the ticker TMN. Always check the full contract address.</li>
           </ul>
-
-          <p class="note">
-            This concentration reflects the token's history, deployed quietly in 2022 and never sold or promoted, not a distribution strategy. We state it plainly because our own lessons teach people to look for exactly this.
-          </p>
+          <p style="margin-top: 18px;">We state these plainly because our <a href="lesson05.html" style="color: var(--mint); text-decoration: underline; text-underline-offset: 3px;">token-check lesson</a> teaches people to look for exactly this.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="market-card">
-          <h2 class="section-title">Live Market Snapshot</h2>
+    <section class="block" id="history">
+      <div class="wrap">
+        <div class="head">
+          <h2>History<span lang="fa">تاریخچه‌ی توکن</span></h2>
+          <p>TMN is not a new launch. Its age and its quiet years are recorded on-chain.</p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span class="when">February 2022</span>
+            <h3>TMN is deployed</h3>
+            <p>The DiToman token is created on BNB Smart Chain, named after the Toman. You can check the creation date yourself on the <a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">BscScan contract page</a>.</p>
+          </li>
+          <li class="quiet">
+            <span class="when">2022 to 2025</span>
+            <h3>The quiet years</h3>
+            <p>No marketing, no promotion, no token sale. These years were spent working out what Ditoman should actually be, through several drafts of the whitepaper.</p>
+          </li>
+          <li>
+            <span class="when">2026</span>
+            <h3>The foundation is finished</h3>
+            <p>Contract source verified, 10% of supply burned in two phases, ownership renounced for good, bilingual lessons published, and Whitepaper V5 set as the final direction.</p>
+          </li>
+          <li class="next">
+            <span class="when">Now</span>
+            <h3>Building the community</h3>
+            <p>A structured Telegram community comes first, before any invitation or promotion.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-          <p class="section-subtitle">
-            Read automatically from public decentralized exchange data. With almost no liquidity, any price shown here does not reflect a real market value.
-          </p>
-
-          <div class="market-grid">
-            <div class="market-box">
-              <span>Price USD</span>
-              <strong id="priceUsd">Loading</strong>
-            </div>
-
-            <div class="market-box">
-              <span>Liquidity</span>
-              <strong id="liquidityUsd">Loading</strong>
-            </div>
-
-            <div class="market-box">
-              <span>24h Volume</span>
-              <strong id="volume24h">Loading</strong>
-            </div>
-
-            <div class="market-box">
-              <span>24h Change</span>
-              <strong id="change24h">Loading</strong>
-            </div>
-          </div>
-
-          <p class="note" id="marketStatus">
-            Checking public market data.
-          </p>
-
-          <div class="cta-row">
-            <a class="button" id="marketButton" href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Open Market Data</a>
-            <a class="button" id="chartLink" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Verify Contract</a>
-          </div>
+    <section class="block">
+      <div class="wrap supply">
+        <div class="supply-num">10%</div>
+        <div>
+          <h2>Burned on-chain in two phases</h2>
+          <p>Two burn phases removed 10% of the original supply through the contract. Ownership was then renounced, which permanently closed both minting and the contract burn function. Nobody can ever create new TMN.</p>
+          <p>Any future supply removal will be a transfer from founder wallets to a public burn address, with every transaction hash published on this page. These transfers take tokens out of circulation but don't change the totalSupply figure the contract shows, and we will describe them that way.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">What TMN is for</h2>
+    <section class="block">
+      <div class="wrap">
+        <div class="head">
+          <h2>Market data<span lang="fa">داده‌های بازار</span></h2>
+          <p>Read automatically from public exchange data. With almost no liquidity, any price shown here is not a real market value.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><span>Price (USD)</span><strong id="priceUsd">Loading</strong></div>
+          <div class="stat"><span>Liquidity</span><strong id="liquidityUsd">Loading</strong></div>
+          <div class="stat"><span>24h volume</span><strong id="volume24h">Loading</strong></div>
+          <div class="stat"><span>24h change</span><strong id="change24h">Loading</strong></div>
+        </div>
+        <p class="stat-note" id="marketStatus">Checking public market data.</p>
+      </div>
+    </section>
 
-        <p class="section-subtitle">
-          Utility is described as direction, not as a delivered product. Features will be announced as they are built, not before.
-        </p>
-
-        <div class="grid">
-          <div class="card">
+    <section class="block">
+      <div class="wrap">
+        <div class="head">
+          <h2>What TMN is for<span lang="fa">کاربرد TMN</span></h2>
+          <p>This is a direction, not a finished product. Features will be announced when they are built, not before.</p>
+        </div>
+        <div class="pillars">
+          <article class="pillar">
             <h3>Access</h3>
-            <p>
-              Selected educational material and community spaces.
-            </p>
-          </div>
-
-          <div class="card">
+            <span class="fa-sub" lang="fa">دسترسی</span>
+            <p>Selected learning material and community spaces.</p>
+          </article>
+          <article class="pillar">
             <h3>Recognition</h3>
-            <p>
-              Acknowledgement of genuine engagement: completed learning, meaningful contribution, quality discussion, and early supporters.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Learn-and-Earn</h3>
-            <p>
-              A small reward mechanism tied to verifiable learning, piloted at small scale and fully documented before any wider rollout.
-            </p>
-          </div>
+            <span class="fa-sub" lang="fa">قدردانی</span>
+            <p>Credit for real engagement: finished lessons, useful contributions, good discussion, and early supporters.</p>
+          </article>
+          <article class="pillar">
+            <h3>Learn-and-earn</h3>
+            <span class="fa-sub" lang="fa">یاد بگیر و پاداش بگیر</span>
+            <p>Small rewards tied to verifiable learning, tested at small scale and fully documented before anything bigger.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Roadmap from Whitepaper V5</h2>
-
-        <p class="section-subtitle">
-          Phases, not dates. Whitepaper V5 deliberately avoids timeline promises that cannot be kept.
-        </p>
-
-        <div class="roadmap-grid">
-          <div class="roadmap-card">
-            <span class="mini-label">Phase 1 • Complete</span>
+    <section class="block">
+      <div class="wrap">
+        <div class="head">
+          <h2>Roadmap<span lang="fa">نقشه‌ی راه</span></h2>
+          <p>Phases, not dates. Whitepaper V5 deliberately avoids timeline promises that can't be kept.</p>
+        </div>
+        <div class="road">
+          <div class="phase done">
+            <div class="dot">✓</div>
+            <span class="state">Complete</span>
             <h3>Foundation</h3>
-            <p>
-              Contract source verified on BscScan. Ownership renounced. 10% of supply removed on-chain. Bilingual educational publishing established. Whitepaper V5 finalised.
-            </p>
+            <p>Contract verified, ownership renounced, 10% burned, bilingual lessons published, Whitepaper V5 final.</p>
           </div>
-
-          <div class="roadmap-card">
-            <span class="mini-label">Phase 2 • Current</span>
-            <h3>Community Structure</h3>
-            <p>
-              Telegram launched with real structure, published rules, seeded educational content and clear onboarding, before any invitation or promotion.
-            </p>
+          <div class="phase now">
+            <div class="dot">2</div>
+            <span class="state">In progress</span>
+            <h3>Community structure</h3>
+            <p>A Telegram community with real rules, seeded lessons and clear onboarding, before any invitation.</p>
           </div>
-
-          <div class="roadmap-card">
-            <span class="mini-label">Phase 3</span>
-            <h3>Controlled Growth</h3>
-            <p>
-              Participation in Persian-language crypto and diaspora communities. Limited, measured distribution testing. First documented supply removal, published with transaction proof.
-            </p>
+          <div class="phase">
+            <div class="dot">3</div>
+            <span class="state">Next</span>
+            <h3>Controlled growth</h3>
+            <p>Joining Persian-language crypto and diaspora communities, and the first public supply removal with proof.</p>
           </div>
-
-          <div class="roadmap-card">
-            <span class="mini-label">Phase 4</span>
-            <h3>Learn-and-Earn Pilot</h3>
-            <p>
-              Small-scale rewards tied to verifiable learning, fully transparent. Public review of progress, including honest reporting of what did not work.
-            </p>
+          <div class="phase">
+            <div class="dot">4</div>
+            <span class="state">Later</span>
+            <h3>Learn-and-earn pilot</h3>
+            <p>Small, transparent rewards tied to verifiable learning, with a public review of results.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="disclaimer">
-          <strong>Important Notice:</strong>
-          Ditoman is an education project. Nothing on this page is financial or investment advice, or a promise of future value. Digital assets carry substantial risk. We do not encourage anyone to buy TMN. If you interact with any token, verify the contract address, network, liquidity and holder distribution yourself first.
-        </div>
+    <section class="block">
+      <div class="wrap">
+        <p class="notice"><strong>Important:</strong> Ditoman is an education project. Nothing on this page is financial or investment advice, or a promise of future value. Digital assets carry substantial risk. We do not encourage anyone to buy TMN. Before you interact with any token, check its contract address, network, liquidity and holder distribution yourself.</p>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <div class="container">
-      Ditoman TMN | Learn • Connect • Evolve
+    <div class="wrap foot">
+      <span>Ditoman • Learn. Connect. Evolve. • Est. 2022</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+      </nav>
     </div>
   </footer>
 
   <script>
-    const tokenAddress = "0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d";
-    const pancakeUrl = "https://pancakeswap.finance/swap?chain=bsc&outputCurrency=" + tokenAddress;
-
-    function formatUsd(value) {
-      const number = Number(value);
-
-      if (!Number.isFinite(number)) {
-        return "Tracking pending";
-      }
-
-      if (number === 0) {
-        return "$0";
-      }
-
-      if (number < 0.000001) {
-        return "$" + number.toExponential(3);
-      }
-
-      if (number < 1) {
-        return "$" + number.toFixed(8);
-      }
-
-      return "$" + number.toLocaleString(undefined, {
-        maximumFractionDigits: 2
-      });
-    }
-
-    function formatPercent(value) {
-      const number = Number(value);
-
-      if (!Number.isFinite(number)) {
-        return "Tracking pending";
-      }
-
-      return number.toFixed(2) + "%";
-    }
-
-    async function loadMarketData() {
-      const priceUsd = document.getElementById("priceUsd");
-      const liquidityUsd = document.getElementById("liquidityUsd");
-      const volume24h = document.getElementById("volume24h");
-      const change24h = document.getElementById("change24h");
-      const marketStatus = document.getElementById("marketStatus");
-      const marketButton = document.getElementById("marketButton");
-
-      try {
-        const response = await fetch("https://api.dexscreener.com/latest/dex/tokens/" + tokenAddress);
-        const data = await response.json();
-
-        if (!data || !data.pairs || !data.pairs.length) {
-          priceUsd.textContent = "Not tracked";
-          liquidityUsd.textContent = "Not tracked";
-          volume24h.textContent = "Not tracked";
-          change24h.textContent = "Not tracked";
-          marketStatus.textContent = "TMN is not currently tracked by public market data services. This is expected while the token has almost no liquidity. Verify the contract directly on BscScan.";
-          marketButton.href = pancakeUrl;
-          return;
+    (function () {
+      var btn = document.getElementById("copyBtn");
+      var addr = document.getElementById("contractAddr").textContent.trim();
+      btn.addEventListener("click", function () {
+        var done = function () {
+          btn.textContent = "Copied";
+          setTimeout(function () { btn.textContent = "Copy"; }, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(addr).then(done, function () { btn.textContent = "Copy failed"; });
+        } else {
+          var t = document.createElement("textarea");
+          t.value = addr; document.body.appendChild(t); t.select();
+          try { document.execCommand("copy"); done(); } catch (e) { btn.textContent = "Copy failed"; }
+          document.body.removeChild(t);
         }
+      });
+    })();
 
-        const bscPairs = data.pairs.filter(function(pair) {
-          return pair.chainId === "bsc";
-        });
+    (function () {
+      var tokenAddress = "0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d";
+      var ids = ["priceUsd", "liquidityUsd", "volume24h", "change24h"];
+      var status = document.getElementById("marketStatus");
 
-        const pairs = bscPairs.length ? bscPairs : data.pairs;
-
-        pairs.sort(function(a, b) {
-          const liquidityA = a.liquidity && a.liquidity.usd ? Number(a.liquidity.usd) : 0;
-          const liquidityB = b.liquidity && b.liquidity.usd ? Number(b.liquidity.usd) : 0;
-          return liquidityB - liquidityA;
-        });
-
-        const pair = pairs[0];
-
-        priceUsd.textContent = formatUsd(pair.priceUsd);
-        liquidityUsd.textContent = formatUsd(pair.liquidity && pair.liquidity.usd);
-        volume24h.textContent = formatUsd(pair.volume && pair.volume.h24);
-        change24h.textContent = formatPercent(pair.priceChange && pair.priceChange.h24);
-
-        marketButton.href = pair.url ? pair.url : pancakeUrl;
-
-        marketStatus.textContent = "Loaded from public decentralized exchange data. With very thin liquidity, these numbers do not represent real market value.";
-      } catch (error) {
-        priceUsd.textContent = "Unavailable";
-        liquidityUsd.textContent = "Unavailable";
-        volume24h.textContent = "Unavailable";
-        change24h.textContent = "Unavailable";
-        marketStatus.textContent = "Market data could not be loaded right now. Verify the contract directly on BscScan.";
-        marketButton.href = pancakeUrl;
+      function setAll(text) {
+        ids.forEach(function (id) { document.getElementById(id).textContent = text; });
       }
-    }
+      function usd(v) {
+        var n = Number(v);
+        if (!isFinite(n)) return "Not tracked";
+        if (n === 0) return "$0";
+        if (n < 0.000001) return "$" + n.toExponential(3);
+        if (n < 1) return "$" + n.toFixed(8);
+        return "$" + n.toLocaleString(undefined, { maximumFractionDigits: 2 });
+      }
+      function pct(v) {
+        var n = Number(v);
+        return isFinite(n) ? n.toFixed(2) + "%" : "Not tracked";
+      }
 
-    loadMarketData();
+      fetch("https://api.dexscreener.com/latest/dex/tokens/" + tokenAddress)
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          var pairs = (data && data.pairs) ? data.pairs.filter(function (p) { return p.chainId === "bsc"; }) : [];
+          if (!pairs.length) {
+            setAll("Not tracked");
+            status.textContent = "TMN isn't tracked by public market data services yet. That's expected while it has almost no liquidity. You can verify the contract directly on BscScan.";
+            return;
+          }
+          pairs.sort(function (a, b) {
+            return Number((b.liquidity && b.liquidity.usd) || 0) - Number((a.liquidity && a.liquidity.usd) || 0);
+          });
+          var p = pairs[0];
+          document.getElementById("priceUsd").textContent = usd(p.priceUsd);
+          document.getElementById("liquidityUsd").textContent = usd(p.liquidity && p.liquidity.usd);
+          document.getElementById("volume24h").textContent = usd(p.volume && p.volume.h24);
+          document.getElementById("change24h").textContent = pct(p.priceChange && p.priceChange.h24);
+          status.textContent = "Loaded from public exchange data. With very thin liquidity, these numbers don't represent real market value.";
+        })
+        .catch(function () {
+          setAll("Unavailable");
+          status.textContent = "Market data couldn't be loaded right now. You can verify the contract directly on BscScan.";
+        });
+    })();
   </script>
 
 </body>
