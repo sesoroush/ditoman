@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How Big News Moves Bitcoin: Interest Rates and Elections | Ditoman Learn</title>
+<meta name="description" content="Ditoman Learn. How interest-rate decisions and elections can affect the price of Bitcoin, why expectations matter more than headlines, and why nobody can reliably predict the result." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+<div class="logo-text">DITOMAN</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html" class="active">Learn</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="lesson07-news-moves-prices.png" alt="How big news moves Bitcoin, Ditoman lesson image" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge">Markets • How Prices Move</div>
+<h1>How Big News Moves Bitcoin</h1>
+<p class="subtitle">
+Interest rates, elections, and expectations: why an announcement in Washington can shake a market that never sleeps, and why nobody can reliably say which way.
+</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span>Level</span>
+<strong>Beginner</strong>
+</div>
+<div class="meta-box">
+<span>Reading Time</span>
+<strong>7 Minutes</strong>
+</div>
+<div class="meta-box">
+<span>Learning Points</span>
+<strong>18 LP</strong>
+</div>
+<div class="meta-box">
+<span>Future Quiz</span>
+<strong>5 Questions</strong>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Lesson Content</h2>
+<p class="section-subtitle">
+Read the lesson in English or Persian. This structure is designed for future quiz, score, reputation, and reward systems.
+</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">English</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>Every so often the whole market seems to hold its breath before a scheduled announcement. The two biggest examples are interest-rate decisions and elections.</p>
+<p>For example, the US Federal Reserve announces its rate decision on Wednesday 28 October 2026, and the US midterm elections take place on 3 November 2026. This lesson is not about those dates. It explains the mechanisms behind them, so you can read any similar week with a clear head.</p>
+<p>It also explains something just as important: why none of this tells you what will happen next.</p>
+
+<h3><span class="check-number">01.</span> An interest rate is the price of money</h3>
+<p>A central bank sets the basic cost of borrowing in its currency. When that cost is high, loans are expensive and saving is rewarding. When it is low, loans are cheap and saving pays little.</p>
+<p>That one number quietly shapes what everyone does with their money: whether a business borrows to grow, whether a person buys a home, whether an investor prefers safety or risk.</p>
+
+<h3><span class="check-number">02.</span> Three roads from interest rates to Bitcoin</h3>
+<p><strong>The alternatives road.</strong> When safe assets such as government bonds or savings pay more, risky assets look less attractive by comparison. Money can move toward safety. When safe assets pay less, money looks for return elsewhere.</p>
+<p><strong>The borrowing road.</strong> Many traders use borrowed money to buy risky assets. Higher rates make that borrowing more expensive and reduce the money flowing into markets. Lower rates do the opposite.</p>
+<p><strong>The currency road.</strong> Rate changes can strengthen or weaken the US dollar, and most crypto is priced in dollars. A stronger dollar can weigh on prices measured in dollars. This effect is real but unreliable.</p>
+<p>Notice the words "can" and "may". These are pressures, not rules.</p>
+
+<h3><span class="check-number">03.</span> Expectations matter more than the decision</h3>
+<p>Markets do not wait for the announcement. They guess it in advance, and prices move on the guess. By the time the decision arrives, the expected outcome is already "priced in".</p>
+<p>What moves a market is the surprise: the gap between what was expected and what actually happened. A rate cut that everyone expected can change very little. A hold that nobody expected can move a lot.</p>
+<p>The words matter too. The statement and the press conference that follow can shift expectations about the next meeting, and that is often what traders react to most.</p>
+
+<h3><span class="check-number">04.</span> Why elections matter</h3>
+<p>Elections decide who writes and approves the rules. In the United States, Congress passes the laws on taxes, spending, and how financial products, including crypto, are regulated.</p>
+<p>The midterm elections happen halfway through a president's term. All 435 seats in the House of Representatives and about a third of the Senate are contested, so the result can change what is politically possible for the following two years.</p>
+<p>There are two effects. One is the actual policy change, which usually takes months or years. The other is uncertainty before the vote, which markets often dislike, and which can fade quickly once the result is known.</p>
+
+<h3><span class="check-number">05.</span> Why crypto reacts first and hardest</h3>
+<p>Stock markets close at night and on weekends. Bitcoin trades every hour of every day, across every country. When news arrives outside market hours, crypto is often the first place the reaction appears.</p>
+<p>Leverage makes it sharper. When a price falls, traders using borrowed money can be forced to sell automatically, and those forced sales push the price down further. Fast moves are often partly mechanical, not only a verdict on the news.</p>
+
+<h3><span class="check-number">06.</span> What history can and cannot tell you</h3>
+<p>You will see claims such as "Bitcoin always falls before a midterm and rises after". Look at how little is behind them.</p>
+<p>Bitcoin has traded with meaningful volume through only three US midterm elections: 2014, 2018, and 2022. Three observations are not a pattern. Other things were also happening in those years, including interest-rate changes and Bitcoin's own supply cycle, so it is impossible to say what caused what.</p>
+<p>The link between Bitcoin and interest rates also changes over time. Sometimes it is strong. Sometimes it disappears. Anyone who gives you a confident prediction is selling certainty that does not exist.</p>
+
+<h3>What to do with all this</h3>
+<p>Know the date, so a big announcement does not catch you by surprise. Ask what is already expected, because that is what the price already contains. Be most careful with borrowed money around big events. And size any position by what you can afford to lose, as in the last lesson.</p>
+<p>Most of all, do not trade the headline. Understand the system the headline sits in.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>گاهی کل بازار پیش از یک اعلام برنامه‌ریزی‌شده نفسش را حبس می‌کند. دو نمونه‌ی بزرگ آن تصمیم نرخ بهره و انتخابات است.</p>
+<p>برای نمونه، فدرال رزرو آمریکا تصمیم نرخ بهره را چهارشنبه ۲۸ اکتبر ۲۰۲۶ اعلام می‌کند و انتخابات میان‌دوره‌ای آمریکا ۳ نوامبر ۲۰۲۶ برگزار می‌شود. این درس درباره‌ی همین تاریخ‌ها نیست. سازوکار پشت آن‌ها را توضیح می‌دهد تا هر هفته‌ی مشابهی را با ذهن روشن بخوانید.</p>
+<p>و چیزی به همان اندازه مهم را هم می‌گوید: چرا هیچ‌کدام از این‌ها به شما نمی‌گوید بعد چه می‌شود.</p>
+
+<h3><span class="check-number">۰۱.</span> نرخ بهره قیمت پول است</h3>
+<p>بانک مرکزی هزینه‌ی پایه‌ی قرض گرفتن را برای پول خودش تعیین می‌کند. وقتی این هزینه بالاست، وام گران و پس‌انداز سودآور است. وقتی پایین است، وام ارزان و سود پس‌انداز کم است.</p>
+<p>همین یک عدد بی‌صدا شکل می‌دهد که همه با پولشان چه می‌کنند: آیا کسب‌وکاری برای رشد قرض می‌گیرد، آیا کسی خانه می‌خرد، آیا سرمایه‌گذار امنیت را ترجیح می‌دهد یا ریسک را.</p>
+
+<h3><span class="check-number">۰۲.</span> سه راه از نرخ بهره تا بیت‌کوین</h3>
+<p><strong>راه جایگزین‌ها.</strong> وقتی دارایی‌های امن مثل اوراق قرضه‌ی دولتی یا سپرده سود بیشتری می‌دهند، دارایی‌های پرریسک در مقایسه کم‌جذاب‌تر می‌شوند و پول می‌تواند به سمت امنیت برود. وقتی سود دارایی امن کم می‌شود، پول در جای دیگری دنبال بازده می‌گردد.</p>
+<p><strong>راه قرض گرفتن.</strong> بسیاری از معامله‌گران با پول قرضی دارایی پرریسک می‌خرند. نرخ بهره‌ی بالاتر این قرض را گران‌تر می‌کند و پول ورودی به بازار را کم می‌کند. نرخ پایین‌تر عکس آن را می‌کند.</p>
+<p><strong>راه ارز.</strong> تغییر نرخ بهره می‌تواند دلار آمریکا را قوی‌تر یا ضعیف‌تر کند و بیشتر ارزهای دیجیتال با دلار قیمت‌گذاری می‌شوند. دلار قوی می‌تواند روی قیمت‌های دلاری فشار بیاورد. این اثر واقعی است، اما قابل اتکا نیست.</p>
+<p>به واژه‌های «می‌تواند» و «ممکن است» توجه کنید. این‌ها فشار هستند، نه قانون.</p>
+
+<h3><span class="check-number">۰۳.</span> انتظارات از خود تصمیم مهم‌ترند</h3>
+<p>بازارها منتظر اعلام نمی‌مانند. از پیش حدس می‌زنند و قیمت‌ها بر پایه‌ی همان حدس حرکت می‌کنند. تا تصمیم برسد، نتیجه‌ی مورد انتظار قبلاً در قیمت «لحاظ شده» است.</p>
+<p>آنچه بازار را تکان می‌دهد غافلگیری است: فاصله‌ی بین آنچه انتظار می‌رفت و آنچه واقعاً رخ داد. کاهش نرخی که همه انتظارش را داشتند شاید تقریباً هیچ تغییری نسازد. تثبیتی که کسی انتظارش را نداشت می‌تواند خیلی تکان بدهد.</p>
+<p>کلمات هم اهمیت دارند. بیانیه و نشست خبری بعد از آن می‌تواند انتظارات درباره‌ی جلسه‌ی بعدی را عوض کند، و معامله‌گران اغلب بیشتر به همین واکنش نشان می‌دهند.</p>
+
+<h3><span class="check-number">۰۴.</span> چرا انتخابات مهم است</h3>
+<p>انتخابات تعیین می‌کند چه کسی قوانین را می‌نویسد و تصویب می‌کند. در آمریکا، کنگره قوانین مالیات، هزینه‌ها و نحوه‌ی نظارت بر محصولات مالی، از جمله ارز دیجیتال، را تصویب می‌کند.</p>
+<p>انتخابات میان‌دوره‌ای در نیمه‌ی دوره‌ی ریاست‌جمهوری برگزار می‌شود. هر ۴۳۵ کرسی مجلس نمایندگان و حدود یک‌سوم مجلس سنا در رقابت است، پس نتیجه می‌تواند آنچه را در دو سال بعد از نظر سیاسی ممکن است تغییر دهد.</p>
+<p>دو اثر وجود دارد. یکی تغییر واقعی سیاست‌هاست که معمولاً ماه‌ها یا سال‌ها طول می‌کشد. دیگری عدم قطعیت پیش از رأی‌گیری است که بازارها معمولاً دوستش ندارند و پس از مشخص شدن نتیجه ممکن است زود کم شود.</p>
+
+<h3><span class="check-number">۰۵.</span> چرا ارز دیجیتال زودتر و تندتر واکنش نشان می‌دهد</h3>
+<p>بازار سهام شب‌ها و آخر هفته‌ها تعطیل است. بیت‌کوین هر ساعت از شبانه‌روز و در همه‌ی کشورها معامله می‌شود. وقتی خبری خارج از ساعت بازار می‌رسد، ارز دیجیتال اغلب اولین جایی است که واکنش در آن دیده می‌شود.</p>
+<p>اهرم این واکنش را تندتر می‌کند. وقتی قیمت می‌افتد، معامله‌گرانی که با پول قرضی کار می‌کنند ممکن است مجبور به فروش خودکار شوند، و همین فروش‌های اجباری قیمت را باز هم پایین می‌برد. حرکت‌های سریع اغلب تا حدی مکانیکی هستند، نه فقط قضاوت درباره‌ی خبر.</p>
+
+<h3><span class="check-number">۰۶.</span> تاریخ چه می‌تواند بگوید و چه نمی‌تواند</h3>
+<p>ادعاهایی می‌بینید مثل «بیت‌کوین همیشه پیش از انتخابات میان‌دوره‌ای می‌افتد و بعدش بالا می‌رود». ببینید چقدر کم پشتشان است.</p>
+<p>بیت‌کوین فقط در سه انتخابات میان‌دوره‌ای آمریکا با حجم معنی‌دار معامله شده است: ۲۰۱۴، ۲۰۱۸ و ۲۰۲۲. سه مشاهده الگو نیست. در همان سال‌ها چیزهای دیگری هم در جریان بود، از جمله تغییر نرخ بهره و چرخه‌ی عرضه‌ی خود بیت‌کوین، پس نمی‌شود گفت چه چیزی علت چه چیزی بود.</p>
+<p>رابطه‌ی بیت‌کوین با نرخ بهره هم در طول زمان تغییر می‌کند. گاهی قوی است و گاهی از بین می‌رود. هر کس پیش‌بینی قاطع به شما بدهد، یقینی می‌فروشد که وجود ندارد.</p>
+
+<h3>با همه‌ی این‌ها چه کنیم</h3>
+<p>تاریخ را بدانید تا اعلام‌های بزرگ غافلگیرتان نکنند. بپرسید چه چیزی از قبل انتظار می‌رود، چون قیمت همان را در خود دارد. در اطراف رویدادهای بزرگ بیشترین احتیاط را با پول قرضی داشته باشید. و اندازه‌ی هر موقعیت را مثل درس قبل با آنچه توان از دست دادنش را دارید تعیین کنید.</p>
+<p>مهم‌تر از همه، با تیتر معامله نکنید. سیستمی را که تیتر در آن قرار دارد بفهمید.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title">What This Means for TMN</h2>
+<p>
+TMN has no meaningful liquidity or market activity at present, so none of the forces in this lesson move its price in any real sense. This lesson is about understanding the market around you, not about TMN.
+</p>
+<p>
+Ditoman takes no position on elections, governments, or policy from any side. We explain how systems work, and leave the opinions to you.
+</p>
+<p class="fa" style="display:block;">
+TMN در حال حاضر نقدشوندگی یا فعالیت بازار معنی‌داری ندارد، پس هیچ‌کدام از نیروهای این درس عملاً روی قیمت آن اثر نمی‌گذارد. این درس درباره‌ی فهمیدن بازارِ اطراف شماست، نه درباره‌ی TMN. دیتومان درباره‌ی انتخابات، دولت‌ها یا سیاست‌گذاری از هیچ طرفی موضع نمی‌گیرد.
+</p>
+<div class="cta-row">
+<a class="cta" href="lesson06.html">Lesson 06: Five Questions</a>
+<a class="button" href="tmn.html">TMN Token Page</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3>Key Concepts</h3>
+<ul>
+<li>Interest rate as the price of money</li>
+<li>Safe assets versus risky assets</li>
+<li>Leverage and forced selling</li>
+<li>Expectations and "priced in"</li>
+<li>Surprise versus announcement</li>
+<li>Elections, Congress, and regulation</li>
+<li>Correlation versus causation</li>
+</ul>
+</div>
+<div class="card">
+<h3>Learning Objectives</h3>
+<ul>
+<li>Explain in plain language what an interest rate is.</li>
+<li>Describe three ways rate changes can reach Bitcoin.</li>
+<li>Explain why a surprise matters more than the decision itself.</li>
+<li>Explain why elections can matter to crypto markets.</li>
+<li>Recognise why three historical cases do not make a pattern.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Future Quiz Bank</h2>
+<p class="section-subtitle">
+These questions are prepared for the future Ditoman quiz and participation system. They may later support learning scores, reputation layers, and possible TMN reward eligibility.
+</p>
+
+<div class="quiz-list">
+<div class="quiz-item">
+<h3>Question 1</h3>
+<p>What is an interest rate, in the simplest terms?</p>
+<p>A. A tax on crypto</p>
+<p>B. The price of borrowing money</p>
+<p>C. The price of Bitcoin</p>
+<p>D. A fee paid to exchanges</p>
+<p class="answer">Correct answer: B</p>
+</div>
+
+<div class="quiz-item">
+<h3>Question 2</h3>
+<p>Why can higher interest rates put pressure on risky assets such as Bitcoin?</p>
+<p class="answer">Correct answer: Safe assets pay more, so risky ones look less attractive, and borrowing to buy them becomes more expensive.</p>
+</div>
+
+<div class="quiz-item">
+<h3>Question 3</h3>
+<p>What does it mean when an outcome is "priced in"?</p>
+<p>A. The decision has been cancelled</p>
+<p>B. The market already moved in advance on the expected result</p>
+<p>C. The price cannot change anymore</p>
+<p>D. Exchanges have set a fixed price</p>
+<p class="answer">Correct answer: B</p>
+</div>
+
+<div class="quiz-item">
+<h3>Question 4</h3>
+<p>True or False: Because Bitcoin fell before three past midterm elections, it will fall before the next one.</p>
+<p class="answer">Correct answer: False. Three observations are not a pattern, and many other factors were at work.</p>
+</div>
+
+<div class="quiz-item">
+<h3>Question 5</h3>
+<p>Why can crypto prices move fast around big news, even on weekends?</p>
+<p>A. Because it trades around the clock, and leverage can force selling</p>
+<p>B. Because it is controlled by central banks</p>
+<p>C. Because news only affects crypto</p>
+<p>D. Because exchanges close on weekdays</p>
+<p class="answer">Correct answer: A</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">Instagram Summary</h2>
+<p>
+This lesson was first introduced on Ditoman Instagram. The Instagram version gives a short visual summary, while this page provides the full learning version.
+</p>
+<p class="fa" style="display:block;">
+خلاصه تصویری این درس ابتدا در اینستاگرام Ditoman منتشر شد. نسخه اینستاگرام یک معرفی کوتاه و تصویری است، اما این صفحه نسخه کامل آموزشی آن است.
+</p>
+<p style="font-size:0.9rem;">Educational content only. Nothing here is financial advice.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">View on Instagram</a>
+<a class="button" href="learn.html">Back to Learn</a>
+<a class="button" href="lesson06.html">Previous Lesson</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+Ditoman Learn • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+</body>
+</html>
