@@ -229,7 +229,45 @@ def caption(data, L):
     ]
     return "\n".join(lines)
 
+def write_thumb(png):
+    """Small JPEG for the website gallery."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return
+    th = png.parent / "thumbs" / (png.stem + ".jpg")
+    th.parent.mkdir(exist_ok=True)
+    im = Image.open(png).convert("RGB")
+    im.thumbnail((360, 640))
+    im.save(th, "JPEG", quality=82, optimize=True)
+
+def write_index():
+    """market/reports/index.json: one entry per published report, newest first."""
+    rep = ROOT / "market" / "reports"
+    items = []
+    for png in sorted(rep.glob("*.png"), reverse=True):
+        d = png.stem
+        e = {"date": d, "png": f"market/reports/{d}.png"}
+        if (rep / "thumbs" / f"{d}.jpg").exists():
+            e["thumb"] = f"market/reports/thumbs/{d}.jpg"
+        y, m, dd = map(int, d.split("-")); jy, jm, jd = g2j(y, m, dd)
+        e["jalali"] = f"{jy}/{jm:02d}/{jd:02d}"
+        h = ROOT / "market" / "history" / f"{d}.json"
+        if h.exists():
+            H = json.loads(h.read_text(encoding="utf-8"))
+            I, G = H.get("iran", {}), H.get("global", {})
+            e["usd"] = (I.get("usd") or {}).get("value_toman")
+            e["gold18"] = (I.get("gold18_gram") or {}).get("value_toman")
+            e["coin"] = (I.get("coin_emami") or {}).get("value_toman")
+            e["btc"] = (G.get("btc") or {}).get("value")
+        items.append(e)
+    (rep / "index.json").write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
+
 if __name__ == "__main__":
+    if "--index-only" in sys.argv:
+        for png in (ROOT / "market" / "reports").glob("*.png"):
+            write_thumb(png)
+        write_index(); sys.exit(0)
     L = json.loads((ROOT / "market" / "latest.json").read_text(encoding="utf-8"))
     data = from_latest(ROOT / "market" / "latest.json")
     t = tehran_now(L["fetched_utc"])
@@ -245,4 +283,6 @@ if __name__ == "__main__":
     hist = ROOT / "market" / "history" / f"{day.isoformat()}.json"
     hist.parent.mkdir(parents=True, exist_ok=True)
     hist.write_text(json.dumps(L, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_thumb(out)
+    write_index()
     print(out)

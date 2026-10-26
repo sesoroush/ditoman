@@ -31,11 +31,14 @@ jobs:
 
       - name: Install renderer
         run: |
-          pip install playwright==1.48.0
+          pip install playwright==1.48.0 pillow
           python -m playwright install --with-deps chromium
 
       - name: Fetch prices
         run: python scripts/fetch_prices.py > /dev/null
+
+      - name: Update price history
+        run: python scripts/history.py > /dev/null || echo "history update failed"
 
       - name: Build report image
         id: build
@@ -46,7 +49,7 @@ jobs:
         run: |
           git config user.name "ditoman-bot"
           git config user.email "ditoman-bot@users.noreply.github.com"
-          git add market/latest.json market/reports market/history market/caption.txt || true
+          git add market/latest.json market/reports market/history market/series market/caption.txt || true
           git commit -m "Daily market report $(date -u +%Y-%m-%d)" || echo "nothing to commit"
           git pull --rebase origin main
           git push origin HEAD:main
