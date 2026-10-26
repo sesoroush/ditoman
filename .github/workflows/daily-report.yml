@@ -1,0 +1,66 @@
+name: Daily market report
+
+# Every day at 20:00 Tehran (16:30 UTC; Iran has no daylight saving):
+# fetch prices -> render the report image -> post it to Telegram -> save image + data in the repo.
+# Can also be started by editing market/trigger-report.txt.
+on:
+  schedule:
+    - cron: "30 16 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "market/trigger-report.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install renderer
+        run: |
+          pip install playwright==1.48.0
+          python -m playwright install --with-deps chromium
+
+      - name: Fetch prices
+        run: python scripts/fetch_prices.py > /dev/null
+
+      - name: Build report image
+        id: build
+        run: echo "png=$(python scripts/report/build.py)" >> "$GITHUB_OUTPUT"
+
+      - name: Save report to the repo
+        if: always()
+        run: |
+          git config user.name "ditoman-bot"
+          git config user.email "ditoman-bot@users.noreply.github.com"
+          git add market/latest.json market/reports market/history market/caption.txt || true
+          git commit -m "Daily market report $(date -u +%Y-%m-%d)" || echo "nothing to commit"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Post to Telegram
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID || '@Ditoman_tm' }}
+        run: |
+          TOKEN="$(printf '%s' "$TOKEN" | grep -oE '[0-9]{6,}:[A-Za-z0-9_-]{30,}' | head -n 1)"
+          [ -n "$TOKEN" ] || { echo "TELEGRAM_BOT_TOKEN missing" >&2; exit 1; }
+          curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendPhoto" \
+            -F chat_id="$CHAT_ID" \
+            -F photo=@"${{ steps.build.outputs.png }}" \
+            -F caption="$(cat market/caption.txt)" > resp.json
+          jq '{ok, description, message_id: .result.message_id}' resp.json
+          jq -e '.ok' resp.json > /dev/null
