@@ -1,12 +1,12 @@
 {
-  "fetched_utc": "2026-10-26T21:25:41+00:00",
+  "fetched_utc": "2026-10-26T22:06:49+00:00",
   "global": {
     "btc": {
-      "value": 79897.24,
+      "value": 79820.01,
       "prev": 80024.0078125,
-      "chg": -0.15841222648710332,
+      "chg": -0.25492076450105033,
       "source": "Yahoo Finance BTC-USD",
-      "market_time_utc": "2026-10-26T21:25+00:00"
+      "market_time_utc": "2026-10-26T22:06+00:00"
     },
     "gold": {
       "value": 4031.0,
@@ -51,53 +51,53 @@
       "market_time_utc": "2026-10-26T18:19+00:00"
     },
     "btc_coingecko": {
-      "value": 79910,
-      "chg": -0.5739881605758984,
+      "value": 79991,
+      "chg": -0.7242097470571702,
       "source": "CoinGecko (24h change)"
     }
   },
   "forex": {
     "EUR/USD": {
-      "value": 1.1178,
+      "value": 1.1177,
       "prev": 1.1221455335617065,
-      "chg": -0.38725222635907575,
+      "chg": -0.39616372642828585,
       "source": "Yahoo Finance EURUSD=X",
-      "market_time_utc": "2026-10-26T21:24+00:00"
+      "market_time_utc": "2026-10-26T22:06+00:00"
     },
     "GBP/USD": {
-      "value": 1.3343,
+      "value": 1.334,
       "prev": 1.3403927087783813,
-      "chg": -0.45454654732747174,
+      "chg": -0.47692804776650227,
       "source": "Yahoo Finance GBPUSD=X",
-      "market_time_utc": "2026-10-26T21:24+00:00"
+      "market_time_utc": "2026-10-26T22:06+00:00"
     },
     "USD/JPY": {
-      "value": 157.501,
+      "value": 157.557,
       "prev": 156.49400329589844,
-      "chg": 0.6434730295687693,
+      "chg": 0.6792571483340734,
       "source": "Yahoo Finance JPY=X",
-      "market_time_utc": "2026-10-26T21:25+00:00"
+      "market_time_utc": "2026-10-26T22:06+00:00"
     },
     "USD/CHF": {
-      "value": 0.8266,
+      "value": 0.8275,
       "prev": 0.8198099732398987,
-      "chg": 0.8282439811346834,
+      "chg": 0.9380255194640114,
       "source": "Yahoo Finance CHF=X",
-      "market_time_utc": "2026-10-26T21:25+00:00"
+      "market_time_utc": "2026-10-26T22:06+00:00"
     },
     "USD/CNY": {
       "value": 6.6593,
       "prev": 6.6778998374938965,
       "chg": -0.2785282490980981,
       "source": "Yahoo Finance CNY=X",
-      "market_time_utc": "2026-10-26T18:52+00:00"
+      "market_time_utc": "2026-10-26T21:32+00:00"
     },
     "USD/TRY": {
-      "value": 49.7607,
+      "value": 49.7558,
       "prev": 49.7307014465332,
-      "chg": 0.060321999477624594,
+      "chg": 0.05046893113659715,
       "source": "Yahoo Finance TRY=X",
-      "market_time_utc": "2026-10-26T21:25+00:00"
+      "market_time_utc": "2026-10-26T22:06+00:00"
     }
   },
   "iran": {
@@ -150,6 +150,16 @@
       "source": "TGJU price_eur",
       "hist_raw": [
         [
+          "3,047,000",
+          "3,032,700",
+          "3,062,200",
+          "3,037,700",
+          "<span class=\"high\" dir=\"ltr\">14600</span>",
+          "<span class=\"high\" dir=\"ltr\">0.48%</span>",
+          "2026/10/26",
+          "1405/08/04"
+        ],
+        [
           "2,997,500",
           "2,997,100",
           "3,040,100",
@@ -168,16 +178,6 @@
           "<span class=\"low\" dir=\"ltr\">1.57%</span>",
           "2026/10/24",
           "1405/08/02"
-        ],
-        [
-          "3,046,800",
-          "3,045,800",
-          "3,072,600",
-          "3,053,600",
-          "<span class=\"high\" dir=\"ltr\">19100</span>",
-          "<span class=\"high\" dir=\"ltr\">0.63%</span>",
-          "2026/10/22",
-          "1405/07/30"
         ]
       ],
       "prev_rial": 3023100.0,
@@ -307,5 +307,18 @@
       "chg_hist": 0.8555725536857612
     }
   },
-  "errors": {}
+  "errors": {},
+  "tmn": {
+    "contract": "0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d",
+    "pair": "0x6f1836b15de0c6294c16aaec67903515f532fa1c",
+    "reserve_tmn": 1027159589.7423488,
+    "reserve_bnb": 2.633248912462172,
+    "bnb_usd": 740.87,
+    "price_bnb": 2.5636219909339426e-09,
+    "price_usd": 1.8993106244232301e-06,
+    "liquidity_usd": 3901.790243551699,
+    "source": "PancakeSwap V2 pool reserves (on-chain)",
+    "dexscreener": 0,
+    "geckoterminal": 1
+  }
 }
