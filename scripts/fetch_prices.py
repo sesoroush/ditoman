@@ -136,6 +136,12 @@ for name, url in [("dexscreener", f"https://api.dexscreener.com/latest/dex/token
     try:
         j = json.loads(get(url))
         tmn[name] = len(j.get("pairs") or []) if name == "dexscreener" else len(j.get("data") or [])
+        if name == "geckoterminal" and j.get("data"):
+            at = j["data"][0].get("attributes", {})
+            tmn["gt_pool"] = at.get("address")
+            tmn["volume_24h_usd"] = float((at.get("volume_usd") or {}).get("h24") or 0)
+            pc = (at.get("price_change_percentage") or {}).get("h24")
+            tmn["change_24h_pct"] = float(pc) if pc not in (None, "") else None
     except Exception as e:
         tmn[name] = f"error {repr(e)[:120]}"
 result["tmn"] = tmn

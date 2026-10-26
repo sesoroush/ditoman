@@ -204,7 +204,7 @@
       <div class="wrap">
         <div class="head">
           <h2>Market data<span lang="fa">داده‌های بازار</span></h2>
-          <p>Read automatically from public exchange data. With almost no liquidity, any price shown here is not a real market value.</p>
+          <p>Read automatically from public exchange data, or straight from the PancakeSwap pool when no tracker lists TMN. With very thin liquidity, any price shown here is not a real market value.</p>
         </div>
         <div class="stats">
           <div class="stat"><span>Price (USD)</span><strong id="priceUsd">Loading</strong></div>
@@ -340,15 +340,27 @@
         return isFinite(n) ? n.toFixed(2) + "%" : "Not tracked";
       }
 
+      function fromOwnData() {
+        // Fallback: Ditoman's own nightly read of the PancakeSwap pool, straight from the blockchain.
+        return fetch("market/latest.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (L) {
+          var t = L && L.tmn;
+          if (!t || !t.price_usd) throw new Error("no pool data");
+          document.getElementById("priceUsd").textContent = usd(t.price_usd);
+          document.getElementById("liquidityUsd").textContent = usd(t.liquidity_usd);
+          document.getElementById("volume24h").textContent = t.volume_24h_usd != null ? usd(t.volume_24h_usd) : "Not tracked";
+          document.getElementById("change24h").textContent = t.change_24h_pct != null ? pct(t.change_24h_pct) : "Not tracked";
+          var when = (L.fetched_utc || "").slice(0, 16).replace("T", " ");
+          status.innerHTML = "Read directly from the PancakeSwap V2 pool on BNB Smart Chain (" +
+            '<a href="https://bscscan.com/address/' + t.pair + '" target="_blank" rel="noopener noreferrer" style="color:var(--mint)">pool contract</a>' +
+            "), updated " + when + " UTC. Liquidity is very thin, so this price is not a real market value: even a small trade would move it a lot.";
+        });
+      }
+
       fetch("https://api.dexscreener.com/latest/dex/tokens/" + tokenAddress)
         .then(function (r) { return r.json(); })
         .then(function (data) {
           var pairs = (data && data.pairs) ? data.pairs.filter(function (p) { return p.chainId === "bsc"; }) : [];
-          if (!pairs.length) {
-            setAll("Not tracked");
-            status.textContent = "TMN isn't tracked by public market data services yet. That's expected while it has almost no liquidity. You can verify the contract directly on BscScan.";
-            return;
-          }
+          if (!pairs.length) throw new Error("not on dexscreener");
           pairs.sort(function (a, b) {
             return Number((b.liquidity && b.liquidity.usd) || 0) - Number((a.liquidity && a.liquidity.usd) || 0);
           });
@@ -357,11 +369,13 @@
           document.getElementById("liquidityUsd").textContent = usd(p.liquidity && p.liquidity.usd);
           document.getElementById("volume24h").textContent = usd(p.volume && p.volume.h24);
           document.getElementById("change24h").textContent = pct(p.priceChange && p.priceChange.h24);
-          status.textContent = "Loaded from public exchange data. With very thin liquidity, these numbers don't represent real market value.";
+          status.textContent = "Loaded from public exchange data (DexScreener). With very thin liquidity, these numbers don't represent real market value.";
         })
         .catch(function () {
-          setAll("Unavailable");
-          status.textContent = "Market data couldn't be loaded right now. You can verify the contract directly on BscScan.";
+          return fromOwnData().catch(function () {
+            setAll("Unavailable");
+            status.textContent = "Market data couldn't be loaded right now. You can verify the contract directly on BscScan.";
+          });
         });
     })();
   </script>
