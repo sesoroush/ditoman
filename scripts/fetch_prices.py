@@ -93,6 +93,53 @@ for k, code in TGJU.items():
     except Exception as e:
         result["errors"][f"tgju_hist_{k}"] = repr(e)[:300]
 
+# ---------- TMN: read the PancakeSwap V2 pool straight from BNB Smart Chain ----------
+TMN = "0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d"
+WBNB = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+FACTORY = "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73"  # PancakeSwap V2
+RPCS = ["https://bsc-dataseed.bnbchain.org", "https://bsc-rpc.publicnode.com", "https://bsc-dataseed1.defibit.io"]
+def eth_call(to, data):
+    body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "eth_call", "params": [{"to": to, "data": data}, "latest"]}).encode()
+    last = None
+    for rpc in RPCS:
+        try:
+            req = urllib.request.Request(rpc, data=body, headers={"Content-Type": "application/json", "User-Agent": UA["User-Agent"]})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                j = json.loads(r.read())
+            if "result" in j: return j["result"]
+            last = j
+        except Exception as e:
+            last = e
+    raise RuntimeError(f"rpc failed: {last!r}")
+pad = lambda a: a.lower().replace("0x", "").rjust(64, "0")
+tmn = {"contract": TMN}
+try:
+    pair = "0x" + eth_call(FACTORY, "0xe6a43905" + pad(TMN) + pad(WBNB))[-40:]
+    tmn["pair"] = pair
+    if int(pair, 16) == 0:
+        tmn["note"] = "no PancakeSwap V2 TMN/WBNB pair"
+    else:
+        token0 = "0x" + eth_call(pair, "0x0dfe1681")[-40:]
+        res = eth_call(pair, "0x0902f1ac")[2:]
+        r0, r1 = int(res[0:64], 16), int(res[64:128], 16)
+        tmn_raw, bnb_raw = (r0, r1) if token0.lower() == TMN.lower() else (r1, r0)
+        tmn_amt, bnb_amt = tmn_raw / 1e9, bnb_raw / 1e18          # TMN has 9 decimals, WBNB 18
+        bnb_usd = yahoo("BNB-USD")["value"]
+        tmn.update({"reserve_tmn": tmn_amt, "reserve_bnb": bnb_amt, "bnb_usd": bnb_usd,
+                    "price_bnb": bnb_amt / tmn_amt if tmn_amt else None,
+                    "price_usd": (bnb_amt / tmn_amt) * bnb_usd if tmn_amt else None,
+                    "liquidity_usd": 2 * bnb_amt * bnb_usd, "source": "PancakeSwap V2 pool reserves (on-chain)"})
+except Exception as e:
+    result["errors"]["tmn_onchain"] = repr(e)[:300]
+for name, url in [("dexscreener", f"https://api.dexscreener.com/latest/dex/tokens/{TMN}"),
+                  ("geckoterminal", f"https://api.geckoterminal.com/api/v2/networks/bsc/tokens/{TMN}/pools")]:
+    try:
+        j = json.loads(get(url))
+        tmn[name] = len(j.get("pairs") or []) if name == "dexscreener" else len(j.get("data") or [])
+    except Exception as e:
+        tmn[name] = f"error {repr(e)[:120]}"
+result["tmn"] = tmn
+
 OUT.parent.mkdir(parents=True, exist_ok=True)
 OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 print(json.dumps(result, ensure_ascii=False, indent=2))
