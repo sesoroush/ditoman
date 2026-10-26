@@ -68,6 +68,31 @@ try:
 except Exception as e:
     result["errors"]["tgju"] = repr(e)[:300]
 
+# Iran daily change: compare the current price with the previous day's close from TGJU history.
+FA2EN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
+def cell_num(c):
+    c = re.sub(r"<[^>]+>", "", str(c)).translate(FA2EN)
+    c = re.sub(r"[^\d.]", "", c)
+    return float(c) if c else None
+for k, code in TGJU.items():
+    item = result["iran"].get(k)
+    if not item: continue
+    try:
+        h = json.loads(get(f"https://api.tgju.org/v1/market/indicator/summary-table-data/{code}?lang=fa&order_dir=desc&draw=1&start=0&length=4"))
+        rows = h.get("data") or []
+        item["hist_raw"] = rows[:3]
+        closes = [cell_num(r[3]) for r in rows if len(r) > 3]
+        closes = [c for c in closes if c]
+        cur = item["value_rial"]
+        prev = None
+        if closes:
+            prev = closes[1] if (abs(closes[0] - cur) < 1e-6 and len(closes) > 1) else closes[0]
+        if prev and cur:
+            item["prev_rial"] = prev
+            item["chg_hist"] = (cur - prev) / prev * 100
+    except Exception as e:
+        result["errors"][f"tgju_hist_{k}"] = repr(e)[:300]
+
 OUT.parent.mkdir(parents=True, exist_ok=True)
 OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 print(json.dumps(result, ensure_ascii=False, indent=2))
