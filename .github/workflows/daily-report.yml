@@ -58,12 +58,18 @@ jobs:
         run: |
           TOKEN="$(printf '%s' "$TOKEN" | grep -oE '[0-9]{6,}:[A-Za-z0-9_-]{30,}' | head -n 1)"
           [ -n "$TOKEN" ] || { echo "TELEGRAM_BOT_TOKEN missing" >&2; exit 1; }
+          PNG="$(ls -t market/reports/*.png | head -n 1)"
+          echo "Sending $PNG"
+          set +e
           curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendPhoto" \
-            -F chat_id="$CHAT_ID" \
-            -F photo=@"${{ steps.build.outputs.png }}" \
-            --form-string caption="$(cat market/caption.txt)" > resp.json || true
-          jq '{ok, error_code, description, message_id: .result.message_id}' resp.json | tee market/telegram-response.json
+            -F "chat_id=$CHAT_ID" \
+            -F "photo=@$PNG;type=image/png" \
+            --form-string "caption=$(cat market/caption.txt)" > resp.json 2> curl-err.txt
+          CODE=$?
+          set -e
+          { echo "{\"curl_exit\": $CODE, \"png\": \"$PNG\", \"curl_err\": $(jq -Rs . < curl-err.txt), \"telegram\": $( [ -s resp.json ] && jq '{ok, error_code, description, message_id: .result.message_id}' resp.json || echo null )}"; } > market/telegram-response.json
+          cat market/telegram-response.json
           git add market/telegram-response.json
           git commit -m "Telegram response $(date -u +%Y-%m-%dT%H:%MZ)" || true
           git pull --rebase origin main && git push origin HEAD:main || true
-          jq -e '.ok' resp.json > /dev/null
+          [ -s resp.json ] && jq -e '.ok' resp.json > /dev/null
