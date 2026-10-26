@@ -1,68 +1,89 @@
 {
-  "fetched_utc": "2026-10-26T20:45:52+00:00",
+  "fetched_utc": "2026-10-26T20:56:45+00:00",
   "global": {
     "btc": {
-      "value": 79677.96,
+      "value": 79727.61,
       "prev": 80024.0078125,
-      "chg": -0.4324299943971812,
+      "chg": -0.37038611362039425,
       "source": "Yahoo Finance BTC-USD",
-      "market_time_utc": "2026-10-26T20:45+00:00"
+      "market_time_utc": "2026-10-26T20:56+00:00"
     },
     "gold": {
-      "value": 4027.0,
+      "value": 4029.4,
       "prev": 4007.89990234375,
-      "chg": 0.4765612445829946,
+      "chg": 0.5364429796182586,
       "source": "Yahoo Finance GC=F",
-      "market_time_utc": "2026-10-26T20:35+00:00"
+      "market_time_utc": "2026-10-26T20:46+00:00"
     },
     "brent": {
-      "value": 110.14,
+      "value": 110.19,
       "prev": 116.72000122070312,
-      "chg": -5.6374238792725455,
+      "chg": -5.594586319747976,
       "source": "Yahoo Finance BZ=F",
-      "market_time_utc": "2026-10-26T20:35+00:00"
+      "market_time_utc": "2026-10-26T20:45+00:00"
     },
     "natgas": {
-      "value": 3.04,
+      "value": 3.043,
       "prev": 2.640000104904175,
-      "chg": 15.15151057580523,
+      "chg": 15.265146934926097,
       "source": "Yahoo Finance NG=F",
-      "market_time_utc": "2026-10-26T20:35+00:00"
+      "market_time_utc": "2026-10-26T20:46+00:00"
+    },
+    "wheat": {
+      "value": 615.5,
+      "prev": 625.0,
+      "chg": -1.52,
+      "source": "Yahoo Finance ZW=F",
+      "market_time_utc": "2026-10-26T18:19+00:00"
+    },
+    "corn": {
+      "value": 455.0,
+      "prev": 456.0,
+      "chg": -0.21929824561403508,
+      "source": "Yahoo Finance ZC=F",
+      "market_time_utc": "2026-10-26T18:19+00:00"
+    },
+    "soybeans": {
+      "value": 1253.5,
+      "prev": 1256.5,
+      "chg": -0.23875845602865103,
+      "source": "Yahoo Finance ZS=F",
+      "market_time_utc": "2026-10-26T18:19+00:00"
     },
     "btc_coingecko": {
-      "value": 79731,
-      "chg": -0.8445107656900888,
+      "value": 79755,
+      "chg": -0.7797207486119851,
       "source": "CoinGecko (24h change)"
     }
   },
   "forex": {
     "EUR/USD": {
-      "value": 1.1177,
+      "value": 1.1178,
       "prev": 1.1221455335617065,
-      "chg": -0.39616372642828585,
+      "chg": -0.38725222635907575,
       "source": "Yahoo Finance EURUSD=X",
-      "market_time_utc": "2026-10-26T20:44+00:00"
+      "market_time_utc": "2026-10-26T20:55+00:00"
     },
     "GBP/USD": {
       "value": 1.3343,
       "prev": 1.3403927087783813,
       "chg": -0.45454654732747174,
       "source": "Yahoo Finance GBPUSD=X",
-      "market_time_utc": "2026-10-26T20:45+00:00"
+      "market_time_utc": "2026-10-26T20:55+00:00"
     },
     "USD/JPY": {
-      "value": 157.492,
+      "value": 157.495,
       "prev": 156.49400329589844,
-      "chg": 0.6377220104814771,
+      "chg": 0.6396390168439139,
       "source": "Yahoo Finance JPY=X",
-      "market_time_utc": "2026-10-26T20:45+00:00"
+      "market_time_utc": "2026-10-26T20:56+00:00"
     },
     "USD/CHF": {
-      "value": 0.8278,
+      "value": 0.8277,
       "prev": 0.8198099732398987,
-      "chg": 0.9746193655737827,
+      "chg": 0.9624214168705255,
       "source": "Yahoo Finance CHF=X",
-      "market_time_utc": "2026-10-26T20:45+00:00"
+      "market_time_utc": "2026-10-26T20:56+00:00"
     },
     "USD/CNY": {
       "value": 6.6593,
@@ -72,11 +93,11 @@
       "market_time_utc": "2026-10-26T18:52+00:00"
     },
     "USD/TRY": {
-      "value": 49.7566,
+      "value": 49.7506,
       "prev": 49.7307014465332,
-      "chg": 0.05207759535553691,
+      "chg": 0.04001261371346016,
       "source": "Yahoo Finance TRY=X",
-      "market_time_utc": "2026-10-26T20:45+00:00"
+      "market_time_utc": "2026-10-26T20:56+00:00"
     }
   },
   "iran": {
