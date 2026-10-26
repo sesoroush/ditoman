@@ -62,7 +62,7 @@ jobs:
           echo "Sending $PNG"
           set +e
           curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendPhoto" \
-            -F "chat_id=$CHAT_ID" \
+            --form-string "chat_id=$CHAT_ID" \
             -F "photo=@$PNG;type=image/png" \
             --form-string "caption=$(cat market/caption.txt)" > resp.json 2> curl-err.txt
           CODE=$?
