@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Price History | Dollar, Gold and Daily Market Reports | Ditoman</title>
+  <meta name="description" content="Iran's free-market dollar against the official rate, 18k gold and the Emami coin, from 2010 to today, plus an archive of Ditoman's daily market reports. In Farsi and English." />
+  <link rel="icon" href="ditoman-logo.png" />
+  <link rel="canonical" href="https://ditoman.com/prices.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ditoman" />
+  <meta property="og:title" content="Price History | Ditoman" />
+  <meta property="og:description" content="Free-market vs official dollar, gold and coin in Iran over 15 years, and every Ditoman daily market report." />
+  <meta property="og:url" content="https://ditoman.com/prices.html" />
+  <meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#04090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700;800&family=Lalezar&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="vendor/uPlot.min.css" />
+  <style>
+    .ph-grid { display: grid; gap: 24px; }
+    .chart-card { border: 1px solid var(--line); border-radius: 28px; background: var(--surface); padding: 26px 26px 18px; }
+    .cc-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+    .cc-head h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); letter-spacing: -0.02em; line-height: 1.1; }
+    .cc-head h2 [lang="fa"] { display: block; font-family: var(--fa-display); font-weight: 400; color: var(--mint); font-size: 0.82em; margin-top: 6px; letter-spacing: 0; }
+    .cc-head p { color: var(--muted); max-width: 52ch; margin-top: 8px; font-size: 0.97rem; }
+    .stats { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    .stat { padding: 12px 16px; border-radius: 16px; border: 1px solid var(--line); background: rgba(4, 9, 12, 0.5); min-width: 150px; }
+    .stat span { display: block; font-size: 0.82rem; color: var(--muted); }
+    .stat span[lang="fa"] { text-align: right; }
+    .stat strong { display: block; font-size: 1.35rem; font-variant-numeric: tabular-nums; margin-top: 2px; }
+    .stat strong.fa-n { font-family: var(--fa); direction: rtl; text-align: right; }
+    .stat.free { border-color: rgba(127, 245, 222, 0.45); }
+    .stat.off { border-color: rgba(139, 108, 255, 0.55); }
+    .stat.gap { border-color: rgba(255, 190, 90, 0.5); }
+    .controls { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 20px 0 8px; }
+    .seg { display: inline-flex; flex-wrap: wrap; gap: 6px; }
+    .seg button {
+      font: 700 0.9rem var(--en); color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 999px;
+      padding: 8px 13px; cursor: pointer; transition: all 0.15s ease;
+    }
+    .seg button:hover { color: var(--text); border-color: var(--line-strong); }
+    .seg button[aria-pressed="true"] { color: #03121a; background: var(--spectrum); border-color: transparent; }
+    .seg button [lang="fa"] { font-family: var(--fa); }
+    .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.92rem; color: var(--muted); margin-bottom: 6px; }
+    .legend i { display: inline-block; width: 22px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 7px; }
+    .chart { position: relative; width: 100%; height: 380px; }
+    .readout { min-height: 44px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; font-size: 0.95rem; color: var(--muted); padding: 6px 0 2px; }
+    .readout b { color: var(--text); font-variant-numeric: tabular-nums; }
+    .readout .fa { font-family: var(--fa); direction: rtl; }
+    .note { color: var(--muted); font-size: 0.88rem; margin-top: 8px; }
+    .uplot, .uplot * { font-family: var(--en); }
+    .u-axis { color: var(--muted); }
+    .u-legend { display: none; }
+
+    .gal-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+    .gal-head h2 { font-size: clamp(1.7rem, 3.4vw, 2.6rem); letter-spacing: -0.03em; line-height: 1.05; }
+    .gal-head h2 [lang="fa"] { display: block; font-family: var(--fa-display); font-weight: 400; color: var(--mint); font-size: 0.66em; margin-top: 8px; letter-spacing: 0; }
+    .jump { display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 0.92rem; }
+    .jump input { background: var(--surface); color: var(--text); border: 1px solid var(--line-strong); border-radius: 12px; padding: 9px 12px; font: 600 0.95rem var(--en); color-scheme: dark; }
+    .month { margin-top: 26px; }
+    .month h3 { font-size: 1.1rem; color: var(--muted); font-weight: 700; margin-bottom: 12px; display: flex; gap: 12px; align-items: baseline; }
+    .month h3 [lang="fa"] { color: var(--mint); font-family: var(--fa); }
+    .gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    .tile { display: block; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); text-align: left; padding: 0; cursor: pointer; color: inherit; transition: transform 0.15s ease, border-color 0.15s ease; }
+    .tile:hover, .tile:focus-visible { transform: translateY(-2px); border-color: var(--line-strong); }
+    .tile img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; background: #fff1e5; }
+    .tile .cap { padding: 9px 11px 10px; }
+    .tile .cap b { display: block; font-size: 0.92rem; }
+    .tile .cap span { display: block; font-family: var(--fa); direction: rtl; text-align: right; color: var(--mint); font-size: 0.88rem; }
+    .tile .cap small { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 2px; font-family: var(--fa); direction: rtl; text-align: right; }
+    .tile.hit { outline: 3px solid var(--mint); outline-offset: 2px; }
+    .empty { color: var(--muted); padding: 18px 0; }
+    .lightbox { position: fixed; inset: 0; z-index: 80; background: rgba(2, 5, 7, 0.92); display: grid; place-items: center; padding: 16px; }
+    .lightbox[hidden] { display: none; }
+    .lightbox img { max-height: calc(100vh - 110px); max-width: 100%; border-radius: 14px; box-shadow: 0 20px 80px rgba(0,0,0,.6); }
+    .lb-bar { display: flex; gap: 10px; justify-content: center; margin-top: 12px; flex-wrap: wrap; }
+    .lb-bar button, .lb-bar a { font: 700 0.92rem var(--en); color: var(--text); background: rgba(127,245,222,.08); border: 1px solid var(--line-strong); border-radius: 999px; padding: 9px 16px; cursor: pointer; }
+    @media (max-width: 600px) {
+      .chart-card { padding: 20px 14px 14px; border-radius: 22px; }
+      .chart { height: 300px; }
+      .stat { min-width: calc(50% - 5px); flex: 1 1 calc(50% - 5px); }
+      .seg button { padding: 7px 10px; font-size: 0.84rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="ditoman-logo.png" alt="" />
+        DITOMAN
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="learn.html">Learn</a>
+        <a href="prices.html" class="active">Prices</a>
+        <a href="tmn.html">TMN</a>
+        <a href="index.html#roadmap">Roadmap</a>
+        <a href="index.html#whitepapers">Whitepaper</a>
+        <a href="index.html#questions">Questions</a>
+      </nav>
+      <div class="nav-right">
+        <a class="nav-ig" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer" aria-label="Ditoman on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        <a class="nav-tg" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer" aria-label="Ditoman on Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg><span>Telegram</span></a>
+        <a class="nav-cta" href="learn.html">Start learning</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu">
+          <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+          <span class="menu-word">Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-panel" id="menuPanel" hidden>
+      <div class="wrap">
+        <p class="menu-kicker">Jump to <span lang="fa">برو به</span></p>
+        <div class="menu-grid">
+          <a class="menu-tile" href="learn.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 3l9 3.5-9 3.5-9-3.5z M6 9v5c0 1.7 2.7 3 6 3s6-1.3 6-3V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Lessons</span>
+            <span class="mt-fa" lang="fa">درس‌ها</span>
+            <span class="mt-desc">Short bilingual lessons with quizzes</span>
+          </a>
+          <a class="menu-tile" href="lesson07.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l5-6 4 3 7-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Newest lesson</span>
+            <span class="mt-fa" lang="fa">درس تازه</span>
+            <span class="mt-desc">How big news moves Bitcoin</span>
+          </a>
+          <a class="menu-tile" href="tmn.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z M8 9h8 M12 9v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">TMN token</span>
+            <span class="mt-fa" lang="fa">توکن TMN</span>
+            <span class="mt-desc">Contract, facts and honest disclosure</span>
+          </a>
+          <a class="menu-tile" href="index.html#roadmap">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="19" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 18h6a3 3 0 0 0 0-6h-2a3 3 0 0 1 0-6h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Roadmap</span>
+            <span class="mt-fa" lang="fa">نقشه‌ی راه</span>
+            <span class="mt-desc">Where the project is now</span>
+          </a>
+          <a class="menu-tile" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z M14 2.5V7h4.5 M9 12h6 M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Whitepaper V5</span>
+            <span class="mt-fa" lang="fa">وایت‌پیپر</span>
+            <span class="mt-desc">The full direction, as a PDF</span>
+          </a>
+          <a class="menu-tile" href="prices.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="6" r="1.6" fill="currentColor"/></svg></span>
+            <span class="mt-en">Daily prices</span>
+            <span class="mt-fa" lang="fa">قیمت‌های روزانه</span>
+            <span class="mt-desc">Dollar, gold and every daily report</span>
+          </a>
+        </div>
+        <a class="menu-tg" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">
+          <span class="mtg-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg></span>
+          <span class="mtg-text">
+            <strong>Join the Telegram channel</strong>
+            <span lang="fa">هر درس تازه، اول در کانال تلگرام</span>
+          </span>
+          <span class="mtg-go" aria-hidden="true">›</span>
+        </a>
+        <div class="menu-social">
+          <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>Instagram</a>
+          <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg>Telegram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Price history. <span class="spectrum">Every day, on record.</span></h1>
+        <p class="hero-fa" lang="fa">تاریخچه‌ی قیمت‌ها، روز به روز.</p>
+        <p class="hero-lede">Iran's free-market dollar against the official rate, gold and the Emami coin, going back more than a decade. Below, every Ditoman daily market report, by date. New data is added automatically every night.</p>
+      </div>
+    </section>
+
+    <section class="block" style="padding-top:8px">
+      <div class="wrap ph-grid">
+
+        <article class="chart-card" id="usd">
+          <div class="cc-head">
+            <div>
+              <h2>Free-market dollar vs official rate<span lang="fa">دلار بازار آزاد در برابر نرخ دولتی</span></h2>
+              <p>The gap between the two lines is what the official rate hides. Prices in toman.</p>
+            </div>
+          </div>
+          <div class="stats" id="usdStats"></div>
+          <div class="controls">
+            <div class="seg" data-chart="usd" role="group" aria-label="Range"></div>
+            <div class="seg" role="group" aria-label="Scale">
+              <button type="button" data-scale="usd" data-log="0" aria-pressed="true">Linear</button>
+              <button type="button" data-scale="usd" data-log="1" aria-pressed="false">Log</button>
+            </div>
+          </div>
+          <div class="legend">
+            <span><i style="background:#7ff5de"></i>Free market <span lang="fa">· بازار آزاد</span></span>
+            <span><i style="background:#8b6cff"></i>Official <span lang="fa">· نرخ رسمی</span></span>
+          </div>
+          <div class="chart" id="usdChart"></div>
+          <div class="readout" id="usdRead"></div>
+          <p class="note">Official rate: SANA (bank exchange houses) until November 2018, NIMA (exporters' system) from then on. Gaps in the official line are periods the source did not publish. Source: TGJU daily closes.</p>
+        </article>
+
+        <article class="chart-card" id="gold">
+          <div class="cc-head">
+            <div>
+              <h2>Gold in Iran<span lang="fa">طلا و سکه در ایران</span></h2>
+              <p>18k gold per gram and the Emami coin, in toman.</p>
+            </div>
+          </div>
+          <div class="stats" id="goldStats"></div>
+          <div class="controls">
+            <div class="seg" data-chart="gold" role="group" aria-label="Range"></div>
+            <div class="seg" role="group" aria-label="Series">
+              <button type="button" data-goldser="gold18_gram" aria-pressed="true">18k gram <span lang="fa">· گرمی</span></button>
+              <button type="button" data-goldser="coin_emami" aria-pressed="false">Coin <span lang="fa">· سکه</span></button>
+            </div>
+            <div class="seg" role="group" aria-label="Scale">
+              <button type="button" data-scale="gold" data-log="0" aria-pressed="true">Linear</button>
+              <button type="button" data-scale="gold" data-log="1" aria-pressed="false">Log</button>
+            </div>
+          </div>
+          <div class="chart" id="goldChart"></div>
+          <div class="readout" id="goldRead"></div>
+          <p class="note">Source: TGJU daily closes.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="block" id="reports">
+      <div class="wrap">
+        <div class="gal-head">
+          <h2>Daily market reports<span lang="fa">آرشیو گزارش‌های روزانه</span></h2>
+          <label class="jump">Go to date <input type="date" id="jumpDate" /></label>
+        </div>
+        <p class="note" style="margin-top:0">Published every night at 20:00 Tehran time on <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer" style="color:var(--mint)">Telegram</a> and Instagram.</p>
+        <div id="gallery"><p class="empty">Loading…</p></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lb" hidden role="dialog" aria-modal="true" aria-label="Daily report">
+    <div>
+      <img id="lbImg" alt="" />
+      <div class="lb-bar">
+        <button type="button" id="lbPrev">‹ Older</button>
+        <a id="lbOpen" href="#" target="_blank" rel="noopener">Open full size</a>
+        <button type="button" id="lbNext">Newer ›</button>
+        <button type="button" id="lbClose">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Ditoman • Learn. Connect. Evolve. • Est. 2022</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="tmn.html">TMN</a>
+        <a href="prices.html">Prices</a>
+        <a href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+        <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="vendor/uPlot.iife.min.js"></script>
+  <script>
+  (function () {
+    var FA_M = ["فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند"];
+    var EN_M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    function g2j(gy, gm, gd) {
+      var g = [0,31,59,90,120,151,181,212,243,273,304,334];
+      var gy2 = gm > 2 ? gy + 1 : gy;
+      var days = 355666 + 365 * gy + Math.floor((gy2 + 3) / 4) - Math.floor((gy2 + 99) / 100) + Math.floor((gy2 + 399) / 400) + gd + g[gm - 1];
+      var jy = -1595 + 33 * Math.floor(days / 12053); days %= 12053;
+      jy += 4 * Math.floor(days / 1461); days %= 1461;
+      if (days > 365) { jy += Math.floor((days - 1) / 365); days = (days - 1) % 365; }
+      var jm = days < 186 ? 1 + Math.floor(days / 31) : 7 + Math.floor((days - 186) / 30);
+      var jd = 1 + (days < 186 ? days % 31 : (days - 186) % 30);
+      return [jy, jm, jd];
+    }
+    var faNum = function (n, d) { return Number(n).toLocaleString("en-US", { maximumFractionDigits: d || 0 }).replace(/\d/g, function (c) { return "۰۱۲۳۴۵۶۷۸۹"[c]; }); };
+    var enNum = function (n, d) { return Number(n).toLocaleString("en-US", { maximumFractionDigits: d || 0 }); };
+    function faDate(iso) { var p = iso.split("-").map(Number), j = g2j(p[0], p[1], p[2]); return faNum(j[2]) + " " + FA_M[j[1] - 1] + " " + String(j[0]).replace(/\d/g, function (c) { return "۰۱۲۳۴۵۶۷۸۹"[c]; }); }
+    function enDate(iso) { var p = iso.split("-").map(Number); return p[2] + " " + EN_M[p[1] - 1] + " " + p[0]; }
+    function compact(v) {
+      if (v >= 1e9) return enNum(v / 1e9, 1) + "B";
+      if (v >= 1e6) return enNum(v / 1e6, 1) + "M";
+      if (v >= 1e3) return enNum(v / 1e3, 0) + "K";
+      return enNum(v, 0);
+    }
+    var ts = function (iso) { return Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) / 1000; };
+
+    var RANGES = [["1Y", "۱ سال", 1], ["2Y", "۲ سال", 2], ["3Y", "۳ سال", 3], ["4Y", "۴ سال", 4], ["5Y", "۵ سال", 5], ["10Y", "۱۰ سال", 10], ["All", "همه", 0]];
+    var state = { usd: { years: 1, log: false }, gold: { years: 1, log: false, ser: "gold18_gram" } };
+    var charts = {}, DATA = {};
+
+    function load(k) { return fetch("market/series/" + k + ".json", { cache: "no-cache" }).then(function (r) { return r.json(); }); }
+
+    function buildUsd() {
+      var free = DATA.usd_free.data, sana = DATA.usd_sana.data, nima = DATA.usd_nima.data;
+      var cut = "2018-11-15", off = {};
+      sana.forEach(function (r) { if (r[0] < cut) off[r[0]] = r[1]; });
+      nima.forEach(function (r) { if (r[0] >= cut) off[r[0]] = r[1]; });
+      var f = {}; free.forEach(function (r) { f[r[0]] = r[1]; });
+      var dates = Object.keys(Object.assign({}, f, off)).sort();
+      var raw = dates.map(function (d) { return off[d] == null ? null : off[d]; });
+      // bridge short gaps (weekends, holidays) for drawing; leave real gaps (> 20 days) visible
+      var plot = raw.slice(), lastI = -1;
+      for (var i = 0; i < raw.length; i++) {
+        if (raw[i] == null) continue;
+        if (lastI >= 0 && i - lastI > 1 && (ts(dates[i]) - ts(dates[lastI])) / 86400 <= 20) for (var k = lastI + 1; k < i; k++) plot[k] = raw[lastI];
+        lastI = i;
+      }
+      return { dates: dates, a: dates.map(function (d) { return f[d] == null ? null : f[d]; }), b: plot, braw: raw };
+    }
+    function buildGold(ser) {
+      var rows = DATA[ser].data;
+      return { dates: rows.map(function (r) { return r[0]; }), a: rows.map(function (r) { return r[1]; }) };
+    }
+    function slice(s, years) {
+      if (!years) return s;
+      var last = s.dates[s.dates.length - 1], d = new Date(last + "T00:00:00Z");
+      d.setUTCFullYear(d.getUTCFullYear() - years);
+      var from = d.toISOString().slice(0, 10), i = 0;
+      while (i < s.dates.length && s.dates[i] < from) i++;
+      var o = { dates: s.dates.slice(i) }; ["a", "b", "braw"].forEach(function (k) { if (s[k]) o[k] = s[k].slice(i); });
+      return o;
+    }
+    function lastVal(arr) { for (var i = arr.length - 1; i >= 0; i--) if (arr[i] != null) return arr[i]; return null; }
+    function firstVal(arr) { for (var i = 0; i < arr.length; i++) if (arr[i] != null) return arr[i]; return null; }
+
+    function stat(cls, en, fa, val, faDigits) {
+      return '<div class="stat ' + cls + '"><span>' + en + '</span><span lang="fa">' + fa + '</span><strong class="' + (faDigits ? "fa-n" : "") + '">' + val + "</strong></div>";
+    }
+    function pct(a, b) { if (!a || !b) return "—"; var p = (b - a) / a * 100; return (p >= 0 ? "+" : "−") + enNum(Math.abs(p), p > 100 ? 0 : 1) + "%"; }
+
+    function mkChart(el, series, s, logOn, readEl, fmtRead) {
+      var w = el.clientWidth, h = el.clientHeight;
+      var xs = s.dates.map(ts);
+      var data = [xs, s.a]; if (s.b) data.push(s.b);
+      var axisFont = "600 12px Bricolage Grotesque, system-ui, sans-serif";
+      var opts = {
+        width: w, height: h, padding: [12, 8, 0, 0],
+        cursor: { y: false, points: { size: 8 } },
+        scales: { x: { time: true }, y: { distr: logOn ? 3 : 1, range: function (u, mn, mx) { return logOn ? [Math.max(1, mn * 0.9), mx * 1.1] : [0, mx * 1.08]; } } },
+        axes: [
+          { stroke: "#93b3b6", font: axisFont, grid: { stroke: "rgba(127,245,222,.07)" }, ticks: { stroke: "rgba(127,245,222,.15)" } },
+          { stroke: "#93b3b6", font: axisFont, size: 56, grid: { stroke: "rgba(127,245,222,.07)" }, ticks: { show: false }, values: function (u, v) { return v.map(compact); } }
+        ],
+        series: [{}].concat(series),
+        hooks: { setCursor: [function (u) { var i = u.cursor.idx; readEl.innerHTML = i == null ? fmtRead(null) : fmtRead(i); }] }
+      };
+      el.innerHTML = "";
+      var c = new uPlot(opts, data, el);
+      readEl.innerHTML = fmtRead(null);
+      return c;
+    }
+
+    function drawUsd() {
+      var full = buildUsd(), s = slice(full, state.usd.years);
+      var a0 = firstVal(s.a), a1 = lastVal(s.a), b1 = lastVal(s.braw);
+      document.getElementById("usdStats").innerHTML =
+        stat("free", "Free market, latest", "بازار آزاد", faNum(a1) + " ت", true) +
+        stat("off", "Official, latest", "نرخ رسمی", faNum(b1) + " ت", true) +
+        stat("gap", "Free vs official", "فاصله‌ی آزاد و رسمی", pct(b1, a1), false) +
+        stat("", "Change in period", "تغییر در این بازه", pct(a0, a1), false);
+      var readEl = document.getElementById("usdRead");
+      charts.usd && charts.usd.destroy();
+      charts.usd = mkChart(document.getElementById("usdChart"), [
+        { label: "Free", stroke: "#7ff5de", width: 2.2, spanGaps: true, fill: "rgba(127,245,222,.06)" },
+        { label: "Official", stroke: "#8b6cff", width: 2, spanGaps: false }
+      ], s, state.usd.log, readEl, function (i) {
+        if (i == null) i = s.dates.length - 1;
+        var d = s.dates[i];
+        return '<span>' + enDate(d) + ' · <span class="fa">' + faDate(d) + '</span></span>' +
+          '<span>Free <b>' + (s.a[i] == null ? "—" : enNum(s.a[i])) + '</b></span>' +
+          '<span>Official <b>' + (s.braw[i] == null ? "—" : enNum(s.braw[i])) + '</b></span>' +
+          (s.a[i] && s.braw[i] ? '<span>Gap <b>' + pct(s.braw[i], s.a[i]) + '</b></span>' : "");
+      });
+    }
+    function drawGold() {
+      var ser = state.gold.ser, full = buildGold(ser), s = slice(full, state.gold.years);
+      var a0 = firstVal(s.a), a1 = lastVal(s.a);
+      var usd = buildUsd(), u1 = lastVal(usd.a);
+      var label = ser === "coin_emami" ? ["Emami coin", "سکه امامی"] : ["18k gold, gram", "طلای ۱۸ عیار، گرمی"];
+      document.getElementById("goldStats").innerHTML =
+        stat("free", label[0] + ", latest", label[1], faNum(a1) + " ت", true) +
+        stat("", "Change in period", "تغییر در این بازه", pct(a0, a1), false) +
+        stat("off", "In US dollars", "به دلار آزاد", "$" + enNum(a1 / u1, ser === "coin_emami" ? 0 : 1), false);
+      var readEl = document.getElementById("goldRead");
+      charts.gold && charts.gold.destroy();
+      charts.gold = mkChart(document.getElementById("goldChart"), [
+        { label: label[0], stroke: "#ffbe5a", width: 2.2, spanGaps: true, fill: "rgba(255,190,90,.07)" }
+      ], s, state.gold.log, readEl, function (i) {
+        if (i == null) i = s.dates.length - 1;
+        var d = s.dates[i];
+        return '<span>' + enDate(d) + ' · <span class="fa">' + faDate(d) + '</span></span><span>' + label[0] + ' <b>' + enNum(s.a[i]) + '</b> toman</span>';
+      });
+    }
+
+    function segs() {
+      document.querySelectorAll('.seg[data-chart]').forEach(function (g) {
+        var k = g.getAttribute("data-chart");
+        g.innerHTML = RANGES.map(function (r) {
+          return '<button type="button" data-k="' + k + '" data-y="' + r[2] + '" aria-pressed="' + (state[k].years === r[2]) + '">' + r[0] + ' <span lang="fa">' + r[1] + '</span></button>';
+        }).join("");
+      });
+    }
+    document.addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b) return;
+      if (b.hasAttribute("data-y")) {
+        var k = b.getAttribute("data-k"); state[k].years = +b.getAttribute("data-y");
+        b.parentNode.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        k === "usd" ? drawUsd() : drawGold();
+      } else if (b.hasAttribute("data-scale")) {
+        var k2 = b.getAttribute("data-scale"); state[k2].log = b.getAttribute("data-log") === "1";
+        b.parentNode.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        k2 === "usd" ? drawUsd() : drawGold();
+      } else if (b.hasAttribute("data-goldser")) {
+        state.gold.ser = b.getAttribute("data-goldser");
+        b.parentNode.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        drawGold();
+      }
+    });
+    var rz; window.addEventListener("resize", function () { clearTimeout(rz); rz = setTimeout(function () { drawUsd(); drawGold(); }, 150); });
+
+    segs();
+    Promise.all(["usd_free", "usd_sana", "usd_nima", "gold18_gram", "coin_emami"].map(function (k) { return load(k).then(function (j) { DATA[k] = j; }); }))
+      .then(function () { drawUsd(); drawGold(); })
+      .catch(function () { document.getElementById("usdChart").innerHTML = '<p class="empty">Chart data could not be loaded.</p>'; });
+
+    /* ---------- Gallery ---------- */
+    var ITEMS = [], cur = -1;
+    function renderGallery(items) {
+      var el = document.getElementById("gallery");
+      if (!items.length) { el.innerHTML = '<p class="empty">No reports yet.</p>'; return; }
+      var groups = {};
+      items.forEach(function (it, i) { it._i = i; var m = it.date.slice(0, 7); (groups[m] = groups[m] || []).push(it); });
+      el.innerHTML = Object.keys(groups).sort().reverse().map(function (m) {
+        var p = m.split("-").map(Number), dim = new Date(Date.UTC(p[0], p[1], 0)).getUTCDate();
+        var j1 = g2j(p[0], p[1], 1), j2 = g2j(p[0], p[1], dim);
+        var fy = function (y) { return String(y).replace(/\d/g, function (c) { return "۰۱۲۳۴۵۶۷۸۹"[c]; }); };
+        var faLabel = FA_M[j1[1] - 1] + (j1[0] !== j2[0] ? " " + fy(j1[0]) : "") + " – " + FA_M[j2[1] - 1] + " " + fy(j2[0]);
+        return '<div class="month"><h3>' + EN_M[p[1] - 1] + " " + p[0] + ' <span lang="fa">' + faLabel + '</span></h3><div class="gal">' +
+          groups[m].map(function (it) {
+            return '<button type="button" class="tile" data-i="' + it._i + '" id="r-' + it.date + '"><img loading="lazy" src="' + (it.thumb || it.png) + '" alt="Daily market report ' + it.date + '" />' +
+              '<span class="cap"><b>' + enDate(it.date) + '</b><span>' + faDate(it.date) + '</span>' +
+              (it.usd ? '<small>دلار ' + faNum(it.usd) + ' ت</small>' : "") + "</span></button>";
+          }).join("") + "</div></div>";
+      }).join("");
+    }
+    function openLb(i) {
+      cur = i; var it = ITEMS[i];
+      document.getElementById("lbImg").src = it.png;
+      document.getElementById("lbImg").alt = "Daily market report " + it.date;
+      document.getElementById("lbOpen").href = it.png;
+      document.getElementById("lbPrev").disabled = i >= ITEMS.length - 1;
+      document.getElementById("lbNext").disabled = i <= 0;
+      document.getElementById("lb").hidden = false; document.body.style.overflow = "hidden";
+    }
+    function closeLb() { document.getElementById("lb").hidden = true; document.body.style.overflow = ""; }
+    document.getElementById("gallery").addEventListener("click", function (e) { var t = e.target.closest(".tile"); if (t) openLb(+t.getAttribute("data-i")); });
+    document.getElementById("lbClose").onclick = closeLb;
+    document.getElementById("lbPrev").onclick = function () { if (cur < ITEMS.length - 1) openLb(cur + 1); };
+    document.getElementById("lbNext").onclick = function () { if (cur > 0) openLb(cur - 1); };
+    document.getElementById("lb").addEventListener("click", function (e) { if (e.target.id === "lb") closeLb(); });
+    document.addEventListener("keydown", function (e) {
+      if (document.getElementById("lb").hidden) return;
+      if (e.key === "Escape") closeLb();
+      if (e.key === "ArrowLeft") document.getElementById("lbPrev").click();
+      if (e.key === "ArrowRight") document.getElementById("lbNext").click();
+    });
+    document.getElementById("jumpDate").addEventListener("change", function () {
+      var v = this.value; if (!v || !ITEMS.length) return;
+      var best = ITEMS.reduce(function (b, it) { return Math.abs(ts(it.date) - ts(v)) < Math.abs(ts(b.date) - ts(v)) ? it : b; }, ITEMS[0]);
+      var t = document.getElementById("r-" + best.date);
+      document.querySelectorAll(".tile.hit").forEach(function (x) { x.classList.remove("hit"); });
+      if (t) { t.classList.add("hit"); t.scrollIntoView({ behavior: "smooth", block: "center" }); }
+    });
+    fetch("market/reports/index.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (items) {
+      ITEMS = items; renderGallery(items);
+      if (items.length) { var j = document.getElementById("jumpDate"); j.max = items[0].date; j.min = items[items.length - 1].date; }
+    }).catch(function () { document.getElementById("gallery").innerHTML = '<p class="empty">Reports could not be loaded.</p>'; });
+  })();
+  </script>
+  <script src="menu.js" defer></script>
+</body>
+</html>
