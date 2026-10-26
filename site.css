@@ -250,7 +250,7 @@ details p a { color: var(--mint); text-decoration: underline; text-underline-off
 
 footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--muted); font-size: 0.93rem; }
 .foot { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.foot nav { display: flex; gap: 20px; }
+.foot nav { display: flex; gap: 12px 20px; flex-wrap: wrap; }
 .foot a:hover { color: var(--text); }
 
 /* ---------- Responsive ---------- */
@@ -537,3 +537,12 @@ body.menu-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .menu-panel, .menu-bars i, .menu-tile { transition: none; }
 }
+
+/* Instagram icon in header */
+.nav-ig {
+  display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
+  border: 1px solid var(--line-strong); color: var(--mint); transition: background 0.2s ease;
+}
+.nav-ig:hover { background: rgba(127, 245, 222, 0.08); }
+.nav-ig svg { width: 19px; height: 19px; }
+@media (max-width: 380px) { .nav-ig { display: none; } }
