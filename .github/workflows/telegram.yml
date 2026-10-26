@@ -46,8 +46,10 @@ jobs:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID || '@Ditoman_tm' }}
         run: |
+          # Accept the secret even if extra text was pasted around the token.
+          TOKEN="$(printf '%s' "$TOKEN" | grep -oE '[0-9]{6,}:[A-Za-z0-9_-]{30,}' | head -n 1)"
           if [ -z "$TOKEN" ]; then
-            echo "TELEGRAM_BOT_TOKEN secret is not set." >&2
+            echo "TELEGRAM_BOT_TOKEN secret is missing or not a valid bot token." >&2
             exit 1
           fi
           while IFS= read -r f; do
