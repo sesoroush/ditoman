@@ -37,7 +37,7 @@ jobs:
             if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
               BEFORE="$(git rev-list --max-parents=0 HEAD | tail -1)"
             fi
-            git diff --name-only --diff-filter=A "$BEFORE" "${{ github.sha }}" -- 'telegram/*.md' > files.txt
+            git diff --no-renames --name-only --diff-filter=A "$BEFORE" "${{ github.sha }}" -- 'telegram/*.md' > files.txt
           fi
           echo "Posts to send:"; cat files.txt
 
