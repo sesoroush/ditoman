@@ -1,0 +1,75 @@
+name: Post to Telegram
+
+# Posts every NEW file added under telegram/ (not telegram/drafts/) to the channel.
+# Post file format:
+#   optional first line:  image: some-image.png   (a file on ditoman.com, shown as a large preview)
+#   everything after it:  the message text (plain text, up to 4096 characters)
+#
+# Required repo secret:   TELEGRAM_BOT_TOKEN
+# Optional repo variable: TELEGRAM_CHAT_ID  (defaults to @Ditoman_tm)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "telegram/*.md"
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "Post file to send, e.g. telegram/drafts/welcome.md"
+        required: true
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Work out which posts to send
+        id: files
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "${{ github.event.inputs.file }}" > files.txt
+          else
+            BEFORE="${{ github.event.before }}"
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              BEFORE="$(git rev-list --max-parents=0 HEAD | tail -1)"
+            fi
+            git diff --name-only --diff-filter=A "$BEFORE" "${{ github.sha }}" -- 'telegram/*.md' > files.txt
+          fi
+          echo "Posts to send:"; cat files.txt
+
+      - name: Send to Telegram
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID || '@Ditoman_tm' }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "TELEGRAM_BOT_TOKEN secret is not set." >&2
+            exit 1
+          fi
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            [ -f "$f" ] || { echo "Missing $f" >&2; exit 1; }
+            first="$(head -n 1 "$f")"
+            image=""
+            if echo "$first" | grep -q '^image:'; then
+              image="$(echo "$first" | sed 's/^image:[[:space:]]*//')"
+              text="$(tail -n +2 "$f" | sed '/./,$!d')"
+            else
+              text="$(cat "$f")"
+            fi
+            if [ -n "$image" ]; then
+              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "https://ditoman.com/$image" \
+                '{chat_id:$c, text:$t, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
+            else
+              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" '{chat_id:$c, text:$t}')"
+            fi
+            echo "Sending $f"
+            resp="$(curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+              -H 'Content-Type: application/json' -d "$payload")"
+            echo "$resp" | jq '{ok, description, message_id: .result.message_id}'
+            echo "$resp" | jq -e '.ok' > /dev/null || exit 1
+          done < files.txt
