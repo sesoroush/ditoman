@@ -61,6 +61,9 @@ jobs:
           curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendPhoto" \
             -F chat_id="$CHAT_ID" \
             -F photo=@"${{ steps.build.outputs.png }}" \
-            -F caption="$(cat market/caption.txt)" > resp.json
-          jq '{ok, description, message_id: .result.message_id}' resp.json
+            --form-string caption="$(cat market/caption.txt)" > resp.json || true
+          jq '{ok, error_code, description, message_id: .result.message_id}' resp.json | tee market/telegram-response.json
+          git add market/telegram-response.json
+          git commit -m "Telegram response $(date -u +%Y-%m-%dT%H:%MZ)" || true
+          git pull --rebase origin main && git push origin HEAD:main || true
           jq -e '.ok' resp.json > /dev/null
