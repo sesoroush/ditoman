@@ -29,7 +29,8 @@ def yahoo(symbol):
     return {"value": price, "prev": prev, "chg": chg, "source": f"Yahoo Finance {symbol}",
             "market_time_utc": datetime.datetime.fromtimestamp(m.get("regularMarketTime", 0), datetime.timezone.utc).isoformat(timespec="minutes")}
 
-GLOBAL = {"btc": "BTC-USD", "gold": "GC=F", "brent": "BZ=F", "natgas": "NG=F"}
+GLOBAL = {"btc": "BTC-USD", "gold": "GC=F", "brent": "BZ=F", "natgas": "NG=F",
+          "wheat": "ZW=F", "corn": "ZC=F", "soybeans": "ZS=F"}  # grains quoted in US cents per bushel
 FOREX = {"EUR/USD": "EURUSD=X", "GBP/USD": "GBPUSD=X", "USD/JPY": "JPY=X", "USD/CHF": "CHF=X", "USD/CNY": "CNY=X", "USD/TRY": "TRY=X"}
 
 for key, sym in GLOBAL.items():
