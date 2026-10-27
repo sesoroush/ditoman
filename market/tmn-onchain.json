@@ -8,6 +8,13 @@
  "bal_former_owner": 0.0,
  "bal_deployer": 0.0,
  "bal_pair": 1025842425.7663405,
+ "lp_totalSupply": 1.6426470957697386,
+ "lp_bal_deployer": 1.414213562373094,
+ "lp_bal_founder_main": 0.22769341781075833,
+ "lp_bal_former_owner": 0.0,
+ "lp_bal_dead": 0.0,
+ "lp_bal_zero": 1e-15,
+ "block": 130107933,
  "goplus": {
   "code": 1,
   "message": "OK",
