@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posts | Every Ditoman Channel Post | Ditoman</title>
+  <meta name="description" content="Every post from the Ditoman Telegram channel, on the web: short lessons, explainers and updates in Farsi and English." />
+  <link rel="icon" href="ditoman-logo.png" />
+  <link rel="canonical" href="https://ditoman.com/posts.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ditoman" />
+  <meta property="og:title" content="Posts | Ditoman" />
+  <meta property="og:description" content="Every post from the Ditoman Telegram channel, on the web." />
+  <meta property="og:url" content="https://ditoman.com/posts.html" />
+  <meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+  <meta name="theme-color" content="#04090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700;800&family=Lalezar&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
+  <style>
+    .feed { display: grid; gap: 22px; max-width: 760px; }
+    .post { border: 1px solid var(--line); border-radius: 26px; background: var(--surface); overflow: hidden; }
+    .post img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--line); }
+    .post-body { padding: 24px 26px 22px; }
+    .post-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--muted); font-size: 0.9rem; margin-bottom: 14px; }
+    .post-meta .fa-date { font-family: var(--fa); }
+    .post-text p { white-space: pre-line; line-height: 1.95; margin-bottom: 14px; font-size: 1.04rem; unicode-bidi: plaintext; }
+    .post-text p[dir="rtl"] { font-family: var(--fa); text-align: right; }
+    .post-text p:first-child { font-weight: 800; font-size: 1.25rem; }
+    .post-text a { color: var(--mint); text-decoration: underline; text-underline-offset: 3px; word-break: break-all; }
+    .post-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+    .more { font: 700 0.92rem var(--en); color: var(--mint); background: transparent; border: 1px solid var(--line-strong); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+    .post.collapsed .post-text { max-height: 340px; overflow: hidden; -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent); mask-image: linear-gradient(180deg, #000 70%, transparent); }
+    .empty { color: var(--muted); }
+    @media (max-width: 600px) { .post-body { padding: 20px 18px; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="ditoman-logo.png" alt="" />
+        DITOMAN
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="learn.html">Learn</a>
+        <a href="prices.html">Prices</a>
+        <a href="tmn.html">TMN</a>
+        <a href="index.html#roadmap">Roadmap</a>
+        <a href="index.html#whitepapers">Whitepaper</a>
+        <a href="posts.html" class="active">Posts</a>
+      </nav>
+      <div class="nav-right">
+        <a class="nav-ig" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer" aria-label="Ditoman on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        <a class="nav-tg" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer" aria-label="Ditoman on Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg><span>Telegram</span></a>
+        <a class="nav-cta" href="learn.html">Start learning</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu">
+          <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+          <span class="menu-word">Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-panel" id="menuPanel" hidden>
+      <div class="wrap">
+        <p class="menu-kicker">Jump to <span lang="fa">برو به</span></p>
+        <div class="menu-grid">
+          <a class="menu-tile" href="learn.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 3l9 3.5-9 3.5-9-3.5z M6 9v5c0 1.7 2.7 3 6 3s6-1.3 6-3V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Lessons</span>
+            <span class="mt-fa" lang="fa">درس‌ها</span>
+            <span class="mt-desc">Short bilingual lessons with quizzes</span>
+          </a>
+          <a class="menu-tile" href="lesson08.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l5-6 4 3 7-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Newest lesson</span>
+            <span class="mt-fa" lang="fa">درس تازه</span>
+            <span class="mt-desc">What if your money had an expiry date?</span>
+          </a>
+          <a class="menu-tile" href="tmn.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z M8 9h8 M12 9v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">TMN token</span>
+            <span class="mt-fa" lang="fa">توکن TMN</span>
+            <span class="mt-desc">Contract, facts and honest disclosure</span>
+          </a>
+          <a class="menu-tile" href="posts.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Posts</span>
+            <span class="mt-fa" lang="fa">یادداشت‌ها</span>
+            <span class="mt-desc">Every channel post, on the web</span>
+          </a>
+          <a class="menu-tile" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z M14 2.5V7h4.5 M9 12h6 M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Whitepaper V5</span>
+            <span class="mt-fa" lang="fa">وایت‌پیپر</span>
+            <span class="mt-desc">The full direction, as a PDF</span>
+          </a>
+          <a class="menu-tile" href="prices.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="6" r="1.6" fill="currentColor"/></svg></span>
+            <span class="mt-en">Daily prices</span>
+            <span class="mt-fa" lang="fa">قیمت‌های روزانه</span>
+            <span class="mt-desc">Dollar, gold and every daily report</span>
+          </a>
+        </div>
+        <a class="menu-tg" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">
+          <span class="mtg-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg></span>
+          <span class="mtg-text">
+            <strong>Join the Telegram channel</strong>
+            <span lang="fa">هر درس تازه، اول در کانال تلگرام</span>
+          </span>
+          <span class="mtg-go" aria-hidden="true">›</span>
+        </a>
+        <div class="menu-social">
+          <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>Instagram</a>
+          <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg>Telegram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Posts. <span class="spectrum">Everything from the channel.</span></h1>
+        <p class="hero-fa" lang="fa">همه‌ی پست‌های کانال، اینجا هم هست.</p>
+        <p class="hero-lede">Every post from the Ditoman Telegram channel appears here automatically, for anyone who can't open Telegram. Newest first.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+          <a class="btn btn-ghost" href="prices.html">Daily market reports</a>
+        </div>
+      </div>
+    </section>
+    <section class="block" style="padding-top:8px">
+      <div class="wrap"><div class="feed" id="feed"><p class="empty">Loading…</p></div></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Ditoman • Learn. Connect. Evolve. • Est. 2022</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="tmn.html">TMN</a>
+        <a href="prices.html">Prices</a>
+        <a href="posts.html">Posts</a>
+        <a href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+        <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var FA_M = ["فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند"];
+    var EN_M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    function g2j(gy, gm, gd) {
+      var g = [0,31,59,90,120,151,181,212,243,273,304,334], gy2 = gm > 2 ? gy + 1 : gy;
+      var days = 355666 + 365 * gy + Math.floor((gy2 + 3) / 4) - Math.floor((gy2 + 99) / 100) + Math.floor((gy2 + 399) / 400) + gd + g[gm - 1];
+      var jy = -1595 + 33 * Math.floor(days / 12053); days %= 12053; jy += 4 * Math.floor(days / 1461); days %= 1461;
+      if (days > 365) { jy += Math.floor((days - 1) / 365); days = (days - 1) % 365; }
+      var jm = days < 186 ? 1 + Math.floor(days / 31) : 7 + Math.floor((days - 186) / 30);
+      return [jy, jm, 1 + (days < 186 ? days % 31 : (days - 186) % 30)];
+    }
+    var fd = function (s) { return String(s).replace(/\d/g, function (c) { return "۰۱۲۳۴۵۶۷۸۹"[c]; }); };
+    function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    function linkify(s) { return s.replace(/https?:\/\/[^\s<]+/g, function (u) { return '<a href="' + u + '" target="_blank" rel="noopener noreferrer">' + u + "</a>"; }); }
+    var isFa = function (s) { return /[\u0600-\u06FF]/.test(s.slice(0, 40)); };
+    fetch("telegram/feed.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (items) {
+      var el = document.getElementById("feed");
+      if (!items.length) { el.innerHTML = '<p class="empty">No posts yet.</p>'; return; }
+      el.innerHTML = items.map(function (it) {
+        var p = it.date.split("-").map(Number), j = g2j(p[0], p[1], p[2]);
+        var paras = it.text.split(/\n\s*\n/).map(function (t) {
+          return '<p dir="' + (isFa(t) ? "rtl" : "ltr") + '">' + linkify(esc(t.trim())) + "</p>";
+        }).join("");
+        var long = it.text.length > 700;
+        return '<article class="post' + (long ? " collapsed" : "") + '" id="' + it.id + '">' +
+          (it.image ? '<img loading="lazy" src="' + it.image + '" alt="" onerror="this.remove()" />' : "") +
+          '<div class="post-body"><div class="post-meta"><span>' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl">' + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
+          '<div class="post-text">' + paras + "</div>" +
+          (long ? '<div class="post-actions"><button class="more" type="button">Read more · ادامه</button></div>' : "") +
+          "</div></article>";
+      }).join("");
+      el.addEventListener("click", function (e) {
+        var b = e.target.closest(".more"); if (!b) return;
+        var post = b.closest(".post"); post.classList.remove("collapsed"); b.parentNode.remove();
+      });
+    }).catch(function () { document.getElementById("feed").innerHTML = '<p class="empty">Posts could not be loaded.</p>'; });
+  })();
+  </script>
+  <script src="menu.js" defer></script>
+</body>
+</html>
