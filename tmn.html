@@ -21,6 +21,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700&family=Lalezar&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="site.css" />
+<style>
+  .olinks { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:20px; }
+  .olink { display:grid; grid-template-columns:1fr auto; grid-template-areas:"en go" "fa go"; align-items:center; padding:16px 18px; border-radius:18px; border:1px solid var(--line); background:var(--surface); transition:border-color .2s ease; }
+  .olink:hover { border-color:var(--line-strong); }
+  .ol-en { grid-area:en; font-weight:700; }
+  .ol-fa { grid-area:fa; color:var(--mint); font-size:.95rem; text-align:left; }
+  .ol-go { grid-area:go; color:var(--mint); font-size:1.2rem; }
+  .readguide { margin-top:26px; border:1px solid var(--line); border-radius:24px; padding:24px 26px; background:linear-gradient(135deg, rgba(139,108,255,.08), rgba(10,24,32,1) 60%); }
+  .readguide h3 { font-size:1.3rem; margin-bottom:10px; }
+  .readguide h3 [lang="fa"] { display:block; color:var(--mint); font-family:var(--fa-display); font-weight:400; margin-top:4px; }
+  .readguide .checklist li { color:var(--muted); }
+  .readguide .checklist li strong { color:var(--text); }
+  .fa-note { margin-top:14px; color:var(--muted); line-height:1.9; }
+  @media (max-width:960px){ .olinks{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:600px){ .olinks{ grid-template-columns:1fr; } .readguide{ padding:20px 18px; } }
+</style>
 </head>
 
 <body>
@@ -135,6 +151,7 @@
             <div class="fact"><dt>Standard</dt><dd>BEP-20</dd></div>
             <div class="fact"><dt>Decimals</dt><dd>9</dd></div>
             <div class="fact"><dt>Total supply</dt><dd>18,901,056,445,783.85</dd></div>
+            <div class="fact"><dt>At the dead address</dt><dd>2,100,000,000,000</dd></div>
             <div class="fact"><dt>Source code</dt><dd class="ok">Verified</dd></div>
             <div class="fact"><dt>Ownership</dt><dd class="ok">Renounced</dd></div>
             <div class="fact"><dt>New minting</dt><dd class="ok">Impossible</dd></div>
@@ -146,15 +163,40 @@
         <div class="panel warn">
           <h2>What you should know<span lang="fa">آنچه باید بدانی</span></h2>
           <ul class="checklist">
-            <li>TMN has no meaningful liquidity or trading activity right now.</li>
+            <li>TMN has very thin liquidity (a few thousand dollars) and almost no trading.</li>
             <li>Supply is highly concentrated. Most of it sits in founder-controlled wallets, visible to anyone on BscScan.</li>
             <li>The planned utility is not built yet.</li>
             <li>The project is run by its two founders, at small scale.</li>
-            <li>TMN is not listed on CoinGecko or CoinMarketCap.</li>
+            <li>TMN is not listed on CoinGecko or CoinMarketCap. Its pool is tracked automatically by DexScreener and GeckoTerminal.</li>
             <li>Several unrelated tokens use the ticker TMN. Always check the full contract address.</li>
           </ul>
           <p style="margin-top: 18px;">We state these plainly because our <a href="lesson05.html" style="color: var(--mint); text-decoration: underline; text-underline-offset: 3px;">token-check lesson</a> teaches people to look for exactly this.</p>
         </div>
+      </div>
+    </section>
+
+
+    <section class="block" id="official">
+      <div class="wrap">
+        <div class="head">
+          <h2>Official links<span lang="fa">لینک‌های رسمی</span></h2>
+          <p>The only official TMN contract, pool and channels. If a link is not on this list, it is not ours.</p>
+        </div>
+        <div class="contract" style="max-width:640px;margin-top:0">
+          <code>0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d</code>
+        </div>
+        <div class="olinks">
+          <a class="olink" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer"><span class="ol-en">Contract on BscScan</span><span class="ol-fa" lang="fa">قرارداد در BscScan</span><span class="ol-go" aria-hidden="true">↗</span></a>
+          <a class="olink" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d#balances" target="_blank" rel="noopener noreferrer"><span class="ol-en">Holders on BscScan</span><span class="ol-fa" lang="fa">دارندگان در BscScan</span><span class="ol-go" aria-hidden="true">↗</span></a>
+          <a class="olink" href="https://bscscan.com/address/0x6f1836b15de0c6294c16aaec67903515f532fa1c" target="_blank" rel="noopener noreferrer"><span class="ol-en">PancakeSwap pool</span><span class="ol-fa" lang="fa">استخر PancakeSwap</span><span class="ol-go" aria-hidden="true">↗</span></a>
+          <a class="olink" href="https://dexscreener.com/bsc/0x6f1836b15de0c6294c16aaec67903515f532fa1c" target="_blank" rel="noopener noreferrer"><span class="ol-en">DexScreener</span><span class="ol-fa" lang="fa">DexScreener</span><span class="ol-go" aria-hidden="true">↗</span></a>
+          <a class="olink" href="https://www.geckoterminal.com/bsc/pools/0x6f1836b15de0c6294c16aaec67903515f532fa1c" target="_blank" rel="noopener noreferrer"><span class="ol-en">GeckoTerminal</span><span class="ol-fa" lang="fa">GeckoTerminal</span><span class="ol-go" aria-hidden="true">↗</span></a>
+          <a class="olink" href="https://gopluslabs.io/token-security/56/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer"><span class="ol-en">Security report (GoPlus)</span><span class="ol-fa" lang="fa">گزارش امنیتی GoPlus</span><span class="ol-go" aria-hidden="true">↗</span></a>
+          <a class="olink" href="whitepaper-v5.pdf"><span class="ol-en">Whitepaper V5</span><span class="ol-fa" lang="fa">وایت‌پیپر V5</span><span class="ol-go" aria-hidden="true">↗</span></a>
+          <a class="olink" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span class="ol-en">Telegram channel</span><span class="ol-fa" lang="fa">کانال تلگرام</span><span class="ol-go" aria-hidden="true">↗</span></a>
+          <a class="olink" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span class="ol-en">Instagram</span><span class="ol-fa" lang="fa">اینستاگرام</span><span class="ol-go" aria-hidden="true">↗</span></a>
+        </div>
+        <p class="stat-note">Official website: <strong>ditoman.com</strong>. Ditoman never asks for private keys or seed phrases and never sends tokens to people who message first.</p>
       </div>
     </section>
 
@@ -195,6 +237,7 @@
         <div>
           <h2>Burned on-chain in two phases</h2>
           <p>Two burn phases removed 10% of the original supply through the contract. Ownership was then renounced, which permanently closed both minting and the contract burn function. Nobody can ever create new TMN.</p>
+          <p>Separately, <strong>2,100,000,000,000 TMN</strong> sit at the public dead address <a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d?a=0x000000000000000000000000000000000000dEaD" target="_blank" rel="noopener noreferrer" style="color:var(--mint)">0x…dEaD</a>, where no one holds the key, so they can never move again. They still count inside totalSupply.</p>
           <p>Any future supply removal will be a transfer from founder wallets to a public burn address, with every transaction hash published on this page. These transfers take tokens out of circulation but don't change the totalSupply figure the contract shows, and we will describe them that way.</p>
         </div>
       </div>
@@ -213,6 +256,45 @@
           <div class="stat"><span>24h change</span><strong id="change24h">Loading</strong></div>
         </div>
         <p class="stat-note" id="marketStatus">Checking public market data.</p>
+
+        <div class="readguide">
+          <h3>How to read TMN's market data<span lang="fa">داده‌های بازار TMN را چطور بخوانیم</span></h3>
+          <ul class="checklist">
+            <li><strong>"Market cap" is not real value.</strong> Trackers multiply the full supply by the price of one small pool. With about $3,900 of liquidity behind it, that produces a large number no one could actually sell at.</li>
+            <li><strong>The price moves with tiny trades.</strong> A purchase of a few dollars can move it, because the pool is so small.</li>
+            <li><strong>Supply is concentrated.</strong> Almost all of the circulating supply sits in one founder wallet, visible to anyone on BscScan.</li>
+            <li><strong>Different sites show different supply.</strong> Some trackers still show the original 21 trillion. The contract itself reports 18.90 trillion after the burn.</li>
+          </ul>
+          <p class="fa-note" lang="fa">«ارزش بازار» نمایش‌داده‌شده ارزش واقعی نیست: از ضرب کل عرضه در قیمت یک استخر کوچک حدوداً ۳,۹۰۰ دلاری به دست می‌آید. قیمت با خریدهای چند دلاری تغییر می‌کند و تقریباً همه‌ی عرضه‌ی در گردش در یک کیف‌پول بنیان‌گذار است.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="security">
+      <div class="wrap split">
+        <div class="panel">
+          <h2>Security check<span lang="fa">بررسی امنیتی</span></h2>
+          <dl>
+            <div class="fact"><dt>Honeypot (can't sell)</dt><dd class="ok">No</dd></div>
+            <div class="fact"><dt>Buy tax / sell tax</dt><dd class="ok">0% / 0%</dd></div>
+            <div class="fact"><dt>Source code</dt><dd class="ok">Open, verified</dd></div>
+            <div class="fact"><dt>Owner</dt><dd class="ok">None (renounced to 0x0)</dd></div>
+            <div class="fact"><dt>Hidden owner / take back ownership</dt><dd class="ok">No / No</dd></div>
+            <div class="fact"><dt>Proxy (upgradeable)</dt><dd class="ok">No</dd></div>
+            <div class="fact"><dt>Pause, blacklist, whitelist</dt><dd class="ok">None</dd></div>
+            <div class="fact"><dt>Mint function</dt><dd>Exists, owner-only, unreachable</dd></div>
+          </dl>
+          <p class="stat-note">Source: <a href="https://gopluslabs.io/token-security/56/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer" style="color:var(--mint)">GoPlus Security</a>, checked 27 October 2026. Automated scanners flag "mintable" because the function exists in the code. It can only be called by the owner, and the owner is the zero address, so no one can ever call it.</p>
+        </div>
+        <div class="panel warn">
+          <h2>Liquidity pool<span lang="fa">استخر نقدینگی</span></h2>
+          <ul class="checklist">
+            <li>One pool: TMN / WBNB on PancakeSwap V2, created February 2022.</li>
+            <li>About 86% of the pool's LP tokens are held by the address that deployed the contract, and about 14% by the founder wallet.</li>
+            <li>LP tokens are <strong>not locked</strong>. That means the liquidity could be withdrawn. Check this yourself before trading any token, including this one.</li>
+          </ul>
+          <p class="stat-note"><a href="https://bscscan.com/token/0x6f1836b15de0c6294c16aaec67903515f532fa1c#balances" target="_blank" rel="noopener noreferrer" style="color:var(--mint)">See LP token holders on BscScan</a></p>
+        </div>
       </div>
     </section>
 
