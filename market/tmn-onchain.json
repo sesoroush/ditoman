@@ -1,0 +1,167 @@
+{
+ "totalSupply": 18901056445783.85,
+ "decimals": 9,
+ "owner": "0x0000000000000000000000000000000000000000",
+ "bal_dead": 2100000000000.0,
+ "bal_zero": 0.0,
+ "bal_founder_main": 16799633454600.451,
+ "bal_former_owner": 0.0,
+ "bal_deployer": 0.0,
+ "bal_pair": 1025842425.7663405,
+ "goplus": {
+  "code": 1,
+  "message": "OK",
+  "result": {
+   "0x86a56e59f22eaf3867eeeb41fb9bfa81bace790d": {
+    "anti_whale_modifiable": "0",
+    "buy_tax": "0",
+    "can_take_back_ownership": "0",
+    "cannot_buy": "0",
+    "cannot_sell_all": "0",
+    "creator_address": "0x5c037043df41956cd0c9b639cffaf46feb9a7ff4",
+    "creator_balance": "0",
+    "creator_percent": "0.000000",
+    "dex": [
+     {
+      "liquidity_type": "UniV2",
+      "name": "PancakeV2",
+      "liquidity": "1343.91182680",
+      "pair": "0x6f1836b15de0c6294c16aaec67903515f532fa1c"
+     }
+    ],
+    "external_call": "0",
+    "hidden_owner": "0",
+    "holder_count": "22",
+    "holders": [
+     {
+      "address": "0x521bf0254e2755abf8cd5afe8c7f9af35dccf50c",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "18900003087782.707951261",
+      "percent": "0.900000147037271807",
+      "is_locked": 0
+     },
+     {
+      "address": "0xaeda0cfe05fb79ce594e556f3001ae88dc8780e9",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "2098956199528.15",
+      "percent": "0.099950295215626190",
+      "is_locked": 0
+     },
+     {
+      "address": "0x6f1836b15de0c6294c16aaec67903515f532fa1c",
+      "tag": "PancakeV2",
+      "is_contract": 1,
+      "balance": "956744082.032671713",
+      "percent": "0.000045559242001555",
+      "is_locked": 0
+     },
+     {
+      "address": "0x9edf03fc4c94b18e7a258844fc61102a9741b50b",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "36690471.85",
+      "percent": "0.000001747165326190",
+      "is_locked": 0
+     },
+     {
+      "address": "0xabbff37ddc42057255e52b950f021e4dceec58bf",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "10000000",
+      "percent": "0.000000476190476190",
+      "is_locked": 0
+     },
+     {
+      "address": "0x397fea16338be7608d7ecb1ae8e87289225a24ca",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "10000000",
+      "percent": "0.000000476190476190",
+      "is_locked": 0
+     },
+     {
+      "address": "0xbc90b449bdea3d5557ef4138dcdcc45eb2d12e31",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "5000000",
+      "percent": "0.000000238095238095",
+      "is_locked": 0
+     },
+     {
+      "address": "0x7e5abd9c7b46c905117414a8052b330aefef1a7c",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "5000000",
+      "percent": "0.000000238095238095",
+      "is_locked": 0
+     },
+     {
+      "address": "0x7c0cab6dd43e0cc34f8282f1bcdd4ad7b9015495",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "5000000",
+      "percent": "0.000000238095238095",
+      "is_locked": 0
+     },
+     {
+      "address": "0x77d2e5e4a1ccd5023e722d07401b4c990cd198cc",
+      "tag": "",
+      "is_contract": 0,
+      "balance": "5000000",
+      "percent": "0.000000238095238095",
+      "is_locked": 0
+     }
+    ],
+    "honeypot_with_same_creator": "0",
+    "is_anti_whale": "0",
+    "is_blacklisted": "0",
+    "is_honeypot": "0",
+    "is_in_dex": "1",
+    "is_mintable": "1",
+    "is_open_source": "1",
+    "is_proxy": "0",
+    "is_whitelisted": "0",
+    "lp_holder_count": "2",
+    "lp_holders": [
+     {
+      "address": "0x5c037043df41956cd0c9b639cffaf46feb9a7ff4",
+      "tag": "",
+      "value": null,
+      "is_contract": 0,
+      "balance": "1.414213562373094048",
+      "percent": "0.999999999999999292",
+      "NFT_list": null,
+      "is_locked": 0
+     },
+     {
+      "address": "0x0000000000000000000000000000000000000000",
+      "tag": "Null Address",
+      "value": null,
+      "is_contract": 0,
+      "balance": "0.000000000000001",
+      "percent": "0.000000000000000707",
+      "NFT_list": null,
+      "is_locked": 1
+     }
+    ],
+    "lp_total_supply": "1.414213562373095048",
+    "owner_address": "0x0000000000000000000000000000000000000000",
+    "owner_balance": "0",
+    "owner_change_balance": "1",
+    "owner_percent": "0.0",
+    "personal_slippage_modifiable": "0",
+    "selfdestruct": "0",
+    "sell_tax": "0",
+    "slippage_modifiable": "0",
+    "token_name": "DiToman",
+    "token_symbol": "TMN",
+    "total_supply": "21000000000000",
+    "trading_cooldown": "0",
+    "transfer_pausable": "0",
+    "transfer_tax": "0"
+   }
+  }
+ }
+}
