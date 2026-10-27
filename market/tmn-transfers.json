@@ -1,18 +1,118 @@
 {
- "latest": 130110664,
- "tmn_transfers": [],
- "lp_transfers": [],
- "nonces": {},
+ "latest": 130110863,
+ "archive": [
+  "https://bsc-mainnet.public.blastapi.io"
+ ],
+ "events": [
+  {
+   "label": "token created",
+   "block": 13749323,
+   "time": "2021-12-24 08:10:04 UTC",
+   "logs_err": "RuntimeError('eth_getLogs failed everywhere')"
+  },
+  {
+   "label": "dead address first receives TMN",
+   "block": 94458030,
+   "time": "2026-04-24 19:14:48 UTC",
+   "logs_err": "RuntimeError('eth_getLogs failed everywhere')"
+  },
+  {
+   "label": "dead address reaches today's balance",
+   "block": 98209097,
+   "time": "2026-05-14 08:46:13 UTC",
+   "logs_err": "RuntimeError('eth_getLogs failed everywhere')"
+  },
+  {
+   "label": "total supply first drops",
+   "block": 121602675,
+   "time": "2026-09-13 07:04:42 UTC",
+   "transfers": [
+    {
+     "tx": "0x8d81df6ec4e584a3bd24048a0e48734dbdd3722b5888cd6f62b66bfd3eba10e3",
+     "from": "0xaeda0cfe05fb79ce594e556f3001ae88dc8780e9",
+     "to": "0x0000000000000000000000000000000000000000",
+     "raw": 2098943554216150000000
+    }
+   ],
+   "txs": [
+    {
+     "tx": "0x8d81df6ec4e584a3bd24048a0e48734dbdd3722b5888cd6f62b66bfd3eba10e3",
+     "sender": "0xaeda0cfe05fb79ce594e556f3001ae88dc8780e9",
+     "nonce": 24,
+     "to": "0x86a56e59f22eaf3867eeeb41fb9bfa81bace790d",
+     "input": "0x6161eb18"
+    }
+   ]
+  },
+  {
+   "label": "LP tokens first reach deployer",
+   "block": 14869878,
+   "time": "2022-02-01 08:18:46 UTC",
+   "logs_err": "RuntimeError('eth_getLogs failed everywhere')"
+  },
+  {
+   "label": "LP tokens first reach founder main wallet",
+   "block": 94463069,
+   "time": "2026-04-24 19:52:39 UTC",
+   "logs_err": "RuntimeError('eth_getLogs failed everywhere')"
+  },
+  {
+   "label": "former owner wallet first receives TMN",
+   "block": 21573223,
+   "time": "2022-09-23 04:43:36 UTC",
+   "logs_err": "RuntimeError('eth_getLogs failed everywhere')"
+  },
+  {
+   "label": "former owner wallet emptied",
+   "block": 121602675,
+   "time": "2026-09-13 07:04:42 UTC",
+   "logs_err": "RuntimeError('eth_getLogs failed everywhere')"
+  }
+ ],
+ "start_supply_raw": 21000000000000000000000,
+ "nonce_deployer": 13,
+ "nonce_founder": 200,
+ "nonce_former_owner": 27,
  "log": [
-  "switch rpc at 0: <HTTPError 403: 'Forbidden'>",
-  "switch rpc at 0: <HTTPError 400: 'Bad Request'>",
-  "switch rpc at 0: RuntimeError(\"{'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}\")",
-  "switch rpc at 0: RuntimeError(\"{'code': -32005, 'message': 'limit exceeded'}\")",
-  "gave up at block 0",
-  "switch rpc at 0: <HTTPError 403: 'Forbidden'>",
-  "switch rpc at 0: <HTTPError 400: 'Bad Request'>",
-  "switch rpc at 0: RuntimeError(\"{'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}\")",
-  "switch rpc at 0: RuntimeError(\"{'code': -32005, 'message': 'limit exceeded'}\")",
-  "gave up at block 0"
+  "https://binance.llamarpc.com eth_getLogs: URLError(gaierror(-2, 'Name or service not known'))",
+  "https://bsc.meowrpc.com eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'The method eth_getLogs is not supported.'}\")",
+  "https://bsc-pokt.nodies.app eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://bsc.blockpi.network/v1/rpc/public eth_getLogs: <HTTPError 503: 'Service Unavailable'>",
+  "https://endpoints.omniatech.io/v1/bsc/mainnet/public eth_getLogs: <HTTPError 521: '<none>'>",
+  "https://rpc.ankr.com/bsc eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free.'}\")",
+  "https://bsc-rpc.publicnode.com eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://1rpc.io/bnb eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'header not found'}\")",
+  "https://bsc.publicnode.com eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://bscrpc.com eth_getLogs: <HTTPError 401: 'Unauthorized'>",
+  "https://bsc-rpc.publicnode.com eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://bsc.drpc.org eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'Your request has been rate-limited due to unusually high traffic on the Alchemy public API. Consider creating a free Alchemy account or upgrading to a paid plan for guaran\")",
+  "https://bsc-dataseed.bnbchain.org eth_getLogs: RuntimeError(\"{'code': -32005, 'message': 'limit exceeded'}\")",
+  "https://bsc.drpc.org eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'Your request has been rate-limited due to unusually high traffic on the Alchemy public API. Consider creating a free Alchemy account or upgrading to a paid plan for guaran\")",
+  "https://bsc-mainnet.public.blastapi.io eth_getLogs: <HTTPError 429: 'Too Many Requests'>",
+  "https://binance.llamarpc.com eth_getLogs: URLError(gaierror(-2, 'Name or service not known'))",
+  "https://bsc.meowrpc.com eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'The method eth_getLogs is not supported.'}\")",
+  "https://bsc-pokt.nodies.app eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://bsc.blockpi.network/v1/rpc/public eth_getLogs: <HTTPError 503: 'Service Unavailable'>",
+  "https://endpoints.omniatech.io/v1/bsc/mainnet/public eth_getLogs: <HTTPError 521: '<none>'>",
+  "https://rpc.ankr.com/bsc eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free.'}\")",
+  "https://bsc-rpc.publicnode.com eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://1rpc.io/bnb eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'header not found'}\")",
+  "https://bsc.publicnode.com eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://bscrpc.com eth_getLogs: <HTTPError 401: 'Unauthorized'>",
+  "https://bsc-rpc.publicnode.com eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://bsc.drpc.org eth_getLogs: <HTTPError 429: 'Too Many Requests'>",
+  "https://bsc-dataseed.bnbchain.org eth_getLogs: RuntimeError(\"{'code': -32005, 'message': 'limit exceeded'}\")",
+  "https://bsc.drpc.org eth_getLogs: <HTTPError 429: 'Too Many Requests'>",
+  "https://bsc-mainnet.public.blastapi.io eth_getLogs: <HTTPError 429: 'Too Many Requests'>",
+  "https://binance.llamarpc.com eth_getLogs: URLError(gaierror(-2, 'Name or service not known'))",
+  "https://bsc.meowrpc.com eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'The method eth_getLogs is not supported.'}\")",
+  "https://bsc-pokt.nodies.app eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://bsc.blockpi.network/v1/rpc/public eth_getLogs: <HTTPError 503: 'Service Unavailable'>",
+  "https://endpoints.omniatech.io/v1/bsc/mainnet/public eth_getLogs: <HTTPError 521: '<none>'>",
+  "https://rpc.ankr.com/bsc eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free.'}\")",
+  "https://bsc-rpc.publicnode.com eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://1rpc.io/bnb eth_getLogs: RuntimeError(\"{'code': -32000, 'message': 'header not found'}\")",
+  "https://bsc.publicnode.com eth_getLogs: <HTTPError 403: 'Forbidden'>",
+  "https://bscrpc.com eth_getLogs: <HTTPError 401: 'Unauthorized'>"
  ]
 }
