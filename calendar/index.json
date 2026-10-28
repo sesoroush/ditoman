@@ -1,0 +1,75 @@
+[
+ {
+  "date": "2026-10-28",
+  "jalali": "1405/08/06",
+  "weekday_fa": "چهارشنبه",
+  "headline_fa": "امروز، روزِ فدرال رزرو",
+  "headline_en": "Fed day",
+  "post": "calendar/2026-10-28-post.png",
+  "story": "calendar/2026-10-28-story.png",
+  "today": [
+   {
+    "key": true,
+    "fa": "تصمیم نرخ بهرهٔ فدرال رزرو آمریکا",
+    "en": "US Fed (FOMC) rate decision",
+    "tehran": "21:30",
+    "lisbon": "18:00",
+    "note_fa": "انتظار: ثابت ماندن در 3.75–4.00%؛ کنفرانس خبری نیم ساعت بعد",
+    "expected": "Hold 3.75–4.00%"
+   },
+   {
+    "fa": "بانک مرکزی کانادا",
+    "en": "Bank of Canada rate decision",
+    "tehran": "17:15",
+    "lisbon": "13:45",
+    "note_fa": "انتظار: افزایش از 2.25% به 2.50%",
+    "expected": "Hike to 2.50%"
+   },
+   {
+    "fa": "گزارش مالی آلفابت (گوگل)",
+    "en": "Alphabet Q3 earnings",
+    "tehran": "~23:30",
+    "lisbon": "~20:00",
+    "note_fa": "پس از بسته‌شدن بازار آمریکا",
+    "expected": "After US close"
+   }
+  ],
+  "week": [
+   {
+    "day_fa": "پنجشنبه",
+    "date": "2026-10-29",
+    "fa": "تورم PCE و رشد اقتصادی آمریکا (فصل سوم)",
+    "en": "US core PCE (Sep) and Q3 GDP advance",
+    "tehran": "16:00",
+    "lisbon": "12:30",
+    "note_fa": "پیش‌بینی: تورم هسته 3.1% · رشد 3.0%",
+    "expected": "Core PCE 3.1% y/y · GDP 3.0%"
+   },
+   {
+    "day_fa": "پنجشنبه",
+    "date": "2026-10-29",
+    "fa": "بانک مرکزی اروپا",
+    "en": "ECB rate decision",
+    "tehran": "16:45",
+    "lisbon": "13:15",
+    "note_fa": "نرخ فعلی سپرده 2.50%؛ احتمال افزایش مطرح است",
+    "expected": "Deposit rate 2.50%, hike possible"
+   },
+   {
+    "day_fa": "جمعه",
+    "date": "2026-10-30",
+    "fa": "شاخص هزینهٔ اشتغال آمریکا",
+    "en": "US Employment Cost Index Q3",
+    "tehran": "16:00",
+    "lisbon": "12:30",
+    "note_fa": "پیش‌بینی: 0.8%",
+    "expected": "0.8% q/q"
+   }
+  ],
+  "sources": [
+   "https://woodgundyadvisors.cibc.com/documents/10180/5475163/The-Week-Ahead.pdf",
+   "https://admiralmarkets.com/analytics/traders-blog/ecb-meeting-october-2026",
+   "https://finviz.com/news/405729/2-magnificent-7-stocks-in-focus-ahead-of-earnings"
+  ]
+ }
+]
