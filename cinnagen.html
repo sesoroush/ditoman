@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>An Iranian Medicine, Authorised Across Europe: CinnaGen and Zandoriah | Ditoman</title>
+<meta name="description" content="Built Under Pressure. How Iranian biotech company CinnaGen won EU marketing authorisation for Zandoriah, a teriparatide biosimilar for osteoporosis: the company, the drug, the approval, and what the numbers do and do not show." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+<div class="logo-text">DITOMAN</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html">Learn</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:Tahoma,Arial,sans-serif}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/cinnagen/1-cover.png" alt="An Iranian medicine, authorised across Europe" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge">Built Under Pressure • ساخته زیر فشار</div>
+<h1>An Iranian Medicine, Authorised Across Europe</h1>
+<p class="subtitle">
+CinnaGen's Zandoriah, a biosimilar for osteoporosis, received EU marketing authorisation in April 2026. The company behind it, the drug itself, what the approval covers, and what the numbers do and do not show.
+</p>
+<div class="stats">
+<div class="stat"><b>30</b><span>countries covered by one EU licence</span></div>
+<div class="stat"><b>1994</b><span>CinnaGen founded</span></div>
+<div class="stat"><b>40+</b><span>countries where CinnaGen operates</span></div>
+<div class="stat"><b>65%</b><span>fewer spine fractures with teriparatide in its main trial</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>در آوریل ۲۰۲۶، کمیسیون اروپا به داروی «زاندوریا» ساخت شرکت ایرانی سیناژن مجوز بازار داد. این اولین مجوز اروپایی این شرکت است. در این صفحه داستان کامل را می‌خوانید: شرکت، دارو، مجوز، و اینکه اعداد واقعاً چه می‌گویند و چه نمی‌گویند.</p>
+
+<h3><span class="check-number">۰۱.</span> سیناژن کیست؟</h3>
+<p>سیناژن در سال ۱۹۹۴ (۱۳۷۳) تأسیس شد و از پیشگامان داروسازی زیستی (بیوتکنولوژی) در ایران است. امروز «گروه سیناژن» از هشت شرکت تشکیل شده است.</p>
+<ul class="timeline">
+<li><strong>۱۹۹۴</strong> تأسیس سیناژن</li>
+<li><strong>۲۰۰۶</strong> اولین داروی بیوسیمیلار شرکت، با همکاری مؤسسه فراونهوفر آلمان: «سینووکس»، اینترفرون بتا برای ام‌اس، که در ۲۰۰۷ مجوز سازمان غذا و دارو گرفت</li>
+<li><strong>۲۰۱۶</strong> عرضه «سینورا» (آدالیموماب)، داروی بیماری‌های خودایمنی</li>
+<li><strong>۲۰۱۸</strong> دریافت گواهی GMP اروپایی برای کارخانه</li>
+<li><strong>۲۰۲۱</strong> عرضه «زاکرل» (اوکرلیزوماب) برای ام‌اس</li>
+<li><strong>۲۰۲۶</strong> تأیید کمیته علمی آژانس دارویی اروپا در فوریه، و مجوز رسمی بازار اتحادیه اروپا برای زاندوریا در آوریل</li>
+</ul>
+<p>طبق گفته خود شرکت، بیش از ۱۹ داروی بیوسیمیلار در بازار و بیش از ۲۵ دارو در دست توسعه دارد و ظرفیت بیوراکتورهایش از ۵۰ هزار لیتر بیشتر است.</p>
+
+<h3><span class="check-number">۰۲.</span> زاندوریا چیست و چه می‌کند؟</h3>
+<p>ماده مؤثر زاندوریا «تری‌پاراتاید» است: بخش فعال هورمون پاراتیروئید انسان. بیشتر داروهای پوکی استخوان فقط سرعت تحلیل استخوان را کم می‌کنند. تری‌پاراتاید فرق دارد و ساختن استخوان تازه را تحریک می‌کند. به همین دلیل برای بیمارانی تجویز می‌شود که در معرض خطر بالای شکستگی‌اند.</p>
+<p>زاندوریا «بیوسیمیلار» داروی Forsteo شرکت آمریکایی الی لیلی است. بیوسیمیلار یعنی نسخه هم‌ارز یک داروی زیستی، با کیفیت، ایمنی و اثربخشی قابل‌مقایسه. داروهای زیستی در سلول‌های زنده تولید می‌شوند، نه با واکنش شیمیایی ساده، و همین تولیدشان را از سخت‌ترین کارهای صنعت دارو می‌کند.</p>
+<p>دارو به شکل قلم تزریقی آماده (۲۰ میکروگرم) است و روزانه زیر پوست تزریق می‌شود.</p>
+
+<h3><span class="check-number">۰۳.</span> این دارو چقدر به بیماران کمک می‌کند؟</h3>
+<p>در کارآزمایی اصلی تری‌پاراتاید که در ۲۰۰۱ در مجله پزشکی نیوانگلند منتشر شد، ۱۶۳۷ زن یائسه مبتلا به پوکی استخوان شرکت کردند. با دوز ۲۰ میکروگرم، یعنی همان دوز زاندوریا:</p>
+<ul>
+<li>شکستگی تازه ستون فقرات ۶۵٪ کمتر شد (۵٪ در برابر ۱۴٪ در گروه دارونما)</li>
+<li>شکستگی‌های دیگر ناشی از شکنندگی استخوان ۵۳٪ کمتر شد (۳٪ در برابر ۶٪)</li>
+</ul>
+<p>شکستگی لگن و ستون فقرات در سالمندان فقط درد نیست: اغلب به ازکارافتادگی و از دست دادن استقلال منجر می‌شود. هر شکستگی‌ای که پیشگیری شود، یعنی سال‌هایی که یک نفر می‌تواند روی پای خودش بایستد.</p>
+
+<h3><span class="check-number">۰۴.</span> مجوز اروپا یعنی چه؟</h3>
+<p>این مجوز «متمرکز» است: یک تأیید که برای هر ۲۷ کشور اتحادیه اروپا به‌اضافه ایسلند، نروژ و لیختن‌اشتاین معتبر است. یعنی ۳۰ کشور.</p>
+<ul>
+<li><strong>۲۶ فوریه ۲۰۲۶:</strong> کمیته علمی آژانس دارویی اروپا (CHMP) نظر مثبت داد</li>
+<li><strong>۲۷ آوریل ۲۰۲۶:</strong> مجوز رسمی بازار صادر شد (طبق سایت آژانس دارویی اروپا)</li>
+<li>زاندوریا پنجمین بیوسیمیلار تری‌پاراتاید در اروپاست و با محصولات شرکت‌های اروپایی و هندی رقابت می‌کند</li>
+<li>دارنده مجوز، شعبه پرتغالی سیناژن است که در فونشال، جزیره مادیرا، ثبت شده</li>
+</ul>
+<p>یک نکته مهم: مجوز به معنای فروش فوری نیست. هر کشور هنوز روند قیمت‌گذاری، پوشش بیمه و عرضه خودش را دارد. پس فروش واقعی در اروپا تازه باید شروع شود.</p>
+
+<h3><span class="check-number">۰۵.</span> اروپا چقدر به این دارو نیاز دارد؟</h3>
+<ul>
+<li>حدود ۴.۳ میلیون شکستگی ناشی از پوکی استخوان در سال ۲۰۱۹ (اتحادیه اروپا، بریتانیا و سوئیس)</li>
+<li>بیش از ۵۶ میلیارد یورو هزینه درمانی سالانه</li>
+<li>حدود ۷۱٪ از زنانی که باید درمان شوند، درمانی دریافت نمی‌کنند</li>
+</ul>
+<p>بیوسیمیلارها با ایجاد رقابت معمولاً قیمت را پایین می‌آورند و دسترسی را بیشتر می‌کنند. شکاف درمانی به این بزرگی دقیقاً جایی است که یک گزینه تازه می‌تواند اثر بگذارد.</p>
+
+<h3><span class="check-number">۰۶.</span> سیناژن کجاها فعال است؟</h3>
+<p>سیناژن می‌گوید در بیش از ۴۰ کشور در اوراسیا، خاورمیانه، آمریکای لاتین و آفریقا فعالیت تجاری دارد. فهرستی که شرکت در ۲۰۱۹ منتشر کرد، کشورهایی مثل الجزایر، مراکش، سنگال، اردن، قطر، هند، سریلانکا، ویتنام، صربستان، بوسنی، مولداوی و اکوادور را شامل می‌شد. سیناژن در ترکیه هم کارخانه دارد.</p>
+<p>شرکت آمار بیماران برخی داروهایش را هم منتشر کرده: حدود ۸۰ هزار بیمار از زمان عرضه «سینورا» از آن استفاده کرده‌اند، و «زاکرل» حدود ۵۴۰۰ بیمار در ایران و ۷۲۰۰ بیمار در منطقه را درمان کرده است. این‌ها برآورد خود شرکت‌اند و منبع مستقلی تأییدشان نکرده.</p>
+
+<h3><span class="check-number">۰۷.</span> زنی که سکان را در دست دارد</h3>
+<p>دکتر هاله حامدی‌فر از سال ۲۰۰۲ در سیناژن کار کرده و از ۲۰۲۳ رئیس هیئت‌مدیره گروه است. اولین مجوز اروپایی شرکت در دوره ریاست او به دست آمد. فوربس خاورمیانه او را در فهرست رهبران برتر حوزه سلامت ۲۰۲۵، رتبه ۹ قرار داده است. مدیرعامل سیناژن مهران منتجبی‌نیت است.</p>
+
+<div class="note">
+<p><strong>درباره درآمد ارزی و صرفه‌جویی</strong></p>
+<p>دنبال این اعداد هم گشتیم: سیناژن چقدر صادرات دارد، چقدر ارز برای ایران می‌آورد و تولید داخلی این داروها چقدر در واردات صرفه‌جویی کرده. رقم‌هایی در رسانه‌ها دست‌به‌دست می‌شود، ولی هیچ‌کدام را با منبع اصلی و قابل‌بررسی پیدا نکردیم. ترجیح دادیم عددی را که نمی‌توانیم ثابت کنیم منتشر نکنیم. اگر سیناژن یا منبع رسمی آمار تأییدشده‌ای منتشر کند، این بخش را به‌روز می‌کنیم.</p>
+</div>
+
+<p><strong>جمع‌بندی:</strong> گرفتن مجوز اروپا برای یک داروی زیستی یعنی رسیدن به استانداردی که در هر جای دنیا پذیرفته می‌شود. این دستاورد را صدها دانشمند، مهندس و کارگر ساخته‌اند، در شرایطی که دسترسی به مواد، تجهیزات و نظام مالی جهانی ساده نبوده است.</p>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>In April 2026, the European Commission granted marketing authorisation to Zandoriah, a medicine made by the Iranian company CinnaGen. It is the company's first EU authorisation. This page tells the full story: the company, the drug, the approval, and what the numbers do and do not show.</p>
+
+<h3><span class="check-number">01.</span> Who is CinnaGen?</h3>
+<p>CinnaGen was founded in 1994 and is one of the pioneers of biopharmaceuticals in Iran. The CinnaGen Group today is made up of eight companies.</p>
+<ul class="timeline">
+<li><strong>1994</strong> CinnaGen founded</li>
+<li><strong>2006</strong> First biosimilar, developed with Germany's Fraunhofer Institute: Cinnovex, an interferon beta for multiple sclerosis, approved by Iran's FDA in 2007</li>
+<li><strong>2016</strong> Launch of CinnoRA (adalimumab) for autoimmune diseases</li>
+<li><strong>2018</strong> EU GMP certification for its plant</li>
+<li><strong>2021</strong> Launch of Xacrel (ocrelizumab) for multiple sclerosis</li>
+<li><strong>2026</strong> Positive opinion from the EMA's scientific committee in February, EU marketing authorisation for Zandoriah in April</li>
+</ul>
+<p>By the company's own account, it has more than 19 biosimilars on the market, more than 25 in development, and over 50,000 litres of bioreactor capacity.</p>
+
+<h3><span class="check-number">02.</span> What Zandoriah is and does</h3>
+<p>Zandoriah's active ingredient is teriparatide, the active fragment of human parathyroid hormone. Most osteoporosis medicines slow the loss of bone. Teriparatide is different: it stimulates new bone formation, which is why it is used for patients at high risk of fracture.</p>
+<p>Zandoriah is a biosimilar of Forsteo, made by Eli Lilly. A biosimilar is an equivalent version of a biological medicine, with comparable quality, safety and efficacy. Biologics are produced in living cells rather than by simple chemistry, which makes them among the hardest products in the pharmaceutical industry to make.</p>
+<p>It comes as a pre-filled 20-microgram pen, injected under the skin once a day.</p>
+
+<h3><span class="check-number">03.</span> How much does it help patients?</h3>
+<p>In teriparatide's pivotal trial, published in the New England Journal of Medicine in 2001, 1,637 postmenopausal women with osteoporosis took part. At the 20-microgram dose, the same dose as Zandoriah:</p>
+<ul>
+<li>New spine fractures fell by 65% (5% versus 14% on placebo)</li>
+<li>Other fragility fractures fell by 53% (3% versus 6%)</li>
+</ul>
+<p>For older people, a hip or spine fracture is not just pain. It often means disability and lost independence. Every fracture prevented is years in which someone can stand on their own feet.</p>
+
+<h3><span class="check-number">04.</span> What the EU approval means</h3>
+<p>This is a centralised authorisation: one approval valid in all 27 EU member states plus Iceland, Norway and Liechtenstein, 30 countries in total.</p>
+<ul>
+<li><strong>26 February 2026:</strong> positive opinion from the EMA's scientific committee (CHMP)</li>
+<li><strong>27 April 2026:</strong> marketing authorisation granted (per the EMA's website)</li>
+<li>Zandoriah is the fifth teriparatide biosimilar in the EU, competing with products from European and Indian companies</li>
+<li>The licence holder is CinnaGen's Portuguese subsidiary, registered in Funchal, Madeira</li>
+</ul>
+<p>One important point: authorisation is not the same as sales. Each country still has its own pricing, reimbursement and launch process, so real sales in Europe are only now beginning.</p>
+
+<h3><span class="check-number">05.</span> How much does Europe need it?</h3>
+<ul>
+<li>About 4.3 million osteoporotic fragility fractures in 2019 (EU, UK and Switzerland)</li>
+<li>More than €56 billion in annual healthcare costs</li>
+<li>About 71% of women who qualify for treatment do not receive it</li>
+</ul>
+<p>Biosimilars usually bring prices down through competition and widen access. A treatment gap this large is exactly where a new option can make a difference.</p>
+
+<h3><span class="check-number">06.</span> Where CinnaGen operates</h3>
+<p>CinnaGen says it has commercial operations in more than 40 countries across Eurasia, the Middle East, Latin America and Africa. A list the company published in 2019 included Algeria, Morocco, Senegal, Jordan, Qatar, India, Sri Lanka, Vietnam, Serbia, Bosnia and Herzegovina, Moldova and Ecuador. It also has a plant in Turkey.</p>
+<p>The company has also published patient figures for some products: about 80,000 patients have used CinnoRA since launch, and Xacrel has treated about 5,400 patients in Iran and 7,200 across the region. These are company estimates, not independently verified.</p>
+
+<h3><span class="check-number">07.</span> The woman at the helm</h3>
+<p>Dr Haleh Hamedifar has worked at CinnaGen since 2002 and has chaired the group since 2023. The company's first EU authorisation came under her chairmanship. Forbes Middle East ranked her ninth among its Top Healthcare Leaders of 2025. CinnaGen's CEO is Mehran Montajabi Niyat.</p>
+
+<div class="note">
+<p><strong>On export earnings and savings</strong></p>
+<p>We also looked for how much CinnaGen exports, how much foreign currency it brings into Iran, and how much local production of these medicines has saved on imports. Figures circulate in the media, but we could not trace any of them to a primary, checkable source. We would rather not publish a number we cannot stand behind. If CinnaGen or an official source publishes verified figures, we will update this section.</p>
+</div>
+
+<p><strong>The takeaway:</strong> winning EU approval for a biological medicine means meeting a standard recognised anywhere in the world. Hundreds of scientists, engineers and workers built this, at a time when access to materials, equipment and the global financial system has not been simple.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="lesson-content" style="display:block">
+<h3>Sources • منابع</h3>
+<ul class="sources">
+<li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/zandoriah" target="_blank" rel="noopener">European Medicines Agency: Zandoriah EPAR</a></li>
+<li><a href="https://gabionline.net/biosimilars/news/ema-recommends-approval-for-teriparatide-biosimilar-zandoriah" target="_blank" rel="noopener">GaBI Online: EMA recommends approval for Zandoriah</a></li>
+<li><a href="https://pharmaphorum.com/rd/what-european-commission-marketing-authorisation-teriparatide-biosimilar-means-osteoporosis" target="_blank" rel="noopener">pharmaphorum: What the EU authorisation means for osteoporosis</a></li>
+<li><a href="https://gabi-journal.net/transforming-healthcare-cinnagens-leadership-in-follow-on-biologicals-biosimilars-development-and-market-expansion.html" target="_blank" rel="noopener">GaBI Journal (2024, company-funded): CinnaGen's biosimilars development</a></li>
+<li><a href="https://projects.gbreports.com/turkey-pharmaceuticals-2019-company-profiles/cinnagen/" target="_blank" rel="noopener">Global Business Reports (2019): CinnaGen company profile</a></li>
+<li><a href="https://www.forbesmiddleeast.com/lists/top-healthcare-leaders-2025-founders-shareholders/haleh-hamedifar/" target="_blank" rel="noopener">Forbes Middle East: Haleh Hamedifar</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/11346808/" target="_blank" rel="noopener">Neer et al., NEJM 2001: teriparatide fracture trial</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cinnagen" target="_blank" rel="noopener">Wikipedia: CinnaGen</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">Built Under Pressure</h2>
+<p>A Ditoman series documenting what Iranian people and businesses have built, with sources, and without taking political sides.</p>
+<p class="fa" style="display:block">مجموعه‌ای از دیتومن برای ثبت دستاوردهای واقعی مردم و کسب‌وکارهای ایرانی، با منبع و بدون موضع سیاسی.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">View on Instagram</a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+Ditoman • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+</body>
+</html>
