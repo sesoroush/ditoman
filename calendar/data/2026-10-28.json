@@ -1,0 +1,19 @@
+{
+ "date": "2026-10-28",
+ "headline_fa": "امروز، روزِ",
+ "headline_hl": "فدرال رزرو",
+ "key": {"kick_en": "FOMC RATE DECISION", "fa": "تصمیم نرخ بهرهٔ آمریکا", "story_fa": "تصمیم نرخ بهرهٔ فدرال رزرو",
+   "body_fa": "انتظار بازار: ثابت ماندن نرخ در 3.75–4.00%. کنفرانس خبری نیم ساعت بعد؛ لحنِ فدرال برای دلار، طلا و بیت‌کوین از خودِ عدد مهم‌تر است.",
+   "story_note_fa": "انتظار: ثابت ماندن در 3.75–4.00% · سپس کنفرانس خبری",
+   "tehran": "21:30", "lisbon": "18:00", "en": "US Fed (FOMC) rate decision", "expected": "Hold 3.75–4.00%"},
+ "today": [
+  {"fa": "بانک مرکزی کانادا", "note_fa": "انتظار: افزایش نرخ از 2.25% به 2.50%", "tehran": "17:15", "lisbon": "13:45", "en": "Bank of Canada rate decision", "expected": "Hike to 2.50%"},
+  {"fa": "گزارش مالی آلفابت (گوگل)", "note_fa": "پس از بسته‌شدن بازار آمریکا", "tehran": "~23:30", "lisbon": "~20:00", "en": "Alphabet Q3 earnings", "expected": "After US close"}
+ ],
+ "week": [
+  {"day_fa": "پنجشنبه", "date": "2026-10-29", "fa": "تورم PCE و رشد اقتصادی آمریکا", "note_fa": "پیش‌بینی: تورم هسته 3.1% · رشد فصل سوم 3.0%", "tehran": "16:00", "lisbon": "12:30", "en": "US core PCE (Sep) and Q3 GDP advance", "expected": "Core PCE 3.1% y/y · GDP 3.0%"},
+  {"day_fa": "پنجشنبه", "date": "2026-10-29", "fa": "بانک مرکزی اروپا", "note_fa": "نرخ فعلی سپرده 2.50%؛ احتمال افزایش مطرح است", "tehran": "16:45", "lisbon": "13:15", "en": "ECB rate decision", "expected": "Deposit rate 2.50%, hike possible"},
+  {"day_fa": "جمعه", "date": "2026-10-30", "fa": "شاخص هزینهٔ اشتغال آمریکا", "note_fa": "پیش‌بینی: 0.8% در فصل سوم", "tehran": "16:00", "lisbon": "12:30", "en": "US Employment Cost Index Q3", "expected": "0.8% q/q"}
+ ],
+ "sources": ["https://woodgundyadvisors.cibc.com/documents/10180/5475163/The-Week-Ahead.pdf", "https://admiralmarkets.com/analytics/traders-blog/ecb-meeting-october-2026", "https://finviz.com/news/405729/2-magnificent-7-stocks-in-focus-ahead-of-earnings"]
+}
