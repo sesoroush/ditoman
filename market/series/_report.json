@@ -22,14 +22,14 @@
   ]
  },
  "usd_nima": {
-  "rows": 1874,
+  "rows": 1875,
   "first": [
    "2018-11-15",
    9004.0
   ],
   "last": [
-   "2026-10-27",
-   186047.9
+   "2026-10-28",
+   186420.0
   ]
  },
  "usd_mex": "error: <HTTPError 500: 'Internal Server Error'>",
