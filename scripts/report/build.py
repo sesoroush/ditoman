@@ -26,7 +26,8 @@ def chg(pct, fa=False):
     cls = "up" if pct > 0 else "down" if pct < 0 else "flat"
     arrow = "▲" if pct > 0 else "▼" if pct < 0 else "•"
     n = f"{abs(pct):.2f}"
-    return f'<span class="chg {cls}" dir="ltr">{arrow} {n.translate(FA_DIG) + "٪" if fa else n + "%"}</span>'
+    if fa: return f'<span class="chg {cls} fa" dir="ltr">{arrow} {n.replace(".", "٫").translate(FA_DIG)}٪</span>'
+    return f'<span class="chg {cls}" dir="ltr">{arrow} {n}%</span>'
 
 def render(data, out_png, theme="ft", sample=False):
     T = THEMES[theme]
@@ -50,7 +51,7 @@ def render(data, out_png, theme="ft", sample=False):
             pre = f'<span class="cur">{it["unit_pre"]}</span>' if it.get("unit_pre") else ""
             h.append(f'''<div class="row">
   <div class="nm"><span class="fa">{it["fa"]}</span><span class="en">{it["en"]}</span></div>
-  <div class="vl" dir="ltr">{pre}{v}</div>
+  <div class="vl{' fa' if fa_digits else ''}" dir="ltr">{pre}{v}</div>
   {chg(it.get("chg"), fa_digits)}
 </div>''')
         return "".join(h)
@@ -108,6 +109,8 @@ h1 i {{ color:{T["accent"]}; font-weight:700; }}
 .vl {{ display:flex; align-items:baseline; gap:6px; font-family:Pf; font-weight:900; font-size:45px; letter-spacing:-.01em; font-variant-numeric:lining-nums tabular-nums; }}
 .vl .cur {{ font-family:Pf; font-size:1em; color:{T["ink"]}; font-weight:900; }}
 .row .vl {{ justify-content:flex-end; padding-left:8px; }}
+.vl.fa {{ font-family:Vz; font-weight:800; font-size:46px; line-height:1; letter-spacing:0; font-feature-settings:"tnum"; }}
+.chg.fa {{ font-family:Vz; font-weight:800; font-size:25px; line-height:1; }}
 .chg {{ justify-self:end; font-family:Br; font-weight:800; font-size:24px; font-variant-numeric:tabular-nums; white-space:nowrap; }}
 .row .chg {{ justify-self:start; padding:6px 14px; border-radius:999px; min-width:140px; text-align:center; }}
 .row .chg.up {{ background:rgba(5,99,107,.12); }} .row .chg.down {{ background:rgba(179,0,0,.10); }} .row .chg.flat {{ background:rgba(13,12,11,.06); }}
