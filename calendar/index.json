@@ -1,5 +1,69 @@
 [
  {
+  "date": "2026-10-29",
+  "jalali": "1405/08/07",
+  "weekday_fa": "پنجشنبه",
+  "headline_fa": "امروز، روزِ تورم و رشد آمریکا",
+  "post": "calendar/2026-10-29-post.png",
+  "story": "calendar/2026-10-29-story.png",
+  "today": [
+   {
+    "key": true,
+    "fa": "تورم PCE و رشد اقتصادی آمریکا",
+    "en": "US Q3 GDP (advance), Sep PCE, jobless claims",
+    "tehran": "16:00",
+    "lisbon": "12:30",
+    "note_fa": "پیش‌بینی: رشد فصل سوم 3.2% و تورم هسته 0.3% در ماه. بعد از ثابت ماندن نرخ فدرال دیروز، این عددها مسیر دلار، طلا و بیت‌کوین را تعیین می‌کنند.",
+    "expected": "GDP 3.2% · core PCE 0.3% m/m"
+   },
+   {
+    "fa": "بانک مرکزی اروپا",
+    "note_fa": "انتظار: ثابت ماندن نرخ سپرده در 2.50%",
+    "tehran": "16:45",
+    "lisbon": "13:15",
+    "en": "ECB rate decision",
+    "expected": "Hold 2.50%"
+   },
+   {
+    "fa": "گزارش مالی آمازون",
+    "note_fa": "پس از بسته‌شدن بازار آمریکا",
+    "tehran": "~23:30",
+    "lisbon": "~20:00",
+    "en": "Amazon Q3 earnings",
+    "expected": "After US close"
+   }
+  ],
+  "week": [
+   {
+    "day_fa": "جمعه",
+    "date": "2026-10-30",
+    "fa": "شاخص هزینهٔ اشتغال آمریکا",
+    "note_fa": "پیش‌بینی: 0.8% در فصل سوم",
+    "tehran": "16:00",
+    "lisbon": "12:30",
+    "en": "US Employment Cost Index Q3",
+    "expected": "0.8% q/q"
+   },
+   {
+    "day_fa": "جمعه",
+    "date": "2026-10-30",
+    "fa": "شاخص مدیران خرید شیکاگو",
+    "note_fa": "نبض فعالیت صنعتی آمریکا",
+    "tehran": "17:15",
+    "lisbon": "13:45",
+    "en": "Chicago PMI (Oct)",
+    "expected": ""
+   }
+  ],
+  "sources": [
+   "https://ca.investing.com/news/stock-market-news/gdp-core-pce-and-jobless-claims-among-economic-data-due-thursday-93CH-4910593",
+   "https://www.newsquawk.com/headlines/preview-ecb-policy-announcement-due-thursday-29th-october-2026-at-1315gmt0815edt",
+   "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+   "https://primexbt.com/for-traders/amazon-earnings-date/",
+   "https://woodgundyadvisors.cibc.com/documents/10180/5475163/The-Week-Ahead.pdf"
+  ]
+ },
+ {
   "date": "2026-10-28",
   "jalali": "1405/08/06",
   "weekday_fa": "چهارشنبه",
