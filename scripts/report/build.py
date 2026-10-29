@@ -215,7 +215,7 @@ def caption(data, L):
     def ch(x):
         c = x.get("chg")
         if c is None: return ""
-        return f' ({"▲" if c > 0 else "▼"}{abs(c):.2f}٪)'.translate(FA_NUM)
+        return f' ({"▲" if c > 0 else "▼"} {abs(c):.2f}'.replace(".", "٫").translate(FA_NUM) + '٪)'
     def toman(x): return f'{x["value"]:,.0f}'.translate(FA_NUM)
     lines = [
         "📊 گزارش روزانه‌ی بازار | دیتومان",
@@ -224,8 +224,8 @@ def caption(data, L):
         f'💵 دلار آزاد: {toman(i["دلار آزاد"])} تومان{ch(i["دلار آزاد"])}',
         f'🟡 طلای ۱۸ عیار (گرمی): {toman(i["طلای ۱۸ عیار · گرمی"])} تومان{ch(i["طلای ۱۸ عیار · گرمی"])}',
         f'🪙 سکه امامی: {toman(i["سکه امامی"])} تومان{ch(i["سکه امامی"])}',
-        f'₿ بیت‌کوین: ${g["بیت‌کوین"]["value"]:,.0f}{ch(g["بیت‌کوین"])}',
-        f'🛢 نفت برنت: ${g["نفت برنت"]["value"]:,.2f}{ch(g["نفت برنت"])}',
+        f'₿ بیت‌کوین: {f"{g['بیت‌کوین']['value']:,.0f}".translate(FA_NUM)} دلار{ch(g["بیت‌کوین"])}',
+        f'🛢 نفت برنت: {f"{g['نفت برنت']['value']:,.2f}".replace(".", "٫").translate(FA_NUM)} دلار{ch(g["نفت برنت"])}',
         "",
         "Daily Market Report: Iran, global, food and forex.",
         "ditoman.com",
