@@ -1,0 +1,64 @@
+{
+ "date": "2026-10-30",
+ "headline_fa": "امروز، روزِ",
+ "headline_hl": "سررسید بیت‌کوین",
+ "week_label_fa": "هفتهٔ آینده",
+ "week_label_en": "Next week",
+ "key": {
+  "kick_en": "BTC OPTIONS EXPIRY · DERIBIT",
+  "fa": "سررسید اختیار معاملهٔ بیت‌کوین",
+  "story_fa": "سررسید اختیار معاملهٔ بیت‌کوین",
+  "body_fa": "حدود 12 میلیارد دلار قرارداد بیت‌کوین امروز سررسید می‌شود و «نقطهٔ بیشترین درد» حدود 79 هزار دلار است. بعد از شوک هک بایننس، نوسان بیشتر محتمل است.",
+  "story_note_fa": "حدود 12 میلیارد دلار · نقطهٔ درد 79 هزار دلار",
+  "tehran": "11:30",
+  "lisbon": "08:00",
+  "en": "Deribit monthly BTC options expiry",
+  "expected": "~$12B notional · max pain $79K"
+ },
+ "today": [
+  {
+   "fa": "رشد اقتصادی منطقهٔ یورو",
+   "note_fa": "برآورد اولیهٔ فصل سوم",
+   "tehran": "13:30",
+   "lisbon": "10:00",
+   "en": "Eurozone Q3 GDP flash",
+   "expected": ""
+  },
+  {
+   "fa": "شاخص هزینهٔ اشتغال آمریکا",
+   "note_fa": "دستمزدها؛ سرنخ تورم برای فدرال",
+   "tehran": "16:00",
+   "lisbon": "12:30",
+   "en": "US Employment Cost Index Q3",
+   "expected": ""
+  }
+ ],
+ "week": [
+  {
+   "day_fa": "دوشنبه",
+   "date": "2026-11-02",
+   "fa": "شاخص مدیران خرید صنعتی آمریکا",
+   "note_fa": "ISM؛ وضعیت کارخانه‌های آمریکا",
+   "tehran": "18:30",
+   "lisbon": "15:00",
+   "en": "US ISM Manufacturing PMI (Oct)",
+   "expected": ""
+  },
+  {
+   "day_fa": "جمعه",
+   "date": "2026-11-06",
+   "fa": "گزارش اشتغال آمریکا",
+   "note_fa": "مهم‌ترین آمار ماهانهٔ بازار کار",
+   "tehran": "17:00",
+   "lisbon": "13:30",
+   "en": "US nonfarm payrolls (Oct)",
+   "expected": ""
+  }
+ ],
+ "sources": [
+  "https://cryptoticker.io/en/bitcoin-options-expiry-october-30-2026-max-pain/",
+  "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+  "https://www.financecalendar.com/events/2026-10-30/",
+  "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-02112026-08112026/"
+ ]
+}
