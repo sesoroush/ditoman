@@ -68,7 +68,7 @@ POST_CSS = """.page{width:1080px;height:1350px}.mast{height:96px}
 .row .what b{font-weight:800;font-size:27px}
 .row .what span{font-size:20px;color:var(--muted);line-height:1.6}
 .row .chip{font-size:19px;flex-shrink:0}
-.day{font-weight:800;color:var(--teal);font-size:20px;margin-left:8px}
+.day{font-weight:800;color:var(--teal);font-size:20px;margin-left:14px}
 .foot{height:76px;margin-top:auto}"""
 
 STORY_CSS = """.page{width:1080px;height:1920px}
@@ -111,7 +111,7 @@ def build(d):
             f'<div class="hero"><div class="stamp">مهم‌ترین خبر روز</div><div class="txt"><div class="kick">{e(k.get("kick_en"))}</div><h2>{e(k["fa"])}</h2><p>{nums(k.get("body_fa"))}</p></div>'
             f'<div class="time"><div class="lab">به وقت تهران</div><div class="big">{e(k["tehran"])}</div><div class="sm">Lisbon {e(k["lisbon"])}</div></div></div>'
             + (f'<div class="sec"><h3><span class="fa">بقیهٔ امروز</span><span class="en">Also today</span></h3>{rows_today}</div>' if rows_today else "")
-            + (f'<div class="sec"><h3><span class="fa">بقیهٔ هفته</span><span class="en">This week</span></h3>{rows_week}</div>' if rows_week else "")
+            + (f'<div class="sec"><h3><span class="fa">{e(d.get("week_label_fa","بقیهٔ هفته"))}</span><span class="en">{e(d.get("week_label_en","This week"))}</span></h3>{rows_week}</div>' if rows_week else "")
             + FOOT + "</div>")
 
     picks = [dict(k, fa=k.get("story_fa") or k["fa"], note_fa=k.get("story_note_fa") or k.get("body_fa"))]
