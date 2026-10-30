@@ -73,7 +73,7 @@ jobs:
                 [ "$code" = "200" ] && break
                 echo "Image not live yet ($code), waiting..."; sleep 15
               done
-              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "https://ditoman.com/$image" \
+              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "https://ditoman.com/$image?v=$(date +%s)" \
                 '{chat_id:$c, text:$t, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
             else
               payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" '{chat_id:$c, text:$t}')"
