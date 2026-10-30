@@ -67,6 +67,12 @@ jobs:
               text="$(cat "$f")"
             fi
             if [ -n "$image" ]; then
+              # Wait until the website has published the image, or Telegram shows no preview.
+              for i in $(seq 1 40); do
+                code="$(curl -s -o /dev/null -w '%{http_code}' "https://ditoman.com/$image?v=$(date +%s)")"
+                [ "$code" = "200" ] && break
+                echo "Image not live yet ($code), waiting..."; sleep 15
+              done
               payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "https://ditoman.com/$image" \
                 '{chat_id:$c, text:$t, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
             else
