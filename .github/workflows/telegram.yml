@@ -66,23 +66,28 @@ jobs:
             else
               text="$(cat "$f")"
             fi
+            send() { # $1 = API method, rest = curl args
+              m="$1"; shift
+              resp="$(curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/$m" "$@")"
+              echo "$resp" | jq '{ok, description, message_id: .result.message_id}'
+              echo "$resp" | jq -e '.ok' > /dev/null || exit 1
+            }
+            echo "Sending $f"
             if [ -n "$image" ]; then
-              # Wait until the website has published the image, or Telegram shows no preview.
-              for i in $(seq 1 40); do
-                code="$(curl -s -o /dev/null -w '%{http_code}' "https://ditoman.com/$image?v=$(date +%s)")"
-                [ "$code" = "200" ] && break
-                echo "Image not live yet ($code), waiting..."; sleep 15
-              done
-              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "https://ditoman.com/$image?v=$(date +%s)" \
-                '{chat_id:$c, text:$t, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
+              # Upload the image itself as a real photo (tap to open/save), straight from the repo.
+              [ -f "$image" ] || { echo "Missing image $image" >&2; exit 1; }
+              if [ "$(LC_ALL=C.UTF-8 printf '%s' "$text" | LC_ALL=C.UTF-8 wc -m)" -le 1000 ]; then
+                send sendPhoto --form-string "chat_id=$CHAT_ID" -F "photo=@$image" --form-string "caption=$text"
+              else
+                # Too long for a photo caption: photo first, then the full text right under it.
+                send sendPhoto --form-string "chat_id=$CHAT_ID" -F "photo=@$image"
+                payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" '{chat_id:$c, text:$t, link_preview_options:{is_disabled:true}}')"
+                send sendMessage -H 'Content-Type: application/json' -d "$payload"
+              fi
             else
               payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" '{chat_id:$c, text:$t}')"
+              send sendMessage -H 'Content-Type: application/json' -d "$payload"
             fi
-            echo "Sending $f"
-            resp="$(curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
-              -H 'Content-Type: application/json' -d "$payload")"
-            echo "$resp" | jq '{ok, description, message_id: .result.message_id}'
-            echo "$resp" | jq -e '.ok' > /dev/null || exit 1
           done < files.txt
 
       - name: Update website feed
