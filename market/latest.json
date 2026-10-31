@@ -1,12 +1,12 @@
 {
-  "fetched_utc": "2026-10-31T16:46:23+00:00",
+  "fetched_utc": "2026-10-31T20:10:03+00:00",
   "global": {
     "btc": {
-      "value": 77446.11,
+      "value": 77480.79,
       "prev": 77198.2109375,
-      "chg": 0.32112021702251714,
+      "chg": 0.3660435378855746,
       "source": "Yahoo Finance BTC-USD",
-      "market_time_utc": "2026-10-31T16:46+00:00"
+      "market_time_utc": "2026-10-31T20:09+00:00"
     },
     "gold": {
       "value": 3898.9,
@@ -51,8 +51,8 @@
       "market_time_utc": "2026-10-30T18:19+00:00"
     },
     "btc_coingecko": {
-      "value": 77501,
-      "chg": 0.13680777975793196,
+      "value": 77524,
+      "chg": 0.7637033217853204,
       "source": "CoinGecko (24h change)"
     }
   },
@@ -65,11 +65,11 @@
       "market_time_utc": "2026-10-30T21:29+00:00"
     },
     "GBP/USD": {
-      "value": 1.3389,
-      "prev": 1.332800269126892,
-      "chg": 0.45766278822135736,
+      "value": 1.3393,
+      "prev": 1.3378641605377197,
+      "chg": 0.10732326230363404,
       "source": "Yahoo Finance GBPUSD=X",
-      "market_time_utc": "2026-10-30T21:29+00:00"
+      "market_time_utc": "2026-10-31T17:24+00:00"
     },
     "USD/JPY": {
       "value": 157.519,
@@ -83,7 +83,7 @@
       "prev": 0.8236100077629089,
       "chg": 0.15662658599728654,
       "source": "Yahoo Finance CHF=X",
-      "market_time_utc": "2026-10-31T05:21+00:00"
+      "market_time_utc": "2026-10-31T19:29+00:00"
     },
     "USD/CNY": {
       "value": 6.6449,
@@ -313,10 +313,10 @@
     "pair": "0x6f1836b15de0c6294c16aaec67903515f532fa1c",
     "reserve_tmn": 1096188207.9136364,
     "reserve_bnb": 2.8358876102128048,
-    "bnb_usd": 704.23,
+    "bnb_usd": 705.2,
     "price_bnb": 2.5870444415839137e-09,
-    "price_usd": 1.8218743070966396e-06,
-    "liquidity_usd": 3994.234263480327,
+    "price_usd": 1.824383740204976e-06,
+    "liquidity_usd": 3999.73588544414,
     "source": "PancakeSwap V2 pool reserves (on-chain)",
     "dexscreener": 0,
     "geckoterminal": 1,
