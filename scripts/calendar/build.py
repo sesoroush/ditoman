@@ -119,8 +119,10 @@ def build(d):
         if len(picks) == 3: break
         picks.append(t)
     items = "".join(f'<div class="item{" top" if i == 0 else ""}"><div class="n">{i+1}</div><div class="body"><b>{e(p["fa"])}</b><p>{nums(p.get("note_fa"))}</p>{chip(p)}</div></div>' for i, p in enumerate(picks))
-    story = ('<div class="page">' + MAST.format(en="TODAY", fa="امروز") +
-             f'<div class="head"><div class="date">{fa_date}<span class="en">{dd} {EN_M[m-1]} {y}</span></div><h1>{str(len(picks)).translate(FA_DIG)} خبر مهمِ <span class="hl">امروز</span></h1></div>'
+    ahead = not d.get("today") and d.get("week_label_fa")
+    s_en, s_fa = ("NEXT WEEK", "هفتهٔ آینده") if ahead else ("TODAY", "امروز")
+    story = ('<div class="page">' + MAST.format(en=s_en, fa=s_fa) +
+             f'<div class="head"><div class="date">{fa_date}<span class="en">{dd} {EN_M[m-1]} {y}</span></div><h1>{str(len(picks)).translate(FA_DIG)} خبر مهمِ <span class="hl">{s_fa}</span></h1></div>'
              f'<div class="items">{items}</div><div class="note">آمار قیمت‌ها: <span class="hl">امشب ساعت ۲۰:۰۰ تهران</span></div>' + FOOT + "</div>")
     return fa_date, page(POST_CSS, post, "post"), page(STORY_CSS, story, "story")
 
