@@ -34,14 +34,14 @@
  },
  "usd_mex": "error: <HTTPError 500: 'Internal Server Error'>",
  "gold18_gram": {
-  "rows": 3541,
+  "rows": 3542,
   "first": [
    "2013-07-22",
    100000.0
   ],
   "last": [
-   "2026-10-28",
-   26408400.0
+   "2026-10-29",
+   26223500.0
   ]
  },
  "coin_emami": {
