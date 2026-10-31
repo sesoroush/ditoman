@@ -1,5 +1,61 @@
 [
  {
+  "date": "2026-10-31",
+  "jalali": "1405/08/09",
+  "weekday_fa": "شنبه",
+  "headline_fa": "نگاهی به هفتهٔ آینده",
+  "post": "calendar/2026-10-31-post.png",
+  "story": "calendar/2026-10-31-story.png",
+  "today": [
+   {
+    "key": true,
+    "fa": "گزارش اشتغال آمریکا، جمعه",
+    "en": "US nonfarm payrolls (Oct), Fri 6 Nov",
+    "tehran": "17:00",
+    "lisbon": "13:30",
+    "note_fa": "امروز بازارهای جهانی تعطیل‌اند. مهم‌ترین آمار هفته جمعه می‌آید: پیش‌بینی 63 هزار شغل جدید در برابر 29 هزار ماه قبل، با نرخ بیکاری 4.2%.",
+    "expected": "+63K · unemployment 4.2%"
+   }
+  ],
+  "week": [
+   {
+    "day_fa": "دوشنبه",
+    "date": "2026-11-02",
+    "fa": "شاخص مدیران خرید صنعتی آمریکا",
+    "note_fa": "ISM؛ پیش‌بینی 54.7",
+    "tehran": "18:30",
+    "lisbon": "15:00",
+    "en": "US ISM Manufacturing PMI (Oct)",
+    "expected": "54.7"
+   },
+   {
+    "day_fa": "سه‌شنبه",
+    "date": "2026-11-03",
+    "fa": "تصمیم نرخ بهرهٔ استرالیا",
+    "note_fa": "احتمال افزایش به 4.85%",
+    "tehran": "07:00",
+    "lisbon": "03:30",
+    "en": "RBA rate decision",
+    "expected": "Hike to 4.85%"
+   },
+   {
+    "day_fa": "پنجشنبه",
+    "date": "2026-11-05",
+    "fa": "تصمیم نرخ بهرهٔ بانک انگلستان",
+    "note_fa": "احتمال افزایش از 3.75% به 4.00%",
+    "tehran": "15:30",
+    "lisbon": "12:00",
+    "en": "Bank of England rate decision",
+    "expected": "Hike to 4.00%"
+   }
+  ],
+  "sources": [
+   "https://investinglive.com/news/week-ahead-elections-rate-decisions-and-jobs-take-center-stage/",
+   "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-02112026-08112026/",
+   "https://fxmacrodata.com/usd/labor/non-farm-payrolls"
+  ]
+ },
+ {
   "date": "2026-10-30",
   "jalali": "1405/08/08",
   "weekday_fa": "جمعه",
