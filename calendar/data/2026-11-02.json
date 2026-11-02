@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-02",
+ "headline_fa": "امروز، روزِ",
+ "headline_hl": "کارخانه‌های آمریکا",
+ "key": {
+  "kick_en": "ISM MANUFACTURING PMI · OCT",
+  "fa": "شاخص مدیران خرید صنعتی آمریکا",
+  "story_fa": "شاخص مدیران خرید صنعتی آمریکا",
+  "body_fa": "ISM وضعیت کارخانه‌های آمریکا را نشان می‌دهد؛ پیش‌بینی 54.7، یعنی ادامهٔ رشد. عددِ قوی دلار را تقویت می‌کند. فردا هم انتخابات میان‌دوره‌ای آمریکاست و بازار محتاط است.",
+  "story_note_fa": "پیش‌بینی 54.7 · فردا انتخابات آمریکا",
+  "tehran": "18:30",
+  "lisbon": "15:00",
+  "en": "US ISM Manufacturing PMI (Oct)",
+  "expected": "54.7"
+ },
+ "today": [
+  {
+   "fa": "شاخص مدیران خرید صنعتی منطقهٔ یورو",
+   "note_fa": "برآورد نهایی اکتبر",
+   "tehran": "12:30",
+   "lisbon": "09:00",
+   "en": "Eurozone Manufacturing PMI final (Oct)",
+   "expected": ""
+  },
+  {
+   "fa": "نتایج مالی اپل و پالانتیر",
+   "note_fa": "بعد از بستهٔ بازار آمریکا؛ اولین گزارش اپل با مدیرعامل جدید",
+   "tehran": "00:30",
+   "lisbon": "21:00",
+   "en": "Apple & Palantir earnings (after close)",
+   "expected": ""
+  }
+ ],
+ "week": [
+  {
+   "day_fa": "سه‌شنبه",
+   "date": "2026-11-03",
+   "fa": "تصمیم نرخ بهرهٔ استرالیا",
+   "note_fa": "احتمال افزایش به 4.85%",
+   "tehran": "07:00",
+   "lisbon": "03:30",
+   "en": "RBA rate decision",
+   "expected": "Hike to 4.85%"
+  },
+  {
+   "day_fa": "پنجشنبه",
+   "date": "2026-11-05",
+   "fa": "تصمیم نرخ بهرهٔ بانک انگلستان",
+   "note_fa": "احتمال افزایش از 3.75% به 4.00%",
+   "tehran": "15:30",
+   "lisbon": "12:00",
+   "en": "Bank of England rate decision",
+   "expected": "Hike to 4.00%"
+  },
+  {
+   "day_fa": "جمعه",
+   "date": "2026-11-06",
+   "fa": "گزارش اشتغال آمریکا",
+   "note_fa": "پیش‌بینی 63 هزار شغل · بیکاری 4.2%",
+   "tehran": "17:00",
+   "lisbon": "13:30",
+   "en": "US nonfarm payrolls (Oct)",
+   "expected": "+63K · unemployment 4.2%"
+  }
+ ],
+ "sources": [
+  "https://www.tradingkey.com/analysis/stocks/us-stocks/262262871-us-midterm-elections-october-jobs-report-apple-palantir-amd-earnings-tradingkey",
+  "https://seekingalpha.com/article/4960711-wall-street-week-ahead",
+  "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-02112026-08112026/",
+  "https://thriveinmarkets.com/es/calendar/indicator/pmi/"
+ ]
+}
