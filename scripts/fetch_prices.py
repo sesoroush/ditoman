@@ -49,21 +49,23 @@ except Exception as e:
 
 # Zinc has no Yahoo futures symbol. Try TGJU's base-metals feed first, then Trading Economics (USD per tonne).
 def zinc_tgju(cur):
-    keys = [k for k in cur if "zinc" in k.lower() or k.lower().startswith("roy")]
-    for k in keys:
-        item = cur[k]
-        try:
-            v = float(re.sub(r"[^\d.]", "", str(item.get("p"))))
-        except Exception:
-            continue
-        if 1000 < v < 10000:  # plausible USD/tonne
-            dp = item.get("dp"); dt = item.get("dt")
-            chg = float(dp) * (-1 if dt == "low" else 1) if dp not in (None, "") else None
-            return {"value": v, "chg": chg, "source": f"TGJU {k}", "candidates": keys[:10]}
-    raise RuntimeError(f"no zinc key, candidates={keys[:10]}")
+    """TGJU carries several zinc quotes; 'base_global_zinc' tracks LME best. Record them all and pick by priority."""
+    cands = {}
+    for k, item in cur.items():
+        if "zinc" not in k.lower(): continue
+        try: v = float(re.sub(r"[^\d.]", "", str(item.get("p"))))
+        except Exception: continue
+        dp = item.get("dp"); dt = item.get("dt")
+        chg = float(dp) * (-1 if dt == "low" else 1) if dp not in (None, "") else None
+        cands[k] = {"value": v, "chg": chg, "t": item.get("t") or item.get("ts")}
+    for k in ("base_global_zinc", "basemetal-zinc", "base-us-zinc", "zinc"):
+        c = cands.get(k)
+        if c and 1500 < c["value"] < 8000:
+            return {"value": c["value"], "chg": c["chg"], "source": f"TGJU {k}", "candidates": cands}
+    raise RuntimeError(f"no plausible zinc quote, candidates={cands}")
 def zinc_te():
     h = get("https://tradingeconomics.com/commodity/zinc")
-    m = re.search(r'id="p"[^>]*>\s*([\d,\.]+)', h) or re.search(r'"Zinc"[^{}]{0,400}?([\d]{1},?[\d]{3}\.\d+)', h)
+    m = re.search(r'id="p"[^>]*>\s*([\d,\.]+)', h) or re.search(r'Zinc[^\n]{0,300}?(\d,\d{3}\.\d+)', h)
     if not m: raise RuntimeError("TE zinc price not found")
     v = float(m.group(1).replace(",", ""))
     mc = re.search(r'id="pch"[^>]*>\s*([-+]?[\d\.]+)%', h)
@@ -76,10 +78,14 @@ try:
     j = json.loads(raw)
     cur = j.get("current", {})
     try: result["global"]["zinc"] = zinc_tgju(cur)
-    except Exception as e:
-        result["errors"]["zinc_tgju"] = repr(e)[:300]
-        try: result["global"]["zinc"] = zinc_te()
-        except Exception as e2: result["errors"]["zinc_te"] = repr(e2)[:300]
+    except Exception as e: result["errors"]["zinc_tgju"] = repr(e)[:600]
+    try:
+        te = zinc_te(); result["global"]["zinc_te"] = te
+        z = result["global"].get("zinc")
+        # prefer Trading Economics when TGJU is missing or clearly stale (>15% apart)
+        if not z or abs(z["value"] - te["value"]) / te["value"] > 0.15:
+            result["global"]["zinc"] = dict(te, tgju_candidates=(z or {}).get("candidates"))
+    except Exception as e2: result["errors"]["zinc_te"] = repr(e2)[:300]
     for k, code in TGJU.items():
         item = cur.get(code)
         if not item:
