@@ -9,27 +9,19 @@
   "today": [
    {
     "key": true,
-    "fa": "شاخص مدیران خرید صنعتی آمریکا",
+    "fa": "شاخص مدیران خرید تولیدی آمریکا (ISM)",
     "en": "US ISM Manufacturing PMI (Oct)",
     "tehran": "18:30",
     "lisbon": "15:00",
-    "note_fa": "ISM وضعیت کارخانه‌های آمریکا را نشان می‌دهد؛ پیش‌بینی 54.7، یعنی ادامهٔ رشد. عددِ قوی دلار را تقویت می‌کند. فردا هم انتخابات میان‌دوره‌ای آمریکاست و بازار محتاط است.",
-    "expected": "54.7"
+    "note_fa": "این شاخص وضعیت کارخانه‌های آمریکا را نشان می‌دهد؛ پیش‌بینی 54.7 است و عدد قبلی 54.5 بوده. عددی متفاوت از انتظار می‌تواند بر دلار، طلا و بازارهای مالی اثر بگذارد.",
+    "expected": "54.7 (prev 54.5)"
    },
    {
-    "fa": "شاخص مدیران خرید صنعتی منطقهٔ یورو",
+    "fa": "شاخص مدیران خرید S&P آمریکا (تولید)",
     "note_fa": "برآورد نهایی اکتبر",
-    "tehran": "12:30",
-    "lisbon": "09:00",
-    "en": "Eurozone Manufacturing PMI final (Oct)",
-    "expected": ""
-   },
-   {
-    "fa": "نتایج مالی اپل و پالانتیر",
-    "note_fa": "بعد از بستهٔ بازار آمریکا؛ اولین گزارش اپل با مدیرعامل جدید",
-    "tehran": "00:30",
-    "lisbon": "21:00",
-    "en": "Apple & Palantir earnings (after close)",
+    "tehran": "18:15",
+    "lisbon": "14:45",
+    "en": "S&P Global US Manufacturing PMI final (Oct)",
     "expected": ""
    }
   ],
@@ -37,39 +29,47 @@
    {
     "day_fa": "سه‌شنبه",
     "date": "2026-11-03",
-    "fa": "تصمیم نرخ بهرهٔ استرالیا",
-    "note_fa": "احتمال افزایش به 4.85%",
-    "tehran": "07:00",
-    "lisbon": "03:30",
-    "en": "RBA rate decision",
-    "expected": "Hike to 4.85%"
+    "fa": "فرصت‌های شغلی آمریکا (JOLTS)",
+    "note_fa": "آمار سپتامبر",
+    "tehran": "18:30",
+    "lisbon": "15:00",
+    "en": "US JOLTS job openings (Sep)",
+    "expected": ""
+   },
+   {
+    "day_fa": "چهارشنبه",
+    "date": "2026-11-04",
+    "fa": "اشتغال بخش خصوصی ADP و ISM خدمات",
+    "note_fa": "ISM خدمات هم همان روز، ساعت 18 و 30 دقیقه تهران",
+    "tehran": "16:45",
+    "lisbon": "13:15",
+    "en": "ADP employment (Oct) 13:15 Lisbon; ISM Services PMI 15:00 Lisbon",
+    "expected": ""
    },
    {
     "day_fa": "پنجشنبه",
     "date": "2026-11-05",
     "fa": "تصمیم نرخ بهرهٔ بانک انگلستان",
-    "note_fa": "احتمال افزایش از 3.75% به 4.00%",
+    "note_fa": "",
     "tehran": "15:30",
     "lisbon": "12:00",
     "en": "Bank of England rate decision",
-    "expected": "Hike to 4.00%"
+    "expected": ""
    },
    {
     "day_fa": "جمعه",
     "date": "2026-11-06",
-    "fa": "گزارش اشتغال آمریکا",
-    "note_fa": "پیش‌بینی 63 هزار شغل · بیکاری 4.2%",
+    "fa": "گزارش اشتغال آمریکا (NFP)",
+    "note_fa": "",
     "tehran": "17:00",
     "lisbon": "13:30",
     "en": "US nonfarm payrolls (Oct)",
-    "expected": "+63K · unemployment 4.2%"
+    "expected": ""
    }
   ],
   "sources": [
-   "https://www.tradingkey.com/analysis/stocks/us-stocks/262262871-us-midterm-elections-october-jobs-report-apple-palantir-amd-earnings-tradingkey",
-   "https://seekingalpha.com/article/4960711-wall-street-week-ahead",
-   "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-02112026-08112026/",
-   "https://thriveinmarkets.com/es/calendar/indicator/pmi/"
+   "https://www.newsquawk.com/headlines/week-in-focus-2nd-6th-november-2026-highlights-include-us-midterm-election-nfp-ism-pmis-rba-boe-and-ez-cpi-",
+   "https://features.financialjuice.com/2026/10/30/week-ahead-economic-indicators-2nd-6th-november-us/"
   ]
  },
  {
