@@ -1,0 +1,27 @@
+name: Scheduled post (freezer cyberattack)
+# Releases one draft at 07:00 Tehran time on 3 Nov 2026 (03:30 UTC, cron set a few minutes early for GitHub's delay).
+on:
+  schedule:
+    - cron: "25 3 3 11 *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Move draft and send
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          D=telegram/drafts/2026-11-03-01-freezer-cyberattack.md
+          F=telegram/2026-11-03-01-freezer-cyberattack.md
+          [ -f "$D" ] || { echo "Already released"; exit 0; }
+          [ "$(date -u +%Y)" = "2026" ] || { echo "Wrong year"; exit 0; }
+          git mv "$D" "$F"
+          git config user.name "ditoman-bot"; git config user.email "ditoman-bot@users.noreply.github.com"
+          git commit -m "Telegram: European supermarket freezer attacks"
+          git pull --rebase origin main; git push origin HEAD:main
+          gh workflow run telegram.yml --ref main -f file="$F"
