@@ -94,29 +94,29 @@ h1 i {{ color:{T["accent"]}; font-weight:700; }}
   .h1fa {{ font-weight:800; font-size:40px; margin-top:-46px; }}
 .h1fa span {{ color:{T["accent"]}; }}
 .time {{ display:inline-block; margin-top:14px; font-weight:500; font-size:22px; color:{T["muted"]}; }}
-.sec {{ margin-top:22px; }}
-.sh {{ display:flex; justify-content:space-between; align-items:baseline; padding-bottom:12px; border-bottom:2px solid {T["ink"]}; }}
-.sh .fa {{ font-weight:800; font-size:31px; color:{T["accent"]}; }}
+.sec {{ margin-top:14px; }}
+.sh {{ display:flex; justify-content:space-between; align-items:baseline; padding-bottom:8px; border-bottom:2px solid {T["ink"]}; }}
+.sh .fa {{ font-weight:800; font-size:27px; color:{T["accent"]}; }}
 .sh .en.caps {{ color:{T["accent"]}; }}
 .sh .fa::before {{ content:""; display:inline-block; width:26px; height:4px; background:{T["accent"]}; margin-left:14px; vertical-align:middle; }}
 .sh .en {{ direction:ltr; }}
-.row {{ display:grid; grid-template-columns: 330px 1fr 158px; align-items:center; gap:24px; padding:5px 18px; border-radius:12px; }}
+.row {{ display:grid; grid-template-columns: 330px 1fr 158px; align-items:center; gap:24px; padding:2px 18px; border-radius:12px; }}
 .sec .row:nth-of-type(even) {{ background:rgba(138,10,53,.07); }}
 .sh + .row {{ margin-top:6px; }}
 .nm {{ display:flex; flex-direction:column; }}
-.nm .fa {{ font-weight:800; font-size:31px; line-height:1.3; }}
-.nm .en {{ direction:ltr; text-align:right; font-family:Br; font-weight:800; font-size:15px; letter-spacing:.18em; text-transform:uppercase; color:{T["muted"]}; }}
-.vl {{ display:flex; align-items:baseline; gap:6px; font-family:Pf; font-weight:900; font-size:45px; letter-spacing:-.01em; font-variant-numeric:lining-nums tabular-nums; }}
+.nm .fa {{ font-weight:800; font-size:27px; line-height:1.25; }}
+.nm .en {{ direction:ltr; text-align:right; font-family:Br; font-weight:800; font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:{T["muted"]}; }}
+.vl {{ display:flex; align-items:baseline; gap:6px; font-family:Pf; font-weight:900; font-size:40px; letter-spacing:-.01em; font-variant-numeric:lining-nums tabular-nums; }}
 .vl .cur {{ font-family:Pf; font-size:1em; color:{T["ink"]}; font-weight:900; }}
 .row .vl {{ justify-content:flex-end; padding-left:8px; }}
-.vl.fa {{ font-family:Vz; font-weight:800; font-size:46px; line-height:1; letter-spacing:0; font-feature-settings:"tnum"; }}
-.chg.fa {{ font-family:Vz; font-weight:800; font-size:25px; line-height:1; }}
-.chg {{ justify-self:end; font-family:Br; font-weight:800; font-size:24px; font-variant-numeric:tabular-nums; white-space:nowrap; }}
-.row .chg {{ justify-self:start; padding:6px 14px; border-radius:999px; min-width:140px; text-align:center; }}
+.vl.fa {{ font-family:Vz; font-weight:800; font-size:40px; line-height:1; letter-spacing:0; font-feature-settings:"tnum"; }}
+.chg.fa {{ font-family:Vz; font-weight:800; font-size:22px; line-height:1; }}
+.chg {{ justify-self:end; font-family:Br; font-weight:800; font-size:21px; font-variant-numeric:tabular-nums; white-space:nowrap; }}
+.row .chg {{ justify-self:start; padding:4px 12px; border-radius:999px; min-width:140px; text-align:center; }}
 .row .chg.up {{ background:rgba(5,99,107,.12); }} .row .chg.down {{ background:rgba(179,0,0,.10); }} .row .chg.flat {{ background:rgba(13,12,11,.06); }}
 .chg.up {{ color:{T["up"]}; }} .chg.down {{ color:{T["down"]}; }} .chg.flat {{ color:{T["muted"]}; }}
 .fxg {{ direction:ltr; display:grid; grid-template-columns:repeat(3,1fr); }}
-.fx {{ direction:ltr; display:flex; flex-direction:column; gap:2px; padding:9px 18px 8px; border-bottom:1px solid {T["rule"]}; border-left:1px solid {T["rule"]}; }}
+.fx {{ direction:ltr; display:flex; flex-direction:column; gap:2px; padding:6px 18px 5px; border-bottom:1px solid {T["rule"]}; border-left:1px solid {T["rule"]}; }}
 .fx:nth-child(3n+1) {{ border-left:0; padding-left:0; }}
 .fx:nth-last-child(-n+3) {{ border-bottom:0; }}
 .pair {{ font-family:Br; font-weight:800; font-size:16px; letter-spacing:.2em; color:{T["muted"]}; }}
@@ -184,6 +184,9 @@ def from_latest(path):
       "global": [
         {"en":"Bitcoin","fa":"بیت‌کوین","value":g["btc"]["value"],"dp":0,"unit_pre":"$","chg":g["btc"]["chg"]},
         {"en":"Gold · per ounce","fa":"طلا · هر اونس","value":g["gold"]["value"],"dp":2,"unit_pre":"$","chg":g["gold"]["chg"]},
+        {"en":"Silver · per ounce","fa":"نقره · هر اونس","value":g["silver"]["value"],"dp":2,"unit_pre":"$","chg":g["silver"]["chg"]},
+        {"en":"Copper · per tonne","fa":"مس · هر تن","value":g["copper"]["value"]*2204.62,"dp":0,"unit_pre":"$","chg":g["copper"]["chg"]}]
+        + ([{"en":"Zinc · per tonne","fa":"روی · هر تن","value":g["zinc"]["value"],"dp":0,"unit_pre":"$","chg":g["zinc"].get("chg")}] if g.get("zinc") else []) + [
         {"en":"Brent crude","fa":"نفت برنت","value":g["brent"]["value"],"dp":2,"unit_pre":"$","chg":g["brent"]["chg"]},
         {"en":"Natural gas","fa":"گاز طبیعی","value":g["natgas"]["value"],"dp":3,"unit_pre":"$","chg":g["natgas"]["chg"]}],
       "iran": [
@@ -197,7 +200,7 @@ def from_latest(path):
         {"en":"Corn · CBOT","fa":"ذرت","value":g["corn"]["value"]/100/0.0254012,"dp":1,"unit_pre":"$","chg":g["corn"]["chg"]},
         {"en":"Soybeans · CBOT","fa":"سویا","value":g["soybeans"]["value"]/100/0.0272155,"dp":1,"unit_pre":"$","chg":g["soybeans"]["chg"]}],
       "forex": [{"en":k,"value":v["value"],"dp":2 if k in ("USD/JPY","USD/TRY") else 4,"chg":v["chg"]} for k,v in f.items()],
-      "sources": "Sources: Yahoo Finance (global, CBOT grains, forex) · TGJU (Iran open market) · " + L["fetched_utc"][:16].replace("T"," ") + " UTC",
+      "sources": "Sources: Yahoo Finance (global, COMEX metals, CBOT grains, forex) · LME zinc via " + (g.get("zinc",{}).get("source","n/a").split(" ")[0]) + " · TGJU (Iran open market) · " + L["fetched_utc"][:16].replace("T"," ") + " UTC",
     }
 
 
@@ -226,8 +229,11 @@ def caption(data, L):
         f'🪙 سکه امامی: {toman(i["سکه امامی"])} تومان{ch(i["سکه امامی"])}',
         f'₿ بیت‌کوین: {f"{g['بیت‌کوین']['value']:,.0f}".translate(FA_NUM)} دلار{ch(g["بیت‌کوین"])}',
         f'🛢 نفت برنت: {f"{g['نفت برنت']['value']:,.2f}".replace(".", "٫").translate(FA_NUM)} دلار{ch(g["نفت برنت"])}',
+        f'⚪️ نقره: {f"{g['نقره · هر اونس']['value']:,.2f}".replace(".", "٫").translate(FA_NUM)} دلار{ch(g["نقره · هر اونس"])}',
+        f'🟤 مس (هر تن): {f"{g['مس · هر تن']['value']:,.0f}".translate(FA_NUM)} دلار{ch(g["مس · هر تن"])}',
+      ] + ([f'🔩 روی (هر تن): {f"{g['روی · هر تن']['value']:,.0f}".translate(FA_NUM)} دلار{ch(g["روی · هر تن"])}'] if "روی · هر تن" in g else []) + [
         "",
-        "Daily Market Report: Iran, global, food and forex.",
+        "Daily Market Report: Iran, global, metals, food and forex.",
         "ditoman.com",
     ]
     return "\n".join(lines)

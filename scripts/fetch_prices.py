@@ -29,8 +29,8 @@ def yahoo(symbol):
     return {"value": price, "prev": prev, "chg": chg, "source": f"Yahoo Finance {symbol}",
             "market_time_utc": datetime.datetime.fromtimestamp(m.get("regularMarketTime", 0), datetime.timezone.utc).isoformat(timespec="minutes")}
 
-GLOBAL = {"btc": "BTC-USD", "gold": "GC=F", "brent": "BZ=F", "natgas": "NG=F",
-          "wheat": "ZW=F", "corn": "ZC=F", "soybeans": "ZS=F"}  # grains quoted in US cents per bushel
+GLOBAL = {"btc": "BTC-USD", "gold": "GC=F", "silver": "SI=F", "copper": "HG=F", "brent": "BZ=F", "natgas": "NG=F",
+          "wheat": "ZW=F", "corn": "ZC=F", "soybeans": "ZS=F"}  # grains in US cents/bushel; copper (COMEX) in USD/lb
 FOREX = {"EUR/USD": "EURUSD=X", "GBP/USD": "GBPUSD=X", "USD/JPY": "JPY=X", "USD/CHF": "CHF=X", "USD/CNY": "CNY=X", "USD/TRY": "TRY=X"}
 
 for key, sym in GLOBAL.items():
@@ -47,12 +47,39 @@ try:
 except Exception as e:
     result["errors"]["btc_coingecko"] = repr(e)[:300]
 
+# Zinc has no Yahoo futures symbol. Try TGJU's base-metals feed first, then Trading Economics (USD per tonne).
+def zinc_tgju(cur):
+    keys = [k for k in cur if "zinc" in k.lower() or k.lower().startswith("roy")]
+    for k in keys:
+        item = cur[k]
+        try:
+            v = float(re.sub(r"[^\d.]", "", str(item.get("p"))))
+        except Exception:
+            continue
+        if 1000 < v < 10000:  # plausible USD/tonne
+            dp = item.get("dp"); dt = item.get("dt")
+            chg = float(dp) * (-1 if dt == "low" else 1) if dp not in (None, "") else None
+            return {"value": v, "chg": chg, "source": f"TGJU {k}", "candidates": keys[:10]}
+    raise RuntimeError(f"no zinc key, candidates={keys[:10]}")
+def zinc_te():
+    h = get("https://tradingeconomics.com/commodity/zinc")
+    m = re.search(r'id="p"[^>]*>\s*([\d,\.]+)', h) or re.search(r'"Zinc"[^{}]{0,400}?([\d]{1},?[\d]{3}\.\d+)', h)
+    if not m: raise RuntimeError("TE zinc price not found")
+    v = float(m.group(1).replace(",", ""))
+    mc = re.search(r'id="pch"[^>]*>\s*([-+]?[\d\.]+)%', h)
+    return {"value": v, "chg": float(mc.group(1)) if mc else None, "source": "Trading Economics LME zinc"}
+
 # Iran open-market rates from TGJU (values in rial)
 TGJU = {"usd": "price_dollar_rl", "eur": "price_eur", "aed": "price_aed", "gold18_gram": "geram18", "coin_emami": "sekee"}
 try:
     raw = get("https://call1.tgju.org/ajax.json")
     j = json.loads(raw)
     cur = j.get("current", {})
+    try: result["global"]["zinc"] = zinc_tgju(cur)
+    except Exception as e:
+        result["errors"]["zinc_tgju"] = repr(e)[:300]
+        try: result["global"]["zinc"] = zinc_te()
+        except Exception as e2: result["errors"]["zinc_te"] = repr(e2)[:300]
     for k, code in TGJU.items():
         item = cur.get(code)
         if not item:
