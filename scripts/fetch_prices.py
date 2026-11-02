@@ -58,7 +58,7 @@ def zinc_tgju(cur):
         dp = item.get("dp"); dt = item.get("dt")
         chg = float(dp) * (-1 if dt == "low" else 1) if dp not in (None, "") else None
         cands[k] = {"value": v, "chg": chg, "t": item.get("t") or item.get("ts")}
-    for k in ("base_global_zinc", "basemetal-zinc", "base-us-zinc", "zinc"):
+    for k in ("basemetal-zinc", "base_global_zinc", "zinc", "base-us-zinc"):  # basemetal-zinc updates live (LME-tracking)
         c = cands.get(k)
         if c and 1500 < c["value"] < 8000:
             return {"value": c["value"], "chg": c["chg"], "source": f"TGJU {k}", "candidates": cands}
@@ -68,6 +68,7 @@ def zinc_te():
     m = re.search(r'id="p"[^>]*>\s*([\d,\.]+)', h) or re.search(r'Zinc[^\n]{0,300}?(\d,\d{3}\.\d+)', h)
     if not m: raise RuntimeError("TE zinc price not found")
     v = float(m.group(1).replace(",", ""))
+    if not 1500 < v < 8000: raise RuntimeError(f"TE zinc value implausible: {v}")
     mc = re.search(r'id="pch"[^>]*>\s*([-+]?[\d\.]+)%', h)
     return {"value": v, "chg": float(mc.group(1)) if mc else None, "source": "Trading Economics LME zinc"}
 
