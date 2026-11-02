@@ -23,6 +23,6 @@ jobs:
       - run: |
           git config user.name "ditoman-bot"
           git config user.email "ditoman-bot@users.noreply.github.com"
-          git add market/spelling-fix-result.json
+          git add market/spelling-fix-result-2.json
           git commit -m "Spelling fix result" || true
           git pull --rebase origin main; git push origin HEAD:main
