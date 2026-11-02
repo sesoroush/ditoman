@@ -3,6 +3,7 @@ name: Post to Telegram
 # Posts every NEW file added under telegram/ (not telegram/drafts/) to the channel.
 # Post file format:
 #   optional first line:  image: some-image.png   (a file on ditoman.com, shown as a large preview)
+#                    or:  video-first: https://...  (the link's video preview shown above the text)
 #   everything after it:  the message text (plain text, up to 4096 characters)
 #
 # Required repo secret:   TELEGRAM_BOT_TOKEN
@@ -60,7 +61,11 @@ jobs:
             [ -f "$f" ] || { echo "Missing $f" >&2; exit 1; }
             first="$(head -n 1 "$f")"
             image=""
-            if echo "$first" | grep -q '^image:'; then
+            video=""
+            if echo "$first" | grep -q '^video-first:'; then
+              video="$(echo "$first" | sed 's/^video-first:[[:space:]]*//')"
+              text="$(tail -n +2 "$f" | sed '/./,$!d')"
+            elif echo "$first" | grep -q '^image:'; then
               image="$(echo "$first" | sed 's/^image:[[:space:]]*//')"
               text="$(tail -n +2 "$f" | sed '/./,$!d')"
             else
@@ -73,7 +78,11 @@ jobs:
               echo "$resp" | jq -e '.ok' > /dev/null || exit 1
             }
             echo "Sending $f"
-            if [ -n "$image" ]; then
+            if [ -n "$video" ]; then
+              # Video preview above the text.
+              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "$video" '{chat_id:$c, text:$t, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
+              send sendMessage -H 'Content-Type: application/json' -d "$payload"
+            elif [ -n "$image" ]; then
               # Upload the image itself as a real photo (tap to open/save), straight from the repo.
               [ -f "$image" ] || { echo "Missing image $image" >&2; exit 1; }
               if [ "$(LC_ALL=C.UTF-8 printf '%s' "$text" | LC_ALL=C.UTF-8 wc -m)" -le 1000 ]; then

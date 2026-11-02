@@ -19,6 +19,8 @@ def main():
         if lines and lines[0].startswith("image:"):
             image = lines[0].split(":", 1)[1].strip()
             lines = lines[1:]
+        if lines and lines[0].startswith("video-first:"):
+            lines = lines[1:]
         text = "\n".join(lines).strip()
         items.append({"id": f.stem, "date": m.group(1), "order": int(m.group(2) or 0), "image": image, "text": text})
     items.sort(key=lambda x: (x["date"], x["order"]), reverse=True)
