@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Iran and the Zinc Treasure | ایران و گنج روی | Ditoman</title>
+<meta name="description" content="چراغ روشن. One deposit in Yazd holds about as much zinc as all of Peru's reserves. What Iran has, what the world does with zinc, what is being built at Mehdiabad and Zanjan, and what young Iranians could build on top of it." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+<div class="logo-text">DITOMAN</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html">Learn</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:Tahoma,Arial,sans-serif}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/iran-zinc/post.png" alt="Iran and the zinc treasure" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge">چراغ روشن • Built Under Pressure</div>
+<h1>Iran and the Zinc Treasure</h1>
+<p class="subtitle">
+One deposit in the Yazd desert holds about as much zinc as all of Peru's reserves. What Iran has, what the world does with zinc, what is being built right now, and what a young Iranian could build on top of it.
+</p>
+<div class="stats">
+<div class="stat"><b>350+</b><span>lead-zinc deposits and occurrences identified in Iran</span></div>
+<div class="stat"><b>16.5M t</b><span>zinc contained in Mehdiabad ore; Peru's whole reserve is ~18M t</span></div>
+<div class="stat"><b>800K t</b><span>zinc concentrate per year, Mehdiabad's final target</span></div>
+<div class="stat"><b>×128</b><span>projected growth of zinc use in batteries, 2020 to 2030 (IZA)</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>گاهی آدم درباره کشور خودش چیزهایی نمی‌داند که دنیا دارد روی آن حساب می‌کند. این مقاله درباره یکی از همان‌هاست: فلزی که هر روز لمسش می‌کنیم و نمی‌بینیمش، و ذخیره‌ای در دل کویر یزد که به‌تنهایی هم‌اندازه ذخایر یک کشور معدنی است. این را نه برای افتخار خالی می‌نویسیم، بلکه برای اینکه نشان بدهیم فاصله بین «داشتن» و «ساختن» دقیقاً کجاست و چه کسی می‌تواند پرش کند.</p>
+
+<h3><span class="check-number">۰۱.</span> روی چیست و چرا دنیا دنبالش است؟</h3>
+<p>روی (Zinc) چهارمین فلز پرمصرف دنیاست، بعد از آهن، آلومینیوم و مس؛ بازاری حدود ۴۰ میلیارد دلار در سال. بیشترش صرف «گالوانیزه کردن» می‌شود: پوشش نازکی که نمی‌گذارد فولاد زنگ بزند. هر پل، دکل برق، بدنه خودرو، گاردریل و لوله‌ای که سال‌ها دوام می‌آورد، معمولاً لایه‌ای از روی دارد. بعد از آن برنج و آلیاژها، قطعات ریخته‌گری، اکسید روی در لاستیک و سرامیک و داروسازی و ضدآفتاب، کود کشاورزی و مکمل غذایی می‌آیند.</p>
+<p>چند اتفاق در سال‌های اخیر روی را از یک فلز معمولی به یک ماده «راهبردی» تبدیل کرده است:</p>
+<ul>
+<li><strong>فهرست مواد حیاتی:</strong> سازمان زمین‌شناسی آمریکا در ۲۰۲۲ روی را به فهرست رسمی مواد معدنی حیاتی این کشور اضافه کرد. آمریکا حدود ۷۷٪ روی تصفیه‌شده خود را وارد می‌کند.</li>
+<li><strong>باتری و ذخیره انرژی:</strong> باتری‌های روی در برابر حرارت پایدارند، به سیستم اطفای حریق نیاز ندارند و برای ذخیره‌سازی‌های بیش از هشت ساعت اقتصادی‌ترند. انجمن جهانی روی (IZA) برآورد می‌کند مصرف روی در باتری‌ها از حدود ۶۰۰ تن در ۲۰۲۰ به حدود ۷۷ هزار تن در ۲۰۳۰ برسد. شرکت آمریکایی Eos Energy در حال دو برابر کردن ظرفیت تولید باتری رویِ خود به ۸ گیگاوات‌ساعت است.</li>
+<li><strong>سلامت و غذا:</strong> سازمان ملل روی را «ماده‌ای نجات‌بخش» می‌نامد؛ کمبودش در تغذیه، سالانه جان حدود ۲۰۰ هزار کودک را می‌گیرد. خاک‌های آهکی، که بخش بزرگی از خاک کشاورزی ایران را می‌سازند، معمولاً فقیر از روی قابل‌جذب‌اند و طبق داده‌ای که معاونت علمی ریاست‌جمهوری نقل کرده، حدود ۴۰٪ ایرانی‌ها کمبود روی دارند.</li>
+</ul>
+<p>به زبان ساده: روی هم‌زمان ماده ساختمان، ماده انرژی و ماده سلامت است. و تقاضایش رو به بالاست.</p>
+
+<h3><span class="check-number">۰۲.</span> ایران چه دارد؟</h3>
+<p>پژوهشگران ایرانی و فرانسوی در مجله <em>Geoscience Frontiers</em> (۲۰۱۸) نوشته‌اند در ایران بیش از ۳۵۰ کانسار و نشانه سرب و روی شناسایی شده، عمدتاً در دو کمربند ملایر–اصفهان و یزد–انارک، که هر دو بخشی از کمربند بزرگ فلززایی تتیس‌اند. دو تا از این کانسارها در مقیاس جهانی‌اند:</p>
+<ul>
+<li><strong>انگوران، زنجان:</strong> دهه‌هاست که استخراج می‌شود و بخشی از سنگ معدنش تا ۴۰٪ روی دارد؛ عیاری که در دنیا کم‌یاب است. طبق S&P Global ظرفیت استخراج آن حدود یک میلیون تن سنگ در سال است. همین معدن زنجان را به قطب شمش روی ایران تبدیل کرده است.</li>
+<li><strong>مهدی‌آباد، یزد:</strong> طبق مقاله‌ای در <em>Ore Geology Reviews</em> (۲۰۱۹)، حدود ۳۹۴ میلیون تن سنگ با میانگین ۴٫۲٪ روی، ۱٫۶٪ سرب و ۳۶ گرم در تن نقره، به‌علاوه بیش از ۴۰ میلیون تن باریت. پژوهشگران آن را کانساری «در کلاس جهانی» و بزرگ‌ترین کانسار رسوبی سرب و روی ایران می‌دانند. سن آن به کرتاسه زیرین برمی‌گردد؛ یعنی حدود ۱۲۰ میلیون سال پیش در کف دریایی کم‌عمق شکل گرفته است.</li>
+</ul>
+<p>یک مقایسه که عمق ماجرا را نشان می‌دهد: روی موجود در سنگ مهدی‌آباد حدود ۱۶٫۵ میلیون تن برآورد می‌شود. طبق آمار ۲۰۲۶ سازمان زمین‌شناسی آمریکا، کل ذخایر روی پرو حدود ۱۸ میلیون تن، هند ۱۰ میلیون تن و مکزیک ۱۴ میلیون تن است. یعنی یک کانسار، هم‌اندازه ذخایر کل یک کشور معدنی.</p>
+<div class="note">
+<p><strong>یک نکته درباره صداقت در عددها</strong></p>
+<p>بعضی مقام‌ها مهدی‌آباد را «دومین ذخیره روی جهان» معرفی کرده‌اند. مقاله‌های علمی چنین رتبه‌ای نمی‌دهند و سازمان زمین‌شناسی آمریکا هم ذخایر ایران را در جدول کشورها جداگانه نیاورده است. ما به همان مقایسه‌ای که سندش را داریم بسنده می‌کنیم؛ همان هم به‌اندازه کافی بزرگ است.</p>
+</div>
+
+<h3><span class="check-number">۰۳.</span> چه کار بزرگی در جریان است؟</h3>
+<p>مهدی‌آباد از دهه ۱۳۷۰ شناخته‌شده بود، ولی سال‌ها بدون سرمایه و فناوری خوابیده بود. سازمان زمین‌شناسی آمریکا در گزارش خود درباره ایران می‌نویسد این طرح «از دهه ۱۹۹۰ در دست توسعه بوده و بارها به تأخیر افتاده». آنچه در این چند سال عوض شده این است:</p>
+<ul class="timeline">
+<li><strong>۱۳۹۵ / ۲۰۱۷</strong> امضای قرارداد حدود یک میلیارد دلاری ایمیدرو با کنسرسیومی شش‌شرکتی به رهبری شرکت ایرانی مبین؛ بهره‌برداری ۲۵ ساله</li>
+<li><strong>۱۴۰۲ / ۲۰۲۳</strong> فاز اول کارخانه فرآوری با حدود ۳۰۰ میلیون دلار سرمایه‌گذاری به مراحل پایانی رسید؛ مدیران طرح آن را بزرگ‌ترین کارخانه فرآوری سرب و روی خاورمیانه می‌خوانند</li>
+<li><strong>۱۴۰۴ / ۲۰۲۵</strong> تنها در سه‌ماهه نخست سال، بیش از ۱۷۰ هزار تن کنسانتره سرب و روی تولید شد</li>
+<li><strong>بهمن ۱۴۰۴ / فوریه ۲۰۲۶</strong> به گزارش Trend، تولید کنسانتره روی و سرب و باریت مجتمع جهش کرده و از اهداف استخراج و فروش جلو زده است</li>
+</ul>
+<p>هدف نهایی در سه فاز: سالانه ۸۰۰ هزار تن کنسانتره روی و ۸۰ هزار تن کنسانتره سرب و نقره. ذخیره قابل‌استخراج حدود ۱۷۰ میلیون تن اعلام شده؛ یعنی کار برای چند دهه. آب کارخانه از ۱۰۰ کیلومتر دورتر و از پساب تصفیه‌شده شهر یزد می‌آید، نه از سفره‌های زیرزمینی کویر. مهندسان ایرانی برای معدنی در خشک‌ترین نقطه کشور راه‌حلی پایدار پیدا کرده‌اند.</p>
+<p>در سوی دیگر زنجیره، زنجان با ده‌ها کارخانه ذوب و شمش، ظرفیت تولید شمش روی کشور را به حدود ۴۸۰ هزار تن در سال رسانده است. تولید واقعی طبق آمار رسمی حدود ۲۲۰ هزار تن است؛ یعنی نیمی از ظرفیت خالی است، چون خوراک کم بوده. مهدی‌آباد دقیقاً همین جای خالی را پر می‌کند. طبق S&P Global، ترکیه، عراق و امارات بازارهای اصلی محصولات روی ایران‌اند.</p>
+
+<h3><span class="check-number">۰۴.</span> درس کره و هند: ارزش در سنگ نیست، در دانش است</h3>
+<p>کره جنوبی معدن روی قابل‌توجهی ندارد. با این حال شرکت Korea Zinc، که در ۱۹۷۴ تأسیس شد و در ۱۹۷۸ با ۵۰ هزار تن روی در سال شروع کرد، امروز بزرگ‌ترین ذوب‌کننده روی جهان است: حدود ۶۵۰ هزار تن روی و ۴۲۰ هزار تن سرب در سال، و در کنارش ۱۸ فلز و محصول شیمیایی دیگر که از همان کنسانتره‌ها بیرون می‌کشد، از طلا و نقره تا ایندیم، بیسموت، آنتیموان، گالیم و ژرمانیم. مهندسانش می‌گویند راز کارشان این است که «پسماند» را دور نمی‌ریزند، بلکه از آن ماده‌های دیگر بازیابی می‌کنند. دسامبر ۲۰۲۵ این شرکت اعلام کرد با پشتیبانی دولت آمریکا کارخانه‌ای ۷٫۴ میلیارد دلاری در تنسی می‌سازد؛ مشتریانش سامسونگ، هیوندای و لاکهید مارتین‌اند. کشوری بدون معدن، با دانش فرآوری، به گلوگاه زنجیره تأمین فلزات حیاتی جهان تبدیل شد.</p>
+<p>هند راه دیگری رفت: شرکت دولتی Hindustan Zinc در ۱۹۶۶ تأسیس شد و با تکیه بر معدن رامپورا آگوچا، که بزرگ‌ترین معدن روی جهان خوانده می‌شود، و ذوب‌خانه‌های یکپارچه در راجستان، امروز دومین تولیدکننده روی جهان است با حدود ۲۵ هزار کارمند و درآمد سالانه حدود ۳٫۶ میلیارد دلار.</p>
+<p>دو کشور، دو مسیر، یک درس: سنگ معدن به‌تنهایی ثروت نیست. ثروت در فرآوری، در بازیابی محصول جانبی، در استاندارد، در مهندسی و در آدم‌هایی است که این‌ها را بلدند. و این دقیقاً همان چیزی است که می‌شود یاد گرفت.</p>
+
+<h3><span class="check-number">۰۵.</span> نردبان ارزش: از سنگ تا محصول</h3>
+<p>هر پله‌ای که سنگ معدن بالا می‌رود، ارزشش چند برابر می‌شود و شغل‌هایی با مهارت بالاتر می‌سازد. نردبان روی تقریباً این شکلی است:</p>
+<ul>
+<li><strong>سنگ معدن و کنسانتره:</strong> استخراج، خردایش، فلوتاسیون. اینجا پول در حجم است و بیشتر دست شرکت‌های بزرگ.</li>
+<li><strong>شمش روی:</strong> ذوب و تصفیه الکترولیتی. زنجان اینجا ایستاده است.</li>
+<li><strong>گالوانیزه، ریخته‌گری تحت فشار، آلیاژها:</strong> خدمات صنعتی برای فولاد، خودرو، لوازم خانگی و ساختمان. بازار داخلی بزرگی دارد.</li>
+<li><strong>اکسید روی و ترکیبات شیمیایی:</strong> لاستیک، سرامیک، رنگ، داروسازی، ضدآفتاب، تغذیه دام. اکسید روی نانو و دارویی محصولی دانش‌بنیان است با مشتری جهانی.</li>
+<li><strong>کود و مکمل روی:</strong> خاک ایران آهکی و فقیر از روی است؛ یعنی بازار داخلی آماده‌ای برای کودهای روی و مکمل‌های غذایی وجود دارد. یک شرکت دانش‌بنیان ایرانی همین حالا مکمل روی لیپوزومی تولید می‌کند و سالانه حدود ۲۰۰ هزار بطری می‌فروشد.</li>
+<li><strong>باتری‌های روی:</strong> روی‌–یون، روی–برم، روی–هوا. دنیا هنوز در ابتدای این راه است و فاصله ایران با رقبا کمتر از لیتیوم است.</li>
+<li><strong>بازیافت:</strong> غبار کوره‌های فولادسازی سرشار از روی است. ایران جزو ده فولادساز بزرگ دنیاست؛ یعنی «معدن شهری» بزرگی برای روی دارد که هنوز کامل برداشت نشده.</li>
+<li><strong>محصولات جانبی:</strong> نقره، باریت (ایران بزرگ‌ترین ذخایر باریت جهان را دارد و باریت ماده اصلی گل حفاری نفت است)، و در صورت داشتن فناوری، فلزات کم‌یاب همراه مثل ژرمانیم و ایندیم؛ همان کاری که کره می‌کند.</li>
+</ul>
+
+<h3><span class="check-number">۰۶.</span> پیشنهاد دیتومن به نسل جوان ایران</h3>
+<p>این بخش را صریح می‌نویسیم، چون فکر می‌کنیم مهم‌ترین بخش این مقاله است. مهدی‌آباد و انگوران را شرکت‌های بزرگ می‌گردانند؛ کار آن‌ها استخراج است. اما پله‌های بالای نردبان، از اکسید روی تا باتری تا نرم‌افزار معدن، جایی است که یک تیم کوچک با دانش درست می‌تواند وارد شود. چند پیشنهاد مشخص:</p>
+<ul>
+<li><strong>یکی از پله‌ها را انتخاب کن و در آن جهانی شو.</strong> نیازی نیست همه زنجیره را بسازی. یک محصول: اکسید روی دارویی با استاندارد بین‌المللی، یک کود روی با اثربخشی اثبات‌شده، یک فناوری بازیافت غبار فولاد، یک سلول باتری روی. چیزی که اگر در یزد خوب کار کند، در هند و ترکیه و مصر هم خریدار داشته باشد.</li>
+<li><strong>از دانشی شروع کن که ارزان است و دیر به دست می‌آید.</strong> متالورژی، مهندسی شیمی و مواد، الکتروشیمی، زمین‌شناسی اقتصادی، و در کنارش داده و اتوماسیون. Korea Zinc برای کارخانه جدیدش «دوقلوی دیجیتال» و هوش مصنوعی می‌خواهد؛ این مهارت‌ها را می‌شود همین امروز، از همین شهر، یاد گرفت.</li>
+<li><strong>از دانشگاه خودت شروع کن.</strong> دانشگاه‌های زنجان، یزد، تهران، امیرکبیر و صنعتی اصفهان سال‌هاست روی همین کانسارها مقاله می‌نویسند؛ بعضی از آن‌ها در معتبرترین مجله‌های دنیا چاپ شده‌اند. پایان‌نامه‌ات را روی مسئله‌ای واقعی از همین زنجیره بگذار و با یک کارخانه، نه فقط یک استاد، تعریفش کن.</li>
+<li><strong>از روز اول با زبان و استاندارد جهانی کار کن.</strong> محصولی که گواهی بین‌المللی دارد، در هر بازاری فروخته می‌شود؛ محصولی که ندارد، فقط در یک بازار. انگلیسی فنی، مستندسازی، کنترل کیفیت و ثبت اختراع بخشی از خود محصول‌اند، نه کار بعد از آن.</li>
+<li><strong>به پسماند به چشم ماده اولیه نگاه کن.</strong> هر جا در صنعت روی چیزی «دور ریخته می‌شود»، احتمالاً یک کسب‌وکار پنهان است. این دقیقاً فلسفه‌ای است که کره را به بزرگ‌ترین بازیگر دنیا تبدیل کرد.</li>
+<li><strong>به ایران فکر نکن؛ از ایران فکر کن.</strong> ظرفیت ذخایر ایران آن‌قدر هست که بازار هدف نباید فقط داخل باشد. کسی که امروز بیست سال دارد و ده سال روی یکی از این پله‌ها کار می‌کند، در سی سالگی در موضوعی متخصص است که دنیا برایش صف می‌کشد؛ چون روی، طبق همه پیش‌بینی‌ها، در دهه آینده بیشتر خواسته می‌شود، نه کمتر.</li>
+</ul>
+<p>ما در دیتومن سرمایه‌گذاری را فقط خریدن یک دارایی نمی‌دانیم. سرمایه‌گذاری روی دانش خودت، در حوزه‌ای که کشورت در آن ذخیره طبیعی دارد و دنیا در آن تقاضای فزاینده، شاید مطمئن‌ترین سرمایه‌گذاری‌ای باشد که یک جوان ایرانی می‌تواند بکند.</p>
+
+<h3><span class="check-number">۰۷.</span> موانع را هم ببینیم</h3>
+<p>این روایت امید است، نه انکار. فاصله بین ذخیره و بازار جهانی، با چند مانع واقعی پر شده است: دسترسی به سرمایه و فناوری زیر تحریم، آب و انرژی در مناطق خشک، و رقابت با تولیدکنندگانی که دهه‌ها جلوترند. سهم ایران از بازار جهانی روی هنوز حدود ۱٪ است، در حالی که طبق آمار رسمی سازمان زمین‌شناسی کشور، ایران حدود ۷٪ ذخایر معدنی جهان را با ۱٪ جمعیت آن دارد. این فاصله را می‌شود دو جور دید: یا حسرت، یا فرصت. ما روایت دوم را انتخاب می‌کنیم؛ نه چون آسان است، بلکه چون تنها راهی است که به جایی می‌رسد.</p>
+
+<p><strong>جمع‌بندی:</strong> گنج همین‌جاست؛ زیر خاک یزد و زنجان، در مقاله‌های پژوهشگران ایرانی، و در کارخانه‌ای که در دل کویر با پساب شهر کار می‌کند. هنر، تبدیل سنگ به ارزش است، و این هنر را می‌شود یاد گرفت.</p>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>Sometimes people do not know things about their own country that the rest of the world is counting on. This article is about one of them: a metal we touch every day without seeing it, and a deposit in the Yazd desert that on its own holds about as much zinc as a mining nation's entire reserves. We are not writing this for empty pride, but to show exactly where the gap between "having" and "building" lies, and who can jump it.</p>
+
+<h3><span class="check-number">01.</span> What zinc is and why the world wants it</h3>
+<p>Zinc is the fourth most-used metal in the world after iron, aluminium and copper, a market of roughly $40 billion a year. Most of it goes into galvanising: the thin coating that stops steel from rusting. Every bridge, power pylon, car body, guardrail and pipe that lasts for decades usually carries a layer of zinc. Then come brass and alloys, die-cast parts, zinc oxide in rubber, ceramics, pharmaceuticals and sunscreen, fertilisers and dietary supplements.</p>
+<p>Several developments have turned zinc from an ordinary metal into a strategic one:</p>
+<ul>
+<li><strong>Critical mineral lists:</strong> the US Geological Survey added zinc to the official US critical minerals list in 2022. The United States imports about 77% of its refined zinc.</li>
+<li><strong>Batteries and storage:</strong> zinc batteries are thermally stable, need no fire suppression and are more economical for storage durations beyond eight hours. The International Zinc Association projects zinc use in batteries to rise from about 600 tonnes in 2020 to about 77,000 tonnes by 2030. Eos Energy in the US is doubling its zinc-battery capacity to 8 GWh.</li>
+<li><strong>Health and food:</strong> the UN calls zinc a "life-saving commodity"; deficiency costs an estimated 200,000 children's lives a year. Calcareous soils, which make up much of Iran's farmland, are typically poor in available zinc, and data cited by Iran's Vice-Presidency for Science puts zinc deficiency at about 40% of Iranians.</li>
+</ul>
+
+<h3><span class="check-number">02.</span> What Iran has</h3>
+<p>Iranian and French researchers writing in <em>Geoscience Frontiers</em> (2018) count more than 350 lead-zinc deposits and occurrences in Iran, concentrated in the Malayer-Esfahan and Yazd-Anarak belts, both part of the great Tethyan metallogenic belt. Two of them are world-scale:</p>
+<ul>
+<li><strong>Angouran, Zanjan:</strong> mined for decades, with parts of its ore grading up to 40% zinc, a grade rarely seen anywhere. S&P Global puts its mining capacity at about one million tonnes of ore a year. It made Zanjan Iran's zinc-smelting hub.</li>
+<li><strong>Mehdiabad, Yazd:</strong> according to <em>Ore Geology Reviews</em> (2019), about 394 million tonnes of ore averaging 4.2% zinc, 1.6% lead and 36 g/t silver, plus more than 40 million tonnes of barite. The authors call it a world-class deposit and the largest sediment-hosted Zn-Pb deposit in Iran, formed on a shallow sea floor in the Early Cretaceous, roughly 120 million years ago.</li>
+</ul>
+<p>One comparison shows the scale: the zinc contained in Mehdiabad's ore is estimated at about 16.5 million tonnes. The USGS's 2026 figures put Peru's entire zinc reserves at about 18 million tonnes, India's at 10 million and Mexico's at 14 million. One deposit, the size of a mining country's reserves.</p>
+<div class="note">
+<p><strong>A note on honest numbers</strong></p>
+<p>Some officials have called Mehdiabad "the world's second-largest zinc reserve". The scientific papers assign no such rank, and the USGS does not list Iran's reserves separately in its country table. We stick to the comparison we can document. It is big enough.</p>
+</div>
+
+<h3><span class="check-number">03.</span> What is being built right now</h3>
+<p>Mehdiabad has been known since the 1990s but lay dormant for years without capital or technology; the USGS describes the project as "under development since the 1990s but repeatedly delayed". What has changed:</p>
+<ul class="timeline">
+<li><strong>2017</strong> IMIDRO signs a roughly $1 billion contract with a six-company consortium led by Iran's Mobin Mining; a 25-year operating term</li>
+<li><strong>2023</strong> Phase 1 of the processing plant, about $300 million of investment, reaches its final stages; managers call it the largest lead-zinc processing plant in the Middle East</li>
+<li><strong>2025</strong> more than 170,000 tonnes of lead-zinc concentrate produced in the first quarter of the Iranian year alone</li>
+<li><strong>February 2026</strong> output of zinc and lead concentrate and barite surges past extraction and sales targets (Trend)</li>
+</ul>
+<p>The final target, in three phases, is 800,000 tonnes of zinc concentrate and 80,000 tonnes of lead-silver concentrate a year, from an extractable reserve of about 170 million tonnes: decades of work. The plant's water comes 100 km by pipeline from Yazd's treated municipal wastewater, not from desert aquifers. Iranian engineers found a sustainable answer for a mine in the driest part of the country.</p>
+<p>Downstream, Zanjan's dozens of smelters give Iran about 480,000 tonnes a year of zinc ingot capacity, of which only about 220,000 tonnes is actually produced, because feed has been short. Mehdiabad fills exactly that gap. S&P Global names Turkey, Iraq and the UAE as the main markets for Iranian zinc products.</p>
+
+<h3><span class="check-number">04.</span> The lesson from Korea and India: the value is not in the rock</h3>
+<p>South Korea has no zinc mines to speak of. Yet Korea Zinc, founded in 1974 and starting with 50,000 tonnes a year in 1978, is today the world's largest zinc smelter: about 650,000 tonnes of zinc and 420,000 tonnes of lead a year, plus 18 other metals and chemicals pulled from the same concentrates, from gold and silver to indium, bismuth, antimony, gallium and germanium. Its engineers say the secret is that they do not treat by-products as waste but recover other materials from them. In December 2025 the company announced a $7.4 billion refinery in Tennessee backed by the US government; its customers include Samsung, Hyundai and Lockheed Martin. A country without mines became a chokepoint in the world's critical-metals supply chain through processing knowledge.</p>
+<p>India took another path: state-owned Hindustan Zinc, founded in 1966, built on the Rampura Agucha mine, often called the world's largest zinc mine, and integrated smelters in Rajasthan, and is today the world's second-largest zinc producer, with about 25,000 employees and revenue of roughly $3.6 billion.</p>
+<p>Two countries, two paths, one lesson: ore alone is not wealth. Wealth lies in processing, by-product recovery, standards, engineering and the people who know how. All of which can be learned.</p>
+
+<h3><span class="check-number">05.</span> The value ladder: from rock to product</h3>
+<ul>
+<li><strong>Ore and concentrate:</strong> mining, crushing, flotation. Money is in volume, mostly for large companies.</li>
+<li><strong>Zinc ingot:</strong> smelting and electrolytic refining. This is where Zanjan stands.</li>
+<li><strong>Galvanising, die-casting, alloys:</strong> industrial services for steel, cars, appliances and construction, with a large domestic market.</li>
+<li><strong>Zinc oxide and chemicals:</strong> rubber, ceramics, paint, pharma, sunscreen, animal feed. Nano and pharmaceutical-grade zinc oxide is a knowledge-based product with global customers.</li>
+<li><strong>Zinc fertilisers and supplements:</strong> Iran's calcareous soils are zinc-poor, so a ready domestic market exists. An Iranian knowledge-based company already makes a liposomal zinc supplement, about 200,000 bottles a year.</li>
+<li><strong>Zinc batteries:</strong> zinc-ion, zinc-bromine, zinc-air. The world is early on this road and Iran's distance from the leaders is smaller than in lithium.</li>
+<li><strong>Recycling:</strong> steelmaking furnace dust is rich in zinc, and Iran is among the world's top ten steel producers: a large "urban mine" still largely untapped.</li>
+<li><strong>By-products:</strong> silver, barite (Iran holds the world's largest barite reserves; barite is the main ingredient of oil-drilling mud) and, with the right technology, associated rare metals such as germanium and indium, exactly what Korea does.</li>
+</ul>
+
+<h3><span class="check-number">06.</span> Ditoman's suggestion to young Iranians</h3>
+<p>We write this part plainly, because we think it is the most important part of the article. Mehdiabad and Angouran are run by large companies; their job is extraction. But the upper rungs of the ladder, from zinc oxide to batteries to mining software, are where a small team with the right knowledge can enter. Some concrete suggestions:</p>
+<ul>
+<li><strong>Pick one rung and go global on it.</strong> You do not need to build the whole chain. One product: pharmaceutical-grade zinc oxide to an international standard, a zinc fertiliser with proven efficacy, a steel-dust recycling process, a zinc battery cell. Something that, if it works in Yazd, will find buyers in India, Turkey and Egypt.</li>
+<li><strong>Start with knowledge that is cheap to acquire and slow to acquire.</strong> Metallurgy, chemical and materials engineering, electrochemistry, economic geology, and alongside them data and automation. Korea Zinc wants digital twins and AI in its new plant; these skills can be learned today, from any city.</li>
+<li><strong>Start at your own university.</strong> The universities of Zanjan, Yazd, Tehran, Amirkabir and Isfahan have published on these very deposits for years, some in the world's leading journals. Put your thesis on a real problem from this chain, defined with a factory, not only a professor.</li>
+<li><strong>Work to global language and standards from day one.</strong> A product with international certification sells in every market; one without sells in one. Technical English, documentation, quality control and patents are part of the product, not an afterthought.</li>
+<li><strong>Look at waste as feedstock.</strong> Wherever something is "thrown away" in the zinc industry, there is probably a hidden business. That is precisely the philosophy that made Korea the world's biggest player.</li>
+<li><strong>Do not think about Iran; think from Iran.</strong> The reserves are large enough that the target market should never be only domestic. Someone who is twenty today and spends ten years on one rung will, at thirty, be an expert in something the world queues for, because by every forecast zinc will be wanted more in the coming decade, not less.</li>
+</ul>
+<p>At Ditoman we do not see investing only as buying an asset. Investing in your own knowledge, in a field where your country has natural reserves and the world has rising demand, may be the surest investment a young Iranian can make.</p>
+
+<h3><span class="check-number">07.</span> Seeing the obstacles too</h3>
+<p>This is a story of hope, not denial. The gap between reserves and world markets is filled with real obstacles: access to capital and technology under sanctions, water and energy in arid regions, and competition with producers decades ahead. Iran's share of the global zinc market is still about 1%, while by its own Geological Survey's figures the country holds about 7% of the world's mineral reserves with 1% of its population. That gap can be read two ways: regret, or opportunity. We choose the second, not because it is easy, but because it is the only reading that leads anywhere.</p>
+
+<p><strong>The takeaway:</strong> the treasure is here, under the soil of Yazd and Zanjan, in the papers of Iranian researchers, and in a plant in the desert running on a city's recycled water. The art is turning rock into value, and that art can be learned.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="lesson-content" style="display:block">
+<h3>Sources • منابع</h3>
+<ul class="sources">
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0169136819300794" target="_blank" rel="noopener">Maghfouri et al., Ore Geology Reviews (2019): the Mehdiabad world-class Zn-Pb-Ba-(Cu-Ag) deposit</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S1674987117300543" target="_blank" rel="noopener">Maghfouri et al., Geoscience Frontiers (2018): a review of major non-sulfide zinc deposits in Iran</a></li>
+<li><a href="https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-zinc.pdf" target="_blank" rel="noopener">USGS Mineral Commodity Summaries 2026: Zinc</a></li>
+<li><a href="https://pubs.usgs.gov/myb/vol3/2020-21/myb3-2020-21-iran.pdf" target="_blank" rel="noopener">USGS: The Mineral Industry of Iran, 2020–21</a></li>
+<li><a href="https://www.mining.com/usgs-publishes-2022-critical-minerals-list/" target="_blank" rel="noopener">Mining.com: USGS 2022 critical minerals list adds zinc</a></li>
+<li><a href="https://www.spglobal.com/commodity-insights/en/news-research/latest-news/metals/062025-factbox-irans-metals-industry-expansion-driven-by-sizable-mineral-reserves" target="_blank" rel="noopener">S&P Global (June 2025): Factbox on Iran's metals industry</a></li>
+<li><a href="https://technicalreviewmiddleeast.com/mining/iran-signs-us-1bn-zinc-mining-deal" target="_blank" rel="noopener">Technical Review Middle East / Reuters (2017): Iran signs $1bn Mehdiabad deal</a></li>
+<li><a href="https://www.tasnimnews.ir/en/news/2023/08/26/2947248/major-zinc-processing-plant-to-be-launched-in-iran" target="_blank" rel="noopener">Tasnim / IRNA (Aug 2023): Mehdiabad processing plant</a></li>
+<li><a href="https://www.trend.az/business/4156081.html" target="_blank" rel="noopener">Trend (Feb 2026): Mehdiabad output multiplies</a></li>
+<li><a href="https://www.akhbaremadan.ir/news/77018" target="_blank" rel="noopener">Akhbar-e Madan (1404): 170,000+ t of concentrate in Q1</a></li>
+<li><a href="https://www.yjc.ir/fa/news/8945047" target="_blank" rel="noopener">YJC: national zinc ingot capacity reaches 480,000 t</a></li>
+<li><a href="https://www.utilitydive.com/news/can-zinc-based-batteries-scale-into-us-storage-buildout/824136/" target="_blank" rel="noopener">Utility Dive (June 2026): can zinc batteries scale?</a></li>
+<li><a href="https://www.theassay.com/articles/feature-story/potential-zinc-shortage-raising-global-concerns-for-critical-mineral/" target="_blank" rel="noopener">The Assay (2022): zinc outlook and IZA battery forecast</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Korea_Zinc" target="_blank" rel="noopener">Wikipedia: Korea Zinc</a> · <a href="https://www.upi.com/Top_News/World-News/2026/04/29/Korea-Zinc-seeks-to-replicate-its-competitive-edge-in-United-States/6181777468850/" target="_blank" rel="noopener">UPI (Apr 2026): Korea Zinc's competitive edge</a> · <a href="https://www.aljazeera.com/economy/2025/12/15/korea-zinc-plans-7-4bn-us-minerals-refinery-with-washingtons-backing" target="_blank" rel="noopener">Al Jazeera (Dec 2025): $7.4bn US refinery</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hindustan_Zinc" target="_blank" rel="noopener">Wikipedia: Hindustan Zinc</a></li>
+<li><a href="https://cistc.ir/en/4495/iranian-knowledge-based-company-makes-zinc-rich-supplements/" target="_blank" rel="noopener">Vice-Presidency for Science: Iranian knowledge-based zinc supplement</a></li>
+<li><a href="https://doi.org/10.3390/agriculture14122285" target="_blank" rel="noopener">Agriculture (MDPI, 2024): zinc deficiency in calcareous soils</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">چراغ روشن • Built Under Pressure</h2>
+<p>A Ditoman series documenting what Iranian people and businesses have built, with sources, and without taking political sides.</p>
+<p class="fa" style="display:block">روایت کارآفرینان و صنعتگرانی که در سخت‌ترین شرایط، چراغ کار و تولید را روشن نگه داشته‌اند؛ با منبع و بدون موضع سیاسی.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">View on Instagram</a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+Ditoman • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
