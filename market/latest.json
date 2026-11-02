@@ -1,128 +1,149 @@
 {
-  "fetched_utc": "2026-11-02T17:12:06+00:00",
+  "fetched_utc": "2026-11-02T17:14:18+00:00",
   "global": {
     "btc": {
-      "value": 77319.31,
+      "value": 77288.82,
       "prev": 78248.453125,
-      "chg": -1.187426828126198,
+      "chg": -1.226392454643164,
       "source": "Yahoo Finance BTC-USD",
-      "market_time_utc": "2026-11-02T17:12+00:00"
+      "market_time_utc": "2026-11-02T17:14+00:00"
     },
     "gold": {
-      "value": 3978.6,
+      "value": 3977.8,
       "prev": 3898.89990234375,
-      "chg": 2.0441688592297456,
+      "chg": 2.0236502509033607,
       "source": "Yahoo Finance GC=F",
-      "market_time_utc": "2026-11-02T17:02+00:00"
+      "market_time_utc": "2026-11-02T17:04+00:00"
     },
     "silver": {
-      "value": 50.97,
+      "value": 50.955,
       "prev": 49.09700012207031,
-      "chg": 3.8148967824364624,
+      "chg": 3.784345017638805,
       "source": "Yahoo Finance SI=F",
-      "market_time_utc": "2026-11-02T17:02+00:00"
+      "market_time_utc": "2026-11-02T17:04+00:00"
     },
     "copper": {
-      "value": 6.578,
+      "value": 6.574,
       "prev": 6.458499908447266,
-      "chg": 1.850276275400065,
+      "chg": 1.7883423889449652,
       "source": "Yahoo Finance HG=F",
-      "market_time_utc": "2026-11-02T17:01+00:00"
+      "market_time_utc": "2026-11-02T17:04+00:00"
     },
     "brent": {
-      "value": 104.7,
+      "value": 104.58,
       "prev": 117.63999938964844,
-      "chg": -10.999659517838346,
+      "chg": -11.10166563873481,
       "source": "Yahoo Finance BZ=F",
-      "market_time_utc": "2026-11-02T17:02+00:00"
+      "market_time_utc": "2026-11-02T17:04+00:00"
     },
     "natgas": {
-      "value": 2.901,
+      "value": 2.899,
       "prev": 2.8980000019073486,
-      "chg": 0.1035196028528878,
+      "chg": 0.03450649040694373,
       "source": "Yahoo Finance NG=F",
-      "market_time_utc": "2026-11-02T17:01+00:00"
+      "market_time_utc": "2026-11-02T17:04+00:00"
     },
     "wheat": {
       "value": 605.5,
       "prev": 603.5,
       "chg": 0.33140016570008285,
       "source": "Yahoo Finance ZW=F",
-      "market_time_utc": "2026-11-02T17:01+00:00"
+      "market_time_utc": "2026-11-02T17:03+00:00"
     },
     "corn": {
-      "value": 447.5,
+      "value": 447.25,
       "prev": 447.75,
-      "chg": -0.05583472920156338,
+      "chg": -0.11166945840312675,
       "source": "Yahoo Finance ZC=F",
-      "market_time_utc": "2026-11-02T17:01+00:00"
+      "market_time_utc": "2026-11-02T17:04+00:00"
     },
     "soybeans": {
-      "value": 1217.5,
+      "value": 1217.25,
       "prev": 1222.25,
-      "chg": -0.3886275311924729,
+      "chg": -0.40908161178155045,
       "source": "Yahoo Finance ZS=F",
-      "market_time_utc": "2026-11-02T17:01+00:00"
+      "market_time_utc": "2026-11-02T17:04+00:00"
     },
     "btc_coingecko": {
-      "value": 77332,
-      "chg": -0.9452577660730923,
+      "value": 77330,
+      "chg": -0.9511067073550551,
       "source": "CoinGecko (24h change)"
     },
     "zinc": {
-      "value": 2575.6,
-      "chg": 0.0,
-      "source": "TGJU zinc",
-      "candidates": [
-        "zinc",
-        "base_global_zinc",
-        "base-us-zinc",
-        "basemetal-zinc"
-      ]
+      "value": 152.45,
+      "chg": 1.4,
+      "source": "Trading Economics LME zinc",
+      "tgju_candidates": {
+        "zinc": {
+          "value": 2575.6,
+          "chg": 0.0,
+          "t": "۷ تیر"
+        },
+        "base_global_zinc": {
+          "value": 3696.3,
+          "chg": 0.0,
+          "t": "۲۴ مهر"
+        },
+        "base-us-zinc": {
+          "value": 2297.0,
+          "chg": 0.0,
+          "t": "۲۴ دی"
+        },
+        "basemetal-zinc": {
+          "value": 3899.0,
+          "chg": 1.6,
+          "t": "۲۰:۴۱:۵۳"
+        }
+      }
+    },
+    "zinc_te": {
+      "value": 152.45,
+      "chg": 1.4,
+      "source": "Trading Economics LME zinc"
     }
   },
   "forex": {
     "EUR/USD": {
-      "value": 1.121,
+      "value": 1.1208,
       "prev": 1.1182805299758911,
-      "chg": 0.24318316837435341,
+      "chg": 0.22529856834431536,
       "source": "Yahoo Finance EURUSD=X",
-      "market_time_utc": "2026-11-02T17:11+00:00"
+      "market_time_utc": "2026-11-02T17:13+00:00"
     },
     "GBP/USD": {
-      "value": 1.3421,
+      "value": 1.342,
       "prev": 1.3378641605377197,
-      "chg": 0.3166120737233785,
+      "chg": 0.3091374733155317,
       "source": "Yahoo Finance GBPUSD=X",
-      "market_time_utc": "2026-11-02T17:11+00:00"
+      "market_time_utc": "2026-11-02T17:13+00:00"
     },
     "USD/JPY": {
-      "value": 157.87,
+      "value": 157.867,
       "prev": 157.8040008544922,
-      "chg": 0.04182349316268191,
+      "chg": 0.03992240067848022,
       "source": "Yahoo Finance JPY=X",
-      "market_time_utc": "2026-11-02T17:12+00:00"
+      "market_time_utc": "2026-11-02T17:14+00:00"
     },
     "USD/CHF": {
-      "value": 0.8181,
+      "value": 0.8183,
       "prev": 0.8236100077629089,
-      "chg": -0.6690068978004747,
+      "chg": -0.6447235600417194,
       "source": "Yahoo Finance CHF=X",
-      "market_time_utc": "2026-11-02T17:12+00:00"
+      "market_time_utc": "2026-11-02T17:14+00:00"
     },
     "USD/CNY": {
       "value": 6.6368,
       "prev": 6.660999774932861,
       "chg": -0.3633054458871411,
       "source": "Yahoo Finance CNY=X",
-      "market_time_utc": "2026-11-02T17:08+00:00"
+      "market_time_utc": "2026-11-02T17:12+00:00"
     },
     "USD/TRY": {
-      "value": 49.963,
+      "value": 49.9631,
       "prev": 49.94279098510742,
-      "chg": 0.040464328272333185,
+      "chg": 0.04066455737051481,
       "source": "Yahoo Finance TRY=X",
-      "market_time_utc": "2026-11-02T17:11+00:00"
+      "market_time_utc": "2026-11-02T17:14+00:00"
     }
   },
   "iran": {
@@ -338,10 +359,10 @@
     "pair": "0x6f1836b15de0c6294c16aaec67903515f532fa1c",
     "reserve_tmn": 1094874888.8711696,
     "reserve_bnb": 2.8392978259714625,
-    "bnb_usd": 702.18,
+    "bnb_usd": 701.55,
     "price_bnb": 2.593262348813951e-09,
-    "price_usd": 1.82093695609018e-06,
-    "liquidity_usd": 3987.3962948812828,
+    "price_usd": 1.8193032008104272e-06,
+    "liquidity_usd": 3983.818779620559,
     "source": "PancakeSwap V2 pool reserves (on-chain)",
     "dexscreener": 0,
     "geckoterminal": 1,
