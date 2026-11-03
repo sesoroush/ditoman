@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-03",
+ "headline_fa": "امروز، روزِ",
+ "headline_hl": "انتخابات آمریکا",
+ "key": {
+  "kick_en": "US MIDTERM ELECTIONS",
+  "fa": "انتخابات میان‌دوره‌ای آمریکا",
+  "story_fa": "انتخابات میان‌دوره‌ای آمریکا",
+  "body_fa": "همه کرسی‌های مجلس نمایندگان و 35 کرسی سنا به رأی گذاشته می‌شود. نخستین حوزه‌ها بامداد چهارشنبه به وقت تهران بسته می‌شوند و نتیجه می‌تواند بر بازارها اثر بگذارد.",
+  "story_note_fa": "نخستین حوزه‌ها بامداد چهارشنبه تهران بسته می‌شوند",
+  "tehran": "02:30",
+  "lisbon": "23:00",
+  "en": "US midterm elections, first polls close",
+  "expected": ""
+ },
+ "today": [
+  {
+   "fa": "فرصت‌های شغلی آمریکا (JOLTS)",
+   "note_fa": "پیش‌بینی 7.11 میلیون · قبلی 7.08 میلیون",
+   "tehran": "18:30",
+   "lisbon": "15:00",
+   "en": "US JOLTS job openings (Sep)",
+   "expected": "7.11M (prev 7.08M)"
+  },
+  {
+   "fa": "گزارش مالی AMD",
+   "note_fa": "بعد از بسته شدن بازار آمریکا؛ نشانه‌ای از تقاضای هوش مصنوعی",
+   "tehran": "00:30",
+   "lisbon": "21:00",
+   "en": "AMD earnings, after US close",
+   "expected": "EPS est. $1.94"
+  }
+ ],
+ "week": [
+  {
+   "day_fa": "چهارشنبه",
+   "date": "2026-11-04",
+   "fa": "اشتغال ADP و ISM خدمات",
+   "note_fa": "ADP: پیش‌بینی +68 هزار · ISM: پیش‌بینی 54.9",
+   "tehran": "16:45",
+   "lisbon": "13:15",
+   "en": "ADP employment 13:15 Lisbon; ISM Services 15:00 Lisbon",
+   "expected": "ADP +68K; ISM 54.9"
+  },
+  {
+   "day_fa": "پنجشنبه",
+   "date": "2026-11-05",
+   "fa": "تصمیم نرخ بهرهٔ بانک انگلستان",
+   "note_fa": "بازار افزایش 0.25 واحدی را انتظار دارد",
+   "tehran": "15:30",
+   "lisbon": "12:00",
+   "en": "Bank of England rate decision",
+   "expected": "25bp hike expected"
+  },
+  {
+   "day_fa": "جمعه",
+   "date": "2026-11-06",
+   "fa": "گزارش اشتغال آمریکا (NFP)",
+   "note_fa": "پیش‌بینی حدود +62 هزار · قبلی +29 هزار · بیکاری 4.2%",
+   "tehran": "17:00",
+   "lisbon": "13:30",
+   "en": "US nonfarm payrolls (Oct)",
+   "expected": "~+62K (prev +29K)"
+  }
+ ],
+ "sources": [
+  "https://www.fxempire.com/forecasts/article/the-week-ahead-ai-earnings-u-s-midterms-and-jobs-data-test-u-s-stocks-1641771",
+  "https://www.zerohedge.com/economics/key-events-week-midterms-jobs-earnings-central-banks-and-more",
+  "https://www.newsquawk.com/headlines/week-in-focus-2nd-6th-november-2026-highlights-include-us-midterm-election-nfp-ism-pmis-rba-boe-and-ez-cpi-",
+  "https://www.rba.gov.au/media-releases/2026/mr-26-30.html"
+ ]
+}
