@@ -1,0 +1,141 @@
+{
+  "slug": "kalleh",
+  "status": "published",
+  "last_checked": { "fa": "۱۲ آبان ۱۴۰۵", "en": "3 November 2026" },
+  "sector": { "id": "food", "fa": "غذا و لبنیات", "en": "Food and dairy" },
+  "name": { "fa": "کاله", "en": "Kalleh" },
+  "logo": null,
+  "tagline": {
+    "fa": "از آمل تا بازارهای منطقه؛ یکی از شناخته‌شده‌ترین برندهای لبنی ایران",
+    "en": "From Amol to regional markets: one of Iran's best-known dairy brands"
+  },
+  "facts": [
+    { "label": { "fa": "تأسیس", "en": "Founded" }, "value": { "fa": "۱۳۷۰ (۱۹۹۱)", "en": "1991" }, "src": [1] },
+    { "label": { "fa": "پایگاه", "en": "Based in" }, "value": { "fa": "آمل، مازندران", "en": "Amol, Mazandaran" }, "src": [1] },
+    { "label": { "fa": "گروه مادر", "en": "Parent group" }, "value": { "fa": "گروه سولیکو", "en": "Solico Group" }, "src": [1] },
+    { "label": { "fa": "محصول اصلی", "en": "Main products" }, "value": { "fa": "پنیر، شیر، ماست و نوشیدنی لبنی", "en": "Cheese, milk, yogurt, dairy drinks" }, "src": [3] }
+  ],
+  "summary": {
+    "fa": "کاله سال ۱۳۷۰ در آمل شروع شد؛ با پنج خط تولید برای شیر پاستوریزه، شیر استریل، پنیر، بستنی و سس. این برند امروز چهره‌ی لبنی گروه سولیکو است و از مزرعه تا توزیع، زنجیره‌ی خودش را دارد. ما این پرونده را با هم دنبال می‌کنیم: هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را هم گفته‌ایم.",
+    "en": "Kalleh began in Amol in 1991 with five product lines: pasteurised milk, UHT milk, cheese, ice cream and sauces. Today it is the dairy face of Solico Group, with its own chain from farm to distribution. We are following this record together with you: each figure sits next to its source, and where a figure could not be confirmed, we say so."
+  },
+  "photos": {
+    "main": { "file": null, "art": "plant", "alt": { "fa": "کارخانه‌ی لبنیات کاله در آمل", "en": "Kalleh dairy plant in Amol" } },
+    "product": { "file": null, "art": "cheese", "alt": { "fa": "محصول شاخص کاله", "en": "Kalleh signature product" } },
+    "office": { "file": null, "art": "office", "alt": { "fa": "دفتر مرکزی گروه", "en": "Group head office" } }
+  },
+  "leader": {
+    "photo": null,
+    "initials": { "fa": "غ‌س", "en": "GS" },
+    "name": { "fa": "غلامعلی سلیمانی", "en": "Gholamali Soleimani" },
+    "role": { "fa": "بنیان‌گذار گروه سولیکو", "en": "Founder, Solico Group" },
+    "bio": {
+      "fa": "متولد ۱۳۲۵ در آمل. در سال‌های دانشجویی کسب‌وکار کوچکی در تولید همبرگر راه انداخت و سال ۱۳۵۷ کارگاهی در زیرزمین همان ساختمانی که هنوز دفتر گروه است باز کرد. سال ۱۳۷۰ با تأسیس کاله وارد صنعت لبنیات شد.",
+      "en": "Born in 1946 in Amol. He started a small hamburger business as a student, and in 1978 opened a workshop in the basement of the building that still houses the group's office. In 1991 he entered dairy by founding Kalleh."
+    },
+    "src": [1, 2]
+  },
+  "record": [
+    {
+      "value": { "fa": "بیش از ۲٬۰۰۰ تن", "en": "2,000+ tons" },
+      "label": { "fa": "شیر دریافتی در هر روز، کارخانه‌ی آمل", "en": "of milk received per day at the Amol plant" },
+      "when": { "fa": "مصاحبه بدون تاریخ", "en": "Undated interview" },
+      "evidence": "company", "src": [4]
+    },
+    {
+      "value": { "fa": "۲۸۰ میلیون دلار", "en": "$280 million" },
+      "label": { "fa": "صادرات محصولات گروه سولیکو", "en": "Solico Group product exports" },
+      "when": { "fa": "منتشرشده در ۱۴۰۰؛ سال عدد ذکر نشده", "en": "Published 2021; figure's year not stated" },
+      "evidence": "press", "src": [5]
+    },
+    {
+      "value": { "fa": "۲۰۰ میلیون دلار", "en": "$200 million" },
+      "label": { "fa": "صادرات یک‌ساله‌ی کاله، به گفته‌ی مدیر صادرات", "en": "Kalleh exports in one year, per its exports director" },
+      "when": { "fa": "مصاحبه بدون تاریخ", "en": "Undated interview" },
+      "evidence": "company", "src": [4]
+    },
+    {
+      "value": { "fa": "حدود ۱۵٬۰۰۰ نفر", "en": "About 15,000 people" },
+      "label": { "fa": "نیروی کار فعال گروه", "en": "active workforce across the group" },
+      "when": { "fa": "بدون تاریخ", "en": "Undated" },
+      "evidence": "company", "src": [1]
+    },
+    {
+      "value": { "fa": "بیش از ۱٬۸۰۰ محصول", "en": "1,800+ products" },
+      "label": { "fa": "سبد محصولات گروه، نه فقط لبنیات", "en": "across the group, not only dairy" },
+      "when": { "fa": "بدون تاریخ", "en": "Undated" },
+      "evidence": "company", "src": [2]
+    },
+    {
+      "value": { "fa": "بیش از ۲٬۲۰۰ کامیون", "en": "2,200+ trucks" },
+      "label": { "fa": "ناوگان توزیع گروه", "en": "in the group's distribution fleet" },
+      "when": { "fa": "بدون تاریخ", "en": "Undated" },
+      "evidence": "company", "src": [2]
+    }
+  ],
+  "timeline": [
+    { "year": { "fa": "۱۳۵۷", "en": "1978" }, "text": { "fa": "کارگاه همبرگر در زیرزمین ساختمانی که هنوز دفتر گروه است", "en": "A hamburger workshop opens in the basement of the building that still houses the office" } },
+    { "year": { "fa": "۱۳۶۲", "en": "1983" }, "text": { "fa": "تأسیس شرکت فراورده‌های گوشتی آمل با ظرفیت ۲٬۰۰۰ تن در سال", "en": "Amol Meat Products is founded, with capacity of 2,000 tons a year" } },
+    { "year": { "fa": "۱۳۷۰", "en": "1991" }, "text": { "fa": "تأسیس شرکت لبنیات کاله در آمل با پنج خط تولید", "en": "Kalleh Amol Dairy Products is established with five product lines" } },
+    { "year": { "fa": "۱۳۸۴", "en": "2005" }, "text": { "fa": "تولید سس از کاله جدا می‌شود و شرکت مستقلی می‌گیرد", "en": "Sauce production moves out of Kalleh into its own company" } },
+    { "year": { "fa": "۱۳۸۵", "en": "2006" }, "text": { "fa": "بخش بستنی هم مستقل می‌شود", "en": "The ice cream business becomes a separate company" } },
+    { "year": { "fa": "۱۳۹۰", "en": "2011" }, "text": { "fa": "شرکت توزیع سراسری گروه راه می‌افتد", "en": "The group's national distribution company is set up" } },
+    { "year": { "fa": "۱۳۹۲", "en": "2013" }, "text": { "fa": "کارخانه‌ی لبنی کاله در نزدیکی شهریار تولید شیر در ظروف پلاستیکی را شروع می‌کند", "en": "Kalleh's dairy plant near Shahriar begins producing milk in plastic containers" } }
+  ],
+  "timeline_src": [1],
+  "exports": {
+    "intro": {
+      "fa": "به گفته‌ی یکی از کارشناسان کنترل کیفیت شرکت در مهر ۱۴۰۴، سهم بزرگی از محصولات کاله به این چهار بازار می‌رود و از طریق دفاتر فروش خارجی به آمریکا هم ارسال می‌شود.",
+      "en": "A company quality-control specialist said in October 2025 that a large share of Kalleh's products goes to these four markets, with shipments to the US through its overseas sales offices."
+    },
+    "intro_src": [6],
+    "markets": [
+      { "fa": "عراق", "en": "Iraq" },
+      { "fa": "روسیه", "en": "Russia" },
+      { "fa": "تاجیکستان", "en": "Tajikistan" },
+      { "fa": "امارات", "en": "UAE" }
+    ],
+    "context": {
+      "value": { "fa": "۷۳٫۵ میلیون دلار", "en": "$73.5 million" },
+      "label": { "fa": "پنیری که عراق در سال ۲۰۲۴ از ایران وارد کرد. این عدد مربوط به همه‌ی شرکت‌های ایرانی است، نه فقط کاله.", "en": "of cheese imported by Iraq from Iran in 2024. This covers all Iranian companies, not Kalleh alone." },
+      "evidence": "independent", "src": [7]
+    },
+    "offices_title": { "fa": "دفترهای اعلام‌شده‌ی گروه", "en": "Group offices listed by the company" },
+    "offices": { "fa": "تهران، اربیل، بغداد، فرانکفورت، لس‌آنجلس، ازمیر و کابل؛ با دفتر مرکزی جهانی در امارات", "en": "Tehran, Erbil, Baghdad, Frankfurt, Los Angeles, Izmir and Kabul, with a global head office in the UAE" },
+    "offices_src": [2],
+    "europe_title": { "fa": "کاله در اروپا", "en": "Kalleh in Europe" },
+    "europe": {
+      "fa": "گروه سولیکو از دفتری در فرانکفورت نام می‌برد و یک فهرست غیررسمی، بریتانیا، اتریش و گرجستان را جزو بازارهای صادراتی آورده است. اما عددی برای صادرات کاله به اروپا پیدا نکردیم که بتوان آن را تأیید کرد. این بخش را با آمار رسمی شرکت کامل می‌کنیم.",
+      "en": "Solico lists an office in Frankfurt, and one unofficial directory names the UK, Austria and Georgia among its export markets. We did not find a figure for Kalleh's exports to Europe that could be confirmed. We will complete this section with official company figures."
+    },
+    "europe_src": [2, 8]
+  },
+  "unconfirmed": {
+    "fa": [
+      "رقم صادرات کاله به اروپا و سهم هر کشور",
+      "رقم تازه‌ی صادرات؛ عددهای بالا قدیمی‌اند و بعضی تاریخ ندارند",
+      "تعداد کشورهای مقصد؛ منابع از ۱۰ تا ۱۸ کشور گفته‌اند",
+      "تعداد کارکنان؛ منابع از ۱۴٬۰۰۰ تا ۱۷٬۰۰۰ نفر گفته‌اند"
+    ],
+    "en": [
+      "Kalleh's exports to Europe, and each country's share",
+      "A current export figure; those above are old and some are undated",
+      "The number of destination countries; sources range from 10 to 18",
+      "Headcount; sources range from 14,000 to 17,000"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication."
+  },
+  "sources": [
+    { "id": 1, "title": "Solico Group: A Brief History of Solico Group Companies", "url": "https://solico-group.com/?p=8" },
+    { "id": 2, "title": "Solico Group: company website", "url": "https://solico-group.com" },
+    { "id": 3, "title": "Wikipedia: Kalleh Dairy", "url": "https://en.wikipedia.org/wiki/Kalleh_Dairy" },
+    { "id": 4, "title": "Donya-e-Eqtesad: interview with Kalleh's exports director", "url": "https://donya-e-eqtesad.com/fa/tiny/news-3278203" },
+    { "id": 5, "title": "TechRasa Farsi: profile of Gholamali Soleimani (June 2021)", "url": "https://techrasa.com/fa/%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86%DB%8C-%D9%85%D8%A7%D9%84%DA%A9-%D9%87%D9%84%D8%AF%DB%8C%D9%86%DA%AF-%D8%B3%D9%88%D9%84%DB%8C%DA%A9%D9%88/" },
+    { "id": 6, "title": "Iran Daily, 4 October 2025 (print edition, PDF)", "url": "https://cdn-newspaper.irandaily.ir/newspaper/1404/07/11/12b5fd7d967316237e1c918dfc3ffbf3.pdf" },
+    { "id": 7, "title": "Trading Economics, from UN Comtrade: Iraq imports from Iran, dairy and related", "url": "https://tradingeconomics.com/iraq/imports/iran/dairy-products-eggs-honey-edible-products" },
+    { "id": 8, "title": "Iran Brands Review: Kalleh (unofficial directory)", "url": "https://iranbrands.review/industry/food/kalleh/" }
+  ]
+}

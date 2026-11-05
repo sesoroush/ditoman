@@ -546,3 +546,30 @@ body.menu-open { overflow: hidden; }
 .nav-ig:hover { background: rgba(127, 245, 222, 0.08); }
 .nav-ig svg { width: 19px; height: 19px; }
 @media (max-width: 380px) { .nav-ig { display: none; } }
+
+/* Eight nav links need more room: drop the call-to-action button before they collide. */
+@media (max-width: 1140px) {
+  .nav-cta { display: none; }
+  .nav-links { gap: 18px; }
+}
+
+/* Iranian companies block on the homepage */
+.co-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 18px; }
+.co-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); border-radius: 24px; overflow: hidden; background: var(--surface); border: 1px solid var(--line); }
+.co-card:hover { border-color: var(--line-strong); }
+.co-card:hover .co-go { text-decoration: underline; }
+.co-art { position: relative; min-height: 300px; }
+.co-art svg, .co-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.co-body { padding: 28px; display: flex; flex-direction: column; gap: 10px; justify-content: center; }
+.co-sector { color: var(--mint); font-weight: 700; font-size: 0.95rem; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.co-body h3 { font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+.co-body h3 [lang="fa"] { font-family: var(--fa-display); font-weight: 400; letter-spacing: 0; color: #eef6f2; }
+.co-body p { color: var(--muted); line-height: 1.7; }
+.co-body .co-fa { color: var(--text); text-align: right; line-height: 1.9; }
+.co-go { color: var(--mint); font-weight: 700; margin-top: 4px; }
+.co-all { margin-top: 26px; }
+@media (max-width: 720px) {
+  .co-card { grid-template-columns: 1fr; }
+  .co-art { min-height: 200px; }
+  .co-body { padding: 22px; }
+}
