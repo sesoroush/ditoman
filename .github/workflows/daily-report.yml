@@ -1,11 +1,11 @@
 name: Daily market report
 
-# Every day at 20:00 Tehran (16:30 UTC; Iran has no daylight saving):
-# fetch prices -> render the report image -> post it to Telegram -> save image + data in the repo.
+# Started once per night at 20:00 Tehran by the "Ditoman nightly Instagram story" scheduled task
+# (it dispatches this workflow): fetch prices -> render the report image -> post it to Telegram
+# -> save image + data in the repo.
+# The GitHub cron was removed on 2026-11-05: it fired hours late and caused a second Telegram post every night.
 # Can also be started by editing market/trigger-report.txt.
 on:
-  schedule:
-    - cron: "30 16 * * *"
   push:
     branches: [main]
     paths:
