@@ -1,0 +1,155 @@
+{
+  "slug": "golrang",
+  "status": "published",
+  "last_checked": { "fa": "۱۴ آبان ۱۴۰۵", "en": "5 November 2026" },
+  "sector": { "id": "holding", "fa": "هلدینگ‌ها", "en": "Holdings" },
+  "name": { "fa": "گلرنگ", "en": "Golrang" },
+  "logo": null,
+  "tagline": {
+    "fa": "از یک کارخانه‌ی شوینده در زنجان تا گروهی چندرشته‌ای؛ از غذا و دارو تا فروشگاه زنجیره‌ای و سینما",
+    "en": "From a detergent plant in Zanjan to a many-sided group, spanning food, medicine, chain stores and cinema"
+  },
+  "facts": [
+    { "label": { "fa": "شروع", "en": "Began" }, "value": { "fa": "۱۳۵۱ (۱۹۷۲)", "en": "1972" }, "src": [1, 2] },
+    { "label": { "fa": "زادگاه", "en": "Started in" }, "value": { "fa": "زنجان", "en": "Zanjan" }, "src": [1] },
+    { "label": { "fa": "شکل‌گیری گروه", "en": "Group formed" }, "value": { "fa": "۱۳۸۲ (۲۰۰۳)", "en": "2003" }, "src": [1] },
+    { "label": { "fa": "شرکت نخست", "en": "First company" }, "value": { "fa": "پاکشو", "en": "Pakshoo" }, "src": [1] }
+  ],
+  "summary": {
+    "fa": "داستان گلرنگ با پاکشو شروع شد؛ شرکتی که سال ۱۳۵۱ در زنجان تأسیس شد و سال ۱۳۸۲ هسته‌ی گروه صنعتی گلرنگ شد. این گروه امروز در حوزه‌های خیلی متنوعی حضور دارد و بعضی از برندها و فروشگاه‌هایش را بیشتر مردم هر روز می‌بینند. ما این پرونده را با هم دنبال می‌کنیم: هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را هم گفته‌ایم.",
+    "en": "Golrang's story begins with Pakshoo, founded in Zanjan in 1972, which became the core of Golrang Industrial Group in 2003. The group now works across a very wide range of fields, and many people see its brands and stores every day. We are following this record together with you: each figure sits next to its source, and where a figure could not be confirmed, we say so."
+  },
+  "summary_src": [1, 2],
+  "photos": {
+    "main": { "file": null, "art": "bottles", "alt": { "fa": "کارخانه‌ی گروه گلرنگ", "en": "A Golrang Group plant" } },
+    "product": { "file": null, "art": "store", "alt": { "fa": "فروشگاه زنجیره‌ای افق کوروش", "en": "An Ofogh Koorosh store" } },
+    "office": { "file": null, "art": "cinema", "alt": { "fa": "پردیس سینمایی کوروش", "en": "Kourosh cinema complex" } }
+  },
+  "leaders": [
+    {
+      "photo": null,
+      "initials": { "fa": "م‌ف", "en": "MF" },
+      "name": { "fa": "مهدی فضلی", "en": "Mehdi Fazli" },
+      "role": { "fa": "رئیس هیئت‌مدیره و مدیرعامل، طبق آخرین منبع در دسترس", "en": "Chairman and CEO, per the latest source available" },
+      "bio": {
+        "fa": "سال ۱۳۷۰ به پاکشو پیوست و هنگام شکل‌گیری گروه در ۱۳۸۲ مدیرعامل شد. پس از ۱۳۹۹ ریاست هیئت‌مدیره را هم بر عهده گرفت.",
+        "en": "He joined Pakshoo in 1991 and became CEO when the group was formed in 2003. After 2020 he also became chairman."
+      },
+      "src": [1]
+    },
+    {
+      "photo": null,
+      "initials": { "fa": "ک‌ف", "en": "KF" },
+      "name": { "fa": "محمدکریم فضلی", "en": "Mohammad Karim Fazli" },
+      "role": { "fa": "بنیان‌گذار (درگذشته در ۱۳۹۹)", "en": "Founder (died 2020)" },
+      "bio": {
+        "fa": "پاکشو را سال ۱۳۵۱ بنیان گذاشت و هنگام شکل‌گیری گروه در ۱۳۸۲ رئیس هیئت‌مدیره بود.",
+        "en": "He founded Pakshoo in 1972 and was chairman when the group was formed in 2003."
+      },
+      "src": [1, 2]
+    }
+  ],
+  "domains": {
+    "title": { "fa": "در چه حوزه‌هایی هست", "en": "Where the group works" },
+    "items": [
+      { "fa": "شوینده و بهداشتی", "en": "Detergents and hygiene" },
+      { "fa": "آرایشی", "en": "Cosmetics" },
+      { "fa": "غذا", "en": "Food" },
+      { "fa": "دارو", "en": "Pharmaceuticals" },
+      { "fa": "سلولزی", "en": "Cellulose" },
+      { "fa": "پخش و فروش", "en": "Distribution and sales" },
+      { "fa": "فروشگاه زنجیره‌ای", "en": "Chain stores" },
+      { "fa": "سینما و سرگرمی", "en": "Cinema and entertainment" },
+      { "fa": "ساختمان", "en": "Construction" },
+      { "fa": "نفت و گاز", "en": "Oil and gas" },
+      { "fa": "پتروشیمی", "en": "Petrochemicals" },
+      { "fa": "معدن", "en": "Mining" },
+      { "fa": "انرژی", "en": "Energy" },
+      { "fa": "خودرو", "en": "Automotive" },
+      { "fa": "بیمه", "en": "Insurance" },
+      { "fa": "حمل‌ونقل", "en": "Transport" },
+      { "fa": "آموزش", "en": "Education" },
+      { "fa": "فناوری اطلاعات", "en": "Information technology" }
+    ],
+    "src": [1, 2],
+    "note_title": { "fa": "سرگرمی", "en": "Entertainment" },
+    "note": {
+      "fa": "مجتمع کوروش سال ۱۳۹۳ باز شد و پردیس سینمایی ۱۴ سالنه با بیش از ۳٬۰۰۰ صندلی دارد. زومیت هم از قول مدیرعامل فیلم‌نت از سرمایه‌گذاری بیش از هزار میلیارد تومانی گلرنگ در این پلتفرم نوشته است.",
+      "en": "Kourosh Mall opened in 2014, with a 14-screen cinema complex and more than 3,000 seats. Zoomit also reported Filmnet's chief executive citing an investment of over 1,000 billion tomans by Golrang in the platform."
+    },
+    "note_src": [1, 2, 4]
+  },
+  "record": [
+    {
+      "value": { "fa": "بیش از ۱ میلیارد واحد", "en": "1 billion+ units" },
+      "label": { "fa": "محصول فروخته‌شده در سال", "en": "of products sold per year" },
+      "when": { "fa": "حدود ۱۳۹۶ و بدون تاریخ", "en": "About 2017, and undated" },
+      "evidence": "company", "src": [1, 2]
+    },
+    {
+      "value": { "fa": "بیش از ۲٬۶۰۰ فروشگاه", "en": "2,600+ stores" },
+      "label": { "fa": "شعبه‌های افق کوروش؛ حدود سال ۱۳۹۶ نزدیک ۷۰۰ شعبه بود", "en": "in the Ofogh Koorosh chain, up from nearly 700 around 2017" },
+      "when": { "fa": "بدون تاریخ", "en": "Undated" },
+      "evidence": "wiki", "src": [1, 2]
+    },
+    {
+      "value": { "fa": "بیش از ۵۰٬۰۰۰ نفر", "en": "50,000+ people" },
+      "label": { "fa": "نیروی کار گروه؛ حدود سال ۱۳۹۶ بیش از ۱۶٬۰۰۰ نفر اعلام شده بود", "en": "in the group's workforce, against 16,000+ stated around 2017" },
+      "when": { "fa": "۱۴۰۰", "en": "2021" },
+      "evidence": "wiki", "src": [1, 2]
+    },
+    {
+      "value": { "fa": "نزدیک ۱۰۰ شرکت", "en": "Nearly 100 companies" },
+      "label": { "fa": "زیرمجموعه‌ی گروه", "en": "in the group" },
+      "when": { "fa": "بدون تاریخ", "en": "Undated" },
+      "evidence": "wiki", "src": [1]
+    },
+    {
+      "value": { "fa": "حدود ۲ میلیارد دلار", "en": "About $2 billion" },
+      "label": { "fa": "فروش سالانه به گفته‌ی مدیرعامل؛ سال ۱۳۶۸ حدود ۱ میلیون دلار بود", "en": "in annual sales, per the CEO, up from about $1 million in 1989" },
+      "when": { "fa": "حدود ۱۳۹۶؛ قدیمی است", "en": "About 2017; now dated" },
+      "evidence": "company", "src": [2]
+    },
+    {
+      "value": { "fa": "حدود ۱ میلیون نفر", "en": "About 1 million people" },
+      "label": { "fa": "بازدید ماهانه از مجتمع کوروش", "en": "visiting Kourosh Mall each month" },
+      "when": { "fa": "حدود ۱۳۹۶", "en": "About 2017" },
+      "evidence": "company", "src": [2]
+    }
+  ],
+  "timeline": [
+    { "year": { "fa": "۱۳۵۱", "en": "1972" }, "text": { "fa": "تأسیس پاکشو در زنجان", "en": "Pakshoo is founded in Zanjan" } },
+    { "year": { "fa": "۱۳۷۰", "en": "1991" }, "text": { "fa": "مهدی فضلی به پاکشو می‌پیوندد", "en": "Mehdi Fazli joins Pakshoo" } },
+    { "year": { "fa": "۱۳۸۲", "en": "2003" }, "text": { "fa": "گروه صنعتی گلرنگ رسماً شکل می‌گیرد", "en": "Golrang Industrial Group is formally established" } },
+    { "year": { "fa": "۱۳۸۶", "en": "2007" }, "text": { "fa": "نخستین کارخانه‌ی غذایی گروه راه می‌افتد", "en": "The group's first food plant opens" } },
+    { "year": { "fa": "۱۳۸۷", "en": "2008" }, "text": { "fa": "تأسیس دانشگاه گلرنگ", "en": "Golrang University is founded" } },
+    { "year": { "fa": "۱۳۹۰", "en": "2011" }, "text": { "fa": "تأسیس هلدینگ دارویی گروه", "en": "The group's pharmaceutical holding is founded" } },
+    { "year": { "fa": "۱۳۹۳", "en": "2014" }, "text": { "fa": "افتتاح مجتمع کوروش با پردیس سینمایی بزرگ", "en": "Kourosh Mall opens with a large cinema complex" } },
+    { "year": { "fa": "۱۳۹۹", "en": "2020" }, "text": { "fa": "درگذشت بنیان‌گذار و آغاز ریاست هیئت‌مدیره‌ی مهدی فضلی", "en": "The founder dies and Mehdi Fazli becomes chairman" } }
+  ],
+  "timeline_src": [1],
+  "unconfirmed": {
+    "fa": [
+      "رقم صادرات گروه و کشورهای مقصد؛ منبعی با عدد مشخص پیدا نکردیم",
+      "فروش تازه‌ی گروه؛ آخرین عدد در دسترس حدود سال ۱۳۹۶ است",
+      "مدیرعامل فعلی؛ شاید منابع در دسترس به‌روز نباشند",
+      "سال شروع؛ ویکی‌پدیا در یک جا ۱۳۳۹ (۱۹۶۰) و در جای دیگر ۱۳۵۱ (۱۹۷۲) آورده است و خود مدیرعامل ۱۳۵۱ را گفته است"
+    ],
+    "en": [
+      "Group exports and destination countries; we found no source with a specific figure",
+      "Current group sales; the latest figure available dates from about 2017",
+      "The current CEO; available sources may not be up to date",
+      "The start year; Wikipedia gives both 1960 and 1972, and the CEO himself said 1972"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication."
+  },
+  "sources": [
+    { "id": 1, "title": "Wikipedia: Golrang Industrial Group (the article carries quality warnings)", "url": "https://en.wikipedia.org/wiki/Golrang_Industrial_Group" },
+    { "id": 2, "title": "The Business Year: interview with Mehdi Fazli (undated, about 2017)", "url": "https://dev.thebusinessyear.com/?p=41077" },
+    { "id": 3, "title": "DBpedia: Golrang Industrial Group", "url": "https://dbpedia.org/page/Golrang_Industrial_Group" },
+    { "id": 4, "title": "Zoomit: Filmnet's chief executive on Golrang's investment", "url": "https://www.zoomit.ir/tech-iran/439244-1-billion-toman-venture-golran-on-filmnet/" }
+  ]
+}
