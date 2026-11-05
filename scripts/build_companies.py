@@ -404,7 +404,7 @@ def directory(companies):
     {"".join(blocks)}
   </main>"""
     draft = all(c["status"] == "draft" for c in companies)
-    return page("Iranian Companies | Ditoman", intro["en"], "companies.html", body,
+    return page("Iranian Companies | شرکت‌های ایرانی | Ditoman", intro["en"], "companies.html", body,
                 "draft" if draft else None)
 
 

@@ -573,3 +573,7 @@ body.menu-open { overflow: hidden; }
   .co-art { min-height: 200px; }
   .co-body { padding: 22px; }
 }
+
+.story-grid .co-art { min-height: 240px; }
+.story-grid .co-body h3 { display: block; font-size: clamp(1.25rem, 2.2vw, 1.6rem); line-height: 1.3; letter-spacing: 0; }
+.story-grid .co-body h3 [lang="fa"] { display: block; margin-top: 6px; font-family: var(--fa); font-weight: 700; }
