@@ -1,0 +1,55 @@
+name: Search upkeep
+
+# Refreshes page metadata and sitemap.xml, then tells IndexNow engines (Bing, Yandex and others)
+# which pages changed. Google reads sitemap.xml through Search Console.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "data/companies/**"
+      - "scripts/build_seo.py"
+  schedule:
+    - cron: "40 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: search-upkeep
+  cancel-in-progress: false
+
+jobs:
+  upkeep:
+    runs-on: ubuntu-latest
+    env:
+      INDEXNOW_KEY: "f07a9f4a237067a2126da70440e37a06"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build metadata and sitemap
+        run: python3 scripts/build_seo.py
+      - name: Commit result
+        run: |
+          git config user.name "ditoman-bot"
+          git config user.email "ditoman-bot@users.noreply.github.com"
+          git add -A -- '*.html' sitemap.xml
+          git commit -m "Update search metadata" || echo "no change"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Tell IndexNow about recent pages
+        run: |
+          sleep 120
+          SINCE="$(date -u -d '2 days ago' +%F)"
+          URLS="$(python3 - "$SINCE" <<'PY'
+          import json, re, sys
+          rows = re.findall(r"<loc>(.*?)</loc><lastmod>(.*?)</lastmod>", open("sitemap.xml", encoding="utf-8").read())
+          print(json.dumps([u for u, d in rows if d >= sys.argv[1]]))
+          PY
+          )"
+          echo "$URLS"
+          [ "$URLS" = "[]" ] && exit 0
+          jq -n --arg k "$INDEXNOW_KEY" --argjson u "$URLS" '{host:"ditoman.com", key:$k, keyLocation:("https://ditoman.com/"+$k+".txt"), urlList:$u}' > body.json
+          curl -sS -o /dev/null -w 'IndexNow %{http_code}\n' -X POST https://api.indexnow.org/indexnow -H 'Content-Type: application/json; charset=utf-8' -d @body.json || true
