@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI on the Pistachio Line | هوش مصنوعی در خط پسته | Ditoman</title>
+<meta name="description" content="Nojan, a Tehran-based knowledge company, introduced an AI screening system for aflatoxin-suspect pistachios. What it does, where Iran stands in world pistachio trade, export destinations, a century of data, and the industry's real problems." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/pistachio-ai.html" />
+<link rel="icon" href="ditoman-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="AI on the Pistachio Line | هوش مصنوعی در خط پسته | Ditoman" />
+<meta property="og:description" content="Nojan, a Tehran-based knowledge company, introduced an AI screening system for aflatoxin-suspect pistachios. What it does, where Iran stands in world pistachio trade, export destinations, a century of data, and the industry&#x27;s real problems." />
+<meta property="og:url" content="https://ditoman.com/pistachio-ai.html" />
+<meta property="og:image" content="https://ditoman.com/social/pistachio-ai/post.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/pistachio-ai.html#article",
+   "mainEntityOfPage": "https://ditoman.com/pistachio-ai.html",
+   "headline": "AI on the Pistachio Line | هوش مصنوعی در خط پسته",
+   "description": "Nojan, a Tehran-based knowledge company, introduced an AI screening system for aflatoxin-suspect pistachios. What it does, where Iran stands in world pistachio trade, export destinations, a century of data, and the industry's real problems.",
+   "image": "https://ditoman.com/social/pistachio-ai/post.png",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "AI on the Pistachio Line | هوش مصنوعی در خط پسته",
+     "item": "https://ditoman.com/pistachio-ai.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+<div class="logo-text">DITOMAN</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html">Learn</a>
+<a href="companies.html">Companies</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:Tahoma,Arial,sans-serif}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+table.t{width:100%;border-collapse:collapse;margin:8px 0 20px;color:#c1dbde}table.t th,table.t td{padding:9px 12px;border-bottom:1px solid rgba(127,245,222,.16);text-align:right}table.t th{color:#7ff5de}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/pistachio-ai/post.png" alt="Illustration: AI quality control on a pistachio sorting line (not a factory photo)" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge">Technology &amp; Industry • فناوری و صنعت</div>
+<h1 dir="rtl" style="text-align:right">چشم ایرانی در خط پسته؛ از باغ‌های کرمان تا بازار جهانی</h1>
+<p class="subtitle">AI quality control meets a century-old Iranian trade: what the Nojan screening system does, where Iran stands in world pistachios, and what is still unproven.</p>
+<div class="stats">
+<div class="stat"><b>۲۲۵ هزار تن</b><span>تولید ایران، ۲۰۲۵/۲۶؛ رتبه‌ی دوم<br>Iran's output, 2nd in the world</span></div>
+<div class="stat"><b>۱۴۵ هزار تن</b><span>صادرات ایران؛ رتبه‌ی دوم<br>Exports, 2nd by volume</span></div>
+<div class="stat"><b>۱۰۰ fps</b><span>نرخ تصویربرداری اعلامی سازنده<br>Maker-stated imaging rate</span></div>
+<div class="stat"><b>−۲۷٫۴٪</b><span>افت صادرات فصل بعد<br>Last season's export drop</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p>پشت یک مشت پسته، فقط باغداری نیست؛ مدیریت آب و خاک، فرآوری، آزمایشگاه، ماشین‌سازی و تجارت هم قرار دارد. حالا مهندسی هوش مصنوعی هم وارد این زنجیره شده است.</p>
+
+<h3><span class="check-number">۰۱.</span> چه اتفاقی افتاد؟</h3>
+<p>شرکت دانش‌بنیان نوژان، مستقر در پارک علم و فناوری دانشگاه تهران، سامانه‌ای برای غربالگری پسته‌های مشکوک به آلودگی آفلاتوکسین معرفی کرده است. طبق گزارش ۴ شهریور ۱۴۰۵، این سامانه تصویربرداری مرئی و فرابنفش را با یادگیری عمیق ترکیب می‌کند؛ نرخ تصویربرداری اعلام‌شده‌ی سازنده ۱۰۰ فریم در ثانیه است.</p>
+<p>پسته‌ها وارد دستگاه می‌شوند، از مقابل دوربین و حسگر می‌گذرند و پس از بررسی، دانه‌های انتخاب‌شده با هوای فشرده از مسیر اصلی خارج می‌شوند. همین فرایند به تخصص‌هایی مانند بینایی ماشین، طراحی برد الکترونیکی، مکانیک و نگهداری تجهیزات نیاز دارد.</p>
+
+<h3><span class="check-number">۰۲.</span> این دستگاه چه چیزی را تشخیص می‌دهد؟</h3>
+<div class="note"><p>نشانه‌های مشکوک را غربال می‌کند. پژوهش دانشگاه میلان تأکید می‌کند فلورسانس اثبات قطعی آلودگی نیست و آزمون شیمیایی همچنان ضروری است. آن پژوهش ارزیابی محصول نوژان نیست؛ برای عملکرد این محصول، آزمون مستقل عمومی پیدا نکردیم.</p></div>
+
+<h3><span class="check-number">۰۳.</span> پسته‌ی ایران امروز چه جایگاهی دارد؟</h3>
+<p>در تازه‌ترین گزارش بررسی‌شده‌ی USDA (اکتبر ۲۰۲۶)، ایران در فصل ۲۰۲۵/۲۶ دومین تولیدکننده و دومین صادرکننده‌ی حجمی پسته است:</p>
+<table class="t"><tr><th>کشور</th><th>تولید، تن</th><th>صادرات، تن</th></tr>
+<tr><td>آمریکا</td><td>۷۱۶٬۶۷۶</td><td>۳۷۰٬۱۱۹</td></tr>
+<tr><td>ایران</td><td>۲۲۵٬۰۰۰</td><td>۱۴۵٬۰۰۰</td></tr>
+<tr><td>ترکیه</td><td>۱۲۰٬۰۰۰</td><td>۴۷٬۶۰۰</td></tr>
+<tr><td>مجموع جهان</td><td>۱٬۱۳۱٬۶۷۶</td><td>۵۷۲٬۳۱۹</td></tr></table>
+<p>همه‌ی اعداد بر مبنای «معادل پسته با پوست» هستند. سهم محاسبه‌شده‌ی ایران حدود ۲۰٪ از تولید و ۲۵٪ از صادرات جهانی این گزارش است. این رتبه به فصل مشخص مربوط است؛ ترتیب تولیدکنندگان در سال‌های مختلف تغییر می‌کند.</p>
+
+<h3><span class="check-number">۰۴.</span> صادرات ایران به کجا می‌رود؟</h3>
+<p>گزارش انجمن پسته‌ی ایران برای فصل فروش محصول ۲۰۲۵، از مهر ۱۴۰۴ تا پایان شهریور ۱۴۰۵:</p>
+<table class="t"><tr><th>مقصد</th><th>صادرات، تن معادل خشک در پوست</th></tr>
+<tr><td>هند</td><td>۲۶٬۷۲۲</td></tr><tr><td>ترکیه</td><td>۲۲٬۴۰۸</td></tr><tr><td>امارات</td><td>۱۴٬۹۹۲</td></tr><tr><td>عراق</td><td>۱۲٬۴۹۵</td></tr><tr><td>روسیه</td><td>۹٬۱۲۸</td></tr><tr><td>چین</td><td>۶٬۴۲۷</td></tr><tr><td>اتحادیه‌ی اروپا (مجموع ۲۷ کشور)</td><td>۶٬۵۳۶</td></tr></table>
+<p>قرقیزستان، قزاقستان، پاکستان و ازبکستان هم بازارهای قابل‌توجهی هستند. ترکیه و امارات در گزارش انجمن جزو بازارهای صادرات مجدد قرار دارند؛ بنابراین مقصد گمرکی الزاماً محل مصرف نهایی نیست. این آمار درباره‌ی خود پسته است؛ صادرات قطعی مدل تازه‌ی دستگاه نوژان به کشور مشخصی تأیید نشد.</p>
+
+<h3><span class="check-number">۰۵.</span> در این صد سال از کجا به کجا رسیده‌ایم؟</h3>
+<ul>
+<li><strong>۱۹۲۴ تا ۱۹۲۷:</strong> گزارش تجاری کرمان، صادرات پسته به آمریکا را ثبت کرده است. همان سند از آسیب سرما به محصول هم می‌گوید؛ دغدغه‌ی کیفیت و اقلیم سابقه‌ای طولانی دارد.</li>
+<li><strong>دهه‌ی ۱۹۳۰:</strong> انجمن پسته‌ی ایران تولید سالانه‌ی کشور را حدود ۲ هزار تن پسته‌ی خشک در پوست برآورد می‌کند. مقایسه با تولید ۲۲۵ هزار تنی محصول ۲۰۲۵ رشد در مرتبه‌ی صد برابر را نشان می‌دهد؛ این مقایسه درباره‌ی تولید است.</li>
+<li><strong>۱۹۶۹:</strong> سند بانک جهانی صادرات ایران را ۶٬۳۸۸ تن به ارزش ۸ میلیون دلار ثبت کرده است.</li>
+<li><strong>دهه‌های اخیر:</strong> صادرات به مقیاس صدها هزار تن رسیده، اما بسیار نوسانی بوده. صادرات فصل ۲۰۲۴/۲۵ انجمن حدود ۲۰۲ هزار تن بود؛ فصل بعد حدود ۱۴۶ هزار تن، یعنی ۲۷٫۴٪ کاهش. فصل پیش از آن رشد حدود ۵۱٪ ثبت شده بود.</li>
+</ul>
+<p>درصد دقیق رشد صادرات صدساله قابل محاسبه نیست؛ سری ملی یکدست و هم‌تعریفی پیدا نشد. آمار منطقه‌ای قدیمی، ارزش به قران و وزن‌های متفاوت مغز و پسته‌ی با پوست را نمی‌شود مستقیم کنار هم گذاشت.</p>
+
+<h3><span class="check-number">۰۶.</span> بزرگ‌ترین مشکلات صنعت چیست؟</h3>
+<ul>
+<li><strong>آب و فرونشست:</strong> در مناطقی مانند رفسنجان، گسترش باغ‌ها با برداشت شدید از آب زیرزمینی همراه شده است. افت سفره، هزینه‌ی پمپاژ، کاهش کیفیت آب و فرونشست به هم پیوند دارند. پژوهش‌ها هشدار می‌دهند افزایش راندمان آبیاری، اگر به گسترش بیشتر باغ و مصرف کل بیشتر منجر شود، الزاماً آبخوان را حفظ نمی‌کند.</li>
+<li><strong>شوری آب و خاک:</strong> تحمل نسبی پسته به شوری نامحدود نیست. در پژوهشی ده‌ساله در فیض‌آباد، آبیاری زیرسطحی آب کمتری مصرف کرد، اما تجمع نمک در لایه‌های خاک هم دیده شد.</li>
+<li><strong>اقلیم و سال‌آوری:</strong> سرمای زمستان، سرمازدگی بهاره، گرمای شدید و چرخه‌ی سال پربار و کم‌بار تولید را نوسانی می‌کنند و بر برنامه‌ریزی فروش اثر می‌گذارند.</li>
+<li><strong>کیفیت از باغ تا انبار:</strong> کنترل آفات، برداشت به‌موقع، فرآوری سریع، خشک‌کردن مناسب، نگهداری و نمونه‌برداری. فائو در گزارش فوریه‌ی ۲۰۲۶ از آموزش بیش از ۷۰۰ نفر از فعالان زنجیره‌ی پسته‌ی ایران خبر داده است.</li>
+<li><strong>استاندارد و هزینه‌ی تجارت:</strong> آلودگی قارچی می‌تواند محموله را از بازار خارج کند. مقررات داخلی، نوسان ارز، هزینه‌ی حمل و بیمه و اختلالات منطقه‌ای هم فشار می‌آورند. دستگاه جداسازی فقط بخشی از این زنجیره را بهتر می‌کند.</li>
+</ul>
+
+<h3><span class="check-number">۰۷.</span> بخش امیدوارکننده‌ی خبر کجاست؟</h3>
+<p>پسته می‌تواند محل اتصال دانش ایرانی به یک نیاز واقعی بازار باشد. کنار باغدار، فرصت فعالیت برای متخصص آب و خاک، آزمایشگاه، برنامه‌نویس، مهندس برق و ماشین‌ساز وجود دارد. این فناوری نمونه‌ای از همین پیوند است؛ میزان کاهش ضایعات، سود اقتصادی و اشتغال تازه‌ی آن هنوز به شواهد مستقل نیاز دارد.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>گزارش ۴ شهریور ۱۴۰۵ درباره‌ی سامانه‌ی غربالگری نوژان (شرکت دانش‌بنیان، پارک علم و فناوری دانشگاه تهران)</li>
+<li>USDA Foreign Agricultural Service، گزارش پسته، اکتبر ۲۰۲۶ (فصل ۲۰۲۵/۲۶)</li>
+<li>انجمن پسته‌ی ایران، گزارش صادرات فصل فروش ۲۰۲۵ (مهر ۱۴۰۴ تا شهریور ۱۴۰۵) و برآورد تولید دهه‌ی ۱۹۳۰</li>
+<li>پژوهش دانشگاه میلان درباره‌ی فلورسانس و آفلاتوکسین</li>
+<li>گزارش تجاری کرمان، ۱۹۲۴ تا ۱۹۲۷</li>
+<li>بانک جهانی، سند آمار صادرات ایران، ۱۹۶۹</li>
+<li>فائو (FAO)، گزارش فوریه‌ی ۲۰۲۶ درباره‌ی برنامه‌ی بهبود تولید و صادرات پسته‌ی ایران</li>
+<li>پژوهش ده‌ساله‌ی آبیاری زیرسطحی در فیض‌آباد و پژوهش‌های آب و فرونشست رفسنجان</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور تصویرسازی از فرایند است، نه عکس کارخانه. • The cover is an illustration, not a factory photo.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p>Behind a handful of pistachios sits more than farming: water and soil management, processing, labs, machine building and trade. Now AI engineering has entered the chain.</p>
+<h3>What happened</h3>
+<p>Nojan, a knowledge-based company at the University of Tehran Science and Technology Park, introduced a system to screen pistachios suspected of aflatoxin contamination. According to a report dated 26 August 2026 (4 Shahrivar 1405), it combines visible and UV imaging with deep learning; the maker states an imaging rate of 100 frames per second. Suspect nuts are removed with compressed air.</p>
+<div class="note"><p>It screens for suspicious signs. Research from the University of Milan stresses that fluorescence is not definitive proof of contamination and chemical testing is still needed. That study does not evaluate Nojan's product, and we found no public independent test of it.</p></div>
+<h3>Where Iran stands (USDA, Oct 2026, season 2025/26)</h3>
+<ul>
+<li>Production: US 716,676 t, Iran 225,000 t, Turkey 120,000 t; world 1,131,676 t</li>
+<li>Exports: US 370,119 t, Iran 145,000 t, Turkey 47,600 t; world 572,319 t</li>
+<li>Iran is second in both: about 20% of production and 25% of exports (in-shell equivalent)</li>
+</ul>
+<h3>Where it goes (Iran Pistachio Association, Oct 2025 to Sep 2026)</h3>
+<p>India 26,722 t, Turkey 22,408, UAE 14,992, Iraq 12,495, Russia 9,128, China 6,427, EU-27 6,536. Turkey and the UAE are also re-export hubs, so the customs destination is not always the end market.</p>
+<h3>Problems that remain</h3>
+<p>Water and land subsidence, salinity, climate and alternate bearing, quality from orchard to warehouse, and trade standards and costs. A sorting machine improves only one link. Export volumes swing: about 202,000 t in 2024/25, then about 146,000 t (down 27.4%).</p>
+<p>The opportunity: pistachios can connect Iranian know-how to a real market need. The actual waste reduction, profit and jobs from this technology still need independent evidence. Sources are listed in the Persian tab.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+Ditoman • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
