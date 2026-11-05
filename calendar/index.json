@@ -1,5 +1,51 @@
 [
  {
+  "date": "2026-11-05",
+  "jalali": "1405/08/14",
+  "weekday_fa": "پنجشنبه",
+  "headline_fa": "امروز، روزِ بانک انگلستان",
+  "post": "calendar/2026-11-05-post.png",
+  "story": "calendar/2026-11-05-story.png",
+  "today": [
+   {
+    "key": true,
+    "fa": "تصمیم نرخ بهرهٔ بانک انگلستان",
+    "en": "Bank of England rate decision",
+    "tehran": "15:30",
+    "lisbon": "12:00",
+    "note_fa": "نرخ فعلی 3.75% است و بازار افزایش 0.25 واحدی به 4.00% را انتظار دارد. تصمیم و گزارش سیاست پولی امروز اعلام می‌شود و می‌تواند بر پوند و بازارها اثر بگذارد.",
+    "expected": "Hike to 4.00% expected"
+   },
+   {
+    "fa": "درخواست‌های بیمهٔ بیکاری آمریکا",
+    "note_fa": "آمار هفتهٔ منتهی به 31 اکتبر",
+    "tehran": "17:00",
+    "lisbon": "13:30",
+    "en": "US weekly jobless claims",
+    "expected": ""
+   }
+  ],
+  "week": [
+   {
+    "day_fa": "جمعه",
+    "date": "2026-11-06",
+    "fa": "گزارش اشتغال آمریکا (NFP)",
+    "note_fa": "پیش‌بینی حدود +65 هزار · قبلی +29 هزار",
+    "tehran": "17:00",
+    "lisbon": "13:30",
+    "en": "US nonfarm payrolls (Oct)",
+    "expected": "~+65K (prev +29K)"
+   }
+  ],
+  "sources": [
+   "https://forexfundamentals.com/economic-calendar/boe/2026-11-05",
+   "https://www.poundsterlinglive.com/economics/23679-bank-of-england-rate-hike-all-but-confirmed-bailey",
+   "https://www.marketalleys.com/post/boe-decision-and-us-jobs-headline-the-three-day-calendar-2026-11-05",
+   "https://forexfundamentals.com/economic-calendar/nfp/2026-11-06",
+   "https://www.aljazeera.com/economy/2026/11/4/us-markets-rise-as-democrats-sweep-midterm-elections"
+  ]
+ },
+ {
   "date": "2026-11-03",
   "jalali": "1405/08/12",
   "weekday_fa": "سه‌شنبه",
