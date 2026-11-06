@@ -1,0 +1,31 @@
+{
+ "date": "2026-11-06",
+ "headline_fa": "امروز، روزِ",
+ "headline_hl": "گزارش اشتغال",
+ "key": {
+  "kick_en": "US JOBS REPORT (NFP)",
+  "fa": "گزارش اشتغال آمریکا (NFP)",
+  "story_fa": "گزارش اشتغال آمریکا (NFP)",
+  "body_fa": "گزارش ماه اکتبر امروز منتشر می‌شود. پیش‌بینی بازار حدود +65 هزار شغل و نرخ بیکاری 4.2% است؛ ماه قبل +29 هزار بود. این گزارش بر انتظار از نرخ بهرهٔ آمریکا، دلار و طلا اثر می‌گذارد.",
+  "story_note_fa": "پیش‌بینی حدود +65 هزار · نرخ بیکاری 4.2%",
+  "tehran": "17:00",
+  "lisbon": "13:30",
+  "en": "US nonfarm payrolls (Oct)",
+  "expected": "~+65K, unemployment 4.2% (prev +29K)"
+ },
+ "today": [
+  {
+   "fa": "نرخ بیکاری آمریکا (اکتبر)",
+   "note_fa": "پیش‌بینی 4.2% · قبلی 4.2%",
+   "tehran": "17:00",
+   "lisbon": "13:30",
+   "en": "US unemployment rate (Oct)",
+   "expected": "4.2% (prev 4.2%)"
+  }
+ ],
+ "week": [],
+ "sources": [
+  "https://forexfundamentals.com/economic-calendar/nfp/2026-11-06",
+  "https://forexfundamentals.com/economic-calendar/us-unemployment/2026-11-06"
+ ]
+}
