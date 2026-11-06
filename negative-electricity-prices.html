@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Negative Electricity Prices | وقتی قیمت برق منفی می‌شود | Ditoman</title>
+<meta name="description" content="چرا در بازار عمده‌فروشی برق گاهی قیمت زیر صفر می‌رود، چرا تولیدکننده پول می‌دهد تا برقش را بفروشد، و چرا این به معنای قبض منفی برای خانه‌ها نیست. Why wholesale power prices go negative and what it means for your bill." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/negative-electricity-prices.html" />
+<link rel="icon" href="ditoman-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Negative Electricity Prices | وقتی قیمت برق منفی می‌شود | Ditoman" />
+<meta property="og:description" content="گرانی بیرون رفتن واقعی است، اما فقط توضیح ماجرا نیست. تحلیل داده‌ی فایننشال تایمز درباره‌ی کاهش معاشرت حضوری، کارهای تکی و آنچه می‌تواند درباره‌ی ایران هم بگوید. Going out got 20% pricier than inflation, yet free meet-ups fell too." />
+<meta property="og:url" content="https://ditoman.com/negative-electricity-prices.html" />
+<meta property="og:image" content="https://ditoman.com/social/negative-electricity/post.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/negative-electricity-prices.html#article",
+   "mainEntityOfPage": "https://ditoman.com/negative-electricity-prices.html",
+   "headline": "Negative Electricity Prices | وقتی قیمت برق منفی می‌شود",
+   "description": "چرا در بازار عمده‌فروشی برق گاهی قیمت زیر صفر می‌رود، چرا تولیدکننده پول می‌دهد تا برقش را بفروشد، و چرا این به معنای قبض منفی برای خانه‌ها نیست.",
+   "image": "https://ditoman.com/social/negative-electricity/post.png",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   },
+   "datePublished": "2026-11-06"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Negative Electricity Prices | وقتی قیمت برق منفی می‌شود",
+     "item": "https://ditoman.com/negative-electricity-prices.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+<div class="logo-text">DITOMAN</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="navigator.html">Navigator</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:Tahoma,Arial,sans-serif}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/negative-electricity/post.png" alt="When electricity prices go negative: wholesale market below zero" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge">Energy &amp; Economy • اقتصاد و انرژی</div>
+<h1 dir="rtl" style="text-align:right">وقتی قیمت برق منفی می‌شود</h1>
+<p class="subtitle">Why a producer sometimes pays to sell electricity: the wholesale market below zero, the numbers from Germany and France, and why a negative wholesale price is not a negative household bill.</p>
+<div class="stats">
+<div class="stat"><b>۵۷۳</b><span>ساعت با قیمت منفی در آلمان، ۲۰۲۵<br>Germany, 2025 (457 in 2024)</span></div>
+<div class="stat"><b>۵۱۳</b><span>ساعت با قیمت منفی در فرانسه، ۲۰۲۵<br>France, 2025 (352 in 2024)</span></div>
+<div class="stat"><b>۴۰۷</b><span>ساعت منفی در فرانسه، نیمه‌ی اول ۲۰۲۶<br>France, H1 2026</span></div>
+<div class="stat"><b>€۸۹٫۳</b><span>میانگین قیمت روز بعد آلمان ۲۰۲۵ (۲۰۲۴: ۷۸٫۵) در هر مگاوات‌ساعت<br>Germany avg. day-ahead price</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p>فروشنده‌ای که برای فروختن کالایش پول بدهد، عجیب به نظر می‌رسد. اما در بازار عمده‌فروشی برق اروپا، در ساعت‌هایی که خورشید و باد زیاد است و مصرف کم، همین اتفاق می‌افتد: قیمت زیر صفر می‌رود و تولیدکننده باید برای تحویل برق «پول بدهد». این پدیده روزبه‌روز بیشتر می‌شود، اما به معنای برق رایگان برای خانه‌ها نیست.</p>
+
+<h3><span class="check-number">۰۱.</span> قیمت منفی یعنی چه؟</h3>
+<p>برق را نمی‌شود به‌راحتی ذخیره کرد و شبکه باید هر لحظه تولید و مصرف را برابر نگه دارد. در بازار «روز بعد» برای هر ساعت از فردا قیمتی تعیین می‌شود. اگر در یک ساعت تولید پیش‌بینی‌شده (مثلاً ظهر آفتابی و بادی) از مصرف بیشتر باشد و کسی هم نتواند آن را ذخیره یا صادر کند، تولیدکننده‌هایی که حاضرند برق را «حتی با ضرر» بفروشند قیمت را به زیر صفر می‌کشانند. معنایش این است که خریدار برای گرفتن برق پول دریافت می‌کند.</p>
+
+<h3><span class="check-number">۰۲.</span> اعداد؛ آلمان و فرانسه</h3>
+<ul>
+<li><strong>آلمان:</strong> طبق داده‌ی SMARD (سازمان شبکه‌ی فدرال)، در ۲۰۲۵ حدود ۵۷۳ ساعت قیمت روز بعد منفی بود؛ در ۲۰۲۴ حدود ۴۵۷ ساعت. میانگین قیمت روز بعد هم ۲۰۲۵ حدود ۸۹٫۳۲ یورو در هر مگاوات‌ساعت بود، در برابر ۷۸٫۵۱ در ۲۰۲۴ (حدود ۱۴٪ بیشتر)</li>
+<li><strong>فرانسه:</strong> بر پایه‌ی داده‌ی RTE، در ۲۰۲۵ حدود ۵۱۳ ساعت منفی (در ۲۰۲۴ حدود ۳۵۲ ساعت). طبق گزارش‌های منتشرشده بر پایه‌ی همین داده، در نیمه‌ی اول ۲۰۲۶ حدود ۴۰۷ ساعت. میانگین قیمت نقطه‌ای ۲۰۲۵ حدود ۶۱ یورو در برابر ۵۸ در سال قبل</li>
+</ul>
+<div class="note"><p><strong>دو معیار را قاطی نکنیم.</strong> بعضی ردیاب‌ها «ساعت‌های صفر یا کمتر» را می‌شمارند و عدد بزرگ‌تری می‌دهند. در این صفحه فقط ساعت‌های «منفی» از SMARD و RTE آمده است.</p></div>
+<p>نکته‌ی مهم: بیشتر شدن ساعت‌های منفی با گران‌تر نشدن میانگین سالانه تناقض ندارد. میانگین را ساعت‌های بدون خورشید و باد (شب، زمستان، آرام) بالا نگه می‌دارند؛ منفی‌ها استثناهای کوتاه‌اند.</p>
+
+<h3><span class="check-number">۰۳.</span> چرا تولیدکننده خاموش نمی‌کند؟</h3>
+<ul>
+<li><strong>هزینه‌ی خاموش و روشن‌کردن:</strong> نیروگاه‌های حرارتی و اتمی برای کم و زیادکردن توان یا راه‌اندازی دوباره هزینه و محدودیت فنی دارند؛ گاهی ماندن چند ساعت با ضرر، از خاموشی ارزان‌تر است</li>
+<li><strong>تولید اجباری:</strong> بخشی از تولید به دلیل ایمنی شبکه، گرمای همزمان یا قرارداد خدمات شبکه باید روشن بماند</li>
+<li><strong>حمایت‌های قیمتی:</strong> بعضی تجدیدپذیرها با تعرفه یا یارانه‌ی ثابت درآمد دارند؛ تا وقتی قانون یا قرارداد جلوی این را نگرفته، تولید برایشان می‌صرفد</li>
+<li><strong>قراردادهای خرید برق (PPA):</strong> تولید در قرارداد تعهد شده و خاموش‌کردن ممکن است جریمه داشته باشد</li>
+</ul>
+<p>به همین دلیل سیاست‌گذارها قاعده‌ها را عوض می‌کنند. در فرانسه طبق قاعده‌های جدید، از ۱ دسامبر ۲۰۲۶ واحدهای بیش از ۵ مگاوات و از ۱ مارس ۲۰۲۷ واحدهای ۱ تا ۵ مگاوات در ساعت‌های قیمت منفی دیگر مشمول حمایت قیمتی نخواهند بود و باید توان را کم کنند.</p>
+
+<h3><span class="check-number">۰۴.</span> پس قبض من منفی می‌شود؟</h3>
+<p>نه. قبض خانه فقط «قیمت انرژی» نیست؛ هزینه‌ی شبکه (مثل TURPE در فرانسه)، مالیات و عوارض هم دارد و این بخش‌ها با قیمت منفی چند ساعته تغییر نمی‌کنند. اثر روی قبض به نوع قرارداد بستگی دارد:</p>
+<ul>
+<li><strong>قرارداد ثابت:</strong> قیمت انرژی‌ات را از پیش قفل کرده‌ای؛ قیمت منفی روی قبضت اثر مستقیم ندارد</li>
+<li><strong>قرارداد شناور یا ساعتی:</strong> اگر مصرفت را به ساعت‌های ارزان ببری، فقط در بخش انرژی صرفه‌جویی می‌کنی</li>
+</ul>
+<div class="note"><p><strong>مثال فرضی (برای فهم، نه داده‌ی واقعی).</strong> فرض کن قیمت عمده −۵۰ یورو در مگاوات‌ساعت باشد؛ یعنی −۵ سنت در هر کیلووات‌ساعت. اگر شبکه، مالیات و عوارض روی هم ۱۲ سنت باشد، چیزی که برای آن ساعت می‌پردازی حدود +۷ سنت است، نه منفی.</p></div>
+
+<h3><span class="check-number">۰۵.</span> نگاه دیتومان</h3>
+<p>قیمت منفی نشانه‌ی خراب‌شدن بازار نیست؛ نشانه‌ی اینکه تولید تجدیدپذیر رشد کرده ولی ذخیره‌سازی، شبکه و مصرف انعطاف‌پذیر هنوز عقب‌اند. راه‌حل‌ها روشن‌اند: باتری و ذخیره، شبکه‌ی قوی‌تر و اتصال بیشتر بین کشورها، و مصرفی که خودش را با ساعت‌های ارزان تطبیق دهد. پرسش اصلی دیگر «آیا برق ارزان می‌شود؟» نیست، «چه کسی ساعت ارزان را می‌تواند استفاده کند؟» است.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>SMARD (Bundesnetzagentur): داده‌ی قیمت عمده‌فروشی و ساعت‌های منفی آلمان، ۲۰۲۴ و ۲۰۲۵ • smard.de</li>
+<li>RTE (شبکه‌ی انتقال برق فرانسه): ساعت‌های قیمت منفی و میانگین قیمت نقطه‌ای ۲۰۲۴، ۲۰۲۵ و نیمه‌ی اول ۲۰۲۶ (از طریق گزارش‌های منتشرشده بر پایه‌ی داده‌ی RTE) • rte-france.com</li>
+<li>توضیح سازوکار بازار و رفتار تولیدکننده‌ها: گزارش‌های IEA درباره‌ی انعطاف‌پذیری شبکه‌ی برق • iea.org</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">برخی اعداد نیمه‌ی اول ۲۰۲۶ ممکن است بعداً بازبینی شوند. • Some H1 2026 figures may be revised.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p>A seller paying to sell sounds odd. Yet in Europe's wholesale electricity market, in hours with lots of sun and wind and low demand, prices fall below zero and producers pay to deliver power. It is happening more often, but it does not mean free electricity for households.</p>
+<h3>What negative means</h3>
+<p>Power is hard to store and the grid must balance supply and demand every moment. In the day-ahead market each hour gets a price. When forecast output exceeds demand and nobody can store or export the surplus, producers willing to sell at a loss push the price below zero: the buyer is paid to take power.</p>
+<h3>The numbers</h3>
+<ul>
+<li><strong>Germany</strong> (SMARD, Bundesnetzagentur): about 573 negative day-ahead hours in 2025, up from about 457 in 2024. Average day-ahead price about €89.32/MWh in 2025 vs €78.51 in 2024 (roughly +14%).</li>
+<li><strong>France</strong> (RTE-based data): about 513 negative hours in 2025 vs about 352 in 2024, and about 407 in H1 2026 per published reports. Average spot price about €61/MWh vs €58.</li>
+</ul>
+<p>More negative hours do not contradict a higher annual average: the average is held up by hours without sun and wind; negatives are short exceptions. We do not mix metrics: some trackers count hours "at or below zero", which gives larger figures. Here only strictly negative hours are used.</p>
+<h3>Why producers do not simply switch off</h3>
+<ul>
+<li>Ramping and restart costs, and technical limits of thermal and nuclear plants</li>
+<li>Must-run output for grid stability, combined heat or system-service contracts</li>
+<li>Feed-in tariffs or subsidies that pay regardless of the market price</li>
+<li>Power purchase agreements (PPAs) with delivery obligations</li>
+</ul>
+<p>Rules are changing. In France, from 1 December 2026 units above 5 MW, and from 1 March 2027 units of 1 to 5 MW, will lose price support in negative-price hours and are expected to curtail.</p>
+<h3>Does my bill go negative?</h3>
+<p>No. A household bill includes network charges (such as TURPE in France), taxes and levies, which do not move with a few negative hours. With a fixed contract your energy price is locked; with an indexed or hourly contract you only gain on the energy component, and only if you shift usage.</p>
+<div class="note"><p><strong>Hypothetical example (illustration, not data).</strong> If the wholesale price were −€50/MWh, that is −5 cents per kWh. With network, taxes and levies of 12 cents, you would still pay about +7 cents for that hour.</p></div>
+<h3>Ditoman's view</h3>
+<p>Negative prices are not a broken market; they show that renewables grew faster than storage, grids and flexible demand. The fixes are clear: batteries, stronger grids and interconnection, and demand that follows cheap hours. The real question is no longer "will power get cheaper?" but "who can use the cheap hours?"</p>
+<p style="color:#9fb6b9">Sources: SMARD (Bundesnetzagentur), RTE-based reports, IEA. Some H1 2026 figures may be revised.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+Ditoman • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
