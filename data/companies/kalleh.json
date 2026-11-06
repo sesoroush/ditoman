@@ -3,6 +3,8 @@
   "status": "published",
   "last_checked": { "fa": "۱۲ آبان ۱۴۰۵", "en": "3 November 2026" },
   "sector": { "id": "food", "fa": "غذا و لبنیات", "en": "Food and dairy" },
+  "branch": "industry",
+  "sub": "food",
   "name": { "fa": "کاله", "en": "Kalleh" },
   "logo": null,
   "tagline": {
