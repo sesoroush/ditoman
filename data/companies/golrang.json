@@ -3,6 +3,8 @@
   "status": "published",
   "last_checked": { "fa": "۱۴ آبان ۱۴۰۵", "en": "5 November 2026" },
   "sector": { "id": "holding", "fa": "هلدینگ‌ها", "en": "Holdings" },
+  "branch": "industry",
+  "sub": "consumer",
   "name": { "fa": "گلرنگ", "en": "Golrang" },
   "logo": null,
   "tagline": {

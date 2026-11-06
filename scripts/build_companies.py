@@ -196,7 +196,7 @@ def chrome():
     header = re.search(r"<header>.*?</header>", page, re.S).group(0)
     footer = re.search(r"<footer>.*?</footer>", page, re.S).group(0)
     header = header.replace('<a href="posts.html" class="active">', '<a href="posts.html">')
-    header = header.replace('<a href="companies.html">', '<a href="companies.html" class="active">', 1)
+    header = header.replace('<a href="iran.html">', '<a href="iran.html" class="active">', 1)
     return header, footer
 
 
