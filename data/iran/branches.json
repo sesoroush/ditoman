@@ -7,7 +7,7 @@
       "en": "A structured map of what is made, mined, moved and seen in Iran. Six branches, each with its official sub-branches, its leading companies, and a source for every number."
     },
     "method": {
-      "fa": "معیار انتخاب: شرکت‌ها و پروژه‌هایی که در رشته‌ی خود از نظر مقیاس، صادرات یا نوآوری شاخص‌اند و اطلاعات‌شان قابل راستی‌آزمایی است. هر مدخل یک خانه دارد؛ جایی که یک خارجی اول دنبالش می‌گردد؛ و به شاخه‌های دیگر لینک می‌شود. زیرشاخه‌ها روی ساختار رسمی مجوز در ایران و طبقه‌بندی بین‌المللی آیسیک چیده شده‌اند.",
+      "fa": "معیار انتخاب: شرکت‌ها و پروژه‌هایی که در رشته‌ی خود از نظر مقیاس، صادرات یا نوآوری شاخص‌اند و اطلاعات‌شان قابل راستی‌آزمایی است. هر مدخل یک خانه دارد؛ جایی که یک خارجی اول دنبالش می‌گردد؛ و به شاخه‌های دیگر لینک می‌شود. زیرشاخه‌ها روی ساختار رسمی مجوز در ایران و طبقه‌بندی بین‌المللی طبقه‌بندی رسمی فعالیت‌ها چیده شده‌اند.",
       "en": "Selection rule: companies and projects that stand out in their field for scale, exports or innovation, and whose facts can be checked. Each entry has one home, where a foreigner would look first, and links to other branches. Sub-branches follow Iran's official licensing structure and the international ISIC classification."
     }
   },
@@ -19,7 +19,7 @@
       "name": {"fa": "صنعت و تولید", "en": "Industry & manufacturing"},
       "tag": {"fa": "از لبنیات تا فولاد و دارو", "en": "From dairy to steel and medicine"},
       "intro": {
-        "fa": "بزرگ‌ترین شاخه است و همه‌ی کارخانه‌ها اینجا می‌نشینند: غذا، فولاد، خودرو، پتروشیمی پایین‌دستی، دارو، لوازم خانگی، نساجی، ماشین‌سازی و مصالح. پروانه‌ی هر کارخانه از وزارت صمت می‌آید و روی کد آیسیک ثبت می‌شود؛ غذا و دارو علاوه بر آن از سازمان غذا و دارو پروانه‌ی ساخت می‌گیرند.",
+        "fa": "بزرگ‌ترین شاخه است و همه‌ی کارخانه‌ها اینجا می‌نشینند: غذا، فولاد، خودرو، پتروشیمی پایین‌دستی، دارو، لوازم خانگی، نساجی، ماشین‌سازی و مصالح. پروانه‌ی هر کارخانه از وزارت صمت می‌آید و روی کد رسمی رشته‌ی فعالیت ثبت می‌شود؛ غذا و دارو علاوه بر آن از سازمان غذا و دارو پروانه‌ی ساخت می‌گیرند.",
         "en": "The largest branch, and the home of every factory: food, steel, cars, downstream petrochemicals, medicine, appliances, textiles, machinery and building materials. A factory's licence comes from the Ministry of Industry, Mine and Trade and is recorded under an ISIC code; food and medicine also need a product licence from the Food and Drug Administration."
       },
       "authority": {"fa": "وزارت صنعت، معدن و تجارت؛ سازمان غذا و دارو؛ وزارت جهاد کشاورزی", "en": "Ministry of Industry, Mine & Trade; Food & Drug Administration; Ministry of Agriculture"},

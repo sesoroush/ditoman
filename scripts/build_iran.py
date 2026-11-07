@@ -133,10 +133,10 @@ UI = {
     "art": {"fa": "تصویرسازی · عکس واقعی به‌زودی", "en": "Illustration · real photo coming"},
     "authority": {"fa": "مرجع مجوز", "en": "Licensing authority"},
     "association": {"fa": "تشکل", "en": "Association"},
-    "isic": {"fa": "طبقه‌بندی آیسیک", "en": "ISIC classification"},
+    "isic": {"fa": "طبقه‌بندی رسمی فعالیت‌ها", "en": "ISIC classification"},
     "guide": {"fa": "راهنمای مجوزها در ایران نویگیتر ←", "en": "Licensing guide in Iran Navigator →"},
     "subs": {"fa": "زیرشاخه‌ها", "en": "Sub-branches"},
-    "subs_lead": {"fa": "هر زیرشاخه با مرجع مجوز و کد آیسیک آن؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.", "en": "Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics."},
+    "subs_lead": {"fa": "هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.", "en": "Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics."},
     "companies": {"fa": "شرکت‌های این شاخه", "en": "Companies in this branch"},
     "view": {"fa": "دیدن پرونده", "en": "View the record"},
     "empty": {"fa": "اولین پرونده‌ی این شاخه در راه است. شرکت‌ها یکی‌یکی و پس از بررسی منابع اضافه می‌شوند.", "en": "The first record in this branch is on its way. Companies are added one at a time, once their sources are checked."},
@@ -379,7 +379,11 @@ def shared_css():
     css = css_path.read_text(encoding="utf-8")
     start = "/* ---------- What Iran Has: branch cards (homepage + hub) ---------- */"
     if start in css:
-        css = css[: css.index(start)].rstrip("\n") + "\n" + CARD_CSS.strip("\n") + "\n"
+        # Replace only this block: it runs until the next comment header, so styles after it are kept.
+        i = css.index(start)
+        j = css.find("\n/* ", i + len(start))
+        rest = css[j:] if j != -1 else "\n"
+        css = css[:i] + CARD_CSS.strip("\n") + "\n" + rest
     else:
         css = css.rstrip("\n") + "\n\n" + CARD_CSS.strip("\n") + "\n"
     css_path.write_text(css, encoding="utf-8")
