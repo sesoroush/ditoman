@@ -192,6 +192,11 @@
       "آن بررسی‌ها درباره‌ی توکن چیزی می‌گویند؛ این پرسش‌ها درباره‌ی استدلال خودت، ریسکت و اینکه چرا همین حالا می‌خری.",
     "Liquidity pools, LP tokens and rug pulls, with TMN's own lock as the worked example, and what a lock does not prove.":
       "استخرهای نقدینگی، توکن LP و رگ‌پول، با قفل خود TMN به‌عنوان نمونه، و آنچه یک قفل ثابت نمی‌کند.",
+    "Doing business in Iran": "کسب‌وکار در ایران",
+    "Which body licenses what, and where to start, sector by sector.": "کدام نهاد چه مجوزی می‌دهد و از کجا باید شروع کرد، حوزه به حوزه.",
+    "Iran Navigator: the licence guide": "راهنمای مجوزها (ایران نویگیتر)",
+    "The map of ministries, organisations and permits, from registering a company to each sector's licence.": "نقشه‌ی وزارتخانه‌ها، سازمان‌ها و مجوزها، از ثبت شرکت تا مجوز هر حوزه.",
+    "Open the guide": "باز کردن راهنما",
     "Energy": "انرژی", "How electricity markets work, and what it means for your bill.": "بازار برق چطور کار می‌کند و چه معنایی برای قبض تو دارد.",
     "When electricity prices go negative": "وقتی قیمت برق منفی می‌شود",
     "Why producers pay to sell power, the numbers from Germany and France, and why a negative wholesale price is not a negative bill.":
