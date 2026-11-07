@@ -1,0 +1,19 @@
+/* IRANYekanX (Farsi numerals), licensed from Fontiran for ditoman.com. See fonts/iranyekanx/FontLicense.txt */
+@font-face { font-family: "IRANYekanX"; font-weight: 300; font-display: swap; src: url("fonts/iranyekanx/IRANYekanXFaNum-Light.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX"; font-weight: 400; font-display: swap; src: url("fonts/iranyekanx/IRANYekanXFaNum-Regular.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX"; font-weight: 500; font-display: swap; src: url("fonts/iranyekanx/IRANYekanXFaNum-Medium.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX"; font-weight: 600; font-display: swap; src: url("fonts/iranyekanx/IRANYekanXFaNum-DemiBold.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX"; font-weight: 700; font-display: swap; src: url("fonts/iranyekanx/IRANYekanXFaNum-Bold.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX"; font-weight: 800; font-display: swap; src: url("fonts/iranyekanx/IRANYekanXFaNum-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX"; font-weight: 900; font-display: swap; src: url("fonts/iranyekanx/IRANYekanXFaNum-Black.woff2") format("woff2"); }
+/* Display headings: the Black weight at any requested weight */
+@font-face { font-family: "IRANYekanX Display"; font-weight: 100 900; font-display: swap; src: url("fonts/iranyekanx/IRANYekanXFaNum-Black.woff2") format("woff2"); }
+
+/* Persian letters only: lets pages keep their English font and use IRANYekanX for Persian */
+@font-face { font-family: "IRANYekanX Fa"; font-weight: 300; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-Light.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX Fa"; font-weight: 400; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-Regular.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX Fa"; font-weight: 500; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-Medium.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX Fa"; font-weight: 600; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-DemiBold.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX Fa"; font-weight: 700; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-Bold.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX Fa"; font-weight: 800; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family: "IRANYekanX Fa"; font-weight: 900; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-Black.woff2") format("woff2"); }

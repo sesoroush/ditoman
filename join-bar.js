@@ -24,7 +24,7 @@
   var css = [
     ".jb{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;align-items:center;gap:10px;",
     "padding:10px 10px 10px 14px;border-radius:18px;background:rgba(6,20,24,.96);border:1px solid rgba(127,245,222,.35);",
-    "box-shadow:0 10px 30px rgba(0,0,0,.45);direction:rtl;font-family:Vazirmatn,Tahoma,sans-serif;color:#eef6f2;",
+    "box-shadow:0 10px 30px rgba(0,0,0,.45);direction:rtl;font-family:IRANYekanX,Vazirmatn,Tahoma,sans-serif;color:#eef6f2;",
     "transform:translateY(140%);transition:transform .3s ease}",
     ".jb.show{transform:none}",
     ".jb p{flex:1;margin:0;font-size:.92rem;line-height:1.5;font-weight:700}",
