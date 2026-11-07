@@ -62,6 +62,14 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-subs { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .ir-subs li { border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; background: linear-gradient(180deg, rgba(14, 33, 42, 0.9), rgba(10, 24, 32, 0.6)); display: flex; flex-direction: column; gap: 6px; }
 .ir-subs b { font-size: 1.1rem; line-height: 1.35; }
+.ir-leaders { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.ir-leaders li, .ir-leaders a { display: flex; flex-direction: column; gap: 6px; }
+.ir-leaders li { border: 1px solid var(--line-strong); border-top: 3px solid var(--ir); border-radius: 16px; padding: 16px; background: rgba(14, 33, 42, 0.7); }
+.ir-leaders b { font-size: 1.12rem; font-weight: 800; line-height: 1.45; color: #eef6f2; }
+.ir-leaders small { color: var(--muted); font-size: 0.86rem; }
+.ir-leaders a:hover b { color: var(--ir); }
+@media (max-width: 1000px) { .ir-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .ir-leaders { grid-template-columns: 1fr; } }
 .ir-subs .ir-isic { font: 700 0.78rem var(--en); color: var(--ir); letter-spacing: 0.06em; direction: ltr; align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); }
 .ir-subs small { color: var(--muted); line-height: 1.6; }
 .ir-cos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
@@ -85,65 +93,6 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
   body[data-lang="fa"] .ir-panel { width: 76%; padding: 16px 18px 16px calc(24% + 8px); }
 }
 </style>
-<!-- seo:start -->
-<meta name="twitter:card" content="summary_large_image" />
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "WebPage",
-   "@id": "https://ditoman.com/iran-industry.html#page",
-   "url": "https://ditoman.com/iran-industry.html",
-   "name": "Industry & manufacturing | صنعت و تولید | What Iran Has | Ditoman",
-   "description": "The largest branch, and the home of every factory: food, steel, cars, downstream petrochemicals, medicine, appliances, textiles, machinery and building materials. A factory's licence comes from the Ministry of Industry, Mine and Trade and is recorded under an ISIC code; food and medicine also need a product licence from the Food and Drug Administration.",
-   "isPartOf": {
-    "@id": "https://ditoman.com/#website"
-   },
-   "publisher": {
-    "@type": "Organization",
-    "@id": "https://ditoman.com/#organization",
-    "name": "Ditoman",
-    "alternateName": [
-     "دیتومان",
-     "DiToman",
-     "Ditoman TMN"
-    ],
-    "url": "https://ditoman.com/",
-    "logo": {
-     "@type": "ImageObject",
-     "url": "https://ditoman.com/tmn-logo-512.png",
-     "width": 512,
-     "height": 512
-    },
-    "foundingDate": "2022",
-    "sameAs": [
-     "https://www.instagram.com/ditoman.tmn/",
-     "https://t.me/Ditoman_tm"
-    ]
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Ditoman",
-     "item": "https://ditoman.com/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Industry & manufacturing | صنعت و تولید | What Iran Has",
-     "item": "https://ditoman.com/iran-industry.html"
-    }
-   ]
-  }
- ]
-}
-</script>
-<!-- seo:end -->
 </head>
 <body data-lang="fa">
 
@@ -262,6 +211,12 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
       <h2><span class="i-fa" lang="fa">زیرشاخه‌ها</span><span class="i-en" lang="en">Sub-branches</span></h2>
       <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.</span><span class="i-en" lang="en">Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics.</span></p>
       <ul class="ir-subs"><li><span class="ir-isic">C10–C12</span><b><span class="i-fa" lang="fa">غذا و کشاورزی</span><span class="i-en" lang="en">Food &amp; agriculture</span></b><small><span class="i-fa" lang="fa">صمت + سازمان غذا و دارو</span><span class="i-en" lang="en">Industry Ministry + FDA</span></small></li><li><span class="ir-isic">C24–C25</span><b><span class="i-fa" lang="fa">فولاد و فلزات</span><span class="i-en" lang="en">Steel &amp; metals</span></b><small><span class="i-fa" lang="fa">صمت</span><span class="i-en" lang="en">Industry Ministry</span></small></li><li><span class="ir-isic">C29</span><b><span class="i-fa" lang="fa">خودرو و قطعات</span><span class="i-en" lang="en">Vehicles &amp; parts</span></b><small><span class="i-fa" lang="fa">صمت</span><span class="i-en" lang="en">Industry Ministry</span></small></li><li><span class="ir-isic">C20–C22</span><b><span class="i-fa" lang="fa">پتروشیمی پایین‌دستی و شیمیایی</span><span class="i-en" lang="en">Downstream petrochemicals &amp; chemicals</span></b><small><span class="i-fa" lang="fa">صمت</span><span class="i-en" lang="en">Industry Ministry</span></small></li><li><span class="ir-isic">C21</span><b><span class="i-fa" lang="fa">دارو و تجهیزات پزشکی</span><span class="i-en" lang="en">Pharma &amp; medical devices</span></b><small><span class="i-fa" lang="fa">سازمان غذا و دارو</span><span class="i-en" lang="en">Food &amp; Drug Administration</span></small></li><li><span class="ir-isic">C26–C27</span><b><span class="i-fa" lang="fa">لوازم خانگی، الکترونیک و کالای مصرفی</span><span class="i-en" lang="en">Appliances, electronics &amp; consumer goods</span></b><small><span class="i-fa" lang="fa">صمت</span><span class="i-en" lang="en">Industry Ministry</span></small></li><li><span class="ir-isic">C13–C15</span><b><span class="i-fa" lang="fa">نساجی و پوشاک</span><span class="i-en" lang="en">Textiles &amp; apparel</span></b><small><span class="i-fa" lang="fa">صمت</span><span class="i-en" lang="en">Industry Ministry</span></small></li><li><span class="ir-isic">C28</span><b><span class="i-fa" lang="fa">ماشین‌سازی و تجهیزات</span><span class="i-en" lang="en">Machinery &amp; equipment</span></b><small><span class="i-fa" lang="fa">صمت</span><span class="i-en" lang="en">Industry Ministry</span></small></li><li><span class="ir-isic">C23 · F41–F43</span><b><span class="i-fa" lang="fa">ساختمان و مصالح</span><span class="i-en" lang="en">Construction &amp; materials</span></b><small><span class="i-fa" lang="fa">صمت؛ وزارت راه و شهرسازی</span><span class="i-en" lang="en">Industry Ministry; Roads Ministry</span></small></li></ul>
+    </section>
+
+    <section class="ir-sec">
+      <h2><span class="i-fa" lang="fa">نام‌های بزرگ این شاخه</span><span class="i-en" lang="en">Big names in this branch</span></h2>
+      <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">فهرست اولیه، بر اساس اندازه و شهرت؛ ترتیب، رتبه نیست. پرونده‌ی هر کدام کم‌کم اضافه می‌شود.</span><span class="i-en" lang="en">A first list, by size and profile; the order is not a ranking. A record for each is added over time.</span></p>
+      <ul class="ir-leaders"><li><b><span class="i-fa" lang="fa">فولاد مبارکه</span><span class="i-en" lang="en">Mobarakeh Steel</span></b><small><span class="i-fa" lang="fa">فولاد و فلزات</span><span class="i-en" lang="en">Steel &amp; metals</span></small></li><li><b><span class="i-fa" lang="fa">ایران‌خودرو</span><span class="i-en" lang="en">Iran Khodro</span></b><small><span class="i-fa" lang="fa">خودرو و قطعات</span><span class="i-en" lang="en">Vehicles &amp; parts</span></small></li><li><b><span class="i-fa" lang="fa">سایپا</span><span class="i-en" lang="en">SAIPA</span></b><small><span class="i-fa" lang="fa">خودرو و قطعات</span><span class="i-en" lang="en">Vehicles &amp; parts</span></small></li><li><a href="kalleh.html"><b><span class="i-fa" lang="fa">گروه سولیکو (کاله)</span><span class="i-en" lang="en">Solico Group (Kalleh)</span></b><small><span class="i-fa" lang="fa">غذا و کشاورزی</span><span class="i-en" lang="en">Food &amp; agriculture</span></small><span class="k-go"><span class="i-fa" lang="fa">پرونده</span><span class="i-en" lang="en">Record</span></span></a></li><li><a href="golrang.html"><b><span class="i-fa" lang="fa">گروه صنعتی گلرنگ</span><span class="i-en" lang="en">Golrang Industrial Group</span></b><small><span class="i-fa" lang="fa">لوازم خانگی، الکترونیک و کالای مصرفی</span><span class="i-en" lang="en">Appliances, electronics &amp; consumer goods</span></small><span class="k-go"><span class="i-fa" lang="fa">پرونده</span><span class="i-en" lang="en">Record</span></span></a></li></ul>
     </section>
 
     <section class="ir-sec">

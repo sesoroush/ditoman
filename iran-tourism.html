@@ -62,6 +62,14 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-subs { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .ir-subs li { border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; background: linear-gradient(180deg, rgba(14, 33, 42, 0.9), rgba(10, 24, 32, 0.6)); display: flex; flex-direction: column; gap: 6px; }
 .ir-subs b { font-size: 1.1rem; line-height: 1.35; }
+.ir-leaders { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.ir-leaders li, .ir-leaders a { display: flex; flex-direction: column; gap: 6px; }
+.ir-leaders li { border: 1px solid var(--line-strong); border-top: 3px solid var(--ir); border-radius: 16px; padding: 16px; background: rgba(14, 33, 42, 0.7); }
+.ir-leaders b { font-size: 1.12rem; font-weight: 800; line-height: 1.45; color: #eef6f2; }
+.ir-leaders small { color: var(--muted); font-size: 0.86rem; }
+.ir-leaders a:hover b { color: var(--ir); }
+@media (max-width: 1000px) { .ir-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .ir-leaders { grid-template-columns: 1fr; } }
 .ir-subs .ir-isic { font: 700 0.78rem var(--en); color: var(--ir); letter-spacing: 0.06em; direction: ltr; align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); }
 .ir-subs small { color: var(--muted); line-height: 1.6; }
 .ir-cos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
@@ -85,65 +93,6 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
   body[data-lang="fa"] .ir-panel { width: 76%; padding: 16px 18px 16px calc(24% + 8px); }
 }
 </style>
-<!-- seo:start -->
-<meta name="twitter:card" content="summary_large_image" />
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "WebPage",
-   "@id": "https://ditoman.com/iran-tourism.html#page",
-   "url": "https://ditoman.com/iran-tourism.html",
-   "name": "Tourism & culture | گردشگری و فرهنگ | What Iran Has | Ditoman",
-   "description": "What a visitor sees and what they take home: UNESCO-listed sites, four seasons of landscape, crafts, cooking and art. Hotels, lodgings and travel agencies are licensed by the Ministry of Cultural Heritage, Tourism and Handicrafts; publishing, cinema and media by the Ministry of Culture.",
-   "isPartOf": {
-    "@id": "https://ditoman.com/#website"
-   },
-   "publisher": {
-    "@type": "Organization",
-    "@id": "https://ditoman.com/#organization",
-    "name": "Ditoman",
-    "alternateName": [
-     "دیتومان",
-     "DiToman",
-     "Ditoman TMN"
-    ],
-    "url": "https://ditoman.com/",
-    "logo": {
-     "@type": "ImageObject",
-     "url": "https://ditoman.com/tmn-logo-512.png",
-     "width": 512,
-     "height": 512
-    },
-    "foundingDate": "2022",
-    "sameAs": [
-     "https://www.instagram.com/ditoman.tmn/",
-     "https://t.me/Ditoman_tm"
-    ]
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Ditoman",
-     "item": "https://ditoman.com/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Tourism & culture | گردشگری و فرهنگ | What Iran Has",
-     "item": "https://ditoman.com/iran-tourism.html"
-    }
-   ]
-  }
- ]
-}
-</script>
-<!-- seo:end -->
 </head>
 <body data-lang="fa">
 
@@ -262,6 +211,12 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
       <h2><span class="i-fa" lang="fa">زیرشاخه‌ها</span><span class="i-en" lang="en">Sub-branches</span></h2>
       <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.</span><span class="i-en" lang="en">Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics.</span></p>
       <ul class="ir-subs"><li><span class="ir-isic">R91</span><b><span class="i-fa" lang="fa">میراث جهانی یونسکو</span><span class="i-en" lang="en">UNESCO world heritage</span></b><small><span class="i-fa" lang="fa">وزارت میراث فرهنگی</span><span class="i-en" lang="en">Ministry of Cultural Heritage</span></small></li><li><span class="ir-isic">N79 · R93</span><b><span class="i-fa" lang="fa">طبیعت و اکوتوریسم</span><span class="i-en" lang="en">Nature &amp; ecotourism</span></b><small><span class="i-fa" lang="fa">وزارت میراث فرهنگی؛ سازمان حفاظت محیط زیست</span><span class="i-en" lang="en">Ministry of Cultural Heritage; Department of Environment</span></small></li><li><span class="ir-isic">I55</span><b><span class="i-fa" lang="fa">هتل و اقامتگاه</span><span class="i-en" lang="en">Hotels &amp; lodging</span></b><small><span class="i-fa" lang="fa">وزارت میراث فرهنگی</span><span class="i-en" lang="en">Ministry of Cultural Heritage</span></small></li><li><span class="ir-isic">C32 · R90</span><b><span class="i-fa" lang="fa">صنایع‌دستی</span><span class="i-en" lang="en">Handicrafts</span></b><small><span class="i-fa" lang="fa">معاونت صنایع‌دستی</span><span class="i-en" lang="en">Handicrafts deputy</span></small></li><li><span class="ir-isic">I56</span><b><span class="i-fa" lang="fa">غذا و آشپزی</span><span class="i-en" lang="en">Food &amp; cuisine</span></b><small><span class="i-fa" lang="fa">اتحادیه‌های صنفی؛ وزارت بهداشت</span><span class="i-en" lang="en">Trade guilds; Ministry of Health</span></small></li><li><span class="ir-isic">J59 · R90</span><b><span class="i-fa" lang="fa">هنر، سینما و موسیقی</span><span class="i-en" lang="en">Art, cinema &amp; music</span></b><small><span class="i-fa" lang="fa">وزارت فرهنگ و ارشاد اسلامی</span><span class="i-en" lang="en">Ministry of Culture</span></small></li></ul>
+    </section>
+
+    <section class="ir-sec">
+      <h2><span class="i-fa" lang="fa">نام‌های بزرگ این شاخه</span><span class="i-en" lang="en">Big names in this branch</span></h2>
+      <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">فهرست اولیه، بر اساس اندازه و شهرت؛ ترتیب، رتبه نیست. پرونده‌ی هر کدام کم‌کم اضافه می‌شود.</span><span class="i-en" lang="en">A first list, by size and profile; the order is not a ranking. A record for each is added over time.</span></p>
+      <ul class="ir-leaders"><li><b><span class="i-fa" lang="fa">علی‌بابا</span><span class="i-en" lang="en">Alibaba Travel</span></b><small><span class="i-fa" lang="fa">هتل و اقامتگاه</span><span class="i-en" lang="en">Hotels &amp; lodging</span></small></li><li><b><span class="i-fa" lang="fa">اسنپ‌تریپ</span><span class="i-en" lang="en">Snapptrip</span></b><small><span class="i-fa" lang="fa">هتل و اقامتگاه</span><span class="i-en" lang="en">Hotels &amp; lodging</span></small></li><li><b><span class="i-fa" lang="fa">هتل‌های پارسیان</span><span class="i-en" lang="en">Parsian Hotels</span></b><small><span class="i-fa" lang="fa">هتل و اقامتگاه</span><span class="i-en" lang="en">Hotels &amp; lodging</span></small></li><li><b><span class="i-fa" lang="fa">هتل‌های اسپیناس</span><span class="i-en" lang="en">Espinas Hotels</span></b><small><span class="i-fa" lang="fa">هتل و اقامتگاه</span><span class="i-en" lang="en">Hotels &amp; lodging</span></small></li><li><b><span class="i-fa" lang="fa">هتل‌های هما</span><span class="i-en" lang="en">Homa Hotels</span></b><small><span class="i-fa" lang="fa">هتل و اقامتگاه</span><span class="i-en" lang="en">Hotels &amp; lodging</span></small></li></ul>
     </section>
 
     <section class="ir-sec">

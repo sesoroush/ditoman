@@ -62,6 +62,14 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-subs { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .ir-subs li { border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; background: linear-gradient(180deg, rgba(14, 33, 42, 0.9), rgba(10, 24, 32, 0.6)); display: flex; flex-direction: column; gap: 6px; }
 .ir-subs b { font-size: 1.1rem; line-height: 1.35; }
+.ir-leaders { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.ir-leaders li, .ir-leaders a { display: flex; flex-direction: column; gap: 6px; }
+.ir-leaders li { border: 1px solid var(--line-strong); border-top: 3px solid var(--ir); border-radius: 16px; padding: 16px; background: rgba(14, 33, 42, 0.7); }
+.ir-leaders b { font-size: 1.12rem; font-weight: 800; line-height: 1.45; color: #eef6f2; }
+.ir-leaders small { color: var(--muted); font-size: 0.86rem; }
+.ir-leaders a:hover b { color: var(--ir); }
+@media (max-width: 1000px) { .ir-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .ir-leaders { grid-template-columns: 1fr; } }
 .ir-subs .ir-isic { font: 700 0.78rem var(--en); color: var(--ir); letter-spacing: 0.06em; direction: ltr; align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); }
 .ir-subs small { color: var(--muted); line-height: 1.6; }
 .ir-cos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
@@ -85,65 +93,6 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
   body[data-lang="fa"] .ir-panel { width: 76%; padding: 16px 18px 16px calc(24% + 8px); }
 }
 </style>
-<!-- seo:start -->
-<meta name="twitter:card" content="summary_large_image" />
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "WebPage",
-   "@id": "https://ditoman.com/iran-resources.html#page",
-   "url": "https://ditoman.com/iran-resources.html",
-   "name": "Resources & mining | منابع و معدن | What Iran Has | Ditoman",
-   "description": "Mining in Iran follows a defined path: exploration permit, discovery certificate, extraction licence; all from the Ministry of Industry, Mine and Trade, on the mining cadastre system. The large mines were developed under IMIDRO, and the private sector is strong in decorative stone and non-metallic minerals.",
-   "isPartOf": {
-    "@id": "https://ditoman.com/#website"
-   },
-   "publisher": {
-    "@type": "Organization",
-    "@id": "https://ditoman.com/#organization",
-    "name": "Ditoman",
-    "alternateName": [
-     "دیتومان",
-     "DiToman",
-     "Ditoman TMN"
-    ],
-    "url": "https://ditoman.com/",
-    "logo": {
-     "@type": "ImageObject",
-     "url": "https://ditoman.com/tmn-logo-512.png",
-     "width": 512,
-     "height": 512
-    },
-    "foundingDate": "2022",
-    "sameAs": [
-     "https://www.instagram.com/ditoman.tmn/",
-     "https://t.me/Ditoman_tm"
-    ]
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Ditoman",
-     "item": "https://ditoman.com/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Resources & mining | منابع و معدن | What Iran Has",
-     "item": "https://ditoman.com/iran-resources.html"
-    }
-   ]
-  }
- ]
-}
-</script>
-<!-- seo:end -->
 </head>
 <body data-lang="fa">
 
@@ -262,6 +211,12 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
       <h2><span class="i-fa" lang="fa">زیرشاخه‌ها</span><span class="i-en" lang="en">Sub-branches</span></h2>
       <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.</span><span class="i-en" lang="en">Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics.</span></p>
       <ul class="ir-subs"><li><span class="ir-isic">B07</span><b><span class="i-fa" lang="fa">معادن فلزی</span><span class="i-en" lang="en">Metal ores</span></b><small><span class="i-fa" lang="fa">صمت / ایمیدرو</span><span class="i-en" lang="en">Industry Ministry / IMIDRO</span></small></li><li><span class="ir-isic">B08.1</span><b><span class="i-fa" lang="fa">سنگ‌های تزئینی و ساختمانی</span><span class="i-en" lang="en">Decorative &amp; building stone</span></b><small><span class="i-fa" lang="fa">صمت</span><span class="i-en" lang="en">Industry Ministry</span></small></li><li><span class="ir-isic">B08.9</span><b><span class="i-fa" lang="fa">کانی‌های غیرفلزی</span><span class="i-en" lang="en">Non-metallic minerals</span></b><small><span class="i-fa" lang="fa">صمت</span><span class="i-en" lang="en">Industry Ministry</span></small></li><li><span class="ir-isic">B09 · M71</span><b><span class="i-fa" lang="fa">خدمات معدنی و اکتشاف</span><span class="i-en" lang="en">Mining services &amp; exploration</span></b><small><span class="i-fa" lang="fa">صمت؛ سازمان زمین‌شناسی</span><span class="i-en" lang="en">Industry Ministry; Geological Survey</span></small></li></ul>
+    </section>
+
+    <section class="ir-sec">
+      <h2><span class="i-fa" lang="fa">نام‌های بزرگ این شاخه</span><span class="i-en" lang="en">Big names in this branch</span></h2>
+      <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">فهرست اولیه، بر اساس اندازه و شهرت؛ ترتیب، رتبه نیست. پرونده‌ی هر کدام کم‌کم اضافه می‌شود.</span><span class="i-en" lang="en">A first list, by size and profile; the order is not a ranking. A record for each is added over time.</span></p>
+      <ul class="ir-leaders"><li><b><span class="i-fa" lang="fa">ملی صنایع مس ایران</span><span class="i-en" lang="en">National Iranian Copper Industries</span></b><small><span class="i-fa" lang="fa">معادن فلزی</span><span class="i-en" lang="en">Metal ores</span></small></li><li><b><span class="i-fa" lang="fa">معدنی و صنعتی گل‌گهر</span><span class="i-en" lang="en">Golgohar Mining &amp; Industrial</span></b><small><span class="i-fa" lang="fa">معادن فلزی</span><span class="i-en" lang="en">Metal ores</span></small></li><li><b><span class="i-fa" lang="fa">معدنی و صنعتی چادرملو</span><span class="i-en" lang="en">Chadormalu Mining &amp; Industrial</span></b><small><span class="i-fa" lang="fa">معادن فلزی</span><span class="i-en" lang="en">Metal ores</span></small></li><li><b><span class="i-fa" lang="fa">سنگ‌آهن گهرزمین</span><span class="i-en" lang="en">Gohar Zamin Iron Ore</span></b><small><span class="i-fa" lang="fa">معادن فلزی</span><span class="i-en" lang="en">Metal ores</span></small></li><li><b><span class="i-fa" lang="fa">سنگ‌آهن مرکزی ایران (بافق)</span><span class="i-en" lang="en">Iran Central Iron Ore (Bafq)</span></b><small><span class="i-fa" lang="fa">معادن فلزی</span><span class="i-en" lang="en">Metal ores</span></small></li></ul>
     </section>
 
     <section class="ir-sec">

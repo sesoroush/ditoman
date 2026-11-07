@@ -62,6 +62,14 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-subs { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .ir-subs li { border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; background: linear-gradient(180deg, rgba(14, 33, 42, 0.9), rgba(10, 24, 32, 0.6)); display: flex; flex-direction: column; gap: 6px; }
 .ir-subs b { font-size: 1.1rem; line-height: 1.35; }
+.ir-leaders { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.ir-leaders li, .ir-leaders a { display: flex; flex-direction: column; gap: 6px; }
+.ir-leaders li { border: 1px solid var(--line-strong); border-top: 3px solid var(--ir); border-radius: 16px; padding: 16px; background: rgba(14, 33, 42, 0.7); }
+.ir-leaders b { font-size: 1.12rem; font-weight: 800; line-height: 1.45; color: #eef6f2; }
+.ir-leaders small { color: var(--muted); font-size: 0.86rem; }
+.ir-leaders a:hover b { color: var(--ir); }
+@media (max-width: 1000px) { .ir-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .ir-leaders { grid-template-columns: 1fr; } }
 .ir-subs .ir-isic { font: 700 0.78rem var(--en); color: var(--ir); letter-spacing: 0.06em; direction: ltr; align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); }
 .ir-subs small { color: var(--muted); line-height: 1.6; }
 .ir-cos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
@@ -85,65 +93,6 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
   body[data-lang="fa"] .ir-panel { width: 76%; padding: 16px 18px 16px calc(24% + 8px); }
 }
 </style>
-<!-- seo:start -->
-<meta name="twitter:card" content="summary_large_image" />
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "WebPage",
-   "@id": "https://ditoman.com/iran-transport.html#page",
-   "url": "https://ditoman.com/iran-transport.html",
-   "name": "Transport & roads | حمل‌ونقل و راه | What Iran Has | Ditoman",
-   "description": "Iran is a crossroads, north to south and east to west. All transport infrastructure sits under the Ministry of Roads and Urban Development and its four specialist organisations; transport, logistics and forwarding companies are licensed by those same bodies.",
-   "isPartOf": {
-    "@id": "https://ditoman.com/#website"
-   },
-   "publisher": {
-    "@type": "Organization",
-    "@id": "https://ditoman.com/#organization",
-    "name": "Ditoman",
-    "alternateName": [
-     "دیتومان",
-     "DiToman",
-     "Ditoman TMN"
-    ],
-    "url": "https://ditoman.com/",
-    "logo": {
-     "@type": "ImageObject",
-     "url": "https://ditoman.com/tmn-logo-512.png",
-     "width": 512,
-     "height": 512
-    },
-    "foundingDate": "2022",
-    "sameAs": [
-     "https://www.instagram.com/ditoman.tmn/",
-     "https://t.me/Ditoman_tm"
-    ]
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Ditoman",
-     "item": "https://ditoman.com/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Transport & roads | حمل‌ونقل و راه | What Iran Has",
-     "item": "https://ditoman.com/iran-transport.html"
-    }
-   ]
-  }
- ]
-}
-</script>
-<!-- seo:end -->
 </head>
 <body data-lang="fa">
 
@@ -262,6 +211,12 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
       <h2><span class="i-fa" lang="fa">زیرشاخه‌ها</span><span class="i-en" lang="en">Sub-branches</span></h2>
       <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.</span><span class="i-en" lang="en">Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics.</span></p>
       <ul class="ir-subs"><li><span class="ir-isic">F42.1 · H49.4</span><b><span class="i-fa" lang="fa">راه و آزادراه</span><span class="i-en" lang="en">Roads &amp; motorways</span></b><small><span class="i-fa" lang="fa">سازمان راهداری</span><span class="i-en" lang="en">Road Maintenance Org.</span></small></li><li><span class="ir-isic">H49.1–H49.2</span><b><span class="i-fa" lang="fa">ریلی و مترو</span><span class="i-en" lang="en">Rail &amp; metro</span></b><small><span class="i-fa" lang="fa">شرکت راه‌آهن</span><span class="i-en" lang="en">Railways</span></small></li><li><span class="ir-isic">H51</span><b><span class="i-fa" lang="fa">فرودگاه و هوایی</span><span class="i-en" lang="en">Airports &amp; aviation</span></b><small><span class="i-fa" lang="fa">سازمان هواپیمایی کشوری</span><span class="i-en" lang="en">Civil Aviation Org.</span></small></li><li><span class="ir-isic">H50</span><b><span class="i-fa" lang="fa">بنادر و دریایی</span><span class="i-en" lang="en">Ports &amp; maritime</span></b><small><span class="i-fa" lang="fa">سازمان بنادر و دریانوردی</span><span class="i-en" lang="en">Ports &amp; Maritime Org.</span></small></li><li><span class="ir-isic">H52</span><b><span class="i-fa" lang="fa">لجستیک و انبارداری</span><span class="i-en" lang="en">Logistics &amp; warehousing</span></b><small><span class="i-fa" lang="fa">سازمان راهداری؛ گمرک</span><span class="i-en" lang="en">Road Maintenance Org.; Customs</span></small></li></ul>
+    </section>
+
+    <section class="ir-sec">
+      <h2><span class="i-fa" lang="fa">نام‌های بزرگ این شاخه</span><span class="i-en" lang="en">Big names in this branch</span></h2>
+      <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">فهرست اولیه، بر اساس اندازه و شهرت؛ ترتیب، رتبه نیست. پرونده‌ی هر کدام کم‌کم اضافه می‌شود.</span><span class="i-en" lang="en">A first list, by size and profile; the order is not a ranking. A record for each is added over time.</span></p>
+      <ul class="ir-leaders"><li><b><span class="i-fa" lang="fa">کشتیرانی جمهوری اسلامی ایران</span><span class="i-en" lang="en">IRISL (national shipping line)</span></b><small><span class="i-fa" lang="fa">بنادر و دریایی</span><span class="i-en" lang="en">Ports &amp; maritime</span></small></li><li><b><span class="i-fa" lang="fa">سازمان بنادر و دریانوردی</span><span class="i-en" lang="en">Ports &amp; Maritime Organization</span></b><small><span class="i-fa" lang="fa">بنادر و دریایی</span><span class="i-en" lang="en">Ports &amp; maritime</span></small></li><li><b><span class="i-fa" lang="fa">راه‌آهن جمهوری اسلامی ایران</span><span class="i-en" lang="en">Iranian railways (RAI)</span></b><small><span class="i-fa" lang="fa">ریلی و مترو</span><span class="i-en" lang="en">Rail &amp; metro</span></small></li><li><b><span class="i-fa" lang="fa">ایران‌ایر</span><span class="i-en" lang="en">Iran Air</span></b><small><span class="i-fa" lang="fa">فرودگاه و هوایی</span><span class="i-en" lang="en">Airports &amp; aviation</span></small></li><li><b><span class="i-fa" lang="fa">ماهان‌ایر</span><span class="i-en" lang="en">Mahan Air</span></b><small><span class="i-fa" lang="fa">فرودگاه و هوایی</span><span class="i-en" lang="en">Airports &amp; aviation</span></small></li></ul>
     </section>
 
     <section class="ir-sec">

@@ -1,7 +1,10 @@
 {
   "section": {
     "slug": "iran",
-    "name": {"fa": "ایران چه دارد", "en": "What Iran Has"},
+    "name": {
+      "fa": "ایران چه دارد",
+      "en": "What Iran Has"
+    },
     "lead": {
       "fa": "یک نقشه‌ی ساختاریافته از آنچه در ایران ساخته می‌شود، استخراج می‌شود، جابه‌جا می‌شود و دیده می‌شود. شش شاخه، هر کدام با زیرشاخه‌های رسمی، شرکت‌های شاخص و منبع هر عدد.",
       "en": "A structured map of what is made, mined, moved and seen in Iran. Six branches, each with its official sub-branches, its leading companies, and a source for every number."
@@ -16,133 +19,726 @@
       "slug": "industry",
       "accent": "#7ff5de",
       "art": "industry",
-      "name": {"fa": "صنعت و تولید", "en": "Industry & manufacturing"},
-      "tag": {"fa": "از لبنیات تا فولاد و دارو", "en": "From dairy to steel and medicine"},
+      "name": {
+        "fa": "صنعت و تولید",
+        "en": "Industry & manufacturing"
+      },
+      "tag": {
+        "fa": "از لبنیات تا فولاد و دارو",
+        "en": "From dairy to steel and medicine"
+      },
       "intro": {
         "fa": "بزرگ‌ترین شاخه است و همه‌ی کارخانه‌ها اینجا می‌نشینند: غذا، فولاد، خودرو، پتروشیمی پایین‌دستی، دارو، لوازم خانگی، نساجی، ماشین‌سازی و مصالح. پروانه‌ی هر کارخانه از وزارت صمت می‌آید و روی کد رسمی رشته‌ی فعالیت ثبت می‌شود؛ غذا و دارو علاوه بر آن از سازمان غذا و دارو پروانه‌ی ساخت می‌گیرند.",
         "en": "The largest branch, and the home of every factory: food, steel, cars, downstream petrochemicals, medicine, appliances, textiles, machinery and building materials. A factory's licence comes from the Ministry of Industry, Mine and Trade and is recorded under an ISIC code; food and medicine also need a product licence from the Food and Drug Administration."
       },
-      "authority": {"fa": "وزارت صنعت، معدن و تجارت؛ سازمان غذا و دارو؛ وزارت جهاد کشاورزی", "en": "Ministry of Industry, Mine & Trade; Food & Drug Administration; Ministry of Agriculture"},
-      "association": {"fa": "خانه صنعت، معدن و تجارت؛ انجمن تخصصی هر صنعت؛ اتاق بازرگانی", "en": "House of Industry, Mine & Trade; each industry's association; Chamber of Commerce"},
-      "isic": {"section": "C", "fa": "بخش C — صنعت (ساخت)", "en": "Section C — Manufacturing"},
+      "authority": {
+        "fa": "وزارت صنعت، معدن و تجارت؛ سازمان غذا و دارو؛ وزارت جهاد کشاورزی",
+        "en": "Ministry of Industry, Mine & Trade; Food & Drug Administration; Ministry of Agriculture"
+      },
+      "association": {
+        "fa": "خانه صنعت، معدن و تجارت؛ انجمن تخصصی هر صنعت؛ اتاق بازرگانی",
+        "en": "House of Industry, Mine & Trade; each industry's association; Chamber of Commerce"
+      },
+      "isic": {
+        "section": "C",
+        "fa": "بخش C — صنعت (ساخت)",
+        "en": "Section C — Manufacturing"
+      },
       "subs": [
-        {"id": "food", "fa": "غذا و کشاورزی", "en": "Food & agriculture", "isic": "C10–C12", "authority": {"fa": "صمت + سازمان غذا و دارو", "en": "Industry Ministry + FDA"}},
-        {"id": "steel", "fa": "فولاد و فلزات", "en": "Steel & metals", "isic": "C24–C25", "authority": {"fa": "صمت", "en": "Industry Ministry"}},
-        {"id": "auto", "fa": "خودرو و قطعات", "en": "Vehicles & parts", "isic": "C29", "authority": {"fa": "صمت", "en": "Industry Ministry"}},
-        {"id": "chem", "fa": "پتروشیمی پایین‌دستی و شیمیایی", "en": "Downstream petrochemicals & chemicals", "isic": "C20–C22", "authority": {"fa": "صمت", "en": "Industry Ministry"}},
-        {"id": "pharma", "fa": "دارو و تجهیزات پزشکی", "en": "Pharma & medical devices", "isic": "C21", "authority": {"fa": "سازمان غذا و دارو", "en": "Food & Drug Administration"}},
-        {"id": "consumer", "fa": "لوازم خانگی، الکترونیک و کالای مصرفی", "en": "Appliances, electronics & consumer goods", "isic": "C26–C27", "authority": {"fa": "صمت", "en": "Industry Ministry"}},
-        {"id": "textile", "fa": "نساجی و پوشاک", "en": "Textiles & apparel", "isic": "C13–C15", "authority": {"fa": "صمت", "en": "Industry Ministry"}},
-        {"id": "machinery", "fa": "ماشین‌سازی و تجهیزات", "en": "Machinery & equipment", "isic": "C28", "authority": {"fa": "صمت", "en": "Industry Ministry"}},
-        {"id": "construction", "fa": "ساختمان و مصالح", "en": "Construction & materials", "isic": "C23 · F41–F43", "authority": {"fa": "صمت؛ وزارت راه و شهرسازی", "en": "Industry Ministry; Roads Ministry"}}
+        {
+          "id": "food",
+          "fa": "غذا و کشاورزی",
+          "en": "Food & agriculture",
+          "isic": "C10–C12",
+          "authority": {
+            "fa": "صمت + سازمان غذا و دارو",
+            "en": "Industry Ministry + FDA"
+          }
+        },
+        {
+          "id": "steel",
+          "fa": "فولاد و فلزات",
+          "en": "Steel & metals",
+          "isic": "C24–C25",
+          "authority": {
+            "fa": "صمت",
+            "en": "Industry Ministry"
+          }
+        },
+        {
+          "id": "auto",
+          "fa": "خودرو و قطعات",
+          "en": "Vehicles & parts",
+          "isic": "C29",
+          "authority": {
+            "fa": "صمت",
+            "en": "Industry Ministry"
+          }
+        },
+        {
+          "id": "chem",
+          "fa": "پتروشیمی پایین‌دستی و شیمیایی",
+          "en": "Downstream petrochemicals & chemicals",
+          "isic": "C20–C22",
+          "authority": {
+            "fa": "صمت",
+            "en": "Industry Ministry"
+          }
+        },
+        {
+          "id": "pharma",
+          "fa": "دارو و تجهیزات پزشکی",
+          "en": "Pharma & medical devices",
+          "isic": "C21",
+          "authority": {
+            "fa": "سازمان غذا و دارو",
+            "en": "Food & Drug Administration"
+          }
+        },
+        {
+          "id": "consumer",
+          "fa": "لوازم خانگی، الکترونیک و کالای مصرفی",
+          "en": "Appliances, electronics & consumer goods",
+          "isic": "C26–C27",
+          "authority": {
+            "fa": "صمت",
+            "en": "Industry Ministry"
+          }
+        },
+        {
+          "id": "textile",
+          "fa": "نساجی و پوشاک",
+          "en": "Textiles & apparel",
+          "isic": "C13–C15",
+          "authority": {
+            "fa": "صمت",
+            "en": "Industry Ministry"
+          }
+        },
+        {
+          "id": "machinery",
+          "fa": "ماشین‌سازی و تجهیزات",
+          "en": "Machinery & equipment",
+          "isic": "C28",
+          "authority": {
+            "fa": "صمت",
+            "en": "Industry Ministry"
+          }
+        },
+        {
+          "id": "construction",
+          "fa": "ساختمان و مصالح",
+          "en": "Construction & materials",
+          "isic": "C23 · F41–F43",
+          "authority": {
+            "fa": "صمت؛ وزارت راه و شهرسازی",
+            "en": "Industry Ministry; Roads Ministry"
+          }
+        }
+      ],
+      "leaders": [
+        {
+          "fa": "فولاد مبارکه",
+          "en": "Mobarakeh Steel",
+          "sub": "steel"
+        },
+        {
+          "fa": "ایران‌خودرو",
+          "en": "Iran Khodro",
+          "sub": "auto"
+        },
+        {
+          "fa": "سایپا",
+          "en": "SAIPA",
+          "sub": "auto"
+        },
+        {
+          "fa": "گروه سولیکو (کاله)",
+          "en": "Solico Group (Kalleh)",
+          "sub": "food",
+          "slug": "kalleh"
+        },
+        {
+          "fa": "گروه صنعتی گلرنگ",
+          "en": "Golrang Industrial Group",
+          "sub": "consumer",
+          "slug": "golrang"
+        }
       ]
     },
     {
       "slug": "energy",
       "accent": "#ff9f6b",
       "art": "energy",
-      "name": {"fa": "انرژی و آب", "en": "Energy & water"},
-      "tag": {"fa": "نفت، گاز، برق، تجدیدپذیر، آب", "en": "Oil, gas, power, renewables, water"},
+      "name": {
+        "fa": "انرژی و آب",
+        "en": "Energy & water"
+      },
+      "tag": {
+        "fa": "نفت، گاز، برق، تجدیدپذیر، آب",
+        "en": "Oil, gas, power, renewables, water"
+      },
       "intro": {
         "fa": "اینجا ساختار با بقیه فرق دارد: به جای صنف، زنجیره ملاک است. بالادستی (اکتشاف و تولید نفت و گاز) و میان‌دستی (پالایش، خطوط لوله، پتروشیمی مادر) زیر وزارت نفت و چهار شرکت ملی آن است؛ برق، تجدیدپذیر و آب زیر وزارت نیرو. بخش خصوصی بیشتر در پایین‌دست، نیروگاه‌های خصوصی و تجدیدپذیرها حضور دارد.",
         "en": "The structure here is different: the unit is the chain, not the guild. Upstream (oil and gas exploration and production) and midstream (refining, pipelines, primary petrochemicals) sit under the Ministry of Petroleum and its four national companies; power, renewables and water sit under the Ministry of Energy. The private sector is mostly present downstream, in private power plants and in renewables."
       },
-      "authority": {"fa": "وزارت نفت (شرکت ملی نفت، گاز، پالایش و پخش، صنایع پتروشیمی)؛ وزارت نیرو (توانیر، ساتبا، مدیریت منابع آب)", "en": "Ministry of Petroleum (NIOC, NIGC, NIORDC, NPC); Ministry of Energy (Tavanir, SATBA, Water Resources)"},
-      "association": {"fa": "انجمن صنفی کارفرمایی صنعت پتروشیمی؛ سندیکای صنعت برق ایران", "en": "Petrochemical Employers' Association; Iranian Electrical Industry Syndicate"},
-      "isic": {"section": "B · C19 · D · E", "fa": "بخش‌های B (استخراج)، C19 (پالایش)، D (برق و گاز)، E (آب)", "en": "Sections B (extraction), C19 (refining), D (electricity & gas), E (water)"},
+      "authority": {
+        "fa": "وزارت نفت (شرکت ملی نفت، گاز، پالایش و پخش، صنایع پتروشیمی)؛ وزارت نیرو (توانیر، ساتبا، مدیریت منابع آب)",
+        "en": "Ministry of Petroleum (NIOC, NIGC, NIORDC, NPC); Ministry of Energy (Tavanir, SATBA, Water Resources)"
+      },
+      "association": {
+        "fa": "انجمن صنفی کارفرمایی صنعت پتروشیمی؛ سندیکای صنعت برق ایران",
+        "en": "Petrochemical Employers' Association; Iranian Electrical Industry Syndicate"
+      },
+      "isic": {
+        "section": "B · C19 · D · E",
+        "fa": "بخش‌های B (استخراج)، C19 (پالایش)، D (برق و گاز)، E (آب)",
+        "en": "Sections B (extraction), C19 (refining), D (electricity & gas), E (water)"
+      },
       "subs": [
-        {"id": "upstream", "fa": "نفت و گاز بالادستی", "en": "Upstream oil & gas", "isic": "B06 · B09", "authority": {"fa": "وزارت نفت / شرکت ملی نفت", "en": "Ministry of Petroleum / NIOC"}},
-        {"id": "refining", "fa": "پالایش و پخش سوخت", "en": "Refining & fuel distribution", "isic": "C19 · G47.3", "authority": {"fa": "شرکت ملی پالایش و پخش", "en": "NIORDC"}},
-        {"id": "petrochem", "fa": "پتروشیمی مادر", "en": "Primary petrochemicals", "isic": "C20.1", "authority": {"fa": "شرکت ملی صنایع پتروشیمی", "en": "NPC"}},
-        {"id": "power", "fa": "برق و نیروگاه", "en": "Power & generation", "isic": "D35.1", "authority": {"fa": "وزارت نیرو / توانیر", "en": "Ministry of Energy / Tavanir"}},
-        {"id": "renewables", "fa": "تجدیدپذیر", "en": "Renewables", "isic": "D35.11", "authority": {"fa": "ساتبا", "en": "SATBA"}},
-        {"id": "water", "fa": "آب، سد و شیرین‌سازی", "en": "Water, dams & desalination", "isic": "E36", "authority": {"fa": "وزارت نیرو", "en": "Ministry of Energy"}}
+        {
+          "id": "upstream",
+          "fa": "نفت و گاز بالادستی",
+          "en": "Upstream oil & gas",
+          "isic": "B06 · B09",
+          "authority": {
+            "fa": "وزارت نفت / شرکت ملی نفت",
+            "en": "Ministry of Petroleum / NIOC"
+          }
+        },
+        {
+          "id": "refining",
+          "fa": "پالایش و پخش سوخت",
+          "en": "Refining & fuel distribution",
+          "isic": "C19 · G47.3",
+          "authority": {
+            "fa": "شرکت ملی پالایش و پخش",
+            "en": "NIORDC"
+          }
+        },
+        {
+          "id": "petrochem",
+          "fa": "پتروشیمی مادر",
+          "en": "Primary petrochemicals",
+          "isic": "C20.1",
+          "authority": {
+            "fa": "شرکت ملی صنایع پتروشیمی",
+            "en": "NPC"
+          }
+        },
+        {
+          "id": "power",
+          "fa": "برق و نیروگاه",
+          "en": "Power & generation",
+          "isic": "D35.1",
+          "authority": {
+            "fa": "وزارت نیرو / توانیر",
+            "en": "Ministry of Energy / Tavanir"
+          }
+        },
+        {
+          "id": "renewables",
+          "fa": "تجدیدپذیر",
+          "en": "Renewables",
+          "isic": "D35.11",
+          "authority": {
+            "fa": "ساتبا",
+            "en": "SATBA"
+          }
+        },
+        {
+          "id": "water",
+          "fa": "آب، سد و شیرین‌سازی",
+          "en": "Water, dams & desalination",
+          "isic": "E36",
+          "authority": {
+            "fa": "وزارت نیرو",
+            "en": "Ministry of Energy"
+          }
+        }
+      ],
+      "leaders": [
+        {
+          "fa": "شرکت ملی نفت ایران",
+          "en": "National Iranian Oil Company",
+          "sub": "upstream"
+        },
+        {
+          "fa": "شرکت ملی گاز ایران",
+          "en": "National Iranian Gas Company",
+          "sub": "upstream"
+        },
+        {
+          "fa": "صنایع پتروشیمی خلیج فارس",
+          "en": "Persian Gulf Petrochemical Industries",
+          "sub": "petrochem"
+        },
+        {
+          "fa": "گروه مپنا",
+          "en": "MAPNA Group",
+          "sub": "power"
+        },
+        {
+          "fa": "توانیر",
+          "en": "Tavanir",
+          "sub": "power"
+        }
       ]
     },
     {
       "slug": "transport",
       "accent": "#2db7ff",
       "art": "transport",
-      "name": {"fa": "حمل‌ونقل و راه", "en": "Transport & roads"},
-      "tag": {"fa": "راه، ریل، بندر، فرودگاه، لجستیک", "en": "Roads, rail, ports, airports, logistics"},
+      "name": {
+        "fa": "حمل‌ونقل و راه",
+        "en": "Transport & roads"
+      },
+      "tag": {
+        "fa": "راه، ریل، بندر، فرودگاه، لجستیک",
+        "en": "Roads, rail, ports, airports, logistics"
+      },
       "intro": {
         "fa": "ایران چهارراه است: از شمال به جنوب و از شرق به غرب. همه‌ی زیرساخت حمل‌ونقل زیر وزارت راه و شهرسازی و چهار سازمان تخصصی آن است؛ شرکت‌های حمل‌ونقل، لجستیک و فورواردینگ از همان سازمان‌ها پروانه می‌گیرند.",
         "en": "Iran is a crossroads, north to south and east to west. All transport infrastructure sits under the Ministry of Roads and Urban Development and its four specialist organisations; transport, logistics and forwarding companies are licensed by those same bodies."
       },
-      "authority": {"fa": "وزارت راه و شهرسازی: سازمان راهداری، شرکت راه‌آهن، سازمان بنادر و دریانوردی، سازمان هواپیمایی کشوری", "en": "Ministry of Roads & Urban Development: Road Maintenance Org., Railways, Ports & Maritime Org., Civil Aviation Org."},
-      "association": {"fa": "انجمن شرکت‌های حمل‌ونقل بین‌المللی؛ انجمن کشتیرانی و خدمات وابسته", "en": "International Transport Companies Association; Shipping & Related Services Association"},
-      "isic": {"section": "H", "fa": "بخش H — حمل‌ونقل و انبارداری", "en": "Section H — Transportation & storage"},
+      "authority": {
+        "fa": "وزارت راه و شهرسازی: سازمان راهداری، شرکت راه‌آهن، سازمان بنادر و دریانوردی، سازمان هواپیمایی کشوری",
+        "en": "Ministry of Roads & Urban Development: Road Maintenance Org., Railways, Ports & Maritime Org., Civil Aviation Org."
+      },
+      "association": {
+        "fa": "انجمن شرکت‌های حمل‌ونقل بین‌المللی؛ انجمن کشتیرانی و خدمات وابسته",
+        "en": "International Transport Companies Association; Shipping & Related Services Association"
+      },
+      "isic": {
+        "section": "H",
+        "fa": "بخش H — حمل‌ونقل و انبارداری",
+        "en": "Section H — Transportation & storage"
+      },
       "subs": [
-        {"id": "roads", "fa": "راه و آزادراه", "en": "Roads & motorways", "isic": "F42.1 · H49.4", "authority": {"fa": "سازمان راهداری", "en": "Road Maintenance Org."}},
-        {"id": "rail", "fa": "ریلی و مترو", "en": "Rail & metro", "isic": "H49.1–H49.2", "authority": {"fa": "شرکت راه‌آهن", "en": "Railways"}},
-        {"id": "air", "fa": "فرودگاه و هوایی", "en": "Airports & aviation", "isic": "H51", "authority": {"fa": "سازمان هواپیمایی کشوری", "en": "Civil Aviation Org."}},
-        {"id": "sea", "fa": "بنادر و دریایی", "en": "Ports & maritime", "isic": "H50", "authority": {"fa": "سازمان بنادر و دریانوردی", "en": "Ports & Maritime Org."}},
-        {"id": "logistics", "fa": "لجستیک و انبارداری", "en": "Logistics & warehousing", "isic": "H52", "authority": {"fa": "سازمان راهداری؛ گمرک", "en": "Road Maintenance Org.; Customs"}}
+        {
+          "id": "roads",
+          "fa": "راه و آزادراه",
+          "en": "Roads & motorways",
+          "isic": "F42.1 · H49.4",
+          "authority": {
+            "fa": "سازمان راهداری",
+            "en": "Road Maintenance Org."
+          }
+        },
+        {
+          "id": "rail",
+          "fa": "ریلی و مترو",
+          "en": "Rail & metro",
+          "isic": "H49.1–H49.2",
+          "authority": {
+            "fa": "شرکت راه‌آهن",
+            "en": "Railways"
+          }
+        },
+        {
+          "id": "air",
+          "fa": "فرودگاه و هوایی",
+          "en": "Airports & aviation",
+          "isic": "H51",
+          "authority": {
+            "fa": "سازمان هواپیمایی کشوری",
+            "en": "Civil Aviation Org."
+          }
+        },
+        {
+          "id": "sea",
+          "fa": "بنادر و دریایی",
+          "en": "Ports & maritime",
+          "isic": "H50",
+          "authority": {
+            "fa": "سازمان بنادر و دریانوردی",
+            "en": "Ports & Maritime Org."
+          }
+        },
+        {
+          "id": "logistics",
+          "fa": "لجستیک و انبارداری",
+          "en": "Logistics & warehousing",
+          "isic": "H52",
+          "authority": {
+            "fa": "سازمان راهداری؛ گمرک",
+            "en": "Road Maintenance Org.; Customs"
+          }
+        }
+      ],
+      "leaders": [
+        {
+          "fa": "کشتیرانی جمهوری اسلامی ایران",
+          "en": "IRISL (national shipping line)",
+          "sub": "sea"
+        },
+        {
+          "fa": "سازمان بنادر و دریانوردی",
+          "en": "Ports & Maritime Organization",
+          "sub": "sea"
+        },
+        {
+          "fa": "راه‌آهن جمهوری اسلامی ایران",
+          "en": "Iranian railways (RAI)",
+          "sub": "rail"
+        },
+        {
+          "fa": "ایران‌ایر",
+          "en": "Iran Air",
+          "sub": "air"
+        },
+        {
+          "fa": "ماهان‌ایر",
+          "en": "Mahan Air",
+          "sub": "air"
+        }
       ]
     },
     {
       "slug": "resources",
       "accent": "#f5c86b",
       "art": "resources",
-      "name": {"fa": "منابع و معدن", "en": "Resources & mining"},
-      "tag": {"fa": "آهن، مس، روی، سنگ، کانی‌ها", "en": "Iron, copper, zinc, stone, minerals"},
+      "name": {
+        "fa": "منابع و معدن",
+        "en": "Resources & mining"
+      },
+      "tag": {
+        "fa": "آهن، مس، روی، سنگ، کانی‌ها",
+        "en": "Iron, copper, zinc, stone, minerals"
+      },
       "intro": {
         "fa": "معدن در ایران مسیر مشخصی دارد: پروانه‌ی اکتشاف، گواهی کشف، پروانه‌ی بهره‌برداری؛ همه از وزارت صمت و در سامانه‌ی کاداستر معادن. معادن بزرگ زیر چتر ایمیدرو توسعه یافته‌اند و بخش خصوصی در سنگ‌های تزئینی و کانی‌های غیرفلزی پررنگ است.",
         "en": "Mining in Iran follows a defined path: exploration permit, discovery certificate, extraction licence; all from the Ministry of Industry, Mine and Trade, on the mining cadastre system. The large mines were developed under IMIDRO, and the private sector is strong in decorative stone and non-metallic minerals."
       },
-      "authority": {"fa": "وزارت صمت (معاونت امور معادن)؛ ایمیدرو؛ سازمان زمین‌شناسی", "en": "Ministry of Industry, Mine & Trade (mining deputy); IMIDRO; Geological Survey"},
-      "association": {"fa": "خانه معدن ایران؛ انجمن سنگ ایران", "en": "Iran Mining House; Iran Stone Association"},
-      "isic": {"section": "B", "fa": "بخش B — استخراج معدن", "en": "Section B — Mining & quarrying"},
+      "authority": {
+        "fa": "وزارت صمت (معاونت امور معادن)؛ ایمیدرو؛ سازمان زمین‌شناسی",
+        "en": "Ministry of Industry, Mine & Trade (mining deputy); IMIDRO; Geological Survey"
+      },
+      "association": {
+        "fa": "خانه معدن ایران؛ انجمن سنگ ایران",
+        "en": "Iran Mining House; Iran Stone Association"
+      },
+      "isic": {
+        "section": "B",
+        "fa": "بخش B — استخراج معدن",
+        "en": "Section B — Mining & quarrying"
+      },
       "subs": [
-        {"id": "metals", "fa": "معادن فلزی", "en": "Metal ores", "isic": "B07", "authority": {"fa": "صمت / ایمیدرو", "en": "Industry Ministry / IMIDRO"}},
-        {"id": "stone", "fa": "سنگ‌های تزئینی و ساختمانی", "en": "Decorative & building stone", "isic": "B08.1", "authority": {"fa": "صمت", "en": "Industry Ministry"}},
-        {"id": "minerals", "fa": "کانی‌های غیرفلزی", "en": "Non-metallic minerals", "isic": "B08.9", "authority": {"fa": "صمت", "en": "Industry Ministry"}},
-        {"id": "services", "fa": "خدمات معدنی و اکتشاف", "en": "Mining services & exploration", "isic": "B09 · M71", "authority": {"fa": "صمت؛ سازمان زمین‌شناسی", "en": "Industry Ministry; Geological Survey"}}
+        {
+          "id": "metals",
+          "fa": "معادن فلزی",
+          "en": "Metal ores",
+          "isic": "B07",
+          "authority": {
+            "fa": "صمت / ایمیدرو",
+            "en": "Industry Ministry / IMIDRO"
+          }
+        },
+        {
+          "id": "stone",
+          "fa": "سنگ‌های تزئینی و ساختمانی",
+          "en": "Decorative & building stone",
+          "isic": "B08.1",
+          "authority": {
+            "fa": "صمت",
+            "en": "Industry Ministry"
+          }
+        },
+        {
+          "id": "minerals",
+          "fa": "کانی‌های غیرفلزی",
+          "en": "Non-metallic minerals",
+          "isic": "B08.9",
+          "authority": {
+            "fa": "صمت",
+            "en": "Industry Ministry"
+          }
+        },
+        {
+          "id": "services",
+          "fa": "خدمات معدنی و اکتشاف",
+          "en": "Mining services & exploration",
+          "isic": "B09 · M71",
+          "authority": {
+            "fa": "صمت؛ سازمان زمین‌شناسی",
+            "en": "Industry Ministry; Geological Survey"
+          }
+        }
+      ],
+      "leaders": [
+        {
+          "fa": "ملی صنایع مس ایران",
+          "en": "National Iranian Copper Industries",
+          "sub": "metals"
+        },
+        {
+          "fa": "معدنی و صنعتی گل‌گهر",
+          "en": "Golgohar Mining & Industrial",
+          "sub": "metals"
+        },
+        {
+          "fa": "معدنی و صنعتی چادرملو",
+          "en": "Chadormalu Mining & Industrial",
+          "sub": "metals"
+        },
+        {
+          "fa": "سنگ‌آهن گهرزمین",
+          "en": "Gohar Zamin Iron Ore",
+          "sub": "metals"
+        },
+        {
+          "fa": "سنگ‌آهن مرکزی ایران (بافق)",
+          "en": "Iran Central Iron Ore (Bafq)",
+          "sub": "metals"
+        }
       ]
     },
     {
       "slug": "technology",
       "accent": "#8b6cff",
       "art": "technology",
-      "name": {"fa": "فناوری و خدمات", "en": "Technology & services"},
-      "tag": {"fa": "پلتفرم‌ها، فین‌تک، دانش‌بنیان، سلامت", "en": "Platforms, fintech, knowledge-based firms, health"},
+      "name": {
+        "fa": "فناوری و خدمات",
+        "en": "Technology & services"
+      },
+      "tag": {
+        "fa": "پلتفرم‌ها، فین‌تک، دانش‌بنیان، سلامت",
+        "en": "Platforms, fintech, knowledge-based firms, health"
+      },
       "intro": {
         "fa": "جوان‌ترین شاخه و پرتعدادترین مرجع: پلتفرم‌ها و استارتاپ‌ها با ثبت شرکت و اینماد شروع می‌کنند، اپراتورها و اینترنت از سازمان تنظیم مقررات پروانه می‌گیرند، فین‌تک زیر بانک مرکزی است، بیمه زیر بیمه مرکزی، بازار سرمایه زیر سازمان بورس، و شرکت‌های دانش‌بنیان با ارزیابی معاونت علمی از معافیت‌ها برخوردار می‌شوند.",
         "en": "The youngest branch and the one with the most regulators: platforms and startups begin with company registration and the e-trust mark; operators and internet providers are licensed by the Communications Regulatory Authority; fintech sits under the Central Bank, insurance under Central Insurance, capital markets under the Securities and Exchange Organisation; and knowledge-based companies gain their exemptions through assessment by the Vice-Presidency for Science."
       },
-      "authority": {"fa": "وزارت ارتباطات (سازمان تنظیم مقررات)؛ معاونت علمی؛ مرکز توسعه تجارت الکترونیکی؛ بانک مرکزی؛ بیمه مرکزی؛ سازمان بورس؛ وزارت بهداشت", "en": "Ministry of ICT (CRA); Vice-Presidency for Science; E-Commerce Development Centre; Central Bank; Central Insurance; SEO; Ministry of Health"},
-      "association": {"fa": "سازمان نظام صنفی رایانه‌ای؛ انجمن فین‌تک ایران", "en": "Computer Guild Organisation; Iran Fintech Association"},
-      "isic": {"section": "J · K · M · P · Q", "fa": "بخش‌های J (اطلاعات و ارتباطات)، K (مالی)، M (حرفه‌ای و علمی)، P (آموزش)، Q (سلامت)", "en": "Sections J (information & communication), K (finance), M (professional & scientific), P (education), Q (health)"},
+      "authority": {
+        "fa": "وزارت ارتباطات (سازمان تنظیم مقررات)؛ معاونت علمی؛ مرکز توسعه تجارت الکترونیکی؛ بانک مرکزی؛ بیمه مرکزی؛ سازمان بورس؛ وزارت بهداشت",
+        "en": "Ministry of ICT (CRA); Vice-Presidency for Science; E-Commerce Development Centre; Central Bank; Central Insurance; SEO; Ministry of Health"
+      },
+      "association": {
+        "fa": "سازمان نظام صنفی رایانه‌ای؛ انجمن فین‌تک ایران",
+        "en": "Computer Guild Organisation; Iran Fintech Association"
+      },
+      "isic": {
+        "section": "J · K · M · P · Q",
+        "fa": "بخش‌های J (اطلاعات و ارتباطات)، K (مالی)، M (حرفه‌ای و علمی)، P (آموزش)، Q (سلامت)",
+        "en": "Sections J (information & communication), K (finance), M (professional & scientific), P (education), Q (health)"
+      },
       "subs": [
-        {"id": "platforms", "fa": "پلتفرم‌ها و استارتاپ‌ها", "en": "Platforms & startups", "isic": "J62–J63", "authority": {"fa": "مرکز توسعه تجارت الکترونیکی (اینماد)", "en": "E-Commerce Development Centre (e-trust mark)"}},
-        {"id": "fintech", "fa": "فین‌تک و پرداخت", "en": "Fintech & payments", "isic": "K64 · K66", "authority": {"fa": "بانک مرکزی / شاپرک", "en": "Central Bank / Shaparak"}},
-        {"id": "knowledge", "fa": "دانش‌بنیان، نانو و بایو", "en": "Knowledge-based, nano & bio", "isic": "M72", "authority": {"fa": "معاونت علمی", "en": "Vice-Presidency for Science"}},
-        {"id": "telecom", "fa": "مخابرات و اینترنت", "en": "Telecom & internet", "isic": "J61", "authority": {"fa": "سازمان تنظیم مقررات", "en": "Communications Regulatory Authority"}},
-        {"id": "finance", "fa": "بانک، بیمه و بازار سرمایه", "en": "Banking, insurance & capital markets", "isic": "K64–K66", "authority": {"fa": "بانک مرکزی؛ بیمه مرکزی؛ سازمان بورس", "en": "Central Bank; Central Insurance; SEO"}},
-        {"id": "health", "fa": "سلامت و درمان", "en": "Health & care", "isic": "Q86", "authority": {"fa": "وزارت بهداشت", "en": "Ministry of Health"}},
-        {"id": "education", "fa": "علم و دانشگاه", "en": "Science & universities", "isic": "P85", "authority": {"fa": "وزارت علوم؛ وزارت بهداشت", "en": "Ministry of Science; Ministry of Health"}}
+        {
+          "id": "platforms",
+          "fa": "پلتفرم‌ها و استارتاپ‌ها",
+          "en": "Platforms & startups",
+          "isic": "J62–J63",
+          "authority": {
+            "fa": "مرکز توسعه تجارت الکترونیکی (اینماد)",
+            "en": "E-Commerce Development Centre (e-trust mark)"
+          }
+        },
+        {
+          "id": "fintech",
+          "fa": "فین‌تک و پرداخت",
+          "en": "Fintech & payments",
+          "isic": "K64 · K66",
+          "authority": {
+            "fa": "بانک مرکزی / شاپرک",
+            "en": "Central Bank / Shaparak"
+          }
+        },
+        {
+          "id": "knowledge",
+          "fa": "دانش‌بنیان، نانو و بایو",
+          "en": "Knowledge-based, nano & bio",
+          "isic": "M72",
+          "authority": {
+            "fa": "معاونت علمی",
+            "en": "Vice-Presidency for Science"
+          }
+        },
+        {
+          "id": "telecom",
+          "fa": "مخابرات و اینترنت",
+          "en": "Telecom & internet",
+          "isic": "J61",
+          "authority": {
+            "fa": "سازمان تنظیم مقررات",
+            "en": "Communications Regulatory Authority"
+          }
+        },
+        {
+          "id": "finance",
+          "fa": "بانک، بیمه و بازار سرمایه",
+          "en": "Banking, insurance & capital markets",
+          "isic": "K64–K66",
+          "authority": {
+            "fa": "بانک مرکزی؛ بیمه مرکزی؛ سازمان بورس",
+            "en": "Central Bank; Central Insurance; SEO"
+          }
+        },
+        {
+          "id": "health",
+          "fa": "سلامت و درمان",
+          "en": "Health & care",
+          "isic": "Q86",
+          "authority": {
+            "fa": "وزارت بهداشت",
+            "en": "Ministry of Health"
+          }
+        },
+        {
+          "id": "education",
+          "fa": "علم و دانشگاه",
+          "en": "Science & universities",
+          "isic": "P85",
+          "authority": {
+            "fa": "وزارت علوم؛ وزارت بهداشت",
+            "en": "Ministry of Science; Ministry of Health"
+          }
+        }
+      ],
+      "leaders": [
+        {
+          "fa": "همراه اول",
+          "en": "Hamrah-e Aval (MCI)",
+          "sub": "telecom"
+        },
+        {
+          "fa": "ایرانسل",
+          "en": "Irancell",
+          "sub": "telecom"
+        },
+        {
+          "fa": "دیجی‌کالا",
+          "en": "Digikala",
+          "sub": "platforms"
+        },
+        {
+          "fa": "اسنپ",
+          "en": "Snapp",
+          "sub": "platforms"
+        },
+        {
+          "fa": "کافه‌بازار",
+          "en": "Cafe Bazaar",
+          "sub": "platforms"
+        }
       ]
     },
     {
       "slug": "tourism",
       "accent": "#ff7ab3",
       "art": "tourism",
-      "name": {"fa": "گردشگری و فرهنگ", "en": "Tourism & culture"},
-      "tag": {"fa": "میراث جهانی، طبیعت، صنایع‌دستی، غذا، هنر", "en": "World heritage, nature, crafts, food, art"},
+      "name": {
+        "fa": "گردشگری و فرهنگ",
+        "en": "Tourism & culture"
+      },
+      "tag": {
+        "fa": "میراث جهانی، طبیعت، صنایع‌دستی، غذا، هنر",
+        "en": "World heritage, nature, crafts, food, art"
+      },
       "intro": {
         "fa": "آنچه یک بازدیدکننده می‌بیند و آنچه می‌برد: آثار ثبت‌شده‌ی یونسکو، چهار فصل طبیعت، صنایع‌دستی، آشپزی و هنر. هتل، اقامتگاه و دفتر مسافرتی از وزارت میراث فرهنگی، گردشگری و صنایع‌دستی پروانه می‌گیرند؛ نشر، سینما و رسانه از وزارت فرهنگ و ارشاد.",
         "en": "What a visitor sees and what they take home: UNESCO-listed sites, four seasons of landscape, crafts, cooking and art. Hotels, lodgings and travel agencies are licensed by the Ministry of Cultural Heritage, Tourism and Handicrafts; publishing, cinema and media by the Ministry of Culture."
       },
-      "authority": {"fa": "وزارت میراث فرهنگی، گردشگری و صنایع‌دستی؛ وزارت فرهنگ و ارشاد اسلامی", "en": "Ministry of Cultural Heritage, Tourism & Handicrafts; Ministry of Culture & Islamic Guidance"},
-      "association": {"fa": "جامعه هتلداران ایران؛ انجمن صنفی دفاتر خدمات مسافرتی", "en": "Iran Hoteliers' Society; Travel Agencies Association"},
-      "isic": {"section": "I · N79 · R", "fa": "بخش‌های I (اقامت و غذا)، N79 (دفاتر مسافرتی)، R (هنر و سرگرمی)", "en": "Sections I (accommodation & food), N79 (travel agencies), R (arts & recreation)"},
+      "authority": {
+        "fa": "وزارت میراث فرهنگی، گردشگری و صنایع‌دستی؛ وزارت فرهنگ و ارشاد اسلامی",
+        "en": "Ministry of Cultural Heritage, Tourism & Handicrafts; Ministry of Culture & Islamic Guidance"
+      },
+      "association": {
+        "fa": "جامعه هتلداران ایران؛ انجمن صنفی دفاتر خدمات مسافرتی",
+        "en": "Iran Hoteliers' Society; Travel Agencies Association"
+      },
+      "isic": {
+        "section": "I · N79 · R",
+        "fa": "بخش‌های I (اقامت و غذا)، N79 (دفاتر مسافرتی)، R (هنر و سرگرمی)",
+        "en": "Sections I (accommodation & food), N79 (travel agencies), R (arts & recreation)"
+      },
       "subs": [
-        {"id": "heritage", "fa": "میراث جهانی یونسکو", "en": "UNESCO world heritage", "isic": "R91", "authority": {"fa": "وزارت میراث فرهنگی", "en": "Ministry of Cultural Heritage"}},
-        {"id": "nature", "fa": "طبیعت و اکوتوریسم", "en": "Nature & ecotourism", "isic": "N79 · R93", "authority": {"fa": "وزارت میراث فرهنگی؛ سازمان حفاظت محیط زیست", "en": "Ministry of Cultural Heritage; Department of Environment"}},
-        {"id": "hotels", "fa": "هتل و اقامتگاه", "en": "Hotels & lodging", "isic": "I55", "authority": {"fa": "وزارت میراث فرهنگی", "en": "Ministry of Cultural Heritage"}},
-        {"id": "crafts", "fa": "صنایع‌دستی", "en": "Handicrafts", "isic": "C32 · R90", "authority": {"fa": "معاونت صنایع‌دستی", "en": "Handicrafts deputy"}},
-        {"id": "food", "fa": "غذا و آشپزی", "en": "Food & cuisine", "isic": "I56", "authority": {"fa": "اتحادیه‌های صنفی؛ وزارت بهداشت", "en": "Trade guilds; Ministry of Health"}},
-        {"id": "arts", "fa": "هنر، سینما و موسیقی", "en": "Art, cinema & music", "isic": "J59 · R90", "authority": {"fa": "وزارت فرهنگ و ارشاد اسلامی", "en": "Ministry of Culture"}}
+        {
+          "id": "heritage",
+          "fa": "میراث جهانی یونسکو",
+          "en": "UNESCO world heritage",
+          "isic": "R91",
+          "authority": {
+            "fa": "وزارت میراث فرهنگی",
+            "en": "Ministry of Cultural Heritage"
+          }
+        },
+        {
+          "id": "nature",
+          "fa": "طبیعت و اکوتوریسم",
+          "en": "Nature & ecotourism",
+          "isic": "N79 · R93",
+          "authority": {
+            "fa": "وزارت میراث فرهنگی؛ سازمان حفاظت محیط زیست",
+            "en": "Ministry of Cultural Heritage; Department of Environment"
+          }
+        },
+        {
+          "id": "hotels",
+          "fa": "هتل و اقامتگاه",
+          "en": "Hotels & lodging",
+          "isic": "I55",
+          "authority": {
+            "fa": "وزارت میراث فرهنگی",
+            "en": "Ministry of Cultural Heritage"
+          }
+        },
+        {
+          "id": "crafts",
+          "fa": "صنایع‌دستی",
+          "en": "Handicrafts",
+          "isic": "C32 · R90",
+          "authority": {
+            "fa": "معاونت صنایع‌دستی",
+            "en": "Handicrafts deputy"
+          }
+        },
+        {
+          "id": "food",
+          "fa": "غذا و آشپزی",
+          "en": "Food & cuisine",
+          "isic": "I56",
+          "authority": {
+            "fa": "اتحادیه‌های صنفی؛ وزارت بهداشت",
+            "en": "Trade guilds; Ministry of Health"
+          }
+        },
+        {
+          "id": "arts",
+          "fa": "هنر، سینما و موسیقی",
+          "en": "Art, cinema & music",
+          "isic": "J59 · R90",
+          "authority": {
+            "fa": "وزارت فرهنگ و ارشاد اسلامی",
+            "en": "Ministry of Culture"
+          }
+        }
+      ],
+      "leaders": [
+        {
+          "fa": "علی‌بابا",
+          "en": "Alibaba Travel",
+          "sub": "hotels"
+        },
+        {
+          "fa": "اسنپ‌تریپ",
+          "en": "Snapptrip",
+          "sub": "hotels"
+        },
+        {
+          "fa": "هتل‌های پارسیان",
+          "en": "Parsian Hotels",
+          "sub": "hotels"
+        },
+        {
+          "fa": "هتل‌های اسپیناس",
+          "en": "Espinas Hotels",
+          "sub": "hotels"
+        },
+        {
+          "fa": "هتل‌های هما",
+          "en": "Homa Hotels",
+          "sub": "hotels"
+        }
       ]
     }
   ]

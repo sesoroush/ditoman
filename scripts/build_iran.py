@@ -103,6 +103,14 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-subs { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .ir-subs li { border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; background: linear-gradient(180deg, rgba(14, 33, 42, 0.9), rgba(10, 24, 32, 0.6)); display: flex; flex-direction: column; gap: 6px; }
 .ir-subs b { font-size: 1.1rem; line-height: 1.35; }
+.ir-leaders { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.ir-leaders li, .ir-leaders a { display: flex; flex-direction: column; gap: 6px; }
+.ir-leaders li { border: 1px solid var(--line-strong); border-top: 3px solid var(--ir); border-radius: 16px; padding: 16px; background: rgba(14, 33, 42, 0.7); }
+.ir-leaders b { font-size: 1.12rem; font-weight: 800; line-height: 1.45; color: #eef6f2; }
+.ir-leaders small { color: var(--muted); font-size: 0.86rem; }
+.ir-leaders a:hover b { color: var(--ir); }
+@media (max-width: 1000px) { .ir-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .ir-leaders { grid-template-columns: 1fr; } }
 .ir-subs .ir-isic { font: 700 0.78rem var(--en); color: var(--ir); letter-spacing: 0.06em; direction: ltr; align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); }
 .ir-subs small { color: var(--muted); line-height: 1.6; }
 .ir-cos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
@@ -138,6 +146,10 @@ UI = {
     "subs": {"fa": "زیرشاخه‌ها", "en": "Sub-branches"},
     "subs_lead": {"fa": "هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.", "en": "Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics."},
     "companies": {"fa": "شرکت‌های این شاخه", "en": "Companies in this branch"},
+    "leaders": {"fa": "نام‌های بزرگ این شاخه", "en": "Big names in this branch"},
+    "leaders_note": {"fa": "فهرست اولیه، بر اساس اندازه و شهرت؛ ترتیب، رتبه نیست. پرونده‌ی هر کدام کم‌کم اضافه می‌شود.",
+                     "en": "A first list, by size and profile; the order is not a ranking. A record for each is added over time."},
+    "leaders_open": {"fa": "پرونده", "en": "Record"},
     "view": {"fa": "دیدن پرونده", "en": "View the record"},
     "empty": {"fa": "اولین پرونده‌ی این شاخه در راه است. شرکت‌ها یکی‌یکی و پس از بررسی منابع اضافه می‌شوند.", "en": "The first record in this branch is on its way. Companies are added one at a time, once their sources are checked."},
     "notice": {"fa": "اطلاعات عمومی است، نه مشاوره‌ی حقوقی؛ ساختار مجوزها تغییر می‌کند، پیش از اقدام مرجع مربوط را ببینید.", "en": "General information, not legal advice; licensing structures change, so check the relevant authority before acting."},
@@ -301,6 +313,16 @@ def branch_page(b, companies):
             for c in mine) + "</div>"
     else:
         cos = f'<p class="ir-empty">{t(UI["empty"])}</p>'
+    subname = {s["id"]: s for s in b["subs"]}
+    leaders = "".join(
+        (f'<li><a href="{e(x["slug"])}.html"><b>{t(x)}</b><small>{t(subname[x["sub"]])}</small><span class="k-go">{t(UI["leaders_open"])}</span></a></li>'
+         if x.get("slug") else f'<li><b>{t(x)}</b><small>{t(subname[x["sub"]])}</small></li>')
+        for x in b.get("leaders", []))
+    leaders_html = (f'''<section class="ir-sec">
+      <h2>{t(UI["leaders"])}</h2>
+      <p class="ir-lead" style="margin:0 0 18px">{t(UI["leaders_note"])}</p>
+      <ul class="ir-leaders">{leaders}</ul>
+    </section>''' if leaders else "")
     crumb = f'<a href="iran.html">{t(UI["section"])}</a> <span aria-hidden="true">›</span> {t(b["name"])}'
     body = f"""  <main class="k-main wrap" style="--ir:{e(b["accent"])}">
     {toggle(crumb)}
@@ -322,6 +344,8 @@ def branch_page(b, companies):
       <p class="ir-lead" style="margin:0 0 18px">{t(UI["subs_lead"])}</p>
       <ul class="ir-subs">{subs}</ul>
     </section>
+
+    {leaders_html}
 
     <section class="ir-sec">
       <h2>{t(UI["companies"])}</h2>
