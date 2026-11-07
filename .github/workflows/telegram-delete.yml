@@ -1,0 +1,31 @@
+name: Delete Telegram messages
+
+# Deletes messages the bot sent to the channel. Run manually with a comma-separated list of message ids.
+
+permissions:
+  contents: read
+
+on:
+  workflow_dispatch:
+    inputs:
+      message_ids:
+        description: "Comma-separated message ids, e.g. 144,145"
+        required: true
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete on Telegram
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID || '@Ditoman_tm' }}
+          IDS: ${{ github.event.inputs.message_ids }}
+        run: |
+          TOKEN="$(printf '%s' "$TOKEN" | grep -oE '[0-9]{6,}:[A-Za-z0-9_-]{30,}' | head -n 1)"
+          [ -n "$TOKEN" ] || { echo "TELEGRAM_BOT_TOKEN missing" >&2; exit 1; }
+          ids="$(printf '%s' "$IDS" | tr -cd '0-9,')"
+          payload="$(jq -n --arg c "$CHAT_ID" --arg i "$ids" '{chat_id:$c, message_ids:($i|split(",")|map(select(length>0)|tonumber))}')"
+          resp="$(curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/deleteMessages" -H 'Content-Type: application/json' -d "$payload")"
+          echo "$resp" | jq '{ok, description}'
+          echo "$resp" | jq -e '.ok' > /dev/null
