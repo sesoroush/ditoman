@@ -217,7 +217,7 @@ def page(title, desc, path, body, extra_css=""):
 </script>
 
 <script src="menu.js?v=20261107"></script>
-<script src="join-bar.js" defer></script>
+<script src="join-bar.js?v=20261107b" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
