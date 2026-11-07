@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Quantum Race | رقابت کوانتومی؛ مسابقه‌ی تازه‌ی قدرت‌ها | Ditoman</title>
+<meta name="description" content="رقابت کوانتومی چیست، چه کشورهایی در آن‌اند، چرا کنار هوش مصنوعی و انرژی هسته‌ای صنعت راهبردی شده و چه اثری بر رمزنگاری، بیت‌کوین و اقتصاد دارد. The quantum race explained: countries, stakes, encryption and what is hype." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/quantum-race.html" />
+<link rel="icon" href="ditoman-logo.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The Quantum Race | رقابت کوانتومی؛ مسابقه‌ی تازه‌ی قدرت‌ها | Ditoman" />
+<meta property="og:description" content="رقابت کوانتومی چیست، چه کشورهایی در آن‌اند، چرا کنار هوش مصنوعی و انرژی هسته‌ای صنعت راهبردی شده و چه اثری بر رمزنگاری، بیت‌کوین و اقتصاد دارد. The quantum race explained: countries, stakes, encryption and what is hype." />
+<meta property="og:url" content="https://ditoman.com/quantum-race.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/quantum-race.html#page",
+   "url": "https://ditoman.com/quantum-race.html",
+   "name": "The Quantum Race | رقابت کوانتومی؛ مسابقه‌ی تازه‌ی قدرت‌ها | Ditoman",
+   "description": "رقابت کوانتومی چیست، چه کشورهایی در آن‌اند، چرا کنار هوش مصنوعی و انرژی هسته‌ای صنعت راهبردی شده و چه اثری بر رمزنگاری، بیت‌کوین و اقتصاد دارد. The quantum race explained: countries, stakes, encryption and what is hype.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The Quantum Race | رقابت کوانتومی؛ مسابقه‌ی تازه‌ی قدرت‌ها",
+     "item": "https://ditoman.com/quantum-race.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="ditoman-logo.png" alt="Ditoman logo" class="brand-logo">
+<div class="logo-text">DITOMAN</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="navigator.html">Navigator</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:Tahoma,Arial,sans-serif}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/quantum-race/post.png" alt="The quantum race: a new contest between powers" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge">Tech &amp; Geopolitics • فناوری و ژئوپلیتیک</div>
+<h1 dir="rtl" style="text-align:right">رقابت کوانتومی؛ مسابقه‌ی تازه‌ی قدرت‌ها</h1>
+<p class="subtitle">What the quantum race is, who is running it, why governments treat quantum like AI and nuclear power, what it means for encryption and Bitcoin, and where the hype ends.</p>
+<div class="stats">
+<div class="stat"><b>۲٫۳ میلیارد $</b><span>خرید Classiq توسط اینتل، گزارش بلومبرگ<br>Intel–Classiq deal, Oct 2026</span></div>
+<div class="stat"><b>۴۰٫۹ میلیارد $</b><span>بودجه‌ی دولتی تأییدشده‌ی جهان، Q3 2026<br>Confirmed public funding</span></div>
+<div class="stat"><b>۲۰۳۳</b><span>هدف DARPA برای کامپیوتر کوانتومی مفید صنعتی<br>DARPA QBI target year</span></div>
+<div class="stat"><b>۲۰۳۵</b><span>مهلت مهاجرت کامل به رمزنگاری پساکوانتومی (بریتانیا، اتحادیه‌ی اروپا)<br>PQC migration deadline</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p>وقتی یک شبکه‌ی خبری تیتر می‌زند «چه کسی رقابت کوانتومی را می‌برد؟»، دیگر با یک موضوع آزمایشگاهی طرف نیستیم. کوانتوم در کنار هوش مصنوعی و نیمه‌هادی، وارد فهرست فناوری‌هایی شده که دولت‌ها آن را مسئله‌ی امنیت ملی می‌دانند. این مقاله توضیح می‌دهد ماجرا چیست، چه کسانی در آن‌اند و چه چیزی واقعی است و چه چیزی هنوز وعده.</p>
+
+<h3><span class="check-number">۰۱.</span> خبر روز: اینتل و Classiq</h3>
+<p>اینتل ۲۶ اکتبر ۲۰۲۶ اعلام کرد استارتاپ اسرائیلی Classiq را می‌خرد. قیمت را رسماً اعلام نکرد؛ بلومبرگ به نقل از افراد مطلع حدود ۲٫۳ میلیارد دلار گزارش داد. Classiq نرم‌افزار «طراحی» برنامه‌های کوانتومی می‌سازد: توسعه‌دهنده می‌گوید برنامه چه کند و نرم‌افزار مدار کوانتومی را طراحی می‌کند، مثل نرم‌افزارهای طراحی تراشه برای پردازنده‌های معمولی. حدود ۲۰۰ میلیون دلار سرمایه جذب کرده بود و مشتریانی مثل BMW و HSBC دارد. انتظار می‌رود معامله در ۲۰۲۷ و پس از تأیید نهادهای ناظر بسته شود.</p>
+<p>چرا مهم است؟ اینتل از ۲۰۱۵ روی کیوبیت‌های سیلیکونی کار می‌کند و آن‌ها را با همان کارخانه‌های تراشه‌های معمولی می‌سازد. با Classiq می‌خواهد شرکت «تمام‌پشته» شود: هم سخت‌افزار، هم نرم‌افزار. مدیرعامل اینتل گفته این خرید گروه کوانتوم را به «یک کسب‌وکار کامل» تبدیل می‌کند؛ مدیر فنی آن هم گفته این شرط بلندمدت است و از روز اول سودآور نیست.</p>
+<p>تصویر دیگر همان پخش تلویزیونی، شرکت اسرائیلی Quantum Art بود که در ژوئیه‌ی ۲۰۲۵ یک زنجیره‌ی صاف و پایدار از ۲۰۰ یون را نشان داد؛ سیستم‌های معمول یون‌به‌دام‌افتاده حدود ۳۰ تا ۵۰ یون دارند. این شرکت می‌گوید سامانه‌ی ۱۰۰۰ کیوبیتی‌اش تا ۲۰۲۷ «برتری تجاری» نشان می‌دهد؛ این ادعای خود شرکت است.</p>
+
+<h3><span class="check-number">۰۲.</span> کوانتوم به زبان ساده</h3>
+<p>کامپیوتر معمولی با بیت کار می‌کند: صفر یا یک. کامپیوتر کوانتومی با «کیوبیت» کار می‌کند که می‌تواند در برهم‌نهی صفر و یک باشد و با کیوبیت‌های دیگر «درهم‌تنیده» شود. نتیجه این نیست که همه‌چیز سریع‌تر شود؛ برای بیشتر کارها (ایمیل، ویدیو، حتی آموزش هوش مصنوعی) کامپیوتر معمولی بهتر است. اما برای چند دسته مسئله‌ی خاص، کوانتوم می‌تواند جهشی باشد:</p>
+<ul>
+<li><strong>شبیه‌سازی مولکول و ماده:</strong> طراحی دارو، باتری، کاتالیزور و کود؛ چون طبیعت خودش کوانتومی است</li>
+<li><strong>شکستن رمزنگاری کلید عمومی:</strong> الگوریتم شور (۱۹۹۴) نشان داد یک کامپیوتر کوانتومی بزرگ و مقاوم در برابر خطا می‌تواند RSA و رمزنگاری منحنی بیضوی را بشکند؛ پایه‌ی بانکداری اینترنتی، پیام‌رسان‌ها و امضای بیت‌کوین</li>
+<li><strong>حسگری کوانتومی:</strong> ساعت‌ها، مغناطیس‌سنج‌ها و گرانش‌سنج‌های بسیار دقیق؛ مثلاً مسیریابی بدون GPS</li>
+<li><strong>ارتباط کوانتومی:</strong> توزیع کلید که شنود را آشکار می‌کند</li>
+</ul>
+<p>مشکل اصلی «خطا» است: کیوبیت‌ها بسیار شکننده‌اند. راه حل، «تصحیح خطای کوانتومی» است: ساختن یک کیوبیت منطقی قابل اعتماد از ده‌ها یا صدها کیوبیت فیزیکی. نقطه‌ی عطف‌ها: گوگل با تراشه‌ی Willow (دسامبر ۲۰۲۴) نشان داد با بزرگ‌تر شدن کد، خطا کمتر می‌شود؛ دانشگاه علم و فناوری چین (USTC) هم با Zuchongzhi 3.2 (مقاله‌ی دسامبر ۲۰۲۵) نتیجه‌ی مشابه گرفت، هرچند با کاهش خطای ضعیف‌تر.</p>
+
+<h3><span class="check-number">۰۳.</span> چرا هم‌ردیف هوش مصنوعی و انرژی هسته‌ای؟</h3>
+<ul>
+<li><strong>دومنظوره بودن:</strong> همان فناوری که دارو طراحی می‌کند، می‌تواند رمز ارتباطات نظامی و بانکی را بشکند یا زیردریایی را ردیابی کند. این ویژگی «دومنظوره»، مثل انرژی هسته‌ای، کوانتوم را به امنیت ملی گره می‌زند</li>
+<li><strong>«اکنون ذخیره کن، بعداً رمزگشایی کن»:</strong> نهادهای امنیتی آمریکا، بریتانیا، اروپا و استرالیا فرض می‌کنند بازیگران دولتی همین حالا ترافیک رمزشده را ذخیره می‌کنند تا روزی که کامپیوتر کوانتومی کافی برسد، بازش کنند. پس داده‌ای که باید ده سال محرمانه بماند، همین امروز در خطر است</li>
+<li><strong>برنده‌ی اول، قاعده‌گذار:</strong> مثل هوش مصنوعی، کسی که زودتر برسد استانداردها، زنجیره‌ی تأمین (لیزر، سرمایش بسیار شدید، تراشه) و استعدادها را در اختیار می‌گیرد</li>
+<li><strong>کنترل صادرات:</strong> آمریکا از ۲۰۲۴ چند مؤسسه و شرکت کوانتومی چینی را در فهرست محدودیت تجاری گذاشته و چین به خودکفایی زنجیره‌ی تأمین روی آورده؛ همان الگوی رقابت تراشه</li>
+</ul>
+<p>تفاوت با هسته‌ای: بمب اتمی در ۱۹۴۵ وجود داشت؛ کامپیوتر کوانتومی که رمز واقعی را بشکند هنوز وجود ندارد. رقابت فعلی بر سر رسیدن به آن، و آماده شدن پیش از آن است.</p>
+
+<h3><span class="check-number">۰۴.</span> چه کشورهایی در این مسابقه‌اند؟</h3>
+<p>طبق The Quantum Insider (به‌روزرسانی سپتامبر ۲۰۲۶)، بودجه‌ی دولتی «تأییدشده» برای کوانتوم در جهان حدود ۴۰٫۹ میلیارد دلار است و با وعده‌های اعلام‌شده به حدود ۲۰۱ میلیارد دلار می‌رسد. بخش بزرگ رقم دوم مربوط به یک صندوق ۱۳۸ میلیارد دلاری چین برای همه‌ی فناوری‌های نوظهور است، نه فقط کوانتوم.</p>
+<ul>
+<li><strong>آمریکا:</strong> طرح ملی کوانتوم (NQI) با ۱٫۲ میلیارد دلار برای ۲۰۱۹ تا ۲۰۲۴ و ۱٫۸ میلیارد دلار پیشنهادی برای تمدید؛ برنامه‌ی DARPA (QBI) که می‌خواهد ببیند تا ۲۰۳۳ کامپیوتر کوانتومی مفید صنعتی ساختنی است یا نه، با جایزه‌ی تا ۳۰۰ میلیون دلار در مرحله‌ی C. شرکت‌های مرحله‌ی C (تا اکتبر ۲۰۲۶): IBM، IonQ، Microsoft، PsiQuantum، Atom Computing و Diraq. بیشترین سرمایه‌ی خصوصی و بزرگ‌ترین شرکت‌ها (IBM، گوگل، مایکروسافت، اینتل) هم در آمریکاست</li>
+<li><strong>چین:</strong> آزمایشگاه ملی علوم اطلاعات کوانتومی؛ رقم رایج «بیش از ۱۵ میلیارد دلار» مورد اختلاف است و برخی فیزیکدانان چینی هزینه‌ی واقعی را حدود یک‌سوم می‌دانند. چین در ارتباطات کوانتومی (ماهواره و شبکه‌های فیبر) و ابرکامپیوترهای Zuchongzhi و Jiuzhang قوی است</li>
+<li><strong>اتحادیه‌ی اروپا:</strong> برنامه‌ی Quantum Flagship با یک میلیارد یورو (۲۰۱۸ تا ۲۰۲۸)؛ «قانون کوانتوم» اروپا برای پایان ۲۰۲۶ (یا ۲۰۲۷) انتظار می‌رود. یکی از کارشناسان در پارلمان اروپا گفته «این آخرین قطاری است که برای اروپا رد می‌شود»</li>
+<li><strong>بریتانیا:</strong> ۲٫۵ میلیارد پوند برای ۲۰۲۴ تا ۲۰۳۴، و ۲ میلیارد پوند دیگر اعلام‌شده در مارس ۲۰۲۶</li>
+<li><strong>آلمان و فرانسه:</strong> حدود ۲ میلیارد یورو و ۱٫۸ میلیارد یورو</li>
+<li><strong>ژاپن:</strong> حدود ۹۰۰ میلیون دلار برنامه‌های مستقیم کوانتوم؛ ۲۰۲۵ را «سال اول صنعتی شدن کوانتوم» نامیده</li>
+<li><strong>کره‌ی جنوبی:</strong> حدود ۳ تریلیون وون (۲٫۳ میلیارد دلار) تا ۲۰۳۵</li>
+<li><strong>هند:</strong> مأموریت ملی کوانتوم، حدود یک میلیارد دلار</li>
+<li><strong>کانادا، هلند، استرالیا، سنگاپور:</strong> برنامه‌های ملی کوچک‌تر ولی متمرکز</li>
+<li><strong>اسرائیل:</strong> بیشتر با سرمایه‌ی خصوصی (بیش از ۶۵۰ میلیون دلار سرمایه‌گذاری خطرپذیر)؛ Classiq و Quantum Art از آنجا آمده‌اند</li>
+</ul>
+<div class="note"><p><strong>احتیاط با اعداد.</strong> بودجه‌های دولتی بین «اعلام‌شده»، «تخصیص‌یافته» و «خرج‌شده» فرق دارند و دوره‌هایشان یکسان نیست؛ این فهرست برای مقایسه‌ی تقریبی است، نه رتبه‌بندی دقیق.</p></div>
+
+<h3><span class="check-number">۰۵.</span> اثرش روی ما: رمزنگاری، بانک و بیت‌کوین</h3>
+<p>مهم‌ترین اثر ملموس امروز، نه کامپیوتر کوانتومی، بلکه مهاجرت به «رمزنگاری پساکوانتومی» است. مؤسسه‌ی ملی استاندارد آمریکا (NIST) در اوت ۲۰۲۴ سه استاندارد نهایی منتشر کرد (FIPS 203، 204 و 205). مرکز امنیت سایبری بریتانیا (NCSC) مهلت ۲۰۲۸ برای برنامه‌ی مهاجرت، ۲۰۳۱ برای سرویس‌های اولویت‌دار و ۲۰۳۵ برای مهاجرت کامل تعیین کرده؛ نقشه‌ی راه اتحادیه‌ی اروپا هم ۲۰۳۰ برای زیرساخت حیاتی و ۲۰۳۵ برای کامل شدن است.</p>
+<p>برای بیت‌کوین: امضاهای بیت‌کوین بر رمزنگاری منحنی بیضوی تکیه دارند که در اصل در برابر الگوریتم شور آسیب‌پذیر است. این خطر امروز وجود ندارد، چون کامپیوتری با این توانایی ساخته نشده، اما بحث درباره‌ی مهاجرت شبکه به امضاهای مقاوم در جامعه‌ی توسعه‌دهندگان جریان دارد. توصیه‌ی عمومی: از استفاده‌ی دوباره از آدرس‌ها پرهیز کنید، چون کلید عمومی آدرسی که از آن خرج شده آشکار است.</p>
+
+<h3><span class="check-number">۰۶.</span> کجا هیاهوست و کجا واقعیت؟</h3>
+<ul>
+<li><strong>واقعی:</strong> پیشرفت در تصحیح خطا، سرمایه‌گذاری بزرگ دولتی و شرکتی، و مهلت‌های رسمی مهاجرت رمزنگاری</li>
+<li><strong>هنوز وعده:</strong> «برتری تجاری» در مسائل واقعی؛ تاریخ رسیدن به کامپیوتری که رمز واقعی را بشکند؛ پیش‌بینی‌های بازار (مثلاً «تا ۲۰ میلیارد دلار در چند سال آینده» که در گزارش‌ها آمده)</li>
+<li><strong>رقابت فناوری‌ها:</strong> هنوز معلوم نیست کدام روش برنده است: ابررسانا (IBM، گوگل)، یون به‌دام‌افتاده (Quantinuum، IonQ، Quantum Art)، اتم خنثی (QuEra، Atom Computing)، فوتونیک (PsiQuantum، Xanadu) یا اسپین سیلیکونی (اینتل، Diraq)</li>
+</ul>
+
+<h3><span class="check-number">۰۷.</span> نگاه دیتومان</h3>
+<p>این برداشت ماست: «رقابت کوانتومی» در واقع سه رقابت هم‌زمان است. اول، رقابت ساخت ماشین که شاید یک دهه طول بکشد. دوم، رقابت زنجیره‌ی تأمین و استعداد که همین حالا با پول دولت‌ها و کنترل صادرات جریان دارد. سوم، رقابت دفاعی برای عوض کردن رمزنگاری پیش از رسیدن آن ماشین، که مهلتش رسمی و نزدیک است. خرید Classiq نشان می‌دهد شرکت‌های بزرگ به سمت «تمام‌پشته» شدن می‌روند، همان مسیری که صنعت تراشه و هوش مصنوعی رفت. برای کاربر عادی، مهم‌ترین نکته ساده است: نرم‌افزارها و کیف پول‌ها را به‌روز نگه دارید؛ گذار به رمزنگاری جدید بی‌صدا و از طریق به‌روزرسانی‌ها انجام می‌شود.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>The Next Web: Intel to buy quantum software firm Classiq for about $2.3bn (۲۷ اکتبر ۲۰۲۶) • thenextweb.com</li>
+<li>The Next Platform: Intel's $2.3 billion bet on a quantum future (۲۸ اکتبر ۲۰۲۶) • nextplatform.com</li>
+<li>The Quantum Insider: How much are governments spending on quantum technology? (سپتامبر ۲۰۲۶) و Leading quantum computing countries (مارس ۲۰۲۶) • thequantuminsider.com</li>
+<li>The Quantum Insider: Quantum Art demonstrates 200-ion linear chain (۳۰ ژوئیه ۲۰۲۵)</li>
+<li>DARPA: Quantum Benchmarking Initiative (فهرست شرکت‌ها تا ۸ اکتبر ۲۰۲۶) • darpa.mil</li>
+<li>The Quantum Insider: Europe looks to Quantum Act (سپتامبر ۲۰۲۶)</li>
+<li>PostQuantum: Zuchongzhi 3.2 below-threshold error correction (دسامبر ۲۰۲۵) • postquantum.com</li>
+<li>Encryption Consulting: PQC migration deadlines by country (جمع‌بندی؛ بهتر است با منابع رسمی NIST و NCSC تطبیق داده شود)</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">قیمت خرید Classiq رسماً اعلام نشده و از گزارش بلومبرگ است. اعداد بودجه تقریبی‌اند و دوره‌هایشان متفاوت است. این متن توصیه‌ی سرمایه‌گذاری نیست. • The Classiq price is Bloomberg-reported, not official; budget figures are approximate.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p>When a TV network asks "who is winning the quantum race?", quantum is no longer a lab topic. It has joined AI and semiconductors on the list of technologies governments treat as national security. This piece explains what the race is, who is in it, and what is real versus promised.</p>
+<h3>The news hook: Intel and Classiq</h3>
+<p>On 26 October 2026 Intel announced it will acquire Israeli startup Classiq, whose software designs quantum circuits from a high-level description, much like chip-design tools. Intel did not disclose the price; Bloomberg reported about $2.3bn. Classiq had raised about $200m; customers include BMW and HSBC. Closing is expected in 2027, subject to approval. Intel, which has built silicon qubits since 2015 using its regular fabs, wants to become a full-stack quantum company; its CTO calls it a long-term bet. Also on screen was Israel's Quantum Art, which in July 2025 showed a straight, stable 200-ion chain (typical trapped-ion systems hold 30 to 50 ions) and says its 1,000-qubit system will show commercial advantage by 2027, a company claim.</p>
+<h3>Quantum in plain words</h3>
+<p>Qubits can be in superposition and entangled. That does not make everything faster, but it could transform specific problems: simulating molecules and materials, breaking public-key encryption (Shor's algorithm threatens RSA and elliptic-curve cryptography), ultra-precise sensing such as GPS-free navigation, and eavesdrop-evident communication. The obstacle is error; the fix is quantum error correction. Google's Willow (Dec 2024) and USTC's Zuchongzhi 3.2 (paper Dec 2025) both showed errors falling as codes grew, Willow more strongly.</p>
+<h3>Why it ranks with AI and nuclear power</h3>
+<ul>
+<li>Dual use: the same tech that designs drugs could break military and banking encryption or detect submarines.</li>
+<li>Harvest now, decrypt later: security agencies assume state actors already store encrypted traffic to decrypt later, so long-lived secrets are exposed today.</li>
+<li>First movers set standards and capture supply chains (lasers, cryogenics, chips) and talent.</li>
+<li>Export controls: since 2024 the US has restricted Chinese quantum institutes and firms; China pushes self-sufficiency.</li>
+</ul>
+<p>Unlike nuclear weapons in 1945, a code-breaking quantum computer does not yet exist; the race is to build it and to prepare before it arrives.</p>
+<h3>Who is racing</h3>
+<p>The Quantum Insider (Sept 2026) counts about $40.9bn of confirmed public funding worldwide, about $201bn including announcements, much of which is a $138bn Chinese fund for all emerging tech. US: NQI ($1.2bn 2019 to 2024, $1.8bn proposed reauthorisation); DARPA's QBI asks whether an industrially useful machine is possible by 2033, with Stage C (up to $300m) performers IBM, IonQ, Microsoft, PsiQuantum, Atom Computing and Diraq. China: the "$15bn+" figure is disputed; strong in quantum communication. EU: €1bn Flagship (2018 to 2028), a Quantum Act expected end-2026 or 2027. UK: £2.5bn (2024 to 2034) plus £2bn announced March 2026. Germany about €2bn, France €1.8bn, Japan about $900m direct, South Korea ₩3tn to 2035, India about $1bn, Israel mostly private ($650m+ VC). Figures mix announced, allocated and spent money and different periods.</p>
+<h3>What it means for encryption and Bitcoin</h3>
+<p>The concrete effect today is migration to post-quantum cryptography. NIST published FIPS 203, 204 and 205 in August 2024. The UK NCSC set 2028 for plans, 2031 for priority services and 2035 for full migration; the EU roadmap targets 2030 for critical infrastructure and 2035 overall. Bitcoin signatures use elliptic-curve cryptography, vulnerable in principle to Shor; no such machine exists yet, and developers are debating migration. Avoid address reuse: spent-from addresses expose public keys.</p>
+<h3>Hype versus reality</h3>
+<p>Real: error-correction progress, big public and corporate money, official migration deadlines. Still promised: commercial advantage on real problems, a date for code-breaking, market forecasts. No hardware approach has won yet.</p>
+<h3>Ditoman's reading (our view)</h3>
+<p>The quantum race is really three races: building the machine (perhaps a decade), controlling supply chains and talent (happening now), and replacing encryption before the machine arrives (deadlines already set). Intel–Classiq shows big firms going full-stack, as chips and AI did. For individuals: keep software and wallets updated; the transition will arrive quietly through updates.</p>
+<p style="color:#9fb6b9">Sources are listed in the Persian tab. The Classiq price is Bloomberg-reported. Not investment advice.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+Ditoman • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
