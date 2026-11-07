@@ -14,7 +14,7 @@ SKIP = {"404.html"}
 ARTICLES = {"cinnagen.html", "iran-zinc.html", "morvarid-eo.html", "hangang.html", "staying-in.html", "pistachio-ai.html", "sina-surgical-robot.html"}
 # Pages whose content comes from data files that robots update.
 DATA_SOURCES = {"posts.html": ["telegram/feed.json"], "prices.html": ["market"], "calendar.html": ["calendar"]}
-PDFS = ["whitepaper-v5.pdf"]
+PDFS = ["whitepaper-v5.pdf", "whitepaper-v5-fa.pdf"]
 
 ORG = {
     "@type": "Organization",
