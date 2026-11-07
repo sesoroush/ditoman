@@ -7,7 +7,7 @@
 (function () {
   var CHANNELS = [
     { name: "تلگرام", url: "https://t.me/Ditoman_tm", color: "#2aa3e0" },
-    { name: "بله", url: "", color: "#13b886" },
+    { name: "بله", url: "https://ble.ir/Ditoman", color: "#13b886" },
     { name: "روبیکا", url: "", color: "#e83f6f" }
   ];
   var KEY = "ditoman-join-bar-closed";
