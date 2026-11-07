@@ -1,0 +1,72 @@
+name: Edit Telegram post
+
+# Edits a post the bot already sent: replaces its photo and/or its text with the
+# current contents of a post file (same format as telegram/*.md). Run manually.
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "Post file with the new content, e.g. telegram/2026-11-07-03-quantum-race.md"
+        required: true
+      photo_message_id:
+        description: "Message id of the photo to replace (leave empty to keep it)"
+        required: false
+      text_message_id:
+        description: "Message id of the text message (or of the photo, if the text is its caption)"
+        required: true
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Edit on Telegram
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID || '@Ditoman_tm' }}
+          FILE: ${{ github.event.inputs.file }}
+          PHOTO_ID: ${{ github.event.inputs.photo_message_id }}
+          TEXT_ID: ${{ github.event.inputs.text_message_id }}
+        run: |
+          TOKEN="$(printf '%s' "$TOKEN" | grep -oE '[0-9]{6,}:[A-Za-z0-9_-]{30,}' | head -n 1)"
+          [ -n "$TOKEN" ] || { echo "TELEGRAM_BOT_TOKEN missing" >&2; exit 1; }
+          [ -f "$FILE" ] || { echo "Missing $FILE" >&2; exit 1; }
+          first="$(head -n 1 "$FILE")"
+          image=""
+          if echo "$first" | grep -q '^image:'; then
+            image="$(echo "$first" | sed 's/^image:[[:space:]]*//')"
+            text="$(tail -n +2 "$FILE" | sed '/./,$!d')"
+          else
+            text="$(cat "$FILE")"
+          fi
+          call() {
+            m="$1"; shift
+            resp="$(curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/$m" "$@")"
+            echo "$resp" | jq '{ok, description}'
+            echo "$resp" | jq -e '.ok' > /dev/null || exit 1
+          }
+          if [ -n "$PHOTO_ID" ] && [ -n "$image" ]; then
+            [ -f "$image" ] || { echo "Missing image $image" >&2; exit 1; }
+            call editMessageMedia --form-string "chat_id=$CHAT_ID" --form-string "message_id=$PHOTO_ID" \
+              --form-string 'media={"type":"photo","media":"attach://photo"}' -F "photo=@$image"
+          fi
+          if [ "$TEXT_ID" = "$PHOTO_ID" ]; then
+            payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" '{chat_id:$c, message_id:($i|tonumber), caption:$t}')"
+            call editMessageCaption -H 'Content-Type: application/json' -d "$payload"
+          else
+            payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" '{chat_id:$c, message_id:($i|tonumber), text:$t, link_preview_options:{is_disabled:true}}')"
+            call editMessageText -H 'Content-Type: application/json' -d "$payload"
+          fi
+      - name: Update website feed
+        run: |
+          python3 scripts/build_feed.py
+          git config user.name "ditoman-bot"
+          git config user.email "ditoman-bot@users.noreply.github.com"
+          git add telegram/feed.json
+          git commit -m "Update posts feed" || echo "no change"
+          git pull --rebase origin main
+          git push origin HEAD:main
