@@ -234,7 +234,7 @@ def page(title, desc, path, body, image=None):
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700;800&family=Lalezar&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="site.css?v=20261107" />
   <style>{CSS}</style>
 </head>
 <body data-lang="fa">
@@ -245,7 +245,7 @@ def page(title, desc, path, body, image=None):
 
   {footer}
 {JS}
-<script src="menu.js"></script>
+<script src="menu.js?v=20261107"></script>
 <script src="join-bar.js" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
