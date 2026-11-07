@@ -706,3 +706,9 @@ html[dir="ltr"] .hero h1.hero-title-fa { font-family: var(--en); font-weight: 80
   .hero-inner .hero-text { max-width: none; }
 }
 @media (prefers-reduced-motion: reduce) { .hm-tile img, .hm-tile svg { transition: none; } }
+/* Calendar items: Persian title, English line in English mode */
+html[data-lang="fa"] .ev-txt .en { display: none; }
+html[data-lang="en"] .ev-txt:has(.en) > b, html[data-lang="en"] .ev-txt:has(.en) > .note { display: none; }
+html[data-lang="en"] .ev-txt .en { text-align: left; color: var(--text); font-size: 0.95rem; margin-top: 0; }
+/* Pages whose English title has a Persian twin: the Persian line becomes the title */
+html[data-lang="fa"] h1.lang-en + .hero-fa { font-size: clamp(2.3rem, 5.4vw, 4rem); color: var(--text); line-height: 1.4; margin-top: 0; max-width: 18ch; }
