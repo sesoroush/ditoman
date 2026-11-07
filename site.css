@@ -11,7 +11,8 @@
   --cyan: #2db7ff;
   --violet: #8b6cff;
   --spectrum: linear-gradient(100deg, #7ff5de 0%, #2db7ff 50%, #8b6cff 100%);
-  --en: "Bricolage Grotesque", system-ui, sans-serif;
+  --en: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  --brand-font: "Bricolage Grotesque", system-ui, sans-serif;
   --fa: "Vazirmatn", Tahoma, sans-serif;
   --fa-display: "Lalezar", "Vazirmatn", Tahoma, sans-serif;
 }
@@ -712,3 +713,18 @@ html[data-lang="en"] .ev-txt:has(.en) > b, html[data-lang="en"] .ev-txt:has(.en)
 html[data-lang="en"] .ev-txt .en { text-align: left; color: var(--text); font-size: 0.95rem; margin-top: 0; }
 /* Pages whose English title has a Persian twin: the Persian line becomes the title */
 html[data-lang="fa"] h1.lang-en + .hero-fa { font-size: clamp(2.3rem, 5.4vw, 4rem); color: var(--text); line-height: 1.4; margin-top: 0; max-width: 18ch; }
+
+/* Bilingual name in the header: DITOMAN · logo · دیتومان (Persian always on the right) */
+.brand { direction: ltr; gap: 10px; }
+.brand-en { font-family: var(--brand-font); font-weight: 800; letter-spacing: 0.06em; }
+.brand-fa { font-family: var(--fa); font-weight: 800; font-size: 1.12em; letter-spacing: 0; line-height: 1; }
+@media (max-width: 600px) {
+  .brand { gap: 6px; font-size: 0.86rem; }
+  .brand img { width: 30px; height: 30px; }
+  .nav-right { gap: 6px; }
+  .nav-right > a, .nav-right > button, .nav-tg, .menu-btn { width: 38px; height: 38px; min-width: 38px; }
+  .lang-btn { height: 38px; min-width: 38px; padding: 0 8px; font-size: 0.8rem; }
+}
+@media (max-width: 370px) { .brand-en { display: none; } }
+html[dir="rtl"] .brand { margin-left: 18px; }
+html[dir="ltr"] .brand { margin-right: 18px; }
