@@ -61,10 +61,10 @@ def render(data, out_png, theme="ft", sample=False):
 
     font = lambda f: b64(FONTS / f)
     css = f'''
-@font-face {{ font-family: Vz; src: url(data:font/woff2;base64,{font("Vazirmatn-Regular.woff2")}); font-weight:400; }}
-@font-face {{ font-family: Vz; src: url(data:font/woff2;base64,{font("Vazirmatn-Medium.woff2")}); font-weight:500; }}
-@font-face {{ font-family: Vz; src: url(data:font/woff2;base64,{font("Vazirmatn-Bold.woff2")}); font-weight:700; }}
-@font-face {{ font-family: Vz; src: url(data:font/woff2;base64,{font("Vazirmatn-ExtraBold.woff2")}); font-weight:800; }}
+@font-face {{ font-family: Vz; src: url(data:font/woff2;base64,{font("IRANYekanXFaNum-Regular.woff2")}); font-weight:400; }}
+@font-face {{ font-family: Vz; src: url(data:font/woff2;base64,{font("IRANYekanXFaNum-Medium.woff2")}); font-weight:500; }}
+@font-face {{ font-family: Vz; src: url(data:font/woff2;base64,{font("IRANYekanXFaNum-Bold.woff2")}); font-weight:700; }}
+@font-face {{ font-family: Vz; src: url(data:font/woff2;base64,{font("IRANYekanXFaNum-ExtraBold.woff2")}); font-weight:800; }}
 @font-face {{ font-family: Br; src: url(data:font/ttf;base64,{font("BricolageGrotesque.ttf")}); font-weight:200 800; }}
 @font-face {{ font-family: Pf; src: url(data:font/ttf;base64,{font("PlayfairDisplay.ttf")}); font-weight:400 900; }}
 @font-face {{ font-family: Pf; src: url(data:font/ttf;base64,{font("PlayfairDisplay-Italic.ttf")}); font-weight:400 900; font-style:italic; }}
