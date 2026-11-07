@@ -102,7 +102,7 @@
     "Complete": "انجام شد", "In progress": "در حال انجام", "Next": "بعدی", "Later": "بعدتر",
     "Foundation": "پایه‌گذاری",
     "Contract verified, ownership renounced, about 20% of supply out of circulation, bilingual lessons published, Whitepaper V5 final.":
-      "قرارداد تأیید شد، مالکیت واگذار شد، حدود ۲۰٪ عرضه از گردش خارج شد، درس‌های دوزبانه منتشر شد و وایت‌پیپر V5 نهایی شد.",
+      "قرارداد تأیید شد، مالکیت واگذار شد، حدود ۲۰٪ عرضه از گردش خارج شد، درس‌های دوزبانه منتشر شد و وایت‌پیپر نسخه‌ی ۵ نهایی شد.",
     "Community structure": "ساختار جامعه",
     "A Telegram community with real rules, seeded lessons and clear onboarding, before any invitation.":
       "جامعه‌ای در تلگرام با قواعد روشن، درس‌های آماده و راهنمای ورود، پیش از هر دعوتی.",
@@ -131,12 +131,12 @@
     // whitepapers and closing
     "One document sets the direction. Read it before you trust anything we say.":
       "یک سند مسیر را مشخص می‌کند. پیش از اینکه به حرف ما اعتماد کنی، آن را بخوان.",
-    "Whitepaper V5: Final direction": "وایت‌پیپر V5: مسیر نهایی",
+    "Whitepaper V5: Final direction": "وایت‌پیپر نسخه‌ی ۵ به انگلیسی: مسیر نهایی",
     "What Ditoman is, the three pillars, full token facts, supply plan, roadmap and an honest risk disclosure. This is the reference for everything on this site.":
       "دیتومان چیست، سه محور، همه‌ی واقعیت‌های توکن، برنامه‌ی عرضه، نقشه‌ی راه و افشای صادقانه‌ی ریسک‌ها. مرجع همه‌ی مطالب این سایت.",
-    "Read V5 (PDF)": "خواندن V5 (PDF)", "Earlier version (V1)": "نسخه‌ی قبلی (V1)",
+    "Read V5 (PDF)": "خواندن نسخه‌ی انگلیسی (PDF)", "Earlier version (V1)": "نسخه‌ی قبلی (نسخه‌ی ۱)",
     "The first whitepaper from 2022, kept as a public record of where the project started. Some figures and plans in it are out of date. V5 replaces it.":
-      "نخستین وایت‌پیپر از ۲۰۲۲، که به‌عنوان سند عمومی نقطه‌ی شروع پروژه نگه داشته شده. بعضی اعداد و برنامه‌هایش قدیمی‌اند و V5 جایگزین آن است.",
+      "نخستین وایت‌پیپر از ۲۰۲۲، که به‌عنوان سند عمومی نقطه‌ی شروع پروژه نگه داشته شده. بعضی اعداد و برنامه‌هایش قدیمی‌اند و نسخه‌ی ۵ جایگزین آن است.",
     "Early foundation": "پایه‌ی اولیه", "Open PDF": "باز کردن PDF",
     "New lessons arrive in our Telegram channel automatically, with a visual summary on Instagram.":
       "درس‌های تازه خودکار به کانال تلگرام و بله می‌رسند و خلاصه‌ی تصویری‌شان در اینستاگرام.",
