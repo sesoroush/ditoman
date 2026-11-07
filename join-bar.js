@@ -8,6 +8,7 @@
   var CHANNELS = [
     { name: "تلگرام", url: "https://t.me/Ditoman_tm", color: "#2aa3e0" },
     { name: "بله", url: "https://ble.ir/Ditoman", color: "#13b886" },
+    { name: "اینستاگرام", url: "https://www.instagram.com/ditoman.tmn/", color: "linear-gradient(45deg,#f09433,#dc2743,#bc1888)" },
     { name: "روبیکا", url: "", color: "#e83f6f" }
   ];
   var KEY = "ditoman-join-bar-closed";
@@ -27,11 +28,12 @@
     "transform:translateY(140%);transition:transform .3s ease}",
     ".jb.show{transform:none}",
     ".jb p{flex:1;margin:0;font-size:.92rem;line-height:1.5;font-weight:700}",
-    ".jb a{flex:none;padding:9px 14px;border-radius:999px;color:#fff;font-weight:800;font-size:.9rem;text-decoration:none}",
+    ".jb a{flex:none;padding:9px 12px;border-radius:999px;color:#fff;font-weight:800;font-size:.9rem;text-decoration:none}",
     ".jb button{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:none;",
     "color:#eef6f2;font-size:1.1rem;line-height:1;cursor:pointer}",
     ".jb a:focus-visible,.jb button:focus-visible{outline:2px solid #7ff5de;outline-offset:2px}",
     "@media (max-width:900px){.jb{display:flex}body.jb-on{padding-bottom:84px}}",
+    "@media (max-width:400px){.jb{gap:6px;padding:8px 8px 8px 10px}.jb p{font-size:.82rem}.jb a{padding:8px 9px;font-size:.8rem}.jb button{width:30px;height:30px}}",
     "@media (prefers-reduced-motion:reduce){.jb{transition:none}}"
   ].join("");
   var style = document.createElement("style");
