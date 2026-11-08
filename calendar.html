@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700;800&family=Lalezar&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site.css?v=20261107b" />
+  <link rel="stylesheet" href="site.css?v=20261108" />
   <style>
     .cal-list { display: grid; gap: 26px; max-width: 980px; }
     .day { border: 1px solid var(--line); border-radius: 26px; background: var(--surface); overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 400px); align-items: start; }
@@ -245,7 +245,13 @@
     function num(s) { return esc(s).replace(/~?[\d.]+(?:–[\d.]+)?%?/g, function (m) { return '<bdi dir="ltr">' + m + '</bdi>'; }); }
     function ev(e) {
       return '<div class="ev' + (e.key ? " key" : "") + '"><span class="tm">Tehran ' + esc(e.tehran) + '<small>Lisbon ' + esc(e.lisbon) + '</small></span>' +
-        '<div class="ev-txt"><b>' + (e.day_fa ? esc(e.day_fa) + " · " : "") + esc(e.fa) + '</b><span class="note">' + num(e.note_fa) + '</span><span class="en">' + esc(e.en) + (e.expected ? " — " + esc(e.expected) : "") + "</span></div></div>";
+        '<div class="ev-txt"><b lang="fa">' + (e.day_fa ? esc(e.day_fa) + " · " : "") + esc(e.fa) + '</b><span class="note" lang="fa">' + num(e.note_fa) + '</span>' +
+        '<b lang="en" dir="ltr" style="text-align:left">' + esc(e.en) + '</b>' + (e.expected ? '<span class="note" lang="en" dir="ltr" style="text-align:left">Expected: ' + esc(e.expected) + '</span>' : "") + "</div></div>";
+    }
+    function headEn(d) {
+      if (/هفته/.test(d.headline_fa || "")) return "The week ahead";
+      var k = (d.today || []).filter(function (e) { return e.key; })[0] || (d.today || [])[0];
+      return k ? "Today: " + k.en : "Today";
     }
     fetch("calendar/index.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (days) {
       var el = document.getElementById("cal");
@@ -255,17 +261,17 @@
         var p = d.date.split("-").map(Number), j = d.jalali.split("/").map(Number);
         return '<article class="day" id="d' + d.date + '">' +
           '<a class="shot" href="' + d.post + '" target="_blank" rel="noopener"><img loading="lazy" src="' + d.post + '" alt="Market calendar for ' + d.date + '" /></a>' +
-          '<div class="day-body"><div class="day-meta"><span>' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl">' + esc(d.weekday_fa) + " " + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
-          '<h2 dir="rtl">' + esc(d.headline_fa) + "</h2>" +
+          '<div class="day-body"><div class="day-meta"><span lang="en">' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl" lang="fa">' + esc(d.weekday_fa) + " " + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
+          '<h2 dir="rtl" lang="fa">' + esc(d.headline_fa) + "</h2>" + '<h2 dir="ltr" lang="en" style="text-align:left">' + esc(headEn(d)) + "</h2>" +
           '<div class="grp"><span>Today</span><span lang="fa">امروز</span></div>' + (d.today || []).map(ev).join("") +
           ((d.week && d.week.length) ? '<div class="grp"><span>This week</span><span lang="fa">بقیهٔ هفته</span></div>' + d.week.map(ev).join("") : "") +
-          '<div class="dl"><a href="' + d.post + '" download>Post image</a>' + (d.story ? '<a href="' + d.story + '" download>Story image</a>' : "") + "</div>" +
+          '<div class="dl"><a href="' + d.post + '" download><span lang="fa">تصویر پست</span><span lang="en">Post image</span></a>' + (d.story ? '<a href="' + d.story + '" download><span lang="fa">تصویر استوری</span><span lang="en">Story image</span></a>' : "") + "</div>" +
           "</div></article>";
       }).join("");
     }).catch(function () { document.getElementById("cal").innerHTML = '<p class="empty">The calendar could not be loaded.</p>'; });
   })();
   </script>
-  <script src="lang.js?v=20261107b"></script>
+  <script src="lang.js?v=20261108"></script>
 <script src="menu.js?v=20261107" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>

@@ -391,6 +391,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -401,20 +402,21 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html">Learn</a>
 <a href="iran.html">Iran</a>
-<a href="navigator.html">Navigator</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
 </nav>
 </div>
 </header>
 
 <style>
 .fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
 .en{display:none}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
 .stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
@@ -436,14 +438,16 @@ padding: 24px;
 <div class="hero-image">
 <img src="social/bank-cyber-attacks/post.png" alt="Cyberattacks on banks in France, Taiwan, South Korea and Japan" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">Security • امنیت مالی</div>
-<h1 dir="rtl" style="text-align:right">حمله‌های سایبری به بانک‌ها؛ این بار از درِ پشتیِ شرکت‌های همکار</h1>
-<p class="subtitle">Four incidents in France, Taiwan, South Korea and Japan between 30 September and 5 November 2026: what is confirmed, what is not, and why third parties matter.</p>
+<div class="lesson-badge"><span lang="en">Financial Security</span><span lang="fa">امنیت مالی</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">حمله‌های سایبری به بانک‌ها؛ این بار از درِ پشتیِ شرکت‌های همکار</h1>
+<h1 lang="en">Cyber attacks on banks: this time through the back door of their partners</h1>
+<p class="subtitle" lang="en">Four incidents in France, Taiwan, South Korea and Japan between 30 September and 5 November 2026: what is confirmed, what is not, and why third parties matter.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">چهار رخداد در فرانسه، تایوان، کره جنوبی و ژاپن، از ۳۰ سپتامبر تا ۵ نوامبر ۲۰۲۶: چه چیزی تأیید شده، چه چیزی نه، و چرا شرکت‌های همکار (طرف سوم) این‌قدر مهم‌اند.</p>
 <div class="stats">
-<div class="stat"><b>≈ ۱۰۰ میلیون €</b><span>فرانسه، طبق گزارش بانک<br>France, per the bank</span></div>
-<div class="stat"><b>۴۱۹ حساب</b><span>تایوان، ۴۲۷ انتقال<br>Taiwan, 427 transfers</span></div>
-<div class="stat"><b>۴۰ رخداد</b><span>کره جنوبی، ۳۷ شرکت مالی<br>Korea, 37 firms</span></div>
-<div class="stat"><b>۳۲۰ هزار</b><span>ژاپن، حداکثر نفر<br>Japan, up to people</span></div>
+<div class="stat"><b lang="fa">≈ ۱۰۰ میلیون €</b><b lang="en">≈ €100M</b><span lang="fa">فرانسه، طبق گزارش بانک</span><span lang="en">France, per the bank</span></div>
+<div class="stat"><b lang="fa">۴۱۹ حساب</b><b lang="en">419 accounts</b><span lang="fa">تایوان، ۴۲۷ انتقال</span><span lang="en">Taiwan, 427 transfers</span></div>
+<div class="stat"><b lang="fa">۴۰ رخداد</b><b lang="en">40 incidents</b><span lang="fa">کره جنوبی، ۳۷ شرکت مالی</span><span lang="en">South Korea, 37 financial firms</span></div>
+<div class="stat"><b lang="fa">۳۲۰ هزار</b><b lang="en">320,000</b><span lang="fa">ژاپن، حداکثر نفر</span><span lang="en">Japan, people affected at most</span></div>
 </div>
 </div>
 </section>
@@ -513,7 +517,7 @@ padding: 24px;
 <li>SBS و Korea Herald: آمار ۴۰ رخداد در ۳۷ شرکت (۵ نوامبر ۲۰۲۶) • news.sbs.co.kr • koreaherald.com</li>
 <li>SmartScope: SMBC Consumer Finance (اطلاعیه‌ی ۵ نوامبر ۲۰۲۶) • smartscope.blog</li>
 </ul>
-<p style="color:#9fb6b9;margin-top:10px">کاور بر پایه‌ی تصویر ساخته‌شده با هوش مصنوعی است. اعداد از گزارش‌های ۱ تا ۵ نوامبر است و ممکن است به‌روز شود. این متن توصیه‌ی مالی نیست. • Figures come from press reports of 1 to 5 November and may change.</p>
+<p style="color:#9fb6b9;margin-top:10px">کاور بر پایه‌ی تصویر ساخته‌شده با هوش مصنوعی است. اعداد از گزارش‌های ۱ تا ۵ نوامبر است و ممکن است به‌روز شود. این متن توصیه‌ی مالی نیست.</p>
 </div>
 
 <div class="lesson-content en" id="en-content" style="display:none">
@@ -530,7 +534,15 @@ padding: 24px;
 <p>Not in general. DDoS knocks a service offline with a flood of requests; France and Taiwan involved money movement, Japan and part of Korea involved data leaks.</p>
 <h3>Ditoman's reading (our view)</h3>
 <p>Behind a simple banking app sits a network of banks, software vendors, payment providers and suppliers, so your account is only as safe as the weakest partner. Get account news only through your bank's official channels, report odd transactions fast, never share passwords, card details or SMS codes on a call or message, and remember that after a data leak the main risk is scams using your real details.</p>
-<p style="color:#9fb6b9">Sources are listed in the Persian tab. The cover is built on an AI-generated image. Figures come from press reports of 1 to 5 November. Not financial advice.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li>Crédit Mutuel Arkéa announcement and Reuters report on the €100 million (4 and 5 November 2026)</li>
+<li>Halborn: Explained, The Crédit Mutuel Arkéa Cyberattack • halborn.com</li>
+<li>Focus Taiwan: SinoPac and the unauthorised transfers (4 November 2026) • focustaiwan.tw</li>
+<li>SBS and Korea Herald: 40 incidents at 37 firms (5 November 2026) • news.sbs.co.kr • koreaherald.com</li>
+<li>SmartScope: SMBC Consumer Finance (notice of 5 November 2026) • smartscope.blog</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">The cover is built on an AI-generated image. Figures come from press reports of 1 to 5 November. Not financial advice.</p>
 </div>
 </div>
 </section>
@@ -538,7 +550,7 @@ padding: 24px;
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
 <div class="cta-row">
 <a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
 <a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -552,7 +564,7 @@ padding: 24px;
 
 <footer>
 <div class="container">
-Ditoman • Built on structure, driven by discovery.
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
 </div>
 </footer>
 
@@ -568,5 +580,6 @@ else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classLi
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

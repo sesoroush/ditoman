@@ -397,6 +397,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -407,20 +408,21 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html">Learn</a>
 <a href="iran.html">Iran</a>
 <a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
 </nav>
 </div>
 </header>
 
 <style>
 .fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
 .en{display:none}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
 .stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
@@ -442,16 +444,18 @@ padding: 24px;
 <div class="hero-image">
 <img src="social/cinnagen/1-cover.png" alt="An Iranian medicine, authorised across Europe" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">Built Under Pressure • چراغ روشن</div>
-<h1>An Iranian Medicine, Authorised Across Europe</h1>
-<p class="subtitle">
+<div class="lesson-badge"><span lang="en">Built Under Pressure</span><span lang="fa">چراغ روشن</span></div>
+<h1 lang="en">An Iranian Medicine, Authorised Across Europe</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">دارویی ایرانی با مجوز در سراسر اروپا</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">زاندوریا، داروی بیوسیمیلار سیناژن برای پوکی استخوان، در آوریل ۲۰۲۶ مجوز بازار اتحادیه اروپا را گرفت. با هم می‌بینیم شرکت سازنده کیست، خود دارو چیست، این مجوز چه چیزهایی را پوشش می‌دهد و عددها چه می‌گویند و چه نمی‌گویند.</p>
+<p class="subtitle" lang="en">
 CinnaGen's Zandoriah, a biosimilar for osteoporosis, received EU marketing authorisation in April 2026. The company behind it, the drug itself, what the approval covers, and what the numbers do and do not show.
 </p>
 <div class="stats">
-<div class="stat"><b>30</b><span>countries covered by one EU licence</span></div>
-<div class="stat"><b>1994</b><span>CinnaGen founded</span></div>
-<div class="stat"><b>40+</b><span>countries where CinnaGen operates</span></div>
-<div class="stat"><b>65%</b><span>fewer spine fractures with teriparatide in its main trial</span></div>
+<div class="stat"><b lang="fa">۳۰</b><b lang="en">30</b><span lang="fa">کشور تحت پوشش یک مجوز اروپایی</span><span lang="en">countries covered by one EU licence</span></div>
+<div class="stat"><b lang="fa">۱۹۹۴</b><b lang="en">1994</b><span lang="fa">سال تأسیس سیناژن (۱۳۷۳)</span><span lang="en">CinnaGen founded</span></div>
+<div class="stat"><b lang="fa">+۴۰</b><b lang="en">40+</b><span lang="fa">کشوری که سیناژن در آن فعالیت دارد</span><span lang="en">countries where CinnaGen operates</span></div>
+<div class="stat"><b lang="fa">۶۵٪</b><b lang="en">65%</b><span lang="fa">شکستگی کمتر ستون فقرات با تری‌پاراتاید در کارآزمایی اصلی</span><span lang="en">fewer spine fractures with teriparatide in its main trial</span></div>
 </div>
 </div>
 </section>
@@ -590,7 +594,7 @@ CinnaGen's Zandoriah, a biosimilar for osteoporosis, received EU marketing autho
 <section class="section">
 <div class="container">
 <div class="lesson-content" style="display:block">
-<h3>Sources • منابع</h3>
+<h3><span lang="en">Sources</span><span lang="fa">منابع</span></h3>
 <ul class="sources">
 <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/zandoriah" target="_blank" rel="noopener">European Medicines Agency: Zandoriah EPAR</a></li>
 <li><a href="https://gabionline.net/biosimilars/news/ema-recommends-approval-for-teriparatide-biosimilar-zandoriah" target="_blank" rel="noopener">GaBI Online: EMA recommends approval for Zandoriah</a></li>
@@ -608,11 +612,11 @@ CinnaGen's Zandoriah, a biosimilar for osteoporosis, received EU marketing autho
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">Built Under Pressure</h2>
-<p>A Ditoman series documenting what Iranian people and businesses have built, with sources, and without taking political sides.</p>
-<p class="fa" style="display:block">مجموعه‌ای از دیتومان برای ثبت دستاوردهای واقعی مردم و کسب‌وکارهای ایرانی، با منبع و بدون موضع سیاسی.</p>
+<h2 class="section-title"><span lang="en">Built Under Pressure</span><span lang="fa">چراغ روشن</span></h2>
+<p lang="en">A Ditoman series documenting what Iranian people and businesses have built, with sources, and without taking political sides.</p>
+<p class="fa" lang="fa" dir="rtl" style="display:block;text-align:right">مجموعه‌ای از دیتومان برای ثبت دستاوردهای واقعی مردم و کسب‌وکارهای ایرانی، با منبع و بدون موضع سیاسی.</p>
 <div class="cta-row">
-<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">View on Instagram</a>
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">View on Instagram</span><span lang="fa">دیدن در اینستاگرام</span></a>
 <a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
 <a class="button" href="index.html">Home</a>
 </div>
@@ -623,7 +627,7 @@ CinnaGen's Zandoriah, a biosimilar for osteoporosis, received EU marketing autho
 
 <footer>
 <div class="container">
-Ditoman • Built on structure, driven by discovery.
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
 </div>
 </footer>
 
@@ -639,5 +643,6 @@ else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classLi
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

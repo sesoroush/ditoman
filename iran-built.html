@@ -397,6 +397,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -407,20 +408,21 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html">Learn</a>
 <a href="iran.html">Iran</a>
-<a href="navigator.html">Navigator</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
 </nav>
 </div>
 </header>
 
 <style>
 .fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
 .en{display:none}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
 .stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
@@ -442,14 +444,16 @@ padding: 24px;
 <div class="hero-image">
 <img src="social/iran-built/post.png" alt="The Iran that was built: from homes to factories" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">What Iran Has • ایران چه دارد</div>
-<h1 dir="rtl" style="text-align:right">ایرانی که ساخته شد؛ از خانه تا کارخانه</h1>
-<p class="subtitle">How much living, working and production space has Iran built in fifty years? Homes, factories, cement and steel, with a source for every number.</p>
+<div class="lesson-badge"><span lang="en">What Iran Has</span><span lang="fa">ایران چه دارد</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">ایرانی که ساخته شد؛ از خانه تا کارخانه</h1>
+<h1 lang="en">The Iran that was built: from homes to factories</h1>
+<p class="subtitle" lang="en">How much living, working and production space has Iran built in fifty years? Homes, factories, cement and steel, with a source for every number.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">ایران در پنجاه سال چقدر فضا برای زندگی، کار و تولید ساخته است؟ خانه، کارخانه، سیمان و فولاد؛ با منبع برای هر عدد.</p>
 <div class="stats">
-<div class="stat"><b>۲۲٫۸ میلیون</b><span>واحد مسکونی، سرشماری ۱۳۹۵<br>Homes, 2016 census</span></div>
-<div class="stat"><b>≈ ۶ برابر</b><span>خانه‌ها در ۵۰ سال<br>Housing stock, 1966–2016</span></div>
-<div class="stat"><b>۵۲ هزار</b><span>واحد صنعتی در شهرک‌ها<br>Units in industrial parks</span></div>
-<div class="stat"><b>۶۸ میلیون تن</b><span>سیمان ۲۰۲۵، ششم جهان<br>Cement 2025, 6th</span></div>
+<div class="stat"><b lang="fa">۲۲٫۸ میلیون</b><b lang="en">22.8M</b><span lang="fa">واحد مسکونی، سرشماری ۱۳۹۵</span><span lang="en">Homes, 2016 census</span></div>
+<div class="stat"><b lang="fa">≈ ۶ برابر</b><b lang="en">≈ 6×</b><span lang="fa">خانه‌ها در ۵۰ سال</span><span lang="en">Housing stock, 1966–2016</span></div>
+<div class="stat"><b lang="fa">۵۲ هزار</b><b lang="en">52,000</b><span lang="fa">واحد صنعتی در شهرک‌ها</span><span lang="en">Units in industrial parks</span></div>
+<div class="stat"><b lang="fa">۶۸ میلیون تن</b><b lang="en">68M t</b><span lang="fa">سیمان ۲۰۲۵، ششم جهان</span><span lang="en">Cement 2025, 6th in the world</span></div>
 </div>
 </div>
 </section>
@@ -522,7 +526,7 @@ padding: 24px;
 <li>Pakistan Bureau of Statistics, Census 2023, Table 26 • pbs.gov.pk</li>
 <li>گزارش‌های خبری درباره‌ی واحدهای صنفی، انبارها، مدارس و بیمارستان‌ها (تأیید از منبع اصلی در جریان است)</li>
 </ul>
-<p style="color:#9fb6b9;margin-top:10px">تصویر کاور: تصویرسازی با هوش مصنوعی. آخرین بازبینی: ۱۷ آبان ۱۴۰۵ • Cover image: AI-generated illustration. Last reviewed 8 November 2026.</p>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور: تصویرسازی با هوش مصنوعی. آخرین بازبینی: ۱۷ آبان ۱۴۰۵</p>
 </div>
 
 <div class="lesson-content en" id="en-content" style="display:none">
@@ -549,7 +553,18 @@ padding: 24px;
 <p>Countries count differently. Pakistan's 2023 census counted about 38.3 million structures, about 30.4 million of them ordinary (non-high-rise) residential. Iran counts housing units: a 100-flat tower is 100 units in Iran's data but one structure in Pakistan's. A fair ranking needs a common table of residential, commercial, office, industrial and public buildings, floor area and quality. Until then we show scale, not rank.</p>
 <h3>7. Ditoman's reading</h3>
 <p>Iran holds a vast built capital made by several generations. The next chapter is not only building more but <strong>keeping, renewing, strengthening and using it better</strong>: safer, more efficient homes, factories switched back on, empty homes back on the market and cities that work better. We will follow this together and add numbers as they come.</p>
-<p style="color:#9fb6b9">Sources are listed in the Persian tab. Cover: AI-generated illustration. Last reviewed 8 November 2026.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li>Statistical Centre of Iran, Statistical Yearbook 1399 (2020/21), chapter 10 (housing and construction): census housing units, structure type, building permits • amar.org.ir</li>
+<li>Statistical Centre of Iran, selected results of the 2016 (1395) census (households)</li>
+<li>Statements by Habibollah Taherkhani, deputy minister of roads and urban development, 21 August 2026 (as quoted in the media)</li>
+<li>Iran Small Industries and Industrial Parks Organization, via Mehr News Agency, 21 September 2025 • mehrnews.com</li>
+<li>USGS Mineral Commodity Summaries 2026: Cement • pubs.usgs.gov</li>
+<li>worldsteel: Global crude steel production 2025 (January 2026) • worldsteel.org</li>
+<li>Pakistan Bureau of Statistics, Census 2023, Table 26 • pbs.gov.pk</li>
+<li>News reports on retail units, warehouses, schools and hospitals (confirmation from the primary source is in progress)</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">Cover: AI-generated illustration. Last reviewed 8 November 2026.</p>
 </div>
 </div>
 </section>
@@ -557,7 +572,7 @@ padding: 24px;
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
 <div class="cta-row">
 <a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
 <a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -571,7 +586,7 @@ padding: 24px;
 
 <footer>
 <div class="container">
-Ditoman • Built on structure, driven by discovery.
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
 </div>
 </footer>
 
@@ -587,5 +602,6 @@ else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classLi
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

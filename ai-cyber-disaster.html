@@ -391,6 +391,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -401,20 +402,21 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html">Learn</a>
 <a href="iran.html">Iran</a>
 <a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
 </nav>
 </div>
 </header>
 
 <style>
 .fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
 .en{display:none}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
 .stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
@@ -436,14 +438,16 @@ padding: 24px;
 <div class="hero-image">
 <img src="social/ai-cyber-disaster/post.png" alt="The Economist warns of an AI-driven cyber disaster" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">AI &amp; Security • هوش مصنوعی و امنیت</div>
-<h1 dir="rtl" style="text-align:right">اکونومیست هشدار می‌دهد: هوش مصنوعی سیل حمله‌ی سایبری راه انداخته</h1>
-<p class="subtitle">The Economist's 5 November leader says AI has turbocharged hacks and bugs and that governments must make sure defenders have better models than attackers. What the evidence shows, and what it does not.</p>
+<div class="lesson-badge"><span lang="en">AI &amp; Security</span><span lang="fa">هوش مصنوعی و امنیت</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">اکونومیست هشدار می‌دهد: هوش مصنوعی سیل حمله‌ی سایبری راه انداخته</h1>
+<h1 lang="en">The Economist warns: AI has unleashed a flood of cyber attacks</h1>
+<p class="subtitle" lang="en">The Economist's 5 November leader says AI has turbocharged hacks and bugs and that governments must make sure defenders have better models than attackers. What the evidence shows, and what it does not.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">سرمقاله‌ی ۵ نوامبر اکونومیست می‌گوید هوش مصنوعی هک‌ها و باگ‌ها را چند برابر کرده و دولت‌ها باید مطمئن شوند مدافعان مدل‌های بهتری از مهاجمان دارند. با هم می‌بینیم شواهد چه می‌گویند و چه نمی‌گویند.</p>
 <div class="stats">
-<div class="stat"><b>۵ نوامبر</b><span>انتشار سرمقاله‌ی اکونومیست<br>The Economist leader</span></div>
-<div class="stat"><b>+۱۰۰</b><span>سازمان امضاکننده‌ی نامه‌ی هشدار، ۲۷ اوت<br>Signatories of the Aug 27 letter</span></div>
-<div class="stat"><b>۹٫۲</b><span>نمره‌ی CVSS دو نقص PHP2Shell<br>CVSS score of the PHP2Shell flaws</span></div>
-<div class="stat"><b>+۲۲۵۰</b><span>حساب مایکروسافت ۳۶۵ هدف تلاش ورود<br>Microsoft 365 tenants targeted</span></div>
+<div class="stat"><b lang="fa">۵ نوامبر</b><b lang="en">5 Nov</b><span lang="fa">انتشار سرمقاله‌ی اکونومیست</span><span lang="en">The Economist leader</span></div>
+<div class="stat"><b lang="fa">+۱۰۰</b><b lang="en">100+</b><span lang="fa">سازمان امضاکننده‌ی نامه‌ی هشدار، ۲۷ اوت</span><span lang="en">Signatories of the Aug 27 letter</span></div>
+<div class="stat"><b lang="fa">۹٫۲</b><b lang="en">9.2</b><span lang="fa">نمره‌ی CVSS دو نقص PHP2Shell</span><span lang="en">CVSS score of the PHP2Shell flaws</span></div>
+<div class="stat"><b lang="fa">+۲۲۵۰</b><b lang="en">2,250+</b><span lang="fa">حساب مایکروسافت ۳۶۵ هدف تلاش ورود</span><span lang="en">Microsoft 365 tenants targeted</span></div>
 </div>
 </div>
 </section>
@@ -497,7 +501,7 @@ padding: 24px;
 <li>eSecurity Planet: OpenAI and 100+ firms warn AI cyberattacks could surge within months (۳۱ اوت ۲۰۲۶) • esecurityplanet.com</li>
 <li>The Hacker News: CISA confirms active exploitation of PHP2Shell (۲۷ اکتبر ۲۰۲۶) • thehackernews.com</li>
 </ul>
-<p style="color:#9fb6b9;margin-top:10px">بیشتر جزئیات رخدادها از گزارش‌های ثانویه است؛ اسناد اصلی شرکت‌ها و نهادها را مستقیم باز نکرده‌ایم. تصویر: Ben Jones / The Economist. • Incident details come from secondary reports; illustration: Ben Jones / The Economist.</p>
+<p style="color:#9fb6b9;margin-top:10px">بیشتر جزئیات رخدادها از گزارش‌های ثانویه است؛ اسناد اصلی شرکت‌ها و نهادها را مستقیم باز نکرده‌ایم. تصویر: Ben Jones / The Economist.</p>
 </div>
 
 <div class="lesson-content en" id="en-content" style="display:none">
@@ -518,7 +522,15 @@ padding: 24px;
 <h3>Ditoman's reading (our view)</h3>
 <p>The core risk is speed, not novelty: AI shortens the time between finding a flaw and exploiting it while defence still patches at human speed. For ordinary users the boring basics matter more than ever.</p>
 <p>Transparency: some incidents involve Anthropic models, the model family behind this write-up. All claims come from independent reports; check them yourself.</p>
-<p style="color:#9fb6b9">Incident details are from secondary reports. Illustration: Ben Jones / The Economist.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li>The Economist: The world must act to stop a cyber-disaster (leader, 5 November 2026; headline and standfirst only, full text paywalled) • economist.com</li>
+<li>Fortune: Cyber expert says companies should face criminal charges amid “Black October” AI hacks (29 October 2026) • fortune.com</li>
+<li>Decrypt: After their AI models hacked real companies, AI labs call for stronger cyber defenses (30 August 2026) • decrypt.co</li>
+<li>eSecurity Planet: OpenAI and 100+ firms warn AI cyberattacks could surge within months (31 August 2026) • esecurityplanet.com</li>
+<li>The Hacker News: CISA confirms active exploitation of PHP2Shell (27 October 2026) • thehackernews.com</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">Incident details are from secondary reports. Illustration: Ben Jones / The Economist.</p>
 </div>
 </div>
 </section>
@@ -526,7 +538,7 @@ padding: 24px;
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
 <div class="cta-row">
 <a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
 <a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -540,7 +552,7 @@ padding: 24px;
 
 <footer>
 <div class="container">
-Ditoman • Built on structure, driven by discovery.
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
 </div>
 </footer>
 
@@ -556,5 +568,6 @@ else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classLi
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

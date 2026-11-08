@@ -1,5 +1,6 @@
 """Build telegram/feed.json from published Telegram posts (telegram/*.md, not drafts).
 
+English versions of Persian-only posts live in telegram/en/<same file name> (website only).
 Site-only entries (shown on posts.html, never sent to Telegram) live in telegram/site/.
 Each post file is named YYYY-MM-DD-NN-slug.md. Optional first line "image: file.png".
 The site's posts.html renders this feed so every channel post is also on the website.
@@ -23,7 +24,11 @@ def main():
         if lines and lines[0].startswith("video-first:"):
             lines = lines[1:]
         text = "\n".join(lines).strip()
-        items.append({"id": f.stem, "date": m.group(1), "order": int(m.group(2) or 0), "image": image, "text": text})
+        item = {"id": f.stem, "date": m.group(1), "order": int(m.group(2) or 0), "image": image, "text": text}
+        en = TG / "en" / f.name  # English version for the website (Persian-only channel posts)
+        if en.exists():
+            item["text_en"] = en.read_text(encoding="utf-8").strip()
+        items.append(item)
     items.sort(key=lambda x: (x["date"], x["order"]), reverse=True)
     (TG / "feed.json").write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(items)} posts")

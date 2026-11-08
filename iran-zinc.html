@@ -397,6 +397,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -407,20 +408,21 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html">Learn</a>
 <a href="iran.html">Iran</a>
 <a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
 </nav>
 </div>
 </header>
 
 <style>
 .fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
 .en{display:none}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
 .stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
@@ -442,16 +444,18 @@ padding: 24px;
 <div class="hero-image">
 <img src="social/iran-zinc/post.png" alt="Iran and the zinc treasure" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">چراغ روشن • Built Under Pressure</div>
-<h1>Iran and the Zinc Treasure</h1>
-<p class="subtitle">
+<div class="lesson-badge"><span lang="en">Built Under Pressure</span><span lang="fa">چراغ روشن</span></div>
+<h1 lang="en">Iran and the Zinc Treasure</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">ایران و گنج روی</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">یک کانسار در کویر یزد تقریباً به‌اندازه‌ی کل ذخایر روی پرو، روی دارد. با هم می‌بینیم ایران چه دارد، دنیا با روی چه می‌کند، همین حالا چه چیزی در حال ساخت است و یک جوان ایرانی روی این پایه چه می‌تواند بسازد.</p>
+<p class="subtitle" lang="en">
 One deposit in the Yazd desert holds about as much zinc as all of Peru's reserves. What Iran has, what the world does with zinc, what is being built right now, and what a young Iranian could build on top of it.
 </p>
 <div class="stats">
-<div class="stat"><b>350+</b><span>lead-zinc deposits and occurrences identified in Iran</span></div>
-<div class="stat"><b>16.5M t</b><span>zinc contained in Mehdiabad ore; Peru's whole reserve is ~18M t</span></div>
-<div class="stat"><b>800K t</b><span>zinc concentrate per year, Mehdiabad's final target</span></div>
-<div class="stat"><b>×128</b><span>projected growth of zinc use in batteries, 2020 to 2030 (IZA)</span></div>
+<div class="stat"><b lang="fa">+۳۵۰</b><b lang="en">350+</b><span lang="fa">کانسار و نشانه‌ی معدنی سرب و روی شناسایی‌شده در ایران</span><span lang="en">lead-zinc deposits and occurrences identified in Iran</span></div>
+<div class="stat"><b lang="fa">۱۶٫۵ میلیون تن</b><b lang="en">16.5M t</b><span lang="fa">روی موجود در کانسنگ مهدی‌آباد؛ کل ذخیره‌ی پرو حدود ۱۸ میلیون تن است</span><span lang="en">zinc contained in Mehdiabad ore; Peru's whole reserve is ~18M t</span></div>
+<div class="stat"><b lang="fa">۸۰۰ هزار تن</b><b lang="en">800K t</b><span lang="fa">کنسانتره‌ی روی در سال، هدف نهایی مهدی‌آباد</span><span lang="en">zinc concentrate per year, Mehdiabad's final target</span></div>
+<div class="stat"><b lang="fa">×۱۲۸</b><b lang="en">×128</b><span lang="fa">رشد پیش‌بینی‌شده‌ی مصرف روی در باتری‌ها، ۲۰۲۰ تا ۲۰۳۰ (IZA)</span><span lang="en">projected growth of zinc use in batteries, 2020 to 2030 (IZA)</span></div>
 </div>
 </div>
 </section>
@@ -610,7 +614,7 @@ One deposit in the Yazd desert holds about as much zinc as all of Peru's reserve
 <section class="section">
 <div class="container">
 <div class="lesson-content" style="display:block">
-<h3>Sources • منابع</h3>
+<h3><span lang="en">Sources</span><span lang="fa">منابع</span></h3>
 <ul class="sources">
 <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0169136819300794" target="_blank" rel="noopener">Maghfouri et al., Ore Geology Reviews (2019): the Mehdiabad world-class Zn-Pb-Ba-(Cu-Ag) deposit</a></li>
 <li><a href="https://www.sciencedirect.com/science/article/pii/S1674987117300543" target="_blank" rel="noopener">Maghfouri et al., Geoscience Frontiers (2018): a review of major non-sulfide zinc deposits in Iran</a></li>
@@ -637,11 +641,11 @@ One deposit in the Yazd desert holds about as much zinc as all of Peru's reserve
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">چراغ روشن • Built Under Pressure</h2>
-<p>A Ditoman series documenting what Iranian people and businesses have built, with sources, and without taking political sides.</p>
-<p class="fa" style="display:block">روایت کارآفرینان و صنعتگرانی که در سخت‌ترین شرایط، چراغ کار و تولید را روشن نگه داشته‌اند؛ با منبع و بدون موضع سیاسی.</p>
+<h2 class="section-title"><span lang="fa">چراغ روشن</span><span lang="en">Built Under Pressure</span></h2>
+<p lang="en">A Ditoman series documenting what Iranian people and businesses have built, with sources, and without taking political sides.</p>
+<p class="fa" lang="fa" dir="rtl" style="display:block;text-align:right">روایت کارآفرینان و صنعتگرانی که در سخت‌ترین شرایط، چراغ کار و تولید را روشن نگه داشته‌اند؛ با منبع و بدون موضع سیاسی.</p>
 <div class="cta-row">
-<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">View on Instagram</a>
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">View on Instagram</span><span lang="fa">دیدن در اینستاگرام</span></a>
 <a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
 <a class="button" href="index.html">Home</a>
 </div>
@@ -653,7 +657,7 @@ One deposit in the Yazd desert holds about as much zinc as all of Peru's reserve
 
 <footer>
 <div class="container">
-Ditoman • Built on structure, driven by discovery.
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
 </div>
 </footer>
 
@@ -669,5 +673,6 @@ else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classLi
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

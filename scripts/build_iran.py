@@ -259,7 +259,7 @@ UI = {
     "top_method": {"fa": "روش و منبع", "en": "Method and source"},
     "top_link": {"fa": "فهرست کامل ۱۰۰ شرکت ←", "en": "The full list of 100 →"},
     "col_rank": {"fa": "رتبه", "en": "Rank"},
-    "col_sym": {"fa": "نماد", "en": "Symbol"},
+    "col_sym": {"fa": "نماد", "en": "ISIN"},
     "col_name": {"fa": "شرکت", "en": "Company"},
     "col_branch": {"fa": "شاخه", "en": "Branch"},
     "col_market": {"fa": "بازار", "en": "Market"},
@@ -317,7 +317,7 @@ def page(title, desc, path, body, extra_css=""):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700;800&family=Lalezar&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="fonts.css?v=1" />
-  <link rel="stylesheet" href="site.css?v=20261107b" />
+  <link rel="stylesheet" href="site.css?v=20261108" />
   <style>{PAGE_CSS}{extra_css}</style>
 </head>
 <body data-lang="fa">
@@ -518,7 +518,7 @@ def leader_card(x, subname, color=None, share=None):
     head = f'<b>{t(x)}</b><small>{t(subname[x["sub"]])}</small>'
     if x.get("rank"):
         approx = "≈" if not x.get("mcap") else ""
-        head = (f'<span class="ir-rank">{t({"fa": f"رتبه‌ی {approx}{fa_digits(x["rank"])} · {x["sym"]}", "en": f"Rank {approx}{x["rank"]} · {x["sym"]}"})}</span>' + head)
+        head = (f'<span class="ir-rank">{t({"fa": f"رتبه‌ی {approx}{fa_digits(x["rank"])} · {x["sym"]}", "en": f"Rank {approx}{x["rank"]}"})}</span>' + head)
     if x.get("slug"):
         head = f'<a href="{e(x["slug"])}.html">{head}<span class="k-go">{t(UI["leaders_open"])}</span></a>'
     val = mcap_value(x)
@@ -614,7 +614,8 @@ def branch_page(b, companies):
     art, is_photo = hero_art(b)
     caption = "" if is_photo else f'<figcaption>{t(UI["art"])}</figcaption>'
     if is_photo and b["hero"].get("credit"):
-        caption = f'<figcaption>{e(b["hero"]["credit"])}</figcaption>'
+        cr = b["hero"]["credit"]
+        caption = f'<figcaption>{t(cr) if isinstance(cr, dict) else e(cr)}</figcaption>'
     subs = "".join(
         f'<li><span class="ir-isic">{e(s["isic"])}</span><b>{t(s)}</b><small>{t(s["authority"])}</small></li>'
         for s in b["subs"])
@@ -713,6 +714,7 @@ def map_section(branches, only=None):
                  {"k": {"fa": "دارایی کل", "en": "Total assets"}, "v": field_value(c, "assets")}]
         items.append({
             "rank": c["rank"], "sym": c["sym"], "fa": c["fa"], "en": c["en"], "w": c["weight"],
+            "short": re.sub(r"\s*\(.*?\)", "", c["en"]),
             "approx": not c.get("mcap"), "val": mcap_value(c), "b": b["slug"], "bname": b["name"],
             "sub": c["sub"], "subname": {"fa": sub["fa"], "en": sub["en"]},
             "g": c["sub"] if only else b["slug"], "gname": {"fa": sub["fa"], "en": sub["en"]} if only else b["name"],
@@ -725,7 +727,7 @@ def map_section(branches, only=None):
             "en": "Each tile's size is the company's market value. Tap a tile to see its details and light up its family and its sub-branch."}
     return (f'<p class="ir-map-hint">{t(hint)}</p><div class="ir-map" role="group"></div>'
             f'<script type="application/json" id="ir-map-data">{data}</script>'
-            f'<script src="iran-map.js?v=1" defer></script>')
+            f'<script src="iran-map.js?v=2" defer></script>')
 
 
 TOP_JS = r"""
@@ -754,7 +756,7 @@ def top_section(branches):
         approx = "" if c.get("mcap") else "≈"
         rows.append(
             f'<tr data-branch="{b["slug"]}"><td class="n">{t({"fa": approx + fa_digits(c["rank"]), "en": approx + str(c["rank"])})}</td>'
-            f'<td>{e(c["sym"])}</td><td class="name">{t(c)}</td>'
+            f'<td>{t({"fa": c["sym"], "en": c["isin"]})}</td><td class="name">{t(c)}</td>'
             f'<td><a href="iran-{b["slug"]}.html#leaders"><span class="dot" style="background:{e(b["accent"])}"></span>{t(b["name"])}</a>'
             f' <small style="color:var(--muted)">· {t(sub)}</small></td>'
             f'<td>{t(MARKETS[c["market"]])}</td><td class="{cls}">{t(v or PENDING)}</td></tr>')
@@ -847,3 +849,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    import lang_unify
+    lang_unify.main()

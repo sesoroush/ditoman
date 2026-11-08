@@ -179,7 +179,10 @@
           "en": "Steel coil and a teal gear in a factory hall",
           "fa": "صنعت و تولید"
         },
-        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+        "credit": {
+          "fa": "تصویرسازی با هوش مصنوعی",
+          "en": "AI illustration"
+        }
       }
     },
     {
@@ -314,7 +317,10 @@
           "en": "A water drop reflecting a gas refinery at sunset on the Persian Gulf coast",
           "fa": "انرژی و آب"
         },
-        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+        "credit": {
+          "fa": "تصویرسازی با هوش مصنوعی",
+          "en": "AI illustration"
+        }
       }
     },
     {
@@ -439,7 +445,10 @@
           "en": "A mountain highway bridge with a truck and a freight train",
           "fa": "حمل‌ونقل و راه"
         },
-        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+        "credit": {
+          "fa": "تصویرسازی با هوش مصنوعی",
+          "en": "AI illustration"
+        }
       }
     },
     {
@@ -550,7 +559,10 @@
           "en": "A copper nugget above an open-pit mine",
           "fa": "منابع و معدن"
         },
-        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+        "credit": {
+          "fa": "تصویرسازی با هوش مصنوعی",
+          "en": "AI illustration"
+        }
       }
     },
     {
@@ -695,7 +707,10 @@
           "en": "A glowing chip in front of Tehran's skyline and Milad Tower",
           "fa": "فناوری و خدمات"
         },
-        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+        "credit": {
+          "fa": "تصویرسازی با هوش مصنوعی",
+          "en": "AI illustration"
+        }
       }
     },
     {
@@ -826,7 +841,10 @@
           "en": "Naqsh-e Jahan Square in Isfahan with a tile flower and roses",
           "fa": "گردشگری و فرهنگ"
         },
-        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+        "credit": {
+          "fa": "تصویرسازی با هوش مصنوعی",
+          "en": "AI illustration"
+        }
       }
     }
   ]

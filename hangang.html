@@ -397,6 +397,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -407,20 +408,21 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html">Learn</a>
 <a href="iran.html">Iran</a>
 <a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
 </nav>
 </div>
 </header>
 
 <style>
 .fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
 .en{display:none}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
 .stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
@@ -442,14 +444,16 @@ padding: 24px;
 <div class="hero-image">
 <img src="social/hangang/post.png" alt="Hangang supercomputer, illustrative card" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">AI &amp; Infrastructure • خبر فناوری</div>
-<h1 dir="rtl" style="text-align:right">ابررایانه هانگانگ: کره جنوبی فقط یک کامپیوتر نساخت</h1>
-<p class="subtitle">Hangang, Korea's sixth national supercomputer: what it can do, who gets to use it, which skills it feeds, and what we can take from it.</p>
+<div class="lesson-badge"><span lang="en">AI &amp; Infrastructure</span><span lang="fa">هوش مصنوعی و زیرساخت</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">ابررایانه هانگانگ: کره جنوبی فقط یک کامپیوتر نساخت</h1>
+<h1 lang="en">Hangang supercomputer: South Korea built more than a computer</h1>
+<p class="subtitle" lang="en">Hangang, Korea's sixth national supercomputer: what it can do, who gets to use it, which skills it feeds, and what we can take from it.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">هانگانگ، ششمین ابررایانه‌ی ملی کره جنوبی: چه کارهایی از آن برمی‌آید، چه کسانی می‌توانند از آن استفاده کنند، چه مهارت‌هایی را پرورش می‌دهد و ما چه درسی می‌توانیم از آن بگیریم.</p>
 <div class="stats">
-<div class="stat"><b>۶۱۴ PF</b><span>توان نظری؛ ۲۴ برابر نسل قبل<br>614 PF theoretical peak, 24× Nurion</span></div>
-<div class="stat"><b>۸٬۴۹۶</b><span>پردازنده گرافیکی<br>GPUs, including Nvidia GH200</span></div>
-<div class="stat"><b>۱۵٪</b><span>سهم شرکت‌های کوچک و متوسط<br>About 15% for smaller companies</span></div>
-<div class="stat"><b>۲۷۶ M$</b><span>هزینه؛ ۳۸۲٫۵ میلیارد وون<br>Cost, 382.5 billion won</span></div>
+<div class="stat"><b lang="fa">۶۱۴ PF</b><b lang="en">614 PF</b><span lang="fa">توان نظری؛ ۲۴ برابر نسل قبل</span><span lang="en">Theoretical peak, 24× Nurion</span></div>
+<div class="stat"><b lang="fa">۸٬۴۹۶</b><b lang="en">8,496</b><span lang="fa">پردازنده گرافیکی</span><span lang="en">GPUs, including Nvidia GH200</span></div>
+<div class="stat"><b lang="fa">۱۵٪</b><b lang="en">15%</b><span lang="fa">سهم شرکت‌های کوچک و متوسط</span><span lang="en">Share for small and mid-sized firms</span></div>
+<div class="stat"><b lang="fa">۲۷۶ M$</b><b lang="en">$276M</b><span lang="fa">هزینه؛ ۳۸۲٫۵ میلیارد وون</span><span lang="en">Cost, 382.5 billion won</span></div>
 </div>
 </div>
 </section>
@@ -557,7 +561,7 @@ padding: 24px;
 <p>Korea is sharing computing like public infrastructure, so small firms and students can reach it too. Hardware alone is not progress; value comes when it turns into discoveries and products. Iran unveiled Simorgh at Amirkabir University in 2021, at about 0.56 PF on a budget of about $4.5M, designed by Iranian engineers with some imported hardware. A far stronger successor was announced then, but we could not independently confirm its status. We may not buy 8,000 GPUs tomorrow, but Linux, Python, Slurm, MPI, CUDA and distributed PyTorch can be learned today.</p>
 </div>
 
-<h3 style="margin-top:28px">Sources • منابع</h3>
+<h3 style="margin-top:28px"><span lang="en">Sources</span><span lang="fa">منابع</span></h3>
 <ul class="sources">
 <li><a href="https://www.koreatimes.co.kr/business/tech-science/20261102/korea-unveils-276-mil-hangang-supercomputer" target="_blank" rel="noopener noreferrer">Korea Times</a></li>
 <li><a href="https://www.mt.co.kr/en/tech/2026/11/02/2026110213162698987" target="_blank" rel="noopener noreferrer">MoneyToday</a></li>
@@ -569,14 +573,15 @@ padding: 24px;
 <li><a href="https://www.kellyservices.com/press-releases/kelly-releases-2026-data-center-salary-guide-highlighting-compensation-hiring-trends-driven-by-ai-acceleration" target="_blank" rel="noopener noreferrer">Kelly 2026 Data Center Salary Guide</a></li>
 <li><a href="https://www.aljazeera.com/news/2021/5/16/iran-unveils-supercomputer-starts-development-on-a-stronger-one" target="_blank" rel="noopener noreferrer">Al Jazeera on Simorgh</a></li>
 </ul>
-<p style="color:#9fb6b9;margin-top:10px">تصویر کارت نمادین است و عکس واقعی دستگاه نیست. • The card image is illustrative.</p>
+<p lang="fa" dir="rtl" style="color:#9fb6b9;margin-top:10px;text-align:right">تصویر کارت نمادین است و عکس واقعی دستگاه نیست.</p>
+<p lang="en" style="color:#9fb6b9;margin-top:10px">The card image is illustrative, not a real photo of the machine.</p>
 </div>
 </section>
 
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
 <div class="cta-row">
 <a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
 <a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -590,7 +595,7 @@ padding: 24px;
 
 <footer>
 <div class="container">
-Ditoman • Built on structure, driven by discovery.
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
 </div>
 </footer>
 
@@ -606,5 +611,6 @@ else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classLi
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

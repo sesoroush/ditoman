@@ -238,7 +238,7 @@ def page(title, desc, path, body, image=None):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700;800&family=Lalezar&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="fonts.css?v=1" />
-  <link rel="stylesheet" href="site.css?v=20261107b" />
+  <link rel="stylesheet" href="site.css?v=20261108" />
   <style>{CSS}</style>
 </head>
 <body data-lang="fa">
@@ -468,3 +468,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    import lang_unify
+    lang_unify.main()

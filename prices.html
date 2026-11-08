@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700;800&family=Lalezar&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site.css?v=20261107b" />
+  <link rel="stylesheet" href="site.css?v=20261108" />
   <link rel="stylesheet" href="vendor/uPlot.min.css" />
   <style>
     .ph-grid { display: grid; gap: 24px; }
@@ -368,6 +368,8 @@
     }
     var faNum = function (n, d) { return Number(n).toLocaleString("en-US", { maximumFractionDigits: d || 0 }).replace(/\d/g, function (c) { return "۰۱۲۳۴۵۶۷۸۹"[c]; }); };
     var enNum = function (n, d) { return Number(n).toLocaleString("en-US", { maximumFractionDigits: d || 0 }); };
+    // Toman value in both languages; the site switch shows one of them
+    function tv(n) { return '<span lang="fa">' + faNum(n) + ' ت</span><span lang="en">' + enNum(n) + ' T</span>'; }
     function faDate(iso) { var p = iso.split("-").map(Number), j = g2j(p[0], p[1], p[2]); return faNum(j[2]) + " " + FA_M[j[1] - 1] + " " + String(j[0]).replace(/\d/g, function (c) { return "۰۱۲۳۴۵۶۷۸۹"[c]; }); }
     function enDate(iso) { var p = iso.split("-").map(Number); return p[2] + " " + EN_M[p[1] - 1] + " " + p[0]; }
     function compact(v) {
@@ -448,8 +450,8 @@
       var full = buildUsd(), s = slice(full, state.usd.years);
       var a0 = firstVal(s.a), a1 = lastVal(s.a), b1 = lastVal(s.braw);
       document.getElementById("usdStats").innerHTML =
-        stat("free", "Free market, latest", "بازار آزاد", faNum(a1) + " ت", true) +
-        stat("off", "Official, latest", "نرخ رسمی", faNum(b1) + " ت", true) +
+        stat("free", "Free market, latest", "بازار آزاد", tv(a1), true) +
+        stat("off", "Official, latest", "نرخ رسمی", tv(b1), true) +
         stat("gap", "Free vs official", "فاصله‌ی آزاد و رسمی", pct(b1, a1), false) +
         stat("", "Change in period", "تغییر در این بازه", pct(a0, a1), false);
       var readEl = document.getElementById("usdRead");
@@ -460,7 +462,7 @@
       ], s, state.usd.log, readEl, function (i) {
         if (i == null) i = s.dates.length - 1;
         var d = s.dates[i];
-        return '<span>' + enDate(d) + ' · <span class="fa">' + faDate(d) + '</span></span>' +
+        return '<span><span lang="en">' + enDate(d) + '</span><span class="fa" lang="fa">' + faDate(d) + '</span></span>' +
           '<span>Free <b>' + (s.a[i] == null ? "—" : enNum(s.a[i])) + '</b></span>' +
           '<span>Official <b>' + (s.braw[i] == null ? "—" : enNum(s.braw[i])) + '</b></span>' +
           (s.a[i] && s.braw[i] ? '<span>Gap <b>' + pct(s.braw[i], s.a[i]) + '</b></span>' : "");
@@ -472,7 +474,7 @@
       var usd = buildUsd(), u1 = lastVal(usd.a);
       var label = ser === "coin_emami" ? ["Emami coin", "سکه امامی"] : ["18k gold, gram", "طلای ۱۸ عیار، گرمی"];
       document.getElementById("goldStats").innerHTML =
-        stat("free", label[0] + ", latest", label[1], faNum(a1) + " ت", true) +
+        stat("free", label[0] + ", latest", label[1], tv(a1), true) +
         stat("", "Change in period", "تغییر در این بازه", pct(a0, a1), false) +
         stat("off", "In US dollars", "به دلار آزاد", "$" + enNum(a1 / u1, ser === "coin_emami" ? 0 : 1), false);
       var readEl = document.getElementById("goldRead");
@@ -482,7 +484,7 @@
       ], s, state.gold.log, readEl, function (i) {
         if (i == null) i = s.dates.length - 1;
         var d = s.dates[i];
-        return '<span>' + enDate(d) + ' · <span class="fa">' + faDate(d) + '</span></span><span>' + label[0] + ' <b>' + enNum(s.a[i]) + '</b> toman</span>';
+        return '<span><span lang="en">' + enDate(d) + '</span><span class="fa" lang="fa">' + faDate(d) + '</span></span><span><span lang="en">' + label[0] + ' </span><span lang="fa">' + label[1] + ' </span><b>' + tv(s.a[i]) + '</b></span>';
       });
     }
 
@@ -532,8 +534,8 @@
         return '<div class="month"><h3>' + EN_M[p[1] - 1] + " " + p[0] + ' <span lang="fa">' + faLabel + '</span></h3><div class="gal">' +
           groups[m].map(function (it) {
             return '<button type="button" class="tile" data-i="' + it._i + '" id="r-' + it.date + '"><img loading="lazy" src="' + (it.thumb || it.png) + '" alt="Daily market report ' + it.date + '" />' +
-              '<span class="cap"><b>' + enDate(it.date) + '</b><span>' + faDate(it.date) + '</span>' +
-              (it.usd ? '<small>دلار ' + faNum(it.usd) + ' ت</small>' : "") + "</span></button>";
+              '<span class="cap"><b lang="en">' + enDate(it.date) + '</b><b lang="fa">' + faDate(it.date) + '</b>' +
+              (it.usd ? '<small><span lang="fa">دلار </span><span lang="en">USD </span>' + tv(it.usd) + '</small>' : "") + "</span></button>";
           }).join("") + "</div></div>";
       }).join("");
     }
@@ -571,7 +573,7 @@
     }).catch(function () { document.getElementById("gallery").innerHTML = '<p class="empty">Reports could not be loaded.</p>'; });
   })();
   </script>
-  <script src="lang.js?v=20261107b"></script>
+  <script src="lang.js?v=20261108"></script>
 <script src="menu.js?v=20261107" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>

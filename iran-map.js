@@ -90,7 +90,7 @@
         t.style.cssText = "inset-inline-start:" + (r.x + gap / 2) + "px;top:" + (r.y + gap / 2) + "px;width:" + Math.max(r.w - gap, 1) + "px;height:" + Math.max(r.h - gap, 1) +
           "px;--k:" + (0.62 - Math.min(i, 12) * 0.035);
         t.setAttribute("aria-label", c.fa + " · " + c.en);
-        t.innerHTML = mid ? '<b>' + c.sym + "</b>" + (big ? '<span class="nm">' + both({ fa: c.fa, en: c.en }) + '</span><span class="vl">' + both(c.val || D.pending) + "</span>" : "") : "";
+        t.innerHTML = mid ? "<b>" + both({ fa: c.sym, en: c.short }) + "</b>" + (big ? '<span class="nm">' + both({ fa: c.fa, en: c.en }) + '</span><span class="vl">' + both(c.val || D.pending) + "</span>" : "") : "";
         t.addEventListener("click", function () { open(c); });
         box.appendChild(t);
         tiles.push({ el: t, c: c });
@@ -126,7 +126,7 @@
   }
   function chipsFor(list) {
     return list.map(function (x) {
-      return '<button type="button" class="ir-sheet-rel" data-sym="' + x.sym + '" style="--c:' + x.color + '"><b>' + x.sym + "</b>" + both({ fa: x.fa, en: x.en }) + "</button>";
+      return '<button type="button" class="ir-sheet-rel" data-sym="' + x.sym + '" style="--c:' + x.color + '">' + both({ fa: "<b>" + x.sym + "</b> " + x.fa, en: x.en }) + "</button>";
     }).join("");
   }
   function open(c) {
@@ -140,7 +140,7 @@
     sheet.style.setProperty("--c", c.color);
     sheet.innerHTML =
       '<button type="button" class="ir-sheet-x" aria-label="بستن">×</button>' +
-      '<p class="ir-sheet-k">' + both({ fa: "رتبه‌ی " + rank + fa(c.rank) + " · " + c.sym, en: "Rank " + rank + c.rank + " · " + c.sym }) + "</p>" +
+      '<p class="ir-sheet-k">' + both({ fa: "رتبه‌ی " + rank + fa(c.rank) + " · " + c.sym, en: "Rank " + rank + c.rank }) + "</p>" +
       "<h3>" + both({ fa: c.fa, en: c.en }) + "</h3>" +
       '<p class="ir-sheet-path">' + both(c.bname) + " › " + both(c.subname) + "</p>" +
       '<p class="ir-sheet-v">' + both(c.val || D.pending) + "</p>" +

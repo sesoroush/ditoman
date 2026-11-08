@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Vazirmatn:wght@400;500;700;800&family=Lalezar&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site.css?v=20261107b" />
+  <link rel="stylesheet" href="site.css?v=20261108" />
   <style>
     .feed { display: grid; gap: 22px; max-width: 760px; }
     .post { border: 1px solid var(--line); border-radius: 26px; background: var(--surface); overflow: hidden; }
@@ -95,6 +95,7 @@
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 
@@ -199,15 +200,16 @@
       <div class="wrap">
         <h1>Posts. <span class="spectrum">Everything from the channel.</span></h1>
         <p class="hero-fa" lang="fa">همه‌ی پست‌های کانال، اینجا هم هست.</p>
-        <p class="hero-lede">Every post from the Ditoman Telegram channel appears here automatically, for anyone who can't open Telegram. Newest first.</p>
+        <p class="hero-lede" lang="en">Every post from the Ditoman Telegram channel appears here automatically, for anyone who can't open Telegram. Newest first.</p>
+        <p class="hero-lede" lang="fa">هر پستی که در کانال تلگرام دیتومان منتشر می‌شود، خودکار اینجا هم می‌آید؛ برای کسی که به تلگرام دسترسی ندارد. تازه‌ترین‌ها اول.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
-          <a class="btn btn-ghost" href="prices.html">Daily market reports</a>
+          <a class="btn btn-primary" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer" data-en="Join on Telegram">عضویت در تلگرام</a>
+          <a class="btn btn-ghost" href="prices.html" data-en="Daily market reports">گزارش روزانه‌ی بازار</a>
         </div>
       </div>
     </section>
     <section class="block" style="padding-top:8px">
-      <div class="wrap"><div class="feed" id="feed"><p class="empty">Loading…</p></div></div>
+      <div class="wrap"><div class="feed" id="feed"><p class="empty" data-en="Loading…">در حال بارگذاری…</p></div></div>
     </section>
   </main>
 
@@ -246,29 +248,42 @@
     var isFa = function (s) { return /[\u0600-\u06FF]/.test(s.slice(0, 40)); };
     fetch("telegram/feed.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (items) {
       var el = document.getElementById("feed");
-      if (!items.length) { el.innerHTML = '<p class="empty">No posts yet.</p>'; return; }
+      if (!items.length) { el.innerHTML = '<p class="empty"><span lang="fa">هنوز پستی نیست.</span><span lang="en">No posts yet.</span></p>'; return; }
       el.innerHTML = items.map(function (it) {
         var p = it.date.split("-").map(Number), j = g2j(p[0], p[1], p[2]);
-        var paras = it.text.split(/\n\s*\n/).map(function (t) {
-          return '<p dir="' + (isFa(t) ? "rtl" : "ltr") + '">' + linkify(esc(t.trim())) + "</p>";
+        // Each paragraph is tagged with its language, so the site switch shows one language
+        // at a time. Posts written in only one language are shown whole in both modes.
+        var blocks = it.text.split(/\n\s*\n/).map(function (t) {
+          var bare = t.replace(/https?:\/\/\S+|\S+\.(com|html|ir)\S*/g, "");
+          var fa = (bare.match(/[\u0600-\u06FF]/g) || []).length, en = (bare.match(/[A-Za-z]/g) || []).length;
+          return { t: t, l: fa + en < 3 ? "" : (fa >= en ? "fa" : "en") };
+        });
+        if (it.text_en) {
+          blocks.forEach(function (b) { b.l = "fa"; });
+          it.text_en.split(/\n\s*\n/).forEach(function (t) { blocks.push({ t: t, l: "en" }); });
+        }
+        var both = blocks.some(function (b) { return b.l === "fa"; }) && blocks.some(function (b) { return b.l === "en"; });
+        var paras = blocks.map(function (b) {
+          return '<p dir="' + (isFa(b.t) ? "rtl" : "ltr") + '"' + (both && b.l ? ' lang="' + b.l + '"' : "") + ">" + linkify(esc(b.t.trim())) + "</p>";
         }).join("");
         var long = it.text.length > 700;
         return '<article class="post' + (long ? " collapsed" : "") + '" id="' + it.id + '">' +
           (it.image ? '<img loading="lazy" src="' + it.image + '" alt="" onerror="this.remove()" />' : "") +
-          '<div class="post-body"><div class="post-meta"><span>' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl">' + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
+          '<div class="post-body"><div class="post-meta"><span lang="en">' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl" lang="fa">' + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
           '<div class="post-text">' + paras + "</div>" +
-          (long ? '<div class="post-actions"><button class="more" type="button">Read more · ادامه</button></div>' : "") +
+          (long ? '<div class="post-actions"><button class="more" type="button"><span lang="fa">ادامه</span><span lang="en">Read more</span></button></div>' : "") +
           "</div></article>";
       }).join("");
       el.addEventListener("click", function (e) {
         var b = e.target.closest(".more"); if (!b) return;
         var post = b.closest(".post"); post.classList.remove("collapsed"); b.parentNode.remove();
       });
-    }).catch(function () { document.getElementById("feed").innerHTML = '<p class="empty">Posts could not be loaded.</p>'; });
+    }).catch(function () { document.getElementById("feed").innerHTML = '<p class="empty"><span lang="fa">پست‌ها بارگذاری نشد.</span><span lang="en">Posts could not be loaded.</span></p>'; });
   })();
   </script>
   <script src="menu.js?v=20261107" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

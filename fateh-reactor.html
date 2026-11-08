@@ -397,6 +397,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -407,20 +408,21 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html">Learn</a>
 <a href="iran.html">Iran</a>
-<a href="navigator.html">Navigator</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
 </nav>
 </div>
 </header>
 
 <style>
 .fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
 .en{display:none}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
 .stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
@@ -442,14 +444,16 @@ padding: 24px;
 <div class="hero-image">
 <img src="social/fateh-reactor/post.png" alt="A 500-tonne polymerization reactor built in Shiraz" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">چراغ روشن • Built in Iran</div>
-<h1 dir="rtl" style="text-align:right">غول ۵۰۰ تنی ساخت ایران؛ از کارگاه شیراز تا قلب صنعت پتروشیمی</h1>
-<p class="subtitle">A polymerization reactor of about 500 tonnes and 40 metres, built by Fateh Sanat in Shiraz for a petrochemical complex in Asaluyeh: what is confirmed, what it is worth, and who is behind it.</p>
+<div class="lesson-badge"><span lang="en">Built in Iran</span><span lang="fa">چراغ روشن</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">غول ۵۰۰ تنی ساخت ایران؛ از کارگاه شیراز تا قلب صنعت پتروشیمی</h1>
+<h1 lang="en">A 500-tonne giant made in Iran: from a Shiraz workshop to the heart of the petrochemical industry</h1>
+<p class="subtitle" lang="en">A polymerization reactor of about 500 tonnes and 40 metres, built by Fateh Sanat in Shiraz for a petrochemical complex in Asaluyeh: what is confirmed, what it is worth, and who is behind it.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">راکتور پلیمریزاسیونی حدود ۵۰۰ تن وزن و ۴۰ متر طول، که فاتح صنعت در شیراز برای یک مجتمع پتروشیمی در عسلویه ساخته است: چه چیزی تأیید شده، چه ارزشی دارد و چه کسانی پشت آن هستند.</p>
 <div class="stats">
-<div class="stat"><b>۵۰۰ تن</b><span>وزن راکتور<br>Reactor weight</span></div>
-<div class="stat"><b>۴۰ × ۹ متر</b><span>طول و قطر<br>Length × diameter</span></div>
-<div class="stat"><b>۱۴ ماه</b><span>زمان ساخت، طبق گزارش صنعتی<br>Build time, per industry report</span></div>
-<div class="stat"><b>۴ برابر</b><span>قیمت پیشنهادی خارجی، به گفته‌ی سازنده<br>Foreign quote, per the maker</span></div>
+<div class="stat"><b lang="fa">۵۰۰ تن</b><b lang="en">500 t</b><span lang="fa">وزن راکتور</span><span lang="en">Reactor weight</span></div>
+<div class="stat"><b lang="fa">۴۰ × ۹ متر</b><b lang="en">40 × 9 m</b><span lang="fa">طول و قطر</span><span lang="en">Length × diameter</span></div>
+<div class="stat"><b lang="fa">۱۴ ماه</b><b lang="en">14 months</b><span lang="fa">زمان ساخت، طبق گزارش صنعتی</span><span lang="en">Build time, per industry report</span></div>
+<div class="stat"><b lang="fa">۴ برابر</b><b lang="en">4×</b><span lang="fa">قیمت پیشنهادی خارجی، به گفته‌ی سازنده</span><span lang="en">Foreign quote, per the maker</span></div>
 </div>
 </div>
 </section>
@@ -527,7 +531,7 @@ padding: 24px;
 <li>Wikipedia: Arya Sasol Polymer Company؛ Financial Tribune (۲۰۲۳)؛ Plasteurope (۲۰۱۳)</li>
 <li>IranYell و وب‌سایت فاتح صنعت (fatehsanat.com)</li>
 </ul>
-<p style="color:#9fb6b9;margin-top:10px">تصویر کاور: تصویرسازی با هوش مصنوعی، نه عکس واقعی راکتور. آخرین بازبینی: ۱۷ آبان ۱۴۰۵ • Cover: AI-generated illustration, not a photo of the actual reactor.</p>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور: تصویرسازی با هوش مصنوعی، نه عکس واقعی راکتور. آخرین بازبینی: ۱۷ آبان ۱۴۰۵</p>
 </div>
 
 <div class="lesson-content en" id="en-content" style="display:none">
@@ -546,7 +550,16 @@ padding: 24px;
 <p>Reported as ready for transport and installation. We have not confirmed shipping, installation, testing or start-up. An older post attributed to the maker mentions a very similar reactor for Arya Sasol; it is unclear whether both refer to the same unit.</p>
 <h3>Ditoman's reading</h3>
 <p>The bigger question is whether Iran can capture more of industry's value by designing, building, servicing and exporting equipment. This project shows real engineering capacity; its success should also be judged on performance, quality, cost and competitiveness. We will follow it together and add news of its shipping, installation and start-up.</p>
-<p style="color:#9fb6b9">Sources are listed in the Persian tab. Cover: AI-generated illustration. Last reviewed 8 November 2026.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li>Press TV: Iranian engineers build 500-ton polymerization reactor for Asaluyeh (November 2026) • presstv.co.uk</li>
+<li>IRIB News: large petrochemical reactor built in Fars (October 2026) • irib-news.ir</li>
+<li>Naft-e Ma: the country's largest petrochemical reactor built in Shiraz • naftema.com</li>
+<li>Miz-e Energy: report on the maker group's projects (cited in preliminary research; we did not see the text ourselves)</li>
+<li>Wikipedia: Arya Sasol Polymer Company; Financial Tribune (2023); Plasteurope (2013)</li>
+<li>IranYell and the Fateh Sanat website (fatehsanat.com)</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">Cover: AI-generated illustration, not a photo of the actual reactor. Last reviewed 8 November 2026.</p>
 </div>
 </div>
 </section>
@@ -554,7 +567,7 @@ padding: 24px;
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
 <div class="cta-row">
 <a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
 <a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -568,7 +581,7 @@ padding: 24px;
 
 <footer>
 <div class="container">
-Ditoman • Built on structure, driven by discovery.
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
 </div>
 </footer>
 
@@ -584,5 +597,6 @@ else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classLi
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

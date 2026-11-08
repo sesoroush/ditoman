@@ -403,6 +403,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -413,14 +414,14 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html" class="active">Learn</a>
 <a href="iran.html">Iran</a>
 <a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html">Posts</a>
 </nav>
 </div>
 </header>
@@ -431,26 +432,35 @@ padding: 24px;
 <div class="hero-image">
 <img src="lesson09-liquidity-lock.jpg" alt="What does a liquidity lock mean? Ditoman lesson image" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">Security • Token Checks</div>
-<h1>What Does a Liquidity Lock Actually Mean?</h1>
-<p class="subtitle">
+<div class="lesson-badge" lang="en">Security • Token Checks</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">امنیت • بررسی توکن</div>
+<h1 lang="en">What Does a Liquidity Lock Actually Mean?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">قفل لیکوئیدیتی واقعاً یعنی چه؟</h1>
+<p class="subtitle" lang="en">
 Today we locked TMN's liquidity. This lesson uses our own lock as the example: what a liquidity pool is, what LP tokens are, what a lock protects against, what it does not prove, and how to check any lock yourself.
 </p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">امروز لیکوئیدیتی TMN را قفل کردیم. این درس قفل خود ما را نمونه قرار می‌دهد: استخر لیکوئیدیتی چیست، توکن LP چیست، قفل از چه چیزی محافظت می‌کند، چه چیزی را ثابت نمی‌کند، و هر قفلی را خودتان چطور بررسی کنید.</p>
 <div class="meta-grid">
-<div class="meta-box"><span>Level</span><strong>Beginner</strong></div>
-<div class="meta-box"><span>Reading Time</span><strong>6 Minutes</strong></div>
-<div class="meta-box"><span>Learning Points</span><strong>15 LP</strong></div>
-<div class="meta-box"><span>Future Quiz</span><strong>5 Questions</strong></div>
+<div class="meta-box">
+<span lang="en">Level</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Beginner</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box">
+<span lang="en">Reading Time</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 Minutes</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box">
+<span lang="en">Learning Points</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">15 LP</strong><strong lang="fa" dir="rtl" style="display:block">۱۵ امتیاز</strong></div>
+<div class="meta-box">
+<span lang="en">Future Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک آینده</span><strong lang="en">5 Questions</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
 </div>
 </div>
 </section>
 
 <section class="section">
 <div class="container">
-<h2 class="section-title">Lesson Content</h2>
-<p class="section-subtitle">
+<h2 class="section-title" lang="en">Lesson Content</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">
 Read the lesson in English or Persian. This structure is designed for future quiz, score, reputation, and reward systems.
 </p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمونک، امتیاز، اعتبار و پاداش‌هایی طراحی شده که در آینده اضافه می‌شوند.</p>
 
 <div class="language-toggle">
 <button class="lang-button active" onclick="showLanguage('en')">English</button>
@@ -524,17 +534,16 @@ Read the lesson in English or Persian. This structure is designed for future qui
 <section class="section">
 <div class="container">
 <div class="self-check">
-<h2 class="section-title">Applying Check Five to TMN</h2>
-<p>
+<h2 class="section-title" lang="en">Applying Check Five to TMN</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بررسی پنجم روی TMN</h2>
+<p lang="en">
 Lesson 05 showed that TMN failed two of the five checks: concentrated supply and no locked liquidity. With today's lock, the liquidity held in the project's main wallet is locked until October 2027. Supply concentration is still open, and we will report on it as it changes.
 </p>
-<p class="fa" style="display:block;">
-درس پنجم نشان داد که TMN در دو بررسی از پنج بررسی رد می‌شد: عرضه‌ی متمرکز و لیکوئیدیتی قفل‌نشده. با قفل امروز، لیکوئیدیتی کیف‌پول اصلی پروژه تا اکتبر ۲۰۲۷ قفل است. تمرکز عرضه هنوز باز است و با هر تغییر گزارشش را می‌دهیم.
-</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس پنجم نشان داد که TMN در دو بررسی از پنج بررسی رد می‌شد: عرضه‌ی متمرکز و لیکوئیدیتی قفل‌نشده. با قفل امروز، لیکوئیدیتی کیف‌پول اصلی پروژه تا اکتبر ۲۰۲۷ قفل است. تمرکز عرضه هنوز مسئله‌ای باز است و هر تغییری در آن را گزارش می‌کنیم.</p>
 <div class="cta-row">
-<a class="cta" href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer">Verify the Lock</a>
-<a class="button" href="lesson05.html">How to Check Any Token</a>
-<a class="button" href="tmn.html">About TMN</a>
+<a class="cta" href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer"><span lang="en">Verify the Lock</span><span lang="fa">بررسی قفل</span></a>
+<a class="button" href="lesson05.html"><span lang="en">How to Check Any Token</span><span lang="fa">هر توکنی را چطور بررسی کنیم</span></a>
+<a class="button" href="tmn.html"><span lang="en">About TMN</span><span lang="fa">درباره‌ی TMN</span></a>
 </div>
 </div>
 </div>
@@ -543,8 +552,9 @@ Lesson 05 showed that TMN failed two of the five checks: concentrated supply and
 <section class="section">
 <div class="container grid-two">
 <div class="card">
-<h3>Key Concepts</h3>
-<ul>
+<h3 lang="en">Key Concepts</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en">
 <li>Liquidity pool</li>
 <li>LP tokens as a receipt</li>
 <li>Rug pull</li>
@@ -552,15 +562,31 @@ Lesson 05 showed that TMN failed two of the five checks: concentrated supply and
 <li>Public lock records</li>
 <li>What a lock does not prove</li>
 </ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>استخر لیکوئیدیتی</li>
+<li>توکن LP به‌عنوان رسید</li>
+<li>راگ‌پول</li>
+<li>قفل لیکوئیدیتی و تاریخ آزاد شدن</li>
+<li>رکوردهای عمومی قفل</li>
+<li>آنچه یک قفل ثابت نمی‌کند</li>
+</ul>
 </div>
 <div class="card">
-<h3>Learning Objectives</h3>
-<ul>
+<h3 lang="en">Learning Objectives</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en">
 <li>Explain what a liquidity pool is and why a token needs one.</li>
 <li>Describe what LP tokens represent.</li>
 <li>Explain how a rug pull happens.</li>
 <li>Read a lock record and check its pair, amount, date and share of the pool.</li>
 <li>Name what a lock does not tell you about a token.</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>توضیح دهید استخر لیکوئیدیتی چیست و چرا هر توکن به آن نیاز دارد.</li>
+<li>شرح دهید توکن‌های LP نشان‌دهنده‌ی چه چیزی هستند.</li>
+<li>توضیح دهید راگ‌پول چطور اتفاق می‌افتد.</li>
+<li>رکورد یک قفل را بخوانید و جفت‌ارز، مقدار، تاریخ و سهم آن از استخر را بررسی کنید.</li>
+<li>بگویید یک قفل چه چیزهایی را درباره‌ی توکن به شما نمی‌گوید.</li>
 </ul>
 </div>
 </div>
@@ -568,38 +594,67 @@ Lesson 05 showed that TMN failed two of the five checks: concentrated supply and
 
 <section class="section">
 <div class="container">
-<h2 class="section-title">Future Quiz Bank</h2>
-<p class="section-subtitle">
+<h2 class="section-title" lang="en">Future Quiz Bank</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بانک پرسش‌های آزمونک آینده</h2>
+<p class="section-subtitle" lang="en">
 These questions are prepared for the future Ditoman quiz and participation system. They may later support learning scores, reputation layers, and possible TMN reward eligibility.
 </p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">این پرسش‌ها برای سامانه‌ی آزمونک و مشارکت آینده‌ی دیتومان آماده شده‌اند. ممکن است بعدها مبنای امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN شوند.</p>
 <div class="quiz-list">
 <div class="quiz-item">
-<h3>Question 1</h3>
-<p>What do LP tokens represent?</p>
-<p>A. A share of the token's company</p><p>B. A receipt for money added to a liquidity pool</p><p>C. A trading fee discount</p><p>D. A governance vote</p>
-<p class="answer">Correct answer: B</p>
+<h3 lang="en">Question 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">What do LP tokens represent?</p>
+<p lang="fa" dir="rtl" style="text-align:right">توکن‌های LP نشان‌دهنده‌ی چه چیزی هستند؟</p>
+<p lang="en">A. A share of the token's company</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. سهمی از شرکت سازنده‌ی توکن</p><p lang="en">B. A receipt for money added to a liquidity pool</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. رسیدی برای پولی که به استخر لیکوئیدیتی اضافه شده</p><p lang="en">C. A trading fee discount</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. تخفیف کارمزد معامله</p><p lang="en">D. A governance vote</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. حق رأی در اداره‌ی پروژه</p>
+<p class="answer" lang="en">Correct answer: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
 </div>
 <div class="quiz-item">
-<h3>Question 2</h3>
-<p>What is a rug pull?</p>
-<p class="answer">Correct answer: When whoever holds the LP tokens removes the liquidity, leaving holders unable to sell.</p>
+<h3 lang="en">Question 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">What is a rug pull?</p>
+<p lang="fa" dir="rtl" style="text-align:right">راگ‌پول چیست؟</p>
+<p class="answer" lang="en">Correct answer: When whoever holds the LP tokens removes the liquidity, leaving holders unable to sell.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: وقتی کسی که توکن‌های LP دستش است لیکوئیدیتی را بیرون می‌کشد و دارندگان توکن دیگر نمی‌توانند بفروشند.</p>
 </div>
 <div class="quiz-item">
-<h3>Question 3</h3>
-<p>True or False: a liquidity lock proves that a token's price will rise.</p>
-<p class="answer">Correct answer: False. It only prevents the locked liquidity from being removed before the unlock date.</p>
+<h3 lang="en">Question 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">True or False: a liquidity lock proves that a token's price will rise.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درست یا نادرست: قفل لیکوئیدیتی ثابت می‌کند که قیمت توکن بالا می‌رود.</p>
+<p class="answer" lang="en">Correct answer: False. It only prevents the locked liquidity from being removed before the unlock date.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: نادرست. قفل فقط جلوی بیرون کشیدن لیکوئیدیتی قفل‌شده را تا تاریخ آزاد شدن می‌گیرد.</p>
 </div>
 <div class="quiz-item">
-<h3>Question 4</h3>
-<p>Which of these should you check on a lock record?</p>
-<p>A. The pair address</p><p>B. The amount locked and its share of the pool</p><p>C. The unlock date</p><p>D. All of the above</p>
-<p class="answer">Correct answer: D</p>
+<h3 lang="en">Question 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Which of these should you check on a lock record?</p>
+<p lang="fa" dir="rtl" style="text-align:right">در رکورد یک قفل، کدام‌یک را باید بررسی کنید؟</p>
+<p lang="en">A. The pair address</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. آدرس جفت‌ارز</p><p lang="en">B. The amount locked and its share of the pool</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. مقدار قفل‌شده و سهم آن از استخر</p><p lang="en">C. The unlock date</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. تاریخ آزاد شدن</p><p lang="en">D. All of the above</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. همه‌ی موارد</p>
+<p class="answer" lang="en">Correct answer: D</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: د</p>
 </div>
 <div class="quiz-item">
-<h3>Question 5</h3>
-<p>When does TMN's locked liquidity unlock?</p>
-<p>A. 29 October 2026</p><p>B. 29 October 2027</p><p>C. Never</p><p>D. Whenever the founders choose</p>
-<p class="answer">Correct answer: B</p>
+<h3 lang="en">Question 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">When does TMN's locked liquidity unlock?</p>
+<p lang="fa" dir="rtl" style="text-align:right">لیکوئیدیتی قفل‌شده‌ی TMN چه زمانی آزاد می‌شود؟</p>
+<p lang="en">A. 29 October 2026</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۲۹ اکتبر ۲۰۲۶</p><p lang="en">B. 29 October 2027</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۲۹ اکتبر ۲۰۲۷</p><p lang="en">C. Never</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. هرگز</p><p lang="en">D. Whenever the founders choose</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. هر وقت بنیان‌گذاران بخواهند</p>
+<p class="answer" lang="en">Correct answer: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
 </div>
 </div>
 </div>
@@ -608,7 +663,8 @@ These questions are prepared for the future Ditoman quiz and participation syste
 <section class="section">
 <div class="container">
 <div class="card">
-<h3>Sources</h3>
+<h3 lang="en">Sources</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
 <ul>
 <li><a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">PinkLock record #2089923, TMN/WBNB liquidity lock</a></li>
 <li><a href="https://bscscan.com/token/0x6f1836B15de0C6294C16aAec67903515f532fa1C" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BscScan, TMN/WBNB PancakeSwap pair (LP token)</a></li>
@@ -621,18 +677,17 @@ These questions are prepared for the future Ditoman quiz and participation syste
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">Instagram Summary</h2>
-<p>
+<h2 class="section-title" lang="en">Instagram Summary</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">خلاصه در اینستاگرام</h2>
+<p lang="en">
 This lesson was first introduced on Ditoman Instagram. The Instagram version gives a short visual summary, while this page provides the full learning version.
 </p>
-<p class="fa" style="display:block;">
-خلاصه تصویری این درس ابتدا در اینستاگرام Ditoman منتشر شد. نسخه اینستاگرام یک معرفی کوتاه و تصویری است، اما این صفحه نسخه کامل آموزشی آن است.
-</p>
+<p lang="fa" dir="rtl" style="text-align:right">خلاصه‌ی تصویری این درس ابتدا در اینستاگرام دیتومان منتشر شد. نسخه‌ی اینستاگرام یک معرفی کوتاه و تصویری است و این صفحه نسخه‌ی کامل آموزشی آن است.</p>
 <div class="cta-row">
-<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">View on Instagram</a>
-<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
-<a class="button" href="learn.html">Back to Learn</a>
-<a class="button" href="lesson08.html">Previous Lesson</a>
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">View on Instagram</span><span lang="fa">دیدن در اینستاگرام</span></a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span lang="en">Join on Telegram</span><span lang="fa">عضویت در تلگرام</span></a>
+<a class="button" href="learn.html"><span lang="en">Back to Learn</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson08.html"><span lang="en">Previous Lesson</span><span lang="fa">درس قبلی</span></a>
 </div>
 </div>
 </div>
@@ -641,9 +696,10 @@ This lesson was first introduced on Ditoman Instagram. The Instagram version giv
 
 
 <footer>
-<div class="container">
+<div class="container" lang="en">
 Ditoman Learn • Built on structure, driven by discovery.
 </div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
 </footer>
 
 <script>
@@ -667,5 +723,6 @@ buttons[1].classList.add("active");
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

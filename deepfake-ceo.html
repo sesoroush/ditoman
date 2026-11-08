@@ -391,6 +391,7 @@ padding: 24px;
 }
 </script>
 <!-- seo:end -->
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
 </head>
 <body>
 <header>
@@ -401,20 +402,21 @@ padding: 24px;
   <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
 </a>
 <nav class="nav-links">
-<a href="index.html">Home</a>
 <a href="learn.html">Learn</a>
 <a href="iran.html">Iran</a>
 <a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
 <a href="tmn.html">TMN</a>
-<a href="index.html#whitepapers">Whitepapers</a>
-<a href="index.html#roadmap">Roadmap</a>
-<a href="index.html#community">Community</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
 </nav>
 </div>
 </header>
 
 <style>
 .fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
 .en{display:none}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
 .stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
@@ -442,14 +444,16 @@ padding: 24px;
 <div class="hero-image">
 <img src="social/deepfake-ceo/post.png" alt="Illustration: a phone call that appears to come from the CEO" onerror="this.parentElement.style.display='none'">
 </div>
-<div class="lesson-badge">Technology &amp; Money • فناوری و پول</div>
-<h1 dir="rtl" style="text-align:right">صدای رئیس بود؛ اما خودش نبود!</h1>
-<p class="subtitle">A $129 million case of AI voice and video impersonation: how the scheme worked, who paid, and three simple rules for you and your family.</p>
+<div class="lesson-badge"><span lang="en">Technology &amp; Money</span><span lang="fa">فناوری و پول</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">صدای رئیس بود؛ اما خودش نبود!</h1>
+<h1 lang="en">It was the boss's voice, but it wasn't him!</h1>
+<p class="subtitle" lang="en">A $129 million case of AI voice and video impersonation: how the scheme worked, who paid, and three simple rules for you and your family.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">پرونده‌ی ۱۲۹ میلیون دلاری جعل صدا و تصویر با هوش مصنوعی: طرح چطور کار می‌کرد، چه کسانی پول دادند، و سه قانون ساده برای شما و خانواده‌تان.</p>
 <div class="stats">
-<div class="stat"><b>$129M</b><span>مبلغ ادعایی کلاهبرداری<br>Alleged amount stolen</span></div>
-<div class="stat"><b>۳</b><span>متهم؛ بازداشت در اسپانیا و بریتانیا<br>Defendants, arrested in Spain and the UK</span></div>
-<div class="stat"><b>هزاران</b><span>شرکت هدف در سراسر جهان<br>Companies targeted worldwide</span></div>
-<div class="stat"><b>۱۸+</b><span>ماه فعالیت ادعایی<br>Months the scheme allegedly ran</span></div>
+<div class="stat"><b lang="fa">$129M</b><b lang="en">$129M</b><span lang="fa">مبلغ ادعایی کلاهبرداری</span><span lang="en">Alleged amount stolen</span></div>
+<div class="stat"><b lang="fa">۳</b><b lang="en">3</b><span lang="fa">متهم؛ بازداشت در اسپانیا و بریتانیا</span><span lang="en">Defendants, arrested in Spain and the UK</span></div>
+<div class="stat"><b lang="fa">هزاران</b><b lang="en">Thousands</b><span lang="fa">شرکت هدف در سراسر جهان</span><span lang="en">Companies targeted worldwide</span></div>
+<div class="stat"><b lang="fa">۱۸+</b><b lang="en">18+</b><span lang="fa">ماه فعالیت ادعایی</span><span lang="en">Months the scheme allegedly ran</span></div>
 </div>
 </div>
 </section>
@@ -494,7 +498,7 @@ padding: 24px;
 <li><a href="https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/" target="_blank" rel="noopener noreferrer">SecurityWeek / Associated Press، گزارش کیفرخواست</a></li>
 <li><a href="https://www.justice.gov/usao-sdny" target="_blank" rel="noopener noreferrer">دادستانی منطقه‌ی جنوبی نیویورک (SDNY)</a></li>
 </ul>
-<p style="color:#9fb6b9;margin-top:10px">تصویر کاور تصویرسازی است و هیچ‌یک از افراد یا شرکت‌های واقعی پرونده را نشان نمی‌دهد. • The cover is an illustration and shows none of the real people or companies in the case.</p>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور تصویرسازی است و هیچ‌یک از افراد یا شرکت‌های واقعی پرونده را نشان نمی‌دهد.</p>
 </div>
 
 <div class="lesson-content en" id="en-content" style="display:none">
@@ -521,7 +525,14 @@ padding: 24px;
 <div class="rule"><b>Hang up and call back</b><span>On a number you already have, not one given in that call. This is also the standard advice of consumer-protection agencies.</span></div>
 <div class="rule"><b>A family safe word</b><span>One word only your family knows. If someone calls with your mother's or son's voice asking for money, ask for the word.</span></div>
 </div>
-<p><strong>For companies:</strong> no transfer should ever rest on a single phone or video call; require a second confirmation through an independent channel and a two-signature rule for large amounts. No real deal is endangered by these rules; only fake ones need them bypassed. Sources are listed in the Persian tab.</p>
+<p><strong>For companies:</strong> no transfer should ever rest on a single phone or video call; require a second confirmation through an independent channel and a two-signature rule for large amounts. No real deal is endangered by these rules; only fake ones need them bypassed.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li><a href="https://www.cbsnews.com/news/3-ai-steal-129-million-companies-impersonating-executives-lawyers/" target="_blank" rel="noopener noreferrer">CBS News: three charged with stealing about $129 million by impersonating executives and lawyers</a></li>
+<li><a href="https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/" target="_blank" rel="noopener noreferrer">SecurityWeek / Associated Press: report on the indictment</a></li>
+<li><a href="https://www.justice.gov/usao-sdny" target="_blank" rel="noopener noreferrer">US Attorney's Office, Southern District of New York (SDNY)</a></li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">The cover is an illustration and shows none of the real people or companies in the case.</p>
 </div>
 </div>
 </section>
@@ -529,7 +540,7 @@ padding: 24px;
 <section class="section">
 <div class="container">
 <div class="instagram-box">
-<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
 <div class="cta-row">
 <a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
 <a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -541,7 +552,7 @@ padding: 24px;
 </main>
 <footer>
 <div class="container">
-Ditoman • Built on structure, driven by discovery.
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
 </div>
 </footer>
 
@@ -557,5 +568,6 @@ else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classLi
 </script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
 </body>
 </html>

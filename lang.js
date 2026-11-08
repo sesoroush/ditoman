@@ -217,6 +217,25 @@
 
   var KEY = "ditoman-lang";
   var root = document.documentElement;
+  // Pages built for this switch carry data-lang on <html> and flip direction with it.
+  // Older pages (lessons, stories) keep their own layout; only their text changes.
+  var native = root.hasAttribute("data-lang") && !!document.querySelector('link[href*="site.css"]');
+  if (!root.hasAttribute("data-lang")) {
+    var saved0 = null;
+    try { saved0 = localStorage.getItem(KEY); } catch (e) {}
+    root.setAttribute("data-lang", saved0 === "en" ? "en" : "fa");
+  }
+  if (!document.querySelector('link[href*="site.css"]')) {
+    var css = document.createElement("style");
+    css.textContent =
+      'html[data-lang="fa"] body [lang="en"]:not(.lang-btn){display:none!important}' +
+      'html[data-lang="en"] body [lang="fa"]:not(.lang-btn){display:none!important}' +
+      '.lang-btn{flex:none;height:38px;min-width:44px;padding:0 12px;border-radius:999px;border:1px solid rgba(127,245,222,.45);' +
+      'background:rgba(127,245,222,.08);color:#eef6f2;font:700 .85rem Inter,-apple-system,Segoe UI,sans-serif;cursor:pointer;margin-inline-start:12px}' +
+      '.lang-btn[lang="fa"]{font-family:"IRANYekanX Fa",IRANYekanX,Tahoma,sans-serif}' +
+      '.lang-btn:hover{border-color:#7ff5de;color:#7ff5de}.lang-btn:focus-visible{outline:2px solid #7ff5de;outline-offset:2px}';
+    document.head.appendChild(css);
+  }
   var norm = function (s) { return s.replace(/\s+/g, " ").trim(); };
   var FA_DIGITS = "۰۱۲۳۴۵۶۷۸۹";
   var faNum = function (s) { return String(s).replace(/\d/g, function (d) { return FA_DIGITS[d]; }); };
@@ -306,8 +325,17 @@
 
   function apply(lang) {
     root.setAttribute("data-lang", lang);
-    root.lang = lang;
-    root.dir = lang === "en" ? "ltr" : "rtl";
+    if (native) {
+      root.lang = lang;
+      root.dir = lang === "en" ? "ltr" : "rtl";
+    }
+    // Pages with their own switch (Iran, companies, Navigator, lessons, stories) follow this one
+    document.body.setAttribute("data-lang", lang);
+    document.querySelectorAll(".k-toggle button[data-set]").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-set") === lang ? "true" : "false");
+    });
+    if (typeof window.showLanguage === "function") { try { window.showLanguage(lang); } catch (e) {} }
+    try { localStorage.setItem("ditoman-karnameh-lang", lang); } catch (e) {}
     show(texts, lang);
     swaps.forEach(function (el) { el.innerHTML = el.getAttribute(lang === "en" ? "data-en" : "data-fa"); });
     document.querySelectorAll("[data-en-label]").forEach(function (n) {
@@ -326,6 +354,19 @@
   btn.className = "lang-btn";
   var spot = document.querySelector(".nav-right");
   if (spot) spot.insertBefore(btn, spot.firstChild);
+  else {
+    var bar = document.querySelector("header .nav") || document.querySelector("header .container") || document.querySelector("header");
+    if (bar) bar.appendChild(btn);
+  }
+  // One switch for the whole site: the old in-page switches are hidden, and if one is
+  // ever clicked it drives the site-wide setting.
+  document.querySelectorAll(".k-toggle, .language-toggle").forEach(function (el) { el.style.display = "none"; });
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest(".k-toggle button[data-set], .lang-button");
+    if (!b) return;
+    var l = b.getAttribute("data-set") || (/English/.test(b.textContent) ? "en" : "fa");
+    apply(l);
+  });
   btn.addEventListener("click", function () { apply(root.getAttribute("data-lang") === "en" ? "fa" : "en"); });
 
   pairs(document.body);
