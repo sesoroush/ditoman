@@ -13,25 +13,7 @@
       "fa": "معیار انتخاب: شرکت‌ها و پروژه‌هایی که در رشته‌ی خود از نظر مقیاس، صادرات یا نوآوری شاخص‌اند و اطلاعات‌شان قابل راستی‌آزمایی است. هر مدخل یک خانه دارد؛ جایی که یک خارجی اول دنبالش می‌گردد؛ و به شاخه‌های دیگر لینک می‌شود. زیرشاخه‌ها روی ساختار رسمی مجوز در ایران و طبقه‌بندی بین‌المللی طبقه‌بندی رسمی فعالیت‌ها چیده شده‌اند.",
       "en": "Selection rule: companies and projects that stand out in their field for scale, exports or innovation, and whose facts can be checked. Each entry has one home, where a foreigner would look first, and links to other branches. Sub-branches follow Iran's official licensing structure and the international ISIC classification."
     },
-    "features": [
-      {
-        "href": "iran-built.html",
-        "img": "social/iran-built/wide.jpg",
-        "accent": "#f5c86b",
-        "kicker": {
-          "fa": "گزارش ویژه",
-          "en": "Special report"
-        },
-        "name": {
-          "fa": "ایرانی که ساخته شد",
-          "en": "The Iran that was built"
-        },
-        "tag": {
-          "fa": "۵۰ سال ساختن: خانه‌ها نزدیک ۶ برابر، ۵۲ هزار واحد صنعتی، ششمین تولیدکننده‌ی سیمان جهان",
-          "en": "Fifty years of building: almost six times the homes, 52,000 industrial units, the world's sixth-largest cement maker"
-        }
-      }
-    ]
+    "features": []
   },
   "branches": [
     {
@@ -190,7 +172,15 @@
           "listed": false,
           "ownership": "private"
         }
-      ]
+      ],
+      "hero": {
+        "file": "cover.webp",
+        "alt": {
+          "en": "Steel coil and a teal gear in a factory hall",
+          "fa": "صنعت و تولید"
+        },
+        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+      }
     },
     {
       "slug": "energy",
@@ -317,7 +307,15 @@
           "listed": false,
           "ownership": "state"
         }
-      ]
+      ],
+      "hero": {
+        "file": "cover.webp",
+        "alt": {
+          "en": "A water drop reflecting a gas refinery at sunset on the Persian Gulf coast",
+          "fa": "انرژی و آب"
+        },
+        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+      }
     },
     {
       "slug": "transport",
@@ -434,7 +432,15 @@
           "sub": "air",
           "listed": false
         }
-      ]
+      ],
+      "hero": {
+        "file": "cover.webp",
+        "alt": {
+          "en": "A mountain highway bridge with a truck and a freight train",
+          "fa": "حمل‌ونقل و راه"
+        },
+        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+      }
     },
     {
       "slug": "resources",
@@ -537,7 +543,15 @@
           "en": "Iran Central Iron Ore (Bafq)",
           "sub": "metals"
         }
-      ]
+      ],
+      "hero": {
+        "file": "cover.webp",
+        "alt": {
+          "en": "A copper nugget above an open-pit mine",
+          "fa": "منابع و معدن"
+        },
+        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+      }
     },
     {
       "slug": "technology",
@@ -674,7 +688,15 @@
           "listed": false,
           "ownership": "private"
         }
-      ]
+      ],
+      "hero": {
+        "file": "cover.webp",
+        "alt": {
+          "en": "A glowing chip in front of Tehran's skyline and Milad Tower",
+          "fa": "فناوری و خدمات"
+        },
+        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+      }
     },
     {
       "slug": "tourism",
@@ -797,7 +819,15 @@
           "en": "Homa Hotels",
           "sub": "hotels"
         }
-      ]
+      ],
+      "hero": {
+        "file": "cover.webp",
+        "alt": {
+          "en": "Naqsh-e Jahan Square in Isfahan with a tile flower and roses",
+          "fa": "گردشگری و فرهنگ"
+        },
+        "credit": "تصویرسازی با هوش مصنوعی · AI illustration"
+      }
     }
   ]
 }

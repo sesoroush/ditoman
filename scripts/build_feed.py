@@ -1,5 +1,6 @@
 """Build telegram/feed.json from published Telegram posts (telegram/*.md, not drafts).
 
+Site-only entries (shown on posts.html, never sent to Telegram) live in telegram/site/.
 Each post file is named YYYY-MM-DD-NN-slug.md. Optional first line "image: file.png".
 The site's posts.html renders this feed so every channel post is also on the website.
 """
@@ -10,7 +11,7 @@ TG = ROOT / "telegram"
 
 def main():
     items = []
-    for f in sorted(TG.glob("*.md")):
+    for f in sorted(list(TG.glob("*.md")) + list((TG / "site").glob("*.md"))):
         m = re.match(r"(\d{4}-\d{2}-\d{2})-(\d+)-(.+)\.md$", f.name) or re.match(r"(\d{4}-\d{2}-\d{2})-()(.+)\.md$", f.name)
         if not m:
             continue

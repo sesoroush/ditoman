@@ -49,6 +49,10 @@ CARD_CSS = """
 .ir-tag [lang="fa"] { display: inline; }
 .ir-go { color: var(--ir); font-weight: 700; font-size: 0.92rem; margin-top: 6px; }
 .ir-card:hover .ir-go { text-decoration: underline; text-underline-offset: 4px; }
+.ir-card.photo .ir-panel { background: linear-gradient(90deg, rgba(4, 9, 12, 0.55), rgba(4, 9, 12, 0.08)); }
+.ir-card.photo .ir-art img { object-position: right center; }
+.ir-card.photo .ir-panel h3, .ir-card.photo .ir-tag { text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6); }
+.ir-card.photo .ir-tag { color: #d6e6e3; }
 .ir-note { margin-top: 26px; color: var(--muted); max-width: 60em; line-height: 1.8; font-size: 0.95rem; }
 .ir-note a { color: var(--mint); font-weight: 700; }
 @media (max-width: 760px) {
@@ -68,6 +72,8 @@ body[data-lang="fa"] .i-en, body[data-lang="en"] .i-fa { display: none !importan
 body[data-lang="fa"] .ir-panel { inset: 0 0 0 auto; clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%); padding: 22px 28px 22px calc(24% + 12px); align-items: flex-end; text-align: right; }
 body[data-lang="fa"] .ir-panel::before { clip-path: polygon(0 0, 4px 0, calc(22% + 4px) 100%, 22% 100%); }
 body[data-lang="fa"] .ir-panel .ir-fa { text-align: right; }
+body[data-lang="fa"] .ir-card.photo .ir-art img { transform: scaleX(-1); }
+body[data-lang="fa"] .ir-card.photo .ir-panel { background: linear-gradient(270deg, rgba(4, 9, 12, 0.55), rgba(4, 9, 12, 0.08)); }
 body[data-lang="fa"] .ir-panel h3 { font: 400 clamp(1.8rem, 3vw, 2.5rem)/1.25 var(--fa-display); letter-spacing: 0; }
 body[data-lang="fa"] .ir-kicker { font-family: var(--fa); letter-spacing: 0; font-size: 0.9rem; }
 .k-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 24px 0 8px; color: var(--muted); font-size: 0.95rem; }
@@ -361,7 +367,7 @@ def hero_art(b):
 
 def card(b, mode):
     """mode: 'home' shows both languages together; 'hub' uses the page's language toggle."""
-    art, _ = hero_art(b)
+    art, is_photo = hero_art(b)
     if mode == "home":
         inner = (f'<span class="ir-kicker">{e(UI["section"]["en"])}</span>'
                  f'<h3>{e(b["name"]["en"])}<span class="ir-fa" lang="fa">{e(b["name"]["fa"])}</span></h3>'
@@ -372,7 +378,7 @@ def card(b, mode):
                  f'<h3>{t(b["name"])}</h3>'
                  f'<span class="ir-tag">{t(b["tag"])}</span>'
                  f'<span class="ir-go">{t(UI["enter"])} <span class="i-en" lang="en">→</span><span class="i-fa" lang="fa">←</span></span>')
-    return (f'<a class="ir-card" href="iran-{e(b["slug"])}.html" style="--ir:{e(b["accent"])}">'
+    return (f'<a class="ir-card{" photo" if is_photo else ""}" href="iran-{e(b["slug"])}.html" style="--ir:{e(b["accent"])}">'
             f'<div class="ir-art">{art}</div><div class="ir-panel">{inner}</div></a>')
 
 
@@ -770,7 +776,7 @@ def top_section(branches):
 def hub_page(branches):
     s = DATA["section"]
     feats = "".join(feature_card(f, "hub") for f in s.get("features", []))
-    cards = feats + "".join(card(b, "hub") for b in branches) + navigator_card("hub")
+    cards = feats + "".join(card(b, "hub") for b in branches)
     body = f"""  <main class="k-main wrap">
     {toggle(t(UI["section"]))}
     <section class="ir-hero">
@@ -789,7 +795,7 @@ def homepage(branches):
     path = ROOT / "index.html"
     page_html = path.read_text(encoding="utf-8")
     feats = "".join("\n          " + feature_card(f, "home") for f in DATA["section"].get("features", []))
-    cards = feats + "".join("\n          " + card(b, "home") for b in branches) + "\n          " + navigator_card("home")
+    cards = feats + "".join("\n          " + card(b, "home") for b in branches)
     block = f'''<!-- iran:start -->
     <section class="block" id="iran">
       <div class="wrap">

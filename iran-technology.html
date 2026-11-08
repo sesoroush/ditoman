@@ -26,6 +26,8 @@ body[data-lang="fa"] .i-en, body[data-lang="en"] .i-fa { display: none !importan
 body[data-lang="fa"] .ir-panel { inset: 0 0 0 auto; clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%); padding: 22px 28px 22px calc(24% + 12px); align-items: flex-end; text-align: right; }
 body[data-lang="fa"] .ir-panel::before { clip-path: polygon(0 0, 4px 0, calc(22% + 4px) 100%, 22% 100%); }
 body[data-lang="fa"] .ir-panel .ir-fa { text-align: right; }
+body[data-lang="fa"] .ir-card.photo .ir-art img { transform: scaleX(-1); }
+body[data-lang="fa"] .ir-card.photo .ir-panel { background: linear-gradient(270deg, rgba(4, 9, 12, 0.55), rgba(4, 9, 12, 0.08)); }
 body[data-lang="fa"] .ir-panel h3 { font: 400 clamp(1.8rem, 3vw, 2.5rem)/1.25 var(--fa-display); letter-spacing: 0; }
 body[data-lang="fa"] .ir-kicker { font-family: var(--fa); letter-spacing: 0; font-size: 0.9rem; }
 .k-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 24px 0 8px; color: var(--muted); font-size: 0.95rem; }
@@ -191,65 +193,6 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
   body[data-lang="fa"] .ir-panel { width: 76%; padding: 16px 18px 16px calc(24% + 8px); }
 }
 </style>
-<!-- seo:start -->
-<meta name="twitter:card" content="summary_large_image" />
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "WebPage",
-   "@id": "https://ditoman.com/iran-technology.html#page",
-   "url": "https://ditoman.com/iran-technology.html",
-   "name": "Technology & services | فناوری و خدمات | What Iran Has | Ditoman",
-   "description": "The youngest branch and the one with the most regulators: platforms and startups begin with company registration and the e-trust mark; operators and internet providers are licensed by the Communications Regulatory Authority; fintech sits under the Central Bank, insurance under Central Insurance, capital markets under the Securities and Exchange Organisation; and knowledge-based companies gain their exemptions through assessment by the Vice-Presidency for Science.",
-   "isPartOf": {
-    "@id": "https://ditoman.com/#website"
-   },
-   "publisher": {
-    "@type": "Organization",
-    "@id": "https://ditoman.com/#organization",
-    "name": "Ditoman",
-    "alternateName": [
-     "دیتومان",
-     "DiToman",
-     "Ditoman TMN"
-    ],
-    "url": "https://ditoman.com/",
-    "logo": {
-     "@type": "ImageObject",
-     "url": "https://ditoman.com/tmn-logo-512.png",
-     "width": 512,
-     "height": 512
-    },
-    "foundingDate": "2022",
-    "sameAs": [
-     "https://www.instagram.com/ditoman.tmn/",
-     "https://t.me/Ditoman_tm"
-    ]
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Ditoman",
-     "item": "https://ditoman.com/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Technology & services | فناوری و خدمات | What Iran Has",
-     "item": "https://ditoman.com/iran-technology.html"
-    }
-   ]
-  }
- ]
-}
-</script>
-<!-- seo:end -->
 </head>
 <body data-lang="fa">
 
@@ -351,7 +294,7 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
 
   <main class="k-main wrap" style="--ir:#8b6cff">
     <div class="k-bar"><span><a href="iran.html"><span class="i-fa" lang="fa">ایران چه دارد</span><span class="i-en" lang="en">What Iran Has</span></a> <span aria-hidden="true">›</span> <span class="i-fa" lang="fa">فناوری و خدمات</span><span class="i-en" lang="en">Technology &amp; services</span></span><div class="k-toggle" role="group" aria-label="Language"><button type="button" lang="fa" data-set="fa">فارسی</button><button type="button" data-set="en">English</button></div></div>
-    <figure class="ir-figure"><svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="800" height="450" fill="#0d3a40"/><g stroke="#8b6cff" stroke-opacity=".6" stroke-width="3"><path d="M400 225L160 120M400 225L240 340M400 225L620 110M400 225L660 330M400 225L400 60M160 120L240 340M620 110L660 330M160 120L400 60M620 110L400 60"/></g><g fill="#06222a" stroke="#8b6cff" stroke-width="4"><circle cx="160" cy="120" r="26"/><circle cx="240" cy="340" r="22"/><circle cx="620" cy="110" r="30"/><circle cx="660" cy="330" r="24"/><circle cx="400" cy="60" r="18"/></g><rect x="340" y="165" width="120" height="120" rx="18" fill="#06222a" stroke="#eef6f2" stroke-width="5"/><rect x="372" y="197" width="56" height="56" rx="8" fill="#8b6cff"/><g stroke="#eef6f2" stroke-width="5" stroke-linecap="round"><path d="M365 165v-22M400 165v-22M435 165v-22M365 285v22M400 285v22M435 285v22M340 190h-22M340 225h-22M340 260h-22M460 190h22M460 225h22M460 260h22"/></g></svg><figcaption><span class="i-fa" lang="fa">تصویرسازی · عکس واقعی به‌زودی</span><span class="i-en" lang="en">Illustration · real photo coming</span></figcaption></figure>
+    <figure class="ir-figure"><img src="iran/technology/cover.webp" alt="A glowing chip in front of Tehran&#x27;s skyline and Milad Tower" loading="lazy" /><figcaption>تصویرسازی با هوش مصنوعی · AI illustration</figcaption></figure>
     <div class="ir-title">
       <h1><span class="i-fa" lang="fa">فناوری و خدمات</span><span class="i-en" lang="en">Technology &amp; services</span></h1>
       <span class="ir-tagline"><span class="i-fa" lang="fa">پلتفرم‌ها، فین‌تک، دانش‌بنیان، سلامت</span><span class="i-en" lang="en">Platforms, fintech, knowledge-based firms, health</span></span>

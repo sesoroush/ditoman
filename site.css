@@ -596,6 +596,10 @@ body.menu-open { overflow: hidden; }
 .ir-tag [lang="fa"] { display: inline; }
 .ir-go { color: var(--ir); font-weight: 700; font-size: 0.92rem; margin-top: 6px; }
 .ir-card:hover .ir-go { text-decoration: underline; text-underline-offset: 4px; }
+.ir-card.photo .ir-panel { background: linear-gradient(90deg, rgba(4, 9, 12, 0.55), rgba(4, 9, 12, 0.08)); }
+.ir-card.photo .ir-art img { object-position: right center; }
+.ir-card.photo .ir-panel h3, .ir-card.photo .ir-tag { text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6); }
+.ir-card.photo .ir-tag { color: #d6e6e3; }
 .ir-note { margin-top: 26px; color: var(--muted); max-width: 60em; line-height: 1.8; font-size: 0.95rem; }
 .ir-note a { color: var(--mint); font-weight: 700; }
 @media (max-width: 760px) {
