@@ -1,1 +1,30 @@
-aryasasol/logo.jpg | https://blobppplus.blob.core.windows.net/logos/aryasasol.jpeg | direct
+unesco/persepolis | Persepolis Gate of All Nations | commons
+unesco/naqsh-e-jahan | Naqsh-e Jahan Square Isfahan | commons
+unesco/chogha-zanbil | Chogha Zanbil ziggurat | commons
+unesco/takht-e-soleyman | Takht-e Soleyman | commons
+unesco/pasargadae | Tomb of Cyrus Pasargadae | commons
+unesco/bam | Arg-e Bam citadel | commons
+unesco/soltaniyeh | Dome of Soltaniyeh | commons
+unesco/bisotun | Behistun Inscription | commons
+unesco/armenian-monasteries | Saint Thaddeus Monastery Iran | commons
+unesco/shushtar | Shushtar Historical Hydraulic System | commons
+unesco/tabriz-bazaar | Tabriz Bazaar | commons
+unesco/sheikh-safi | Sheikh Safi al-Din Ardabil | commons
+unesco/persian-garden | Eram Garden Shiraz | commons
+unesco/gonbad-e-qabus | Gonbad-e Qabus tower | commons
+unesco/masjed-jame-isfahan | Jameh Mosque of Isfahan | commons
+unesco/golestan-palace | Golestan Palace Tehran | commons
+unesco/shahr-e-sukhteh | Shahr-e Sukhteh | commons
+unesco/maymand | Meymand village Kerman | commons
+unesco/susa | Susa Apadana | commons
+unesco/lut | Lut Desert kaluts | commons
+unesco/qanat | Qanat Gonabad | commons
+unesco/yazd | Yazd old city windcatchers | commons
+unesco/sassanid-fars | Ardashir Palace Firuzabad | commons
+unesco/hyrcanian | Hyrcanian forest | commons
+unesco/trans-iranian-railway | Veresk Bridge | commons
+unesco/hawraman | Palangan village Kurdistan | commons
+unesco/caravanserai | Caravanserai Iran | commons
+unesco/hegmataneh | Hegmataneh Hamadan | commons
+unesco/khorramabad-valley | Khorramabad caves Lorestan | commons
+unesco/alamut | Alamut Castle | commons

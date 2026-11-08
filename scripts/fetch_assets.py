@@ -17,10 +17,22 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 
 
 def get(url):
-    url = urllib.parse.quote(url, safe=":/?&=%~#+,;@!$'()*")
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "fa,en;q=0.8"})
-    with urllib.request.urlopen(req, timeout=40) as r:
-        return r.read(), r.headers.get("Content-Type", "")
+    import time
+    url = urllib.parse.quote(url, safe=":/?&=%~#+,;@!$'()*|")
+    ua = UA if "wikimedia" not in url else "DitomanBot/1.0 (https://ditoman.com; site images) python-urllib"
+    for attempt in range(5):
+        req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept-Language": "fa,en;q=0.8"})
+        try:
+            with urllib.request.urlopen(req, timeout=40) as r:
+                data = r.read(), r.headers.get("Content-Type", "")
+            if "wikimedia" in url:
+                time.sleep(1.5)
+            return data
+        except urllib.error.HTTPError as ex:
+            if ex.code == 429 and attempt < 4:
+                time.sleep(10 * (attempt + 1))
+                continue
+            raise
 
 
 def main():
@@ -107,8 +119,8 @@ def main():
             if mode == "commons":
                 import json
                 api = ("https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search"
-                       "&gsrnamespace=6&gsrlimit=4&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=1400&gsrsearch="
-                       + urllib.parse.quote(url))
+                       "&gsrnamespace=6&gsrlimit=4&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=1600&gsrsearch="
+                       + urllib.parse.quote(url + " filetype:bitmap"))
                 res = json.loads(get(api)[0])
                 for i, pg in enumerate((res.get("query") or {}).get("pages", {}).values()):
                     ii = pg["imageinfo"][0]
