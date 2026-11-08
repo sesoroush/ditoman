@@ -280,6 +280,23 @@ def navigator_card(mode):
             f'<div class="ir-art">{ART["navigator"]}</div><div class="ir-panel">{inner}</div></a>')
 
 
+def feature_card(f, mode):
+    """A wide card for a long-form Iran report (data/iran/branches.json -> section.features)."""
+    art = f'<img src="{e(f["img"])}" alt="{e(f["name"]["en"])}" loading="lazy" />'
+    if mode == "home":
+        inner = (f'<span class="ir-kicker">{e(f["kicker"]["en"])} · <span lang="fa">{e(f["kicker"]["fa"])}</span></span>'
+                 f'<h3>{e(f["name"]["en"])}<span class="ir-fa" lang="fa">{e(f["name"]["fa"])}</span></h3>'
+                 f'<span class="ir-tag">{e(f["tag"]["en"])}</span>'
+                 f'<span class="ir-go">Read the report · <span lang="fa">گزارش</span> →</span>')
+    else:
+        inner = (f'<span class="ir-kicker">{t(f["kicker"])}</span>'
+                 f'<h3>{t(f["name"])}</h3>'
+                 f'<span class="ir-tag">{t(f["tag"])}</span>'
+                 f'<span class="ir-go">{t(UI["enter"])} <span class="i-en" lang="en">→</span><span class="i-fa" lang="fa">←</span></span>')
+    return (f'<a class="ir-card wide" href="{e(f["href"])}" style="--ir:{e(f.get("accent", "#f5c86b"))}">'
+            f'<div class="ir-art">{art}</div><div class="ir-panel">{inner}</div></a>')
+
+
 def load_companies():
     out = []
     for f in sorted(COMPANIES.glob("*.json")):
@@ -360,7 +377,8 @@ def branch_page(b, companies):
 
 def hub_page(branches):
     s = DATA["section"]
-    cards = "".join(card(b, "hub") for b in branches) + navigator_card("hub")
+    feats = "".join(feature_card(f, "hub") for f in s.get("features", []))
+    cards = feats + "".join(card(b, "hub") for b in branches) + navigator_card("hub")
     body = f"""  <main class="k-main wrap">
     {toggle(t(UI["section"]))}
     <section class="ir-hero">
@@ -377,7 +395,8 @@ def hub_page(branches):
 def homepage(branches):
     path = ROOT / "index.html"
     page_html = path.read_text(encoding="utf-8")
-    cards = "".join("\n          " + card(b, "home") for b in branches) + "\n          " + navigator_card("home")
+    feats = "".join("\n          " + feature_card(f, "home") for f in DATA["section"].get("features", []))
+    cards = feats + "".join("\n          " + card(b, "home") for b in branches) + "\n          " + navigator_card("home")
     block = f'''<!-- iran:start -->
     <section class="block" id="iran">
       <div class="wrap">
