@@ -1,34 +1,8 @@
-NO-OG kalleh/p1 https://emalls.ir/مشخصات_بستنی-باقلوا-کاله-650-گرمی~id~9262907
-NO-OG kalleh/p2 https://emalls.ir/مشخصات_دوغ-ویژه-کاله~id~2393542
-NO-OG kalleh/p3 https://emalls.ir/مشخصات_پنیر-لبنه-آنا-کاله-750-گرمی~id~9239349
-NO-OG kalleh/p4 https://emalls.ir/مشخصات_کره-پاستوریزه-250-گرمی-کاله~id~2561498
-NO-OG kalleh/p5 https://emalls.ir/مشخصات_پنیر-کبابی-450-گرمی-کاله~id~719182
-NO-OG kalleh/p6 https://emalls.ir/مشخصات_کاله-پرو-شیر-کاراملی-330میل~id~26535555
-FAIL kalleh/brands https://iranbrands.review/industry/food/kalleh/ <urlopen error [Errno -2] Name or service not known>
-OK kalleh/c.0.jpg File:Kalleh Amol Logo.jpg
-OK kalleh/c.1.jpg File:Kalleh ice cream cafe Amol.jpg
-OK kalleh/c.2.jpg File:VahidOnline-69213-kalleh company fire.webm
-OK kalleh/c.3.jpg File:VahidOnline-69214-amol fire at kalleh company.webm
-FAIL golrang/logo.png https://upload.wikimedia.org/wikipedia/en/d/df/Golrang-Logo.png HTTP Error 429: Too many requests (f061ab2)
-NO-OG golrang/p1 https://emalls.ir/مشخصات_شامپو-بچه-گلرنگ-خرسی-110-گرم~id~2321261
-NO-OG golrang/p2 https://emalls.ir/مشخصات_مایع-جرم-گیر-گلرنگ-1-لیتری~id~1865823
-FAIL golrang/tby https://dev.thebusinessyear.com/?p=41077 HTTP Error 403: Forbidden
-OK golrang/c.0.jpg File:OfoqKourosh.svg
-OK golrang/c.1.jpg File:Ofoq kourosh logo.png
-FAIL golrang/c Golrang HTTP Error 429: Too many requests (f061ab2)
-NO-OG aryasasol/wiki https://en.wikipedia.org/wiki/Arya_Sasol_polymer_company
-FAIL aryasasol/fa https://www.aryasasol.com/fa <urlopen error [Errno -3] Temporary failure in name resolution>
-NO-OG aryasasol/ft https://financialtribune.com/node/117770
-OK aryasasol/pe.0.jpg File:Heat capacities of polyethylene. IV. High molecular weight linear polyethylene (IA jresv80An1p51).pdf
-OK aryasasol/pe.1.jpg File:Heat capacities of polyethylene from 2 to 360 K. I. Standard samples of linear and branched polyethylene whole polymer (IA jresv77An4p395).pdf
-OK aryasasol/pe.2.jpg File:Polyethylene balls5.jpg
-OK aryasasol/pe.3.jpg File:Preparation of high-performance polyethylene tubes under the coexistence of silicone cross-linked polyethylene and rotation extrusion.pdf
-OK fateh/logo.jpg 6987 image/jpeg https://kar.iranestekhdam.ir/storage/profile/logos/2023-12-24/logo_1703406872.jpg
-NO-OG fateh/irib https://www.irib-news.ir/fa/news/5934929
-FAIL fateh/naftema https://www.naftema.com/news/193416 <urlopen error timed out>
-NO-OG fateh/presstv https://www.presstv.co.uk/Detail/2026/11/01/779693/explainer-iranian-engineers-build-500-ton-polymerization-reactor-for-asaluyeh
-OK fateh/site 5729 image/svg+xml http://fatehsanat.com/wp-content/uploads/2021/05/fs-mission-icon-01-03.svg
-OK fateh/c.0.jpg File:Shell and Tube Heat Exchanger Piping 1.jpg
-OK fateh/c.1.jpg File:Shell heat exchanger LS.JPG
-OK fateh/c.2.jpg File:Tube bundle of a shell & tube heat exchanger (before assembly).jpg
-OK fateh/c.3.jpg File:Tube bundle of a shell & tube heat exchanger (before assembly) - 2.jpg
+FAIL kalleh/dk کاله HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Temporary Redirect
+FAIL golrang/dk گلرنگ HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Temporary Redirect
+OK golrang/logo.png 15904 image/png https://upload.wikimedia.org/wikipedia/en/d/df/Golrang-Logo.png
+OK kalleh/logo.png 9925 image/png https://upload.wikimedia.org/wikipedia/en/2/2a/Kaleh_Group_Logo.png
