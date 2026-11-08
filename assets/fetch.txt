@@ -1,10 +1,5 @@
-kalleh/e1 | https://emalls.ir/مشخصات_بستنی-باقلوا-کاله-650-گرمی~id~9262907 | emalls
-kalleh/e2 | https://emalls.ir/مشخصات_دوغ-ویژه-کاله~id~2393542 | emalls
-kalleh/e3 | https://emalls.ir/مشخصات_پنیر-لبنه-آنا-کاله-750-گرمی~id~9239349 | emalls
-kalleh/e4 | https://emalls.ir/مشخصات_کره-پاستوریزه-250-گرمی-کاله~id~2561498 | emalls
-kalleh/e5 | https://emalls.ir/مشخصات_پنیر-کبابی-450-گرمی-کاله~id~719182 | emalls
-kalleh/e6 | https://emalls.ir/مشخصات_کاله-پرو-شیر-کاراملی-330میل~id~26535555 | emalls
-kalleh/e7 | https://emalls.ir/مشخصات_ماست-سون-کم-چرب-کاله--500-گرم~id~8231929 | emalls
-kalleh/off1.jpg | world.openfoodfacts.org:6260161538703 | offcode
-golrang/e1 | https://emalls.ir/مشخصات_شامپو-بچه-گلرنگ-خرسی-110-گرم~id~2321261 | emalls
-golrang/e2 | https://emalls.ir/مشخصات_مایع-جرم-گیر-گلرنگ-1-لیتری~id~1865823 | emalls
+aryasasol/craft | https://craft.co/arya-sasol-polymer/competitors | og
+aryasasol/bitscale | https://ghost.bitscale.ai/arya-sasol-polymer | og
+aryasasol/pplus | https://portfolio-pplus.com/EntityMains/Details/1210 | og
+aryasasol/shana | https://en.shana.ir/tag/Arya+Sasol | og
+aryasasol/plast | https://plasteurasia.com/en/exhibitor-list/arya-sasol-polymer-company-151554-3173 | og
