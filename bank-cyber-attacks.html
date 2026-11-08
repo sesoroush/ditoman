@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Bank Cyberattacks | حمله‌های سایبری به بانک‌ها از درِ پشتیِ شرکت‌های همکار | Ditoman</title>
+<meta name="description" content="در یک هفته چهار حادثه در فرانسه، تایوان، کره جنوبی و ژاپن: پول جابه‌جا شد یا داده درز کرد. چه تأیید شده، چه نه، و درس امنیت زنجیره‌ی تأمین. Bank cyberattacks explained." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/bank-cyber-attacks.html" />
+<link rel="icon" href="ditoman-logo.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Bank Cyberattacks | حمله‌های سایبری به بانک‌ها از درِ پشتیِ شرکت‌های همکار | Ditoman" />
+<meta property="og:description" content="در یک هفته چهار حادثه در فرانسه، تایوان، کره جنوبی و ژاپن: پول جابه‌جا شد یا داده درز کرد. چه تأیید شده، چه نه، و درس امنیت زنجیره‌ی تأمین. Bank cyberattacks explained." />
+<meta property="og:url" content="https://ditoman.com/bank-cyber-attacks.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/bank-cyber-attacks.html#page",
+   "url": "https://ditoman.com/bank-cyber-attacks.html",
+   "name": "Bank Cyberattacks | حمله‌های سایبری به بانک‌ها از درِ پشتیِ شرکت‌های همکار | Ditoman",
+   "description": "در یک هفته چهار حادثه در فرانسه، تایوان، کره جنوبی و ژاپن: پول جابه‌جا شد یا داده درز کرد. چه تأیید شده، چه نه، و درس امنیت زنجیره‌ی تأمین. Bank cyberattacks explained.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Bank Cyberattacks | حمله‌های سایبری به بانک‌ها از درِ پشتیِ شرکت‌های همکار",
+     "item": "https://ditoman.com/bank-cyber-attacks.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="ditoman-logo.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="navigator.html">Navigator</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/bank-cyber-attacks/post.png" alt="Cyberattacks on banks in France, Taiwan, South Korea and Japan" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge">Security • امنیت مالی</div>
+<h1 dir="rtl" style="text-align:right">حمله‌های سایبری به بانک‌ها؛ این بار از درِ پشتیِ شرکت‌های همکار</h1>
+<p class="subtitle">Four incidents in France, Taiwan, South Korea and Japan between 30 September and 5 November 2026: what is confirmed, what is not, and why third parties matter.</p>
+<div class="stats">
+<div class="stat"><b>≈ ۱۰۰ میلیون €</b><span>فرانسه، طبق گزارش بانک<br>France, per the bank</span></div>
+<div class="stat"><b>۴۱۹ حساب</b><span>تایوان، ۴۲۷ انتقال<br>Taiwan, 427 transfers</span></div>
+<div class="stat"><b>۴۰ رخداد</b><span>کره جنوبی، ۳۷ شرکت مالی<br>Korea, 37 firms</span></div>
+<div class="stat"><b>۳۲۰ هزار</b><span>ژاپن، حداکثر نفر<br>Japan, up to people</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p>فرض کن بانکت امنیت حسابت را تقویت کرده، ولی مهاجم از مسیر شرکتی وارد شود که برای همان بانک نرم‌افزار یا خدمات می‌سازد. در روزهای اخیر چند حادثه از چند کشور خبرساز شد: از انتقال غیرمجاز پول در فرانسه و تایوان تا افشای اطلاعات در کره جنوبی و ژاپن.</p>
+<div class="note"><p><strong>یک نکته‌ی مهم.</strong> مدرکی منتشر نشده که این رخدادها بخشی از یک حمله‌ی جهانی هماهنگ باشند. زمان و روش‌شان فرق دارد و نباید همه را با یک اسم توضیح داد. اشتراک اصلی‌شان این است که در چند مورد نقطه‌ی ورود، یک شرکت همکار یا تأمین‌کننده بوده، نه سیستم اصلی بانک.</p></div>
+
+<h3><span class="check-number">۰۱.</span> فرانسه؛ حدود ۱۰۰ میلیون یورو از حساب خود بانک</h3>
+<ul>
+<li>Crédit Mutuel Arkéa روز ۴ نوامبر اعلام کرد هدف حمله‌ی سایبری قرار گرفته است.</li>
+<li>طبق بانک، مهاجمان از مسیر پلتفرم یک ارائه‌دهنده‌ی خدمات وارد شدند و تراکنش‌های غیرمجاز را از حساب متعلق به خود بانک انجام دادند. بانک می‌گوید دارایی مشتریان آسیب ندیده.</li>
+<li>روز ۵ نوامبر بانک اعلام کرد حدود ۱۰۰ میلیون یورو مفقود شده و هنوز نمی‌تواند بگوید چقدرش بازمی‌گردد. برای احتیاط، بعضی تراکنش‌ها را موقتاً متوقف کرد.</li>
+<li><strong>ادعاهای تأییدنشده:</strong> تحلیلگران بلاکچین (از جمله ZachXBT) می‌گویند برداشت‌ها از ۱ و ۲ نوامبر شروع شد و بخشی از پول از صرافی‌ها به استیبل‌کوین و اتریوم تبدیل شد؛ رقم اولیه‌ی آن‌ها بیش از ۱۰۶ میلیون دلار و بعد بیش از ۱۳۳ میلیون دلار بود. بانک هیچ‌کدام را تأیید نکرده. طبق همین گزارش‌ها تتر حدود ۱٫۱ میلیون دلار USDT را فریز کرد. من این‌ها را فقط از خلاصه‌ی گزارش Halborn دیدم.</li>
+</ul>
+
+<h3><span class="check-number">۰۲.</span> تایوان؛ برداشت غیرمجاز از ۴۱۹ حساب</h3>
+<ul>
+<li>SinoPac روز ۳ نوامبر انتقال‌های غیرمجاز دید و روز ۴ نوامبر جزئیات را اعلام کرد: ۴۱۹ حساب، ۴۲۷ تراکنش، جمعاً حدود ۴۱٫۷۶ میلیون دلار تایوان (حدود ۱٫۳ میلیون دلار آمریکا). هر تراکنش حدود ۱۰۰ هزار دلار تایوان به یک حساب در بانکی دیگر بود.</li>
+<li>بانک می‌گوید مهاجمان از ضعف تنظیمات امنیتی در سامانه‌ی تازه‌ی بانکداری موبایل، که شرکتی بیرونی تأمین کرده بود، سوءاستفاده کردند.</li>
+<li>پول همه‌ی مشتریان بازگردانده شده؛ بانک شواهدی از افشای داده‌ی مشتریان ندیده است. بانک قصد دارد از تأمین‌کننده خسارت بگیرد، حساب مقصد موقتاً مسدود شده و دادستانی تایپه به‌عنوان جرم رایانه‌ای تحقیق می‌کند.</li>
+</ul>
+<p style="color:#9fb6b9">در بعضی گزارش‌ها تعداد حساب‌ها ۴۱۸ آمده؛ Focus Taiwan و اعلام نهاد ناظر ۴۱۹ را نوشته‌اند و من همین را آورده‌ام.</p>
+
+<h3><span class="check-number">۰۳.</span> کره جنوبی؛ ۴۰ رخداد در ۳۷ شرکت مالی</h3>
+<ul>
+<li>طبق اعلام نهادهای مالی کره در جلسه‌ی ۵ نوامبر، از ۳۰ سپتامبر تا ۳ نوامبر ۴۰ رخداد امنیتی در ۳۷ شرکت مالی ثبت شده است.</li>
+<li>حدود ۴۷۳ هزار «مورد افشای اطلاعات» و حدود یک میلیارد وون (حدود ۷۴۵ هزار دلار) پول تصاحب‌شده گزارش شده.</li>
+<li>شرکت‌ها طبق گزارش SBS: ۱۰ شرکت مالی الکترونیکی، ۵ بانک پس‌انداز، ۵ شرکت سرمایه‌گذاری، ۴ بانک، ۴ شرکت وام‌دهی P2P، ۳ بیمه، ۳ ارائه‌دهنده‌ی دارایی دیجیتال، ۲ شرکت اعتباری و ۱ تعاونی مالی.</li>
+<li>بررسی‌ها درباره‌ی روش حمله، ارتباط احتمالی میان رخدادها و نقش احتمالی هوش مصنوعی ادامه دارد. مقام‌ها گفته‌اند نمی‌توان نقش هوش مصنوعی را رد کرد، ولی نتیجه‌ی قطعی نیست. طبق گزارش رسانه‌ها، درز کردن رمز حساب‌ها هم تأیید نشده است.</li>
+</ul>
+<div class="note"><p>«۴۷۳ هزار مورد» لزوماً ۴۷۳ هزار نفر نیست و «۳۷ بانک هک‌شده در یک روز» هم نیست. آمار شرکت‌های مالی گوناگون در بیش از یک ماه است و فقط ۴ تای آن‌ها بانک تجاری‌اند.</p></div>
+
+<h3><span class="check-number">۰۴.</span> ژاپن؛ افشای اطلاعات در شرکت تضمین‌کننده‌ی وام</h3>
+<ul>
+<li>SMBC Consumer Finance روز ۲ نوامبر دسترسی غیرمجاز به «سیستم تضمین» خود را شناسایی کرد و روز ۵ نوامبر اعلام کرد.</li>
+<li>این شرکت وام‌های کارتی را که بانک‌های منطقه‌ای، اتحادیه‌های اعتباری و بانک‌های اینترنتی شریک می‌دهند تضمین می‌کند و برای بعضی از آن‌ها فرم درخواست آنلاین هم فراهم می‌کند.</li>
+<li>اطلاعات «تا سقف ۳۲۰٬۱۱۸ نفر» ممکن است در داده‌های خارج‌شده باشد (نه الزاماً همه‌ی موارد برای همه): نام، جنسیت، تاریخ تولد، آدرس، تلفن، ایمیل، شماره‌ی گواهینامه، محل کار و درآمد سالانه و جزئیات قرارداد. تصویر مدارک جزو آن نیست.</li>
+<li>سیستم موقتاً متوقف شده، سوءاستفاده‌ی ثانویه تأیید نشده و مشتریان پس از روشن شدن دامنه به‌طور جداگانه مطلع می‌شوند. بانک‌های شریک نام برده نشده‌اند و یکی از بانک‌های مرتبط می‌گوید نفوذ به سیستم خود بانک تأیید نشده.</li>
+</ul>
+<p style="color:#9fb6b9">جزئیات ژاپن را از خلاصه‌ی SmartScope دیدم و PDF اصلی شرکت را خودم نخواندم.</p>
+
+<h3><span class="check-number">۰۵.</span> آیا این‌ها حمله‌ی DDoS بودند؟</h3>
+<p>DDoS معمولاً یعنی از دسترس خارج کردن یک سایت یا سرویس با فرستادن حجم زیاد درخواست. اما در فرانسه و تایوان گزارش‌ها از انتقال غیرمجاز پول می‌گویند و در ژاپن و بخشی از کره از افشای داده. پس همه را نباید با یک اسم توضیح داد.</p>
+
+<h3><span class="check-number">۰۶.</span> نگاه دیتومان</h3>
+<p>پشت اپلیکیشن ساده‌ای که هر روز با آن پول جابه‌جا می‌کنیم، شبکه‌ای از بانک‌ها، شرکت‌های نرم‌افزاری، ارائه‌دهندگان پرداخت و تأمین‌کنندگان فناوری هست. این حوادث نشان می‌دهد امنیت یک حساب فقط به رمز صاحبش یا سیستم داخلی بانک وابسته نیست؛ ضعیف‌ترین حلقه‌ی همکاران بانک هم اهمیت دارد.</p>
+<ul>
+<li>خبر مربوط به حسابت را فقط از مسیر رسمی بانک بگیر.</li>
+<li>تراکنش عجیب را فوراً گزارش کن.</li>
+<li>رمز، اطلاعات کارت و کد پیامکی را هرگز در تماس یا پیام در اختیار کسی نگذار.</li>
+<li>اگر داده‌ات لو رفته، خطر اصلی کلاهبرداری با اطلاعات واقعی توست (تماس جعلی با اسم بانک)، نه فقط هک حساب.</li>
+</ul>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>اعلام Crédit Mutuel Arkéa و گزارش رویترز درباره‌ی ۱۰۰ میلیون یورو (۴ و ۵ نوامبر ۲۰۲۶)</li>
+<li>Halborn: Explained, The Crédit Mutuel Arkéa Cyberattack • halborn.com</li>
+<li>Focus Taiwan: SinoPac و انتقال‌های غیرمجاز (۴ نوامبر ۲۰۲۶) • focustaiwan.tw</li>
+<li>SBS و Korea Herald: آمار ۴۰ رخداد در ۳۷ شرکت (۵ نوامبر ۲۰۲۶) • news.sbs.co.kr • koreaherald.com</li>
+<li>SmartScope: SMBC Consumer Finance (اطلاعیه‌ی ۵ نوامبر ۲۰۲۶) • smartscope.blog</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">کاور بر پایه‌ی تصویر ساخته‌شده با هوش مصنوعی است. اعداد از گزارش‌های ۱ تا ۵ نوامبر است و ممکن است به‌روز شود. این متن توصیه‌ی مالی نیست. • Figures come from press reports of 1 to 5 November and may change.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p>Imagine a bank that has hardened its own security, only for attackers to get in through a company that supplies software or services to that bank. Four incidents from four countries made news within days. No evidence has been published that they form one coordinated global attack; their timing and methods differ.</p>
+<h3>France: about EUR 100 million</h3>
+<p>Crédit Mutuel Arkéa confirmed a cyberattack on 4 November. The bank says attackers entered through a service provider's platform and made unauthorised transactions from the bank's own account; it says customer assets were not affected. On 5 November it said about EUR 100 million was missing and it could not yet say how much would be recovered. Unconfirmed: blockchain analysts including ZachXBT say withdrawals began on 1 and 2 November and that part of the money was converted into stablecoins and ETH, with Tether freezing about $1.1 million. The bank has not confirmed this, and I saw it only in a Halborn summary.</p>
+<h3>Taiwan: 419 accounts</h3>
+<p>SinoPac saw unauthorised transfers on 3 November: 427 transactions from 419 accounts, about NT$41.76 million (roughly US$1.3 million), each about NT$100,000 to an account at another bank. The bank says attackers exploited weak security settings in a new mobile banking system supplied by an outside company. Customers were reimbursed, no customer data leak was found, the bank will seek compensation from the supplier and Taipei prosecutors are investigating. Some reports say 418 accounts; Focus Taiwan and the regulator say 419.</p>
+<h3>South Korea: 40 incidents, 37 firms</h3>
+<p>According to Korean financial authorities (5 November), 40 security incidents hit 37 financial firms between 30 September and 3 November, with about 473,000 "information leak cases" and about 1 billion won (about $745,000) taken. The firms include 4 banks, 5 savings banks, investment, insurance, payment, P2P lending and virtual-asset firms. 473,000 cases is not necessarily 473,000 people, and this is not 37 banks hacked in one day. Methods, links between incidents and any AI role are still under review; officials say AI cannot be ruled out, but nothing is established.</p>
+<h3>Japan: up to 320,000 people</h3>
+<p>SMBC Consumer Finance detected unauthorised access to its guarantee system on 2 November and announced it on 5 November. It guarantees card loans offered by partner regional banks, credit unions and internet banks. Data of up to 320,118 people may have been included: name, address, phone, email, driver's licence number, workplace and annual income, and contract details (not ID images). The system is suspended, no secondary harm is confirmed, partner banks are not named, and the exact scope is under investigation. I saw this through a SmartScope summary, not the company's PDF.</p>
+<h3>Was it DDoS?</h3>
+<p>Not in general. DDoS knocks a service offline with a flood of requests; France and Taiwan involved money movement, Japan and part of Korea involved data leaks.</p>
+<h3>Ditoman's reading (our view)</h3>
+<p>Behind a simple banking app sits a network of banks, software vendors, payment providers and suppliers, so your account is only as safe as the weakest partner. Get account news only through your bank's official channels, report odd transactions fast, never share passwords, card details or SMS codes on a call or message, and remember that after a data leak the main risk is scams using your real details.</p>
+<p style="color:#9fb6b9">Sources are listed in the Persian tab. The cover is built on an AI-generated image. Figures come from press reports of 1 to 5 November. Not financial advice.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+Ditoman • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261107b" defer></script>
+</body>
+</html>
