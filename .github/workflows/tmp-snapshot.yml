@@ -1,0 +1,24 @@
+name: Temporary market snapshot
+on:
+  push:
+    branches: [tmp-market-snapshot]
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir out; cd out
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+          for u in \
+            "https://cdn.tsetmc.com/api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&showTraded=false&withBestLimits=false&hEven=0&RefID=0|mw0.json" \
+            "https://webgw.tse.ir/InstrumentProvider/api/v1/MarketWatch/MarketWatchCash/fa|webgw.json" \
+            "https://cdn.tsetmc.com/api/StaticData/GetStaticData|static.json" \
+            "https://old.tsetmc.com/tsev2/data/MarketWatchPlus.aspx|mwplus.txt" ; do
+            url="${u%%|*}"; f="${u##*|}"
+            curl -sS -m 60 -A "$UA" -H "Accept: application/json" -o "$f" -w "$f %{http_code} %{size_download}\n" "$url" || echo "$f failed"
+          done
+          ls -la
+      - uses: actions/upload-artifact@v4
+        with:
+          name: snapshot
+          path: out
