@@ -12,7 +12,26 @@
     "method": {
       "fa": "معیار انتخاب: شرکت‌ها و پروژه‌هایی که در رشته‌ی خود از نظر مقیاس، صادرات یا نوآوری شاخص‌اند و اطلاعات‌شان قابل راستی‌آزمایی است. هر مدخل یک خانه دارد؛ جایی که یک خارجی اول دنبالش می‌گردد؛ و به شاخه‌های دیگر لینک می‌شود. زیرشاخه‌ها روی ساختار رسمی مجوز در ایران و طبقه‌بندی بین‌المللی طبقه‌بندی رسمی فعالیت‌ها چیده شده‌اند.",
       "en": "Selection rule: companies and projects that stand out in their field for scale, exports or innovation, and whose facts can be checked. Each entry has one home, where a foreigner would look first, and links to other branches. Sub-branches follow Iran's official licensing structure and the international ISIC classification."
-    }
+    },
+    "features": [
+      {
+        "href": "iran-built.html",
+        "img": "social/iran-built/wide.jpg",
+        "accent": "#f5c86b",
+        "kicker": {
+          "fa": "گزارش ویژه",
+          "en": "Special report"
+        },
+        "name": {
+          "fa": "ایرانی که ساخته شد",
+          "en": "The Iran that was built"
+        },
+        "tag": {
+          "fa": "۵۰ سال ساختن: خانه‌ها نزدیک ۶ برابر، ۵۲ هزار واحد صنعتی، ششمین تولیدکننده‌ی سیمان جهان",
+          "en": "Fifty years of building: almost six times the homes, 52,000 industrial units, the world's sixth-largest cement maker"
+        }
+      }
+    ]
   },
   "branches": [
     {

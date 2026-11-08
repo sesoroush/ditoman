@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The Iran That Was Built | ایرانی که ساخته شد؛ از خانه تا کارخانه | Ditoman</title>
+<meta name="description" content="ایران در ۵۰ سال چقدر ساخت؟ خانه‌ها نزدیک ۶ برابر شد، ۵۲ هزار واحد صنعتی در شهرک‌ها، ششمین تولیدکننده‌ی سیمان جهان. گزارش دوزبانه با منبع هر عدد. How much Iran has built in 50 years." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/iran-built.html" />
+<link rel="icon" href="ditoman-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The Iran That Was Built | ایرانی که ساخته شد؛ از خانه تا کارخانه | Ditoman" />
+<meta property="og:description" content="ایران در ۵۰ سال چقدر ساخت؟ خانه‌ها نزدیک ۶ برابر شد، ۵۲ هزار واحد صنعتی در شهرک‌ها، ششمین تولیدکننده‌ی سیمان جهان. گزارش دوزبانه با منبع هر عدد. How much Iran has built in 50 years." />
+<meta property="og:url" content="https://ditoman.com/iran-built.html" />
+<meta property="og:image" content="https://ditoman.com/social/iran-built/post.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/iran-built.html#article",
+   "mainEntityOfPage": "https://ditoman.com/iran-built.html",
+   "headline": "The Iran That Was Built | ایرانی که ساخته شد؛ از خانه تا کارخانه",
+   "description": "ایران در ۵۰ سال چقدر ساخت؟ خانه‌ها نزدیک ۶ برابر شد، ۵۲ هزار واحد صنعتی در شهرک‌ها، ششمین تولیدکننده‌ی سیمان جهان. گزارش دوزبانه با منبع هر عدد. How much Iran has built in 50 years.",
+   "image": "https://ditoman.com/social/iran-built/post.png",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The Iran That Was Built | ایرانی که ساخته شد؛ از خانه تا کارخانه",
+     "item": "https://ditoman.com/iran-built.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="ditoman-logo.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="navigator.html">Navigator</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepapers</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a href="index.html#community">Community</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/iran-built/post.png" alt="The Iran that was built: from homes to factories" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge">What Iran Has • ایران چه دارد</div>
+<h1 dir="rtl" style="text-align:right">ایرانی که ساخته شد؛ از خانه تا کارخانه</h1>
+<p class="subtitle">How much living, working and production space has Iran built in fifty years? Homes, factories, cement and steel, with a source for every number.</p>
+<div class="stats">
+<div class="stat"><b>۲۲٫۸ میلیون</b><span>واحد مسکونی، سرشماری ۱۳۹۵<br>Homes, 2016 census</span></div>
+<div class="stat"><b>≈ ۶ برابر</b><span>خانه‌ها در ۵۰ سال<br>Housing stock, 1966–2016</span></div>
+<div class="stat"><b>۵۲ هزار</b><span>واحد صنعتی در شهرک‌ها<br>Units in industrial parks</span></div>
+<div class="stat"><b>۶۸ میلیون تن</b><span>سیمان ۲۰۲۵، ششم جهان<br>Cement 2025, 6th</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p>هر خانه، مغازه، مدرسه، کارخانه و انباری که امروز در ایران می‌بینیم، حاصل سال‌ها کار مهندسان، معماران، کارگران ساختمانی، تولیدکنندگان مصالح، نصاب‌ها و میلیون‌ها خانواده‌ای است که برای ساختن یا خریدن یک سقف پس‌انداز کرده‌اند. این گزارش با عدد به این پرسش نگاه می‌کند: <strong>ایران در ۵۰ سال گذشته چه حجمی از فضای زندگی، کار و تولید ساخته است؟</strong></p>
+<p>از خانه شروع می‌کنیم؛ بعد دوربین عقب می‌رود و کارخانه‌ها، شهرک‌ها، مصالح و شهر را نشان می‌دهد. هر جا عددی قطعی نبود، همین را صریح گفته‌ایم.</p>
+
+<h3><span class="check-number">۰۱.</span> خانه: نزدیک ۶ برابر در ۵۰ سال</h3>
+<p>سرشماری‌های مرکز آمار ایران تعداد «واحدهای مسکونی معمولیِ دارای سکنه» را از ۱۳۴۵ ثبت کرده‌اند. چون تعریف در این جدول یکسان است، می‌شود مسیر را دنبال کرد:</p>
+<table style="width:100%;border-collapse:collapse;margin:14px 0"><tr><th style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">سرشماری</th><th style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">واحد مسکونی معمولی</th></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۱۳۴۵</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۳٫۹۰ میلیون</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۱۳۵۵</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۵٫۳۱ میلیون</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۱۳۶۵</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۸٫۲۹ میلیون</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۱۳۷۵</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۱۰٫۷۷ میلیون</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۱۳۸۵</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۱۵٫۸۶ میلیون</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۱۳۹۵</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">۲۲٫۸۳ میلیون</td></tr></table>
+<img src="social/iran-built/slide2.png" alt="Housing units in Iran, 1966 to 2016" style="width:100%;max-width:640px;border-radius:18px;display:block;margin:18px auto" loading="lazy">
+<ul>
+<li>از ۱۳۴۵ تا ۱۳۹۵ موجودی خانه‌ها حدود <strong>۵٫۹ برابر</strong> شد؛ فقط در ۲۰ سالِ ۱۳۷۵ تا ۱۳۹۵، <strong>۲٫۱ برابر</strong>.</li>
+<li>در ۱۳۹۵ حدود ۲۴٫۲ میلیون خانوار در کشور بود.</li>
+<li>کیفیت ساخت هم عوض شد: تعداد خانه‌هایی که در ساختمان‌های اسکلت فلزی یا بتن‌آرمه قرار دارند، از حدود ۸٫۸ میلیون در ۱۳۹۰ به حدود ۱۳٫۱ میلیون در ۱۳۹۵ رسید.</li>
+<li>این‌ها افزایش «موجودی» است؛ تعداد واحدهایی که در این سال‌ها ساخته شده بیشتر است، چون بخشی از بناهای قدیمی تخریب و نوسازی شده‌اند.</li>
+</ul>
+<div class="note"><p><strong>عدد ۱۴۰۵.</strong> حبیب‌الله طاهرخانی، معاون مسکن و ساختمان وزارت راه و شهرسازی، مرداد ۱۴۰۵ کل واحدهای مسکونی کشور را حدود ۳۲٫۵ میلیون اعلام کرد و حدود ۲٫۵ میلیون واحد را خالی دانست که به گفته‌ی او بیشترشان خانه‌ی دوم‌اند. این عدد همه‌ی واحدها، از جمله خالی و دوم، را می‌شمارد و نباید مستقیم با ستون‌های سرشماری مقایسه شود.</p></div>
+
+<h3><span class="check-number">۰۲.</span> کارخانه‌ها و شهرک‌های صنعتی</h3>
+<p>طبق آمار سازمان صنایع کوچک و شهرک‌های صنعتی ایران (به نقل خبرگزاری مهر، شهریور ۱۴۰۴):</p>
+<ul>
+<li><strong>۵۲٬۰۸۷ واحد صنعتی</strong> در شهرک‌ها و نواحی صنعتی به بهره‌برداری رسیده‌اند؛ حدود <strong>۴۵٬۵۰۰</strong> فعال و حدود ۶٬۶۰۰ غیرفعال.</li>
+<li>۴۸٬۱۲۴ واحد (۹۲٪) کوچک و خرد، ۳٬۰۶۴ متوسط و ۸۹۹ بزرگ‌اند؛ یعنی ستون این شبکه کسب‌وکارهای کوچک‌اند.</li>
+<li>این عدد فقط شهرک‌ها و نواحی صنعتی را می‌شمارد، نه همه‌ی کارخانه‌ها و کارگاه‌های کشور را؛ و هر واحد ممکن است چند سوله، ساختمان و انبار داشته باشد.</li>
+<li>واحد غیرفعال هم سوله، تأسیسات و زمینی آماده است؛ ظرفیتی که می‌تواند دوباره روشن شود.</li>
+</ul>
+
+<h3><span class="check-number">۰۳.</span> مصالحی که ایران را ساخت</h3>
+<ul>
+<li><strong>سیمان:</strong> ایران در ۲۰۲۵ حدود <strong>۶۸ میلیون تن</strong> سیمان تولید کرد (۲۰۲۴: ۷۱ میلیون تن) و طبق سازمان زمین‌شناسی آمریکا (USGS) <strong>ششمین تولیدکننده‌ی جهان</strong> بود؛ ظرفیت کلینکر کشور حدود ۸۵ میلیون تن در سال است.</li>
+<li><strong>فولاد:</strong> تولید فولاد خام ایران در ۲۰۲۵ حدود <strong>۳۱٫۸ میلیون تن</strong> بود و طبق انجمن جهانی فولاد (worldsteel) در رتبه‌ی <strong>دهم جهان</strong> قرار گرفت. در پنج ماه نخست ۲۰۲۵ ایران حتی نهم بود.</li>
+</ul>
+<img src="social/iran-built/slide3.png" alt="Industrial units, cement and steel in Iran" style="width:100%;max-width:640px;border-radius:18px;display:block;margin:18px auto" loading="lazy">
+
+<h3><span class="check-number">۰۴.</span> ساختن ادامه دارد</h3>
+<p>طبق سالنامه‌ی آماری مرکز آمار، در مناطق شهری ۱۳۹۹، حدود <strong>۱۷۴ هزار پروانه‌ی ساختمانی</strong> با حدود <strong>۹۳٫۶ میلیون مترمربع</strong> زیربنا صادر شد (۱۳۹۵: ۱۱۸ هزار پروانه و ۶۲٫۳ میلیون مترمربع). پروانه یعنی برنامه‌ی ساخت، نه ساختمان تمام‌شده؛ اما نشان می‌دهد چرخ ساخت می‌چرخد.</p>
+
+<h3><span class="check-number">۰۵.</span> مغازه، انبار، مدرسه، بیمارستان</h3>
+<p>این بخش‌ها هم بخشی از محیط ساخته‌شده‌اند، ولی آمار سراسری‌شان پراکنده است:</p>
+<ul>
+<li><strong>واحدهای صنفی:</strong> اتاق اصناف ایران از بیش از ۳ میلیون واحد صنفی گفته و یک مقام وزارت اقتصاد در ۱۴۰۳ از حدود ۲ میلیون واحد دارای پروانه. «واحد صنفی» یک فعالیت است، نه یک ساختمان.</li>
+<li><strong>انبارها:</strong> در ۱۳۹۷ وزارت صمت از شناسایی بیش از ۳۰۰ هزار انبار صنفی، ۴۹ هزار صنعتی، ۸۳ هزار کشاورزی، ۸ هزار معدنی و ۴۱ هزار محل دپوی کالا خبر داد.</li>
+<li><strong>مدرسه و بیمارستان:</strong> طبق گزارش‌ها، بیش از ۱۰۰ هزار مدرسه (پژوهش اولیه‌ی ما از حدود ۱۲۵ هزار مدرسه‌ی فعال در ۱۴۰۵ می‌گوید) و بیش از ۱٬۱۰۰ بیمارستان در کشور فعال است.</li>
+</ul>
+<p style="color:#9fb6b9">این چهار رقم را از گزارش‌های خبری مقام‌ها داریم و هنوز متن اصلی‌شان را خودمان باز نکرده‌ایم؛ به‌محض تأیید، دقیقش را اینجا می‌گذاریم.</p>
+
+<h3><span class="check-number">۰۶.</span> چرا هنوز رتبه نمی‌دهیم؟</h3>
+<p>کشورها ساختمان را یکسان نمی‌شمارند. اداره‌ی آمار پاکستان در سرشماری ۲۰۲۳ حدود <strong>۳۸٫۳ میلیون سازه</strong> شمرد که حدود ۳۰٫۴ میلیون‌شان سازه‌ی مسکونی معمولی (غیربلندمرتبه) بودند. ایران «واحد مسکونی» می‌شمارد: یک برج ۱۰۰ واحدی در آمار ایران ۱۰۰ واحد است و در آمار سازه یک ساختمان. برای رتبه‌بندی درست به جدولی نیاز داریم که در همه‌ی کشورها با تعریف و سال نزدیک، ساختمان‌های مسکونی، تجاری، اداری، صنعتی، عمومی، مساحت و کیفیت را بشمارد. تا آن موقع، ابعاد را نشان می‌دهیم، نه رتبه را.</p>
+
+<h3><span class="check-number">۰۷.</span> نگاه دیتومان</h3>
+<p>ایران سرمایه‌ی ساخته‌شده‌ی عظیمی دارد که حاصل کار چند نسل است. فصل بعد، فقط ساختنِ بیشتر نیست؛ <strong>نگهداری، نوسازی، مقاوم‌سازی و استفاده‌ی بهتر</strong> از همین سرمایه است: خانه‌های امن‌تر و کم‌مصرف‌تر، کارخانه‌هایی که دوباره روشن می‌شوند، خانه‌های خالی که به بازار برمی‌گردند و شهرهایی که بهتر کار می‌کنند. دیتومان این مسیر را با شما دنبال می‌کند و هر بخش را با عدد تازه کامل می‌کند.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>مرکز آمار ایران، سالنامه‌ی آماری ۱۳۹۹، فصل ۱۰ (مسکن و ساختمان): جدول واحدهای مسکونی سرشماری‌ها، نوع اسکلت، پروانه‌های ساختمانی • amar.org.ir</li>
+<li>مرکز آمار ایران، نتایج منتخب سرشماری ۱۳۹۵ (خانوارها)</li>
+<li>اظهارات حبیب‌الله طاهرخانی، معاون وزیر راه و شهرسازی، ۳۰ مرداد ۱۴۰۵ (به نقل رسانه‌ها)</li>
+<li>سازمان صنایع کوچک و شهرک‌های صنعتی ایران، به نقل خبرگزاری مهر، ۳۰ شهریور ۱۴۰۴ • mehrnews.com</li>
+<li>USGS Mineral Commodity Summaries 2026: Cement • pubs.usgs.gov</li>
+<li>worldsteel: Global crude steel production 2025 (ژانویه ۲۰۲۶) • worldsteel.org</li>
+<li>Pakistan Bureau of Statistics, Census 2023, Table 26 • pbs.gov.pk</li>
+<li>گزارش‌های خبری درباره‌ی واحدهای صنفی، انبارها، مدارس و بیمارستان‌ها (تأیید از منبع اصلی در جریان است)</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور: تصویرسازی با هوش مصنوعی. آخرین بازبینی: ۱۷ آبان ۱۴۰۵ • Cover image: AI-generated illustration. Last reviewed 8 November 2026.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p>Every home, shop, school, factory and warehouse in Iran today is the work of engineers, architects, builders, materials makers, installers and millions of families who saved for a roof. This report asks one question with numbers: <strong>how much living, working and production space has Iran built in the last fifty years?</strong> Where a figure is not firm, we say so.</p>
+<h3>1. Homes: almost six times in fifty years</h3>
+<p>Statistical Centre of Iran censuses count occupied ordinary housing units with the same definition since 1966:</p>
+<table style="width:100%;border-collapse:collapse;margin:14px 0"><tr><th style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">Census</th><th style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">Ordinary housing units</th></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">1966</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">3.90 million</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">1976</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">5.31 million</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">1986</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">8.29 million</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">1996</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">10.77 million</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">2006</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">15.86 million</td></tr><tr><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">2016</td><td style="text-align:start;padding:8px 10px;border-bottom:1px solid rgba(127,245,222,.15)">22.83 million</td></tr></table>
+<ul>
+<li>The housing stock grew about <strong>5.9 times</strong> from 1966 to 2016, and <strong>2.1 times</strong> in the twenty years from 1996 to 2016.</li>
+<li>Iran had about 24.2 million households in 2016.</li>
+<li>Homes in steel- or reinforced-concrete-frame buildings rose from about 8.8 million in 2011 to about 13.1 million in 2016.</li>
+<li>These are net stock changes; more units were built, because older buildings were also replaced.</li>
+</ul>
+<p>In August 2026 Habibollah Taherkhani, deputy minister of Roads and Urban Development for housing, put Iran's total at about 32.5 million residential units, including about 2.5 million empty units that he said are mostly second homes. That figure counts all units, so it should not be compared directly with the census series.</p>
+<h3>2. Factories and industrial parks</h3>
+<p>Iran's Small Industries and Industrial Parks Organisation (via Mehr, September 2025): <strong>52,087 industrial units</strong> in operation in industrial parks and zones, about 45,500 active and 6,600 idle; 48,124 (92%) are small or micro, 3,064 medium and 899 large. This covers parks and zones only, not every factory, and one unit can have several sheds and warehouses. Idle units are ready buildings and land that can come back to life.</p>
+<h3>3. The materials that built it</h3>
+<p><strong>Cement:</strong> about 68 million tonnes in 2025 (71 Mt in 2024), sixth in the world per USGS, with about 85 Mt of clinker capacity. <strong>Steel:</strong> about 31.8 Mt of crude steel in 2025, tenth in the world per worldsteel (ninth for January to May 2025).</p>
+<h3>4. Building continues</h3>
+<p>In urban areas in 2020/21, about 174,000 building permits covered about 93.6 million m² of floor area (2016/17: 118,000 permits, 62.3 million m²). Permits are plans, not finished buildings, but they show the wheel is turning.</p>
+<h3>5. Shops, warehouses, schools, hospitals</h3>
+<p>Officials have reported more than 3 million guild units (an activity count, not buildings), hundreds of thousands of warehouses (a 2018 survey), more than 100,000 schools and more than 1,100 hospitals. We have not yet checked these against the original statements and will update them once confirmed.</p>
+<h3>6. Why no ranking yet</h3>
+<p>Countries count differently. Pakistan's 2023 census counted about 38.3 million structures, about 30.4 million of them ordinary (non-high-rise) residential. Iran counts housing units: a 100-flat tower is 100 units in Iran's data but one structure in Pakistan's. A fair ranking needs a common table of residential, commercial, office, industrial and public buildings, floor area and quality. Until then we show scale, not rank.</p>
+<h3>7. Ditoman's reading</h3>
+<p>Iran holds a vast built capital made by several generations. The next chapter is not only building more but <strong>keeping, renewing, strengthening and using it better</strong>: safer, more efficient homes, factories switched back on, empty homes back on the market and cities that work better. We will follow this together and add numbers as they come.</p>
+<p style="color:#9fb6b9">Sources are listed in the Persian tab. Cover: AI-generated illustration. Last reviewed 8 November 2026.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">با هم دنبال می‌کنیم • Follow along</h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+Ditoman • Built on structure, driven by discovery.
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261107b" defer></script>
+</body>
+</html>
