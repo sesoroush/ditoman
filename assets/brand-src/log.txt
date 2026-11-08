@@ -1,0 +1,17 @@
+OK kalleh/wiki 9925 image/png https://upload.wikimedia.org/wikipedia/en/2/2a/Kaleh_Group_Logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled
+FAIL kalleh/p1 https://emalls.ir/مشخصات_بستنی-باقلوا-کاله-650-گرمی~id~9262907 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)
+FAIL kalleh/p2 https://emalls.ir/مشخصات_دوغ-ویژه-کاله~id~2393542 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)
+FAIL kalleh/p3 https://emalls.ir/مشخصات_پنیر-لبنه-آنا-کاله-750-گرمی~id~9239349 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)
+FAIL kalleh/p4 https://emalls.ir/مشخصات_کره-پاستوریزه-250-گرمی-کاله~id~2561498 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)
+FAIL kalleh/p5 https://emalls.ir/مشخصات_پنیر-کبابی-450-گرمی-کاله~id~719182 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)
+FAIL kalleh/p6 https://emalls.ir/مشخصات_کاله-پرو-شیر-کاراملی-330میل~id~26535555 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)
+NO-OG golrang/wiki https://en.wikipedia.org/wiki/Golrang_Industrial_Group
+FAIL golrang/p1 https://emalls.ir/مشخصات_شامپو-بچه-گلرنگ-خرسی-110-گرم~id~2321261 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)
+FAIL golrang/p2 https://emalls.ir/مشخصات_مایع-جرم-گیر-گلرنگ-1-لیتری~id~1865823 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)
+OK golrang/news 54311 image/jpeg https://donya-e-eqtesad.com/images/default-og.jpg
+FAIL aryasasol/home https://www.aryasasol.com <urlopen error [Errno -3] Temporary failure in name resolution>
+FAIL aryasasol/ldpe https://www.aryasasol.com/products/low-density-polyethylene <urlopen error [Errno -3] Temporary failure in name resolution>
+FAIL aryasasol/hdpe https://www.aryasasol.com/products/high-density-polyethylene <urlopen error [Errno -3] Temporary failure in name resolution>
+FAIL aryasasol/olefin https://www.aryasasol.com/products/olefin <urlopen error [Errno -3] Temporary failure in name resolution>
+OK fateh/tasnim 62793 image/jpeg https://newsmedia.tasnimmedia.com/Tasnim/Uploaded/Image/13920209155615873448564.jpg
+NO-OG fateh/job https://iranestekhdam.ir/company/fateh-sanat-kimia

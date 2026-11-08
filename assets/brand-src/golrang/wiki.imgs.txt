@@ -1,0 +1,9 @@
+https://en.wikipedia.org/static/images/footer/wikimedia.svg
+https://en.wikipedia.org/static/images/icons/enwiki-25.svg
+https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-en-25.svg
+https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg
+https://en.wikipedia.org/w/resources/assets/mediawiki_compact.svg
+https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&type=1x1&usesul3=1
+https://thumb.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail
+https://thumb.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail
+https://thumb.wikimedia.org/wikipedia/en/thumb/d/df/Golrang-Logo.png/120px-Golrang-Logo.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail
