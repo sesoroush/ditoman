@@ -1,8 +1,0 @@
-https://en.wikipedia.org/static/images/footer/wikimedia.svg
-https://en.wikipedia.org/static/images/icons/enwiki-25.svg
-https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-en-25.svg
-https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg
-https://en.wikipedia.org/w/resources/assets/mediawiki_compact.svg
-https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&type=1x1&usesul3=1
-https://thumb.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail
-https://upload.wikimedia.org/wikipedia/en/2/2a/Kaleh_Group_Logo.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled
