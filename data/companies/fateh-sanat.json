@@ -1,0 +1,348 @@
+{
+  "slug": "fateh-sanat",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۷ آبان ۱۴۰۵",
+    "en": "8 November 2026"
+  },
+  "sector": {
+    "id": "equipment",
+    "fa": "تجهیزات صنعتی",
+    "en": "Industrial equipment"
+  },
+  "branch": "industry",
+  "sub": "machinery",
+  "name": {
+    "fa": "فاتح صنعت",
+    "en": "Fateh Sanat"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "سازنده‌ی تجهیزات سنگین نفت، گاز و پتروشیمی در شیراز؛ از مبدل حرارتی تا راکتور ۵۰۰ تنی",
+    "en": "A Shiraz maker of heavy oil, gas and petrochemical equipment, from heat exchangers to a 500-tonne reactor"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "شیراز، فارس",
+        "en": "Shiraz, Fars"
+      },
+      "src": [
+        4
+      ]
+    },
+    {
+      "label": {
+        "fa": "شروع فعالیت",
+        "en": "Began"
+      },
+      "value": {
+        "fa": "۱۳۶۳ (۱۹۸۴)، طبق فهرست تجاری",
+        "en": "1984, per a business directory"
+      },
+      "src": [
+        4
+      ]
+    },
+    {
+      "label": {
+        "fa": "حوزه",
+        "en": "Field"
+      },
+      "value": {
+        "fa": "طراحی، ساخت و نصب تجهیزات ثابت و دوار",
+        "en": "Design, fabrication and installation of static and rotating equipment"
+      },
+      "src": [
+        5
+      ]
+    },
+    {
+      "label": {
+        "fa": "مشتریان",
+        "en": "Serves"
+      },
+      "value": {
+        "fa": "نفت، گاز، پالایش، پتروشیمی و انرژی",
+        "en": "Oil, gas, refining, petrochemicals and energy"
+      },
+      "src": [
+        5
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "فاتح صنعت در شیراز تجهیزات سنگین صنعتی می‌سازد: مبدل‌های حرارتی، کولرهای هوایی، مخازن تحت فشار، برج‌ها و راکتورها. مهر ۱۴۰۵ خبر ساخت یک راکتور پلیمریزاسیون حدود ۵۰۰ تنی با طول ۴۰ متر در کارگاه این شرکت منتشر شد؛ راکتوری که برای یک مجتمع پتروشیمی در عسلویه ساخته شده و برای حمل و نصب آماده است. هدف اعلام‌شده‌ی شرکت، بومی‌سازی ساخت تجهیزات و ایجاد اشتغال با انتقال دانش فنی است. این پرونده را با هم دنبال می‌کنیم و هر عدد کنار منبعش آمده است.",
+    "en": "Fateh Sanat builds heavy industrial equipment in Shiraz: heat exchangers, air coolers, pressure vessels, columns and reactors. In October 2026 it was reported to have completed a polymerization reactor of about 500 tonnes and 40 metres in length for a petrochemical complex in Asaluyeh, ready for transport and installation. The company's stated aim is to localise equipment making and create jobs through technical know-how. We follow this record together; each figure sits next to its source."
+  },
+  "summary_src": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "reactor",
+      "alt": {
+        "fa": "راکتور پلیمریزاسیون ۵۰۰ تنی در کارگاه",
+        "en": "The 500-tonne polymerization reactor in the workshop"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "تجهیزات ثابت پالایشگاه و پتروشیمی",
+        "en": "Static equipment for refineries and petrochemical plants"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر شرکت در شیراز",
+        "en": "Company office in Shiraz"
+      }
+    }
+  },
+  "leaders": [
+    {
+      "photo": null,
+      "initials": {
+        "fa": "م‌ق",
+        "en": "MG"
+      },
+      "name": {
+        "fa": "مهدی قطبی",
+        "en": "Mehdi Ghotbi"
+      },
+      "role": {
+        "fa": "مدیر شرکت سازنده‌ی راکتور، طبق گزارش رسانه‌ها",
+        "en": "Head of the company that built the reactor, per press reports"
+      },
+      "bio": {
+        "fa": "در گزارش‌های ساخت راکتور ۵۰۰ تنی، به‌عنوان مدیر شرکت سازنده از او نقل شده که این راکتور کاملاً به دست متخصصان ایرانی ساخته شده است.",
+        "en": "In reports on the 500-tonne reactor he is quoted as head of the builder, saying it was made entirely by Iranian specialists."
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "domains": {
+    "title": {
+      "fa": "چه می‌سازد",
+      "en": "What it makes"
+    },
+    "items": [
+      {
+        "fa": "مبدل حرارتی",
+        "en": "Heat exchangers"
+      },
+      {
+        "fa": "کولر هوایی",
+        "en": "Air coolers"
+      },
+      {
+        "fa": "راکتور",
+        "en": "Reactors"
+      },
+      {
+        "fa": "مخزن تحت فشار",
+        "en": "Pressure vessels"
+      },
+      {
+        "fa": "برج و ستون",
+        "en": "Columns and towers"
+      },
+      {
+        "fa": "بویلر",
+        "en": "Boilers"
+      },
+      {
+        "fa": "فلر",
+        "en": "Flares"
+      },
+      {
+        "fa": "پمپ، فن و گیربکس",
+        "en": "Pumps, fans and gearboxes"
+      }
+    ],
+    "src": [
+      4,
+      5
+    ],
+    "note_title": {
+      "fa": "راکتور ۵۰۰ تنی",
+      "en": "The 500-tonne reactor"
+    },
+    "note": {
+      "fa": "طبق گزارش‌ها این راکتور حدود ۴۰ متر طول و ۹ متر قطر دارد، حدود ۱۴ ماه ساختش طول کشیده و در آن ورق‌هایی تا ضخامت حدود ۳۱۰ میلی‌متر نورد شده است. گزارش کامل دیتومان: ditoman.com/fateh-reactor.html",
+      "en": "Reports put the reactor at about 40 m long and 9 m across, built in about 14 months, with steel plate up to about 310 mm thick rolled for it. Ditoman's full report: ditoman.com/fateh-reactor.html"
+    },
+    "note_src": [
+      1
+    ]
+  },
+  "record": [
+    {
+      "value": {
+        "fa": "حدود ۵۰۰ تن",
+        "en": "About 500 tonnes"
+      },
+      "label": {
+        "fa": "وزن راکتور پلیمریزاسیون ساخته‌شده برای یک مجتمع در عسلویه",
+        "en": "weight of the polymerization reactor built for a complex in Asaluyeh"
+      },
+      "when": {
+        "fa": "مهر ۱۴۰۵",
+        "en": "October 2026"
+      },
+      "evidence": "press",
+      "src": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "value": {
+        "fa": "۴۰ × ۹ متر",
+        "en": "40 × 9 m"
+      },
+      "label": {
+        "fa": "طول و قطر راکتور",
+        "en": "length and diameter of the reactor"
+      },
+      "when": {
+        "fa": "مهر ۱۴۰۵",
+        "en": "October 2026"
+      },
+      "evidence": "press",
+      "src": [
+        1
+      ]
+    },
+    {
+      "value": {
+        "fa": "حدود ۱۴ ماه",
+        "en": "About 14 months"
+      },
+      "label": {
+        "fa": "زمان ساخت، طبق یک گزارش صنعتی",
+        "en": "build time, per an industry report"
+      },
+      "when": {
+        "fa": "۱۴۰۵",
+        "en": "2026"
+      },
+      "evidence": "press",
+      "src": [
+        1
+      ]
+    },
+    {
+      "value": {
+        "fa": "حدود ۴ برابر",
+        "en": "About 4×"
+      },
+      "label": {
+        "fa": "قیمت پیشنهادی شرکت‌های خارجی برای تجهیز مشابه، نسبت به هزینه‌ی ساخت داخلی",
+        "en": "foreign firms' quoted price for similar equipment, against the domestic build cost"
+      },
+      "when": {
+        "fa": "گفته‌ی سازنده، ۱۴۰۵",
+        "en": "Per the maker, 2026"
+      },
+      "evidence": "company",
+      "src": [
+        1
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": {
+        "fa": "۱۳۶۳",
+        "en": "1984"
+      },
+      "text": {
+        "fa": "شروع فعالیت، طبق فهرست تجاری شرکت",
+        "en": "Starts operating, per a business directory listing"
+      }
+    },
+    {
+      "year": {
+        "fa": "مهر ۱۴۰۵",
+        "en": "Oct 2026"
+      },
+      "text": {
+        "fa": "اعلام پایان ساخت راکتور پلیمریزاسیون ۵۰۰ تنی؛ آماده‌ی حمل به عسلویه",
+        "en": "Completion of the 500-tonne polymerization reactor announced; ready to ship to Asaluyeh"
+      }
+    }
+  ],
+  "timeline_src": [
+    1,
+    4
+  ],
+  "unconfirmed": {
+    "fa": [
+      "نام کارفرمای راکتور؛ برخی گزارش‌ها پتروشیمی آریاساسول را گفته‌اند ولی منبع رسمی آن را نام نبرده",
+      "نوع پلیمر، فشار کاری و ظرفیت راکتور",
+      "وضعیت نصب و راه‌اندازی در عسلویه",
+      "سال دقیق تأسیس و تعداد کارکنان؛ فهرست تجاری ۱٬۰۰۱ تا ۵٬۰۰۰ نفر نوشته که اظهار خود شرکت است",
+      "پروژه‌های صادراتی در عمان، آذربایجان و ترکیه که در یک گزارش آمده",
+      "ادعای اینکه پیش‌تر فقط ژاپن، آلمان و چین چنین راکتوری ساخته بودند"
+    ],
+    "en": [
+      "The reactor's client; some reports name Arya Sasol, but the official report does not",
+      "Polymer type, operating pressure and capacity",
+      "Installation and start-up status in Asaluyeh",
+      "Exact founding year and headcount; a directory lists 1,001 to 5,000, self-reported",
+      "Export projects in Oman, Azerbaijan and Turkey mentioned in one report",
+      "The claim that only Japan, Germany and China had built such a reactor before"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Press TV: Iranian engineers build 500-ton polymerization reactor for Asaluyeh (Nov 2026)",
+      "url": "https://www.presstv.co.uk/Detail/2026/11/01/779693/explainer-iranian-engineers-build-500-ton-polymerization-reactor-for-asaluyeh"
+    },
+    {
+      "id": 2,
+      "title": "خبرگزاری صداوسیما: ساخت راکتور بزرگ پتروشیمی در فارس (مهر ۱۴۰۵)",
+      "url": "https://www.irib-news.ir/fa/news/5934929"
+    },
+    {
+      "id": 3,
+      "title": "نفت ما: بزرگترین رآکتور پتروشیمی کشور در شیراز ساخته شد",
+      "url": "https://www.naftema.com/news/193416"
+    },
+    {
+      "id": 4,
+      "title": "IranYell: Fateh Sanat Kimia Co. (listing, self-reported)",
+      "url": "https://www.iranyell.com/company/2851/Fateh_Sanat_Kimia_Co"
+    },
+    {
+      "id": 5,
+      "title": "وب‌سایت فاتح صنعت: مأموریت و چشم‌انداز",
+      "url": "https://fatehsanat.com/"
+    }
+  ],
+  "leaders_title": {
+    "fa": "مدیریت",
+    "en": "Management"
+  }
+}

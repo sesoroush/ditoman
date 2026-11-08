@@ -1,0 +1,320 @@
+{
+  "slug": "aryasasol",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۷ آبان ۱۴۰۵",
+    "en": "8 November 2026"
+  },
+  "sector": {
+    "id": "petrochem",
+    "fa": "پتروشیمی",
+    "en": "Petrochemicals"
+  },
+  "branch": "energy",
+  "sub": "petrochem",
+  "name": {
+    "fa": "پلیمر آریاساسول",
+    "en": "Arya Sasol Polymer"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "یکی از بزرگ‌ترین تولیدکنندگان اتیلن و پلی‌اتیلن ایران در عسلویه؛ بیش از ۷۰٪ محصول برای صادرات",
+    "en": "One of Iran's largest ethylene and polyethylene makers, in Asaluyeh, exporting over 70% of output"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۳۸۱ (۲۰۰۲)",
+        "en": "2002"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "منطقه‌ی ویژه‌ی اقتصادی انرژی پارس، عسلویه",
+        "en": "Pars Special Economic Energy Zone, Asaluyeh"
+      },
+      "src": [
+        2
+      ]
+    },
+    {
+      "label": {
+        "fa": "بورس",
+        "en": "Listed"
+      },
+      "value": {
+        "fa": "بورس تهران، نماد «آریا»",
+        "en": "Tehran Stock Exchange (APOZ1)"
+      },
+      "src": [
+        1,
+        5
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصول اصلی",
+        "en": "Main products"
+      },
+      "value": {
+        "fa": "اتیلن، پلی‌اتیلن سبک، متوسط و سنگین، C3+",
+        "en": "Ethylene, LDPE, MDPE/HDPE, C3+"
+      },
+      "src": [
+        1,
+        2
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "آریاساسول سال ۱۳۸۱ با تفاهم شرکت ملی صنایع پتروشیمی و ساسول آفریقای جنوبی شکل گرفت؛ واحد الفین و دو واحد پلی‌اتیلن پتروشیمی پارس در قالب یک شرکت مستقل جدا شدند. سال ۱۳۹۲ ساسول همه‌ی سهمش را به یک سرمایه‌گذار ایرانی فروخت و از آن به بعد مجتمع با مدیریت و نیروی ایرانی کار کرده است. ظرفیت اتیلن آن ۱٫۱ میلیون تن در سال است و بیشتر محصولش به بازارهای اروپا و آسیا می‌رود. محصولاتش در لوله، فیلم بسته‌بندی، عایق کابل و بسیاری از کالاهای روزمره به کار می‌رود.",
+    "en": "Arya Sasol was formed in 2002 under an agreement between Iran's National Petrochemical Company and South Africa's Sasol, spinning off the olefin unit and two polyethylene units of Pars Petrochemical. In 2013 Sasol sold its entire stake to an Iranian investor, and since then the complex has run under Iranian management and staff. It has 1.1 million tonnes a year of ethylene capacity and sends most output to markets in Europe and Asia. Its products go into pipes, packaging film, cable insulation and many everyday goods."
+  },
+  "summary_src": [
+    1,
+    2,
+    3
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "olefin",
+      "alt": {
+        "fa": "واحد الفین آریاساسول در عسلویه",
+        "en": "Arya Sasol olefin unit in Asaluyeh"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "pellets",
+      "alt": {
+        "fa": "گرانول پلی‌اتیلن",
+        "en": "Polyethylene pellets"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر مرکزی",
+        "en": "Head office"
+      }
+    }
+  },
+  "leaders": [
+    {
+      "photo": null,
+      "initials": {
+        "fa": "م‌ح",
+        "en": "MH"
+      },
+      "name": {
+        "fa": "محمدرضا حیدرزاده",
+        "en": "Mohammad Reza Heydarzadeh"
+      },
+      "role": {
+        "fa": "مدیرعامل، طبق گزارش ۲۰۲۳؛ ممکن است تغییر کرده باشد",
+        "en": "Managing director, per a 2023 report; may have changed"
+      },
+      "bio": {
+        "fa": "در گزارش سال ۱۴۰۲ فایننشال تریبیون به‌عنوان مدیرعامل از برنامه‌ی فروش رکوردی و ساخت واحد جدید پلی‌اتیلن گفته است.",
+        "en": "Quoted by Financial Tribune in 2023 as managing director on record sales plans and a new polyethylene unit."
+      },
+      "src": [
+        2
+      ]
+    }
+  ],
+  "domains": null,
+  "record": [
+    {
+      "value": {
+        "fa": "۱٫۱ میلیون تن",
+        "en": "1.1 million tonnes"
+      },
+      "label": {
+        "fa": "ظرفیت سالانه‌ی اتیلن",
+        "en": "of ethylene capacity a year"
+      },
+      "when": {
+        "fa": "ظرفیت اسمی",
+        "en": "Nameplate"
+      },
+      "evidence": "wiki",
+      "src": [
+        1,
+        2
+      ]
+    },
+    {
+      "value": {
+        "fa": "۳۷۵ + ۳۷۵ هزار تن",
+        "en": "375k + 375k tonnes"
+      },
+      "label": {
+        "fa": "ظرفیت پلی‌اتیلن سبک و پلی‌اتیلن متوسط/سنگین",
+        "en": "of LDPE and MDPE/HDPE capacity"
+      },
+      "when": {
+        "fa": "ظرفیت اسمی",
+        "en": "Nameplate"
+      },
+      "evidence": "wiki",
+      "src": [
+        1,
+        2
+      ]
+    },
+    {
+      "value": {
+        "fa": "۱٫۰۸۴ میلیون تن",
+        "en": "1.084 million tonnes"
+      },
+      "label": {
+        "fa": "فروش سال ۱۴۰۱؛ برنامه‌ی ۱۴۰۲ حدود ۱٫۱۹ میلیون تن",
+        "en": "sold in 2022/23, with about 1.19 Mt planned for 2023/24"
+      },
+      "when": {
+        "fa": "۱۴۰۲",
+        "en": "2023"
+      },
+      "evidence": "company",
+      "src": [
+        2
+      ]
+    },
+    {
+      "value": {
+        "fa": "بیش از ۷۰٪",
+        "en": "Over 70%"
+      },
+      "label": {
+        "fa": "سهم محصولاتی که به اروپا، آسیا و بازارهای دیگر صادر می‌شود",
+        "en": "of products exported to Europe, Asia and other markets"
+      },
+      "when": {
+        "fa": "۱۴۰۲",
+        "en": "2023"
+      },
+      "evidence": "company",
+      "src": [
+        2
+      ]
+    },
+    {
+      "value": {
+        "fa": "۵۵۰ میلیون دلار",
+        "en": "$550 million"
+      },
+      "label": {
+        "fa": "درآمد رکوردی سال ۱۴۰۱",
+        "en": "record revenue in 2022/23"
+      },
+      "when": {
+        "fa": "۱۴۰۲",
+        "en": "2023"
+      },
+      "evidence": "company",
+      "src": [
+        2
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": {
+        "fa": "۱۳۸۱",
+        "en": "2002"
+      },
+      "text": {
+        "fa": "تأسیس با تفاهم شرکت ملی صنایع پتروشیمی و ساسول",
+        "en": "Founded under an agreement between NPC and Sasol"
+      }
+    },
+    {
+      "year": {
+        "fa": "۱۳۹۲",
+        "en": "2013"
+      },
+      "text": {
+        "fa": "ساسول همه‌ی سهمش را به یک سرمایه‌گذار ایرانی می‌فروشد",
+        "en": "Sasol sells its whole stake to an Iranian investor"
+      }
+    },
+    {
+      "year": {
+        "fa": "۱۴۰۲",
+        "en": "2023"
+      },
+      "text": {
+        "fa": "ساخت واحد جدید پلی‌اتیلن و C3+ با ۳۰۰ هزار تن ظرفیت افزوده",
+        "en": "A new polyethylene and C3+ unit with 300,000 t of extra capacity under construction"
+      }
+    }
+  ],
+  "timeline_src": [
+    1,
+    2,
+    3
+  ],
+  "unconfirmed": {
+    "fa": [
+      "اینکه راکتور ۵۰۰ تنی ساخت شیراز برای آریاساسول ساخته شده؛ برخی گزارش‌ها چنین گفته‌اند ولی منبع رسمی کارفرما را نام نبرده",
+      "آمار تازه‌ی تولید، فروش و صادرات؛ عددهای بالا مربوط به ۱۴۰۱ و ۱۴۰۲ است",
+      "وضعیت واحد جدید پلی‌اتیلن و C3+",
+      "مدیرعامل فعلی"
+    ],
+    "en": [
+      "Whether the 500-tonne Shiraz reactor was built for Arya Sasol; some reports say so, but the official report does not name the client",
+      "Current production, sales and export figures; those above are for 2022/23 and 2023/24",
+      "Status of the new polyethylene and C3+ unit",
+      "The current managing director"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Wikipedia: Arya Sasol Polymer Company",
+      "url": "https://en.wikipedia.org/wiki/Arya_Sasol_polymer_company"
+    },
+    {
+      "id": 2,
+      "title": "Financial Tribune: Arya Sasol sales and expansion plans (2023)",
+      "url": "https://financialtribune.com/node/117770"
+    },
+    {
+      "id": 3,
+      "title": "Plasteurope: Sasol opts out of Iranian joint venture (Aug 2013)",
+      "url": "https://plasteurope.com/news/SASOL_t226143"
+    },
+    {
+      "id": 4,
+      "title": "وب‌سایت آریاساسول",
+      "url": "https://www.aryasasol.com/fa"
+    },
+    {
+      "id": 5,
+      "title": "اکوایران: تحلیل بنیادی سهام آریا",
+      "url": "https://ecoiran.com/%D8%A8%D8%AE%D8%B4-%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A8%D9%88%D8%B1%D8%B3-157/50470-%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D8%A8%D9%86%DB%8C%D8%A7%D8%AF%DB%8C-%D8%B3%D9%87%D8%A7%D9%85-%D8%A2%D8%B1%DB%8C%D8%A7-%D8%AD%D8%A7%D8%B4%DB%8C%D9%87-%D8%B3%D9%88%D8%AF-%D8%A2%D8%B1%DB%8C%D8%A7%D8%B3%D8%A7%D8%B3%D9%88%D9%84-%D8%B3%D9%82%D9%88%D8%B7-%DA%A9%D8%B1%D8%AF"
+    }
+  ],
+  "leaders_title": {
+    "fa": "مدیریت",
+    "en": "Management"
+  }
+}
