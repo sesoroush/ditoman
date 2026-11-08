@@ -1,0 +1,11 @@
+https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Fhttps://emalls.ir/erd/e_MjMyMTI2MQ!!%2F&code=QRCode&multiplebarcodes=false&translate-esc=true&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&codepage=Default&qunit=Mm&quiet=0&eclevel=L
+https://emalls.ir/files/da/7dog1ntehiw51h5vxfg1n467azknruuczftbznrypc0pjwgio0.jpg
+https://emalls.ir/files/da/ienxblcrytuu5i061pv57c7iubf7l8bgxgyak71hnqpkf1gnen.jpg
+https://emalls.ir/files/da/jtetbx80uym77hhagj6dfafsjee5sjg0cpn1x2sj4j16vekwn8.jpg
+https://emalls.ir/src/Emalls-Logo-2025.svg
+https://emalls.ir/src/emalls-logo-holder.svg
+https://emalls.ir/src/emi/emi-hi-100.png
+https://emalls.ir/src/enamad.png
+https://emalls.ir/src/ettehadie.png
+https://emalls.ir/src/loading.gif?v=Dt2qs7jLCxXYHWLlrllgMpw-V26njcMhsgc0qyAnGEc
+https://emalls.ir/src/loading_small.gif
