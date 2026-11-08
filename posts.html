@@ -259,6 +259,8 @@
           return { t: t, l: fa + en < 3 ? "" : (fa >= en ? "fa" : "en") };
         });
         if (it.text_en) {
+          // The English version replaces the short English lines inside the Persian post
+          blocks = blocks.filter(function (b) { return b.l !== "en"; });
           blocks.forEach(function (b) { b.l = "fa"; });
           it.text_en.split(/\n\s*\n/).forEach(function (t) { blocks.push({ t: t, l: "en" }); });
         }
