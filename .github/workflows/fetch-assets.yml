@@ -1,0 +1,20 @@
+name: Fetch brand images
+on:
+  push:
+    branches: [main]
+    paths: [assets/fetch.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/fetch_assets.py
+      - run: |
+          git config user.name "ditoman-bot"
+          git config user.email "bot@ditoman.com"
+          git add assets/brand-src
+          git commit -m "Fetch brand images" || exit 0
+          git pull --rebase origin main && git push

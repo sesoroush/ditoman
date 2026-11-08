@@ -1,0 +1,18 @@
+# dest | url | og/direct
+kalleh/wiki | https://en.wikipedia.org/wiki/Kalleh_Dairy | og
+kalleh/p1 | https://emalls.ir/مشخصات_بستنی-باقلوا-کاله-650-گرمی~id~9262907 | og
+kalleh/p2 | https://emalls.ir/مشخصات_دوغ-ویژه-کاله~id~2393542 | og
+kalleh/p3 | https://emalls.ir/مشخصات_پنیر-لبنه-آنا-کاله-750-گرمی~id~9239349 | og
+kalleh/p4 | https://emalls.ir/مشخصات_کره-پاستوریزه-250-گرمی-کاله~id~2561498 | og
+kalleh/p5 | https://emalls.ir/مشخصات_پنیر-کبابی-450-گرمی-کاله~id~719182 | og
+kalleh/p6 | https://emalls.ir/مشخصات_کاله-پرو-شیر-کاراملی-330میل~id~26535555 | og
+golrang/wiki | https://en.wikipedia.org/wiki/Golrang_Industrial_Group | og
+golrang/p1 | https://emalls.ir/مشخصات_شامپو-بچه-گلرنگ-خرسی-110-گرم~id~2321261 | og
+golrang/p2 | https://emalls.ir/مشخصات_مایع-جرم-گیر-گلرنگ-1-لیتری~id~1865823 | og
+golrang/news | https://donya-e-eqtesad.com/fa/tiny/news-3272402 | og
+aryasasol/home | https://www.aryasasol.com | og
+aryasasol/ldpe | https://www.aryasasol.com/products/low-density-polyethylene | og
+aryasasol/hdpe | https://www.aryasasol.com/products/high-density-polyethylene | og
+aryasasol/olefin | https://www.aryasasol.com/products/olefin | og
+fateh/tasnim | https://tasnimnews.ir/86680 | og
+fateh/job | https://iranestekhdam.ir/company/fateh-sanat-kimia | og
