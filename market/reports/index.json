@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-08",
+  "png": "market/reports/2026-11-08.png",
+  "thumb": "market/reports/thumbs/2026-11-08.jpg",
+  "jalali": "1405/08/17",
+  "usd": 266110.0,
+  "gold18": 25594000.0,
+  "coin": 258815000.0,
+  "btc": 75633.51
+ },
+ {
   "date": "2026-11-07",
   "png": "market/reports/2026-11-07.png",
   "thumb": "market/reports/thumbs/2026-11-07.jpg",
