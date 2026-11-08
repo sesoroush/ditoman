@@ -1,8 +1,7 @@
-FAIL kalleh/dk کاله HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.
-The last 30x error message was:
-Temporary Redirect
-FAIL golrang/dk گلرنگ HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.
-The last 30x error message was:
-Temporary Redirect
-OK golrang/logo.png 15904 image/png https://upload.wikimedia.org/wikipedia/en/d/df/Golrang-Logo.png
-OK kalleh/logo.png 9925 image/png https://upload.wikimedia.org/wikipedia/en/2/2a/Kaleh_Group_Logo.png
+FAIL kalleh/off world.openfoodfacts.org:kalleh HTTP Error 503: Service Temporarily Unavailable
+FAIL kalleh/off2 world.openfoodfacts.org:کاله HTTP Error 503: Service Temporarily Unavailable
+NONE golrang/obf world.openbeautyfacts.org:golrang
+NONE golrang/opf world.openproductsfacts.org:golrang
+NONE golrang/off world.openfoodfacts.org:golrang
+NO-OG kalleh/p1 https://emalls.ir/مشخصات_بستنی-باقلوا-کاله-650-گرمی~id~9262907
+OK golrang/p1 2744 image/jpeg https://files.emalls.ir/files/Products/automatic/2321261/ftakgoqc_thumb2.jpg
