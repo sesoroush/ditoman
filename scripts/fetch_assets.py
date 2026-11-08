@@ -32,6 +32,38 @@ def main():
         target = OUT / dest
         target.parent.mkdir(parents=True, exist_ok=True)
         try:
+            if mode == "emalls":
+                pid = re.search(r"~id~(\d+)", url).group(1)
+                page = get(url)[0].decode("utf-8", "ignore")
+                cands = re.findall(r'(https?://files\.emalls\.ir/files/Products/[^"\'\s]*?/' + pid + r'/[^"\'\s]+?\.(?:jpe?g|png|webp))', page)
+                n = 0
+                for c in dict.fromkeys(cands):
+                    full = re.sub(r"_thumb\d*", "", c)
+                    for u in (full, c):
+                        try:
+                            data, ctype = get(u)
+                        except Exception:
+                            continue
+                        t = target.parent / f"{target.name}.{n}.jpg"
+                        t.write_bytes(data)
+                        log.append(f"OK {t.relative_to(OUT)} {len(data)} {u}")
+                        n += 1
+                        break
+                if not n:
+                    log.append(f"NONE {dest} {url}")
+                continue
+            if mode == "offcode":
+                host, code = url.split(":", 1)
+                import json
+                pr = json.loads(get(f"https://{host}/api/v2/product/{code}?fields=product_name,image_front_url,selected_images")[0]).get("product", {})
+                im = pr.get("image_front_url")
+                full = (((pr.get("selected_images") or {}).get("front") or {}).get("display") or {})
+                im = next(iter(full.values()), im) if full else im
+                im = re.sub(r"\.\d+\.jpg$", ".full.jpg", im or "")
+                data, ctype = get(im)
+                target.write_bytes(data)
+                log.append(f"OK {dest} {len(data)} {pr.get('product_name')} {im}")
+                continue
             if mode == "off":
                 import json
                 host, brand = url.split(":", 1)  # e.g. world.openfoodfacts.org:kalleh
