@@ -111,6 +111,9 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-subs li { border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; background: linear-gradient(180deg, rgba(14, 33, 42, 0.9), rgba(10, 24, 32, 0.6)); display: flex; flex-direction: column; gap: 6px; }
 .ir-subs b { font-size: 1.1rem; line-height: 1.35; }
 .ir-leaders { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+.ir-sub-link a { display: block; color: inherit; }
+.ir-sub-link { border-color: color-mix(in srgb, var(--ir) 55%, transparent) !important; }
+.ir-sub-more { display: inline-block; margin-top: 8px; color: var(--ir); font-weight: 700; font-size: 0.9rem; }
 .ir-rank { color: var(--ir); font-size: 0.82rem; font-weight: 700; }
 .ir-more { color: var(--mint); font-weight: 700; white-space: nowrap; }
 .ir-top-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: rgba(10, 24, 32, 0.6); }
@@ -618,7 +621,9 @@ def branch_page(b, companies):
         cr = b["hero"]["credit"]
         caption = f'<figcaption>{t(cr) if isinstance(cr, dict) else e(cr)}</figcaption>'
     subs = "".join(
-        f'<li><span class="ir-isic">{e(s["isic"])}</span><b>{t(s)}</b><small>{t(s["authority"])}</small></li>'
+        (f'<li class="ir-sub-link"><a href="{e(s["href"])}">' if s.get("href") else "<li>")
+        + f'<span class="ir-isic">{e(s["isic"])}</span><b>{t(s)}</b><small>{t(s["authority"])}</small>'
+        + (f'<span class="ir-sub-more">{t(s["more"])}</span></a></li>' if s.get("href") else "</li>")
         for s in b["subs"])
     mine = [c for c in companies if c["branch"] == b["slug"]]
     if mine:
