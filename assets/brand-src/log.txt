@@ -1,5 +1,1 @@
-FAIL aryasasol/craft https://craft.co/arya-sasol-polymer/competitors HTTP Error 403: Forbidden
-OK aryasasol/bitscale 775110 image/jpeg https://static.ghost.org/v5.0.0/images/publication-cover.jpg
-OK aryasasol/pplus 32375 image/png https://portfolio-pplus.com/AppPics/ppPLUS_DoublePP.png
-FAIL aryasasol/shana https://en.shana.ir/tag/Arya+Sasol <urlopen error timed out>
-FAIL aryasasol/plast http://tuyap.com.tr/packagingfair/packagingfair/uploads/news/ambalaj25_weblogo_tr.jpg HTTP Error 404: Not Found
+OK aryasasol/logo.jpg 3920 image/jpeg https://blobppplus.blob.core.windows.net/logos/aryasasol.jpeg
