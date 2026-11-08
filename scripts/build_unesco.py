@@ -73,6 +73,7 @@ def photos(site):
 TYPE = {"c": {"fa": "فرهنگی", "en": "Cultural"}, "n": {"fa": "طبیعی", "en": "Natural"}}
 
 CSS = """
+.un-tbl{overflow-x:auto;margin:14px 0}.un-tbl table{width:100%;border-collapse:collapse;font-size:.95rem}.un-tbl th,.un-tbl td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start}.un-tbl th{color:var(--muted);font-weight:600}.un-me td{color:#7ff5de;font-weight:800}.un-note{color:var(--muted);font-size:.9rem;margin:10px 0 18px}html:not([data-lang="en"]) .un-tbl table{direction:rtl}#compare,#tourism{margin-top:34px}
 .un-hero { padding: 40px 0 10px; }
 .un-hero h1 { font: 400 clamp(2.4rem, 7vw, 4.8rem)/1.2 var(--fa-display); color: #eef6f2; }
 body[data-lang="en"] .un-hero h1 { font: 800 clamp(2.2rem, 6vw, 4.2rem)/1.05 var(--en); letter-spacing: -0.03em; }
@@ -164,6 +165,31 @@ def site_card(s, ph):
     </article>'''
 
 
+def compare_html():
+    c = DATA.get("compare")
+    if not c:
+        return ""
+    rows = ""
+    for fa, en, n, pop in c["rows"]:
+        per = n / pop * 10
+        me = ' class="un-me"' if en == "Iran" else ""
+        rows += (f'<tr{me}><td>{t({"fa": fa, "en": en})}</td><td>{t({"fa": fa_digits(n), "en": str(n)})}</td>'
+                 f'<td>{t({"fa": fa_digits(f"{pop:.1f}".replace(".", "٫")), "en": f"{pop:,.1f}"})}</td>'
+                 f'<td>{t({"fa": fa_digits(f"{per:.1f}".replace(".", "٫")), "en": f"{per:.1f}"})}</td></tr>')
+    head = (f'<tr><th>{t({"fa": "کشور", "en": "Country"})}</th><th>{t({"fa": "آثار جهانی", "en": "Sites"})}</th>'
+            f'<th>{t({"fa": "جمعیت ۲۰۲۶ (میلیون)", "en": "Population 2026 (m)"})}</th>'
+            f'<th>{t({"fa": "اثر به ازای هر ۱۰ میلیون نفر", "en": "Sites per 10m people"})}</th></tr>')
+    return f'''
+    <h2 id="compare">{t({"fa": "ایران در برابر همسایه‌ها و جهان", "en": "Iran against its neighbours and the world"})}</h2>
+    <p>{t({"fa": "ایران با ۳۰ اثر، دهمین کشور جهان در فهرست میراث جهانی است؛ جلوتر از ژاپن و آمریکا (هر کدام ۲۷ اثر) و ترکیه (۲۲ اثر). در منطقه فقط روسیه (۳۳ اثر) از ایران جلوتر است، ولی جمعیتش بیش از یک‌ونیم برابر ایران است. اگر تعداد آثار را بر جمعیت تقسیم کنیم، ایران با حدود ۳٫۲ اثر به ازای هر ۱۰ میلیون نفر، از ترکیه (۲٫۵)، روسیه (۲٫۳)، عربستان (۲٫۳) و عراق (۱٫۳) بالاتر است. کشورهای کوچک مثل ارمنستان و عمان در این شاخص بالا می‌آیند، چون جمعیتشان کم است.", "en": "With 30 sites Iran ranks 10th in the world, ahead of Japan and the United States (27 each) and Turkey (22). In the region only Russia (33) is ahead, with more than one and a half times Iran's population. Per 10 million people Iran has about 3.2 sites, more than Turkey (2.5), Russia (2.3), Saudi Arabia (2.3) and Iraq (1.3). Small countries such as Armenia and Oman score high on this measure because their populations are small."})}</p>
+    <div class="un-tbl"><table>{head}{rows}</table></div>
+    <p class="un-note">{t({"fa": "تعداد آثار پس از اجلاس ۲۰۲۶ بوسان (StatRanker، اکتبر ۲۰۲۶)؛ جمعیت برآورد سازمان ملل برای ۲۰۲۶. آثار مشترک بین چند کشور برای هر کشور یک بار شمرده می‌شوند.", "en": "Site counts after the 2026 Busan session (StatRanker, Oct 2026); population is the UN estimate for 2026. Sites shared between countries count once for each."})}</p>
+    <h2 id="tourism">{t({"fa": "از میراث تا ارز: فرصت گردشگری", "en": "From heritage to hard currency: the tourism opportunity"})}</h2>
+    <p>{t({"fa": "ایران در سال ۱۴۰۳ حدود ۷٫۴ میلیون ورود اتباع خارجی و حدود ۷٫۴ میلیارد دلار درآمد گردشگری اعلام کرد (این عدد همه‌ی ورودهای مرزی، از جمله زائران را می‌شمارد). ترکیه با ۲۲ اثر جهانی، در ۲۰۲۵ حدود ۵۲٫۸ میلیون گردشگر خارجی و ۶۵٫۲ میلیارد دلار درآمد داشت؛ نزدیک ۹ برابر ایران. یعنی ایران آثار بیشتری دارد، اما هنوز سهم کوچکی از درآمد گردشگری منطقه را می‌گیرد. هدف برنامه‌ی هفتم توسعه، رسیدن به ۱۵ میلیون گردشگر خارجی است. اگر درها بازتر شود و پرواز، ویزا، پرداخت بین‌المللی و هتل‌ها آماده باشند، همین ۳۰ اثر می‌توانند یکی از بزرگ‌ترین منابع ارزی و اشتغال کشور شوند.", "en": "In the Iranian year to March 2025, Iran reported about 7.4 million foreign arrivals and about $7.4 billion in tourism revenue (border entries, including pilgrims). Turkey, with 22 World Heritage Sites, had about 52.8 million foreign visitors and $65.2 billion in tourism income in 2025, nearly nine times Iran's. Iran has more sites but still earns a small share of the region's tourism income. The Seventh Development Plan targets 15 million foreign visitors. If the doors open wider and flights, visas, international payments and hotels are ready, these 30 sites could become one of the country's largest sources of foreign currency and jobs."})}</p>
+    <p class="un-note">{t({"fa": "آیا ثبت جهانی خودبه‌خود گردشگر می‌آورد؟ نه همیشه. یک فراتحلیل ۴۳ مطالعه (Annals of Tourism Research، ۲۰۱۹) اثر میانگین معناداری پیدا نکرد، اما پژوهش‌هایی درباره‌ی کشورهای در حال توسعه و چین اثر مثبت دیده‌اند. ثبت جهانی در را باز می‌کند؛ زیرساخت، تبلیغ و دسترسی است که گردشگر را می‌آورد.", "en": "Does a listing bring tourists by itself? Not always. A meta-analysis of 43 studies (Annals of Tourism Research, 2019) found no significant average effect, while studies of developing countries and China found positive effects. Listing opens the door; infrastructure, promotion and access bring the visitors."})}</p>
+'''
+
+
 def main():
     sites = sorted(DATA["sites"], key=lambda s: (s["year"], s["en"]))
     cards, n_photos = [], 0
@@ -197,6 +223,7 @@ def main():
     </section>
     <h2 style="margin-top:30px">{t({"fa": "شگفت‌انگیزهایی که کمتر کسی می‌داند", "en": "Surprises few people know"})}</h2>
     <div class="un-odd">{odd}</div>
+{compare_html()}
     <h2>{t({"fa": "همه‌ی آثار، به ترتیب سال ثبت", "en": "Every site, by year of inscription"})}</h2>
     <div class="un-list" style="margin-top:16px">{"".join(cards)}</div>
     <p class="un-src">{t({"fa": "منابع:", "en": "Sources:"})} {src}<br>{t({"fa": "عکس‌ها از ویکی‌مدیا کامنز با مجوز آزاد؛ نام عکاس و مجوز زیر هر عکس آمده است.", "en": "Photos from Wikimedia Commons under free licences; photographer and licence are under each photo."})}</p>
