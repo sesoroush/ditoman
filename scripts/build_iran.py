@@ -427,7 +427,8 @@ def company_art(c):
     from build_companies import ART as CART  # noqa: E402  (same folder)
     photo = c["photos"]["main"]
     if photo.get("file"):
-        return f'<img src="companies/{e(c["slug"])}/{e(photo["file"])}" alt="{e(photo["alt"]["en"])}" loading="lazy" />'
+        from build_companies import card_file  # noqa: E402
+        return f'<img src="companies/{e(c["slug"])}/{e(card_file(c))}" alt="{e(photo["alt"]["en"])}" loading="lazy" />'
     return CART[photo["art"]]
 
 

@@ -16,7 +16,7 @@
     "fa": "پلیمر آریاساسول",
     "en": "Arya Sasol Polymer"
   },
-  "logo": null,
+  "logo": "logo.png",
   "tagline": {
     "fa": "یکی از بزرگ‌ترین تولیدکنندگان اتیلن و پلی‌اتیلن ایران در عسلویه؛ بیش از ۷۰٪ محصول برای صادرات",
     "en": "One of Iran's largest ethylene and polyethylene makers, in Asaluyeh, exporting over 70% of output"
@@ -88,11 +88,15 @@
   ],
   "photos": {
     "main": {
-      "file": null,
+      "file": "cover.webp",
       "art": "olefin",
       "alt": {
-        "fa": "واحد الفین آریاساسول در عسلویه",
-        "en": "Arya Sasol olefin unit in Asaluyeh"
+        "fa": "گرانول پلی‌اتیلن، محصول اصلی آریاساسول (عکس نمونه)",
+        "en": "Polyethylene pellets, Arya Sasol's main product (sample photo)"
+      },
+      "credit": {
+        "fa": "عکس: Lluis tgn، ویکی‌مدیا، CC BY-SA 3.0",
+        "en": "Photo: Lluis tgn, Wikimedia Commons, CC BY-SA 3.0"
       }
     },
     "product": {

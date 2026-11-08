@@ -16,7 +16,7 @@
     "fa": "فاتح صنعت",
     "en": "Fateh Sanat"
   },
-  "logo": null,
+  "logo": "logo.png",
   "tagline": {
     "fa": "سازنده‌ی تجهیزات سنگین نفت، گاز و پتروشیمی در شیراز؛ از مبدل حرارتی تا راکتور ۵۰۰ تنی",
     "en": "A Shiraz maker of heavy oil, gas and petrochemical equipment, from heat exchangers to a 500-tonne reactor"
@@ -87,19 +87,27 @@
   ],
   "photos": {
     "main": {
-      "file": null,
+      "file": "cover.webp",
       "art": "reactor",
       "alt": {
-        "fa": "راکتور پلیمریزاسیون ۵۰۰ تنی در کارگاه",
-        "en": "The 500-tonne polymerization reactor in the workshop"
+        "fa": "مبدل حرارتی پوسته و لوله، از تجهیزاتی که فاتح صنعت می‌سازد (عکس نمونه)",
+        "en": "A shell-and-tube heat exchanger, the kind of equipment Fateh Sanat builds (sample photo)"
+      },
+      "credit": {
+        "fa": "عکس: Harald the Bard، ویکی‌مدیا، CC BY-SA 4.0",
+        "en": "Photo: Harald the Bard, Wikimedia Commons, CC BY-SA 4.0"
       }
     },
     "product": {
-      "file": null,
+      "file": "product.webp",
       "art": "plant",
       "alt": {
-        "fa": "تجهیزات ثابت پالایشگاه و پتروشیمی",
-        "en": "Static equipment for refineries and petrochemical plants"
+        "fa": "دسته‌لوله‌ی مبدل حرارتی پیش از مونتاژ (عکس نمونه)",
+        "en": "Heat-exchanger tube bundle before assembly (sample photo)"
+      },
+      "credit": {
+        "fa": "عکس: Harald the Bard، ویکی‌مدیا، CC BY-SA 4.0",
+        "en": "Photo: Harald the Bard, Wikimedia Commons, CC BY-SA 4.0"
       }
     },
     "office": {

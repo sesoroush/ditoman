@@ -49,6 +49,9 @@ body[data-lang="fa"] .i-en, body[data-lang="en"] .i-fa { display: none !importan
 .k-shot { position: relative; overflow: hidden; margin: 0; border-radius: 14px; background: var(--surface); }
 .k-shot.main { grid-row: 1 / 3; border-radius: 22px; }
 .k-shot svg, .k-shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.k-shot img[src$="product.webp"] { object-fit: contain; background: #fff; }
+.k-shot figcaption small.k-credit { display: block; opacity: 0.7; font-size: 0.68rem; }
+.k-card .k-shot figcaption { display: none; }
 .k-shot figcaption { position: absolute; bottom: 10px; inset-inline-start: 10px; padding: 3px 10px; border-radius: 999px; background: rgba(4, 9, 12, 0.72); color: #eaf6f5; font-size: 0.76rem; }
 
 .k-id { display: flex; align-items: center; gap: 20px; margin-top: 26px; }
@@ -208,6 +211,8 @@ def shot(photo, slug, cls=""):
     if photo.get("file"):
         inner = f'<img src="companies/{e(slug)}/{e(photo["file"])}" alt="{e(alt["en"])}" loading="lazy" />'
         caption = t(alt)
+        if photo.get("credit"):
+            caption += f'<small class="k-credit">{t(photo["credit"])}</small>'
     else:
         inner = ART[photo["art"]]
         caption = t(UI["art"])
@@ -386,7 +391,7 @@ def directory(companies):
     blocks = []
     for s in sectors.values():
         cards = "".join(
-            f'<a class="k-card" href="{e(c["slug"])}.html">{shot(c["photos"]["main"], c["slug"])}'
+            f'<a class="k-card" href="{e(c["slug"])}.html">{shot(dict(c["photos"]["main"], file=card_file(c)) if c["photos"]["main"].get("file") else c["photos"]["main"], c["slug"])}'
             f'<div class="k-card-body"><h3>{t(c["name"])}</h3><p>{t(c["tagline"])}</p>'
             f'<span class="k-go">{t(UI["open_card"])}</span></div></a>' for c in s["items"])
         blocks.append(f'<section class="k-sector"><h2>{t(s["name"])}</h2>{cards}</section>')
@@ -452,8 +457,14 @@ def homepage(companies):
 def c_image(c):
     photo = c["photos"]["main"]
     if photo.get("file"):
-        return f'<img src="companies/{e(c["slug"])}/{e(photo["file"])}" alt="{e(photo["alt"]["en"])}" loading="lazy" />'
+        return f'<img src="companies/{e(c["slug"])}/{e(card_file(c))}" alt="{e(photo["alt"]["en"])}" loading="lazy" />'
     return ART[photo["art"]]
+
+
+def card_file(c):
+    """Cards use the square version of the cover when there is one."""
+    sq = ROOT / "companies" / c["slug"] / "card.webp"
+    return "card.webp" if sq.exists() else c["photos"]["main"]["file"]
 
 
 def main():
