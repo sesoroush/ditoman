@@ -109,6 +109,21 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-leaders b { font-size: 1.12rem; font-weight: 800; line-height: 1.45; color: #eef6f2; }
 .ir-leaders small { color: var(--muted); font-size: 0.86rem; }
 .ir-leaders a:hover b { color: var(--ir); }
+.ir-lf { display: flex; flex-direction: column; gap: 10px; margin: 0 0 20px; padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: rgba(10, 24, 32, 0.6); }
+.ir-lf-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ir-lf-k { min-width: 76px; color: var(--muted); font-size: 0.9rem; font-weight: 700; }
+.ir-chip { border: 1px solid var(--line-strong); background: transparent; color: var(--text); border-radius: 999px; padding: 6px 14px; font: 600 0.88rem var(--fa); cursor: pointer; }
+.ir-chip:hover { border-color: var(--ir); }
+.ir-chip[aria-pressed="true"] { background: var(--ir); border-color: var(--ir); color: #04261f; }
+.ir-chip:focus-visible { outline: 2px solid var(--ir); outline-offset: 2px; }
+.ir-lf-facts { display: grid; gap: 4px; margin-top: 8px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 0.82rem; }
+.ir-lf-facts > div { display: flex; justify-content: space-between; gap: 8px; }
+.ir-lf-facts dt { color: var(--muted); }
+.ir-lf-facts dd { font-weight: 700; text-align: end; }
+.ir-lf-facts .pending dd { color: var(--muted); font-weight: 400; opacity: 0.7; }
+.ir-lf-facts > div.on { color: var(--ir); }
+.ir-lf-facts > div.on dd { font-size: 1rem; }
+.ir-lf-none { color: var(--muted); margin-top: 12px; }
 @media (max-width: 1000px) { .ir-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .ir-leaders { grid-template-columns: 1fr; } }
 .ir-subs .ir-isic { font: 700 0.78rem var(--en); color: var(--ir); letter-spacing: 0.06em; direction: ltr; align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); }
@@ -150,6 +165,7 @@ UI = {
     "leaders_note": {"fa": "فهرست اولیه، بر اساس اندازه و شهرت؛ ترتیب، رتبه نیست. پرونده‌ی هر کدام کم‌کم اضافه می‌شود.",
                      "en": "A first list, by size and profile; the order is not a ranking. A record for each is added over time."},
     "leaders_open": {"fa": "پرونده", "en": "Record"},
+    "lf_none": {"fa": "هیچ شرکتی با این فیلتر پیدا نشد؛ اطلاعات بعضی شرکت‌ها هنوز در حال تکمیل است.", "en": "No company matches this filter yet; some companies' details are still being gathered."},
     "view": {"fa": "دیدن پرونده", "en": "View the record"},
     "empty": {"fa": "اولین پرونده‌ی این شاخه در راه است. شرکت‌ها یکی‌یکی و پس از بررسی منابع اضافه می‌شوند.", "en": "The first record in this branch is on its way. Companies are added one at a time, once their sources are checked."},
     "notice": {"fa": "اطلاعات عمومی است، نه مشاوره‌ی حقوقی؛ ساختار مجوزها تغییر می‌کند، پیش از اقدام مرجع مربوط را ببینید.", "en": "General information, not legal advice; licensing structures change, so check the relevant authority before acting."},
@@ -314,6 +330,141 @@ def company_art(c):
     return CART[photo["art"]]
 
 
+
+# ---------- Comparing the big names: fields, sort and filters ----------
+# Each entry in "leaders" may carry these fields (leave them out until a sourced value exists):
+#   founded: year (Gregorian)         sales: annual sales, billion toman     assets: total assets, billion toman
+#   figures_year: year of sales/assets   listed: true/false (Tehran Stock Exchange or Farabourse)
+#   ownership: "private" | "state" | "semi" | "coop"       exporter: true/false
+OWNERSHIP = {"private": {"fa": "خصوصی", "en": "Private"}, "state": {"fa": "دولتی", "en": "State-owned"},
+             "semi": {"fa": "شبه‌دولتی", "en": "Semi-public"}, "coop": {"fa": "تعاونی", "en": "Cooperative"}}
+YESNO = {True: {"fa": "بله", "en": "Yes"}, False: {"fa": "خیر", "en": "No"}}
+PENDING = {"fa": "در حال تکمیل", "en": "Being gathered"}
+FIELDS = [
+    ("founded", {"fa": "سال تأسیس", "en": "Founded"}),
+    ("sales", {"fa": "فروش سالانه", "en": "Annual sales"}),
+    ("assets", {"fa": "دارایی کل", "en": "Total assets"}),
+    ("listed", {"fa": "در بورس", "en": "Listed"}),
+    ("ownership", {"fa": "نوع مالکیت", "en": "Ownership"}),
+    ("exporter", {"fa": "صادرکننده", "en": "Exporter"}),
+]
+
+
+def fa_digits(n):
+    return str(n).translate(str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹"))
+
+
+def money(v):
+    """Billion toman, shown as thousand-billion (همت) when large."""
+    if v >= 1000:
+        x = round(v / 1000, 1)
+        return {"fa": f"{fa_digits(f'{x:g}')} همت", "en": f"{x:g} trn toman"}
+    return {"fa": f"{fa_digits(f'{v:,.0f}').replace(',', '٬')} میلیارد تومان", "en": f"{v:,.0f} bn toman"}
+
+
+def field_value(x, key):
+    v = x.get(key)
+    if v is None:
+        return None
+    if key == "founded":
+        return {"fa": fa_digits(v), "en": str(v)}
+    if key in ("sales", "assets"):
+        m = money(v)
+        if x.get("figures_year"):
+            m = {"fa": m["fa"] + f" ({fa_digits(x['figures_year'])})", "en": m["en"] + f" ({x['figures_year']})"}
+        return m
+    if key in ("listed", "exporter"):
+        return YESNO[bool(v)]
+    if key == "ownership":
+        return OWNERSHIP[v]
+
+
+def leader_card(x, subname):
+    data = []
+    for key in ("founded", "sales", "assets"):
+        if x.get(key) is not None:
+            data.append(f'data-{key}="{e(x[key])}"')
+    for key in ("listed", "exporter"):
+        data.append(f'data-{key}="{"" if x.get(key) is None else ("yes" if x[key] else "no")}"')
+    data.append(f'data-ownership="{e(x.get("ownership") or "")}"')
+    rows = "".join(
+        f'<div data-f="{k}"><dt>{t(label)}</dt><dd>{t(field_value(x, k) or PENDING)}</dd></div>'
+        if field_value(x, k) else
+        f'<div data-f="{k}" class="pending"><dt>{t(label)}</dt><dd>{t(PENDING)}</dd></div>'
+        for k, label in FIELDS)
+    head = f'<b>{t(x)}</b><small>{t(subname[x["sub"]])}</small>'
+    if x.get("slug"):
+        head = f'<a href="{e(x["slug"])}.html">{head}<span class="k-go">{t(UI["leaders_open"])}</span></a>'
+    return f'<li {" ".join(data)}>{head}<dl class="ir-lf-facts">{rows}</dl></li>'
+
+
+def chip(attr, val, label, pressed=False):
+    return (f'<button type="button" class="ir-chip" data-{attr}="{val}" aria-pressed="{"true" if pressed else "false"}">'
+            f'{t(label)}</button>')
+
+
+LEADER_TOOLS = (
+    '<div class="ir-lf" role="group">'
+    f'<div class="ir-lf-row"><span class="ir-lf-k">{t({"fa": "مرتب‌سازی", "en": "Sort by"})}</span>'
+    + chip("sort", "", {"fa": "پیش‌فرض", "en": "Default"}, True)
+    + chip("sort", "founded", {"fa": "قدیمی‌ترین", "en": "Oldest first"})
+    + chip("sort", "sales", {"fa": "بیشترین فروش", "en": "Highest sales"})
+    + chip("sort", "assets", {"fa": "بیشترین دارایی", "en": "Largest assets"})
+    + '</div>'
+    f'<div class="ir-lf-row"><span class="ir-lf-k">{t({"fa": "بورس", "en": "Exchange"})}</span>'
+    + chip("listed", "", {"fa": "همه", "en": "All"}, True)
+    + chip("listed", "yes", {"fa": "بورسی", "en": "Listed"})
+    + chip("listed", "no", {"fa": "غیربورسی", "en": "Not listed"})
+    + '</div>'
+    f'<div class="ir-lf-row"><span class="ir-lf-k">{t({"fa": "مالکیت", "en": "Ownership"})}</span>'
+    + chip("ownership", "", {"fa": "همه", "en": "All"}, True)
+    + "".join(chip("ownership", k, v) for k, v in OWNERSHIP.items())
+    + '</div>'
+    f'<div class="ir-lf-row"><span class="ir-lf-k">{t({"fa": "صادرات", "en": "Exports"})}</span>'
+    + chip("exporter", "", {"fa": "همه", "en": "All"}, True)
+    + chip("exporter", "yes", {"fa": "صادرکننده", "en": "Exporter"})
+    + chip("exporter", "no", {"fa": "غیرصادرکننده", "en": "Not exporting"})
+    + '</div></div>'
+)
+
+LEADER_JS = r"""
+(function () {
+  var sec = document.getElementById("leaders"); if (!sec) return;
+  var list = sec.querySelector(".ir-leaders"), none = sec.querySelector(".ir-lf-none");
+  var items = Array.prototype.slice.call(list.children);
+  var state = { sort: "", listed: "", ownership: "", exporter: "" };
+  function render() {
+    var shown = items.filter(function (li) {
+      return ["listed", "ownership", "exporter"].every(function (k) {
+        return !state[k] || li.getAttribute("data-" + k) === state[k];
+      });
+    });
+    var order = shown.slice();
+    if (state.sort) {
+      order.sort(function (a, b) {
+        var x = a.getAttribute("data-" + state.sort), y = b.getAttribute("data-" + state.sort);
+        if (x === null && y === null) return 0; if (x === null) return 1; if (y === null) return -1;
+        return state.sort === "founded" ? Number(x) - Number(y) : Number(y) - Number(x);
+      });
+    }
+    items.forEach(function (li) { li.hidden = shown.indexOf(li) < 0; li.classList.remove("ir-lf-hl"); });
+    order.forEach(function (li) { list.appendChild(li); });
+    sec.querySelectorAll(".ir-lf-facts > div").forEach(function (d) {
+      d.classList.toggle("on", !!state.sort && d.getAttribute("data-f") === state.sort);
+    });
+    none.hidden = shown.length > 0;
+  }
+  sec.querySelectorAll(".ir-chip").forEach(function (b) {
+    var key = ["sort", "listed", "ownership", "exporter"].filter(function (k) { return b.hasAttribute("data-" + k); })[0];
+    b.addEventListener("click", function () {
+      state[key] = b.getAttribute("data-" + key);
+      sec.querySelectorAll(".ir-chip[data-" + key + "]").forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+      render();
+    });
+  });
+})();
+"""
+
 def branch_page(b, companies):
     art, is_photo = hero_art(b)
     caption = "" if is_photo else f'<figcaption>{t(UI["art"])}</figcaption>'
@@ -331,15 +482,15 @@ def branch_page(b, companies):
     else:
         cos = f'<p class="ir-empty">{t(UI["empty"])}</p>'
     subname = {s["id"]: s for s in b["subs"]}
-    leaders = "".join(
-        (f'<li><a href="{e(x["slug"])}.html"><b>{t(x)}</b><small>{t(subname[x["sub"]])}</small><span class="k-go">{t(UI["leaders_open"])}</span></a></li>'
-         if x.get("slug") else f'<li><b>{t(x)}</b><small>{t(subname[x["sub"]])}</small></li>')
-        for x in b.get("leaders", []))
-    leaders_html = (f'''<section class="ir-sec">
+    leaders = "".join(leader_card(x, subname) for x in b.get("leaders", []))
+    leaders_html = (f'''<section class="ir-sec" id="leaders">
       <h2>{t(UI["leaders"])}</h2>
       <p class="ir-lead" style="margin:0 0 18px">{t(UI["leaders_note"])}</p>
+      {LEADER_TOOLS}
       <ul class="ir-leaders">{leaders}</ul>
-    </section>''' if leaders else "")
+      <p class="ir-lf-none" hidden>{t(UI["lf_none"])}</p>
+    </section>
+    <script>{LEADER_JS}</script>''' if leaders else "")
     crumb = f'<a href="iran.html">{t(UI["section"])}</a> <span aria-hidden="true">›</span> {t(b["name"])}'
     body = f"""  <main class="k-main wrap" style="--ir:{e(b["accent"])}">
     {toggle(crumb)}

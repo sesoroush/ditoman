@@ -68,6 +68,21 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-leaders b { font-size: 1.12rem; font-weight: 800; line-height: 1.45; color: #eef6f2; }
 .ir-leaders small { color: var(--muted); font-size: 0.86rem; }
 .ir-leaders a:hover b { color: var(--ir); }
+.ir-lf { display: flex; flex-direction: column; gap: 10px; margin: 0 0 20px; padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: rgba(10, 24, 32, 0.6); }
+.ir-lf-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ir-lf-k { min-width: 76px; color: var(--muted); font-size: 0.9rem; font-weight: 700; }
+.ir-chip { border: 1px solid var(--line-strong); background: transparent; color: var(--text); border-radius: 999px; padding: 6px 14px; font: 600 0.88rem var(--fa); cursor: pointer; }
+.ir-chip:hover { border-color: var(--ir); }
+.ir-chip[aria-pressed="true"] { background: var(--ir); border-color: var(--ir); color: #04261f; }
+.ir-chip:focus-visible { outline: 2px solid var(--ir); outline-offset: 2px; }
+.ir-lf-facts { display: grid; gap: 4px; margin-top: 8px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 0.82rem; }
+.ir-lf-facts > div { display: flex; justify-content: space-between; gap: 8px; }
+.ir-lf-facts dt { color: var(--muted); }
+.ir-lf-facts dd { font-weight: 700; text-align: end; }
+.ir-lf-facts .pending dd { color: var(--muted); font-weight: 400; opacity: 0.7; }
+.ir-lf-facts > div.on { color: var(--ir); }
+.ir-lf-facts > div.on dd { font-size: 1rem; }
+.ir-lf-none { color: var(--muted); margin-top: 12px; }
 @media (max-width: 1000px) { .ir-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .ir-leaders { grid-template-columns: 1fr; } }
 .ir-subs .ir-isic { font: 700 0.78rem var(--en); color: var(--ir); letter-spacing: 0.06em; direction: ltr; align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); }
@@ -93,65 +108,6 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
   body[data-lang="fa"] .ir-panel { width: 76%; padding: 16px 18px 16px calc(24% + 8px); }
 }
 </style>
-<!-- seo:start -->
-<meta name="twitter:card" content="summary_large_image" />
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "WebPage",
-   "@id": "https://ditoman.com/iran-technology.html#page",
-   "url": "https://ditoman.com/iran-technology.html",
-   "name": "Technology & services | فناوری و خدمات | What Iran Has | Ditoman",
-   "description": "The youngest branch and the one with the most regulators: platforms and startups begin with company registration and the e-trust mark; operators and internet providers are licensed by the Communications Regulatory Authority; fintech sits under the Central Bank, insurance under Central Insurance, capital markets under the Securities and Exchange Organisation; and knowledge-based companies gain their exemptions through assessment by the Vice-Presidency for Science.",
-   "isPartOf": {
-    "@id": "https://ditoman.com/#website"
-   },
-   "publisher": {
-    "@type": "Organization",
-    "@id": "https://ditoman.com/#organization",
-    "name": "Ditoman",
-    "alternateName": [
-     "دیتومان",
-     "DiToman",
-     "Ditoman TMN"
-    ],
-    "url": "https://ditoman.com/",
-    "logo": {
-     "@type": "ImageObject",
-     "url": "https://ditoman.com/tmn-logo-512.png",
-     "width": 512,
-     "height": 512
-    },
-    "foundingDate": "2022",
-    "sameAs": [
-     "https://www.instagram.com/ditoman.tmn/",
-     "https://t.me/Ditoman_tm"
-    ]
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Ditoman",
-     "item": "https://ditoman.com/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Technology & services | فناوری و خدمات | What Iran Has",
-     "item": "https://ditoman.com/iran-technology.html"
-    }
-   ]
-  }
- ]
-}
-</script>
-<!-- seo:end -->
 </head>
 <body data-lang="fa">
 
@@ -272,11 +228,50 @@ body[data-lang="fa"] .ir-co h3 { font: 400 2rem/1.3 var(--fa-display); }
       <ul class="ir-subs"><li><span class="ir-isic">J62–J63</span><b><span class="i-fa" lang="fa">پلتفرم‌ها و استارتاپ‌ها</span><span class="i-en" lang="en">Platforms &amp; startups</span></b><small><span class="i-fa" lang="fa">مرکز توسعه تجارت الکترونیکی (اینماد)</span><span class="i-en" lang="en">E-Commerce Development Centre (e-trust mark)</span></small></li><li><span class="ir-isic">K64 · K66</span><b><span class="i-fa" lang="fa">فین‌تک و پرداخت</span><span class="i-en" lang="en">Fintech &amp; payments</span></b><small><span class="i-fa" lang="fa">بانک مرکزی / شاپرک</span><span class="i-en" lang="en">Central Bank / Shaparak</span></small></li><li><span class="ir-isic">M72</span><b><span class="i-fa" lang="fa">دانش‌بنیان، نانو و بایو</span><span class="i-en" lang="en">Knowledge-based, nano &amp; bio</span></b><small><span class="i-fa" lang="fa">معاونت علمی</span><span class="i-en" lang="en">Vice-Presidency for Science</span></small></li><li><span class="ir-isic">J61</span><b><span class="i-fa" lang="fa">مخابرات و اینترنت</span><span class="i-en" lang="en">Telecom &amp; internet</span></b><small><span class="i-fa" lang="fa">سازمان تنظیم مقررات</span><span class="i-en" lang="en">Communications Regulatory Authority</span></small></li><li><span class="ir-isic">K64–K66</span><b><span class="i-fa" lang="fa">بانک، بیمه و بازار سرمایه</span><span class="i-en" lang="en">Banking, insurance &amp; capital markets</span></b><small><span class="i-fa" lang="fa">بانک مرکزی؛ بیمه مرکزی؛ سازمان بورس</span><span class="i-en" lang="en">Central Bank; Central Insurance; SEO</span></small></li><li><span class="ir-isic">Q86</span><b><span class="i-fa" lang="fa">سلامت و درمان</span><span class="i-en" lang="en">Health &amp; care</span></b><small><span class="i-fa" lang="fa">وزارت بهداشت</span><span class="i-en" lang="en">Ministry of Health</span></small></li><li><span class="ir-isic">P85</span><b><span class="i-fa" lang="fa">علم و دانشگاه</span><span class="i-en" lang="en">Science &amp; universities</span></b><small><span class="i-fa" lang="fa">وزارت علوم؛ وزارت بهداشت</span><span class="i-en" lang="en">Ministry of Science; Ministry of Health</span></small></li></ul>
     </section>
 
-    <section class="ir-sec">
+    <section class="ir-sec" id="leaders">
       <h2><span class="i-fa" lang="fa">نام‌های بزرگ این شاخه</span><span class="i-en" lang="en">Big names in this branch</span></h2>
       <p class="ir-lead" style="margin:0 0 18px"><span class="i-fa" lang="fa">فهرست اولیه، بر اساس اندازه و شهرت؛ ترتیب، رتبه نیست. پرونده‌ی هر کدام کم‌کم اضافه می‌شود.</span><span class="i-en" lang="en">A first list, by size and profile; the order is not a ranking. A record for each is added over time.</span></p>
-      <ul class="ir-leaders"><li><b><span class="i-fa" lang="fa">همراه اول</span><span class="i-en" lang="en">Hamrah-e Aval (MCI)</span></b><small><span class="i-fa" lang="fa">مخابرات و اینترنت</span><span class="i-en" lang="en">Telecom &amp; internet</span></small></li><li><b><span class="i-fa" lang="fa">ایرانسل</span><span class="i-en" lang="en">Irancell</span></b><small><span class="i-fa" lang="fa">مخابرات و اینترنت</span><span class="i-en" lang="en">Telecom &amp; internet</span></small></li><li><b><span class="i-fa" lang="fa">دیجی‌کالا</span><span class="i-en" lang="en">Digikala</span></b><small><span class="i-fa" lang="fa">پلتفرم‌ها و استارتاپ‌ها</span><span class="i-en" lang="en">Platforms &amp; startups</span></small></li><li><b><span class="i-fa" lang="fa">اسنپ</span><span class="i-en" lang="en">Snapp</span></b><small><span class="i-fa" lang="fa">پلتفرم‌ها و استارتاپ‌ها</span><span class="i-en" lang="en">Platforms &amp; startups</span></small></li><li><b><span class="i-fa" lang="fa">کافه‌بازار</span><span class="i-en" lang="en">Cafe Bazaar</span></b><small><span class="i-fa" lang="fa">پلتفرم‌ها و استارتاپ‌ها</span><span class="i-en" lang="en">Platforms &amp; startups</span></small></li></ul>
+      <div class="ir-lf" role="group"><div class="ir-lf-row"><span class="ir-lf-k"><span class="i-fa" lang="fa">مرتب‌سازی</span><span class="i-en" lang="en">Sort by</span></span><button type="button" class="ir-chip" data-sort="" aria-pressed="true"><span class="i-fa" lang="fa">پیش‌فرض</span><span class="i-en" lang="en">Default</span></button><button type="button" class="ir-chip" data-sort="founded" aria-pressed="false"><span class="i-fa" lang="fa">قدیمی‌ترین</span><span class="i-en" lang="en">Oldest first</span></button><button type="button" class="ir-chip" data-sort="sales" aria-pressed="false"><span class="i-fa" lang="fa">بیشترین فروش</span><span class="i-en" lang="en">Highest sales</span></button><button type="button" class="ir-chip" data-sort="assets" aria-pressed="false"><span class="i-fa" lang="fa">بیشترین دارایی</span><span class="i-en" lang="en">Largest assets</span></button></div><div class="ir-lf-row"><span class="ir-lf-k"><span class="i-fa" lang="fa">بورس</span><span class="i-en" lang="en">Exchange</span></span><button type="button" class="ir-chip" data-listed="" aria-pressed="true"><span class="i-fa" lang="fa">همه</span><span class="i-en" lang="en">All</span></button><button type="button" class="ir-chip" data-listed="yes" aria-pressed="false"><span class="i-fa" lang="fa">بورسی</span><span class="i-en" lang="en">Listed</span></button><button type="button" class="ir-chip" data-listed="no" aria-pressed="false"><span class="i-fa" lang="fa">غیربورسی</span><span class="i-en" lang="en">Not listed</span></button></div><div class="ir-lf-row"><span class="ir-lf-k"><span class="i-fa" lang="fa">مالکیت</span><span class="i-en" lang="en">Ownership</span></span><button type="button" class="ir-chip" data-ownership="" aria-pressed="true"><span class="i-fa" lang="fa">همه</span><span class="i-en" lang="en">All</span></button><button type="button" class="ir-chip" data-ownership="private" aria-pressed="false"><span class="i-fa" lang="fa">خصوصی</span><span class="i-en" lang="en">Private</span></button><button type="button" class="ir-chip" data-ownership="state" aria-pressed="false"><span class="i-fa" lang="fa">دولتی</span><span class="i-en" lang="en">State-owned</span></button><button type="button" class="ir-chip" data-ownership="semi" aria-pressed="false"><span class="i-fa" lang="fa">شبه‌دولتی</span><span class="i-en" lang="en">Semi-public</span></button><button type="button" class="ir-chip" data-ownership="coop" aria-pressed="false"><span class="i-fa" lang="fa">تعاونی</span><span class="i-en" lang="en">Cooperative</span></button></div><div class="ir-lf-row"><span class="ir-lf-k"><span class="i-fa" lang="fa">صادرات</span><span class="i-en" lang="en">Exports</span></span><button type="button" class="ir-chip" data-exporter="" aria-pressed="true"><span class="i-fa" lang="fa">همه</span><span class="i-en" lang="en">All</span></button><button type="button" class="ir-chip" data-exporter="yes" aria-pressed="false"><span class="i-fa" lang="fa">صادرکننده</span><span class="i-en" lang="en">Exporter</span></button><button type="button" class="ir-chip" data-exporter="no" aria-pressed="false"><span class="i-fa" lang="fa">غیرصادرکننده</span><span class="i-en" lang="en">Not exporting</span></button></div></div>
+      <ul class="ir-leaders"><li data-listed="" data-exporter="" data-ownership=""><b><span class="i-fa" lang="fa">همراه اول</span><span class="i-en" lang="en">Hamrah-e Aval (MCI)</span></b><small><span class="i-fa" lang="fa">مخابرات و اینترنت</span><span class="i-en" lang="en">Telecom &amp; internet</span></small><dl class="ir-lf-facts"><div data-f="founded" class="pending"><dt><span class="i-fa" lang="fa">سال تأسیس</span><span class="i-en" lang="en">Founded</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="sales" class="pending"><dt><span class="i-fa" lang="fa">فروش سالانه</span><span class="i-en" lang="en">Annual sales</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="assets" class="pending"><dt><span class="i-fa" lang="fa">دارایی کل</span><span class="i-en" lang="en">Total assets</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="listed" class="pending"><dt><span class="i-fa" lang="fa">در بورس</span><span class="i-en" lang="en">Listed</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="ownership" class="pending"><dt><span class="i-fa" lang="fa">نوع مالکیت</span><span class="i-en" lang="en">Ownership</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="exporter" class="pending"><dt><span class="i-fa" lang="fa">صادرکننده</span><span class="i-en" lang="en">Exporter</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div></dl></li><li data-listed="" data-exporter="" data-ownership=""><b><span class="i-fa" lang="fa">ایرانسل</span><span class="i-en" lang="en">Irancell</span></b><small><span class="i-fa" lang="fa">مخابرات و اینترنت</span><span class="i-en" lang="en">Telecom &amp; internet</span></small><dl class="ir-lf-facts"><div data-f="founded" class="pending"><dt><span class="i-fa" lang="fa">سال تأسیس</span><span class="i-en" lang="en">Founded</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="sales" class="pending"><dt><span class="i-fa" lang="fa">فروش سالانه</span><span class="i-en" lang="en">Annual sales</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="assets" class="pending"><dt><span class="i-fa" lang="fa">دارایی کل</span><span class="i-en" lang="en">Total assets</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="listed" class="pending"><dt><span class="i-fa" lang="fa">در بورس</span><span class="i-en" lang="en">Listed</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="ownership" class="pending"><dt><span class="i-fa" lang="fa">نوع مالکیت</span><span class="i-en" lang="en">Ownership</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="exporter" class="pending"><dt><span class="i-fa" lang="fa">صادرکننده</span><span class="i-en" lang="en">Exporter</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div></dl></li><li data-listed="" data-exporter="" data-ownership=""><b><span class="i-fa" lang="fa">دیجی‌کالا</span><span class="i-en" lang="en">Digikala</span></b><small><span class="i-fa" lang="fa">پلتفرم‌ها و استارتاپ‌ها</span><span class="i-en" lang="en">Platforms &amp; startups</span></small><dl class="ir-lf-facts"><div data-f="founded" class="pending"><dt><span class="i-fa" lang="fa">سال تأسیس</span><span class="i-en" lang="en">Founded</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="sales" class="pending"><dt><span class="i-fa" lang="fa">فروش سالانه</span><span class="i-en" lang="en">Annual sales</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="assets" class="pending"><dt><span class="i-fa" lang="fa">دارایی کل</span><span class="i-en" lang="en">Total assets</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="listed" class="pending"><dt><span class="i-fa" lang="fa">در بورس</span><span class="i-en" lang="en">Listed</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="ownership" class="pending"><dt><span class="i-fa" lang="fa">نوع مالکیت</span><span class="i-en" lang="en">Ownership</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="exporter" class="pending"><dt><span class="i-fa" lang="fa">صادرکننده</span><span class="i-en" lang="en">Exporter</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div></dl></li><li data-listed="" data-exporter="" data-ownership=""><b><span class="i-fa" lang="fa">اسنپ</span><span class="i-en" lang="en">Snapp</span></b><small><span class="i-fa" lang="fa">پلتفرم‌ها و استارتاپ‌ها</span><span class="i-en" lang="en">Platforms &amp; startups</span></small><dl class="ir-lf-facts"><div data-f="founded" class="pending"><dt><span class="i-fa" lang="fa">سال تأسیس</span><span class="i-en" lang="en">Founded</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="sales" class="pending"><dt><span class="i-fa" lang="fa">فروش سالانه</span><span class="i-en" lang="en">Annual sales</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="assets" class="pending"><dt><span class="i-fa" lang="fa">دارایی کل</span><span class="i-en" lang="en">Total assets</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="listed" class="pending"><dt><span class="i-fa" lang="fa">در بورس</span><span class="i-en" lang="en">Listed</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="ownership" class="pending"><dt><span class="i-fa" lang="fa">نوع مالکیت</span><span class="i-en" lang="en">Ownership</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="exporter" class="pending"><dt><span class="i-fa" lang="fa">صادرکننده</span><span class="i-en" lang="en">Exporter</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div></dl></li><li data-listed="" data-exporter="" data-ownership=""><b><span class="i-fa" lang="fa">کافه‌بازار</span><span class="i-en" lang="en">Cafe Bazaar</span></b><small><span class="i-fa" lang="fa">پلتفرم‌ها و استارتاپ‌ها</span><span class="i-en" lang="en">Platforms &amp; startups</span></small><dl class="ir-lf-facts"><div data-f="founded" class="pending"><dt><span class="i-fa" lang="fa">سال تأسیس</span><span class="i-en" lang="en">Founded</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="sales" class="pending"><dt><span class="i-fa" lang="fa">فروش سالانه</span><span class="i-en" lang="en">Annual sales</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="assets" class="pending"><dt><span class="i-fa" lang="fa">دارایی کل</span><span class="i-en" lang="en">Total assets</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="listed" class="pending"><dt><span class="i-fa" lang="fa">در بورس</span><span class="i-en" lang="en">Listed</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="ownership" class="pending"><dt><span class="i-fa" lang="fa">نوع مالکیت</span><span class="i-en" lang="en">Ownership</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div><div data-f="exporter" class="pending"><dt><span class="i-fa" lang="fa">صادرکننده</span><span class="i-en" lang="en">Exporter</span></dt><dd><span class="i-fa" lang="fa">در حال تکمیل</span><span class="i-en" lang="en">Being gathered</span></dd></div></dl></li></ul>
+      <p class="ir-lf-none" hidden><span class="i-fa" lang="fa">هیچ شرکتی با این فیلتر پیدا نشد؛ اطلاعات بعضی شرکت‌ها هنوز در حال تکمیل است.</span><span class="i-en" lang="en">No company matches this filter yet; some companies&#x27; details are still being gathered.</span></p>
     </section>
+    <script>
+(function () {
+  var sec = document.getElementById("leaders"); if (!sec) return;
+  var list = sec.querySelector(".ir-leaders"), none = sec.querySelector(".ir-lf-none");
+  var items = Array.prototype.slice.call(list.children);
+  var state = { sort: "", listed: "", ownership: "", exporter: "" };
+  function render() {
+    var shown = items.filter(function (li) {
+      return ["listed", "ownership", "exporter"].every(function (k) {
+        return !state[k] || li.getAttribute("data-" + k) === state[k];
+      });
+    });
+    var order = shown.slice();
+    if (state.sort) {
+      order.sort(function (a, b) {
+        var x = a.getAttribute("data-" + state.sort), y = b.getAttribute("data-" + state.sort);
+        if (x === null && y === null) return 0; if (x === null) return 1; if (y === null) return -1;
+        return state.sort === "founded" ? Number(x) - Number(y) : Number(y) - Number(x);
+      });
+    }
+    items.forEach(function (li) { li.hidden = shown.indexOf(li) < 0; li.classList.remove("ir-lf-hl"); });
+    order.forEach(function (li) { list.appendChild(li); });
+    sec.querySelectorAll(".ir-lf-facts > div").forEach(function (d) {
+      d.classList.toggle("on", !!state.sort && d.getAttribute("data-f") === state.sort);
+    });
+    none.hidden = shown.length > 0;
+  }
+  sec.querySelectorAll(".ir-chip").forEach(function (b) {
+    var key = ["sort", "listed", "ownership", "exporter"].filter(function (k) { return b.hasAttribute("data-" + k); })[0];
+    b.addEventListener("click", function () {
+      state[key] = b.getAttribute("data-" + key);
+      sec.querySelectorAll(".ir-chip[data-" + key + "]").forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+      render();
+    });
+  });
+})();
+</script>
 
     <section class="ir-sec">
       <h2><span class="i-fa" lang="fa">شرکت‌های این شاخه</span><span class="i-en" lang="en">Companies in this branch</span></h2>
