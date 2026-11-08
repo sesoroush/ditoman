@@ -1,5 +1,9 @@
-# dest | url | og/direct/commons/dk
-kalleh/dk | کاله | dk
-golrang/dk | گلرنگ | dk
-golrang/logo.png | https://upload.wikimedia.org/wikipedia/en/d/df/Golrang-Logo.png | direct
-kalleh/logo.png | https://upload.wikimedia.org/wikipedia/en/2/2a/Kaleh_Group_Logo.png | direct
+# dest | url | og/direct/commons/off
+kalleh/off | world.openfoodfacts.org:kalleh | off
+kalleh/off2 | world.openfoodfacts.org:کاله | off
+golrang/obf | world.openbeautyfacts.org:golrang | off
+golrang/opf | world.openproductsfacts.org:golrang | off
+golrang/off | world.openfoodfacts.org:golrang | off
+kalleh/p1 | https://emalls.ir/مشخصات_بستنی-باقلوا-کاله-650-گرمی~id~9262907 | og
+golrang/p1 | https://emalls.ir/مشخصات_شامپو-بچه-گلرنگ-خرسی-110-گرم~id~2321261 | og
+aryasasol/c | Arya Sasol logo | commons

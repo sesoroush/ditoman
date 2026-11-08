@@ -32,6 +32,29 @@ def main():
         target = OUT / dest
         target.parent.mkdir(parents=True, exist_ok=True)
         try:
+            if mode == "off":
+                import json
+                host, brand = url.split(":", 1)  # e.g. world.openfoodfacts.org:kalleh
+                api = (f"https://{host}/api/v2/search?brands_tags={urllib.parse.quote(brand)}"
+                       "&fields=code,product_name,brands,image_front_url,unique_scans_n&sort_by=unique_scans_n&page_size=12")
+                res = json.loads(get(api)[0])
+                n = 0
+                for pr in res.get("products", []):
+                    im = pr.get("image_front_url")
+                    if not im:
+                        continue
+                    im = re.sub(r"\.\d+\.jpg$", ".full.jpg", im)
+                    try:
+                        data, ctype = get(im)
+                    except Exception:
+                        data, ctype = get(pr["image_front_url"])
+                    t = target.parent / f"{target.name}.{n}.jpg"
+                    t.write_bytes(data)
+                    log.append(f"OK {t.relative_to(OUT)} {pr.get('product_name')} | {pr.get('brands')} | {pr.get('code')}")
+                    n += 1
+                if not n:
+                    log.append(f"NONE {dest} {url}")
+                continue
             if mode == "dk":
                 import json
                 api = "https://api.digikala.com/v1/search/?q=" + urllib.parse.quote(url)
@@ -72,7 +95,8 @@ def main():
                 page = body.decode("utf-8", "ignore")
                 m = (re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', page)
                      or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', page)
-                     or re.search(r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)', page))
+                     or re.search(r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)', page)
+                     or re.search(r'"image"\s*:\s*\[?\s*"([^"]+\.(?:jpe?g|png|webp)[^"]*)"', page))
                 imgs = sorted(set(urllib.parse.urljoin(url, html.unescape(s)) for s in
                                   re.findall(r'<img[^>]+(?:data-src|src)=["\']([^"\']+)', page)))
                 (target.parent / (target.name + ".imgs.txt")).write_text("\n".join(imgs), encoding="utf-8")
