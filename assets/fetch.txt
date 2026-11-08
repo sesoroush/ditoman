@@ -1,25 +1,5 @@
-# dest | url | og/direct/commons
-kalleh/p1 | https://emalls.ir/مشخصات_بستنی-باقلوا-کاله-650-گرمی~id~9262907 | og
-kalleh/p2 | https://emalls.ir/مشخصات_دوغ-ویژه-کاله~id~2393542 | og
-kalleh/p3 | https://emalls.ir/مشخصات_پنیر-لبنه-آنا-کاله-750-گرمی~id~9239349 | og
-kalleh/p4 | https://emalls.ir/مشخصات_کره-پاستوریزه-250-گرمی-کاله~id~2561498 | og
-kalleh/p5 | https://emalls.ir/مشخصات_پنیر-کبابی-450-گرمی-کاله~id~719182 | og
-kalleh/p6 | https://emalls.ir/مشخصات_کاله-پرو-شیر-کاراملی-330میل~id~26535555 | og
-kalleh/brands | https://iranbrands.review/industry/food/kalleh/ | og
-kalleh/c | Kalleh | commons
+# dest | url | og/direct/commons/dk
+kalleh/dk | کاله | dk
+golrang/dk | گلرنگ | dk
 golrang/logo.png | https://upload.wikimedia.org/wikipedia/en/d/df/Golrang-Logo.png | direct
-golrang/p1 | https://emalls.ir/مشخصات_شامپو-بچه-گلرنگ-خرسی-110-گرم~id~2321261 | og
-golrang/p2 | https://emalls.ir/مشخصات_مایع-جرم-گیر-گلرنگ-1-لیتری~id~1865823 | og
-golrang/tby | https://dev.thebusinessyear.com/?p=41077 | og
-golrang/c | Golrang | commons
-aryasasol/wiki | https://en.wikipedia.org/wiki/Arya_Sasol_polymer_company | og
-aryasasol/fa | https://www.aryasasol.com/fa | og
-aryasasol/ft | https://financialtribune.com/node/117770 | og
-aryasasol/c | Arya Sasol | commons
-aryasasol/pe | polyethylene pellets | commons
-fateh/logo.jpg | https://kar.iranestekhdam.ir/storage/profile/logos/2023-12-24/logo_1703406872.jpg | direct
-fateh/irib | https://www.irib-news.ir/fa/news/5934929 | og
-fateh/naftema | https://www.naftema.com/news/193416 | og
-fateh/presstv | https://www.presstv.co.uk/Detail/2026/11/01/779693/explainer-iranian-engineers-build-500-ton-polymerization-reactor-for-asaluyeh | og
-fateh/site | https://fatehsanat.com/ | og
-fateh/c | heat exchanger shell and tube | commons
+kalleh/logo.png | https://upload.wikimedia.org/wikipedia/en/2/2a/Kaleh_Group_Logo.png | direct

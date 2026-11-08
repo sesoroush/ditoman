@@ -32,6 +32,23 @@ def main():
         target = OUT / dest
         target.parent.mkdir(parents=True, exist_ok=True)
         try:
+            if mode == "dk":
+                import json
+                api = "https://api.digikala.com/v1/search/?q=" + urllib.parse.quote(url)
+                body, _ = get(api)
+                (target.parent / (target.name + ".json")).write_bytes(body[:400000])
+                res = json.loads(body)
+                prods = ((res.get("data") or {}).get("products") or [])[:8]
+                for i, pr in enumerate(prods):
+                    im = (((pr.get("images") or {}).get("main") or {}).get("url") or [None])[0]
+                    if not im:
+                        continue
+                    im = im.split("?")[0]
+                    data, ctype = get(im)
+                    t = target.parent / f"{target.name}.{i}.jpg"
+                    t.write_bytes(data)
+                    log.append(f"OK {t.relative_to(OUT)} {pr.get('title_fa')} | {pr.get('title_en')}")
+                continue
             if mode == "commons":
                 import json
                 api = ("https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search"
