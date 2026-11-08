@@ -16,6 +16,7 @@ import html, json, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "iran" / "branches.json").read_text(encoding="utf-8"))
 COMPANIES = ROOT / "data" / "companies"
+TOP = json.loads((ROOT / "data" / "iran" / "top100.json").read_text(encoding="utf-8"))
 BASE = "https://ditoman.com/"
 REVIEWED = {"fa": "۱۵ آبان ۱۴۰۵", "en": "6 November 2026"}
 
@@ -103,12 +104,96 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-subs { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .ir-subs li { border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; background: linear-gradient(180deg, rgba(14, 33, 42, 0.9), rgba(10, 24, 32, 0.6)); display: flex; flex-direction: column; gap: 6px; }
 .ir-subs b { font-size: 1.1rem; line-height: 1.35; }
-.ir-leaders { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.ir-leaders { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+.ir-rank { color: var(--ir); font-size: 0.82rem; font-weight: 700; }
+.ir-more { color: var(--mint); font-weight: 700; white-space: nowrap; }
+.ir-top-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: rgba(10, 24, 32, 0.6); }
+.ir-top { width: 100%; border-collapse: collapse; font-size: 0.95rem; min-width: 640px; }
+.ir-top th, .ir-top td { padding: 10px 14px; text-align: start; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.ir-top th { color: var(--muted); font-weight: 700; font-size: 0.85rem; position: sticky; top: 0; background: #0a1820; }
+.ir-top tr:last-child td { border-bottom: 0; }
+.ir-top td.n { color: var(--muted); width: 3.5em; }
+.ir-top td.v { font-weight: 700; }
+.ir-top td.v.min, .ir-top td.v.na { color: var(--muted); font-weight: 400; }
+.ir-top td.name { white-space: normal; min-width: 14em; }
+.ir-top a { color: var(--text); }
+.ir-top a:hover { color: var(--mint); }
+.ir-top .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-inline-end: 8px; vertical-align: middle; }
+.ir-top-note { color: var(--muted); font-size: 0.92rem; line-height: 1.9; margin-top: 14px; max-width: 60em; }
 .ir-leaders li, .ir-leaders a { display: flex; flex-direction: column; gap: 6px; }
-.ir-leaders li { border: 1px solid var(--line-strong); border-top: 3px solid var(--ir); border-radius: 16px; padding: 16px; background: rgba(14, 33, 42, 0.7); }
+.ir-leaders li { position: relative; border: 1px solid var(--line); border-radius: 20px; padding: 18px 18px 14px; background: linear-gradient(160deg, color-mix(in srgb, var(--sc, var(--ir)) 13%, #0c1c24), rgba(10, 24, 32, 0.75) 60%); transition: border-color 0.25s ease, transform 0.25s ease; }
+.ir-leaders li:hover { border-color: color-mix(in srgb, var(--sc, var(--ir)) 60%, transparent); transform: translateY(-2px); }
 .ir-leaders b { font-size: 1.12rem; font-weight: 800; line-height: 1.45; color: #eef6f2; }
 .ir-leaders small { color: var(--muted); font-size: 0.86rem; }
 .ir-leaders a:hover b { color: var(--ir); }
+.ir-leaders .ir-rank { color: var(--sc, var(--ir)); }
+.ir-v { margin-top: 10px; font-size: 1.45rem; font-weight: 800; color: #eef6f2; line-height: 1.2; }
+.ir-v.min { font-size: 1.15rem; color: #cfe1df; }
+.ir-v.na { font-size: 0.95rem; font-weight: 500; color: var(--muted); }
+.ir-bar { display: block; height: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.07); overflow: hidden; margin-top: 2px; }
+.ir-bar i { display: block; height: 100%; border-radius: 4px; background: var(--sc, var(--ir)); }
+.ir-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.ir-tags > span { font-size: 0.78rem; padding: 3px 9px; border-radius: 999px; background: rgba(255, 255, 255, 0.06); color: #cfe1df; }
+details.ir-more-d { margin-top: auto; border: 0; padding-top: 8px; }
+.ir-more-d summary { display: inline-flex; align-items: center; gap: 6px; justify-content: flex-start; cursor: pointer; color: var(--muted); font: 500 0.84rem var(--fa); list-style: none; padding: 4px 0; }
+.ir-more-d summary::after { content: "›"; font-size: 1rem; color: inherit; transform: rotate(90deg); }
+.ir-more-d[open] summary::after { transform: rotate(-90deg); }
+.ir-more-d summary:hover { color: var(--text); }
+details.ir-top-list { border: 0; }
+.ir-top-list > summary { justify-content: flex-start; gap: 10px; }
+.ir-tile b, .ir-tile .vl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+/* market map */
+.ir-map-hint { color: var(--muted); font-size: 0.95rem; margin: 0 0 14px; }
+.ir-map-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.ir-map-legend button { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: rgba(10, 24, 32, 0.6); color: var(--text); border-radius: 999px; padding: 6px 14px 6px 12px; font: 600 0.88rem var(--fa); cursor: default; }
+.ir-map-legend button:hover, .ir-map-legend button:focus-visible { border-color: var(--c); outline: none; }
+.ir-map-legend i { width: 10px; height: 10px; border-radius: 3px; background: var(--c); }
+.ir-map-legend small { color: var(--muted); font-weight: 400; }
+.ir-map { position: relative; height: clamp(460px, 56vw, 640px); border-radius: 22px; overflow: hidden; background: #071217; margin-bottom: 26px; }
+.ir-map-g { position: absolute; padding: 0; }
+.ir-map-gl { position: absolute; top: 5px; inset-inline-start: 10px; font-size: 0.82rem; font-weight: 700; color: var(--c); white-space: nowrap; overflow: hidden; max-width: calc(100% - 16px); }
+.ir-tile { position: absolute; border: 0; border-radius: 10px; padding: 8px 10px; text-align: start; overflow: hidden; cursor: pointer; color: #f3fbf8;
+  background: color-mix(in srgb, var(--c) calc(var(--k) * 100%), #0b1a20); display: flex; flex-direction: column; justify-content: flex-start; gap: 2px;
+  transition: filter 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease; font-family: var(--fa); }
+.ir-tile b { font-size: clamp(0.8rem, 1.2vw, 1.05rem); font-weight: 800; color: #fff; line-height: 1.2; }
+.ir-tile .nm { font-size: 0.78rem; opacity: 0.85; line-height: 1.4; }
+.ir-tile .vl { margin-top: auto; font-size: 0.82rem; font-weight: 700; opacity: 0.95; }
+.ir-tile:hover { filter: brightness(1.18); }
+.ir-tile:focus-visible { outline: 2px solid #fff; outline-offset: -2px; }
+.ir-map.focus .ir-tile { opacity: 0.28; filter: saturate(0.5); }
+.ir-map.focus .ir-tile.on, .ir-map.focus .ir-tile.fam, .ir-map.focus .ir-tile.sib { opacity: 1; filter: none; }
+.ir-map.focus .ir-tile.on { box-shadow: inset 0 0 0 2px #fff; }
+.ir-map.focus .ir-tile.fam { box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.55); }
+.ir-sheet { position: fixed; z-index: 70; inset-inline-end: 24px; bottom: 24px; width: min(380px, calc(100vw - 32px)); max-height: min(78vh, 640px); overflow: auto;
+  padding: 22px 22px 20px; border-radius: 24px; border: 1px solid color-mix(in srgb, var(--c) 45%, transparent);
+  background: rgba(10, 22, 28, 0.82); -webkit-backdrop-filter: blur(22px) saturate(1.4); backdrop-filter: blur(22px) saturate(1.4);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5); color: var(--text); font-family: var(--fa);
+  opacity: 0; transform: translateY(16px) scale(0.98); transition: opacity 0.25s ease, transform 0.25s ease; }
+body[data-lang="fa"] .ir-sheet { direction: rtl; }
+.ir-sheet.show { opacity: 1; transform: none; }
+.ir-sheet-x { position: absolute; top: 12px; inset-inline-end: 12px; width: 32px; height: 32px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, 0.08); color: var(--text); font-size: 1.1rem; cursor: pointer; }
+.ir-sheet-k { color: var(--c); font-weight: 700; font-size: 0.86rem; }
+.ir-sheet h3 { font-size: 1.45rem; line-height: 1.35; margin: 4px 0 2px; font-weight: 800; padding-inline-end: 34px; }
+.ir-sheet-path { color: var(--muted); font-size: 0.88rem; }
+.ir-sheet-v { font-size: 1.8rem; font-weight: 800; margin: 12px 0 10px; }
+.ir-sheet-facts { display: grid; gap: 6px; font-size: 0.88rem; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.ir-sheet-facts div { display: flex; justify-content: space-between; gap: 10px; }
+.ir-sheet-facts dt { color: var(--muted); }
+.ir-sheet-facts dd { font-weight: 700; }
+.ir-sheet-facts .pending dd { font-weight: 400; color: var(--muted); opacity: 0.7; }
+.ir-sheet-h { margin: 14px 0 8px; color: var(--muted); font-size: 0.85rem; font-weight: 700; }
+.ir-sheet-rels { display: flex; flex-wrap: wrap; gap: 6px; }
+.ir-sheet-rel { display: inline-flex; gap: 6px; align-items: baseline; border: 1px solid color-mix(in srgb, var(--c) 50%, transparent); background: color-mix(in srgb, var(--c) 14%, transparent); color: var(--text); border-radius: 999px; padding: 5px 11px; font: 500 0.82rem var(--fa); cursor: pointer; }
+.ir-sheet-rel b { font-weight: 800; }
+.ir-sheet-go { display: inline-block; margin-top: 16px; color: var(--mint); font-weight: 700; }
+.ir-top-list { margin-top: 6px; }
+.ir-top-list > summary { cursor: pointer; color: var(--mint); font-weight: 700; margin-bottom: 14px; }
+@media (max-width: 720px) {
+  .ir-map { height: 620px; border-radius: 18px; }
+  .ir-tile { padding: 6px 7px; border-radius: 8px; }
+  .ir-sheet { inset-inline: 10px; bottom: 10px; width: auto; max-height: 72vh; border-radius: 22px; }
+}
+@media (prefers-reduced-motion: reduce) { .ir-tile, .ir-sheet, .ir-leaders li { transition: none; } }
 .ir-lf { display: flex; flex-direction: column; gap: 10px; margin: 0 0 20px; padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: rgba(10, 24, 32, 0.6); }
 .ir-lf-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .ir-lf-k { min-width: 76px; color: var(--muted); font-size: 0.9rem; font-weight: 700; }
@@ -124,7 +209,6 @@ body[data-lang="fa"] .ir-official dd b { text-align: right; }
 .ir-lf-facts > div.on { color: var(--ir); }
 .ir-lf-facts > div.on dd { font-size: 1rem; }
 .ir-lf-none { color: var(--muted); margin-top: 12px; }
-@media (max-width: 1000px) { .ir-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .ir-leaders { grid-template-columns: 1fr; } }
 .ir-subs .ir-isic { font: 700 0.78rem var(--en); color: var(--ir); letter-spacing: 0.06em; direction: ltr; align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); }
 .ir-subs small { color: var(--muted); line-height: 1.6; }
@@ -161,9 +245,20 @@ UI = {
     "subs": {"fa": "زیرشاخه‌ها", "en": "Sub-branches"},
     "subs_lead": {"fa": "هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.", "en": "Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics."},
     "companies": {"fa": "شرکت‌های این شاخه", "en": "Companies in this branch"},
-    "leaders": {"fa": "نام‌های بزرگ این شاخه", "en": "Big names in this branch"},
-    "leaders_note": {"fa": "فهرست اولیه، بر اساس اندازه و شهرت؛ ترتیب، رتبه نیست. پرونده‌ی هر کدام کم‌کم اضافه می‌شود.",
-                     "en": "A first list, by size and profile; the order is not a ranking. A record for each is added over time."},
+    "leaders": {"fa": "بزرگ‌ترین‌های این شاخه", "en": "The biggest in this branch"},
+    "leaders_note": {"fa": "اول، شرکت‌های این شاخه از میان ۱۰۰ شرکت بزرگ بورس و فرابورس، به ترتیب ارزش بازار؛ بعد، چند نام بزرگِ بیرون از بورس. سال تأسیس، فروش و دارایی از صورت‌های مالی رسمی کم‌کم اضافه می‌شود.",
+                     "en": "First, this branch's companies from the 100 largest on the Tehran Stock Exchange and Farabourse, by market value; then a few big names outside the exchange. Founding year, sales and assets are added from official statements over time."},
+    "top_title": {"fa": "۱۰۰ شرکت بزرگ بورس و فرابورس", "en": "The 100 largest listed companies"},
+    "top_lead": {"fa": "بزرگ‌ترین شرکت‌های بورس تهران و فرابورس به ترتیب ارزش بازار، هر کدام در شاخه‌ی خودش.", "en": "The largest companies on the Tehran Stock Exchange and Farabourse by market value, each filed under its branch."},
+    "top_method": {"fa": "روش و منبع", "en": "Method and source"},
+    "top_link": {"fa": "فهرست کامل ۱۰۰ شرکت ←", "en": "The full list of 100 →"},
+    "col_rank": {"fa": "رتبه", "en": "Rank"},
+    "col_sym": {"fa": "نماد", "en": "Symbol"},
+    "col_name": {"fa": "شرکت", "en": "Company"},
+    "col_branch": {"fa": "شاخه", "en": "Branch"},
+    "col_market": {"fa": "بازار", "en": "Market"},
+    "col_mcap": {"fa": "ارزش بازار", "en": "Market value"},
+    "all_branches": {"fa": "همه", "en": "All"},
     "leaders_open": {"fa": "پرونده", "en": "Record"},
     "lf_none": {"fa": "هیچ شرکتی با این فیلتر پیدا نشد؛ اطلاعات بعضی شرکت‌ها هنوز در حال تکمیل است.", "en": "No company matches this filter yet; some companies' details are still being gathered."},
     "view": {"fa": "دیدن پرونده", "en": "View the record"},
@@ -340,7 +435,11 @@ OWNERSHIP = {"private": {"fa": "خصوصی", "en": "Private"}, "state": {"fa": "
              "semi": {"fa": "شبه‌دولتی", "en": "Semi-public"}, "coop": {"fa": "تعاونی", "en": "Cooperative"}}
 YESNO = {True: {"fa": "بله", "en": "Yes"}, False: {"fa": "خیر", "en": "No"}}
 PENDING = {"fa": "در حال تکمیل", "en": "Being gathered"}
+MARKETS = {"bourse": {"fa": "بورس تهران", "en": "Tehran Stock Exchange"},
+           "farabourse": {"fa": "فرابورس", "en": "Farabourse"},
+           "base": {"fa": "بازار پایه‌ی فرابورس", "en": "Farabourse base market"}}
 FIELDS = [
+    ("mcap", {"fa": "ارزش بازار", "en": "Market value"}),
     ("founded", {"fa": "سال تأسیس", "en": "Founded"}),
     ("sales", {"fa": "فروش سالانه", "en": "Annual sales"}),
     ("assets", {"fa": "دارایی کل", "en": "Total assets"}),
@@ -362,7 +461,18 @@ def money(v):
     return {"fa": f"{fa_digits(f'{v:,.0f}').replace(',', '٬')} میلیارد تومان", "en": f"{v:,.0f} bn toman"}
 
 
+def mcap_value(x):
+    if x.get("mcap"):
+        return money(x["mcap"])
+    if x.get("mcap_min"):
+        m = money(x["mcap_min"])
+        return {"fa": "دست‌کم " + m["fa"], "en": "at least " + m["en"]}
+    return None
+
+
 def field_value(x, key):
+    if key == "mcap":
+        return mcap_value(x)
     v = x.get(key)
     if v is None:
         return None
@@ -373,29 +483,56 @@ def field_value(x, key):
         if x.get("figures_year"):
             m = {"fa": m["fa"] + f" ({fa_digits(x['figures_year'])})", "en": m["en"] + f" ({x['figures_year']})"}
         return m
+    if key == "listed" and x.get("market"):
+        return MARKETS[x["market"]]
     if key in ("listed", "exporter"):
         return YESNO[bool(v)]
     if key == "ownership":
         return OWNERSHIP[v]
 
 
-def leader_card(x, subname):
+def leader_card(x, subname, color=None, share=None):
     data = []
     for key in ("founded", "sales", "assets"):
         if x.get(key) is not None:
             data.append(f'data-{key}="{e(x[key])}"')
-    for key in ("listed", "exporter"):
-        data.append(f'data-{key}="{"" if x.get(key) is None else ("yes" if x[key] else "no")}"')
+    if x.get("rank"):
+        data.append(f'data-rank="{x["rank"]}"')
+    listed = "" if x.get("listed") is None else ("no" if not x["listed"] else ("bourse" if x.get("market") == "bourse" else "fara"))
+    data.append(f'data-listed="{listed}"')
+    data.append(f'data-exporter="{"" if x.get("exporter") is None else ("yes" if x["exporter"] else "no")}"')
     data.append(f'data-ownership="{e(x.get("ownership") or "")}"')
+    if color:
+        data.append(f'style="--sc:{color}"')
     rows = "".join(
         f'<div data-f="{k}"><dt>{t(label)}</dt><dd>{t(field_value(x, k) or PENDING)}</dd></div>'
         if field_value(x, k) else
         f'<div data-f="{k}" class="pending"><dt>{t(label)}</dt><dd>{t(PENDING)}</dd></div>'
         for k, label in FIELDS)
     head = f'<b>{t(x)}</b><small>{t(subname[x["sub"]])}</small>'
+    if x.get("rank"):
+        approx = "≈" if not x.get("mcap") else ""
+        head = (f'<span class="ir-rank">{t({"fa": f"رتبه‌ی {approx}{fa_digits(x["rank"])} · {x["sym"]}", "en": f"Rank {approx}{x["rank"]} · {x["sym"]}"})}</span>' + head)
     if x.get("slug"):
         head = f'<a href="{e(x["slug"])}.html">{head}<span class="k-go">{t(UI["leaders_open"])}</span></a>'
-    return f'<li {" ".join(data)}>{head}<dl class="ir-lf-facts">{rows}</dl></li>'
+    val = mcap_value(x)
+    big = (f'<p class="ir-v{"" if x.get("mcap") else " min"}">{t(val)}</p>' if val else
+           f'<p class="ir-v na">{t({"fa": "ارزش بازار: در حال تکمیل", "en": "Market value: being gathered"} if x.get("listed") else {"fa": "بیرون از بورس", "en": "Not listed"})}</p>')
+    bar = f'<span class="ir-bar" aria-hidden="true"><i style="width:{max(share, 0.02) * 100:.1f}%"></i></span>' if share else ""
+    tags = []
+    if x.get("market"):
+        tags.append(t(MARKETS[x["market"]]))
+    elif x.get("listed") is False:
+        tags.append(t({"fa": "غیربورسی", "en": "Not listed"}))
+    if x.get("exporter"):
+        tags.append(t({"fa": "صادرکننده", "en": "Exporter"}))
+    if x.get("ownership"):
+        tags.append(t(OWNERSHIP[x["ownership"]]))
+    if x.get("family"):
+        tags.append(t(TOP["families"][x["family"]]))
+    tags_html = '<p class="ir-tags">' + "".join(f"<span>{g}</span>" for g in tags) + "</p>" if tags else ""
+    more = f'<details class="ir-more-d"><summary>{t({"fa": "همه‌ی مشخصات", "en": "All details"})}</summary><dl class="ir-lf-facts">{rows}</dl></details>'
+    return f'<li {" ".join(data)}>{head}{big}{bar}{tags_html}{more}</li>'
 
 
 def chip(attr, val, label, pressed=False):
@@ -406,14 +543,15 @@ def chip(attr, val, label, pressed=False):
 LEADER_TOOLS = (
     '<div class="ir-lf" role="group">'
     f'<div class="ir-lf-row"><span class="ir-lf-k">{t({"fa": "مرتب‌سازی", "en": "Sort by"})}</span>'
-    + chip("sort", "", {"fa": "پیش‌فرض", "en": "Default"}, True)
+    + chip("sort", "", {"fa": "ارزش بازار", "en": "Market value"}, True)
     + chip("sort", "founded", {"fa": "قدیمی‌ترین", "en": "Oldest first"})
     + chip("sort", "sales", {"fa": "بیشترین فروش", "en": "Highest sales"})
     + chip("sort", "assets", {"fa": "بیشترین دارایی", "en": "Largest assets"})
     + '</div>'
     f'<div class="ir-lf-row"><span class="ir-lf-k">{t({"fa": "بورس", "en": "Exchange"})}</span>'
     + chip("listed", "", {"fa": "همه", "en": "All"}, True)
-    + chip("listed", "yes", {"fa": "بورسی", "en": "Listed"})
+    + chip("listed", "bourse", {"fa": "بورس تهران", "en": "Tehran Stock Exchange"})
+    + chip("listed", "fara", {"fa": "فرابورس", "en": "Farabourse"})
     + chip("listed", "no", {"fa": "غیربورسی", "en": "Not listed"})
     + '</div>'
     f'<div class="ir-lf-row"><span class="ir-lf-k">{t({"fa": "مالکیت", "en": "Ownership"})}</span>'
@@ -452,6 +590,7 @@ LEADER_JS = r"""
     sec.querySelectorAll(".ir-lf-facts > div").forEach(function (d) {
       d.classList.toggle("on", !!state.sort && d.getAttribute("data-f") === state.sort);
     });
+    sec.querySelectorAll(".ir-more-d").forEach(function (d) { d.open = !!state.sort; });
     none.hidden = shown.length > 0;
   }
   sec.querySelectorAll(".ir-chip").forEach(function (b) {
@@ -482,10 +621,17 @@ def branch_page(b, companies):
     else:
         cos = f'<p class="ir-empty">{t(UI["empty"])}</p>'
     subname = {s["id"]: s for s in b["subs"]}
-    leaders = "".join(leader_card(x, subname) for x in b.get("leaders", []))
+    top = sorted((c for c in TOP["companies"] if c["branch"] == b["slug"]), key=lambda c: c["rank"])
+    syms = {c["sym"] for c in top}
+    rest = [x for x in b.get("leaders", []) if x.get("sym") not in syms]
+    subs_ids = [x["id"] for x in b["subs"]]
+    wmax = max([c["weight"] for c in top] or [1])
+    leaders = "".join(leader_card(x, subname, tint(b["accent"], subs_ids.index(x["sub"])),
+                                  x["weight"] / wmax if x.get("weight") else None) for x in top + rest)
     leaders_html = (f'''<section class="ir-sec" id="leaders">
       <h2>{t(UI["leaders"])}</h2>
-      <p class="ir-lead" style="margin:0 0 18px">{t(UI["leaders_note"])}</p>
+      <p class="ir-lead" style="margin:0 0 18px">{t(UI["leaders_note"])} <a class="ir-more" href="iran.html#top100">{t(UI["top_link"])}</a></p>
+      {map_section(DATA["branches"], b["slug"])}
       {LEADER_TOOLS}
       <ul class="ir-leaders">{leaders}</ul>
       <p class="ir-lf-none" hidden>{t(UI["lf_none"])}</p>
@@ -526,6 +672,101 @@ def branch_page(b, companies):
     return page(title, b["intro"]["en"], f'iran-{b["slug"]}.html', body)
 
 
+
+# ---------- Market map (iran-map.js draws it) ----------
+import colorsys
+
+
+def tint(hexc, i):
+    """A sibling colour for sub-branch i, turned around the colour wheel from the branch accent."""
+    r, g, b = (int(hexc[k:k + 2], 16) / 255 for k in (1, 3, 5))
+    h, l, s_ = colorsys.rgb_to_hls(r, g, b)
+    step = (i + 1) // 2 * (1 if i % 2 else -1)
+    h = (h + step * 0.045) % 1
+    l = min(max(l + step * 0.04, 0.45), 0.8)
+    r, g, b = colorsys.hls_to_rgb(h, l, s_)
+    return "#%02x%02x%02x" % (round(r * 255), round(g * 255), round(b * 255))
+
+
+def map_section(branches, only=None):
+    bmap = {b["slug"]: b for b in branches}
+    items = []
+    for c in TOP["companies"]:
+        if only and c["branch"] != only:
+            continue
+        b = bmap[c["branch"]]
+        subs = [x["id"] for x in b["subs"]]
+        sub = b["subs"][subs.index(c["sub"])]
+        color = tint(b["accent"], subs.index(c["sub"])) if only else b["accent"]
+        facts = [{"k": FIELDS[0][1], "v": mcap_value(c)},
+                 {"k": {"fa": "بازار", "en": "Market"}, "v": MARKETS[c["market"]]},
+                 {"k": {"fa": "صادرکننده", "en": "Exporter"}, "v": YESNO[True] if c.get("exporter") else None},
+                 {"k": {"fa": "نوع مالکیت", "en": "Ownership"}, "v": OWNERSHIP.get(c.get("ownership"))},
+                 {"k": {"fa": "سال تأسیس", "en": "Founded"}, "v": field_value(c, "founded")},
+                 {"k": {"fa": "فروش سالانه", "en": "Annual sales"}, "v": field_value(c, "sales")},
+                 {"k": {"fa": "دارایی کل", "en": "Total assets"}, "v": field_value(c, "assets")}]
+        items.append({
+            "rank": c["rank"], "sym": c["sym"], "fa": c["fa"], "en": c["en"], "w": c["weight"],
+            "approx": not c.get("mcap"), "val": mcap_value(c), "b": b["slug"], "bname": b["name"],
+            "sub": c["sub"], "subname": {"fa": sub["fa"], "en": sub["en"]},
+            "g": c["sub"] if only else b["slug"], "gname": {"fa": sub["fa"], "en": sub["en"]} if only else b["name"],
+            "color": color, "fam": c.get("family"), "famname": TOP["families"].get(c.get("family"), None),
+            "facts": facts, "href": None if only else f'iran-{b["slug"]}.html#leaders'})
+    if not items:
+        return ""
+    data = json.dumps({"items": items, "pending": PENDING}, ensure_ascii=False).replace("</", "<\\/")
+    hint = {"fa": "اندازه‌ی هر کاشی، ارزش بازار شرکت است. روی هر کاشی بزنید تا جزئیات و شرکت‌های هم‌خانواده و هم‌رشته‌اش روشن شوند.",
+            "en": "Each tile's size is the company's market value. Tap a tile to see its details and light up its family and its sub-branch."}
+    return (f'<p class="ir-map-hint">{t(hint)}</p><div class="ir-map" role="group"></div>'
+            f'<script type="application/json" id="ir-map-data">{data}</script>'
+            f'<script src="iran-map.js?v=1" defer></script>')
+
+
+TOP_JS = r"""
+(function () {
+  var sec = document.getElementById("top100"); if (!sec) return;
+  var rows = sec.querySelectorAll("tbody tr");
+  sec.querySelectorAll(".ir-chip").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var v = b.getAttribute("data-branch");
+      sec.querySelectorAll(".ir-chip").forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+      rows.forEach(function (r) { r.hidden = !!v && r.getAttribute("data-branch") !== v; });
+    });
+  });
+})();
+"""
+
+
+def top_section(branches):
+    bmap = {b["slug"]: b for b in branches}
+    rows = []
+    for c in TOP["companies"]:
+        b = bmap[c["branch"]]
+        sub = {s["id"]: s for s in b["subs"]}[c["sub"]]
+        v = mcap_value(c)
+        cls = "v" if c.get("mcap") else ("v min" if v else "v na")
+        approx = "" if c.get("mcap") else "≈"
+        rows.append(
+            f'<tr data-branch="{b["slug"]}"><td class="n">{t({"fa": approx + fa_digits(c["rank"]), "en": approx + str(c["rank"])})}</td>'
+            f'<td>{e(c["sym"])}</td><td class="name">{t(c)}</td>'
+            f'<td><a href="iran-{b["slug"]}.html#leaders"><span class="dot" style="background:{e(b["accent"])}"></span>{t(b["name"])}</a>'
+            f' <small style="color:var(--muted)">· {t(sub)}</small></td>'
+            f'<td>{t(MARKETS[c["market"]])}</td><td class="{cls}">{t(v or PENDING)}</td></tr>')
+    chips = chip("branch", "", UI["all_branches"], True) + "".join(
+        chip("branch", b["slug"], b["name"]) for b in branches if any(c["branch"] == b["slug"] for c in TOP["companies"]))
+    head = "".join(f"<th>{t(UI[k])}</th>" for k in ("col_rank", "col_sym", "col_name", "col_branch", "col_market", "col_mcap"))
+    return f'''<section class="ir-sec" id="top100">
+      <h2>{t(UI["top_title"])}</h2>
+      <p class="ir-lead" style="margin:0 0 18px">{t(UI["top_lead"])} {t({"fa": "تاریخ داده‌ها: " + TOP["as_of"]["fa"], "en": "Data as of " + TOP["as_of"]["en"]})}</p>
+      {map_section(branches)}
+      <details class="ir-top-list"><summary>{t({"fa": "نمایش به صورت فهرست", "en": "Show as a list"})}</summary>
+      <div class="ir-lf" role="group"><div class="ir-lf-row"><span class="ir-lf-k">{t(UI["col_branch"])}</span>{chips}</div></div>
+      <div class="ir-top-wrap"><table class="ir-top"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div></details>
+      <p class="ir-top-note"><b>{t(UI["top_method"])}:</b> {t(TOP["source"])} {t(TOP["method"])}</p>
+    </section>
+    <script>{TOP_JS}</script>'''
+
+
 def hub_page(branches):
     s = DATA["section"]
     feats = "".join(feature_card(f, "hub") for f in s.get("features", []))
@@ -538,6 +779,7 @@ def hub_page(branches):
     </section>
     <div class="ir-grid">{cards}</div>
     <p class="ir-note">{t(s["method"])} <a href="companies.html">{t(UI["all"])}</a></p>
+    {top_section(branches)}
     <div class="ir-notice"><span>{t(UI["notice"])}</span><span>{t(UI["reviewed"])}</span></div>
   </main>"""
     return page("What Iran Has | ایران چه دارد | Ditoman", s["lead"]["en"], "iran.html", body)

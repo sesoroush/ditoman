@@ -159,29 +159,36 @@
         {
           "fa": "فولاد مبارکه",
           "en": "Mobarakeh Steel",
-          "sub": "steel"
+          "sub": "steel",
+          "sym": "فولاد"
         },
         {
           "fa": "ایران‌خودرو",
           "en": "Iran Khodro",
-          "sub": "auto"
+          "sub": "auto",
+          "sym": "خودرو"
         },
         {
           "fa": "سایپا",
           "en": "SAIPA",
-          "sub": "auto"
+          "sub": "auto",
+          "sym": "خساپا"
         },
         {
           "fa": "گروه سولیکو (کاله)",
           "en": "Solico Group (Kalleh)",
           "sub": "food",
-          "slug": "kalleh"
+          "slug": "kalleh",
+          "listed": false,
+          "ownership": "private"
         },
         {
           "fa": "گروه صنعتی گلرنگ",
           "en": "Golrang Industrial Group",
           "sub": "consumer",
-          "slug": "golrang"
+          "slug": "golrang",
+          "listed": false,
+          "ownership": "private"
         }
       ]
     },
@@ -280,27 +287,35 @@
         {
           "fa": "شرکت ملی نفت ایران",
           "en": "National Iranian Oil Company",
-          "sub": "upstream"
+          "sub": "upstream",
+          "listed": false,
+          "ownership": "state"
         },
         {
           "fa": "شرکت ملی گاز ایران",
           "en": "National Iranian Gas Company",
-          "sub": "upstream"
+          "sub": "upstream",
+          "listed": false,
+          "ownership": "state"
         },
         {
           "fa": "صنایع پتروشیمی خلیج فارس",
           "en": "Persian Gulf Petrochemical Industries",
-          "sub": "petrochem"
+          "sub": "petrochem",
+          "sym": "فارس"
         },
         {
           "fa": "گروه مپنا",
           "en": "MAPNA Group",
-          "sub": "power"
+          "sub": "power",
+          "sym": "رمپنا"
         },
         {
           "fa": "توانیر",
           "en": "Tavanir",
-          "sub": "power"
+          "sub": "power",
+          "listed": false,
+          "ownership": "state"
         }
       ]
     },
@@ -389,27 +404,35 @@
         {
           "fa": "کشتیرانی جمهوری اسلامی ایران",
           "en": "IRISL (national shipping line)",
-          "sub": "sea"
+          "sub": "sea",
+          "sym": "حکشتی"
         },
         {
           "fa": "سازمان بنادر و دریانوردی",
           "en": "Ports & Maritime Organization",
-          "sub": "sea"
+          "sub": "sea",
+          "listed": false,
+          "ownership": "state"
         },
         {
           "fa": "راه‌آهن جمهوری اسلامی ایران",
           "en": "Iranian railways (RAI)",
-          "sub": "rail"
+          "sub": "rail",
+          "listed": false,
+          "ownership": "state"
         },
         {
           "fa": "ایران‌ایر",
           "en": "Iran Air",
-          "sub": "air"
+          "sub": "air",
+          "listed": false,
+          "ownership": "state"
         },
         {
           "fa": "ماهان‌ایر",
           "en": "Mahan Air",
-          "sub": "air"
+          "sub": "air",
+          "listed": false
         }
       ]
     },
@@ -488,22 +511,26 @@
         {
           "fa": "ملی صنایع مس ایران",
           "en": "National Iranian Copper Industries",
-          "sub": "metals"
+          "sub": "metals",
+          "sym": "فملی"
         },
         {
           "fa": "معدنی و صنعتی گل‌گهر",
           "en": "Golgohar Mining & Industrial",
-          "sub": "metals"
+          "sub": "metals",
+          "sym": "کگل"
         },
         {
           "fa": "معدنی و صنعتی چادرملو",
           "en": "Chadormalu Mining & Industrial",
-          "sub": "metals"
+          "sub": "metals",
+          "sym": "کچاد"
         },
         {
           "fa": "سنگ‌آهن گهرزمین",
           "en": "Gohar Zamin Iron Ore",
-          "sub": "metals"
+          "sub": "metals",
+          "sym": "کگهر"
         },
         {
           "fa": "سنگ‌آهن مرکزی ایران (بافق)",
@@ -617,27 +644,35 @@
         {
           "fa": "همراه اول",
           "en": "Hamrah-e Aval (MCI)",
-          "sub": "telecom"
+          "sub": "telecom",
+          "sym": "همراه"
         },
         {
           "fa": "ایرانسل",
           "en": "Irancell",
-          "sub": "telecom"
+          "sub": "telecom",
+          "listed": false
         },
         {
           "fa": "دیجی‌کالا",
           "en": "Digikala",
-          "sub": "platforms"
+          "sub": "platforms",
+          "listed": false,
+          "ownership": "private"
         },
         {
           "fa": "اسنپ",
           "en": "Snapp",
-          "sub": "platforms"
+          "sub": "platforms",
+          "listed": false,
+          "ownership": "private"
         },
         {
           "fa": "کافه‌بازار",
           "en": "Cafe Bazaar",
-          "sub": "platforms"
+          "sub": "platforms",
+          "listed": false,
+          "ownership": "private"
         }
       ]
     },
@@ -736,12 +771,16 @@
         {
           "fa": "علی‌بابا",
           "en": "Alibaba Travel",
-          "sub": "hotels"
+          "sub": "hotels",
+          "listed": false,
+          "ownership": "private"
         },
         {
           "fa": "اسنپ‌تریپ",
           "en": "Snapptrip",
-          "sub": "hotels"
+          "sub": "hotels",
+          "listed": false,
+          "ownership": "private"
         },
         {
           "fa": "هتل‌های پارسیان",
