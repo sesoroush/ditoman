@@ -1,5 +1,79 @@
 [
  {
+  "date": "2026-11-09",
+  "jalali": "1405/08/18",
+  "weekday_fa": "دوشنبه",
+  "headline_fa": "امروز، آغاز COP31 در آنتالیا",
+  "post": "calendar/2026-11-09-post.png",
+  "story": "calendar/2026-11-09-story.png",
+  "today": [
+   {
+    "key": true,
+    "fa": "آغاز اجلاس آب‌وهوای COP31 در ترکیه",
+    "en": "UN climate conference COP31 opens (9–20 Nov)",
+    "tehran": "صبح",
+    "lisbon": "morning",
+    "note_fa": "اجلاس جهانی آب‌وهوا از امروز تا 20 نوامبر در آنتالیا، در همسایگی ایران، برگزار می‌شود؛ با محور برقی‌سازی انرژی و گذار از سوخت فسیلی.",
+    "expected": "Leaders' summit 11–12 Nov"
+   },
+   {
+    "fa": "آغاز Web Summit لیسبون",
+    "note_fa": "بزرگ‌ترین همایش فناوری اروپا، 9 تا 12 نوامبر",
+    "tehran": "تمام روز",
+    "lisbon": "all day",
+    "en": "Web Summit Lisbon opens",
+    "expected": "9–12 Nov"
+   },
+   {
+    "fa": "سخنرانی رئیس بانک مرکزی انگلیس",
+    "note_fa": "اندرو بیلی؛ اشاره به نرخ بهره روی پوند اثر دارد",
+    "tehran": "20:55",
+    "lisbon": "17:25",
+    "en": "BoE Governor Bailey speaks",
+    "expected": ""
+   }
+  ],
+  "week": [
+   {
+    "day_fa": "سه‌شنبه",
+    "date": "2026-11-10",
+    "fa": "تورم آمریکا (CPI اکتبر)",
+    "note_fa": "مهم‌ترین دادهٔ هفته برای دلار، طلا و بیت‌کوین",
+    "tehran": "17:00",
+    "lisbon": "13:30",
+    "en": "US CPI (Oct)",
+    "expected": ""
+   },
+   {
+    "day_fa": "پنجشنبه",
+    "date": "2026-11-12",
+    "fa": "رشد اقتصادی انگلیس (فصل سوم)",
+    "note_fa": "برآورد اولیه؛ فصل قبل 0.5%",
+    "tehran": "10:30",
+    "lisbon": "07:00",
+    "en": "UK GDP Q3 (prelim)",
+    "expected": "prev +0.5%"
+   },
+   {
+    "day_fa": "جمعه",
+    "date": "2026-11-13",
+    "fa": "تورم تولیدکنندهٔ آمریکا (PPI)",
+    "note_fa": "نشانهٔ فشار هزینه‌ها پیش از رسیدن به مصرف‌کننده",
+    "tehran": "17:00",
+    "lisbon": "13:30",
+    "en": "US PPI (Oct)",
+    "expected": ""
+   }
+  ],
+  "sources": [
+   "https://www.climatechangenews.com/2026/11/05/cop31-briefing-what-to-expect-from-the-antalya-climate-summit/",
+   "https://unric.org/en/unfccc-cop31-the-road-to-antalya/",
+   "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-09112026-15112026/",
+   "https://investrade.com/weekly-event-calendar-11-09-2026-11-13-2026/",
+   "https://pro.thestreet.com/earnings/2026-11-09"
+  ]
+ },
+ {
   "date": "2026-11-06",
   "jalali": "1405/08/15",
   "weekday_fa": "جمعه",
