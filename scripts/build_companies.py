@@ -31,6 +31,9 @@ ART = {
     "olefin": '<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><rect width="400" height="300" fill="#12505a"/><g fill="#7ff5de"><rect x="70" y="60" width="34" height="240" rx="17"/><rect x="130" y="100" width="44" height="200" rx="22"/><rect x="200" y="40" width="28" height="260" rx="14"/></g><g fill="#eef6f2"><rect x="250" y="170" width="110" height="130"/><path d="M60 140h300" stroke="#eef6f2" stroke-width="6"/></g><circle cx="330" cy="70" r="26" fill="#f5c86b"/></svg>',
     "plant": '<svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><rect width="800" height="500" fill="#0d3a40"/><circle cx="640" cy="110" r="52" fill="#7ff5de"/><g fill="#06222a"><rect x="110" y="170" width="86" height="210" rx="43"/><rect x="214" y="130" width="86" height="250" rx="43"/><rect x="318" y="190" width="86" height="190" rx="43"/><rect x="430" y="250" width="270" height="130"/><path d="M430 250l54-46v46l54-46v46l54-46v46l54-46v46z"/></g><path d="M0 345c90-44 170 26 270 2s150-74 262-34 180 40 268-6v193H0z" fill="#eef6f2"/></svg>',
     "cheese": '<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="#eef6f2"/><path d="M70 196 300 92c18 26 28 58 28 104z" fill="#7ff5de"/><path d="M70 196h258v44H70z" fill="#2fb9a4"/><circle cx="238" cy="160" r="15" fill="#2fb9a4"/><circle cx="288" cy="143" r="9" fill="#2fb9a4"/><circle cx="176" cy="218" r="10" fill="#0d3a40"/><circle cx="270" cy="222" r="7" fill="#0d3a40"/></svg>',
+    "wood": '<svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><rect width="800" height="500" fill="#0d3a40"/><g fill="#c9a06a"><rect x="120" y="250" width="560" height="40" rx="6"/><rect x="140" y="295" width="540" height="40" rx="6"/><rect x="110" y="340" width="580" height="40" rx="6"/></g><g fill="#a77b45"><circle cx="680" cy="270" r="20"/><circle cx="680" cy="315" r="20"/><circle cx="690" cy="360" r="20"/></g><g fill="#7ff5de"><path d="M220 240 260 120 300 240z"/><path d="M330 240 380 80 430 240z"/><path d="M460 240 500 140 540 240z"/></g><rect y="400" width="800" height="100" fill="#06222a"/></svg>',
+    "paper": '<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="#eef6f2"/><circle cx="150" cy="160" r="80" fill="#2fb9a4"/><circle cx="150" cy="160" r="26" fill="#0d3a40"/><path d="M150 80h180v160H150" fill="#7ff5de"/><g stroke="#0d3a40" stroke-width="6"><path d="M200 120h100M200 150h100M200 180h80"/></g></svg>',
+    "recycle": '<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="#12505a"/><g fill="none" stroke="#7ff5de" stroke-width="18" stroke-linecap="round"><path d="M150 210a70 70 0 0 1 10-110"/><path d="M230 90a70 70 0 0 1 40 100"/><path d="M250 230a70 70 0 0 1-100-10"/></g><g fill="#7ff5de"><path d="M160 70l30 30-42 6z"/><path d="M300 200l-40 12 12-40z"/><path d="M120 230l20-38 16 40z"/></g></svg>',
     "office": '<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><rect width="400" height="300" fill="#12505a"/><g fill="#7ff5de"><rect x="138" y="62" width="124" height="238"/></g><g fill="#0d3a40"><rect x="156" y="84" width="24" height="30"/><rect x="188" y="84" width="24" height="30"/><rect x="220" y="84" width="24" height="30"/><rect x="156" y="128" width="24" height="30"/><rect x="188" y="128" width="24" height="30"/><rect x="220" y="128" width="24" height="30"/><rect x="156" y="172" width="24" height="30"/><rect x="188" y="172" width="24" height="30"/><rect x="220" y="172" width="24" height="30"/><rect x="184" y="240" width="32" height="60"/></g></svg>',
 }
 
@@ -270,9 +273,9 @@ def company_page(c):
     ledger = "".join(
         f'<li><div class="k-num">{t(r["value"])}</div><div>{t(r["label"])}'
         f'<span class="k-where"><span class="k-tag {r["evidence"]}">{t(EVIDENCE[r["evidence"]])}</span> '
-        f'{t(r["when"])}{refs(r["src"])}</span></div></li>' for r in c["record"])
-    timeline = "".join(f'<li><b>{t(x["year"])}</b>{t(x["text"])}</li>' for x in c["timeline"])
-    people = c.get("leaders") or [c["leader"]]
+        f'{t(r["when"])}{refs(r["src"])}</span></div></li>' for r in c.get("record", []))
+    timeline = "".join(f'<li><b>{t(x["year"])}</b>{t(x["text"])}</li>' for x in c.get("timeline", []))
+    people = c.get("leaders") or ([c["leader"]] if c.get("leader") else [])
     leaders_html = ""
     for lead in people:
         portrait = (f'<img src="companies/{e(slug)}/{e(lead["photo"])}" alt="{e(lead["name"]["en"])}" />'
@@ -286,6 +289,18 @@ def company_page(c):
         </div>
       </div>'''
     leaders_title = c.get("leaders_title") or (UI["leaders"] if len(people) > 1 else UI["leader"])
+    leaders_sec = f'''<section class="k-sec">
+      <h2>{t(leaders_title)}</h2>
+      {leaders_html}
+    </section>''' if people else ""
+    record_sec = f'''<section class="k-sec">
+      <h2>{t(UI["record"])}</h2>
+      <ul class="k-ledger">{ledger}</ul>
+    </section>''' if c.get("record") else ""
+    timeline_sec = f'''<section class="k-sec">
+      <h2>{t(UI["timeline"])}{refs(c.get("timeline_src", []))}</h2>
+      <ol class="k-time">{timeline}</ol>
+    </section>''' if c.get("timeline") else ""
     domains_html = ""
     if c.get("domains"):
         d = c["domains"]
@@ -349,22 +364,13 @@ def company_page(c):
       <p class="k-prose">{t(c["summary"])}{refs(c.get("summary_src", [1, 6]))}</p>
     </section>
 
-    <section class="k-sec">
-      <h2>{t(leaders_title)}</h2>
-      {leaders_html}
-    </section>
+    {leaders_sec}
 
     {domains_html}
 
-    <section class="k-sec">
-      <h2>{t(UI["record"])}</h2>
-      <ul class="k-ledger">{ledger}</ul>
-    </section>
+    {record_sec}
 
-    <section class="k-sec">
-      <h2>{t(UI["timeline"])}{refs(c["timeline_src"])}</h2>
-      <ol class="k-time">{timeline}</ol>
-    </section>
+    {timeline_sec}
 
     {exports_html}
 
