@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>From Paykan to 43 Million Vehicles | از پیکان تا ۴۳ میلیون وسیله‌ی نقلیه | Ditoman</title>
+<meta name="description" content="ناوگان ۴۳ میلیونی ایران، ۵۰ سال تولید و واردات خودرو، و مقایسه با همسایه‌ها: ترکیه، روسیه، پاکستان، عربستان، عراق و قزاقستان چقدر می‌سازند، صادر و وارد می‌کنند. Iran's vehicle fleet and its neighbours compared." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/iran-vehicles.html" />
+<link rel="icon" href="ditoman-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="From Paykan to 43 Million Vehicles | از پیکان تا ۴۳ میلیون وسیله‌ی نقلیه | Ditoman" />
+<meta property="og:description" content="ناوگان ۴۳ میلیونی ایران، ۵۰ سال تولید و واردات خودرو، و مقایسه با همسایه‌ها: ترکیه، روسیه، پاکستان، عربستان، عراق و قزاقستان چقدر می‌سازند، صادر و وارد می‌کنند. Iran&#x27;s vehicle fleet and its neighbours compared." />
+<meta property="og:url" content="https://ditoman.com/iran-vehicles.html" />
+<meta property="og:image" content="https://ditoman.com/social/iran-vehicles/post.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/iran-vehicles.html#article",
+   "mainEntityOfPage": "https://ditoman.com/iran-vehicles.html",
+   "headline": "From Paykan to 43 Million Vehicles | از پیکان تا ۴۳ میلیون وسیله‌ی نقلیه",
+   "description": "ناوگان ۴۳ میلیونی ایران، ۵۰ سال تولید و واردات خودرو، و مقایسه با همسایه‌ها: ترکیه، روسیه، پاکستان، عربستان، عراق و قزاقستان چقدر می‌سازند، صادر و وارد می‌کنند. Iran's vehicle fleet and its neighbours compared.",
+   "image": "https://ditoman.com/social/iran-vehicles/post.png",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "From Paykan to 43 Million Vehicles | از پیکان تا ۴۳ میلیون وسیله‌ی نقلیه",
+     "item": "https://ditoman.com/iran-vehicles.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="ditoman-logo.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/iran-vehicles/post.png" alt="From Paykan to 43 million vehicles" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">از پیکان تا ۴۳ میلیون وسیله‌ی نقلیه؛ ایران و همسایه‌ها روی چرخ</h1>
+<h1 lang="en">From Paykan to 43 million vehicles: Iran and its neighbours on wheels</h1>
+<p class="subtitle" lang="en">Iran's fleet, fifty years of making and importing vehicles, and how Türkiye, Russia, Pakistan, Saudi Arabia, Iraq and others compare in production, exports, imports and parts.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">ناوگان ایران، پنجاه سال تولید و واردات، و مقایسه با ترکیه، روسیه، پاکستان، عربستان، عراق و دیگر همسایه‌ها در تولید، صادرات، واردات و قطعه.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۴۳ میلیون</b><b lang="en">43M</b><span lang="fa">وسیله‌ی نقلیه در حال تردد</span><span lang="en">Vehicles on the road</span></div>
+<div class="stat"><b lang="fa">۱۴ میلیون</b><b lang="en">14M</b><span lang="fa">موتورسیکلت</span><span lang="en">Motorcycles</span></div>
+<div class="stat"><b lang="fa">۹۲۶ هزار</b><b lang="en">926K</b><span lang="fa">تولید ۱۴۰۴</span><span lang="en">Made in 2025/26</span></div>
+<div class="stat"><b lang="fa">۱٫۴۲ میلیون</b><b lang="en">1.42M</b><span lang="fa">تولید ترکیه ۲۰۲۵</span><span lang="en">Türkiye's 2025 output</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p><strong>ایران ۴۳ میلیون وسیله‌ی نقلیه دارد. پس چرا ۶ خانواده‌ی روستایی از هر ۱۰ خانواده ماشین ندارند؟</strong></p>
+<p>جذاب‌ترین عدد برای شروع این است: ایران امروز حدود ۱۴ میلیون موتورسیکلت دارد. این عدد بیش از ۹ برابر کل خودروها و موتورسیکلت‌هایی است که پلیس می‌گوید تا سال ۱۳۵۷ شماره‌گذاری شده بودند. در همان حال، طبق آمارگیری سال ۱۴۰۴، ۴۳٪ خانوارهای شهری و ۵۹٪ خانوارهای روستایی خودروی شخصی ندارند. این دو عدد کنار هم داستانی را تعریف می‌کنند که به زندگی مردم ربط دارد.</p>
+<p>در این گزارش اول ناوگان ایران را می‌شماریم، بعد پنجاه سال تولید و واردات را مرور می‌کنیم و در آخر ایران را کنار همسایه‌ها می‌گذاریم: ترکیه، روسیه، پاکستان، عربستان، عراق، قزاقستان و آذربایجان چقدر می‌سازند، چقدر صادر و چقدر وارد می‌کنند.</p>
+
+<h3><span class="check-number">۰۱.</span> الان چند ماشین، موتور، وانت و کامیون داریم؟</h3>
+<p>راهور در ۶ آبان ۱۴۰۵ از حدود <strong>۲۹ میلیون خودرو</strong> و <strong>۱۴ میلیون موتورسیکلت</strong> در حال تردد خبر داد. آمار شهریور امسال هم شمار سواری‌ها را حدود ۲۴٫۲ میلیون اعلام کرده است. آخرین جدول تفکیکی سراسری که پیدا کردیم مربوط به مرداد ۱۴۰۴ است:</p>
+<div class="tw" dir="rtl"><table><tr><th>نوع وسیله</th><th>تعداد (مرداد ۱۴۰۴)</th></tr><tr><td>سواری</td><td>۲۲٫۴۷ میلیون</td></tr><tr><td>موتورسیکلت</td><td>۱۳٫۶۶ میلیون</td></tr><tr><td>وانت</td><td>۲٫۵۸ میلیون</td></tr><tr><td>کامیونت</td><td>۵۵۸ هزار</td></tr><tr><td>کامیون</td><td>۴۶۵ هزار</td></tr><tr><td>کشنده و تریلر</td><td>۲۴۳ هزار</td></tr><tr><td>تاکسی درون‌شهری</td><td>۳۱۳ هزار</td></tr><tr><td>اتوبوس و مینی‌بوس</td><td>۶۶ هزار اتوبوس و ۱۱۱ هزار مینی‌بوس</td></tr><tr><td>تراکتور، کمباین و ماشین‌های کشاورزی</td><td>۶۷۰ هزار</td></tr><tr><td>آمبولانس و سایر کاربری‌ها</td><td>حدود ۶۶ هزار</td></tr><tr><td><strong>کل ناوگان</strong></td><td><strong>۴۱٫۲۱ میلیون</strong></td></tr></table></div>
+<p>عددی که معمولاً گم می‌شود: وانت، کامیونت، کامیون و کشنده روی‌هم حدود <strong>۳٫۸۵ میلیون دستگاه</strong>اند. پشت هر کدام یک راننده، یک بار و یک سفره است؛ همین ناوگان است که نان، دارو و مصالح را به هر شهر و روستا می‌رساند.</p>
+
+<h3><span class="check-number">۰۲.</span> پنجاه سال در چهار ایستگاه</h3>
+<ul class="timeline">
+<li><strong>۱۳۵۵ تا ۱۳۵۷:</strong> ایران در ۱۹۷۶ حدود ۶۰ هزار خودرو وارد کرد و در ۱۹۷۷ حدود ۱۳۲ هزار سواری در داخل ساخت. برآورد راهور از کل وسایل شماره‌گذاری‌شده تا ۱۳۵۷: حدود ۱٫۵ میلیون.</li>
+<li><strong>بعد از جنگ تا اوایل دهه‌ی ۹۰:</strong> دوره‌ی بازسازی و رشد صنعت خودرو؛ تولید سالانه از ۱٫۰۸ میلیون دستگاه در ۲۰۰۵ به ۱٫۶۵ میلیون در ۲۰۱۱ رسید. در همان سال ۲۰۱۱، ترکیه حدود ۱٫۱۹ میلیون خودرو ساخت؛ یعنی ایران از همسایه‌ی غربی‌اش جلوتر بود.</li>
+<li><strong>۱۳۹۳ تا ۱۴۰۱:</strong> واردات سواری در ۱۳۹۳ به حدود ۱۰۳ هزار رسید و از ۱۳۹۷ با محدودیت واردات سقوط کرد.</li>
+<li><strong>۱۴۰۴ و ۱۴۰۵:</strong> تولید ۱۴۰۴ به ۹۲۶ هزار خودرو رسید. در هفت‌ماهه‌ی ۱۴۰۵ تولید سواری ۳۵۱ هزار دستگاه بود؛ حدود ۳۷٪ کمتر از مدت مشابه پارسال.</li>
+</ul>
+
+<h3><span class="check-number">۰۳.</span> چقدر ساختیم و چقدر وارد کردیم؟</h3>
+<ul>
+<li><strong>ساخت داخل:</strong> در چهار سال کامل ۱۴۰۱ تا ۱۴۰۴ حدود ۴٫۲۵ میلیون خودرو تولید شد. از ۹۲۶ هزار دستگاه سال ۱۴۰۴: حدود ۹۹ هزار وانت، ۲۸ هزار کامیون و کامیونت و کشنده، ۴ هزار ون، ۷۴۱ مینی‌بوس و میدل‌باس و ۹۴۱ اتوبوس.</li>
+<li><strong>واردات سواری:</strong> حدود ۶۷ هزار دستگاه در ۱۴۰۴ به گزارش مرکز پژوهش‌های مجلس؛ آمار «آخرین خودرو» ۷۱٬۵۳۵ دستگاه. شش‌ماهه‌ی نخست ۱۴۰۵: ۲۷٬۱۳۱ دستگاه. از ۱۴۰۱ تا پایان شهریور ۱۴۰۵ جمعاً حدود ۱۷۰ هزار خودرو.</li>
+<li><strong>ناوگان کاری:</strong> در ۱۴۰۴، ۸۸۲ میلیون دلار کامیون، کامیونت و کشنده و ۱۵۷ میلیون دلار اتوبوس، مینی‌بوس و ون وارد شد. آمار هم‌دوره به تعداد دستگاه برای این گروه‌ها پیدا نکردیم.</li>
+<li><strong>موتورسیکلت:</strong> حدود ۱۸۱ هزار دستگاه در پنج‌ماهه‌ی اول ۱۴۰۵ در برابر ۳۰۰ هزار در مدت مشابه پارسال؛ افتی حدود ۴۰٪. واردات موتورسیکلت کامل ممنوع است و ثبت سفارش فقط برای قطعات انجام می‌شود.</li>
+<li><strong>قطعات:</strong> قطعه‌ی وارداتی بیشتر از چین می‌آید. واردات قطعه از چین در ۲۰۲۴ با ۴۳٪ افت به ۶۵۳ میلیون دلار رسید (Bourse &amp; Bazaar). در مقابل، صادرات خودرو و قطعه‌ی ایران روی‌هم در شش‌ماهه‌ی نخست ۱۴۰۴ فقط ۲۱٫۹ میلیون دلار بود؛ بیشتر به عراق و سوریه، و بخش قطعه به لطف بازار لوازم یدکی خودروهایی که سال‌ها پیش صادر شده‌اند، پایدارتر مانده است.</li>
+</ul>
+
+<h3><span class="check-number">۰۴.</span> همسایه‌ها چه می‌کنند؟</h3>
+<p>عددهای تولید برای سال ۲۰۲۵ میلادی و از OICA (سازمان جهانی خودروسازان) است؛ عدد ایران برای سال ۱۴۰۴ و از آمار داخلی، چون OICA در جدول ۲۰۲۵ عددی برای ایران منتشر نکرده. تعریف‌ها کاملاً یکسان نیست، ولی برای دیدن بزرگی‌ها کافی است.</p>
+<div class="tw" dir="rtl"><table><tr><th>کشور</th><th>تولید ۲۰۲۵</th><th>بازار و واردات</th><th>صادرات</th><th>قطعه و نکته</th></tr><tr class="me"><td>ایران</td><td>۹۲۶ هزار (سال ۱۴۰۴)</td><td>حدود ۶۷ تا ۷۲ هزار سواری وارداتی در ۱۴۰۴</td><td>چند هزار خودرو در سال؛ خودرو و قطعه روی‌هم ۲۱٫۹ میلیون دلار در شش‌ماهه‌ی ۱۴۰۴</td><td>قطعات از چین: ۶۵۳ میلیون دلار در ۲۰۲۴</td></tr><tr><td>ترکیه</td><td>۱٫۴۲ میلیون (+۴٪)</td><td>فروش داخلی ۱٫۴۱ میلیون؛ فقط ۳۰٪ سواری‌ها ساخت داخل</td><td>۱٫۰۶ میلیون دستگاه؛ ۴۱٫۵ میلیارد دلار، بزرگ‌ترین بخش صادراتی کشور</td><td>قطعه‌سازان: ۱۵٫۷۷ میلیارد دلار صادرات (۳۸٪ کل)</td></tr><tr><td>روسیه</td><td>۸۵۴ هزار (−۱۳٪)</td><td>فروش سواری نو ۱٫۳۳ میلیون (−۱۵٫۶٪)، با سهم بزرگ برندهای چینی</td><td>ناچیز</td><td>صادرات خودروی ترکیه به روسیه ۵۲٪ افت کرد</td></tr><tr><td>پاکستان</td><td>۱۹۰ هزار (+۴۹٪)</td><td>فروش خودرو سال مالی ۲۰۲۴-۲۵: ۱۴۸ هزار</td><td>ناچیز</td><td>موتورسیکلت: ۱٫۴۳ میلیون در ۹ ماه</td></tr><tr><td>قزاقستان</td><td>۱۷۱ هزار (+۱۸٪)</td><td>—</td><td>—</td><td>مونتاژ با شرکای کره‌ای و چینی</td></tr><tr><td>جمهوری آذربایجان</td><td>۴٬۳۰۰</td><td>—</td><td>—</td><td>خزر، خودروی مشترک با ایران‌خودرو (بر پایه‌ی دنا)</td></tr><tr><td>عربستان</td><td>تازه وارد تولید شده</td><td>۸۵۷ هزار فروش (+۳٫۶٪)، بهترین سال در یک دهه؛ تقریباً همه وارداتی</td><td>—</td><td>کارخانه‌های لوسید، سیر و هیوندای در راه</td></tr><tr><td>عراق</td><td>تولید انبوه ندارد</td><td>فقط اقلیم کردستان: ۲۸۳ هزار خودروی وارداتی در ۲۰۲۵</td><td>—</td><td>خودروی ژاپنی: ۷۰۰ میلیون دلار در ۲۰۲۴</td></tr></table></div>
+<ul>
+<li><strong>ترکیه، قهرمان صادرات:</strong> از هر چهار خودرویی که می‌سازد، سه‌تا را صادر می‌کند؛ ۷۲٫۵٪ آن به اتحادیه‌ی اروپا و آلمان به‌تنهایی ۶٫۶ میلیارد دلار. نکته‌ی جالب: بازار داخلی ترکیه بیشتر خودروی وارداتی می‌خرد. ترکیه هم صادرکننده‌ی بزرگ است و هم واردکننده‌ی بزرگ؛ یعنی کاملاً در زنجیره‌ی جهانی ادغام شده.</li>
+<li><strong>قطعه، موتور پنهان:</strong> ۳۸٪ صادرات خودرویی ترکیه، یعنی ۱۵٫۷۷ میلیارد دلار، قطعه است، نه خودروی کامل. ارزش صادرات قطعه‌ی ترکیه در یک سال، بیش از ۷۰۰ برابر صادرات شش‌ماهه‌ی خودرو و قطعه‌ی ایران است.</li>
+<li><strong>روسیه:</strong> تولید ۱۳٪ و فروش ۱۵٫۶٪ افت کرد؛ بازار به برندهای چینی وابسته شده و تنها برند بزرگ داخلی لادا است.</li>
+<li><strong>پاکستان:</strong> پس از چند سال رکود، تولید ۴۹٪ بالا رفت. بازارش با حدود ۱۵۰ هزار خودرو در سال کوچک است، ولی موتورسیکلت در آن پادشاه است: بیش از ۱٫۴ میلیون در ۹ ماه.</li>
+<li><strong>عربستان:</strong> بزرگ‌ترین بازار وارداتی منطقه است و حالا با کارخانه‌ی لوسید، برند ملی «سیر» و کارخانه‌ی هیوندای وارد تولید شده.</li>
+<li><strong>عراق:</strong> خودرو نمی‌سازد و یکی از بزرگ‌ترین بازارهای وارداتی منطقه است؛ فقط اقلیم کردستان ۲۸۳ هزار خودرو در یک سال وارد کرد.</li>
+<li><strong>آذربایجان:</strong> کوچک است، ولی یک پیوند ایرانی دارد: خودروی «خزر» در کارخانه‌ی مشترک آذرماش و ایران‌خودرو در نفت‌چاله ساخته می‌شود.</li>
+<li><strong>قزاقستان و آسیای مرکزی:</strong> قزاقستان ۱۷۱ هزار دستگاه ساخت (+۱۸٪) و ازبکستان، همسایه‌ی همسایه‌ها، ۴۶۲ هزار.</li>
+<li><strong>افغانستان، ارمنستان، ترکمنستان و کشورهای جنوب خلیج فارس:</strong> تولید قابل‌توجهی ندارند و خودرو را وارد می‌کنند؛ امارات هم بیشتر مرکز تجارت و صادرات مجدد خودرو است.</li>
+</ul>
+
+<div class="note"><p><strong>یک نکته‌ی دقیق</strong></p><p>برای کل پنجاه سال، آمار هم‌تعریفی که تولید و واردات همه‌ی گروه‌ها را سال‌به‌سال جمع بزند پیدا نکردیم. ۱٫۵ میلیون برآورد تاریخی شماره‌گذاری تا ۱۳۵۷ است و ۴۳ میلیون برآورد امروز راهور از ناوگان در حال تردد. هر دو بزرگی تغییر را نشان می‌دهند، با همین تفاوت در تعریف. برای کشورهای همسایه هم آمار تجارت قطعه به‌تفکیک کشور را فقط برای ترکیه پیدا کردیم.</p></div>
+
+<h3><span class="check-number">۰۵.</span> فرصت‌ها: همسایه‌ها برای ایران چه معنایی دارند؟</h3>
+<ul>
+<li><strong>بازار نزدیک:</strong> عراق، افغانستان، آسیای مرکزی و قفقاز خودرو وارد می‌کنند و خودروی ایرانی را می‌شناسند. هزاران خودروی ایرانی در عراق، سوریه و آذربایجان در حال کارند و هر کدام مشتری قطعه و خدمات‌اند.</li>
+<li><strong>قطعه پیش از خودرو:</strong> تجربه‌ی ترکیه نشان می‌دهد صادرات قطعه می‌تواند به اندازه‌ی خودروی کامل مهم باشد. قطعه‌سازی ایران هم پایدارترین بخش صادرات این صنعت بوده است.</li>
+<li><strong>نوسازی ناوگان:</strong> به گفته‌ی ستاد نوسازی، از دی‌ماه ۱۴۰۴ حدود ۱۰ هزار موتورسیکلت فرسوده اسقاط شده و در تفاهم‌نامه‌ی جدید ۷۰ هزار موتورسیکلت کاری برای نوسازی در نظر گرفته شده. موتور نو یعنی هوای پاک‌تر، مصرف کمتر و ایمنی بیشتر برای پیک‌ها و موتورسوارهایی که نان روزشان به آن بسته است.</li>
+<li><strong>همکاری مشترک:</strong> خزر در آذربایجان نشان می‌دهد ساخت مشترک با همسایه‌ها شدنی است؛ الگویی که می‌تواند در بازارهای دیگر منطقه هم تکرار شود.</li>
+</ul>
+
+<h3><span class="check-number">۰۶.</span> نگاه دیتومان</h3>
+<p>از ۱٫۵ میلیون به ۴۳ میلیون؛ ایران در نیم قرن روی چرخ‌ها جابه‌جا شد و امروز یکی از بزرگ‌ترین ناوگان‌های منطقه را دارد. همسایه‌ها نشان می‌دهند مسیر بعدی کجاست: ترکیه با صادرات و قطعه، عربستان با سرمایه‌گذاری تازه، پاکستان با بازگشت سریع. فصل بعد برای ایران فقط «بیشتر» نیست؛ «بهتر» است: ناوگان نوتر، کم‌مصرف‌تر و ایمن‌تر، قطعه‌ای که از مرز بگذرد، و ماشینی که به خانواده‌های روستایی هم برسد. سؤال بعدی ما: از آن ۷۰ هزار موتور، چند دستگاه واقعاً به دست پیک‌ها و موتورسوارهای کاری می‌رسد و هزینه‌ی کارشان چقدر تغییر می‌کند؟ دنبالش می‌کنیم.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>پلیس راهور فراجا: آمار ناوگان در حال تردد (آبان ۱۴۰۵) و شماره‌گذاری تاریخی</li>
+<li>مرکز آمار ایران: آمارگیری درآمد و هزینه‌ی خانوار ۱۴۰۴</li>
+<li>وزارت صنعت، معدن و تجارت: آمار تولید خودرو ۱۴۰۴ و ۱۴۰۵</li>
+<li>مرکز پژوهش‌های مجلس؛ آخرین خودرو؛ انجمن صنعت موتورسیکلت؛ ستاد نوسازی ناوگان</li>
+<li>خبرگزاری مهر: صادرات خودرو و قطعات ایران (اردیبهشت ۱۴۰۵) • mehrnews.com</li>
+<li>OICA: Production statistics 2025 (به نقل AFIA) • oica.net</li>
+<li>OSD و UİB/OİB ترکیه (آمار ۲۰۲۵)؛ Ekonomi Gazetesi؛ Motor1 Türkiye؛ Daily Sabah</li>
+<li>Autostat به نقل Reuters (بازار روسیه ۲۰۲۵)</li>
+<li>PAMA به نقل TechJuice و Profit (پاکستان)</li>
+<li>Best Selling Cars Blog (عربستان ۲۰۲۵)؛ Shafaq News و Kurdistan24 (عراق)؛ bne IntelliNews (آذربایجان)</li>
+<li>Bourse &amp; Bazaar به نقل FreshPlaza (واردات قطعه از چین)</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور: تصویرسازی با هوش مصنوعی. آخرین بازبینی: ۱۸ آبان ۱۴۰۵</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p><strong>Iran has 43 million vehicles. So why do six in ten rural families have no car?</strong></p>
+<p>Start with this: Iran now has about 14 million motorcycles, more than nine times all the cars and motorcycles police say were registered up to 1979. Yet, per the 2025/26 household survey, 43% of urban and 59% of rural households have no private car. This report counts Iran's fleet, walks through fifty years of making and importing, and then sets Iran beside its neighbours.</p>
+<h3>1. How many vehicles?</h3>
+<p>Iran's traffic police said on 28 October 2026 that about <strong>29 million cars</strong> and <strong>14 million motorcycles</strong> are on the road. The latest national breakdown we found is from August 2025:</p>
+<div class="tw"><table><tr><th>Type</th><th>Number (Aug 2025)</th></tr><tr><td>Cars</td><td>22.47 million</td></tr><tr><td>Motorcycles</td><td>13.66 million</td></tr><tr><td>Pickups</td><td>2.58 million</td></tr><tr><td>Light trucks</td><td>558,000</td></tr><tr><td>Trucks</td><td>465,000</td></tr><tr><td>Tractor-trailers</td><td>243,000</td></tr><tr><td>City taxis</td><td>313,000</td></tr><tr><td>Buses and minibuses</td><td>66,000 buses, 111,000 minibuses</td></tr><tr><td>Tractors, combines, farm machines</td><td>670,000</td></tr><tr><td>Ambulances and other uses</td><td>about 66,000</td></tr><tr><td><strong>Total fleet</strong></td><td><strong>41.21 million</strong></td></tr></table></div>
+<p>Pickups, light trucks, trucks and tractor-trailers together come to about <strong>3.85 million</strong>: the fleet that carries bread, medicine and building materials to every town and village.</p>
+<h3>2. Fifty years in four stops</h3>
+<ul class="timeline">
+<li><strong>1976–1979:</strong> about 60,000 cars imported in 1976 and about 132,000 cars made at home in 1977; about 1.5 million vehicles registered by 1979.</li>
+<li><strong>After the war to the early 2010s:</strong> output rose from 1.08 million in 2005 to 1.65 million in 2011, when Türkiye made about 1.19 million.</li>
+<li><strong>2014–2022:</strong> car imports reached about 103,000 in 2014/15, then collapsed under import limits from 2018.</li>
+<li><strong>2025/26 and 2026/27:</strong> 926,000 vehicles made in 2025/26; car output in the first seven months of 2026/27 was 351,000, about 37% lower year on year.</li>
+</ul>
+<h3>3. Made at home, bought abroad</h3>
+<ul>
+<li>About 4.25 million vehicles were made in the four years 2022/23–2025/26. Of 926,000 in 2025/26: about 99,000 pickups, 28,000 trucks and tractors, 4,000 vans, 741 minibuses and 941 buses.</li>
+<li>Car imports: about 67,000 in 2025/26 per the parliament research centre (71,535 per Akharin Khodro); about 170,000 from 2022 to September 2026.</li>
+<li>Work fleet imports in 2025/26: $882M of trucks and tractors, $157M of buses, minibuses and vans.</li>
+<li>Motorcycles: about 181,000 made in the first five months of 2026/27 against 300,000 a year earlier; complete motorcycle imports remain banned.</li>
+<li>Parts: imports of car parts from China fell 43% to $653M in 2024 (Bourse &amp; Bazaar). Iran's car and parts exports together were only $21.9M in the first half of 2025/26, mostly to Iraq and Syria.</li>
+</ul>
+<h3>4. The neighbours</h3>
+<p>Production figures are OICA 2025 calendar-year data; Iran's figure is the 2025/26 national number, as OICA published none for Iran.</p>
+<div class="tw"><table><tr><th>Country</th><th>Production 2025</th><th>Market and imports</th><th>Exports</th><th>Parts and notes</th></tr><tr class="me"><td>Iran</td><td>926,000 (Iranian year 2025/26)</td><td>about 67,000–72,000 imported cars in 2025/26</td><td>a few thousand cars a year; cars and parts together $21.9M in the first half of 2025/26</td><td>parts from China: $653M in 2024</td></tr><tr><td>Türkiye</td><td>1.42 million (+4%)</td><td>1.41 million domestic sales; only 30% of cars made locally</td><td>1.06 million units; $41.5bn, the country's largest export sector</td><td>suppliers exported $15.77bn (38% of the total)</td></tr><tr><td>Russia</td><td>854,000 (−13%)</td><td>1.33 million new cars sold (−15.6%), with a large Chinese-brand share</td><td>small</td><td>Turkish auto exports to Russia fell 52%</td></tr><tr><td>Pakistan</td><td>190,000 (+49%)</td><td>148,000 cars sold in FY2024/25</td><td>small</td><td>motorcycles: 1.43 million in nine months</td></tr><tr><td>Kazakhstan</td><td>171,000 (+18%)</td><td>—</td><td>—</td><td>assembly with Korean and Chinese partners</td></tr><tr><td>Azerbaijan</td><td>4,300</td><td>—</td><td>—</td><td>Khazar, a joint car with Iran Khodro (based on the Dena)</td></tr><tr><td>Saudi Arabia</td><td>just entering production</td><td>857,000 sold (+3.6%), best year in a decade; nearly all imported</td><td>—</td><td>Lucid, Ceer and Hyundai plants on the way</td></tr><tr><td>Iraq</td><td>no mass production</td><td>Kurdistan Region alone: 283,000 imported vehicles in 2025</td><td>—</td><td>Japanese cars: $700M in 2024</td></tr></table></div>
+<ul>
+<li><strong>Türkiye</strong> exports three of every four vehicles it builds, 72.5% of them to the EU, while its home market mostly buys imports: fully woven into global supply chains.</li>
+<li><strong>Parts are the hidden engine:</strong> 38% of Türkiye's auto exports ($15.77bn) are parts.</li>
+<li><strong>Russia</strong> saw output fall 13% and sales 15.6%, with Chinese brands dominant.</li>
+<li><strong>Pakistan</strong> rebounded 49%; its car market is small but motorcycles sell in the millions.</li>
+<li><strong>Saudi Arabia</strong>, the region's biggest import market, is entering manufacturing with Lucid, Ceer and Hyundai.</li>
+<li><strong>Iraq</strong> makes no cars; the Kurdistan Region alone imported 283,000 in 2025.</li>
+<li><strong>Azerbaijan</strong> builds the Khazar with Iran Khodro at Neftchala.</li>
+<li><strong>Kazakhstan</strong> made 171,000; Uzbekistan, a neighbour's neighbour, 462,000. Afghanistan, Armenia, Turkmenistan and the southern Gulf states import their cars; the UAE is mainly a trade and re-export hub.</li>
+</ul>
+<div class="note"><p>No like-for-like fifty-year series of all production and imports exists that we could find; 1.5 million (registrations to 1979) and 43 million (vehicles on the road today) use different definitions. Country-level parts trade was only available for Türkiye.</p></div>
+<h3>5. Opportunities</h3>
+<ul>
+<li>Nearby import markets (Iraq, Afghanistan, Central Asia, the Caucasus) already know Iranian cars, and every one on their roads needs parts and service.</li>
+<li>Türkiye shows parts can matter as much as whole vehicles; parts have been the steadiest part of Iran's auto exports.</li>
+<li>Fleet renewal: about 10,000 old motorcycles scrapped since January 2026 and 70,000 work motorcycles planned for replacement.</li>
+<li>Joint production, as with the Khazar, can be repeated elsewhere.</li>
+</ul>
+<h3>6. Ditoman's reading</h3>
+<p>From 1.5 million to 43 million: in half a century Iran moved onto wheels and now runs one of the region's biggest fleets. The neighbours show the next road: Türkiye through exports and parts, Saudi Arabia through new investment, Pakistan through a fast rebound. For Iran the next chapter is not just more but better: a newer, cleaner, safer fleet, parts that cross borders, and cars that reach rural families too.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li>Iran traffic police (FARAJA Rahvar); Statistical Centre of Iran household survey 2025/26; Ministry of Industry, Mine and Trade</li>
+<li>Majlis Research Center; Akharin Khodro; Iran motorcycle industry association; fleet renewal headquarters</li>
+<li>Mehr News Agency, Iran car and parts exports (May 2026) • mehrnews.com</li>
+<li>OICA production statistics 2025 (via AFIA) • oica.net</li>
+<li>OSD and UİB/OİB Türkiye 2025; Ekonomi Gazetesi; Motor1 Türkiye; Daily Sabah</li>
+<li>Autostat via Reuters (Russia); PAMA via TechJuice and Profit (Pakistan)</li>
+<li>Best Selling Cars Blog (Saudi Arabia); Shafaq News and Kurdistan24 (Iraq); bne IntelliNews (Azerbaijan)</li>
+<li>Bourse &amp; Bazaar via FreshPlaza (parts imports from China)</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">Cover: AI-generated illustration. Last reviewed 9 November 2026.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
+</body>
+</html>
