@@ -43,7 +43,10 @@ image: social/agibot-store/post.png
 
 💬 اگر فروشنده‌ی سوپرمارکت محله‌تان یک ربات باشد، خریدتان را از آنجا ادامه می‌دهید؟
 
+🔗 خبر اصلی:
+https://interestingengineering.com/ai-robotics/six-agibot-humanoid-robots-complete
+
 منابع: اطلاعیه‌ی AgiBot (GlobeNewswire، ۸ نوامبر ۲۰۲۶)، Interesting Engineering، Kantan News، ویکی‌پدیا
-تصویر: اینفوگرافیک دیتومان
+تصویر: تصویرسازی
 
 #ربات #هوش_مصنوعی #فناوری_آینده #چین #دیتومان
