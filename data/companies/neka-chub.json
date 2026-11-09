@@ -1,0 +1,139 @@
+{
+  "slug": "neka-chub",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "wood",
+    "fa": "چوب و تخته",
+    "en": "Wood and panels"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "نکاچوب",
+    "en": "Neka Chub Company"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "نئوپان ساده و ملامینه، تخته چندلایه و روکش چوب؛ میاندورود، مازندران",
+    "en": "Plain and melamine particleboard, plywood and veneer; Miandorud, Mazandaran"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "میاندورود، مازندران",
+        "en": "Miandorud, Mazandaran"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۶۹ میلادی",
+        "en": "1969"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "نئوپان ساده و ملامینه، تخته چندلایه و روکش چوب",
+        "en": "Plain and melamine particleboard, plywood and veneer"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "چهار خط اصلی تولید که از ۱۴۰۰ دوباره راه افتادند",
+        "en": "Four main lines, restarted in 2021"
+      },
+      "src": [
+        1,
+        2
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "نکاچوب در میاندورود، مازندران فعال است و نئوپان ساده و ملامینه، تخته چندلایه و روکش چوب تولید می‌کند. چهار خط اصلی تولید که از ۱۴۰۰ دوباره راه افتادند. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Neka Chub Company is based in Miandorud, Mazandaran and makes plain and melamine particleboard, plywood and veneer. Four main lines, restarted in 2021. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1,
+    2
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "تخته و چوب (تصویرسازی)",
+        "en": "Wood panels (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "تولید فعلی",
+      "خط ام‌دی‌اف ۷۵ هزار مترمکعبی که در ۱۳۸۴ برنامه‌ریزی شد"
+    ],
+    "en": [
+      "Current output",
+      "The 75,000 m³ MDF line planned in 2005"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Wikipedia: Sherkat-e Neka Chub",
+      "url": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Sherkat-e_Neka_Chub"
+    },
+    {
+      "id": 2,
+      "title": "WBPI: MDF industry in Iran",
+      "url": "https://www.wbpionline.com/analysis/mdf-industry-and-market-in-iran/"
+    }
+  ]
+}

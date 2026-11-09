@@ -1,0 +1,126 @@
+{
+  "slug": "chuka-iran-wood-and-paper",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "paper",
+    "fa": "کاغذ و مقوا",
+    "en": "Paper and board"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "صنایع چوب و کاغذ ایران (چوکا)",
+    "en": "Iran Wood and Paper Industries (Chuka)"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "خمیر کاغذ و کاغذ؛ گیلان",
+    "en": "Pulp and paper; Gilan"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "گیلان",
+        "en": "Gilan"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "خمیر کاغذ و کاغذ",
+        "en": "Pulp and paper"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "ظرفیت حدود ۱۵۰ هزار تن کاغذ در سال (داده‌ی دهه‌ی ۱۳۷۰)",
+        "en": "About 150,000 t/yr paper capacity (1990s data)"
+      },
+      "src": [
+        1,
+        2
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "صنایع چوب و کاغذ ایران (چوکا) در گیلان فعال است و خمیر کاغذ و کاغذ تولید می‌کند. ظرفیت حدود ۱۵۰ هزار تن کاغذ در سال (داده‌ی دهه‌ی ۱۳۷۰). این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Iran Wood and Paper Industries (Chuka) is based in Gilan and makes pulp and paper. About 150,000 t/yr paper capacity (1990s data). It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1,
+    2
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "رول کاغذ (تصویرسازی)",
+        "en": "Paper rolls (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "تولید فعلی و وضعیت ماشین‌آلات",
+      "سال تأسیس و نماد بورسی"
+    ],
+    "en": [
+      "Current output and equipment condition",
+      "Founding year and ticker"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "University of Tehran: Chuka productivity study",
+      "url": "https://ijnr.ut.ac.ir/article_25286.html?lang=en"
+    },
+    {
+      "id": 2,
+      "title": "Iran News Daily: wood and paper industry",
+      "url": "https://irannewsdaily.com/?p=158454"
+    }
+  ]
+}

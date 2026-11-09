@@ -1,0 +1,142 @@
+{
+  "slug": "barij-essence",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "herbal",
+    "fa": "گیاهان دارویی، زعفران و گلاب",
+    "en": "Herbal, saffron and rosewater"
+  },
+  "branch": "industry",
+  "sub": "pharma",
+  "name": {
+    "fa": "باریج اسانس",
+    "en": "Barij Essence Pharmaceutical Co."
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "داروی گیاهی، آرایشی و غذایی بر پایه‌ی گیاهان دارویی؛ اسانس؛ کاشان، اصفهان (کارخانه نزدیک قمصر)",
+    "en": "Herbal medicines, cosmetics, food products and essential oils; Kashan, Isfahan (plant near Qamsar)"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "کاشان، اصفهان (کارخانه نزدیک قمصر)",
+        "en": "Kashan, Isfahan (plant near Qamsar)"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۹۲ میلادی",
+        "en": "1992"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "داروی گیاهی، آرایشی و غذایی بر پایه‌ی گیاهان دارویی؛ اسانس",
+        "en": "Herbal medicines, cosmetics, food products and essential oils"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "حدود ۱٬۰۰۰ کارمند تمام‌وقت در گروه",
+        "en": "About 1,000 full-time staff across the group"
+      },
+      "src": [
+        1,
+        2
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "باریج اسانس در کاشان، اصفهان (کارخانه نزدیک قمصر) فعال است و داروی گیاهی، آرایشی و غذایی بر پایه‌ی گیاهان دارویی؛ اسانس تولید می‌کند. حدود ۱٬۰۰۰ کارمند تمام‌وقت در گروه. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Barij Essence Pharmaceutical Co. is based in Kashan, Isfahan (plant near Qamsar) and makes herbal medicines, cosmetics, food products and essential oils. About 1,000 full-time staff across the group. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1,
+    2
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "تولید گیاهی (تصویرسازی)",
+        "en": "Herbal production (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "فروش و صادرات"
+    ],
+    "en": [
+      "Sales and exports"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Barij: History",
+      "url": "https://barijessence.com/en/?p=4587"
+    },
+    {
+      "id": 2,
+      "title": "PharmChoices: Iran herbal producers",
+      "url": "https://pharmchoices.com/full-list-of-pharmaceutical-companies-in-iran/5/"
+    },
+    {
+      "id": 3,
+      "title": "Barij Essence Pharmaceutical Co. website",
+      "url": "https://barijessence.com"
+    }
+  ]
+}

@@ -135,6 +135,16 @@
             "fa": "صمت؛ وزارت راه و شهرسازی",
             "en": "Industry Ministry; Roads Ministry"
           }
+        },
+        {
+          "id": "wood",
+          "fa": "چوب، کاغذ و مبلمان",
+          "en": "Wood, paper & furniture",
+          "isic": "C16 · C17 · C31",
+          "authority": {
+            "fa": "وزارت صمت؛ سازمان منابع طبیعی",
+            "en": "Industry Ministry; Natural Resources Organization"
+          }
         }
       ],
       "leaders": [

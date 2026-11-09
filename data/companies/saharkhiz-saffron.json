@@ -1,0 +1,135 @@
+{
+  "slug": "saharkhiz-saffron",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "herbal",
+    "fa": "گیاهان دارویی، زعفران و گلاب",
+    "en": "Herbal, saffron and rosewater"
+  },
+  "branch": "industry",
+  "sub": "food",
+  "name": {
+    "fa": "زعفران سحرخیز",
+    "en": "Saharkhiz Saffron"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "زعفران، خشکبار و نبات زعفرانی؛ شهرک صنعتی توس، مشهد",
+    "en": "Saffron, dried fruit and nuts, saffron rock candy; Toos Industrial City, Mashhad"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "شهرک صنعتی توس، مشهد",
+        "en": "Toos Industrial City, Mashhad"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۳۲ میلادی",
+        "en": "1932"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "زعفران، خشکبار و نبات زعفرانی",
+        "en": "Saffron, dried fruit and nuts, saffron rock candy"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "بیش از ۶۰ کارمند",
+        "en": "60+ employees"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "زعفران سحرخیز در شهرک صنعتی توس، مشهد فعال است و زعفران، خشکبار و نبات زعفرانی تولید می‌کند. بیش از ۶۰ کارمند. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Saharkhiz Saffron is based in Toos Industrial City, Mashhad and makes saffron, dried fruit and nuts, saffron rock candy. 60+ employees. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "تولید گیاهی (تصویرسازی)",
+        "en": "Herbal production (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "حجم صادرات"
+    ],
+    "en": [
+      "Export volume"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Village: Saharkhiz",
+      "url": "https://village.ai/company/saharkhiz"
+    },
+    {
+      "id": 2,
+      "title": "Saharkhiz Saffron website",
+      "url": "https://saharkhizland.com"
+    }
+  ]
+}

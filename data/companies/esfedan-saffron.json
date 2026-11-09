@@ -1,0 +1,130 @@
+{
+  "slug": "esfedan-saffron",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "herbal",
+    "fa": "گیاهان دارویی، زعفران و گلاب",
+    "en": "Herbal, saffron and rosewater"
+  },
+  "branch": "industry",
+  "sub": "food",
+  "name": {
+    "fa": "زعفران اسفدان",
+    "en": "Esfedan Saffron Co."
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "زعفران نگین، پوشال و پودر؛ نبات و دمنوش زعفرانی؛ مشهد، خراسان رضوی",
+    "en": "Negin, pushal and powdered saffron; saffron candy and herbal tea; Mashhad, Razavi Khorasan"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "مشهد، خراسان رضوی",
+        "en": "Mashhad, Razavi Khorasan"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۷۵ میلادی",
+        "en": "1975"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "زعفران نگین، پوشال و پودر؛ نبات و دمنوش زعفرانی",
+        "en": "Negin, pushal and powdered saffron; saffron candy and herbal tea"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "حدود ۳۰۰ کارمند (خوداظهاری)",
+        "en": "About 300 employees (self-reported)"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "زعفران اسفدان در مشهد، خراسان رضوی فعال است و زعفران نگین، پوشال و پودر؛ نبات و دمنوش زعفرانی تولید می‌کند. حدود ۳۰۰ کارمند (خوداظهاری). این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Esfedan Saffron Co. is based in Mashhad, Razavi Khorasan and makes negin, pushal and powdered saffron; saffron candy and herbal tea. About 300 employees (self-reported). It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "تولید گیاهی (تصویرسازی)",
+        "en": "Herbal production (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "دفترهای خارجی و رقم‌ها مستقل تأیید نشده"
+    ],
+    "en": [
+      "Foreign offices and figures not independently confirmed"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "TradeIndia: Esfedan Saffron",
+      "url": "https://www.tradeindia.com/esfedan-saffron-co-12670924/"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "hamoon-furniture",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "furniture",
+    "fa": "مبلمان",
+    "en": "Furniture"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "هامون",
+    "en": "Hamoon Furniture"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "صندلی و میز برای فضاهای عمومی، اداری و خانگی؛ ایران",
+    "en": "Chairs and tables for public spaces, offices and homes; Iran"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "ایران",
+        "en": "Iran"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۸۳ میلادی",
+        "en": "1983"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "صندلی و میز برای فضاهای عمومی، اداری و خانگی",
+        "en": "Chairs and tables for public spaces, offices and homes"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "بیش از ۷۰ کارمند",
+        "en": "70+ employees"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "هامون در ایران فعال است و صندلی و میز برای فضاهای عمومی، اداری و خانگی تولید می‌کند. بیش از ۷۰ کارمند. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Hamoon Furniture is based in Iran and makes chairs and tables for public spaces, offices and homes. 70+ employees. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "چوب مبلمان (تصویرسازی)",
+        "en": "Furniture wood (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "شهر و نام حقوقی فارسی"
+    ],
+    "en": [
+      "City and Persian legal name"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Village: Steelhamoon Furniture",
+      "url": "https://village.ai/company/steelhamoon-furniture"
+    },
+    {
+      "id": 2,
+      "title": "Hamoon Furniture website",
+      "url": "https://hamoonco.ir"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "slug": "zardband-pharmaceuticals",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "herbal",
+    "fa": "گیاهان دارویی، زعفران و گلاب",
+    "en": "Herbal, saffron and rosewater"
+  },
+  "branch": "industry",
+  "sub": "pharma",
+  "name": {
+    "fa": "داروسازی زردبند",
+    "en": "Zardband Pharmaceuticals"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "داروهای گیاهی، از انتخاب بذر و کشت تا استخراج؛ ایران",
+    "en": "Herbal medicines, from seed selection and farming to extraction; Iran"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "ایران",
+        "en": "Iran"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۹۳ میلادی",
+        "en": "1993"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "داروهای گیاهی، از انتخاب بذر و کشت تا استخراج",
+        "en": "Herbal medicines, from seed selection and farming to extraction"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "داروسازی زردبند در ایران فعال است و داروهای گیاهی، از انتخاب بذر و کشت تا استخراج تولید می‌کند. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Zardband Pharmaceuticals is based in Iran and makes herbal medicines, from seed selection and farming to extraction. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "تولید گیاهی (تصویرسازی)",
+        "en": "Herbal production (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "plant",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "شهر و مقیاس"
+    ],
+    "en": [
+      "City and scale"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "PharmaCompass: Zardband",
+      "url": "https://www.pharmacompass.com/pharma-services/drug-product-fdf-manufacturing-services/zardband-pharmaceuticals"
+    },
+    {
+      "id": 2,
+      "title": "Zardband Pharmaceuticals website",
+      "url": "https://zardband.com/en/"
+    }
+  ]
+}

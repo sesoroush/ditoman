@@ -1,0 +1,119 @@
+{
+  "slug": "kavir-moghava-ardestan",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "paper",
+    "fa": "کاغذ و مقوا",
+    "en": "Paper and board"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "کویر مقوای اردستان",
+    "en": "Kavir Moghava Ardestan"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "مقوا و کاغذ بسته‌بندی بازیافتی؛ اردستان، اصفهان",
+    "en": "Recycled cardboard and packaging paper; Ardestan, Isfahan"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "اردستان، اصفهان",
+        "en": "Ardestan, Isfahan"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "مقوا و کاغذ بسته‌بندی بازیافتی",
+        "en": "Recycled cardboard and packaging paper"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "دست‌کم ۹۵٪ آب مصرفی بازچرخانی می‌شود؛ پرورش یک میلیون نهال با پساب تصفیه‌شده (ادعای شرکت)",
+        "en": "At least 95% of water recycled; growing 1 million saplings on treated wastewater (company claim)"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "کویر مقوای اردستان در اردستان، اصفهان فعال است و مقوا و کاغذ بسته‌بندی بازیافتی تولید می‌کند. دست‌کم ۹۵٪ آب مصرفی بازچرخانی می‌شود؛ پرورش یک میلیون نهال با پساب تصفیه‌شده (ادعای شرکت). این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Kavir Moghava Ardestan is based in Ardestan, Isfahan and makes recycled cardboard and packaging paper. At least 95% of water recycled; growing 1 million saplings on treated wastewater (company claim). It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "رول کاغذ (تصویرسازی)",
+        "en": "Paper rolls (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "ظرفیت و سال تأسیس",
+      "شهر از نام شرکت برداشت شده"
+    ],
+    "en": [
+      "Capacity and founding year",
+      "City inferred from company name"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "ANA: Cardboard firm recycles 95% of water (2023)",
+      "url": "https://ana.ir/en/news/4521/iranian-cardboard-manufacturing-firm-recycles-95-percent-of-consumed-water"
+    }
+  ]
+}

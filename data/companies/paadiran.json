@@ -1,0 +1,135 @@
+{
+  "slug": "paadiran",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "furniture",
+    "fa": "مبلمان",
+    "en": "Furniture"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "پادیران",
+    "en": "Paadiran"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "مبلمان اداری، مسکونی، هتلی و نمایشگاهی؛ تهران",
+    "en": "Office, residential, hotel and exhibition furniture; Tehran"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "تهران",
+        "en": "Tehran"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۷۰ میلادی",
+        "en": "1970"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "مبلمان اداری، مسکونی، هتلی و نمایشگاهی",
+        "en": "Office, residential, hotel and exhibition furniture"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "۱۰ هزار متر مربع خط تولید",
+        "en": "10,000 m² of production lines"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "پادیران در تهران فعال است و مبلمان اداری، مسکونی، هتلی و نمایشگاهی تولید می‌کند. ۱۰ هزار متر مربع خط تولید. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Paadiran is based in Tehran and makes office, residential, hotel and exhibition furniture. 10,000 m² of production lines. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "چوب مبلمان (تصویرسازی)",
+        "en": "Furniture wood (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "محل کارخانه و تعداد کارکنان"
+    ],
+    "en": [
+      "Factory location and staff numbers"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Paadiran: About",
+      "url": "https://www.paadiran.com/en/?p=112"
+    },
+    {
+      "id": 2,
+      "title": "Paadiran website",
+      "url": "https://www.paadiran.com"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "slug": "mazandaran-wood-and-paper",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "paper",
+    "fa": "کاغذ و مقوا",
+    "en": "Paper and board"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "صنایع چوب و کاغذ مازندران",
+    "en": "Mazandaran Wood and Paper Industries"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "کاغذ چاپ و تحریر، از جمله کاغذ کتاب درسی؛ ساری، مازندران",
+    "en": "Printing and writing paper, including textbook paper; Sari, Mazandaran"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "ساری، مازندران",
+        "en": "Sari, Mazandaran"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۹۷ میلادی",
+        "en": "1997"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "کاغذ چاپ و تحریر، از جمله کاغذ کتاب درسی",
+        "en": "Printing and writing paper, including textbook paper"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "۱٬۳۰۰ کارمند؛ حدود ۳۰٪ مواد اولیه چوب و ۷۰٪ ضایعات کاغذ و مقوا",
+        "en": "1,300 employees; raw material about 30% wood and 70% recycled paper and board"
+      },
+      "src": [
+        1,
+        2
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "صنایع چوب و کاغذ مازندران در ساری، مازندران فعال است و کاغذ چاپ و تحریر، از جمله کاغذ کتاب درسی تولید می‌کند. ۱٬۳۰۰ کارمند؛ حدود ۳۰٪ مواد اولیه چوب و ۷۰٪ ضایعات کاغذ و مقوا. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Mazandaran Wood and Paper Industries is based in Sari, Mazandaran and makes printing and writing paper, including textbook paper. 1,300 employees; raw material about 30% wood and 70% recycled paper and board. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1,
+    2
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "رول کاغذ (تصویرسازی)",
+        "en": "Paper rolls (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "نماد بورسی؛ برخی نتایج جست‌وجو «چکاپا» را نشان می‌دهند",
+      "وضعیت مالی فعلی؛ گزارشی از بدهی و زیان انباشته خبر داده"
+    ],
+    "en": [
+      "Stock ticker; search results suggest چکاپا",
+      "Current finances; one report mentions debt and accumulated losses"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Financial Tribune: Mazandaran Wood and Paper",
+      "url": "https://financialtribune.com/node/110845"
+    },
+    {
+      "id": 2,
+      "title": "ANA: Iranian factory meets book-paper need",
+      "url": "https://ana.ir/en/news/6122/iranian-factory-meets-country’s-need-for-book-printing-paper"
+    }
+  ]
+}

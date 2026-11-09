@@ -1,0 +1,132 @@
+{
+  "slug": "towlide-fibre-iran",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "wood",
+    "fa": "چوب و تخته",
+    "en": "Wood and panels"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "تولید فیبر ایران",
+    "en": "Towlide Fibre Iran Co."
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "تخته فیبر و فرآورده‌های چوب بازساخته؛ تهران (دفتر مرکزی)",
+    "en": "Fibreboard and reconstituted wood products; Tehran (HQ)"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "تهران (دفتر مرکزی)",
+        "en": "Tehran (HQ)"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۶۶ میلادی",
+        "en": "1966"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "تخته فیبر و فرآورده‌های چوب بازساخته",
+        "en": "Fibreboard and reconstituted wood products"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "۸۹ کارمند (۲۰۲۵)",
+        "en": "89 employees (2025)"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "تولید فیبر ایران در تهران (دفتر مرکزی) فعال است و تخته فیبر و فرآورده‌های چوب بازساخته تولید می‌کند. ۸۹ کارمند (۲۰۲۵). این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Towlide Fibre Iran Co. is based in Tehran (HQ) and makes fibreboard and reconstituted wood products. 89 employees (2025). It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "تخته و چوب (تصویرسازی)",
+        "en": "Wood panels (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "محل کارخانه",
+      "نماد بورسی؛ احتمالاً «چفیبر»"
+    ],
+    "en": [
+      "Plant location",
+      "Ticker; possibly چفیبر"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "EMIS: Towlide Fibre Iran",
+      "url": "https://www.emis.cn/php/company-profile/IR/Towlide_Fibre_Iran_Company_Public_Joint_Stock__TOWLIDE_FIBRE_IRAN_COMPANY_PUBLIC_SHAREHOLDING_COMPANY__en_3770419.html"
+    }
+  ]
+}

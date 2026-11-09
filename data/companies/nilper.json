@@ -1,0 +1,142 @@
+{
+  "slug": "nilper",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "furniture",
+    "fa": "مبلمان",
+    "en": "Furniture"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "نیلپر",
+    "en": "Nilper"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "صندلی اداری، مبل، میز و مبلمان خانگی؛ تهران؛ کارخانه در شهرک صنعتی پرند",
+    "en": "Office chairs, sofas, tables and home furniture; Tehran; factory in Parand Industrial Park"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "تهران؛ کارخانه در شهرک صنعتی پرند",
+        "en": "Tehran; factory in Parand Industrial Park"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۹۴ میلادی",
+        "en": "1994"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "صندلی اداری، مبل، میز و مبلمان خانگی",
+        "en": "Office chairs, sofas, tables and home furniture"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "کارخانه‌ی ۴۰ هزار متر مربعی؛ بیش از ۲۰۰ کارمند",
+        "en": "40,000 m² factory; 200+ employees"
+      },
+      "src": [
+        1,
+        2
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "نیلپر در تهران؛ کارخانه در شهرک صنعتی پرند فعال است و صندلی اداری، مبل، میز و مبلمان خانگی تولید می‌کند. کارخانه‌ی ۴۰ هزار متر مربعی؛ بیش از ۲۰۰ کارمند. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Nilper is based in Tehran; factory in Parand Industrial Park and makes office chairs, sofas, tables and home furniture. 40,000 m² factory; 200+ employees. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1,
+    2
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "چوب مبلمان (تصویرسازی)",
+        "en": "Furniture wood (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "تعداد کارکنان خوداظهاری است"
+    ],
+    "en": [
+      "Staff count is self-reported"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Nilper: About us",
+      "url": "https://nilperhome.com/en/about-us"
+    },
+    {
+      "id": 2,
+      "title": "Village: Nilper",
+      "url": "https://village.ai/company/nilper"
+    },
+    {
+      "id": 3,
+      "title": "Nilper website",
+      "url": "https://nilper.com"
+    }
+  ]
+}

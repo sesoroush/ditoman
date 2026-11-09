@@ -1,0 +1,132 @@
+{
+  "slug": "kaveh-papyrus-paper",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "paper",
+    "fa": "کاغذ و مقوا",
+    "en": "Paper and board"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "کاغذ کاوه پاپیروس",
+    "en": "Kaveh Papyrus Paper Co."
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "فلوتینگ، تست‌لاینر، وایت‌تاپ، کرافت و کاغذ روکش گچ‌برد؛ تهران (دفتر)",
+    "en": "Fluting, testliner, white-top liner, kraft and gypsum-board liner; Tehran (office)"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "تهران (دفتر)",
+        "en": "Tehran (office)"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۲۰۲۰ میلادی",
+        "en": "2020"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "فلوتینگ، تست‌لاینر، وایت‌تاپ، کرافت و کاغذ روکش گچ‌برد",
+        "en": "Fluting, testliner, white-top liner, kraft and gypsum-board liner"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "ظرفیت ۳۵ هزار تن",
+        "en": "35,000 t capacity"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "کاغذ کاوه پاپیروس در تهران (دفتر) فعال است و فلوتینگ، تست‌لاینر، وایت‌تاپ، کرافت و کاغذ روکش گچ‌برد تولید می‌کند. ظرفیت ۳۵ هزار تن. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Kaveh Papyrus Paper Co. is based in Tehran (office) and makes fluting, testliner, white-top liner, kraft and gypsum-board liner. 35,000 t capacity. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "رول کاغذ (تصویرسازی)",
+        "en": "Paper rolls (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "محل کارخانه",
+      "ارتباط با شرکت بورسی صنایع کاغذ کاوه"
+    ],
+    "en": [
+      "Mill location",
+      "Link to the listed Kaveh Paper Industries"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "PaperIndex: Kaveh Papyrus Paper",
+      "url": "https://www.paperindex.com/profile/kaveh-papyrus-paper-co/30042411/56378"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "slug": "latif-paper",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "paper",
+    "fa": "کاغذ و مقوا",
+    "en": "Paper and board"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "کاغذ لطیف",
+    "en": "Latif Paper Co."
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "دستمال کاغذی، کاغذ توالت، کاغذ کم‌گراماژ و کپی، کاغذ بسته‌بندی؛ تهران (دفتر)",
+    "en": "Facial and toilet tissue, low-grammage and copier paper, wrapping paper; Tehran (office)"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "تهران (دفتر)",
+        "en": "Tehran (office)"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۸۵ میلادی",
+        "en": "1985"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "دستمال کاغذی، کاغذ توالت، کاغذ کم‌گراماژ و کپی، کاغذ بسته‌بندی",
+        "en": "Facial and toilet tissue, low-grammage and copier paper, wrapping paper"
+      },
+      "src": [
+        1
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "کاغذ لطیف در تهران (دفتر) فعال است و دستمال کاغذی، کاغذ توالت، کاغذ کم‌گراماژ و کپی، کاغذ بسته‌بندی تولید می‌کند. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Latif Paper Co. is based in Tehran (office) and makes facial and toilet tissue, low-grammage and copier paper, wrapping paper. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "رول کاغذ (تصویرسازی)",
+        "en": "Paper rolls (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "paper",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "محل کارخانه",
+      "نماد بورسی؛ کد ISIN در فرابورس در نتایج جست‌وجو دیده می‌شود"
+    ],
+    "en": [
+      "Plant location",
+      "Ticker; a Fara Bourse ISIN appears in search results"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "PaperIndex: Latif Paper Co.",
+      "url": "https://www.paperindex.com/profile/latif-paper-co/28010800/1247"
+    }
+  ]
+}

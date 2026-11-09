@@ -1,0 +1,144 @@
+{
+  "slug": "pakchoob-group",
+  "status": "published",
+  "last_checked": {
+    "fa": "۱۸ آبان ۱۴۰۵",
+    "en": "9 November 2026"
+  },
+  "sector": {
+    "id": "wood",
+    "fa": "چوب و تخته",
+    "en": "Wood and panels"
+  },
+  "branch": "industry",
+  "sub": "wood",
+  "name": {
+    "fa": "گروه صنعتی پاک‌چوب",
+    "en": "Pakchoob Industrial Group"
+  },
+  "logo": null,
+  "tagline": {
+    "fa": "ام‌دی‌اف و اچ‌دی‌اف روکش‌دار، نئوپان، کاغذ ملامینه، رویه‌ی کابینت، فرمالدئید؛ ایران",
+    "en": "Coated MDF/HDF, particleboard, impregnated paper, worktops, formaldehyde; Iran"
+  },
+  "facts": [
+    {
+      "label": {
+        "fa": "پایگاه",
+        "en": "Based in"
+      },
+      "value": {
+        "fa": "ایران",
+        "en": "Iran"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "تأسیس",
+        "en": "Founded"
+      },
+      "value": {
+        "fa": "۱۹۹۵ میلادی",
+        "en": "1995"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "محصولات",
+        "en": "Products"
+      },
+      "value": {
+        "fa": "ام‌دی‌اف و اچ‌دی‌اف روکش‌دار، نئوپان، کاغذ ملامینه، رویه‌ی کابینت، فرمالدئید",
+        "en": "Coated MDF/HDF, particleboard, impregnated paper, worktops, formaldehyde"
+      },
+      "src": [
+        1
+      ]
+    },
+    {
+      "label": {
+        "fa": "مقیاس",
+        "en": "Scale"
+      },
+      "value": {
+        "fa": "چهار تا پنج کارخانه در ایران",
+        "en": "Four to five plants in Iran"
+      },
+      "src": [
+        1,
+        2
+      ]
+    }
+  ],
+  "summary": {
+    "fa": "گروه صنعتی پاک‌چوب در ایران فعال است و ام‌دی‌اف و اچ‌دی‌اف روکش‌دار، نئوپان، کاغذ ملامینه، رویه‌ی کابینت، فرمالدئید تولید می‌کند. چهار تا پنج کارخانه در ایران. این شرکت در گزارش ویژه‌ی «ایران در آینه‌ی درختان» دیتومان معرفی شده است؛ زنجیره‌ای که از جنگل، باغ و مرتع تا کارخانه و صادرات ادامه دارد. هر عدد کنار منبعش آمده و هرجا عددی تأیید نشد، همان را گفته‌ایم.",
+    "en": "Pakchoob Industrial Group is based in Iran and makes coated MDF/HDF, particleboard, impregnated paper, worktops, formaldehyde. Four to five plants in Iran. It is featured in Ditoman's special report on Iran's trees and plants, a chain that runs from forest, orchard and rangeland to factory and export. Each figure sits next to its source; where one could not be confirmed, we say so."
+  },
+  "summary_src": [
+    1,
+    2
+  ],
+  "photos": {
+    "main": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "تخته و چوب (تصویرسازی)",
+        "en": "Wood panels (illustration)"
+      }
+    },
+    "product": {
+      "file": null,
+      "art": "wood",
+      "alt": {
+        "fa": "محصول (تصویرسازی)",
+        "en": "Product (illustration)"
+      }
+    },
+    "office": {
+      "file": null,
+      "art": "office",
+      "alt": {
+        "fa": "دفتر یا کارخانه",
+        "en": "Office or plant"
+      }
+    }
+  },
+  "unconfirmed": {
+    "fa": [
+      "تعداد دقیق کارخانه‌ها و ظرفیت",
+      "شهر دفتر مرکزی"
+    ],
+    "en": [
+      "Exact number of plants and capacity",
+      "Headquarters city"
+    ]
+  },
+  "disclosure": {
+    "fa": "این پرونده بر پایه‌ی منابع عمومی نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. تصویرها تصویرسازی‌اند، نه عکس واقعی شرکت.",
+    "en": "This record is based on public sources and was not reviewed by the company before publication. Images are illustrations, not photos of the company."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "title": "Intermob Istanbul: Pakchoob",
+      "url": "https://intermobistanbul.com/en/brand/pakchoob-industrial-group"
+    },
+    {
+      "id": 2,
+      "title": "Village: Pakchoob Group",
+      "url": "https://village.ai/company/pakchoob-group"
+    },
+    {
+      "id": 3,
+      "title": "Pakchoob Industrial Group website",
+      "url": "https://pakchoob.ir"
+    }
+  ]
+}
