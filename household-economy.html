@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The Economy Starts at the Kitchen Table | اقتصاد یعنی سفره‌ی خانه‌ی ما | Ditoman</title>
+<meta name="description" content="اقتصاد از اول یعنی «اداره‌ی خانه». مردم اقتصاد را با سبد خرید می‌سنجند؛ دخل و خرج خانوار ایرانی، تورم، طلا و قرض‌الحسنه، و آنچه ساخته شد. What the economy means for ordinary families." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/household-economy.html" />
+<link rel="icon" href="ditoman-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The Economy Starts at the Kitchen Table | اقتصاد یعنی سفره‌ی خانه‌ی ما | Ditoman" />
+<meta property="og:description" content="اقتصاد از اول یعنی «اداره‌ی خانه». مردم اقتصاد را با سبد خرید می‌سنجند؛ دخل و خرج خانوار ایرانی، تورم، طلا و قرض‌الحسنه، و آنچه ساخته شد. What the economy means for ordinary families." />
+<meta property="og:url" content="https://ditoman.com/household-economy.html" />
+<meta property="og:image" content="https://ditoman.com/social/household-economy/post.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/household-economy.html#article",
+   "mainEntityOfPage": "https://ditoman.com/household-economy.html",
+   "headline": "The Economy Starts at the Kitchen Table | اقتصاد یعنی سفره‌ی خانه‌ی ما",
+   "description": "اقتصاد از اول یعنی «اداره‌ی خانه». مردم اقتصاد را با سبد خرید می‌سنجند؛ دخل و خرج خانوار ایرانی، تورم، طلا و قرض‌الحسنه، و آنچه ساخته شد. What the economy means for ordinary families.",
+   "image": "https://ditoman.com/social/household-economy/post.png",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The Economy Starts at the Kitchen Table | اقتصاد یعنی سفره‌ی خانه‌ی ما",
+     "item": "https://ditoman.com/household-economy.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="ditoman-logo.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.lesson-content h3{margin-top:34px}.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img src="social/household-economy/post.png" alt="The economy starts at the kitchen table" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">اقتصاد یعنی چه؟ جوابش روی میز آشپزخانه است</h1>
+<h1 lang="en">What does the economy mean? The answer is on the kitchen table</h1>
+<p class="subtitle" lang="en">Economy once meant running a household. How ordinary people really experience the economy, the Iranian family budget in numbers, and the skills families use to get by.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">اقتصاد از اول یعنی اداره‌ی خانه. مردم عادی اقتصاد را چطور تجربه می‌کنند، دخل و خرج خانوار ایرانی با عدد، و مهارت‌هایی که خانواده‌ها با آن از پس زندگی برمی‌آیند.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۲۷۰ م.ت</b><b lang="en">270M</b><span lang="fa">هزینه‌ی سالانه‌ی خانوار شهری ۱۴۰۳ (تومان)</span><span lang="en">Urban household yearly spending, tomans</span></div>
+<div class="stat"><b lang="fa">۲۴٪</b><b lang="en">24%</b><span lang="fa">سهم خوراک در هزینه‌ی خانوار شهری</span><span lang="en">Food share, urban households</span></div>
+<div class="stat"><b lang="fa">۶۸٪</b><b lang="en">68%</b><span lang="fa">خانوارهای صاحب‌خانه (۱۳۹۵)</span><span lang="en">Homeowning households (2016)</span></div>
+<div class="stat"><b lang="fa">۸۸٫۹٪</b><b lang="en">88.9%</b><span lang="fa">سواد بزرگسالان</span><span lang="en">Adult literacy</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p><strong>حمیده، مادر ۳۹ ساله‌ی دو فرزند در رشت، به رویترز گفت: «ماه گذشته مجبور شدیم به خانه‌ی پدر و مادرم برگردیم، چون شوهرم در بهار از یک کارخانه‌ی کوچک کاشی تعدیل شد.» در خبرها، بیکاری و هزینه‌ی مسکن دو موضوع جدا هستند. برای خانواده‌ی حمیده هر دو به یک سؤال رسیدند: ماه بعد کجا زندگی می‌کنیم؟</strong> [۳۱]</p>
+<p>اقتصاد از جایی که مردم ایستاده‌اند یعنی همین: با پول، وقت و امکاناتی که داریم، امروز را چطور بگذرانیم و برای فردا جا باز کنیم؟</p>
+<p>دو خانواده را تصور کنید که در یک سال به یک اندازه درآمد دارند. در یکی حقوق سر ماه می‌رسد و در دیگری پولِ کار پروژه‌ای با چند هفته تأخیر. موعد اجاره برای هر دو سر جایش است. روی کاغذ درآمدشان یکی است؛ در عمل، یکی برای ماه بعد برنامه می‌ریزد و دیگری شاید برای همان اجاره قرض بگیرد. وقتی تلویزیون از «رشد اقتصادی» حرف می‌زند، بیشتر ما به همین‌ها فکر می‌کنیم: نان امروز، اجاره‌ی سال بعد، قسط ماه بعد. و حق با ماست. اقتصاد، پیش از آنکه علم شود، اسم کاری بود که هر خانواده هر روز می‌کند.</p>
+<h3>۱. اقتصاد از اول یعنی «اداره‌ی خانه»</h3>
+<p>کلمه‌ی Economy از یونانی <em>اویکونومیا</em> می‌آید: <em>اویکوس</em> یعنی خانه و خانوار، و <em>نوموس</em> یعنی اداره و تقسیم. قدیمی‌ترین کتابی که با این نام می‌شناسیم، «اویکونومیکوس» گزنفون در قرن چهارم پیش از میلاد، گفت‌وگویی درباره‌ی اداره‌ی خانه و مزرعه است؛ نه بانک مرکزی و نه بورس. [۱، ۲]</p>
+<p>واژه‌ی فارسی ما هم همین را می‌گوید. «اقتصاد» در لغت‌نامه‌ی دهخدا یعنی «میانه رفتن» و «میانه‌روی در هر کاری»، و فرهنگ معین آن را «رعایت اعتدال در دخل و خرج» معنی کرده است. یعنی همان کاری که مادر و پدر سر ماه با حقوق می‌کنند. [۳]</p>
+<h3>۲. مردم اقتصاد را با سبد خرید می‌سنجند، نه با جدول</h3>
+<p>پژوهش‌های چند دهه‌ی اخیر نشان می‌دهند مردم عادی اقتصاد را از تجربه‌ی روزمره‌ی خودشان می‌فهمند و این کار غیرمنطقی نیست:</p>
+<ul>
+<li><strong>قیمت چیزهایی که زیاد می‌خریم.</strong> پژوهشی روی داده‌ی خرید بیش از ۹۰ هزار خانوار آمریکایی نشان داد مردم انتظار تورم را بر اساس قیمت کالاهایی می‌سازند که <em>بیشتر می‌خرند</em>، مثل نان و شیر و بنزین، نه بر اساس وزنی که شاخص رسمی به هر کالا می‌دهد. گرانی بیشتر از ارزانی به چشم می‌آید و قیمت کالاهایی که نمی‌خریم، اصلاً اثری ندارد. [۴]</li>
+<li><strong>«حقوقم عقب می‌ماند».</strong> در نظرسنجی استفانی استانچوا از دانشگاه هاروارد (۲۰۲۴)، ۸۱٪ آمریکایی‌ها گفتند قیمت‌ها از دستمزدها جلو می‌زنند. فقط ۹٪ افزایش حقوقشان را به تورم نسبت دادند و ۲۰٪ آن را حاصل کار خودشان دانستند. [۵]</li>
+<li><strong>فاصله‌ی اقتصاددان و مردم.</strong> رابرت شیلر، برنده‌ی نوبل، در ۱۹۹۶ از مردم آمریکا، آلمان و برزیل پرسید چرا تورم را دوست ندارند. بزرگ‌ترین شکاف، بین اقتصاددان‌ها و غیراقتصاددان‌ها بود: مردم تورم را یعنی پایین آمدن سطح زندگی. [۶]</li>
+<li><strong>تجربه، معلم اول.</strong> پژوهش مالمندیر و ناگل نشان داد هر نسل انتظارش از تورم را با تورمی می‌سازد که در عمر خودش دیده است. [۷]</li>
+<li><strong>«رکود حسی».</strong> در آمریکای ۲۰۲۳، تورم از ۹٫۱٪ به ۳٫۴٪ رسیده بود و بیکاری نزدیک کمترین سطح ۵۰ سال اخیر بود، اما حس مردم از اقتصاد بد ماند. اسمش را گذاشتند Vibecession. گالوپ در ۱۴۰۵ هم گزارش داد هزینه‌ی زندگی بزرگ‌ترین دغدغه‌ی مالی آمریکایی‌هاست و رکورد ۵۵٪ می‌گویند وضع مالی خودشان بدتر می‌شود. [۸، ۹]</li>
+</ul>
+<p>یعنی آنچه اقتصاددان «تورم» می‌نامد، مردم «سفره» می‌نامند. هر دو درباره‌ی یک چیزند، از دو پنجره‌ی متفاوت.</p>
+<h3>۳. خانواده؛ کوچک‌ترین و مهم‌ترین بنگاه اقتصادی</h3>
+<ul>
+<li><strong>خانه یک کارگاه است.</strong> گری بکر، اقتصاددان برنده‌ی نوبل، در ۱۹۶۵ خانوار را «کارخانه‌ی کوچکی» دانست که با ترکیب وقت و کالا، غذا، تربیت بچه و آرامش «تولید» می‌کند. [۱۰]</li>
+<li><strong>کار بی‌مزدِ خانه.</strong> طبق برآورد سازمان همکاری اقتصادی و توسعه، اگر آشپزی، نظافت و مراقبت از بچه و سالمند را با دستمزد بازار حساب کنیم، در کشورهای G7 بین ۱۵ تا ۲۶٪ تولید ناخالص داخلی به آن اضافه می‌شود. این کار در آمار رسمی دیده نمی‌شود. [۱۱]</li>
+<li><strong>پاکت‌های ذهنی.</strong> ریچارد تیلر، نوبلیست اقتصاد رفتاری، نشان داد خانواده‌ها پول را در «حساب‌های ذهنی» جدا می‌گذارند: پول اجاره، پول مدرسه، پول عید. همان پاکت‌ها و قلک‌هایی که در خانه‌های ما آشناست. [۱۲]</li>
+</ul>
+<h3>۴. هزینه‌هایی که در رسید خرید نمی‌آیند</h3>
+<p>وقتی دخل به خرج نمی‌رسد، خانواده از چیزهای دیگری هم خرج می‌کند: تعمیر را عقب می‌اندازد، شیفت اضافه می‌گیرد، از نزدیکان قرض می‌کند یا کلاس بچه را به ترم بعد می‌سپارد. خانه‌ی ارزان‌تر ممکن است هر روز دو ساعت به رفت‌وآمد اضافه کند. پختن غذای بیشتر در خانه پول کمتری می‌برد و وقت بیشتری می‌خواهد. برای همین، وقتی می‌شنویم خانواده‌ای «این ماه را هم گذراند»، سؤال بعدی مهم است: برای گذراندن این ماه، چه چیزی را از ماه‌های بعد برداشت؟</p>
+<ul>
+<li><strong>دفترچه‌ی دخل و خرج واقعی.</strong> پژوهشگران کتاب «سبد مالی فقرا» (Portfolios of the Poor) حدود یک سال دخل و خرج روزبه‌روز ۲۵۰ خانوار را در بنگلادش، هند و آفریقای جنوبی ثبت کردند. چیزی که در رقم درآمد سالانه پیدا نبود، با ثبت روزهای دریافت و پرداخت روشن شد: خانواده‌ها با پس‌اندازهای کوچک، قرض و کمک نزدیکان، پولی را که نامنظم می‌رسید به خرجی می‌رساندند که موعدش ثابت بود. [۳۲]</li>
+<li><strong>سؤال ۴۰۰ دلاری.</strong> فدرال رزرو آمریکا هر سال می‌پرسد: اگر خرج ناگهانی ۴۰۰ دلاری پیش بیاید، چطور می‌پردازید؟ در پیمایش ۲۰۲۵، ۶۳٪ گفتند با پول نقد یا معادلش، و ۱۲٪ گفتند به هیچ روشی از پسش برنمی‌آیند. همین سؤال را می‌شود در ایران پرسید: اگر فردا یخچال خراب شود یا حقوق عقب بیفتد، پولش از کجا می‌آید و کدام برنامه باید صبر کند؟ [۳۳]</li>
+</ul>
+<h3>۵. اقتصاد خانواده‌ی ایرانی، با عدد</h3>
+<p><strong>دخل و خرج.</strong> طبق طرح هزینه و درآمد خانوار مرکز آمار برای ۱۴۰۳، یک خانوار شهری به‌طور میانگین حدود ۲۷۰ میلیون تومان در سال خرج کرده و حدود ۳۴۰ میلیون تومان درآمد داشته است. برای خانوار روستایی این دو عدد حدود ۱۴۰ و ۲۰۰ میلیون تومان بود. خوراک ۲۴٪ هزینه‌ی خانوار شهری و ۳۸٪ هزینه‌ی خانوار روستایی است. بیشترین هزینه‌ی شهری مال تهران (حدود ۳۹۵ میلیون تومان) و کمترین مال سمنان (حدود ۱۵۳ میلیون تومان) بود. [۱۳]</p>
+<p><strong>خانه.</strong> در سرشماری ۱۳۹۵، ۳۱٫۷٪ خانوارهای کشور مستأجر بودند؛ یعنی حدود ۶۸٪ در خانه‌ی ملکی زندگی می‌کردند. در تهران سهم مستأجرها ۴۳٫۵٪ بود. در ۱۳۹۹ مسکن ۳۷٪ هزینه‌ی خانوار شهری را می‌برد. [۱۴، ۱۵]</p>
+<p><strong>گرانی برای همه یک شکل ندارد.</strong> به گزارش رسانه‌ها از طرح هزینه و درآمد ۱۴۰۴ مرکز آمار، حدود ۴۲٪ کل هزینه‌ی خانوار شهری به مسکن، سوخت و روشنایی رفته و در خانوار روستایی خوراک و دخانیات حدود ۴۲٪ هزینه بوده، در برابر حدود ۲۸٪ در شهر. یعنی یک خانواده گرانی را بیشتر روز تمدید اجاره حس می‌کند و خانواده‌ای دیگر هر بار که برای خرید خوراک می‌رود. [۳۵]</p>
+<p><strong>تورم؛ واقعیتی که باید گفت.</strong> در مهر ۱۴۰۵ تورم سالانه به حدود ۷۷٪ رسید و قیمت سبد مصرفی کشور به‌طور متوسط ۸۸٫۷٪ بالاتر از مهر پارسال بود. حالا فکر کنید موقع خرید همان پول دفعه‌ی پیش را می‌دهید، ولی با کیسه‌ی سبک‌تری بیرون می‌آیید. تورم برای دهک‌های پایین معمولاً بیشتر است، چون سهم خوراک در سبدشان بیشتر است؛ در یک ماه از ۱۴۰۱ این عدد برای فقیرترین دهک ۴۲٫۷٪ و برای ثروتمندترین ۳۸٫۳٪ بود. [۱۶، ۱۷، ۳۴]</p>
+<p><strong>کار.</strong> در ۱۴۰۳ نرخ بیکاری ۷٫۶٪ بود، نیم واحد کمتر از سال قبل؛ بیکاری جوانان هم ۱٫۱ واحد کم شد و به ۲۰٫۱٪ رسید. اما ۳۸٫۵٪ شاغلان معمولاً هفته‌ای ۴۹ ساعت یا بیشتر کار می‌کنند. مشارکت اقتصادی زنان ۱۴٫۱٪ است، در برابر ۶۸٫۱٪ مردان. [۱۸]</p>
+<h3>۶. هنر خانواده‌ی ایرانی: اقتصادی که در آمار دیده نمی‌شود</h3>
+<p>اقتصاددان‌ها بیشتر به نرخ ارز و بودجه‌ی دولت نگاه می‌کنند. اما خانواده‌ی ایرانی سال‌هاست با ابزارهای خودش اقتصادش را اداره می‌کند:</p>
+<ul>
+<li><strong>طلا، قلکِ ایرانی.</strong> خرید سکه و طلا راه سنتی حفظ ارزش پول است. حالا سرویس‌های طلای آنلاین اجازه می‌دهند با مبلغی به اندازه‌ی حدود یک دلار هم طلا پس‌انداز کرد. [۱۹]</li>
+<li><strong>قرض‌الحسنه و صندوق‌های خانگی.</strong> فقط بانک قرض‌الحسنه‌ی مهر در یک سال ۲٫۳ میلیون وام بدون بهره داده است. در ۱۴۰۱ حدود ۸۹۶ هزار وام ازدواج و ۲۲۴ هزار وام ودیعه‌ی مسکن پرداخت شد. صندوق‌های خانگی و قرعه‌کشی‌های فامیلی هم نسخه‌ی ایرانی همان «باشگاه‌های پس‌انداز گردشی» هستند که در آفریقا و آسیا رایج‌اند. [۲۰، ۲۱]</li>
+<li><strong>قسط، به سبک دیجیتال.</strong> حدود ۴٫۵ میلیون نفر از ابزارهای «حالا بخر، بعداً بپرداز» استفاده کرده‌اند و ۵٫۵٪ خریدهای دیجی‌کالا قسطی بوده است. [۲۲]</li>
+<li><strong>بازار دست‌دوم.</strong> دیوار به گزارش‌ها سالانه بیش از ۵۰ میلیون کاربر دارد؛ وسیله‌ای که در یک خانه اضافه است، در خانه‌ی دیگر به کار می‌آید. [۲۳]</li>
+<li><strong>خانواده، بیمه‌ی اول.</strong> کمک پدر و مادر برای اجاره، جهیزیه‌ی چندنسلی، و حواله‌ی خویشاوندان خارج از کشور (حدود ۰٫۶٪ تولید ناخالص داخلی در ۱۳۹۹) شبکه‌ی امنی است که در هیچ ترازنامه‌ای نمی‌آید. [۲۴]</li>
+</ul>
+<h3>۷. دلخوشی‌ها؛ آنچه در نیم قرن ساخته شد</h3>
+<ul>
+<li><strong>سواد:</strong> از ۳۶٫۵٪ بزرگسالان در ۱۳۵۵ به ۸۸٫۹٪ در ۱۴۰۲. [۲۵]</li>
+<li><strong>امید به زندگی:</strong> از ۵۸ سال در ۱۳۵۹ به حدود ۷۸ سال در ۱۴۰۳. [۲۶]</li>
+<li><strong>فقر:</strong> طبق بانک جهانی، فقر با خط ۶٫۸۵ دلار در روز از ۲۹٫۳٪ در ۱۳۹۹ به ۲۱٫۹٪ در ۱۴۰۱ رسید و حدود ۶٫۱ میلیون نفر از فقر بیرون آمدند؛ مصرف ۴۰٪ پایین جامعه سریع‌تر از بقیه رشد کرد؛ افزایش درآمد از مزد و کار آزاد، کنار حمایت نقدی و مستمری، به این کاهش کمک کرد. این عددها مال پیش از تورم ۱۴۰۴ و ۱۴۰۵ است. [۲۷]</li>
+<li><strong>اینترنت:</strong> در ۱۳۹۷، ۷۲٫۸٪ خانوارها اینترنت پرسرعت و ۶۹٫۷٪ رایانه داشتند. [۲۸]</li>
+<li><strong>خانه‌ی بهداشت:</strong> خانه‌های بهداشت و بهورزان محلی، مراقبت اولیه را به روستاها نزدیک کردند. برای یک خانواده، درمان نزدیک‌تر یعنی هزینه‌ی رفت‌وآمد کمتر و ساعت کاری کمتری که برای یک مراجعه از دست می‌رود.</li>
+<li><strong>کمک‌های کوچک ولی واقعی:</strong> خواهری که چند ساعت از بچه نگهداری می‌کند تا خواهرش سر کار برود، تعمیرکاری که به یک وسیله چند سال عمر بیشتر می‌دهد، پدر و مادری که اتاق خالی‌شان به خانواده‌ای فرصت می‌دهد دوباره روی پا بایستد. وقتی گرانی به همه فشار می‌آورد، برای همین کمک‌کننده‌ها هم دست‌به‌جیب شدن سخت‌تر می‌شود؛ پس این شبکه را باید جدی گرفت.</li>
+</ul>
+<h3>۸. سه سؤالی که هر خانواده می‌تواند از خودش بپرسد</h3>
+<p>آنامریا لوساردی و الیویا میچل سه سؤال ساده برای سنجش سواد مالی طراحی کردند: سود مرکب، تورم و پخش کردن ریسک. فقط حدود یک‌سوم آمریکایی‌های بالای ۵۰ سال به هر سه درست جواب دادند. [۲۹] نسخه‌ی خانگی‌اش این است:
+1. اگر پولم را جایی بگذارم که سود ثابت می‌دهد، تورم با ارزش آن چه می‌کند؟
+2. پس‌اندازم همه در یک سبد است یا چند سبد؟
+3. اگر فردا هزینه‌ی غیرمنتظره‌ای پیش بیاید، از کجا می‌آورم؟ طبق بانک جهانی، در کشورهای کم‌درآمد و متوسط حدود ۵۶٪ بزرگسالان می‌توانند ظرف یک ماه پول اضطراری جور کنند. [۳۰]</p>
+<h3>۹. از خانه تا کشور، و برگشت</h3>
+<p>تصمیم یک خانه روی بازار هم اثر دارد. وقتی هزاران خانواده خرید لباس را عقب می‌اندازند، مغازه‌دار و خیاط مشتری کمتری دارند؛ اگر ساعت کار یا استخدام را کم کنند، درآمد خانواده‌های دیگری پایین می‌آید. تصمیمی که برای یک خانه کاملاً منطقی است، وقتی در هزاران خانه تکرار شود، خودش بازار را تکان می‌دهد. از آن طرف، جنگ، تحریم و افت سرمایه‌گذاری فرصت کار را کمتر و هزینه‌ی قطعه و مواد اولیه را بیشتر می‌کنند. اقتصاد کلان و اقتصاد آشپزخانه دو سر یک ریسمان‌اند.</p>
+<h3>۱۰. نگاه دیتومان</h3>
+<p>وقتی نان گران می‌شود، هیچ شاخصی لازم نیست تا خانواده بفهمد چه شده. خانواده‌ی ایرانی، با طلا و قرض‌الحسنه و قسط و صندوق خانگی و همبستگی فامیلی، سال‌هاست یکی از سخت‌ترین آزمون‌های اقتصادی را با مهارت پشت سر می‌گذارد. شاید ملموس‌ترین نشانه‌ی بهتر شدن اقتصاد همین باشد که بتوانی قبض تعمیر را بدهی و هنوز پول ثبت‌نام بچه‌ات در کلاسی که دوست دارد سر جایش باشد. تحلیل اقتصادی هم می‌تواند از همین‌جا شروع شود: از سفره، دخل و خرج و تصمیم‌های کوچک هر روز. با هم دنبالش می‌کنیم.</p>
+<p><strong>پرسش برای شما:</strong> در یک سال گذشته کدام تصمیم را عوض کردید که بهتر از هر عددی وضعیت اقتصادی خانه‌تان را توضیح می‌دهد؟</p>
+<h3>منابع</h3>
+<ol>
+<li>ریشه‌ی واژه‌ی Economy. <a href="https://etymologist.ai/word/economy" target="_blank" rel="noopener">Etymologist</a>  </li>
+<li>گزنفون، اویکونومیکوس. <a href="https://bingdev.binghamton.edu/ascholtz/clas382a/study_guides/xenophon_oecnomicus.htm" target="_blank" rel="noopener">Binghamton University</a>  </li>
+<li>معنی اقتصاد در دهخدا و معین. <a href="https://abadis.ir/fatofa/اقتصاد/" target="_blank" rel="noopener">آبادیس</a>  </li>
+<li>D'Acunto, Malmendier, Ospina و Weber، «قیمت خوراکی‌ها و انتظار تورم»، Journal of Political Economy، ۲۰۲۱. <a href="https://knowledge.uchicago.edu/record/5591/files/Exposure-to-Grocery-Prices-and-Inflation-Expectations.pdf" target="_blank" rel="noopener">متن مقاله</a>  </li>
+<li>Stantcheva، «چرا تورم را دوست نداریم؟»، ۲۰۲۴. <a href="https://socialeconomicslab.org/why_dislike_inflation" target="_blank" rel="noopener">Social Economics Lab</a> · <a href="https://www.nber.org/papers/w32300" target="_blank" rel="noopener">NBER</a>  </li>
+<li>Shiller، «چرا مردم تورم را دوست ندارند؟»، ۱۹۹۶. <a href="https://nber.org/papers/w5539" target="_blank" rel="noopener">NBER</a>  </li>
+<li>Malmendier و Nagel، «یادگیری از تجربه‌ی تورم»، QJE، ۲۰۱۶. <a href="https://econpapers.repec.org/RePEc:oup:qjecon:v:131:y:2016:i:1:p:53-87" target="_blank" rel="noopener">RePEc</a>  </li>
+<li>رکود حسی. <a href="https://fortune.com/2024/01/19/is-economy-good-vibecession-consumer-sentiment-inflation-feelings/" target="_blank" rel="noopener">Fortune</a>  </li>
+<li>گالوپ، دغدغه‌های مالی آمریکایی‌ها، ۲۰۲۶. <a href="https://news.gallup.com/poll/708905/affordability-dominates-americans-financial-worries.aspx" target="_blank" rel="noopener">Gallup</a>  </li>
+<li>Becker، «نظریه‌ی تخصیص وقت»، ۱۹۶۵. <a href="https://docs.iza.org/dp8424.pdf" target="_blank" rel="noopener">IZA</a>  </li>
+<li>ارزش کار بی‌مزد خانگی در G7. <a href="https://one.oecd.org/document/SDD/DOC%282018%294/En/pdf" target="_blank" rel="noopener">OECD</a>  </li>
+<li>Thaler، «حسابداری ذهنی»، ۱۹۹۹. <a href="https://people.bath.ac.uk/mnsrf/Teaching%202011/Thaler-99.pdf" target="_blank" rel="noopener">متن مقاله</a>  </li>
+<li>نتایج هزینه و درآمد خانوار ۱۴۰۳ مرکز آمار. <a href="https://www.ice.it/it/news/notizie-dal-mondo/290122" target="_blank" rel="noopener">ICE</a>  </li>
+<li>سهم مستأجران در سرشماری ۱۳۹۵. <a href="https://financialtribune.com/articles/business-and-markets/103750/50-of-residents-in-major-cities-live-in-rented-homes" target="_blank" rel="noopener">Financial Tribune</a>  </li>
+<li>سالنامه‌ی آماری ۱۳۹۹، فصل هزینه و درآمد. <a href="https://amar.org.ir/Portals/2/yearbook/1399/21.pdf" target="_blank" rel="noopener">مرکز آمار ایران</a>  </li>
+<li>تورم مرداد ۱۴۰۵ بر پایه‌ی داده‌ی مرکز آمار. <a href="https://marin-consult.com/index.php/tipps-aus-teheran/1642-annual-inflation-reaches-69-9-in-mordad-point-to-point-rate-hits-89-0" target="_blank" rel="noopener">Marin Consult</a>  </li>
+<li>شکاف تورم دهک‌ها. <a href="https://financialtribune.com/articles/domestic-economy/114130/inflation-gap-among-income-deciles-at-44-sci" target="_blank" rel="noopener">Financial Tribune</a>  </li>
+<li>نتایج طرح نیروی کار ۱۴۰۳. <a href="https://amar.org.ir/Portals/2/Statistics/chpen_lfs_year1403-20250922144041.pdf" target="_blank" rel="noopener">مرکز آمار ایران</a>  </li>
+<li>طلا و پس‌انداز خانوارها. <a href="https://aljazeera.com/news/2025/3/13/iran-bets-big-on-gold-as-it-weathers-trump-turmoil" target="_blank" rel="noopener">Al Jazeera</a>  </li>
+<li>وام‌های بانک قرض‌الحسنه‌ی مهر. <a href="https://financialtribune.com/node/102989" target="_blank" rel="noopener">Financial Tribune</a>  </li>
+<li>وام‌های ازدواج و ودیعه‌ی مسکن ۱۴۰۱. <a href="https://financialtribune.com/articles/business-and-markets/117723/33-billion-given-in-social-assistance-loans-last-year" target="_blank" rel="noopener">Financial Tribune</a>  </li>
+<li>خرید قسطی دیجیتال. <a href="https://financialtribune.com/articles/business-and-markets/114548/cbi-supports-bnpl-schemes" target="_blank" rel="noopener">Financial Tribune</a>  </li>
+<li>دیوار. <a href="https://en.wikipedia.org/wiki/Divar_(website)" target="_blank" rel="noopener">Wikipedia</a>  </li>
+<li>حواله‌های خویشاوندان، بانک جهانی. <a href="https://fred.stlouisfed.org/data/DDOI11IRA156NWDB" target="_blank" rel="noopener">FRED</a>  </li>
+<li>نرخ سواد بزرگسالان. <a href="https://fred.stlouisfed.org/data/SEADTLITRZSIRN" target="_blank" rel="noopener">FRED</a>  </li>
+<li>امید به زندگی. <a href="https://fred.stlouisfed.org/data/SPDYNLE00INIRN" target="_blank" rel="noopener">FRED</a>  </li>
+<li>بانک جهانی، فقر و رفاه ایران، ۲۰۲۴. <a href="https://documents1.worldbank.org/curated/en/099126301062574458/pdf/IDU-184663f7-7fdd-44cd-8e40-eae9b5866789.pdf" target="_blank" rel="noopener">World Bank</a>  </li>
+<li>اینترنت و رایانه در خانوارها. <a href="https://financialtribune.com/articles/sci-tech/96099/72-iran-households-have-internet-connection" target="_blank" rel="noopener">Financial Tribune</a>  </li>
+<li>سه سؤال سواد مالی. <a href="https://knowledge.wharton.upenn.edu/article/three-questions-major-implications-financial-well/" target="_blank" rel="noopener">Wharton</a>  </li>
+<li>بانک جهانی، Global Findex 2025. <a href="https://www.cgap.org/blog/beyond-account-access-converting-financial-inclusion-resilience" target="_blank" rel="noopener">CGAP</a> · <a href="https://www.worldbank.org/en/news/press-release/2025/07/16/mobile-phone-technology-powers-saving-surge-in-developing-economies" target="_blank" rel="noopener">World Bank</a>  </li>
+<li>رویترز، «ایرانی‌ها از ضروریات می‌زنند»، ۷ آبان ۱۴۰۵. <a href="https://www.al-monitor.com/originals/2026/10/iranians-cut-essentials-and-put-dreams-hold-war-hit-economy-bites" target="_blank" rel="noopener">Al-Monitor</a>  </li>
+<li>Collins، Morduch، Rutherford و Ruthven، «سبد مالی فقرا»، ۲۰۰۹. <a href="https://www.portfoliosofthepoor.com/" target="_blank" rel="noopener">Portfolios of the Poor</a>  </li>
+<li>فدرال رزرو، رفاه اقتصادی خانوارهای آمریکا در ۲۰۲۵. <a href="https://www.federalreserve.gov/publications/2026-economic-well-being-of-us-households-in-2025-savings-investments.htm" target="_blank" rel="noopener">Federal Reserve</a>  </li>
+<li>تورم مهر ۱۴۰۵. <a href="https://www.taadolnewspaper.ir/fa/news/408989/زنگ-هشدار-برای-معیشت" target="_blank" rel="noopener">روزنامه‌ی تعادل</a>  </li>
+<li>نتایج هزینه و درآمد خانوار ۱۴۰۴. <a href="https://mehrnews.com/x3dcjM" target="_blank" rel="noopener">خبرگزاری مهر</a>  </li>
+</ol>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور: تصویر نمونه، ساخته‌شده با هوش مصنوعی. آخرین بازبینی: ۱۹ آبان ۱۴۰۵</p>
+</div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<p><strong>Hamideh, a 39-year-old mother of two in Rasht, told Reuters: "We had to move to my parents' house last month because my husband got laid off from a small tile factory in May." In the news, unemployment and housing costs are separate stories. For Hamideh's family they became one question: where do we live next month?</strong></p>
+<p>Seen from where people stand, the economy means exactly this: with the money, time and means we have, how do we get through today and leave room for tomorrow? Two families with the same yearly income can live very different lives if one is paid on the first of the month and the other weeks late, while rent is due on the same day for both. Before economics became a science, it was the name of something every family does every day.</p>
+<h3>1. Economy once meant "running the house"</h3>
+<p>"Economy" comes from the Greek <em>oikonomia</em>: <em>oikos</em>, the household, and <em>nomos</em>, management. The oldest book we know by that name, Xenophon's <em>Oeconomicus</em> (4th century BC), is a dialogue about running a home and a farm. The Persian word <em>eqtesād</em> says the same: Dehkhoda defines it as "walking the middle way", and Moein as "keeping income and spending in balance".</p>
+<h3>2. People judge the economy by their shopping basket</h3>
+<ul>
+<li>A study of more than 90,000 US households found people form inflation expectations from the prices of things they buy <em>often</em>, like bread, milk and petrol, not from official index weights. Price rises register more than price falls.</li>
+<li>In Stefanie Stantcheva's 2024 survey, 81% of Americans said prices rise faster than wages; only 9% credited their pay rises to inflation.</li>
+<li>Robert Shiller found in 1996 that the biggest gap in views on inflation lay between economists and everyone else: for ordinary people, inflation means a lower standard of living.</li>
+<li>Each generation's inflation expectations are shaped by the inflation it has lived through (Malmendier and Nagel).</li>
+<li>In 2023 US inflation fell to 3.4% and unemployment stayed near 50-year lows, yet people still felt bad about the economy: the "vibecession".</li>
+</ul>
+<h3>3. The family: the smallest and most important firm</h3>
+<p>Gary Becker described the household as a small factory combining time and goods to produce meals, childcare and rest. Valued at market wages, unpaid housework would add 15–26% to GDP in G7 countries (OECD). Richard Thaler showed families keep money in separate mental accounts, like envelopes for rent, school and holidays.</p>
+<h3>4. Costs that never show up on a receipt</h3>
+<p>When income falls short, families pay in other ways: postponed repairs, extra shifts, loans from relatives, a child's class pushed to next term, two more hours of commuting from a cheaper flat. The authors of <em>Portfolios of the Poor</em> tracked the daily finances of 250 households in Bangladesh, India and South Africa for a year and found families bridging irregular income and fixed bills with small savings, loans and help from relatives. The US Federal Reserve asks how people would cover a surprise $400 expense: in 2025, 63% said with cash or its equivalent and 12% said they could not pay it by any means.</p>
+<h3>5. The Iranian household in numbers</h3>
+<ul>
+<li><strong>Income and spending (1403/2024–25):</strong> an urban household spent about 270 million tomans a year and earned about 340 million; rural households about 140 and 200 million. Food was 24% of urban and 38% of rural spending.</li>
+<li><strong>Home:</strong> in the 2016 census, 31.7% of households rented, so about 68% owned their home; in Tehran 43.5% rented.</li>
+<li><strong>Inflation:</strong> in October 2026 annual inflation reached about 77%, and the consumer basket cost 88.7% more than a year earlier. Inflation usually hits the poorest deciles harder because food weighs more in their basket.</li>
+<li><strong>Work (1403):</strong> unemployment fell to 7.6% and youth unemployment to 20.1%, but 38.5% of workers usually work 49+ hours a week. Women's participation is 14.1%.</li>
+</ul>
+<h3>6. The Iranian family's craft</h3>
+<p>Gold as the national piggy bank, now saved online in amounts of about a dollar; interest-free loans (Mehr Bank alone gave 2.3 million in one year; about 896,000 marriage loans in 2022–23); home savings circles; about 4.5 million people using buy-now-pay-later; a huge second-hand market on Divar; and family support, from parents helping with rent to remittances from relatives abroad. None of this shows up on a balance sheet.</p>
+<h3>7. What has been built</h3>
+<p>Adult literacy rose from 36.5% (1976) to 88.9% (2023); life expectancy from 58 years (1980) to about 78 (2024). The World Bank found poverty at $6.85 a day fell from 29.3% (2020) to 21.9% (2022), lifting about 6.1 million people out of poverty, before the inflation of 2025–26. In 2018, 72.8% of households had broadband.</p>
+<h3>9. Ditoman's reading</h3>
+<p>Macroeconomics matters, but the economy people live starts in the kitchen. Iranian families, with gold, interest-free loans, instalments, savings circles and family solidarity, have been passing one of the hardest economic tests with real skill. Maybe economic analysis should start there too: with the table, the budget and everyday decisions. We follow that path together.</p>
+<p>Sources are listed in the Persian version.</p>
+<p style="color:#9fb6b9;margin-top:10px">Cover: illustrative AI-generated image. Last reviewed 10 November 2026.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
+</body>
+</html>
