@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The Quiet $123 Billion Toy Economy | بازار بی‌سروصدای ۱۲۳ میلیارد دلاری اسباب‌بازی | Ditoman</title>
+<meta name="description" content="بزرگسال‌ها حالا یک‌پنجم خریداران اسباب‌بازی‌اند؛ از تاماگوچی تا لابوبو، از ان‌اف‌تی تا عروسک هوشمند، و فرصت ایران برای تبدیل شدن به هاب اسباب‌بازی منطقه. Adults now buy one in five toys: from Tamagotchi to Labubu, NFTs to AI toys, and Iran’s chance to become a regional toy hub." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.tw tr.ir td{background:rgba(127,245,222,.10);color:#fff;font-weight:600}
+.tl{list-style:none;padding:0;margin:14px 0;border-inline-start:3px solid #ffc94a}
+.tl li{position:relative;padding:8px 18px 12px;margin:0}
+.tl li b.y{color:#ffc94a;font-weight:900;margin-inline-end:8px}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/toys-kidults.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The Quiet $123 Billion Toy Economy | بازار بی‌سروصدای ۱۲۳ میلیارد دلاری اسباب‌بازی | Ditoman" />
+<meta property="og:description" content="بزرگسال‌ها حالا یک‌پنجم خریداران اسباب‌بازی‌اند؛ از تاماگوچی تا لابوبو، از ان‌اف‌تی تا عروسک هوشمند، و فرصت ایران برای تبدیل شدن به هاب اسباب‌بازی منطقه. Adults now buy one in five toys: from Tamagotchi to Labubu, NFTs to AI toys, and Iran’s chance to become a regional toy hub." />
+<meta property="og:url" content="https://ditoman.com/toys-kidults.html" />
+<meta property="og:image" content="https://ditoman.com/social/toys-kidults/post.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/toys-kidults.html#article",
+   "mainEntityOfPage": "https://ditoman.com/toys-kidults.html",
+   "headline": "The Quiet $123 Billion Toy Economy | بازار بی‌سروصدای ۱۲۳ میلیارد دلاری اسباب‌بازی",
+   "description": "بزرگسال‌ها حالا یک‌پنجم خریداران اسباب‌بازی‌اند؛ از تاماگوچی تا لابوبو، از ان‌اف‌تی تا عروسک هوشمند، و فرصت ایران برای تبدیل شدن به هاب اسباب‌بازی منطقه. Adults now buy one in five toys: from Tamagotchi to Labubu, NFTs to AI toys, and Iran’s chance to become a regional toy hub.",
+   "image": "https://ditoman.com/social/toys-kidults/post.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The Quiet $123 Billion Toy Economy | بازار بی‌سروصدای ۱۲۳ میلیارد دلاری اسباب‌بازی",
+     "item": "https://ditoman.com/toys-kidults.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/toys-kidults/post.webp" alt="The quiet toy economy" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">بازار بی‌سروصدای ۱۲۳ میلیارد دلاری اسباب‌بازی؛ بزرگسال‌ها هم بازی می‌کنند</h1>
+<h1 lang="en">The quiet $123 billion toy economy: grown-ups are playing too</h1>
+<p class="subtitle" lang="en">From Tamagotchi to Labubu, from NFTs to AI dolls: how toys changed in 50 years, why children still want them, and Iran’s chance to become a regional toy hub.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">از تاماگوچی تا لابوبو، از ان‌اف‌تی تا عروسک هوشمند: اسباب‌بازی در ۵۰ سال چطور عوض شد، چرا بچه‌ها هنوز آن را می‌خواهند و فرصت ایران برای هاب اسباب‌بازی منطقه شدن.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۱۲۳ میلیارد $</b><b lang="en">$123bn</b><span lang="fa">فروش جهانی ۲۰۲۵</span><span lang="en">global sales 2025</span></div>
+<div class="stat"><b lang="fa">۱ از ۵</b><b lang="en">1 in 5</b><span lang="fa">دلار از خریداران ۱۵+ سال</span><span lang="en">dollars from buyers 15+</span></div>
+<div class="stat"><b lang="fa">۱۸۵٪</b><b lang="en">185%</b><span lang="fa">رشد درآمد سازنده‌ی لابوبو</span><span lang="en">Labubu maker’s revenue growth</span></div>
+<div class="stat"><b lang="fa">۲۰ میلیون $</b><b lang="en">$20m</b><span lang="fa">صادرات اسباب‌بازی ایران</span><span lang="en">Iran’s toy exports</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p><strong>یادت هست آخرین اسباب‌بازی‌ات چه بود؟ اگر هنوز یک عروسک، یک جعبه آجر ساختنی یا چند کارت بازی را نگه داشته‌ای، فقط دلتنگ گذشته نیستی؛ بخشی از یک بازار ۱۲۳ میلیارد دلاری هستی.</strong></p>
+<p><strong>در ۲۰۲۵ مردم دنیا ۱۲۳ میلیارد دلار اسباب‌بازی خریدند و از هر پنج دلارش، تقریباً یک دلار را کسانی دادند که ۱۵ سال یا بیشتر داشتند. خرید این گروه از ۲۰۲۰ تا امروز بیش از دو برابر شده <a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a>.</strong></p>
+<p>در تهران هم موزه‌ی اسباب‌بازی کوچکی در یک خانه‌ی قدیمی باز شده که بیش از ۲٬۰۰۰ اسباب‌بازی از ایران باستان تا آتاری دهه‌ی ۸۰ دارد. بنیان‌گذارش انتظار داشت بچه‌ها بیایند؛ ولی بزرگسال‌ها هم مدام می‌آیند تا عروسک‌های «سارا و دارا» و ماشین‌های حلبی کودکی‌شان را ببینند <a href="https://malaymail.com/news/life/2025/11/03/tehran-toy-museum-rekindles-childhood-memories-across-generations/197028" target="_blank" rel="noopener">AFP / Malay Mail</a>. اسباب‌بازی دیگر فقط مال بچه‌ها نیست. این گزارش را با هم دنبال می‌کنیم: بازار چقدر بزرگ است، در ۵۰ سال چه عوض شده، چرا بچه‌ها با وجود موبایل هنوز اسباب‌بازی می‌خواهند، و ایران چه جایی در این بازار دارد.</p>
+
+<h3><span class="check-number">۰۱.</span> خبر: بزرگسال‌ها مشتری تازه‌ی اسباب‌بازی</h3>
+<p>الجزیره در گزارشی ویدیویی نوشته صنعت اسباب‌بازی «مشتری محبوب تازه‌ای» دارد: بزرگسال‌ها. بزرگسالان بدون فرزند پول آزاد بیشتری دارند و با «اقتصاد نوستالژی» بازار را سرپا نگه داشته‌اند <a href="https://www.instagram.com/aljazeeraenglish/" target="_blank" rel="noopener">Al Jazeera English</a>. داده‌ها هم همین را می‌گویند:</p>
+<ul>
+<li>بچه‌های زیر ۱۰ سال هنوز بیش از ۶۵٪ فروش جهانی را دارند، ولی سهمشان کم می‌شود <a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a>.</li>
+<li>در نیمه‌ی اول ۲۰۲۶ فروش جهانی اسباب‌بازی ۱۴٪ رشد کرد، سریع‌ترین رشد در سال‌های اخیر. در آمریکا ۳۵٪ رشد را بزرگسالان بالای ۱۸ سال ساختند <a href="https://www.techtimes.com/articles/323942/20260811/adults-drove-35-us-toy-growth-2026-trading-cards-replaced-christmas-lists.htm" target="_blank" rel="noopener">Tech Times</a>.</li>
+<li>در یک نظرسنجی ۲۰۲۵، ۱۹٪ بزرگسالان آمریکایی در شش ماه گذشته کارت پوکمون برای خودشان خریده بودند، و فقط حدود یک‌چهارمشان واقعاً بازی‌اش را بازی می‌کردند. بقیه جمع می‌کنند <a href="https://www.techtimes.com/articles/323942/20260811/adults-drove-35-us-toy-growth-2026-trading-cards-replaced-christmas-lists.htm" target="_blank" rel="noopener">Tech Times</a>.</li>
+<li>در آلمان، «کیدالت‌ها» (بزرگسالانی که برای خودشان اسباب‌بازی می‌خرند) ۳۵٪ فروش اسباب‌بازی را دارند <a href="https://www.techtimes.com/articles/323942/20260811/adults-drove-35-us-toy-growth-2026-trading-cards-replaced-christmas-lists.htm" target="_blank" rel="noopener">Tech Times</a>.</li>
+</ul>
+
+<h3><span class="check-number">۰۲.</span> بازار بی‌سروصدا چقدر می‌ارزد؟</h3>
+<div class="tw" dir="rtl"><table><tr><th>بازار</th><th>ارزش</th><th>سال</th><th>منبع</th></tr><tr><td>بازی‌های ویدیویی (جهان)</td><td>۲۰۱٫۶ میلیارد دلار</td><td>۲۰۲۵</td><td><a href="https://www.pocketgamer.biz/global-games-revenue-surpasses-200bn-for-the-first-time-mobile-generates-113bn/" target="_blank" rel="noopener">Newzoo</a></td></tr><tr><td>اسباب‌بازی (جهان)</td><td>۱۲۳ میلیارد دلار، ۸٪ رشد</td><td>۲۰۲۵</td><td><a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a></td></tr><tr><td>پاپ‌مارت، سازنده‌ی لابوبو</td><td>۵٫۴ میلیارد دلار درآمد، ۱۸۵٪ رشد</td><td>۲۰۲۵</td><td><a href="https://www.thestar.com.my/business/business-news/2026/03/25/labubu-maker-pop-mart-meets-2025-revenue-expectations" target="_blank" rel="noopener">The Star</a></td></tr><tr><td>اسباب‌بازی (خاورمیانه)</td><td>حدود ۴٫۶ میلیارد دلار (برآورد)</td><td>۲۰۲۵</td><td><a href="https://www.imarcgroup.com/middle-east-toys-market" target="_blank" rel="noopener">IMARC</a></td></tr><tr class="ir"><td>اسباب‌بازی (ایران)</td><td>۳۰۰ تا ۳۵۰ میلیون دلار (برآورد فعالان صنعت)</td><td>۱۴۰۱–۱۴۰۴</td><td><a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">مهر</a></td></tr><tr class="ir"><td>صادرات اسباب‌بازی ایران</td><td>حدود ۲۰ میلیون دلار</td><td>۱۴۰۱</td><td><a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">مهر</a></td></tr></table></div>
+<p>بازی ویدیویی و اسباب‌بازی با هم بیش از ۳۲۰ میلیارد دلار در سال گردش دارند. یک شرکت به‌تنهایی، پاپ‌مارت، با عروسک‌های لابوبو در یک سال درآمدش را نزدیک سه برابر کرد. این عددها از کنار ما رد می‌شوند چون اسباب‌بازی «جدی» به نظر نمی‌رسد.</p>
+
+<h3><span class="check-number">۰۳.</span> ۵۰ سال در ۱۰ ایستگاه</h3>
+<ul class="tl">
+<li><b class="y">۱۹۷۷</b>عروسک‌های «جنگ ستارگان»: اسباب‌بازی به بخشی از یک دنیای فیلم تبدیل شد و دوران «لایسنس» شروع شد.</li>
+<li><b class="y">دهه‌ی ۸۰</b>ترنسفورمرها، آتاری و بازی‌های ویدیویی خانگی: اولین رقابت جدی صفحه‌نمایش با اسباب‌بازی.</li>
+<li><b class="y">۱۹۹۶</b>تاماگوچی و پوکمون: حیوان خانگی دیجیتال در جیب، و کارت‌هایی که بعد از ۳۰ سال هنوز بزرگسالان جمعشان می‌کنند.</li>
+<li><b class="y">۲۰۰۰ به بعد</b>عروسک‌های «سارا و دارا» در ایران به‌عنوان جایگزین داخلی باربی ساخته شدند <a href="https://en.wikipedia.org/wiki/Sara_and_Dara_dolls" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><b class="y">۲۰۱۱</b>اسکای‌لندرز: مجسمه‌ای که روی سکو می‌گذاری و در بازی ویدیویی زنده می‌شود. تا ۲۰۱۳ بیش از ۱۰۰ میلیون مجسمه و بیش از ۵۰۰ میلیون دلار درآمد <a href="https://www.gamespot.com/articles/over-100-million-skylanders-toys-sold/1100-6403581/" target="_blank" rel="noopener">GameSpot</a>.</li>
+<li><b class="y">۲۰۱۷</b>کریپتوکیتیز: گربه‌های دیجیتال روی اتریوم، از اولین ان‌اف‌تی‌های معروف. یک گربه بیش از ۱۱۷ هزار دلار فروخته شد و این بازی حدود ۱۲٪ تراکنش‌های اتریوم را گرفت <a href="https://qz.com/1145833/cryptokitties-is-causing-ethereum-network-congestion/" target="_blank" rel="noopener">Quartz</a>.</li>
+<li><b class="y">۲۰۲۱</b>اوج «بازی کن و پول دربیاور» (play-to-earn) با توکن و ان‌اف‌تی؛ رونقی که بعد از ۲۰۲۲ فروکش کرد.</li>
+<li><b class="y">۲۰۲۴–۲۰۲۵</b>لابوبو و «جعبه‌ی شانسی»: عروسکی که نمی‌دانی کدام مدلش داخل جعبه است؛ نیمی اسباب‌بازی، نیمی کالای کلکسیونی.</li>
+<li><b class="y">۲۰۲۵</b>متل (سازنده‌ی باربی) با OpenAI همکاری کرد تا اسباب‌بازی‌های مجهز به هوش مصنوعی بسازد، با تأکید بر ایمنی و حریم خصوصی <a href="https://kidscreen.com/2025/06/13/mattel-and-openai-form-new-partnership" target="_blank" rel="noopener">Kidscreen</a>.</li>
+<li><b class="y">۲۰۲۶</b>کارت‌های بازی، مجموعه‌های لگو برای بزرگسالان و کلکسیون‌ها موتور رشد بازارند.</li>
+</ul>
+<p><strong>الگوی این ۵۰ سال:</strong> اسباب‌بازی اول یک «شیء» بود، بعد به «تجربه» تبدیل شد و حالا برای خیلی‌ها یک «دارایی» است. ایستگاه بعدی: اسباب‌بازی‌ای که با تو حرف می‌زند.</p>
+
+<h3><span class="check-number">۰۴.</span> چرا بچه‌ها هنوز اسباب‌بازی می‌خواهند؟</h3>
+<ul>
+<li><strong>بازی، غذای مغز است:</strong> آکادمی اطفال آمریکا در گزارش «قدرت بازی» (۲۰۱۸) از پزشکان خواست برای کودکان «نسخه‌ی بازی» بنویسند. بازی استرس را کم می‌کند و زبان، ریاضی و مهارت اجتماعی را تقویت می‌کند. همین گزارش هشدار می‌دهد صفحه‌نمایش می‌تواند جای بازی واقعی را بگیرد <a href="https://www.healthychildren.org/English/news/Pages/healthier-children-play-according-to-the-aap.aspx" target="_blank" rel="noopener">AAP</a>.</li>
+<li><strong>اسباب‌بازی ساده، گفتگوی بیشتر:</strong> در پژوهشی که در JAMA Pediatrics منتشر شد، وقتی پدر و مادر با نوزادشان با اسباب‌بازی الکترونیکی بازی کردند، کمتر حرف زدند و گفتگوی کمتری شکل گرفت تا وقتی با بلوک و پازل چوبی یا کتاب بازی کردند <a href="https://www.eurekalert.org/news-releases/784233" target="_blank" rel="noopener">EurekAlert</a>.</li>
+<li><strong>بازی با هم:</strong> مطالعه‌ی «خوب بازی کن» لگو با بیش از ۵۷ هزار پدر، مادر و کودک در ۳۵ کشور نشان داد بیشتر بچه‌ها دوست دارند بیشتر با والدینشان بازی کنند <a href="https://learningthroughplay.com/explore-the-research/what-do-children-have-to-say-about-play" target="_blank" rel="noopener">LEGO Foundation</a>.</li>
+<li><strong>لمس کردن:</strong> اسباب‌بازی چیزی است که می‌شود در دست گرفت، ساخت، خراب کرد و دوباره ساخت. بسیاری از برندها حالا اسباب‌بازی فیزیکی را به اپ و بازی وصل می‌کنند، نه اینکه جایش را به صفحه‌نمایش بدهند.</li>
+</ul>
+<p>یعنی موبایل اسباب‌بازی را از بین نبرده؛ فقط شکلش را عوض کرده.</p>
+
+<h3><span class="check-number">۰۵.</span> ایران: بازار ۳۰۰ میلیون دلاری با تولید محدود</h3>
+<ul>
+<li>طبق گفته‌ی فعالان صنعت، بازار اسباب‌بازی ایران حدود ۳۰۰ میلیون دلار در سال است، حدود ۲۵۰ تولیدکننده‌ی دارای برند فعال‌اند و تولید داخلی ۳۰ تا ۳۵٪ بازار را دارد <a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr News</a>. در گزارش‌های تازه‌تر خبرگزاری مهر، گردش مالی تا ۳۵۰ میلیون دلار برآورد شده <a href="https://www.mehrnews.com/news/6835719/" target="_blank" rel="noopener">مهر</a>.</li>
+<li>صادرات در سال ۱۴۰۱ حدود ۲۰ میلیون دلار بود و بیشتر به عراق، ارمنستان، افغانستان، روسیه و عمان رفت <a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr News</a>.</li>
+<li>واردات رسمی کوچک است: در هفت ماه اول ۱۴۰۴ فقط حدود ۲٬۱۴۰ تن اسباب‌بازی به ارزش ۷٫۱ میلیون دلار وارد شد و ۹۰٪ آن از چین بود. امارات با ۷۸۰ هزار دلار دوم بود <a href="https://wanaen.com/china-dominates-irans-toy-imports-with-over-90-share/" target="_blank" rel="noopener">WANA</a>.</li>
+<li>فاصله‌ی ۷ میلیون دلار واردات رسمی تا بازار چندصدمیلیون‌دلاری یعنی بخش بزرگی از بازار از راه‌های غیررسمی تأمین می‌شود؛ رقم دقیقش منتشر نشده و برآوردها متفاوت است <a href="https://www.mehrnews.com/news/6594147/" target="_blank" rel="noopener">مهر</a>.</li>
+<li>مشکلات صنعت به گفته‌ی خود فعالان: دسترسی سخت به سرمایه، بانک‌هایی که با شرکت‌های اسباب‌بازی کار نمی‌کنند، و مالیات بر ارزش افزوده‌ی ۹٪ با اینکه این تولید فرهنگی حساب می‌شود <a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr News</a>.</li>
+</ul>
+<p><strong>خوانش دیتومان:</strong> ایران در بازار خودش سهم دارد، ولی در بازار همسایه‌ها تقریباً غایب است.</p>
+
+<h3><span class="check-number">۰۶.</span> همسایه‌ها: بازاری که دارد دو برابر می‌شود</h3>
+<p>بازار اسباب‌بازی خاورمیانه طبق برآورد IMARC در ۲۰۲۵ حدود ۴٫۶ میلیارد دلار بود و پیش‌بینی می‌شود تا ۲۰۳۴ به ۹٫۲ میلیارد دلار برسد (پیش‌بینی یک شرکت پژوهش بازار) <a href="https://www.imarcgroup.com/middle-east-toys-market" target="_blank" rel="noopener">IMARC</a>. امارات نقش انبار و بازفروش منطقه را دارد؛ همین حالا دومین مبدأ واردات رسمی اسباب‌بازی ایران است <a href="https://wanaen.com/china-dominates-irans-toy-imports-with-over-90-share/" target="_blank" rel="noopener">WANA</a>. عراق، افغانستان، پاکستان، قفقاز و آسیای میانه جمعیتی جوان و پرتعداد دارند و چند تا از آن‌ها همین حالا مشتری اسباب‌بازی ایرانی‌اند.</p>
+
+<h3><span class="check-number">۰۷.</span> فرصت ایران: پلاستیک داریم، قصه داریم؛ برند نداریم</h3>
+<p><strong>تحلیل دیتومان:</strong> صادرات ۲۰ میلیون دلاری ایران کمتر از نیم درصد بازار ۴٫۶ میلیارد دلاری خاورمیانه است. یعنی جای رشد بسیار زیاد است. چند مزیت واقعی:</p>
+<ul>
+<li><strong>مواد اولیه:</strong> بیشتر اسباب‌بازی‌ها از پلاستیک‌هایی مثل پلی‌پروپیلن، پلی‌اتیلن، پلی‌استایرن و ABS ساخته می‌شوند و ایران همه‌ی این‌ها را در پتروشیمی‌هایش تولید می‌کند؛ پتروشیمی تبریز برای افزایش ظرفیت ABS و پلی‌استایرن برنامه داشته <a href="https://www.plastemart.com/news-plastics-information/tpc-to-double-abs-and-ps-capacity-in-2-years/8101" target="_blank" rel="noopener">Plastemart</a>.</li>
+<li><strong>هزینه‌ی تولید:</strong> انرژی و دستمزد در مقایسه با بیشتر همسایه‌ها ارزان‌تر است.</li>
+<li><strong>نزدیکی:</strong> بازارهای عراق، افغانستان، آسیای میانه و قفقاز با کامیون در دسترس‌اند.</li>
+</ul>
+<p>ولی پول اصلی این صنعت در پلاستیک نیست؛ در <strong>طراحی، شخصیت و داستان</strong> است. لابوبو یک شخصیت است، پوکمون یک دنیاست. ایران قصه‌ها و شخصیت‌های زیادی دارد، از «کلاه‌قرمزی» تا اسطوره‌های شاهنامه. مسئله تبدیل این‌ها به محصول و برند است. چیزی که لازم است: استانداردهای ایمنی بین‌المللی برای صادرات، تأمین مالی، فروش آنلاین و برندسازی برای بچه‌ها و بزرگسالان، هر دو.</p>
+
+<h3><span class="check-number">۰۸.</span> آینده: اسباب‌بازی کجا می‌رود؟</h3>
+<ul>
+<li><strong>فیزیکی + دیجیتال:</strong> اسباب‌بازی‌ای که در دست است و در اپ یا بازی هم زندگی می‌کند.</li>
+<li><strong>اسباب‌بازی هوشمند:</strong> عروسک و ربات‌هایی که با هوش مصنوعی حرف می‌زنند. پرسش‌های ایمنی و حریم خصوصی کودکان اینجا جدی‌اند.</li>
+<li><strong>کلکسیون و دارایی:</strong> کارت‌ها و عروسک‌های کمیاب مثل یک دارایی خرید و فروش می‌شوند. این بخش هیجان‌انگیز است ولی ریسک حباب دارد؛ رونق ان‌اف‌تی‌های بازی در ۲۰۲۱ نمونه‌ی خوبی بود.</li>
+<li><strong>بازی برای همه‌ی سنین:</strong> مرز اسباب‌بازی، بازی ویدیویی، مد و سرگرمی کم‌رنگ می‌شود <a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a>.</li>
+</ul>
+
+<h3><span class="check-number">۰۹.</span> نگاه دیتومان</h3>
+<p>اسباب‌بازی پلی میان نسل‌هاست: پدری که کارت پوکمون نوجوانی‌اش را نگه داشته، حالا با دخترش بازی می‌کند؛ مادری که «سارا و دارا» داشته، در موزه‌ی تهران آن را به بچه‌اش نشان می‌دهد. پشت این احساس، بازاری ۱۲۳ میلیارد دلاری است که کمتر کسی درباره‌اش حرف می‌زند. ایران مواد اولیه، نیروی کار و همسایه‌های پرجمعیت را دارد. اگر طراحی و شخصیت‌سازی را هم جدی بگیرد، می‌تواند از این بازار سهم واقعی بگیرد. این مسیر را با هم دنبال می‌کنیم.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>بازار جهانی: <a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a> · <a href="https://www.techtimes.com/articles/323942/20260811/adults-drove-35-us-toy-growth-2026-trading-cards-replaced-christmas-lists.htm" target="_blank" rel="noopener">Tech Times</a> · <a href="https://www.emarketer.com/content/toy-industry-growth-kidults-collectibles-licensing" target="_blank" rel="noopener">eMarketer</a> · <a href="https://www.pocketgamer.biz/global-games-revenue-surpasses-200bn-for-the-first-time-mobile-generates-113bn/" target="_blank" rel="noopener">Newzoo / PocketGamer</a> · <a href="https://www.imarcgroup.com/middle-east-toys-market" target="_blank" rel="noopener">IMARC</a> · <a href="https://www.thestar.com.my/business/business-news/2026/03/25/labubu-maker-pop-mart-meets-2025-revenue-expectations" target="_blank" rel="noopener">Pop Mart / The Star</a></li>
+<li>خبر الجزیره: <a href="https://www.instagram.com/aljazeeraenglish/" target="_blank" rel="noopener">Al Jazeera English</a> · موزه‌ی اسباب‌بازی تهران: <a href="https://malaymail.com/news/life/2025/11/03/tehran-toy-museum-rekindles-childhood-memories-across-generations/197028" target="_blank" rel="noopener">AFP / Malay Mail</a> · سارا و دارا: <a href="https://en.wikipedia.org/wiki/Sara_and_Dara_dolls" target="_blank" rel="noopener">Wikipedia</a></li>
+<li>تاریخچه: <a href="https://www.gamespot.com/articles/over-100-million-skylanders-toys-sold/1100-6403581/" target="_blank" rel="noopener">Skylanders / GameSpot</a> · <a href="https://qz.com/1145833/cryptokitties-is-causing-ethereum-network-congestion/" target="_blank" rel="noopener">CryptoKitties / Quartz</a> · <a href="https://kidscreen.com/2025/06/13/mattel-and-openai-form-new-partnership" target="_blank" rel="noopener">Mattel و OpenAI / Kidscreen</a></li>
+<li>پژوهش: <a href="https://www.healthychildren.org/English/news/Pages/healthier-children-play-according-to-the-aap.aspx" target="_blank" rel="noopener">AAP، قدرت بازی</a> · <a href="https://www.eurekalert.org/news-releases/784233" target="_blank" rel="noopener">Sosa و همکاران، JAMA Pediatrics</a> · <a href="https://learningthroughplay.com/explore-the-research/what-do-children-have-to-say-about-play" target="_blank" rel="noopener">LEGO Play Well</a></li>
+<li>ایران: <a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr News، صادرات ۱۴۰۱</a> · <a href="https://www.mehrnews.com/news/6835719/" target="_blank" rel="noopener">مهر، گردش مالی ۳۵۰ میلیون دلار</a> · <a href="https://www.mehrnews.com/news/6594147/" target="_blank" rel="noopener">مهر، سهم تولید داخلی</a> · <a href="https://wanaen.com/china-dominates-irans-toy-imports-with-over-90-share/" target="_blank" rel="noopener">WANA، واردات ۱۴۰۴</a> · <a href="https://www.plastemart.com/news-plastics-information/tpc-to-double-abs-and-ps-capacity-in-2-years/8101" target="_blank" rel="noopener">Plastemart، پتروشیمی تبریز</a></li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۱۹ آبان ۱۴۰۵. آمار بازار ایران برآورد فعالان صنعت است و آمار رسمی جامعی منتشر نشده.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p><strong>Do you remember your last toy? If you still keep a doll, a box of building bricks or a few trading cards, you are not just nostalgic; you are part of a $123 billion market.</strong></p>
+<p><strong>In 2025 the world bought $123 billion of toys, and almost one dollar in five came from people aged 15 or older. Their spending has more than doubled since 2020 <a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a>.</strong></p>
+<p>In Tehran, a small toy museum in an old house holds more than 2,000 toys, from ancient Persia to a 1980s Atari. Its founder expected children; adults keep coming too, to see the "Sara and Dara" dolls and tin cars of their childhood <a href="https://malaymail.com/news/life/2025/11/03/tehran-toy-museum-rekindles-childhood-memories-across-generations/197028" target="_blank" rel="noopener">AFP / Malay Mail</a>. Toys are no longer just for kids. We follow how big the market is, what changed in 50 years, why children still want toys despite phones, and where Iran fits.</p>
+<h3>1. The news: adults are the toy industry’s new favourite customers</h3>
+<p>Al Jazeera reports that adults without children have more disposable income and are propping up the market through the nostalgia economy <a href="https://www.instagram.com/aljazeeraenglish/" target="_blank" rel="noopener">Al Jazeera English</a>. The data agree:</p>
+<ul>
+<li>Children under 10 still make up more than 65% of global sales, but their share is shrinking <a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a>.</li>
+<li>Global toy sales grew 14% in the first half of 2026. In the US, buyers 18+ drove 35% of the growth <a href="https://www.techtimes.com/articles/323942/20260811/adults-drove-35-us-toy-growth-2026-trading-cards-replaced-christmas-lists.htm" target="_blank" rel="noopener">Tech Times</a>.</li>
+<li>In a 2025 survey, 19% of US adults had bought Pokémon cards for themselves in six months; only about a quarter of them played the game <a href="https://www.techtimes.com/articles/323942/20260811/adults-drove-35-us-toy-growth-2026-trading-cards-replaced-christmas-lists.htm" target="_blank" rel="noopener">Tech Times</a>.</li>
+<li>In Germany, kidults account for 35% of toy sales <a href="https://www.techtimes.com/articles/323942/20260811/adults-drove-35-us-toy-growth-2026-trading-cards-replaced-christmas-lists.htm" target="_blank" rel="noopener">Tech Times</a>.</li>
+</ul>
+<h3>2. How much is the quiet market worth?</h3>
+<div class="tw"><table><tr><th>Market</th><th>Value</th><th>Year</th><th>Source</th></tr><tr><td>Video games (world)</td><td>$201.6bn</td><td>2025</td><td><a href="https://www.pocketgamer.biz/global-games-revenue-surpasses-200bn-for-the-first-time-mobile-generates-113bn/" target="_blank" rel="noopener">Newzoo</a></td></tr><tr><td>Toys (world)</td><td>$123bn, up 8%</td><td>2025</td><td><a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a></td></tr><tr><td>Pop Mart, maker of Labubu</td><td>$5.4bn revenue, up 185%</td><td>2025</td><td><a href="https://www.thestar.com.my/business/business-news/2026/03/25/labubu-maker-pop-mart-meets-2025-revenue-expectations" target="_blank" rel="noopener">The Star</a></td></tr><tr><td>Toys (Middle East)</td><td>about $4.6bn (estimate)</td><td>2025</td><td><a href="https://www.imarcgroup.com/middle-east-toys-market" target="_blank" rel="noopener">IMARC</a></td></tr><tr class="ir"><td>Toys (Iran)</td><td>$300–350m (industry estimates)</td><td>2022–2025</td><td><a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr</a></td></tr><tr class="ir"><td>Iran toy exports</td><td>about $20m</td><td>FY 2022–23</td><td><a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr</a></td></tr></table></div>
+<p>Games and toys together turn over more than $320 billion a year. One company, Pop Mart, nearly tripled its revenue in a single year with Labubu.</p>
+<h3>3. Fifty years in ten stops</h3>
+<ul class="tl">
+<li><b class="y">1977</b>Star Wars figures: toys become part of a film universe, and the licensing era begins.</li>
+<li><b class="y">1980s</b>Transformers, Atari and home video games: screens first compete with toys.</li>
+<li><b class="y">1996</b>Tamagotchi and Pokémon: a digital pet in your pocket, and cards adults still collect 30 years on.</li>
+<li><b class="y">2000s</b>Iran’s "Sara and Dara" dolls are created as a local alternative to Barbie <a href="https://en.wikipedia.org/wiki/Sara_and_Dara_dolls" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><b class="y">2011</b>Skylanders: put a figure on a portal and it comes alive in the game. Over 100 million figures and $500m+ revenue by 2013 <a href="https://www.gamespot.com/articles/over-100-million-skylanders-toys-sold/1100-6403581/" target="_blank" rel="noopener">GameSpot</a>.</li>
+<li><b class="y">2017</b>CryptoKitties, an early famous NFT: one digital cat sold for over $117,000 and the game took about 12% of Ethereum transactions <a href="https://qz.com/1145833/cryptokitties-is-causing-ethereum-network-congestion/" target="_blank" rel="noopener">Quartz</a>.</li>
+<li><b class="y">2021</b>The peak of play-to-earn with tokens and NFTs, a boom that faded after 2022.</li>
+<li><b class="y">2024–25</b>Labubu and blind boxes: half toy, half collectible.</li>
+<li><b class="y">2025</b>Mattel partners with OpenAI on AI-powered toys, stressing safety and privacy <a href="https://kidscreen.com/2025/06/13/mattel-and-openai-form-new-partnership" target="_blank" rel="noopener">Kidscreen</a>.</li>
+<li><b class="y">2026</b>Trading cards, adult LEGO sets and collectibles drive growth.</li>
+</ul>
+<p><strong>The 50-year pattern:</strong> the toy was first an object, then an experience, and now, for many, an asset. Next stop: the toy that talks back.</p>
+<h3>4. Why do children still want toys?</h3>
+<ul>
+<li><strong>Play feeds the brain:</strong> the American Academy of Pediatrics (2018) asked doctors to write a "prescription for play"; it warns screens can crowd out real play <a href="https://www.healthychildren.org/English/news/Pages/healthier-children-play-according-to-the-aap.aspx" target="_blank" rel="noopener">AAP</a>.</li>
+<li><strong>Simple toys, more talk:</strong> in a JAMA Pediatrics study, parents talked less with infants playing with electronic toys than with wooden puzzles, blocks or books <a href="https://www.eurekalert.org/news-releases/784233" target="_blank" rel="noopener">EurekAlert</a>.</li>
+<li><strong>Playing together:</strong> LEGO’s Play Well study of over 57,000 parents and children in 35 countries found most children wish they played more with their parents <a href="https://learningthroughplay.com/explore-the-research/what-do-children-have-to-say-about-play" target="_blank" rel="noopener">LEGO Foundation</a>.</li>
+<li><strong>Touch:</strong> toys can be held, built, broken and rebuilt; brands now link physical toys to apps rather than replacing them.</li>
+</ul>
+<h3>5. Iran: a $300m market with limited production</h3>
+<ul>
+<li>Industry figures put Iran’s toy market at about $300m a year, with about 250 branded producers and domestic production at 30–35% <a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr News</a>; newer reports estimate turnover up to $350m <a href="https://www.mehrnews.com/news/6835719/" target="_blank" rel="noopener">Mehr</a>.</li>
+<li>Exports were about $20m in FY 2022–23, mainly to Iraq, Armenia, Afghanistan, Russia and Oman <a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr News</a>.</li>
+<li>Official imports are small: about 2,140 tonnes worth $7.1m in the first seven months of the Iranian year 1404 (2025), 90% from China and second the UAE <a href="https://wanaen.com/china-dominates-irans-toy-imports-with-over-90-share/" target="_blank" rel="noopener">WANA</a>.</li>
+<li>The gap between $7m of official imports and a market of hundreds of millions means much supply comes through informal channels; no exact figure is published.</li>
+<li><strong>Ditoman’s reading:</strong> Iran has a share of its own market but is almost absent from its neighbours’.</li>
+<li>Producers cite hard access to capital, banks that avoid toy firms, and 9% VAT despite toys counting as cultural products <a href="https://en.mehrnews.com/news/202729/Iran-s-toy-exports-stand-at-20m-in-FY-2022-23" target="_blank" rel="noopener">Mehr News</a>.</li>
+</ul>
+<h3>6. The neighbours: a market set to double</h3>
+<p>IMARC estimates the Middle East toy market at about $4.6bn in 2025, forecasting $9.2bn by 2034 <a href="https://www.imarcgroup.com/middle-east-toys-market" target="_blank" rel="noopener">IMARC</a>. The UAE acts as a regional warehouse and is already the second source of Iran’s official toy imports. Iraq, Afghanistan, Pakistan, the Caucasus and Central Asia have large, young populations, and several already buy Iranian toys.</p>
+<h3>7. Iran’s opportunity: it has the plastic and the stories, but not the brands</h3>
+<p><strong>Ditoman’s take:</strong> Iran’s $20m of exports is under half a percent of a $4.6bn regional market, so there is room to grow. Real advantages: Iran’s petrochemical plants make the plastics most toys use (PP, PE, PS and ABS) <a href="https://www.plastemart.com/news-plastics-information/tpc-to-double-abs-and-ps-capacity-in-2-years/8101" target="_blank" rel="noopener">Plastemart</a>; energy and labour are cheaper than in most neighbours; and nearby markets are reachable by truck. But the real money is not in plastic; it is in <strong>design, characters and stories</strong>. Iran has plenty of both, from Kolah Ghermezi to the Shahnameh. What is missing: international safety standards for export, finance, online sales and brands for children and adults alike.</p>
+<h3>8. Where are toys heading?</h3>
+<ul>
+<li><strong>Physical plus digital:</strong> a toy in your hand that also lives in an app or game.</li>
+<li><strong>Smart toys:</strong> dolls and robots that talk with AI; child safety and privacy questions are serious here.</li>
+<li><strong>Collectibles as assets:</strong> rare cards and figures trade like assets; exciting, but bubble-prone, as the 2021 NFT game boom showed.</li>
+<li><strong>Play for all ages:</strong> the line between toys, games, fashion and entertainment is fading <a href="https://www.circana.com/post/global-toy-market-hits-123b-as-play-expands-across-ages-and-markets" target="_blank" rel="noopener">Circana</a>.</li>
+</ul>
+<h3>9. Ditoman’s reading</h3>
+<p>Toys bridge generations: a father who kept his Pokémon cards now plays with his daughter; a mother who had "Sara and Dara" shows them to her child in a Tehran museum. Behind the feeling is a $123 billion market few people talk about. Iran has the raw materials, the workforce and populous neighbours. If it takes design and characters seriously, it can win a real share. We follow this together.</p>
+<h3>Sources</h3>
+<p>Full source list in the Persian version.</p>
+<p style="color:#9fb6b9;margin-top:10px">Last reviewed 10 November 2026. Iran market figures are industry estimates; no comprehensive official data are published.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
+</body>
+</html>
