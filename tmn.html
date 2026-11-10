@@ -367,9 +367,8 @@
           <p lang="en">Read automatically from public exchange data, or straight from the PancakeSwap pool when no tracker lists TMN.</p>
           <p lang="fa" dir="rtl">به‌طور خودکار از داده‌های عمومی صرافی‌ها خوانده می‌شود، یا وقتی هیچ سایت ردیابی TMN را فهرست نکرده، مستقیم از استخر PancakeSwap.</p>
         </div>
-        <div class="stats">
+        <div class="stats" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
           <div class="stat"><span><span lang="en">Price (USD)</span><span lang="fa">قیمت (دلار)</span></span><strong id="priceUsd"><span lang="en">Loading</span><span lang="fa">در حال بارگذاری</span></strong></div>
-          <div class="stat"><span><span lang="en">Liquidity</span><span lang="fa">نقدینگی</span></span><strong id="liquidityUsd"><span lang="en">Loading</span><span lang="fa">در حال بارگذاری</span></strong></div>
           <div class="stat"><span><span lang="en">24h volume</span><span lang="fa">حجم ۲۴ ساعته</span></span><strong id="volume24h"><span lang="en">Loading</span><span lang="fa">در حال بارگذاری</span></strong></div>
           <div class="stat"><span><span lang="en">24h change</span><span lang="fa">تغییر ۲۴ ساعته</span></span><strong id="change24h"><span lang="en">Loading</span><span lang="fa">در حال بارگذاری</span></strong></div>
         </div>
@@ -546,7 +545,7 @@
 
     (function () {
       var tokenAddress = "0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d";
-      var ids = ["priceUsd", "liquidityUsd", "volume24h", "change24h"];
+      var ids = ["priceUsd", "volume24h", "change24h"];
       var status = document.getElementById("marketStatus");
       var NOT_TRACKED = bi("Not tracked", "ثبت نشده");
 
@@ -573,7 +572,6 @@
           var t = L && L.tmn;
           if (!t || !t.price_usd) throw new Error("no pool data");
           put("priceUsd", usd(t.price_usd));
-          put("liquidityUsd", usd(t.liquidity_usd));
           put("volume24h", t.volume_24h_usd != null ? usd(t.volume_24h_usd) : NOT_TRACKED);
           put("change24h", t.change_24h_pct != null ? pct(t.change_24h_pct) : NOT_TRACKED);
           var when = (L.fetched_utc || "").slice(0, 16).replace("T", " ");
@@ -599,7 +597,6 @@
           });
           var p = pairs[0];
           put("priceUsd", usd(p.priceUsd));
-          put("liquidityUsd", usd(p.liquidity && p.liquidity.usd));
           put("volume24h", usd(p.volume && p.volume.h24));
           put("change24h", pct(p.priceChange && p.priceChange.h24));
           status.innerHTML = bi(
