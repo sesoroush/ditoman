@@ -1,0 +1,20 @@
+name: Check video mirrors
+# Manual check: which Instagram mirror exposes a playable video for a reel id.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Reel id, e.g. Dfj4uIaExdR"
+        required: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          ID="${{ github.event.inputs.id }}"
+          for host in www.kkinstagram.com kkinstagram.com vxinstagram.com www.instagramez.com ddinstagram.com uuinstagram.com www.instagram.com; do
+            u="https://$host/reel/$ID/"
+            code="$(curl -sL -m 25 -A 'TelegramBot (like TwitterBot)' -o page.html -w '%{http_code}' "$u" || echo ERR)"
+            echo "== $u -> $code"
+            grep -oiE '<meta[^>]+(og:video|og:image|og:title|twitter:player)[^>]*>' page.html | head -5 | cut -c1-220 || true
+          done
