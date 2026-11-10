@@ -22,6 +22,10 @@ on:
       file:
         description: "Post file to send, e.g. telegram/drafts/welcome.md"
         required: true
+      delete:
+        description: "Optional: message ids to delete first (comma separated), e.g. a post whose video failed"
+        required: false
+        default: ""
 
 jobs:
   post:
@@ -56,6 +60,26 @@ jobs:
             echo "TELEGRAM_BOT_TOKEN secret is missing or not a valid bot token." >&2
             exit 1
           fi
+          DEL="${{ github.event.inputs.delete }}"
+          for id in $(echo "$DEL" | tr ',' ' '); do
+            curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/deleteMessage" -d "chat_id=$CHAT_ID" -d "message_id=$id" | jq '{ok, description}'
+          done
+          # Find a mirror URL whose page really exposes the video, so Telegram can show it above the text.
+          pick_video() {
+            u="$1"; id="$(echo "$u" | grep -oE '/(reel|p|tv)/[A-Za-z0-9_-]+' | head -n 1)"
+            [ -z "$id" ] && { echo "$u"; return; }
+            for cand in "$u" "https://www.kkinstagram.com${id}/" "https://kkinstagram.com${id}/" "https://www.kkinstagram.com${id}" "https://kkinstagram.com${id}"; do
+              # On a resend, skip the exact URL Telegram already cached without a preview.
+              if [ -n "$DEL" ] && [ "$cand" = "$u" ]; then continue; fi
+              for try in 1 2 3; do
+                page="$(curl -sL -m 25 -A 'TelegramBot (like TwitterBot)' "$cand" || true)"
+                if echo "$page" | grep -qiE 'property="og:video|name="twitter:player:stream'; then echo "$cand"; return; fi
+                sleep 5
+              done
+              echo "No video found at $cand" >&2
+            done
+            echo "$u"
+          }
           while IFS= read -r f; do
             [ -z "$f" ] && continue
             [ -f "$f" ] || { echo "Missing $f" >&2; exit 1; }
@@ -79,6 +103,8 @@ jobs:
             }
             echo "Sending $f"
             if [ -n "$video" ]; then
+              video="$(pick_video "$video")"
+              echo "Video preview from: $video"
               # Video preview above the text.
               payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "$video" '{chat_id:$c, text:$t, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
               send sendMessage -H 'Content-Type: application/json' -d "$payload"
