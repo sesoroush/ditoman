@@ -11,9 +11,9 @@
   --cyan: #2db7ff;
   --violet: #8b6cff;
   --spectrum: linear-gradient(100deg, #7ff5de 0%, #2db7ff 50%, #8b6cff 100%);
-  --en: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
-  --brand-font: "Bricolage Grotesque", system-ui, sans-serif;
-  --fa: "IRANYekanX", "Vazirmatn", Tahoma, sans-serif;
+  --en: "Inter", "IRANYekanX Fa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  --brand-font: "Bricolage Grotesque", "IRANYekanX Fa", system-ui, sans-serif;
+  --fa: "IRANYekanX", Tahoma, sans-serif;
   --fa-display: "IRANYekanX Display", "IRANYekanX", Tahoma, sans-serif;
 }
 

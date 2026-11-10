@@ -17,3 +17,6 @@
 @font-face { font-family: "IRANYekanX Fa"; font-weight: 700; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-Bold.woff2") format("woff2"); }
 @font-face { font-family: "IRANYekanX Fa"; font-weight: 800; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-ExtraBold.woff2") format("woff2"); }
 @font-face { font-family: "IRANYekanX Fa"; font-weight: 900; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+060C, U+061B, U+061F, U+066A-066D; src: url("fonts/iranyekanx/IRANYekanXFaNum-Black.woff2") format("woff2"); }
+
+/* Form controls do not inherit the page font by default */
+button, input, select, textarea { font-family: inherit; }

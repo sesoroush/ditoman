@@ -20,6 +20,9 @@ def main():
         image = None
         if lines and lines[0].startswith("image:"):
             image = lines[0].split(":", 1)[1].strip()
+            # the site serves a lossless WebP twin when one exists (see optimize_images.py)
+            if image.endswith(".png") and (ROOT / (image[:-4] + ".webp")).exists():
+                image = image[:-4] + ".webp"
             lines = lines[1:]
         if lines and lines[0].startswith("video-first:"):
             lines = lines[1:]
