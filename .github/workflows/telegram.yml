@@ -68,10 +68,10 @@ jobs:
           pick_video() {
             u="$1"; id="$(echo "$u" | grep -oE '/(reel|p|tv)/[A-Za-z0-9_-]+' | head -n 1)"
             [ -z "$id" ] && { echo "$u"; return; }
-            for cand in "$u" "https://www.kkinstagram.com${id}/" "https://kkinstagram.com${id}/" "https://www.kkinstagram.com${id}" "https://kkinstagram.com${id}"; do
+            for cand in "$u" "https://www.kkinstagram.com${id}/" "https://kkinstagram.com${id}/" "https://vxinstagram.com${id}/" "https://www.instagramez.com${id}/"; do
               # On a resend, skip the exact URL Telegram already cached without a preview.
               if [ -n "$DEL" ] && [ "$cand" = "$u" ]; then continue; fi
-              for try in 1 2 3; do
+              for try in 1 2; do
                 page="$(curl -sL -m 25 -A 'TelegramBot (like TwitterBot)' "$cand" || true)"
                 if echo "$page" | grep -qiE 'property="og:video|name="twitter:player:stream'; then echo "$cand"; return; fi
                 sleep 5
