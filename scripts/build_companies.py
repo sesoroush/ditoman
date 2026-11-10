@@ -233,7 +233,7 @@ def page(title, desc, path, body, image=None):
   <title>{e(title)}</title>
   <meta name="description" content="{e(desc)}" />
   {robots}
-  <link rel="icon" href="ditoman-logo.png" />
+  <link rel="icon" href="tmn-logo-256.png" />
   <link rel="canonical" href="{BASE}{path}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Ditoman" />

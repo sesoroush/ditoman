@@ -134,7 +134,7 @@ def process(path):
         if marker not in bare:
             tags.append(tag)
     want('rel="canonical"', f'<link rel="canonical" href="{url}" />')
-    want('rel="icon"', '<link rel="icon" href="ditoman-logo.png" />')
+    want('rel="icon"', '<link rel="icon" href="tmn-logo-256.png" />')
     want('og:type', f'<meta property="og:type" content="{"article" if is_article else "website"}" />')
     want('og:site_name', '<meta property="og:site_name" content="Ditoman" />')
     want('og:title', f'<meta property="og:title" content="{e(title)}" />')

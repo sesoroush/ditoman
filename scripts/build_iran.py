@@ -307,7 +307,7 @@ def page(title, desc, path, body, extra_css=""):
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{e(title)}</title>
   <meta name="description" content="{e(desc)}" />
-  <link rel="icon" href="ditoman-logo.png" />
+  <link rel="icon" href="tmn-logo-256.png" />
   <link rel="canonical" href="{BASE}{path}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Ditoman" />
