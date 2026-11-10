@@ -256,8 +256,6 @@
         <div class="panel warn">
           <h2><span lang="en">What you should know</span><span lang="fa">آنچه باید بدانی</span></h2>
           <ul class="checklist">
-            <li lang="en">TMN has very thin liquidity (a few thousand dollars) and almost no trading.</li>
-            <li lang="fa" dir="rtl">نقدینگی TMN بسیار کم است (چند هزار دلار) و تقریباً هیچ معامله‌ای روی آن انجام نمی‌شود.</li>
             <li lang="en">Supply is highly concentrated. Most of it sits in founder-controlled wallets, visible to anyone on BscScan.</li>
             <li lang="fa" dir="rtl">عرضه به‌شدت متمرکز است. بیشتر آن در کیف‌پول‌هایی است که در کنترل بنیان‌گذاران است و هر کسی می‌تواند آن را در BscScan ببیند.</li>
             <li lang="en">The planned utility is not built yet.</li>
@@ -366,8 +364,8 @@
       <div class="wrap">
         <div class="head">
           <h2><span lang="en">Market data</span><span lang="fa">داده‌های بازار</span></h2>
-          <p lang="en">Read automatically from public exchange data, or straight from the PancakeSwap pool when no tracker lists TMN. With very thin liquidity, any price shown here is not a real market value.</p>
-          <p lang="fa" dir="rtl">به‌طور خودکار از داده‌های عمومی صرافی‌ها خوانده می‌شود، یا وقتی هیچ سایت ردیابی TMN را فهرست نکرده، مستقیم از استخر PancakeSwap. با این نقدینگی بسیار کم، هر قیمتی که اینجا می‌بینی ارزش واقعی بازار نیست.</p>
+          <p lang="en">Read automatically from public exchange data, or straight from the PancakeSwap pool when no tracker lists TMN.</p>
+          <p lang="fa" dir="rtl">به‌طور خودکار از داده‌های عمومی صرافی‌ها خوانده می‌شود، یا وقتی هیچ سایت ردیابی TMN را فهرست نکرده، مستقیم از استخر PancakeSwap.</p>
         </div>
         <div class="stats">
           <div class="stat"><span><span lang="en">Price (USD)</span><span lang="fa">قیمت (دلار)</span></span><strong id="priceUsd"><span lang="en">Loading</span><span lang="fa">در حال بارگذاری</span></strong></div>
@@ -380,10 +378,8 @@
         <div class="readguide">
           <h3><span lang="en">How to read TMN's market data</span><span lang="fa">داده‌های بازار TMN را چطور بخوانیم</span></h3>
           <ul class="checklist">
-            <li lang="en"><strong>"Market cap" is not real value.</strong> Trackers multiply the full supply by the price of one small pool. With about $3,900 of liquidity behind it, that produces a large number no one could actually sell at.</li>
-            <li lang="fa" dir="rtl"><strong>«ارزش بازار» ارزش واقعی نیست.</strong> سایت‌های ردیاب کل عرضه را در قیمت یک استخر کوچک ضرب می‌کنند. با حدود ۳,۹۰۰ دلار نقدینگی پشت آن، نتیجه عدد بزرگی است که هیچ‌کس واقعاً نمی‌تواند با آن بفروشد.</li>
-            <li lang="en"><strong>The price moves with tiny trades.</strong> A purchase of a few dollars can move it, because the pool is so small.</li>
-            <li lang="fa" dir="rtl"><strong>قیمت با معامله‌های خیلی کوچک تغییر می‌کند.</strong> چون استخر بسیار کوچک است، حتی یک خرید چند دلاری هم می‌تواند قیمت را جابه‌جا کند.</li>
+            <li lang="en"><strong>"Market cap" is not real value.</strong> Trackers multiply the full supply by the price in a single pool. The result is a calculation, not a value the whole supply could be sold at.</li>
+            <li lang="fa" dir="rtl"><strong>«ارزش بازار» ارزش واقعی نیست.</strong> سایت‌های ردیاب کل عرضه را در قیمت یک استخر ضرب می‌کنند. نتیجه یک عدد محاسباتی است، نه قیمتی که بشود کل عرضه را با آن فروخت.</li>
             <li lang="en"><strong>Supply is concentrated.</strong> Almost all of the circulating supply sits in one founder wallet, visible to anyone on BscScan.</li>
             <li lang="fa" dir="rtl"><strong>عرضه متمرکز است.</strong> تقریباً تمام عرضه‌ی در گردش در یک کیف‌پول بنیان‌گذار است و هر کسی می‌تواند آن را در BscScan ببیند.</li>
             <li lang="en"><strong>Different sites show different supply.</strong> Some trackers still show the original 21 trillion. The contract itself reports 18.90 trillion after the 13 September 2026 burn.</li>
@@ -586,9 +582,9 @@
           };
           status.innerHTML = bi(
             "Read directly from the PancakeSwap V2 pool on BNB Smart Chain (" + link("pool contract") +
-            "), updated " + when + " UTC. Liquidity is very thin, so this price is not a real market value: even a small trade would move it a lot.",
+            "), updated " + when + " UTC.",
             "مستقیم از استخر PancakeSwap V2 روی BNB Smart Chain خوانده شد (" + link("قرارداد استخر") +
-            ")، به‌روزرسانی: <span dir=\"ltr\">" + faNum(when) + "</span> به وقت UTC. نقدینگی بسیار کم است، پس این قیمت ارزش واقعی بازار نیست: حتی یک معامله‌ی کوچک آن را به‌شدت جابه‌جا می‌کند."
+            ")، به‌روزرسانی: <span dir=\"ltr\">" + faNum(when) + "</span> به وقت UTC."
           );
         });
       }
@@ -607,8 +603,8 @@
           put("volume24h", usd(p.volume && p.volume.h24));
           put("change24h", pct(p.priceChange && p.priceChange.h24));
           status.innerHTML = bi(
-            "Loaded from public exchange data (DexScreener). With very thin liquidity, these numbers don't represent real market value.",
-            "از داده‌های عمومی صرافی‌ها (DexScreener) خوانده شد. با این نقدینگی بسیار کم، این اعداد ارزش واقعی بازار را نشان نمی‌دهند."
+            "Loaded from public exchange data (DexScreener).",
+            "از داده‌های عمومی صرافی‌ها (DexScreener) خوانده شد."
           );
         })
         .catch(function () {
