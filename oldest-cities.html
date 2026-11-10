@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Ten Cities That Never Went Dark | ده شهری که چراغشان هزاران سال خاموش نشده | Ditoman</title>
+<meta name="description" content="شوش، ری و همدان در میان ده شهر کهنی‌اند که هم هزاران سال مسکونی مانده‌اند و هم نامشان را نگه داشته‌اند. Shush, Rey and Hamadan are among ten ancient cities that stayed inhabited and kept their names for thousands of years." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.tw tr.ir td{background:rgba(127,245,222,.10);color:#fff;font-weight:600}
+.cityno{display:inline-block;min-width:34px;color:#ffc94a;font-weight:900}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/oldest-cities.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Ten Cities That Never Went Dark | ده شهری که چراغشان هزاران سال خاموش نشده | Ditoman" />
+<meta property="og:description" content="شوش، ری و همدان در میان ده شهر کهنی‌اند که هم هزاران سال مسکونی مانده‌اند و هم نامشان را نگه داشته‌اند. Shush, Rey and Hamadan are among ten ancient cities that stayed inhabited and kept their names for thousands of years." />
+<meta property="og:url" content="https://ditoman.com/oldest-cities.html" />
+<meta property="og:image" content="https://ditoman.com/social/oldest-cities/post.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/oldest-cities.html#article",
+   "mainEntityOfPage": "https://ditoman.com/oldest-cities.html",
+   "headline": "Ten Cities That Never Went Dark | ده شهری که چراغشان هزاران سال خاموش نشده",
+   "description": "شوش، ری و همدان در میان ده شهر کهنی‌اند که هم هزاران سال مسکونی مانده‌اند و هم نامشان را نگه داشته‌اند. Shush, Rey and Hamadan are among ten ancient cities that stayed inhabited and kept their names for thousands of years.",
+   "image": "https://ditoman.com/social/oldest-cities/post.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Ten Cities That Never Went Dark | ده شهری که چراغشان هزاران سال خاموش نشده",
+     "item": "https://ditoman.com/oldest-cities.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="social/oldest-cities/post.webp" alt="Ten cities that never went dark" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">ده شهری که چراغشان هزاران سال خاموش نشده؛ سه تا در ایران</h1>
+<h1 lang="en">Ten cities that never went dark, three of them in Iran</h1>
+<p class="subtitle" lang="en">Shush, Rey and Hamadan have stayed inhabited and kept their names for millennia. What they saw, why they survived, and how they tie Iran to Syria and Lebanon.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">شوش، ری و همدان هزاران سال مسکونی مانده‌اند و نامشان را نگه داشته‌اند. چه دیده‌اند، چرا ماندند و چه پیوندی میان ایران، شام و لبنان ساخته‌اند.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۳ از ۱۰</b><b lang="en">3 of 10</b><span lang="fa">شهرهای فهرست در ایران‌اند</span><span lang="en">cities on the list are in Iran</span></div>
+<div class="stat"><b lang="fa">۶۲۰۰</b><b lang="en">6,200</b><span lang="fa">سال شهرنشینی در شوش</span><span lang="en">years of city life in Shush</span></div>
+<div class="stat"><b lang="fa">۵۳۹ پ.م.</b><b lang="en">539 BC</b><span lang="fa">آغاز پیوند اداری ایران و شام</span><span lang="en">Iran and Syria in one province</span></div>
+<div class="stat"><b lang="fa">۱۸۳۳</b><b lang="en">1833</b><span lang="fa">سال بنیاد شهر دبی</span><span lang="en">Dubai town founded</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p><strong>در فهرست ده شهری که هزاران سال پیوسته مسکونی مانده‌اند و هنوز همان نام کهن را دارند، سه نام ایرانی است: شوش، ری و همدان. هیچ کشور دیگری در این فهرست بیش از دو شهر ندارد.</strong></p>
+<p>شوش از حدود ۶۲۰۰ سال پیش شهر بوده. ری در اوستا با نام «رَغا» آمده. همدان همان «هگمتانه» است، پایتخت مادها. هر سه امروز شهرهای زنده‌اند: مردم در آن‌ها کار می‌کنند، مدرسه می‌روند و خانه می‌سازند. این گزارش را با هم دنبال می‌کنیم: این شهرها چه دیده‌اند، چرا ماندند، و این تاریخ چه پیوندی میان ایران و شهرهای کهن شام و لبنان ساخته است.</p>
+<div class="note"><p><strong>معیار ما</strong></p><p>هیچ شهری هزاران سال بدون تغییر نمانده. ما شهرهایی را انتخاب کردیم که دو چیز را نگه داشته‌اند: سکونت تقریباً پیوسته و ریشه‌ی نامشان. این فهرست «ده شهر اول دنیا» نیست؛ رتبه‌بندی رسمی برای قدیمی‌ترین شهرها وجود ندارد و تاریخ‌ها بر پایه‌ی کاوش‌ها تخمینی‌اند. شهرهایی که نامشان عوض شده (مثل پلوودیو یا شیان) یا امروز خالی‌اند (مثل شهر سوخته) در فهرست نیستند. اریحا را هم به دلیل اختلاف بر سر پیوستگی سکونت در محوطه‌ی باستانی کنار گذاشتیم.</p></div>
+
+<h3><span class="check-number">۰۱.</span> فهرست ده شهر</h3>
+<div class="tw" dir="rtl"><table><tr><th>شهر</th><th>کشور</th><th>آغاز سکونت یا نخستین نام</th><th>مسیر نام</th></tr><tr><td>جُبیل (بیبلوس)</td><td>لبنان</td><td>دست‌کم ۵۰۰۰ پ.م.</td><td>گوبلا ← جبیل</td></tr><tr><td>اربیل</td><td>عراق</td><td>هزاره‌ی پنجم پ.م.</td><td>ایربیلوم ← اربلا ← اربیل</td></tr><tr><td>حلب</td><td>سوریه</td><td>حدود ۴۳۰۰ پ.م.</td><td>حلب (از لوح‌های ابلا)</td></tr><tr class="ir"><td>شوش</td><td>ایران</td><td>حدود ۴۲۰۰ پ.م.</td><td>شوشون ← شوشان ← شوش</td></tr><tr><td>آرگوس</td><td>یونان</td><td>حدود ۷۰۰۰ سال پیش</td><td>آرگوس</td></tr><tr><td>صیدا</td><td>لبنان</td><td>حدود ۳۲۰۰ پ.م.</td><td>صیدون ← صیدا</td></tr><tr class="ir"><td>ری</td><td>ایران</td><td>هزاره‌ی سوم پ.م.</td><td>رَغا ← ری</td></tr><tr><td>دمشق</td><td>سوریه</td><td>نخستین نام: قرن ۱۵ پ.م.</td><td>تمشق ← دمشق</td></tr><tr class="ir"><td>همدان</td><td>ایران</td><td>پایتخت ماد، حدود ۷۰۰ پ.م.</td><td>هگمتانه ← همدان</td></tr><tr><td>اورایبی</td><td>آمریکا</td><td>پیش از ۱۱۰۰ م.</td><td>اورَیوی</td></tr></table></div>
+
+<h3><span class="check-number">۰۲.</span> سه شهر ایرانی</h3>
+<p><strong>شوش:</strong> سکونت پیوسته در آن از حدود ۴۳۹۵ پیش از میلاد ثبت شده و حدود ۴۲۰۰ پیش از میلاد به شهر تبدیل شد <a href="https://www.worldhistory.org/susa/.md" target="_blank" rel="noopener">WHE</a>. پایتخت ایلام بود و بعد یکی از پایتخت‌های هخامنشیان. ایلامی‌ها آن را «شوشون» می‌نامیدند و عبری‌ها «شوشان». آرامگاه منسوب به دانیال نبی هم در شوش است. یونسکو آن را در ۲۰۱۵ ثبت کرد. یک نکته‌ی منصفانه: شوش از قرن ۱۵ تا ۲۰ میلادی به سکونتگاهی کوچک تبدیل شده بود <a href="https://www.worldheritagesite.org/list/susa" target="_blank" rel="noopener">World Heritage Site</a>.</p>
+<p><strong>ری:</strong> سکونت در آن از هزاره‌ی سوم پیش از میلاد شروع شده و در اوستا جایی مقدس به نام «رَغا» است. در دوره‌ی اشکانی پایتخت بود و در قرن هشتم میلادی در غرب آسیا فقط با دمشق و بغداد رقابت می‌کرد. در ۱۲۲۰ میلادی مغول‌ها آن را تقریباً از بین بردند و بیشتر بازماندگان به تهران رفتند، ولی نام ری در «شهر ری» زنده ماند <a href="https://www.britannica.com/place/Rayy" target="_blank" rel="noopener">Britannica</a>.</p>
+<p><strong>همدان:</strong> مادها آن را ساختند و هرودوت از آن به‌عنوان پایتخت ماد یاد کرده است. نام فارسی باستان آن «هگمتانه» بود و یونانی‌ها «اکباتان» می‌گفتند. امروز بیش از ۵۵۰ هزار نفر جمعیت دارد <a href="https://en.wikipedia.org/wiki/Hamadan" target="_blank" rel="noopener">Wikipedia</a>. در همین شهر، آرامگاه ابن‌سینا و آرامگاه منسوب به اِستر و مردخای در فاصله‌ای کوتاه از هم قرار دارند. آرامگاه استر و مردخای مهم‌ترین زیارتگاه یهودیان و مسیحیان ایران است <a href="https://en.wikipedia.org/wiki/Tomb_of_Esther_and_Mordechai" target="_blank" rel="noopener">Wikipedia</a>.</p>
+<p>ایران فقط همین سه شهر را ندارد: چغازنبیل و شهر سوخته هم در فهرست میراث جهانی یونسکو هستند، ولی امروز مسکونی نیستند. تفاوت شوش، ری و همدان این است که زندگی در آن‌ها ادامه پیدا کرده.</p>
+
+
+<h3><span class="check-number">۰۳.</span> اوج و فرود: سه شهر در ۶۰۰۰ سال</h3>
+<p>این شهرها همیشه بزرگ نبوده‌اند. بارها پایتخت شده‌اند، کوچک شده‌اند و دوباره برخاسته‌اند. نمودار زیر خلاصه‌ی این مسیر است (تحلیل دیتومان بر پایه‌ی منابع همین گزارش؛ مرزها تقریبی‌اند):</p>
+<svg viewBox="0 0 900 300" direction="ltr" style="direction:ltr;width:100%;height:auto;display:block;margin:10px 0 6px" role="img" aria-label="timeline"><text x="136" y="64" text-anchor="end" fill="#fff" font-size="22" font-weight="800" font-family="IRANYekanX Fa, Inter">شوش</text><rect x="150" y="46" width="730" height="26" rx="6" fill="rgba(255,255,255,.05)"/><rect x="183.6" y="46" width="356.5" height="26" rx="5" fill="#ffc94a"/><rect x="541.5" y="46" width="50.1" height="26" rx="5" fill="#3fc9b4"/><rect x="593.1" y="46" width="21.9" height="26" rx="5" fill="#ffc94a"/><rect x="616.5" y="46" width="192.0" height="26" rx="5" fill="#3fc9b4"/><rect x="810.0" y="46" width="54.4" height="26" rx="5" fill="#41606a"/><rect x="865.9" y="46" width="12.6" height="26" rx="5" fill="#3fc9b4"/><text x="136" y="134" text-anchor="end" fill="#fff" font-size="22" font-weight="800" font-family="IRANYekanX Fa, Inter">ری</text><rect x="150" y="116" width="730" height="26" rx="6" fill="rgba(255,255,255,.05)"/><rect x="373.7" y="116" width="250.2" height="26" rx="5" fill="#41606a"/><rect x="625.4" y="116" width="51.5" height="26" rx="5" fill="#ffc94a"/><rect x="678.4" y="116" width="77.5" height="26" rx="5" fill="#3fc9b4"/><rect x="757.4" y="116" width="30.9" height="26" rx="5" fill="#ffc94a"/><rect x="789.8" y="116" width="69.0" height="26" rx="5" fill="#41606a"/><rect x="860.3" y="116" width="18.2" height="26" rx="5" fill="#3fc9b4"/><text x="136" y="204" text-anchor="end" fill="#fff" font-size="22" font-weight="800" font-family="IRANYekanX Fa, Inter">همدان</text><rect x="150" y="186" width="730" height="26" rx="6" fill="rgba(255,255,255,.05)"/><rect x="575.1" y="186" width="15.4" height="26" rx="5" fill="#ffc94a"/><rect x="592.0" y="186" width="23.0" height="26" rx="5" fill="#ffc94a"/><rect x="616.5" y="186" width="262.0" height="26" rx="5" fill="#3fc9b4"/><line x1="205.9" x2="205.9" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="205.9" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">4000 BC</text><line x1="429.7" x2="429.7" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="429.7" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">2000 BC</text><line x1="653.4" x2="653.4" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="653.4" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">0</text><line x1="765.2" x2="765.2" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="765.2" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">1000</text><line x1="880.0" x2="880.0" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="880.0" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">2026</text></svg><p style="font-size:.92rem;color:#9fb6b9"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#ffc94a;vertical-align:middle;margin:0 4px"></span>پایتخت · <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#3fc9b4;vertical-align:middle;margin:0 4px"></span>شهر فعال · <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#41606a;vertical-align:middle;margin:0 4px"></span>روستا یا ویرانه‌ی نیمه‌مسکونی</p>
+<ul>
+<li><strong>شوش:</strong> پایتخت ایلام، بعد پایتخت هخامنشی. از قرن ۱۵ تا ۲۰ میلادی به روستایی کوچک کنار تپه‌های باستانی تبدیل شد. حالا دوباره رشد می‌کند: جمعیت شهر از ۵۳٬۸۹۷ نفر در ۱۳۸۵ به ۷۷٬۱۴۸ نفر در ۱۳۹۵ رسید، یعنی حدود ۴۳٪ رشد در ده سال <a href="https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Shush%2C_Iran" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>ری:</strong> پایتخت اشکانی؛ در قرن‌های ۱۰ و ۱۱ میلادی پایتخت آل‌بویه و سلجوقیان. جیهانی نوشته میان عراق و نیشابور شهری بزرگ‌تر از ری نبود و کتابخانه‌ی صاحب بن عباد را با بار چهار هزار شتر توصیف کرده‌اند <a href="https://en.wikishia.net/view/Rayy" target="_blank" rel="noopener">WikiShia</a>. حمله‌ی مغول و بعد تیمور آن را ویران کرد. ولی ری برگشت: نخستین راه‌آهن ایران (۱۲۶۵ تا ۱۲۶۷ خورشیدی) تهران را به ری وصل کرد و امروز منطقه‌ی ۲۰ تهران با صدها هزار نفر جمعیت است <a href="https://webcf.waybackmachine.org/web/20220503110124/https://en.wikipedia.org/wiki/Rey,_Iran" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>همدان:</strong> پایتخت ماد، بعد پایتخت تابستانی هخامنشیان، و در قرن یازدهم میلادی محل کار و درس ابن‌سینا. برخلاف شوش و ری، هیچ‌وقت به روستا تبدیل نشد. امروز بیش از ۵۵۰ هزار نفر جمعیت دارد و تپه‌ی هگمتانه در ۱۴۰۳ (ژوئیه‌ی ۲۰۲۴) بیست‌وهشتمین اثر ایران در فهرست میراث جهانی یونسکو شد <a href="https://www.intellinews.com/iran-s-hegmataneh-inscribed-in-unesco-world-heritage-list-335715/" target="_blank" rel="noopener">Intellinews</a>.</li>
+</ul>
+
+<h3><span class="check-number">۰۴.</span> چرا این شهرها ماندند؟</h3>
+<p><strong>تحلیل دیتومان:</strong> شهرهایی که هزاران سال دوام آورده‌اند معمولاً سه چیز داشته‌اند:</p>
+<ul>
+<li><strong>آب قابل اتکا:</strong> شوش کنار رود کرخه و دز، ری و همدان در دامنه‌ی کوه‌ها و با چشمه و قنات. قنات ایرانی خودش در ۲۰۱۶ در فهرست یونسکو ثبت شد.</li>
+<li><strong>جایگاهی روی راه‌ها:</strong> ری و همدان روی مسیری بودند که بعدها جاده‌ی ابریشم نام گرفت، و شوش سر «راه شاهی» هخامنشی بود.</li>
+<li><strong>پذیرفتن تنوع:</strong> شوش ایلامی، پارسی، یونانی و یهودی را در خود جا داد. در همدان آرامگاه ابن‌سینا و زیارتگاه استر و مردخای کنار هم مانده‌اند. شهری که مردم گوناگون را نگه می‌دارد، بعد از هر ویرانی دوباره ساخته می‌شود.</li>
+</ul>
+
+<h3><span class="check-number">۰۵.</span> همسایه‌های جنوبی</h3>
+<p>کرانه‌ی جنوبی خلیج فارس هم تمدن کهن دارد: دیلمون در بحرین حدود ۲۳۰۰ پیش از میلاد پایتخت داشت و یونسکو قلعه‌ی بحرین را در ۲۰۰۵ ثبت کرد <a href="https://en.wikipedia.org/wiki/Qal%27at_al-Bahrain" target="_blank" rel="noopener">Wikipedia</a>. ولی شهرهای اصلی امروز این کشورها جوان‌اند:</p>
+<div class="tw" dir="rtl"><table><tr><th>کشور</th><th>ردّ باستانی</th><th>شهر امروز</th></tr><tr><td>بحرین (قلعه‌ی بحرین)</td><td>حدود ۲۳۰۰ پ.م.؛ پایتخت دیلمون</td><td>منامه شهری جدیدتر است</td></tr><tr><td>کویت</td><td>جزیره‌ی فیلکه سکونتگاه باستانی دارد</td><td>شهر کویت: ۱۶۱۳ م.</td></tr><tr><td>ابوظبی</td><td>سکونت در منطقه از عصر مفرغ</td><td>شهر ابوظبی: ۱۷۶۱ م.</td></tr><tr><td>دبی</td><td>سکونت در منطقه از حدود ۳۰۰۰ پ.م.</td><td>شهر دبی: ۱۸۳۳ م.</td></tr><tr><td>دوحه</td><td>نخستین اشاره به البدع: ۱۶۸۱ م.</td><td>شهر دوحه: دهه‌ی ۱۸۲۰ م.</td></tr></table></div>
+<p>این مقایسه برتری یک ملت بر ملت دیگر نیست؛ بیشتر به جغرافیا برمی‌گردد. کمبود آب شیرین در کرانه‌ی جنوبی، سکونتگاه‌ها را کوچک و جابه‌جاشونده نگه داشت، تا اینکه مروارید، تجارت و بعد نفت شهرهای بزرگ ساخت. همین شهرهای جوان امروز با سرعت زیادی در موزه و مرمت میراث کهن خود سرمایه‌گذاری می‌کنند.</p>
+<p>بحرین بعدها در دوره‌ی ساسانی و دوباره از ۱۶۲۲ تا ۱۷۸۳ بخشی از قلمرو ایران بود. در ۱۹۷۰، پس از نظرسنجی سازمان ملل که به درخواست ایران انجام شد، راه استقلالش باز شد و ایران در ۱۹۷۱ از نخستین کشورهایی بود که آن را به رسمیت شناخت <a href="https://www.iranicaonline.org/articles/bahrain-all/bahrain-iii-history-of-political-relations-with-iran/" target="_blank" rel="noopener">Iranica</a> · <a href="https://iranchamber.com/geography/articles/mishmahig_islands_bahrain.php" target="_blank" rel="noopener">Iran Chamber</a>.</p>
+
+<h3><span class="check-number">۰۶.</span> ایران، شام و لبنان: ۲۵۰۰ سال پیوند</h3>
+<p>چهار شهر دیگر فهرست، یعنی جبیل، صیدا، دمشق و حلب، در سوریه و لبنان امروز هستند. پیوند این شهرها با ایران به پیش از اسلام برمی‌گردد و بیشتر از جنس اداره، خط، تجارت و دانش است:</p>
+<ul>
+<li><strong>یک ساتراپی مشترک:</strong> کوروش در ۵۳۹ پیش از میلاد بابل را گرفت. سرزمین‌های غرب فرات، از جمله شام و فنیقیه، ساتراپی «آن سوی رود» شدند. شاهان محلی صور، صیدا، جبیل و ارواد سر کار ماندند و زیر نظر ساتراپ پارسی حکومت کردند <a href="https://iranicaonline.org/articles/eber-nari" target="_blank" rel="noopener">Iranica</a>.</li>
+<li><strong>ناوگان فنیقی:</strong> صیدا و جبیل دو بندر دریایی شاهنشاهی هخامنشی بودند و ملوانان صیدا در ناوگان پارسی می‌جنگیدند. در صیدا یک «پردیس» شاهی بود و معبد اشمون در دوره‌ی پارسی بزرگ شد <a href="https://www.livius.org/articles/place/sidon/sidon-2/" target="_blank" rel="noopener">Livius</a>. واژه‌ی انگلیسی paradise از همین «پردیس» پارسی باستان آمده است <a href="https://scroll.in/article/1085846/how-the-idea-of-paradise-dates-back-to-the-ancient-gardens-of-persia" target="_blank" rel="noopener">Scroll</a>.</li>
+<li><strong>خطی که از شام آمد:</strong> آرامی‌ها دولت‌شهرهایی پیرامون حلب و دمشق ساختند و زبانشان را تا بین‌النهرین بردند. هخامنشیان آن را زبان اداری کل شاهنشاهی کردند. خط پهلوی هم از الفبای آرامی گرفته شد، و آرامی خودش از الفبای فنیقی آمده بود <a href="https://mail.iranicaonline.org/articles/aramaic-" target="_blank" rel="noopener">Iranica</a>. یعنی خطی که ایرانیان قرن‌ها با آن نوشتند، ریشه در فنیقیه و شام دارد.</li>
+<li><strong>دانشمندی از بعلبک:</strong> شیخ بهایی در ۱۵۴۷ نزدیک بعلبک لبنان به دنیا آمد و کودک بود که خانواده‌اش به ایران آمدند. او را طراح ایده‌ی شهری میدان نقش جهان اصفهان می‌دانند و کتاب حسابش تا قرن نوزدهم در جهان اسلام درس داده می‌شد <a href="https://en.wikipedia.org/wiki/Baha_al-Din_al-Amili" target="_blank" rel="noopener">Wikipedia</a>. در دوره‌ی صفوی ده‌ها عالم از جبل عامل لبنان در ایران کار کردند <a href="https://core-prod.cambridgecore.org/core/journals/iranian-studies/article/ulama-of-jabal-amil-in-safavid-iran-15011736-marginality-migration-and-social-change/5A342B12CA894C353181F880C56C03E5" target="_blank" rel="noopener">Iranian Studies</a>.</li>
+</ul>
+<p>این پیوندها به حکومت‌های امروز ربطی ندارد. از جنس شهرهایی است که هزاران سال با هم تجارت کرده‌اند، خطشان را از هم گرفته‌اند و دانشمندانشان میان آن‌ها رفت‌وآمد داشته‌اند.</p>
+
+<h3><span class="check-number">۰۷.</span> بقیه‌ی فهرست</h3>
+<ul>
+<li><strong>جبیل:</strong> دست‌کم از ۵۰۰۰ پیش از میلاد مسکونی است. واژه‌ی Bible از نام یونانی همین شهر آمده، چون پاپیروس از بندر آن به یونان می‌رسید <a href="https://en.wikipedia.org/wiki/Byblos" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>اربیل:</strong> سکونت در آن به هزاره‌ی پنجم پیش از میلاد می‌رسد. در ۲۰۰۷، برای مرمت قلعه، ۸۴۰ خانواده از آن رفتند، ولی به یک خانواده اجازه دادند بماند تا رکورد سکونت پیوسته قطع نشود <a href="https://en.wikipedia.org/wiki/Citadel_of_Erbil" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>حلب:</strong> نام «حلب» از اواخر هزاره‌ی سوم پیش از میلاد در لوح‌های ابلا ثبت شده <a href="https://britannica.com/place/Aleppo/Introduction" target="_blank" rel="noopener">Britannica</a>.</li>
+<li><strong>آرگوس:</strong> حدود ۷۰۰۰ سال پیوسته مسکونی بوده؛ تئاتر باستانی‌اش ۲۰ هزار جا داشت <a href="https://en.wikipedia.org/wiki/Argos,_Peloponnese" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>صیدا:</strong> لایه‌های عصر مفرغ آن به حدود ۳۲۰۰ پیش از میلاد می‌رسد و به رنگ ارغوانی و شیشه‌گری شهرت داشت <a href="https://en.wikipedia.org/wiki/Sidon" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>دمشق:</strong> نخستین بار در فهرستی مصری از دوره‌ی تحتمس سوم (قرن ۱۵ پیش از میلاد) نام برده شده <a href="https://www.livius.org/articles/place/damascus" target="_blank" rel="noopener">Livius</a>.</li>
+<li><strong>اورایبی:</strong> روستای هوپی‌ها در آریزونا، پیش از ۱۱۰۰ میلادی ساخته شده و احتمالاً قدیمی‌ترین سکونتگاه پیوسته‌ی آمریکاست <a href="https://en.wikipedia.org/wiki/Oraibi,_Arizona" target="_blank" rel="noopener">Wikipedia</a>.</li>
+</ul>
+<p>پورتو، که بسیاری از ایرانیان پرتغال در آن زندگی می‌کنند، حدود ۲۲۰۰ تا ۲۸۰۰ سال قدمت دارد و به این فهرست نمی‌رسد؛ ولی نام رومی‌اش «پورتوس کاله» احتمالاً نام پرتغال را ساخته است <a href="https://en.wikipedia.org/wiki/Porto" target="_blank" rel="noopener">Wikipedia</a>.</p>
+
+<h3><span class="check-number">۰۸.</span> این پیشینه امروز به چه کار می‌آید؟</h3>
+<p><strong>تحلیل دیتومان:</strong> شهر کهن فقط خاطره نیست؛ سرمایه است:</p>
+<ul>
+<li><strong>گردشگری و شغل:</strong> ایران ۲۸ اثر ثبت جهانی یونسکو دارد و تازه‌ترینش، هگمتانه، در قلب همدان است. هر اثر ثبت‌شده برای راهنمای محلی، اقامتگاه، صنایع دستی و رستوران مشتری می‌آورد.</li>
+<li><strong>دانش و پژوهش:</strong> تپه‌های شوش و ری هنوز هزاران سال لایه‌ی کاوش‌نشده دارند. باستان‌شناسی، مرمت و موزه‌داری شغل‌های تخصصی‌اند که فقط در چنین شهرهایی معنی دارند.</li>
+<li><strong>پل فرهنگی:</strong> پیوند خط، زبان و دانش با شام، لبنان، عراق و خلیج فارس زمینه‌ی همکاری علمی و فرهنگی و گردشگری مشترک است، فراتر از سیاست روز.</li>
+<li><strong>اعتماد به بازسازی:</strong> شوش از روستایی کوچک دوباره شهری ۷۷ هزار نفره شد و ری بعد از ویرانی کامل به بخشی از پایتخت تبدیل شد. این تاریخ نشان می‌دهد ویرانی پایان کار نیست.</li>
+</ul>
+
+<h3><span class="check-number">۰۹.</span> نگاه دیتومان</h3>
+<p>سه شهر از ده شهری که هم زنده ماندند و هم نامشان را نگه داشتند در ایران‌اند. این عدد درباره‌ی گذشته است، ولی پیامش برای امروز است: سرزمینی که هزاران سال با کم‌آبی، جنگ و زلزله کنار آمده، راه بازسازی را بلد است. پیوند این شهرها با جبیل، صیدا، حلب و دمشق هم یادآوری می‌کند که خط، دانش و تجارت این منطقه همیشه مشترک بوده. این پیوندها را با هم دنبال می‌کنیم.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>شوش: <a href="https://www.worldhistory.org/susa/.md" target="_blank" rel="noopener">World History Encyclopedia</a> · <a href="https://www.worldheritagesite.org/list/susa" target="_blank" rel="noopener">worldheritagesite.org</a> · فهرست شهرهای کهن: <a href="https://worldheritagesite.org/connections/oldest-continuously-inhabited-cities" target="_blank" rel="noopener">worldheritagesite.org</a></li>
+<li>ری: <a href="https://www.britannica.com/place/Rayy" target="_blank" rel="noopener">Britannica</a> · همدان: <a href="https://en.wikipedia.org/wiki/Hamadan" target="_blank" rel="noopener">Wikipedia</a> · آرامگاه استر و مردخای: <a href="https://en.wikipedia.org/wiki/Tomb_of_Esther_and_Mordechai" target="_blank" rel="noopener">Wikipedia</a></li>
+<li>جبیل: <a href="https://en.wikipedia.org/wiki/Byblos" target="_blank" rel="noopener">Wikipedia</a> · اربیل: <a href="https://en.wikipedia.org/wiki/Citadel_of_Erbil" target="_blank" rel="noopener">Wikipedia</a> · <a href="https://en.wikipedia.org/wiki/Erbil" target="_blank" rel="noopener">Wikipedia</a> · حلب: <a href="https://britannica.com/place/Aleppo/Introduction" target="_blank" rel="noopener">Britannica</a></li>
+<li>آرگوس: <a href="https://en.wikipedia.org/wiki/Argos,_Peloponnese" target="_blank" rel="noopener">Wikipedia</a> · صیدا: <a href="https://en.wikipedia.org/wiki/Sidon" target="_blank" rel="noopener">Wikipedia</a> · دمشق: <a href="https://www.livius.org/articles/place/damascus" target="_blank" rel="noopener">Livius</a> · اورایبی: <a href="https://en.wikipedia.org/wiki/Oraibi,_Arizona" target="_blank" rel="noopener">Wikipedia</a> · پورتو: <a href="https://en.wikipedia.org/wiki/Porto" target="_blank" rel="noopener">Wikipedia</a></li>
+<li>بحرین و ایران: <a href="https://www.iranicaonline.org/articles/bahrain-all/bahrain-iii-history-of-political-relations-with-iran/" target="_blank" rel="noopener">Iranica</a> · <a href="https://iranchamber.com/geography/articles/mishmahig_islands_bahrain.php" target="_blank" rel="noopener">Iran Chamber</a> · هگمتانه: <a href="https://www.intellinews.com/iran-s-hegmataneh-inscribed-in-unesco-world-heritage-list-335715/" target="_blank" rel="noopener">Intellinews</a> · جمعیت شوش: <a href="https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Shush%2C_Iran" target="_blank" rel="noopener">Wikipedia</a> · ری: <a href="https://en.wikishia.net/view/Rayy" target="_blank" rel="noopener">WikiShia</a> · <a href="https://webcf.waybackmachine.org/web/20220503110124/https://en.wikipedia.org/wiki/Rey,_Iran" target="_blank" rel="noopener">Wikipedia</a></li>
+<li>خلیج فارس: <a href="https://en.wikipedia.org/wiki/Qal%27at_al-Bahrain" target="_blank" rel="noopener">قلعه‌ی بحرین</a> · <a href="https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Kuwait_City" target="_blank" rel="noopener">کویت</a> · <a href="https://en.wikipedia.org/wiki/Doha" target="_blank" rel="noopener">دوحه</a> · <a href="https://abudhabiresidentsoffice.gov.ae/About-Abu-Dhabi/History-Of-Abu-Dhabi" target="_blank" rel="noopener">ابوظبی</a> · <a href="https://www.emirates.com/vn/vietnamese/discover-dubai/dubai-history/" target="_blank" rel="noopener">دبی</a></li>
+<li>ایران و شام: <a href="https://iranicaonline.org/articles/eber-nari" target="_blank" rel="noopener">Iranica، Eber-Nari</a> · <a href="https://www.livius.org/articles/place/sidon/sidon-2/" target="_blank" rel="noopener">Livius، صیدا</a> · <a href="https://mail.iranicaonline.org/articles/aramaic-" target="_blank" rel="noopener">Iranica، آرامی</a> · <a href="https://scroll.in/article/1085846/how-the-idea-of-paradise-dates-back-to-the-ancient-gardens-of-persia" target="_blank" rel="noopener">Scroll، پردیس</a> · <a href="https://en.wikipedia.org/wiki/Baha_al-Din_al-Amili" target="_blank" rel="noopener">شیخ بهایی</a> · <a href="https://core-prod.cambridgecore.org/core/journals/iranian-studies/article/ulama-of-jabal-amil-in-safavid-iran-15011736-marginality-migration-and-social-change/5A342B12CA894C353181F880C56C03E5" target="_blank" rel="noopener">Iranian Studies</a></li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۱۹ آبان ۱۴۰۵. تاریخ‌های باستانی تخمینی‌اند و منابع گاهی اختلاف دارند.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p><strong>Of ten cities that have stayed inhabited for thousands of years and still carry their ancient names, three are in Iran: Shush, Rey and Hamadan. No other country on the list has more than two.</strong></p>
+<p>Shush has been a city for about 6,200 years. Rey appears in the Avesta as "Ragha". Hamadan is Hagmatana, capital of the Medes. All three are living cities today, where people work, study and build homes. We follow what these cities have seen, why they survived, and how this history ties Iran to the old cities of Syria and Lebanon.</p>
+<div class="note"><p><strong>How we chose</strong></p><p>No city stays unchanged for millennia. We picked cities that kept two things: near-continuous habitation and the root of their name. This is not a "top ten oldest" ranking; no official ranking exists and ancient dates are estimates. Cities that changed names (Plovdiv, Xi'an) or are now empty (Shahr-e Sukhteh) are left out. We also left out Jericho, because the continuity of settlement at the ancient mound is disputed.</p></div>
+<h3>1. The ten cities</h3>
+<div class="tw"><table><tr><th>City</th><th>Country</th><th>Settled or first named</th><th>Name path</th></tr><tr><td>Byblos (Jbeil)</td><td>Lebanon</td><td>at least 5000 BC</td><td>Gubla → Jbeil</td></tr><tr><td>Erbil</td><td>Iraq</td><td>5th millennium BC</td><td>Irbilum → Arbela → Erbil</td></tr><tr><td>Aleppo</td><td>Syria</td><td>c. 4300 BC</td><td>Halab (Ebla tablets)</td></tr><tr class="ir"><td>Shush (Susa)</td><td>Iran</td><td>c. 4200 BC</td><td>Shushun → Shushan → Shush</td></tr><tr><td>Argos</td><td>Greece</td><td>c. 7,000 years ago</td><td>Argos</td></tr><tr><td>Sidon (Saida)</td><td>Lebanon</td><td>c. 3200 BC</td><td>Sidon → Saida</td></tr><tr class="ir"><td>Rey</td><td>Iran</td><td>3rd millennium BC</td><td>Ragha → Rey</td></tr><tr><td>Damascus</td><td>Syria</td><td>first named 15th c. BC</td><td>T-m-s-q → Dimashq</td></tr><tr class="ir"><td>Hamadan</td><td>Iran</td><td>Median capital, c. 700 BC</td><td>Hagmatana → Hamadan</td></tr><tr><td>Oraibi</td><td>USA</td><td>before AD 1100</td><td>Orayvi</td></tr></table></div>
+<h3>2. The three Iranian cities</h3>
+<p><strong>Shush:</strong> continuous habitation is recorded from about 4395 BC, and it became a city around 4200 BC <a href="https://www.worldhistory.org/susa/.md" target="_blank" rel="noopener">WHE</a>. It was the Elamite capital and later an Achaemenid capital, and the tomb attributed to the prophet Daniel stands here. UNESCO listed it in 2015. In fairness, Shush shrank to a small settlement between the 15th and 20th centuries <a href="https://www.worldheritagesite.org/list/susa" target="_blank" rel="noopener">World Heritage Site</a>.</p>
+<p><strong>Rey:</strong> settled from the 3rd millennium BC and named in the Avesta as the sacred place Ragha. It was a Parthian capital, and in the 8th century rivalled only Damascus and Baghdad in western Asia. The Mongols almost destroyed it in 1220 and most survivors moved to Tehran, but the name lives on in Shahr-e Rey <a href="https://www.britannica.com/place/Rayy" target="_blank" rel="noopener">Britannica</a>.</p>
+<p><strong>Hamadan:</strong> built by the Medes and named by Herodotus as their capital. Its Old Persian name was Hagmatana; the Greeks said Ecbatana. It has over 550,000 people today <a href="https://en.wikipedia.org/wiki/Hamadan" target="_blank" rel="noopener">Wikipedia</a>. Avicenna's mausoleum and the tomb attributed to Esther and Mordecai, the most important Jewish and Christian pilgrimage site in Iran, stand a short walk apart <a href="https://en.wikipedia.org/wiki/Tomb_of_Esther_and_Mordechai" target="_blank" rel="noopener">Wikipedia</a>.</p>
+<p>Iran has older ruins too, such as Chogha Zanbil and Shahr-e Sukhteh, both UNESCO sites, but nobody lives there now. Shush, Rey and Hamadan are different because life went on.</p>
+
+<h3>3. Rise and fall: three cities over 6,000 years</h3>
+<p>These cities were not always great. They became capitals, shrank and rose again. The chart sums up that path (Ditoman's analysis based on this report's sources; boundaries are approximate):</p>
+<svg viewBox="0 0 900 300" direction="ltr" style="direction:ltr;width:100%;height:auto;display:block;margin:10px 0 6px" role="img" aria-label="timeline"><text x="136" y="64" text-anchor="end" fill="#fff" font-size="22" font-weight="800" font-family="IRANYekanX Fa, Inter">Shush</text><rect x="150" y="46" width="730" height="26" rx="6" fill="rgba(255,255,255,.05)"/><rect x="183.6" y="46" width="356.5" height="26" rx="5" fill="#ffc94a"/><rect x="541.5" y="46" width="50.1" height="26" rx="5" fill="#3fc9b4"/><rect x="593.1" y="46" width="21.9" height="26" rx="5" fill="#ffc94a"/><rect x="616.5" y="46" width="192.0" height="26" rx="5" fill="#3fc9b4"/><rect x="810.0" y="46" width="54.4" height="26" rx="5" fill="#41606a"/><rect x="865.9" y="46" width="12.6" height="26" rx="5" fill="#3fc9b4"/><text x="136" y="134" text-anchor="end" fill="#fff" font-size="22" font-weight="800" font-family="IRANYekanX Fa, Inter">Rey</text><rect x="150" y="116" width="730" height="26" rx="6" fill="rgba(255,255,255,.05)"/><rect x="373.7" y="116" width="250.2" height="26" rx="5" fill="#41606a"/><rect x="625.4" y="116" width="51.5" height="26" rx="5" fill="#ffc94a"/><rect x="678.4" y="116" width="77.5" height="26" rx="5" fill="#3fc9b4"/><rect x="757.4" y="116" width="30.9" height="26" rx="5" fill="#ffc94a"/><rect x="789.8" y="116" width="69.0" height="26" rx="5" fill="#41606a"/><rect x="860.3" y="116" width="18.2" height="26" rx="5" fill="#3fc9b4"/><text x="136" y="204" text-anchor="end" fill="#fff" font-size="22" font-weight="800" font-family="IRANYekanX Fa, Inter">Hamadan</text><rect x="150" y="186" width="730" height="26" rx="6" fill="rgba(255,255,255,.05)"/><rect x="575.1" y="186" width="15.4" height="26" rx="5" fill="#ffc94a"/><rect x="592.0" y="186" width="23.0" height="26" rx="5" fill="#ffc94a"/><rect x="616.5" y="186" width="262.0" height="26" rx="5" fill="#3fc9b4"/><line x1="205.9" x2="205.9" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="205.9" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">4000 BC</text><line x1="429.7" x2="429.7" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="429.7" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">2000 BC</text><line x1="653.4" x2="653.4" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="653.4" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">0</text><line x1="765.2" x2="765.2" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="765.2" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">1000</text><line x1="880.0" x2="880.0" y1="30" y2="250" stroke="rgba(255,255,255,.15)" stroke-dasharray="3 4"/><text x="880.0" y="272" text-anchor="middle" fill="#9fb6b9" font-size="15" font-family="Inter">2026</text></svg><p style="font-size:.92rem;color:#9fb6b9"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#ffc94a;vertical-align:middle;margin:0 4px"></span>Capital · <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#3fc9b4;vertical-align:middle;margin:0 4px"></span>Active city · <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#41606a;vertical-align:middle;margin:0 4px"></span>Village or half-ruined</p>
+<ul>
+<li><strong>Shush:</strong> Elamite capital, then Achaemenid capital. From the 15th to the 20th century it shrank to a small village beside the ancient mounds. Now it is growing again: from 53,897 people in 2006 to 77,148 in 2016, about 43% in ten years <a href="https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Shush%2C_Iran" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>Rey:</strong> a Parthian capital, then capital of the Buyids and Seljuks in the 10th–11th centuries. A geographer wrote there was no bigger city between Iraq and Nishapur, and the vizier Sahib ibn Abbad's library was said to fill 4,000 camel loads <a href="https://en.wikishia.net/view/Rayy" target="_blank" rel="noopener">WikiShia</a>. The Mongols and later Timur ruined it. But Rey came back: Iran's first railway (1886–88) linked Tehran to Rey, and today it is Tehran's 20th district with hundreds of thousands of residents <a href="https://webcf.waybackmachine.org/web/20220503110124/https://en.wikipedia.org/wiki/Rey,_Iran" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>Hamadan:</strong> Median capital, then Achaemenid summer capital, and in the 11th century the place where Avicenna taught and wrote. Unlike Shush and Rey it never fell to a village. It has more than 550,000 people today, and in July 2024 the Hegmataneh mound became Iran's 28th UNESCO World Heritage site <a href="https://www.intellinews.com/iran-s-hegmataneh-inscribed-in-unesco-world-heritage-list-335715/" target="_blank" rel="noopener">Intellinews</a>.</li>
+</ul>
+
+<h3>4. Why did they survive?</h3>
+<p><strong>Ditoman's take:</strong> cities that last for millennia usually had three things:</p>
+<ul>
+<li><strong>Reliable water:</strong> Shush between the Karkheh and Dez rivers; Rey and Hamadan at the foot of mountains with springs and qanats. The Persian qanat was itself listed by UNESCO in 2016.</li>
+<li><strong>A place on the roads:</strong> Rey and Hamadan sat on what became the Silk Road; Shush was the head of the Achaemenid Royal Road.</li>
+<li><strong>Room for difference:</strong> Shush held Elamites, Persians, Greeks and Jews. In Hamadan, Avicenna and the shrine of Esther and Mordecai still stand side by side. Cities that keep many peoples tend to be rebuilt after every disaster.</li>
+</ul>
+<h3>5. The southern neighbours</h3>
+<p>The southern shore of the Persian Gulf has ancient civilisations too: Dilmun had its capital in Bahrain around 2300 BC, and UNESCO listed Qal’at al-Bahrain in 2005 <a href="https://en.wikipedia.org/wiki/Qal%27at_al-Bahrain" target="_blank" rel="noopener">Wikipedia</a>. But today's main cities there are young:</p>
+<div class="tw"><table><tr><th>Country</th><th>Ancient trace</th><th>City today</th></tr><tr><td>Bahrain (Qal’at al-Bahrain)</td><td>c. 2300 BC; capital of Dilmun</td><td>Manama is much younger</td></tr><tr><td>Kuwait</td><td>ancient settlement on Failaka island</td><td>Kuwait City: 1613</td></tr><tr><td>Abu Dhabi</td><td>Bronze Age settlement in the region</td><td>Abu Dhabi town: 1761</td></tr><tr><td>Dubai</td><td>settlement in the area from c. 3000 BC</td><td>Dubai town: 1833</td></tr><tr><td>Doha</td><td>Al Bidda first mentioned 1681</td><td>Doha: 1820s</td></tr></table></div>
+<p>This is not about one people outranking another; it is mostly geography. Scarce fresh water kept settlements on the southern shore small and mobile, until pearls, trade and later oil built large cities. These young cities are now investing heavily in museums and in restoring their older heritage.</p>
+<p>Bahrain was later part of the Iranian realm in the Sasanian era and again from 1622 to 1783. In 1970, after a UN consultation held at Iran's request, the way opened to its independence, and in 1971 Iran was among the first countries to recognise it <a href="https://www.iranicaonline.org/articles/bahrain-all/bahrain-iii-history-of-political-relations-with-iran/" target="_blank" rel="noopener">Iranica</a> · <a href="https://iranchamber.com/geography/articles/mishmahig_islands_bahrain.php" target="_blank" rel="noopener">Iran Chamber</a>.</p>
+<h3>6. Iran, Syria and Lebanon: 2,500 years of ties</h3>
+<p>Four cities on the list, Byblos, Sidon, Damascus and Aleppo, are in today's Syria and Lebanon. Their ties to Iran predate Islam and are mostly about administration, writing, trade and learning:</p>
+<ul>
+<li><strong>One province:</strong> after Cyrus took Babylon in 539 BC, the lands west of the Euphrates, including Syria and Phoenicia, became the satrapy "Beyond the River". The local kings of Tyre, Sidon, Byblos and Arwad kept their thrones under a Persian satrap <a href="https://iranicaonline.org/articles/eber-nari" target="_blank" rel="noopener">Iranica</a>.</li>
+<li><strong>A Phoenician fleet:</strong> Sidon and Byblos were the empire's two naval ports, and Sidonian crews fought in the Persian fleet. Sidon had a royal Persian park, and the Eshmun temple grew in the Persian period <a href="https://www.livius.org/articles/place/sidon/sidon-2/" target="_blank" rel="noopener">Livius</a>. The English word paradise comes from that Old Persian word for an enclosed garden <a href="https://scroll.in/article/1085846/how-the-idea-of-paradise-dates-back-to-the-ancient-gardens-of-persia" target="_blank" rel="noopener">Scroll</a>.</li>
+<li><strong>A script from Syria:</strong> Aramaeans built city-states around Aleppo and Damascus and carried their language into Mesopotamia; the Achaemenids made it the empire's administrative language. The Pahlavi script came from the Aramaic alphabet, which came from the Phoenician one <a href="https://mail.iranicaonline.org/articles/aramaic-" target="_blank" rel="noopener">Iranica</a>. The letters Iranians wrote with for centuries trace back to Phoenicia and Syria.</li>
+<li><strong>A scholar from Baalbek:</strong> Sheikh Baha'i was born near Baalbek in 1547 and came to Iran as a child. He is credited with the urban vision of Isfahan's Naqsh-e Jahan Square, and his arithmetic textbook was taught across the Islamic world until the 19th century <a href="https://en.wikipedia.org/wiki/Baha_al-Din_al-Amili" target="_blank" rel="noopener">Wikipedia</a>. Dozens of scholars from Jabal Amil worked in Safavid Iran <a href="https://core-prod.cambridgecore.org/core/journals/iranian-studies/article/ulama-of-jabal-amil-in-safavid-iran-15011736-marginality-migration-and-social-change/5A342B12CA894C353181F880C56C03E5" target="_blank" rel="noopener">Iranian Studies</a>.</li>
+</ul>
+<p>These ties have nothing to do with today's governments. They are about cities that traded for millennia, borrowed each other's writing, and sent scholars back and forth.</p>
+<h3>7. The rest of the list</h3>
+<ul>
+<li><strong>Byblos:</strong> inhabited since at least 5000 BC; the word Bible comes from its Greek name, because papyrus reached Greece through its port <a href="https://en.wikipedia.org/wiki/Byblos" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>Erbil:</strong> settled since the 5th millennium BC. In 2007, 840 families left the citadel for restoration, but one family was allowed to stay so the record of continuous habitation would not break <a href="https://en.wikipedia.org/wiki/Citadel_of_Erbil" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>Aleppo:</strong> the name Halab appears in the Ebla tablets at the end of the 3rd millennium BC <a href="https://britannica.com/place/Aleppo/Introduction" target="_blank" rel="noopener">Britannica</a>.</li>
+<li><strong>Argos:</strong> continuously settled for about 7,000 years; its ancient theatre seated 20,000 <a href="https://en.wikipedia.org/wiki/Argos,_Peloponnese" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>Sidon:</strong> Bronze Age layers date to about 3200 BC; famous for purple dye and glass <a href="https://en.wikipedia.org/wiki/Sidon" target="_blank" rel="noopener">Wikipedia</a>.</li>
+<li><strong>Damascus:</strong> first named in an Egyptian list from the reign of Thutmose III, 15th century BC <a href="https://www.livius.org/articles/place/damascus" target="_blank" rel="noopener">Livius</a>.</li>
+<li><strong>Oraibi:</strong> a Hopi village in Arizona founded before 1100, possibly the oldest continuously inhabited settlement in the US <a href="https://en.wikipedia.org/wiki/Oraibi,_Arizona" target="_blank" rel="noopener">Wikipedia</a>.</li>
+</ul>
+<p>Porto, home to many Iranians in Portugal, is about 2,200–2,800 years old and does not make the list, but its Roman name Portus Cale probably gave Portugal its name <a href="https://en.wikipedia.org/wiki/Porto" target="_blank" rel="noopener">Wikipedia</a>.</p>
+<h3>8. What is this heritage good for today?</h3>
+<p><strong>Ditoman's take:</strong> an ancient city is not just a memory; it is capital:</p>
+<ul>
+<li><strong>Tourism and jobs:</strong> Iran has 28 UNESCO World Heritage sites, the newest, Hegmataneh, in the heart of Hamadan. Each listed site brings customers to local guides, guesthouses, crafts and restaurants.</li>
+<li><strong>Knowledge and research:</strong> the mounds of Shush and Rey still hold thousands of years of unexcavated layers. Archaeology, conservation and museum work are skilled jobs that only make sense in places like these.</li>
+<li><strong>A cultural bridge:</strong> shared writing, language and learning with Syria, Lebanon, Iraq and the Gulf are a basis for academic, cultural and tourism cooperation beyond day-to-day politics.</li>
+<li><strong>Confidence in rebuilding:</strong> Shush grew from a small village back into a town of 77,000, and Rey went from total ruin to part of the capital. This history shows destruction is not the end.</li>
+</ul>
+
+<h3>9. Ditoman's reading</h3>
+<p>Three of the ten cities that both survived and kept their names are in Iran. The number is about the past, but the message is for today: a land that has lived through drought, war and earthquakes for millennia knows how to rebuild. And the ties to Byblos, Sidon, Aleppo and Damascus are a reminder that this region's writing, learning and trade have always been shared. We follow these ties together.</p>
+<h3>Sources</h3>
+<p>Full source list in the Persian version.</p>
+<p style="color:#9fb6b9;margin-top:10px">Last reviewed 10 November 2026. Ancient dates are estimates and sources sometimes differ.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261107b" defer></script>
+<script src="lang.js?v=20261108" defer></script>
+</body>
+</html>

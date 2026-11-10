@@ -11,7 +11,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://ditoman.com/"
 START, END = "<!-- seo:start -->", "<!-- seo:end -->"
 SKIP = {"404.html"}
-ARTICLES = {"kids-ai-money.html", "household-economy.html", "iran-trees.html", "news-readers.html", "iran-vehicles.html", "fateh-reactor.html", "iran-built.html", "cinnagen.html", "iran-zinc.html", "morvarid-eo.html", "hangang.html", "staying-in.html", "pistachio-ai.html", "sina-surgical-robot.html"}
+ARTICLES = {"oldest-cities.html", "kids-ai-money.html", "household-economy.html", "iran-trees.html", "news-readers.html", "iran-vehicles.html", "fateh-reactor.html", "iran-built.html", "cinnagen.html", "iran-zinc.html", "morvarid-eo.html", "hangang.html", "staying-in.html", "pistachio-ai.html", "sina-surgical-robot.html"}
 # Pages whose content comes from data files that robots update.
 DATA_SOURCES = {"posts.html": ["telegram/feed.json"], "prices.html": ["market"], "calendar.html": ["calendar"]}
 PDFS = ["whitepaper-v5.pdf", "whitepaper-v5-fa.pdf"]
