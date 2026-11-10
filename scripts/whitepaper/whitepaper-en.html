@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>Ditoman Whitepaper: Final Direction</title>
+<!-- Source for whitepaper-v5.pdf. Build with: python3 scripts/whitepaper/build.py -->
+<style>
+  @font-face { font-family: Yekan; font-weight: 400; src: url("../../fonts/iranyekanx/IRANYekanXFaNum-Regular.woff2"); }
+  @font-face { font-family: Yekan; font-weight: 500; src: url("../../fonts/iranyekanx/IRANYekanXFaNum-Medium.woff2"); }
+  @font-face { font-family: Yekan; font-weight: 700; src: url("../../fonts/iranyekanx/IRANYekanXFaNum-Bold.woff2"); }
+  @font-face { font-family: Yekan; font-weight: 800; src: url("../../fonts/iranyekanx/IRANYekanXFaNum-ExtraBold.woff2"); }
+  @font-face { font-family: Yekan; font-weight: 900; src: url("../../fonts/iranyekanx/IRANYekanXFaNum-Black.woff2"); }
+  @font-face { font-family: Brico; font-weight: 200 800; src: url("../report/fonts/BricolageGrotesque.ttf"); }
+
+  @page { size: A4; margin: 20mm 18mm 22mm; }
+  :root { --ink: #0f1d21; --muted: #5b6b6f; --teal: #138a7e; --mint: #2fb9a4; --line: #d8e4e1; --wash: #eef6f3; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Brico, Arial, sans-serif; color: var(--ink); font-size: 10.4pt; line-height: 1.62; }
+  .latin { font-family: Brico, Arial, sans-serif; direction: ltr; unicode-bidi: isolate; }
+  .addr { font-family: "DejaVu Sans Mono", Menlo, monospace; direction: ltr; unicode-bidi: isolate; font-size: 9pt; letter-spacing: 0.01em; }
+
+  /* cover */
+  .cover { padding: 6mm 0 10mm; border-bottom: 2px solid var(--ink); margin-bottom: 9mm; }
+  .lockup { display: flex; direction: ltr; align-items: center; gap: 12px; justify-content: flex-start; }
+  .lockup img { width: 46px; height: 46px; border-radius: 50%; }
+  .lockup .en { font-family: Brico; font-weight: 800; letter-spacing: 0.08em; font-size: 15pt; }
+  .lockup .fa { font-family: Yekan; font-weight: 900; font-size: 17pt; }
+  code { font-family: "DejaVu Sans Mono", Menlo, monospace; font-size: 9pt; }
+  .cover .kicker { margin-top: 16mm; color: var(--teal); font-weight: 800; font-size: 11pt; }
+  .cover h1 { font-weight: 800; font-size: 34pt; line-height: 1.2; margin-top: 3mm; }
+  .cover .motto { margin-top: 6mm; font-size: 14pt; font-weight: 500; color: var(--muted); }
+
+  .note { background: var(--wash); border-left: 4px solid var(--mint); padding: 4mm 5mm; border-radius: 3mm; margin-bottom: 8mm; }
+  .note h2 { font-size: 11.5pt; margin-bottom: 1mm; border: 0; padding: 0; }
+
+  h2 { font-weight: 800; font-size: 15pt; line-height: 1.4; margin: 9mm 0 3mm; padding-bottom: 1.5mm; border-bottom: 1px solid var(--line); break-after: avoid; }
+  h2.newpage { break-before: page; margin-top: 0; }
+  h2 .n { color: var(--teal); margin-right: 3mm; }
+  h3 { font-weight: 800; font-size: 11.5pt; color: var(--teal); margin: 5mm 0 1mm; break-after: avoid; }
+  p { margin-bottom: 3mm; }
+  p b, li b { font-weight: 800; }
+  ol, ul { padding-left: 6mm; margin-bottom: 3mm; }
+  li { margin-bottom: 1.5mm; }
+
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 5mm; font-size: 10pt; break-inside: avoid; }
+  th { text-align: left; font-weight: 800; background: var(--ink); color: #fff; padding: 2.2mm 3mm; }
+  td { padding: 2.2mm 3mm; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.5; }
+  td:first-child { font-weight: 700; width: 34%; }
+  tr:nth-child(even) td { background: #f7faf9; }
+
+  .risk { border: 1.5px solid #c9472f; border-radius: 3mm; padding: 4mm 5mm; break-inside: avoid; }
+  .risk ul { margin-bottom: 2mm; }
+  .closing { margin-top: 8mm; padding: 6mm; background: var(--ink); color: #eef6f2; border-radius: 3mm; break-inside: avoid; }
+  .closing p { margin-bottom: 2mm; }
+  .closing .last { font-weight: 900; font-size: 13pt; color: #7ff5de; margin: 3mm 0 0; }
+  .foot { margin-top: 8mm; font-size: 8.8pt; color: var(--muted); text-align: center; line-height: 1.9; }
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="lockup"><span class="en">DITOMAN</span><img src="../../tmn-logo-256.png" alt="" /><span class="fa">دیتومان</span></div>
+  <p class="kicker">WHITEPAPER · FINAL DIRECTION</p>
+  <h1>Ditoman (TMN)</h1>
+  <p class="motto">We are not building just a token. We are building a direction.</p>
+</header>
+
+<div class="note">
+  <h2>Disclaimer</h2>
+  <p>This document sets out the final, settled direction of the Ditoman project. Earlier versions documented the project’s evolution; this document replaces them all and is the only authoritative reference. All on-chain figures in this document are verifiable on BscScan at the contract address given in Section 8 and were confirmed at the time of publication.</p>
+</div>
+
+<h2><span class="n">1.</span>Origin</h2>
+<p>Ditoman did not begin as a marketing concept. It began with a currency: the Toman, the everyday name Iranians use for their money, and the origin of “Digital Toman”, or DiToman.</p>
+<p>In February 2022, TMN was deployed on BNB Smart Chain with a simple question behind it: could a token demonstrate that knowledge itself carries real value for Iranians, a population that has spent nearly five decades navigating sanctions, currency collapse, and restricted access to the global financial system?</p>
+<p>That question was not theoretical. The founding family has operated a manufacturing business inside Iran for more than forty years, employing a substantial workforce, continuing to build and operate through decades of financial pressure and regulatory hardship that were neither chosen nor endorsed. Ditoman is built on lived experience, not observation from a distance.</p>
+<p>The idea originated with the majority founder and was built together with a co-founding partner. For nearly four years the project remained deliberately quiet: no marketing, no promotion, no attempt to attract holders. That period was research: understanding what would actually be useful, and waiting until the technical foundation could stand up to scrutiny before asking anyone to pay attention.</p>
+<p>This document marks the end of that phase.</p>
+
+<h2><span class="n">2.</span>What Ditoman Is</h2>
+<p>Ditoman is a bilingual (Persian and English) education and media platform with three purposes:</p>
+<ol>
+  <li><b>Practical financial and crypto literacy.</b> Real, structured education on digital assets, blockchain, and financial systems, written for people who need genuine understanding rather than trading signals or hype. Published in both languages, serving readers directly while supporting bilingual fluency.</li>
+  <li><b>Honest analysis of technological and economic change.</b> How artificial intelligence, automation, and energy transitions will reshape work and opportunity, examined specifically through the position of people who face these shifts with fewer institutional safety nets, rather than as abstract futurism written for no one in particular.</li>
+  <li><b>Documentation of real achievement.</b> Specific, verifiable accounts of what Iranian people and businesses have actually built and accomplished through years of economic difficulty, inside the country and across the diaspora.</li>
+</ol>
+
+<h2><span class="n">3.</span>Why This Is Needed</h2>
+<p>International coverage of Iran is dominated by geopolitics, sanctions, and conflict. This is a simple observation about what gets reported and what does not, not a claim about any political dispute. The everyday reality of businesses operating, factories running, engineers and scientists working, and families building lives rarely reaches the world, and rarely reaches Iranians themselves in a form that lets them recognise each other’s capability clearly.</p>
+<p>At the same time, Persian-language crypto content online is dominated by trading signals and speculation. Structured, honest financial education without a product to sell is scarce, while the need for it is unusually high: currency devaluation, inflation, and restricted banking access mean that understanding digital money is not a hobby for this audience but a practical necessity.</p>
+<p>Ditoman exists to close both gaps.</p>
+
+<h2><span class="n">4.</span>Editorial Position</h2>
+<p>Ditoman does not take positions on government policy, sanctions policy, or international disputes, from any side. This is a permanent editorial rule, not a temporary stance.</p>
+<p>Where policy or economic conditions appear in Ditoman’s work, they appear only as context for what people have navigated, never as a subject of praise or blame. The value Ditoman offers is knowledge and accurate documentation, and neither requires agreement on contested politics to be useful.</p>
+<p>What Ditoman does hold to: people’s achievements belong to those people, and are worth seeing clearly.</p>
+
+<h2><span class="n">5.</span>What Makes Ditoman Different</h2>
+<p>Ditoman is not a general futurism channel, not a trading-signals service, and not a political commentary page. It is built by people with direct standing in the community it serves, operating from outside Iran with the freedom to publish openly, working across both sides of the diaspora divide.</p>
+<p>The token was deployed in 2022 and left deliberately inactive for years while the direction was worked out. That history is verifiable on-chain and is itself evidence of intent: this was never structured for a launch pump.</p>
+
+<h3>5a. The Founders</h3>
+<p>Ditoman was founded by two people and is majority-held by the originating founder, who conceived the project and directs it.</p>
+<p><b>Founding partner (majority holder, project direction).</b> Iranian, currently based in Europe. Educational background in electronics engineering and in finance and investment, including a postgraduate degree in finance and further study in financial technology. Professional experience spans the United Kingdom, continental Europe, the Middle East, and several years working with factories and companies in Asia, giving direct exposure to how manufacturing, finance, and trade actually operate across very different systems. Connected through family to a manufacturing business operating inside Iran for over forty years.</p>
+<p><b>Co-founding partner.</b> A senior electrical and electronics engineer working at the specialist end of the energy sector, solving complex technical problems in large-scale power generation and distribution systems. This is work that requires deep expertise and carries real operational consequence, and it grounds Ditoman’s analysis of energy and infrastructure in direct professional knowledge rather than secondary reading.</p>
+<p>Both founders are between thirty and forty years of age. The project is currently operated at small scale, and this document does not present it as a larger organisation than it is.</p>
+
+<h2><span class="n">6.</span>Core Pillars</h2>
+<table>
+  <tr><th>Pillar</th><th>Focus</th></tr>
+  <tr><td>Financial and Crypto Literacy</td><td>Structured bilingual education: wallets, self-custody, stablecoins, DeFi, network fundamentals, and practical security</td></tr>
+  <tr><td>Technology, AI and Energy</td><td>Analysis of technological and economic shifts, read through the position of the audience Ditoman serves</td></tr>
+  <tr><td>Documented Achievement</td><td>Specific, sourced stories of people and businesses that keep building in difficult conditions</td></tr>
+  <tr><td>Community</td><td>Telegram as the primary participation space; Instagram and the website as public-facing layers</td></tr>
+</table>
+
+<h2><span class="n">7.</span>The Role of TMN</h2>
+<p>TMN is a utility and participation token. It is not the destination of the project and is not presented as a speculative promise.</p>
+<p>Its intended role is to connect learning and contribution with recognition and access inside the Ditoman ecosystem. Its value is meant to track the strength of the education and community it supports, not the other way around.</p>
+
+<h2 class="newpage"><span class="n">8.</span>Technical Foundation</h2>
+<p>All figures below are independently verifiable on BscScan.</p>
+<table>
+  <tr><th>Field</th><th>Confirmed detail</th></tr>
+  <tr><td>Token name</td><td>DiToman</td></tr>
+  <tr><td>Symbol</td><td>TMN</td></tr>
+  <tr><td>Network</td><td>BNB Smart Chain</td></tr>
+  <tr><td>Standard</td><td>BEP-20</td></tr>
+  <tr><td>Contract address</td><td><span class="addr">0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d</span></td></tr>
+  <tr><td>Deployment</td><td>February 2022</td></tr>
+  <tr><td>Decimals</td><td>9</td></tr>
+  <tr><td>Original supply</td><td>21,000,000,000,000 TMN</td></tr>
+  <tr><td>Current total supply</td><td>18,901,056,445,783.85 TMN</td></tr>
+  <tr><td>Removed from circulation</td><td>About 20% of original supply, in two on-chain steps (detailed below)</td></tr>
+  <tr><td>Source code</td><td>Verified and publicly readable on BscScan</td></tr>
+  <tr><td>Ownership</td><td>Renounced; the owner address is <span class="addr">0x0000…0000</span></td></tr>
+</table>
+
+<h3>Two supply reductions</h3>
+<ul>
+  <li><b>Step 1, 24 April to 14 May 2026.</b> 2,100,000,000,000 TMN (10% of original supply) were sent to the public dead address <span class="addr">0x…dEaD</span>. No one holds its key, so these tokens can never move again, but they still count inside <code>totalSupply</code>.</li>
+  <li><b>Step 2, 13 September 2026.</b> 2,098,943,554,216.15 TMN (about 10%) were burned through the contract’s own burn function. This step reduced <code>totalSupply</code> from 21,000,000,000,000 to 18,901,056,445,783.85.</li>
+</ul>
+<p>Ownership of the contract was renounced after the second step.</p>
+
+<h3>Contract properties</h3>
+<p>The contract is a standard BEP-20 implementation derived from widely used open-source patterns. It contains:</p>
+<ul>
+  <li>No transfer tax or fee mechanism</li>
+  <li>No blacklist or address-freezing capability</li>
+  <li>No pause function</li>
+  <li>No proxy or upgradeable logic</li>
+  <li>No hidden owner privileges</li>
+</ul>
+<p>Both the <code>_mint</code> and <code>_burn</code> functions are restricted by an <code>onlyOwner</code> modifier. Because ownership has been permanently renounced, both functions are now unreachable by any party, including the founder.</p>
+<p>The consequences are stated plainly:</p>
+<ul>
+  <li>No new TMN can ever be created. The maximum supply is permanently fixed at its current level. This guarantee cannot be reversed by anyone.</li>
+  <li>The contract-level burn function can no longer be called. Total supply as recorded on-chain will not decrease further through that mechanism.</li>
+</ul>
+<p>This was a deliberate trade. Permanently eliminating the possibility of new issuance was judged more valuable than retaining the burn function, particularly for a token whose supply remains concentrated. It is irreversible, and it is disclosed here rather than left for readers to discover.</p>
+
+<h2><span class="n">9.</span>Supply, Distribution and Transparency</h2>
+<h3>Current reality</h3>
+<p>TMN supply remains highly concentrated. In October 2026 there were 33 holders, and the large majority of supply sits in founder-controlled wallets. This is visible to anyone on BscScan and is stated here directly rather than minimised.</p>
+<p>This concentration reflects the project’s history, a token deployed quietly in 2022 and never distributed or promoted, not a distribution strategy. It is the starting condition, not the intended end state.</p>
+<p>On 29 October 2026 the TMN/BNB liquidity tokens held in the project’s main wallet were locked until 29 October 2027. The lock prevents that liquidity from being withdrawn before then; it does not make the liquidity any deeper.</p>
+<h3>Path forward</h3>
+<ul>
+  <li><b>Supply removal from circulation.</b> Because the contract burn function is now permanently inaccessible, any future supply reduction will be executed by transferring tokens from founder-held wallets to a verifiable burn address, permanently removing them from circulation. Such transfers do not reduce the <code>totalSupply</code> figure recorded by the contract; the tokens remain visible at the burn address and are unrecoverable by anyone. Ditoman commits to describing this accurately rather than as a contract burn.</li>
+  <li><b>Staged and documented.</b> Future removals will be executed in stages tied to ecosystem milestones, with each transaction hash published so that anyone can verify it independently.</li>
+  <li><b>Distribution through participation.</b> Meaningful decentralisation comes from tokens reaching real participants, not from supply reduction alone. Distribution is intended to follow genuine learning and contribution within the ecosystem rather than sale or airdrop to passive holders.</li>
+  <li><b>No timeline promises that cannot be kept.</b> This document deliberately avoids fixed dates for supply actions. Commitments stated here are ones the project intends to meet and be judged on.</li>
+</ul>
+
+<h2><span class="n">10.</span>Token Utility</h2>
+<table>
+  <tr><th>Function</th><th>Direction</th></tr>
+  <tr><td>Access</td><td>Selected educational material and community spaces</td></tr>
+  <tr><td>Participation</td><td>Recognition for genuine engagement: completed learning, meaningful contribution, quality discussion</td></tr>
+  <tr><td>Recognition</td><td>Acknowledgement of early supporters and active contributors</td></tr>
+  <tr><td>Reward eligibility</td><td>A structured learn-and-earn mechanism, to be piloted at small scale before any wider rollout</td></tr>
+</table>
+<p>Utility is described as direction, not as a delivered product. Features will be announced as they are built, not before.</p>
+
+<h2><span class="n">11.</span>Roadmap</h2>
+<p><b>Phase 1: Foundation (complete).</b> Contract source code verified on BscScan. Ownership renounced. About 20% of supply removed from circulation in two on-chain steps. Bilingual educational publishing established. This whitepaper finalised as the settled direction.</p>
+<p><b>Phase 2: Community Structure (in progress).</b> Telegram community launched with real structure (published rules, seeded educational content, clear onboarding) before any invitation or promotion. All content aligned to the three pillars.</p>
+<p><b>Phase 3: Controlled Growth.</b> Direct participation in existing Persian-language crypto and diaspora communities. Limited, measured distribution testing. First documented supply-removal milestone, published with transaction proof.</p>
+<p><b>Phase 4: Learn-and-Earn Pilot.</b> Small-scale reward mechanism tied to verifiable learning activity, fully transparent and documented. Public review of progress against this roadmap, including honest reporting of what did not work.</p>
+
+<h2><span class="n">12.</span>Risk and Honest Disclosure</h2>
+<div class="risk">
+  <p>Readers should understand the following clearly:</p>
+  <ul>
+    <li>TMN has no meaningful liquidity or market activity at present.</li>
+    <li>Supply is concentrated among very few holders.</li>
+    <li>The described utility is planned, not operational.</li>
+    <li>The project is currently operated by its two founders, at small scale.</li>
+  </ul>
+  <p>Digital assets carry substantial risk. Nothing in this document is financial or investment advice, and nothing here should be read as a promise of future value.</p>
+  <p>Ditoman’s position is that stating these facts plainly is more valuable than obscuring them.</p>
+</div>
+
+<h2><span class="n">13.</span>Closing</h2>
+<div class="closing">
+  <p>Ditoman is not built around noise, and it is not built around a political argument. It is built on a straightforward conviction: that people navigating genuine economic difficulty deserve real knowledge, honest analysis of what is coming, and an accurate record of what they have already achieved, on their own terms.</p>
+  <p>Four years of quiet work produced the foundation. This document sets the direction that will not change again.</p>
+  <p class="last">We are not building just a token. We are building a direction, and this is it.</p>
+</div>
+
+<p class="foot">ditoman.com · Learn • Connect • Evolve<br />Contract (BNB Smart Chain): <span class="addr">0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d</span></p>
+
+</body>
+</html>
