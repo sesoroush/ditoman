@@ -6,8 +6,8 @@
    A channel with an empty address is not shown. Styles live in theme.css (.jb-inline). */
 (function () {
   var CHANNELS = [
-    { name: "تلگرام", url: "https://t.me/Ditoman_tm", bg: "linear-gradient(100deg,#7ff5de,#3ddc97)", fg: "#05110d" },
-    { name: "بله", url: "https://ble.ir/Ditoman", bg: "#3ddc97", fg: "#05110d" },
+    { name: "تلگرام", url: "https://t.me/Ditoman_tm", bg: "#ffad00", fg: "#1a1300" },
+    { name: "بله", url: "https://ble.ir/Ditoman", bg: "#57d9c7", fg: "#0b1a1c" },
     { name: "اینستاگرام", url: "https://www.instagram.com/ditoman.tmn/", bg: "linear-gradient(45deg,#f09433,#dc2743,#bc1888)", fg: "#fff" },
     { name: "روبیکا", url: "", bg: "#e83f6f", fg: "#fff" }
   ];

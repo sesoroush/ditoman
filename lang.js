@@ -233,7 +233,7 @@
       '.lang-btn{flex:none;height:38px;min-width:44px;padding:0 12px;border-radius:999px;border:1px solid rgba(127,245,222,.45);' +
       'background:rgba(127,245,222,.08);color:#eef6f2;font:700 .85rem Inter,-apple-system,Segoe UI,sans-serif;cursor:pointer;margin-inline-start:12px}' +
       '.lang-btn[lang="fa"]{font-family:"IRANYekanX Fa",IRANYekanX,Tahoma,sans-serif}' +
-      '.lang-btn:hover{border-color:#7ff5de;color:#7ff5de}.lang-btn:focus-visible{outline:2px solid #7ff5de;outline-offset:2px}';
+      '.lang-btn:hover{border-color:#57d9c7;color:#57d9c7}.lang-btn:focus-visible{outline:2px solid #57d9c7;outline-offset:2px}';
     document.head.appendChild(css);
   }
   var norm = function (s) { return s.replace(/\s+/g, " ").trim(); };
