@@ -17,7 +17,7 @@
   <meta name="theme-color" content="#04090c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="site.css?v=20261108" />
   <style>
     .feed { display: grid; gap: 22px; max-width: 760px; }
@@ -43,7 +43,7 @@
     @media (max-width: 600px) { .post-body { padding: 20px 18px; } }
   </style>
 <script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
-  <link rel="stylesheet" href="theme.css?v=20261111d" />
+  <link rel="stylesheet" href="theme.css?v=20261111e" />
 <!-- seo:start -->
 <meta name="twitter:card" content="summary_large_image" />
 <script type="application/ld+json">
@@ -253,6 +253,8 @@
     function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
     function linkify(s) { return s.replace(/https?:\/\/[^\s<]+/g, function (u) { return '<a href="' + u + '" target="_blank" rel="noopener noreferrer">' + u + "</a>"; }); }
     var isFa = function (s) { return /[\u0600-\u06FF]/.test(s.slice(0, 40)); };
+    // 900px copies of story covers (scripts/make_thumbs.py) instead of the 1-3 MB originals
+    function small(u) { return String(u).replace(/^(social\/[^\/]+\/)(post|1-cover|ig1)\.webp$/, "$1card.webp"); }
     fetch("telegram/feed.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (items) {
       var el = document.getElementById("feed");
       if (!items.length) { el.innerHTML = '<p class="empty"><span lang="fa">هنوز پستی نیست.</span><span lang="en">No posts yet.</span></p>'; return; }
@@ -281,7 +283,7 @@
         var actions = (long ? '<button class="more" type="button"><span lang="fa">ادامه</span><span lang="en">Read more</span></button>' : "") +
           (own ? '<a class="open" href="' + own + '"><span lang="fa">خواندن گزارش ←</span><span lang="en">Read the report →</span></a>' : "");
         return '<article class="post' + (long ? " collapsed" : "") + '" id="' + it.id + '">' +
-          (it.image ? '<img loading="lazy" src="' + it.image + '" alt="" onerror="this.remove()" />' : "") +
+          (it.image ? '<img loading="lazy" src="' + small(it.image) + '" data-full="' + it.image + '" alt="" onerror="if(this.dataset.full&&this.getAttribute(\'src\')!==this.dataset.full){this.src=this.dataset.full}else{this.remove()}" />' : "") +
           '<div class="post-body"><div class="post-meta"><span lang="en">' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl" lang="fa">' + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
           '<div class="post-text">' + paras + "</div>" +
           (actions ? '<div class="post-actions">' + actions + "</div>" : "") +
@@ -297,8 +299,8 @@
   <script src="menu.js?v=20261107" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261111b" defer></script>
-<script src="lang.js?v=20261111" defer></script>
-<script src="iran-bg.js?v=20261111" defer></script>
+<script src="lang.js?v=20261111b" defer></script>
+
 <script src="search.js?v=20261111" defer></script>
 </body>
 </html>

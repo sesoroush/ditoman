@@ -101,6 +101,13 @@
       "مرحله‌به‌مرحله، نه با تاریخ. پیشرفت را صادقانه گزارش می‌کنیم، حتی آنچه جواب نداد.",
     "Complete": "انجام شد", "In progress": "در حال انجام", "Next": "بعدی", "Later": "بعدتر",
     "Foundation": "پایه‌گذاری",
+    "Why do prices suddenly crash?": "چرا قیمت یک‌دفعه می‌ریزد؟",
+    "News starts the fall. Thin order books, slippage, leverage and liquidations decide how far it goes, with the 5 November 2026 sell-off as the example.":
+      "خبر سقوط را شروع می‌کند. دفتر سفارش کم‌عمق، لغزش قیمت، اهرم و لیکوئیدیشن‌ها تعیین می‌کنند سقوط تا کجا برود؛ با ریزش ۱۴ آبان ۱۴۰۵ به‌عنوان نمونه.",
+    "Slippage, leverage and the liquidation cascade: what happens inside an exchange after bad news, and how to protect yourself.":
+      "لغزش قیمت، اهرم و آبشار لیکوئیدیشن: بعد از خبر بد داخل صرافی چه می‌گذرد و چطور از خودمان محافظت کنیم.",
+    "Contract verified, ownership renounced, about 20% of supply out of circulation, bilingual lessons published, whitepaper final.":
+      "قرارداد تأیید شد، مالکیت واگذار شد، حدود ۲۰٪ عرضه از گردش خارج شد، درس‌های دوزبانه منتشر شد و وایت‌پیپر نسخه‌ی ۵ نهایی شد.",
     "Contract verified, ownership renounced, about 20% of supply out of circulation, bilingual lessons published, Whitepaper V5 final.":
       "قرارداد تأیید شد، مالکیت واگذار شد، حدود ۲۰٪ عرضه از گردش خارج شد، درس‌های دوزبانه منتشر شد و وایت‌پیپر نسخه‌ی ۵ نهایی شد.",
     "Community structure": "ساختار جامعه",

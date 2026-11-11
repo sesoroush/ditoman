@@ -18,7 +18,7 @@
   <meta name="theme-color" content="#04090c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="site.css?v=20261108" />
   <style>
     .cal-list { display: grid; gap: 26px; max-width: 980px; }
@@ -44,7 +44,7 @@
     .empty { color: var(--muted); }
     @media (max-width: 760px) { .day { grid-template-columns: 1fr; } .day .shot { grid-column: 1; grid-row: 1; border-left: 0; border-bottom: 1px solid var(--line); } .day-body { grid-column: 1; grid-row: 2; padding: 20px 18px; } .ev { flex-direction: column-reverse; align-items: flex-end; } }
   </style>
-  <link rel="stylesheet" href="theme.css?v=20261111d" />
+  <link rel="stylesheet" href="theme.css?v=20261111e" />
 <!-- seo:start -->
 <meta name="twitter:card" content="summary_large_image" />
 <script type="application/ld+json">
@@ -245,7 +245,12 @@
     function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
     function num(s) { return esc(s).replace(/~?[\d.]+(?:–[\d.]+)?%?/g, function (m) { return '<bdi dir="ltr">' + m + '</bdi>'; }); }
     function ev(e) {
-      return '<div class="ev' + (e.key ? " key" : "") + '"><span class="tm">Tehran ' + esc(e.tehran) + '<small>Lisbon ' + esc(e.lisbon) + '</small></span>' +
+      // Times are digits in both languages; words such as "all day" come in Persian for Tehran and English for Lisbon.
+      var faWord = /[\u0600-\u06FF]/.test(e.tehran || "");
+      var tFa = fd(esc(e.tehran)), tEn = esc(faWord ? e.lisbon : e.tehran);
+      var lEn = esc(e.lisbon), lFa = faWord ? esc(e.tehran) : fd(esc(e.lisbon));
+      return '<div class="ev' + (e.key ? " key" : "") + '"><span class="tm"><span lang="fa">تهران ' + tFa + '</span><span lang="en">Tehran ' + tEn + '</span>' +
+        '<small><span lang="fa">لیسبون ' + lFa + '</span><span lang="en">Lisbon ' + lEn + '</span></small></span>' +
         '<div class="ev-txt"><b lang="fa">' + (e.day_fa ? esc(e.day_fa) + " · " : "") + esc(e.fa) + '</b><span class="note" lang="fa">' + num(e.note_fa) + '</span>' +
         '<b lang="en" dir="ltr" style="text-align:left">' + esc(e.en) + '</b>' + (e.expected ? '<span class="note" lang="en" dir="ltr" style="text-align:left">Expected: ' + esc(e.expected) + '</span>' : "") + "</div></div>";
     }
@@ -272,11 +277,11 @@
     }).catch(function () { document.getElementById("cal").innerHTML = '<p class="empty">The calendar could not be loaded.</p>'; });
   })();
   </script>
-  <script src="lang.js?v=20261111"></script>
+  <script src="lang.js?v=20261111b"></script>
 <script src="menu.js?v=20261107" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261111b" defer></script>
-<script src="iran-bg.js?v=20261111" defer></script>
+
 <script src="search.js?v=20261111" defer></script>
 </body>
 </html>
