@@ -126,6 +126,7 @@ exclude:
   - "social/us-cpi-oct26/post.png"
   - "social/us-midterms-2026/card.png"
   - "social/us-midterms-2026/post.png"
+  - "social/usdt-flash-drop/post.png"
   - "social/war-bill/post.png"
   - "social/zk-identity/post.png"
   # END auto: optimize_images.py
