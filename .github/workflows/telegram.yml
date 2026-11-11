@@ -95,6 +95,11 @@ jobs:
             else
               text="$(cat "$f")"
             fi
+            # **bold** markers -> real Telegram bold (entities), markers removed from the text.
+            printf '%s' "$text" > /tmp/post.txt
+            conv="$(python3 scripts/tg_bold.py /tmp/post.txt)"
+            text="$(printf '%s' "$conv" | jq -r .text)"
+            ents="$(printf '%s' "$conv" | jq -c .entities)"
             send() { # $1 = API method, rest = curl args
               m="$1"; shift
               resp="$(curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/$m" "$@")"
@@ -106,21 +111,21 @@ jobs:
               video="$(pick_video "$video")"
               echo "Video preview from: $video"
               # Video preview above the text.
-              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "$video" '{chat_id:$c, text:$t, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
+              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "$video" --argjson e "$ents" '{chat_id:$c, text:$t, entities:$e, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
               send sendMessage -H 'Content-Type: application/json' -d "$payload"
             elif [ -n "$image" ]; then
               # Upload the image itself as a real photo (tap to open/save), straight from the repo.
               [ -f "$image" ] || { echo "Missing image $image" >&2; exit 1; }
               if [ "$(LC_ALL=C.UTF-8 printf '%s' "$text" | LC_ALL=C.UTF-8 wc -m)" -le 1000 ]; then
-                send sendPhoto --form-string "chat_id=$CHAT_ID" -F "photo=@$image" --form-string "caption=$text"
+                send sendPhoto --form-string "chat_id=$CHAT_ID" -F "photo=@$image" --form-string "caption=$text" --form-string "caption_entities=$ents"
               else
                 # Too long for a photo caption: photo first, then the full text right under it.
                 send sendPhoto --form-string "chat_id=$CHAT_ID" -F "photo=@$image"
-                payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" '{chat_id:$c, text:$t, link_preview_options:{is_disabled:true}}')"
+                payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --argjson e "$ents" '{chat_id:$c, text:$t, entities:$e, link_preview_options:{is_disabled:true}}')"
                 send sendMessage -H 'Content-Type: application/json' -d "$payload"
               fi
             else
-              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" '{chat_id:$c, text:$t}')"
+              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --argjson e "$ents" '{chat_id:$c, text:$t, entities:$e}')"
               send sendMessage -H 'Content-Type: application/json' -d "$payload"
             fi
           done < files.txt
