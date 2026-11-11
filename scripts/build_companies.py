@@ -248,7 +248,7 @@ def page(title, desc, path, body, image=None):
   <link rel="stylesheet" href="fonts.css?v=1" />
   <link rel="stylesheet" href="site.css?v=20261108" />
   <style>{CSS}</style>
-  <link rel="stylesheet" href="theme.css?v=20261111g" />
+  <link rel="stylesheet" href="theme.css?v=20261111i" />
 </head>
 <body data-lang="fa">
 
@@ -261,7 +261,7 @@ def page(title, desc, path, body, image=None):
 <script src="menu.js?v=20261107"></script>
 <script src="join-bar.js?v=20261111b" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-<script src="search.js?v=20261111" defer></script>
+<script src="search.js?v=20261111b" defer></script>
 </body>
 </html>
 """
@@ -316,7 +316,7 @@ def company_page(c):
       </div>
     </section>'''
     sources = "".join(
-        f'<li id="src{s["id"]}"><span>[{s["id"]}]</span><a href="{e(s["url"])}" target="_blank" rel="noopener noreferrer">{e(s["title"])}</a></li>'
+        f'<li id="src{s["id"]}"><span>[{s["id"]}]</span><a href="{e(s["url"])}" target="_blank" rel="noopener noreferrer">{(f'<span lang="fa">{e(s["title"])}</span><span lang="en">{e(s["title_en"])}</span>' if s.get("title_en") else e(s["title"]))}</a></li>'
         for s in c["sources"])
     open_items = "".join(f'<li class="i-fa" lang="fa">{e(x)}</li>' for x in c["unconfirmed"]["fa"]) + \
                  "".join(f'<li class="i-en" lang="en">{e(x)}</li>' for x in c["unconfirmed"]["en"])

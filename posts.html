@@ -43,7 +43,7 @@
     @media (max-width: 600px) { .post-body { padding: 20px 18px; } }
   </style>
 <script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
-  <link rel="stylesheet" href="theme.css?v=20261111g" />
+  <link rel="stylesheet" href="theme.css?v=20261111i" />
 <!-- seo:start -->
 <meta name="twitter:card" content="summary_large_image" />
 <script type="application/ld+json">
@@ -207,7 +207,7 @@
       <div class="wrap">
         <h1>Posts. <span class="spectrum">Everything from the channel.</span></h1>
         <p class="hero-fa" lang="fa">همه‌ی پست‌های کانال، اینجا هم هست.</p>
-        <p class="hero-lede" lang="en">Every post from the Ditoman Telegram channel appears here automatically, for anyone who can't open Telegram. Newest first.</p>
+        <p class="hero-lede" lang="en">Every post from the Ditoman Telegram channel appears here automatically, for anyone who can't open Telegram. Newest first. Posts written only in Persian appear in the Persian version of this page.</p>
         <p class="hero-lede" lang="fa">هر پستی که در کانال تلگرام دیتومان منتشر می‌شود، خودکار اینجا هم می‌آید؛ برای کسی که به تلگرام دسترسی ندارد. تازه‌ترین‌ها اول.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer" data-en="Join on Telegram">عضویت در تلگرام</a>
@@ -265,7 +265,8 @@
         var blocks = it.text.split(/\n\s*\n/).map(function (t) {
           var bare = t.replace(/https?:\/\/\S+|\S+\.(com|html|ir)\S*/g, "");
           var fa = (bare.match(/[\u0600-\u06FF]/g) || []).length, en = (bare.match(/[A-Za-z]/g) || []).length;
-          return { t: t, l: fa + en < 3 ? "" : (fa >= en ? "fa" : "en") };
+          // any real Persian makes it a Persian line (English source names inside a Persian line do not count)
+          return { t: t, l: fa + en < 3 ? "" : (fa >= 6 || fa >= en ? "fa" : "en") };
         });
         if (it.text_en) {
           // The English version replaces the short English lines inside the Persian post
@@ -282,8 +283,13 @@
         var own = m ? m[1] : "";
         var actions = (long ? '<button class="more" type="button"><span lang="fa">ادامه</span><span lang="en">Read more</span></button>' : "") +
           (own ? '<a class="open" href="' + own + '"><span lang="fa">خواندن گزارش ←</span><span lang="en">Read the report →</span></a>' : "");
-        return '<article class="post' + (long ? " collapsed" : "") + '" id="' + it.id + '">' +
-          (it.image ? '<img loading="lazy" src="' + small(it.image) + '" data-full="' + it.image + '" alt="" onerror="if(this.dataset.full&&this.getAttribute(\'src\')!==this.dataset.full){this.src=this.dataset.full}else{this.remove()}" />' : "") +
+        // A post with no English at all is shown in the Persian version only.
+        var hasEn = blocks.some(function (b) { return b.l === "en"; });
+        var faImg = it.image ? '<img loading="lazy"' + (hasEn ? ' lang="fa"' : "") + ' src="' + small(it.image) + '" data-full="' + it.image + '" alt="" onerror="if(this.dataset.full&&this.getAttribute(\'src\')!==this.dataset.full){this.src=this.dataset.full}else{this.remove()}" />' : "";
+        // English mode gets the English edition of the cover, when the story has one
+        var enImg = (it.image && hasEn) ? '<img loading="lazy" lang="en" src="' + String(it.image).replace(/^(social\/[^\/]+\/).*$/, "$1en-card.webp") + '" alt="" onerror="this.remove()" />' : "";
+        return '<article class="post' + (long ? " collapsed" : "") + '" id="' + it.id + '"' + (hasEn ? "" : ' lang="fa"') + ">" +
+          faImg + enImg +
           '<div class="post-body"><div class="post-meta"><span lang="en">' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl" lang="fa">' + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
           '<div class="post-text">' + paras + "</div>" +
           (actions ? '<div class="post-actions">' + actions + "</div>" : "") +
@@ -301,6 +307,6 @@
 <script src="join-bar.js?v=20261111b" defer></script>
 <script src="lang.js?v=20261111b" defer></script>
 
-<script src="search.js?v=20261111" defer></script>
+<script src="search.js?v=20261111b" defer></script>
 </body>
 </html>

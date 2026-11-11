@@ -70,6 +70,13 @@
     .tile { display: block; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); text-align: left; padding: 0; cursor: pointer; color: inherit; transition: transform 0.15s ease, border-color 0.15s ease; }
     .tile:hover, .tile:focus-visible { transform: translateY(-2px); border-color: var(--line-strong); }
     .tile img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; background: #fff1e5; }
+    .tile-en { display: flex; flex-direction: column; justify-content: center; gap: 10px; aspect-ratio: 9 / 16; padding: 16px 14px; background: #fff1e5; color: #0d0c0b; font-family: var(--en); text-align: left; }
+    .tile-en i { font: italic 700 1.05rem "Playfair Display", Georgia, serif; color: #8a0a35; }
+    .tile-en b { font-size: 0.82rem; letter-spacing: .04em; border-bottom: 1px solid rgba(13,12,11,.25); padding-bottom: 8px; }
+    .tile-en span { display: flex; flex-direction: column; font-weight: 800; font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+    .tile-en em { font-style: normal; font-weight: 600; font-size: 0.68rem; letter-spacing: .08em; text-transform: uppercase; color: #3d3834; }
+    .tile-en small { font-size: 0.66rem; color: #3d3834; }
+    html[data-lang="en"] .tile { cursor: default; }
     .tile .cap { padding: 9px 11px 10px; }
     .tile .cap b { display: block; font-size: 0.92rem; }
     .tile .cap span { display: block; font-family: var(--fa); direction: rtl; text-align: right; color: var(--mint); font-size: 0.88rem; }
@@ -103,7 +110,7 @@
     .lv .c.up{color:#4ff0b8}.lv .c.dn{color:#ff6b75}
     .live-note{font-size:.82rem;color:#9fb6b9;margin-top:12px;line-height:1.7}
 </style>
-  <link rel="stylesheet" href="theme.css?v=20261111g" />
+  <link rel="stylesheet" href="theme.css?v=20261111i" />
 <!-- seo:start -->
 <script type="application/ld+json">
 {
@@ -562,7 +569,13 @@
         var faLabel = FA_M[j1[1] - 1] + (j1[0] !== j2[0] ? " " + fy(j1[0]) : "") + " – " + FA_M[j2[1] - 1] + " " + fy(j2[0]);
         return '<div class="month"><h3>' + EN_M[p[1] - 1] + " " + p[0] + ' <span lang="fa">' + faLabel + '</span></h3><div class="gal">' +
           groups[m].map(function (it) {
-            return '<button type="button" class="tile" data-i="' + it._i + '" id="r-' + it.date + '"><img loading="lazy" src="' + (it.thumb || it.png) + '" alt="Daily market report ' + it.date + '" />' +
+            // The report image is bilingual, so English mode shows an English summary card instead
+            var enCard = '<span class="tile-en" lang="en"><i>Markets Tonight</i><b>' + enDate(it.date) + '</b>' +
+              (it.usd ? '<span><em>US dollar</em>' + enNum(it.usd) + ' T</span>' : "") +
+              (it.gold18 ? '<span><em>18k gold / g</em>' + enNum(it.gold18) + ' T</span>' : "") +
+              (it.coin ? '<span><em>Emami coin</em>' + enNum(it.coin) + ' T</span>' : "") +
+              (it.btc ? '<span><em>Bitcoin</em>$' + enNum(Math.round(it.btc)) + '</span>' : "") + '<small>T = toman</small></span>';
+            return '<button type="button" class="tile" data-i="' + it._i + '" id="r-' + it.date + '"><img lang="fa" loading="lazy" src="' + (it.thumb || it.png) + '" alt="Daily market report ' + it.date + '" />' + enCard +
               '<span class="cap"><b lang="en">' + enDate(it.date) + '</b><b lang="fa">' + faDate(it.date) + '</b>' +
               (it.usd ? '<small><span lang="fa">دلار </span><span lang="en">USD </span>' + tv(it.usd) + '</small>' : "") + "</span></button>";
           }).join("") + "</div></div>";
@@ -578,7 +591,7 @@
       document.getElementById("lb").hidden = false; document.body.style.overflow = "hidden";
     }
     function closeLb() { document.getElementById("lb").hidden = true; document.body.style.overflow = ""; }
-    document.getElementById("gallery").addEventListener("click", function (e) { var t = e.target.closest(".tile"); if (t) openLb(+t.getAttribute("data-i")); });
+    document.getElementById("gallery").addEventListener("click", function (e) { var t = e.target.closest(".tile"); if (t && document.documentElement.getAttribute("data-lang") !== "en") openLb(+t.getAttribute("data-i")); });
     document.getElementById("lbClose").onclick = closeLb;
     document.getElementById("lbPrev").onclick = function () { if (cur < ITEMS.length - 1) openLb(cur + 1); };
     document.getElementById("lbNext").onclick = function () { if (cur > 0) openLb(cur - 1); };
@@ -649,6 +662,6 @@
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261111b" defer></script>
 
-<script src="search.js?v=20261111" defer></script>
+<script src="search.js?v=20261111b" defer></script>
 </body>
 </html>

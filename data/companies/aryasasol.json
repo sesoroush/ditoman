@@ -309,12 +309,14 @@
     {
       "id": 4,
       "title": "وب‌سایت آریاساسول",
-      "url": "https://www.aryasasol.com/fa"
+      "url": "https://www.aryasasol.com/fa",
+      "title_en": "Arya Sasol website (in Persian)"
     },
     {
       "id": 5,
       "title": "اکوایران: تحلیل بنیادی سهام آریا",
-      "url": "https://ecoiran.com/%D8%A8%D8%AE%D8%B4-%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A8%D9%88%D8%B1%D8%B3-157/50470-%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D8%A8%D9%86%DB%8C%D8%A7%D8%AF%DB%8C-%D8%B3%D9%87%D8%A7%D9%85-%D8%A2%D8%B1%DB%8C%D8%A7-%D8%AD%D8%A7%D8%B4%DB%8C%D9%87-%D8%B3%D9%88%D8%AF-%D8%A2%D8%B1%DB%8C%D8%A7%D8%B3%D8%A7%D8%B3%D9%88%D9%84-%D8%B3%D9%82%D9%88%D8%B7-%DA%A9%D8%B1%D8%AF"
+      "url": "https://ecoiran.com/%D8%A8%D8%AE%D8%B4-%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A8%D9%88%D8%B1%D8%B3-157/50470-%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D8%A8%D9%86%DB%8C%D8%A7%D8%AF%DB%8C-%D8%B3%D9%87%D8%A7%D9%85-%D8%A2%D8%B1%DB%8C%D8%A7-%D8%AD%D8%A7%D8%B4%DB%8C%D9%87-%D8%B3%D9%88%D8%AF-%D8%A2%D8%B1%DB%8C%D8%A7%D8%B3%D8%A7%D8%B3%D9%88%D9%84-%D8%B3%D9%82%D9%88%D8%B7-%DA%A9%D8%B1%D8%AF",
+      "title_en": "EcoIran: fundamental analysis of Arya shares (in Persian)"
     }
   ],
   "leaders_title": {

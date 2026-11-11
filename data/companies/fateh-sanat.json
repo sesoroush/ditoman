@@ -331,12 +331,14 @@
     {
       "id": 2,
       "title": "خبرگزاری صداوسیما: ساخت راکتور بزرگ پتروشیمی در فارس (مهر ۱۴۰۵)",
-      "url": "https://www.irib-news.ir/fa/news/5934929"
+      "url": "https://www.irib-news.ir/fa/news/5934929",
+      "title_en": "IRIB News: large petrochemical reactor built in Fars (Mehr 1405, in Persian)"
     },
     {
       "id": 3,
       "title": "نفت ما: بزرگترین رآکتور پتروشیمی کشور در شیراز ساخته شد",
-      "url": "https://www.naftema.com/news/193416"
+      "url": "https://www.naftema.com/news/193416",
+      "title_en": "Naft-e Ma: the country's largest petrochemical reactor built in Shiraz (in Persian)"
     },
     {
       "id": 4,
@@ -346,7 +348,8 @@
     {
       "id": 5,
       "title": "وب‌سایت فاتح صنعت: مأموریت و چشم‌انداز",
-      "url": "https://fatehsanat.com/"
+      "url": "https://fatehsanat.com/",
+      "title_en": "Fateh Sanat website: mission and vision (in Persian)"
     }
   ],
   "leaders_title": {

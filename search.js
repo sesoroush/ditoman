@@ -7,7 +7,7 @@
   if (window.__ditomanSearch) return;
   window.__ditomanSearch = true;
 
-  var INDEX_URL = "search-index.json?v=20261111";
+  var INDEX_URL = "search-index.json?v=20261111b";
   var root = document.documentElement;
   var data = null, loading = null;
 
@@ -174,7 +174,7 @@
       var cat = en ? e.ce : e.c;
       var light = e.c === "چراغ روشن" ? " is-light" : "";
       h += '<li><a href="' + esc(e.u) + '">' +
-        (e.i ? '<img src="' + esc(e.i) + '" alt="" loading="lazy" width="56" height="56" />' : '<span class="sx-noimg"></span>') +
+        ((en && e.ie) || e.i ? '<img src="' + esc((en && e.ie) || e.i) + '" alt="" loading="lazy" width="56" height="56" />' : '<span class="sx-noimg"></span>') +
         '<span class="sx-txt"><span class="sx-cat' + light + '">' + esc(cat) + "</span>" +
         '<b class="sx-title">' + esc(title) + "</b>" +
         (sub && sub !== title ? '<span class="sx-sub" dir="auto">' + esc(sub) + "</span>" : "") +

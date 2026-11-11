@@ -765,3 +765,6 @@ html[data-lang="fa"] #companies .co-body { direction: rtl; text-align: right; }
   .k-sector > .k-card h3 { font-size: 0.9rem !important; }
   .k-sector > .k-card p { font-size: 0.8rem !important; -webkit-line-clamp: 2; }
 }
+
+/* English mode shows no Persian: the header keeps the logo and the Latin wordmark only */
+html[data-lang="en"] .brand-fa { display: none !important; }

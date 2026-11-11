@@ -139,6 +139,8 @@ def main():
         else:
             cat_fa, cat_en, kind = "بخش سایت", "Section", "page"
 
+        m_img = re.search(r'<img lang="en" src="([^"]+)"', src)
+        image_en = m_img.group(1) if m_img else ""
         entries.append({
             "u": name if name != "index.html" else "./",
             "t": en_title,
@@ -148,6 +150,7 @@ def main():
             "k": kind,
             "d": desc[:400],
             "i": image,
+            "ie": image_en,
             "x": body[:TEXT_LIMIT],
         })
 
