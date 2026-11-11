@@ -11,7 +11,7 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var style = document.createElement('style');
-  style.textContent = 'html{background:#04090c}body{background:transparent!important}' +
+  style.textContent = 'html{background:#101f22}body{background:transparent!important}' +
     '#iranBg{position:fixed;left:0;top:0;width:100vw;height:100vh;z-index:-1;pointer-events:none}';
   document.head.appendChild(style);
 
