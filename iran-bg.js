@@ -25,7 +25,7 @@
   var running = false;
 
   function mix(t) {
-    var c1 = [127, 245, 222], c2 = [45, 183, 255], c3 = [139, 108, 255], a, b, k;
+    var c1 = [127, 245, 222], c2 = [61, 220, 151], c3 = [61, 220, 151], a, b, k;
     if (t < 0.5) { a = c1; b = c2; k = t / 0.5; } else { a = c2; b = c3; k = (t - 0.5) / 0.5; }
     return [Math.round(a[0] + (b[0] - a[0]) * k), Math.round(a[1] + (b[1] - a[1]) * k), Math.round(a[2] + (b[2] - a[2]) * k)];
   }
@@ -75,8 +75,8 @@
     ctx.closePath();
     var g = ctx.createLinearGradient(vw * 0.2, 0, vw * 0.9, 0);
     g.addColorStop(0, 'rgba(127,245,222,0.32)');
-    g.addColorStop(0.5, 'rgba(45,183,255,0.30)');
-    g.addColorStop(1, 'rgba(139,108,255,0.28)');
+    g.addColorStop(0.5, 'rgba(61,220,151,0.30)');
+    g.addColorStop(1, 'rgba(255,204,51,0.22)');
     ctx.strokeStyle = g; ctx.lineWidth = 1.1;
     ctx.shadowColor = 'rgba(127,245,222,0.35)'; ctx.shadowBlur = 14;
     ctx.stroke();
@@ -107,7 +107,7 @@
       var pulse = 0.5 + 0.5 * Math.sin(t * 1.4 + j);
       ctx.fillStyle = 'rgba(127,245,222,' + (0.10 + pulse * 0.10).toFixed(3) + ')';
       ctx.beginPath(); ctx.arc(cxp, cyp, 9 + pulse * 3, 0, 6.2832); ctx.fill();
-      ctx.fillStyle = 'rgba(127,245,222,0.7)';
+      ctx.fillStyle = 'rgba(255,204,51,0.8)';
       ctx.beginPath(); ctx.arc(cxp, cyp, 2, 0, 6.2832); ctx.fill();
       ctx.fillStyle = 'rgba(190,230,224,0.38)';
       ctx.fillText(cty[1], cxp + 9, cyp);
