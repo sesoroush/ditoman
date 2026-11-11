@@ -712,3 +712,56 @@ html[data-lang="en"] body [lang="fa"], html[data-lang="en"] body [lang="fa"] * {
 /* calendar: English events read left to right */
 html[data-lang="en"] .ev { direction: ltr; }
 html[data-lang="en"] .ev-txt, html[data-lang="en"] .ev-txt b { text-align: left !important; }
+
+/* Homepage "Meet Iran's companies": compact cards, five to a row on desktop */
+#companies .co-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+#companies .co-card {
+  display: flex; flex-direction: column; gap: 0; padding: 0; overflow: hidden;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; min-height: 0;
+}
+#companies a.co-card:hover { border-color: rgba(87, 217, 199, 0.45); transform: translateY(-2px); box-shadow: none; }
+#companies .co-art { aspect-ratio: 1 / 1; min-height: 0; height: auto; width: 100%; position: relative; border-radius: 0; }
+#companies .co-art img, #companies .co-art svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+#companies .co-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+#companies .co-sector { display: block; font-size: 0.74rem; font-weight: 700; line-height: 1.6; color: var(--mint); }
+#companies .co-body h3 { display: block; font-size: 0.98rem; line-height: 1.55; font-weight: 800; letter-spacing: 0; margin: 0; }
+#companies .co-body h3 [lang="fa"] { font-family: "IRANYekanX", Tahoma, sans-serif; font-weight: 800; color: var(--text); }
+#companies .co-body p, #companies .co-body .co-fa, #companies .co-go { display: none; }
+html[data-lang="fa"] #companies .co-body { direction: rtl; text-align: right; }
+@supports not (aspect-ratio: 1 / 1) { #companies .co-art { height: 0; padding-top: 100%; } }
+@media (max-width: 1200px) { #companies .co-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 900px) { #companies .co-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  #companies .co-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  #companies .co-body { padding: 10px 11px 12px; }
+  #companies .co-body h3 { font-size: 0.9rem; }
+}
+
+/* Companies hub: each sector is a grid of compact cards, five to a row on desktop, two on phones */
+.k-sector { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
+.k-sector > h2 { grid-column: 1 / -1; margin-bottom: 2px; }
+.k-sector > .k-card {
+  display: flex !important; flex-direction: column; gap: 0; padding: 0; margin: 0 !important; overflow: hidden; min-height: 0;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+}
+.k-sector > a.k-card:hover { border-color: rgba(87, 217, 199, 0.45); transform: translateY(-2px); }
+.k-sector > .k-card .k-shot { position: relative; width: 100%; aspect-ratio: 1 / 1 !important; min-height: 0 !important; height: auto; margin: 0; border-radius: 0; align-self: auto; }
+.k-sector > .k-card .k-shot > img, .k-sector > .k-card .k-shot > svg {
+  position: absolute !important; top: 0; left: 0; width: 100%; height: 100% !important; object-fit: cover;
+}
+.k-sector > .k-card .k-card-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1; }
+.k-sector > .k-card h3 { font-size: 0.98rem !important; line-height: 1.55; margin: 0; }
+.k-sector > .k-card p {
+  font-size: 0.84rem !important; line-height: 1.75; color: var(--muted); margin: 0;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.k-sector > .k-card .k-go { margin-top: auto; font-size: 0.82rem; }
+@supports not (aspect-ratio: 1 / 1) { .k-sector > .k-card .k-shot { height: 0 !important; padding-top: 100%; } }
+@media (max-width: 1200px) { .k-sector { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .k-sector { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .k-sector { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .k-sector > .k-card .k-card-body { padding: 10px 11px 12px; }
+  .k-sector > .k-card h3 { font-size: 0.9rem !important; }
+  .k-sector > .k-card p { font-size: 0.8rem !important; -webkit-line-clamp: 2; }
+}
