@@ -450,6 +450,11 @@ body:has(.home-top) main > .block .head h2 [lang="fa"] { font-size: 1em; margin-
   --glow-teal: rgba(87, 217, 199, 0.07);
   --glow-warm: rgba(255, 173, 0, 0.04);
   --ease: 200ms ease;
+  --saffron: #f2a01f;
+  /* turquoise lines with one saffron vein running through them; the mint half-strength
+     so the vein reads at twice the weight of the field */
+  --geo-paint: linear-gradient(118deg, rgba(87, 217, 199, 0.5) 0%, rgba(87, 217, 199, 0.5) 40%, var(--saffron) 50%, rgba(87, 217, 199, 0.5) 60%, rgba(87, 217, 199, 0.5) 100%);
+  --geo-paint-ink: linear-gradient(118deg, rgba(16, 31, 34, 0.5) 0%, rgba(16, 31, 34, 0.5) 42%, #c77d00 52%, rgba(16, 31, 34, 0.5) 62%, rgba(16, 31, 34, 0.5) 100%);
 }
 html[data-geo="a"] { --geo-field-op: 0.028; --geo-orn-op: 0.035; --geo-orn-ink-op: 0.03; --geo-orn-size: 520px; --glow-teal: rgba(87, 217, 199, 0.04); --glow-warm: rgba(255, 173, 0, 0); }
 html[data-geo="c"] { --geo-field-op: 0.075; --geo-orn-op: 0.13; --geo-orn-ink-op: 0.09; --geo-orn-size: 820px; --glow-teal: rgba(87, 217, 199, 0.09); --glow-warm: rgba(255, 173, 0, 0.055); }
@@ -460,7 +465,7 @@ html[data-geo="c"] { --geo-field-op: 0.075; --geo-orn-op: 0.13; --geo-orn-ink-op
 #about, footer, .home-stories { overflow: hidden; }
 .home-explore::before, #iran::before {
   content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background: var(--mint);
+  background: var(--geo-paint);
   -webkit-mask-image: var(--geo-field), radial-gradient(ellipse 75% 85% at 50% 45%, #000 20%, transparent 78%);
   -webkit-mask-size: var(--geo-field-size) var(--geo-field-size), 100% 100%;
   -webkit-mask-repeat: repeat, no-repeat;
@@ -471,7 +476,7 @@ html[data-geo="c"] { --geo-field-op: 0.075; --geo-orn-op: 0.13; --geo-orn-ink-op
   mask-repeat: repeat, no-repeat;
   mask-position: center, center;
   mask-composite: intersect;
-  opacity: calc(var(--geo-field-op) * var(--geo-m));
+  opacity: calc(var(--geo-field-op) * 2 * var(--geo-m));
 }
 /* around the industry banners the field only frames the top of the section */
 #iran::before {
@@ -505,7 +510,7 @@ a.ex-tile:hover svg { background: rgba(87, 217, 199, 0.18); }
 :root { --cream: #f3efe5; }
 .home-stories::before {
   width: calc(var(--geo-orn-size) * 0.62); top: calc(var(--geo-orn-size) * -0.36); left: calc(var(--geo-orn-size) * -0.26);
-  background: var(--ink); opacity: calc(var(--geo-orn-ink-op) * var(--geo-m));
+  background: var(--geo-paint-ink); opacity: calc(var(--geo-orn-ink-op) * 2 * var(--geo-m));
 }
 .home-stories > .wrap { position: relative; }
 .home-stories a.co-card { transition: border-color var(--ease), box-shadow var(--ease), transform var(--ease); }
@@ -518,7 +523,7 @@ a.ex-tile:hover svg { background: rgba(87, 217, 199, 0.18); }
 }
 #about::before {
   width: var(--geo-orn-size); top: 50%; left: calc(var(--geo-orn-size) * -0.5); transform: translateY(-50%);
-  background: var(--mint); opacity: calc(var(--geo-orn-op) * var(--geo-m));
+  background: var(--geo-paint); opacity: calc(var(--geo-orn-op) * 2 * var(--geo-m));
 }
 html[data-lang="en"] #about::before { left: auto; right: calc(var(--geo-orn-size) * -0.5); }
 #about .pillars { background: rgba(25, 43, 46, 0.72); }
@@ -532,7 +537,7 @@ footer {
 }
 footer::before {
   width: calc(var(--geo-orn-size) * 0.8); top: 50%; right: calc(var(--geo-orn-size) * -0.4); transform: translateY(-50%);
-  background: var(--mint); opacity: calc(var(--geo-orn-op) * 0.9 * var(--geo-m));
+  background: var(--geo-paint); opacity: calc(var(--geo-orn-op) * 1.8 * var(--geo-m));
 }
 html[data-lang="en"] footer::before { right: auto; left: calc(var(--geo-orn-size) * -0.4); }
 footer { padding-top: 40px; padding-bottom: 48px; }
