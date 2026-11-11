@@ -21,7 +21,13 @@
   <link rel="stylesheet" href="site.css?v=20261108" />
   <style>
     .feed { display: grid; gap: 22px; max-width: 760px; }
-    .post { border: 1px solid var(--line); border-radius: 26px; background: var(--surface); overflow: hidden; }
+    .post { border: 1px solid var(--line); border-radius: 26px; background: var(--surface); overflow: hidden;  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+    .post:hover { transform: translateY(-3px); border-color: rgba(127,245,222,.45); box-shadow: 0 18px 50px rgba(0,0,0,.35); }
+    .post-text strong { color: var(--mint); font-weight: 800; }
+    .post .open { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 999px; background: var(--spectrum); color: #04090c; font-weight: 700; font-size: .95rem; }
+    .post .open:hover, .post .open:focus-visible { filter: brightness(1.08); outline: none; }
+    .post .more { cursor: pointer; padding: 11px 18px; border-radius: 999px; border: 1px solid var(--line-strong); background: transparent; color: var(--mint); font: inherit; font-weight: 600; font-size: .95rem; }
+    .post .more:hover { background: rgba(127,245,222,.1); }
     .post img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--line); }
     .post-body { padding: 24px 26px 22px; }
     .post-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--muted); font-size: 0.9rem; margin-bottom: 14px; }
@@ -266,14 +272,18 @@
         }
         var both = blocks.some(function (b) { return b.l === "fa"; }) && blocks.some(function (b) { return b.l === "en"; });
         var paras = blocks.map(function (b) {
-          return '<p dir="' + (isFa(b.t) ? "rtl" : "ltr") + '"' + (both && b.l ? ' lang="' + b.l + '"' : "") + ">" + linkify(esc(b.t.trim())) + "</p>";
+          return '<p dir="' + (isFa(b.t) ? "rtl" : "ltr") + '"' + (both && b.l ? ' lang="' + b.l + '"' : "") + ">" + linkify(esc(b.t.trim())).replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>") + "</p>";
         }).join("");
         var long = it.text.length > 700;
+        var m = it.text.match(/(?:https?:\/\/)?(?:www\.)?ditoman\.com\/([A-Za-z0-9_\-\/]+\.html)/) || it.text.match(/\b([a-z0-9-]+\.html)\b/);
+        var own = m ? m[1] : "";
+        var actions = (long ? '<button class="more" type="button"><span lang="fa">ادامه</span><span lang="en">Read more</span></button>' : "") +
+          (own ? '<a class="open" href="' + own + '"><span lang="fa">خواندن گزارش ←</span><span lang="en">Read the report →</span></a>' : "");
         return '<article class="post' + (long ? " collapsed" : "") + '" id="' + it.id + '">' +
           (it.image ? '<img loading="lazy" src="' + it.image + '" alt="" onerror="this.remove()" />' : "") +
           '<div class="post-body"><div class="post-meta"><span lang="en">' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl" lang="fa">' + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
           '<div class="post-text">' + paras + "</div>" +
-          (long ? '<div class="post-actions"><button class="more" type="button"><span lang="fa">ادامه</span><span lang="en">Read more</span></button></div>' : "") +
+          (actions ? '<div class="post-actions">' + actions + "</div>" : "") +
           "</div></article>";
       }).join("");
       el.addEventListener("click", function (e) {
