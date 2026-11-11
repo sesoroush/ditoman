@@ -429,3 +429,152 @@ body:has(.home-top) main > .block .head h2 [lang="fa"] { font-size: 1em; margin-
 /* Hold the featured report's space until the card is moved in, so nothing below jumps */
 .feature-slot:empty { min-height: 440px; }
 @media (max-width: 860px) { .feature-slot:empty { min-height: calc(100vw + 300px); } }
+
+/* =====================================================================
+   Persian geometry layer (design system)
+   Pattern A  assets/geo/field.svg    seamless eight-pointed-star field
+   Pattern B  assets/geo/rosette.svg  one large rosette for section edges
+   Both are single-colour SVGs used as CSS masks, so colour and strength
+   come from the tokens below. html[data-geo="a"|"c"] switches to the
+   Minimal Heritage or Architectural Signature variants; no attribute = B.
+   ===================================================================== */
+:root {
+  --geo-field: url("assets/geo/field.svg");
+  --geo-rosette: url("assets/geo/rosette.svg");
+  --geo-field-size: 136px;
+  --geo-field-op: 0.06;      /* Pattern A strength on dark */
+  --geo-orn-op: 0.085;       /* Pattern B strength on dark */
+  --geo-orn-ink-op: 0.06;    /* Pattern B strength on cream */
+  --geo-orn-size: 620px;
+  --geo-m: 1;                /* mobile multiplier */
+  --glow-teal: rgba(87, 217, 199, 0.07);
+  --glow-warm: rgba(255, 173, 0, 0.04);
+  --ease: 200ms ease;
+}
+html[data-geo="a"] { --geo-field-op: 0.028; --geo-orn-op: 0.035; --geo-orn-ink-op: 0.03; --geo-orn-size: 520px; --glow-teal: rgba(87, 217, 199, 0.04); --glow-warm: rgba(255, 173, 0, 0); }
+html[data-geo="c"] { --geo-field-op: 0.075; --geo-orn-op: 0.13; --geo-orn-ink-op: 0.09; --geo-orn-size: 820px; --glow-teal: rgba(87, 217, 199, 0.09); --glow-warm: rgba(255, 173, 0, 0.055); }
+@media (max-width: 600px) { :root { --geo-m: 0.65; --geo-field-size: 104px; } }
+
+/* shared building blocks */
+.home-explore, #about, #iran, footer, .home-stories { position: relative; isolation: isolate; }
+#about, footer, .home-stories { overflow: hidden; }
+.home-explore::before, #iran::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: var(--mint);
+  -webkit-mask-image: var(--geo-field), radial-gradient(ellipse 75% 85% at 50% 45%, #000 20%, transparent 78%);
+  -webkit-mask-size: var(--geo-field-size) var(--geo-field-size), 100% 100%;
+  -webkit-mask-repeat: repeat, no-repeat;
+  -webkit-mask-position: center, center;
+  -webkit-mask-composite: source-in;
+  mask-image: var(--geo-field), radial-gradient(ellipse 75% 85% at 50% 45%, #000 20%, transparent 78%);
+  mask-size: var(--geo-field-size) var(--geo-field-size), 100% 100%;
+  mask-repeat: repeat, no-repeat;
+  mask-position: center, center;
+  mask-composite: intersect;
+  opacity: calc(var(--geo-field-op) * var(--geo-m));
+}
+/* around the industry banners the field only frames the top of the section */
+#iran::before {
+  -webkit-mask-image: var(--geo-field), radial-gradient(ellipse 90% 55% at 50% 0%, #000 15%, transparent 75%);
+  mask-image: var(--geo-field), radial-gradient(ellipse 90% 55% at 50% 0%, #000 15%, transparent 75%);
+}
+#about::before, footer::before, .home-stories::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none; aspect-ratio: 1 / 1;
+  -webkit-mask: var(--geo-rosette) center / contain no-repeat;
+  mask: var(--geo-rosette) center / contain no-repeat;
+}
+
+/* Chapter A: the photo settles into the petrol ground */
+.hero-photo img { filter: saturate(0.92); }
+.home-hero::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; z-index: 0;
+  background: linear-gradient(90deg, transparent, rgba(87, 217, 199, 0.18), transparent);
+}
+.hero-inner { min-height: clamp(400px, 32vw, 500px); }
+.masthead { padding-top: 34px; padding-bottom: 46px; }
+
+/* Chapter C: explore tiles on a faint star field */
+.home-explore { background: radial-gradient(60% 90% at 50% 0%, var(--glow-teal), transparent 72%); }
+.ex-tile { transition: border-color var(--ease), background var(--ease), transform var(--ease); }
+.ex-tile svg { transition: background var(--ease), color var(--ease); }
+a.ex-tile:hover { transform: translateY(-2px); border-color: rgba(87, 217, 199, 0.45); background: #1c3134; box-shadow: none; }
+a.ex-tile:hover svg { background: rgba(87, 217, 199, 0.18); }
+
+/* Chapter D: cream sheet, one ink rosette at the outer corner, away from the cards */
+.home-stories { background: #f3efe5; }
+:root { --cream: #f3efe5; }
+.home-stories::before {
+  width: calc(var(--geo-orn-size) * 0.62); top: calc(var(--geo-orn-size) * -0.36); left: calc(var(--geo-orn-size) * -0.26);
+  background: var(--ink); opacity: calc(var(--geo-orn-ink-op) * var(--geo-m));
+}
+.home-stories > .wrap { position: relative; }
+.home-stories a.co-card { transition: border-color var(--ease), box-shadow var(--ease), transform var(--ease); }
+
+/* Chapter E: back to dark, pillars beside a large partial rosette */
+#about {
+  background:
+    radial-gradient(45% 70% at 100% 0%, var(--glow-teal), transparent 70%),
+    radial-gradient(35% 55% at 0% 100%, var(--glow-warm), transparent 70%);
+}
+#about::before {
+  width: var(--geo-orn-size); top: 50%; left: calc(var(--geo-orn-size) * -0.5); transform: translateY(-50%);
+  background: var(--mint); opacity: calc(var(--geo-orn-op) * var(--geo-m));
+}
+html[data-lang="en"] #about::before { left: auto; right: calc(var(--geo-orn-size) * -0.5); }
+#about .pillars { background: rgba(25, 43, 46, 0.72); }
+#about .pillar { transition: background var(--ease); }
+#about .pillar:hover { background: rgba(87, 217, 199, 0.04); }
+#about .pillar-icon { transition: transform var(--ease); }
+
+/* Chapter G: footer signature */
+footer {
+  background: radial-gradient(60% 120% at 85% 100%, var(--glow-teal), transparent 70%);
+}
+footer::before {
+  width: calc(var(--geo-orn-size) * 0.8); top: 50%; right: calc(var(--geo-orn-size) * -0.4); transform: translateY(-50%);
+  background: var(--mint); opacity: calc(var(--geo-orn-op) * 0.9 * var(--geo-m));
+}
+html[data-lang="en"] footer::before { right: auto; left: calc(var(--geo-orn-size) * -0.4); }
+footer { padding-top: 40px; padding-bottom: 48px; }
+
+/* Architectural Signature only: an extra rosette at the edge of the industry section */
+html[data-geo="c"] #iran { overflow: hidden; }
+html[data-geo="c"] #iran::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none; aspect-ratio: 1 / 1;
+  width: calc(var(--geo-orn-size) * 0.8); top: -12%; right: calc(var(--geo-orn-size) * -0.4);
+  background: var(--mint); opacity: calc(var(--geo-orn-op) * var(--geo-m));
+  -webkit-mask: var(--geo-rosette) center / contain no-repeat; mask: var(--geo-rosette) center / contain no-repeat;
+}
+/* Minimal Heritage: no rosette on the cream sheet */
+html[data-geo="a"] .home-stories::before { display: none; }
+
+@media (max-width: 600px) {
+  #about::before { width: calc(var(--geo-orn-size) * 0.6); top: 40px; transform: none; left: calc(var(--geo-orn-size) * -0.36); }
+  html[data-lang="en"] #about::before { right: calc(var(--geo-orn-size) * -0.36); }
+  .home-stories::before { width: calc(var(--geo-orn-size) * 0.42); top: calc(var(--geo-orn-size) * -0.22); left: calc(var(--geo-orn-size) * -0.2); }
+  footer::before { width: calc(var(--geo-orn-size) * 0.5); right: calc(var(--geo-orn-size) * -0.25); }
+  html[data-lang="en"] footer::before { left: calc(var(--geo-orn-size) * -0.25); }
+}
+
+/* ---------- Interaction states ---------- */
+main p a:not([class]), .lesson-content a, .foot a {
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+  text-decoration-color: rgba(87, 217, 199, 0.4); transition: color var(--ease), text-decoration-color var(--ease);
+}
+.foot a { text-decoration-color: transparent; }
+main p a:not([class]):hover, .foot a:hover { color: var(--mint); text-decoration-color: var(--mint); }
+.home-stories p a:not([class]) { text-decoration-color: rgba(16, 31, 34, 0.35); }
+.btn-primary, .co-go, .st-all, .f-tg, .nav-tg, .cta { transition: filter var(--ease), transform var(--ease), background var(--ease); }
+a.co-card, a.ir-card, a.menu-tile, a.paper, a.featured { transition: border-color var(--ease), box-shadow var(--ease), transform var(--ease); }
+:where(a, button, input, summary):focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; border-radius: 6px; }
+.home-stories :where(a, button):focus-visible { outline-color: var(--ink); }
+header .nav-links a { transition: color var(--ease), box-shadow var(--ease); }
+.sx:not([hidden]) .sx-back { animation: sx-fade 180ms ease both; }
+.sx:not([hidden]) .sx-panel { animation: sx-rise 200ms ease both; }
+@keyframes sx-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sx-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; scroll-behavior: auto !important; }
+  a.co-card:hover, a.ex-tile:hover, a.ir-card:hover, a.menu-tile:hover { transform: none !important; }
+}
