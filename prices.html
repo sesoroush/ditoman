@@ -87,7 +87,22 @@
       .stat { min-width: calc(50% - 5px); flex: 1 1 calc(50% - 5px); }
       .seg button { padding: 7px 10px; font-size: 0.84rem; }
     }
-  </style>
+  
+    .live{border:1px solid rgba(127,245,222,.35);border-radius:22px;padding:22px;background:linear-gradient(160deg,rgba(127,245,222,.08),rgba(255,201,74,.05))}
+    .live-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+    .live-head h2{margin:0;font-size:1.35rem}
+    .live-dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#ff4b55;margin-inline-end:8px;box-shadow:0 0 0 0 rgba(255,75,85,.6);animation:lp 1.6s infinite}
+    @keyframes lp{70%{box-shadow:0 0 0 10px rgba(255,75,85,0)}100%{box-shadow:0 0 0 0 rgba(255,75,85,0)}}
+    .live-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+    .lv{background:rgba(6,20,28,.7);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px}
+    .lv .k{font-size:.92rem;color:#b9d6d2}
+    .lv .v{font-size:1.5rem;font-weight:800;margin-top:4px;direction:ltr;text-align:start}
+    html[dir="rtl"] .lv .v{text-align:right}
+    .lv .c{font-size:.85rem;margin-top:2px;direction:ltr}
+    html[dir="rtl"] .lv .c{text-align:right}
+    .lv .c.up{color:#4ff0b8}.lv .c.dn{color:#ff6b75}
+    .live-note{font-size:.82rem;color:#9fb6b9;margin-top:12px;line-height:1.7}
+</style>
   <link rel="stylesheet" href="theme.css?v=20261111g" />
 <!-- seo:start -->
 <script type="application/ld+json">
@@ -253,6 +268,19 @@
         <h1>Price history. <span class="spectrum">Every day, on record.</span></h1>
         <p class="hero-fa" lang="fa">تاریخچه‌ی قیمت‌ها، روز به روز.</p>
         <p class="hero-lede">Iran's free-market dollar against the official rate, gold and the Emami coin, going back more than a decade. Below, every Ditoman daily market report, by date. New data is added automatically every night.</p>
+      </div>
+    </section>
+
+    <section class="block" id="live" style="padding-top:8px">
+      <div class="wrap">
+        <div class="live">
+          <div class="live-head">
+            <h2><span class="live-dot"></span><span lang="en">Live prices</span><span lang="fa">قیمت لحظه‌ای</span></h2>
+            <div class="live-time" id="liveTime" style="font-size:.85rem;color:#b9d6d2"></div>
+          </div>
+          <div class="live-grid" id="liveGrid"></div>
+          <p class="live-note"><span lang="fa">تتر، بیت‌کوین، اتریوم و طلای جهانی هر ۳۰ ثانیه از بازار به‌روز می‌شوند. طلای ۱۸ عیار تخمینی است: قیمت جهانی طلا ضرب در نرخ تتر. دلار آزاد و سکه از آخرین گزارش روزانه‌ی دیتومان است. هیچ‌کدام از این‌ها توصیه‌ی خرید یا فروش نیست.</span><span lang="en">Tether, bitcoin, ether and world gold refresh from the market every 30 seconds. The 18k gold price is an estimate: world gold times the tether rate. Free-market dollar and coin come from Ditoman’s latest daily report. Nothing here is a buy or sell recommendation.</span></p>
+        </div>
       </div>
     </section>
 
@@ -572,6 +600,48 @@
       ITEMS = items; renderGallery(items);
       if (items.length) { var j = document.getElementById("jumpDate"); j.max = items[0].date; j.min = items[items.length - 1].date; }
     }).catch(function () { document.getElementById("gallery").innerHTML = '<p class="empty">Reports could not be loaded.</p>'; });
+  })();
+  </script>
+  <script>
+  (function(){
+    var grid=document.getElementById('liveGrid'), tm=document.getElementById('liveTime');
+    var fa=function(){return document.documentElement.getAttribute('data-lang')!=='en'};
+    var nf=function(v,d){return Number(v).toLocaleString('en-US',{maximumFractionDigits:d||0})};
+    var daily={};
+    fetch('market/latest.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(j){var ir=j.iran||{};
+      ['usd_free','coin_emami','dollar','usd','coin'].forEach(function(k){if(ir[k]&&ir[k].value_toman)daily[k]=ir[k].value_toman});
+      daily.at=j.fetched_utc; draw();}).catch(function(){});
+    var live={};
+    function card(fk,ek,val,chg,unit){
+      var c=(chg==null||isNaN(chg))?'':'<div class="c '+(chg>=0?'up':'dn')+'">'+(chg>=0?'▲ ':'▼ ')+Math.abs(chg).toFixed(2)+'% · 24h</div>';
+      return '<div class="lv"><div class="k"><span lang="fa">'+fk+'</span><span lang="en">'+ek+'</span></div><div class="v">'+val+' <small style="font-size:.6em;color:#b9d6d2">'+(fa()?unit[0]:unit[1])+'</small></div>'+c+'</div>';
+    }
+    function draw(){
+      var h='';
+      if(live.usdt) h+=card('تتر (USDT)','Tether (USDT)',nf(live.usdt),live.usdtC,['تومان','toman']);
+      var d=daily.usd_free||daily.dollar||daily.usd; if(d) h+=card('دلار آزاد (گزارش روزانه)','Free-market dollar (daily)',nf(d),null,['تومان','toman']);
+      if(live.btc) h+=card('بیت‌کوین','Bitcoin',nf(live.btc),live.btcC,['دلار','USD']);
+      if(live.btcT) h+=card('بیت‌کوین به تومان','Bitcoin in toman',nf(live.btcT/1e6,1),null,['میلیون تومان','M toman']);
+      if(live.eth) h+=card('اتریوم','Ether',nf(live.eth),live.ethC,['دلار','USD']);
+      if(live.xau) h+=card('اونس طلای جهانی','Gold, per ounce',nf(live.xau),live.xauC,['دلار','USD']);
+      if(live.xau&&live.usdt) h+=card('طلای ۱۸ عیار (تخمینی)','18k gold per gram (est.)',nf(live.xau/31.1035*0.75*live.usdt/1e6,2),null,['میلیون تومان','M toman']);
+      var c=daily.coin_emami||daily.coin; if(c) h+=card('سکه امامی (گزارش روزانه)','Emami coin (daily)',nf(c/1e6,1),null,['میلیون تومان','M toman']);
+      grid.innerHTML=h||'<p class="live-note">…</p>';
+      if(live.at) tm.textContent=(fa()?'به‌روزرسانی: ':'Updated: ')+live.at.toLocaleTimeString(fa()?'fa-IR':'en-GB');
+    }
+    function pull(){
+      var done=0, fin=function(){if(++done>=2){live.at=new Date();draw();}};
+      fetch('https://api.nobitex.ir/market/stats?srcCurrency=usdt,btc&dstCurrency=rls',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){
+        var s=j.stats||{}; if(s['usdt-rls']){live.usdt=+s['usdt-rls'].latest/10; live.usdtC=+s['usdt-rls'].dayChange;}
+        if(s['btc-rls']) live.btcT=+s['btc-rls'].latest/10; }).catch(function(){}).then(fin);
+      fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,pax-gold,tether&vs_currencies=usd&include_24hr_change=true',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){
+        if(j.bitcoin){live.btc=j.bitcoin.usd; live.btcC=j.bitcoin.usd_24h_change;}
+        if(j.ethereum){live.eth=j.ethereum.usd; live.ethC=j.ethereum.usd_24h_change;}
+        if(j['pax-gold']){live.xau=j['pax-gold'].usd; live.xauC=j['pax-gold'].usd_24h_change;}
+      }).catch(function(){}).then(fin);
+    }
+    pull(); setInterval(pull,30000);
+    document.addEventListener('ditoman:lang',draw);
   })();
   </script>
   <script src="lang.js?v=20261111b"></script>
