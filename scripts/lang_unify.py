@@ -12,7 +12,7 @@ import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-VERSION = "20261108"
+VERSION = "20261111b"
 EARLY = ('<script>try{if(localStorage.getItem("ditoman-lang")==="en")'
          'document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>')
 TAG = f'<script src="lang.js?v={VERSION}" defer></script>'

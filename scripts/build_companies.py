@@ -244,10 +244,11 @@ def page(title, desc, path, body, image=None):
   <meta name="theme-color" content="#04090c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="fonts.css?v=1" />
   <link rel="stylesheet" href="site.css?v=20261108" />
   <style>{CSS}</style>
+  <link rel="stylesheet" href="theme.css?v=20261111g" />
 </head>
 <body data-lang="fa">
 
@@ -258,8 +259,9 @@ def page(title, desc, path, body, image=None):
   {footer}
 {JS}
 <script src="menu.js?v=20261107"></script>
-<script src="join-bar.js?v=20261107b" defer></script>
+<script src="join-bar.js?v=20261111b" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="search.js?v=20261111" defer></script>
 </body>
 </html>
 """
@@ -397,7 +399,7 @@ def directory(companies):
     blocks = []
     for s in sectors.values():
         cards = "".join(
-            f'<a class="k-card" href="{e(c["slug"])}.html">{shot(dict(c["photos"]["main"], file=card_file(c)) if c["photos"]["main"].get("file") else c["photos"]["main"], c["slug"])}'
+            f'<a class="k-card" href="{e(c["slug"])}.html">{shot(dict(c["photos"]["main"], file=card_file(c)), c["slug"]) if c["photos"]["main"].get("file") else '<figure class="k-shot">' + name_tile(c) + '</figure>'}'
             f'<div class="k-card-body"><h3>{t(c["name"])}</h3><p>{t(c["tagline"])}</p>'
             f'<span class="k-go">{t(UI["open_card"])}</span></div></a>' for c in s["items"])
         blocks.append(f'<section class="k-sector"><h2>{t(s["name"])}</h2>{cards}</section>')
@@ -460,11 +462,44 @@ def homepage(companies):
     path.write_text(page_html, encoding="utf-8")
 
 
+def name_tile(c):
+    """Square card art for a company with no photo or logo yet: its name set in type.
+    Clearly a name card, not a picture of the company."""
+    words = c["name"]["fa"].split()
+    lines, cur = [], ""
+    for w in words:
+        if cur and len(cur) + 1 + len(w) > 13:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = f"{cur} {w}".strip()
+    lines.append(cur)
+    lines = lines[:3]
+    longest = max(len(x) for x in lines)
+    size = 56 if longest <= 8 else 46 if longest <= 11 else 38
+    lh = size * 1.35
+    y0 = 200 - (len(lines) - 1) * lh / 2 + size * 0.35
+    fa = "".join(f'<text x="200" y="{y0 + i * lh:.0f}">{e(x)}</text>' for i, x in enumerate(lines))
+    en = e(c["name"]["en"])
+    en_size = 17 if len(en) <= 30 else 14
+    return (
+        '<svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" '
+        f'aria-label="{e(c["name"]["en"])}">'
+        '<rect width="400" height="400" fill="#f3efe5"/>'
+        '<rect x="14" y="14" width="372" height="372" rx="16" fill="none" stroke="#101f22" stroke-opacity=".12"/>'
+        f'<text x="200" y="64" text-anchor="middle" font-family="IRANYekanX, Tahoma, sans-serif" font-size="19" font-weight="700" fill="#0b5f54" direction="rtl">{e(c["sector"]["fa"])}</text>'
+        '<path d="M170 86h60" stroke="#f2a01f" stroke-width="3" stroke-linecap="round"/>'
+        f'<g text-anchor="middle" font-family="IRANYekanX, Tahoma, sans-serif" font-size="{size}" font-weight="800" fill="#101f22" direction="rtl">{fa}</g>'
+        f'<text x="200" y="346" text-anchor="middle" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" font-size="{en_size}" font-weight="600" fill="#5b6b68" letter-spacing=".02em">{en}</text>'
+        '</svg>'
+    )
+
+
 def c_image(c):
     photo = c["photos"]["main"]
     if photo.get("file"):
         return f'<img src="companies/{e(c["slug"])}/{e(card_file(c))}" alt="{e(photo["alt"]["en"])}" loading="lazy" />'
-    return ART[photo["art"]]
+    return name_tile(c)
 
 
 def card_file(c):
