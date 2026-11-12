@@ -28,3 +28,31 @@ unesco/caravanserai | Caravanserai Iran | commons
 unesco/hegmataneh | Hegmataneh Hamadan | commons
 unesco/khorramabad-valley | Khorramabad caves Lorestan | commons
 unesco/alamut | Alamut Castle | commons
+
+# wallet logos for tmn-guide.html
+wallets/safepal.png | https://www.google.com/s2/favicons?domain=safepal.com&sz=256 | direct
+wallets/safepal-touch.png | https://safepal.com/apple-touch-icon.png | direct
+wallets/trustwallet.png | https://www.google.com/s2/favicons?domain=trustwallet.com&sz=256 | direct
+wallets/trustwallet-touch.png | https://trustwallet.com/apple-touch-icon.png | direct
+wallets/metamask.png | https://www.google.com/s2/favicons?domain=metamask.io&sz=256 | direct
+wallets/metamask-touch.png | https://metamask.io/apple-touch-icon.png | direct
+wallets/tokenpocket.png | https://www.google.com/s2/favicons?domain=tokenpocket.pro&sz=256 | direct
+wallets/tokenpocket-touch.png | https://tokenpocket.pro/apple-touch-icon.png | direct
+wallets/binance.png | https://www.google.com/s2/favicons?domain=binance.com&sz=256 | direct
+wallets/binance-touch.png | https://binance.com/apple-touch-icon.png | direct
+wallets/okx.png | https://www.google.com/s2/favicons?domain=okx.com&sz=256 | direct
+wallets/okx-touch.png | https://okx.com/apple-touch-icon.png | direct
+wallets/bitget-wallet.png | https://www.google.com/s2/favicons?domain=web3.bitget.com&sz=256 | direct
+wallets/bitget-wallet-touch.png | https://web3.bitget.com/apple-touch-icon.png | direct
+wallets/imtoken.png | https://www.google.com/s2/favicons?domain=token.im&sz=256 | direct
+wallets/imtoken-touch.png | https://token.im/apple-touch-icon.png | direct
+wallets/rabby.png | https://www.google.com/s2/favicons?domain=rabby.io&sz=256 | direct
+wallets/rabby-touch.png | https://rabby.io/apple-touch-icon.png | direct
+wallets/mathwallet.png | https://www.google.com/s2/favicons?domain=mathwallet.org&sz=256 | direct
+wallets/mathwallet-touch.png | https://mathwallet.org/apple-touch-icon.png | direct
+wallets/coin98.png | https://www.google.com/s2/favicons?domain=coin98.com&sz=256 | direct
+wallets/coin98-touch.png | https://coin98.com/apple-touch-icon.png | direct
+wallets/atomic.png | https://www.google.com/s2/favicons?domain=atomicwallet.io&sz=256 | direct
+wallets/atomic-touch.png | https://atomicwallet.io/apple-touch-icon.png | direct
+wallets/guarda.png | https://www.google.com/s2/favicons?domain=guarda.com&sz=256 | direct
+wallets/guarda-touch.png | https://guarda.com/apple-touch-icon.png | direct
