@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Banks Enter the Stablecoin Race: Project Faro | بانک‌های بزرگ وارد رقابت استیبل‌کوین شدند | Ditoman</title>
+<meta name="description" content="۲۱ بانک بزرگ جهان با حدود ۲۷۰ میلیون دلار پروژه‌ی استیبل‌کوین Faro را ساختند؛ تاریخچه، اندازه‌ی بازار، نقش فین‌تک و بلاکچین و معنای آن برای ایران. 21 global banks commit about $270M to Project Faro: history, market size, fintech, blockchain and what it means." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:fixed;width:100%;min-width:0 !important}
+.tw td,.tw th{white-space:normal !important;word-break:break-word;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/project-faro.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Banks Enter the Stablecoin Race: Project Faro | بانک‌های بزرگ وارد رقابت استیبل‌کوین شدند | Ditoman" />
+<meta property="og:description" content="۲۱ بانک بزرگ جهان با حدود ۲۷۰ میلیون دلار پروژه‌ی استیبل‌کوین Faro را ساختند؛ تاریخچه، اندازه‌ی بازار، نقش فین‌تک و بلاکچین و معنای آن برای ایران. 21 global banks commit about $270M to Project Faro: history, market size, fintech, blockchain and what it means." />
+<meta property="og:url" content="https://ditoman.com/project-faro.html" />
+<meta property="og:image" content="https://ditoman.com/social/project-faro/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/project-faro.html#article",
+   "mainEntityOfPage": "https://ditoman.com/project-faro.html",
+   "headline": "Banks Enter the Stablecoin Race: Project Faro | بانک‌های بزرگ وارد رقابت استیبل‌کوین شدند",
+   "description": "۲۱ بانک بزرگ جهان با حدود ۲۷۰ میلیون دلار پروژه‌ی استیبل‌کوین Faro را ساختند؛ تاریخچه، اندازه‌ی بازار، نقش فین‌تک و بلاکچین و معنای آن برای ایران. 21 global banks commit about $270M to Project Faro: history, market size, fintech, blockchain and what it means.",
+   "image": "https://ditoman.com/social/project-faro/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Banks Enter the Stablecoin Race: Project Faro | بانک‌های بزرگ وارد رقابت استیبل‌کوین شدند",
+     "item": "https://ditoman.com/project-faro.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/project-faro/card.webp" srcset="social/project-faro/card.webp 900w, social/project-faro/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Banks enter the stablecoin race: Project Faro" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/project-faro/en-card.webp" srcset="social/project-faro/en-card.webp 900w, social/project-faro/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Banks enter the stablecoin race: Project Faro" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">بانک‌های بزرگ وارد رقابت استیبل‌کوین شدند؛ آینده‌ی پرداخت در حال تغییر است؟</h1>
+<h1 lang="en">Banks enter the stablecoin race: is the future of payments changing?</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">گزارش ویژه‌ی دیتومان درباره‌ی Project Faro؛ از تاریخچه و اندازه‌ی بازار تا نقش فین‌تک، بلاکچین و معنای این تحول برای ایران.</p>
+<p class="subtitle" lang="en">Ditoman's special report on Project Faro: history, market size, fintech, blockchain and what it means for Iran.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۲۱</b><b lang="en">21</b><span lang="fa">بانک و نهاد مالی</span><span lang="en">banks and institutions</span></div>
+<div class="stat"><b lang="fa">۲۷۰ میلیون $</b><b lang="en">$270M</b><span lang="fa">تعهد برای ۵ سال</span><span lang="en">committed for 5 years</span></div>
+<div class="stat"><b lang="fa">۲۹۵ میلیارد $</b><b lang="en">$295B</b><span lang="fa">بازار استیبل‌کوین امروز</span><span lang="en">stablecoin market today</span></div>
+<div class="stat"><b lang="fa">۲۰۲۷</b><b lang="en">2027</b><span lang="fa">زمان عرضه‌ی هدف</span><span lang="en">target launch</span></div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<h3><span class="check-number">۰۰.</span> یک صحنه از آینده‌ی نزدیک</h3>
+<p>ساعت ۲ بامداد شنبه است. یک شرکت در آلمان باید یک میلیون یورو برای تأمین‌کننده‌اش در سنگاپور بفرستد.</p>
+<p><strong>امروز:</strong> باید تا دوشنبه صبر کند. پول از چند بانک واسطه عبور می‌کند، هر کدام کارمزد می‌گیرند و ممکن است چند روز طول بکشد.</p>
+<p><strong>فردا:</strong> مبلغ را در قالب یوروی دیجیتال می‌فرستد و طرف مقابل چند دقیقه بعد آن را دریافت می‌کند؛ پولی که همچنان زیر نظارت بانک‌هاست، اما روی ریل بلاکچین حرکت می‌کند.</p>
+<p>این همان آینده‌ای است که بزرگ‌ترین بانک‌های دنیا حالا رسماً برایش پول گذاشته‌اند.</p>
+<h3><span class="check-number">۰۱.</span> دقیقاً چه اتفاقی افتاد؟</h3>
+<p>به گزارش بلومبرگ (۱۰ نوامبر ۲۰۲۶)، <strong>۲۱ بانک و نهاد مالی بزرگ</strong> برای ساخت یک صادرکننده‌ی مشترک استیبل‌کوین دلاری در آمریکا حدود <strong>۲۷۰ میلیون دلار</strong> تعهد کرده‌اند. اسم پروژه: <strong>Project Faro</strong>.</p>
+<ul>
+<li><strong>سرمایه:</strong> حدود ۲۷۰ میلیون دلار، برای هزینه‌های عملیاتی ۵ سال اول؛ نه پشتوانه‌ی توکن‌ها</li>
+</ul>
+<ul>
+<li><strong>میانگین بودجه‌ی سالانه:</strong> حدود ۵۴ میلیون دلار (محاسبه‌ی دیتومان)</li>
+</ul>
+<ul>
+<li><strong>زمان عرضه:</strong> نیمه‌ی اول ۲۰۲۷</li>
+</ul>
+<ul>
+<li><strong>محصول:</strong> اول یک توکن دلاری؛ یورو و دیگر ارزهای G7 در اولویت بعدی</li>
+</ul>
+<ul>
+<li><strong>بازار هدف:</strong> عمده‌فروشی، نهادی و خرده‌فروشی؛ زیر قانون GENIUS آمریکا و در اروپا زیر قانون MiCA</li>
+</ul>
+<p><strong>اعضای اعلام‌شده:</strong></p>
+<div class="tw"><table><tr><th>منطقه</th><th>اعضا</th></tr><tr><td>آمریکای شمالی</td><td>Bank of America، Capital One، Citi، Fidelity، Goldman Sachs، PNC، Scotiabank، TD، Wells Fargo، WisdomTree</td></tr><tr><td>اروپا</td><td>Santander، BBVA، Commerzbank، Crédit Agricole، Deutsche Bank، Lloyds، Rabobank، UBS</td></tr><tr><td>آسیا، خاورمیانه و آفریقا</td><td>MUFG (ژاپن)، Sirius International Holding، Standard Bank (آفریقای جنوبی)</td></tr></table></div>
+<p><strong>هنوز اعلام نشده:</strong><br>سهم هر عضو، اسم توکن، بلاکچین انتخابی، نحوه‌ی نگهداری ذخایر، مجوز نهایی و مدیرعامل. خود کنسرسیوم هم رقم ۲۷۰ میلیون را رسماً تأیید نکرده؛ این رقم از منابع بلومبرگ است.</p>
+<h3><span class="check-number">۰۲.</span> چرا این خبر یک نقطه‌ی عطف است؟</h3>
+<p>بانک‌ها دهه‌هاست زیرساخت پرداخت جهانی را اداره می‌کنند: SWIFT پیام‌های بانکی را جابه‌جا می‌کند، بانک‌های کارگزار حساب‌ها را به هم وصل می‌کنند و تسویه‌ی نهایی از مسیر بانکی انجام می‌شود.</p>
+<p>این سیستم امن و قانونمند است، اما در پرداخت بین‌المللی چند مشکل قدیمی دارد:</p>
+<ul>
+<li><strong>اختلاف ساعت و تعطیلی‌ها:</strong> پول آخر هفته و شب‌ها حرکت نمی‌کند</li>
+</ul>
+<ul>
+<li><strong>واسطه‌های زیاد:</strong> هر بانک در مسیر، کارمزد و زمان اضافه می‌کند</li>
+</ul>
+<ul>
+<li><strong>تأخیر:</strong> گاهی چند روز طول می‌کشد تا پول به دست گیرنده برسد</li>
+</ul>
+<p><strong>دو مسیر برای یک پرداخت:</strong></p>
+<div class="tw"><table><tr><th>مسیر</th><th>مراحل</th></tr><tr><td>بانکی سنتی</td><td>بانک فرستنده ← بانک‌های واسطه ← بانک گیرنده</td></tr><tr><td>استیبل‌کوین</td><td>کیف پول فرستنده ← شبکه‌ی بلاکچین ← کیف پول گیرنده</td></tr></table></div>
+<p>این مقایسه ساده‌سازی شده است؛ تبدیل توکن به پول بانکی، احراز هویت و تأمین نقدینگی هنوز ممکن است به واسطه نیاز داشته باشد.</p>
+<p>فدرال رزرو آمریکا در پژوهشی (مارس ۲۰۲۶) توضیح داده که استیبل‌کوین‌های پرداختی می‌توانند پرداخت‌های فرامرزی را بهتر کنند، اما بر سیاست پولی و ساختار واسطه‌گری مالی هم اثر می‌گذارند.</p>
+<p><strong>تغییر اصلی این نیست که بانک‌ها حذف می‌شوند؛ این است که بانک‌ها خودشان به صادرکننده و مدیر زیرساخت پول دیجیتال تبدیل می‌شوند.</strong></p>
+<h3><span class="check-number">۰۳.</span> این بازار چقدر بزرگ است؟</h3>
+<ul>
+<li><strong>ارزش کل استیبل‌کوین‌ها:</strong> حدود ۲۹۵ میلیارد دلار (۹ نوامبر ۲۰۲۶، DefiLlama)</li>
+</ul>
+<ul>
+<li><strong>تتر (USDT):</strong> ۱۷۶٫۷ میلیارد دلار؛ حدود ۶۰٪ بازار</li>
+</ul>
+<ul>
+<li><strong>USDC (سیرکل):</strong> ۷۰٫۳ میلیارد دلار؛ حدود ۲۴٪ بازار</li>
+</ul>
+<ul>
+<li><strong>تمرکز:</strong> این دو با هم حدود ۸۴٪ کل بازار را در دست دارند</li>
+</ul>
+<ul>
+<li><strong>سهم شبکه‌ها:</strong> اتریوم ۴۶٪ و ترون ۳۲٪</li>
+</ul>
+<p><strong>حجم جابه‌جایی؛ عدد واقعی چیست؟</strong></p>
+<div class="tw"><table><tr><th>معیار</th><th>حجم ۲۰۲۵</th></tr><tr><td>حجم خام روی زنجیره</td><td>حدود ۳۳ تریلیون دلار</td></tr><tr><td>حجم تعدیل‌شده (حذف ربات‌ها، روش Visa/Allium)</td><td>حدود ۱۱٫۶ تریلیون دلار؛ ۹۱٪ رشد سالانه</td></tr><tr><td>ویزا</td><td>حدود ۱۴٫۵ تریلیون دلار</td></tr><tr><td>مسترکارت</td><td>حدود ۹٫۲ تریلیون دلار</td></tr></table></div>
+<p>یعنی استیبل‌کوین‌ها، حتی بعد از حذف تراکنش‌های ربات‌ها، به اندازه‌ی ویزا نزدیک شده‌اند. اما سهم «پرداخت واقعی بین دو طرف مستقل» هنوز بخش کوچکی از این حجم است.</p>
+<ul>
+<li><strong>پیش‌بینی سیتی:</strong> بازار استیبل‌کوین تا ۲۰۳۰ بین ۱٫۶ تا ۴ تریلیون دلار</li>
+</ul>
+<p><strong>یک نکته‌ی صادقانه:</strong><br>این بازار همیشه صعودی نیست. ارزش کل استیبل‌کوین‌ها از اوج ماه مه حدود ۲۱ میلیارد دلار کم شده است. ورود بانک‌ها درست در زمانی است که رشد بازار کند شده؛ یعنی بانک‌ها برای بلندمدت آمده‌اند، نه برای موج کوتاه.</p>
+<h3><span class="check-number">۰۴.</span> از بیت‌کوین تا استیبل‌کوین بانکی: یک مسیر ۱۷ ساله</h3>
+<ul>
+<li><strong>۲۰۰۹ | بیت‌کوین:</strong> انتقال ارزش بدون بانک ممکن شد؛ اما نوسان قیمت، آن را برای پرداخت روزمره سخت می‌کرد</li>
+</ul>
+<ul>
+<li><strong>۲۰۱۴ | تتر:</strong> دلاری روی بلاکچین متولد شد؛ اول برای معامله‌گران رمزارز</li>
+</ul>
+<ul>
+<li><strong>۲۰۱۸ | USDC:</strong> استیبل‌کوین دلاری با پشتوانه‌ی شرکت‌های آمریکایی</li>
+</ul>
+<ul>
+<li><strong>۲۰۱۹ | لیبرای فیسبوک:</strong> قانون‌گذاران از ورود یک غول فناوری به پول ترسیدند؛ پروژه در ۲۰۲۲ کنار گذاشته شد</li>
+</ul>
+<ul>
+<li><strong>۲۰۲۲ | سقوط ترا (UST):</strong> درس بزرگ: نام «استیبل» تضمین ثبات نیست؛ پشتوانه، بازخرید و مدیریت ریسک حیاتی‌اند</li>
+</ul>
+<ul>
+<li><strong>۲۰۲۳ تا ۲۰۲۵ | ورود شرکت‌های پرداخت:</strong> PayPal استیبل‌کوین خودش (PYUSD) را عرضه کرد و Stripe شرکت زیرساخت استیبل‌کوین Bridge را خرید</li>
+</ul>
+<ul>
+<li><strong>ژوئیه ۲۰۲۵ | قانون GENIUS:</strong> اولین قانون جامع استیبل‌کوین در آمریکا</li>
+</ul>
+<ul>
+<li><strong>اکتبر ۲۰۲۶ | قوانین اجرایی:</strong> اداره‌ی ناظر بانکی آمریکا (OCC) مقررات نهایی را منتشر کرد</li>
+</ul>
+<ul>
+<li><strong>ژانویه ۲۰۲۷ | اجرا:</strong> قانون GENIUS اجرایی می‌شود</li>
+</ul>
+<ul>
+<li><strong>نیمه‌ی اول ۲۰۲۷ | Faro:</strong> بانک‌ها با استیبل‌کوین مشترکشان وارد می‌شوند</li>
+</ul>
+<h3><span class="check-number">۰۵.</span> استیبل‌کوین بانکی چطور کار می‌کند؟</h3>
+<p>یک مثال فرضی: صادرکننده‌ای مجاز، توکنی به نام <strong>BankUSD</strong> منتشر می‌کند.</p>
+<ul>
+<li><strong>ساخت:</strong> مشتری یک میلیون دلار پرداخت می‌کند و یک میلیون توکن یک‌دلاری دریافت می‌کند</li>
+</ul>
+<ul>
+<li><strong>پشتوانه:</strong> صادرکننده دارایی‌های پشتوانه را طبق قانون نگه می‌دارد؛ طبق GENIUS دست‌کم یک‌به‌یک، در قالب سپرده‌ها و اوراق کوتاه‌مدت خزانه‌ی آمریکا</li>
+</ul>
+<ul>
+<li><strong>جابه‌جایی:</strong> توکن‌ها روی شبکه‌های سازگار، ۲۴ ساعته منتقل می‌شوند</li>
+</ul>
+<ul>
+<li><strong>بازخرید:</strong> دارنده توکن را پس می‌دهد، توکن از گردش خارج می‌شود و دلار متناظر پرداخت می‌شود</li>
+</ul>
+<p><strong>سه سؤال کلیدی برای هر استیبل‌کوین:</strong></p>
+<ul>
+<li><strong>اعتماد:</strong> آیا ذخایر واقعاً کافی و در دسترس است؟</li>
+</ul>
+<ul>
+<li><strong>امنیت:</strong> آیا شبکه، قراردادهای هوشمند و نگهداری کلیدها ایمن‌اند؟</li>
+</ul>
+<ul>
+<li><strong>بازخرید:</strong> آیا در روز سخت، واقعاً می‌شود توکن را به پول بانکی تبدیل کرد؟</li>
+</ul>
+<h3><span class="check-number">۰۶.</span> بانک‌ها چطور از این بازار پول درمی‌آورند؟</h3>
+<p>یک سناریوی آموزشی (نه پیش‌بینی درآمد Faro):</p>
+<p>اگر صادرکننده‌ای ۱۰ میلیارد دلار استیبل‌کوین در گردش داشته باشد و ذخایرش در دارایی‌های کوتاه‌مدت و کم‌ریسک با بازده فرضی ۳٪ نگهداری شود:</p>
+<ul>
+<li><strong>درآمد ناخالص سالانه‌ی ذخایر:</strong> حدود ۳۰۰ میلیون دلار</li>
+</ul>
+<ul>
+<li><strong>هزینه‌ها:</strong> نگهداری، نقدینگی، انطباق با قوانین، فناوری و مالیات باید از این رقم کم شود</li>
+</ul>
+<ul>
+<li><strong>درآمدهای دیگر:</strong> خدمات پرداخت، تبدیل ارز و زیرساخت تسویه</li>
+</ul>
+<p>این همان دلیلی است که بازار تتر و سیرکل، که سال‌ها در اختیار شرکت‌های کریپتویی بود، حالا برای بانک‌ها جذاب شده است.</p>
+<h3><span class="check-number">۰۷.</span> چه کسانی در این تحول نقش دارند؟</h3>
+<div class="tw"><table><tr><th>بازیگر</th><th>نقش و فرصت</th></tr><tr><td>بانک‌ها (Goldman، Citi، Bank of America و…)</td><td>انتشار، نگهداری ذخایر و تسویه</td></tr><tr><td>صادرکنندگان فعلی (Tether، Circle)</td><td>رقابت برای حفظ کاربر و نقدینگی</td></tr><tr><td>شبکه‌های کارت (Visa، Mastercard)</td><td>اتصال استیبل‌کوین به پرداخت‌های تجاری</td></tr><tr><td>فین‌تک‌ها (Stripe، PayPal)</td><td>پرداخت اینترنتی و خدمات بین‌المللی؛ PayPal USD امروز حدود ۲٫۷ میلیارد دلار ارزش دارد</td></tr><tr><td>شبکه‌های بلاکچین (Ethereum، Solana، Tron و…)</td><td>میزبانی انتقال و تسویه‌ی توکن‌ها</td></tr><tr><td>رقبای تازه (Ripple USD، Ethena USDe و…)</td><td>نوآوری در مدل‌های پشتوانه و بازدهی</td></tr></table></div>
+<p>این جدول فرصت‌های صنعتی را نشان می‌دهد، نه مشارکت قطعی همه‌ی این شرکت‌ها در Faro.</p>
+<p><strong>جایی که فین‌تک و کریپتو به هم می‌رسند:</strong><br>یک فروشگاه اینترنتی ممکن است در آینده پول مشتری خارجی را با استیبل‌کوین بگیرد و بدون درگیر شدن با پیچیدگی بلاکچین، مبلغ را مستقیم در حساب بانکی‌اش ببیند. بلاکچین پشت صحنه کار می‌کند و کاربر فقط یک پرداخت ساده‌تر می‌بیند.</p>
+<h3><span class="check-number">۰۸.</span> برای بلاکچین و رمزارزها چه معنایی دارد؟</h3>
+<p>از نظر پذیرش فناوری، یک تحول مثبت بزرگ است. اما لزوماً به معنای بالا رفتن قیمت همه‌ی رمزارزها نیست. سه چیز را باید از هم جدا کرد:</p>
+<ul>
+<li><strong>پذیرش بلاکچین:</strong> بانک‌ها برای ثبت و تسویه، از شبکه‌های عمومی یا خصوصی استفاده می‌کنند</li>
+</ul>
+<ul>
+<li><strong>پذیرش استیبل‌کوین:</strong> شرکت‌ها به‌جای انتقال پول بانکی، توکن دارای پشتوانه جابه‌جا می‌کنند</li>
+</ul>
+<ul>
+<li><strong>تقاضا برای رمزارزهای دیگر:</strong> به شبکه‌ی انتخابی و مدل کارمزد بستگی دارد؛ اگر Faro شبکه‌ی خصوصی انتخاب کند، اثر مستقیمی بر تقاضای اتریوم یا دیگر شبکه‌های عمومی نخواهد داشت</li>
+</ul>
+<h3><span class="check-number">۰۹.</span> آینده‌ی یورو و پرداخت‌های اروپایی</h3>
+<p>امروز بازار استیبل‌کوین تقریباً کاملاً دلاری است. یک توکن یورویی معتبر می‌تواند نیاز شرکت‌های اروپایی به تبدیل‌های مکرر ارز را کم کند.</p>
+<p>اما یک نکته‌ی مهم: پرداخت داخل اروپا همین حالا با SEPA Instant سریع است. پس استیبل‌کوین در همه‌ی پرداخت‌های اروپایی لزوماً سریع‌تر یا ارزان‌تر نیست.</p>
+<p>فرصت اصلی در <strong>پرداخت‌های بین‌المللی</strong>، <strong>تسویه‌ی دارایی‌های دیجیتال</strong> و <strong>پول برنامه‌پذیر</strong> است؛ یعنی پرداخت‌هایی که فقط با تحقق شرط‌های مشخص انجام می‌شوند.</p>
+<h3><span class="check-number">۱۰.</span> این تحول برای ایران چه معنایی دارد؟</h3>
+<p>برای میلیون‌ها ایرانی، «تتر» همین حالا یعنی دلار دیجیتال روزمره. حدود ۳۲٪ کل استیبل‌کوین‌های دنیا روی شبکه‌ی ترون است؛ همان شبکه‌ای که بیشتر کاربران ایرانی با آن کار می‌کنند.</p>
+<ul>
+<li><strong>دسترسی:</strong> استیبل‌کوین بانکی آمریکایی با احراز هویت سخت‌گیرانه و قوانین تحریم همراه است و مستقیم در دسترس کاربران داخل ایران نخواهد بود</li>
+</ul>
+<ul>
+<li><strong>اثر غیرمستقیم:</strong> رقابت تازه می‌تواند استانداردهای شفافیت ذخایر و امنیت را در کل بازار بالا ببرد</li>
+</ul>
+<ul>
+<li><strong>فرصت برای شرکت‌های ایرانی:</strong> یادگیری و توسعه‌ی کیف پول، امنیت بلاکچین، حسابداری دارایی دیجیتال و زیرساخت پرداخت؛ با رعایت قوانین</li>
+</ul>
+<ul>
+<li><strong>برای کاربران:</strong> هر استیبل‌کوین فقط به اندازه‌ی پشتوانه و شفافیت صادرکننده‌اش قابل اعتماد است؛ بدانید دلار دیجیتال شما پشتش چیست</li>
+</ul>
+<h3><span class="check-number">۱۱.</span> چه چیزهایی می‌تواند این مسیر را کند کند؟</h3>
+<ul>
+<li><strong>ریسک ذخایر و نقدشوندگی:</strong> حتی توکن دارای پشتوانه هم به مدیریت درست دارایی‌ها وابسته است</li>
+</ul>
+<ul>
+<li><strong>مقررات متفاوت کشورها:</strong> توکنی که در یک کشور مجاز است، ممکن است در کشور دیگری محدود باشد</li>
+</ul>
+<ul>
+<li><strong>امنیت سایبری:</strong> آسیب‌پذیری کیف پول‌ها و قراردادها می‌تواند خسارت بزند</li>
+</ul>
+<ul>
+<li><strong>پراکندگی شبکه‌ها:</strong> اگر هر بانک شبکه‌ی جدا بسازد، هزینه‌ی اتصال بالا می‌ماند</li>
+</ul>
+<ul>
+<li><strong>اعتماد کاربران:</strong> مردم و شرکت‌ها فقط وقتی تغییر می‌کنند که مزیت عملی و پایدار ببینند</li>
+</ul>
+<h3><span class="check-number">۱۲.</span> نگاه دیتومان: رقابت بعدی بر سر خود پول نیست، بر سر مسیر حرکت آن است</h3>
+<p>سال‌ها رقابت در صنعت مالی این بود که چه کسی حساب مشتری را دارد، کارت صادر می‌کند و پرداخت را پردازش می‌کند.</p>
+<p>حالا سؤال تازه‌ای مطرح است: <strong>چه کسی زیرساخت جابه‌جایی پول دیجیتال را اداره می‌کند؟</strong></p>
+<p>شرکت‌های کریپتویی اولین بازار بزرگ استیبل‌کوین را ساختند. حالا قانون آمده، بانک‌ها آمده‌اند و غول‌های پرداخت هم آمده‌اند. وقتی همه‌ی این بازیگران هم‌زمان به یک سمت حرکت می‌کنند، یعنی دیگر بحث «آیا» نیست؛ بحث «کی و چطور» است.</p>
+<p>برنده لزوماً بزرگ‌ترین بانک یا سریع‌ترین بلاکچین نیست؛ مجموعه‌ای است که پول را <strong>ارزان‌تر، در دسترس‌تر، امن‌تر و مطمئن‌تر</strong> جابه‌جا کند.</p>
+<p>و اگر این اتفاق بیفتد، بزرگ‌ترین تغییر را نه معامله‌گران رمزارز، بلکه میلیون‌ها کسب‌وکار و مصرف‌کننده در پرداخت‌های روزمره‌شان حس خواهند کرد.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="ai-tickets.html">چرا یونایتد خرید بلیت با هوش مصنوعی را ممنوع کرد؟</a></li><li><a href="europe-welfare.html">اروپا به رفاه گران‌قیمت عادت کرده؛ چه کسی هزینه‌اش را می‌پردازد؟</a></li><li><a href="ai-integrators.html">صنعت تازه: ساختن هوش مصنوعی برای کسب‌وکارها</a></li><li><a href="not-your-fault.html">تو عقب نیفتاده‌ای؛ زمین مسابقه جلوتر دویده</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.blockhead.co/2026/11/11/goldman-sachs-deutsche-among-banks-putting-270-million-behind-project-faro/" target="_blank" rel="noopener">Blockhead (Bloomberg): Project Faro members</a></li><li><a href="https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture" target="_blank" rel="noopener">CoinDesk: banks commit $270M</a></li><li><a href="https://stablecoininsider.org/stablecoin-supply-snapshot-2026-11-09/" target="_blank" rel="noopener">Stablecoin Insider / DefiLlama: supply snapshot 9 Nov 2026</a></li><li><a href="https://defillama.com/stablecoins" target="_blank" rel="noopener">DefiLlama: stablecoins</a></li><li><a href="https://www.spark.money/research/stablecoin-transfer-volume-eleven-trillion" target="_blank" rel="noopener">Spark: stablecoin transfer volume 2025</a></li><li><a href="https://cryptobriefing.com/stablecoin-market-cap-drops-21b-since-may/" target="_blank" rel="noopener">Crypto Briefing: market down $21B since May</a></li><li><a href="https://bankersinstitute.compliancealliance.com/?p=6439" target="_blank" rel="noopener">Bankers Institute: Citi sees up to $4T by 2030</a></li><li><a href="https://www.federalreserve.gov/econres/notes/feds-notes/payment-stablecoins-and-cross-border-payments-benefits-and-implications-for-monetary-policy-implementation-20260330.html" target="_blank" rel="noopener">Federal Reserve: payment stablecoins and cross-border payments</a></li><li><a href="https://decrypt.co/381502/occ-finalizes-genius-act-stablecoin-rules-ahead-of-january-deadline" target="_blank" rel="noopener">Decrypt: OCC finalizes GENIUS Act rules</a></li><li><a href="https://www.occ.treas.gov/topics/charters-and-licensing/genius-act/index-genius-act.html" target="_blank" rel="noopener">OCC: GENIUS Act</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۲۲ آبان ۱۴۰۵. دیتومان یک رسانه‌ی آموزشی است و این گزارش توصیه‌ی سرمایه‌گذاری نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<h3><span class="check-number">0.</span> A scene from the near future</h3>
+<p>It is 2 a.m. on a Saturday. A German company needs to send one million euros to its supplier in Singapore.</p>
+<p><strong>Today:</strong> it waits until Monday. The money passes through several intermediary banks, each charging fees, and may take days.</p>
+<p><strong>Tomorrow:</strong> it sends the amount as digital euros and the supplier receives it minutes later; money still supervised by banks, but moving on blockchain rails.</p>
+<p>That is the future the world's largest banks have now put money behind.</p>
+<h3><span class="check-number">1.</span> What happened?</h3>
+<p>According to Bloomberg (10 November 2026), <strong>21 major banks and financial institutions</strong> have committed about <strong>$270 million</strong> to build a joint US dollar stablecoin issuer: <strong>Project Faro</strong>.</p>
+<ul>
+<li><strong>Funding:</strong> about $270 million for five years of operating costs, not token reserves</li>
+</ul>
+<ul>
+<li><strong>Average annual budget:</strong> about $54 million (Ditoman calculation)</li>
+</ul>
+<ul>
+<li><strong>Launch:</strong> first half of 2027</li>
+</ul>
+<ul>
+<li><strong>Product:</strong> a dollar token first; euro and other G7 currencies as priorities</li>
+</ul>
+<ul>
+<li><strong>Target market:</strong> wholesale, institutional and retail, under the US GENIUS Act and, in Europe, MiCA</li>
+</ul>
+<p><strong>Announced members:</strong></p>
+<div class="tw"><table><tr><th>Region</th><th>Members</th></tr><tr><td>North America</td><td>Bank of America, Capital One, Citi, Fidelity, Goldman Sachs, PNC, Scotiabank, TD, Wells Fargo, WisdomTree</td></tr><tr><td>Europe</td><td>Santander, BBVA, Commerzbank, Crédit Agricole, Deutsche Bank, Lloyds, Rabobank, UBS</td></tr><tr><td>Asia, Middle East and Africa</td><td>MUFG, Sirius International Holding, Standard Bank</td></tr></table></div>
+<p><strong>Not yet disclosed:</strong> individual stakes, token name, blockchain, reserve arrangements, final charter and leadership. The consortium has not confirmed the $270 million figure itself; it comes from Bloomberg's sources.</p>
+<h3><span class="check-number">2.</span> Why this is a turning point</h3>
+<p>Banks have run global payments for decades through SWIFT, correspondent banks and bank settlement. The system is secure and regulated, but cross-border payments still suffer from time zones and holidays, many intermediaries, and delays.</p>
+<div class="tw"><table><tr><th>Route</th><th>Steps</th></tr><tr><td>Traditional banking</td><td>Sending bank → intermediary banks → receiving bank</td></tr><tr><td>Stablecoin</td><td>Sender wallet → blockchain network → receiver wallet</td></tr></table></div>
+<p>Simplified: converting tokens to bank money, identity checks and liquidity may still need intermediaries. A Federal Reserve note (March 2026) says payment stablecoins can improve cross-border payments but also affect monetary policy and financial intermediation.</p>
+<p><strong>The real change is not that banks disappear; it is that banks become issuers and operators of digital-money infrastructure.</strong></p>
+<h3><span class="check-number">3.</span> How big is the market?</h3>
+<ul>
+<li><strong>Total stablecoins:</strong> about $295 billion (9 Nov 2026, DefiLlama)</li>
+</ul>
+<ul>
+<li><strong>USDT:</strong> $176.7 billion, about 60%</li>
+</ul>
+<ul>
+<li><strong>USDC:</strong> $70.3 billion, about 24%</li>
+</ul>
+<ul>
+<li><strong>Networks:</strong> Ethereum 46%, Tron 32%</li>
+</ul>
+<div class="tw"><table><tr><th>Measure</th><th>2025 volume</th></tr><tr><td>Raw on-chain volume</td><td>about $33 trillion</td></tr><tr><td>Adjusted volume (Visa/Allium method)</td><td>about $11.6 trillion, up 91%</td></tr><tr><td>Visa</td><td>about $14.5 trillion</td></tr><tr><td>Mastercard</td><td>about $9.2 trillion</td></tr></table></div>
+<ul>
+<li><strong>Citi forecast:</strong> $1.6 to $4 trillion in stablecoins by 2030</li>
+</ul>
+<p><strong>Honest note:</strong> total supply is down about $21 billion from its May peak. Banks are arriving as growth slows, which suggests a long-term bet rather than a short-term wave.</p>
+<h3><span class="check-number">4.</span> From bitcoin to bank stablecoins</h3>
+<ul>
+<li><strong>2009:</strong> bitcoin makes bankless value transfer real, but volatility limits everyday payments</li>
+</ul>
+<ul>
+<li><strong>2014:</strong> Tether is born</li>
+</ul>
+<ul>
+<li><strong>2018:</strong> USDC arrives</li>
+</ul>
+<ul>
+<li><strong>2019:</strong> Facebook's Libra alarms regulators; dropped in 2022</li>
+</ul>
+<ul>
+<li><strong>2022:</strong> TerraUSD collapses; "stable" is not a guarantee</li>
+</ul>
+<ul>
+<li><strong>2023 to 2025:</strong> PayPal launches PYUSD; Stripe buys stablecoin infrastructure firm Bridge</li>
+</ul>
+<ul>
+<li><strong>July 2025:</strong> the GENIUS Act becomes law</li>
+</ul>
+<ul>
+<li><strong>October 2026:</strong> the OCC publishes final rules</li>
+</ul>
+<ul>
+<li><strong>January 2027:</strong> GENIUS takes effect</li>
+</ul>
+<ul>
+<li><strong>H1 2027:</strong> Faro's planned launch</li>
+</ul>
+<h3><span class="check-number">5.</span> How a bank stablecoin works</h3>
+<p>A hypothetical issuer launches <strong>BankUSD</strong>. A client pays $1 million and receives 1 million one-dollar tokens; reserves are held at least one-to-one under GENIUS, in deposits and short-term Treasuries; tokens move 24/7; on redemption, tokens are burned and dollars paid out.</p>
+<p>Three questions for any stablecoin: are reserves sufficient and accessible, is the network and custody secure, and can you really redeem on a bad day?</p>
+<h3><span class="check-number">6.</span> How banks make money</h3>
+<p>Educational scenario, not a Faro forecast: $10 billion in circulation with reserves earning a hypothetical 3% yields about <strong>$300 million</strong> gross a year, before custody, liquidity, compliance, technology and tax costs, plus income from payments, FX and settlement services.</p>
+<h3><span class="check-number">7.</span> Who is involved</h3>
+<div class="tw"><table><tr><th>Player</th><th>Role and opportunity</th></tr><tr><td>Banks (Goldman, Citi, Bank of America…)</td><td>Issuance, reserves, settlement</td></tr><tr><td>Current issuers (Tether, Circle)</td><td>Competing to keep users and liquidity</td></tr><tr><td>Card networks (Visa, Mastercard)</td><td>Linking stablecoins to commercial payments</td></tr><tr><td>Fintechs (Stripe, PayPal)</td><td>Online and cross-border payments; PayPal USD is about $2.7 billion today</td></tr><tr><td>Blockchains (Ethereum, Solana, Tron…)</td><td>Hosting transfers and settlement</td></tr><tr><td>New entrants (Ripple USD, Ethena USDe…)</td><td>New reserve and yield models</td></tr></table></div>
+<h3><span class="check-number">8.</span> What it means for crypto</h3>
+<p>A major win for technology adoption, but not automatically higher prices for all crypto. Blockchain adoption, stablecoin adoption and demand for other tokens are separate questions; if Faro picks a private network, direct demand for public chains may be limited.</p>
+<h3><span class="check-number">9.</span> The euro</h3>
+<p>Today's stablecoin market is almost entirely dollar-based. A credible euro token could reduce currency conversions, though SEPA Instant already makes intra-European payments fast. The bigger opportunity is cross-border payments, digital-asset settlement and programmable money.</p>
+<h3><span class="check-number">10.</span> What it means for Iran</h3>
+<p>For millions of Iranians, "tether" already means everyday digital dollars, and about 32% of all stablecoins sit on Tron, the network most Iranian users rely on. A US bank stablecoin will come with strict identity checks and sanctions rules and will not be directly available inside Iran, but competition can raise standards of reserve transparency and security across the market, and it opens learning opportunities in wallets, security and payment infrastructure.</p>
+<h3><span class="check-number">11.</span> What could slow it down</h3>
+<p>Reserve and liquidity risk, different rules in different countries, cyber security, fragmented networks, and user trust.</p>
+<h3><span class="check-number">12.</span> Ditoman's reading: the next race is not over money itself, but over the rails it moves on</h3>
+<p>Crypto firms built the first big stablecoin market. Now the law has arrived, banks have arrived and the payment giants have arrived. When all of them move in the same direction at once, the question is no longer "if" but "when and how". The winner will be whoever moves money <strong>cheaper, more accessibly, more securely and more reliably</strong>, and the biggest change will be felt not by crypto traders but by millions of businesses and consumers in everyday payments.</p>
+<h3>Read more</h3><ul><li><a href="europe-welfare.html">Europe's costly welfare: who pays the bill?</a></li><li><a href="ai-integrators.html">The new industry: building AI into business</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.blockhead.co/2026/11/11/goldman-sachs-deutsche-among-banks-putting-270-million-behind-project-faro/" target="_blank" rel="noopener">Blockhead (Bloomberg): Project Faro members</a></li><li><a href="https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture" target="_blank" rel="noopener">CoinDesk: banks commit $270M</a></li><li><a href="https://stablecoininsider.org/stablecoin-supply-snapshot-2026-11-09/" target="_blank" rel="noopener">Stablecoin Insider / DefiLlama: supply snapshot 9 Nov 2026</a></li><li><a href="https://defillama.com/stablecoins" target="_blank" rel="noopener">DefiLlama: stablecoins</a></li><li><a href="https://www.spark.money/research/stablecoin-transfer-volume-eleven-trillion" target="_blank" rel="noopener">Spark: stablecoin transfer volume 2025</a></li><li><a href="https://cryptobriefing.com/stablecoin-market-cap-drops-21b-since-may/" target="_blank" rel="noopener">Crypto Briefing: market down $21B since May</a></li><li><a href="https://bankersinstitute.compliancealliance.com/?p=6439" target="_blank" rel="noopener">Bankers Institute: Citi sees up to $4T by 2030</a></li><li><a href="https://www.federalreserve.gov/econres/notes/feds-notes/payment-stablecoins-and-cross-border-payments-benefits-and-implications-for-monetary-policy-implementation-20260330.html" target="_blank" rel="noopener">Federal Reserve: payment stablecoins and cross-border payments</a></li><li><a href="https://decrypt.co/381502/occ-finalizes-genius-act-stablecoin-rules-ahead-of-january-deadline" target="_blank" rel="noopener">Decrypt: OCC finalizes GENIUS Act rules</a></li><li><a href="https://www.occ.treas.gov/topics/charters-and-licensing/genius-act/index-genius-act.html" target="_blank" rel="noopener">OCC: GENIUS Act</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 12 November 2026. Ditoman is an educational media project; this report is not investment advice.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261111b" defer></script>
+<script src="search.js?v=20261112" defer></script>
+</body>
+</html>
