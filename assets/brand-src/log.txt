@@ -15,8 +15,8 @@ OK unesco/takht-e-soleyman.1.jpg File:Takab banner Takht-e Soleyman ruins.jpg
 OK unesco/takht-e-soleyman.2.jpg File:Takht-e Soleyman, West Azerbaijan-tekab.jpg
 OK unesco/takht-e-soleyman.3.jpg File:Takhte Soleyman (5).jpg
 OK unesco/pasargadae.0.jpg File:CyrustheGreatTomb 22059.jpg
-OK unesco/pasargadae.1.jpg File:Pasargadae, Irán, 2016-09-24, DD 02.jpg
-OK unesco/pasargadae.2.jpg File:Pasargadae, Irán, 2016-09-24, DD 03.jpg
+OK unesco/pasargadae.1.jpg File:Pasargadae, Irán, 2016-09-24, DD 03.jpg
+OK unesco/pasargadae.2.jpg File:Pasargadae, Irán, 2016-09-24, DD 07.jpg
 OK unesco/pasargadae.3.jpg File:Tomb of Cyrus the Great.jpg
 OK unesco/bam.0.jpg File:Arg-é Bam (HG7 3559-2).jpg
 OK unesco/bam.1.jpg File:Fortaleza de Bam, Irán, 2016-09-23, DD 04.jpg
@@ -35,7 +35,7 @@ OK unesco/armenian-monasteries.1.jpg File:Monastery of Saint Thaddeus 10.jpg
 OK unesco/armenian-monasteries.2.jpg File:Saint Thaddeus Monastery, Iran, northwestern view.jpg
 OK unesco/armenian-monasteries.3.jpg File:The Monastery of Saint Thaddeus.jpg
 OK unesco/shushtar.0.jpg File:Shushtar Historical Hydraulic System-Shuhtar-Khozestan-ID2180- مجموعه آبشارها و آسیاب‌های آبی شوشتر.jpg
-OK unesco/shushtar.1.jpg File:Shushtar Historical Hydraulic System 02.jpg
+OK unesco/shushtar.1.jpg File:Shushtar Historical Hydraulic System 06.jpg
 OK unesco/shushtar.2.jpg File:Shushtar Historical Hydraulic System Darafsh (6).jpg
 OK unesco/shushtar.3.jpg File:Shushtar Historical Hydraulic System Panorama.jpg
 OK unesco/tabriz-bazaar.0.jpg File:Beautiful architecture tabriz bazaar - Business.jpg
@@ -70,13 +70,13 @@ OK unesco/maymand.0.jpg File:Maymand village.jpg
 OK unesco/maymand.1.jpg File:Meymand, Kerman Province, Iran (42166301364).jpg
 OK unesco/maymand.2.jpg File:Meymand, Kerman Province, Iran (42207562834).jpg
 OK unesco/maymand.3.jpg File:Meymand, Kerman Province, Iran (42884856841).jpg
-OK unesco/susa.0.jpg File:Apadana Susa South entrances.jpg
+OK unesco/susa.0.jpg File:Columns Square bases Apadana Susa.jpg
 OK unesco/susa.1.jpg File:King's apartments Apadana Susa.jpg
 OK unesco/susa.2.jpg File:Persepolis stairs of the Apadana relief.jpg
 OK unesco/susa.3.jpg File:Royal City and Acropolis Tepes.jpg
-OK unesco/lut.0.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (28898447408).jpg
-OK unesco/lut.1.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (28898850948).jpg
-OK unesco/lut.2.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (42722846302).jpg
+OK unesco/lut.0.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (28898850948).jpg
+OK unesco/lut.1.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (42055020644).jpg
+OK unesco/lut.2.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (42722625382).jpg
 OK unesco/lut.3.jpg File:Kaluts in Lut Desert, Kavire Lut, Iran.jpg
 OK unesco/qanat.0.jpg File:Ancient water clock used in qanat of gonabad 2500 years ago.JPG
 OK unesco/qanat.1.jpg File:Ghanat ghasabeh, khorasan razavi, gonabad (cropped).jpg
@@ -102,8 +102,8 @@ OK unesco/hawraman.0.jpg File:Mountain child.jpg
 OK unesco/hawraman.1.jpg File:Palangan Village in Hawraman, Kamyaran,Kurdistan, Iran.JPG
 OK unesco/hawraman.2.jpg File:Palangan village.jpg
 OK unesco/hawraman.3.jpg File:Pālangān village (12864111605).jpg
-OK unesco/caravanserai.0.jpg File:Golshan Caravanserai, Kerman 01.jpg
-OK unesco/caravanserai.1.jpg File:Izadkhvast Caravanserai 02.jpg
+OK unesco/caravanserai.0.jpg File:Ganjali Khan Caravanserai 05.jpg
+OK unesco/caravanserai.1.jpg File:Golshan Caravanserai, Kerman 01.jpg
 OK unesco/caravanserai.2.jpg File:تصویر سراسرنما از بام کاروانسرای دیرگچین استان قم، معماری برجای مانده از دوره ساسانی.jpg
 OK unesco/caravanserai.3.jpg File:کاروانسرای دیرگچین بزرگترین کاروانسرای خشتی گچی ایران - نورپردازی با فانوس - عکاسی در شب 09.jpg
 OK unesco/hegmataneh.0.jpg File:Excavation Work at Hegmataneh Site - Hamadan - Western Iran (7423597384).jpg
@@ -115,3 +115,29 @@ OK unesco/alamut.0.jpg File:2008iran. Iran, Alamut Castle (2573255326).jpg
 OK unesco/alamut.1.jpg File:Alamut Castle, Qazvin - 1.jpg
 OK unesco/alamut.2.jpg File:Alamut castle view1.jpg
 OK unesco/alamut.3.jpg File:View from Alamut Castle, Iran.jpg
+OK wallets/safepal.png 470 image/png https://www.google.com/s2/favicons?domain=safepal.com&sz=256
+OK wallets/safepal-touch.png 591 image/png https://safepal.com/apple-touch-icon.png
+OK wallets/trustwallet.png 25585 image/png https://www.google.com/s2/favicons?domain=trustwallet.com&sz=256
+FAIL wallets/trustwallet-touch.png https://trustwallet.com/apple-touch-icon.png HTTP Error 404: Not Found
+OK wallets/metamask.png 6311 image/png https://www.google.com/s2/favicons?domain=metamask.io&sz=256
+FAIL wallets/metamask-touch.png https://metamask.io/apple-touch-icon.png HTTP Error 404: Not Found
+OK wallets/tokenpocket.png 1119 image/png https://www.google.com/s2/favicons?domain=tokenpocket.pro&sz=256
+OK wallets/tokenpocket-touch.png 4460 image/png https://tokenpocket.pro/apple-touch-icon.png
+OK wallets/binance.png 3749 image/png https://www.google.com/s2/favicons?domain=binance.com&sz=256
+OK wallets/binance-touch.png 0 text/html; charset=UTF-8 https://binance.com/apple-touch-icon.png
+OK wallets/okx.png 434 image/png https://www.google.com/s2/favicons?domain=okx.com&sz=256
+FAIL wallets/okx-touch.png https://okx.com/apple-touch-icon.png HTTP Error 404: Not Found
+OK wallets/bitget-wallet.png 4075 image/png https://www.google.com/s2/favicons?domain=web3.bitget.com&sz=256
+OK wallets/bitget-wallet-touch.png 4103 image/png https://web3.bitget.com/apple-touch-icon.png
+OK wallets/imtoken.png 1444 image/png https://www.google.com/s2/favicons?domain=token.im&sz=256
+FAIL wallets/imtoken-touch.png https://token.im/apple-touch-icon.png HTTP Error 404: Not Found
+OK wallets/rabby.png 1411 image/png https://www.google.com/s2/favicons?domain=rabby.io&sz=256
+FAIL wallets/rabby-touch.png https://rabby.io/apple-touch-icon.png HTTP Error 404: Not Found
+OK wallets/mathwallet.png 932 image/png https://www.google.com/s2/favicons?domain=mathwallet.org&sz=256
+FAIL wallets/mathwallet-touch.png https://mathwallet.org/apple-touch-icon.png HTTP Error 404: Not Found
+OK wallets/coin98.png 1653 image/png https://www.google.com/s2/favicons?domain=coin98.com&sz=256
+FAIL wallets/coin98-touch.png https://coin98.com/apple-touch-icon.png HTTP Error 404: Not Found
+OK wallets/atomic.png 3063 image/png https://www.google.com/s2/favicons?domain=atomicwallet.io&sz=256
+FAIL wallets/atomic-touch.png https://atomicwallet.io/apple-touch-icon.png HTTP Error 404: Not Found
+OK wallets/guarda.png 2489 image/png https://www.google.com/s2/favicons?domain=guarda.com&sz=256
+OK wallets/guarda-touch.png 4228 image/png https://guarda.com/apple-touch-icon.png
