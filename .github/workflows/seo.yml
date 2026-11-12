@@ -32,7 +32,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Build metadata and sitemap
-        run: python3 scripts/build_seo.py
+        run: python3 scripts/build_en_pages.py && python3 scripts/build_seo.py
       - name: Story cover thumbnails
         run: pip install --quiet pillow && python3 scripts/make_thumbs.py
       - name: Build site search index

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Where Do Iranians Get Their News? | Ditoman</title>
+<meta name="description" content="Online, messengers, newspapers and magazines: who reads what, by age and education, and which topics people follow" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/news-readers.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/news-readers.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/news-readers.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/news-readers.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Where Do Iranians Get Their News? | Ditoman" />
+<meta property="og:description" content="Online, messengers, newspapers and magazines: who reads what, by age and education, and which topics people follow" />
+<meta property="og:url" content="https://ditoman.com/news-readers.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/news-readers.en.html#page",
+   "url": "https://ditoman.com/news-readers.en.html",
+   "name": "Where Do Iranians Get Their News? | Ditoman",
+   "description": "Online, messengers, newspapers and magazines: who reads what, by age and education, and which topics people follow",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Where Do Iranians Get Their News?",
+     "item": "https://ditoman.com/news-readers.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="social/news-readers/card.webp" srcset="social/news-readers/card.webp 900w, social/news-readers/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Where do Iranians get their news?" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/news-readers/en-card.webp" srcset="social/news-readers/en-card.webp 900w, social/news-readers/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Where do Iranians get their news?" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">ایرانی‌ها خبر را از کجا می‌خوانند؟</h1>
+<h1 lang="en">Where do Iranians get their news?</h1>
+<p class="subtitle" lang="en">Online, messengers, newspapers and magazines: who reads what, by age and education, and which topics people follow most.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">آنلاین، پیام‌رسان، روزنامه و مجله: چه کسی، با چه سن و تحصیلاتی، چه چیزی می‌خواند و کدام موضوع‌ها بیشتر دنبال می‌شود.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۶۵٪</b><b lang="en">65%</b><span lang="fa">جوان‌ها: آنلاین منبع اصلی خبر</span><span lang="en">Ages 18–29: online first</span></div>
+<div class="stat"><b lang="fa">۳:۰۸</b><b lang="en">3:08</b><span lang="fa">ساعت روزانه در شبکه‌های اجتماعی، ۱۵ تا ۲۹ سال</span><span lang="en">Daily hours on social media, 15–29</span></div>
+<div class="stat"><b lang="fa">۲٫۵٪</b><b lang="en">2.5%</b><span lang="fa">اغلب روزنامه‌ی کاغذی</span><span lang="en">Often read print papers</span></div>
+<div class="stat"><b lang="fa">۴۰٪</b><b lang="en">40%</b><span lang="fa">اقتصاد، پرخواننده‌ترین صفحه</span><span lang="en">Economy, most-read section</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p><strong>از هر سه جوان ایرانی، دو نفر خبر را اول از فضای آنلاین می‌گیرند. در میان بالای ۵۰ ساله‌ها، از هر هشت نفر یک نفر.</strong></p>
+<p>شاید زیاد بشنوید که «دیگر کسی خبر نمی‌خواند». عددها چیز دیگری می‌گویند: مخاطب ایرانی با خبر قهر نکرده، فقط جای خواندنش را عوض کرده است. در پیمایش ۱۴۰۴ ایسپا، ۴۷٫۳٪ کاربران شبکه‌های اجتماعی گفتند برای خبر و اطلاعات سراغ این شبکه‌ها می‌روند؛ دقیقاً به اندازه‌ی کسانی که برای سرگرمی می‌روند (۴۷٫۲٪). یعنی کنجکاوی هست؛ سؤال این است که خبر کجا و چطور به دست مخاطب می‌رسد.</p>
+<p>این گزارش چند پیمایش معتبر را کنار هم می‌گذارد و هر جا داده قدیمی یا ناقص است، همین را صریح می‌گوید.</p>
+
+<h3><span class="check-number">۰۱.</span> چه کسانی خبر را آنلاین دنبال می‌کنند؟</h3>
+<p><img src="social/news-readers/chart.webp" alt="Online as main news source by age, and key numbers" style="width:100%;border-radius:18px;margin:6px 0 14px" loading="lazy"></p>
+<p>در پیمایش ملی تلفنی ایسپا در شهریور ۱۴۰۰، از ۱٬۵۸۱ نفر خواسته شد فقط یک منبع اصلی برای پیگیری خبر انتخاب کنند. «فضای مجازی» در این سؤال هم سایت‌های خبری را شامل می‌شد و هم شبکه‌های اجتماعی. سهم کسانی که آنلاین را منبع اصلی خبر می‌دانستند:</p>
+<div class="tw" dir="rtl"><table><tr><th>گروه</th><th>آنلاین، منبع اصلی خبر</th></tr><tr><td>کل پاسخ‌دهندگان</td><td>۴۱٫۴٪</td></tr><tr><td>۱۸ تا ۲۹ سال</td><td><strong>۶۴٫۸٪</strong></td></tr><tr><td>۳۰ تا ۴۹ سال</td><td>۴۶٫۵٪</td></tr><tr><td>۵۰ سال به بالا</td><td>۱۳٫۲٪</td></tr><tr><td>تحصیلات دانشگاهی</td><td>۶۰٫۵٪</td></tr><tr><td>دیپلم</td><td>۴۲٫۵٪</td></tr><tr><td>زیر دیپلم</td><td>۲۰٫۳٪</td></tr><tr><td>مردان</td><td>۴۷٫۲٪</td></tr><tr><td>زنان</td><td>۳۷٫۳٪</td></tr></table></div>
+<ul>
+<li>این درصدها درون هر گروه حساب شده‌اند: ۶۴٫۸٪ یعنی ۶۴٫۸٪ <em>از جوان‌ها</em>، نه سهم جوان‌ها از کل مخاطبان آنلاین.</li>
+<li>دو شکاف روشن است: سن (۶۵٪ در برابر ۱۳٪) و تحصیلات (۶۰٪ در برابر ۲۰٪).</li>
+<li>این تفکیک مربوط به ۱۴۰۰ است. با گسترش اینترنت همراه، احتمالاً عددها امروز بالاترند، ولی داده‌ی تفکیکی تازه‌تری پیدا نکردیم.</li>
+</ul>
+
+<h3><span class="check-number">۰۲.</span> هر نسل چقدر در شبکه‌های اجتماعی است؟</h3>
+<p>طبق پیمایش شهریور ۱۴۰۴ ایسپا، میانگین حضور روزانه در شبکه‌های اجتماعی:</p>
+<ul>
+<li><strong>۱۵ تا ۲۹ ساله‌ها:</strong> ۳ ساعت و ۸ دقیقه</li>
+<li><strong>۳۰ تا ۴۹ ساله‌ها:</strong> ۲ ساعت و ۱۶ دقیقه</li>
+<li><strong>۵۰ سال به بالا:</strong> حدود یک ساعت</li>
+</ul>
+<p>این زمان همه‌ی فعالیت‌ها را می‌شمارد، نه فقط خبر خواندن را.</p>
+
+<h3><span class="check-number">۰۳.</span> پیام‌رسان، مسیر اول خبر</h3>
+<p>در گزارش یکتانت و EMRC (۱۴۰۴ و بهار ۱۴۰۵، با ۹۵۹ پاسخ‌دهنده)، پیام‌رسان‌ها مسیر اول دریافت خبر بودند؛ بعد دوستان و آشنایان و سپس سایت‌های خبری. برای جوان‌ترها فیلم، موسیقی و سرگرمی پررنگ‌تر بود؛ برای میانسال‌ترها خبر، کنار ارتباط با خانواده و خدمات بانکی. یعنی برای نسل میانسال، خبر یکی از دلیل‌های اصلی آنلاین شدن است.</p>
+
+<h3><span class="check-number">۰۴.</span> چه موضوع‌هایی بیشتر خوانده می‌شود؟</h3>
+<p>در طرح «فرهنگ رفتاری خانوار» مرکز آمار (۱۳۹۹)، ۲۲٫۴٪ افراد ۱۵ سال به بالا گفتند روزنامه‌ی چاپی یا الکترونیکی خوانده‌اند. میان همین روزنامه‌خوان‌ها، صفحه‌هایی که می‌خواندند (هر نفر می‌توانست چند موضوع انتخاب کند):</p>
+<div class="tw" dir="rtl"><table><tr><th>صفحه</th><th>سهم از روزنامه‌خوان‌ها</th></tr><tr><td>اقتصاد</td><td>۴۰٫۴٪</td></tr><tr><td>اجتماعی</td><td>۳۶٫۷٪</td></tr><tr><td>ورزش</td><td>۳۱٫۷٪</td></tr><tr><td>بهداشت و سلامت</td><td>۳۰٫۸٪</td></tr><tr><td>سیاست</td><td>۳۰٫۴٪</td></tr><tr><td>حوادث</td><td>۲۱٫۱٪</td></tr></table></div>
+<p>اقتصاد در صدر است. در پایش محتوای پیام‌رسان‌های داخلی در مهر ۱۴۰۵ هم موضوع‌های جیبی پررنگ بودند: قیمت طلای ۱۸ عیار در ایتا و دلار و تتر در بله؛ و در سروش‌پلاس، داستان‌های دنباله‌دار خانوادگی. موضوع داغ به سکو و زمان بستگی دارد.</p>
+
+<h3><span class="check-number">۰۵.</span> روزنامه و مجله‌ی کاغذی کجا ایستاده‌اند؟</h3>
+<ul>
+<li><strong>روزنامه‌ی چاپی برای خبر:</strong> در پیمایش آنلاین و وزن‌دهی‌شده‌ی گمان (۱۴۰۲) از بزرگسالان باسواد ساکن ایران، ۲٫۵٪ گفتند <em>اغلب</em> برای خبر سراغ روزنامه‌ی چاپی می‌روند، ۹٫۸٪ گاهی، ۲۹٫۲٪ به‌ندرت و ۵۸٫۵٪ هرگز. در همان سؤال، ۶۸٫۲٪ گفتند اغلب از شبکه‌های اجتماعی خبر می‌گیرند. چون نمونه آنلاین بوده، سهم آنلاین‌ها احتمالاً در آن بیشتر از کل جامعه است.</li>
+<li><strong>مجله:</strong> طبق پیمایش ملی مصرف کالاهای فرهنگی (۱۳۹۸)، ۲۸٫۳٪ روزنامه یا مجله می‌خواندند و ۱۱٫۹٪ نسخه‌ی الکترونیکی آن را. چون روزنامه و مجله در یک سؤال آمده‌اند، سهم مجله به‌تنهایی معلوم نیست.</li>
+<li><strong>تعداد رسانه‌ها:</strong> طبق سامانه‌ی جامع رسانه‌ها (به نقل ایران‌گاه، مهر ۱۴۰۵) ۱۸٬۱۱۶ مجوز رسانه ثبت شده: ۷٬۸۳۲ رسانه‌ی برخط، ۶٬۰۹۸ چاپی و ۴٬۱۸۶ نشریه‌ی الکترونیکی غیربرخط. این تعداد مجوز است، نه تیراژ یا مخاطب واقعی.</li>
+</ul>
+
+<div class="note"><p><strong>چه چیزهایی را هنوز نمی‌دانیم</strong></p><p>آمار ملی تازه و جداگانه‌ای برای خوانندگان مجله‌ی چاپی، مجله‌ی دیجیتال و مقاله‌ی بلند پیدا نکردیم. داده‌های عمومی هم نمی‌گویند کدام گروه بیشتر مقاله‌ی کامل را تا آخر می‌خواند. پیمایش‌ها روش‌های متفاوتی دارند (تلفنی، حضوری، آنلاین) و مستقیم با هم جمع‌پذیر نیستند.</p></div>
+
+<h3><span class="check-number">۰۶.</span> نگاه دیتومان</h3>
+<p>تصویر روشن است: خبر از روزنامه به گوشی کوچ کرده، ولی مخاطب کنجکاو سر جایش است. جوان‌ها بیشتر آنلاین‌اند، میانسال‌ها برای خبر آنلاین می‌شوند و اقتصاد روزمره در هر دو گروه پرخواننده است. خبری که ساده، دقیق، با عدد و منبع، و در همان جایی باشد که مردم هستند، خواننده پیدا می‌کند؛ و کسی که بخواهد عمیق‌تر بداند، تا آخر مقاله هم می‌آید. ما هم همین مسیر را با هم دنبال می‌کنیم: خلاصه در تلگرام و اینستاگرام، گزارش کامل روی سایت.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>مرکز افکارسنجی دانشجویان ایران (ایسپا): پیمایش ملی تلفنی منابع خبری، شهریور ۱۴۰۰ (۱٬۵۸۱ نفر)</li>
+<li>ایسپا: پیمایش استفاده از شبکه‌های اجتماعی، شهریور ۱۴۰۴</li>
+<li>یکتانت و EMRC: گزارش رفتار کاربران اینترنت، ۱۴۰۴ و بهار ۱۴۰۵ (۹۵۹ پاسخ‌دهنده)</li>
+<li>مرکز آمار ایران: طرح فرهنگ رفتاری خانوار، ۱۳۹۹</li>
+<li>گمان (GAMAAN): پیمایش آنلاین وزن‌دهی‌شده، ۱۴۰۲</li>
+<li>پیمایش ملی مصرف کالاهای فرهنگی، ۱۳۹۸ (به نقل بازنشر نتایج)</li>
+<li>ایران‌گاه، بر پایه‌ی سامانه‌ی جامع رسانه‌ها، مهر ۱۴۰۵؛ پایش محتوای پیام‌رسان‌های داخلی، مهر ۱۴۰۵</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۱۸ آبان ۱۴۰۵</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p><strong>Two in three young Iranians get their news online first. Among people over 50, it is one in eight.</strong></p>
+<p>"Nobody reads the news any more" is a common line. The numbers say otherwise: Iranian readers have not left the news, they have moved where they read it. In ISPA's 2025 survey, 47.3% of social media users said they use these platforms for news and information, as many as use them for entertainment (47.2%). The curiosity is there; the question is where and how news reaches people.</p>
+<h3>1. Who follows the news online?</h3>
+<p>In ISPA's national telephone poll of September 2021, 1,581 people chose one main news source. "Online" covered both news sites and social media. Share choosing online as their main source:</p>
+<div class="tw"><table><tr><th>Group</th><th>Online as main news source</th></tr><tr><td>All respondents</td><td>41.4%</td></tr><tr><td>Ages 18–29</td><td><strong>64.8%</strong></td></tr><tr><td>Ages 30–49</td><td>46.5%</td></tr><tr><td>50 and over</td><td>13.2%</td></tr><tr><td>University educated</td><td>60.5%</td></tr><tr><td>High-school diploma</td><td>42.5%</td></tr><tr><td>Below diploma</td><td>20.3%</td></tr><tr><td>Men</td><td>47.2%</td></tr><tr><td>Women</td><td>37.3%</td></tr></table></div>
+<ul><li>Percentages are within each group, not each group's share of the online audience.</li><li>Two clear gaps: age (65% vs 13%) and education (60% vs 20%).</li><li>This breakdown is from 2021; we found no newer one.</li></ul>
+<h3>2. Time on social media</h3>
+<p>Average daily time (ISPA, September 2025): ages 15–29 <strong>3 h 8 min</strong>; 30–49 <strong>2 h 16 min</strong>; 50 and over about <strong>1 hour</strong>. This covers all activity, not only news.</p>
+<h3>3. Messengers come first</h3>
+<p>In a Yektanet and EMRC report (2025 and spring 2026, 959 respondents), messaging apps were the first route to news, then friends and family, then news sites. Younger users leaned to film, music and entertainment; middle-aged users to news, family contact and banking.</p>
+<h3>4. What gets read</h3>
+<p>In the Statistical Centre of Iran's 2020 household culture survey, 22.4% of people aged 15+ had read a print or electronic newspaper. Among them, sections read (multiple answers):</p>
+<div class="tw"><table><tr><th>Section</th><th>Share of newspaper readers</th></tr><tr><td>Economy</td><td>40.4%</td></tr><tr><td>Society</td><td>36.7%</td></tr><tr><td>Sport</td><td>31.7%</td></tr><tr><td>Health</td><td>30.8%</td></tr><tr><td>Politics</td><td>30.4%</td></tr><tr><td>Incidents</td><td>21.1%</td></tr></table></div>
+<p>Economy leads. In an October 2026 content scan of domestic messaging apps, pocketbook topics stood out too: 18-carat gold prices on Eitaa, the dollar and Tether on Bale.</p>
+<h3>5. Print newspapers and magazines</h3>
+<ul>
+<li>In GAMAAN's weighted online survey (2023) of literate adults in Iran, 2.5% often turned to print newspapers for news, 9.8% sometimes, 29.2% rarely and 58.5% never; 68.2% often used social media for news. An online sample likely overstates online habits.</li>
+<li>In the 2019 national cultural consumption survey, 28.3% read a newspaper or magazine and 11.9% an electronic one; magazines cannot be separated out.</li>
+<li>Iran's media registry listed 18,116 licences in October 2026: 7,832 online, 6,098 print and 4,186 offline electronic. These are licences, not readership.</li>
+</ul>
+<div class="note"><p>We found no recent national data on magazine or long-form readers, or on who reads full articles to the end. Surveys use different methods and cannot simply be added up.</p></div>
+<h3>6. Ditoman's reading</h3>
+<p>News has moved from paper to phones, but curious readers are still there. The young are online more, the middle-aged go online for news, and everyday economics is widely read by both. News that is simple, accurate, sourced and placed where people already are finds readers; those who want depth follow it to the full article. That is the path we follow together: summaries on Telegram and Instagram, the full report on the site.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li>ISPA national telephone poll on news sources, September 2021 (n=1,581); ISPA social media survey, September 2025</li>
+<li>Yektanet and EMRC internet user report, 2025 and spring 2026 (n=959)</li>
+<li>Statistical Centre of Iran, household culture survey, 2020</li>
+<li>GAMAAN weighted online survey, 2023; national cultural consumption survey, 2019</li>
+<li>Irangah, from the national media registry, October 2026; domestic messaging app content scan, October 2026</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">Last reviewed 9 November 2026.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

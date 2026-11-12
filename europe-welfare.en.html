@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Europe's Costly Welfare: Who Pays the Bill? | Ditoman</title>
+<meta name="description" content="From European government debt to global value chains: how welfare is built, who benefits, which model lasts, and what opportunities it opens for the" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.tw tr.ir td{background:rgba(127,245,222,.10);color:#fff;font-weight:600}
+.lesson-content li{margin-bottom:12px}
+.callout{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0}
+.en .callout{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/europe-welfare.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/europe-welfare.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/europe-welfare.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/europe-welfare.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Europe&#x27;s Costly Welfare: Who Pays the Bill? | Ditoman" />
+<meta property="og:description" content="From European government debt to global value chains: how welfare is built, who benefits, which model lasts, and what opportunities it opens for the" />
+<meta property="og:url" content="https://ditoman.com/europe-welfare.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/europe-welfare.en.html#page",
+   "url": "https://ditoman.com/europe-welfare.en.html",
+   "name": "Europe's Costly Welfare: Who Pays the Bill? | Ditoman",
+   "description": "From European government debt to global value chains: how welfare is built, who benefits, which model lasts, and what opportunities it opens for the",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Europe's Costly Welfare: Who Pays the Bill?",
+     "item": "https://ditoman.com/europe-welfare.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="social/europe-welfare/card.webp" srcset="social/europe-welfare/card.webp 900w, social/europe-welfare/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Europe's costly welfare: who pays the bill?" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/europe-welfare/en-card.webp" srcset="social/europe-welfare/en-card.webp 900w, social/europe-welfare/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Europe's costly welfare: who pays the bill?" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">اروپا به رفاه گران‌قیمت عادت کرده؛ چه کسی هزینه‌اش را می‌پردازد؟</h1>
+<h1 lang="en">Europe's costly welfare: who pays the bill?</h1>
+<p class="subtitle" lang="en">From European government debt to global value chains: how welfare is built, who benefits, which model lasts, and what opportunities it opens for the region.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">از بدهی دولت‌های اروپایی تا زنجیره‌ی تولید جهانی؛ رفاه چطور ساخته می‌شود، چه کسانی از آن سود می‌برند، کدام مدل پایدارتر است و چه فرصت‌هایی برای منطقه می‌سازد.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۵٬۱۸۳ میلیارد €</b><b lang="en">€5.18T</b><span lang="fa">هزینه‌ی اجتماعی اتحادیه در ۲۰۲۵</span><span lang="en">EU social spending, 2025</span></div>
+<div class="stat"><b lang="fa">۸۲٫۹٪</b><b lang="en">82.9%</b><span lang="fa">بدهی دولت‌ها به تولید ناخالص</span><span lang="en">EU government debt / GDP</span></div>
+<div class="stat"><b lang="fa">۵ ← ۲٫۵</b><b lang="en">5 → 2.5</b><span lang="fa">شاغل به ازای هر بازنشسته</span><span lang="en">workers per pensioner</span></div>
+<div class="stat"><b lang="fa">۹۵۰ هزار</b><b lang="en">950k</b><span lang="fa">کمبود نیروی سلامت تا ۲۰۳۰</span><span lang="en">health-worker shortfall by 2030</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p><strong>اکونومیست این هفته تیتر زد: «اروپا بیش از توانش زندگی کرده؛ حالا وقت پرداخت صورت‌حساب‌هاست» <a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist</a>.</strong></p>
+<p>درمان همگانی، بازنشستگی مطمئن، تعطیلات طولانی و شهرهای قدم‌زدنی؛ اروپا را با همین‌ها می‌شناسیم. اما پول این رفاه از کجا می‌آید؟ چه کسی صورت‌حسابش را می‌پردازد؟ و مهم‌تر از همه، این ماجرا چه درسی برای ما و چه فرصتی برای کشورهای منطقه دارد؟</p>
+<p>در این گزارش سه چیز را از هم جدا می‌کنیم: <strong>واقعیت‌های تأییدشده</strong> با منبع، <strong>پرسش‌هایی که باید بررسی شوند</strong> و <strong>تحلیل دیتومان</strong>.</p>
+
+<h3><span class="check-number">۰۱.</span> اعداد چه می‌گویند؟</h3>
+<p><strong>نیمی از هزینه‌ی اجتماعی جهان.</strong> به گفته‌ی اکونومیست، اروپا حدود نیمی از کل هزینه‌ی اجتماعی جهان را خرج می‌کند؛ در حالی که فقط بخش کوچکی از جمعیت دنیا را دارد <a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist</a>. این یک برآورد کلی است؛ تعریف «هزینه‌ی اجتماعی» در کشورها یکسان نیست.</p>
+<p><strong>۵٬۱۸۳ میلیارد یورو در یک سال.</strong> طبق داده‌ی رسمی Eurostat، اتحادیه‌ی اروپا در سال ۲۰۲۵ حدود ۵٬۱۸۳ میلیارد یورو برای مزایای حمایت اجتماعی خرج کرده؛ یعنی ۲۷٫۵٪ تولید ناخالص داخلی <a href="https://www.brusselstimes.com/2395253/eu-social-spending-hits-e5-2-trillion-but-shrinks-as-a-share-of-gdp" target="_blank" rel="noopener">Eurostat / Brussels Times</a>.</p>
+<ul>
+<li><strong>سالمندی و بازنشستگی:</strong> ۲٬۱۵۲ میلیارد یورو؛ یعنی ۴۱٫۵٪ کل این هزینه</li>
+<li><strong>درمان و بیماری:</strong> ۱٬۵۵۶ میلیارد یورو؛ یعنی ۳۰٪</li>
+<li><strong>بیشترین سهم از تولید:</strong> اتریش ۳۲٫۴٪، فنلاند ۳۲٫۲٪ و فرانسه ۳۲٫۱٪</li>
+<li><strong>کمترین سهم:</strong> ایرلند ۱۱٫۷٪ و مالت ۱۳٫۸٪</li>
+</ul>
+<p><strong>بدهی‌ای که بالا می‌رود.</strong> بدهی دولت‌های اتحادیه‌ی اروپا در سه‌ماهه‌ی دوم ۲۰۲۶ به ۸۲٫۹٪ تولید ناخالص رسید؛ یک سال قبل ۸۱٫۴٪ بود <a href="https://www.euronews.com/2026/10/21/eurozone-government-debt-climbs-to-888-of-gdp-as-italy-closes-in-on-greece" target="_blank" rel="noopener">Eurostat / Euronews</a>.</p>
+<div class="tw" dir="rtl"><table><tr><th>کشور</th><th>بدهی دولت به تولید ناخالص (سه‌ماهه‌ی دوم ۲۰۲۶)</th></tr><tr><td>یونان</td><td>۱۴۰٫۸٪</td></tr><tr><td>ایتالیا</td><td>۱۳۹٫۹٪</td></tr><tr><td>فرانسه</td><td>۱۱۹٫۱٪</td></tr><tr><td>میانگین منطقه‌ی یورو</td><td>۸۸٫۸٪</td></tr><tr class="ir"><td>میانگین اتحادیه‌ی اروپا</td><td>۸۲٫۹٪</td></tr><tr><td>آلمان (پایان ۲۰۲۵)</td><td>حدود ۶۳٪</td></tr><tr><td>استونی</td><td>۲۶٫۱٪</td></tr></table></div>
+<p><strong>وقتی بهره‌ی بدهی از آموزش جلو می‌زند.</strong> وزیر اقتصاد فرانسه گفته هزینه‌ی بهره‌ی بدهی این کشور در ۲۰۲۷ به حدود ۹۱ میلیارد یورو می‌رسد؛ بیشتر از آموزش (حدود ۶۳ میلیارد) و دفاع (حدود ۵۳ میلیارد) <a href="https://acteurspublics.fr/articles/la-charge-de-la-dette-devrait-selever-a-91-milliards-deuros-en-2027-loin-devant-les-traditionnels-postes-de-depenses-de-letat/" target="_blank" rel="noopener">Acteurs Publics</a>. پیش‌بینی بودجه‌ی رسمی برای خود دولت مرکزی ۷۴٫۲ میلیارد یورو است <a href="https://www.arabnews.com/node/2651148/world" target="_blank" rel="noopener">Reuters / Arab News</a>؛ تفاوت این دو رقم از دامنه‌ی محاسبه می‌آید.</p>
+
+<h3><span class="check-number">۰۲.</span> چه کسی صورت‌حساب را می‌پردازد؟</h3>
+<p><strong>۱. شاغل‌های امروز.</strong> در بیشتر کشورهای اروپایی، حقوق بازنشسته‌های امروز را مالیات و حق بیمه‌ی شاغل‌های امروز می‌پردازد. در سال ۱۹۶۰ در اروپای غربی به ازای هر بازنشسته بیش از ۵ نفر کار می‌کردند؛ امروز حدود ۲٫۵ نفر <a href="https://thenightly.com.au/business/economist-how-the-boomers-screwed-europe-sticking-its-few-kids-with-the-bill-c-22364328" target="_blank" rel="noopener">The Economist</a>. میانه‌ی سنی اتحادیه به ۴۴٫۹ سال رسیده و ۲۲٪ جمعیت بالای ۶۵ سال است <a href="https://www.eunews.it/en/2026/02/13/europe-grows-older-as-median-age-reaches-45-one-retiree-for-every-three-workers/" target="_blank" rel="noopener">Eurostat / Eunews</a>.</p>
+<p><strong>۲. نسل بعد.</strong> وقتی دولت بخشی از هزینه‌ها را با قرض تأمین می‌کند، پرداخت اصل و بهره‌اش به آینده منتقل می‌شود. اکونومیست یادآوری می‌کند که قیمت واقعی خانه در اروپا در یک دهه حدود یک‌چهارم بالا رفته و نزدیک یک‌چهارم متولدین دهه‌ی ۱۹۸۰ در ۳۰ سالگی هنوز با پدر و مادرشان زندگی می‌کردند <a href="https://thenightly.com.au/business/economist-how-the-boomers-screwed-europe-sticking-its-few-kids-with-the-bill-c-22364328" target="_blank" rel="noopener">The Economist</a>.</p>
+<p><strong>۳. دنیای بیرون؟</strong> یک ادعای رایج این است که رفاه کشورهای ثروتمند با کار ارزان کشورهای دیگر ساخته شده. این را به‌عنوان یک پرسش بررسی می‌کنیم، نه حکمی از پیش گرفته‌شده (بخش ۰۴).</p>
+
+<h3><span class="check-number">۰۳.</span> آیا اروپایی‌ها کمتر کار می‌کنند؟</h3>
+<p>بله، اما ماجرا به همین سادگی نیست.</p>
+<div class="tw" dir="rtl"><table><tr><th>کشور</th><th>ساعت کار سالانه‌ی هر شاغل (OECD)</th></tr><tr class="ir"><td>آلمان</td><td>۱٬۳۳۲</td></tr><tr><td>سوئد</td><td>۱٬۴۲۱</td></tr><tr><td>فرانسه</td><td>۱٬۴۹۸</td></tr><tr><td>ژاپن</td><td>۱٬۵۹۸</td></tr><tr><td>ایتالیا</td><td>۱٬۷۱۶</td></tr><tr><td>پرتغال</td><td>۱٬۷۶۴</td></tr><tr><td>آمریکا</td><td>۱٬۸۰۰</td></tr><tr><td>کره‌ی جنوبی</td><td>۱٬۸۳۳</td></tr><tr><td>یونان</td><td>۱٬۸۷۴</td></tr></table></div>
+<p>آلمان با کمترین ساعت کار، در هر ساعت حدود ۹۸ دلار (به برابری قدرت خرید) تولید می‌کند؛ تقریباً هم‌اندازه‌ی آمریکا (حدود ۹۷ دلار) که سالی ۴۷۰ ساعت بیشتر کار می‌کند. یونان بیشترین ساعت کار را در اتحادیه دارد، اما در تولید هر ساعت جزو پایین‌ترین‌هاست <a href="https://www.randalolson.com/2026/06/02/oecd-hours-worked-vs-productivity/" target="_blank" rel="noopener">OECD / Randal Olson</a>.</p>
+<div class="callout"><strong>درس این بخش:</strong> ثروت از «ساعت بیشتر» نمی‌آید؛ از «ارزش بیشتر در هر ساعت» می‌آید: فناوری، ماشین‌آلات، آموزش، مدیریت و نهادهای کارآمد. برای ایران هم که ساعت کار سالانه در برآوردهای بین‌المللی بالاتر از همه‌ی این کشورهاست <a href="https://en.wikipedia.org/wiki/List_of_countries_by_average_annual_labor_hours" target="_blank" rel="noopener">Our World in Data</a>، کلید بهبود زندگی همین است: بهره‌وری، نه فرسودگی.</div>
+
+<h3><span class="check-number">۰۴.</span> چه کسی از تولید ارزان سود می‌برد؟</h3>
+<p>پژوهشگران دانشگاه‌های سیراکیوز، برکلی و ارواین زنجیره‌ی ارزش آیفون ۷ را بررسی کردند <a href="https://asiatimes.com/2018/07/china-makes-8-46-from-an-iphone-and-thats-why-trumps-trade-war-is-futile/" target="_blank" rel="noopener">The Conversation / Asia Times</a>:</p>
+<div class="tw" dir="rtl"><table><tr><th>بخش زنجیره</th><th>مبلغ</th><th>سهم از قیمت</th></tr><tr><td>قیمت فروش</td><td>حدود ۶۴۹ دلار</td><td>۱۰۰٪</td></tr><tr><td>سود ناخالص اپل (برند و طراحی)</td><td>حدود ۲۸۳ دلار</td><td>حدود ۴۴٪</td></tr><tr class="ir"><td>ارزش افزوده‌ی مونتاژ در چین</td><td>حدود ۸٫۵ دلار</td><td>کمتر از ۱٫۵٪</td></tr><tr><td>قطعات (آمریکا، ژاپن، تایوان، کره و…)</td><td>بیشتر هزینه‌ی ساخت</td><td>—</td></tr></table></div>
+<p>اینجا باید صادق باشیم: رفاه اروپا مستقیماً از جیب کارگر آسیایی یا ایرانی پرداخت نمی‌شود؛ منبع اصلی‌اش مالیات و حق بیمه‌ی خود اروپایی‌هاست. اما در زنجیره‌های جهانی، ارزش نابرابر تقسیم می‌شود. سازمان بین‌المللی کار در گزارش «چشم‌انداز اشتغال جهان ۲۰۱۵» نشان داد حضور در زنجیره‌های تأمین جهانی بهره‌وری را بالا می‌برد، اما دستمزد کارگران همیشه هم‌پای آن بالا نمی‌رود <a href="https://www.ilo.org/resource/news/following-decades-rapid-increase-global-supply-chain-jobs-shrink" target="_blank" rel="noopener">ILO</a>.</p>
+<p>کالای وارداتی ارزان بی‌شک به قدرت خرید خانوارهای اروپایی کمک کرده؛ اما بخش بزرگی از این ارزانی از بهره‌وری و مقیاس عظیم تولید در آسیا آمده، نه فقط از دستمزد پایین.</p>
+<div class="callout"><strong>نکته‌ی امیدوارکننده:</strong> همان چین که روزی فقط مونتاژ می‌کرد، امروز صاحب برندهای جهانی در گوشی، خودروی برقی و بازی موبایل است. جایگاه در زنجیره‌ی ارزش ثابت نیست؛ می‌شود از پله‌ی پایین بالا رفت.</div>
+
+<h3><span class="check-number">۰۵.</span> همه‌ی اروپا یکی نیست</h3>
+<p>اکونومیست صریح می‌گوید: آلمان و کشورهای شمال اروپا کار سخت مالی را انجام دادند؛ بقیه به قرض گرفتن و عقب انداختن تصمیم‌های سخت ادامه دادند <a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist</a>.</p>
+<ul>
+<li><strong>آلمان و شمال اروپا:</strong> بدهی کنترل‌شده، بهره‌وری بالا و اصلاحات به‌موقع در بازار کار و بازنشستگی.</li>
+<li><strong>فرانسه:</strong> بالاترین سهم هزینه‌ی اجتماعی در کنار اتریش و فنلاند، بدهی رو به رشد و بحث داغ درباره‌ی سن بازنشستگی و مالیات.</li>
+<li><strong>ایتالیا و یونان:</strong> بدهی نزدیک به ۱۴۰٪ تولید؛ اما یونان بعد از بحران دهه‌ی ۲۰۱۰ نشان داد کاهش تدریجی بدهی ممکن است.</li>
+<li><strong>پرتغال:</strong> از کشورهای بحران‌زده‌ی دهه‌ی ۲۰۱۰ بود و حالا جزو اقتصادهایی است که بدهی‌اش را پایین آورده.</li>
+</ul>
+<p>پس موضوع «فروپاشی رفاه اروپا» نیست؛ ضرورت اصلاح است. و تجربه‌ی همین کشورها نشان می‌دهد اصلاح ممکن است.</p>
+
+<h3><span class="check-number">۰۶.</span> چهار نگاه به یک مسئله</h3>
+<ul>
+<li><strong>نگاه انضباط مالی (اکونومیست):</strong> هزینه‌ها باید اصلاح شود؛ صدای پوپولیست‌ها گفت‌وگوی جدی درباره‌ی حساب‌وکتاب بودجه را خفه کرده و رأی‌دهندگان اصلاح می‌خواهند، اما نه به هزینه‌ی خودشان <a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist</a>.</li>
+<li><strong>نگاه «از ثروتمندان مالیات بگیرید»:</strong> شعار معترضان پاریس همین بود. در فرانسه پیشنهاد مالیات ۲ درصدی بر دارایی‌های بالای ۱۰۰ میلیون یورو (معروف به مالیات زوکمن) مطرح شد، اما مجلس فرانسه در بحث بودجه آن را رد کرد <a href="https://news.bloomberglaw.com/tax-insights-and-commentary/french-lawmakers-reject-wealth-tax-proposals-for-budget-1" target="_blank" rel="noopener">Bloomberg Law</a>.</li>
+<li><strong>نگاه جمعیتی:</strong> بدون نیروی کار تازه، نسبت شاغل به بازنشسته بهتر نمی‌شود. مهاجرت سریع‌ترین راه است، اما به گفته‌ی اکونومیست به رشد احزاب پوپولیست راست هم دامن زده <a href="https://thenightly.com.au/business/economist-how-the-boomers-screwed-europe-sticking-its-few-kids-with-the-bill-c-22364328" target="_blank" rel="noopener">The Economist</a>.</li>
+<li><strong>نگاه «رفاه به‌عنوان سرمایه‌گذاری»:</strong> درمان همگانی یعنی نیروی کار سالم‌تر؛ آموزش رایگان یعنی مهارت بیشتر؛ امنیت اقتصادی یعنی آدم‌ها ریسک می‌کنند و کسب‌وکار می‌سازند. از این نگاه، سؤال «چقدر خرج می‌کنیم» نیست؛ «چقدر برمی‌گردد» است.</li>
+</ul>
+
+<h3><span class="check-number">۰۷.</span> اگر همین درآمد را در ایران و اروپا داشته باشیم</h3>
+<p>مقایسه‌ی ساده با نرخ ارز گمراه‌کننده است. یک مقایسه‌ی درست باید این‌ها را کنار هم بگذارد:</p>
+<ul>
+<li><strong>قدرت خرید:</strong> با یک واحد پول، در هر کشور چه چیزهایی می‌شود خرید؟</li>
+<li><strong>مسکن:</strong> چند سال درآمد برای خرید یک خانه لازم است؟</li>
+<li><strong>درمان و آموزش:</strong> چقدرش رایگان یا بیمه‌شده است و چقدرش از جیب خانوار؟</li>
+<li><strong>مالیات:</strong> چقدر می‌دهیم و در عوض چه خدمتی می‌گیریم؟</li>
+<li><strong>پس‌انداز:</strong> آیا پول جمع‌شده ارزشش را حفظ می‌کند؟</li>
+</ul>
+<p>در اروپا مالیات بالاست، اما بخشی از آن به شکل درمان، آموزش و بازنشستگی برمی‌گردد. در ایران مالیات مستقیم کمتر است، اما تورم بالا عملاً مثل یک مالیات پنهان روی پس‌انداز عمل می‌کند.</p>
+<p><strong>سازگاری با کمبود، با کارایی اقتصادی فرق دارد.</strong> ما ایرانی‌ها در کم‌خرج زندگی کردن استادیم: کالا را تعمیر می‌کنیم به‌جای تعویض، سفر را حذف می‌کنیم و هزینه‌ها را سخت مدیریت می‌کنیم. این مهارت ارزشمندی است؛ اما وقتی خانواده‌ای ناچار می‌شود درمان یا تغذیه‌ی خوب را حذف کند، این دیگر صرفه‌جویی نیست، فقر پنهان است.</p>
+<p><strong>مدل سوم: شرق آسیا.</strong> کره‌ی جنوبی و تایوان در دهه‌های رشدشان بیشتر روی آموزش، بهداشت پایه و زیرساخت سرمایه‌گذاری کردند تا پرداخت نقدی گسترده؛ پژوهشگران به این الگو «رفاه مولد» می‌گویند. نتیجه، جهش بزرگ در بهره‌وری بود. اما این مدل هم بی‌هزینه نبود: امروز همین کشورها با پیری سریع جمعیت، مسکن گران و کمترین نرخ زادوولد دنیا روبه‌رو هستند. هیچ مدل کاملی وجود ندارد.</p>
+
+<h3><span class="check-number">۰۸.</span> فرصت‌ها برای کشورهای منطقه</h3>
+<p>اروپای پیر و پرهزینه فقط یک مسئله نیست؛ یک بازار بزرگ هم هست. کشورهای منطقه، از ترکیه و قفقاز تا خلیج فارس و آسیای مرکزی، و در بلندمدت ایران، می‌توانند در این زنجیره نقش داشته باشند:</p>
+<ul>
+<li><strong>۱. نیروی کار سلامت و مراقبت.</strong> سازمان جهانی بهداشت پیش‌بینی می‌کند منطقه‌ی اروپا تا ۲۰۳۰ با کمبود حدود ۹۵۰ هزار نیروی سلامت روبه‌رو شود. از ۲۰۱۴ تا ۲۰۲۳ تعداد پزشکان خارجی‌آموخته ۵۸٪ و پرستاران خارجی‌آموخته ۶۷٪ بیشتر شده است <a href="https://www.euronews.com/health/2025/09/22/europes-reliance-on-foreign-health-workers-is-growing-who-report-finds-this-is-why-it-matt" target="_blank" rel="noopener">WHO / Euronews</a>. سازمان کار اروپا هم سلامت و مراقبت را محور اصلی کمبود نیروی کار می‌داند؛ بخشی با حدود ۲۵ میلیون شاغل <a href="https://www.ela.europa.eu/en/news/ela-launches-2025-eures-report-highlighting-structural-labour-shortages-across-europe" target="_blank" rel="noopener">ELA</a>.<br><em style="color:#7ff5de;font-style:normal">فرصت:</em> آموزش پرستاری و مراقبت با استاندارد و زبان اروپایی، مدل‌های «مهاجرت چرخشی» که مهارت را به کشور برمی‌گرداند و پزشکی از راه دور.</li>
+<li><strong>۲. گردشگری سلامت.</strong> وقتی صف درمان در اروپا طولانی و هزینه‌ها بالاست، بیمار به جایی می‌رود که درمان باکیفیت سریع‌تر و ارزان‌تر باشد. ترکیه در ۲۰۲۳ حدود ۳٫۱ میلیارد دلار از ۱٫۶۵ میلیون بیمار خارجی درآمد داشت و برای ۲۰۲۸ هدف ۲۰ میلیارد دلار گذاشته است <a href="https://www.dailysabah.com/business/tourism/turkiye-targets-20-billion-in-health-tourism-revenue-by-2028" target="_blank" rel="noopener">Daily Sabah</a>.<br><em style="color:#7ff5de;font-style:normal">فرصت:</em> ایران هم پزشکان حاذق و هزینه‌ی رقابتی دارد و همین حالا برای بیماران کشورهای همسایه مقصد درمان است؛ کیفیت خدمات، اعتبارنامه‌ی بین‌المللی و تجربه‌ی بیمار کلید رشد است.</li>
+<li><strong>۳. دارو و مواد اولیه‌ی دارویی.</strong> اتحادیه‌ی اروپا با «قانون داروهای حیاتی» می‌خواهد زنجیره‌ی تأمینش را متنوع کند؛ حدود ۸۰٪ مواد اولیه‌ی دارویی وارداتی‌اش از پنج کشور می‌آید و سهم چین به‌تنهایی حدود ۴۵٪ است <a href="https://www.consilium.europa.eu/en/policies/critical-medicines-act/" target="_blank" rel="noopener">Council of the EU</a>.<br><em style="color:#7ff5de;font-style:normal">فرصت:</em> تولیدکننده‌هایی با استاندارد GMP اروپایی در منطقه می‌توانند تأمین‌کننده‌ی جایگزین باشند. صنعت داروی ایران پایه‌ی داخلی قوی دارد؛ رسیدن به این بازار به استاندارد، شفافیت و همکاری بین‌المللی نیاز دارد.</li>
+<li><strong>۴. اقتصاد نقره‌ای.</strong> یک مطالعه‌ی کمیسیون اروپا اندازه‌ی «اقتصاد نقره‌ای»، یعنی هزینه‌ی افراد بالای ۵۰ سال، را برای ۲۰۲۵ حدود ۵٫۷ تریلیون یورو پیش‌بینی کرده بود <a href="https://www.icthealth.org/news/european-silver-economy-reaches-eur37-trillion" target="_blank" rel="noopener">European Commission study / ICT&health</a>.<br><em style="color:#7ff5de;font-style:normal">فرصت:</em> وسایل کمک‌حرکتی، خانه‌ی هوشمند برای سالمندان، اپ‌های سلامت، غذای سالم و آماده، گردشگری آرام و طولانی‌مدت.</li>
+<li><strong>۵. خدمات دیجیتال از راه دور.</strong> کمبود نیرو در اروپا تقریباً در همه‌ی شغل‌ها دیده می‌شود <a href="https://www.ela.europa.eu/en/news/ela-launches-2025-eures-report-highlighting-structural-labour-shortages-across-europe" target="_blank" rel="noopener">ELA</a>. کاری که می‌شود از راه دور انجام داد، از برنامه‌نویسی و طراحی تا پشتیبانی و تحلیل داده، از مرز عبور می‌کند.<br><em style="color:#7ff5de;font-style:normal">فرصت:</em> شرکت‌های فناوری منطقه و استعدادهای ایرانی، به‌ویژه از طریق شبکه‌ی ایرانیان خارج از کشور، می‌توانند پل این خدمات باشند. باید صادق بود: برای شرکت‌های داخل ایران، محدودیت‌های پرداخت و قانونی هنوز مانع جدی است.</li>
+<li><strong>۶. غذا و محصولات کشاورزی باکیفیت.</strong> جمعیت مسن‌تر و پرسرانه‌تر، مشتری محصولات سالم، ارگانیک و برنددار است؛ از زعفران و پسته تا خشکبار و میوه‌ی خشک، به شرط استاندارد و ردیابی کامل.</li>
+</ul>
+<p style="color:#9fb6b9">این بخش تحلیل دیتومان است و ارقام آن از منابع ذکرشده آمده؛ هر فرصت به بررسی قانونی و بازار هر کشور نیاز دارد.</p>
+
+<h3><span class="check-number">۰۹.</span> نگاه دیتومان: درس این ماجرا برای ما</h3>
+<ul>
+<li><strong>«مجانی» وجود ندارد.</strong> هر خدمت رایگانی را بالاخره کسی، امروز یا فردا، می‌پردازد.</li>
+<li><strong>آینده‌ی مالی‌ات را فقط به دیگران نسپار.</strong> حتی در ثروتمندترین کشورهای دنیا، جوان‌ها کنار بیمه‌ی دولتی پس‌انداز شخصی هم می‌کنند. یک برنامه‌ی پس‌انداز بلندمدت و متنوع برای خودت داشته باش.</li>
+<li><strong>بهره‌وری کلید است.</strong> برای یک کشور و برای یک آدم، کار هوشمندانه‌تر از کار طولانی‌تر ارزش می‌سازد.</li>
+<li><strong>بالا رفتن در زنجیره‌ی ارزش ممکن است.</strong> چین، کره و ترکیه نشان دادند می‌شود از مونتاژ و خدمات ارزان به برند و فناوری رسید.</li>
+<li><strong>اصلاح، از فروپاشی ارزان‌تر است.</strong> تجربه‌ی آلمان، شمال اروپا و پرتغال نشان می‌دهد تصمیم سخت اما به‌موقع، آینده‌ی روشن‌تری می‌سازد.</li>
+</ul>
+<div class="callout"><strong>مدل مطلوب کدام است؟</strong> نه رفاه پرهزینه و بدهی‌محور، و نه زندگی بر پایه‌ی سازگاری با تورم و کمبود؛ ترکیبی از سرمایه‌گذاری روی آموزش و فناوری، تأمین مالی پایدار و شفاف برای بازنشستگی، و حمایت هدفمند از آسیب‌پذیرها به‌جای یارانه‌ی همگانی. سؤال اصلی این نیست که «کدام ملت کمتر خرج می‌کند»؛ این است که <strong>کدام اقتصاد با منابع محدود، بهترین و پایدارترین زندگی را برای مردمش می‌سازد؟</strong></div>
+
+<h3>بیشتر بخوانید: گزارش‌های دیتومان</h3><ul><li><a href="not-your-fault.en.html">تو عقب نیفتاده‌ای؛ زمین مسابقه جلوتر دویده</a></li><li><a href="ai-integrators.en.html">صنعت تازه: ساختن هوش مصنوعی برای کسب‌وکارها</a></li><li><a href="carbon-bends.en.html">۳۰ سال، دو خط: دود خم شد، خورشید و باد اوج گرفت</a></li><li><a href="household-economy.en.html">اقتصاد خانوار</a></li><li><a href="iran-built.en.html">ایرانی که ساخته شد</a></li></ul>
+<h3>منابع</h3>
+<ul class="sources">
+<li><a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist: Europe has been living beyond its means. Now the bills are due (۱۰ نوامبر ۲۰۲۶)</a></li>
+<li><a href="https://thenightly.com.au/business/economist-how-the-boomers-screwed-europe-sticking-its-few-kids-with-the-bill-c-22364328" target="_blank" rel="noopener">The Economist: How the boomers screwed Europe… (۲۸ مه ۲۰۲۶)</a></li>
+<li><a href="https://www.brusselstimes.com/2395253/eu-social-spending-hits-e5-2-trillion-but-shrinks-as-a-share-of-gdp" target="_blank" rel="noopener">Eurostat: هزینه‌ی حمایت اجتماعی ۲۰۲۵ (Brussels Times)</a></li>
+<li><a href="https://www.euronews.com/2026/10/21/eurozone-government-debt-climbs-to-888-of-gdp-as-italy-closes-in-on-greece" target="_blank" rel="noopener">Eurostat: بدهی دولت‌ها، سه‌ماهه‌ی دوم ۲۰۲۶ (Euronews)</a></li>
+<li><a href="https://www.eunews.it/en/2026/02/13/europe-grows-older-as-median-age-reaches-45-one-retiree-for-every-three-workers/" target="_blank" rel="noopener">Eurostat: ساختار سنی جمعیت ۲۰۲۵ (Eunews)</a></li>
+<li><a href="https://acteurspublics.fr/articles/la-charge-de-la-dette-devrait-selever-a-91-milliards-deuros-en-2027-loin-devant-les-traditionnels-postes-de-depenses-de-letat/" target="_blank" rel="noopener">Acteurs Publics: بهره‌ی بدهی فرانسه ۲۰۲۷</a> · <a href="https://www.arabnews.com/node/2651148/world" target="_blank" rel="noopener">Reuters / Arab News: بودجه‌ی ۲۰۲۷ فرانسه</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_countries_by_average_annual_labor_hours" target="_blank" rel="noopener">OECD: ساعت کار سالانه</a> · <a href="https://www.randalolson.com/2026/06/02/oecd-hours-worked-vs-productivity/" target="_blank" rel="noopener">OECD: تولید در هر ساعت (Randal Olson)</a></li>
+<li><a href="https://asiatimes.com/2018/07/china-makes-8-46-from-an-iphone-and-thats-why-trumps-trade-war-is-futile/" target="_blank" rel="noopener">Dedrick, Linden, Kraemer: زنجیره‌ی ارزش آیفون</a></li>
+<li><a href="https://www.ilo.org/resource/news/following-decades-rapid-increase-global-supply-chain-jobs-shrink" target="_blank" rel="noopener">ILO: World Employment and Social Outlook 2015</a></li>
+<li><a href="https://www.euronews.com/health/2025/09/22/europes-reliance-on-foreign-health-workers-is-growing-who-report-finds-this-is-why-it-matt" target="_blank" rel="noopener">WHO Europe: نیروی سلامت (Euronews)</a> · <a href="https://www.ela.europa.eu/en/news/ela-launches-2025-eures-report-highlighting-structural-labour-shortages-across-europe" target="_blank" rel="noopener">European Labour Authority: گزارش کمبود نیروی کار ۲۰۲۵</a></li>
+<li><a href="https://www.dailysabah.com/business/tourism/turkiye-targets-20-billion-in-health-tourism-revenue-by-2028" target="_blank" rel="noopener">Daily Sabah: گردشگری سلامت ترکیه</a></li>
+<li><a href="https://www.consilium.europa.eu/en/policies/critical-medicines-act/" target="_blank" rel="noopener">Council of the EU: قانون داروهای حیاتی</a></li>
+<li><a href="https://www.icthealth.org/news/european-silver-economy-reaches-eur37-trillion" target="_blank" rel="noopener">مطالعه‌ی کمیسیون اروپا درباره‌ی اقتصاد نقره‌ای (ICT&health)</a></li>
+<li><a href="https://news.bloomberglaw.com/tax-insights-and-commentary/french-lawmakers-reject-wealth-tax-proposals-for-budget-1" target="_blank" rel="noopener">Bloomberg Law: رد مالیات ثروت در فرانسه</a></li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۲۱ آبان ۱۴۰۵. دیتومان یک رسانه‌ی آموزشی است و این گزارش توصیه‌ی سرمایه‌گذاری نیست.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p><strong>The Economist ran the headline this week: "Europe has been living beyond its means. Now the bills are due" <a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist</a>.</strong></p>
+<p>Universal healthcare, secure pensions, long holidays and walkable cities: that is the Europe we know. But where does the money come from, who pays the bill, and what does it mean for us and for the region? Below we separate <strong>verified facts</strong>, <strong>open questions</strong> and <strong>Ditoman's analysis</strong>.</p>
+
+<h3>1. What the numbers say</h3>
+<p><strong>Half the world's social spending.</strong> According to The Economist, Europe accounts for about half of all social spending worldwide, with a small share of the world's population <a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist</a>. It is a broad estimate; definitions differ between countries.</p>
+<p><strong>€5,183 billion in one year.</strong> Eurostat data show EU social protection benefits reached about €5,183 billion in 2025, or 27.5% of GDP <a href="https://www.brusselstimes.com/2395253/eu-social-spending-hits-e5-2-trillion-but-shrinks-as-a-share-of-gdp" target="_blank" rel="noopener">Eurostat / Brussels Times</a>.</p>
+<ul>
+<li><strong>Old age and pensions:</strong> €2,152 billion, 41.5% of the total</li>
+<li><strong>Sickness and healthcare:</strong> €1,556 billion, 30%</li>
+<li><strong>Highest share of GDP:</strong> Austria 32.4%, Finland 32.2%, France 32.1%</li>
+<li><strong>Lowest:</strong> Ireland 11.7%, Malta 13.8%</li>
+</ul>
+<p><strong>Rising debt.</strong> EU government debt reached 82.9% of GDP in Q2 2026, up from 81.4% a year earlier <a href="https://www.euronews.com/2026/10/21/eurozone-government-debt-climbs-to-888-of-gdp-as-italy-closes-in-on-greece" target="_blank" rel="noopener">Eurostat / Euronews</a>.</p>
+<div class="tw"><table><tr><th>Country</th><th>Government debt to GDP (Q2 2026)</th></tr><tr><td>Greece</td><td>140.8%</td></tr><tr><td>Italy</td><td>139.9%</td></tr><tr><td>France</td><td>119.1%</td></tr><tr><td>Euro area average</td><td>88.8%</td></tr><tr class="ir"><td>EU average</td><td>82.9%</td></tr><tr><td>Germany (end-2025)</td><td>about 63%</td></tr><tr><td>Estonia</td><td>26.1%</td></tr></table></div>
+<p><strong>When interest outgrows education.</strong> France's economy minister says the country's debt interest bill will reach about €91 billion in 2027, more than education (about €63 billion) or defence (about €53 billion) <a href="https://acteurspublics.fr/articles/la-charge-de-la-dette-devrait-selever-a-91-milliards-deuros-en-2027-loin-devant-les-traditionnels-postes-de-depenses-de-letat/" target="_blank" rel="noopener">Acteurs Publics</a>. The official budget forecast for the central state alone is €74.2 billion <a href="https://www.arabnews.com/node/2651148/world" target="_blank" rel="noopener">Reuters / Arab News</a>; the gap reflects different scopes.</p>
+
+<h3>2. Who pays the bill?</h3>
+<p><strong>Today's workers.</strong> In most European countries today's pensions are paid by today's workers. In 1960 western Europe had more than 5 workers per pensioner; today about 2.5 <a href="https://thenightly.com.au/business/economist-how-the-boomers-screwed-europe-sticking-its-few-kids-with-the-bill-c-22364328" target="_blank" rel="noopener">The Economist</a>. The EU's median age is 44.9 and 22% of people are over 65 <a href="https://www.eunews.it/en/2026/02/13/europe-grows-older-as-median-age-reaches-45-one-retiree-for-every-three-workers/" target="_blank" rel="noopener">Eurostat / Eunews</a>.</p>
+<p><strong>The next generation.</strong> Borrowing moves the bill into the future. Real house prices rose by about a quarter in a decade, and nearly a quarter of Europeans born in the 1980s still lived with their parents at 30 <a href="https://thenightly.com.au/business/economist-how-the-boomers-screwed-europe-sticking-its-few-kids-with-the-bill-c-22364328" target="_blank" rel="noopener">The Economist</a>.</p>
+<p><strong>The rest of the world?</strong> A common claim is that rich countries' welfare is built on cheap labour elsewhere. We treat that as a question, not a conclusion (section 4).</p>
+
+<h3>3. Do Europeans work less?</h3>
+<div class="tw"><table><tr><th>Country</th><th>Annual hours per worker (OECD)</th></tr><tr class="ir"><td>Germany</td><td>1,332</td></tr><tr><td>Sweden</td><td>1,421</td></tr><tr><td>France</td><td>1,498</td></tr><tr><td>Japan</td><td>1,598</td></tr><tr><td>Italy</td><td>1,716</td></tr><tr><td>Portugal</td><td>1,764</td></tr><tr><td>USA</td><td>1,800</td></tr><tr><td>South Korea</td><td>1,833</td></tr><tr><td>Greece</td><td>1,874</td></tr></table></div>
+<p>Germany, with the fewest hours, produces about $98 per hour (PPP), roughly the same as the US (about $97), where people work 470 more hours a year. Greece works the longest hours in the EU yet sits near the bottom on output per hour <a href="https://www.randalolson.com/2026/06/02/oecd-hours-worked-vs-productivity/" target="_blank" rel="noopener">OECD / Randal Olson</a>.</p>
+<div class="callout"><strong>The lesson:</strong> wealth comes from more value per hour, not more hours: technology, machinery, skills, management and effective institutions. For Iran, where annual hours are higher than in all of these countries in international estimates <a href="https://en.wikipedia.org/wiki/List_of_countries_by_average_annual_labor_hours" target="_blank" rel="noopener">Our World in Data</a>, the key is productivity, not exhaustion.</div>
+
+<h3>4. Who profits from cheap production?</h3>
+<p>Researchers from Syracuse, Berkeley and Irvine traced the iPhone 7's value chain <a href="https://asiatimes.com/2018/07/china-makes-8-46-from-an-iphone-and-thats-why-trumps-trade-war-is-futile/" target="_blank" rel="noopener">The Conversation / Asia Times</a>:</p>
+<div class="tw"><table><tr><th>Link in the chain</th><th>Amount</th><th>Share of price</th></tr><tr><td>Retail price</td><td>about $649</td><td>100%</td></tr><tr><td>Apple gross profit (brand and design)</td><td>about $283</td><td>about 44%</td></tr><tr class="ir"><td>Assembly value added in China</td><td>about $8.50</td><td>under 1.5%</td></tr><tr><td>Components (US, Japan, Taiwan, Korea…)</td><td>most of the build cost</td><td>—</td></tr></table></div>
+<p>To be honest: Europe's welfare is not paid directly by Asian or Iranian workers; it is funded mainly by Europeans' own taxes and contributions. But value is unevenly shared in global chains. The ILO's World Employment and Social Outlook 2015 found that global supply chains raise productivity, but wages do not always keep pace <a href="https://www.ilo.org/resource/news/following-decades-rapid-increase-global-supply-chain-jobs-shrink" target="_blank" rel="noopener">ILO</a>. Cheap imports have supported European purchasing power, but much of that cheapness comes from Asian productivity and scale, not only low wages.</p>
+<div class="callout"><strong>The hopeful part:</strong> China once only assembled; today it owns global brands in phones, electric cars and mobile games. A place in the value chain is not fixed.</div>
+
+<h3>5. Europe is not one story</h3>
+<p>The Economist says Germany and the Nordics did the hard fiscal work, while others kept borrowing and ducking hard choices <a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist</a>.</p>
+<ul>
+<li><strong>Germany and the Nordics:</strong> controlled debt, high productivity, timely labour and pension reforms.</li>
+<li><strong>France:</strong> among the highest social spending, rising debt, heated debate on retirement age and tax.</li>
+<li><strong>Italy and Greece:</strong> debt near 140% of GDP, yet Greece showed after the 2010s crisis that gradual debt reduction is possible.</li>
+<li><strong>Portugal:</strong> a crisis country in the 2010s, now among those that have brought debt down.</li>
+</ul>
+<p>So the story is not "the collapse of European welfare"; it is the need for reform, and these countries show reform is possible.</p>
+
+<h3>6. Four views of one problem</h3>
+<ul>
+<li><strong>Fiscal discipline (The Economist):</strong> spending must be reformed; populist clamour drowns out sensible talk about the budget arithmetic, and voters want public finances fixed, just not at their expense <a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist</a>.</li>
+<li><strong>"Tax the rich":</strong> the slogan of the Paris protesters. A 2% tax on fortunes above €100 million (the "Zucman tax") was proposed in France but rejected by parliament in the budget debate <a href="https://news.bloomberglaw.com/tax-insights-and-commentary/french-lawmakers-reject-wealth-tax-proposals-for-budget-1" target="_blank" rel="noopener">Bloomberg Law</a>.</li>
+<li><strong>Demography:</strong> without new workers the worker-to-pensioner ratio will not improve. Migration is the fastest lever, but it has fuelled populist-right parties <a href="https://thenightly.com.au/business/economist-how-the-boomers-screwed-europe-sticking-its-few-kids-with-the-bill-c-22364328" target="_blank" rel="noopener">The Economist</a>.</li>
+<li><strong>Welfare as investment:</strong> universal healthcare means a healthier workforce, free education means more skills, and economic security lets people take risks and start businesses.</li>
+</ul>
+
+<h3>7. Same income in Iran and in Europe</h3>
+<p>A simple exchange-rate comparison misleads. A fair one weighs purchasing power, housing, healthcare and education, taxes and the services they buy, and whether savings hold their value. Europe taxes heavily but returns much of it as services; Iran taxes less directly, but high inflation acts as a hidden tax on savings.</p>
+<p><strong>Adapting to scarcity is not economic efficiency.</strong> Iranians are masters of living frugally: repairing instead of replacing, cutting travel, managing every cost. That is a real skill; but when a family has to cut healthcare or good food, it is no longer thrift, it is hidden poverty.</p>
+<p><strong>A third model: East Asia.</strong> South Korea and Taiwan invested mainly in education, basic health and infrastructure rather than broad cash transfers, often called "productive welfare". Productivity soared, but today they face rapid ageing, expensive housing and the world's lowest birth rates. No model is perfect.</p>
+
+<h3>8. Opportunities for the region</h3>
+<p>An older, high-cost Europe is not only a problem; it is a large market. Countries from Turkey and the Caucasus to the Gulf and Central Asia, and in the long run Iran, can play a part:</p>
+<ul>
+<li><strong>Health and care workers.</strong> WHO projects a shortfall of about 950,000 health workers in the European region by 2030; foreign-trained doctors rose 58% and nurses 67% between 2014 and 2023 <a href="https://www.euronews.com/health/2025/09/22/europes-reliance-on-foreign-health-workers-is-growing-who-report-finds-this-is-why-it-matt" target="_blank" rel="noopener">WHO / Euronews</a>. The European Labour Authority puts health and care, a sector of about 25 million workers, at the centre of shortages <a href="https://www.ela.europa.eu/en/news/ela-launches-2025-eures-report-highlighting-structural-labour-shortages-across-europe" target="_blank" rel="noopener">ELA</a>. <em style="color:#7ff5de;font-style:normal">Opportunity:</em> training to European standards and languages, circular migration that brings skills home, and telemedicine.</li>
+<li><strong>Health tourism.</strong> Turkey earned about $3.1 billion from 1.65 million foreign patients in 2023 and targets $20 billion by 2028 <a href="https://www.dailysabah.com/business/tourism/turkiye-targets-20-billion-in-health-tourism-revenue-by-2028" target="_blank" rel="noopener">Daily Sabah</a>. <em style="color:#7ff5de;font-style:normal">Opportunity:</em> Iran already draws patients from neighbouring countries; quality, international accreditation and patient experience are the keys to growth.</li>
+<li><strong>Medicines and ingredients.</strong> The EU's Critical Medicines Act aims to diversify supply; about 80% of imported pharmaceutical ingredients come from five countries, China alone about 45% <a href="https://www.consilium.europa.eu/en/policies/critical-medicines-act/" target="_blank" rel="noopener">Council of the EU</a>. <em style="color:#7ff5de;font-style:normal">Opportunity:</em> GMP-certified producers in the region can become alternative suppliers.</li>
+<li><strong>The silver economy.</strong> A European Commission study projected spending by over-50s at about €5.7 trillion by 2025 <a href="https://www.icthealth.org/news/european-silver-economy-reaches-eur37-trillion" target="_blank" rel="noopener">European Commission study / ICT&health</a>. <em style="color:#7ff5de;font-style:normal">Opportunity:</em> mobility aids, smart homes for seniors, health apps, healthy ready meals, slow long-stay tourism.</li>
+<li><strong>Remote digital services.</strong> Shortages appear in almost every occupation somewhere in Europe <a href="https://www.ela.europa.eu/en/news/ela-launches-2025-eures-report-highlighting-structural-labour-shortages-across-europe" target="_blank" rel="noopener">ELA</a>; coding, design, support and data work cross borders. <em style="color:#7ff5de;font-style:normal">Opportunity:</em> the region's tech firms and Iranian talent, especially via the diaspora, can bridge this. Honestly: for firms inside Iran, payment and legal barriers remain serious.</li>
+<li><strong>Quality food and farm products.</strong> An older, wealthier population buys healthy, organic and branded food, from saffron and pistachios to dried fruit, provided standards and traceability are met.</li>
+</ul>
+<p style="color:#9fb6b9">This section is Ditoman's analysis based on the cited sources; each opportunity needs legal and market checks country by country.</p>
+
+<h3>9. Ditoman's reading</h3>
+<ul>
+<li><strong>Nothing is free.</strong> Someone pays for every free service, today or tomorrow.</li>
+<li><strong>Do not leave your future only to others.</strong> Even in the richest countries, young people save privately alongside state pensions.</li>
+<li><strong>Productivity is the key.</strong> Smarter work creates more value than longer work.</li>
+<li><strong>Climbing the value chain is possible.</strong> China, Korea and Turkey moved from assembly to brands and technology.</li>
+<li><strong>Reform is cheaper than collapse.</strong> Germany, the Nordics and Portugal show that hard but timely decisions build a brighter future.</li>
+</ul>
+<div class="callout"><strong>The better model?</strong> Neither debt-fuelled costly welfare nor life built on adapting to inflation and scarcity, but investment in skills and technology, sustainable and transparent pension funding, and targeted support instead of universal subsidies. The real question is not which nation spends least, but <strong>which economy builds the best and most durable life for its people with limited resources.</strong></div>
+
+<h3>Read more</h3><ul><li><a href="not-your-fault.en.html">You did not fall behind; the track moved ahead</a></li><li><a href="ai-integrators.en.html">The new industry: building AI into business</a></li><li><a href="carbon-bends.en.html">30 years, two lines</a></li><li><a href="household-economy.en.html">Household economy</a></li><li><a href="iran-built.en.html">The Iran that was built</a></li></ul>
+<h3>Sources</h3>
+<ul class="sources">
+<li><a href="https://biztoc.com/x/ce5002f2a1c32259" target="_blank" rel="noopener">The Economist, 10 Nov 2026</a> · <a href="https://thenightly.com.au/business/economist-how-the-boomers-screwed-europe-sticking-its-few-kids-with-the-bill-c-22364328" target="_blank" rel="noopener">The Economist, 28 May 2026</a></li>
+<li><a href="https://www.brusselstimes.com/2395253/eu-social-spending-hits-e5-2-trillion-but-shrinks-as-a-share-of-gdp" target="_blank" rel="noopener">Eurostat social protection 2025</a> · <a href="https://www.euronews.com/2026/10/21/eurozone-government-debt-climbs-to-888-of-gdp-as-italy-closes-in-on-greece" target="_blank" rel="noopener">Eurostat government debt Q2 2026</a> · <a href="https://www.eunews.it/en/2026/02/13/europe-grows-older-as-median-age-reaches-45-one-retiree-for-every-three-workers/" target="_blank" rel="noopener">Eurostat population 2025</a></li>
+<li><a href="https://acteurspublics.fr/articles/la-charge-de-la-dette-devrait-selever-a-91-milliards-deuros-en-2027-loin-devant-les-traditionnels-postes-de-depenses-de-letat/" target="_blank" rel="noopener">Acteurs Publics</a> · <a href="https://www.arabnews.com/node/2651148/world" target="_blank" rel="noopener">Reuters / Arab News</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_countries_by_average_annual_labor_hours" target="_blank" rel="noopener">OECD hours</a> · <a href="https://www.randalolson.com/2026/06/02/oecd-hours-worked-vs-productivity/" target="_blank" rel="noopener">OECD productivity</a> · <a href="https://asiatimes.com/2018/07/china-makes-8-46-from-an-iphone-and-thats-why-trumps-trade-war-is-futile/" target="_blank" rel="noopener">iPhone value chain</a> · <a href="https://www.ilo.org/resource/news/following-decades-rapid-increase-global-supply-chain-jobs-shrink" target="_blank" rel="noopener">ILO WESO 2015</a></li>
+<li><a href="https://www.euronews.com/health/2025/09/22/europes-reliance-on-foreign-health-workers-is-growing-who-report-finds-this-is-why-it-matt" target="_blank" rel="noopener">WHO Europe</a> · <a href="https://www.ela.europa.eu/en/news/ela-launches-2025-eures-report-highlighting-structural-labour-shortages-across-europe" target="_blank" rel="noopener">European Labour Authority</a> · <a href="https://www.dailysabah.com/business/tourism/turkiye-targets-20-billion-in-health-tourism-revenue-by-2028" target="_blank" rel="noopener">Daily Sabah</a> · <a href="https://www.consilium.europa.eu/en/policies/critical-medicines-act/" target="_blank" rel="noopener">Council of the EU</a> · <a href="https://www.icthealth.org/news/european-silver-economy-reaches-eur37-trillion" target="_blank" rel="noopener">Silver economy study</a> · <a href="https://news.bloomberglaw.com/tax-insights-and-commentary/french-lawmakers-reject-wealth-tax-proposals-for-budget-1" target="_blank" rel="noopener">Bloomberg Law</a></li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">Last reviewed 12 November 2026. Ditoman is an educational media project; this report is not investment advice.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

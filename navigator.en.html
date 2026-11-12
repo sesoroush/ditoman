@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+  <title>Iran Navigator | Ditoman</title>
+  <meta name="description" content="Who licenses what in Iran: a bilingual map of the ministries, organisations and permits a business meets, from registration to sector licences." />
+  <link rel="icon" href="tmn-logo-256.png" />
+  <link rel="canonical" href="https://ditoman.com/navigator.en.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ditoman" />
+  <meta property="og:title" content="Iran Navigator | Ditoman" />
+  <meta property="og:description" content="Who licenses what in Iran: a bilingual map of the ministries, organisations and permits a business meets, from registration to sector licences." />
+  <meta property="og:url" content="https://ditoman.com/navigator.en.html" />
+  <meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+  <meta name="theme-color" content="#04090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="site.css?v=20261108" />
+  <style>
+/* ---------- Navigator ---------- */
+.nv-main { padding: 0 0 90px; }
+body[data-lang="fa"] .nv-main { direction: rtl; font-family: var(--fa); }
+body[data-lang="fa"] .i-en, body[data-lang="en"] .i-fa { display: none !important; }
+
+.k-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 24px 0 8px; color: var(--muted); font-size: 0.95rem; }
+.k-bar a:hover { color: var(--mint); }
+.k-toggle { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; padding: 3px; direction: ltr; flex: none; }
+.k-toggle button { font: 700 0.86rem var(--en); color: var(--muted); background: none; border: 0; border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.k-toggle button[lang="fa"] { font-family: var(--fa); }
+.k-toggle button[aria-pressed="true"] { background: var(--mint); color: #04261f; }
+
+/* hero */
+.nv-hero { position: relative; padding: 40px 0 44px; overflow: hidden; }
+.nv-hero::before { content: ""; position: absolute; inset: -30% -20% auto auto; width: 60vw; height: 60vw; background: radial-gradient(circle, rgba(127, 245, 222, 0.14), transparent 62%); pointer-events: none; }
+.nv-kicker { display: inline-flex; align-items: center; gap: 10px; color: var(--mint); font-weight: 700; font-size: 0.92rem; letter-spacing: 0.08em; text-transform: uppercase; }
+body[data-lang="fa"] .nv-kicker { letter-spacing: 0; font-size: 1rem; }
+.nv-kicker::before { content: ""; width: 26px; height: 2px; background: var(--mint); }
+.nv-hero h1 { margin-top: 14px; font: 800 clamp(3rem, 9vw, 6.6rem)/0.98 var(--en); letter-spacing: -0.04em; color: #eef6f2; }
+body[data-lang="fa"] .nv-hero h1 { font: 400 clamp(3rem, 10vw, 6.8rem)/1.15 var(--fa-display); letter-spacing: 0; }
+.nv-hero h1 small { display: block; margin-top: 6px; font: 500 clamp(1rem, 2vw, 1.3rem)/1.4 var(--en); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+body[data-lang="fa"] .nv-hero h1 small { font-family: var(--en); direction: ltr; text-align: right; }
+.nv-sub { font-size: clamp(1.25rem, 2.6vw, 1.7rem); line-height: 1.5; max-width: 30em; margin-top: 18px; color: var(--text); font-weight: 500; }
+.nv-lead { max-width: 44em; margin-top: 18px; line-height: 1.95; color: var(--muted); font-size: 1.05rem; }
+body[data-lang="en"] .nv-lead { line-height: 1.7; }
+.nv-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.nv-jump a { padding: 8px 16px; border: 1px solid var(--line-strong); border-radius: 999px; font-weight: 700; font-size: 0.92rem; }
+.nv-jump a:hover { background: rgba(127, 245, 222, 0.08); color: var(--mint); }
+.nv-jump a.soon { color: var(--muted); border-style: dashed; cursor: default; }
+
+/* section headings */
+.nv-sec { margin-top: 70px; }
+.nv-num { color: var(--mint); font: 400 2.2rem/1 var(--fa-display); display: block; margin-bottom: 4px; }
+body[data-lang="en"] .nv-num { font: 800 1rem/1 var(--en); letter-spacing: 0.14em; }
+.nv-sec > h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; }
+body[data-lang="fa"] .nv-sec > h2 { letter-spacing: 0; }
+.nv-sec > .nv-lead { margin-top: 12px; }
+
+/* the map */
+.nv-map { margin-top: 32px; display: grid; gap: 22px; }
+.nv-line { position: relative; border-radius: 26px; background: var(--surface); padding: 22px 22px 26px; overflow: hidden; }
+.nv-line::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 6px; background: var(--mint); }
+body[data-lang="fa"] .nv-line::before { inset: 0 0 0 auto; }
+.nv-line.entry::before { background: var(--mint); }
+.nv-line.sectors::before { background: var(--cyan); }
+.nv-line.cross::before { background: var(--violet); }
+.nv-line-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
+.nv-line-head h3 { font-size: 1.35rem; font-weight: 800; }
+.nv-line-head span { color: var(--muted); font-size: 0.95rem; }
+.nv-stations { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; position: relative; }
+.entry .nv-stations { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .entry .nv-stations { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.nv-stations::before { content: ""; position: absolute; top: 19px; inset-inline: 30px; height: 2px; background: var(--line-strong); }
+.nv-st { position: relative; padding-top: 50px; min-width: 0; }
+.nv-st::before { content: attr(data-n); position: absolute; top: 0; inset-inline-start: 0; width: 40px; height: 40px; border-radius: 50%; background: var(--bg); border: 2px solid var(--mint); color: var(--mint); display: grid; place-items: center; font: 800 0.95rem var(--en); }
+.sectors .nv-st::before { border-color: var(--cyan); color: var(--cyan); }
+.cross .nv-st::before { border-color: var(--violet); color: var(--violet); }
+.nv-st b { display: block; font-size: 1.05rem; line-height: 1.35; }
+.nv-st small { display: block; color: var(--muted); line-height: 1.6; margin-top: 4px; font-size: 0.88rem; }
+.nv-st em { font-style: normal; color: var(--mint); font-weight: 700; }
+.sectors .nv-st em { color: var(--cyan); }
+.cross .nv-st em { color: var(--violet); }
+.nv-st a:hover b { text-decoration: underline; text-underline-offset: 4px; }
+.nv-legend { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 16px; color: var(--muted); font-size: 0.9rem; }
+.nv-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-inline-end: 6px; vertical-align: -1px; }
+
+/* branch grid (chapter 1 detail) */
+.nv-branches { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+.nv-b { border: 1px solid var(--line); border-radius: 22px; padding: 22px 22px 20px; background: linear-gradient(180deg, rgba(14, 33, 42, 0.9), rgba(10, 24, 32, 0.6)); display: flex; flex-direction: column; gap: 12px; }
+.nv-b h3 { font-size: 1.4rem; line-height: 1.2; font-weight: 800; }
+body[data-lang="fa"] .nv-b h3 { font: 400 1.75rem/1.3 var(--fa-display); }
+.nv-b dl { display: grid; gap: 10px; }
+.nv-b dt { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; }
+body[data-lang="fa"] .nv-b dt { letter-spacing: 0; font-size: 0.86rem; }
+.nv-b dd { line-height: 1.7; font-size: 0.97rem; }
+.nv-b .nv-path { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.nv-b .nv-path span { padding: 4px 10px; border-radius: 8px; background: rgba(127, 245, 222, 0.1); color: #d7fff6; font-size: 0.86rem; font-weight: 600; }
+.nv-b .nv-path i { color: var(--muted); font-style: normal; }
+body[data-lang="fa"] .nv-b .nv-path i { transform: scaleX(-1); display: inline-block; }
+.nv-b .nv-soon { margin-top: auto; padding-top: 8px; color: var(--muted); font-size: 0.86rem; }
+
+/* entry chapter steps */
+.nv-steps { list-style: none; counter-reset: step; margin-top: 30px; display: grid; gap: 16px; }
+.nv-step { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 0 22px; border-radius: 24px; background: var(--surface); padding: 26px 26px 24px; border: 1px solid transparent; }
+.nv-step:hover { border-color: var(--line); }
+.nv-step .nv-n { font: 400 3.4rem/1 var(--fa-display); color: var(--mint); }
+body[data-lang="en"] .nv-step .nv-n { font: 800 2.8rem/1 var(--en); letter-spacing: -0.04em; }
+.nv-step h3 { font-size: 1.5rem; line-height: 1.25; font-weight: 800; }
+.nv-step .nv-who { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 14px; }
+.nv-step .nv-who span { padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line-strong); font-size: 0.86rem; font-weight: 600; }
+.nv-step .nv-who span.site { font-family: var(--en); direction: ltr; color: var(--mint); border-color: rgba(127, 245, 222, 0.5); }
+.nv-step p { line-height: 1.9; max-width: 48em; }
+body[data-lang="en"] .nv-step p { line-height: 1.7; }
+.nv-step ul { margin: 10px 0 0; padding-inline-start: 1.2em; line-height: 1.85; max-width: 48em; }
+body[data-lang="en"] .nv-step ul { line-height: 1.65; }
+.nv-step .nv-note { margin-top: 14px; padding: 12px 16px; border-radius: 14px; background: rgba(139, 108, 255, 0.1); border-inline-start: 3px solid var(--violet); font-size: 0.95rem; line-height: 1.8; max-width: 48em; }
+.nv-step .nv-opt { color: var(--muted); font-size: 0.9rem; font-weight: 600; margin-inline-start: 10px; }
+
+/* outline of coming chapters */
+.nv-outline { list-style: none; margin-top: 26px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; max-width: 60em; }
+.nv-outline li { display: flex; gap: 14px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.nv-outline li b { color: var(--muted); font: 800 0.9rem var(--en); min-width: 2.2em; }
+.nv-outline li.done { color: var(--mint); }
+.nv-outline li.done b { color: var(--mint); }
+.nv-outline li span { color: var(--muted); font-size: 0.9rem; margin-inline-start: auto; }
+
+/* notice + sources */
+.nv-notice { margin-top: 64px; padding: 18px 22px; border-radius: 18px; border: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; line-height: 1.8; display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; }
+.nv-sources { list-style: none; direction: ltr; text-align: left; font-family: var(--en); font-size: 0.93rem; margin-top: 18px; }
+.nv-sources li { padding: 7px 0; display: flex; gap: 10px; border-bottom: 1px solid var(--line); }
+.nv-sources a { color: var(--mint); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.nv-sources li b { color: var(--muted); min-width: 1.6em; }
+
+@media (max-width: 900px) {
+  .nv-branches { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px) {
+  .nv-hero { padding-top: 24px; }
+  .nv-stations, .entry .nv-stations { grid-template-columns: 1fr; gap: 18px; }
+  .nv-stations::before { inset: 30px auto 10px 19px; width: 2px; height: auto; }
+  body[data-lang="fa"] .nv-stations::before { inset: 30px 19px 10px auto; }
+  .nv-st { padding-top: 0; padding-inline-start: 56px; }
+  .nv-branches { grid-template-columns: 1fr; }
+  .nv-step { grid-template-columns: 1fr; padding: 22px 20px; }
+  .nv-step .nv-n { margin-bottom: 8px; }
+  .nv-outline { grid-template-columns: 1fr; }
+}
+  </style>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/navigator.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/navigator.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/navigator.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/navigator.en.html#page",
+   "url": "https://ditoman.com/navigator.en.html",
+   "name": "Iran Navigator | Ditoman",
+   "description": "Who licenses what in Iran: a bilingual map of the ministries, organisations and permits a business meets, from registration to sector licences.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Iran Navigator",
+     "item": "https://ditoman.com/navigator.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body data-lang="fa">
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان">
+        <span class="brand-en">DITOMAN</span>
+        <img src="tmn-logo-256.png" alt="" />
+        <span class="brand-fa" dir="rtl">دیتومان</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="learn.en.html">Learn</a>
+        <a href="iran.en.html">Iran</a>
+        <a href="companies.en.html">Companies</a>
+        <a href="prices.en.html">Prices</a>
+        <a href="calendar.en.html">Calendar</a>
+        <a href="tmn.en.html">TMN</a>
+        <a href="index.en.html#whitepapers">Whitepaper</a>
+        <a href="posts.en.html">Posts</a>
+      </nav>
+      <div class="nav-right">
+        <a class="nav-ig" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer" aria-label="Ditoman on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        <a class="nav-tg" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer" aria-label="Ditoman on Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg><span>Telegram</span></a>
+        <a class="nav-cta" href="learn.en.html">Start learning</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu">
+          <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+          <span class="menu-word">Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-panel" id="menuPanel" hidden>
+      <div class="wrap">
+        <p class="menu-kicker">Jump to <span lang="fa">برو به</span></p>
+        <div class="menu-grid">
+          <a class="menu-tile" href="learn.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 3l9 3.5-9 3.5-9-3.5z M6 9v5c0 1.7 2.7 3 6 3s6-1.3 6-3V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Lessons</span>
+            <span class="mt-fa" lang="fa">درس‌ها</span>
+            <span class="mt-desc">Short bilingual lessons with quizzes</span>
+          </a>
+          <a class="menu-tile" href="iran.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l4-3 4 3v11M13 20v-7l4-3 3 3v7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">What Iran Has</span>
+            <span class="mt-fa" lang="fa">ایران چه دارد</span>
+            <span class="mt-desc">Industry, energy, transport, mines, tech, tourism</span>
+          </a>
+          <a class="menu-tile" href="tmn.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z M8 9h8 M12 9v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">TMN token</span>
+            <span class="mt-fa" lang="fa">توکن TMN</span>
+            <span class="mt-desc">Contract, facts and honest disclosure</span>
+          </a>
+          <a class="menu-tile" href="posts.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Posts</span>
+            <span class="mt-fa" lang="fa">یادداشت‌ها</span>
+            <span class="mt-desc">Every channel post, on the web</span>
+          </a>
+          <a class="menu-tile" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z M14 2.5V7h4.5 M9 12h6 M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Whitepaper</span>
+            <span class="mt-fa" lang="fa">وایت‌پیپر</span>
+            <span class="mt-desc">The full direction, as a PDF</span>
+          </a>
+          <a class="menu-tile" href="calendar.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Market calendar</span>
+            <span class="mt-fa" lang="fa">تقویم بازار</span>
+            <span class="mt-desc">What moves markets, every day</span>
+          </a>
+          <a class="menu-tile" href="prices.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="6" r="1.6" fill="currentColor"/></svg></span>
+            <span class="mt-en">Daily prices</span>
+            <span class="mt-fa" lang="fa">قیمت‌های روزانه</span>
+            <span class="mt-desc">Dollar, gold and every daily report</span>
+          </a>
+        </div>
+        <a class="menu-tg" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">
+          <span class="mtg-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg></span>
+          <span class="mtg-text">
+            <strong>Join the Telegram channel</strong>
+            <span lang="fa">هر درس تازه، اول در کانال تلگرام</span>
+          </span>
+          <span class="mtg-go" aria-hidden="true">›</span>
+        </a>
+        <div class="menu-social">
+          <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>Instagram</a>
+          <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg>Telegram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="nv-main wrap">
+    <div class="k-bar">
+      <span><a href="index.en.html"><span class="i-fa" lang="fa">ایران چه دارد</span><span class="i-en" lang="en">What Iran Has</span></a> <span aria-hidden="true">›</span> <span class="i-fa" lang="fa">ایران نویگیتر</span><span class="i-en" lang="en">Iran Navigator</span></span>
+      <div class="k-toggle" role="group" aria-label="Language"><button type="button" lang="fa" data-set="fa">فارسی</button><button type="button" data-set="en">English</button></div>
+    </div>
+
+    <section class="nv-hero">
+      <p class="nv-kicker"><span class="i-fa" lang="fa">راهنمای ساختار اداری ایران</span><span class="i-en" lang="en">A guide to Iran's administrative structure</span></p>
+      <h1>
+        <span class="i-fa" lang="fa">ایران نویگیتر<small>Iran Navigator</small></span>
+        <span class="i-en" lang="en">Iran Navigator</span>
+      </h1>
+      <p class="nv-sub"><span class="i-fa" lang="fa">چه کسی چه مجوزی می‌دهد؟ نقشه‌ی وزارتخانه‌ها، سازمان‌ها و مجوزهایی که یک کسب‌وکار در ایران با آن‌ها روبه‌رو می‌شود، از ثبت شرکت تا مجوز تخصصی هر رشته.</span><span class="i-en" lang="en">Who licenses what? A map of the ministries, organisations and permits a business meets in Iran, from company registration to the licence of its own sector.</span></p>
+      <p class="nv-lead"><span class="i-fa" lang="fa">در ایران هر فعالیت اقتصادی یک مرجع رسمی دارد: کارخانه از وزارت صمت پروانه می‌گیرد، داروساز از سازمان غذا و دارو، هتل از وزارت میراث فرهنگی، و مغازه از اتحادیه‌ی صنفی خودش. این صفحه همان ساختار را به زبان ساده و در یک نقشه نشان می‌دهد تا هر کس، چه ایرانی و چه خارجی، بداند قدم اول را کجا باید بردارد. هر فصل با منبع رسمی‌اش می‌آید و تاریخ آخرین بازبینی پای صفحه است.</span><span class="i-en" lang="en">Every economic activity in Iran has an official home: a factory is licensed by the Ministry of Industry, Mine and Trade, a drug maker by the Food and Drug Administration, a hotel by the Ministry of Cultural Heritage, a shop by its own trade guild. This page lays that structure out in plain language and on one map, so that anyone, Iranian or foreign, knows where the first step is taken. Each chapter comes with its official source, and the last review date sits at the bottom of the page.</span></p>
+      <div class="nv-jump">
+        <a href="index.en.html#map"><span class="i-fa" lang="fa">۱ · نقشه‌ی کلی</span><span class="i-en" lang="en">1 · The map</span></a>
+        <a href="index.en.html#entry"><span class="i-fa" lang="fa">۲ · ورود</span><span class="i-en" lang="en">2 · Entry</span></a>
+        <a class="soon" href="index.en.html#outline"><span class="i-fa" lang="fa">۳ تا ۱۲ · به‌زودی</span><span class="i-en" lang="en">3 to 12 · coming</span></a>
+      </div>
+    </section>
+
+    <!-- ===================== Chapter 1: the map ===================== -->
+    <section class="nv-sec" id="map">
+      <span class="nv-num"><span class="i-fa" lang="fa">فصل ۱</span><span class="i-en" lang="en">CHAPTER 1</span></span>
+      <h2><span class="i-fa" lang="fa">نقشه‌ی کلی: سه خط، یک مسیر</span><span class="i-en" lang="en">The map: three lines, one route</span></h2>
+      <p class="nv-lead"><span class="i-fa" lang="fa">نقشه مثل مترو خوانده می‌شود. خط اول ایستگاه‌هایی است که همه از آن می‌گذرند، به همین ترتیب. خط دوم شش شاخه‌ی «ایران چه دارد» است؛ هر کسب‌وکار دست‌کم به یکی از آن‌ها می‌رسد و مجوز تخصصی‌اش را آنجا می‌گیرد. خط سوم نهادهای عرضی‌اند که بسته به کار، سر راه هر شاخه‌ای ممکن است قرار بگیرند.</span><span class="i-en" lang="en">Read it like a metro map. Line one is the stations everyone passes through, in this order. Line two is the six branches of "What Iran Has": every business reaches at least one of them and picks up its sector licence there. Line three is the cross-cutting bodies that can appear on any branch, depending on the work.</span></p>
+
+      <div class="nv-map">
+        <div class="nv-line entry">
+          <div class="nv-line-head"><h3><span class="i-fa" lang="fa">خط ۱ · ورود</span><span class="i-en" lang="en">Line 1 · Entry</span></h3><span><span class="i-fa" lang="fa">همه از اینجا می‌گذرند</span><span class="i-en" lang="en">everyone passes through here</span></span></div>
+          <ol class="nv-stations">
+            <li class="nv-st" data-n="1"><a href="index.en.html#s1"><b><span class="i-fa" lang="fa">کد فراگیر</span><span class="i-en" lang="en">Foreign national code</span></b></a><small><em><span class="i-fa" lang="fa">سازمان ثبت اسناد و املاک</span><span class="i-en" lang="en">Deeds &amp; Properties Registration Org.</span></em><br /><span class="i-fa" lang="fa">فقط برای اشخاص خارجی</span><span class="i-en" lang="en">foreign persons only</span></small></li>
+            <li class="nv-st" data-n="2"><a href="index.en.html#s2"><b><span class="i-fa" lang="fa">ثبت شرکت یا شعبه</span><span class="i-en" lang="en">Company or branch registration</span></b></a><small><em><span class="i-fa" lang="fa">اداره‌ی ثبت شرکت‌ها</span><span class="i-en" lang="en">Companies Registration Office</span></em><br /><span class="i-fa" lang="fa">سامانه کاتب</span><span class="i-en" lang="en">Kateb platform</span></small></li>
+            <li class="nv-st" data-n="3"><a href="index.en.html#s3"><b><span class="i-fa" lang="fa">پرونده‌ی مالیاتی</span><span class="i-en" lang="en">Tax file</span></b></a><small><em><span class="i-fa" lang="fa">سازمان امور مالیاتی</span><span class="i-en" lang="en">National Tax Administration</span></em><br /><span class="i-fa" lang="fa">کد اقتصادی</span><span class="i-en" lang="en">economic code</span></small></li>
+            <li class="nv-st" data-n="4"><a href="index.en.html#s4"><b><span class="i-fa" lang="fa">تأمین اجتماعی و کار</span><span class="i-en" lang="en">Social security &amp; labour</span></b></a><small><em><span class="i-fa" lang="fa">سازمان تأمین اجتماعی</span><span class="i-en" lang="en">Social Security Organisation</span></em><br /><span class="i-fa" lang="fa">وزارت تعاون، کار و رفاه</span><span class="i-en" lang="en">Ministry of Labour</span></small></li>
+            <li class="nv-st" data-n="5"><a href="index.en.html#s5"><b><span class="i-fa" lang="fa">کارت بازرگانی</span><span class="i-en" lang="en">Trade card</span></b></a><small><em><span class="i-fa" lang="fa">اتاق بازرگانی ایران</span><span class="i-en" lang="en">Iran Chamber of Commerce</span></em><br /><span class="i-fa" lang="fa">برای واردات و صادرات</span><span class="i-en" lang="en">for import and export</span></small></li>
+            <li class="nv-st" data-n="6"><a href="index.en.html#s6"><b><span class="i-fa" lang="fa">مجوز سرمایه‌گذاری خارجی</span><span class="i-en" lang="en">Foreign investment licence</span></b></a><small><em><span class="i-fa" lang="fa">سازمان سرمایه‌گذاری (وزارت اقتصاد)</span><span class="i-en" lang="en">OIETAI (Ministry of Economy)</span></em><br /><span class="i-fa" lang="fa">اختیاری، با تضمین قانونی</span><span class="i-en" lang="en">optional, with legal guarantees</span></small></li>
+            <li class="nv-st" data-n="7"><a href="index.en.html#s7"><b><span class="i-fa" lang="fa">مجوز تخصصی رشته</span><span class="i-en" lang="en">Sector licence</span></b></a><small><em><span class="i-fa" lang="fa">درگاه ملی مجوزها</span><span class="i-en" lang="en">National Permits Portal</span></em><br /><span class="i-fa" lang="fa">به خط ۲ می‌رود</span><span class="i-en" lang="en">continues on line 2</span></small></li>
+          </ol>
+        </div>
+
+        <div class="nv-line sectors">
+          <div class="nv-line-head"><h3><span class="i-fa" lang="fa">خط ۲ · شش شاخه</span><span class="i-en" lang="en">Line 2 · The six branches</span></h3><span><span class="i-fa" lang="fa">مجوز تخصصی را اینجا می‌گیرید</span><span class="i-en" lang="en">this is where the sector licence comes from</span></span></div>
+          <ol class="nv-stations">
+            <li class="nv-st" data-n="A"><b><span class="i-fa" lang="fa">صنعت و تولید</span><span class="i-en" lang="en">Industry &amp; manufacturing</span></b><small><em><span class="i-fa" lang="fa">وزارت صنعت، معدن و تجارت</span><span class="i-en" lang="en">Ministry of Industry, Mine &amp; Trade</span></em><br /><span class="i-fa" lang="fa">غذا و دارو: سازمان غذا و دارو · کشاورزی: وزارت جهاد کشاورزی</span><span class="i-en" lang="en">food &amp; pharma: Food &amp; Drug Administration · farming: Ministry of Agriculture</span></small></li>
+            <li class="nv-st" data-n="B"><b><span class="i-fa" lang="fa">انرژی و آب</span><span class="i-en" lang="en">Energy &amp; water</span></b><small><em><span class="i-fa" lang="fa">وزارت نفت · وزارت نیرو</span><span class="i-en" lang="en">Ministry of Petroleum · Ministry of Energy</span></em><br /><span class="i-fa" lang="fa">نفت، گاز، پالایش، پتروشیمی · برق، تجدیدپذیر، آب</span><span class="i-en" lang="en">oil, gas, refining, petrochemicals · power, renewables, water</span></small></li>
+            <li class="nv-st" data-n="C"><b><span class="i-fa" lang="fa">حمل‌ونقل و راه</span><span class="i-en" lang="en">Transport &amp; roads</span></b><small><em><span class="i-fa" lang="fa">وزارت راه و شهرسازی</span><span class="i-en" lang="en">Ministry of Roads &amp; Urban Development</span></em><br /><span class="i-fa" lang="fa">راهداری · راه‌آهن · بنادر و دریانوردی · هواپیمایی کشوری</span><span class="i-en" lang="en">roads · railways · ports &amp; maritime · civil aviation</span></small></li>
+            <li class="nv-st" data-n="D"><b><span class="i-fa" lang="fa">منابع و معدن</span><span class="i-en" lang="en">Resources &amp; mining</span></b><small><em><span class="i-fa" lang="fa">وزارت صمت (معاونت معدن) · ایمیدرو</span><span class="i-en" lang="en">Ministry of Industry, Mine &amp; Trade · IMIDRO</span></em><br /><span class="i-fa" lang="fa">اکتشاف، کشف، بهره‌برداری</span><span class="i-en" lang="en">exploration, discovery, extraction</span></small></li>
+            <li class="nv-st" data-n="E"><b><span class="i-fa" lang="fa">فناوری و خدمات</span><span class="i-en" lang="en">Technology &amp; services</span></b><small><em><span class="i-fa" lang="fa">وزارت ارتباطات · معاونت علمی · بانک مرکزی · بیمه مرکزی · سازمان بورس</span><span class="i-en" lang="en">Ministry of ICT · Vice-Presidency for Science · Central Bank · Central Insurance · Securities Organisation</span></em></small></li>
+            <li class="nv-st" data-n="F"><b><span class="i-fa" lang="fa">گردشگری و فرهنگ</span><span class="i-en" lang="en">Tourism &amp; culture</span></b><small><em><span class="i-fa" lang="fa">وزارت میراث فرهنگی، گردشگری و صنایع‌دستی · وزارت فرهنگ و ارشاد</span><span class="i-en" lang="en">Ministry of Cultural Heritage, Tourism &amp; Handicrafts · Ministry of Culture</span></em></small></li>
+          </ol>
+        </div>
+
+        <div class="nv-line cross">
+          <div class="nv-line-head"><h3><span class="i-fa" lang="fa">خط ۳ · نهادهای عرضی</span><span class="i-en" lang="en">Line 3 · Cross-cutting bodies</span></h3><span><span class="i-fa" lang="fa">بسته به کار، سر راه هر شاخه‌ای</span><span class="i-en" lang="en">on any branch, depending on the work</span></span></div>
+            <ol class="nv-stations">
+            <li class="nv-st" data-n="i"><b><span class="i-fa" lang="fa">درگاه ملی مجوزها</span><span class="i-en" lang="en">National Permits Portal</span></b><small><em><span class="i-fa" lang="fa">وزارت امور اقتصادی و دارایی</span><span class="i-en" lang="en">Ministry of Economic Affairs &amp; Finance</span></em><br /><span class="i-fa" lang="fa">فهرست رسمی هر مجوز و مرجع آن</span><span class="i-en" lang="en">the official list of every permit and its issuer</span></small></li>
+            <li class="nv-st" data-n="ii"><b><span class="i-fa" lang="fa">اصناف</span><span class="i-en" lang="en">Trade guilds</span></b><small><em><span class="i-fa" lang="fa">اتاق اصناف و اتحادیه‌های صنفی</span><span class="i-en" lang="en">Chamber of Guilds and trade unions</span></em><br /><span class="i-fa" lang="fa">پروانه کسب برای مغازه، کارگاه و خدمات صنفی</span><span class="i-en" lang="en">the business permit for shops, workshops and guild services</span></small></li>
+            <li class="nv-st" data-n="iii"><b><span class="i-fa" lang="fa">تعاونی‌ها</span><span class="i-en" lang="en">Cooperatives</span></b><small><em><span class="i-fa" lang="fa">وزارت تعاون، کار و رفاه · اتاق تعاون</span><span class="i-en" lang="en">Ministry of Cooperatives, Labour &amp; Welfare · Chamber of Cooperatives</span></em></small></li>
+            <li class="nv-st" data-n="iv"><b><span class="i-fa" lang="fa">محیط زیست و استاندارد</span><span class="i-en" lang="en">Environment &amp; standards</span></b><small><em><span class="i-fa" lang="fa">سازمان حفاظت محیط زیست · سازمان ملی استاندارد</span><span class="i-en" lang="en">Department of Environment · National Standards Organisation</span></em><br /><span class="i-fa" lang="fa">استعلام زیست‌محیطی، نشان استاندارد</span><span class="i-en" lang="en">environmental clearance, the standard mark</span></small></li>
+            <li class="nv-st" data-n="v"><b><span class="i-fa" lang="fa">مناطق آزاد و ویژه</span><span class="i-en" lang="en">Free &amp; special zones</span></b><small><em><span class="i-fa" lang="fa">سازمان هر منطقه · دبیرخانه شورای عالی مناطق آزاد</span><span class="i-en" lang="en">each zone's organisation · Free Zones High Council secretariat</span></em><br /><span class="i-fa" lang="fa">ثبت و مجوز در خود منطقه</span><span class="i-en" lang="en">registration and permits inside the zone</span></small></li>
+            <li class="nv-st" data-n="vi"><b><span class="i-fa" lang="fa">شهرداری و زمین</span><span class="i-en" lang="en">Municipality &amp; land</span></b><small><em><span class="i-fa" lang="fa">شهرداری · شهرک‌های صنعتی</span><span class="i-en" lang="en">municipality · industrial estates</span></em><br /><span class="i-fa" lang="fa">پروانه ساختمانی، زمین صنعتی</span><span class="i-en" lang="en">building permit, industrial land</span></small></li>
+          </ol>
+        </div>
+      </div>
+      <p class="nv-legend"><span><i style="background:var(--mint)"></i><span class="i-fa" lang="fa">ورود</span><span class="i-en" lang="en">entry</span></span><span><i style="background:var(--cyan)"></i><span class="i-fa" lang="fa">شش شاخه</span><span class="i-en" lang="en">six branches</span></span><span><i style="background:var(--violet)"></i><span class="i-fa" lang="fa">عرضی</span><span class="i-en" lang="en">cross-cutting</span></span></p>
+
+      <h2 style="margin-top:56px;font-size:clamp(1.4rem,3vw,2rem)"><span class="i-fa" lang="fa">شش شاخه، از نزدیک</span><span class="i-en" lang="en">The six branches, up close</span></h2>
+      <p class="nv-lead"><span class="i-fa" lang="fa">در هر شاخه سه چیز را می‌بینید: مرجع مجوز، مسیر معمول مجوز، و تشکل بخش خصوصی آن رشته. فصل‌های ۵ تا ۱۰ هر یک را باز می‌کنند؛ پروفایل هر شرکت در «ایران چه دارد» هم به همین فصل‌ها لینک می‌شود.</span><span class="i-en" lang="en">Each branch shows three things: the licensing authority, the usual licence path, and the private-sector association of that field. Chapters 5 to 10 open each one up, and every company profile under "What Iran Has" links back to these chapters.</span></p>
+      <div class="nv-branches">
+        <article class="nv-b">
+          <h3><span class="i-fa" lang="fa">صنعت و تولید</span><span class="i-en" lang="en">Industry &amp; manufacturing</span></h3>
+          <dl>
+            <div><dt><span class="i-fa" lang="fa">مرجع مجوز</span><span class="i-en" lang="en">Licensing authority</span></dt><dd><span class="i-fa" lang="fa">وزارت صنعت، معدن و تجارت (صمت)؛ برای غذا، دارو و آرایشی: سازمان غذا و دارو (وزارت بهداشت)؛ برای کشاورزی و دامپروری: وزارت جهاد کشاورزی</span><span class="i-en" lang="en">Ministry of Industry, Mine and Trade; for food, pharma and cosmetics: the Food and Drug Administration (Ministry of Health); for farming and livestock: the Ministry of Agriculture</span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">مسیر مجوز</span><span class="i-en" lang="en">Licence path</span></dt><dd class="nv-path"><span><span class="i-fa" lang="fa">جواز تأسیس</span><span class="i-en" lang="en">Establishment permit</span></span><i>→</i><span><span class="i-fa" lang="fa">پروانه بهره‌برداری</span><span class="i-en" lang="en">Operating licence</span></span><i>→</i><span><span class="i-fa" lang="fa">پروانه ساخت / نشان استاندارد</span><span class="i-en" lang="en">Product licence / standard mark</span></span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">تشکل</span><span class="i-en" lang="en">Association</span></dt><dd><span class="i-fa" lang="fa">خانه صنعت، معدن و تجارت؛ انجمن‌های تخصصی هر صنعت؛ اتاق بازرگانی</span><span class="i-en" lang="en">House of Industry, Mine and Trade; the specialist association of each industry; the Chamber of Commerce</span></dd></div>
+          </dl>
+          <p class="nv-soon"><span class="i-fa" lang="fa">فصل ۵ · به‌زودی</span><span class="i-en" lang="en">Chapter 5 · coming</span></p>
+        </article>
+        <article class="nv-b">
+          <h3><span class="i-fa" lang="fa">انرژی و آب</span><span class="i-en" lang="en">Energy &amp; water</span></h3>
+          <dl>
+            <div><dt><span class="i-fa" lang="fa">مرجع مجوز</span><span class="i-en" lang="en">Licensing authority</span></dt><dd><span class="i-fa" lang="fa">وزارت نفت و چهار شرکت اصلی آن (نفت، گاز، پالایش و پخش، پتروشیمی)؛ وزارت نیرو برای برق و آب، ساتبا برای تجدیدپذیرها</span><span class="i-en" lang="en">Ministry of Petroleum and its four main companies (oil, gas, refining and distribution, petrochemicals); Ministry of Energy for power and water, SATBA for renewables</span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">مسیر مجوز</span><span class="i-en" lang="en">Licence path</span></dt><dd class="nv-path"><span><span class="i-fa" lang="fa">قرارداد با شرکت ملی (بالادستی)</span><span class="i-en" lang="en">Contract with the national company (upstream)</span></span><i>→</i><span><span class="i-fa" lang="fa">پروانه احداث و تولید برق</span><span class="i-en" lang="en">Power construction &amp; generation licence</span></span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">تشکل</span><span class="i-en" lang="en">Association</span></dt><dd><span class="i-fa" lang="fa">انجمن صنفی کارفرمایی صنعت پتروشیمی؛ سندیکای صنعت برق ایران</span><span class="i-en" lang="en">Petrochemical Employers' Association; Iranian Electrical Industry Syndicate</span></dd></div>
+          </dl>
+          <p class="nv-soon"><span class="i-fa" lang="fa">فصل ۶ · به‌زودی — اینجا به جای صنف، زنجیره ملاک است: بالادستی، میان‌دستی، پایین‌دستی</span><span class="i-en" lang="en">Chapter 6 · coming — here the chain, not the guild, is the unit: upstream, midstream, downstream</span></p>
+        </article>
+        <article class="nv-b">
+          <h3><span class="i-fa" lang="fa">حمل‌ونقل و راه</span><span class="i-en" lang="en">Transport &amp; roads</span></h3>
+          <dl>
+            <div><dt><span class="i-fa" lang="fa">مرجع مجوز</span><span class="i-en" lang="en">Licensing authority</span></dt><dd><span class="i-fa" lang="fa">وزارت راه و شهرسازی: سازمان راهداری و حمل‌ونقل جاده‌ای، شرکت راه‌آهن، سازمان بنادر و دریانوردی، سازمان هواپیمایی کشوری</span><span class="i-en" lang="en">Ministry of Roads and Urban Development: Road Maintenance and Transport Organisation, the Railways company, Ports and Maritime Organisation, Civil Aviation Organisation</span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">مسیر مجوز</span><span class="i-en" lang="en">Licence path</span></dt><dd class="nv-path"><span><span class="i-fa" lang="fa">پروانه فعالیت حمل‌ونقل</span><span class="i-en" lang="en">Transport operator permit</span></span><i>→</i><span><span class="i-fa" lang="fa">مجوز ریلی / بندری / هوایی</span><span class="i-en" lang="en">Rail / port / air licence</span></span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">تشکل</span><span class="i-en" lang="en">Association</span></dt><dd><span class="i-fa" lang="fa">انجمن شرکت‌های حمل‌ونقل بین‌المللی؛ انجمن کشتیرانی و خدمات وابسته</span><span class="i-en" lang="en">International Transport Companies Association; Shipping and Related Services Association</span></dd></div>
+          </dl>
+          <p class="nv-soon"><span class="i-fa" lang="fa">فصل ۷ · به‌زودی</span><span class="i-en" lang="en">Chapter 7 · coming</span></p>
+        </article>
+        <article class="nv-b">
+          <h3><span class="i-fa" lang="fa">منابع و معدن</span><span class="i-en" lang="en">Resources &amp; mining</span></h3>
+          <dl>
+            <div><dt><span class="i-fa" lang="fa">مرجع مجوز</span><span class="i-en" lang="en">Licensing authority</span></dt><dd><span class="i-fa" lang="fa">وزارت صمت (معاونت امور معادن)؛ ایمیدرو برای توسعه و معادن بزرگ؛ سازمان زمین‌شناسی برای داده‌ی اکتشاف</span><span class="i-en" lang="en">Ministry of Industry, Mine and Trade (mining deputy); IMIDRO for development and the large mines; the Geological Survey for exploration data</span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">مسیر مجوز</span><span class="i-en" lang="en">Licence path</span></dt><dd class="nv-path"><span><span class="i-fa" lang="fa">پروانه اکتشاف</span><span class="i-en" lang="en">Exploration permit</span></span><i>→</i><span><span class="i-fa" lang="fa">گواهی کشف</span><span class="i-en" lang="en">Discovery certificate</span></span><i>→</i><span><span class="i-fa" lang="fa">پروانه بهره‌برداری</span><span class="i-en" lang="en">Extraction licence</span></span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">تشکل</span><span class="i-en" lang="en">Association</span></dt><dd><span class="i-fa" lang="fa">خانه معدن ایران؛ انجمن سنگ ایران</span><span class="i-en" lang="en">Iran Mining House; Iran Stone Association</span></dd></div>
+          </dl>
+          <p class="nv-soon"><span class="i-fa" lang="fa">فصل ۸ · به‌زودی</span><span class="i-en" lang="en">Chapter 8 · coming</span></p>
+        </article>
+        <article class="nv-b">
+          <h3><span class="i-fa" lang="fa">فناوری و خدمات</span><span class="i-en" lang="en">Technology &amp; services</span></h3>
+          <dl>
+            <div><dt><span class="i-fa" lang="fa">مرجع مجوز</span><span class="i-en" lang="en">Licensing authority</span></dt><dd><span class="i-fa" lang="fa">وزارت ارتباطات (سازمان تنظیم مقررات برای اپراتورها و اینترنت)؛ معاونت علمی برای دانش‌بنیان؛ مرکز توسعه تجارت الکترونیکی برای اینماد؛ بانک مرکزی برای پرداخت و فین‌تک؛ بیمه مرکزی؛ سازمان بورس</span><span class="i-en" lang="en">Ministry of ICT (the Communications Regulatory Authority for operators and internet); the Vice-Presidency for Science for knowledge-based status; the E-Commerce Development Centre for the e-trust mark; the Central Bank for payments and fintech; Central Insurance; the Securities and Exchange Organisation</span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">مسیر مجوز</span><span class="i-en" lang="en">Licence path</span></dt><dd class="nv-path"><span><span class="i-fa" lang="fa">ثبت شرکت</span><span class="i-en" lang="en">Company registration</span></span><i>→</i><span><span class="i-fa" lang="fa">اینماد / پروانه تخصصی</span><span class="i-en" lang="en">e-trust mark / specialist licence</span></span><i>→</i><span><span class="i-fa" lang="fa">ارزیابی دانش‌بنیان</span><span class="i-en" lang="en">Knowledge-based assessment</span></span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">تشکل</span><span class="i-en" lang="en">Association</span></dt><dd><span class="i-fa" lang="fa">سازمان نظام صنفی رایانه‌ای؛ انجمن فین‌تک ایران</span><span class="i-en" lang="en">Computer Guild Organisation; Iran Fintech Association</span></dd></div>
+          </dl>
+          <p class="nv-soon"><span class="i-fa" lang="fa">فصل ۹ · به‌زودی</span><span class="i-en" lang="en">Chapter 9 · coming</span></p>
+        </article>
+        <article class="nv-b">
+          <h3><span class="i-fa" lang="fa">گردشگری و فرهنگ</span><span class="i-en" lang="en">Tourism &amp; culture</span></h3>
+          <dl>
+            <div><dt><span class="i-fa" lang="fa">مرجع مجوز</span><span class="i-en" lang="en">Licensing authority</span></dt><dd><span class="i-fa" lang="fa">وزارت میراث فرهنگی، گردشگری و صنایع‌دستی برای هتل، اقامتگاه، دفتر مسافرتی و صنایع‌دستی؛ وزارت فرهنگ و ارشاد اسلامی برای نشر، سینما و رسانه</span><span class="i-en" lang="en">Ministry of Cultural Heritage, Tourism and Handicrafts for hotels, lodgings, travel agencies and crafts; Ministry of Culture and Islamic Guidance for publishing, cinema and media</span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">مسیر مجوز</span><span class="i-en" lang="en">Licence path</span></dt><dd class="nv-path"><span><span class="i-fa" lang="fa">موافقت اصولی</span><span class="i-en" lang="en">Agreement in principle</span></span><i>→</i><span><span class="i-fa" lang="fa">پروانه بهره‌برداری</span><span class="i-en" lang="en">Operating licence</span></span></dd></div>
+            <div><dt><span class="i-fa" lang="fa">تشکل</span><span class="i-en" lang="en">Association</span></dt><dd><span class="i-fa" lang="fa">جامعه هتلداران ایران؛ انجمن صنفی دفاتر خدمات مسافرتی</span><span class="i-en" lang="en">Iran Hoteliers' Society; Travel Agencies Association</span></dd></div>
+          </dl>
+          <p class="nv-soon"><span class="i-fa" lang="fa">فصل ۱۰ · به‌زودی</span><span class="i-en" lang="en">Chapter 10 · coming</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== Chapter 2: entry ===================== -->
+    <section class="nv-sec" id="entry">
+      <span class="nv-num"><span class="i-fa" lang="fa">فصل ۲</span><span class="i-en" lang="en">CHAPTER 2</span></span>
+      <h2><span class="i-fa" lang="fa">ورود: هفت ایستگاه خط اول</span><span class="i-en" lang="en">Entry: the seven stations of line one</span></h2>
+      <p class="nv-lead"><span class="i-fa" lang="fa">به همین ترتیب. ایستگاه ۱ فقط برای اشخاص خارجی است و ایستگاه‌های ۵ و ۶ اختیاری‌اند؛ بقیه برای هر شرکتی لازم است. زیر هر ایستگاه نوشته‌ایم مرجع کیست، کجا انجام می‌شود و چه چیزی لازم دارد.</span><span class="i-en" lang="en">In this order. Station 1 is for foreign persons only and stations 5 and 6 are optional; the rest apply to every company. Under each station: who the authority is, where it happens, and what it needs.</span></p>
+
+      <ol class="nv-steps">
+        <li class="nv-step" id="s1">
+          <div class="nv-n">۱<span class="i-en" lang="en" style="display:none"></span></div>
+          <div>
+            <h3><span class="i-fa" lang="fa">کد فراگیر اتباع خارجی</span><span class="i-en" lang="en">The foreign national code (کد فراگیر)</span><span class="nv-opt"><span class="i-fa" lang="fa">فقط اشخاص خارجی</span><span class="i-en" lang="en">foreign persons only</span></span></h3>
+            <div class="nv-who"><span><span class="i-fa" lang="fa">سازمان ثبت اسناد و املاک کشور</span><span class="i-en" lang="en">State Organisation for Registration of Deeds and Properties</span></span><span class="site">irsherkat.ssaa.ir</span></div>
+            <p><span class="i-fa" lang="fa">هر شخص خارجی، حقیقی یا حقوقی، پیش از هر کار رسمی در ایران یک شماره‌ی شناسایی می‌گیرد که همه‌جا به جای کد ملی می‌نشیند: در ثبت شرکت، پرونده‌ی مالیاتی و قراردادها. درخواست آنلاین است و برای شخص حقیقی به گذرنامه و عکس، و برای شرکت خارجی به مشخصات ثبتی در کشور مبدأ نیاز دارد.</span><span class="i-en" lang="en">Every foreign person, individual or company, gets an identification number before any formal step in Iran; it stands in for the national ID everywhere: in company registration, the tax file and contracts. The request is online. An individual needs a passport and a photo; a foreign company needs its registration details from its home country.</span></p>
+          </div>
+        </li>
+
+        <li class="nv-step" id="s2">
+          <div class="nv-n">۲</div>
+          <div>
+            <h3><span class="i-fa" lang="fa">ثبت شرکت ایرانی، یا شعبه‌ی شرکت خارجی</span><span class="i-en" lang="en">Register an Iranian company, or a branch of a foreign one</span></h3>
+            <div class="nv-who"><span><span class="i-fa" lang="fa">اداره کل ثبت شرکت‌ها و مؤسسات غیرتجاری</span><span class="i-en" lang="en">Companies Registration Office</span></span><span><span class="i-fa" lang="fa">زیر سازمان ثبت اسناد و املاک، وابسته به قوه قضاییه</span><span class="i-en" lang="en">under the Deeds Registration Organisation, part of the judiciary</span></span><span class="site">kateb.ir</span></div>
+            <p><span class="i-fa" lang="fa">دو راه هست. راه اول، شرکت ایرانی: شرکتی که در ایران ثبت شود و مرکز اصلی‌اش ایران باشد ایرانی به شمار می‌رود، حتی اگر تمام سهامش خارجی باشد؛ مالکیت صددرصد خارجی مجاز است. دو قالب رایج: سهامی خاص (دست‌کم سه سهام‌دار و دو بازرس؛ مناسب وام، مناقصه و کار با سازمان‌های بزرگ) و با مسئولیت محدود (دست‌کم دو شریک؛ ساده‌تر). راه دوم، شعبه یا نمایندگی شرکت خارجی: شخصیت حقوقی جدا نمی‌سازد و فعالیتش به موضوع‌های مشخص (اجرای قرارداد، خدمات پس از فروش، بازاریابی و بررسی بازار) محدود است.</span><span class="i-en" lang="en">There are two routes. First, an Iranian company: a company registered in Iran with its head office in Iran counts as Iranian even if all its shares are foreign-held; 100% foreign ownership is allowed. Two common forms: the private joint-stock company (at least three shareholders and two inspectors; suited to loans, tenders and work with large organisations) and the limited liability company (at least two partners; simpler). Second, a branch or representative office of a foreign company: it creates no separate legal person and its activity is limited to defined purposes (performing contracts, after-sales service, marketing and market study).</span></p>
+            <ul>
+              <li><span class="i-fa" lang="fa">مسیر ثبت: رزرو نام ← تنظیم اساسنامه و اظهارنامه ← ثبت آنلاین و پرداخت حق‌الثبت ← آگهی در روزنامه رسمی. اسناد خارجی باید ترجمه‌ی رسمی و تأیید کنسولی داشته باشند.</span><span class="i-en" lang="en">The path: reserve a name → draft the articles and declaration → file online and pay the fee → publish in the Official Gazette. Foreign documents need certified translation and consular legalisation.</span></li>
+              <li><span class="i-fa" lang="fa">پرتال ثبت از سال ۱۴۰۲ به سامانه‌ی «کاتب» منتقل شده و امکان ورود اتباع خارجی در آن فراهم شده است.</span><span class="i-en" lang="en">Since 2024 the registry has moved to the "Kateb" platform, which also admits foreign nationals.</span></li>
+              <li><span class="i-fa" lang="fa">مشاوران ثبت معمولاً یک تا دو هفته‌ی کاری را برای ثبت یک شرکت ساده اعلام می‌کنند؛ پرونده‌ی خارجی بیشتر طول می‌کشد.</span><span class="i-en" lang="en">Registration consultancies typically quote one to two working weeks for a simple company; a foreign file takes longer.</span></li>
+            </ul>
+            <p class="nv-note"><span class="i-fa" lang="fa">خارجی‌ها نمی‌توانند ملک واقع در ایران را به عنوان سرمایه‌ی شرکت بیاورند، و تملک زمین به نام سرمایه‌گذار خارجی در قانون سرمایه‌گذاری خارجی مجاز نیست؛ زمین به نام شرکت ایرانیِ ثبت‌شده می‌آید.</span><span class="i-en" lang="en">Foreigners cannot contribute Iranian real estate as company capital, and the foreign investment law does not allow land to be owned in the foreign investor's own name; land is held by the registered Iranian company.</span></p>
+          </div>
+        </li>
+
+        <li class="nv-step" id="s3">
+          <div class="nv-n">۳</div>
+          <div>
+            <h3><span class="i-fa" lang="fa">پرونده‌ی مالیاتی و کد اقتصادی</span><span class="i-en" lang="en">Tax file and economic code</span></h3>
+            <div class="nv-who"><span><span class="i-fa" lang="fa">سازمان امور مالیاتی کشور</span><span class="i-en" lang="en">Iranian National Tax Administration</span></span><span><span class="i-fa" lang="fa">زیر وزارت امور اقتصادی و دارایی</span><span class="i-en" lang="en">under the Ministry of Economic Affairs and Finance</span></span><span class="site">my.tax.gov.ir</span></div>
+            <p><span class="i-fa" lang="fa">بلافاصله پس از ثبت، شرکت در سامانه‌ی مالیاتی پرونده باز می‌کند و شماره‌ی اقتصادی می‌گیرد. بدون آن نه می‌شود فاکتور رسمی صادر کرد، نه قرارداد با دولت و شرکت‌های بزرگ بست، نه حساب بانکی شرکتی باز کرد. ثبت‌نام مالیات بر ارزش افزوده و بعدتر اتصال به سامانه‌ی مودیان (صدور صورت‌حساب الکترونیکی) هم از همین‌جا شروع می‌شود.</span><span class="i-en" lang="en">Right after registration, the company opens a file in the tax system and receives its economic number. Without it there is no official invoicing, no contract with the state or large companies, and no corporate bank account. VAT registration and, later, the connection to the taxpayers' e-invoicing system also start here.</span></p>
+          </div>
+        </li>
+
+        <li class="nv-step" id="s4">
+          <div class="nv-n">۴</div>
+          <div>
+            <h3><span class="i-fa" lang="fa">تأمین اجتماعی و پروانه‌ی کار</span><span class="i-en" lang="en">Social security and work permits</span></h3>
+            <div class="nv-who"><span><span class="i-fa" lang="fa">سازمان تأمین اجتماعی</span><span class="i-en" lang="en">Social Security Organisation</span></span><span><span class="i-fa" lang="fa">وزارت تعاون، کار و رفاه اجتماعی</span><span class="i-en" lang="en">Ministry of Cooperatives, Labour and Social Welfare</span></span><span class="site">tamin.ir</span></div>
+            <p><span class="i-fa" lang="fa">با اولین استخدام، شرکت «کد کارگاه» می‌گیرد و هر ماه فهرست بیمه‌ی کارکنان را می‌فرستد؛ در بیشتر قراردادهای پیمانکاری هم مفاصاحساب تأمین اجتماعی شرط تسویه است. کارمند خارجی علاوه بر آن پروانه‌ی کار می‌خواهد که اداره‌ی کل اشتغال اتباع خارجی وزارت کار صادر می‌کند و ویزای کار بر اساس آن داده می‌شود.</span><span class="i-en" lang="en">With the first hire, the company receives a "workshop code" and files the monthly insurance list for its staff; in most contracting work a social-security clearance is also a condition of final payment. A foreign employee additionally needs a work permit, issued by the Labour Ministry's foreign employment office, on which the work visa is based.</span></p>
+          </div>
+        </li>
+
+        <li class="nv-step" id="s5">
+          <div class="nv-n">۵</div>
+          <div>
+            <h3><span class="i-fa" lang="fa">کارت بازرگانی</span><span class="i-en" lang="en">The trade card (کارت بازرگانی)</span><span class="nv-opt"><span class="i-fa" lang="fa">برای واردات و صادرات</span><span class="i-en" lang="en">for import and export</span></span></h3>
+            <div class="nv-who"><span><span class="i-fa" lang="fa">اتاق بازرگانی، صنایع، معادن و کشاورزی ایران</span><span class="i-en" lang="en">Iran Chamber of Commerce, Industries, Mines and Agriculture</span></span><span><span class="i-fa" lang="fa">با تأیید وزارت صمت</span><span class="i-en" lang="en">with the approval of the Ministry of Industry, Mine and Trade</span></span></div>
+            <p><span class="i-fa" lang="fa">هر کس بخواهد کالا وارد یا صادر کند کارت بازرگانی می‌خواهد. کارت به نام مدیرعامل صادر می‌شود، یک سال اعتبار دارد و هر سال تمدید می‌شود. با کارت، شرکت در سامانه‌ی جامع تجارت ثبت می‌شود و از آنجا ثبت سفارش واردات و اظهار گمرکی انجام می‌گیرد.</span><span class="i-en" lang="en">Anyone importing or exporting goods needs the trade card. It is issued in the managing director's name, is valid for one year and renewed annually. With it, the company registers on the Integrated Trade System, where import orders and customs declarations are filed.</span></p>
+          </div>
+        </li>
+
+        <li class="nv-step" id="s6">
+          <div class="nv-n">۶</div>
+          <div>
+            <h3><span class="i-fa" lang="fa">مجوز سرمایه‌گذاری خارجی (فیپا)</span><span class="i-en" lang="en">The foreign investment licence (FIPPA)</span><span class="nv-opt"><span class="i-fa" lang="fa">اختیاری</span><span class="i-en" lang="en">optional</span></span></h3>
+            <div class="nv-who"><span><span class="i-fa" lang="fa">سازمان سرمایه‌گذاری و کمک‌های اقتصادی و فنی ایران</span><span class="i-en" lang="en">Organisation for Investment, Economic and Technical Assistance of Iran (OIETAI)</span></span><span><span class="i-fa" lang="fa">زیر وزارت امور اقتصادی و دارایی</span><span class="i-en" lang="en">under the Ministry of Economic Affairs and Finance</span></span><span class="site">investiniran.ir</span></div>
+            <p><span class="i-fa" lang="fa">برای ثبت شرکت لازم نیست، اما سرمایه‌ی خارجی را زیر چتر قانون تشویق و حمایت سرمایه‌گذاری خارجی (۱۳۸۱) می‌برد. قانون، سازمان سرمایه‌گذاری را «تنها مرجع رسمی» این کار می‌داند و همه‌ی درخواست‌های پذیرش، ورود، به‌کارگیری و خروج سرمایه به آن داده می‌شود. درخواست را سازمان ظرف ۱۵ روز به هیئت سرمایه‌گذاری خارجی می‌فرستد و هیئت ظرف یک ماه تصمیم می‌گیرد؛ مجوز با امضای وزیر اقتصاد صادر می‌شود.</span><span class="i-en" lang="en">Not required for registration, but it places foreign capital under the Foreign Investment Promotion and Protection Act (2002). The Act names OIETAI "the sole official organ" for this, and every request to admit, bring in, use or take out capital goes to it. OIETAI forwards the application to the Foreign Investment Board within 15 days and the Board decides within one month; the licence is signed by the Minister of Economy.</span></p>
+            <ul>
+              <li><span class="i-fa" lang="fa">چه می‌دهد: حمایت در برابر سلب مالکیت جز به حکم قانون و با پرداخت غرامت (ماده ۹)؛ حق انتقال اصل سرمایه (ماده ۱۳) و سود (ماده ۱۴) به خارج پس از پرداخت کسورات قانونی.</span><span class="i-en" lang="en">What it gives: protection against expropriation except by law and with compensation (Article 9); the right to transfer the principal (Article 13) and profits (Article 14) abroad after legal deductions.</span></li>
+              <li><span class="i-fa" lang="fa">دو شکل سرمایه‌گذاری (ماده ۳): مستقیم در رشته‌هایی که بخش خصوصی مجاز است؛ یا قراردادی (مشارکت مدنی، بیع متقابل، ساخت و بهره‌برداری و واگذاری) در همه‌ی رشته‌ها، با این شرط که بازگشت سرمایه فقط از عملکرد اقتصادی طرح باشد، نه تضمین دولت یا بانک.</span><span class="i-en" lang="en">Two forms (Article 3): direct investment where the private sector may operate; or contractual (civil partnership, buy-back, build-operate-transfer) in all fields, provided the return depends only on the project's economic performance, not a state or bank guarantee.</span></li>
+              <li><span class="i-fa" lang="fa">سقف‌ها (ماده ۲): سهم تولید سرمایه‌گذاری خارجی از بازار داخلی در هر بخش بیش از ۲۵٪ و در هر رشته بیش از ۳۵٪ نمی‌شود؛ تولید صادراتی (جز نفت خام) از این سقف معاف است.</span><span class="i-en" lang="en">Ceilings (Article 2): foreign-investment output may not exceed 25% of the domestic market in any sector or 35% in any field; export production (other than crude oil) is exempt.</span></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nv-step" id="s7">
+          <div class="nv-n">۷</div>
+          <div>
+            <h3><span class="i-fa" lang="fa">مجوز تخصصی رشته، از درگاه ملی مجوزها</span><span class="i-en" lang="en">The sector licence, through the National Permits Portal</span></h3>
+            <div class="nv-who"><span><span class="i-fa" lang="fa">هیئت مقررات‌زدایی و بهبود محیط کسب‌وکار</span><span class="i-en" lang="en">Deregulation and Business Environment Board</span></span><span><span class="i-fa" lang="fa">وزارت امور اقتصادی و دارایی</span><span class="i-en" lang="en">Ministry of Economic Affairs and Finance</span></span><span class="site">mojavez.ir</span></div>
+            <p><span class="i-fa" lang="fa">اینجا خط اول به خط دوم وصل می‌شود. از سال ۱۴۰۱ و با قانون تسهیل صدور مجوزهای کسب‌وکار، همه‌ی مجوزهای کشور باید در یک درگاه فهرست شوند: اسم مجوز، مرجع صادرکننده، مدارک، هزینه و مهلت پاسخ. درخواست از همین درگاه ثبت می‌شود و به دستگاه مربوط می‌رود؛ مجوزهای ساده‌تر «ثبت‌محور» شده‌اند و با ثبت اطلاعات صادر می‌شوند، مجوزهای حساس‌تر «تأییدمحور» می‌مانند و دستگاه باید در مهلت اعلام‌شده پاسخ بدهد. برای هر کسب‌وکار، این درگاه نقطه‌ی شروعِ پیدا کردن مرجع درست است.</span><span class="i-en" lang="en">This is where line one joins line two. Since 2022, under the Business Licensing Facilitation Act, every permit in the country is meant to be listed on one portal: the permit's name, its issuing authority, documents, cost and response deadline. The application is filed on the portal and routed to the authority; simpler permits have become "registration-based" and are issued on filing, while sensitive ones remain "approval-based" and the authority must answer within its published deadline. For any business, this portal is the place to find the right authority.</span></p>
+            <p class="nv-note"><span class="i-fa" lang="fa">مقیاس: وزیر صمت در شهریور ۱۴۰۱ گفت از ابتدای آن سال ۲۴۰ هزار درخواست در درگاه ثبت و برای ۷۴ هزار متقاضی مجوز صادر شده است. فصل‌های ۵ تا ۱۰، مسیر هر شاخه را از همین‌جا ادامه می‌دهند.</span><span class="i-en" lang="en">Scale: in August 2022 the industry minister said 240,000 applications had been filed on the portal since the start of that Iranian year and licences issued to 74,000 applicants. Chapters 5 to 10 continue each branch's path from here.</span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== outline ===================== -->
+    <section class="nv-sec" id="outline">
+      <span class="nv-num"><span class="i-fa" lang="fa">فهرست</span><span class="i-en" lang="en">OUTLINE</span></span>
+      <h2><span class="i-fa" lang="fa">دوازده فصل ایران نویگیتر</span><span class="i-en" lang="en">The twelve chapters of Iran Navigator</span></h2>
+      <ol class="nv-outline">
+        <li class="done"><b>01</b><span class="i-fa" lang="fa" style="margin:0">نقشه‌ی کلی</span><span class="i-en" lang="en" style="margin:0">The map</span><span><span class="i-fa" lang="fa">منتشر شد</span><span class="i-en" lang="en">published</span></span></li>
+        <li class="done"><b>02</b><span class="i-fa" lang="fa" style="margin:0">ورود: ثبت، مالیات، بیمه، کارت بازرگانی</span><span class="i-en" lang="en" style="margin:0">Entry: registration, tax, insurance, trade card</span><span><span class="i-fa" lang="fa">منتشر شد</span><span class="i-en" lang="en">published</span></span></li>
+        <li><b>03</b><span class="i-fa" lang="fa" style="margin:0">قانون سرمایه‌گذاری خارجی و سازمان سرمایه‌گذاری</span><span class="i-en" lang="en" style="margin:0">The foreign investment law and OIETAI</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>04</b><span class="i-fa" lang="fa" style="margin:0">مناطق آزاد و ویژه‌ی اقتصادی</span><span class="i-en" lang="en" style="margin:0">Free and special economic zones</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>05</b><span class="i-fa" lang="fa" style="margin:0">صنعت و تولید</span><span class="i-en" lang="en" style="margin:0">Industry and manufacturing</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>06</b><span class="i-fa" lang="fa" style="margin:0">انرژی و آب</span><span class="i-en" lang="en" style="margin:0">Energy and water</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>07</b><span class="i-fa" lang="fa" style="margin:0">حمل‌ونقل و راه</span><span class="i-en" lang="en" style="margin:0">Transport and roads</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>08</b><span class="i-fa" lang="fa" style="margin:0">منابع و معدن</span><span class="i-en" lang="en" style="margin:0">Resources and mining</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>09</b><span class="i-fa" lang="fa" style="margin:0">فناوری و خدمات</span><span class="i-en" lang="en" style="margin:0">Technology and services</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>10</b><span class="i-fa" lang="fa" style="margin:0">گردشگری و فرهنگ</span><span class="i-en" lang="en" style="margin:0">Tourism and culture</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>11</b><span class="i-fa" lang="fa" style="margin:0">اصناف و تعاونی‌ها</span><span class="i-en" lang="en" style="margin:0">Guilds and cooperatives</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+        <li><b>12</b><span class="i-fa" lang="fa" style="margin:0">منابع رسمی</span><span class="i-en" lang="en" style="margin:0">Official sources</span><span><span class="i-fa" lang="fa">به‌زودی</span><span class="i-en" lang="en">coming</span></span></li>
+      </ol>
+    </section>
+
+    <div class="nv-notice">
+      <span><span class="i-fa" lang="fa">اطلاعات عمومی است، نه مشاوره‌ی حقوقی؛ پیش از اقدام، متن روز قانون و مرجع مربوط را ببینید.</span><span class="i-en" lang="en">General information, not legal advice; check the current text of the law and the relevant authority before acting.</span></span>
+      <span><span class="i-fa" lang="fa">آخرین بازبینی: ۱۵ آبان ۱۴۰۵</span><span class="i-en" lang="en">Last reviewed: 6 November 2026</span></span>
+    </div>
+
+    <section class="nv-sec" id="sources" style="margin-top:36px">
+      <h2 style="font-size:1.3rem"><span class="i-fa" lang="fa">منابع این دو فصل</span><span class="i-en" lang="en">Sources for these two chapters</span></h2>
+      <ol class="nv-sources">
+        <li><b>1</b><a href="https://investmentpolicy.unctad.org/investment-laws/laws/94/print/3" target="_blank" rel="noopener noreferrer">Law on Encouragement and Protection of Foreign Investment (FIPPA), 2002 — full text, UNCTAD Investment Laws Navigator</a></li>
+        <li><b>2</b><a href="https://irglobal.com/article/company-registration-for-foreigners-in-iran/" target="_blank" rel="noopener noreferrer">Company Registration for Foreigners in Iran — IR Global</a></li>
+        <li><b>3</b><a href="https://myindustry.ir/en/company-registration-in-iran/" target="_blank" rel="noopener noreferrer">Company Registration in Iran: step-by-step — Myindustry Consulting</a></li>
+        <li><b>4</b><a href="https://nourlaw.com/code-faragir-is-required-by-foreigners-domiciled-in-iran-what-is-it/" target="_blank" rel="noopener noreferrer">Code Faragir for foreigners — Nour Law</a></li>
+        <li><b>5</b><a href="https://irantahsil.org/سامانه-کاتب/" target="_blank" rel="noopener noreferrer"><span class="i-fa" lang="fa">سامانه کاتب — سکوی خدمات دیجیتال ثبتی سازمان ثبت اسناد و املاک کشور</span><span class="i-en" lang="en">Kateb: the digital registration platform of the Deeds and Property Registration Organisation (in Persian)</span></a></li>
+        <li><b>6</b><a href="https://www.al-monitor.com/originals/2015/12/iran-deregulation-committee-business-perform-reform.html" target="_blank" rel="noopener noreferrer">Iran's deregulation committee and business permits — Al-Monitor</a></li>
+        <li><b>7</b><a href="https://middleeastmetals.ir/en/news/10982/74000-business-licenses-issued-in-5-months" target="_blank" rel="noopener noreferrer">74,000 business licences issued in 5 months (national licensing portal figures) — Middle East Metals, Aug 2022</a></li>
+        <li><b>8</b><a href="https://mojavez.ir" target="_blank" rel="noopener noreferrer"><span class="i-fa" lang="fa">درگاه ملی مجوزهای کشور — mojavez.ir</span><span class="i-en" lang="en">National Licensing Portal, mojavez.ir (in Persian)</span></a></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Ditoman • Learn. Connect. Evolve. • Est. 2022</span>
+      <nav aria-label="Footer">
+        <a href="index.en.html">Home</a>
+        <a href="iran.en.html">Iran</a>
+        <a href="tmn.en.html">TMN</a>
+        <a href="prices.en.html">Prices</a>
+        <a href="calendar.en.html">Calendar</a>
+        <a href="posts.en.html">Posts</a>
+        <a href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+        <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+<script>
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem("ditoman-karnameh-lang"); } catch (e) {}
+  function set(l) {
+    document.body.setAttribute("data-lang", l);
+    document.querySelectorAll(".k-toggle button").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-set") === l ? "true" : "false");
+    });
+    document.querySelectorAll(".nv-step .nv-n").forEach(function (n, i) {
+      n.textContent = l === "fa" ? "۱۲۳۴۵۶۷".charAt(i) : String(i + 1).padStart(2, "0");
+    });
+    try { localStorage.setItem("ditoman-karnameh-lang", l); } catch (e) {}
+  }
+  document.querySelectorAll(".k-toggle button").forEach(function (b) {
+    b.addEventListener("click", function () { set(b.getAttribute("data-set")); });
+  });
+  set(saved === "en" ? "en" : "fa");
+})();
+</script>
+
+<script src="menu.js?v=20261107"></script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

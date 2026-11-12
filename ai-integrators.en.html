@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The New Industry: Building AI Into Business | Ditoman</title>
+<meta name="description" content="What AI turns into what in five fields, why AI system builders are becoming an industry, and where an Iranian business owner can" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.tw tr.ir td{background:rgba(127,245,222,.10);color:#fff;font-weight:600}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/ai-integrators.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/ai-integrators.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/ai-integrators.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/ai-integrators.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The New Industry: Building AI Into Business | Ditoman" />
+<meta property="og:description" content="What AI turns into what in five fields, why AI system builders are becoming an industry, and where an Iranian business owner can" />
+<meta property="og:url" content="https://ditoman.com/ai-integrators.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/ai-integrators.en.html#page",
+   "url": "https://ditoman.com/ai-integrators.en.html",
+   "name": "The New Industry: Building AI Into Business | Ditoman",
+   "description": "What AI turns into what in five fields, why AI system builders are becoming an industry, and where an Iranian business owner can",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The New Industry: Building AI Into Business",
+     "item": "https://ditoman.com/ai-integrators.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="social/ai-integrators/card.webp" srcset="social/ai-integrators/card.webp 900w, social/ai-integrators/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="The new industry: AI built into business" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/ai-integrators/en-card.webp" srcset="social/ai-integrators/en-card.webp 900w, social/ai-integrators/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="The new industry: AI built into business" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">صنعت تازه: ساختن هوش مصنوعی برای کسب‌وکارها</h1>
+<h1 lang="en">The new industry: building AI into business</h1>
+<p class="subtitle" lang="en">What AI turns into what in five fields, why AI system builders are becoming an industry, and where an Iranian business owner can start.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی در پنج حوزه چه چیزی را به چه تبدیل می‌کند، چرا سیستم‌سازهای هوش مصنوعی به یک صنعت تبدیل می‌شوند و یک تاجر یا کارخانه‌دار ایرانی از کجا شروع کند.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۷۲۹٪+</b><b lang="en">+729%</b><span lang="fa">رشد آگهی‌های مهندس استقرار هوش مصنوعی</span><span lang="en">AI deployment engineer job posts</span></div>
+<div class="stat"><b lang="fa">۵٪</b><b lang="en">5%</b><span lang="fa">ابزارهای سفارشی که به استفاده‌ی واقعی رسیدند</span><span lang="en">custom AI tools reaching production</span></div>
+<div class="stat"><b lang="fa">۲۵٪−</b><b lang="en">−25%</b><span lang="fa">کارمند کمتر در استارتاپ‌های هوش‌مصنوعی‌محور</span><span lang="en">staff at AI-native startups</span></div>
+<div class="stat"><b lang="fa">۸۵۳</b><b lang="en">853</b><span lang="fa">نیروی معادل دستیار هوش مصنوعی کلارنا</span><span lang="en">FTE-equivalent of Klarna’s AI agent</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p><strong>آگهی‌های شغلی «مهندس استقرار هوش مصنوعی»، یعنی کسی که هوش مصنوعی را داخل یک شرکت واقعی پیاده می‌کند، در یک سال ۷۲۹٪ بیشتر شده است <a href="https://joinplank.com/state-of-fde" target="_blank" rel="noopener">Plank</a>.</strong></p>
+<p><strong>هم‌زمان، طبق پژوهش MIT فقط حدود ۵٪ ابزارهای هوش مصنوعی سفارشی شرکت‌ها به مرحله‌ی استفاده‌ی واقعی می‌رسند <a href="https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide" target="_blank" rel="noopener">MIT</a>.</strong></p>
+<p>این دو عدد کنار هم یک چیز را می‌گویند: هوش مصنوعی خودبه‌خود کار نمی‌کند. کسی باید آن را برای هر کسب‌وکار طراحی کند، به کار بیندازد و پای نتیجه‌اش بایستد. همین کار دارد به یک صنعت تازه تبدیل می‌شود. در این گزارش با هم دنبال می‌کنیم هوش مصنوعی در پنج حوزه چه چیزی را به چه چیزی تبدیل می‌کند، این صنعت تازه چطور شکل می‌گیرد و یک تاجر یا کارخانه‌دار ایرانی از کجا می‌تواند شروع کند.</p>
+
+<h3><span class="check-number">۰۱.</span> نقطه‌ی شروع: یک پیش‌بینی جنجالی</h3>
+<p>ایلان ماسک گفته شرکت‌هایی که فقط از هوش مصنوعی و ربات تشکیل شده‌اند، از هر شرکتی که انسان در چرخه‌ی کارش دارد بسیار جلو می‌زنند <a href="https://officechai.com/ai/companies-that-are-only-robots-and-ai-will-vastly-outperform-any-companies-with-humans-elon-musk" target="_blank" rel="noopener">OfficeChai</a>. مثالش این است: روزی «محاسبه‌گر» شغل آدم‌ها بود و حالا یک جدول اکسل کار یک ساختمان پر از کارمند را می‌کند. ماسک خودش سازنده‌ی هوش مصنوعی و ربات است و این پیش‌بینی را باید از زبان یک طرف ذی‌نفع شنید. ولی یک بخش آن را داده تأیید می‌کند: پژوهش <a href="https://www.kucoin.com/news/flash/ai-native-startups-have-25-fewer-employees-than-traditional-firms-study-finds" target="_blank" rel="noopener">INSEAD و هاروارد</a> (ژوئن ۲۰۲۶) نشان داد استارتاپ‌هایی که از اول بر پایه‌ی هوش مصنوعی ساخته شده‌اند حدود ۲۵٪ کارمند کمتر دارند و ارزش‌گذاری‌شان مشابه بقیه است. شرکت‌ها بی‌آدم نشده‌اند، کوچک‌تر و چابک‌تر شده‌اند.</p>
+
+<h3><span class="check-number">۰۲.</span> پنج حوزه، پنج تبدیل</h3>
+<p>برای اینکه موضوع ملموس شود، پنج جای آشنا را کنار هم می‌گذاریم: امروز کار چطور انجام می‌شود و با هوش مصنوعی به چه تبدیل می‌شود.</p>
+<div class="tw" dir="rtl"><table><tr><th>حوزه</th><th>امروز</th><th>با هوش مصنوعی</th></tr><tr><td>خدمات مشتری</td><td>تلفن‌خانه و اپراتورهایی که به سؤال‌های تکراری جواب می‌دهند</td><td>دستیاری که شبانه‌روز به بیشتر سؤال‌ها جواب می‌دهد و فقط مورد پیچیده را به آدم می‌سپارد</td></tr><tr><td>کارخانه</td><td>کارگری که قطعه را با چشم کنترل می‌کند؛ تعمیر دستگاه وقتی خراب شد</td><td>دوربین و مدل بینایی که عیب را روی خط تولید می‌بیند؛ حسگری که خرابی را پیش از وقوع خبر می‌دهد</td></tr><tr><td>حسابداری و اداری</td><td>واردکردن دستی فاکتور، تطبیق حساب، پیگیری چک و پرداخت</td><td>سیستمی که فاکتور را می‌خواند، ثبت می‌کند و فقط مغایرت را نشان می‌دهد</td></tr><tr><td>بازرگانی و واردات</td><td>مکاتبه و ترجمه با تأمین‌کننده‌ی خارجی؛ چک‌کردن پیش‌فاکتور، لیست بسته‌بندی و اسناد حمل</td><td>ترجمه و نامه‌نگاری فوری؛ مقایسه‌ی خودکار اسناد و هشدار درباره‌ی هر اختلاف وزن، تعداد یا قیمت</td></tr><tr><td>فروش و فروشگاه</td><td>جواب‌دادن دستی به دایرکت‌ها، نوشتن توضیح محصول، عکاسی و تبلیغ</td><td>دستیار فروشی که به پیام‌ها جواب می‌دهد، کاتالوگ را به‌روز می‌کند و محتوای تبلیغ می‌سازد</td></tr></table></div>
+<p>هیچ‌کدام از این‌ها خیال نیست؛ همه همین حالا در شرکت‌های مختلف دنیا کار می‌کنند. ولی بین «کار می‌کند» و «برای شرکت من کار می‌کند» فاصله‌ی زیادی هست.</p>
+
+<h3><span class="check-number">۰۳.</span> یک نمونه‌ی واقعی: کلارنا</h3>
+<p>شرکت پرداخت سوئدی کلارنا در ۲۰۲۴ دستیار هوش مصنوعی را جای بخش بزرگی از پشتیبانی گذاشت. تا پایان ۲۰۲۵ این دستیار کار معادل ۸۵۳ نیروی تمام‌وقت را می‌کرد، دوسوم پرسش‌ها را جواب می‌داد، زمان پاسخ را ۸۲٪ کوتاه کرده بود و حدود ۶۰ میلیون دلار صرفه‌جویی داشت <a href="https://www.customerexperiencedive.com/news/klarna-says-ai-agent-work-853-employees/" target="_blank" rel="noopener">Klarna</a>.</p>
+<p>ولی در مه ۲۰۲۵ کلارنا دوباره نیروی انسانی استخدام کرد. مشتری‌ها از جواب‌های کلی و ناتوانی در مسئله‌های پیچیده گله داشتند و مدیرعامل گفت مشتری باید همیشه بتواند با یک آدم حرف بزند. درس این نمونه: سیستم خوب آن است که می‌داند کجا کار را به انسان بسپارد.</p>
+
+<h3><span class="check-number">۰۴.</span> صنعت تازه: سیستم‌سازهای هوش مصنوعی</h3>
+<p>همان‌طور که با آمدن کامپیوتر شرکت‌های نرم‌افزار و شبکه به وجود آمدند، حالا شرکت‌هایی شکل می‌گیرند که کارشان طراحی و پیاده‌کردن سیستم هوش مصنوعی برای کسب‌وکارهای دیگر است. نشانه‌ها:</p>
+<ul>
+<li>آگهی‌های شغلی «مهندس استقرار» در یک سال ۷۲۹٪ رشد کرد. در پایان اکتبر ۲۰۲۶ بیش از ۱٬۲۷۶ موقعیت باز در ۵۴۷ شرکت وجود داشت و میانه‌ی حقوق اعلام‌شده ۱۶۵ تا ۲۴۰ هزار دلار در سال بود <a href="https://joinplank.com/state-of-fde" target="_blank" rel="noopener">Plank</a>.</li>
+<li>بخش استقرار پالانتیر در سه‌ماهه‌ی دوم ۲۰۲۶ نسبت به سال قبل ۹۳٪ رشد کرد. OpenAI برای شرکت استقرار خود بیش از ۴ میلیارد دلار جذب کرد، Anthropic یک سرمایه‌گذاری مشترک حدود ۱٫۵ میلیارد دلاری در همین حوزه دارد و مایکروسافت حدود ۶٬۰۰۰ متخصص را داخل شرکت‌های مشتری فرستاده است <a href="https://joinplank.com/state-of-fde" target="_blank" rel="noopener">Plank</a>.</li>
+<li>سفارش‌های هوش مصنوعی پیشرفته‌ی اکسنچر، بزرگ‌ترین شرکت مشاوره‌ی فناوری دنیا، در سه‌ماهه‌ی اول سال مالی ۲۰۲۶ به ۲٫۲ میلیارد دلار رسید، تقریباً دو برابر سال قبل. در IBM هم حدود نیمی از قراردادهای مشاوره به هوش مصنوعی مولد مربوط است <a href="https://upperedge.com/system-integrators/the-state-of-the-si-market-in-2026-ai-bookings-fixed-price-shifts-and-erp-delivery-gaps/" target="_blank" rel="noopener">UpperEdge</a>.</li>
+</ul>
+
+<h3><span class="check-number">۰۵.</span> چرا «عمل به وعده» همه‌چیز است</h3>
+<p>در این صنعت، فاصله‌ی وعده و نتیجه زیاد است:</p>
+<ul>
+<li>پژوهش <a href="https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide" target="_blank" rel="noopener">MIT</a> (۲۰۲۵) روی بیش از ۳۰۰ پروژه نشان داد شرکت‌ها ۳۰ تا ۴۰ میلیارد دلار خرج هوش مصنوعی مولد کرده‌اند، ولی فقط حدود ۵٪ ابزارهای سفارشی به استفاده‌ی واقعی رسیده‌اند.</li>
+<li><a href="https://www.beri.net/article/40-percent-agentic-ai-projects-canceled-2027-gartner" target="_blank" rel="noopener">Gartner</a> پیش‌بینی کرده بیش از ۴۰٪ پروژه‌های «عامل هوش مصنوعی» تا پایان ۲۰۲۷ لغو شوند؛ به دلیل هزینه‌ی بالا، ارزش نامعلوم و کنترل ناکافی ریسک. به گفته‌ی همین مؤسسه، از هزاران شرکتی که ادعای ساخت «عامل هوشمند» دارند، فقط حدود ۱۳۰ شرکت واقعاً چنین چیزی می‌سازند.</li>
+<li>برای همین قراردادها به سمت قیمت ثابت می‌روند. حدود ۶۰٪ کار اکسنچر حالا قیمت ثابت است؛ یعنی شرکت سیستم‌ساز باید پای نتیجه بایستد، نه فقط ساعت کار بفروشد <a href="https://upperedge.com/system-integrators/the-state-of-the-si-market-in-2026-ai-bookings-fixed-price-shifts-and-erp-delivery-gaps/" target="_blank" rel="noopener">UpperEdge</a>.</li>
+</ul>
+<p>در سال‌های آینده، شرکت سیستم‌ساز خوب را از روی یک چیز می‌شناسند: آیا سیستمی که ساخته همان کاری را می‌کند که قول داده بود؟ اعتبار در این صنعت با قرارداد و ارائه ساخته نمی‌شود، با نتیجه‌ی قابل‌اندازه‌گیری ساخته می‌شود.</p>
+
+<h3><span class="check-number">۰۶.</span> برای تاجر و کارخانه‌دار ایرانی: از کجا شروع کنیم؟</h3>
+<ul>
+<li><strong>یک کار تکراری را انتخاب کنید، نه همه‌چیز را.</strong> مثلاً ثبت فاکتورها، جواب به سؤال‌های تکراری مشتری یا کنترل اسناد واردات.</li>
+<li><strong>قبل از شروع اندازه بگیرید.</strong> این کار الان چند ساعت وقت می‌گیرد و چقدر خطا دارد؟ بدون عدد قبل، نمی‌شود فهمید سیستم جدید واقعاً بهتر است.</li>
+<li><strong>انسان را از چرخه حذف نکنید.</strong> درس کلارنا این است که سیستم باید بداند کجا کار را به آدم بسپارد.</li>
+<li><strong>از پیمانکار نتیجه بخواهید، نه ساعت.</strong> در قرارداد بنویسید سیستم چه چیزی را با چه دقتی انجام می‌دهد و اگر نشد چه می‌شود.</li>
+<li><strong>داده‌تان را بشناسید.</strong> هوش مصنوعی با داده‌ی مرتب کار می‌کند؛ فاکتورهای کاغذی و فایل‌های پراکنده اول باید منظم شوند.</li>
+</ul>
+
+<h3><span class="check-number">۰۷.</span> فرصت برای متخصص ایرانی</h3>
+<p>ایران مهندس نرم‌افزار، برق و صنایع زیادی دارد و هزاران کارخانه و شرکت کوچک و متوسط که هنوز بسیاری از کارهایشان دستی است. این یعنی بازار داخلی برای شرکت‌های سیستم‌ساز هوش مصنوعی آماده است: تیم کوچکی که یک مشکل مشخص، مثلاً کنترل کیفیت یک نوع قطعه یا حسابداری یک صنف، را خوب حل کند می‌تواند همان راه‌حل را برای ده‌ها شرکت مشابه پیاده کند. شرطش همان است که در دنیا هم هست: عمل به وعده و نتیجه‌ی قابل‌اندازه‌گیری.</p>
+
+<h3><span class="check-number">۰۸.</span> نگاه دیتومان</h3>
+<p>هوش مصنوعی آدم‌ها را حذف نمی‌کند؛ کار را از نو تقسیم می‌کند. کارهای تکراری به سیستم می‌رسد و کار طراحی، کنترل و تصمیم برای انسان می‌ماند. برای صاحب کسب‌وکار سؤال درست این است که «کدام کار من تکراری است؟» و برای متخصص این است که «کدام مشکل را می‌توانم برای ده‌ها شرکت حل کنم؟» این بخش تحلیل دیتومان است، نه داده‌ی گزارش‌ها.</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>پیش‌بینی ماسک: <a href="https://officechai.com/ai/companies-that-are-only-robots-and-ai-will-vastly-outperform-any-companies-with-humans-elon-musk" target="_blank" rel="noopener">OfficeChai</a></li>
+<li>اندازه‌ی تیم استارتاپ‌ها: <a href="https://www.kucoin.com/news/flash/ai-native-startups-have-25-fewer-employees-than-traditional-firms-study-finds" target="_blank" rel="noopener">INSEAD و هاروارد، گزارش CryptoBriefing/KuCoin</a></li>
+<li>کلارنا: <a href="https://www.customerexperiencedive.com/news/klarna-says-ai-agent-work-853-employees/" target="_blank" rel="noopener">CX Dive</a></li>
+<li>شکست پروژه‌ها: <a href="https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide" target="_blank" rel="noopener">MIT NANDA، The GenAI Divide</a> · <a href="https://www.beri.net/article/40-percent-agentic-ai-projects-canceled-2027-gartner" target="_blank" rel="noopener">Gartner</a></li>
+<li>صنعت استقرار: <a href="https://joinplank.com/state-of-fde" target="_blank" rel="noopener">Plank، State of FDE</a> · <a href="https://upperedge.com/system-integrators/the-state-of-the-si-market-in-2026-ai-bookings-fixed-price-shifts-and-erp-delivery-gaps/" target="_blank" rel="noopener">UpperEdge، بازار یکپارچه‌سازها ۲۰۲۶</a></li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۲۰ آبان ۱۴۰۵. پژوهش INSEAD و هاروارد مقاله‌ی کاری و هنوز داوری‌نشده است؛ عددهایش از گزارش‌های خبری درباره‌ی آن آمده است.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p><strong>Job postings for AI “forward-deployed engineers”, the people who put AI to work inside real companies, grew 729% in a year <a href="https://joinplank.com/state-of-fde" target="_blank" rel="noopener">Plank</a>.</strong></p>
+<p><strong>At the same time, MIT research found that only about 5% of custom enterprise AI tools reach real production use <a href="https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide" target="_blank" rel="noopener">MIT</a>.</strong></p>
+<p>Put together, the two numbers say one thing: AI does not work by itself. Someone has to design it for each business, put it to work and stand behind the result. That job is turning into a new industry. We follow together what AI turns into what in five fields, how this industry is forming, and where an Iranian trader or factory owner can start.</p>
+
+<h3>1. The starting point: a provocative prediction</h3>
+<p>Elon Musk has said that corporations that are purely AI and robotics will vastly outperform any that have people in the loop <a href="https://officechai.com/ai/companies-that-are-only-robots-and-ai-will-vastly-outperform-any-companies-with-humans-elon-musk" target="_blank" rel="noopener">OfficeChai</a>. His example: “computer” was once a human job, and now a spreadsheet does the work of a building full of staff. Musk builds AI and robots himself, so this is a forecast from an interested party. One part of it is backed by data: an INSEAD and Harvard study (June 2026) found AI-native startups have about 25% fewer employees at similar valuations <a href="https://www.kucoin.com/news/flash/ai-native-startups-have-25-fewer-employees-than-traditional-firms-study-finds" target="_blank" rel="noopener">INSEAD/HBS</a>. Companies have not become empty; they have become smaller and faster.</p>
+
+<h3>2. Five fields, five transformations</h3>
+<div class="tw"><table><tr><th>Field</th><th>Today</th><th>With AI</th></tr><tr><td>Customer service</td><td>Call centres answering the same questions all day</td><td>An assistant that answers most questions around the clock and hands only the hard cases to people</td></tr><tr><td>Factory</td><td>Workers checking parts by eye; machines fixed after they break</td><td>Cameras and vision models spotting defects on the line; sensors that warn before a breakdown</td></tr><tr><td>Accounting and admin</td><td>Typing in invoices, reconciling accounts, chasing payments</td><td>A system that reads invoices, books them and flags only the mismatches</td></tr><tr><td>Trade and imports</td><td>Correspondence and translation with foreign suppliers; checking proformas, packing lists and shipping documents</td><td>Instant translation and drafting; automatic cross-checks of documents with alerts on any weight, quantity or price mismatch</td></tr><tr><td>Sales and retail</td><td>Answering DMs by hand, writing product copy, shooting and promoting</td><td>A sales assistant that answers messages, keeps the catalogue current and drafts promotional content</td></tr></table></div>
+<p>None of these is science fiction; all of them run in companies today. But there is a long way between “it works” and “it works for my company”.</p>
+
+<h3>3. A real case: Klarna</h3>
+<p>Swedish payments company Klarna put an AI assistant at the heart of customer service in 2024. By late 2025 it was doing the work of 853 full-time agents, handling two-thirds of inquiries, cutting response time by 82% and saving about $60 million <a href="https://www.customerexperiencedive.com/news/klarna-says-ai-agent-work-853-employees/" target="_blank" rel="noopener">CX Dive</a>. Yet in May 2025 Klarna started hiring people again: customers complained about generic answers on complex issues, and the CEO said customers should always be able to reach a human. The lesson: a good system knows when to hand over to a person.</p>
+
+<h3>4. The new industry: AI system builders</h3>
+<ul>
+<li>Forward-deployed engineer postings grew 729% in a year; at the end of October 2026 there were over 1,276 open roles at 547 companies, with a median posted band of $165K–$240K <a href="https://joinplank.com/state-of-fde" target="_blank" rel="noopener">Plank</a>.</li>
+<li>Palantir’s deployment-led business grew 93% year on year in Q2 2026. OpenAI raised over $4 billion for its deployment company, Anthropic has a services joint venture of about $1.5 billion, and Microsoft has around 6,000 experts embedded with customers <a href="https://joinplank.com/state-of-fde" target="_blank" rel="noopener">Plank</a>.</li>
+<li>Accenture’s advanced AI bookings reached $2.2 billion in Q1 FY2026, nearly double a year earlier; at IBM about half of consulting signings relate to generative AI <a href="https://upperedge.com/system-integrators/the-state-of-the-si-market-in-2026-ai-bookings-fixed-price-shifts-and-erp-delivery-gaps/" target="_blank" rel="noopener">UpperEdge</a>.</li>
+</ul>
+
+<h3>5. Why delivering on promises is everything</h3>
+<ul>
+<li>MIT’s 2025 study of 300+ initiatives found companies had spent $30–40 billion on generative AI, yet only about 5% of custom tools reached production <a href="https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide" target="_blank" rel="noopener">MIT</a>.</li>
+<li>Gartner expects over 40% of agentic AI projects to be cancelled by the end of 2027 because of cost, unclear value and weak risk controls, and says only about 130 of thousands of “agentic” vendors are building the real thing <a href="https://www.beri.net/article/40-percent-agentic-ai-projects-canceled-2027-gartner" target="_blank" rel="noopener">Gartner</a>.</li>
+<li>Contracts are moving to fixed prices: about 60% of Accenture’s work is now fixed-price, so the builder has to stand behind the outcome <a href="https://upperedge.com/system-integrators/the-state-of-the-si-market-in-2026-ai-bookings-fixed-price-shifts-and-erp-delivery-gaps/" target="_blank" rel="noopener">UpperEdge</a>.</li>
+</ul>
+<p>In the years ahead, a good AI builder will be judged on one thing: does the system do what was promised? Reputation in this industry is built on measurable results, not on slide decks.</p>
+
+<h3>6. For the Iranian trader and factory owner: where to start</h3>
+<ul>
+<li><strong>Pick one repetitive task, not everything:</strong> invoice entry, repeat customer questions, or checking import documents.</li>
+<li><strong>Measure before you start:</strong> how many hours and how many errors today? Without a baseline you cannot tell whether the new system is better.</li>
+<li><strong>Keep people in the loop:</strong> Klarna’s lesson is that the system must know when to hand over.</li>
+<li><strong>Buy results, not hours:</strong> write into the contract what the system will do, how accurately, and what happens if it doesn’t.</li>
+<li><strong>Know your data:</strong> AI runs on organised data; paper invoices and scattered files need sorting first.</li>
+</ul>
+
+<h3>7. The opportunity for Iranian specialists</h3>
+<p>Iran has many software, electrical and industrial engineers, and thousands of small and mid-sized firms where much work is still manual. That is a ready home market for AI system builders: a small team that solves one specific problem well, say quality control for one type of part or bookkeeping for one trade, can roll the same solution out to dozens of similar firms. The condition is the same as everywhere: deliver on the promise, with measurable results.</p>
+
+<h3>8. Ditoman’s reading</h3>
+<p>AI does not remove people; it redivides the work. Repetitive tasks go to systems, while design, oversight and decisions stay with people. For a business owner the right question is “which of my tasks is repetitive?”; for a specialist it is “which problem can I solve for dozens of companies?”. This section is Ditoman’s analysis, not data from the reports. We follow this together.</p>
+<h3>Sources</h3>
+<p>Full source list in the Persian version.</p>
+<p style="color:#9fb6b9;margin-top:10px">Last reviewed 11 November 2026. The INSEAD/HBS paper is an unreviewed working paper; its figures come from news coverage of it.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The CEO's Voice, But Not the CEO | Ditoman</title>
+<meta name="description" content="A $129 million case of AI voice and video impersonation: how the scheme worked, who paid, and three simple rules for you and your" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/deepfake-ceo.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/deepfake-ceo.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/deepfake-ceo.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/deepfake-ceo.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The CEO&#x27;s Voice, But Not the CEO | Ditoman" />
+<meta property="og:description" content="A $129 million case of AI voice and video impersonation: how the scheme worked, who paid, and three simple rules for you and your" />
+<meta property="og:url" content="https://ditoman.com/deepfake-ceo.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/deepfake-ceo.en.html#page",
+   "url": "https://ditoman.com/deepfake-ceo.en.html",
+   "name": "The CEO's Voice, But Not the CEO | Ditoman",
+   "description": "A $129 million case of AI voice and video impersonation: how the scheme worked, who paid, and three simple rules for you and your",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The CEO's Voice, But Not the CEO",
+     "item": "https://ditoman.com/deepfake-ceo.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.steps{list-style:none;counter-reset:s;margin:8px 0 22px;display:grid;gap:12px}
+.steps li{position:relative;padding:16px 64px 16px 18px;border-radius:18px;background:rgba(127,245,222,.06);border:1px solid rgba(127,245,222,.14);color:#c1dbde}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;right:16px;top:12px;width:34px;height:34px;border-radius:50%;background:#49e3c2;color:#041015;font-weight:800;display:flex;align-items:center;justify-content:center}
+.en .steps li{padding:16px 18px 16px 64px}
+.en .steps li::before{right:auto;left:16px}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:8px 0 22px}
+.rule{border-radius:18px;padding:18px;background:rgba(255,77,77,.07);border:1px solid rgba(255,77,77,.25)}
+.rule b{display:block;color:#fff;font-size:1.05rem;margin-bottom:6px}
+.rule span{color:#c1dbde;font-size:.98rem}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}.rules{grid-template-columns:1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="social/deepfake-ceo/card.webp" srcset="social/deepfake-ceo/card.webp 900w, social/deepfake-ceo/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Illustration: a phone call that appears to come from the CEO" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/deepfake-ceo/en-card.webp" srcset="social/deepfake-ceo/en-card.webp 900w, social/deepfake-ceo/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Illustration: a phone call that appears to come from the CEO" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">Technology &amp; Money</span><span lang="fa">فناوری و پول</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">صدای رئیس بود؛ اما خودش نبود!</h1>
+<h1 lang="en">It was the boss's voice, but it wasn't him!</h1>
+<p class="subtitle" lang="en">A $129 million case of AI voice and video impersonation: how the scheme worked, who paid, and three simple rules for you and your family.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">پرونده‌ی ۱۲۹ میلیون دلاری جعل صدا و تصویر با هوش مصنوعی: طرح چطور کار می‌کرد، چه کسانی پول دادند، و سه قانون ساده برای شما و خانواده‌تان.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">$129M</b><b lang="en">$129M</b><span lang="fa">مبلغ ادعایی کلاهبرداری</span><span lang="en">Alleged amount stolen</span></div>
+<div class="stat"><b lang="fa">۳</b><b lang="en">3</b><span lang="fa">متهم؛ بازداشت در اسپانیا و بریتانیا</span><span lang="en">Defendants, arrested in Spain and the UK</span></div>
+<div class="stat"><b lang="fa">هزاران</b><b lang="en">Thousands</b><span lang="fa">شرکت هدف در سراسر جهان</span><span lang="en">Companies targeted worldwide</span></div>
+<div class="stat"><b lang="fa">۱۸+</b><b lang="en">18+</b><span lang="fa">ماه فعالیت ادعایی</span><span lang="en">Months the scheme allegedly ran</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p>فرض کن در بخش حسابداری یک شرکت کار می‌کنی. ایمیلی از مدیرعامل می‌رسد: «یک معامله‌ی محرمانه در جریان است، به کمکت نیاز دارم.» بعد تماس تصویری می‌گیرد؛ صدا همان صدای همیشگی اوست، حتی چهره‌اش را می‌بینی. می‌گوید جزئیات را از وکیل شرکت بپرس. وکیل زنگ می‌زند، شمرده و حرفه‌ای توضیح می‌دهد و شماره‌حسابی می‌دهد. پول را حواله می‌کنی. هیچ‌کدام از آن دو نفر واقعی نبودند.</p>
+<h3><span class="check-number">۰۱.</span> پرونده چیست؟</h3>
+<p>دادستانی فدرال نیویورک (منطقه‌ی جنوبی) پنجشنبه ۵ نوامبر ۲۰۲۶ کیفرخواست سه نفر را اعلام کرد. اتهام: در بیش از یک سال و نیم، هزاران شرکت در سراسر جهان را هدف گرفته‌اند و با جعل صدا و تصویر مدیران و جعل هویت وکلا، حدود ۱۲۹ میلیون دلار از آن‌ها گرفته‌اند. اتهام‌ها کلاهبرداری الکترونیکی (تا ۲۰ سال زندان)، سرقت هویت مشدد (۲ سال) و پول‌شویی (تا ۲۰ سال) است.</p>
+<div class="note"><p><strong>یادآوری مهم:</strong> این‌ها اتهام‌های دادستانی است. هیچ‌کدام از متهمان محکوم نشده‌اند و پرونده تازه شروع شده است. اعداد و جزئیات را از کیفرخواست و گزارش‌های رسانه‌های معتبر آورده‌ایم.</p></div>
+<h3><span class="check-number">۰۲.</span> نقشه، قدم به قدم</h3>
+<ol class="steps">
+<li><strong>ایمیل از طرف «مدیرعامل»</strong> به کارمند بخش مالی: یک تراکنش محرمانه در جریان است، کسی نباید بفهمد.</li>
+<li><strong>تماس صوتی یا تصویری</strong> که در آن صدا و گاهی تصویر مدیر با هوش مصنوعی شبیه‌سازی شده بود.</li>
+<li><strong>ارجاع به «وکیل یک دفتر حقوقی بزرگ»</strong> برای تأیید جزئیات؛ وکیل هم جعلی بود. طبق کیفرخواست، یکی از متهمان نقش وکیل‌های بریتانیایی را بازی می‌کرد و برای این کار متنی دست‌نویس داشت با عنوان «Lawyer Call».</li>
+<li><strong>حواله‌های بزرگ</strong> به حساب‌های بانکی در کشورهای مختلف.</li>
+<li><strong>تبدیل پول به رمزارز</strong> برای پنهان‌کردن ردّ آن، و تقسیم بین اعضای گروه.</li>
+</ol>
+<h3><span class="check-number">۰۳.</span> چه کسانی پول دادند؟</h3>
+<p>در اسناد دادگاه از این قربانیان نام برده شده است: دو مجموعه‌ی بیمارستانی در میزوری و کالیفرنیا، یک بانک در رود آیلند، یک شرکت فناوری مالی در بریتانیا، یک شرکت صندوق سرمایه‌گذاری در ماساچوست و یک شرکت غذای حیوانات خانگی در فلوریدا. یعنی قربانی لزوماً شرکت کوچک و بی‌تجربه نبود؛ بانک و بیمارستان هم فریب خوردند.</p>
+<h3><span class="check-number">۰۴.</span> متهمان</h3>
+<p>سه مرد ۴۱، ۴۲ و ۵۴ ساله با لقب‌هایی مثل «راکی بالبوا»، «سوپرمن کَش» و «فت بوی»؛ به گفته‌ی دادستانی از اسپانیا، بریتانیا، اسرائیل و امارات. دو نفر در اسپانیا و یک نفر در بریتانیا بین ژوئن تا سپتامبر ۲۰۲۶ بازداشت شده‌اند و آمریکا درخواست استرداد داده است. یکی از آن‌ها سال ۲۰۰۸ هم در دادگاهی در نیویورک به جرم تبانی برای کلاهبرداری بانکی محکوم شده بود.</p>
+<h3><span class="check-number">۰۵.</span> نگاه دیتومان</h3>
+<p>در این ماجرا هیچ رمزی هک نشد و هیچ سیستمی شکسته نشد؛ چیزی که هک شد «اعتماد» بود. صدای آشنا تا دیروز بهترین مدرک هویت بود؛ از امروز فقط یک «نشانه» است، نه مدرک. چند ثانیه صدای ضبط‌شده از یک ویدیو یا پیام صوتی برای شبیه‌سازی کافی است و این ابزارها هر روز ارزان‌تر و در دسترس‌تر می‌شوند.</p>
+<p>یک نکته‌ی دیگر هم هست: اینکه پول دزدی به رمزارز تبدیل شد، رمزارز را مجرم نمی‌کند؛ درست همان‌طور که استفاده از حواله‌ی بانکی، بانک را مجرم نمی‌کند. اما دقیقاً به همین دلیل همه‌ی ما باید بدانیم تراکنش بلاکچین قابل ردگیری است و این شبکه‌ها چطور کار می‌کنند. اگر می‌خواهی از پایه شروع کنی، <a href="learn.en.html" style="color:#7ff5de">درس‌های دیتومان</a> را ببین.</p>
+<h3><span class="check-number">۰۶.</span> سه قانون ساده برای خودت و خانواده‌ات</h3>
+<div class="rules">
+<div class="rule"><b>عجله + محرمانه‌بودن = علامت خطر</b><span>هر درخواست پولی که می‌گوید «همین الان» و «به کسی نگو»، اول مشکوک است. کلاهبردار به زمان فکرکردن تو حمله می‌کند.</span></div>
+<div class="rule"><b>قطع کن و خودت زنگ بزن</b><span>با شماره‌ای که از قبل داری، نه شماره‌ای که همان تماس داده. این توصیه‌ی رسمی نهادهای حمایت از مصرف‌کننده هم هست.</span></div>
+<div class="rule"><b>کلمه‌ی رمز خانوادگی</b><span>یک کلمه که فقط اعضای خانواده بدانند. اگر کسی با صدای مادر یا پسرت زنگ زد و پول خواست، کلمه‌ی رمز را بپرس.</span></div>
+</div>
+<p><strong>برای شرکت‌ها:</strong> هیچ حواله‌ای فقط با یک تماس تلفنی یا تصویری انجام نشود؛ تأیید دوم از یک کانال مستقل (مثلاً تماس با شماره‌ی ثبت‌شده‌ی مدیر یا تأیید حضوری) و قانون «دو امضا» برای مبالغ بزرگ. هیچ معامله‌ی واقعی با دورزدن این قوانین به خطر نمی‌افتد؛ فقط معامله‌های جعلی به آن‌ها نیاز دارند.</p>
+<h3>منابع</h3>
+<ul class="sources">
+<li><a href="https://www.cbsnews.com/news/3-ai-steal-129-million-companies-impersonating-executives-lawyers/" target="_blank" rel="noopener noreferrer">CBS News، سه نفر به اتهام سرقت حدود ۱۲۹ میلیون دلار با جعل هویت مدیران و وکلا</a></li>
+<li><a href="https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/" target="_blank" rel="noopener noreferrer">SecurityWeek / Associated Press، گزارش کیفرخواست</a></li>
+<li><a href="https://www.justice.gov/usao-sdny" target="_blank" rel="noopener noreferrer">دادستانی منطقه‌ی جنوبی نیویورک (SDNY)</a></li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور تصویرسازی است و هیچ‌یک از افراد یا شرکت‌های واقعی پرونده را نشان نمی‌دهد.</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p>Imagine you work in a company's accounting department. An email arrives from the CEO: a confidential deal is under way, he needs your help. Then he calls on video; the voice is his, you even see his face. He tells you to get the details from the company's lawyer. The lawyer calls, explains calmly and professionally, and gives you an account number. You wire the money. Neither of them was real.</p>
+<h3>The case</h3>
+<p>On Thursday, 5 November 2026, the US Attorney's Office for the Southern District of New York announced the indictment of three men. The allegation: over more than a year and a half, they targeted thousands of companies worldwide and, by using AI to mimic executives' voices and sometimes their image and by impersonating lawyers, took about $129 million. Charges are wire fraud (up to 20 years), aggravated identity theft (2 years) and money laundering (up to 20 years). These are allegations; no one has been convicted.</p>
+<h3>How the scheme worked</h3>
+<ol class="steps">
+<li>An email from "the CEO" to a finance employee about a confidential transaction nobody else should know about.</li>
+<li>A phone or video call in which the executive's voice, and sometimes image, was generated with AI.</li>
+<li>A referral to "an attorney at a major law firm" to confirm the details; the attorney was fake too. One defendant allegedly played UK lawyers using a handwritten script titled "Lawyer Call".</li>
+<li>Large wire transfers to bank accounts around the world.</li>
+<li>Conversion into cryptocurrency to hide the trail, then distribution among the group.</li>
+</ol>
+<h3>Who paid</h3>
+<p>Court documents name hospital systems in Missouri and California, a bank in Rhode Island, a UK fintech company, a Massachusetts mutual-fund company and a Florida pet-food company. Not small, inexperienced firms: a bank and hospitals were fooled too.</p>
+<h3>The defendants</h3>
+<p>Three men aged 41, 42 and 54, with nicknames such as "Rocky Balboa", "Superman Cash" and "Fat Boy", from Spain, the UK, Israel and the UAE according to prosecutors. Two were arrested in Spain and one in the UK between June and September 2026; the US has requested extradition. One was convicted in a New York court in 2008 of conspiracy to commit bank fraud.</p>
+<h3>Ditoman's view</h3>
+<p>No password was hacked and no system was broken; what was hacked was trust. A familiar voice used to be the best proof of identity; from now on it is only a hint, not proof. A few seconds of audio from a video or voice message is enough to clone a voice, and the tools get cheaper every month. And one more thing: stolen money being converted into crypto does not make crypto the criminal, any more than a wire transfer makes the bank one. It is exactly why all of us should understand that blockchain transactions are traceable and how these networks work. Start with the <a href="learn.en.html" style="color:#7ff5de">Ditoman lessons</a>.</p>
+<h3>Three simple rules</h3>
+<div class="rules">
+<div class="rule"><b>Urgency + secrecy = red flag</b><span>Any request for money that says "right now" and "tell no one" is suspicious first. Scammers attack your thinking time.</span></div>
+<div class="rule"><b>Hang up and call back</b><span>On a number you already have, not one given in that call. This is also the standard advice of consumer-protection agencies.</span></div>
+<div class="rule"><b>A family safe word</b><span>One word only your family knows. If someone calls with your mother's or son's voice asking for money, ask for the word.</span></div>
+</div>
+<p><strong>For companies:</strong> no transfer should ever rest on a single phone or video call; require a second confirmation through an independent channel and a two-signature rule for large amounts. No real deal is endangered by these rules; only fake ones need them bypassed.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li><a href="https://www.cbsnews.com/news/3-ai-steal-129-million-companies-impersonating-executives-lawyers/" target="_blank" rel="noopener noreferrer">CBS News: three charged with stealing about $129 million by impersonating executives and lawyers</a></li>
+<li><a href="https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/" target="_blank" rel="noopener noreferrer">SecurityWeek / Associated Press: report on the indictment</a></li>
+<li><a href="https://www.justice.gov/usao-sdny" target="_blank" rel="noopener noreferrer">US Attorney's Office, Southern District of New York (SDNY)</a></li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">The cover is an illustration and shows none of the real people or companies in the case.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

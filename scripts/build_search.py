@@ -102,7 +102,7 @@ def main():
     entries = []
     for path in sorted(ROOT.glob("*.html")):
         name = path.name
-        if name in SKIP:
+        if name in SKIP or name.endswith(".en.html"):
             continue
         src = path.read_text(encoding="utf-8")
         if 'name="robots" content="noindex' in src:

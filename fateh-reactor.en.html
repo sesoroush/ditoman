@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Iran's 500-Tonne Reactor | Ditoman</title>
+<meta name="description" content="A polymerization reactor of about 500 tonnes and 40 metres, built by Fateh Sanat in Shiraz for a petrochemical complex in Asaluyeh: what is confirmed, what it is worth, and who is behind" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/fateh-reactor.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/fateh-reactor.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/fateh-reactor.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/fateh-reactor.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Iran&#x27;s 500-Tonne Reactor | Ditoman" />
+<meta property="og:description" content="A polymerization reactor of about 500 tonnes and 40 metres, built by Fateh Sanat in Shiraz for a petrochemical complex in Asaluyeh: what is confirmed, what it is worth, and who is behind" />
+<meta property="og:url" content="https://ditoman.com/fateh-reactor.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/fateh-reactor.en.html#page",
+   "url": "https://ditoman.com/fateh-reactor.en.html",
+   "name": "Iran's 500-Tonne Reactor | Ditoman",
+   "description": "A polymerization reactor of about 500 tonnes and 40 metres, built by Fateh Sanat in Shiraz for a petrochemical complex in Asaluyeh: what is confirmed, what it is worth, and who is behind",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Iran's 500-Tonne Reactor",
+     "item": "https://ditoman.com/fateh-reactor.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="social/fateh-reactor/card.webp" srcset="social/fateh-reactor/card.webp 900w, social/fateh-reactor/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="A 500-tonne polymerization reactor built in Shiraz" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/fateh-reactor/en-card.webp" srcset="social/fateh-reactor/en-card.webp 900w, social/fateh-reactor/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="A 500-tonne polymerization reactor built in Shiraz" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">Built in Iran</span><span lang="fa">چراغ روشن</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">غول ۵۰۰ تنی ساخت ایران؛ از کارگاه شیراز تا قلب صنعت پتروشیمی</h1>
+<h1 lang="en">A 500-tonne giant made in Iran: from a Shiraz workshop to the heart of the petrochemical industry</h1>
+<p class="subtitle" lang="en">A polymerization reactor of about 500 tonnes and 40 metres, built by Fateh Sanat in Shiraz for a petrochemical complex in Asaluyeh: what is confirmed, what it is worth, and who is behind it.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">راکتور پلیمریزاسیونی حدود ۵۰۰ تن وزن و ۴۰ متر طول، که فاتح صنعت در شیراز برای یک مجتمع پتروشیمی در عسلویه ساخته است: چه چیزی تأیید شده، چه ارزشی دارد و چه کسانی پشت آن هستند.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۵۰۰ تن</b><b lang="en">500 t</b><span lang="fa">وزن راکتور</span><span lang="en">Reactor weight</span></div>
+<div class="stat"><b lang="fa">۴۰ × ۹ متر</b><b lang="en">40 × 9 m</b><span lang="fa">طول و قطر</span><span lang="en">Length × diameter</span></div>
+<div class="stat"><b lang="fa">۱۴ ماه</b><b lang="en">14 months</b><span lang="fa">زمان ساخت، طبق گزارش صنعتی</span><span lang="en">Build time, per industry report</span></div>
+<div class="stat"><b lang="fa">۴ برابر</b><b lang="en">4×</b><span lang="fa">قیمت پیشنهادی خارجی، به گفته‌ی سازنده</span><span lang="en">Foreign quote, per the maker</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p>تصور کنید سازه‌ای فولادی، تقریباً به طول یک ساختمان ۱۳ طبقه، باید ساخته شود؛ سازه‌ای با وزن حدود ۵۰۰ تن که قرار است در قلب یک واحد پتروشیمی کار کند.</p>
+<p>طبق گزارش‌های منتشرشده در مهر ۱۴۰۵، چنین راکتوری به دست متخصصان ایرانی در کارگاه شرکت <a href="fateh-sanat.en.html">فاتح صنعت</a> در شیراز ساخته شده و برای انتقال و نصب در عسلویه آماده است. طبق این گزارش‌ها راکتور حدود <strong>۴۰ متر</strong> طول و <strong>۹ متر</strong> قطر دارد، ساختش حدود <strong>۱۴ ماه</strong> طول کشیده و برای آن ورق‌های فولادی تا ضخامت حدود <strong>۳۱۰ میلی‌متر</strong> نورد شده است. برخی گزارش‌ها کارفرما را <a href="aryasasol.en.html">پتروشیمی آریاساسول</a> معرفی کرده‌اند؛ گزارش رسمی، نام کارفرما را نیاورده است.</p>
+<p>مهدی قطبی، مدیر شرکت سازنده، گفته این راکتور کاملاً به دست متخصصان ایرانی ساخته شده و به گفته‌ی او پیش از این فقط ژاپن، آلمان و چین فناوری ساخت چنین راکتوری را داشتند. این ادعای سازنده است و ما فهرست مستقلی از کشورهای سازنده‌ی این اندازه از راکتور پیدا نکردیم.</p>
+<p>این سازه فقط یک مخزن بزرگ نیست. نامش <strong>راکتور پلیمریزاسیون</strong> است؛ تجهیزی که در آن، مواد اولیه طی یک فرایند کنترل‌شده به پلیمر تبدیل می‌شوند.</p>
+
+<h3><span class="check-number">۰۱.</span> راکتور چه ربطی به زندگی ما دارد؟</h3>
+<p>پلیمرها خانواده‌ی بزرگی از موادند که در زندگی روزمره‌ی همه‌ی ما حضور دارند: از لوله‌های آب و بسته‌بندی مواد غذایی تا قطعات خودرو، عایق سیم و کابل و بعضی تجهیزات پزشکی. برای نمونه، پلی‌اتیلن که آریاساسول تولید می‌کند، در فیلم بسته‌بندی، لوله، مخزن و عایق کابل به کار می‌رود.</p>
+<p>راکتور یکی از بخش‌های مهم فرایند تولید این مواد است. درون آن، شرایطی مانند دما و فشار باید به‌دقت کنترل شود تا واکنش شیمیایی به‌شکل ایمن انجام شود و محصول کیفیت لازم را داشته باشد. هرچه راکتور بزرگ‌تر باشد، ساختش به نورد ورق‌های ضخیم‌تر، جوشکاری دقیق‌تر و بازرسی سخت‌گیرانه‌تری نیاز دارد.</p>
+<p>هنوز در گزارش‌های در دسترس، نوع دقیق پلیمر، فشار کاری، ظرفیت تولید و مشخصات فرایندی این راکتور به‌روشنی اعلام نشده؛ بنابراین نمی‌شود گفت این دستگاه مشخصاً مواد اولیه‌ی کدام کالاها را تولید می‌کند.</p>
+
+<h3><span class="check-number">۰۲.</span> این پروژه چطور می‌تواند برای ایران ارزش ارزی ایجاد کند؟</h3>
+<p>اینجا باید سه مسیر را از هم جدا کنیم:</p>
+<ul>
+<li><strong>کاهش نیاز به واردات:</strong> اگر یک مجتمع ایرانی به‌جای خرید راکتور خارجی، نمونه‌ای قابل‌قبول را از سازنده‌ی داخلی تهیه کند، بخشی از ارزی که برای خرید خارجی لازم بود در کشور می‌ماند. به گفته‌ی سازنده، قیمت پیشنهادی شرکت‌های خارجی برای تجهیز مشابه حدود <strong>چهار برابر</strong> هزینه‌ی ساخت داخلی بوده است. ما به قراردادها و جزئیات قابل مقایسه دسترسی نداریم؛ صرفه‌جویی واقعی باید پس از کسر هزینه‌ی مواد، قطعات، خدمات و تجهیزات وارداتی حساب شود.</li>
+<li><strong>درآمد ارزی از صادرات تجهیزات:</strong> اگر سازنده‌ی ایرانی بتواند تجهیز مشابه، خدمات مهندسی، قطعات یا خدمات تعمیر و نگهداری را به مشتری خارجی بفروشد، این فروش ارز وارد کشور می‌کند. طبق گزارش «میز انرژی»، گروه سازنده پیش‌تر پروژه‌هایی در عمان، جمهوری آذربایجان و ترکیه اجرا کرده است؛ این را خودمان تأیید نکرده‌ایم و به معنی صادرات همین راکتور نیست.</li>
+<li><strong>صادرات محصول پتروشیمی:</strong> اگر واحد پس از نصب و راه‌اندازی محصول تولید و صادر کند، فروش آن محصول ارزآوری دارد. برای مقایسه، آریاساسول طبق گزارش ۱۴۰۲ بیش از ۷۰٪ محصولش را به اروپا، آسیا و بازارهای دیگر صادر می‌کرد. هنوز داده‌ی کافی نداریم که سهم این راکتور از تولید یا درآمد صادراتی آینده را حساب کنیم.</li>
+</ul>
+
+<h3><span class="check-number">۰۳.</span> چه کشورهای دیگری چنین تجهیزاتی می‌سازند؟</h3>
+<p>طراحی و ساخت راکتورهای صنعتی و تجهیزات سنگین پتروشیمی در کشورهای مختلفی انجام می‌شود. چند نمونه:</p>
+<ul>
+<li><strong>آلمان:</strong> شرکت thyssenkrupp Uhde در طراحی واحدهای پلیمری و تجهیزات فشار بالا فعال است.</li>
+<li><strong>ژاپن:</strong> UBE Machinery راکتورهای پلیمریزاسیون و مخازن فرایندی می‌سازد و Japan Steel Works هم ساخت راکتورهای پتروشیمی را در کارنامه دارد.</li>
+<li><strong>چین:</strong> که سازنده‌ی ایرانی هم از آن به‌عنوان یکی از دارندگان این فناوری نام برده است.</li>
+</ul>
+<p>این مقایسه به معنی یکسان بودن مدل‌ها نیست. راکتورها از نظر اندازه، فشار، جنس و نوع فرایند تفاوت زیادی دارند. برای مقایسه‌ی فنی و قیمتی منصفانه باید مشخصات دقیق دستگاه ایرانی و نمونه‌های خارجی را کنار هم دید.</p>
+
+<h3><span class="check-number">۰۴.</span> چقدر ایران را خودکفا می‌کند؟</h3>
+<p>ساخت این تجهیز نشان‌دهنده‌ی توان ساخت یک بخش مهم از تجهیزات سنگین در داخل کشور است؛ اما به‌تنهایی به معنی خودکفایی کامل یک واحد پتروشیمی یا کل این صنعت نیست. یک واحد پلیمری علاوه بر راکتور، به طراحی فرایند و لیسانس، کاتالیست، کمپرسور، شیرهای تخصصی، ابزار دقیق، سیستم کنترل و خدمات آزمایشگاهی نیاز دارد.</p>
+<p>پرسش مهم برای ادامه‌ی این پرونده: چه سهمی از طراحی، مواد اولیه، قطعات و آزمون‌های همین پروژه در ایران انجام شده و چه بخش‌هایی از خارج آمده است؟ بدون این اطلاعات نمی‌شود درصد بومی‌سازی واقعی را اعلام کرد.</p>
+
+<h3><span class="check-number">۰۵.</span> چه مشاغل و صنایعی پشت چنین پروژه‌ای هستند؟</h3>
+<ul>
+<li>مهندسی مکانیک، مواد و طراحی تجهیزات</li>
+<li>نورد و شکل‌دهی ورق‌های فولادی ضخیم، ماشین‌کاری و جوشکاری تخصصی</li>
+<li>بازرسی فنی، عملیات حرارتی و آزمون‌های غیرمخرب</li>
+<li>ساخت فلنج، نازل، قطعات و تجهیزات جانبی</li>
+<li>حمل‌ونقل فوق‌سنگین از شیراز تا عسلویه، نصب و نگهداری</li>
+</ul>
+<p>اگر سفارش‌های مشابه تکرار شوند، شرکت‌ها می‌توانند تجربه و تجهیزاتشان را توسعه دهند، نیروی متخصص تربیت کنند و به بازارهای دیگر هم وارد شوند. درباره‌ی همین راکتور، تعداد کارکنان و شمار شغل‌های مستقیم و غیرمستقیم اعلام نشده و هر عددی در این مرحله حدس است.</p>
+
+<h3><span class="check-number">۰۶.</span> ساختش چقدر طول کشیده و الان کجاست؟</h3>
+<p>طبق یک گزارش صنعتی، ساخت حدود ۱۴ ماه طول کشیده است. گزارش‌های مهر ۱۴۰۵ می‌گویند تجهیز برای انتقال و نصب آماده است؛ ما هنوز تأیید مستقلی از حمل، نصب، آزمایش نهایی یا شروع بهره‌برداری پیدا نکرده‌ایم. در یک پست قدیمی‌تر منتسب به سازنده هم به راکتوری با مشخصات بسیار مشابه برای آریاساسول اشاره شده؛ هنوز روشن نیست هر دو درباره‌ی همین دستگاه‌اند یا نه، و به همین دلیل خبر را با تاریخ انتشار گزارش‌ها معرفی می‌کنیم.</p>
+
+<h3><span class="check-number">۰۷.</span> چه کسانی پشت این خبرند؟</h3>
+<ul>
+<li><strong><a href="fateh-sanat.en.html">فاتح صنعت</a> (سازنده):</strong> شرکتی در شیراز که مبدل حرارتی، کولر هوایی، مخزن تحت فشار، برج، بویلر و راکتور برای نفت، گاز و پتروشیمی می‌سازد؛ طبق یک فهرست تجاری از ۱۳۶۳ فعال است و هدف اعلام‌شده‌اش بومی‌سازی ساخت تجهیزات است.</li>
+<li><strong><a href="aryasasol.en.html">پلیمر آریاساسول</a> (کارفرمای گزارش‌شده):</strong> مجتمعی در عسلویه با ۱٫۱ میلیون تن ظرفیت اتیلن و ۷۵۰ هزار تن پلی‌اتیلن که ۱۳۸۱ با مشارکت ساسول آفریقای جنوبی شکل گرفت و از ۱۳۹۲ کاملاً ایرانی اداره می‌شود.</li>
+</ul>
+<p>پرونده‌ی هر دو شرکت با منبع هر عدد در <a href="companies.en.html">بخش شرکت‌های ایرانی</a> دیتومان آمده است.</p>
+
+<h3><span class="check-number">۰۸.</span> نگاه دیتومان</h3>
+<p>اهمیت این داستان فقط در وزن و اندازه‌ی یک سازه نیست. پشت آن پرسش بزرگ‌تری هست: <strong>آیا ایران می‌تواند سهم بیشتری از ارزش صنعت را با طراحی، ساخت، تعمیر و صادرات تجهیزات به دست بیاورد؟</strong> از فروش مواد اولیه تا ساخت تجهیزاتی که مواد اولیه را به محصول تبدیل می‌کنند، فاصله‌ای هست که با مهارت، سرمایه‌گذاری، استانداردهای معتبر، سفارش پایدار و دسترسی به بازار طی می‌شود.</p>
+<p>این پروژه نمونه‌ای از ظرفیت مهندسی ایران است؛ و برای سنجیدن موفقیتش باید عملکرد واقعی، کیفیت، هزینه و توان رقابتش را هم دید. ما این پرونده را با هم دنبال می‌کنیم و هر خبر تازه‌ی حمل، نصب و راه‌اندازی را اینجا اضافه می‌کنیم.</p>
+<p>💬 اگر ایران در ساخت تجهیزات پیشرفته‌ی صنعتی جایگاه محکم‌تری پیدا کند، مهم‌ترین فرصتش چه خواهد بود: اشتغال، صادرات، انتقال دانش یا کاهش وابستگی؟</p>
+
+<h3>منابع</h3>
+<ul class="sources">
+<li>Press TV: Iranian engineers build 500-ton polymerization reactor for Asaluyeh (نوامبر ۲۰۲۶) • presstv.co.uk</li>
+<li>خبرگزاری صداوسیما: ساخت راکتور بزرگ پتروشیمی در فارس (مهر ۱۴۰۵) • irib-news.ir</li>
+<li>نفت ما: بزرگترین رآکتور پتروشیمی کشور در شیراز ساخته شد • naftema.com</li>
+<li>میز انرژی: گزارش پروژه‌های گروه سازنده (به نقل پژوهش اولیه؛ متن را خودمان ندیدیم)</li>
+<li>Wikipedia: Arya Sasol Polymer Company؛ Financial Tribune (۲۰۲۳)؛ Plasteurope (۲۰۱۳)</li>
+<li>IranYell و وب‌سایت فاتح صنعت (fatehsanat.com)</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">تصویر کاور: تصویرسازی با هوش مصنوعی، نه عکس واقعی راکتور. آخرین بازبینی: ۱۷ آبان ۱۴۰۵</p>
+</div>
+
+<div class="lesson-content en" id="en-content" style="display:none">
+<p>Picture a steel structure about as long as a 13-storey building is tall, weighing around 500 tonnes, built to work at the heart of a petrochemical plant.</p>
+<p>Reports published in October 2026 say Iranian specialists completed such a reactor at the <a href="fateh-sanat.en.html">Fateh Sanat</a> workshop in Shiraz, ready to be moved to and installed in Asaluyeh. It is about <strong>40 m long and 9 m across</strong>, took about <strong>14 months</strong> to build per an industry report, and needed steel plate up to about <strong>310 mm</strong> thick. Some reports name <a href="aryasasol.en.html">Arya Sasol</a> as the client; the official report does not name it.</p>
+<p>Mehdi Ghotbi, head of the builder, says it was made entirely by Iranian specialists and that only Japan, Germany and China had the technology before. That is the maker's claim; we found no independent list.</p>
+<h3>Why it matters in daily life</h3>
+<p>It is a polymerization reactor: raw materials become polymers inside it under tightly controlled temperature and pressure. Polymers go into water pipes, food packaging, car parts, cable insulation and some medical devices. The polymer type, pressure and capacity of this reactor have not been disclosed.</p>
+<h3>Value in foreign currency</h3>
+<p>Three routes: fewer imports (the maker says foreign quotes were about four times the domestic cost; we cannot see the contracts), exports of equipment and services (one report says the group has worked in Oman, Azerbaijan and Turkey; unverified), and exports of the plant's products (Arya Sasol exported over 70% of output in 2023). We cannot yet size this reactor's share.</p>
+<h3>Who else builds them</h3>
+<p>Germany (thyssenkrupp Uhde), Japan (UBE Machinery, Japan Steel Works) and China, among others. Reactors differ widely in size, pressure, materials and process, so a fair comparison needs full specifications.</p>
+<h3>Self-reliance and jobs</h3>
+<p>A reactor is one key part of a polymer unit, which also needs process licences, catalysts, compressors, special valves, instruments and control systems. The work behind it spans design, heavy plate rolling, specialist welding, inspection and testing, parts making and super-heavy transport. Headcount and local content have not been disclosed.</p>
+<h3>Status</h3>
+<p>Reported as ready for transport and installation. We have not confirmed shipping, installation, testing or start-up. An older post attributed to the maker mentions a very similar reactor for Arya Sasol; it is unclear whether both refer to the same unit.</p>
+<h3>Ditoman's reading</h3>
+<p>The bigger question is whether Iran can capture more of industry's value by designing, building, servicing and exporting equipment. This project shows real engineering capacity; its success should also be judged on performance, quality, cost and competitiveness. We will follow it together and add news of its shipping, installation and start-up.</p>
+<h3>Sources</h3>
+<ul class="sources">
+<li>Press TV: Iranian engineers build 500-ton polymerization reactor for Asaluyeh (November 2026) • presstv.co.uk</li>
+<li>IRIB News: large petrochemical reactor built in Fars (October 2026) • irib-news.ir</li>
+<li>Naft-e Ma: the country's largest petrochemical reactor built in Shiraz • naftema.com</li>
+<li>Miz-e Energy: report on the maker group's projects (cited in preliminary research; we did not see the text ourselves)</li>
+<li>Wikipedia: Arya Sasol Polymer Company; Financial Tribune (2023); Plasteurope (2013)</li>
+<li>IranYell and the Fateh Sanat website (fatehsanat.com)</li>
+</ul>
+<p style="color:#9fb6b9;margin-top:10px">Cover: AI-generated illustration, not a photo of the actual reactor. Last reviewed 8 November 2026.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

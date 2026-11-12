@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Why United Banned AI Agents from Booking Flights | Ditoman</title>
+<meta name="description" content="It is not only about security: the bigger question is who will own the customer, and what opportunity that" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/ai-tickets.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/ai-tickets.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/ai-tickets.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/ai-tickets.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Why United Banned AI Agents from Booking Flights | Ditoman" />
+<meta property="og:description" content="It is not only about security: the bigger question is who will own the customer, and what opportunity that" />
+<meta property="og:url" content="https://ditoman.com/ai-tickets.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/ai-tickets.en.html#page",
+   "url": "https://ditoman.com/ai-tickets.en.html",
+   "name": "Why United Banned AI Agents from Booking Flights | Ditoman",
+   "description": "It is not only about security: the bigger question is who will own the customer, and what opportunity that",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Why United Banned AI Agents from Booking Flights",
+     "item": "https://ditoman.com/ai-tickets.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/ai-tickets/card.webp" srcset="social/ai-tickets/card.webp 900w, social/ai-tickets/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Why United banned AI agents from booking flights" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/ai-tickets/en-card.webp" srcset="social/ai-tickets/en-card.webp 900w, social/ai-tickets/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Why United banned AI agents from booking flights" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report</span><span lang="fa">گزارش ویژه</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی پشت درِ فرودگاه ماند؛ چرا یونایتد خرید بلیت با هوش مصنوعی را ممنوع کرد؟</h1>
+<h1 lang="en">AI left at the gate: why United banned AI agents from booking flights</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">ماجرا فقط امنیت نیست؛ سؤال بزرگ‌تر این است که در آینده چه کسی مشتری را در اختیار دارد، و این برای ایران چه فرصتی می‌سازد.</p>
+<p class="subtitle" lang="en">It is not only about security: the bigger question is who will own the customer, and what opportunity that creates.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۱٫۱۶۵ تریلیون $</b><b lang="en">$1.165T</b><span lang="fa">درآمد صنعت هوانوردی ۲۰۲۶</span><span lang="en">airline revenue 2026</span></div>
+<div class="stat"><b lang="fa">۴٫۵ $</b><b lang="en">$4.50</b><span lang="fa">سود خالص هر مسافر</span><span lang="en">net profit per passenger</span></div>
+<div class="stat"><b lang="fa">۵ $</b><b lang="en">$5</b><span lang="fa">هزینه‌ی پرداخت هر مسافر</span><span lang="en">payment cost per passenger</span></div>
+<div class="stat"><b lang="fa">۴ از ۳۲۰ میلیون</b><b lang="en">4 of 320M</b><span lang="fa">سفرهای اوبر با عامل هوش مصنوعی</span><span lang="en">Uber rides booked by AI agents</span></div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<h3><span class="check-number">۰۱.</span> دقیقاً چه اتفاقی افتاد؟</h3>
+<p>یونایتد ایرلاینز، یکی از سه شرکت هواپیمایی بزرگ آمریکا، روز ۱۱ نوامبر ۲۰۲۶ «قرارداد حمل» خود را به‌روز کرد.</p>
+<ul>
+<li><strong>قانون تازه (بند 6.J.6):</strong> استفاده از عامل‌های هوش مصنوعی برای خرید، تغییر یا مدیریت بلیت، و خرید هر خدمت دیگر، ممنوع است.</li>
+</ul>
+<ul>
+<li><strong>دامنه:</strong> هم سایت و اپ یونایتد، هم عامل‌هایی که از طریق آژانس‌ها و واسطه‌ها به یونایتد وصل می‌شوند.</li>
+</ul>
+<ul>
+<li><strong>حتی با نظارت انسان:</strong> طبق متن قرارداد، این‌که یک انسان کار عامل را تأیید کند، استثنا محسوب نمی‌شود.</li>
+</ul>
+<ul>
+<li><strong>حق لغو:</strong> یونایتد حق لغو رزروهایی را که با عامل هوش مصنوعی انجام یا تغییر داده شده‌اند، برای خودش محفوظ داشته (بند 5.H).</li>
+</ul>
+<ul>
+<li><strong>چه چیزی هنوز مجاز است؟</strong></li>
+</ul>
+<p>هوش مصنوعی همچنان می‌تواند پروازها و قیمت‌های یونایتد را پیدا کند و نشان دهد. فقط خرید نهایی باید با خود مسافر باشد.</p>
+<p><strong>عامل هوش مصنوعی چیست؟</strong><br>نسل تازه‌ای از دستیارها که فقط جواب نمی‌دهند، کار انجام می‌دهند. مثلاً می‌گویی: «برای هفته‌ی بعد یک پرواز ارزان از پورتو به نیویورک پیدا کن، با بار مجاز و توقف کوتاه.» عامل چند سایت را می‌گردد، مقایسه می‌کند و اگر دسترسی داشته باشد، حتی پرداخت را هم انجام می‌دهد.</p>
+<h3><span class="check-number">۰۲.</span> چرا یونایتد این تصمیم را گرفت؟</h3>
+<p><strong>دلایل رسمی:</strong></p>
+<ul>
+<li><strong>امنیت اطلاعات:</strong> عامل ممکن است به رمز حساب باشگاه مشتریان (MileagePlus)، اطلاعات پرداخت و سوابق سفر دسترسی پیدا کند.</li>
+</ul>
+<ul>
+<li><strong>خرید ناخواسته:</strong> عامل ممکن است بلیت اشتباه بخرد، رزرو را تغییر دهد یا مایل‌های مسافر را خرج کند.</li>
+</ul>
+<ul>
+<li><strong>قوانین هوانوردی:</strong> طبق مقررات اداره‌ی هوانوردی (FAA) و وزارت حمل‌ونقل آمریکا، بعضی تأییدها، مثل این‌که بار مسافر مواد خطرناک ندارد، باید از طرف خود مسافر باشد.</li>
+</ul>
+<p><strong>دلیل اقتصادی، از زبان خود مدیرعامل:</strong></p>
+<p>اسکات کربی، مدیرعامل یونایتد، در شیکاگو صریح گفت:</p>
+<blockquote>«راستش را بخواهید، نمی‌خواهم یک واسطه‌ی دیگر بسازم.»</blockquote>
+<p>یعنی موضوع فقط امنیت نیست؛ رقابت بر سر <strong>رابطه‌ی مستقیم با مشتری</strong> است.</p>
+<p><strong>نقد منتقدان:</strong><br>بعضی کارشناسان صنعت، از جمله وبلاگ معتبر View from the Wing، می‌گویند استدلال ایمنی ضعیف است: قانون مواد خطرناک لازم نمی‌داند همه‌ی مراحل رزرو دستی انجام شود. آن‌ها حدس می‌زنند انگیزه‌های دیگری هم در کار است: قدرت چانه‌زنی سر کمیسیون، هزینه‌ی جست‌وجوهای انبوه و این‌که ممنوع کردن، تا وقتی رزروهای عامل‌ها هنوز کم است، ارزان‌تر است.</p>
+<h3><span class="check-number">۰۳.</span> چقدر پول در این بازار جابه‌جا می‌شود؟</h3>
+<ul>
+<li><strong>درآمد کل صنعت هوانوردی ۲۰۲۶:</strong> ۱٬۱۶۵ میلیارد دلار (پیش‌بینی یاتا، ژوئن ۲۰۲۶)</li>
+</ul>
+<ul>
+<li><strong>سود خالص صنعت ۲۰۲۶:</strong> ۲۳ میلیارد دلار؛ حاشیه‌ی سود فقط ۲٪</li>
+</ul>
+<ul>
+<li><strong>سود خالص هر مسافر:</strong> ۴٫۵ دلار</li>
+</ul>
+<ul>
+<li><strong>هزینه‌ی پردازش پرداخت‌ها در ۲۰۲۵:</strong> ۲۴٫۵ میلیارد دلار روی ۱٬۰۵۰ میلیارد دلار فروش؛ یعنی حدود <strong>۵ دلار برای هر مسافر</strong></li>
+</ul>
+<p><strong>نکته‌ی جالب:</strong><br>هزینه‌ی پرداخت هر مسافر (۵ دلار در ۲۰۲۵) از سود پیش‌بینی‌شده‌ی هر مسافر (۴٫۵ دلار در ۲۰۲۶) بیشتر است. این دو عدد مربوط به دو سال متفاوت‌اند، اما نشان می‌دهند چرا هر هزینه‌ی کوچک در زنجیره‌ی فروش بلیت برای ایرلاین‌ها مهم است و چرا هیچ‌کدام دلشان یک واسطه‌ی تازه نمی‌خواهد.</p>
+<h3><span class="check-number">۰۴.</span> کمیسیون‌ها: چه کسی پول می‌گیرد؟</h3>
+<ul>
+<li><strong>کارمزد کارت بانکی:</strong> به‌طور میانگین ۲٫۵۳٪ مبلغ بلیت؛ میانگین همه‌ی روش‌های پرداخت ۱٫۹۷٪</li>
+</ul>
+<ul>
+<li><strong>ارزان‌ترین روش‌ها:</strong> بعضی پرداخت‌های لحظه‌ای فقط ۰٫۰۱٪ هزینه دارند</li>
+</ul>
+<ul>
+<li><strong>کمیسیون عامل هوش مصنوعی:</strong> هنوز نرخ عمومی و تأییدشده‌ای وجود ندارد</li>
+</ul>
+<p><strong>یک مثال ساده:</strong><br>روی یک بلیت ۵۰۰ دلاری، کارمزد کارت با نرخ میانگین حدود ۱۲٫۶ دلار می‌شود. اگر یک واسطه‌ی تازه هم سهمی بخواهد، از سودی که فقط ۴٫۵ دلار است، چیزی باقی نمی‌ماند.</p>
+<p><strong>یادمان باشد:</strong><br>هیچ سند عمومی نشان نمی‌دهد یونایتد تا امروز پول قابل توجهی بابت عامل‌های هوش مصنوعی پرداخته است. این تصمیم بیشتر پیشگیرانه است تا واکنشی.</p>
+<h3><span class="check-number">۰۵.</span> واقعیت امروز: این بازار هنوز کوچک است</h3>
+<ul>
+<li>خود یونایتد می‌گوید حجم رزروهای عامل‌های هوش مصنوعی فعلاً <strong>ناچیز</strong> است.</li>
+</ul>
+<ul>
+<li>اوبر اعلام کرد در هفته‌ی هالووین، از حدود <strong>۳۲۰ میلیون</strong> سفر و سفارش، عامل‌های هوش مصنوعی فقط <strong>۴ سفر</strong> و <strong>۵۰۰ سفارش غذا</strong> ثبت کردند.</li>
+</ul>
+<p>یعنی جنگ امروز بر سر بازار امروز نیست؛ بر سر <strong>قواعد بازار فرداست.</strong> یونایتد می‌خواهد پیش از آن‌که عامل‌ها قدرتمند شوند، مرزها را مشخص کند.</p>
+<h3><span class="check-number">۰۶.</span> همه یک راه را نمی‌روند</h3>
+<ul>
+<li><strong>یونایتد:</strong> ممنوعیت خرید با عامل‌های شخصی</li>
+</ul>
+<ul>
+<li><strong>دلتا:</strong> طبق گزارش‌ها، خرید با دستیارهای احرازهویت‌شده را با محافظ‌های اضافه (مثلاً برای سفر کودکان بدون همراه) مجاز می‌داند</li>
+</ul>
+<ul>
+<li><strong>امریکن ایرلاینز:</strong> اجازه‌ی خرید از طریق بعضی شرکای مشخص</li>
+</ul>
+<ul>
+<li><strong>ساوت‌وست:</strong> افزونه‌ی ChatGPT برای جست‌وجوی گفت‌وگومحور پرواز</li>
+</ul>
+<ul>
+<li><strong>چاینا ایسترن (چین):</strong> در آوریل ۲۰۲۶ اولین شریک خارجی اپ Qwen علی‌بابا شد؛ جست‌وجو تا خرید و خدمات سفر در یک گفت‌وگو</li>
+</ul>
+<ul>
+<li><strong>بیرون از هوانوردی:</strong> آمازون در نوامبر ۲۰۲۵ از Perplexity به خاطر خرید عامل مرورگرش در آمازون شکایت کرد و حکم موقت توقف آن را گرفت</li>
+</ul>
+<p><strong>نتیجه:</strong><br>دو مدل در حال شکل‌گیری است. <strong>مدل دیوار</strong>: فقط انسان می‌خرد. <strong>مدل درِ کنترل‌شده</strong>: عامل با مجوز، احراز هویت و محدودیت می‌خرد. هنوز معلوم نیست کدام برنده می‌شود.</p>
+<h3><span class="check-number">۰۷.</span> دو نگاه به یک تصمیم</h3>
+<p><strong>نگاه موافق:</strong><br>امنیت مسافر، جلوگیری از خرید اشتباه، مسئولیت روشن و حفظ رابطه‌ی مستقیم با مشتری. وقتی سود هر مسافر ۴٫۵ دلار است، هر واسطه‌ی تازه می‌تواند کل سود را ببلعد.</p>
+<p><strong>نگاه مخالف:</strong><br>مسافر حق دارد با هر ابزاری که می‌خواهد خرید کند. ممنوعیت، نوآوری را کند می‌کند و ممکن است در نهایت به ضرر خود ایرلاین تمام شود؛ اگر رقبایی مثل دلتا راحت‌تر با عامل‌ها کار کنند، مشتری به سمت آن‌ها می‌رود. اجرای فنی این ممنوعیت هم ساده نیست.</p>
+<h3><span class="check-number">۰۸.</span> این خبر برای ایران چه معنایی دارد؟</h3>
+<p><strong>تأثیر مستقیم:</strong><br>تقریباً هیچ. ایرلاین‌های ایرانی به دلیل تحریم‌ها به سیستم‌های توزیع جهانی و اکوسیستم پرداخت بین‌المللی وصل نیستند.</p>
+<p><strong>اما سه فرصت و یک چالش:</strong></p>
+<ul>
+<li><strong>فرصت برای مسافران:</strong> دستیارهای هوشمند می‌توانند قیمت، قوانین استرداد، بار مجاز و مسیرها را از چند سایت یک‌جا مقایسه کنند.</li>
+</ul>
+<ul>
+<li><strong>فرصت برای شرکت‌های فناوری ایرانی:</strong> ساخت دستیارهای هوشمند <strong>فارسی‌زبان</strong> که با مجوز فروشندگان به اطلاعات معتبر و به‌روز وصل شوند. بازاری که غول‌های جهانی به آن نمی‌رسند.</li>
+</ul>
+<ul>
+<li><strong>فرصت برای پلتفرم‌های سفر داخلی:</strong> به‌جای مقاومت، می‌توانند زودتر از رقبا یک «درِ رسمی» (API) برای عامل‌های هوشمند باز کنند و قواعد بازی را خودشان بنویسند.</li>
+</ul>
+<ul>
+<li><strong>چالش برای آژانس‌ها:</strong> اگر مشتری همه‌ی انتخاب‌هایش را از طریق هوش مصنوعی انجام دهد، هزینه‌ی جذب مشتری، مدل کمیسیون و اهمیت برند آژانس تغییر می‌کند.</li>
+</ul>
+<p>این‌ها سناریوهای تحلیلی‌اند، نه تغییراتی که در بازار ایران رخ داده باشد.</p>
+<h3><span class="check-number">۰۹.</span> چه باید کرد؟</h3>
+<p><strong>برای شرکت‌ها و پلتفرم‌ها:</strong></p>
+<ul>
+<li><strong>اتصال رسمی (API):</strong> عامل فقط از مسیر تأییدشده به قیمت و ظرفیت دسترسی داشته باشد.</li>
+</ul>
+<ul>
+<li><strong>مجوز محدود:</strong> عامل بتواند جست‌وجو کند، اما بدون تأیید جداگانه‌ی کاربر پولی پرداخت نکند.</li>
+</ul>
+<ul>
+<li><strong>سقف تراکنش:</strong> مبلغ، تعداد و نوع عملیات از قبل محدود باشد.</li>
+</ul>
+<ul>
+<li><strong>ثبت همه‌چیز:</strong> هر جست‌وجو، تغییر و خرید قابل پیگیری باشد.</li>
+</ul>
+<p><strong>برای خود ما به‌عنوان کاربر:</strong></p>
+<ul>
+<li>رمز اصلی حساب‌ها و اطلاعات کامل کارت را به ابزارهای ناشناس نده.</li>
+</ul>
+<ul>
+<li>هوش مصنوعی را برای <strong>جست‌وجو و مقایسه</strong> به کار بگیر، اما <strong>تصمیم و پرداخت نهایی</strong> را خودت انجام بده.</li>
+</ul>
+<ul>
+<li>جزئیات بلیت را پیش از پرداخت خودت چک کن.</li>
+</ul>
+<h3>نگاه دیتومان</h3>
+<p>تصمیم یونایتد پایان هوش مصنوعی در سفر نیست؛ شروع مرحله‌ی تازه‌ای است که در آن قواعد رابطه‌ی مسافر، فروشنده و عامل هوشمند نوشته می‌شود.</p>
+<p>احتمالاً آینده چیزی بین این دو مدل خواهد بود: هوش مصنوعی بهترین گزینه را پیدا می‌کند، و انسان، با یک کلیک آگاهانه، خرید را تأیید می‌کند.</p>
+<p>و برای ما، فرصت اصلی همین‌جاست: ساختن ابزارهای قابل اعتماد فارسی‌زبان که به‌جای دور زدن سیستم‌ها، با آن‌ها همکاری کنند.</p>
+<p><strong>سؤال مهم‌تر:</strong><br>وقتی هوش مصنوعی به نمایندگی از ما خرید می‌کند، اگر اشتباه کند، چه کسی مسئول است؟</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="europe-welfare.en.html">اروپا به رفاه گران‌قیمت عادت کرده؛ چه کسی هزینه‌اش را می‌پردازد؟</a></li><li><a href="ai-integrators.en.html">صنعت تازه: ساختن هوش مصنوعی برای کسب‌وکارها</a></li><li><a href="not-your-fault.en.html">تو عقب نیفتاده‌ای؛ زمین مسابقه جلوتر دویده</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://viewfromthewing.com/united-airlines-ceo-scott-kirby-bans-ai-agents-from-booking-tickets-doesnt-want-another-middleman/" target="_blank" rel="noopener">View from the Wing</a></li><li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/united-airlines-blocks-ai-bots-from-booking-flights/" target="_blank" rel="noopener">PYMNTS</a></li><li><a href="https://investinglive.com/stocks/united-airlines-bans-ai-agents-from-booking-flights-3-reasons-it-matters-beyond-travel/" target="_blank" rel="noopener">investingLive</a></li><li><a href="https://nairametrics.com/2026/10/27/iata-payment-costs-swallow-24-5-billion-from-airlines-squeezing-profits/" target="_blank" rel="noopener">IATA payments</a></li><li><a href="https://australianaviation.com.au/2026/06/iran-war-cuts-projected-global-airline-profits-in-half/" target="_blank" rel="noopener">IATA outlook</a></li><li><a href="https://www.alibabagroup.com/en-US/document-1985779771614691328" target="_blank" rel="noopener">Alibaba</a></li><li><a href="https://www.bloomberg.com/news/articles/2026-04-23/alibaba-adds-china-eastern-flight-booking-to-flagship-qwen-app" target="_blank" rel="noopener">Bloomberg</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۲۲ آبان ۱۴۰۵. دیتومان یک رسانه‌ی آموزشی است و این گزارش توصیه‌ی سرمایه‌گذاری نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<h3><span class="check-number">1.</span> What exactly happened?</h3>
+<p>On 11 November 2026 United Airlines, one of America's three largest carriers, updated its contract of carriage.</p>
+<ul>
+<li><strong>The new rule (6.J.6):</strong> Using AI agents to make, modify or service a ticket, or to buy any service or product, is prohibited.</li>
+</ul>
+<ul>
+<li><strong>Scope:</strong> United's website and app, and agents reaching United through travel agencies or other intermediaries.</li>
+</ul>
+<ul>
+<li><strong>Even with human oversight:</strong> Under the contract, a human supervising or approving the agent does not create an exception.</li>
+</ul>
+<ul>
+<li><strong>Right to cancel:</strong> United reserves the right to cancel reservations made or modified by AI agents (rule 5.H).</li>
+</ul>
+<ul>
+<li><strong>What is still allowed?</strong></li>
+</ul>
+<p>AI can still find and display United's flights and prices. Only the final purchase must be made by the passenger.</p>
+<p><strong>What is an AI agent?</strong><br>A new kind of assistant that does not just answer but acts. Ask it for a cheap flight from Porto to New York next week with bags included and a short layover, and it searches several sites, compares, and with access, even pays.</p>
+<h3><span class="check-number">2.</span> Why did United do it?</h3>
+<p><strong>Official reasons:</strong></p>
+<ul>
+<li><strong>Data security:</strong> an agent may gain access to MileagePlus passwords, payment details and travel history.</li>
+</ul>
+<ul>
+<li><strong>Unintended purchases:</strong> an agent might buy the wrong ticket, change a booking or spend miles.</li>
+</ul>
+<ul>
+<li><strong>Aviation rules:</strong> under FAA and Department of Transportation rules, some confirmations, such as that bags contain no hazardous materials, must come from the passenger.</li>
+</ul>
+<p><strong>The economic reason, from the CEO himself:</strong></p>
+<blockquote>"To be honest, I don't want to create another middleman." Scott Kirby, United CEO</blockquote>
+<p><strong>The critics:</strong><br>Industry commentators such as View from the Wing argue the safety case is weak, since the hazmat rule does not require every booking step to be manual, and suggest other motives: bargaining power over fees, the cost of heavy search traffic, and the fact that a ban is cheapest while agent bookings are still rare.</p>
+<h3><span class="check-number">3.</span> How much money is at stake?</h3>
+<ul>
+<li><strong>Airline industry revenue 2026:</strong> $1,165 billion (IATA forecast, June 2026)</li>
+</ul>
+<ul>
+<li><strong>Industry net profit 2026:</strong> $23 billion, a margin of just 2%</li>
+</ul>
+<ul>
+<li><strong>Net profit per passenger:</strong> $4.50</li>
+</ul>
+<ul>
+<li><strong>Payment processing cost in 2025:</strong> $24.5 billion on $1,050 billion of sales, about $5 per passenger</li>
+</ul>
+<p><strong>The striking point:</strong><br>the payment cost per passenger ($5 in 2025) exceeds the forecast profit per passenger ($4.50 in 2026). Different years, but it shows why every small cost in ticket sales matters, and why no airline wants a new middleman.</p>
+<h3><span class="check-number">4.</span> Fees: who gets paid?</h3>
+<ul>
+<li><strong>Card fees:</strong> 2.53% of the ticket on average; 1.97% across all payment methods</li>
+</ul>
+<ul>
+<li><strong>Cheapest methods:</strong> some instant payments cost just 0.01%</li>
+</ul>
+<ul>
+<li><strong>AI agent commission:</strong> no public, verified rate exists yet</li>
+</ul>
+<p>On a $500 ticket, the average card fee is about $12.60. If a new intermediary also takes a cut, little is left of a $4.50 profit. No public document shows United has paid meaningful sums to AI agents so far; the move is pre-emptive.</p>
+<h3><span class="check-number">5.</span> Today's reality: the market is still tiny</h3>
+<ul>
+<li>United itself says AI-agent booking volume is currently minimal.</li>
+</ul>
+<ul>
+<li>Uber said that in Halloween week, out of about 320 million trips and orders, AI agents placed just 4 rides and 500 food orders.</li>
+</ul>
+<p>So this fight is not about today's money; it is about <strong>tomorrow's rules.</strong></p>
+<h3><span class="check-number">6.</span> Not everyone takes the same road</h3>
+<ul>
+<li><strong>United:</strong> bans purchases by personal agents</li>
+</ul>
+<ul>
+<li><strong>Delta:</strong> reportedly lets authenticated assistants book, with extra safeguards (for example for unaccompanied minors)</li>
+</ul>
+<ul>
+<li><strong>American:</strong> allows purchases through certain partners</li>
+</ul>
+<ul>
+<li><strong>Southwest:</strong> a ChatGPT plugin for conversational flight search</li>
+</ul>
+<ul>
+<li><strong>China Eastern:</strong> in April 2026 became the first external partner of Alibaba's Qwen app, from search to purchase in one conversation</li>
+</ul>
+<ul>
+<li><strong>Beyond airlines:</strong> Amazon sued Perplexity in November 2025 over its shopping agent and won a temporary order blocking it</li>
+</ul>
+<p>Two models are emerging: <strong>the wall</strong> (only humans buy) and <strong>the controlled door</strong> (agents buy with permission, authentication and limits).</p>
+<h3><span class="check-number">7.</span> Two views of one decision</h3>
+<p><strong>For:</strong> passenger security, fewer wrong purchases, clear responsibility and a direct customer relationship. With $4.50 profit per passenger, a new middleman could swallow it all.</p>
+<p><strong>Against:</strong> passengers should be free to buy with any tool. A ban slows innovation and may backfire if rivals like Delta work more easily with agents. Technical enforcement is also hard.</p>
+<h3><span class="check-number">8.</span> What does it mean for Iran?</h3>
+<p><strong>Direct impact:</strong> almost none. Iranian airlines are not connected to global distribution systems or international payments because of sanctions.</p>
+<ul>
+<li><strong>For travellers:</strong> smart assistants can compare prices, refund rules, baggage and routes across several sites at once.</li>
+</ul>
+<ul>
+<li><strong>For Iranian tech firms:</strong> building <strong>Persian-language</strong> assistants that connect, with sellers' permission, to reliable and up-to-date data, a market global giants do not reach.</li>
+</ul>
+<ul>
+<li><strong>For local travel platforms:</strong> open an official "door" (API) for agents before rivals do, and write the rules themselves.</li>
+</ul>
+<ul>
+<li><strong>Challenge for agencies:</strong> if customers make every choice through AI, acquisition costs, commission models and brand value change.</li>
+</ul>
+<p>These are analytical scenarios, not changes observed in Iran's market.</p>
+<h3><span class="check-number">9.</span> What should be done?</h3>
+<ul>
+<li><strong>Official APIs:</strong> agents access prices and seats only through approved channels.</li>
+</ul>
+<ul>
+<li><strong>Limited permissions:</strong> agents can search but not pay without separate user approval.</li>
+</ul>
+<ul>
+<li><strong>Transaction caps:</strong> amounts, counts and actions limited in advance.</li>
+</ul>
+<ul>
+<li><strong>Full logging:</strong> every search, change and purchase traceable.</li>
+</ul>
+<ul>
+<li><strong>For users:</strong> never give your main passwords or full card details to unknown tools; let AI search and compare, but make the final decision and payment yourself.</li>
+</ul>
+<h3>Ditoman's reading</h3>
+<p>United's decision is not the end of AI in travel; it is the start of a phase in which the rules between traveller, seller and smart agent are written. The future will likely sit between the two models: AI finds the best option, and a human confirms with one informed click. For us, the real opportunity is building trustworthy Persian-language tools that work with systems instead of around them.</p>
+<p><strong>The bigger question:</strong><br>when AI buys on our behalf and gets it wrong, who is responsible?</p>
+<h3>Read more</h3><ul><li><a href="europe-welfare.en.html">Europe's costly welfare: who pays the bill?</a></li><li><a href="ai-integrators.en.html">The new industry: building AI into business</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://viewfromthewing.com/united-airlines-ceo-scott-kirby-bans-ai-agents-from-booking-tickets-doesnt-want-another-middleman/" target="_blank" rel="noopener">View from the Wing</a></li><li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/united-airlines-blocks-ai-bots-from-booking-flights/" target="_blank" rel="noopener">PYMNTS</a></li><li><a href="https://investinglive.com/stocks/united-airlines-bans-ai-agents-from-booking-flights-3-reasons-it-matters-beyond-travel/" target="_blank" rel="noopener">investingLive</a></li><li><a href="https://nairametrics.com/2026/10/27/iata-payment-costs-swallow-24-5-billion-from-airlines-squeezing-profits/" target="_blank" rel="noopener">IATA payments</a></li><li><a href="https://australianaviation.com.au/2026/06/iran-war-cuts-projected-global-airline-profits-in-half/" target="_blank" rel="noopener">IATA outlook</a></li><li><a href="https://www.alibabagroup.com/en-US/document-1985779771614691328" target="_blank" rel="noopener">Alibaba</a></li><li><a href="https://www.bloomberg.com/news/articles/2026-04-23/alibaba-adds-china-eastern-flight-booking-to-flagship-qwen-app" target="_blank" rel="noopener">Bloomberg</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 12 November 2026. Ditoman is an educational media project; this report is not investment advice.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

@@ -173,7 +173,8 @@
       var sub = en ? e.f : e.t;
       var cat = en ? e.ce : e.c;
       var light = e.c === "چراغ روشن" ? " is-light" : "";
-      h += '<li><a href="' + esc(e.u) + '">' +
+      var href = en ? (e.u === "./" ? "index.en.html" : e.u.replace(/\.html$/, ".en.html")) : e.u;
+      h += '<li><a href="' + esc(href) + '">' +
         ((en && e.ie) || e.i ? '<img src="' + esc((en && e.ie) || e.i) + '" alt="" loading="lazy" width="56" height="56" />' : '<span class="sx-noimg"></span>') +
         '<span class="sx-txt"><span class="sx-cat' + light + '">' + esc(cat) + "</span>" +
         '<b class="sx-title">' + esc(title) + "</b>" +

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Hangang: Korea's New Supercomputer | Ditoman</title>
+<meta name="description" content="Hangang, Korea&#x27;s sixth national supercomputer: what it can do, who gets to use it, which skills it feeds, and what we can take from" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261112g" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/hangang.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/hangang.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/hangang.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/hangang.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Hangang: Korea&#x27;s New Supercomputer | Ditoman" />
+<meta property="og:description" content="Hangang, Korea&#x27;s sixth national supercomputer: what it can do, who gets to use it, which skills it feeds, and what we can take from" />
+<meta property="og:url" content="https://ditoman.com/hangang.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/hangang.en.html#page",
+   "url": "https://ditoman.com/hangang.en.html",
+   "name": "Hangang: Korea's New Supercomputer | Ditoman",
+   "description": "Hangang, Korea's sixth national supercomputer: what it can do, who gets to use it, which skills it feeds, and what we can take from",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Hangang: Korea's New Supercomputer",
+     "item": "https://ditoman.com/hangang.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="social/hangang/card.webp" srcset="social/hangang/card.webp 900w, social/hangang/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Hangang supercomputer, illustrative card" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/hangang/en-card.webp" srcset="social/hangang/en-card.webp 900w, social/hangang/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Hangang supercomputer, illustrative card" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge"><span lang="en">AI &amp; Infrastructure</span><span lang="fa">هوش مصنوعی و زیرساخت</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">ابررایانه هانگانگ: کره جنوبی فقط یک کامپیوتر نساخت</h1>
+<h1 lang="en">Hangang supercomputer: South Korea built more than a computer</h1>
+<p class="subtitle" lang="en">Hangang, Korea's sixth national supercomputer: what it can do, who gets to use it, which skills it feeds, and what we can take from it.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">هانگانگ، ششمین ابررایانه‌ی ملی کره جنوبی: چه کارهایی از آن برمی‌آید، چه کسانی می‌توانند از آن استفاده کنند، چه مهارت‌هایی را پرورش می‌دهد و ما چه درسی می‌توانیم از آن بگیریم.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۶۱۴ PF</b><b lang="en">614 PF</b><span lang="fa">توان نظری؛ ۲۴ برابر نسل قبل</span><span lang="en">Theoretical peak, 24× Nurion</span></div>
+<div class="stat"><b lang="fa">۸٬۴۹۶</b><b lang="en">8,496</b><span lang="fa">پردازنده گرافیکی</span><span lang="en">GPUs, including Nvidia GH200</span></div>
+<div class="stat"><b lang="fa">۱۵٪</b><b lang="en">15%</b><span lang="fa">سهم شرکت‌های کوچک و متوسط</span><span lang="en">Share for small and mid-sized firms</span></div>
+<div class="stat"><b lang="fa">۲۷۶ M$</b><b lang="en">$276M</b><span lang="fa">هزینه؛ ۳۸۲٫۵ میلیارد وون</span><span lang="en">Cost, 382.5 billion won</span></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('fa')">فارسی</button>
+<button class="lang-button" onclick="showLanguage('en')">English</button>
+</div>
+
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<p>اگر همه‌ی ۸ میلیارد آدم روی زمین ثانیه‌ای یک محاسبه انجام دهند، حدود ۲٫۴ سال طول می‌کشد تا به کاری برسند که این دستگاه روی کاغذ در یک ثانیه انجام می‌دهد. این دستگاه «هانگانگ» است؛ ابررایانه‌ای که کره جنوبی ۲ نوامبر ۲۰۲۶ در مؤسسه KISTI در شهر دائجون رونمایی کرد. با هم ببینیم پشت این عدد چه خبر است.</p>
+
+<h3><span class="check-number">۰۱.</span> چه اتفاقی افتاد؟</h3>
+<p>هانگانگ ششمین ابررایانه ملی کره است و جای «نوریون» را می‌گیرد که از ۲۰۱۸ کار می‌کرد. مرحله آزمایشی با ۱۸۹ پروژه از ۶۴ مؤسسه در جریان است و خدمات رسمی نیمه دسامبر شروع می‌شود. منابع تاریخ را ۱۴ یا ۱۶ دسامبر نوشته‌اند.</p>
+<ul>
+<li><strong>پردازنده:</strong> ۸٬۴۹۶ پردازنده گرافیکی، از جمله Nvidia GH200، و ۹٬۹۳۶ پردازنده مرکزی</li>
+<li><strong>توان نظری:</strong> ۶۱۴ پتافلاپس؛ ۲۴ برابر نوریون</li>
+<li><strong>ذخیره‌سازی و شبکه:</strong> ۲۰۵ پتابایت (۱۰ برابر) و شبکه ۴۰۰ گیگابیت بر ثانیه (۴ برابر)</li>
+<li><strong>سازنده و هزینه:</strong> Hewlett Packard Enterprise؛ قرارداد ۳۸۲٫۵ میلیارد وون، حدود ۲۷۶ میلیون دلار</li>
+</ul>
+
+<h3><span class="check-number">۰۲.</span> راهی که ساده نبود</h3>
+<p>این پروژه قرار بود ۲۰۲۴ راه بیفتد. مناقصه چهار بار شکست خورد، چون رونق هوش مصنوعی قیمت GPU را بالا برد. بودجه اولیه ۲۹۲٫۹ میلیارد وون بود و سقف آن به ۴۴۸٫۲ میلیارد رسید؛ افزایشی حدود ۵۳٪. قرارداد نهایی می ۲۰۲۵ با مبلغ ۳۸۲٫۵ میلیارد وون بسته شد. درس این بخش روشن است: مسابقه هوش مصنوعی فقط بین شرکت‌ها نیست و هزینه پروژه‌های ملی را هم عوض می‌کند.</p>
+
+<h3><span class="check-number">۰۳.</span> این قدرت به چه کسی می‌رسد؟</h3>
+<ul>
+<li><strong>حدود ۵۵٪:</strong> پژوهشگران دانشگاه، مؤسسه‌ها و صنعت؛ از پروژه‌های بزرگ تا یک سطح تازه برای آزمودن ایده‌های اولیه</li>
+<li><strong>حدود ۳۰٪:</strong> پروژه‌های راهبردی ملی مثل K-Moonshot، برنامه‌ای برای استفاده از هوش مصنوعی در ۱۲ مأموریت ملی تا ۲۰۳۵</li>
+<li><strong>حدود ۱۵٪:</strong> شرکت‌های کوچک و متوسط و استارتاپ‌ها، همراه با مشاوره و پشتیبانی فنی KISTI</li>
+</ul>
+<p>نسل قبلی هم بی‌نتیجه نبود: نوریون از ۱٬۷۳۰ پروژه پشتیبانی کرد و ۱٬۵۲۰ مقاله از آن بیرون آمد که ۷۰ تای آن در Nature، Science یا Cell بود.</p>
+
+<h3><span class="check-number">۰۴.</span> چه ظرفیت‌هایی باز می‌شود؟</h3>
+<ul>
+<li><strong>صنعت:</strong> تست تصادف خودرو و طراحی موتور، بدون ساخت نمونه‌های پرهزینه به تعداد زیاد</li>
+<li><strong>انرژی:</strong> توسعه باتری و احتراق موشک</li>
+<li><strong>اقلیم:</strong> پیش‌بینی آب‌وهوا و پژوهش اقلیمی</li>
+<li><strong>هوش مصنوعی در علم:</strong> هدف K-Moonshot دو برابر کردن بهره‌وری پژوهش تا ۲۰۳۰ است</li>
+</ul>
+
+<h3><span class="check-number">۰۵.</span> بازار کار چه می‌شود؟</h3>
+<p>گزارش مستقیمی درباره تعداد شغل‌هایی که هانگانگ می‌سازد ندیدیم. ولی بازار جهانی زیرساخت هوش مصنوعی نشانه‌های روشنی دارد. طبق راهنمای حقوق ۲۰۲۶ شرکت Kelly که درباره آمریکاست:</p>
+<ul>
+<li>۹۰٪ اپراتورهای مرکز داده کمبود نیرو را محدودیت جدی می‌دانند</li>
+<li>کارفرمایان تقاضای بالا برای خنک‌سازی مایع (۹۲٪)، برق ولتاژ متوسط (۸۸٪) و کار با خوشه‌های GPU (۸۴٪) گزارش کرده‌اند</li>
+<li>میانگین حقوق مهندس هوش مصنوعی حدود ۱۷۵ هزار دلار و کارشناس فنی مرکز داده حدود ۱۱۲ هزار دلار برآورد شده است</li>
+</ul>
+<p>این‌ها عددهای آمریکا هستند و برای جاهای دیگر قابل تعمیم نیستند. به برداشت ما، این نوع زیرساخت چند مسیر را پررنگ می‌کند: مهندس سیستم و HPC، برنامه‌نویس موازی، مهندس زیرساخت هوش مصنوعی، متخصص شبیه‌سازی مهندسی، مشاور فنی برای شرکت‌های کوچک، و نیروی برق و خنک‌سازی.</p>
+
+<h3><span class="check-number">۰۶.</span> قدم بعدی: کوانتوم</h3>
+<p>KISTI می‌خواهد نیمه اول ۲۰۲۷ هانگانگ را به کامپیوتر کوانتومی ۱۰۰ کیوبیتی Tempo از شرکت IonQ وصل کند. این اتصال هنوز انجام نشده و کاربرد عملی‌اش باید آزموده شود.</p>
+
+<div class="note">
+<p><strong>سه نکته برای دقت</strong></p>
+<p>۶۱۴ پتافلاپس توان نظری است. رتبه‌بندی TOP500 با عدد اندازه‌گیری‌شده انجام می‌شود. در فهرست ژوئن ۲۰۲۶، نفر دهم (Alps) ۴۳۴٫۹ پتافلاپس اندازه‌گیری‌شده و ۵۷۴٫۸ پتافلاپس نظری داشت.</p>
+<p>«ده ابررایانه برتر» فعلاً پیش‌بینی دولت کره است و فهرست جدید هنوز منتشر نشده است.</p>
+<p>فاصله با جلوداران زیاد است: LineShine چین در ژوئن با ۲٬۱۹۸ پتافلاپس اول بود و Solstice آمریکا قرار است حدود ۱۲ برابر هانگانگ GPU داشته باشد.</p>
+</div>
+
+<h3><span class="check-number">۰۷.</span> نگاه دیتومان</h3>
+<p>از این خبر فقط عدد ۲۴ نماند. کره قدرت پردازش را مثل یک زیرساخت عمومی تقسیم کرده؛ مثل جاده و برق، تا شرکت کوچک و دانشجو هم به آن برسند. سخت‌افزار به‌تنهایی پیشرفت نمی‌آورد؛ ارزش وقتی ساخته می‌شود که این توان به کشف، فناوری و محصول تبدیل شود.</p>
+<p>برای ما هم نقطه امید اینجاست: ایران در ۲۰۲۱ سیمرغ را در دانشگاه امیرکبیر رونمایی کرد؛ حدود ۰٫۵۶ پتافلاپس با حدود ۴٫۵ میلیون دلار بودجه و طراحی مهندسان ایرانی، هرچند بخشی از سخت‌افزار وارداتی بود. آن زمان از نسخه‌ای بسیار قوی‌تر هم حرف زده شد، ولی وضعیت امروزش را از منبع مستقل تأیید نکردیم.</p>
+<p>شاید نتوانیم فردا ۸ هزار GPU بخریم، ولی این مهارت‌ها را می‌شود از همین امروز یاد گرفت:</p>
+<ul>
+<li>لینوکس و Python</li>
+<li>زمان‌بندی کار روی خوشه‌ها با Slurm</li>
+<li>پردازش موازی با MPI و CUDA</li>
+<li>آموزش توزیع‌شده مدل‌ها با PyTorch</li>
+</ul>
+<p>به نظر شما در ده سال آینده، قدرت کشورها بیشتر با منابع طبیعی سنجیده می‌شود یا با توان محاسباتی و دانش فنی؟ با هم دنبال می‌کنیم.</p>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>If all 8 billion people on Earth did one calculation per second, it would take about 2.4 years to match what this machine can do on paper in one second. South Korea unveiled Hangang, its sixth national supercomputer, at KISTI in Daejeon on 2 November 2026.</p>
+<h3><span class="check-number">01.</span> What happened</h3>
+<p>Hangang replaces Nurion, in service since 2018. A pilot with 189 projects from 64 institutions is under way, and full service starts in mid-December (sources give 14 or 16 December).</p>
+<ul>
+<li><strong>Chips:</strong> 8,496 GPUs, including Nvidia GH200, and 9,936 CPUs</li>
+<li><strong>Theoretical peak:</strong> 614 petaflops, 24 times Nurion</li>
+<li><strong>Storage and network:</strong> 205 PB (10×) and 400 Gbps networking (4×)</li>
+<li><strong>Builder and cost:</strong> Hewlett Packard Enterprise, 382.5 billion won (about $276M)</li>
+</ul>
+<h3><span class="check-number">02.</span> A hard road</h3>
+<p>It was due in 2024. The tender failed four times as the AI boom pushed up GPU prices. The budget ceiling rose from 292.9 to 448.2 billion won, about 53%, and the final contract was signed in May 2025.</p>
+<h3><span class="check-number">03.</span> Who gets to use it</h3>
+<ul>
+<li><strong>About 55%:</strong> researchers across academia, institutes and industry, including a new tier for testing early ideas</li>
+<li><strong>About 30%:</strong> national strategic work such as K-Moonshot</li>
+<li><strong>About 15%:</strong> small and mid-sized companies, with KISTI consulting and technical support</li>
+</ul>
+<p>Nurion supported 1,730 projects and 1,520 papers, 70 of them in Nature, Science or Cell.</p>
+<h3><span class="check-number">04.</span> What it opens up</h3>
+<p>Crash simulation, engine design, battery development, rocket combustion, weather and climate work, and AI-driven science. K-Moonshot aims to double research productivity by 2030.</p>
+<h3><span class="check-number">05.</span> Jobs</h3>
+<p>We found no direct estimate of jobs created by Hangang. In the wider market, Kelly's 2026 US salary guide says 90% of data center operators call staffing shortages a critical constraint, and employers report high demand for liquid cooling (92%), medium-voltage electrical work (88%) and GPU cluster operations (84%). These are US figures. Our reading is that this kind of infrastructure favours HPC and systems engineers, parallel programmers, AI infrastructure engineers, simulation specialists, technical consultants for smaller firms, and power and cooling staff.</p>
+<h3><span class="check-number">06.</span> Next: quantum</h3>
+<p>KISTI plans to link Hangang with IonQ's 100-qubit Tempo in the first half of 2027. It has not happened yet, and practical uses remain to be tested.</p>
+<div class="note">
+<p><strong>Keeping the numbers honest</strong></p>
+<p>614 PF is a theoretical figure; TOP500 ranks on measured performance. In June 2026, No. 10 (Alps) measured 434.9 PF against 574.8 PF theoretical. A top-10 place is still the Korean government's forecast. China's LineShine led in June at 2,198 PF, and the US Solstice is planned with about 12 times Hangang's GPU count.</p>
+</div>
+<h3><span class="check-number">07.</span> The Ditoman view</h3>
+<p>Korea is sharing computing like public infrastructure, so small firms and students can reach it too. Hardware alone is not progress; value comes when it turns into discoveries and products. Iran unveiled Simorgh at Amirkabir University in 2021, at about 0.56 PF on a budget of about $4.5M, designed by Iranian engineers with some imported hardware. A far stronger successor was announced then, but we could not independently confirm its status. We may not buy 8,000 GPUs tomorrow, but Linux, Python, Slurm, MPI, CUDA and distributed PyTorch can be learned today.</p>
+</div>
+
+<h3 style="margin-top:28px"><span lang="en">Sources</span><span lang="fa">منابع</span></h3>
+<ul class="sources">
+<li><a href="https://www.koreatimes.co.kr/business/tech-science/20261102/korea-unveils-276-mil-hangang-supercomputer" target="_blank" rel="noopener noreferrer">Korea Times</a></li>
+<li><a href="https://www.mt.co.kr/en/tech/2026/11/02/2026110213162698987" target="_blank" rel="noopener noreferrer">MoneyToday</a></li>
+<li><a href="https://www.ajupress.com/view/20261103134853032" target="_blank" rel="noopener noreferrer">Aju Press</a></li>
+<li><a href="https://www.koreajoongangdaily.com/business/koreas-sixth-national-supercomputer-hangang-begins-running/12950419" target="_blank" rel="noopener noreferrer">Korea JoongAng Daily</a></li>
+<li><a href="https://zdnet.co.kr/view/?no=20261102111935" target="_blank" rel="noopener noreferrer">ZDNet Korea</a></li>
+<li><a href="https://supple.kr/news/cmtteasug00d5ymf9mgkknfet" target="_blank" rel="noopener noreferrer">Supple (resource allocation)</a></li>
+<li><a href="https://top500.org/lists/2026/06" target="_blank" rel="noopener noreferrer">TOP500, June 2026</a></li>
+<li><a href="https://www.kellyservices.com/press-releases/kelly-releases-2026-data-center-salary-guide-highlighting-compensation-hiring-trends-driven-by-ai-acceleration" target="_blank" rel="noopener noreferrer">Kelly 2026 Data Center Salary Guide</a></li>
+<li><a href="https://www.aljazeera.com/news/2021/5/16/iran-unveils-supercomputer-starts-development-on-a-stronger-one" target="_blank" rel="noopener noreferrer">Al Jazeera on Simorgh</a></li>
+</ul>
+<p lang="fa" dir="rtl" style="color:#9fb6b9;margin-top:10px;text-align:right">تصویر کارت نمادین است و عکس واقعی دستگاه نیست.</p>
+<p lang="en" style="color:#9fb6b9;margin-top:10px">The card image is illustrative, not a real photo of the machine.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

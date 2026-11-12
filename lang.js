@@ -227,6 +227,9 @@
   // Pages built for this switch carry data-lang on <html> and flip direction with it.
   // Older pages (lessons, stories) keep their own layout; only their text changes.
   var native = root.hasAttribute("data-lang") && !!document.querySelector('link[href*="site.css"]');
+  // English twins (X.en.html) are locked to English; the switch then goes to the Persian URL.
+  var lock = root.getAttribute("data-lang-lock");
+  if (lock) root.setAttribute("data-lang", lock);
   if (!root.hasAttribute("data-lang")) {
     var saved0 = null;
     try { saved0 = localStorage.getItem(KEY); } catch (e) {}
@@ -352,7 +355,7 @@
     btn.textContent = lang === "en" ? "فارسی" : "EN";
     btn.setAttribute("lang", lang === "en" ? "fa" : "en");
     btn.setAttribute("aria-label", lang === "en" ? "نمایش به فارسی" : "Show in English");
-    try { localStorage.setItem(KEY, lang); } catch (e) {}
+    if (!lock || lang !== lock) { try { localStorage.setItem(KEY, lang); } catch (e) {} }
   }
 
   // Toggle button in the header
@@ -374,7 +377,18 @@
     var l = b.getAttribute("data-set") || (/English/.test(b.textContent) ? "en" : "fa");
     apply(l);
   });
-  btn.addEventListener("click", function () { apply(root.getAttribute("data-lang") === "en" ? "fa" : "en"); });
+  // Each language has its own address (X.html and X.en.html); the switch moves between them
+  // so links, bookmarks and search results always open in the language they show.
+  btn.addEventListener("click", function () {
+    var to = root.getAttribute("data-lang") === "en" ? "fa" : "en";
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + to + '"]');
+    try { localStorage.setItem(KEY, to); } catch (e) {}
+    if (alt && alt.href) {
+      var target = alt.href.replace(/^https:\/\/ditoman\.com\//, location.protocol === "file:" ? "" : location.origin + "/");
+      if (target.split("#")[0] !== location.href.split("#")[0]) { location.href = target + location.hash; return; }
+    }
+    apply(to);
+  });
 
   pairs(document.body);
   collect(document.body);
