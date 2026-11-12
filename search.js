@@ -243,6 +243,13 @@
       var h = (a.getAttribute("href") || "").split("#")[0].toLowerCase();
       if (h && h === here && here !== "index.html") { a.classList.add("is-current"); a.setAttribute("aria-current", "page"); }
     });
+    // bring the current tab into view in the scrolling phone menu, without moving the page
+    var cur = document.querySelector("header .nav-links a.is-current, header .nav-links a.active");
+    var row = cur && cur.parentNode;
+    if (row && row.scrollWidth > row.clientWidth + 2) {
+      var r = cur.getBoundingClientRect(), rr = row.getBoundingClientRect();
+      row.scrollLeft += (r.left + r.width / 2) - (rr.left + rr.width / 2);
+    }
   }
 
   function init() {

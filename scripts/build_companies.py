@@ -248,7 +248,7 @@ def page(title, desc, path, body, image=None):
   <link rel="stylesheet" href="fonts.css?v=1" />
   <link rel="stylesheet" href="site.css?v=20261108" />
   <style>{CSS}</style>
-  <link rel="stylesheet" href="theme.css?v=20261111i" />
+  <link rel="stylesheet" href="theme.css?v=20261112c" />
 </head>
 <body data-lang="fa">
 
@@ -261,7 +261,7 @@ def page(title, desc, path, body, image=None):
 <script src="menu.js?v=20261107"></script>
 <script src="join-bar.js?v=20261111b" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-<script src="search.js?v=20261111b" defer></script>
+<script src="search.js?v=20261112" defer></script>
 </body>
 </html>
 """
