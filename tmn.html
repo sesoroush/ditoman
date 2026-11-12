@@ -23,6 +23,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="site.css?v=20261108" />
 <style>
+  .tmn-guide-cta { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; padding:22px 24px; border-radius:22px; border:1px solid rgba(255,173,0,.45); background:rgba(255,173,0,.06); }
+  .tmn-guide-cta h2 { font-size:1.4rem; margin-bottom:6px; } .tmn-guide-cta h2 [lang="fa"] { display:inline; margin:0; font-size:inherit; color:inherit; }
   .olinks { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:20px; }
   .olink { display:grid; grid-template-columns:1fr auto; grid-template-areas:"en go" "fa go"; align-items:center; padding:16px 18px; border-radius:18px; border:1px solid var(--line); background:var(--surface); transition:border-color .2s ease; }
   .olink:hover { border-color:var(--line-strong); }
@@ -230,6 +232,19 @@
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer"><span lang="en">Verify on BscScan</span><span lang="fa">بررسی در BscScan</span></a>
           <a class="btn btn-ghost" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer"><span lang="en">Read the whitepaper</span><span lang="fa">خواندن وایت‌پیپر</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="receive">
+      <div class="wrap">
+        <div class="tmn-guide-cta">
+          <div>
+            <h2><span lang="en">How to receive TMN</span><span lang="fa">راهنمای دریافت TMN</span></h2>
+            <p lang="en">Step-by-step pictures and a 40-second video for SafePal, Trust Wallet, MetaMask and TokenPocket.</p>
+            <p lang="fa" dir="rtl">راهنمای تصویری مرحله‌به‌مرحله و ویدیوی ۴۰ ثانیه‌ای برای سیف‌پل، تراست ولت، متامسک و توکن‌پاکت.</p>
+          </div>
+          <a class="btn btn-primary" href="tmn-guide.html"><span lang="en">Open the guide</span><span lang="fa">دیدن راهنما</span></a>
         </div>
       </div>
     </section>

@@ -269,7 +269,7 @@
 
   var texts = [];        // [{node, en, fa}]
   var swaps = [];        // elements with data-en
-  var SKIP = "script, style, svg, code, textarea, .lang-btn, [data-en], body [lang='fa'], body [lang='en']";
+  var SKIP = "script, style, svg, code, textarea, [translate='no'], .lang-btn, [data-en], body [lang='fa'], body [lang='en']";
 
   // Bilingual pairs: wrap loose English text next to a Persian twin, and mark English siblings
   function pairs(scope) {

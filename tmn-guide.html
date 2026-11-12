@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+  <title>How to Receive TMN | راهنمای دریافت توکن دیتومان | Ditoman</title>
+  <meta name="description" content="Step-by-step guide, with pictures and a short video, to add the DiToman (TMN) token to SafePal, Trust Wallet, MetaMask or TokenPocket and copy your wallet address. راهنمای تصویری اضافه کردن توکن دیتومان به کیف پول." />
+  <link rel="icon" href="tmn-logo-256.png" />
+  <meta name="theme-color" content="#04090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="site.css?v=20261108" />
+<script>try{if(localStorage.getItem("ditoman-lang")==="en"){var h=document.documentElement;h.lang="en";h.dir="ltr";h.setAttribute("data-lang","en")}}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261111i" />
+<style>
+  .guide .kicker { color: var(--mint); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; margin-bottom: 10px; }
+  html[data-lang="fa"] .guide .kicker { letter-spacing: 0; }
+  .three { list-style: none; counter-reset: s; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; padding: 0; }
+  .three li { counter-increment: s; display: flex; align-items: center; gap: 10px; padding: 10px 16px; border: 1px solid var(--line-strong); border-radius: 999px; font-weight: 700; }
+  .three li::before { content: counter(s); display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: #FFAD00; color: #101F22; font-weight: 800; }
+  html[data-lang="fa"] .three li::before { content: counter(s, persian); }
+  .warnbox { border: 1px solid rgba(255,173,0,.45); background: rgba(255,173,0,.06); border-radius: 22px; padding: 24px 26px; display: grid; gap: 12px; }
+  .warnbox h2 { font-size: 1.35rem; }
+  .gfacts { display: grid; gap: 10px; margin-top: 18px; max-width: 760px; }
+  .gfact { display: grid; grid-template-columns: 150px minmax(0,1fr) auto; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); }
+  .gfact .gl { color: var(--muted); }
+  .gfact code { font-size: 1rem; color: var(--text); overflow-wrap: anywhere; text-align: left; }
+  .gfact .cp, .gfact .cp * { font: inherit; }
+  .gfact .cp { border: 0; border-radius: 999px; padding: 8px 16px; background: #FFAD00; color: #101F22; font-weight: 800; cursor: pointer; }
+  @media (max-width: 560px) { .gfact { grid-template-columns: 1fr auto; } .gfact code { grid-column: 1 / -1; grid-row: 2; } }
+  .vid { max-width: 420px; }
+  .vid video { width: 100%; height: auto; display: block; border-radius: 22px; border: 1px solid var(--line); background: #101F22; }
+  .wtabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 22px; }
+  .wtab { border: 1px solid var(--line-strong); background: transparent; color: var(--text); border-radius: 999px; padding: 10px 18px; font: inherit; font-weight: 700; cursor: pointer; }
+  .wtab.on { background: var(--mint); color: #101F22; border-color: var(--mint); }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 22px; }
+  .step { margin: 0; display: flex; flex-direction: column; gap: 14px; }
+  .step figcaption p { line-height: 1.8; }
+  .step figcaption b { color: var(--mint); }
+  .ph { position: relative; width: 100%; max-width: 250px; margin: 0 auto; aspect-ratio: 9 / 18; border-radius: 34px; background: #0b1416; border: 7px solid #22363a; box-shadow: 0 18px 40px rgba(0,0,0,.35); overflow: hidden; direction: ltr; text-align: left; }
+  .ph-notch { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 34%; height: 16px; border-radius: 10px; background: #0b1416; z-index: 2; }
+  .scr { position: absolute; inset: 0; background: #F2F0E9; color: #101F22; padding: 34px 12px 14px; display: flex; flex-direction: column; gap: 8px; font-family: "Inter", system-ui, sans-serif; font-size: 12px; }
+  .scr .abar { display: flex; justify-content: space-between; align-items: center; font-weight: 800; font-size: 13px; min-height: 28px; }
+  .scr .bal { font-size: 22px; font-weight: 800; margin: 2px 0 4px; }
+  .scr .arow { display: flex; align-items: center; gap: 8px; background: #fff; border-radius: 12px; padding: 8px; }
+  .scr .arow .ic { width: 24px; height: 24px; border-radius: 50%; background: #192B2E; color: #F2F0E9; display: grid; place-items: center; font-style: normal; font-weight: 800; font-size: 11px; flex: none; }
+  .scr .arow.new .ic { background: #57D9C7; color: #101F22; }
+  .scr .arow span { display: flex; flex-direction: column; line-height: 1.2; flex: 1; }
+  .scr .arow small, .scr .fld small { color: #6a7a7c; font-size: 10px; }
+  .scr .arow em { font-style: normal; font-weight: 700; }
+  .scr .spacer { flex: 1; }
+  .scr .search { background: #e3e1d9; border-radius: 10px; padding: 7px 10px; color: #6a7a7c; }
+  .scr .fld { background: #fff; border-radius: 10px; padding: 6px 9px; display: flex; flex-direction: column; gap: 1px; font-weight: 700; }
+  .scr .abtn { background: #192B2E; color: #F2F0E9; text-align: center; border-radius: 12px; padding: 10px; font-weight: 800; }
+  .scr .alink { text-align: center; color: #1b7f72; font-weight: 800; padding: 8px; }
+  .scr .pill { display: inline-block; background: #fff; border-radius: 999px; padding: 5px 10px; font-weight: 800; font-size: 11px; }
+  .scr .plus { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: #fff; font-size: 18px; }
+  .scr .note-s, .scr .small-c, .scr .conf { color: #6a7a7c; font-size: 10.5px; line-height: 1.4; }
+  .scr .conf { color: #101F22; font-weight: 700; font-size: 12px; }
+  .scr .atabs, .scr .amenu { display: flex; gap: 6px; }
+  .scr .atabs span, .scr .amenu span { flex: 1; text-align: center; padding: 6px; border-radius: 9px; background: #e3e1d9; font-weight: 700; font-size: 10.5px; }
+  .scr .atabs .on, .scr .amenu .on { background: #192B2E; color: #F2F0E9; }
+  .scr .acts { display: flex; justify-content: space-between; gap: 6px; margin-top: 6px; }
+  .scr .acts > span, .scr .acts .hit span { display: block; text-align: center; background: #fff; border-radius: 10px; padding: 8px 6px; font-weight: 700; }
+  .scr .acts > * { flex: 1; }
+  .scr .qr { width: 62%; aspect-ratio: 1; margin: 6px auto 2px; border-radius: 10px; background:
+      repeating-linear-gradient(90deg, #101F22 0 6px, transparent 6px 12px), repeating-linear-gradient(0deg, #101F22 0 6px, #fff 6px 12px); opacity: .85; }
+  .scr .addr { text-align: center; font-weight: 800; font-size: 13px; }
+  .scr .small-c { text-align: center; }
+  .hit { position: relative; outline: 3px solid #FFAD00; outline-offset: 2px; border-radius: 12px; animation: pulse 1.8s ease-in-out infinite; }
+  .hit.inl { display: inline-block; border-radius: 999px; }
+  .hit .badge { position: absolute; top: -11px; right: -11px; width: 22px; height: 22px; border-radius: 50%; background: #FFAD00; color: #101F22; font-size: 12px; font-weight: 900; display: grid; place-items: center; z-index: 1; }
+  @keyframes pulse { 50% { outline-color: rgba(255,173,0,.35); } }
+  @media (prefers-reduced-motion: reduce) { .hit { animation: none; } }
+  .sendbox { display: grid; gap: 10px; padding: 22px 24px; border-radius: 22px; background: var(--surface); border: 1px solid var(--line); max-width: 760px; }
+  .split.two { margin-top: 18px; }
+  .split.two h3 { font-size: 1.15rem; margin-bottom: 8px; }
+  .guide .back { margin-top: 26px; }
+  .tmn-guide-cta { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding: 22px 24px; border-radius: 22px; border: 1px solid rgba(255,173,0,.45); background: rgba(255,173,0,.06); }
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/tmn-guide.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="How to Receive TMN | راهنمای دریافت توکن دیتومان | Ditoman" />
+<meta property="og:description" content="Step-by-step guide, with pictures and a short video, to add the DiToman (TMN) token to SafePal, Trust Wallet, MetaMask or TokenPocket and copy your wallet address. راهنمای تصویری اضافه کردن توکن دیتومان به کیف پول." />
+<meta property="og:url" content="https://ditoman.com/tmn-guide.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/tmn-guide.html#page",
+   "url": "https://ditoman.com/tmn-guide.html",
+   "name": "How to Receive TMN | راهنمای دریافت توکن دیتومان | Ditoman",
+   "description": "Step-by-step guide, with pictures and a short video, to add the DiToman (TMN) token to SafePal, Trust Wallet, MetaMask or TokenPocket and copy your wallet address. راهنمای تصویری اضافه کردن توکن دیتومان به کیف پول.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "How to Receive TMN | راهنمای دریافت توکن دیتومان",
+     "item": "https://ditoman.com/tmn-guide.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Ditoman | دیتومان">
+        <span class="brand-en">DITOMAN</span>
+        <img src="tmn-logo-256.png" alt="" />
+        <span class="brand-fa" dir="rtl">دیتومان</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="learn.html">Learn</a>
+        <a href="iran.html">Iran</a>
+        <a href="companies.html">Companies</a>
+        <a href="prices.html">Prices</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="tmn.html" class="active">TMN</a>
+        <a href="index.html#whitepapers">Whitepaper</a>
+        <a href="posts.html">Posts</a>
+      </nav>
+      <div class="nav-right">
+        <a class="nav-ig" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer" aria-label="Ditoman on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        <a class="nav-tg" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer" aria-label="Ditoman on Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg><span>Telegram</span></a>
+        <a class="nav-cta" href="learn.html">Start learning</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu">
+          <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+          <span class="menu-word">Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-panel" id="menuPanel" hidden>
+      <div class="wrap">
+        <p class="menu-kicker">Jump to <span lang="fa">برو به</span></p>
+        <div class="menu-grid">
+          <a class="menu-tile" href="learn.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 3l9 3.5-9 3.5-9-3.5z M6 9v5c0 1.7 2.7 3 6 3s6-1.3 6-3V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Lessons</span>
+            <span class="mt-fa" lang="fa">درس‌ها</span>
+            <span class="mt-desc">Short bilingual lessons with quizzes</span>
+          </a>
+          <a class="menu-tile" href="iran.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l4-3 4 3v11M13 20v-7l4-3 3 3v7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">What Iran Has</span>
+            <span class="mt-fa" lang="fa">ایران چه دارد</span>
+            <span class="mt-desc">Industry, energy, transport, mines, tech, tourism</span>
+          </a>
+          <a class="menu-tile" href="lesson08.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l5-6 4 3 7-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Newest lesson</span>
+            <span class="mt-fa" lang="fa">درس تازه</span>
+            <span class="mt-desc">What if your money had an expiry date?</span>
+          </a>
+          <a class="menu-tile" href="tmn.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z M8 9h8 M12 9v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">TMN token</span>
+            <span class="mt-fa" lang="fa">توکن TMN</span>
+            <span class="mt-desc">Contract, facts and honest disclosure</span>
+          </a>
+          <a class="menu-tile" href="posts.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Posts</span>
+            <span class="mt-fa" lang="fa">یادداشت‌ها</span>
+            <span class="mt-desc">Every channel post, on the web</span>
+          </a>
+          <a class="menu-tile" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z M14 2.5V7h4.5 M9 12h6 M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Whitepaper</span>
+            <span class="mt-fa" lang="fa">وایت‌پیپر</span>
+            <span class="mt-desc">The full direction, as a PDF</span>
+          </a>
+          <a class="menu-tile" href="calendar.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Market calendar</span>
+            <span class="mt-fa" lang="fa">تقویم بازار</span>
+            <span class="mt-desc">What moves markets, every day</span>
+          </a>
+          <a class="menu-tile" href="prices.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="6" r="1.6" fill="currentColor"/></svg></span>
+            <span class="mt-en">Daily prices</span>
+            <span class="mt-fa" lang="fa">قیمت‌های روزانه</span>
+            <span class="mt-desc">Dollar, gold and every daily report</span>
+          </a>
+        </div>
+        <a class="menu-tg" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">
+          <span class="mtg-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg></span>
+          <span class="mtg-text">
+            <strong>Join the Telegram channel</strong>
+            <span lang="fa">هر درس تازه، اول در کانال تلگرام</span>
+          </span>
+          <span class="mtg-go" aria-hidden="true">›</span>
+        </a>
+        <div class="menu-social">
+          <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>Instagram</a>
+          <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.6 18.8 19.3c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-1 .4l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.9 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.4 1.3z"/></svg>Telegram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+  <main class="guide">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker"><span lang="en">TMN guide</span><span lang="fa" dir="rtl">راهنمای TMN</span></p>
+        <h1 lang="en">How to receive TMN</h1>
+        <h1 lang="fa" dir="rtl">راهنمای دریافت توکن دیتومان</h1>
+        <p class="hero-lede" lang="en">Add the DiToman token to your wallet once, copy your wallet address, and send it to the person who shared this guide with you. Three steps, a couple of minutes.</p>
+        <p class="hero-lede" lang="fa" dir="rtl">یک‌بار توکن دیتومان را به کیف پولتان اضافه کنید، آدرس کیف پول را کپی کنید و برای کسی که این راهنما را برایتان فرستاده بفرستید. سه مرحله، چند دقیقه.</p>
+        <ol class="three">
+          <li><span lang="en">Add the token</span><span lang="fa" dir="rtl">اضافه کردن توکن</span></li>
+          <li><span lang="en">Copy your address</span><span lang="fa" dir="rtl">کپی آدرس کیف پول</span></li>
+          <li><span lang="en">Send the address</span><span lang="fa" dir="rtl">فرستادن آدرس</span></li>
+        </ol>
+      </div>
+    </section>
+    <section class="block">
+      <div class="wrap">
+        <div class="warnbox">
+          <h2><span lang="en">Before you start</span><span lang="fa" dir="rtl">قبل از شروع</span></h2>
+          <p lang="en">TMN lives on <b>BNB Smart Chain (BEP20)</b>. Use a personal wallet such as SafePal, Trust Wallet, MetaMask or TokenPocket.</p>
+          <p lang="fa" dir="rtl">توکن TMN روی شبکه <b>BNB Smart Chain (BEP20)</b> است. از کیف پول شخصی مثل سیف‌پل، تراست ولت، متامسک یا توکن‌پاکت استفاده کنید.</p>
+          <p lang="en"><b>Do not send an exchange address.</b> Nobitex, Wallex, Ramzinex, Bitpin, Tabdeal, CoinEx and other exchanges do not support TMN. Tokens sent there are not credited to your account.</p>
+          <p lang="fa" dir="rtl"><b>آدرس صرافی نفرستید.</b> نوبیتکس، والکس، رمزینکس، بیت‌پین، تبدیل، کوین‌اکس و صرافی‌های دیگر TMN را پشتیبانی نمی‌کنند و توکنی که به آن‌ها واریز شود به حسابتان نمی‌نشیند.</p>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="details">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="en">The four details you need</span><span lang="fa" dir="rtl">چهار مشخصه‌ای که لازم دارید</span></h2>
+          <p lang="en">Copy them from here. Most wallets fill in name, symbol and decimals once you paste the contract.</p>
+          <p lang="fa" dir="rtl">از همین‌جا کپی کنید. بیشتر کیف پول‌ها بعد از چسباندن آدرس قرارداد، بقیه را خودشان پر می‌کنند.</p>
+        </div>
+        <div class="gfacts">
+          <div class="gfact"><span class="gl"><span lang="en">Network</span><span lang="fa" dir="rtl">شبکه</span></span><code dir="ltr">BNB Smart Chain</code></div>
+          <div class="gfact"><span class="gl"><span lang="en">Contract address</span><span lang="fa" dir="rtl">آدرس قرارداد</span></span><code dir="ltr">0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d</code><button type="button" class="cp" data-copy="0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d"><span lang="en">Copy</span><span lang="fa" dir="rtl">کپی</span></button></div>
+          <div class="gfact"><span class="gl"><span lang="en">Name</span><span lang="fa" dir="rtl">نام</span></span><code dir="ltr">DiToman</code></div>
+          <div class="gfact"><span class="gl"><span lang="en">Symbol</span><span lang="fa" dir="rtl">نماد</span></span><code dir="ltr">TMN</code></div>
+          <div class="gfact"><span class="gl"><span lang="en">Decimals</span><span lang="fa" dir="rtl">اعشار</span></span><code dir="ltr">9</code></div>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="video">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="en">Watch it in 40 seconds</span><span lang="fa" dir="rtl">در ۴۰ ثانیه ببینید</span></h2>
+        </div>
+        <div class="vid">
+          <video lang="fa" controls playsinline preload="none" poster="guide/tmn-guide-fa-poster.jpg"><source src="guide/tmn-guide-fa.mp4" type="video/mp4" /></video>
+          <video lang="en" controls playsinline preload="none" poster="guide/tmn-guide-en-poster.jpg"><source src="guide/tmn-guide-en.mp4" type="video/mp4" /></video>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="add">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="en">Step 1: add TMN to your wallet</span><span lang="fa" dir="rtl">مرحله ۱: اضافه کردن TMN به کیف پول</span></h2>
+          <p lang="en">Choose your wallet. Button names can differ slightly between app versions.</p>
+          <p lang="fa" dir="rtl">کیف پولتان را انتخاب کنید. نام دکمه‌ها ممکن است در نسخه‌های مختلف اپ کمی فرق داشته باشد.</p>
+        </div>
+        <div class="wtabs" role="tablist"><button type="button" class="wtab on" data-w="safepal" aria-selected="true">SafePal</button><button type="button" class="wtab" data-w="trust" aria-selected="false">Trust Wallet</button><button type="button" class="wtab" data-w="metamask" aria-selected="false">MetaMask</button><button type="button" class="wtab" data-w="tokenpocket" aria-selected="false">TokenPocket</button></div>
+        <div class="wpanel" id="w-safepal"><div class="steps"><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Wallet</span><span class="bar-r"><div class="hit inl"><b class="badge">1</b><span class="pill">⊕ Coin Management</span></div></span></div><div class="bal">$0.00</div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em>0</em></div><div class="arow "><i class="ic">U</i><span><strong>USDT</strong><small>Tether</small></span><em>0</em></div><div class="spacer"></div></div></div><figcaption><p lang="en">Open your wallet and tap <b>Coin Management</b>.</p><p lang="fa" dir="rtl">کیف پول را باز کنید و وارد <b>Coin Management</b> (مدیریت کوین‌ها) شوید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Coin Management</span><span class="bar-r"></span></div><div class="search">Search</div><div class="arow "><i class="ic">B</i><span><strong>BTC</strong><small>Bitcoin</small></span><em></em></div><div class="arow "><i class="ic">E</i><span><strong>ETH</strong><small>Ethereum</small></span><em></em></div><div class="spacer"></div><div class="hit "><b class="badge">2</b><div class="abtn">Add Custom Token</div></div></div></div><figcaption><p lang="en">At the bottom, tap <b>Add Custom Token</b>.</p><p lang="fa" dir="rtl">پایین صفحه، <b>Add Custom Token</b> را بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Add Custom Token</span><span class="bar-r"></span></div><div class="hit "><b class="badge">3</b><div class="fld "><small>Network</small><span>BNB Smart Chain ▾</span></div></div><div class="hit "><b class="badge">4</b><div class="fld "><small>Contract address</small><span>0x86a5…790d</span></div></div><div class="fld "><small>Name</small><span>DiToman</span></div><div class="fld "><small>Symbol</small><span>TMN</span></div><div class="fld "><small>Decimals</small><span>9</span></div><div class="spacer"></div><div class="hit "><b class="badge">5</b><div class="abtn">Submit</div></div></div></div><figcaption><p lang="en">Pick <b>BNB Smart Chain</b>, paste the contract, then name <b>DiToman</b>, symbol <b>TMN</b>, decimals <b>9</b>. Submit.</p><p lang="fa" dir="rtl">شبکه <b>BNB Smart Chain</b> را انتخاب کنید، آدرس قرارداد را بچسبانید و نام <b>DiToman</b>، نماد <b>TMN</b> و اعشار <b>9</b> را وارد کنید. تأیید کنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Wallet</span><span class="bar-r"></span></div><div class="bal">$0.00</div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em>0</em></div><div class="arow "><i class="ic">U</i><span><strong>USDT</strong><small>Tether</small></span><em>0</em></div><div class="hit "><b class="badge">6</b><div class="arow new"><i class="ic">T</i><span><strong>TMN</strong><small>DiToman</small></span><em>0</em></div></div><div class="spacer"></div></div></div><figcaption><p lang="en">Refresh the list. <b>TMN</b> is now in your wallet.</p><p lang="fa" dir="rtl">لیست را رفرش کنید. حالا <b>TMN</b> در کیف پول شماست.</p></figcaption></figure></div></div><div class="wpanel" id="w-trust" hidden><div class="steps"><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Home</span><span class="bar-r"></span></div><div class="bal">$0.00</div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em>0</em></div><div class="arow "><i class="ic">U</i><span><strong>USDT</strong><small>Tether</small></span><em>0</em></div><div class="spacer"></div><div class="hit "><b class="badge">1</b><div class="alink">Manage Crypto</div></div></div></div><figcaption><p lang="en">Scroll to the end of your list and tap <b>Manage Crypto</b>.</p><p lang="fa" dir="rtl">تا پایین لیست دارایی‌ها بروید و <b>Manage Crypto</b> را بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Manage Crypto</span><span class="bar-r"><div class="hit inl"><b class="badge">2</b><span class="plus">+</span></div></span></div><div class="search">Search</div><div class="arow "><i class="ic">B</i><span><strong>BTC</strong><small>Bitcoin</small></span><em></em></div><div class="arow "><i class="ic">E</i><span><strong>ETH</strong><small>Ethereum</small></span><em></em></div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em></em></div></div></div><figcaption><p lang="en">Tap <b>+</b> at the top right.</p><p lang="fa" dir="rtl">دکمه <b>+</b> بالای صفحه را بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Import</span><span class="bar-r"></span></div><div class="hit "><b class="badge">3</b><div class="fld "><small>Network</small><span>BNB Smart Chain ▾</span></div></div><div class="hit "><b class="badge">4</b><div class="fld "><small>Contract address</small><span>0x86a5…790d</span></div></div><div class="fld "><small>Symbol</small><span>TMN</span></div><div class="fld "><small>Decimals</small><span>9</span></div><div class="note-s">Name, symbol and decimals fill in by themselves.</div><div class="spacer"></div><div class="hit "><b class="badge">5</b><div class="abtn">Import</div></div></div></div><figcaption><p lang="en">Pick <b>BNB Smart Chain</b> and paste the contract. Check it shows <b>TMN</b> and <b>9</b>, then tap <b>Import</b>.</p><p lang="fa" dir="rtl">شبکه <b>BNB Smart Chain</b> را انتخاب کنید و آدرس قرارداد را بچسبانید. ببینید <b>TMN</b> و <b>9</b> نمایش داده شود، بعد <b>Import</b> را بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Home</span><span class="bar-r"></span></div><div class="bal">$0.00</div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em>0</em></div><div class="arow "><i class="ic">U</i><span><strong>USDT</strong><small>Tether</small></span><em>0</em></div><div class="hit "><b class="badge">6</b><div class="arow new"><i class="ic">T</i><span><strong>TMN</strong><small>DiToman</small></span><em>0</em></div></div><div class="spacer"></div></div></div><figcaption><p lang="en"><b>TMN</b> now shows on your home screen.</p><p lang="fa" dir="rtl">حالا <b>TMN</b> در صفحه اصلی کیف پول دیده می‌شود.</p></figcaption></figure></div></div><div class="wpanel" id="w-metamask" hidden><div class="steps"><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span><div class="hit inl"><b class="badge">1</b><span class="pill">BNB Smart Chain ▾</span></div></span><span class="bar-r"></span></div><div class="bal">$0.00</div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em>0</em></div><div class="note-s">Not in the list? Add BNB Smart Chain from the network menu first.</div></div></div><figcaption><p lang="en">Switch the network at the top to <b>BNB Smart Chain</b>.</p><p lang="fa" dir="rtl">شبکه بالای صفحه را روی <b>BNB Smart Chain</b> بگذارید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Tokens</span><span class="bar-r"></span></div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em>0</em></div><div class="spacer"></div><div class="hit "><b class="badge">2</b><div class="alink">Import tokens</div></div></div></div><figcaption><p lang="en">Scroll down and tap <b>Import tokens</b>.</p><p lang="fa" dir="rtl">پایین لیست توکن‌ها، <b>Import tokens</b> را بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Import tokens</span><span class="bar-r"></span></div><div class="atabs"><span>Search</span><span class="on">Custom token</span></div><div class="hit "><b class="badge">3</b><div class="fld "><small>Token contract address</small><span>0x86a5…790d</span></div></div><div class="fld "><small>Token symbol</small><span>TMN</span></div><div class="fld "><small>Token decimal</small><span>9</span></div><div class="spacer"></div><div class="hit "><b class="badge">4</b><div class="abtn">Next</div></div></div></div><figcaption><p lang="en">Open <b>Custom token</b>, paste the contract. Symbol <b>TMN</b> and decimals <b>9</b> fill in. Tap <b>Next</b>.</p><p lang="fa" dir="rtl">سربرگ <b>Custom token</b> را باز کنید و آدرس قرارداد را بچسبانید. نماد <b>TMN</b> و اعشار <b>9</b> خودش پر می‌شود. <b>Next</b> را بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Import tokens</span><span class="bar-r"></span></div><div class="conf">Would you like to import this token?</div><div class="arow "><i class="ic">T</i><span><strong>TMN</strong><small>DiToman</small></span><em>0</em></div><div class="spacer"></div><div class="hit "><b class="badge">5</b><div class="abtn">Import</div></div></div></div><figcaption><p lang="en">Tap <b>Import</b>. TMN is now in your token list.</p><p lang="fa" dir="rtl"><b>Import</b> را بزنید. حالا TMN در لیست توکن‌های شماست.</p></figcaption></figure></div></div><div class="wpanel" id="w-tokenpocket" hidden><div class="steps"><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span><div class="hit inl"><b class="badge">1</b><span class="pill">BNB Chain ▾</span></div></span><span class="bar-r"></span></div><div class="bal">$0.00</div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Chain</small></span><em>0</em></div><div class="arow "><i class="ic">U</i><span><strong>USDT</strong><small>Tether</small></span><em>0</em></div></div></div><figcaption><p lang="en">Use a wallet on <b>BNB Chain</b> (BSC).</p><p lang="fa" dir="rtl">از کیف پولی روی شبکه <b>BNB Chain</b> (BSC) استفاده کنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Assets</span><span class="bar-r"><div class="hit inl"><b class="badge">2</b><span class="plus">+</span></div></span></div><div class="amenu"><span>Search token</span><span class="on">Custom token</span></div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Chain</small></span><em>0</em></div></div></div><figcaption><p lang="en">On <b>Assets</b>, tap <b>+</b> and choose <b>Custom token</b>, then <b>Add token</b>.</p><p lang="fa" dir="rtl">در صفحه <b>Assets</b> دکمه <b>+</b> را بزنید، <b>Custom token</b> و بعد <b>Add token</b> را انتخاب کنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Add token</span><span class="bar-r"></span></div><div class="hit "><b class="badge">3</b><div class="fld "><small>Token contract</small><span>0x86a5…790d</span></div></div><div class="fld "><small>Token symbol</small><span>TMN</span></div><div class="fld "><small>Token decimal</small><span>9</span></div><div class="spacer"></div><div class="hit "><b class="badge">4</b><div class="abtn">Confirm</div></div></div></div><figcaption><p lang="en">Paste the contract, symbol <b>TMN</b>, decimal <b>9</b>. Tap <b>Confirm</b>.</p><p lang="fa" dir="rtl">آدرس قرارداد را بچسبانید، نماد <b>TMN</b> و اعشار <b>9</b> را وارد کنید و <b>Confirm</b> را بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Assets</span><span class="bar-r"></span></div><div class="bal">$0.00</div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em>0</em></div><div class="arow "><i class="ic">U</i><span><strong>USDT</strong><small>Tether</small></span><em>0</em></div><div class="hit "><b class="badge">5</b><div class="arow new"><i class="ic">T</i><span><strong>TMN</strong><small>DiToman</small></span><em>0</em></div></div><div class="spacer"></div></div></div><figcaption><p lang="en">Back on Assets, pull down to refresh. TMN appears.</p><p lang="fa" dir="rtl">به Assets برگردید و صفحه را به پایین بکشید تا رفرش شود. TMN نمایش داده می‌شود.</p></figcaption></figure></div></div>
+      </div>
+    </section>
+    <section class="block" id="address">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="en">Step 2: copy your wallet address</span><span lang="fa" dir="rtl">مرحله ۲: کپی کردن آدرس کیف پول</span></h2>
+          <p lang="en">The same in every wallet. In MetaMask, tap your account name at the top to copy it.</p>
+          <p lang="fa" dir="rtl">در همه کیف پول‌ها تقریباً یکی است. در متامسک کافی است روی نام حساب بالای صفحه بزنید تا آدرس کپی شود.</p>
+        </div>
+        <div class="steps"><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Wallet</span><span class="bar-r"></span></div><div class="bal">$0.00</div><div class="arow "><i class="ic">B</i><span><strong>BNB</strong><small>BNB Smart Chain</small></span><em>0</em></div><div class="arow "><i class="ic">U</i><span><strong>USDT</strong><small>Tether</small></span><em>0</em></div><div class="hit "><b class="badge">1</b><div class="arow new"><i class="ic">T</i><span><strong>TMN</strong><small>DiToman</small></span><em>0</em></div></div><div class="spacer"></div></div></div><figcaption><p lang="en">Tap <b>TMN</b> in your list.</p><p lang="fa" dir="rtl">روی <b>TMN</b> در لیست بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>TMN</span><span class="bar-r"></span></div><div class="bal">0 TMN</div><div class="acts"><span>Send</span><div class="hit inl"><b class="badge">2</b><span>Receive</span></div><span>Swap</span></div></div></div><figcaption><p lang="en">Tap <b>Receive</b>.</p><p lang="fa" dir="rtl">گزینه <b>Receive</b> (دریافت) را بزنید.</p></figcaption></figure><figure class="step"><div class="ph" translate="no"><div class="ph-notch"></div><div class="scr"><div class="abar"><span>Receive TMN</span><span class="bar-r"></span></div><div class="qr"></div><div class="addr">0x3fA9…c41e</div><div class="small-c">BNB Smart Chain (BEP20)</div><div class="hit "><b class="badge">3</b><div class="abtn">Copy</div></div></div></div><figcaption><p lang="en">Copy the address that starts with <b>0x</b>.</p><p lang="fa" dir="rtl">آدرسی را که با <b>0x</b> شروع می‌شود کپی کنید.</p></figcaption></figure></div>
+      </div>
+    </section>
+    <section class="block" id="send">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="en">Step 3: send us the address</span><span lang="fa" dir="rtl">مرحله ۳: فرستادن آدرس</span></h2>
+        </div>
+        <div class="sendbox">
+          <p lang="en">Paste the address in your chat with the person who shared this guide. The token is sent to that address.</p>
+          <p lang="fa" dir="rtl">آدرس کپی‌شده را در گفت‌وگو با کسی که این راهنما را برایتان فرستاده بچسبانید تا توکن به همان آدرس واریز شود.</p>
+          <p lang="en">A correct address starts with <b dir="ltr">0x</b> and is 42 characters long.</p>
+          <p lang="fa" dir="rtl">آدرس درست با <b dir="ltr">0x</b> شروع می‌شود و ۴۲ کاراکتر است.</p>
+        </div>
+        <div class="split two">
+          <div class="panel warn">
+            <h3><span lang="en">Keep this private</span><span lang="fa" dir="rtl">این را به کسی ندهید</span></h3>
+            <p lang="en">We only need your <b>wallet address</b>. Never send your recovery phrase (12 or 24 words) or password to anyone, including us. Ditoman never asks for them.</p>
+            <p lang="fa" dir="rtl">ما فقط <b>آدرس کیف پول</b> را لازم داریم. عبارت بازیابی (۱۲ یا ۲۴ کلمه) یا رمز کیف پولتان را هرگز برای هیچ‌کس، حتی ما، نفرستید. دیتومان هیچ‌وقت این‌ها را نمی‌خواهد.</p>
+          </div>
+          <div class="panel">
+            <h3><span lang="en">Fees</span><span lang="fa" dir="rtl">کارمزد</span></h3>
+            <p lang="en">Receiving TMN costs nothing. To move TMN later, you need a small amount of BNB for the network fee.</p>
+            <p lang="fa" dir="rtl">دریافت TMN هیچ هزینه‌ای ندارد. اگر بعداً خواستید TMN را جابه‌جا کنید، مقدار کمی BNB برای کارمزد شبکه لازم دارید.</p>
+          </div>
+        </div>
+        <p class="back"><a class="btn btn-ghost" href="tmn.html"><span lang="en">TMN facts and official links</span><span lang="fa" dir="rtl">مشخصات و لینک‌های رسمی TMN</span></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Ditoman • Learn. Connect. Evolve. • Est. 2022</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="iran.html">Iran</a>
+        <a href="learn.html">Learn</a>
+        <a href="prices.html">Prices</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="posts.html">Posts</a>
+        <a href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+        <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <script>
+    (function () {
+      document.querySelectorAll(".wtab").forEach(function (t) {
+        t.addEventListener("click", function () {
+          document.querySelectorAll(".wtab").forEach(function (x) { x.classList.toggle("on", x === t); x.setAttribute("aria-selected", x === t); });
+          document.querySelectorAll(".wpanel").forEach(function (p) { p.hidden = p.id !== "w-" + t.dataset.w; });
+        });
+      });
+      document.querySelectorAll(".cp").forEach(function (b) {
+        var orig = b.innerHTML;
+        b.addEventListener("click", function () {
+          var done = function () { b.innerHTML = '<span lang="en">Copied</span><span lang="fa">کپی شد</span>'; setTimeout(function () { b.innerHTML = orig; }, 1600); };
+          if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(done, function () {}); 
+        });
+      });
+    })();
+  </script>
+  <script src="menu.js?v=20261107" defer></script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261111b" defer></script>
+<script src="lang.js?v=20261112g" defer></script>
+
+<script src="search.js?v=20261111b" defer></script>
+</body>
+</html>
