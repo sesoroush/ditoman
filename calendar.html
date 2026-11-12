@@ -44,7 +44,7 @@
     .empty { color: var(--muted); }
     @media (max-width: 760px) { .day { grid-template-columns: 1fr; } .day .shot { grid-column: 1; grid-row: 1; border-left: 0; border-bottom: 1px solid var(--line); } .day-body { grid-column: 1; grid-row: 2; padding: 20px 18px; } .ev { flex-direction: column-reverse; align-items: flex-end; } }
   </style>
-  <link rel="stylesheet" href="theme.css?v=20261112d" />
+  <link rel="stylesheet" href="theme.css?v=20261112e" />
 <!-- seo:start -->
 <meta name="twitter:card" content="summary_large_image" />
 <script type="application/ld+json">
@@ -266,12 +266,13 @@
       el.innerHTML = days.map(function (d) {
         var p = d.date.split("-").map(Number), j = d.jalali.split("/").map(Number);
         return '<article class="day" id="d' + d.date + '">' +
-          '<a class="shot" href="' + d.post + '" target="_blank" rel="noopener"><img loading="lazy" src="' + d.post + '" alt="Market calendar for ' + d.date + '" /></a>' +
+          '<a class="shot" lang="fa" href="' + d.post + '" target="_blank" rel="noopener"><img loading="lazy" src="' + d.post + '" alt="Market calendar for ' + d.date + '" /></a>' +
+          (d.post_en ? '<a class="shot" lang="en" href="' + d.post_en + '" target="_blank" rel="noopener"><img loading="lazy" src="' + d.post_en + '" alt="Market calendar for ' + d.date + '" /></a>' : "") +
           '<div class="day-body"><div class="day-meta"><span lang="en">' + p[2] + " " + EN_M[p[1] - 1] + " " + p[0] + '</span><span class="fa-date" dir="rtl" lang="fa">' + esc(d.weekday_fa) + " " + fd(j[2]) + " " + FA_M[j[1] - 1] + " " + fd(j[0]) + "</span></div>" +
           '<h2 dir="rtl" lang="fa">' + esc(d.headline_fa) + "</h2>" + '<h2 dir="ltr" lang="en" style="text-align:left">' + esc(headEn(d)) + "</h2>" +
           '<div class="grp"><span>Today</span><span lang="fa">امروز</span></div>' + (d.today || []).map(ev).join("") +
           ((d.week && d.week.length) ? '<div class="grp"><span>This week</span><span lang="fa">بقیهٔ هفته</span></div>' + d.week.map(ev).join("") : "") +
-          '<div class="dl"><a href="' + d.post + '" download><span lang="fa">تصویر پست</span><span lang="en">Post image</span></a>' + (d.story ? '<a href="' + d.story + '" download><span lang="fa">تصویر استوری</span><span lang="en">Story image</span></a>' : "") + "</div>" +
+          '<div class="dl"><a lang="fa" href="' + d.post + '" download>تصویر پست</a>' + (d.post_en ? '<a lang="en" href="' + d.post_en + '" download>Post image</a>' : "") + (d.story ? '<a lang="fa" href="' + d.story + '" download><span lang="fa">تصویر استوری</span><span lang="en">Story image</span></a>' : "") + "</div>" +
           "</div></article>";
       }).join("");
     }).catch(function () { document.getElementById("cal").innerHTML = '<p class="empty">The calendar could not be loaded.</p>'; });

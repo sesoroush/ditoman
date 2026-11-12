@@ -859,3 +859,49 @@ header .nav-links a.active::before, header .nav-links a.is-current::before, head
   header .nav > .nav-links, header .container.nav > .nav-links { padding: 0 2px 12px !important; }
 }
 @media (max-width: 600px) { header .container.nav { padding-top: 15px !important; } }
+
+/* ---------- Wallet guide: easy to find ---------- */
+.tmn-guide-cta {
+  display: grid !important; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 22px;
+  padding: 28px 30px !important; border-radius: 20px !important; border: 2px solid var(--yellow) !important;
+  background: linear-gradient(135deg, rgba(255, 173, 0, 0.13), rgba(87, 217, 199, 0.05) 70%) !important;
+}
+.tmn-guide-cta .g-icon, .wallet-link .g-icon {
+  display: grid; place-items: center; width: 64px; height: 64px; border-radius: 18px; background: var(--yellow); color: #1a1300;
+}
+.tmn-guide-cta .g-icon svg { width: 34px; height: 34px; }
+.tmn-guide-cta .g-kick { display: inline-block; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; color: var(--yellow); margin-bottom: 4px; }
+.tmn-guide-cta h2 { font-size: clamp(1.4rem, 3vw, 1.9rem) !important; line-height: 1.35; margin: 0 0 6px !important; }
+.tmn-guide-cta p { color: #d3dbd7; margin: 0; }
+.g-steps { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; counter-reset: g; }
+.g-steps li {
+  counter-increment: g; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px 6px 6px; border-radius: 999px;
+  background: rgba(16, 31, 34, 0.6); border: 1px solid rgba(255, 173, 0, 0.35); font-size: 0.88rem; font-weight: 700;
+}
+html[dir="rtl"] .g-steps li, html[data-lang="fa"] .g-steps li { padding: 6px 6px 6px 12px; }
+.g-steps li::before {
+  content: counter(g); display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%;
+  background: var(--yellow); color: #1a1300; font-size: 0.8rem; font-weight: 800;
+}
+.tmn-guide-cta .btn { padding: 14px 26px; font-size: 1rem; white-space: nowrap; }
+.btn-wallet { border-color: rgba(255, 173, 0, 0.6) !important; color: var(--yellow) !important; }
+@media (max-width: 760px) {
+  .tmn-guide-cta { grid-template-columns: auto minmax(0, 1fr); padding: 22px 18px !important; gap: 14px; }
+  .tmn-guide-cta .g-icon { width: 52px; height: 52px; border-radius: 15px; align-self: start; }
+  .tmn-guide-cta .g-icon svg { width: 28px; height: 28px; }
+  .tmn-guide-cta .btn { grid-column: 1 / -1; justify-self: stretch; text-align: center; }
+}
+/* homepage: a clear wallet-guide link inside the TMN block */
+.wallet-link {
+  display: flex; align-items: center; gap: 14px; margin-top: 18px; padding: 14px 16px; border-radius: 16px;
+  border: 1.5px solid rgba(255, 173, 0, 0.55); background: rgba(255, 173, 0, 0.08); color: var(--text);
+  transition: border-color 200ms ease, background 200ms ease;
+}
+.wallet-link:hover { border-color: var(--yellow); background: rgba(255, 173, 0, 0.14); }
+.wallet-link .g-icon { width: 46px; height: 46px; border-radius: 13px; flex: none; }
+.wallet-link .g-icon svg { width: 26px; height: 26px; }
+.wallet-link > span:not(.g-icon) { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.wallet-link b { font-size: 1.02rem; font-weight: 800; }
+.wallet-link small { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+.wallet-link i { margin-inline-start: auto; font-style: normal; color: var(--yellow); font-weight: 800; font-size: 1.2rem; }
+html[data-lang="en"] .wallet-link i { transform: scaleX(-1); }

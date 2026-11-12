@@ -126,6 +126,88 @@ def build(d):
              f'<div class="items">{items}</div><div class="note">آمار قیمت‌ها: <span class="hl">امشب ساعت ۲۰:۰۰ تهران</span></div>' + FOOT + "</div>")
     return fa_date, page(POST_CSS, post, "post"), page(STORY_CSS, story, "story")
 
+EN_WD_LONG = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+EN_M_LONG = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+POST_EN_CSS = POST_CSS + """
+body{font-family:Brico,sans-serif}.page{direction:ltr}
+.head h1{font-family:Play,serif;font-weight:800;font-size:58px;line-height:1.15;letter-spacing:-.01em}
+.head .date{align-items:flex-end}.head .date .en{font-family:Brico,sans-serif;font-style:normal;font-weight:700;font-size:24px;color:var(--teal)}
+.hero .kick{text-align:left}.hero h2{font-family:Play,serif;font-size:46px;line-height:1.2}
+.hero .exp{font-size:24px;color:#E6DED0}.hero .exp b{color:var(--pop);font-weight:700}
+.hero .time{border-right:none;border-left:3px solid var(--ink)}.hero .time .lab{font-weight:700;font-size:19px;letter-spacing:.08em}
+.stamp{right:auto;left:28px;transform:rotate(-3deg);font-family:Brico,sans-serif;letter-spacing:.06em}
+.sec h3 .t{font-family:Play,serif;font-weight:800;font-size:32px}
+.row .what b{font-weight:700;font-size:27px}.row .what span{font-size:20px}
+.day{margin-left:0;margin-right:14px;font-weight:800}"""
+
+
+def build_en(d):
+    """English edition of the post image: only the fields the data already has in English."""
+    y, m, dd = map(int, d["date"].split("-"))
+    wd = datetime.date(y, m, dd).weekday()
+    k = d["key"]
+    ahead = not d.get("today") and d.get("week_label_fa")
+    head = "The week ahead" if ahead else "Today's key event"
+    fa_re = re.compile(r"[\u0600-\u06FF]")
+    def tt(it):  # Tehran time, or the English word when the data has a Persian one ("all day", "morning")
+        t = it.get("tehran") or ""
+        return it.get("lisbon", "") if fa_re.search(t) else t
+    def exp(it):
+        return f'Expected: {e(it["expected"])}' if it.get("expected") else ""
+    def row(it, day=""):
+        return (f'<div class="row"><div class="what"><b>{day}{e(it.get("en") or "")}</b><span>{exp(it)}</span></div>'
+                f'<div class="chip"><span class="t">Tehran {e(tt(it))}</span><span class="s">· Lisbon {e(it["lisbon"])}</span></div></div>')
+    def wday(w):
+        try:
+            wy, wm, wdd = map(int, w["date"].split("-"))
+            return f'<span class="day">{EN_WD[datetime.date(wy, wm, wdd).weekday()]} {wdd} {EN_M[wm-1]}</span>'
+        except Exception:
+            return ""
+    rows_today = "".join(row(t) for t in d.get("today", [])[:3] if t.get("en"))
+    rows_week = "".join(row(w, wday(w)) for w in d.get("week", [])[:4] if w.get("en"))
+    post = ('<div class="page">' + MAST.format(en="MARKET CALENDAR", fa="").replace('<span class="dot"></span><span style="font-family:Vaz;letter-spacing:0;color:var(--teal)"></span>', "") +
+            f'<div class="head"><h1>{head}</h1><div class="date"><span class="en">{EN_WD_LONG[wd]}, {dd} {EN_M_LONG[m-1]} {y}</span></div></div>'
+            f'<div class="hero"><div class="stamp">KEY EVENT</div><div class="txt"><div class="kick">{e(k.get("kick_en"))}</div><h2>{e(k.get("en") or k.get("kick_en"))}</h2>'
+            + (f'<p class="exp"><b>Expected</b> {e(k["expected"])}</p>' if k.get("expected") else "") + '</div>'
+            f'<div class="time"><span class="lab">TEHRAN</span><span class="big"{' style="font-size:52px"' if fa_re.search(k.get("tehran") or "") else ""}>{e(tt(k)).capitalize()}</span><span class="sm">Lisbon {e(k["lisbon"])}</span></div></div>'
+            + (f'<div class="sec"><h3><span class="t">Also today</span></h3>{rows_today}</div>' if rows_today else "")
+            + (f'<div class="sec"><h3><span class="t">{e(d.get("week_label_en", "This week"))}</span></h3>{rows_week}</div>' if rows_week else "")
+            + FOOT + "</div>")
+    return page(POST_EN_CSS, post, "post-en").replace('<html lang="fa" dir="rtl">', '<html lang="en" dir="ltr">')
+
+
+def render_en(d, b=None):
+    """Write calendar/<date>-post-en.webp. Returns a list of overflow problems."""
+    from playwright.sync_api import sync_playwright
+    out = ROOT / "calendar"
+    src = build_en(d)
+    tmp = HERE / "_post_en.html"
+    tmp.write_text(src, encoding="utf-8")
+    own = b is None
+    if own:
+        pw = sync_playwright().start(); b = pw.chromium.launch()
+    pg = b.new_page(viewport={"width": 1080, "height": 1350})
+    pg.goto(tmp.as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(300)
+    bad = pg.evaluate("""() => { const pg = document.querySelector('.page'); const bad = [];
+        if (pg.scrollHeight > pg.clientHeight + 1) bad.push('page height ' + pg.scrollHeight);
+        const foot = document.querySelector('.foot').getBoundingClientRect();
+        document.querySelectorAll('.page > *:not(.foot)').forEach(el => { const r = el.getBoundingClientRect(); if (r.bottom > foot.top + 1) bad.push('overlaps footer: ' + el.className); });
+        return bad; }""")
+    png = out / f'{d["date"]}-post-en.png'
+    pg.screenshot(path=str(png)); pg.close()
+    tmp.unlink()
+    if own:
+        b.close(); pw.stop()
+    try:
+        from PIL import Image
+        Image.open(png).convert("RGB").save(out / f'{d["date"]}-post-en.webp', "WEBP", quality=84, method=6)
+        png.unlink()
+    except ImportError:
+        pass
+    return [f"post-en: {x}" for x in bad]
+
+
 def main(path):
     d = json.load(open(path, encoding="utf-8"))
     date = d["date"]
@@ -149,6 +231,7 @@ def main(path):
             bad += [f"{name}: {x}" for x in over]
             pg.screenshot(path=str(out / f"{date}-{name}.png"))
             tmp.unlink()
+        bad += render_en(d, b)
         b.close()
     idx_path = out / "index.json"
     idx = json.load(open(idx_path, encoding="utf-8")) if idx_path.exists() else []
@@ -159,6 +242,7 @@ def main(path):
         "date": date, "jalali": f"{jy}/{jm:02d}/{jd:02d}", "weekday_fa": fa_date.split(" ")[0],
         "headline_fa": f'{d["headline_fa"]} {d["headline_hl"]}'.strip(),
         "post": f"calendar/{date}-post.png", "story": f"calendar/{date}-story.png",
+        "post_en": (f"calendar/{date}-post-en.webp" if (out / f"{date}-post-en.webp").exists() else f"calendar/{date}-post-en.png"),
         "today": [{"key": True, "fa": k["fa"], "en": k.get("en", ""), "tehran": k["tehran"], "lisbon": k["lisbon"],
                    "note_fa": k.get("body_fa", ""), "expected": k.get("expected", "")}] + d.get("today", []),
         "week": d.get("week", []), "sources": d.get("sources", []),
@@ -169,5 +253,27 @@ def main(path):
     if bad:
         print("OVERFLOW:\n  " + "\n  ".join(bad)); sys.exit(2)
 
+def backfill():
+    """Render the English post for every day in calendar/data and record it in index.json."""
+    from playwright.sync_api import sync_playwright
+    out = ROOT / "calendar"
+    idx_path = out / "index.json"
+    idx = json.load(open(idx_path, encoding="utf-8"))
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        for f in sorted((out / "data").glob("*.json")):
+            d = json.load(open(f, encoding="utf-8"))
+            bad = render_en(d, b)
+            for x in idx:
+                if x.get("date") == d["date"]:
+                    x["post_en"] = f'calendar/{d["date"]}-post-en.webp'
+            print(d["date"], "ok" if not bad else bad)
+        b.close()
+    json.dump(idx, open(idx_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if sys.argv[1] == "--english-backfill":
+        backfill()
+    else:
+        main(sys.argv[1])
