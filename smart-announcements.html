@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The Future of Public Address: Announcements Straight to Your Ears | آینده صوت عمومی: اطلاعیه مستقیم در گوش تو | Ditoman</title>
+<meta name="description" content="گزارش ویژه دیتومان درباره نسل جدید پیجینگ و اطلاع‌رسانی عمومی: Auracast در فرانکفورت، مونیخ و برایتون، بازار جهانی، هوش مصنوعی، شرکت‌ها، استانداردها و فرصت ایران. Ditoman special report on smart paging and public address." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:fixed;width:100%;min-width:0 !important}
+.tw td,.tw th{white-space:normal !important;word-break:normal;overflow-wrap:break-word;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261113" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/smart-announcements.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/smart-announcements.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/smart-announcements.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/smart-announcements.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The Future of Public Address: Announcements Straight to Your Ears | آینده صوت عمومی: اطلاعیه مستقیم در گوش تو" />
+<meta property="og:description" content="گزارش ویژه دیتومان درباره نسل جدید پیجینگ و اطلاع‌رسانی عمومی: Auracast در فرانکفورت، مونیخ و برایتون، بازار جهانی، هوش مصنوعی، شرکت‌ها، استانداردها و فرصت ایران. Ditoman special report on smart paging and public address." />
+<meta property="og:url" content="https://ditoman.com/smart-announcements.html" />
+<meta property="og:image" content="https://ditoman.com/social/smart-announcements/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/smart-announcements.html#article",
+   "mainEntityOfPage": "https://ditoman.com/smart-announcements.html",
+   "headline": "The Future of Public Address: Announcements Straight to Your Ears | آینده صوت عمومی: اطلاعیه مستقیم در گوش تو",
+   "description": "گزارش ویژه دیتومان درباره نسل جدید پیجینگ و اطلاع‌رسانی عمومی: Auracast در فرانکفورت، مونیخ و برایتون، بازار جهانی، هوش مصنوعی، شرکت‌ها، استانداردها و فرصت ایران. Ditoman special report on smart paging and public address.",
+   "image": "https://ditoman.com/social/smart-announcements/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   },
+   "datePublished": "2026-11-10"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "What Gen Z Asks AI About Money | نسل Z از هوش مصنوعی درباره‌ی پول چه می‌پرسد؟",
+     "item": "https://ditoman.com/smart-announcements.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/smart-announcements/card.webp" srcset="social/smart-announcements/card.webp 900w, social/smart-announcements/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Smart public address: announcements straight to your ears" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/smart-announcements/en-card.webp" srcset="social/smart-announcements/en-card.webp 900w, social/smart-announcements/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Smart public address: announcements straight to your ears" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · Sound tech</span><span lang="fa">گزارش ویژه · فناوری صوت</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">بلندگوی فرودگاه حالا مستقیم در گوش مسافران حرف می‌زند؛ آینده چندمیلیارددلاری پیجینگ هوشمند</h1>
+<h1 lang="en">Airport speakers now talk straight into your ears: the multi-billion-dollar future of smart paging</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">از فرانکفورت و مونیخ تا برایتون؛ Auracast، بازار جهانی، هوش مصنوعی، شرکت‌ها، استانداردها و فرصت صنعت صوت ایران.</p>
+<p class="subtitle" lang="en">From Frankfurt and Munich to Brighton: Auracast, the global market, AI, the companies, the standards and the opportunity for Iran.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۲۰۲۶</b><b lang="en">2026</b><span lang="fa">فرانکفورت؛ اولین فرودگاه دنیا</span><span lang="en">Frankfurt: world first</span></div>
+<div class="stat"><b lang="fa">۱٫۵ میلیارد</b><b lang="en">1.5B</b><span lang="fa">نفر با کم‌شنوایی</span><span lang="en">people with hearing loss</span></div>
+<div class="stat"><b lang="fa">۶٫۱۴ میلیارد $</b><b lang="en">$6.14B</b><span lang="fa">بازار پیجینگ و هشدار صوتی، ۲۰۳۰</span><span lang="en">PA &amp; voice alarm market, 2030</span></div>
+<div class="stat"><b lang="fa">۸۰٫۴ میلیارد $</b><b lang="en">$80.4B</b><span lang="fa">بازار اطلاع‌رسانی انبوه، ۲۰۳۰</span><span lang="en">mass notification, 2030</span></div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<h3><span class="check-number">0.</span> در یک نگاه</h3>
+<p>صوت عمومی، یعنی بلندگوهای فرودگاه، مترو، مدرسه، بیمارستان و کارخانه، از قدیمی‌ترین فناوری‌های زندگی روزمره است. در سال ۲۰۲۶ این فناوری بزرگ‌ترین تغییرش را تجربه می‌کند: اطلاعیه‌ها از بلندگوی سقف، مستقیم به گوش هر نفر می‌رسند و سیستم صوت از یک «پخش‌کننده» به یک «زیرساخت ارتباطی هوشمند» تبدیل می‌شود.</p>
+<div class="tw"><table><tr><th>شاخص</th><th>عدد</th></tr><tr><td>اولین فرودگاه با اطلاعیه مستقیم به هدفون و سمعک</td><td>فرانکفورت، ژانویه ۲۰۲۶</td></tr><tr><td>گیت‌های مجهز در مونیخ (از ۱۴ ژوئیه ۲۰۲۶)</td><td>۶ گیت در دو ترمینال</td></tr><tr><td>اولین نصب دائمی در راه‌آهن بریتانیا</td><td>ایستگاه برایتون، ۲۰۲۶</td></tr><tr><td>افراد دارای کم‌شنوایی در جهان</td><td>بیش از ۱٫۵ میلیارد نفر</td></tr><tr><td>بازار پیجینگ و هشدار صوتی، ۲۰۲۶ تا ۲۰۳۰</td><td>۴٫۵۸ به ۶٫۱۴ میلیارد دلار (رشد سالانه حدود ۷٫۶٪)</td></tr><tr><td>بازار اطلاع‌رسانی انبوه، ۲۰۲۵ تا ۲۰۳۰</td><td>حدود ۲۸٫۹ به ۸۰٫۴ میلیارد دلار (رشد سالانه حدود ۲۲٫۷٪)</td></tr></table></div>
+<h3><span class="check-number">1.</span> پیجینگ، صوت عمومی، هشدار صوتی و اطلاع‌رسانی انبوه: فرقشان چیست؟</h3>
+<ul>
+<li><strong>پیجینگ:</strong> صدا زدن یک فرد یا اعلام یک پیام کوتاه در یک فضا؛ مثل «مسافران پرواز ۴۱۲ به گیت ۱۲ مراجعه کنند»</li>
+</ul>
+<ul>
+<li><strong>صوت عمومی (PA):</strong> مجموعه بلندگو، آمپلی‌فایر، میکروفن و کنترلر که اطلاعیه‌ها و موسیقی زمینه را در یک ساختمان یا مجموعه پخش می‌کند</li>
+</ul>
+<ul>
+<li><strong>هشدار صوتی اضطراری (VA):</strong> همان سیستم، اما ساخته‌شده طبق استانداردهای ایمنی؛ در آتش‌سوزی یا تخلیه باید کار کند، خرابی‌اش را گزارش دهد و پیام قابل فهم پخش کند</li>
+</ul>
+<ul>
+<li><strong>اطلاع‌رسانی انبوه (Mass Notification):</strong> لایه بالاتر؛ یک پیام هم‌زمان روی بلندگو، پیامک، اپلیکیشن، صفحه‌نمایش و ایمیل، در چند ساختمان یا یک شهر</li>
+</ul>
+<p>در بازار جهانی، دو حوزه اول و سوم معمولاً با هم «PAVA» نامیده می‌شوند.</p>
+<h3><span class="check-number">2.</span> فرانکفورت: اولین فرودگاه دنیا</h3>
+<p>در ۲۸ ژانویه ۲۰۲۶، فرودگاه فرانکفورت اعلام کرد اولین فرودگاه دنیاست که همه اطلاعیه‌های گیت را مستقیم به دستگاه شخصی مسافران می‌فرستد. آزمایش روی گیت‌های A16 و A17 ترمینال ۱ انجام شد و قرار بود حدود دو ماه بازخورد مسافران جمع شود.</p>
+<p><strong>شرکای پروژه:</strong><br>فرودگاه فرانکفورت (Fraport) و شرکت آلمانی Sittig Technologies، همراه با دانشگاه علوم کاربردی فرانکفورت؛ و گوگل، سامسونگ، GN و Bluetooth SIG به‌عنوان شرکای فناوری. هزینه از برنامه نوآوری دیجیتال ایالت هسن تأمین شد.</p>
+<p><strong>نکته هوشمندانه:</strong><br>فرستنده‌های Auracast داخل همان ایستگاه‌های پیجینگ IP موجود در گیت‌ها نصب شدند. نه دیوار تخریب شد و نه سیستم قبلی کنار رفت؛ فقط یک لایه تازه اضافه شد. فرودگاه فرانکفورت در ۲۰۲۵ میزبان ۶۳٫۲ میلیون مسافر بود.</p>
+<h3><span class="check-number">3.</span> مونیخ: قدم بعدی</h3>
+<p>از ۱۴ ژوئیه ۲۰۲۶، فرودگاه مونیخ با همان شرکت Sittig این سیستم را روی ۶ گیت در دو ترمینال راه انداخت.</p>
+<ul>
+<li><strong>وصل شدن ساده:</strong> یک کد QR در هر گیت؛ گوشی را جلویش بگیرید و وصل شوید</li>
+</ul>
+<ul>
+<li><strong>روی اندروید:</strong> اطلاعیه با صدای ملایم وارد موسیقی می‌شود و بعد آهنگ ادامه پیدا می‌کند</li>
+</ul>
+<ul>
+<li><strong>روی آیفون:</strong> فعلاً با اپلیکیشن جانبی، چون اپل هنوز Auracast را فعال نکرده است</li>
+</ul>
+<ul>
+<li><strong>برای کم‌شنواها:</strong> سمعک و کاشت حلزون سازگار، پیام را مستقیم و بدون نویز سالن دریافت می‌کنند</li>
+</ul>
+<h3><span class="check-number">4.</span> بریتانیا: از ایستگاه برایتون تا ترجمه زنده</h3>
+<p>ایستگاه برایتون، با بهره‌برداری Southern، Thameslink و Gatwick Express، اولین نصب دائمی Auracast در شبکه ریلی بریتانیا را دارد. سیستم را Ampetronic و Listen Technologies با محصول Auri نصب کرده‌اند و حلقه القایی قدیمی ایستگاه هم کنار آن باقی مانده است. در بریتانیا حدود ۱۸ میلیون نفر ناشنوا یا کم‌شنوا هستند.</p>
+<p><strong>قدم بعدی، ترجمه با هوش مصنوعی:</strong><br>از سپتامبر ۲۰۲۶، ایستگاه‌های برایتون (آزمایش یک‌ساله) و بریستول تمپل میدز (چهار سکو) ترجمه زنده اطلاعیه‌ها را با هوش مصنوعی شرکت XRAI آزمایش می‌کنند. مسافر با گوشی و هدفون سازگار، اطلاعیه را به زبان دلخواه خودش می‌شنود.</p>
+<h3><span class="check-number">5.</span> Auracast چیست؟</h3>
+<p>Auracast فناوری پخش همگانی صدا بر پایه Bluetooth LE Audio است. بلوتوث معمولی یک گوشی را به یک هدفون وصل می‌کند؛ Auracast یک فرستنده را به تعداد نامحدودی گیرنده وصل می‌کند، مثل یک ایستگاه رادیویی کوچک. هر دستگاه به جفت‌شدن جداگانه نیاز ندارد و یک فرستنده می‌تواند چند کانال، مثلاً چند زبان، را هم‌زمان پخش کند.</p>
+<ul>
+<li><strong>کجا نصب شده:</strong> فرودگاه‌های فرانکفورت و مونیخ، ایستگاه‌های برایتون و بریستول، اپرای سیدنی، تئاتر ملی بریتانیا و تئاتر گلوب شکسپیر</li>
+</ul>
+<ul>
+<li><strong>گوشی‌ها:</strong> اندروید ۱۶ از Auracast پشتیبانی می‌کند؛ اپل هنوز آن را روی دستگاه‌هایش فعال نکرده است</li>
+</ul>
+<ul>
+<li><strong>استاندارد:</strong> استاندارد بین‌المللی IEC برای نصب‌های کمک‌شنوایی با Auracast احتمالاً تا اواخر ۲۰۲۷ منتشر نمی‌شود</li>
+</ul>
+<ul>
+<li><strong>واقع‌بینی:</strong> تعداد مکان‌های مجهز هنوز کم است و همه سمعک‌ها و هدفون‌ها آن را پشتیبانی نمی‌کنند؛ پس بلندگو تا سال‌ها لایه اصلی می‌ماند و Auracast لایه مکمل است</li>
+</ul>
+<h3><span class="check-number">6.</span> بازار جهانی چقدر ارزش دارد؟</h3>
+<p><strong>بازار پیجینگ و هشدار صوتی (PAVA)، طبق The Business Research Company (مارس ۲۰۲۶):</strong></p>
+<div class="tw"><table><tr><th>سال</th><th>ارزش بازار</th></tr><tr><td>۲۰۲۵</td><td>۴٫۲۷ میلیارد دلار</td></tr><tr><td>۲۰۲۶</td><td>۴٫۵۸ میلیارد دلار</td></tr><tr><td>۲۰۳۰</td><td>۶٫۱۴ میلیارد دلار</td></tr><tr><td>رشد سالانه تا ۲۰۳۰</td><td>حدود ۷٫۶٪</td></tr></table></div>
+<p><strong>بازار اطلاع‌رسانی انبوه، طبق MarketsandMarkets (ژانویه ۲۰۲۶):</strong></p>
+<div class="tw"><table><tr><th>سال</th><th>ارزش بازار</th></tr><tr><td>۲۰۲۵</td><td>حدود ۲۸٫۹ میلیارد دلار</td></tr><tr><td>۲۰۳۰</td><td>حدود ۸۰٫۴ میلیارد دلار</td></tr><tr><td>رشد سالانه</td><td>حدود ۲۲٫۷٪</td></tr></table></div>
+<blockquote>این ارقام پیش‌بینی بازار هستند، نه درآمد قطعی آینده. دو بازار تعریف متفاوتی دارند و ارزششان قابل جمع‌زدن نیست.</blockquote>
+<p><strong>موتورهای رشد:</strong><br>آمادگی برای بحران و بلایای طبیعی، سخت‌تر شدن مقررات ایمنی، سیستم‌های ابری، پیام‌رسانی هم‌زمان در چند شعبه و شهر، و نیاز به دسترس‌پذیری برای کم‌شنواها و سالمندان. پرشتاب‌ترین بخش اطلاع‌رسانی انبوه، تداوم کسب‌وکار و مدیریت بحران است.</p>
+<h3><span class="check-number">7.</span> هوش مصنوعی؛ وقتی سیستم صوت فقط بلندگو نیست</h3>
+<p>مرحله بعدی تحول صنعت صوت، اتصال سیستم‌های پیجینگ به دوربین‌ها، حسگرها، نرم‌افزارهای مدیریت ساختمان و سامانه‌های کنترل صنعتی است.</p>
+<p>تصور کنید در یک تونل، خودرویی متوقف شده یا ازدحام غیرعادی ایجاد شده است. هوش مصنوعی می‌تواند تصاویر دوربین‌ها را تحلیل و وضعیت مشکوک را شناسایی کند. سپس سیستم، طبق قواعد ایمنی و تأییدهای لازم، اطلاعیه مناسب را فقط در همان منطقه پخش می‌کند.</p>
+<ul>
+<li><strong>تشخیص خطر از تصویر:</strong> ازدحام غیرعادی، ورود به محدوده ممنوع، توقف خودرو در تونل</li>
+</ul>
+<ul>
+<li><strong>اعلام هدفمند:</strong> پیام متفاوت برای هر منطقه، هر طبقه و هر سکو</li>
+</ul>
+<ul>
+<li><strong>مدیریت ازدحام و تخلیه:</strong> هدایت مرحله‌به‌مرحله افراد به مسیر امن</li>
+</ul>
+<ul>
+<li><strong>پیام چندزبانه:</strong> تولید و ترجمه خودکار اطلاعیه، مثل آزمایش بریتانیا</li>
+</ul>
+<ul>
+<li><strong>نگهداری پیش‌بینانه:</strong> تشخیص آمپلی‌فایر یا بلندگویی که رفتار غیرعادی دارد، پیش از خرابی</li>
+</ul>
+<blockquote>در پروژه‌های حساس، تشخیص هوشمند نباید تنها مرجع صدور فرمان اضطراری باشد. سیستم باید کنترل انسانی، قواعد قطعی ایمنی، مسیر ارتباطی پشتیبان و عملکرد مستقل هنگام قطع شبکه داشته باشد.</blockquote>
+<p>در مقررات اروپایی ایمنی تونل‌ها نیز پایش تصویری و تشخیص خودکار حادثه پیش‌بینی شده است. بخشی از این امکانات همین امروز در سامانه‌های صنعتی قابل اجراست و بخشی دیگر به توسعه و یکپارچه‌سازی بیشتر نیاز دارد.</p>
+<h3><span class="check-number">8.</span> کاربردها، صنعت به صنعت</h3>
+<div class="tw"><table><tr><th>صنعت</th><th>نیاز اصلی</th><th>فناوری کلیدی</th></tr><tr><td>فرودگاه</td><td>اطلاعیه گیت، چندزبانه، دسترس‌پذیری</td><td>پیجینگ IP، Auracast</td></tr><tr><td>مترو و راه‌آهن</td><td>پیام هر سکو و قطار، تخلیه</td><td>پیجینگ منطقه‌ای، اتصال به کنترل ترافیک</td></tr><tr><td>تونل</td><td>تشخیص حادثه، هشدار فوری</td><td>دوربین هوشمند، بلندگوی تونل، رادیو</td></tr><tr><td>نفت و گاز و پتروشیمی</td><td>هشدار گاز و آتش در محیط پرصدا</td><td>تجهیزات ضدانفجار، اتصال به حسگرها</td></tr><tr><td>بیمارستان</td><td>پیام منطقه‌ای بی‌سروصدا، فراخوان کادر</td><td>پیجینگ IP، پیام روی گوشی کارکنان</td></tr><tr><td>مدرسه و دانشگاه</td><td>زنگ، اطلاعیه، تخلیه</td><td>سیستم زمان‌بندی‌شده، اطلاع‌رسانی انبوه</td></tr><tr><td>برج و مجتمع تجاری</td><td>تخلیه طبقه‌به‌طبقه، موسیقی زمینه</td><td>سیستم هشدار صوتی استاندارد</td></tr><tr><td>شهر</td><td>هشدار بلایای طبیعی</td><td>بلندگوی فضای باز، پیامک همگانی</td></tr></table></div>
+<h3><span class="check-number">9.</span> چه کسانی در این بازار بازی می‌کنند؟</h3>
+<div class="tw"><table><tr><th>شرکت</th><th>حوزه</th><th>نکته</th></tr><tr><td>Keenfinity (آلمان)</td><td>پیجینگ و هشدار صوتی، ارتباطات حرفه‌ای</td><td>بخش سابق امنیت و ارتباطات بوش؛ ژوئیه ۲۰۲۵ به Triton فروخته شد؛ حدود ۴٬۳۰۰ کارمند و بیش از یک میلیارد یورو درآمد</td></tr><tr><td>Honeywell و Siemens</td><td>ایمنی ساختمان و هشدار حریق</td><td>سیستم‌های یکپارچه آتش و هشدار صوتی</td></tr><tr><td>TOA (ژاپن)</td><td>صوت عمومی و هشدار</td><td>از نام‌های قدیمی صوت عمومی در آسیا و خاورمیانه</td></tr><tr><td>Sittig (آلمان)</td><td>پیجینگ فرودگاه و حمل‌ونقل</td><td>مجری پروژه‌های فرانکفورت و مونیخ</td></tr><tr><td>Ampetronic و Listen Technologies</td><td>کمک‌شنوایی و Auracast</td><td>مجری ایستگاه برایتون</td></tr><tr><td>Everbridge (آمریکا)</td><td>اطلاع‌رسانی انبوه و مدیریت بحران</td><td>ژوئیه ۲۰۲۴ با حدود ۱٫۸ میلیارد دلار به Thoma Bravo فروخته شد</td></tr><tr><td>Motorola Solutions</td><td>ارتباطات اضطراری</td><td>Rave Mobile Safety را در ۲۰۲۲ خرید</td></tr><tr><td>گوگل، سامسونگ، GN</td><td>گوشی و سمعک</td><td>شرکای فناوری فرودگاه فرانکفورت</td></tr></table></div>
+<p>خرید و فروش‌های بزرگ این حوزه نشان می‌دهد سرمایه‌گذاران، اطلاع‌رسانی اضطراری و ارتباطات ایمنی را یک زیرساخت بلندمدت می‌بینند.</p>
+<h3><span class="check-number">10.</span> زنجیره ارزش: پول در کجای این صنعت است؟</h3>
+<ul>
+<li><strong>تراشه و ماژول:</strong> تراشه‌های بلوتوث LE Audio و پردازش صدا</li>
+</ul>
+<ul>
+<li><strong>سخت‌افزار:</strong> بلندگو، آمپلی‌فایر، میکروفن، ایستگاه پیجینگ، فرستنده Auracast</li>
+</ul>
+<ul>
+<li><strong>نرم‌افزار:</strong> کنترل مرکزی، زمان‌بندی، پیام‌های آماده، داشبورد سلامت سیستم، تحلیل تصویر</li>
+</ul>
+<ul>
+<li><strong>طراحی و مهندسی:</strong> محاسبه آکوستیک، وضوح گفتار، طراحی مناطق و مسیرهای پشتیبان</li>
+</ul>
+<ul>
+<li><strong>نصب و یکپارچه‌سازی:</strong> اتصال به اعلام حریق، دوربین، مدیریت ساختمان و کنترل صنعتی</li>
+</ul>
+<ul>
+<li><strong>نگهداری و خدمات:</strong> قرارداد پشتیبانی، تست دوره‌ای و به‌روزرسانی؛ درآمدی تکرارشونده و پایدار</li>
+</ul>
+<h3><span class="check-number">11.</span> استانداردها: زبان مشترک ایمنی</h3>
+<p>سیستم هشدار صوتی اضطراری فقط «بلندگوی بلندتر» نیست؛ باید طبق استاندارد طراحی، تست و نگهداری شود.</p>
+<ul>
+<li><strong>EN 54-16 و ISO 7240-16:</strong> تجهیزات کنترل هشدار صوتی</li>
+</ul>
+<ul>
+<li><strong>EN 54-24:</strong> بلندگوهای سیستم هشدار صوتی</li>
+</ul>
+<ul>
+<li><strong>EN 50849:</strong> سیستم‌های صوتی برای مقاصد اضطراری</li>
+</ul>
+<ul>
+<li><strong>Auracast:</strong> استاندارد IEC برای نصب‌های کمک‌شنوایی، احتمالاً اواخر ۲۰۲۷</li>
+</ul>
+<p>برای شرکت‌های ایرانی، گرفتن گواهی‌های معتبر کلید ورود به پروژه‌های بزرگ و صادرات است.</p>
+<h3><span class="check-number">12.</span> چه تغییراتی در راه است؟</h3>
+<div class="tw"><table><tr><th>دیروز</th><th>امروز و فردا</th></tr><tr><td>کابل آنالوگ جدا برای هر منطقه</td><td>صدا روی شبکه IP</td></tr><tr><td>یک پیام برای همه، با یک بلندی</td><td>پیام جدا برای هر منطقه و هر گروه</td></tr><tr><td>فقط بلندگوی سقفی</td><td>بلندگو + هدفون + سمعک + گوشی + صفحه‌نمایش</td></tr><tr><td>تعمیر بعد از خرابی</td><td>پایش لحظه‌ای و پیش‌بینی خرابی</td></tr><tr><td>اپراتور با میکروفن</td><td>پیام‌های آماده، زمان‌بندی‌شده و چندزبانه</td></tr><tr><td>سیستم جدا از دوربین و حسگر</td><td>یکپارچه با دوربین، حسگر و مدیریت ساختمان</td></tr><tr><td>امنیت فیزیکی</td><td>امنیت سایبری در برابر نفوذ و پیام جعلی</td></tr></table></div>
+<h3><span class="check-number">13.</span> فرصت تازه برای صنعت صوت ایران</h3>
+<p>فرودگاه‌ها، مترو، ایستگاه‌های راه‌آهن، بیمارستان‌ها، کارخانه‌ها و ساختمان‌های عمومی ایران به زیرساخت‌های صوتی و اطلاع‌رسانی نیاز دارند. بخش بزرگی از سیستم‌های موجود هنوز آنالوگ است.</p>
+<p>توسعه سیستم‌های پیجینگ تحت شبکه، ماژول‌های Auracast، کنترلرهای هوشمند و تجهیزات یکپارچه با دوربین‌ها و حسگرهای صنعتی می‌تواند زمینه جدیدی برای مهندسی و تولید داخلی ایجاد کند.</p>
+<ul>
+<li><strong>بازارهای درگیر:</strong> حمل‌ونقل هوایی و ریلی، متروی شهرها، تونل‌های جاده‌ای، نفت و گاز و پتروشیمی، نیروگاه‌ها، بیمارستان‌ها، مدارس و دانشگاه‌ها، اماکن مذهبی، ورزشگاه‌ها، برج‌ها و مجتمع‌های تجاری، و مدیریت بحران شهری</li>
+</ul>
+<ul>
+<li><strong>آمادگی برای زلزله:</strong> در کشوری که آمادگی برای حوادث طبیعی حیاتی است، سیستم‌های هشدار و تخلیه استاندارد در ساختمان‌های پرتردد ارزش واقعی دارند</li>
+</ul>
+<ul>
+<li><strong>ارتقای تدریجی، مثل فرانکفورت:</strong> اضافه کردن لایه دیجیتال و تحت شبکه روی زیرساخت موجود؛ هزینه کمتر و اجرای سریع‌تر</li>
+</ul>
+<ul>
+<li><strong>مزیت شرکت‌های داخلی:</strong> شناخت زبان و نیاز محلی، پشتیبانی نزدیک، قیمت رقابتی و توان سفارشی‌سازی</li>
+</ul>
+<ul>
+<li><strong>هوراند، پیشگام داخلی:</strong> هوراند، به‌عنوان یکی از اولین و قدیمی‌ترین شرکت‌های این حوزه در ایران، در تلاش است خود را به این فناوری نزدیک کند تا بتواند اولین نمونه‌هایش را برای بازار داخلی آماده کند.</li>
+</ul>
+<ul>
+<li><strong>دسترس‌پذیری:</strong> اطلاعیه‌هایی که به کم‌شنواها و سالمندان هم برسد؛ حوزه‌ای انسانی که در ایران تقریباً خالی است</li>
+</ul>
+<ul>
+<li><strong>شغل و مهارت:</strong> طراحی آکوستیک، شبکه، نرم‌افزار کنترل، نصب و نگهداری؛ زنجیره‌ای از کار تخصصی برای مهندسان جوان</li>
+</ul>
+<p><strong>نقشه راه پیشنهادی برای یک شرکت ایرانی:</strong></p>
+<ul>
+<li><strong>قدم ۱:</strong> پیجینگ IP و کنترل مرکزی روی محصولات فعلی</li>
+</ul>
+<ul>
+<li><strong>قدم ۲:</strong> پایش سلامت سیستم و گزارش خرابی</li>
+</ul>
+<ul>
+<li><strong>قدم ۳:</strong> اتصال به اعلام حریق، دوربین و مدیریت ساختمان</li>
+</ul>
+<ul>
+<li><strong>قدم ۴:</strong> پروژه آزمایشی Auracast در یک سالن یا ایستگاه</li>
+</ul>
+<ul>
+<li><strong>قدم ۵:</strong> گرفتن گواهی‌های استاندارد و ورود به پروژه‌های بزرگ و بازار منطقه</li>
+</ul>
+<p>این تحول فقط درباره فروش بلندگوهای بیشتر نیست؛ درباره توسعه سیستم‌هایی است که بتوانند اطلاعات را دقیق‌تر، سریع‌تر و متناسب با نیاز هر محیط منتقل کنند.</p>
+<h3><span class="check-number">14.</span> چالش‌ها</h3>
+<ul>
+<li><strong>استاندارد و کیفیت:</strong> تجهیزات ارزان و بی‌کیفیت در لحظه بحران جواب نمی‌دهند؛ طراحی و تست طبق استاندارد لازم است</li>
+</ul>
+<ul>
+<li><strong>دستگاه‌ها:</strong> همه گوشی‌ها و سمعک‌ها هنوز از Auracast پشتیبانی نمی‌کنند</li>
+</ul>
+<ul>
+<li><strong>امنیت سایبری:</strong> سیستمی که روی شبکه است باید در برابر نفوذ و پیام جعلی محافظت شود</li>
+</ul>
+<ul>
+<li><strong>تأمین قطعات:</strong> دسترسی به تراشه‌ها، قطعات و پشتیبانی فنی جهانی برنامه‌ریزی جدی می‌خواهد</li>
+</ul>
+<ul>
+<li><strong>هوش مصنوعی:</strong> خطای تشخیص در محیط حساس پرهزینه است؛ کنترل انسانی و مسیر پشتیبان ضروری است</li>
+</ul>
+<h3><span class="check-number">15.</span> سه سناریوی آینده</h3>
+<ul>
+<li><strong>رشد آرام:</strong> پیجینگ IP جای آنالوگ را می‌گیرد و Auracast در فرودگاه‌ها، ایستگاه‌ها و سالن‌ها لایه مکمل می‌شود</li>
+</ul>
+<ul>
+<li><strong>جهش هوشمند:</strong> با فعال شدن Auracast در همه گوشی‌ها و انتشار استانداردها، اطلاعیه شخصی و چندزبانه به امری عادی تبدیل می‌شود</li>
+</ul>
+<ul>
+<li><strong>ایمنی‌محور:</strong> مقررات سخت‌تر و بلایای طبیعی، اطلاع‌رسانی اضطراری را به بخش اصلی بودجه شهرها و صنایع تبدیل می‌کند</li>
+</ul>
+<h3><span class="check-number">16.</span> نگاه دیتومان</h3>
+<p>صنعت صوت عمومی در حال حرکت از یک سیستم صرفاً پخش‌کننده به یک زیرساخت ارتباطی هوشمند است.</p>
+<p>در آینده، بلندگوها، سمعک‌ها، هدفون‌ها، دوربین‌ها و حسگرها می‌توانند اجزای یک شبکه اطلاع‌رسانی یکپارچه باشند.</p>
+<blockquote>آینده اطلاع‌رسانی عمومی فقط بلندتر شنیده‌شدن نیست؛ رساندن پیام درست، در زمان درست، به مخاطب درست است.</blockquote>
+<p>برای ایران، این یعنی فرصتی واقعی: ارتقای هوشمند زیرساخت‌های موجود، ایمنی بیشتر در ساختمان‌ها و شهرها، شغل تخصصی برای مهندسان، و صدایی که هیچ‌کس را جا نمی‌گذارد.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="ai-tickets.html">چرا یونایتد خرید بلیت با هوش مصنوعی را ممنوع کرد؟</a></li><li><a href="ai-small-business.html">هوش مصنوعی برای کسب‌وکارهای کوچک</a></li><li><a href="ai-integrators.html">صنعت تازه: ساختن هوش مصنوعی برای کسب‌وکارها</a></li><li><a href="prices.html">قیمت لحظه‌ای تتر، بیت‌کوین و طلا</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.gn.com/newsroom/news/2026/january/frankfurt-airport-becomes-the-first-airport-worldwide-to-use-auracast" target="_blank" rel="noopener">Frankfurt Airport / GN: first airport to use Auracast for announcements</a></li><li><a href="https://hearinghealthmatters.org/hearing-news-watch/2026/sittig-munich-airport/" target="_blank" rel="noopener">HHTM: Sittig brings Auracast to Munich Airport</a></li><li><a href="https://hearinghealthmatters.org/hearing-technologies/2026/permanent-auracast-installation-hearing-care/" target="_blank" rel="noopener">HHTM: UK first permanent rail Auracast installation (Brighton)</a></li><li><a href="https://www.thenationalnews.com/news/uk/2026/09/11/uk-train-stations-test-live-translation-technology-for-travel-announcements/" target="_blank" rel="noopener">The National: UK stations test live translation of announcements</a></li><li><a href="https://hearinghealthmatters.org/findhearing/2026/auracast-hearing-access/" target="_blank" rel="noopener">HHTM: why Auracast could change hearing access</a></li><li><a href="https://techcrunch.com/2025/03/13/android-is-adding-auracast-support-which-allows-hearing-aids-to-connect-to-public-audio-broadcasts/" target="_blank" rel="noopener">TechCrunch: Android adds Auracast support</a></li><li><a href="https://www.giiresearch.com/report/tbrc1982940-public-address-voice-alarm-systems-global-market.html" target="_blank" rel="noopener">The Business Research Company: PA and voice alarm systems market 2026 (via GII)</a></li><li><a href="https://www.securityworldmarket.com/na/News/Business-News/mass-notification-market-to-reach-8044-billion-by-2030" target="_blank" rel="noopener">MarketsandMarkets: mass notification market to $80.44B by 2030</a></li><li><a href="https://www.triton-partners.com/news/triton-completes-acquisition-of-security-and-communications-technology-product-business-from-bosch-now-operating-as-keenfinity-group" target="_blank" rel="noopener">Triton: Keenfinity (former Bosch security and communications) acquisition</a></li><li><a href="https://www.businesswire.com/news/home/20240701424987/en/Thoma-Bravo-Completes-Acquisition-of-Everbridge" target="_blank" rel="noopener">Thoma Bravo completes acquisition of Everbridge</a></li><li><a href="https://securitytoday.com/articles/2022/12/15/motorola-solutions-acquires-rave-mobile-safety.aspx" target="_blank" rel="noopener">Motorola Solutions acquires Rave Mobile Safety</a></li><li><a href="https://www.broadcastbeat.com/studio-technologies-aes67-st-2110-and-ravenna-compatible-announcers-consoles-highlighted-at-ise-2026/" target="_blank" rel="noopener">BroadcastBeat: AES67 announcer consoles at ISE 2026</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۲۲ آبان ۱۴۰۵. ارقام بازار پیش‌بینی مؤسسات پژوهشی است، نه درآمد قطعی.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<h3><span class="check-number">0.</span> At a glance</h3>
+<p>Public audio, the loudspeakers in airports, metros, schools, hospitals and factories, is one of the oldest technologies in daily life. In 2026 it is going through its biggest change: announcements reach each listener's own ears, and the sound system is turning from a "player" into smart communication infrastructure.</p>
+<div class="tw"><table><tr><th>Indicator</th><th>Figure</th></tr><tr><td>First airport streaming announcements to headphones and hearing aids</td><td>Frankfurt, January 2026</td></tr><tr><td>Gates equipped in Munich (from 14 July 2026)</td><td>6 gates in two terminals</td></tr><tr><td>First permanent installation on UK rail</td><td>Brighton station, 2026</td></tr><tr><td>People living with hearing loss worldwide</td><td>more than 1.5 billion</td></tr><tr><td>PA and voice alarm market, 2026 to 2030</td><td>$4.58B to $6.14B (about 7.6% a year)</td></tr><tr><td>Mass notification market, 2025 to 2030</td><td>about $28.9B to $80.4B (about 22.7% a year)</td></tr></table></div>
+<h3><span class="check-number">1.</span> Paging, PA, voice alarm, mass notification</h3>
+<ul>
+<li><strong>Paging:</strong> calling a person or giving a short message in a space</li>
+</ul>
+<ul>
+<li><strong>Public address (PA):</strong> speakers, amplifiers, microphones and controllers that carry announcements and background music</li>
+</ul>
+<ul>
+<li><strong>Voice alarm (VA):</strong> the same system built to safety standards; it must work during a fire or evacuation, report its own faults and stay intelligible</li>
+</ul>
+<ul>
+<li><strong>Mass notification:</strong> one message sent at once to speakers, SMS, apps, screens and email across sites or a whole city</li>
+</ul>
+<h3><span class="check-number">2.</span> Frankfurt: the world's first airport</h3>
+<p>On 28 January 2026 Frankfurt Airport said it was the first airport in the world to send all gate announcements directly to passengers' own devices, in a trial at gates A16 and A17 in Terminal 1. Partners: Fraport and Sittig Technologies with the Frankfurt University of Applied Sciences, plus Google, Samsung, GN and the Bluetooth SIG, funded by the state of Hesse's digital-innovation programme. The Auracast transmitters were built into the IP paging stations already at the gates. Frankfurt handled 63.2 million passengers in 2025.</p>
+<h3><span class="check-number">3.</span> Munich: the next step</h3>
+<p>From 14 July 2026 Munich Airport, also with Sittig, ran the system at six gates in two terminals. Passengers scan a QR code; on Android, announcements fade in over music; iPhone users need a third-party app because Apple has not yet enabled Auracast; compatible hearing aids and cochlear implants receive the message without hall noise.</p>
+<h3><span class="check-number">4.</span> Britain: from Brighton station to live translation</h3>
+<p>Brighton station (Southern, Thameslink and Gatwick Express) has the first permanent Auracast installation on the UK rail network, supplied by Ampetronic and Listen Technologies (Auri); the existing induction loop stays. About 18 million people in the UK are deaf or have hearing loss. From September 2026, Brighton (a one-year pilot) and Bristol Temple Meads (four platforms) are testing AI live translation of announcements from XRAI, delivered over Auracast in the listener's chosen language.</p>
+<h3><span class="check-number">5.</span> What is Auracast?</h3>
+<p>A broadcast audio capability built on Bluetooth LE Audio. Classic Bluetooth links one phone to one headset; Auracast links one transmitter to an unlimited number of receivers, with no pairing, and can carry several channels, for example several languages. It is installed at Frankfurt and Munich airports, Brighton and Bristol stations, the Sydney Opera House, the National Theatre and Shakespeare's Globe. Android 16 supports it; Apple has not enabled it yet; the IEC standard for Auracast assistive-listening installations is not expected until late 2027. Loudspeakers will remain the main layer for years; Auracast is a complementary layer.</p>
+<h3><span class="check-number">6.</span> How big is the market?</h3>
+<div class="tw"><table><tr><th>Market</th><th>Figures</th></tr><tr><td>PA and voice alarm (The Business Research Company, Mar 2026)</td><td>$4.27B (2025), $4.58B (2026), $6.14B (2030); about 7.6% a year</td></tr><tr><td>Mass notification (MarketsandMarkets, Jan 2026)</td><td>about $28.9B (2025) to $80.4B (2030); about 22.7% a year</td></tr></table></div>
+<blockquote>These are market forecasts, not guaranteed future revenue. The two markets are defined differently and cannot be added together.</blockquote>
+<h3><span class="check-number">7.</span> AI: when a sound system is more than a speaker</h3>
+<p>The next stage connects paging to cameras, sensors, building management and industrial control. AI can analyse camera feeds to detect a stopped vehicle in a tunnel or unusual crowding; the system, under safety rules and the required approvals, then plays the right message only in that zone. Other uses: targeted announcements per zone, crowd management and evacuation guidance, multilingual messages and predictive maintenance of amplifiers and speakers.</p>
+<blockquote>In critical projects, AI detection must never be the only source of an emergency command. Systems need human control, deterministic safety rules, backup paths and independent operation if the network fails.</blockquote>
+<h3><span class="check-number">8.</span> Applications by sector</h3>
+<div class="tw"><table><tr><th>Sector</th><th>Main need</th><th>Key technology</th></tr><tr><td>Airports</td><td>Gate announcements, multilingual, accessibility</td><td>IP paging, Auracast</td></tr><tr><td>Metro and rail</td><td>Per-platform and per-train messages, evacuation</td><td>Zoned paging, traffic-control integration</td></tr><tr><td>Tunnels</td><td>Incident detection, instant warning</td><td>Smart cameras, tunnel speakers, radio</td></tr><tr><td>Oil, gas and petrochemicals</td><td>Gas and fire alarms in noisy areas</td><td>Explosion-proof equipment, sensor integration</td></tr><tr><td>Hospitals</td><td>Quiet zoned messages, staff calls</td><td>IP paging, staff phone alerts</td></tr><tr><td>Schools and universities</td><td>Bells, notices, evacuation</td><td>Scheduled systems, mass notification</td></tr><tr><td>Towers and malls</td><td>Phased evacuation, background music</td><td>Standard-compliant voice alarm</td></tr><tr><td>Cities</td><td>Natural-disaster warning</td><td>Outdoor speakers, cell broadcast</td></tr></table></div>
+<h3><span class="check-number">9.</span> Who plays in this market?</h3>
+<div class="tw"><table><tr><th>Company</th><th>Area</th><th>Note</th></tr><tr><td>Keenfinity (Germany)</td><td>PA/VA, professional communication</td><td>Former Bosch security and communications business; sold to Triton in July 2025; about 4,300 staff, over €1B revenue</td></tr><tr><td>Honeywell, Siemens</td><td>Building safety and fire alarm</td><td>Integrated fire and voice alarm</td></tr><tr><td>TOA (Japan)</td><td>PA and alarm</td><td>Long-standing PA name in Asia and the Middle East</td></tr><tr><td>Sittig (Germany)</td><td>Airport and transport paging</td><td>Frankfurt and Munich projects</td></tr><tr><td>Ampetronic, Listen Technologies</td><td>Assistive listening, Auracast</td><td>Brighton station</td></tr><tr><td>Everbridge (US)</td><td>Mass notification, critical events</td><td>Acquired by Thoma Bravo in July 2024 for about $1.8B</td></tr><tr><td>Motorola Solutions</td><td>Emergency communications</td><td>Bought Rave Mobile Safety in 2022</td></tr><tr><td>Google, Samsung, GN</td><td>Phones, hearing aids</td><td>Frankfurt technology partners</td></tr></table></div>
+<h3><span class="check-number">10.</span> The value chain</h3>
+<p>Chips and modules (Bluetooth LE Audio, audio processing); hardware (speakers, amplifiers, paging stations, Auracast transmitters); software (central control, scheduling, health dashboards, video analytics); design and engineering (acoustics, speech intelligibility, zoning); integration with fire alarm, cameras and building management; and maintenance contracts, a recurring and stable revenue line.</p>
+<h3><span class="check-number">11.</span> Standards</h3>
+<p>EN 54-16 and ISO 7240-16 (voice alarm control equipment), EN 54-24 (voice alarm loudspeakers), EN 50849 (sound systems for emergency purposes), and an IEC standard for Auracast assistive listening expected around late 2027. Certification is the key to large projects and exports.</p>
+<h3><span class="check-number">12.</span> What is changing</h3>
+<div class="tw"><table><tr><th>Yesterday</th><th>Today and tomorrow</th></tr><tr><td>Separate analogue cable per zone</td><td>Audio over IP</td></tr><tr><td>One message, one volume for everyone</td><td>Different messages per zone and group</td></tr><tr><td>Ceiling speakers only</td><td>Speakers + headphones + hearing aids + phones + screens</td></tr><tr><td>Repair after failure</td><td>Live monitoring and failure prediction</td></tr><tr><td>An operator with a microphone</td><td>Prepared, scheduled, multilingual messages</td></tr><tr><td>Isolated from cameras and sensors</td><td>Integrated with cameras, sensors, building management</td></tr><tr><td>Physical security</td><td>Cyber security against intrusion and fake messages</td></tr></table></div>
+<h3><span class="check-number">13.</span> The opportunity for Iran</h3>
+<p>Iran's airports, metros, rail stations, hospitals, factories and public buildings all need public audio and notification infrastructure, much of it still analogue. Networked paging, Auracast modules, smart controllers and equipment integrated with cameras and industrial sensors can open a new field for local engineering and manufacturing. Markets involved include air and rail transport, city metros, road tunnels, oil, gas and petrochemicals, power plants, hospitals, schools, religious sites, stadiums, towers and malls, and urban crisis management. In an earthquake-prone country, standard-compliant alarm and evacuation systems in busy buildings have real value. Local firms bring local knowledge, nearby support and customisation. Horand, one of the first and longest-established companies in this field in Iran, is working to bring itself closer to this technology so it can prepare its first products for the domestic market.</p>
+<p><strong>A suggested roadmap:</strong> IP paging and central control; system health monitoring; integration with fire alarm, cameras and building management; an Auracast pilot in one hall or station; then certification and larger projects and regional markets.</p>
+<h3><span class="check-number">14.</span> Challenges</h3>
+<p>Standards and quality; device support for Auracast; cyber security; access to chips, parts and global support; and the cost of AI errors in critical settings, which makes human control and backup paths essential.</p>
+<h3><span class="check-number">15.</span> Three scenarios</h3>
+<p><strong>Gradual growth:</strong> IP paging replaces analogue and Auracast becomes a complementary layer. <strong>Smart leap:</strong> with Auracast on all phones and standards published, personal multilingual announcements become normal. <strong>Safety-led:</strong> stricter rules and natural disasters make emergency notification a core budget line for cities and industry.</p>
+<h3><span class="check-number">16.</span> Ditoman's reading</h3>
+<p>Public audio is moving from a system that only plays sound to smart communication infrastructure. Speakers, hearing aids, headphones, cameras and sensors can become parts of one notification network. <strong>The future of public announcements is not being heard louder; it is the right message, at the right time, reaching the right person.</strong></p>
+<h3>Read more</h3><ul><li><a href="europe-welfare.html">Europe's costly welfare: who pays the bill?</a></li><li><a href="ai-integrators.html">The new industry: building AI into business</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.gn.com/newsroom/news/2026/january/frankfurt-airport-becomes-the-first-airport-worldwide-to-use-auracast" target="_blank" rel="noopener">Frankfurt Airport / GN: first airport to use Auracast for announcements</a></li><li><a href="https://hearinghealthmatters.org/hearing-news-watch/2026/sittig-munich-airport/" target="_blank" rel="noopener">HHTM: Sittig brings Auracast to Munich Airport</a></li><li><a href="https://hearinghealthmatters.org/hearing-technologies/2026/permanent-auracast-installation-hearing-care/" target="_blank" rel="noopener">HHTM: UK first permanent rail Auracast installation (Brighton)</a></li><li><a href="https://www.thenationalnews.com/news/uk/2026/09/11/uk-train-stations-test-live-translation-technology-for-travel-announcements/" target="_blank" rel="noopener">The National: UK stations test live translation of announcements</a></li><li><a href="https://hearinghealthmatters.org/findhearing/2026/auracast-hearing-access/" target="_blank" rel="noopener">HHTM: why Auracast could change hearing access</a></li><li><a href="https://techcrunch.com/2025/03/13/android-is-adding-auracast-support-which-allows-hearing-aids-to-connect-to-public-audio-broadcasts/" target="_blank" rel="noopener">TechCrunch: Android adds Auracast support</a></li><li><a href="https://www.giiresearch.com/report/tbrc1982940-public-address-voice-alarm-systems-global-market.html" target="_blank" rel="noopener">The Business Research Company: PA and voice alarm systems market 2026 (via GII)</a></li><li><a href="https://www.securityworldmarket.com/na/News/Business-News/mass-notification-market-to-reach-8044-billion-by-2030" target="_blank" rel="noopener">MarketsandMarkets: mass notification market to $80.44B by 2030</a></li><li><a href="https://www.triton-partners.com/news/triton-completes-acquisition-of-security-and-communications-technology-product-business-from-bosch-now-operating-as-keenfinity-group" target="_blank" rel="noopener">Triton: Keenfinity (former Bosch security and communications) acquisition</a></li><li><a href="https://www.businesswire.com/news/home/20240701424987/en/Thoma-Bravo-Completes-Acquisition-of-Everbridge" target="_blank" rel="noopener">Thoma Bravo completes acquisition of Everbridge</a></li><li><a href="https://securitytoday.com/articles/2022/12/15/motorola-solutions-acquires-rave-mobile-safety.aspx" target="_blank" rel="noopener">Motorola Solutions acquires Rave Mobile Safety</a></li><li><a href="https://www.broadcastbeat.com/studio-technologies-aes67-st-2110-and-ravenna-compatible-announcers-consoles-highlighted-at-ise-2026/" target="_blank" rel="noopener">BroadcastBeat: AES67 announcer consoles at ISE 2026</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 13 November 2026. Market figures are research-firm forecasts, not guaranteed revenue.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261113" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>
