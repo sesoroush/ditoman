@@ -25,7 +25,7 @@ FONTS = ROOT / "scripts" / "report" / "fonts"
 GEO = ROOT / "assets" / "geo"
 LOGO = ROOT / "tmn-logo-512.png"
 # lesson covers that contain Persian text
-LESSONS = ["lesson06", "lesson07", "lesson08", "lesson09", "lesson10", "lesson11"]
+LESSONS = ["lesson06", "lesson07", "lesson08", "lesson09", "lesson10", "lesson11"] + [f"lesson{n}" for n in range(12, 22)]
 
 
 def clean(s):

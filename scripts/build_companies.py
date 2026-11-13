@@ -246,9 +246,9 @@ def page(title, desc, path, body, image=None):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="fonts.css?v=1" />
-  <link rel="stylesheet" href="site.css?v=20261108" />
+  <link rel="stylesheet" href="site.css?v=20261113" />
   <style>{CSS}</style>
-  <link rel="stylesheet" href="theme.css?v=20261113" />
+  <link rel="stylesheet" href="theme.css?v=20261113c" />
 </head>
 <body data-lang="fa">
 

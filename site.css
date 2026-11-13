@@ -332,7 +332,7 @@ footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--m
 .topic + .topic { margin-top: 56px; }
 .topic-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; flex-wrap: wrap; }
 .topic-head h3 { font-size: 1.7rem; letter-spacing: -0.02em; }
-.topic-head [lang="fa"] { font-family: var(--fa-display); font-size: 1.35rem; color: var(--mint); }
+.topic-head > span[lang="fa"] { font-family: var(--fa-display); font-size: 1.35rem; color: var(--mint); }
 .topic-head p { color: var(--muted); flex-basis: 100%; }
 .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .lesson-card {

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Buy Today, Pay Tomorrow: Opportunity or Debt Trap? | Ditoman Learn</title>
+<meta name="description" content="Instalment buttons now sit next to almost every checkout. This lesson shows how to work out what a loan or an instalment plan really costs, how interest grows on interest, and four questions to ask before tapping &#x27;pay" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261113c" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson19.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson19.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson19.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson19.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Buy Today, Pay Tomorrow: Opportunity or Debt Trap? | Ditoman Learn" />
+<meta property="og:description" content="Instalment buttons now sit next to almost every checkout. This lesson shows how to work out what a loan or an instalment plan really costs, how interest grows on interest, and four questions to ask before tapping &#x27;pay" />
+<meta property="og:url" content="https://ditoman.com/lesson19.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson19.en.html#page",
+   "url": "https://ditoman.com/lesson19.en.html",
+   "name": "Buy Today, Pay Tomorrow: Opportunity or Debt Trap? | Ditoman Learn",
+   "description": "Instalment buttons now sit next to almost every checkout. This lesson shows how to work out what a loan or an instalment plan really costs, how interest grows on interest, and four questions to ask before tapping 'pay",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Buy Today, Pay Tomorrow: Opportunity or Debt Trap?",
+     "item": "https://ditoman.com/lesson19.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html" class="active">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Posts</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson19-cover.jpg" alt="Buy Today, Pay Tomorrow: Opportunity or Debt Trap? Ditoman lesson image" style="width:100%;height:auto"><img lang="en" src="lesson19-cover-en.jpg" alt="Buy Today, Pay Tomorrow: Opportunity or Debt Trap? Ditoman lesson image" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Credit • Debt</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">اعتبار • بدهی</div>
+<h1 lang="en">Buy Today, Pay Tomorrow: Opportunity or Debt Trap?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">خرید امروز، پرداخت فردا؛ فرصت یا تله‌ی بدهی؟</h1>
+<p class="subtitle" lang="en">Instalment buttons now sit next to almost every checkout. This lesson shows how to work out what a loan or an instalment plan really costs, how interest grows on interest, and four questions to ask before tapping 'pay later'.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">حالا تقریباً کنار هر دکمه‌ی پرداخت، یک دکمه‌ی قسطی هم هست. این درس نشان می‌دهد هزینه‌ی واقعی یک وام یا خرید قسطی را چطور حساب کنیم، سود چطور روی سود می‌نشیند و پیش از زدن «بعداً پرداخت کن» چه چهار چیزی را بپرسیم.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Level</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Beginner</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Reading Time</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 Minutes</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Learning Points</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 Questions</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Lesson Content</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Read the lesson in English or Persian.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">English</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">A phone costs 40 million. You do not have 40 million today. A button under the price says: four instalments, no paperwork, approved in a minute. One tap and the phone is yours.</p>
+<p lang="en">That button is a loan. A small, friendly, well-designed loan, but a loan. Borrowing is not bad in itself. Homes, education and businesses are built on it. The skill is knowing what a particular loan costs before you take it, and that is what we will work through together.</p>
+<h3><span class="check-number">01.</span> How "buy now, pay later" works</h3>
+<p lang="en">A lending company pays the shop for you today. You repay the lender in instalments. In the usual short version there are four payments over a few weeks with no interest, and the lender earns its money from a fee the shop pays, and from late fees.</p>
+<p lang="en">The same idea has spread worldwide and is growing in Iran through shopping and payment apps. Longer plans, over many months, usually do charge interest, whether it is called interest, a fee or a "service charge".</p>
+<h3><span class="check-number">02.</span> Why it feels free</h3>
+<p lang="en">Splitting a price into four makes each number small, and the mind judges the small number. Forty million feels heavy. Ten million feels fine. The total is the same.</p>
+<p lang="en">A second effect matters more. Each plan looks harmless alone, so they pile up. A study by the US consumer finance regulator found that 63 percent of pay-later borrowers had more than one such loan at the same time during the year, and about a third borrowed from more than one lender. Each lender sees only its own loan. Only you see the total.</p>
+<h3><span class="check-number">03.</span> The real price of a loan</h3>
+<p lang="en">To compare any two loans, put everything into one number: the total you repay, minus what you received.</p>
+<p lang="en">Take a simple example. You borrow 100 million and repay 9.5 million a month for twelve months. You repay 114 million. The loan cost 14 million.</p>
+<p lang="en">But notice that you did not have the full 100 million for the whole year. You were handing it back month by month, so on average you held only about half of it. That makes the true yearly rate roughly double what it first appears, around 25 percent in this example, not 14.</p>
+<p lang="en">This is why lenders in many countries must show an annual rate that includes all fees. When a plan shows only a monthly instalment, work out the total yourself.</p>
+<figure class="lz-fig"><figcaption>Example: a 100 million loan over 12 months</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>Amount</th>
+</tr></thead><tbody>
+<tr><td>Amount received</td><td>100 million</td></tr>
+<tr><td>Monthly instalment</td><td>9.5 million</td></tr>
+<tr><td>Total repaid</td><td>114 million</td></tr>
+<tr><td>Cost of the loan</td><td>14 million</td></tr>
+<tr><td>Simple percentage</td><td>14%</td></tr>
+<tr><td>True yearly rate (approx.)</td><td>about 25%</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> Interest on interest</h3>
+<p lang="en">When a debt is not paid down, the interest is added to the debt, and next time interest is charged on the larger amount. That is <strong>compound interest</strong>.</p>
+<p lang="en">It is the same force that helps a saver, working in the other direction. A debt of 100 million at 30 percent a year, left untouched, becomes 130 million after one year, 169 million after two and about 220 million after three. The rule of 72 from Lesson 12 applies here too: at 30 percent, a debt doubles in about two and a half years.</p>
+<p lang="en">Late fees work in the same direction. A missed instalment adds a penalty, and the penalty makes the next payment harder.</p>
+<h3><span class="check-number">05.</span> Good debt, expensive debt</h3>
+<p lang="en">There is no official line, but one question separates most cases: will the thing I am borrowing for last longer than the repayments, and will it earn or save me money?</p>
+<p lang="en">A tool for work, a course that raises your income or a home can pass that test. A holiday, a restaurant meal or a phone you did not need usually does not: the pleasure ends and the instalments continue.</p>
+<h3><span class="check-number">06.</span> Four questions before you tap</h3>
+<p lang="en"><strong>What is the total?</strong> Add up every instalment and every fee.</p>
+<p lang="en"><strong>What happens if I am late?</strong> Read the penalty before you need to know it.</p>
+<p lang="en"><strong>What else am I already paying?</strong> Write down every instalment due in the next three months, from every app.</p>
+<p lang="en"><strong>Would I buy this at this price in cash?</strong> If the answer is no, the instalment plan is making the decision for you.</p>
+<h3>What to take from this</h3>
+<p lang="en">"Pay later" is a loan, whatever the button says.</p>
+<p lang="en">Small instalments hide the total. Add it up.</p>
+<p lang="en">On a loan repaid monthly, the true yearly rate is roughly double the simple percentage.</p>
+<p lang="en">Unpaid debt grows on itself through compound interest and late fees.</p>
+<p lang="en">Borrow for things that outlast the repayments.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">یک گوشی ۴۰ میلیون قیمت دارد. امروز ۴۰ میلیون نداریم. زیر قیمت دکمه‌ای هست: چهار قسط، بدون کاغذبازی، تأیید در یک دقیقه. یک ضربه و گوشی مال ماست.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آن دکمه یک وام است. وامی کوچک، خوش‌برخورد و خوش‌طراحی، ولی وام. قرض گرفتن به‌خودی‌خود بد نیست. خانه، تحصیل و کسب‌وکار با آن ساخته می‌شود. مهارت این است که پیش از گرفتن یک وام، بدانیم چقدر برایمان تمام می‌شود. همین را با هم حساب می‌کنیم.</p>
+<h3><span class="check-number">۰۱.</span> «الان بخر، بعداً پرداخت کن» چطور کار می‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">یک شرکت اعتباری امروز به‌جای ما پول فروشگاه را می‌دهد. ما قسطی به آن شرکت پس می‌دهیم. در شکل کوتاه و رایجش چهار قسط در چند هفته است، بدون سود، و درآمد شرکت از کارمزدی است که فروشگاه می‌دهد و از جریمه‌ی دیرکرد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این روش در همه‌ی دنیا پخش شده و در ایران هم از راه اپ‌های خرید و پرداخت رو به رشد است. طرح‌های بلندتر، در چندین ماه، معمولاً سود دارند؛ چه اسمش «سود» باشد، چه «کارمزد» یا «هزینه‌ی خدمات».</p>
+<h3><span class="check-number">۰۲.</span> چرا رایگان به نظر می‌رسد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی قیمت به چهار قسمت تقسیم می‌شود، هر عدد کوچک می‌شود و ذهن همان عدد کوچک را می‌سنجد. چهل میلیون سنگین است. ده میلیون قابل‌تحمل است. جمعش همان است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اثر دوم مهم‌تر است. هر طرح به‌تنهایی بی‌خطر به نظر می‌رسد و برای همین روی هم جمع می‌شوند. بررسی نهاد ناظر مالی مصرف‌کنندگان در آمریکا نشان داد ۶۳ درصد کسانی که از این روش استفاده کرده بودند، در طول سال هم‌زمان بیش از یک وام از این نوع داشته‌اند و حدود یک‌سوم از بیش از یک شرکت قرض گرفته بودند. هر شرکت فقط وام خودش را می‌بیند. جمع کل را فقط خود ما می‌بینیم.</p>
+<h3><span class="check-number">۰۳.</span> قیمت واقعی یک وام</h3>
+<p lang="fa" dir="rtl" style="text-align:right">برای مقایسه‌ی هر دو وامی، همه‌چیز را به یک عدد برسانید: کل مبلغی که پس می‌دهید، منهای مبلغی که گرفته‌اید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">یک مثال ساده. ۱۰۰ میلیون قرض می‌گیرید و دوازده ماه، ماهی ۹٫۵ میلیون پس می‌دهید. در مجموع ۱۱۴ میلیون می‌پردازید. این وام ۱۴ میلیون هزینه داشته است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">ولی دقت کنید که کل ۱۰۰ میلیون یک سال تمام دست شما نبوده. ماه‌به‌ماه آن را پس داده‌اید، پس به‌طور میانگین فقط حدود نصفش در اختیارتان بوده است. برای همین نرخ واقعی سالانه تقریباً دو برابر چیزی است که اول به نظر می‌رسد؛ در این مثال حدود ۲۵ درصد، نه ۱۴.</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای همین است که در بسیاری از کشورها وام‌دهنده باید نرخ سالانه‌ای را نشان بدهد که همه‌ی کارمزدها در آن حساب شده باشد. وقتی طرحی فقط مبلغ قسط ماهانه را نشان می‌دهد، جمع کل را خودتان حساب کنید.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>مثال: وام ۱۰۰ میلیونی در ۱۲ ماه</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>مبلغ</th>
+</tr></thead><tbody>
+<tr><td>مبلغ دریافتی</td><td>۱۰۰ میلیون</td></tr>
+<tr><td>قسط ماهانه</td><td>۹٫۵ میلیون</td></tr>
+<tr><td>کل بازپرداخت</td><td>۱۱۴ میلیون</td></tr>
+<tr><td>هزینه‌ی وام</td><td>۱۴ میلیون</td></tr>
+<tr><td>درصد ساده</td><td>۱۴٪</td></tr>
+<tr><td>نرخ واقعی سالانه (تقریبی)</td><td>حدود ۲۵٪</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۴.</span> سود روی سود</h3>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی بدهی کم نشود، سودش به اصل بدهی اضافه می‌شود و دفعه‌ی بعد سود روی مبلغ بزرگ‌تر حساب می‌شود. این همان <strong>سود مرکب</strong> است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">همان نیرویی است که به پس‌اندازکننده کمک می‌کند، در جهت برعکس. بدهی ۱۰۰ میلیونی با نرخ سالانه‌ی ۳۰ درصد، اگر دست‌نخورده بماند، بعد از یک سال ۱۳۰ میلیون، بعد از دو سال ۱۶۹ میلیون و بعد از سه سال حدود ۲۲۰ میلیون می‌شود. قاعده‌ی ۷۲ درس ۱۲ این‌جا هم کار می‌کند: با نرخ ۳۰ درصد، بدهی در حدود دو سال و نیم دو برابر می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">جریمه‌ی دیرکرد هم در همین جهت کار می‌کند. قسطِ عقب‌افتاده جریمه می‌آورد و جریمه، پرداخت بعدی را سخت‌تر می‌کند.</p>
+<h3><span class="check-number">۰۵.</span> بدهی خوب، بدهی گران</h3>
+<p lang="fa" dir="rtl" style="text-align:right">مرز رسمی وجود ندارد، ولی یک پرسش بیشتر موارد را از هم جدا می‌کند: چیزی که برایش قرض می‌گیرم بیشتر از قسط‌هایش عمر می‌کند؟ و برایم درآمد می‌آورد یا هزینه‌ای را کم می‌کند؟</p>
+<p lang="fa" dir="rtl" style="text-align:right">ابزار کار، دوره‌ای که درآمد را بالا می‌برد یا خانه می‌تواند از این آزمون رد شود. سفر تفریحی، یک وعده رستوران یا گوشی‌ای که لازم نبود معمولاً رد نمی‌شود: لذتش تمام می‌شود و قسط‌ها ادامه دارد.</p>
+<h3><span class="check-number">۰۶.</span> چهار پرسش پیش از زدن دکمه</h3>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>جمع کل چقدر است؟</strong> همه‌ی قسط‌ها و همه‌ی کارمزدها را جمع بزنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>اگر دیر بپردازم چه می‌شود؟</strong> جریمه را پیش از آن‌که لازم شود بخوانید.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>همین حالا چه قسط‌های دیگری دارم؟</strong> همه‌ی قسط‌های سه ماه آینده را، از همه‌ی اپ‌ها، روی کاغذ بنویسید.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>اگر نقد بود، همین را با همین قیمت می‌خریدم؟</strong> اگر جواب «نه» است، طرح قسطی دارد به‌جای شما تصمیم می‌گیرد.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">«بعداً پرداخت کن» وام است، روی دکمه هر چه نوشته باشد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">قسط‌های کوچک جمع کل را پنهان می‌کنند. خودتان جمع بزنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">در وامی که ماهانه پس داده می‌شود، نرخ واقعی سالانه تقریباً دو برابر درصد ساده است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بدهیِ پرداخت‌نشده با سود مرکب و جریمه‌ی دیرکرد روی خودش بزرگ می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای چیزهایی قرض بگیرید که بیشتر از قسط‌هایشان عمر می‌کنند.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Debt and inflation meet</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">جایی که بدهی و تورم به هم می‌رسند</h2>
+<p lang="en">Inflation shrinks the value of money, including money you owe. Lesson 12 explains real returns, and the same sum works for a loan: the real cost is the loan rate minus inflation.</p>
+<p lang="fa" dir="rtl" style="text-align:right">تورم ارزش پول را کوچک می‌کند؛ پولی را که بدهکارید هم. درس ۱۲ بازده واقعی را توضیح می‌دهد و همان حساب برای وام هم کار می‌کند: هزینه‌ی واقعی، نرخ وام منهای تورم است.</p>
+<div class="cta-row">
+<a class="cta" href="lesson12.en.html"><span lang="en">Why money loses buying power</span><span lang="fa">چرا پول قدرت خریدش را از دست می‌دهد؟</span></a>
+<a class="button" href="lesson20.en.html"><span lang="en">Will banks disappear?</span><span lang="fa">آیا بانک‌ها ناپدید می‌شوند؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Key Concepts</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Buy now, pay later</li><li>Instalment</li><li>Total cost of credit</li><li>Annual rate including fees</li><li>Compound interest</li><li>Late fee</li><li>Loan stacking</li><li>Credit scoring</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>الان بخر، بعداً پرداخت کن</li><li>قسط</li><li>هزینه‌ی کل اعتبار</li><li>نرخ سالانه با همه‌ی کارمزدها</li><li>سود مرکب</li><li>جریمه‌ی دیرکرد</li><li>روی هم افتادن وام‌ها</li><li>اعتبارسنجی</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Learning Objectives</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Explain how a pay-later plan works and who pays for it.</li><li>Work out the total cost of a loan from its instalments.</li><li>Say why the true yearly rate is higher than the simple percentage.</li><li>Explain compound interest on an unpaid debt.</li><li>Use four questions to judge an instalment offer.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>توضیح دهید طرح «بعداً پرداخت کن» چطور کار می‌کند و هزینه‌اش را چه کسی می‌دهد.</li><li>از روی قسط‌ها، هزینه‌ی کل یک وام را حساب کنید.</li><li>بگویید چرا نرخ واقعی سالانه از درصد ساده بالاتر است.</li><li>سود مرکب را روی بدهی پرداخت‌نشده توضیح دهید.</li><li>با چهار پرسش، یک پیشنهاد قسطی را بسنجید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Quiz</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Check what stayed with you. The answer is under each question.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Question 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">What is a 'pay later' button, in plain terms?</p>
+<p lang="fa" dir="rtl" style="text-align:right">دکمه‌ی «بعداً پرداخت کن» به زبان ساده چیست؟</p>
+<p lang="en">A. A discount</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. تخفیف</p>
+<p lang="en">B. A loan</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. وام</p>
+<p lang="en">C. A gift from the shop</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. هدیه‌ی فروشگاه</p>
+<p class="answer" lang="en">Correct answer: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">You borrow 100 million and repay 9.5 million a month for 12 months. What did the loan cost?</p>
+<p lang="fa" dir="rtl" style="text-align:right">۱۰۰ میلیون قرض می‌گیرید و ۱۲ ماه، ماهی ۹٫۵ میلیون پس می‌دهید. وام چقدر هزینه داشته است؟</p>
+<p lang="en">A. 9.5 million</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۹٫۵ میلیون</p>
+<p lang="en">B. 14 million</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۱۴ میلیون</p>
+<p lang="en">C. Nothing</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. هیچ</p>
+<p class="answer" lang="en">Correct answer: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Why is the true yearly rate on that loan higher than 14%?</p>
+<p lang="fa" dir="rtl" style="text-align:right">چرا نرخ واقعی سالانه‌ی آن وام از ۱۴٪ بالاتر است؟</p>
+<p lang="en">A. Because you repaid part of the money every month</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. چون هر ماه بخشی از پول را پس داده‌اید</p>
+<p lang="en">B. Because banks add a hidden tax</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. چون بانک‌ها مالیات پنهان اضافه می‌کنند</p>
+<p lang="en">C. Because months are shorter than years</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. چون ماه از سال کوتاه‌تر است</p>
+<p class="answer" lang="en">Correct answer: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">What is compound interest on a debt?</p>
+<p lang="fa" dir="rtl" style="text-align:right">سود مرکب روی بدهی یعنی چه؟</p>
+<p lang="en">A. Interest that falls every year</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. سودی که هر سال کم می‌شود</p>
+<p lang="en">B. Interest charged only once</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. سودی که فقط یک بار گرفته می‌شود</p>
+<p lang="en">C. Interest charged on earlier interest as well</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. سودی که روی سودهای قبلی هم حساب می‌شود</p>
+<p class="answer" lang="en">Correct answer: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Which purchase best fits borrowing?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام خرید بیشتر با قرض گرفتن جور است؟</p>
+<p lang="en">A. A restaurant meal</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. یک وعده رستوران</p>
+<p lang="en">B. A tool that earns income for years</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ابزاری که سال‌ها درآمد می‌آورد</p>
+<p lang="en">C. A second phone you did not need</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. گوشی دومی که لازم نبود</p>
+<p class="answer" lang="en">Correct answer: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Sources</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.consumerfinance.gov/data-research/research-reports/consumer-use-of-buy-now-pay-later-and-other-unsecured-debt/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">US Consumer Financial Protection Bureau: Consumer use of buy now, pay later (January 2025)</a></li><li><a href="https://www.consumerfinancialserviceslawmonitor.com/2025/01/cfpb-releases-report-highlighting-consumer-use-of-buy-now-pay-later-products/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Consumer Financial Services Law Monitor: Summary of the CFPB report</a></li><li><a href="https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">US SEC Investor.gov: Compound interest calculator</a></li></ul>
+<p lang="en" style="font-size:0.95rem">The loan example is rounded arithmetic to show the method. Real offers have their own rates, fees and rules.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">مثال وام حسابِ گردشده برای نشان دادن روش است. پیشنهادهای واقعی نرخ، کارمزد و قواعد خودشان را دارند.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<p lang="en">New lessons are announced first on Ditoman's channels.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.en.html"><span lang="en">Back to Learn</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson18.en.html"><span lang="en">Previous Lesson</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson20.en.html"><span lang="en">Next Lesson</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Built on structure, driven by discovery.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261113b" defer></script>
+<script src="lang.js?v=20261113c" defer></script>
+
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>

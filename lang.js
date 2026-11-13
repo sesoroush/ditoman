@@ -103,6 +103,7 @@
     "Foundation": "پایه‌گذاری",
     "Why do prices suddenly crash?": "چرا قیمت یک‌دفعه می‌ریزد؟",
     "Digital dollars: what backs them?": "دلار دیجیتال، پشتوانه‌اش کجاست؟",
+    "How will AI change the future of money?": "هوش مصنوعی چطور آینده‌ی پول را تغییر می‌دهد؟",
     "News starts the fall. Thin order books, slippage, leverage and liquidations decide how far it goes, with the 5 November 2026 sell-off as the example.":
       "خبر سقوط را شروع می‌کند. دفتر سفارش کم‌عمق، لغزش قیمت، اهرم و لیکوئیدیشن‌ها تعیین می‌کنند سقوط تا کجا برود؛ با ریزش ۱۴ آبان ۱۴۰۵ به‌عنوان نمونه.",
     "Slippage, leverage and the liquidation cascade: what happens inside an exchange after bad news, and how to protect yourself.":
