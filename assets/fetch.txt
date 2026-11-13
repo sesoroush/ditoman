@@ -64,3 +64,8 @@ social/eitaa.png | https://www.google.com/s2/favicons?domain=eitaa.com&sz=256 | 
 social/eitaa-touch.png | https://web.eitaa.com/apple-touch-icon.png | direct
 social/telegram.png | https://www.google.com/s2/favicons?domain=telegram.org&sz=256 | direct
 social/instagram.png | https://www.google.com/s2/favicons?domain=instagram.com&sz=256 | direct
+social/rubika-touch2.png | https://rubika.ir/apple-touch-icon.png | direct
+social/rubika-og.png | https://rubika.ir/ | og
+social/rubika-commons.png | File:Rubika_logo.png | commons
+social/rubika-fav2.png | https://www.google.com/s2/favicons?domain=web.rubika.ir&sz=256 | direct
+social/rubika-fav3.png | https://www.google.com/s2/favicons?domain=m.rubika.ir&sz=256 | direct
