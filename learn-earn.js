@@ -6,11 +6,11 @@
 */
 (function () {
   var CONFIG = {
-    rewardFa: "معادل حدود ۱ دلار توکن TMN",
-    rewardEn: "About $1 worth of TMN",
-    capFa: "",          // e.g. "برای ۱۰۰ نفر اول"
-    capEn: "",          // e.g. "For the first 100 people"
-    telegram: "",       // username that receives claims, without @
+    rewardFa: "۵۰۰٬۰۰۰ TMN",
+    rewardEn: "500,000 TMN",
+    capFa: "برای ۱٬۰۰۰ نفر اول",
+    capEn: "For the first 1,000 people",
+    telegram: "Ditoman_tm", // receives claims as channel direct messages
     bale: "",           // Bale username that receives claims, without @
     pass: 8,
     salt: "ditoman-learn-earn-1|"
@@ -259,14 +259,14 @@
         : "دیتومان · یاد بگیر، توکن بگیر\nکد: " + code + "\nکیف پول: " + w + "\nنمره: " + passScore + "/10" + (user ? "\nآیدی: \u2066" + user + "\u2069" : "");
       $("leMsg").textContent = msg;
       var tg = $("leTg"), bale = $("leBale");
-      if (CONFIG.telegram) { tg.href = "https://t.me/" + CONFIG.telegram + "?text=" + encodeURIComponent(msg); tg.hidden = false; }
+      if (CONFIG.telegram) { tg.href = "https://t.me/" + CONFIG.telegram; tg.hidden = false; }
       if (CONFIG.bale) { bale.href = "https://ble.ir/" + CONFIG.bale; bale.hidden = false; }
       var where = [];
-      if (CONFIG.telegram) where.push(["تلگرام @" + CONFIG.telegram, "Telegram @" + CONFIG.telegram]);
-      if (CONFIG.bale) where.push(["بله @" + CONFIG.bale, "Bale @" + CONFIG.bale]);
+      if (CONFIG.telegram) where.push(["کانال تلگرام دیتومان", "Ditoman\u2019s Telegram channel"]);
+      if (CONFIG.bale) where.push(["کانال بله‌ی دیتومان", "Ditoman\u2019s Bale channel"]);
       $("leWhere").innerHTML = where.length
-        ? both("پیام را برای این حساب بفرست: " + where.map(function (x) { return x[0]; }).join(" یا "),
-               "Send the message to: " + where.map(function (x) { return x[1]; }).join(" or "))
+        ? both("پیام را کپی کن، " + where.map(function (x) { return x[0]; }).join(" یا ") + " را باز کن و پیام را همان‌جا بفرست.",
+               "Copy the message, open " + where.map(function (x) { return x[1]; }).join(" or ") + " and send it there.")
         : "";
       $("leTicket").hidden = false;
       store("ditoman-le-code", code + "|" + w);
