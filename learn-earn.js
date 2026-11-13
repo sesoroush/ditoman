@@ -11,7 +11,7 @@
     capFa: "برای ۱٬۰۰۰ نفر اول",
     capEn: "For the first 1,000 people",
     telegram: "Ditoman_tm", // receives claims as channel direct messages
-    bale: "",           // Bale username that receives claims, without @
+    bale: "Ditoman",    // Bale channel ble.ir/Ditoman
     pass: 8,
     salt: "ditoman-learn-earn-1|"
   };

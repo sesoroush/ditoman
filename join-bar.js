@@ -14,7 +14,7 @@
     { id: "telegram",  fa: "تلگرام",     en: "Telegram",  url: "https://t.me/Ditoman_tm" },
     { id: "bale",      fa: "بله",        en: "Bale",      url: "https://ble.ir/Ditoman" },
     { id: "rubika",    fa: "روبیکا",     en: "Rubika",    url: "" },
-    { id: "eitaa",     fa: "ایتا",       en: "Eitaa",     url: "" },
+    { id: "eitaa",     fa: "ایتا",       en: "Eitaa",     url: "https://eitaa.com/Ditoman" },
     { id: "instagram", fa: "اینستاگرام", en: "Instagram", url: "https://www.instagram.com/ditoman.tmn/" }
   ];
   // profile links the icon row replaces
