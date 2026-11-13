@@ -237,19 +237,59 @@
     $("claim").hidden = false;
   }
 
-  function codeFor(wallet) {
-    var data = new TextEncoder().encode(CONFIG.salt + wallet.toLowerCase());
-    return crypto.subtle.digest("SHA-256", data).then(function (buf) {
-      var h = Array.prototype.map.call(new Uint8Array(buf), function (b) { return ("0" + b.toString(16)).slice(-2); }).join("").toUpperCase();
-      return "DTM-" + h.slice(0, 4) + "-" + h.slice(4, 8);
-    });
+  // SHA-256 in plain JavaScript, so the code is made the same way on every browser,
+  // including pages opened over http where the browser's own crypto is switched off.
+  function sha256hex(str) {
+    var K = [], H = [], i, j, isPrime = function (n) { for (var f = 2; f * f <= n; f++) if (n % f === 0) return false; return true; };
+    var frac = function (x) { return ((x - Math.floor(x)) * 4294967296) | 0; };
+    for (i = 2, j = 0; j < 64; i++) if (isPrime(i)) { if (j < 8) H[j] = frac(Math.pow(i, 1 / 2)); K[j++] = frac(Math.pow(i, 1 / 3)); }
+    var bytes = [], c;
+    for (i = 0; i < str.length; i++) {
+      c = str.charCodeAt(i);
+      if (c < 128) bytes.push(c);
+      else if (c < 2048) bytes.push(192 | (c >> 6), 128 | (c & 63));
+      else bytes.push(224 | (c >> 12), 128 | ((c >> 6) & 63), 128 | (c & 63));
+    }
+    var bits = bytes.length * 8;
+    bytes.push(128);
+    while (bytes.length % 64 !== 56) bytes.push(0);
+    bytes.push(0, 0, 0, 0, (bits >>> 24) & 255, (bits >>> 16) & 255, (bits >>> 8) & 255, bits & 255);
+    var rotr = function (x, n) { return (x >>> n) | (x << (32 - n)); };
+    for (var off = 0; off < bytes.length; off += 64) {
+      var w = [];
+      for (i = 0; i < 16; i++) w[i] = (bytes[off + i * 4] << 24) | (bytes[off + i * 4 + 1] << 16) | (bytes[off + i * 4 + 2] << 8) | bytes[off + i * 4 + 3];
+      for (i = 16; i < 64; i++) {
+        var s0 = rotr(w[i - 15], 7) ^ rotr(w[i - 15], 18) ^ (w[i - 15] >>> 3);
+        var s1 = rotr(w[i - 2], 17) ^ rotr(w[i - 2], 19) ^ (w[i - 2] >>> 10);
+        w[i] = (w[i - 16] + s0 + w[i - 7] + s1) | 0;
+      }
+      var a = H[0], b = H[1], cc = H[2], d = H[3], e = H[4], f = H[5], g = H[6], h = H[7];
+      for (i = 0; i < 64; i++) {
+        var t1 = (h + (rotr(e, 6) ^ rotr(e, 11) ^ rotr(e, 25)) + ((e & f) ^ (~e & g)) + K[i] + w[i]) | 0;
+        var t2 = ((rotr(a, 2) ^ rotr(a, 13) ^ rotr(a, 22)) + ((a & b) ^ (a & cc) ^ (b & cc))) | 0;
+        h = g; g = f; f = e; e = (d + t1) | 0; d = cc; cc = b; b = a; a = (t1 + t2) | 0;
+      }
+      H[0] = (H[0] + a) | 0; H[1] = (H[1] + b) | 0; H[2] = (H[2] + cc) | 0; H[3] = (H[3] + d) | 0;
+      H[4] = (H[4] + e) | 0; H[5] = (H[5] + f) | 0; H[6] = (H[6] + g) | 0; H[7] = (H[7] + h) | 0;
+    }
+    var out = "";
+    for (i = 0; i < 8; i++) out += ("00000000" + (H[i] >>> 0).toString(16)).slice(-8);
+    return out;
   }
+  function codeFor(wallet) {
+    var h = sha256hex(CONFIG.salt + wallet.toLowerCase()).toUpperCase();
+    var code = "DTM-" + h.slice(0, 4) + "-" + h.slice(4, 8);
+    return { then: function (fn) { fn(code); } };
+  }
+  // people paste addresses with spaces, line breaks or invisible marks around them
+  function cleanWallet(w) { return String(w || "").replace(/[^0-9a-zA-Z]/g, "").replace(/^0X/, "0x"); }
   function validWallet(w) { return /^0x[0-9a-fA-F]{40}$/.test(w); }
 
   $("leMake").addEventListener("click", function () {
-    var w = $("leWallet").value.trim();
+    var w = cleanWallet($("leWallet").value);
+    $("leWallet").value = w;
     var user = $("leUser").value.trim();
-    if (!validWallet(w)) { $("leErr").hidden = false; return; }
+    if (!validWallet(w)) { $("leErr").hidden = false; $("leTicket").hidden = true; return; }
     $("leErr").hidden = true;
     codeFor(w).then(function (code) {
       $("leCode").textContent = code;
@@ -269,6 +309,7 @@
                "Copy the message, open " + where.map(function (x) { return x[1]; }).join(" or ") + " and send it there.")
         : "";
       $("leTicket").hidden = false;
+      $("leTicket").scrollIntoView({ behavior: "smooth", block: "nearest" });
       store("ditoman-le-code", code + "|" + w);
     });
   });
@@ -284,7 +325,7 @@
   if (location.hash === "#check") {
     $("check").hidden = false;
     $("ckGo").addEventListener("click", function () {
-      var w = $("ckWallet").value.trim(), c = $("ckCode").value.trim().toUpperCase();
+      var w = cleanWallet($("ckWallet").value), c = $("ckCode").value.trim().toUpperCase();
       if (!validWallet(w)) { $("ckOut").textContent = "آدرس کیف پول درست نیست."; return; }
       codeFor(w).then(function (code) {
         $("ckOut").textContent = code === c ? "✅ کد با این کیف پول می‌خواند." : "❌ کد با این کیف پول نمی‌خواند.";

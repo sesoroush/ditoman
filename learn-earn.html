@@ -64,6 +64,9 @@
   .le-msg { white-space: pre-wrap; overflow-wrap: anywhere; unicode-bidi: plaintext; text-align: start; margin: 0; padding: 14px; border-radius: 12px; background: #101F22; border: 1px solid var(--line); font: 500 .95rem/1.8 var(--en); color: var(--text); }
   .le-actions { display: flex; flex-wrap: wrap; gap: 10px; }
   @media (max-width: 520px) { .le-claim { padding: 20px 16px; } .le-q { padding: 16px 12px 8px; } .le-code { font-size: 1.35rem; } }
+  .le-help { border: 1px solid var(--line-strong); border-radius: 16px; padding: 14px 16px; background: rgba(87,217,199,.05); }
+  .le-help summary { cursor: pointer; font-weight: 800; color: var(--mint); }
+  .le-help ol { margin: 12px 0; padding-inline-start: 22px; display: grid; gap: 8px; line-height: 1.8; }
   .le-lat { font-family: var(--en); unicode-bidi: isolate; direction: ltr; }
 </style>
   <!-- hreflang:start -->
@@ -306,6 +309,22 @@
           <h2><span lang="fa" dir="rtl">قدم سوم: دریافت پاداش</span><span lang="en">Step three: claim your reward</span></h2>
           <p lang="fa" dir="rtl">آدرس کیف پول BNB Smart Chain خودت را وارد کن. یک کد اختصاصی ساخته می‌شود. پیام آماده را کپی کن و برای دیتومان بفرست.</p>
           <p lang="en">Enter your BNB Smart Chain wallet address. A personal code is created. Copy the ready message and send it to Ditoman.</p>
+          <details class="le-help" open>
+            <summary><span lang="fa" dir="rtl">آدرس کیف پول را از کجا بیاورم؟</span><span lang="en">Where do I get a wallet address?</span></summary>
+            <ol lang="fa" dir="rtl">
+              <li>یک کیف پول شخصی نصب کنید؛ مثلاً تراست ولت یا سیف‌پل. آدرس صرافی (نوبیتکس، والکس و مانند آن) قبول نیست.</li>
+              <li>کیف پول را بسازید و ۱۲ کلمه‌ی بازیابی را روی کاغذ بنویسید. آن را به هیچ‌کس ندهید.</li>
+              <li>در کیف پول، شبکه‌ی <b>BNB Smart Chain</b> را انتخاب کنید و «دریافت» (Receive) را بزنید.</li>
+              <li>آدرسی که نشان می‌دهد با <bdi class="le-lat">0x</bdi> شروع می‌شود و ۴۲ کاراکتر دارد. آن را کپی کنید و همین‌جا جای‌گذاری کنید.</li>
+            </ol>
+            <ol lang="en">
+              <li>Install a personal wallet, for example Trust Wallet or SafePal. An exchange address is not accepted.</li>
+              <li>Create the wallet and write the 12 recovery words on paper. Never give them to anyone.</li>
+              <li>In the wallet, choose the <b>BNB Smart Chain</b> network and tap Receive.</li>
+              <li>The address shown starts with 0x and has 42 characters. Copy it and paste it here.</li>
+            </ol>
+            <a class="le-btn ghost" href="tmn-guide.html" target="_blank" rel="noopener"><span lang="fa" dir="rtl">راهنمای تصویری قدم‌به‌قدم</span><span lang="en">Step-by-step guide with pictures</span></a>
+          </details>
           <label class="le-field">
             <span><span lang="fa" dir="rtl">آدرس کیف پول (با <bdi class="le-lat">0x</bdi> شروع می‌شود)</span><span lang="en">Wallet address (starts with 0x)</span></span>
             <input id="leWallet" type="text" dir="ltr" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="0x…" />
@@ -363,7 +382,7 @@
   </footer>
 
 
-  <script src="learn-earn.js?v=20261113c" defer></script>
+  <script src="learn-earn.js?v=20261113d" defer></script>
   <script src="menu.js?v=20261107" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261113b" defer></script>

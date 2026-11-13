@@ -47,4 +47,7 @@
   .le-msg { white-space: pre-wrap; overflow-wrap: anywhere; unicode-bidi: plaintext; text-align: start; margin: 0; padding: 14px; border-radius: 12px; background: #101F22; border: 1px solid var(--line); font: 500 .95rem/1.8 var(--en); color: var(--text); }
   .le-actions { display: flex; flex-wrap: wrap; gap: 10px; }
   @media (max-width: 520px) { .le-claim { padding: 20px 16px; } .le-q { padding: 16px 12px 8px; } .le-code { font-size: 1.35rem; } }
+  .le-help { border: 1px solid var(--line-strong); border-radius: 16px; padding: 14px 16px; background: rgba(87,217,199,.05); }
+  .le-help summary { cursor: pointer; font-weight: 800; color: var(--mint); }
+  .le-help ol { margin: 12px 0; padding-inline-start: 22px; display: grid; gap: 8px; line-height: 1.8; }
   .le-lat { font-family: var(--en); unicode-bidi: isolate; direction: ltr; }
