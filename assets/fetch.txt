@@ -56,3 +56,11 @@ wallets/atomic.png | https://www.google.com/s2/favicons?domain=atomicwallet.io&s
 wallets/atomic-touch.png | https://atomicwallet.io/apple-touch-icon.png | direct
 wallets/guarda.png | https://www.google.com/s2/favicons?domain=guarda.com&sz=256 | direct
 wallets/guarda-touch.png | https://guarda.com/apple-touch-icon.png | direct
+social/bale.png | https://www.google.com/s2/favicons?domain=bale.ai&sz=256 | direct
+social/bale-touch.png | https://web.bale.ai/apple-touch-icon.png | direct
+social/rubika.png | https://www.google.com/s2/favicons?domain=rubika.ir&sz=256 | direct
+social/rubika-touch.png | https://web.rubika.ir/apple-touch-icon.png | direct
+social/eitaa.png | https://www.google.com/s2/favicons?domain=eitaa.com&sz=256 | direct
+social/eitaa-touch.png | https://web.eitaa.com/apple-touch-icon.png | direct
+social/telegram.png | https://www.google.com/s2/favicons?domain=telegram.org&sz=256 | direct
+social/instagram.png | https://www.google.com/s2/favicons?domain=instagram.com&sz=256 | direct
