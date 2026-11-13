@@ -111,13 +111,37 @@ header .container.nav .logo-text { font-size: 1.05rem; }
 /* ---------- Join bar, now an inline block above the footer ---------- */
 .jb-inline {
   width: min(1180px, 100% - 32px); margin: 40px auto 28px; padding: 22px 20px; border-radius: var(--radius);
-  background: var(--surface); border: 1px solid var(--line); display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-  direction: rtl; font-family: IRANYekanX, Tahoma, sans-serif;
+  background: var(--surface); border: 1px solid var(--line);
 }
-.jb-inline p { flex: 1 1 220px; margin: 0; font-weight: 800; font-size: 1rem; color: var(--text); }
-.jb-inline p small { display: block; font-weight: 400; color: var(--muted); font-size: 0.88rem; margin-top: 2px; }
-.jb-inline a { padding: 10px 16px; border-radius: 999px; color: #fff; font-weight: 800; font-size: 0.92rem; transition: filter 0.2s ease, transform 0.2s ease; }
-.jb-inline a:hover { filter: brightness(1.1); transform: translateY(-1px); }
+html[data-lang="fa"] .jb-inline { direction: rtl; }
+.jb-inline p { margin: 0; font-weight: 800; font-size: 1.05rem; color: var(--text); }
+.jb-inline p small { display: block; font-weight: 400; color: var(--muted); font-size: 0.88rem; margin-top: 4px; }
+
+/* Channels: one row of app-style icons, same on every page (join-bar.js draws it) */
+.ch-grid {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px;
+  margin: 18px 0 6px; max-width: 560px; width: 100%;
+}
+html[data-lang="fa"] .ch-grid { direction: rtl; }
+.ch {
+  display: flex; flex-direction: column; align-items: center; gap: 7px; text-align: center;
+  padding: 12px 4px 10px; border-radius: 16px; background: rgba(242,240,233,.04);
+  border: 1px solid var(--line); color: var(--text) !important; text-decoration: none !important;
+  font-weight: 700; font-size: .86rem; line-height: 1.2; min-width: 0;
+  transition: border-color .2s ease, transform .2s ease, background .2s ease;
+}
+.ch img { width: 52px; height: 52px; border-radius: 14px; display: block; object-fit: contain; }
+.ch > span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.ch small { font-size: .7rem; font-weight: 600; color: var(--muted); margin-top: -3px; }
+a.ch:hover { border-color: rgba(87,217,199,.55); background: rgba(87,217,199,.07); transform: translateY(-2px); }
+.ch.is-soon { opacity: .55; cursor: default; }
+.ch.is-soon img { filter: grayscale(.6); }
+.follow-card .ch-grid { margin: 0; }
+@media (max-width: 520px) {
+  .ch-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .ch { flex: 0 0 calc((100% - 16px) / 3); padding: 12px 4px 10px; font-size: .84rem; }
+  .ch img { width: 46px; height: 46px; }
+}
 
 /* ---------- Homepage ---------- */
 /* One spacing scale for every homepage section */
