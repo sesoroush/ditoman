@@ -69,3 +69,5 @@ social/rubika-og.png | https://rubika.ir/ | og
 social/rubika-commons.png | File:Rubika_logo.png | commons
 social/rubika-fav2.png | https://www.google.com/s2/favicons?domain=web.rubika.ir&sz=256 | direct
 social/rubika-fav3.png | https://www.google.com/s2/favicons?domain=m.rubika.ir&sz=256 | direct
+tmn/dexscreener.json | https://api.dexscreener.com/latest/dex/tokens/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d | direct
+tmn/gecko.json | https://api.geckoterminal.com/api/v2/networks/bsc/tokens/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d | direct
