@@ -1,0 +1,74 @@
+{
+ "date": "2026-11-13",
+ "headline_fa": "امروز، تورم",
+ "headline_hl": "تولید آمریکا",
+ "key": {
+  "kick_en": "US PPI (OCT)",
+  "fa": "تورم تولیدکننده‌ی آمریکا (PPI)",
+  "story_fa": "تورم تولیدکننده‌ی آمریکا",
+  "body_fa": "بعد از تورم مصرف‌کننده، این عدد نشان می‌دهد هزینه‌ها پیش از رسیدن به مصرف‌کننده چقدر بالا رفته؛ مهم برای دلار، طلا و بیت‌کوین.",
+  "story_note_fa": "مهم برای دلار، طلا و بیت‌کوین",
+  "tehran": "17:00",
+  "lisbon": "13:30",
+  "en": "US Producer Price Index (Oct)",
+  "expected": ""
+ },
+ "today": [
+  {
+   "fa": "ادامه‌ی اجلاس آب‌وهوای COP31",
+   "note_fa": "آنتالیا، تا 20 نوامبر؛ آینده‌ی نفت، گاز و برق",
+   "tehran": "تمام روز",
+   "lisbon": "all day",
+   "en": "COP31 continues in Antalya",
+   "expected": "until 20 Nov"
+  }
+ ],
+ "week": [
+  {
+   "day_fa": "سه‌شنبه",
+   "date": "2026-11-17",
+   "fa": "خرده‌فروشی آمریکا (اکتبر)",
+   "note_fa": "نبض خرج کردن مردم آمریکا",
+   "tehran": "17:00",
+   "lisbon": "13:30",
+   "en": "US retail sales (Oct)",
+   "expected": ""
+  },
+  {
+   "day_fa": "سه‌شنبه",
+   "date": "2026-11-17",
+   "fa": "سود فصلی انویدیا",
+   "note_fa": "بعد از بسته شدن بازار؛ آزمون بزرگ سهام هوش مصنوعی",
+   "tehran": "01:30",
+   "lisbon": "22:00",
+   "en": "Nvidia Q3 FY27 earnings call",
+   "expected": "after US close"
+  },
+  {
+   "day_fa": "چهارشنبه",
+   "date": "2026-11-18",
+   "fa": "صورت‌جلسه‌ی فدرال رزرو",
+   "note_fa": "جزئیات نشست اکتبر؛ سرنخ قدم بعدی نرخ بهره",
+   "tehran": "22:30",
+   "lisbon": "19:00",
+   "en": "FOMC minutes (Oct meeting)",
+   "expected": ""
+  },
+  {
+   "day_fa": "پنجشنبه",
+   "date": "2026-11-19",
+   "fa": "عرضه‌ی اولیه‌ی آنتروپیک و انتشار GTA 6",
+   "note_fa": "اولین روز معامله‌ی ANT در نزدک؛ و بزرگ‌ترین بازی سال",
+   "tehran": "تمام روز",
+   "lisbon": "all day",
+   "en": "Anthropic IPO (Nasdaq: ANT) · GTA 6 launch",
+   "expected": ""
+  }
+ ],
+ "sources": [
+  "https://fxnx.com/en/blog/ppi-13-november-2026-release-time-link-cpi",
+  "https://fedratecalc.com/us-economic-calendar/november-2026/",
+  "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/",
+  "https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation"
+ ]
+}
