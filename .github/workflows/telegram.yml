@@ -3,6 +3,7 @@ name: Post to Telegram
 # Posts every NEW file added under telegram/ (not telegram/drafts/) to the channel.
 # Post file format:
 #   optional first line:  image: some-image.png   (a file on ditoman.com, shown as a large preview)
+#   or:                   images: a.png, b.png, c.png   (sent together as an album, text follows)
 #                    or:  video-first: https://...  (the link's video preview shown above the text)
 #   everything after it:  the message text (plain text, up to 4096 characters)
 #
@@ -85,9 +86,13 @@ jobs:
             [ -f "$f" ] || { echo "Missing $f" >&2; exit 1; }
             first="$(head -n 1 "$f")"
             image=""
+            images=""
             video=""
             if echo "$first" | grep -q '^video-first:'; then
               video="$(echo "$first" | sed 's/^video-first:[[:space:]]*//')"
+              text="$(tail -n +2 "$f" | sed '/./,$!d')"
+            elif echo "$first" | grep -q '^images:'; then
+              images="$(echo "$first" | sed 's/^images:[[:space:]]*//')"
               text="$(tail -n +2 "$f" | sed '/./,$!d')"
             elif echo "$first" | grep -q '^image:'; then
               image="$(echo "$first" | sed 's/^image:[[:space:]]*//')"
@@ -112,6 +117,25 @@ jobs:
               echo "Video preview from: $video"
               # Video preview above the text.
               payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --arg u "$video" --argjson e "$ents" '{chat_id:$c, text:$t, entities:$e, link_preview_options:{url:$u, prefer_large_media:true, show_above_text:true}}')"
+              send sendMessage -H 'Content-Type: application/json' -d "$payload"
+            elif [ -n "$images" ]; then
+              # Album: several photos sent together (comma-separated list), then the text under them.
+              args=(); media="[]"; i=0
+              IFS=',' read -ra arr <<< "$images"
+              for im in "${arr[@]}"; do
+                im="$(echo "$im" | xargs)"
+                [ -f "$im" ] || { echo "Missing image $im" >&2; exit 1; }
+                args+=(-F "p$i=@$im")
+                media="$(echo "$media" | jq -c --arg m "attach://p$i" '. + [{type:"photo", media:$m}]')"
+                i=$((i+1))
+              done
+              send_album() {
+                resp="$(curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendMediaGroup" --form-string "chat_id=$CHAT_ID" --form-string "media=$media" "${args[@]}")"
+                echo "$resp" | jq '{ok, description, message_ids: [.result[]?.message_id]}'
+                echo "$resp" | jq -e '.ok' > /dev/null || exit 1
+              }
+              send_album
+              payload="$(jq -n --arg c "$CHAT_ID" --arg t "$text" --argjson e "$ents" '{chat_id:$c, text:$t, entities:$e, link_preview_options:{is_disabled:true}}')"
               send sendMessage -H 'Content-Type: application/json' -d "$payload"
             elif [ -n "$image" ]; then
               # Upload the image itself as a real photo (tap to open/save), straight from the repo.
