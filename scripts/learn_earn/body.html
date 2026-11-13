@@ -1,0 +1,106 @@
+  <main class="le">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker"><span lang="fa" dir="rtl">یاد بگیر، توکن بگیر</span><span lang="en">Learn and earn</span></p>
+        <h1 lang="fa" dir="rtl">ده درس بخوان، آزمون بده، TMN بگیر</h1>
+        <h1 lang="en">Read ten lessons, pass the test, receive TMN</h1>
+        <p class="hero-lede" lang="fa" dir="rtl">طرح آزمایشی دیتومان برای کسانی که می‌خواهند کریپتو را درست یاد بگیرند. درس‌ها را بخوان، به آزمون ده‌سؤالی جواب بده و با دست‌کم هشت جواب درست، پاداش TMN بگیر.</p>
+        <p class="hero-lede" lang="en">Ditoman's pilot for people who want to learn crypto properly. Read the lessons, take the ten-question test, and with at least eight right answers you receive a TMN reward.</p>
+        <ol class="le-steps">
+          <li><span lang="fa" dir="rtl">ده درس را بخوان</span><span lang="en">Read the ten lessons</span></li>
+          <li><span lang="fa" dir="rtl">آزمون ده‌سؤالی</span><span lang="en">Ten-question test</span></li>
+          <li><span lang="fa" dir="rtl">کد و آدرس کیف پول را بفرست</span><span lang="en">Send your code and wallet address</span></li>
+        </ol>
+        <a class="le-go" href="#test"><span lang="fa" dir="rtl">رفتن به آزمون</span><span lang="en">Go to the test</span></a>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="le-reward">
+          <div class="le-reward-main">
+            <p class="le-label"><span lang="fa" dir="rtl">پاداش هر نفر</span><span lang="en">Reward per person</span></p>
+            <p class="le-amount" id="leReward"></p>
+            <p class="le-note" id="leCap"></p>
+          </div>
+          <ul class="le-rules">
+            <li lang="fa" dir="rtl">هر کیف پول فقط یک بار پاداش می‌گیرد.</li>
+            <li lang="en">Each wallet can receive the reward once.</li>
+            <li lang="fa" dir="rtl">آدرس باید کیف پول شخصی روی شبکه‌ی BNB Smart Chain باشد، نه آدرس صرافی. <a href="tmn-guide.html">راهنمای اضافه کردن TMN به کیف پول</a></li>
+            <li lang="en">Use a personal wallet on BNB Smart Chain, not an exchange address. <a href="tmn-guide.html">How to add TMN to your wallet</a></li>
+            <li lang="fa" dir="rtl">پاداش‌ها هر چند روز یک بار، دسته‌ای فرستاده می‌شوند.</li>
+            <li lang="en">Rewards are sent in batches every few days.</li>
+            <li lang="fa" dir="rtl">این پاداش برای یادگیری است، نه وعده‌ی سود.</li>
+            <li lang="en">The reward is for learning, not a promise of profit.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="lessons">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="fa" dir="rtl">قدم اول: ده درس</span><span lang="en">Step one: the ten lessons</span></h2>
+          <p lang="fa" dir="rtl">هر سؤال آزمون از یکی از این درس‌هاست. هر درس حدود پنج دقیقه وقت می‌گیرد.</p>
+          <p lang="en">Each test question comes from one of these lessons. Each lesson takes about five minutes.</p>
+        </div>
+        <ol class="le-lessons" id="leLessons"></ol>
+      </div>
+    </section>
+
+    <section class="block" id="test">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="fa" dir="rtl">قدم دوم: آزمون</span><span lang="en">Step two: the test</span></h2>
+          <p lang="fa" dir="rtl">ده سؤال، از هر درس یکی. برای قبولی دست‌کم هشت جواب درست لازم است. اگر قبول نشدی، درس‌هایی را که اشتباه جواب دادی دوباره بخوان و باز امتحان کن.</p>
+          <p lang="en">Ten questions, one from each lesson. You need at least eight right answers to pass. If you don't pass, reread the lessons you got wrong and try again.</p>
+        </div>
+        <form class="le-quiz" id="leQuiz" novalidate></form>
+        <div class="le-result" id="leResult" hidden></div>
+      </div>
+    </section>
+
+    <section class="block" id="claim" hidden>
+      <div class="wrap">
+        <div class="le-claim">
+          <h2><span lang="fa" dir="rtl">قدم سوم: دریافت پاداش</span><span lang="en">Step three: claim your reward</span></h2>
+          <p lang="fa" dir="rtl">آدرس کیف پول BNB Smart Chain خودت را وارد کن. یک کد اختصاصی ساخته می‌شود. پیام آماده را کپی کن و برای دیتومان بفرست.</p>
+          <p lang="en">Enter your BNB Smart Chain wallet address. A personal code is created. Copy the ready message and send it to Ditoman.</p>
+          <label class="le-field">
+            <span><span lang="fa" dir="rtl">آدرس کیف پول (با <bdi class="le-lat">0x</bdi> شروع می‌شود)</span><span lang="en">Wallet address (starts with 0x)</span></span>
+            <input id="leWallet" type="text" dir="ltr" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="0x…" />
+          </label>
+          <label class="le-field">
+            <span><span lang="fa" dir="rtl">آیدی تلگرام یا بله (اختیاری)</span><span lang="en">Telegram or Bale username (optional)</span></span>
+            <input id="leUser" type="text" dir="ltr" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="@username" />
+          </label>
+          <p class="le-err" id="leErr" hidden><span lang="fa" dir="rtl">این آدرس درست نیست. آدرس کیف پول BNB Smart Chain با <bdi class="le-lat">0x</bdi> شروع می‌شود و ۴۲ کاراکتر دارد.</span><span lang="en">That address isn't valid. A BNB Smart Chain address starts with 0x and has 42 characters.</span></p>
+          <button type="button" class="le-btn" id="leMake"><span lang="fa" dir="rtl">ساختن کد</span><span lang="en">Create my code</span></button>
+          <div class="le-ticket" id="leTicket" hidden>
+            <p class="le-label"><span lang="fa" dir="rtl">کد تو</span><span lang="en">Your code</span></p>
+            <p class="le-code" id="leCode" dir="ltr"></p>
+            <pre class="le-msg" id="leMsg"></pre>
+            <div class="le-actions">
+              <button type="button" class="le-btn" id="leCopy"><span lang="fa" dir="rtl">کپی پیام</span><span lang="en">Copy message</span></button>
+              <a class="le-btn ghost" id="leTg" target="_blank" rel="noopener noreferrer" hidden><span lang="fa" dir="rtl">ارسال در تلگرام</span><span lang="en">Send on Telegram</span></a>
+              <a class="le-btn ghost" id="leBale" target="_blank" rel="noopener noreferrer" hidden><span lang="fa" dir="rtl">ارسال در بله</span><span lang="en">Send on Bale</span></a>
+            </div>
+            <p class="le-note" id="leWhere"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="block" id="check" lang="fa" dir="rtl" hidden>
+      <div class="wrap">
+        <div class="le-claim">
+          <h2>بررسی کد</h2>
+          <p>آدرس کیف پول و کدی را که فرستاده شده وارد کن.</p>
+          <label class="le-field"><span>آدرس کیف پول</span><input id="ckWallet" type="text" dir="ltr" autocomplete="off" spellcheck="false" /></label>
+          <label class="le-field"><span>کد</span><input id="ckCode" type="text" dir="ltr" autocomplete="off" spellcheck="false" /></label>
+          <button type="button" class="le-btn" id="ckGo">بررسی</button>
+          <p class="le-note" id="ckOut"></p>
+        </div>
+      </div>
+    </div>
+  </main>

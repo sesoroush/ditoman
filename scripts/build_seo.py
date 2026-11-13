@@ -173,7 +173,7 @@ def main():
                    key=lambda p: (p.name != "index.html", p.name))
     for p in pages:
         process(p)
-    sitemap(pages)
+    sitemap([p for p in pages if 'name="robots" content="noindex' not in p.read_text(encoding="utf-8")])
     print(f"{len(pages)} pages")
 
 
