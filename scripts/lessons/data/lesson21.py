@@ -193,7 +193,7 @@ Use AI to understand. Keep secrets and final decisions to yourself.
     "sources": [
         ("https://www.digitalcommerce360.com/2025/10/31/mastercard-agentic-commerce-is-here/", "Digital Commerce 360: Mastercard's first agentic transaction and Agent Pay rollout (31 October 2025)"),
         ("https://decrypt.co/354624/ai-impersonation-drove-crypto-scam-losses-record-17-billion-2025-chainalysis", "Decrypt: AI and impersonation in 2025 crypto scams, Chainalysis"),
-        ("https://www.weforum.org/stories/2025/02/deepfake-ai-cybercrime-arup/", "World Economic Forum: Arup deepfake fraud case"),
+        ("https://fortune.com/europe/2024/05/17/arup-deepfake-fraud-scam-victim-hong-kong-25-million-cfo/", "Fortune: Arup confirmed as victim of the 25 million dollar deepfake fraud in Hong Kong (17 May 2024)"),
         ("https://www.bis.org/publ/arpdf/ar2024e3.htm", "Bank for International Settlements, Annual Report 2024: Artificial intelligence and the economy"),
     ],
     "source_note": (

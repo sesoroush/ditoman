@@ -157,7 +157,7 @@ No arrangement is best for everyone. Many people use more than one, each for a d
     "sources": [
         ("https://www.fdic.gov/resources/deposit-insurance/", "FDIC: Deposit insurance (United States)"),
         ("https://finance.ec.europa.eu/banking/banking-regulation/deposit-guarantee-schemes_en", "European Commission: Deposit guarantee schemes"),
-        ("https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes", "US Department of Justice: FTX case and customer losses"),
+        ("https://www.rte.ie/news/us/2024/0328/1440405-sam-bankman-fried", "RTE News: FTX founder sentenced over the loss of customer funds (28 March 2024)"),
         ("https://ethereum.org/en/wallets/", "ethereum.org: Wallets, keys and recovery phrases"),
     ],
     "source_note": (

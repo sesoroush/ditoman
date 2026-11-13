@@ -174,7 +174,7 @@ Banks are becoming less visible, not less necessary.
     "sources": [
         ("https://nu.com/en/newsroom/company/nubank-reaches-more-than-112-million-customers-and-becomes-the-largest-private-financial-institution-in-brazil-according-to-the-central-bank", "Nubank newsroom: more than 112 million customers (22 January 2026)"),
         ("https://finance.ec.europa.eu/consumer-finance-and-payments/payment-services/payment-services_en", "European Commission: Payment services (PSD2) and open banking"),
-        ("https://www.bis.org/publ/work1041.htm", "Bank for International Settlements: research on fintech and big tech in finance"),
+        ("https://www.bis.org/publ/work1041.htm", "BIS Working Paper 1041: The impact of fintech lending on credit access for US small businesses"),
         ("https://blubank.com/", "Blubank (Saman Bank)"),
     ],
     "source_note": (
