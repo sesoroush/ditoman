@@ -267,7 +267,7 @@
     
     <section class="newsletter-section">
         <form  method="post">
-        <input type="hidden" name="csrfmiddlewaretoken" value="7fEy4pnejfVjgEyoN6L6A8B1aDLQ40PkdvpuULSkjHIcA4su5sk4vwokp5jnqfuQ">
+        <input type="hidden" name="csrfmiddlewaretoken" value="weJW617PV4WQcDKa0odPnrLGxUIGMdA6uWMY5iMdBxhLvWzt7pAVvQLB43wV8w2x">
             <div class="container">
                 <div class="newsletter-wrapper">
                     <div class="newsletter-label">در جریان جدیدترین اخبار روبیکا قرار بگیرید</div>

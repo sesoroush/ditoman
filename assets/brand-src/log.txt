@@ -75,8 +75,8 @@ OK unesco/susa.1.jpg File:King's apartments Apadana Susa.jpg
 OK unesco/susa.2.jpg File:Persepolis stairs of the Apadana relief.jpg
 OK unesco/susa.3.jpg File:Royal City and Acropolis Tepes.jpg
 OK unesco/lut.0.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (28898850948).jpg
-OK unesco/lut.1.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (42722625382).jpg
-OK unesco/lut.2.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (42722846302).jpg
+OK unesco/lut.1.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (42055020644).jpg
+OK unesco/lut.2.jpg File:Kaluts, Lut Desert, Kerman Province, Iran (42722625382).jpg
 OK unesco/lut.3.jpg File:Kaluts in Lut Desert, Kavire Lut, Iran.jpg
 OK unesco/qanat.0.jpg File:Ancient water clock used in qanat of gonabad 2500 years ago.JPG
 OK unesco/qanat.1.jpg File:Ghanat ghasabeh, khorasan razavi, gonabad (cropped).jpg
@@ -92,8 +92,8 @@ OK unesco/sassanid-fars.2.jpg File:Restored Plan Palace of Ardashir Firuzabad Ir
 OK unesco/sassanid-fars.3.jpg File:Various arched vaults in Ardashir Palace.jpg
 OK unesco/hyrcanian.0.jpg File:Caspian Hyrcanian Mixed Forests Ecoregion - Relief Map Angle.png
 OK unesco/hyrcanian.1.jpg File:Caspian Hyrcanian Mixed Forests Ecoregion - Relief Map Flat.png
-OK unesco/hyrcanian.2.jpg File:Caspian Hyrcanian mixed forests2023-04-11 29.jpg
-OK unesco/hyrcanian.3.jpg File:Caspian Hyrcanian mixed forests2023-04-13 19.jpg
+OK unesco/hyrcanian.2.jpg File:Caspian Hyrcanian Mixed Forests in Northern Iran 14.jpg
+OK unesco/hyrcanian.3.jpg File:Caspian Hyrcanian mixed forests2023-04-11 29.jpg
 OK unesco/trans-iranian-railway.0.jpg File:Bridge Veresk.jpg
 OK unesco/trans-iranian-railway.1.jpg File:VERESK Bridge - panoramio.jpg
 OK unesco/trans-iranian-railway.2.jpg File:Veresk bridge, Tehran - Sari Railway.jpg
@@ -159,42 +159,3 @@ OK social/rubika-fav2.png 2215 image/jpeg https://www.google.com/s2/favicons?dom
 OK social/rubika-fav3.png 13335 image/png https://www.google.com/s2/favicons?domain=m.rubika.ir&sz=256
 OK tmn/dexscreener.json 806 application/json; charset=utf-8 https://api.dexscreener.com/latest/dex/tokens/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d
 OK tmn/gecko.json 610 application/json; charset=utf-8 https://api.geckoterminal.com/api/v2/networks/bsc/tokens/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d
-FAIL linkcheck/00.html https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Inflation HTTP Error 403: Forbidden
-OK linkcheck/01.html 318872 text/html; charset=UTF-8 https://www.euronews.com/business/2026/06/30/irans-inflation-spiral-deepens-as-rial-slides-and-tensions-rise
-OK linkcheck/02.html 184292 application/pdf https://bitcoin.org/bitcoin.pdf
-OK linkcheck/03.html 75856 text/html; charset=UTF-8 https://www.fdic.gov/resources/deposit-insurance/
-OK linkcheck/04.html 160389 text/html; charset=utf-8 https://finance.ec.europa.eu/banking/banking-regulation/deposit-guarantee-schemes_en
-OK linkcheck/05.html 2553 text/html https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes
-OK linkcheck/06.html 333460 text/html; charset=utf-8 https://ethereum.org/en/wallets/
-FAIL linkcheck/07.html https://eur-lex.europa.eu/eli/reg/2015/751/oj <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'eur-lex.europa.eu'. (_ssl.c:1081)>
-OK linkcheck/08.html 131927 text/html; charset=utf-8 https://www.bis.org/cpmi/publ/d00b.htm
-FAIL linkcheck/09.html https://www.shaparak.ir/ <urlopen error timed out>
-OK linkcheck/10.html 106525 text/html; charset=UTF-8 https://www.mehrnews.com/news/5770024/
-OK linkcheck/11.html 46061 text/html; charset=UTF-8 https://remittanceprices.worldbank.org/
-FAIL linkcheck/12.html https://www.swift.com/about-us HTTP Error 403: Forbidden
-OK linkcheck/13.html 149279 text/html; charset=utf-8 https://www.bis.org/cpmi/cross_border.htm
-OK linkcheck/14.html 113897 text/html; charset=UTF-8 https://sdgs.un.org/goals/goal10
-OK linkcheck/15.html 467362 text/html; charset=utf-8 https://ethereum.org/en/developers/docs/gas/
-OK linkcheck/16.html 69172 text/html https://developer.bitcoin.org/devguide/transactions.html
-OK linkcheck/17.html 58763 text/html; charset=utf-8 https://docs.bnbchain.org/bnb-smart-chain/overview/
-FAIL linkcheck/18.html https://bscscan.com/ HTTP Error 403: Forbidden
-OK linkcheck/19.html 763363 text/html; charset=utf-8 https://decrypt.co/354624/ai-impersonation-drove-crypto-scam-losses-record-17-billion-2025-chainalysis
-OK linkcheck/20.html 413774 text/html; charset=UTF-8 https://www.chainalysis.com/blog/
-FAIL linkcheck/21.html https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams HTTP Error 404: Not Found
-OK linkcheck/22.html 53010 text/html; charset=utf-8 https://www.ic3.gov/
-FAIL linkcheck/23.html https://www.bls.gov/cpi/ HTTP Error 403: Forbidden
-OK linkcheck/24.html 73395 text/html; charset=UTF-8 https://www.gold.org/goldhub/data/gold-prices
-OK linkcheck/25.html 1039461 text/html; charset=utf-8 https://www.coingecko.com/en/coins/bitcoin
-OK linkcheck/26.html 64358 text/html; charset=utf-8 https://www.investor.gov/introduction-investing/investing-basics/save-and-invest
-OK linkcheck/27.html 145163 text/html; charset=utf-8 https://www.consumerfinance.gov/data-research/research-reports/consumer-use-of-buy-now-pay-later-and-other-unsecured-debt/
-OK linkcheck/28.html 195366 text/html; charset=UTF-8 https://www.consumerfinancialserviceslawmonitor.com/2025/01/cfpb-releases-report-highlighting-consumer-use-of-buy-now-pay-later-products/
-OK linkcheck/29.html 48875 text/html; charset=utf-8 https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator
-OK linkcheck/30.html 413860 text/html; charset=utf-8 https://nu.com/en/newsroom/company/nubank-reaches-more-than-112-million-customers-and-becomes-the-largest-private-financial-institution-in-brazil-according-to-the-central-bank
-OK linkcheck/31.html 183530 text/html; charset=utf-8 https://finance.ec.europa.eu/consumer-finance-and-payments/payment-services/payment-services_en
-OK linkcheck/32.html 132991 text/html; charset=utf-8 https://www.bis.org/publ/work1041.htm
-FAIL linkcheck/33.html https://blubank.com/ HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.
-The last 30x error message was:
-Temporary Redirect
-OK linkcheck/34.html 203419 text/html; charset=UTF-8 https://www.digitalcommerce360.com/2025/10/31/mastercard-agentic-commerce-is-here/
-FAIL linkcheck/35.html https://www.weforum.org/stories/2025/02/deepfake-ai-cybercrime-arup/ HTTP Error 403: Forbidden
-OK linkcheck/36.html 266404 text/html; charset=utf-8 https://www.bis.org/publ/arpdf/ar2024e3.htm
