@@ -25,7 +25,7 @@ FONTS = ROOT / "scripts" / "report" / "fonts"
 GEO = ROOT / "assets" / "geo"
 LOGO = ROOT / "tmn-logo-512.png"
 # lesson covers that contain Persian text
-LESSONS = ["lesson06", "lesson07", "lesson08", "lesson09", "lesson10"]
+LESSONS = ["lesson06", "lesson07", "lesson08", "lesson09", "lesson10", "lesson11"]
 
 
 def clean(s):
@@ -72,7 +72,7 @@ def jobs(only):
     for slug in LESSONS:
         page = ROOT / f"{slug}.html"
         src = page.read_text(encoding="utf-8")
-        img = re.search(rf'<img src="({slug}-[^"]+\.(?:jpg|png))"', src)
+        img = re.search(rf'<img (?:lang="fa" )?src="({slug}-(?:(?!-en\.)[^"])+\.(?:jpg|png))"', src)
         if not img:
             continue
         orig = ROOT / img.group(1)
