@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Rent the Sun: The Start-up Beaming Sunlight From Space at Night | خورشید را اجاره کنید | Ditoman</title>
+<meta name="description" content="خورشید را اجاره کنید؛ گزارش دیتومان از Reflect Orbital و آینه‌های فضایی که شب‌ها نور خورشید را به زمین می‌فرستند: فناوری، حساب انرژی، کاربری زمین، نگرانی اخترشناسان و آینده." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:fixed;width:100%;min-width:0 !important}
+.tw td,.tw th{white-space:normal !important;word-break:normal;overflow-wrap:break-word;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261113" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/rent-the-sun.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/rent-the-sun.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/rent-the-sun.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/rent-the-sun.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Rent the Sun: The Start-up Beaming Sunlight From Space at Night | خورشید را اجاره کنید | Ditoman" />
+<meta property="og:description" content="خورشید را اجاره کنید؛ گزارش دیتومان از Reflect Orbital و آینه‌های فضایی که شب‌ها نور خورشید را به زمین می‌فرستند: فناوری، حساب انرژی، کاربری زمین، نگرانی اخترشناسان و آینده." />
+<meta property="og:url" content="https://ditoman.com/rent-the-sun.html" />
+<meta property="og:image" content="https://ditoman.com/social/rent-the-sun/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/rent-the-sun.html#article",
+   "mainEntityOfPage": "https://ditoman.com/rent-the-sun.html",
+   "headline": "Rent the Sun: The Start-up Beaming Sunlight From Space at Night | خورشید را اجاره کنید",
+   "description": "خورشید را اجاره کنید؛ گزارش دیتومان از Reflect Orbital و آینه‌های فضایی که شب‌ها نور خورشید را به زمین می‌فرستند.",
+   "image": "https://ditoman.com/social/rent-the-sun/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm"
+    ]
+   },
+   "datePublished": "2026-11-13"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Rent the Sun | خورشید را اجاره کنید",
+     "item": "https://ditoman.com/rent-the-sun.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/rent-the-sun/card.webp" srcset="social/rent-the-sun/card.webp 900w, social/rent-the-sun/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Rent the Sun" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/rent-the-sun/en-card.webp" srcset="social/rent-the-sun/en-card.webp 900w, social/rent-the-sun/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Rent the Sun" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · Future tech</span><span lang="fa">گزارش ویژه · فناوری آینده</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">خورشید را اجاره کنید! استارتاپی که شب‌ها نور خورشید را از فضا به زمین می‌فرستد</h1>
+<h1 lang="en">Rent the Sun: the start-up beaming sunlight from space at night</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">Reflect Orbital با ۷۳٫۵ میلیون دلار سرمایه‌ی تازه، آینه‌های فضایی می‌سازد. چقدر برق می‌دهد، کاربری زمین را چطور عوض می‌کند و چرا اخترشناسان نگران‌اند؟</p>
+<p class="subtitle" lang="en">Reflect Orbital has raised $73.5M to build orbital mirrors. How much power could they deliver, how could they change land use, and why are astronomers alarmed?</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۷۳٫۵ میلیون $</b><b lang="en">$73.5M</b><span lang="fa">سرمایه‌ی تازه، ۱۰ نوامبر</span><span lang="en">new funding, 10 Nov</span></div>
+<div class="stat"><b lang="fa">۱۸ متر</b><b lang="en">18 m</b><span lang="fa">آینه‌ی ماهواره‌ی آزمایشی</span><span lang="en">test mirror</span></div>
+<div class="stat"><b lang="fa">۲۰۲۷</b><b lang="en">2027</b><span lang="fa">نخستین نمایش در مدار</span><span lang="en">first orbital demo</span></div>
+<div class="stat"><b lang="fa">۵۰٬۰۰۰</b><b lang="en">50,000</b><span lang="fa">ماهواره تا ۲۰۳۵ (هدف)</span><span lang="en">satellites by 2035 (goal)</span></div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<h3><span class="check-number">0.</span> در یک نگاه</h3>
+<p>شب شده، خورشید رفته، اما یک مزرعه‌ی خورشیدی در صحرا هنوز نور می‌گیرد. منبع نور؟ آینه‌ای به اندازه‌ی بیش از یک زمین تنیس، ۶۰۰ کیلومتر بالاتر از سرمان.</p>
+<p>این ایده‌ی استارتاپ آمریکایی <strong>Reflect Orbital</strong> است که روز ۱۹ آبان (۱۰ نوامبر ۲۰۲۶) اعلام کرد <strong>۷۳٫۵ میلیون دلار</strong> سرمایه‌ی تازه گرفته و کل سرمایه‌اش از ۱۰۰ میلیون دلار گذشته است. شعارش ساده و جسورانه است: «نور خورشید، هر وقت بخواهید».</p>
+<div class="tw"><table><tr><th>شاخص</th><th>عدد</th></tr><tr><td>سرمایه‌ی تازه</td><td>۷۳٫۵ میلیون دلار (۱۰ نوامبر ۲۰۲۶)</td></tr><tr><td>کل سرمایه</td><td>بیش از ۱۰۰ میلیون دلار</td></tr><tr><td>آینه‌ی ماهواره‌ی آزمایشی</td><td>۱۸ × ۱۸ متر، تاشو</td></tr><tr><td>ارتفاع مدار</td><td>حدود ۵۰۰ تا ۶۵۰ کیلومتر</td></tr><tr><td>نخستین نمایش در مدار</td><td>سه‌ماهه‌ی دوم ۲۰۲۷</td></tr><tr><td>هدف بلندمدت</td><td>حدود ۵۰ هزار ماهواره تا ۲۰۳۵</td></tr></table></div>
+<blockquote>این خبر هم هیجان‌انگیز است و هم بحث‌برانگیز: برای صنعت انرژی یک امکان تازه، و برای اخترشناسان و طرفداران آسمان تاریک یک نگرانی جدی.</blockquote>
+
+<h3><span class="check-number">1.</span> ایده چیست؟</h3>
+<p>خورشید در فضا هیچ‌وقت غروب نمی‌کند. ماهواره‌ای که در مدار مناسب باشد، حتی وقتی زمینِ زیرش شب است، هنوز نور خورشید را می‌بیند. Reflect Orbital می‌خواهد این نور را با آینه‌های بزرگ و سبک بگیرد و به نقطه‌ای مشخص روی زمین برگرداند.</p>
+<p>بن نواک، مدیرعامل و هم‌بنیان‌گذار شرکت و مهندس سابق اسپیس‌ایکس، می‌گوید: «خورشید قدرتمندترین منبع منظومه‌ی شمسی است» و شرکتش می‌خواهد تعیین کند کجا و کی بتابد. به گفته‌ی خودش، این «فیزیک تازه» نیست؛ «مهندسی تازه» است. آینه‌ها کمی براق‌تر و کارآمدتر از آینه‌ی حمام خانه‌اند.</p>
+
+<h3><span class="check-number">2.</span> چطور کار می‌کند؟</h3>
+<ul><li><strong>آینه‌ی تاشو:</strong> چهار پنل مثلثی که در مدار باز می‌شوند و مربعی ۱۸ متری می‌سازند. هر پنل حدود ۵۰۰ گرم وزن دارد و ضخامتش حدود ۱۵ هزار اتم است؛ رویه‌ی آلومینیومی با پشتی پلاستیکی مخصوص فضا.</li></ul>
+<ul><li><strong>مدار:</strong> ماهواره ابتدا در حدود ۵۰۰ کیلومتر مستقر می‌شود و برای نمایش‌ها به ۶۵۰ کیلومتر می‌رود؛ مداری هم‌گام با خورشید که بیشتر وقت‌ها رو به نور است.</li></ul>
+<ul><li><strong>نشانه‌گیری بدون سوخت:</strong> سه چرخ واکنشی بزرگ، آینه را می‌چرخانند تا بازتاب روی هدف بماند.</li></ul>
+<ul><li><strong>لکه‌ی نور روی زمین:</strong> دایره‌ای به قطر حدود ۵ کیلومتر، برای هر هدف حدود ۵ دقیقه در هر عبور.</li></ul>
+<ul><li><strong>روشنایی:</strong> در نسخه‌ی آزمایشی، تقریباً هم‌اندازه‌ی ماه کامل. از زمین شبیه ستاره‌ای بسیار درخشان و متحرک دیده می‌شود.</li></ul>
+<ul><li><strong>هزینه:</strong> ساخت نمونه‌ی اولیه حدود ۲ میلیون دلار؛ برآورد هزینه‌ی هر واحد در تولید انبوه حدود ۳۰۰ هزار دلار.</li></ul>
+
+<h3><span class="check-number">3.</span> از بالن تا مدار: مسیر پنج‌ساله</h3>
+<ul><li><strong>۲۰۲۱:</strong> تأسیس شرکت در کالیفرنیا توسط بن نواک و تریستان سمل‌هاک</li></ul>
+<ul><li><strong>مارس ۲۰۲۴:</strong> آزمایش با آینه‌ای ۶ متر مربعی روی بالن هوای گرم؛ نور خورشید در گرگ‌ومیش روی پنل‌های خورشیدی زمینی تابانده شد</li></ul>
+<ul><li><strong>سپتامبر ۲۰۲۴:</strong> سرمایه‌ی اولیه ۶٫۵ میلیون دلار با حضور Sequoia</li></ul>
+<ul><li><strong>مه ۲۰۲۵:</strong> ۲۰ میلیون دلار از Lux، Sequoia و Starship Ventures؛ معرفی ماهواره‌ی Eärendil-1 (نامی از ارباب حلقه‌ها)</li></ul>
+<ul><li><strong>ژوئن ۲۰۲۵:</strong> قرارداد ۱٫۲۵ میلیون دلاری با آزمایشگاه پژوهشی نیروی هوایی آمریکا</li></ul>
+<ul><li><strong>تا پایان ۲۰۲۵:</strong> بیش از ۲۶۰ هزار درخواست برای روشنایی شبانه، از ساخت‌وساز و رویدادها تا امداد و نجات</li></ul>
+<ul><li><strong>۲۰۲۶:</strong> کمیسیون ارتباطات آمریکا (FCC) مجوز ماهواره‌ی آزمایشی را داد، با بررسی بیش از ۱٬۸۰۰ نظر عمومی</li></ul>
+<ul><li><strong>مهر ۱۴۰۵:</strong> آزمایش با نورافکن‌های قدرتمند در صحرای کالیفرنیا، نزدیک لون‌پاین</li></ul>
+<ul><li><strong>۱۰ نوامبر ۲۰۲۶:</strong> ۷۳٫۵ میلیون دلار سرمایه‌ی تازه، با Salesforce Ventures و Buckley Ventures در کنار سرمایه‌گذاران قبلی</li></ul>
+<ul><li><strong>۲۰۲۷:</strong> نخستین نمایش در مدار در سه‌ماهه‌ی دوم؛ دو پرتاب اختصاصی هم با Skyroot Aerospace خریده شده</li></ul>
+
+<h3><span class="check-number">4.</span> ظرفیت‌ها: نور شب به چه کاری می‌آید؟</h3>
+<ul><li><strong>نیروگاه‌های خورشیدی:</strong> مشتری اصلی. هدف، کار کردن چند ساعت بیشتر بعد از غروب و پیش از طلوع است؛ دقیقاً همان ساعت‌هایی که مصرف برق اوج می‌گیرد و پنل‌ها بیکارند.</li></ul>
+<ul><li><strong>امداد و نجات:</strong> روشن کردن منطقه‌ی زلزله یا سیل در چند دقیقه، بدون نیاز به ژنراتور و برق محلی.</li></ul>
+<ul><li><strong>ساخت‌وساز شبانه:</strong> کارگاه‌های دور از شبکه‌ی برق که امروز با ژنراتور دیزلی روشن می‌شوند.</li></ul>
+<ul><li><strong>رویدادها:</strong> کنسرت و جشنواره‌ی بزرگ در فضای باز.</li></ul>
+<ul><li><strong>کاربرد نظامی:</strong> نیروی هوایی آمریکا از نسخه‌ای شبیه نورافکن هلیکوپتر یا منور حمایت مالی کرده است.</li></ul>
+
+<h3><span class="check-number">5.</span> حساب انرژی: چقدر واقعاً برق می‌دهد؟</h3>
+<p>اینجا هیجان باید با عدد کنار هم بنشیند. نور خورشید ظهر در بالای جو حدود <strong>۱٬۳۶۰ وات بر متر مربع</strong> است. بر اساس محاسبه‌ی اتان سیگل، اخترفیزیکدان:</p>
+<ul><li><strong>یک آینه‌ی ۱۸ متری</strong> در ارتفاع ۶۲۵ کیلومتر حدود <strong>۰٫۰۰۴ وات بر متر مربع</strong> به زمین می‌رساند؛ یعنی حدود یک سیصدهزارم نور ظهر.</li></ul>
+<ul><li><strong>یک آینه‌ی ۵۴ متری</strong> حدود <strong>۰٫۰۴ وات</strong>؛ ده برابر روشن‌تر از ماه کامل، اما هنوز برای برق کافی نیست.</li></ul>
+<ul><li><strong>برای برق مفید</strong> یک نیروگاه خورشیدی به حدود ۲۰۰ وات بر متر مربع نیاز دارد؛ یعنی حدود <strong>۵ هزار آینه‌ی ۵۴ متری</strong> که هم‌زمان روی یک نقطه بتابند.</li></ul>
+<ul><li><strong>هر ماهواره</strong> با سرعت حدود ۷٫۵ کیلومتر بر ثانیه حرکت می‌کند و فقط چند دقیقه بالای هر نقطه است؛ پس برای نور پیوسته، صف طولانی از ماهواره‌ها لازم است.</li></ul>
+<ul><li><strong>هدف شرکت:</strong> ۴ هزار ماهواره تا ۲۰۳۰ و رساندن حدود ۱۵ درصد نور ظهر به نیروگاه‌ها.</li></ul>
+<ul><li><strong>سناریوی حداکثری:</strong> ۲۵۰ هزار ماهواره می‌توانند حدود ۲۰ درصد نور ظهر را هم‌زمان به حدود ۸۰ نقطه برسانند؛ معادل خروجی شبانه‌ی حدود ۱۶ نیروگاه خورشیدی.</li></ul>
+<blockquote>یعنی: نور شبانه‌ی فضایی جایگزین نیروگاه نیست؛ اما اگر در مقیاس انبوه ساخته شود، می‌تواند «روز خورشیدی» را کش بدهد؛ همان یکی دو ساعت گران و پرمصرفِ غروب و سحر.</blockquote>
+
+<h3><span class="check-number">6.</span> چقدر می‌تواند مصرف انرژی را تغییر دهد؟</h3>
+<ul><li><strong>ساعت‌های طلایی:</strong> بزرگ‌ترین ارزش در عدد کل برق نیست؛ در زمان آن است. برق غروب در بیشتر شبکه‌ها گران‌ترین برق روز است. هر دقیقه کار اضافه‌ی پنل در این ساعت‌ها، ارزش بیشتری از ساعت ظهر دارد.</li></ul>
+<ul><li><strong>رقیب باتری:</strong> امروز برای برق شب، برق ظهر را در باتری ذخیره می‌کنند. اگر نور فضایی ارزان شود، بخشی از نیاز به باتری کم می‌شود؛ اما باتری‌ها هم هر سال ارزان‌تر می‌شوند و همین رقابت مهم‌ترین آزمون اقتصادی این ایده است.</li></ul>
+<ul><li><strong>خداحافظی با ژنراتور:</strong> در کارگاه‌ها و مناطق حادثه‌دیده، جایگزینی نورافکن‌های دیزلی می‌تواند مصرف سوخت و آلودگی محلی را کم کند. عدد دقیق صرفه‌جویی هنوز منتشر نشده است.</li></ul>
+<ul><li><strong>زمستان و عرض‌های بالا:</strong> جاهایی که روز زمستان کوتاه است، بیشترین سود را از کش آمدن روز خورشیدی می‌برند.</li></ul>
+
+<h3><span class="check-number">7.</span> کاربری زمین روی کره‌ی زمین چطور عوض می‌شود؟</h3>
+<p>این بخش آینده‌نگری است، نه برنامه‌ی اعلام‌شده‌ی شرکت؛ با هم چند «اگر» را دنبال می‌کنیم:</p>
+<ul><li><strong>اگر</strong> نیروگاه‌ها ساعت‌های بیشتری کار کنند، از هر هکتار زمین برق بیشتری گرفته می‌شود؛ یعنی برای همان مقدار برق، زمین کمتری زیر پنل می‌رود.</li></ul>
+<ul><li><strong>اگر</strong> روشنایی شبانه‌ی موقت در دسترس باشد، معدن، کشاورزی بزرگ، ساخت جاده و پروژه‌های بیابانی می‌توانند شیفت شب داشته باشند، بی‌آنکه شبکه‌ی برق به آنجا کشیده شود.</li></ul>
+<ul><li><strong>اگر</strong> امداد بتواند در چند دقیقه یک شهر زلزله‌زده را روشن کند، ساعت‌های طلایی نجات در شب از دست نمی‌رود.</li></ul>
+<ul><li><strong>و در مقابل:</strong> اگر شب‌ها روشن‌تر شود، زیستگاه حیوانات شب‌زی، مسیر پرندگان مهاجر و رصدخانه‌ها هزینه می‌دهند. «زمین تاریک» هم کاربری است که می‌تواند از دست برود.</li></ul>
+
+<h3><span class="check-number">8.</span> نگرانی‌ها: چرا اخترشناسان ناراضی‌اند؟</h3>
+<ul><li><strong>آسمان روشن‌تر:</strong> اولیویه هنو از رصدخانه‌ی جنوبی اروپا (ESO) در شبیه‌سازی خود نشان داد ناوگان کامل می‌تواند آسمان شب کل زمین را سه تا چهار برابر روشن‌تر کند.</li></ul>
+<ul><li><strong>پژوهش پرینستون:</strong> مقاله‌ای در Astrophysical Journal Letters نشان داد یک آینه‌ی ۵۴ متری در محدوده‌ی پرتو حدود ۴ قدر روشن‌تر از ماه کامل است و درخشش پخش‌شده‌اش تا حدود ۳۴ کیلومتر دورتر هم از مهتاب بیشتر است.</li></ul>
+<ul><li><strong>چشم و ابزار:</strong> نگاه کردن به پرتو با تلسکوپ یا دوربین دوچشمی می‌تواند به چشم و حسگرها آسیب دائمی بزند.</li></ul>
+<ul><li><strong>طبیعت و سلامت:</strong> سازمان DarkSky هشدار می‌دهد نور شبانه چرخه‌ی خواب انسان و مهاجرت، تغذیه و زادآوری صدها گونه را مختل می‌کند. شعارش: «شب فروشی نیست».</li></ul>
+<ul><li><strong>شکاف قانونی:</strong> FCC گفت نگرانی‌های نوری «خارج از حوزه‌ی اختیار» آن است. انجمن اخترشناسی آمریکا هم دادخواستی برای رد طرح داده بود.</li></ul>
+<ul><li><strong>زباله‌ی فضایی:</strong> هزاران آینه‌ی بزرگ در مدار پایین، خطر برخورد و زباله را بالا می‌برند.</li></ul>
+<p>پاسخ شرکت: داده‌های آزمایش را با دیگران به اشتراک می‌گذارد، با بنیاد ملی علوم آمریکا روی توافق هماهنگی کار می‌کند و نرم‌افزارش نور را از پارک‌های آسمان تاریک و رصدخانه‌ها دور نگه می‌دارد. سخنگوی شرکت: «از نظارت استقبال می‌کنیم و می‌خواهیم در شکل دادن به آن نقش داشته باشیم.»</p>
+
+<h3><span class="check-number">9.</span> آزمایش جنجالی کالیفرنیا</h3>
+<p>مهرماه، شرکت در صحرای کالیفرنیا نزدیک لون‌پاین با نورافکن‌های قدرتمند، روشنایی ماهواره‌های آینده را شبیه‌سازی کرد. نور از ماه کامل بیشتر بود و سایه‌های بلند انداخت. اخترشناسان محلی و حتی مسئولان شهرستان از قبل خبر نداشتند. گاشپار باکوش، اخترفیزیکدان پرینستون، گفت «هیچ راه خوبی» برای این کار وجود ندارد.</p>
+
+<h3><span class="check-number">10.</span> این خبر برای ایران چه معنایی دارد؟</h3>
+<ul><li><strong>آفتاب زیاد، نیاز کمتر:</strong> ایران بیش از ۳۰۰ روز آفتابی در سال دارد و برنامه‌ی پنل خورشیدی روی ۶۰۰ هزار خانه را دنبال می‌کند. برای ما، ذخیره‌سازی برق روز مهم‌تر از نور شبانه‌ی فضایی است.</li></ul>
+<ul><li><strong>نیروگاه‌های بزرگ بیابانی:</strong> پروژه‌هایی مثل نیروگاه ۵ هزار مگاواتی اصفهان، در آینده می‌توانند همان مشتریانی باشند که این فناوری دنبالشان است؛ اگر قیمت منطقی شود.</li></ul>
+<ul><li><strong>آسمان تاریک ایران:</strong> رصدخانه‌ی ملی ایران روی قله‌ی گرگش در نزدیکی کاشان، با تلسکوپ ۳٫۴ متری، به آسمان تاریک وابسته است. بحث جهانی درباره‌ی «حق تاریکی» برای علم ایران هم مهم است.</li></ul>
+
+<h3><span class="check-number">11.</span> چهار سناریو برای آینده</h3>
+<ul><li><strong>موفقیت محدود:</strong> نور شبانه برای امداد، رویداد و پروژه‌های خاص؛ ناوگان چندصد ماهواره‌ای و بازاری کوچک اما سودآور.</li></ul>
+<ul><li><strong>انقلاب خورشیدی:</strong> هزاران ماهواره، روز خورشیدی چند ساعت طولانی‌تر و رقابتی جدی با باتری‌ها؛ همان رؤیای «۱۵ درصد نور ظهر تا ۲۰۳۰».</li></ul>
+<ul><li><strong>قاعده‌گذاری سخت:</strong> قوانین تازه‌ی جهانی برای «آلودگی نوری از فضا»؛ پروژه کوچک می‌شود یا فقط در مناطق تعیین‌شده مجاز می‌ماند.</li></ul>
+<ul><li><strong>پیروزی باتری:</strong> ارزان شدن ذخیره‌سازی آن‌قدر سریع است که اجاره‌ی نور خورشید دیگر اقتصادی نمی‌شود.</li></ul>
+<p>اما موانع جدی باقی مانده‌اند: هزینه پرتاب و نگهداری هزاران ماهواره، خطر برخورد و زباله فضایی، محدودیت‌های فیزیکی بازتاب نور، رقابت با ذخیره‌سازهای انرژی و پیامدهای محیط‌زیستی.</p>
+
+<h3><span class="check-number">12.</span> نگاه دیتومان | آیا تاریکی هم روزی کالایی اقتصادی می‌شود؟</h3>
+<p>در اقتصاد مدرن، انسان تقریباً برای همه چیز بازاری ساخته است؛ از زمین و آب گرفته تا داده، فرکانس‌های ارتباطی و ظرفیت پردازش ابری.</p>
+<p>اکنون شرکتی می‌خواهد نور خورشید را نیز به خدمتی قابل سفارش تبدیل کند.</p>
+<p>اما این نوآوری یک تضاد مهم ایجاد می‌کند: چیزی که برای یک نیروگاه یا پروژه صنعتی ارزش اقتصادی دارد، ممکن است برای ساکنان اطراف، حیات‌وحش یا دانشمندان یک هزینه محیط‌زیستی باشد.</p>
+<p>اگر روزی شرکت‌ها بتوانند روشنایی شب را بفروشند، آیا جامعه نیز باید حق حفاظت از تاریکی را داشته باشد؟</p>
+<p>شاید پرسش اصلی آینده این نباشد که آیا می‌توانیم خورشید را اجاره کنیم؛ بلکه این باشد که چه کسی حق دارد شب را روشن کند.</p>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.reflectorbital.com/blog-posts/reflect-orbital-announces-73-5-million-in-new-funding" target="_blank" rel="noopener">Reflect Orbital: $73.5M funding announcement (10 Nov 2026)</a></li><li><a href="https://aerospaceamerica.aiaa.org/reflect-orbital-approaches-first-on-orbit-demo-of-shining-sunlight-at-night/" target="_blank" rel="noopener">Aerospace America: Reflect Orbital readies first on-orbit demo</a></li><li><a href="https://www.scientificamerican.com/article/u-s-approval-of-giant-space-mirror-satellite-alarms-astronomers/" target="_blank" rel="noopener">Scientific American: US approval of giant space mirror alarms astronomers</a></li><li><a href="https://iopscience.iop.org/article/10.3847/2041-8213/ae9551" target="_blank" rel="noopener">Astrophysical Journal Letters: Atmospheric Light Pollution by Proposed Reflect Orbital Space Mirrors</a></li><li><a href="https://www.universetoday.com/articles/the-brightened-night-sky-nobody-actually-wanted" target="_blank" rel="noopener">Universe Today: The brightened night sky nobody wanted</a></li><li><a href="https://bigthink.com/starts-with-a-bang/true-cost-solar-power-night-reflect-orbital/" target="_blank" rel="noopener">Big Think (Ethan Siegel): The true cost of solar power at night</a></li><li><a href="https://futurism.com/space/test-controversial-sunlight-space-astronomers" target="_blank" rel="noopener">Futurism: Unannounced California test shocks astronomers</a></li><li><a href="https://darksky.org/news/orbital-illumination-systems/" target="_blank" rel="noopener">DarkSky International: Orbital illumination systems</a></li><li><a href="https://skyandtelescope.org/" target="_blank" rel="noopener">Sky & Telescope</a></li><li><a href="https://www.space.com/" target="_blank" rel="noopener">Space.com</a></li><li><a href="https://en.wikipedia.org/wiki/Reflect_Orbital" target="_blank" rel="noopener">Wikipedia: Reflect Orbital</a></li></ul>
+</div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<h3><span class="check-number">0.</span> At a glance</h3>
+<p>Night has fallen, yet a desert solar farm is still catching light. The source: a mirror bigger than a tennis court, about 600 km overhead.</p>
+<p>That is the plan of US start-up <strong>Reflect Orbital</strong>, which announced on 10 November 2026 that it had raised <strong>$73.5 million</strong>, taking total funding above $100 million. Its pitch: sunlight, on demand.</p>
+<div class="tw"><table><tr><th>Indicator</th><th>Figure</th></tr><tr><td>New funding</td><td>$73.5M (10 Nov 2026)</td></tr><tr><td>Total raised</td><td>More than $100M</td></tr><tr><td>Test mirror</td><td>18 × 18 m, deployable</td></tr><tr><td>Orbit</td><td>About 500–650 km</td></tr><tr><td>First orbital demo</td><td>Q2 2027</td></tr><tr><td>Long-term goal</td><td>About 50,000 satellites by 2035</td></tr></table></div>
+<blockquote>Exciting and contested at once: a new tool for the energy industry, and a serious worry for astronomers and dark-sky advocates.</blockquote>
+<h3><span class="check-number">1.</span> The idea</h3>
+<p>In space the Sun never sets. A satellite in the right orbit still sees sunlight while the ground below is in darkness. Reflect Orbital wants to catch that light with large, light mirrors and send it to a chosen spot on Earth. CEO and co-founder Ben Nowack, a former SpaceX engineer, says the Sun is "the most powerful resource in the solar system" and calls this "new engineering", not new physics.</p>
+<h3><span class="check-number">2.</span> How it works</h3>
+<ul><li><strong>Folding mirror:</strong> four triangular panels unfold into an 18 m square; each about 500 g and roughly 15,000 atoms thick.</li><li><strong>Orbit:</strong> deployed near 500 km, raised to 650 km for demos, in a sun-synchronous orbit.</li><li><strong>Fuel-free pointing:</strong> three large reaction wheels keep the reflection on target.</li><li><strong>Spot on the ground:</strong> about 5 km across, roughly 5 minutes per target per pass.</li><li><strong>Brightness:</strong> about a full Moon for the test craft.</li><li><strong>Cost:</strong> about $2M for the prototype, an estimated $300,000 per unit in production.</li></ul>
+<h3><span class="check-number">3.</span> From balloon to orbit</h3>
+<ul><li><strong>2021:</strong> founded by Ben Nowack and Tristan Semmelhack</li><li><strong>Mar 2024:</strong> a 6 m² mirror on a hot-air balloon lit ground solar panels at twilight</li><li><strong>Sep 2024:</strong> $6.5M seed round with Sequoia</li><li><strong>May 2025:</strong> $20M from Lux, Sequoia and Starship Ventures; Eärendil-1 announced</li><li><strong>Jun 2025:</strong> $1.25M US Air Force research contract</li><li><strong>End 2025:</strong> more than 260,000 enquiries for night lighting</li><li><strong>2026:</strong> FCC approves the test satellite after 1,800+ public comments</li><li><strong>Oct 2026:</strong> spotlight test near Lone Pine, California</li><li><strong>10 Nov 2026:</strong> $73.5M round adds Salesforce Ventures and Buckley Ventures</li><li><strong>2027:</strong> first orbital demo in Q2; two dedicated launches bought from Skyroot Aerospace</li></ul>
+<h3><span class="check-number">4.</span> Uses</h3>
+<ul><li><strong>Solar farms:</strong> extra working time after dusk and before dawn, when demand peaks.</li><li><strong>Search and rescue:</strong> lighting a disaster zone within minutes.</li><li><strong>Night construction:</strong> sites off the grid that now rely on diesel lights.</li><li><strong>Events</strong> and <strong>military</strong> uses, backed by an Air Force contract.</li></ul>
+<h3><span class="check-number">5.</span> The energy maths</h3>
+<p>Midday sunlight above the atmosphere is about 1,360 W/m². By astrophysicist Ethan Siegel's figures, one 18 m mirror at 625 km delivers about 0.004 W/m²; a 54 m mirror about 0.04 W/m². A solar plant needs around 200 W/m² for useful output, which means roughly 5,000 of the 54 m mirrors aimed at one spot. Each satellite moves at about 7.5 km/s and stays over a site for only a few minutes. The company aims for 4,000 satellites by 2030 delivering about 15% of midday sunlight; a maximal 250,000 satellites could give about 20% of midday light to some 80 sites at once, roughly 16 extra solar plants' worth at night.</p>
+<blockquote>So orbital light will not replace power plants, but at scale it could stretch the solar day into the expensive dusk and dawn hours.</blockquote>
+<h3><span class="check-number">6.</span> What it could change in energy use</h3>
+<ul><li><strong>Golden hours:</strong> the value lies in timing; evening power is the priciest of the day.</li><li><strong>Versus batteries:</strong> cheap orbital light could reduce storage needs, but batteries keep getting cheaper; that race is the real economic test.</li><li><strong>Fewer generators:</strong> replacing diesel floodlights at work sites and disaster zones could cut fuel use; no figures have been published yet.</li><li><strong>Winter and high latitudes</strong> gain most from a longer solar day.</li></ul>
+<h3><span class="check-number">7.</span> How land use could change</h3>
+<ul><li><strong>If</strong> plants run longer, each hectare yields more power, so less land is needed for the same output.</li><li><strong>If</strong> temporary night light is available, mines, large farms, road building and desert projects could work night shifts without grid power.</li><li><strong>If</strong> rescuers can light a quake-hit town in minutes, the golden hours of rescue are not lost to darkness.</li><li><strong>On the other side:</strong> brighter nights cost nocturnal wildlife, migrating birds and observatories. Dark land is a land use too.</li></ul>
+<h3><span class="check-number">8.</span> Why astronomers object</h3>
+<ul><li>ESO's Olivier Hainaut simulated the full fleet making the global night sky three to four times brighter.</li><li>A Princeton-led paper in the Astrophysical Journal Letters found a 54 m mirror about four magnitudes brighter than a full Moon in its beam, with scattered glow above moonlight up to about 34 km away.</li><li>Looking at the beam through optics can permanently damage eyes and sensors.</li><li>DarkSky International warns of harm to sleep cycles and to hundreds of species: "The night is not for sale."</li><li>The FCC said optical concerns are "beyond the scope" of its authority; the American Astronomical Society petitioned for denial.</li><li>Thousands of large mirrors in low orbit add collision and debris risk.</li></ul>
+<p>The company says it will share test data, is working on a coordination agreement with the US National Science Foundation and keeps light away from dark-sky parks and observatories: "We welcome oversight and want to play an active role in shaping it."</p>
+<h3><span class="check-number">9.</span> The California test</h3>
+<p>In October, the company used powerful spotlights near Lone Pine, California to simulate its future satellites. The light outshone the full Moon. Local astronomers and county officials were not told in advance. Princeton's Gáspár Bakos said there is "no nice way" to do this.</p>
+<h3><span class="check-number">10.</span> What it means for Iran</h3>
+<ul><li>With 300+ sunny days a year and a 600,000-home rooftop solar plan, storing daytime power matters more for Iran than orbital night light.</li><li>Large desert plants such as the planned 5,000 MW Isfahan project are the kind of customer this technology targets, if prices make sense.</li><li>The Iranian National Observatory on Mount Gargash near Kashan, with its 3.4 m telescope, depends on dark skies; the global debate on a right to darkness matters for Iranian science too.</li></ul>
+<h3><span class="check-number">11.</span> Four scenarios</h3>
+<ul><li><strong>Niche success:</strong> rescue, events and special projects; a few hundred satellites, a small profitable market.</li><li><strong>Solar revolution:</strong> thousands of satellites stretch the solar day and compete with batteries.</li><li><strong>Hard regulation:</strong> new global rules on light pollution from space shrink or confine the project.</li><li><strong>Batteries win:</strong> storage gets cheap so fast that renting sunlight never pays.</li></ul>
+<p>Serious obstacles remain: the cost of launching and maintaining thousands of satellites, collision and debris risk, the physical limits of reflecting light, competition from energy storage and environmental consequences.</p>
+<h3><span class="check-number">12.</span> Ditoman's view | Will darkness become an economic good?</h3>
+<p>Modern economies have built markets for almost everything: land, water, data, radio spectrum, cloud computing. Now a company wants to turn sunlight into a service you can order. But what has economic value for a power plant may be an environmental cost for neighbours, wildlife and scientists. If companies can one day sell light at night, should society also have a right to protect darkness? The real question may not be whether we can rent the Sun, but who has the right to light up the night.</p>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.reflectorbital.com/blog-posts/reflect-orbital-announces-73-5-million-in-new-funding" target="_blank" rel="noopener">Reflect Orbital: $73.5M funding announcement (10 Nov 2026)</a></li><li><a href="https://aerospaceamerica.aiaa.org/reflect-orbital-approaches-first-on-orbit-demo-of-shining-sunlight-at-night/" target="_blank" rel="noopener">Aerospace America: Reflect Orbital readies first on-orbit demo</a></li><li><a href="https://www.scientificamerican.com/article/u-s-approval-of-giant-space-mirror-satellite-alarms-astronomers/" target="_blank" rel="noopener">Scientific American: US approval of giant space mirror alarms astronomers</a></li><li><a href="https://iopscience.iop.org/article/10.3847/2041-8213/ae9551" target="_blank" rel="noopener">Astrophysical Journal Letters: Atmospheric Light Pollution by Proposed Reflect Orbital Space Mirrors</a></li><li><a href="https://www.universetoday.com/articles/the-brightened-night-sky-nobody-actually-wanted" target="_blank" rel="noopener">Universe Today: The brightened night sky nobody wanted</a></li><li><a href="https://bigthink.com/starts-with-a-bang/true-cost-solar-power-night-reflect-orbital/" target="_blank" rel="noopener">Big Think (Ethan Siegel): The true cost of solar power at night</a></li><li><a href="https://futurism.com/space/test-controversial-sunlight-space-astronomers" target="_blank" rel="noopener">Futurism: Unannounced California test shocks astronomers</a></li><li><a href="https://darksky.org/news/orbital-illumination-systems/" target="_blank" rel="noopener">DarkSky International: Orbital illumination systems</a></li><li><a href="https://skyandtelescope.org/" target="_blank" rel="noopener">Sky & Telescope</a></li><li><a href="https://www.space.com/" target="_blank" rel="noopener">Space.com</a></li><li><a href="https://en.wikipedia.org/wiki/Reflect_Orbital" target="_blank" rel="noopener">Wikipedia: Reflect Orbital</a></li></ul>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261113" defer></script>
+<script src="lang.js?v=20261112" defer></script>
+<script src="search.js?v=20261112b" defer></script>
+</body>
+</html>
