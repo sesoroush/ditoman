@@ -1,5 +1,162 @@
 [
  {
+  "date": "2026-11-16",
+  "jalali": "1405/08/25",
+  "weekday_fa": "دوشنبه",
+  "post": "press/2026-11-16-post.webp",
+  "post_en": "press/2026-11-16-post-en.webp",
+  "lead_fa": "روز سوم هفته، بازارها آرام‌تر شدند: دلار زیر ۲۷۰ هزار تومان برگشت، سکه و طلا ارزان شدند، بورس با رشد ۴۸ هزار واحدی بالای ۸٫۵ میلیون ماند و خودرو بخشی از جهش دیروز را پس داد. کالابرگ سه گروه شارژ شد، هوای تهران قرمز است و کندوان بسته. از صفحه‌های اقتصادی روزنامه‌ها و سایت‌های خبری، چیزهایی را جدا کرده‌ایم که به زندگی و جیب ما مربوط است. با هم دنبال می‌کنیم.",
+  "lead_en": "Day three of the week was calmer: the dollar slipped back under 270,000 tomans, coin and gold got cheaper, Tehran stocks held above 8.5 million with a 48,000-point gain and car prices gave back part of yesterday’s jump. Kalabarg was topped up for three groups, Tehran’s air is red and the Kandovan road is closed. We picked out what touches daily life and the wallet from the business pages and the news sites.",
+  "front_fa": "دنیای اقتصاد: «تغییر اجباری الگوی اجاره‌نشینی؛ چرا وزن اجاره‌ی مسکن در سبد خانوار کاهش یافت؟» · شرق (شماره‌ی ۵۵۲۸): «عقبگرد ۱۳ تا ۴۰ میلیون تومانی قیمت خودرو» و «فرابورس سبزپوش شد»",
+  "front_en": "Donya-e-Eqtesad: “A forced change in the renting pattern: why rent’s weight in the household basket fell” · Shargh (issue 5528): “Car prices step back 13–40 million tomans” and “Over-the-counter market closes green”",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازار",
+    "en": "Economy & markets",
+    "items": [
+     {
+      "fa": "دلار ۲۶۶ هزار و ۹۰۰ تومان: بعد از دو روز نوسان، نرخ بازار آزاد دوباره زیر ۲۷۰ هزار نشست و حواله‌های ارزی کمی بالا رفتند. یعنی جهش اول هفته ادامه پیدا نکرد؛ کسی که خرید ارزی عجله‌ای کرده بود، امروز همان دلار را ارزان‌تر می‌بیند.",
+      "en": "Dollar at 266,900 tomans: after two volatile days the open-market rate settled back under 270,000, while currency remittance rates edged up. The early-week jump did not carry on; anyone who rushed to buy sees the same dollar cheaper today.",
+      "src": "شرق، خبرجدید، نبض قیمت، تابناک",
+      "url": "https://www.sharghdaily.com/%D8%A8%D8%AE%D8%B4-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C-12/1142394"
+     },
+     {
+      "fa": "سکه امامی ۲۴۹ میلیون و ۳۰۰ هزار تومان: بعد از لمس مرز ۲۵۰ میلیون، سکه و طلای ۱۸ عیار ارزان شدند، اما حباب قطعات کوچک‌تر همچنان بالاست. یعنی وقتی قیمت پایین می‌آید، ربع و نیم‌سکه دیرتر ارزان می‌شوند؛ تفاوت قیمت با طلای آب‌شده را قبل از خرید نگاه کنید.",
+      "en": "Emami coin at 249.3 million tomans: after touching 250 million, coins and 18-carat gold fell, yet the premium on smaller coins stays high. When prices drop, quarter and half coins lag behind; compare with melted-gold prices before buying.",
+      "src": "خبرجدید، نبض قیمت، اقتصادآنلاین، نامناک",
+      "url": "https://www.eghtesadonline.com/fa/news/2175959/"
+     },
+     {
+      "fa": "بورس ۴۸ هزار واحد بالا رفت و بالای ۸٫۵ میلیون ماند: شاخص اول وقت تا ۱۳۵ هزار واحد رشد کرده بود و عصر بیشترش را پس داد؛ پول حقیقی خارج شد و ارزش معاملات به حدود ۵۴ همت رسید. یعنی سومین روز سبز پشت سر هم، ولی با فروشنده‌ی خرد؛ رکورد بالا می‌رود و پول کوچک در سود می‌فروشد.",
+      "en": "Tehran stocks up 48,000 points, holding above 8.5 million: the index had gained 135,000 early on and gave most of it back by the close; retail money left and turnover reached about 54 trillion tomans. A third green day in a row, but with small investors selling; the record rises while retail cashes in.",
+      "src": "شهرآرا، وانانیوز، خبرآنلاین، شرق",
+      "url": "https://www.sharghdaily.com/%D8%A8%D8%AE%D8%B4-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C-12/1142397"
+     },
+     {
+      "fa": "خودرو ۱۳ تا ۴۰ میلیون تومان عقب نشست: یک روز بعد از جهش ۳۰ تا ۳۰۵ میلیونی، قیمت‌ها با دلار پایین آمدند. یعنی بازار خودرو این هفته آینه‌ی دلار است؛ خریدار واقعی با دو سه روز صبر، عدد متفاوتی می‌شنود.",
+      "en": "Car prices stepped back 13–40 million tomans: a day after jumps of 30–305 million, prices came down with the dollar. The car market mirrors the dollar this week; a real buyer who waits two or three days hears a different number.",
+      "src": "شرق",
+      "url": "https://www.sharghdaily.com/%D8%A8%D8%AE%D8%B4-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C-12/1142383"
+     },
+     {
+      "fa": "کالابرگ سه گروه امروز شارژ شد و از امروز می‌شود تا دو برابر یارانه‌ی نقدی اعتبار خرید کالا گرفت؛ مرحله‌ی تازه‌ی اعتراض به حذف کالابرگ هم از امروز باز است. یعنی اگر سرپرست خانواده‌اید، موجودی کارت را چک کنید و اگر حذف شده‌اید، همین هفته درخواست بررسی بدهید.",
+      "en": "Kalabarg was topped up for three groups today, and from today households can draw goods credit worth up to twice their cash subsidy; a new round of appeals against removal is also open. Check the card balance if you head a household, and file an appeal this week if you were cut.",
+      "src": "دیدارنیوز، شهرآرا، اقتصادآنلاین، ایران‌جیب",
+      "url": "https://www.eghtesadonline.com/fa/news/2176049/"
+     },
+     {
+      "fa": "تتر حدود ۲ هزار تومان گران‌تر از دلار آزاد معامله می‌شود و از صندوق‌های بیت‌کوین ۱٫۹ میلیارد دلار خارج شده است. یعنی دلار دیجیتال این روزها «پول در راه خروج» است، نه پس‌انداز؛ و در جهان هم سرمایه‌گذار بزرگ فعلاً از بیت‌کوین فاصله می‌گیرد.",
+      "en": "Tether trades about 2,000 tomans above the open-market dollar, and $1.9 billion has flowed out of bitcoin funds. The digital dollar is “money on its way out” these days rather than savings; and big investors abroad are stepping back from bitcoin for now.",
+      "src": "نبض قیمت، وانانیوز، تعادل، اقتصادنیوز",
+      "url": "https://vananews.com/fa/news/670619/"
+     },
+     {
+      "fa": "وزن اجاره در سبد خانوار کم شده، ولی نه چون اجاره ارزان شده: دنیای اقتصاد از «تغییر اجباری الگوی اجاره‌نشینی» می‌نویسد. یعنی خانوارها خانه‌ی کوچک‌تر یا دورتر گرفته‌اند تا سهم اجاره را پایین نگه دارند؛ آمار بهتر، زندگی تنگ‌تر.",
+      "en": "Rent’s share of the household basket has fallen, but not because rent got cheaper: Donya-e-Eqtesad writes of a “forced change in the renting pattern”. Households took smaller or farther homes to keep the rent share down; better statistics, tighter living.",
+      "src": "دنیای اقتصاد، اقتصادنیوز",
+      "url": "https://donya-e-eqtesad.com/fa/tiny/news-4308654"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و تولید",
+    "en": "Industry & production",
+    "items": [
+     {
+      "fa": "میلگرد امروز دوپاره شد: یک کارخانه ۴ هزار تومان ارزان کرد و برند دیگری گران. یعنی بازار آهن هنوز قیمت واحدی ندارد؛ سازنده‌ای که این هفته خرید می‌کند، با چند استعلام چند میلیون فرق می‌بیند.",
+      "en": "Rebar split today: one mill cut prices by 4,000 tomans while another brand rose. The steel market still has no single price; a builder buying this week sees millions of difference with a few quotes.",
+      "src": "وانانیوز",
+      "url": "https://vananews.com/fa/news/670613/"
+     },
+     {
+      "fa": "صنعت خودرو در مسیر افزایش هزینه‌ی تمام‌شده: خبرگزاری مهر از گران‌تر شدن مواد اولیه و قطعات می‌نویسد. یعنی قیمت کارخانه‌ای خودرو با تأخیر به بازار آزاد نزدیک می‌شود؛ ارزانی امروز بازار، ارزانی کارخانه نیست.",
+      "en": "The car industry is on a path of rising production costs: Mehr reports pricier raw materials and parts. Factory prices will drift toward open-market levels with a lag; today’s cheaper market does not mean cheaper factory cars.",
+      "src": "مهر",
+      "url": "https://www.mehrnews.com/news/7012463/"
+     }
+    ]
+   },
+   {
+    "fa": "فناوری",
+    "en": "Technology",
+    "items": [
+     {
+      "fa": "پرتاب موشک ولکان شکست خورد و ۴۰ ماهواره‌ی اینترنتی آمازون از بین رفت. یعنی رقابت اینترنت ماهواره‌ای با استارلینک چند ماه عقب افتاد؛ انحصار فعلی، فعلاً می‌ماند.",
+      "en": "A Vulcan rocket launch failed and 40 Amazon internet satellites were lost. The race against Starlink in satellite internet slips by months; the current near-monopoly stays for now.",
+      "src": "خبرآنلاین",
+      "url": "https://www.khabaronline.ir/news/2302835/"
+     },
+     {
+      "fa": "شایان صالحیان، مهندس ایرانی سابق تیم ایلان ماسک، استارتاپ هوش مصنوعی یک میلیارد دلاری تأسیس کرد. یعنی یک فارغ‌التحصیل ایرانی دیگر در لیگ بزرگ هوش مصنوعی؛ مسیر از دانشگاه ایران تا ارزش‌گذاری میلیارددلاری هنوز باز است.",
+      "en": "Shayan Salehian, an Iranian engineer formerly on Elon Musk’s team, founded a $1-billion AI startup. Another Iranian graduate in the AI big league; the road from an Iranian university to a billion-dollar valuation is still open.",
+      "src": "خبرآنلاین",
+      "url": "https://www.khabaronline.ir/news/2301394/"
+     },
+     {
+      "fa": "همکاران سیستم در رویداد «باهم ۱۴۰۵» از هوش مصنوعی تا اینترنت اشیا را در نرم‌افزار سازمانی نشان داد. یعنی نرم‌افزار حسابداری و اداری ایرانی دارد از «ابزار» به «همکار» تبدیل می‌شود؛ کارمند دفتری سال آینده با دستیار هوشمند کار می‌کند.",
+      "en": "Hamkaran System showed AI-to-IoT features in enterprise software at its “Baham 1405” event. Iranian accounting and office software is turning from a tool into a co-worker; next year’s office clerk works with a smart assistant.",
+      "src": "زومیت، دیجیاتو",
+      "url": "https://www.zoomit.ir/report/470493-system-group-ai-iot-enterprise/"
+     }
+    ]
+   },
+   {
+    "fa": "جامعه و محیط‌زیست",
+    "en": "Society & environment",
+    "items": [
+     {
+      "fa": "هوای تهران قرمز با شاخص ۱۵۸: ۲۲ ایستگاه قرمز، آلوده‌ترین ایستگاه ۱۹۸، و آلودگی تا چهارشنبه ادامه دارد. یعنی سه روز دیگر هوای ناسالم برای همه، نه فقط گروه‌های حساس؛ ورزش صبحگاهی و پیاده‌روی طولانی را عقب بیندازید.",
+      "en": "Tehran’s air is red at 158: 22 stations red, the worst at 198, and pollution continues until Wednesday. Three more days of air unhealthy for everyone, not just sensitive groups; postpone morning exercise and long walks.",
+      "src": "تابناک، خبرآنلاین، شرق، صداوسیما",
+      "url": "https://www.khabaronline.ir/news/2302900/"
+     },
+     {
+      "fa": "کندوان مسدود است و بارش شدید، خیابان‌های مازندران را زیر آب برد. یعنی سفر شمال امروز و فردا از هراز یا فیروزکوه، و با زنجیر چرخ؛ همان بارانی که هوای تهران را می‌شوید، جاده‌ی شمال را می‌بندد.",
+      "en": "The Kandovan road is closed and heavy rain flooded streets in Mazandaran. A trip north today or tomorrow goes via Haraz or Firuzkuh, with snow chains; the same rain that washes Tehran’s air shuts the road north.",
+      "src": "شرق",
+      "url": "https://www.sharghdaily.com/%D8%A8%D8%AE%D8%B4-%D8%AC%D8%A7%D9%85%D8%B9%D9%87-220/1142414"
+     }
+    ]
+   },
+   {
+    "fa": "سلامت",
+    "en": "Health",
+    "items": [
+     {
+      "fa": "نمونه‌های مثبت آنفلوانزا با شیب تند بالا می‌رود و ۱۴ استان بالاتر از آستانه‌ی هشدارند. یعنی موج امسال هنوز به اوج نرسیده؛ واکسن هنوز به‌موقع است و تب‌دارها دو سه روز در خانه بمانند.",
+      "en": "Positive flu samples are rising steeply and 14 provinces are above the alert threshold. This year’s wave has not peaked yet; the vaccine is still timely, and anyone with fever should stay home two or three days.",
+      "src": "فرارو، شرق، وزارت بهداشت",
+      "url": "https://fararu.com/fa/news/1017259/"
+     },
+     {
+      "fa": "جبران بدهی بیمه‌ها برای ثبات مالی بیمارستان‌ها و داروخانه‌ها در دستور کار قرار گرفت. یعنی اگر طلب بیمه‌ها پرداخت شود، داروخانه کمتر «این دارو را بیمه نمی‌کند» می‌گوید؛ خبری که اثرش را باید در پیشخوان داروخانه دید.",
+      "en": "Settling insurers’ debts to stabilise hospital and pharmacy finances is on the agenda. If insurers’ arrears are paid, pharmacies say “insurance won’t cover this” less often; a story whose effect shows at the counter.",
+      "src": "صداوسیما",
+      "url": "https://www.irib-news.ir/fa/news/5968303/"
+     }
+    ]
+   },
+   {
+    "fa": "ورزش و فرهنگ",
+    "en": "Sport & culture",
+    "items": [
+     {
+      "fa": "پرسپولیس صدرنشین مقابل بزرگ‌ترین چالش فصل؛ استقلال و گل‌گهر منتظر لغزش‌اند. یعنی هفته‌ی تعطیلات تیم ملی تمام شد و جدول لیگ باز فشرده است؛ یک مساوی، صدر را عوض می‌کند.",
+      "en": "League leaders Persepolis face their biggest test of the season, with Esteghlal and Gol Gohar waiting for a slip. The national-team break is over and the table is tight again; one draw changes the top.",
+      "src": "مهر",
+      "url": "https://www.mehrnews.com/news/7011303/"
+     },
+     {
+      "fa": "تیم ملی: دوره‌ی ۶ ماهه‌ی رامین رضاییان تمام شد و قلعه‌نویی برای بازی بعدی قول تازه داده است. یعنی جوان‌سازی تیم ملی به دفاع راست هم رسید؛ ترکیب جام جهانی دارد از حالا بسته می‌شود.",
+      "en": "National team: Ramin Rezaeian’s six-month spell is over and Ghalenoei has made a fresh promise for the next match. The rejuvenation has reached right-back too; the World Cup squad is being shaped from now.",
+      "src": "خبرورزشی، پارس فوتبال",
+      "url": "https://khabarvarzeshi.com/news/563642/"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-15",
   "jalali": "1405/08/24",
   "weekday_fa": "یکشنبه",
