@@ -104,7 +104,7 @@
 
   function placeButton() {
     var spot = document.querySelector(".nav-right");
-    var lang = document.querySelector("header .lang-btn");
+    var lang = document.querySelector("header .lang-wrap") || document.querySelector("header .lang-btn");
     if (spot) {
       if (lang && lang.parentNode === spot) spot.insertBefore(btn, lang); else spot.insertBefore(btn, spot.firstChild);
       return;

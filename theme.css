@@ -1135,3 +1135,13 @@ html[data-lang="fa"] .tk-track { direction: rtl; }
 .tk-all { color: #ffad00 !important; font-weight: 800; }
 @keyframes tkPulse { 0% { box-shadow: 0 0 0 0 rgba(95, 211, 154, 0.55); } 100% { box-shadow: 0 0 0 9px rgba(95, 211, 154, 0); } }
 @media (prefers-reduced-motion: reduce) { .tk-head em.on { animation: none; } }
+
+/* Neon logo: a quiet glow at the end of the intro block on wide screens (not on phones, to keep pages light) */
+@media (min-width: 960px) {
+  .page-hero { position: relative; isolation: isolate; }
+  .page-hero::after {
+    content: ""; position: absolute; z-index: -1; inset-block: 0; inset-inline-end: max(24px, calc((100vw - 1180px) / 2));
+    width: min(300px, 26vw); margin-block: auto; aspect-ratio: 1 / 1; height: auto; max-height: 100%;
+    background: url("img/neon-logo.webp") center / contain no-repeat; opacity: .95; pointer-events: none;
+  }
+}
