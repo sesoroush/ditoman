@@ -942,3 +942,89 @@ html[data-lang="en"] .wallet-link i { transform: scaleX(-1); }
 /* Learning path: step number on each lesson card */
 .lz-step { display: inline-block; align-self: flex-start; margin-bottom: 8px; padding: 3px 11px; border-radius: 999px; font-size: .78rem; font-weight: 800; color: #101f22; background: var(--yellow); }
 .lesson-card h4 [lang="fa"] { font-size: inherit; color: inherit; }
+
+/* ---------- Home hero: a lit, patterned ground instead of flat petrol (16 Nov 2026) ---------- */
+.home-hero {
+  overflow: hidden;
+  background:
+    radial-gradient(60% 70% at 88% 50%, rgba(87, 217, 199, 0.2), transparent 66%),
+    radial-gradient(42% 52% at 4% 66%, rgba(242, 160, 31, 0.12), transparent 70%),
+    linear-gradient(180deg, #1c4046 0%, #153036 42%, var(--bg) 100%);
+}
+html[data-lang="en"] .home-hero {
+  background:
+    radial-gradient(60% 70% at 12% 50%, rgba(87, 217, 199, 0.2), transparent 66%),
+    radial-gradient(42% 52% at 96% 66%, rgba(242, 160, 31, 0.12), transparent 70%),
+    linear-gradient(180deg, #1c4046 0%, #153036 42%, var(--bg) 100%);
+}
+/* the photograph melts into the band below it */
+.home-hero .hero-photo { position: relative; z-index: 1; }
+.home-hero .hero-photo::after {
+  content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: none;
+  background: linear-gradient(to bottom, rgba(28, 64, 70, 0) 58%, rgba(28, 64, 70, 0.55) 84%, #1c4046 100%);
+}
+.home-hero > .photo-credit, .home-hero > .hero-inner { position: relative; z-index: 1; }
+.home-hero > .photo-credit { top: auto; right: auto; bottom: auto; left: auto; }
+/* eight-pointed star field with the saffron vein, strongest away from the text */
+.home-hero::before, html[data-lang="en"] .home-hero::before {
+  content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; pointer-events: none;
+  background: var(--geo-paint); opacity: 0.2;
+  -webkit-mask-image: var(--geo-field), linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.55) 45%, transparent 82%);
+  -webkit-mask-size: var(--geo-field-size) var(--geo-field-size), 100% 100%;
+  -webkit-mask-repeat: repeat, no-repeat; -webkit-mask-composite: source-in;
+  mask-image: var(--geo-field), linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.55) 45%, transparent 82%);
+  mask-size: var(--geo-field-size) var(--geo-field-size), 100% 100%;
+  mask-repeat: repeat, no-repeat; mask-composite: intersect;
+}
+html[data-lang="en"] .home-hero::before {
+  -webkit-mask-image: var(--geo-field), linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0.55) 45%, transparent 82%);
+  mask-image: var(--geo-field), linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0.55) 45%, transparent 82%);
+}
+/* large rosette, half off the edge, on the side away from the headline */
+.home-hero .hero-inner::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  width: min(520px, 70vw); height: min(520px, 70vw); left: -150px; bottom: -190px;
+  background: var(--geo-paint); opacity: 0.2;
+  -webkit-mask: var(--geo-rosette) center / contain no-repeat; mask: var(--geo-rosette) center / contain no-repeat;
+}
+html[data-lang="en"] .home-hero .hero-inner::after { left: auto; right: -150px; }
+.home-hero .masthead h1 { position: relative; }
+.home-hero .masthead h1 .spectrum {
+  background: linear-gradient(100deg, #ffad00 0%, #ffd27a 45%, #f2a01f 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: #ffad00;
+}
+@media (max-width: 600px) {
+  .home-hero::before, html[data-lang="en"] .home-hero::before { opacity: 0.26; }
+  .home-hero .hero-inner::after { left: -120px; bottom: -150px; opacity: 0.24; }
+  html[data-lang="en"] .home-hero .hero-inner::after { left: auto; right: -120px; }
+}
+
+/* ---------- Featured slider: newest stories side by side, swipe or use the arrows ---------- */
+.feat { position: relative; }
+.feat-track {
+  display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain; scrollbar-width: none; border-radius: var(--radius); outline-offset: 4px;
+}
+.feat-track::-webkit-scrollbar { display: none; }
+.feat-track > .co-card { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; margin: 0; }
+.feat-track > .co-card[hidden] { display: grid !important; }
+.feat-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; }
+.feat-btn {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 999px; cursor: pointer;
+  border: 1px solid rgba(87, 217, 199, 0.45); background: rgba(87, 217, 199, 0.08); color: var(--text);
+  font: inherit; font-weight: 800; font-size: 0.95rem; transition: background var(--ease), border-color var(--ease), transform var(--ease);
+}
+.feat-btn svg { width: 18px; height: 18px; flex: none; color: var(--mint); }
+.feat-btn:hover:not(:disabled) { background: rgba(87, 217, 199, 0.18); border-color: var(--mint); transform: translateY(-1px); }
+.feat-btn:disabled { opacity: 0.35; cursor: default; }
+/* arrows point the way the cards move: newer sits at the reading start, older at the end */
+html[dir="rtl"] .feat-older svg { transform: scaleX(-1); }
+html:not([dir="rtl"]) .feat-newer svg { transform: scaleX(-1); }
+.feat-dots { display: flex; align-items: center; gap: 7px; }
+.feat-dots button { width: 9px; height: 9px; padding: 0; border: 0; border-radius: 999px; background: rgba(242, 240, 233, 0.28); cursor: pointer; transition: width var(--ease), background var(--ease); }
+.feat-dots button.on { width: 26px; background: var(--yellow); }
+@media (max-width: 860px) {
+  .feat-track { gap: 12px; }
+  .feat-track > .co-card { flex-basis: 90%; }
+  .feat-btn { padding: 0 14px; font-size: 0.88rem; }
+}

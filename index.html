@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 
   <link rel="stylesheet" href="site.css?v=20261113" />
-  <link rel="stylesheet" href="theme.css?v=20261113c" />
+  <link rel="stylesheet" href="theme.css?v=20261116" />
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="fa" href="https://ditoman.com/" />
   <link rel="alternate" hreflang="en" href="https://ditoman.com/index.en.html" />
@@ -670,24 +670,71 @@
       </div>
     </section>
     <script>
-      /* Move the newest story into the featured slot as early as possible, before first paint */
+      /* Featured slider: the six newest stories, side by side. The newest is moved out of the list;
+         the next five are copies, so the list below still shows them. Runs before first paint. */
       (function () {
         var sec = document.getElementById("stories");
         var grid = sec && sec.querySelector(".story-grid"), slot = document.querySelector(".feature-slot");
-        var f = grid && grid.querySelector(".co-card");
-        if (f && slot) {
+        var all = grid ? [].slice.call(grid.querySelectorAll(".co-card"), 0, 6) : [];
+        if (!all.length || !slot) return;
+        var rtl = document.documentElement.getAttribute("dir") === "rtl";
+        function feature(f) {
           f.classList.add("is-featured");
-          [].forEach.call(f.querySelectorAll(".co-art img"), function (fi) { fi.sizes = "(max-width: 860px) 100vw, 640px"; });
+          [].forEach.call(f.querySelectorAll(".co-art img"), function (fi) { fi.sizes = "(max-width: 860px) 92vw, 640px"; });
           if (!f.querySelector(".co-kicker")) {
             var k = document.createElement("span");
             k.className = "co-kicker";
             var kk = (f.getAttribute("data-kicker") || "تازه‌ترین گزارش | Latest").split("|");
-          k.innerHTML = '<span lang="fa">' + kk[0].trim() + '</span><span lang="en">' + (kk[1] || kk[0]).trim().toLowerCase().replace(/^./, function (c) { return c.toUpperCase(); }) + "</span>";
+            k.innerHTML = '<span lang="fa">' + kk[0].trim() + '</span><span lang="en">' + (kk[1] || kk[0]).trim().toLowerCase().replace(/^./, function (c) { return c.toUpperCase(); }) + "</span>";
             var body = f.querySelector(".co-body");
             body.insertBefore(k, body.firstChild);
           }
-          slot.appendChild(f);
+          return f;
         }
+        var wrap = document.createElement("div"); wrap.className = "feat";
+        var track = document.createElement("div"); track.className = "feat-track"; track.tabIndex = 0;
+        track.setAttribute("aria-label", "تازه‌ترین گزارش‌ها | Latest stories");
+        var slides = all.map(function (c, i) { return feature(i === 0 ? c : c.cloneNode(true)); });
+        slides.forEach(function (c) { track.appendChild(c); });
+        wrap.appendChild(track);
+        if (slides.length > 1) {
+          var nav = document.createElement("div"); nav.className = "feat-nav";
+          var arrow = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+          nav.innerHTML =
+            '<button type="button" class="feat-btn feat-newer">' + arrow + '<span lang="fa">جدیدتر</span><span lang="en">Newer</span></button>' +
+            '<div class="feat-dots">' + slides.map(function (_, i) { return '<button type="button" aria-label="' + (i + 1) + '"></button>'; }).join("") + "</div>" +
+            '<button type="button" class="feat-btn feat-older"><span lang="fa">قدیمی‌تر</span><span lang="en">Older</span>' + arrow + "</button>";
+          wrap.appendChild(nav);
+          var dots = nav.querySelectorAll(".feat-dots button"), newer = nav.querySelector(".feat-newer"), older = nav.querySelector(".feat-older"), cur = 0;
+          var offset = function (el) {
+            var t = track.getBoundingClientRect(), r = el.getBoundingClientRect();
+            return rtl ? r.right - t.right : r.left - t.left;
+          };
+          var go = function (i) {
+            i = Math.max(0, Math.min(slides.length - 1, i));
+            var d = offset(slides[i]);
+            if (track.scrollBy) track.scrollBy({ left: d, behavior: "smooth" }); else track.scrollLeft += d;
+          };
+          var mark = function () {
+            var best = 0, bd = 1e9;
+            slides.forEach(function (el, i) { var d = Math.abs(offset(el)); if (d < bd) { bd = d; best = i; } });
+            cur = best;
+            [].forEach.call(dots, function (d, i) { d.className = i === cur ? "on" : ""; });
+            newer.disabled = cur === 0; older.disabled = cur === slides.length - 1;
+          };
+          var tick = 0;
+          track.addEventListener("scroll", function () { if (!tick) { tick = 1; (window.requestAnimationFrame || setTimeout)(function () { tick = 0; mark(); }); } });
+          newer.addEventListener("click", function () { go(cur - 1); });
+          older.addEventListener("click", function () { go(cur + 1); });
+          [].forEach.call(dots, function (d, i) { d.addEventListener("click", function () { go(i); }); });
+          track.addEventListener("keydown", function (e) {
+            if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+            e.preventDefault();
+            go(cur + ((e.key === "ArrowLeft") === rtl ? 1 : -1));
+          });
+          mark();
+        }
+        slot.appendChild(wrap);
       })();
     </script>
 
