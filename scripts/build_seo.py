@@ -24,7 +24,7 @@ ORG = {
     "url": BASE,
     "logo": {"@type": "ImageObject", "url": BASE + "tmn-logo-512.png", "width": 512, "height": 512},
     "foundingDate": "2022",
-    "sameAs": ["https://www.instagram.com/ditoman.tmn/", "https://t.me/Ditoman_tm", "https://ble.ir/Ditoman", "https://eitaa.com/DiToman"],
+    "sameAs": ["https://www.instagram.com/ditoman.tmn/", "https://t.me/Ditoman_tm", "https://ble.ir/Ditoman", "https://eitaa.com/DiToman", "https://rubika.ir/DiToman"],
 }
 SITE = {
     "@type": "WebSite",

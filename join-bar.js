@@ -13,7 +13,7 @@
   var CHANNELS = [
     { id: "telegram",  fa: "تلگرام",     en: "Telegram",  url: "https://t.me/Ditoman_tm" },
     { id: "bale",      fa: "بله",        en: "Bale",      url: "https://ble.ir/Ditoman" },
-    { id: "rubika",    fa: "روبیکا",     en: "Rubika",    url: "" },
+    { id: "rubika",    fa: "روبیکا",     en: "Rubika",    url: "https://rubika.ir/DiToman" },
     { id: "eitaa",     fa: "ایتا",       en: "Eitaa",     url: "https://eitaa.com/DiToman" },
     { id: "instagram", fa: "اینستاگرام", en: "Instagram", url: "https://www.instagram.com/ditoman.tmn/" }
   ];
