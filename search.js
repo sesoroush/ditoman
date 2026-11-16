@@ -242,7 +242,7 @@
     var here = (location.pathname.split("/").pop() || "index.html").toLowerCase();
     document.querySelectorAll("header .nav-links a[href]").forEach(function (a) {
       var h = (a.getAttribute("href") || "").split("#")[0].toLowerCase();
-      if (h && h === here && here !== "index.html") { a.classList.add("is-current"); a.setAttribute("aria-current", "page"); }
+      if (h && h === here && !/^index(\.en)?\.html$/.test(here)) { a.classList.add("is-current"); a.setAttribute("aria-current", "page"); }
     });
     // bring the current tab into view in the scrolling phone menu, without moving the page
     var cur = document.querySelector("header .nav-links a.is-current, header .nav-links a.active");
@@ -262,4 +262,13 @@
     if (m) { open(); input.value = decodeURIComponent(m[1].replace(/\+/g, " ")); render(); }
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();
+
+/* The price strip under the header lives in ticker.js; loading it from here puts it on every page. */
+(function () {
+  if (document.querySelector('script[src^="ticker.js"]')) return;
+  var t = document.createElement("script");
+  t.src = "ticker.js?v=20261116";
+  t.defer = true;
+  document.head.appendChild(t);
 })();
