@@ -60,7 +60,5 @@ def card(x):
     return x
 
 
-with cf.ThreadPoolExecutor(8) as ex:
-    list(ex.map(card, ranked[:260]))
 (OUT / "stocks.json").write_text(json.dumps({"date_hint": "see marketwatch", "count": len(ranked), "companies": ranked}, ensure_ascii=False, indent=0), encoding="utf-8")
-print("companies", len(ranked), "cards ok", sum(1 for x in ranked[:260] if "sector" in x))
+print("companies", len(ranked))
