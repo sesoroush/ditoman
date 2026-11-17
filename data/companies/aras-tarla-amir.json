@@ -1,0 +1,130 @@
+{
+ "slug": "aras-tarla-amir",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "food",
+ "name": {
+  "fa": "ارس تارلا امیر",
+  "en": "Aras Tarla Amir"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "گلخانه‌ی شیشه‌ای هیدروپونیک در منطقه‌ی آزاد ارس",
+  "en": "Glass hydroponic greenhouse in the Aras Free Zone"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "مکان",
+    "en": "Location"
+   },
+   "value": {
+    "fa": "منطقه‌ی آزاد تجاری‌صنعتی ارس، آذربایجان شرقی",
+    "en": "Aras Free Trade-Industrial Zone, East Azerbaijan"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مساحت",
+    "en": "Area"
+   },
+   "value": {
+    "fa": "۸۰ هکتار زمین؛ ۵۷ هکتار زیر کشت گلخانه‌ای",
+    "en": "80 hectares of land; 57 hectares under greenhouse"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "محصولات",
+    "en": "Products"
+   },
+   "value": {
+    "fa": "گوجه‌فرنگی، فلفل دلمه‌ای و بادمجان؛ تولید داخلی کنه‌ی شکارگر برای مبارزه‌ی زیستی",
+    "en": "Tomatoes, bell peppers and aubergines; in-house predatory mites for biological pest control"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "تولید سالانه",
+    "en": "Annual output"
+   },
+   "value": {
+    "fa": "بیش از ۲۴ هزار تن",
+    "en": "Over 24,000 tonnes"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "برند و صادرات",
+    "en": "Brand and exports"
+   },
+   "value": {
+    "fa": "برند آتاویتا؛ صادرات به روسیه و کشورهای حاشیه‌ی خلیج فارس",
+    "en": "Atavita brand; exports to Russia and Persian Gulf countries"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "ارس تارلا امیر گلخانه‌ی شیشه‌ای هیدروپونیک در منطقه‌ی آزاد ارس است که خبرگزاری مهر آن را بزرگ‌ترین گلخانه‌ی شیشه‌ای هیدروپونیک خاورمیانه معرفی کرده است. این مجموعه با کشت بدون خاک، سالانه بیش از ۲۴ هزار تن گوجه‌فرنگی، فلفل دلمه‌ای و بادمجان تولید و با برند آتاویتا صادر می‌کند و به جمع شرکت‌های دانش‌بنیان پیوسته است.",
+  "en": "Aras Tarla Amir is a glass hydroponic greenhouse in the Aras Free Zone that Mehr News Agency describes as the Middle East's largest. Growing without soil, it produces over 24,000 tonnes of tomatoes, bell peppers and aubergines a year, exports under the Atavita brand, and has joined Iran's knowledge-based companies."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "plant",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت در فهرست رسمی شرکت‌های دانش‌بنیان معاونت علمی؛ هنوز با فهرست رسمی تطبیق نداده‌ایم",
+   "مصرف آب به‌ازای هر کیلو محصول و ارقام مالی"
+  ],
+  "en": [
+   "Listing in the official knowledge-based company register; not yet matched against it",
+   "Water use per kilo of produce and financial figures"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی گزارش رسانه (خبرگزاری مهر) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است.",
+  "en": "This record is based on a press report (Mehr News Agency) and was not reviewed by the company before publication."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "خبرگزاری مهر: گلخانه هیدروپونیک خاورمیانه به عضویت دانش‌بنیان‌ها درآمد",
+   "title_en": "Mehr News Agency: Middle East's hydroponic greenhouse joins knowledge-based companies",
+   "url": "https://www.mehrnews.com/news/6431902"
+  }
+ ]
+}
