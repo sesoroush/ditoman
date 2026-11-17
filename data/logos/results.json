@@ -1,0 +1,753 @@
+{
+ "almas-sabz-kavir": {
+  "slug": "almas-sabz-kavir",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "aparat": {
+  "slug": "aparat",
+  "found": true,
+  "tried": [
+   "en:Aparat:Q16045816:Aparat English Square.png",
+   "fa:آپارات:Q16045816:Aparat English Square.png"
+  ],
+  "file": "aparat.png",
+  "bytes": 24329,
+  "page": "https://commons.wikimedia.org/wiki/File:Aparat_English_Square.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Amparsaei",
+  "source": "commons",
+  "site": "http://www.aparat.com/"
+ },
+ "arvan-cloud": {
+  "slug": "arvan-cloud",
+  "found": false,
+  "tried": [
+   "en:Abr Arvan:Q105044119:None",
+   "fa:ابر آروان:Q105044119:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "aryogen": {
+  "slug": "aryogen",
+  "found": true,
+  "tried": [
+   "en:AryoGen:Q4802714:None",
+   "fa:آریوژن:Q4802714:None",
+   "commons-search:None",
+   "og:https://www.aryogen.com/wp-content/uploads/2021/02/Link_25.png"
+  ],
+  "file": "aryogen.png",
+  "bytes": 31415,
+  "page": "http://www.aryogen.com/",
+  "license": "website image, trademark of its owner",
+  "artist": "",
+  "source": "website",
+  "site": "http://www.aryogen.com/"
+ },
+ "asan-pardakht": {
+  "slug": "asan-pardakht",
+  "found": false,
+  "tried": [
+   "en:Asan Pardakht:Q120405129:None",
+   "fa:آسان‌پرداخت:Q120405129:None",
+   "commons-search:None"
+  ]
+ },
+ "asiatech": {
+  "slug": "asiatech",
+  "found": true,
+  "tried": [
+   "en:Asiatech:Q123026587:None",
+   "fa:آسیاتک:Q15707803:None",
+   "commons-search:Mini Free Logo Asiatech.png"
+  ],
+  "file": "asiatech.png",
+  "bytes": 3280,
+  "page": "https://commons.wikimedia.org/wiki/File:Mini_Free_Logo_Asiatech.png",
+  "license": "CC0",
+  "artist": "MiniPictures",
+  "source": "commons",
+  "site": "https://www.asiatech.ir/"
+ },
+ "asreh-novin-age": {
+  "slug": "asreh-novin-age",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "bale": {
+  "slug": "bale",
+  "found": true,
+  "tried": [
+   "en:Bale Messenger:Q122781807:Cropped-bale-logo-flat-270x270.png",
+   "fa:بله (پیام‌رسان):Q122781807:Cropped-bale-logo-flat-270x270.png"
+  ],
+  "file": "bale.png",
+  "bytes": 45592,
+  "page": "https://commons.wikimedia.org/wiki/File:Cropped-bale-logo-flat-270x270.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Mrj2580",
+  "source": "commons",
+  "site": "https://bale.ai/"
+ },
+ "barekat": {
+  "slug": "barekat",
+  "found": false,
+  "tried": [
+   "en:Barkat Pharmaceutical Group:Q63922339:None",
+   "fa:مؤسسه دانش‌بنیان برکت:Q85974146:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "barij-essence": {
+  "slug": "barij-essence",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "cafebazaar": {
+  "slug": "cafebazaar",
+  "found": true,
+  "tried": [
+   "en:Cafe Bazaar:Q20110887:None",
+   "fa:کافه بازار:Q20110887:None"
+  ],
+  "file": "cafebazaar.png",
+  "bytes": 34868,
+  "page": "https://en.wikipedia.org/wiki/File:Cafe_Bazaar_logo.svg",
+  "license": "PD",
+  "artist": "",
+  "source": "enwiki",
+  "site": "https://cafebazaar.ir/"
+ },
+ "chuka-iran-wood-and-paper": {
+  "slug": "chuka-iran-wood-and-paper",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "cinnagen": {
+  "slug": "cinnagen",
+  "found": false,
+  "tried": [
+   "en:Cinnagen:Q5121014:None",
+   "fa:سیناژن:Q5121014:None",
+   "commons-search:None"
+  ]
+ },
+ "digikala": {
+  "slug": "digikala",
+  "found": true,
+  "tried": [
+   "en:Digikala:Q5678438:Digikala-logo.png",
+   "fa:دیجی‌کالا:Q5678438:Digikala-logo.png"
+  ],
+  "file": "digikala.png",
+  "bytes": 12572,
+  "page": "https://commons.wikimedia.org/wiki/File:Digikala-logo.png",
+  "license": "Public domain",
+  "artist": "Digikala",
+  "source": "commons",
+  "site": "https://www.digikala.com"
+ },
+ "divar": {
+  "slug": "divar",
+  "found": true,
+  "tried": [
+   "en:Divar (website):Q56359770:None",
+   "fa:دیوار (وبگاه):Q56359770:None"
+  ],
+  "file": "divar.png",
+  "bytes": 45047,
+  "page": "https://commons.wikimedia.org/wiki/File:Divar_Logo(1).svg",
+  "license": "Public domain",
+  "artist": "Divar website",
+  "source": "commons",
+  "site": "http://divar.ir"
+ },
+ "dorrin-golab-kashan": {
+  "slug": "dorrin-golab-kashan",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "dotin": {
+  "slug": "dotin",
+  "found": false,
+  "tried": [
+   "en:Dotin:Q111516624:None",
+   "fa:داتین:Q111516624:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "dpi": {
+  "slug": "dpi",
+  "found": false,
+  "tried": [
+   "en:Data Processing Iran Co.:Q5227200:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "eitaa": {
+  "slug": "eitaa",
+  "found": false,
+  "tried": [
+   "en:Eitaa:Q122780466:None",
+   "fa:ایتا:Q233945:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "esfedan-saffron": {
+  "slug": "esfedan-saffron",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "exir": {
+  "slug": "exir",
+  "found": false,
+  "tried": [
+   "fa:شرکت داروسازی اکسیر:Q5722844:None",
+   "commons-search:None"
+  ]
+ },
+ "fanap-infra": {
+  "slug": "fanap-infra",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "fanap": {
+  "slug": "fanap",
+  "found": false,
+  "tried": [
+   "en:Pasargad Arian Communication and Information Technology Co:Q31072230:None",
+   "fa:فناپ:Q31072230:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "faran-shimi": {
+  "slug": "faran-shimi",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "fidibo": {
+  "slug": "fidibo",
+  "found": true,
+  "tried": [
+   "fa:فیدیبو:Q20110825:None"
+  ],
+  "file": "fidibo.png",
+  "bytes": 23821,
+  "page": "https://commons.wikimedia.org/wiki/File:Logo_typography_light.svg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Mtfmnr",
+  "source": "commons",
+  "site": "https://fidibo.com/"
+ },
+ "filimo": {
+  "slug": "filimo",
+  "found": true,
+  "tried": [
+   "en:Filimo:Q61356650:Filimo logo (en) 2025.svg",
+   "fa:فیلیمو:Q61356650:Filimo logo (en) 2025.svg"
+  ],
+  "file": "filimo.png",
+  "bytes": 3526,
+  "page": "https://commons.wikimedia.org/wiki/File:Filimo_logo_(en)_2025.svg",
+  "license": "Public domain",
+  "artist": "Filimo",
+  "source": "commons",
+  "site": "http://www.filimo.com"
+ },
+ "hamkaran-system": {
+  "slug": "hamkaran-system",
+  "found": false,
+  "tried": [
+   "en:System Group:Q5961325:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "hamoon-furniture": {
+  "slug": "hamoon-furniture",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "igap": {
+  "slug": "igap",
+  "found": true,
+  "tried": [
+   "en:IGap:Q30312534:Igap.png",
+   "fa:آیگپ:Q30312534:Igap.png"
+  ],
+  "file": "igap.png",
+  "bytes": 63866,
+  "page": "https://commons.wikimedia.org/wiki/File:Igap.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "E.hosseininejad",
+  "source": "commons",
+  "site": "https://www.igap.net/"
+ },
+ "jaber": {
+  "slug": "jaber",
+  "found": false,
+  "tried": [
+   "en:Jaber Ebne Hayyan Pharmaceutical Company:Q13564794:None",
+   "fa:شرکت داروسازی جابر ابن حیان:Q13564794:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "kaveh-papyrus-paper": {
+  "slug": "kaveh-papyrus-paper",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "kavir-moghava-ardestan": {
+  "slug": "kavir-moghava-ardestan",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "kerman-paper-cardboard": {
+  "slug": "kerman-paper-cardboard",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "latif-paper": {
+  "slug": "latif-paper",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "loghman": {
+  "slug": "loghman",
+  "found": false,
+  "tried": [
+   "en:Loghman Pharmaceuticals:Q6667397:None",
+   "fa:شرکت دارویی و بهداشتی لقمان:Q6667397:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "mazandaran-wood-and-paper": {
+  "slug": "mazandaran-wood-and-paper",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "mobinnet": {
+  "slug": "mobinnet",
+  "found": true,
+  "tried": [
+   "en:Mobinnet:Q6561387:None",
+   "fa:ارتباطات مبین‌نت:Q6561387:None"
+  ],
+  "file": "mobinnet.png",
+  "bytes": 41634,
+  "page": "https://commons.wikimedia.org/wiki/File:%D9%86%D8%B4%D8%A7%D9%86%E2%80%8C%D9%88%D8%A7%D8%B1%D9%87%E2%80%8C%D9%85%D8%A8%DB%8C%D9%86%E2%80%8C%D9%86%D8%AA.png",
+  "license": "CC0",
+  "artist": "mobinnet",
+  "source": "commons",
+  "site": "http://www.mobinnet.ir"
+ },
+ "namava": {
+  "slug": "namava",
+  "found": true,
+  "tried": [
+   "en:Namava:Q85976019:Namava logo.svg",
+   "fa:نماوا:Q85976019:Namava logo.svg"
+  ],
+  "file": "namava.png",
+  "bytes": 8428,
+  "page": "https://commons.wikimedia.org/wiki/File:Namava_logo.svg",
+  "license": "Public domain",
+  "artist": "Namava",
+  "source": "commons",
+  "site": "https://namava.ir"
+ },
+ "neka-chub": {
+  "slug": "neka-chub",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "neshan": {
+  "slug": "neshan",
+  "found": true,
+  "tried": [
+   "en:Neshan (software):Q122463258:None",
+   "fa:نشان (نرم‌افزار):Q122463258:None",
+   "commons-search:Neshan-App-Logo.jpg"
+  ],
+  "file": "neshan.jpg",
+  "bytes": 40257,
+  "page": "https://commons.wikimedia.org/wiki/File:Neshan-App-Logo.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "AhmadHB",
+  "source": "commons",
+  "site": null
+ },
+ "nilper": {
+  "slug": "nilper",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "nosa": {
+  "slug": "nosa",
+  "found": true,
+  "tried": [
+   "en:Iran Software & Hardware Co. (NOSA):Q6066870:NOSA logo SocialMedia 500pxE.png"
+  ],
+  "file": "nosa.png",
+  "bytes": 7484,
+  "page": "https://commons.wikimedia.org/wiki/File:NOSA_logo_SocialMedia_500pxE.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Rmzadeh",
+  "source": "commons",
+  "site": "http://www.nosa.com"
+ },
+ "novin-choob-industrial-group": {
+  "slug": "novin-choob-industrial-group",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "okala": {
+  "slug": "okala",
+  "found": true,
+  "tried": [],
+  "file": "okala.png",
+  "bytes": 21004,
+  "page": "https://commons.wikimedia.org/wiki/File:Okala_Logo.svg",
+  "license": "CC0",
+  "artist": "okala",
+  "source": "commons",
+  "site": null
+ },
+ "paadiran": {
+  "slug": "paadiran",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "pactos": {
+  "slug": "pactos",
+  "found": false,
+  "tried": [
+   "en:Pactos:Q7123136:None",
+   "commons-search:None"
+  ]
+ },
+ "pakchoob-group": {
+  "slug": "pakchoob-group",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "pars-online": {
+  "slug": "pars-online",
+  "found": true,
+  "tried": [
+   "en:Pars Online:Q6628966:None",
+   "fa:پارس آنلاین:Q6628966:None",
+   "commons-search:None",
+   "og:https://www.parsonline.com/wp-content/uploads/2025/03/icons8-ai-chatting-50.png"
+  ],
+  "file": "pars-online.png",
+  "bytes": 1600,
+  "page": "http://www.parsonline.com/",
+  "license": "website image, trademark of its owner",
+  "artist": "",
+  "source": "website",
+  "site": "http://www.parsonline.com/"
+ },
+ "pars-paper": {
+  "slug": "pars-paper",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "parse-semiconductor": {
+  "slug": "parse-semiconductor",
+  "found": false,
+  "tried": [
+   "en:Parsé Semiconductor Co.:Q7140080:None",
+   "commons-search:None"
+  ]
+ },
+ "parsijoo": {
+  "slug": "parsijoo",
+  "found": true,
+  "tried": [
+   "en:Parsijoo:Q13578421:PAJ-95059-Etude-02-01-(1)-(2).png",
+   "fa:پارسی‌جو:Q13578421:PAJ-95059-Etude-02-01-(1)-(2).png"
+  ],
+  "file": "parsijoo.png",
+  "bytes": 10819,
+  "page": "https://commons.wikimedia.org/wiki/File:PAJ-95059-Etude-02-01-(1)-(2).png",
+  "license": "CC BY-SA 4.0",
+  "artist": "وب پردازان نوین پارسی جو",
+  "source": "commons",
+  "site": "http://www.parsijoo.ir"
+ },
+ "ronak": {
+  "slug": "ronak",
+  "found": true,
+  "tried": [],
+  "file": "ronak.png",
+  "bytes": 18317,
+  "page": "https://commons.wikimedia.org/wiki/File:Ronakpharm-logo.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Saman.gh3",
+  "source": "commons",
+  "site": null
+ },
+ "royan": {
+  "slug": "royan",
+  "found": true,
+  "tried": [
+   "fa:پژوهشگاه رویان:Q7375143:None",
+   "commons-search:None",
+   "og:https://www.royan.org/upload/siteimage/siteimage.png"
+  ],
+  "file": "royan.png",
+  "bytes": 15093,
+  "page": "http://www.royan.org/",
+  "license": "website image, trademark of its owner",
+  "artist": "",
+  "source": "website",
+  "site": "http://www.royan.org/"
+ },
+ "rubika": {
+  "slug": "rubika",
+  "found": true,
+  "tried": [
+   "en:Rubika:Q109548753:None",
+   "fa:روبیکا:Q109548753:None",
+   "commons-search:ISD Rubika logo.png"
+  ],
+  "file": "rubika.png",
+  "bytes": 42076,
+  "page": "https://commons.wikimedia.org/wiki/File:ISD_Rubika_logo.png",
+  "license": "CC BY 4.0",
+  "artist": "Jayoh117",
+  "source": "commons",
+  "site": "https://rubika.ir/"
+ },
+ "sabaidea": {
+  "slug": "sabaidea",
+  "found": true,
+  "tried": [
+   "fa:صباایده:Q65199642:None",
+   "commons-search:SabaIdea Logo - English LogoType - Black.png"
+  ],
+  "file": "sabaidea.png",
+  "bytes": 56118,
+  "page": "https://commons.wikimedia.org/wiki/File:SabaIdea_Logo_-_English_LogoType_-_Black.png",
+  "license": "Public domain",
+  "artist": "Sabaidea",
+  "source": "commons",
+  "site": "http://www.sabaidea.com"
+ },
+ "saharkhiz-saffron": {
+  "slug": "saharkhiz-saffron",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "sheypoor": {
+  "slug": "sheypoor",
+  "found": false,
+  "tried": [
+   "en:Sheypoor:Q28714127:None",
+   "fa:شیپور (وبگاه):Q28714127:None",
+   "commons-search:None"
+  ]
+ },
+ "sina-robotics": {
+  "slug": "sina-robotics",
+  "found": false,
+  "tried": [
+   "en:Sina Robotic Surgical System:Q118745256:None",
+   "fa:سامانه جراحی سینا:Q118745256:None",
+   "commons-search:None"
+  ]
+ },
+ "snapp": {
+  "slug": "snapp",
+  "found": true,
+  "tried": [
+   "en:Snapp!:Q27465471:Snapp logo.png",
+   "fa:اسنپ:Q27465471:Snapp logo.png"
+  ],
+  "file": "snapp.png",
+  "bytes": 25930,
+  "page": "https://commons.wikimedia.org/wiki/File:Snapp_logo.png",
+  "license": "Public domain",
+  "artist": "Snapp",
+  "source": "commons",
+  "site": "https://www.snapp.ir/"
+ },
+ "snowa": {
+  "slug": "snowa",
+  "found": true,
+  "tried": [
+   "en:Snowa:Q20109567:Snowa.jpg",
+   "fa:اسنوا:Q20109567:Snowa.jpg"
+  ],
+  "file": "snowa.jpg",
+  "bytes": 27897,
+  "page": "https://commons.wikimedia.org/wiki/File:Snowa.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Mona1366",
+  "source": "commons",
+  "site": "http://www.snowa.ir/"
+ },
+ "sobhan": {
+  "slug": "sobhan",
+  "found": false,
+  "tried": [
+   "fa:گروه دارویی سبحان:Q16053837:None",
+   "commons-search:None"
+  ]
+ },
+ "soroush-plus": {
+  "slug": "soroush-plus",
+  "found": true,
+  "tried": [
+   "en:Soroush Plus:Q52176204:Soroush + logo.png",
+   "fa:سروش پلاس:Q52176204:Soroush + logo.png"
+  ],
+  "file": "soroush-plus.png",
+  "bytes": 121267,
+  "page": "https://commons.wikimedia.org/wiki/File:Soroush_%2B_logo.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "hi.splus.ir",
+  "source": "commons",
+  "site": "https://splus.ir/"
+ },
+ "taaghche": {
+  "slug": "taaghche",
+  "found": false,
+  "tried": [
+   "en:Taaghche:Q28714124:None",
+   "fa:تاقچه:Q695992:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "telewebion": {
+  "slug": "telewebion",
+  "found": false,
+  "tried": [
+   "en:Telewebion:Q110803569:None",
+   "fa:تلوبیون:Q110803569:None",
+   "commons-search:None"
+  ]
+ },
+ "tipax": {
+  "slug": "tipax",
+  "found": false,
+  "tried": [
+   "fa:تیپاکس:Q110943056:None",
+   "commons-search:None",
+   "og:None"
+  ]
+ },
+ "torob": {
+  "slug": "torob",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "towlide-fibre-iran": {
+  "slug": "towlide-fibre-iran",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "x-vision": {
+  "slug": "x-vision",
+  "found": true,
+  "tried": [
+   "en:X-Vision:Q8041535:None",
+   "fa:ایکس ویژن:Q8041535:None",
+   "commons-search:Vision Gran Turismo logo.png"
+  ],
+  "file": "x-vision.png",
+  "bytes": 11342,
+  "page": "https://commons.wikimedia.org/wiki/File:Vision_Gran_Turismo_logo.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "ImI(x . x)ImI",
+  "source": "commons",
+  "site": null
+ },
+ "zahravi": {
+  "slug": "zahravi",
+  "found": false,
+  "tried": [
+   "fa:شرکت داروسازی زهراوی:Q5955153:None",
+   "commons-search:None"
+  ]
+ },
+ "zardband-pharmaceuticals": {
+  "slug": "zardband-pharmaceuticals",
+  "found": false,
+  "tried": [
+   "commons-search:None"
+  ]
+ },
+ "zarinpal": {
+  "slug": "zarinpal",
+  "found": true,
+  "tried": [
+   "fa:زرین‌پال:Q124416759:None",
+   "commons-search:Zarinpal Logo.PNG"
+  ],
+  "file": "zarinpal.png",
+  "bytes": 9425,
+  "page": "https://commons.wikimedia.org/wiki/File:Zarinpal_Logo.PNG",
+  "license": "CC BY-SA 4.0",
+  "artist": "Abbasifard",
+  "source": "commons",
+  "site": "https://www.zarinpal.com/"
+ }
+}
