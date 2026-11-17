@@ -1,0 +1,104 @@
+{
+ "slug": "snapp",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "اسنپ",
+  "en": "Snapp!"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "درخواست خودرو؛ قیمت از پیش مشخص؛ آغاز فوریه‌ی ۲۰۱۴",
+  "en": "Ride hailing with fixed prices; launched February 2014"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "فوریه ۲۰۱۴",
+    "en": "February 2014"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "پایگاه",
+    "en": "Based in"
+   },
+   "value": {
+    "fa": "تهران",
+    "en": "Tehran"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "نوآوری",
+    "en": "Innovation"
+   },
+   "value": {
+    "fa": "قیمت سفر پیش از شروع مشخص می‌شود؛ رانندگان پس از بررسی سوابق و مدارک",
+    "en": "Fare fixed before the trip; drivers vetted with background, licence and insurance checks"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "اسنپ شرکت خودروی کرایه‌ای ایرانی در تهران است که فوریه‌ی ۲۰۱۴ شروع شد. قیمت سفر از پیش مشخص است و رانندگان پس از بررسی سوابق، گواهینامه و بیمه به کار گرفته می‌شوند. امروز خدماتی مثل سفارش غذا هم دارد.",
+  "en": "Snapp! is an Iranian vehicle-for-hire company in Tehran that launched in February 2014. The price is set beforehand and drivers are taken on after a background, licence and insurance check. It now also offers services such as food ordering."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Snapp!",
+   "title_en": "Wikipedia: Snapp!",
+   "url": "https://en.wikipedia.org/wiki/Snapp!"
+  }
+ ]
+}

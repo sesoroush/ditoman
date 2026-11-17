@@ -1,0 +1,91 @@
+{
+ "slug": "jaber",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "pharma",
+ "name": {
+  "fa": "داروسازی جابر ابن حیان",
+  "en": "Jaber Ebne Hayyan Pharmaceutical"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "آنتی‌بیوتیک تزریقی و خوراکی، پماد، اسپری؛ پیش‌تر اسکوئیب ایران",
+  "en": "Injectable and oral antibiotics, ointments, sprays; formerly Squibb Iran"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۱۹۶۰ میلادی؛ تهران",
+    "en": "1960; Tehran"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "آنتی‌بیوتیک تزریقی و خوراکی، پماد، اسپری استنشاقی و بینی، سافت‌ژل",
+    "en": "Injectable and oral antibiotics, ointments, inhalers, nasal sprays, soft gels"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "داروسازی جابر ابن حیان در ۱۹۶۰ تأسیس شد و تا ۱۹۷۹ «اسکوئیب ایران» نام داشت. شرکت سهامی عام و عضو بورس تهران است.",
+  "en": "Jaber Ebne Hayyan Pharmaceutical was founded in 1960 and was known as Squibb Iran until 1979. It is a public joint-stock company on the Tehran Stock Exchange."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Jaber Ebne Hayyan Pharmaceutical Company",
+   "title_en": "Wikipedia: Jaber Ebne Hayyan Pharmaceutical Company",
+   "url": "https://en.wikipedia.org/wiki/Jaber_Ebne_Hayyan_Pharmaceutical_Company"
+  }
+ ]
+}

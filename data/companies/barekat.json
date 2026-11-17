@@ -1,0 +1,104 @@
+{
+ "slug": "barekat",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "pharma",
+ "name": {
+  "fa": "گروه دارویی برکت",
+  "en": "Barkat Pharmaceutical Group"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "نخستین مرکز تخصصی پژوهش دارویی؛ ۲۵ زیرمجموعه",
+  "en": "The first specialised drug research centre in Iran; 25 subsidiaries"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۲۰۱۰ میلادی (با نام «تدبیر نوآوران دارویی»)",
+    "en": "2010, as Tadbir innovation pharmaceutical company"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "۲۵ زیرمجموعه؛ ۷۰۰ نوع محصول؛ ۱۴٪ داروهای ضروری کشور",
+    "en": "25 subsidiaries; 700 products; 14% of the country's essential drugs"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "نوآوری",
+    "en": "Innovation"
+   },
+   "value": {
+    "fa": "نخستین مرکز تخصصی پژوهش دارو و داروسازی در ایران؛ سلول‌درمانی و ساخت داروهای پپتیدی",
+    "en": "Established as the first specialised drug research centre in Iran; cell therapy and peptide medicines"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "گروه دارویی برکت شرکت سهامی عام دارویی است که در ۲۰۱۰ با نام «تدبیر نوآوران دارویی» تأسیس شد. به نوشته‌ی ویکی‌پدیا ۲۵ زیرمجموعه دارد، ۷۰۰ نوع محصول می‌سازد و ۱۴ درصد داروهای ضروری کشور را تأمین می‌کند. نخستین مرکز تخصصی پژوهش دارو در ایران را هم ساخته است.",
+  "en": "Barkat Pharmaceutical Group is a public pharmaceutical company founded in 2010 as Tadbir innovation pharmaceutical company. According to Wikipedia it has 25 subsidiaries, makes 700 products and supplies 14 percent of the country's essential drugs. It also set up what it calls the first specialised drug research centre in Iran."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Barkat Pharmaceutical Group",
+   "title_en": "Wikipedia: Barkat Pharmaceutical Group",
+   "url": "https://en.wikipedia.org/wiki/Barkat_Pharmaceutical_Group"
+  }
+ ]
+}

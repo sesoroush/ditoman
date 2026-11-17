@@ -1,0 +1,91 @@
+{
+ "slug": "asan-pardakht",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "fintech",
+ "name": {
+  "fa": "آسان پرداخت",
+  "en": "Asan Pardakht"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "پرداخت الکترونیک، شارژ، قبض؛ از نخستین ۱۲ PSP کشور",
+  "en": "Electronic payment, top-ups, bills; one of the first 12 PSPs"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۲۰۰۹ میلادی",
+    "en": "2009"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "کارت و پرداخت الکترونیک، شارژ موبایل، قبض",
+    "en": "Card and electronic payment, mobile top-up, bill payment"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "آسان پرداخت (AP) در ۲۰۰۹ با سامانه‌های کارت پرداخت الکترونیک شروع کرد و بعد شارژ موبایل و پرداخت قبض را اضافه کرد. از ۱۲ شرکت نخست خدمات پرداخت الکترونیک ایران است.",
+  "en": "Asan Pardakht (AP) began in 2009 with electronic payment card systems and later added mobile top-up and bill payment. It is one of the first 12 electronic payment service providers in Iran."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Asan Pardakht",
+   "title_en": "Wikipedia: Asan Pardakht",
+   "url": "https://en.wikipedia.org/wiki/Asan_Pardakht"
+  }
+ ]
+}

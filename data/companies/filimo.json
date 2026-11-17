@@ -1,0 +1,91 @@
+{
+ "slug": "filimo",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "فیلیمو",
+  "en": "Filimo"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "سرویس ویدیوی درخواستی؛ بیش از نیمی از بازار استریم ایران",
+  "en": "Video on demand; over half of Iran's streaming market"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "صباایده",
+    "en": "Saba Idea"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "بیش از ۴۰۰ هزار مشترک ماهانه؛ سهم بازار بیش از ۵۰٪",
+    "en": "400,000+ monthly subscribers; 50%+ market share"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "فیلیمو سرویس ویدیوی درخواستی متعلق به صباایده است. ویکی‌پدیا سهم بازارش را بیش از ۵۰ درصد استریم ایران و مشترکانش را بیش از ۴۰۰ هزار نفر در ماه می‌نویسد.",
+  "en": "Filimo is a video-on-demand streaming service owned by Saba Idea. Wikipedia puts its share of Iranian streaming above 50 percent, with over 400,000 monthly subscribers."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Filimo",
+   "title_en": "Wikipedia: Filimo",
+   "url": "https://en.wikipedia.org/wiki/Filimo"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "slug": "snowa",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "consumer",
+ "name": {
+  "fa": "اسنوا",
+  "en": "Snowa"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "لوازم خانگی؛ اصفهان؛ از گروه صنعتی انتخاب",
+  "en": "Home appliances; Isfahan; Entekhab Industrial Group"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۲۰۰۵ میلادی؛ اصفهان (مورچه‌خورت)",
+    "en": "2005; Isfahan (Murche Khort)"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "گروه صنعتی انتخاب",
+    "en": "Entekhab Industrial Group"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "کارخانه‌ی ۲۵ هزار متری",
+    "en": "25,000 square-metre plant"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "اسنوا در ۲۰۰۵ در مورچه‌خورت اصفهان روی ۲۵ هزار متر شروع شد و زیرمجموعه‌ی گروه صنعتی انتخاب است. اجاق، هود، مایکروفر، یخچال، ماشین لباسشویی و تلویزیون هوشمند می‌سازد.",
+  "en": "Snowa was established in 2005 in Murche Khort, Isfahan, on 25,000 square metres, and belongs to Entekhab Industrial Group. It makes hobs, range hoods, microwaves, refrigerators, washing machines and smart TVs."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Snowa",
+   "title_en": "Wikipedia: Snowa",
+   "url": "https://en.wikipedia.org/wiki/Snowa"
+  }
+ ]
+}

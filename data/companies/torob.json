@@ -1,0 +1,78 @@
+{
+ "slug": "torob",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "ترب",
+  "en": "Torob"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "جست‌وجو و مقایسه‌ی قیمت کالا",
+  "en": "Product search and price comparison"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "مقایسه‌ی قیمت؛ کاربر برای خرید به فروشگاه فروشنده هدایت می‌شود",
+    "en": "Price comparison; users are sent to the seller's shop to buy"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "ترب وبگاه و اپلیکیشن ایرانی جست‌وجو و مقایسه‌ی قیمت کالا است. برخلاف فروشگاه، واسطه‌ی جست‌وجو است و خریدار برای تکمیل خرید به صفحه‌ی فروشنده می‌رود.",
+  "en": "Torob is an Iranian website and app for searching and comparing product prices. Unlike a shop, it acts as a search intermediary and sends buyers to the seller's page to complete the purchase."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (فارسی): ترب (اپلیکیشن)",
+   "title_en": "Wikipedia (Persian edition): Torob",
+   "url": "https://fa.wikipedia.org/wiki/%D8%AA%D8%B1%D8%A8_(%D8%A7%D9%BE%D9%84%DB%8C%DA%A9%DB%8C%D8%B4%D9%86)"
+  }
+ ]
+}

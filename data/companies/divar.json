@@ -1,0 +1,91 @@
+{
+ "slug": "divar",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "دیوار",
+  "en": "Divar"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "نیازمندی‌ها و تجارت الکترونیک؛ از ۲۰۱۲",
+  "en": "Classified ads and e-commerce; since 2012"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۲۰۱۲ میلادی",
+    "en": "2012"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "ملک، خودرو، کالا، خدمات، تجهیزات صنعتی و استخدام",
+    "en": "Real estate, vehicles, goods, services, industrial equipment and jobs"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "دیوار در ۲۰۱۲ شروع شد و اپلیکیشن نیازمندی‌ها و تجارت الکترونیک فارسی‌زبانان است؛ بخش‌هایی برای ملک، خودرو، کالا، خدمات، تجهیزات صنعتی و کار دارد.",
+  "en": "Divar started in 2012 as a Persian classified-ads and e-commerce app, with sections for real estate, vehicles, goods, services, industrial equipment and jobs."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Divar (website)",
+   "title_en": "Wikipedia: Divar (website)",
+   "url": "https://en.wikipedia.org/wiki/Divar_(website)"
+  }
+ ]
+}

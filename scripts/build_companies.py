@@ -351,8 +351,8 @@ def company_page(c):
     </div>
     <div class="k-gallery">
       {shot(ph["main"], slug, "main")}
-      {shot(ph["product"], slug)}
-      {shot(ph["office"], slug)}
+      {shot(ph["product"], slug) if ph.get("product") else ""}
+      {shot(ph["office"], slug) if ph.get("office") else ""}
     </div>
     <div class="k-id">
       {logo}
@@ -392,17 +392,27 @@ def company_page(c):
                 "draft" if c["status"] == "draft" else None)
 
 
+KB_NOTE = {
+    "fa": "نوآوری‌های فناورانه‌ی ایرانی؛ از داروی زیستی و تراشه تا اپ و پرداخت. «دانش‌بنیان» در ایران وضعیتی رسمی است که معاونت علمی و فناوری ریاست‌جمهوری می‌دهد. جز جایی که منبع خودش می‌گوید، این وضعیت را هنوز با فهرست رسمی تطبیق نداده‌ایم و روی هیچ شرکتی نمی‌گذاریم.",
+    "en": "Iranian technology innovation, from biologic drugs and chips to apps and payments. “Knowledge-based” is an official status in Iran, granted by the Vice-Presidency for Science and Technology. Except where the source itself says so, we have not yet matched it against the official register and do not put it on any company.",
+}
+
+
 def directory(companies):
     sectors = {}
     for c in companies:
         sectors.setdefault(c["sector"]["id"], {"name": c["sector"], "items": []})["items"].append(c)
     blocks = []
-    for s in sectors.values():
+    ordered = sorted(sectors.values(), key=lambda s: 0 if s["name"]["id"] == "knowledge" else 1)
+    for s in ordered:
         cards = "".join(
             f'<a class="k-card" href="{e(c["slug"])}.html">{shot(dict(c["photos"]["main"], file=card_file(c)), c["slug"]) if c["photos"]["main"].get("file") else '<figure class="k-shot">' + name_tile(c) + '</figure>'}'
             f'<div class="k-card-body"><h3>{t(c["name"])}</h3><p>{t(c["tagline"])}</p>'
             f'<span class="k-go">{t(UI["open_card"])}</span></div></a>' for c in s["items"])
-        blocks.append(f'<section class="k-sector"><h2>{t(s["name"])}</h2>{cards}</section>')
+        note = ""
+        if s["name"]["id"] == "knowledge":
+            note = "<p class=\"k-how\">" + t(KB_NOTE) + "</p>"
+        blocks.append(f'<section class="k-sector" id="{e(s["name"]["id"])}"><h2>{t(s["name"])}</h2>{note}{cards}</section>')
     heading = {"fa": "معرفی شرکت‌های ایرانی", "en": "Meet Iran's companies"}
     intro = {
         "fa": "پرونده‌ی شرکت‌های ایرانی به فارسی و انگلیسی: سابقه، محصول، مدیران، آمار و منبع هر عدد.",
@@ -426,10 +436,16 @@ def directory(companies):
                 "draft" if draft else None)
 
 
+HOME_KB = ["cinnagen", "cafebazaar", "digikala", "snapp", "parse-semiconductor", "sina-robotics"]
+
+
 def homepage(companies):
     """Update the homepage block. Both languages show together, like the rest of the homepage."""
     path = ROOT / "index.html"
     page_html = path.read_text(encoding="utf-8")
+    kb = [c for c in companies if c["sector"]["id"] == "knowledge"]
+    other = [c for c in companies if c["sector"]["id"] != "knowledge"]
+    featured = [c for c in kb if c["slug"] in HOME_KB] + other[:6]
     cards = "".join(
         f'''
           <a class="co-card" href="{e(c["slug"])}.html">
@@ -441,7 +457,7 @@ def homepage(companies):
               <p class="co-fa" lang="fa">{e(c["tagline"]["fa"])}</p>
               <span class="co-go">View the record</span>
             </div>
-          </a>''' for c in companies)
+          </a>''' for c in featured)
     block = f'''<!-- companies:start -->
     <section class="block" id="companies">
       <div class="wrap">
@@ -482,15 +498,35 @@ def name_tile(c):
     fa = "".join(f'<text x="200" y="{y0 + i * lh:.0f}">{e(x)}</text>' for i, x in enumerate(lines))
     en = e(c["name"]["en"])
     en_size = 17 if len(en) <= 30 else 14
+    # English name wrapped for the English version of the tile (no Persian in it)
+    ew, elines, ecur = c["name"]["en"].split(), [], ""
+    for w in ew:
+        if ecur and len(ecur) + 1 + len(w) > 16:
+            elines.append(ecur)
+            ecur = w
+        else:
+            ecur = f"{ecur} {w}".strip()
+    elines.append(ecur)
+    elines = elines[:3]
+    esize = 44 if max(len(x) for x in elines) <= 10 else 34 if max(len(x) for x in elines) <= 14 else 28
+    elh = esize * 1.25
+    ey0 = 200 - (len(elines) - 1) * elh / 2 + esize * 0.35
+    en_big = "".join(f'<text x="200" y="{ey0 + i * elh:.0f}">{e(x)}</text>' for i, x in enumerate(elines))
     return (
         '<svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" '
         f'aria-label="{e(c["name"]["en"])}">'
         '<rect width="400" height="400" fill="#f3efe5"/>'
         '<rect x="14" y="14" width="372" height="372" rx="16" fill="none" stroke="#101f22" stroke-opacity=".12"/>'
-        f'<text x="200" y="64" text-anchor="middle" font-family="IRANYekanX, Tahoma, sans-serif" font-size="19" font-weight="700" fill="#0b5f54" direction="rtl">{e(c["sector"]["fa"])}</text>'
         '<path d="M170 86h60" stroke="#f2a01f" stroke-width="3" stroke-linecap="round"/>'
+        '<g class="i-fa" lang="fa">'
+        f'<text x="200" y="64" text-anchor="middle" font-family="IRANYekanX, Tahoma, sans-serif" font-size="19" font-weight="700" fill="#0b5f54" direction="rtl">{e(c["sector"]["fa"])}</text>'
         f'<g text-anchor="middle" font-family="IRANYekanX, Tahoma, sans-serif" font-size="{size}" font-weight="800" fill="#101f22" direction="rtl">{fa}</g>'
         f'<text x="200" y="346" text-anchor="middle" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" font-size="{en_size}" font-weight="600" fill="#5b6b68" letter-spacing=".02em">{en}</text>'
+        '</g>'
+        '<g class="i-en" lang="en">'
+        f'<text x="200" y="64" text-anchor="middle" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" font-size="17" font-weight="700" fill="#0b5f54">{e(c["sector"]["en"])}</text>'
+        f'<g text-anchor="middle" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" font-size="{esize}" font-weight="800" fill="#101f22">{en_big}</g>'
+        '</g>'
         '</svg>'
     )
 

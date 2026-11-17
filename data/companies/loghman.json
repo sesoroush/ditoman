@@ -1,0 +1,78 @@
+{
+ "slug": "loghman",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "pharma",
+ "name": {
+  "fa": "دارویی و بهداشتی لقمان",
+  "en": "Loghman Pharmaceutical & Hygienic"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "کشف، توسعه، ساخت و عرضه‌ی دارو",
+  "en": "Drug discovery, development, manufacture and marketing"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "کشف، توسعه، تولید و بازاریابی دارو در ایران",
+    "en": "Discovery, development, manufacture and marketing of drugs in Iran"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "شرکت دارویی و بهداشتی لقمان شرکت داروسازی ایرانی است که کشف، توسعه، تولید و عرضه‌ی دارو را در ایران انجام می‌دهد.",
+  "en": "Loghman Pharmaceutical & Hygienic Co. is an Iranian pharmaceuticals company engaged in the discovery, development, manufacture and marketing of drugs in Iran."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Loghman Pharmaceuticals",
+   "title_en": "Wikipedia: Loghman Pharmaceuticals",
+   "url": "https://en.wikipedia.org/wiki/Loghman_Pharmaceuticals"
+  }
+ ]
+}

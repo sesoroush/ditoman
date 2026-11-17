@@ -1,0 +1,104 @@
+{
+ "slug": "cafebazaar",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "کافه‌بازار",
+  "en": "Cafe Bazaar"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "فروشگاه برنامه‌ی اندروید برای فارسی‌زبانان؛ بیش از ۵۰۰ هزار برنامه",
+  "en": "Android app store for Persian speakers; 500,000+ apps"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "آوریل ۲۰۱۱",
+    "en": "April 2011"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "بیش از ۵۰۰ هزار برنامه؛ ۴۰ میلیون کاربر (آوریل ۲۰۱۹)",
+    "en": "500,000+ apps; 40 million users (April 2019)"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "نوآوری",
+    "en": "Innovation"
+   },
+   "value": {
+    "fa": "فروشگاه اندروید ویژه‌ی فارسی‌زبانان",
+    "en": "An Android store built for Persian-speaking users"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "کافه‌بازار در آوریل ۲۰۱۱ تأسیس شد و فروشگاه برنامه‌ی اندروید ویژه‌ی فارسی‌زبانان است. به نوشته‌ی ویکی‌پدیا بیش از ۵۰۰ هزار برنامه دارد و در آوریل ۲۰۱۹ از ۴۰ میلیون کاربر گذشته بود.",
+  "en": "Cafe Bazaar was founded in April 2011 as an Android app store tailored to Persian speakers. Wikipedia says it offers over 500,000 apps and passed 40 million users in April 2019."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Cafe Bazaar",
+   "title_en": "Wikipedia: Cafe Bazaar",
+   "url": "https://en.wikipedia.org/wiki/Cafe_Bazaar"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "slug": "cinnagen",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "pharma",
+ "name": {
+  "fa": "سیناژن",
+  "en": "CinnaGen"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "داروهای زیستی‌مشابه، معرف‌های آزمایشگاهی و پروتئین‌های نوترکیب",
+  "en": "Biosimilar drugs, laboratory reagents and recombinant proteins"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۱۹۹۴ میلادی",
+    "en": "1994"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "داروی زیستی‌مشابه، معرف آزمایشگاهی، پروتئین نوترکیب",
+    "en": "Biosimilar drugs, in-vitro diagnostic reagents, recombinant proteins"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "نوآوری",
+    "en": "Innovation"
+   },
+   "value": {
+    "fa": "سینووکس: زیستی‌مشابه اینترفرون بتا برای ام‌اس؛ تأیید سازمان غذا و دارو در ۲۰۰۷",
+    "en": "Cinnovex, a biosimilar of interferon-beta for multiple sclerosis; approved by Iran's FDA in 2007"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "سیناژن شرکت زیست‌دارویی ایرانی است که در ۱۹۹۴ تأسیس شد. تا ۲۰۱۶ داروی زیستی‌مشابه، معرف آزمایشگاهی و پروتئین نوترکیب می‌ساخت و به خاورمیانه و کشورهای مشترک‌المنافع صادر می‌کرد. سینووکس، زیستی‌مشابه اینترفرون بتا، با دی‌ان‌ای‌ای ساخته‌شده در مؤسسه‌ی فراونهوفر آلمان تولید شد و در ۲۰۰۷ تأییدیه‌ی سازمان غذا و دارو را گرفت.",
+  "en": "CinnaGen is an Iranian biopharmaceutical company founded in 1994. As of 2016 it made biosimilar drugs, laboratory reagents and recombinant proteins, and exported to the Middle East and to Commonwealth of Independent States countries. Its Cinnovex, a biosimilar of interferon-beta, uses recombinant DNA made by scientists at Germany's Fraunhofer Institute; development was completed in Iran and approved by the Iranian FDA in 2007."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Cinnagen",
+   "title_en": "Wikipedia: Cinnagen",
+   "url": "https://en.wikipedia.org/wiki/Cinnagen"
+  }
+ ]
+}

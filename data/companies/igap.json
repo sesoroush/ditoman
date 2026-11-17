@@ -1,0 +1,104 @@
+{
+ "slug": "igap",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "آی‌گپ",
+  "en": "iGap"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "پیام‌رسان متن‌باز با رمزنگاری سرتاسری؛ بیش از ۲۰ میلیون کاربر",
+  "en": "Open-source messenger with end-to-end encryption; 20 million+ users"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "کیان ایرانیان STD",
+    "en": "Kian Iranian STD"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "نوآوری",
+    "en": "Innovation"
+   },
+   "value": {
+    "fa": "نخستین پیام‌رسان متن‌باز با رمزنگاری سرتاسری AES در غرب آسیا",
+    "en": "First end-to-end encrypted, open-source AES messenger in West Asia"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "بیش از ۲۰ میلیون کاربر",
+    "en": "20 million+ users"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "آی‌گپ پیام‌رسان ابری ایرانی و متن‌باز است که کیان ایرانیان STD ساخته. ویکی‌پدیا آن را نخستین پیام‌رسان متن‌باز با رمزنگاری سرتاسری AES در غرب آسیا می‌نامد و بیش از ۲۰ میلیون کاربر برایش می‌نویسد.",
+  "en": "iGap is an Iranian open-source, cloud-based messenger developed by Kian Iranian STD. Wikipedia calls it the first end-to-end encrypted, open-source AES messenger in West Asia, with over 20 million users."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): IGap",
+   "title_en": "Wikipedia: IGap",
+   "url": "https://en.wikipedia.org/wiki/IGap"
+  }
+ ]
+}

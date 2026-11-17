@@ -1,0 +1,78 @@
+{
+ "slug": "zahravi",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "pharma",
+ "name": {
+  "fa": "داروسازی زهراوی",
+  "en": "Zahravi Pharmaceutical"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "داروسازی ایرانی؛ زیرمجموعه‌ی تیپیکو",
+  "en": "Iranian drug maker; subsidiary of TIPICO"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "شرکت سرمایه‌گذاری دارویی تأمین (تیپیکو)",
+    "en": "Tamin Pharmaceutical Investment Company (TIPICO)"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "داروسازی زهراوی شرکت داروسازی ایرانی و زیرمجموعه‌ی شرکت سرمایه‌گذاری دارویی تأمین (تیپیکو) است. منبع عمومی ما درباره‌اش کوتاه است و جز این چیزی تأیید نکرده‌ایم.",
+  "en": "Zahravi Pharmaceutical is an Iranian drug maker and a subsidiary of Tamin Pharmaceutical Investment Company (TIPICO). Our public source on it is short and we have confirmed little beyond this."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (فارسی): شرکت داروسازی زهراوی",
+   "title_en": "Wikipedia (Persian edition): Zahravi Pharmaceutical",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D8%AF%D8%A7%D8%B1%D9%88%D8%B3%D8%A7%D8%B2%DB%8C_%D8%B2%D9%87%D8%B1%D8%A7%D9%88%DB%8C"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "slug": "bale",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "بله",
+  "en": "Bale"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "پیام‌رسان و پرداخت؛ ساخته‌ی بانک ملی؛ بیش از ۶۰ میلیون کاربر",
+  "en": "Messenger and payments built by Bank Melli; 60 million+ users"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "بانک ملی ایران",
+    "en": "National Bank of Iran"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "نوآوری",
+    "en": "Innovation"
+   },
+   "value": {
+    "fa": "پیام‌رسان با پرداخت، انتقال پول، ربات و هوش مصنوعی",
+    "en": "Messenger with payments, money transfer, bots and AI"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "بیش از ۶۰ میلیون کاربر",
+    "en": "60 million+ users"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "بله پیام‌رسانی است که بانک ملی ایران ساخته؛ پرداخت موبایلی، انتقال پول، ربات و هوش مصنوعی را کنار پیام‌رسانی دارد و ویکی‌پدیا بیش از ۶۰ میلیون کاربر برایش می‌نویسد.",
+  "en": "Bale is a messenger developed by the National Bank of Iran that combines messaging with mobile payments, money transfer, bots and AI. Wikipedia reports over 60 million users."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Bale Messenger",
+   "title_en": "Wikipedia: Bale Messenger",
+   "url": "https://en.wikipedia.org/wiki/Bale_Messenger"
+  }
+ ]
+}

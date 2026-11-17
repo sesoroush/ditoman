@@ -1,0 +1,91 @@
+{
+ "slug": "digikala",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "دیجی‌کالا",
+  "en": "Digikala"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "بزرگ‌ترین فروشگاه اینترنتی ایران؛ از ۲۰۰۶",
+  "en": "Iranian e-commerce; since 2006"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "ژوئیه ۲۰۰۶؛ تهران",
+    "en": "July 2006; Tehran"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "کالای ورزشی، الکترونیک، خواروبار، لوازم شخصی و دیجیتال؛ ارسال سریع",
+    "en": "Sports, electronics, groceries, personal and digital goods; express delivery"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "دیجی‌کالا در ژوئیه‌ی ۲۰۰۶ در تهران تأسیس شد. گروه کالاهای ورزشی، الکترونیک، خواروبار و دیجیتال با امکان بازگشت و ارسال سریع عرضه می‌کند و زیرمجموعه‌هایی در دیگر حوزه‌های تجارت الکترونیک دارد.",
+  "en": "Digikala was founded in Tehran in July 2006. It sells sports, electronics, groceries, personal and digital goods with returns and express delivery, and has subsidiaries in other e-commerce areas."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Digikala",
+   "title_en": "Wikipedia: Digikala",
+   "url": "https://en.wikipedia.org/wiki/Digikala"
+  }
+ ]
+}

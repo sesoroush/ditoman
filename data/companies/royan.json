@@ -1,0 +1,91 @@
+{
+ "slug": "royan",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "health",
+ "name": {
+  "fa": "پژوهشگاه رویان",
+  "en": "Royan Institute"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "پژوهش پزشکی تولیدمثل و زیست‌فناوری؛ وابسته به جهاد دانشگاهی",
+  "en": "Reproductive-medicine and biotechnology research; part of ACECR"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "تحقیقات پزشکی تولیدمثل و زیست‌فناوری",
+    "en": "Reproductive medicine and biotechnology research"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "جهاد دانشگاهی",
+    "en": "Academic Center for Education, Culture and Research (ACECR)"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "رویان بنیاد پژوهشی ایرانی در حوزه‌ی پزشکی تولیدمثل و زیست‌فناوری است و وابسته به جهاد دانشگاهی است. پژوهشگاه است، نه شرکت؛ به‌خاطر نقشش در فناوری‌های زیستی ایران در این فهرست آمده.",
+  "en": "Royan is an Iranian research foundation in reproductive medicine and biotechnology, part of the Academic Center for Education, Culture and Research. It is a research institute, not a company; it is listed here for its role in Iranian biotechnology."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (فارسی): پژوهشگاه رویان",
+   "title_en": "Wikipedia (Persian edition): Royan Institute",
+   "url": "https://fa.wikipedia.org/wiki/%D9%BE%DA%98%D9%88%D9%87%D8%B4%DA%AF%D8%A7%D9%87_%D8%B1%D9%88%DB%8C%D8%A7%D9%86"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "parse-semiconductor",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "knowledge",
+ "name": {
+  "fa": "نیمه‌هادی پارسه",
+  "en": "Parsé Semiconductor"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "طراحی تراشه‌ی ASIC، SoC و FPGA؛ ریزپردازنده‌ی ۳۲ بیتی آریستو",
+  "en": "ASIC, SoC and FPGA design; the 32-bit Aristo microprocessor"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۲۰۰۳ میلادی؛ تهران",
+    "en": "2003; Tehran"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "نوآوری",
+    "en": "Innovation"
+   },
+   "value": {
+    "fa": "ریزپردازنده‌ی ۳۲ بیتی «آریستو»؛ ۲۰۰۶، نخستین بار طراحی و ساخت در داخل کشور",
+    "en": "The 32-bit «Aristo» microprocessor; 2006, announced as designed and produced inside Iran for the first time"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "نیمه‌هادی پارسه در ۲۰۰۳ در تهران تأسیس شد و تراشه‌های ASIC، SoC و FPGA طراحی می‌کند. در ۲۰۰۶ اعلام کرد ریزپردازنده‌ی ۳۲ بیتی «آریستو» را برای نخستین بار در داخل ایران طراحی و ساخته است.",
+  "en": "Parsé Semiconductor was established in 2003 in Tehran as a design house for ASIC, SoC and FPGA chips. In 2006 it announced it had both designed and produced a 32-bit microprocessor, Aristo, inside the country for the first time."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Parsé Semiconductor Co.",
+   "title_en": "Wikipedia: Parsé Semiconductor Co.",
+   "url": "https://en.wikipedia.org/wiki/Pars%C3%A9_Semiconductor_Co."
+  }
+ ]
+}

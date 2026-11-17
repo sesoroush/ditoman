@@ -1,0 +1,91 @@
+{
+ "slug": "x-vision",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "consumer",
+ "name": {
+  "fa": "ایکس.ویژن",
+  "en": "X.Vision"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "لوازم الکترونیک مصرفی؛ از گروه ماداران",
+  "en": "Consumer electronics; Maadiran Group"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "گروه ماداران",
+    "en": "Maadiran Group"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "فعالیت",
+    "en": "Activity"
+   },
+   "value": {
+    "fa": "لوازم الکترونیک مصرفی",
+    "en": "Consumer electronics"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "ایکس.ویژن سازنده‌ی لوازم الکترونیک مصرفی ایرانی و زیرمجموعه‌ی گروه ماداران است. منبع عمومی ما کوتاه است و فقط همین را تأیید کرده‌ایم.",
+  "en": "X.Vision is an Iranian consumer-electronics maker and a subsidiary of Maadiran Group. Our public source is short and this is all we confirmed."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): X-Vision",
+   "title_en": "Wikipedia: X-Vision",
+   "url": "https://en.wikipedia.org/wiki/X-Vision"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "slug": "aparat",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "آپارات",
+  "en": "Aparat"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "پربازدیدترین سکوی ویدیوی ایران؛ ۶۰ میلیون کاربر ماهانه",
+  "en": "Iran's most-visited video platform; 60 million monthly users"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۲۰۱۱ میلادی؛ تهران",
+    "en": "2011; Tehran"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "صباایده",
+    "en": "Saba Idea"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "بیش از ۶۰ میلیون کاربر ماهانه",
+    "en": "60+ million monthly users"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "آپارات در ۲۰۱۱ توسط صباایده راه افتاد و به نوشته‌ی ویکی‌پدیا پربازدیدترین سکوی اشتراک ویدیو در ایران است، با بیش از ۶۰ میلیون کاربر ماهانه.",
+  "en": "Aparat was launched in 2011 by Saba Idea. Wikipedia calls it the most-visited video-sharing service in Iran, with over 60 million monthly users."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Aparat",
+   "title_en": "Wikipedia: Aparat",
+   "url": "https://en.wikipedia.org/wiki/Aparat"
+  }
+ ]
+}

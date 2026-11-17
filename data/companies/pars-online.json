@@ -1,0 +1,104 @@
+{
+ "slug": "pars-online",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "telecom",
+ "name": {
+  "fa": "پارس‌آنلاین",
+  "en": "ParsOnline"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "بزرگ‌ترین ارائه‌دهنده‌ی اینترنت خصوصی؛ بیش از ۷۵۰ کارمند",
+  "en": "Largest private ISP; 750+ employees"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۱۹۹۹ میلادی؛ تهران",
+    "en": "1999; Tehran"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "بیش از ۷۵۰ کارمند",
+    "en": "750+ employees"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "خریداری‌شده توسط های‌وب",
+    "en": "Acquired by Hiweb"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "پارس‌آنلاین در ۱۹۹۹ در تهران تأسیس شد و بزرگ‌ترین ارائه‌دهنده‌ی خصوصی اینترنت ایران است. بیش از ۷۵۰ کارمند دارد و های‌وب آن را خریده است.",
+  "en": "ParsOnline was founded in 1999 in Tehran and is the largest private ISP in Iran, with over 750 employees. It was acquired by Hiweb."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Pars Online",
+   "title_en": "Wikipedia: Pars Online",
+   "url": "https://en.wikipedia.org/wiki/Pars_Online"
+  }
+ ]
+}

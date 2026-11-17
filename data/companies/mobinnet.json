@@ -1,0 +1,91 @@
+{
+ "slug": "mobinnet",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "telecom",
+ "name": {
+  "fa": "مبین‌نت",
+  "en": "Mobinnet"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "اینترنت پهن‌باند بی‌سیم LTE",
+  "en": "Wireless broadband internet on LTE"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "دسامبر ۲۰۰۸",
+    "en": "December 2008"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "نوآوری",
+    "en": "Innovation"
+   },
+   "value": {
+    "fa": "شبکه‌ی سراسری بی‌سیم TD-LTE؛ راه‌اندازی ۲۹ ژانویه ۲۰۱۷",
+    "en": "Nationwide TD-LTE wireless network, launched 29 January 2017"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "مبین‌نت از بزرگ‌ترین ارائه‌دهندگان اینترنت پهن‌باند بی‌سیم ایران است. در دسامبر ۲۰۰۸ تأسیس شد و در ژانویه‌ی ۲۰۱۷ شبکه‌ی سراسری TD-LTE را راه انداخت.",
+  "en": "Mobinnet is one of Iran's largest wireless broadband providers. It was founded in December 2008 and launched its nationwide TD-LTE network on 29 January 2017."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Mobinnet",
+   "title_en": "Wikipedia: Mobinnet",
+   "url": "https://en.wikipedia.org/wiki/Mobinnet"
+  }
+ ]
+}

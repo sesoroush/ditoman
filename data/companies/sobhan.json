@@ -1,0 +1,104 @@
+{
+ "slug": "sobhan",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "industry",
+ "sub": "pharma",
+ "name": {
+  "fa": "گروه دارویی سبحان",
+  "en": "Sobhan Darou Group"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "هلدینگ دارویی از گروه برکت؛ نماد دسبحا",
+  "en": "Pharmaceutical holding in the Barkat group; listed on the Tehran exchange"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "تأسیس",
+    "en": "Founded"
+   },
+   "value": {
+    "fa": "۱۳۵۵ خورشیدی",
+    "en": "1355 (Iranian calendar, 1976–77)"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "از شرکت‌های تابعه‌ی گروه دارویی برکت",
+    "en": "A Barkat Pharmaceutical Group subsidiary"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "پایگاه",
+    "en": "Based in"
+   },
+   "value": {
+    "fa": "تهران",
+    "en": "Tehran"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "گروه دارویی سبحان (سهامی عام) هلدینگ دارویی ایرانی و از شرکت‌های تابعه‌ی گروه دارویی برکت است، دفتر مرکزی‌اش در تهران است و با نماد «دسبحا» در بورس تهران پذیرفته شده.",
+  "en": "Sobhan Darou Group is an Iranian pharmaceutical holding and a subsidiary of Barkat Pharmaceutical Group, headquartered in Tehran and listed on the Tehran Stock Exchange."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (فارسی): گروه دارویی سبحان",
+   "title_en": "Wikipedia (Persian edition): Sobhan Darou Group",
+   "url": "https://fa.wikipedia.org/wiki/%DA%AF%D8%B1%D9%88%D9%87_%D8%AF%D8%A7%D8%B1%D9%88%DB%8C%DB%8C_%D8%B3%D8%A8%D8%AD%D8%A7%D9%86"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "telewebion",
+ "status": "published",
+ "last_checked": {
+  "fa": "۲۶ آبان ۱۴۰۵",
+  "en": "17 November 2026"
+ },
+ "sector": {
+  "id": "knowledge",
+  "fa": "شرکت‌های دانش‌بنیان و فناور",
+  "en": "Knowledge-based and technology companies"
+ },
+ "branch": "technology",
+ "sub": "platforms",
+ "name": {
+  "fa": "تلوبیون",
+  "en": "Telewebion"
+ },
+ "logo": null,
+ "tagline": {
+  "fa": "پخش زنده و آرشیو شبکه‌های سیما؛ ۶۰ شبکه",
+  "en": "Live and archived streaming of IRIB channels; 60 channels"
+ },
+ "facts": [
+  {
+   "label": {
+    "fa": "مالکیت",
+    "en": "Owned by"
+   },
+   "value": {
+    "fa": "صدا و سیمای جمهوری اسلامی ایران",
+    "en": "Islamic Republic of Iran Broadcasting"
+   },
+   "src": [
+    1
+   ]
+  },
+  {
+   "label": {
+    "fa": "مقیاس",
+    "en": "Scale"
+   },
+   "value": {
+    "fa": "۶۰ شبکه‌ی زنده و آرشیو",
+    "en": "60 live and archived channels"
+   },
+   "src": [
+    1
+   ]
+  }
+ ],
+ "summary": {
+  "fa": "تلوبیون برنامه‌ی پخش ویدیوی درخواستی و زنده‌ی صدا و سیما است و ۶۰ شبکه‌ی زنده و آرشیو دارد؛ روی iOS و اندروید و وب در دسترس است.",
+  "en": "Telewebion is the streaming and video-on-demand service made by the Islamic Republic of Iran Broadcasting, with 60 live and archived channels on iOS, Android and the web."
+ },
+ "summary_src": [
+  1
+ ],
+ "photos": {
+  "main": {
+   "file": null,
+   "art": "office",
+   "alt": {
+    "fa": "تصویرسازی",
+    "en": "Illustration"
+   }
+  }
+ },
+ "unconfirmed": {
+  "fa": [
+   "ثبت رسمی به‌عنوان شرکت «دانش‌بنیان» در فهرست معاونت علمی و فناوری ریاست‌جمهوری؛ هنوز با منبع رسمی تطبیق نداده‌ایم",
+   "ارقام مالی (فروش، دارایی) و فهرست مدیران"
+  ],
+  "en": [
+   "Official registration as a knowledge-based company by the Vice-Presidency for Science and Technology; we have not yet matched it against the official register",
+   "Financial figures (sales, assets) and leadership"
+  ]
+ },
+ "disclosure": {
+  "fa": "این پرونده بر پایه‌ی منبع عمومی (ویکی‌پدیا) نوشته شده و شرکت پیش از انتشار آن را بازبینی نکرده است. «دانش‌بنیان» بودن رسمی را جداگانه و از فهرست رسمی تأیید می‌کنیم.",
+  "en": "This record is based on a public source (Wikipedia) and was not reviewed by the company before publication. Official knowledge-based status is something we confirm separately against the official register."
+ },
+ "sources": [
+  {
+   "id": 1,
+   "title": "ویکی‌پدیا (انگلیسی): Telewebion",
+   "title_en": "Wikipedia: Telewebion",
+   "url": "https://en.wikipedia.org/wiki/Telewebion"
+  }
+ ]
+}
