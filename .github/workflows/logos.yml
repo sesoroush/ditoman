@@ -1,0 +1,18 @@
+name: Logo finder
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/logos/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  logos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/logos/fetch.py
+      - run: |
+          git config user.name "ditoman-bot"; git config user.email "ditoman-bot@users.noreply.github.com"
+          git add data/logos || true; git commit -m "Logo finder results" || exit 0
+          git pull --rebase origin main; git push origin HEAD:main

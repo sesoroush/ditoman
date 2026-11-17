@@ -1,0 +1,735 @@
+{
+"almas-sabz-kavir": {
+"en": "Almase Sabz Kavir",
+"fa": "الماس سبز کویر",
+"cand": []
+},
+"aparat": {
+"en": "Aparat",
+"fa": "آپارات",
+"cand": [
+[
+"en",
+"Aparat"
+],
+[
+"fa",
+"آپارات"
+]
+]
+},
+"arvan-cloud": {
+"en": "ArvanCloud",
+"fa": "ابر آروان",
+"cand": [
+[
+"en",
+"Abr Arvan"
+],
+[
+"fa",
+"ابر آروان"
+]
+]
+},
+"aryogen": {
+"en": "AryoGen Pharmed",
+"fa": "آریوژن فارمد",
+"cand": [
+[
+"en",
+"AryoGen"
+],
+[
+"fa",
+"آریوژن"
+]
+]
+},
+"asan-pardakht": {
+"en": "Asan Pardakht",
+"fa": "آسان پرداخت",
+"cand": [
+[
+"en",
+"Asan Pardakht"
+],
+[
+"fa",
+"آسان‌پرداخت"
+]
+]
+},
+"asiatech": {
+"en": "Asiatech",
+"fa": "آسیاتک",
+"cand": [
+[
+"en",
+"Asiatech"
+],
+[
+"fa",
+"آسیاتک"
+]
+]
+},
+"asreh-novin-age": {
+"en": "Asreh Novin Industrial Group (AGE)",
+"fa": "گروه صنعتی عصر نوین (AGE)",
+"cand": []
+},
+"bale": {
+"en": "Bale",
+"fa": "بله",
+"cand": [
+[
+"en",
+"Bale Messenger"
+],
+[
+"fa",
+"بله (پیام‌رسان)"
+]
+]
+},
+"barekat": {
+"en": "Barkat Pharmaceutical Group",
+"fa": "گروه دارویی برکت",
+"cand": [
+[
+"en",
+"Barkat Pharmaceutical Group"
+],
+[
+"fa",
+"مؤسسه دانش‌بنیان برکت"
+]
+]
+},
+"barij-essence": {
+"en": "Barij Essence Pharmaceutical Co.",
+"fa": "باریج اسانس",
+"cand": []
+},
+"cafebazaar": {
+"en": "Cafe Bazaar",
+"fa": "کافه‌بازار",
+"cand": [
+[
+"en",
+"Cafe Bazaar"
+],
+[
+"fa",
+"کافه بازار"
+]
+]
+},
+"chuka-iran-wood-and-paper": {
+"en": "Iran Wood and Paper Industries (Chuka)",
+"fa": "صنایع چوب و کاغذ ایران (چوکا)",
+"cand": []
+},
+"cinnagen": {
+"en": "CinnaGen",
+"fa": "سیناژن",
+"cand": [
+[
+"en",
+"Cinnagen"
+],
+[
+"fa",
+"سیناژن"
+]
+]
+},
+"digikala": {
+"en": "Digikala",
+"fa": "دیجی‌کالا",
+"cand": [
+[
+"en",
+"Digikala"
+],
+[
+"fa",
+"دیجی‌کالا"
+]
+]
+},
+"divar": {
+"en": "Divar",
+"fa": "دیوار",
+"cand": [
+[
+"en",
+"Divar (website)"
+],
+[
+"fa",
+"دیوار (وبگاه)"
+]
+]
+},
+"dorrin-golab-kashan": {
+"en": "Dorrin Golab Kashan Agro-Industry",
+"fa": "مجتمع کشت و صنعت درین گلاب کاشان",
+"cand": []
+},
+"dotin": {
+"en": "Dotin (Datis Arian Qeshm)",
+"fa": "داتیس آرین قشم (دوتین)",
+"cand": [
+[
+"en",
+"Dotin"
+],
+[
+"fa",
+"داتین"
+]
+]
+},
+"dpi": {
+"en": "Data Processing Iran (DPI)",
+"fa": "داده‌پردازی ایران",
+"cand": [
+[
+"en",
+"Data Processing Iran Co."
+]
+]
+},
+"eitaa": {
+"en": "Eitaa",
+"fa": "ایتا",
+"cand": [
+[
+"en",
+"Eitaa"
+],
+[
+"fa",
+"ایتا"
+]
+]
+},
+"esfedan-saffron": {
+"en": "Esfedan Saffron Co.",
+"fa": "زعفران اسفدان",
+"cand": []
+},
+"exir": {
+"en": "Exir Pharmaceutical",
+"fa": "داروسازی اکسیر",
+"cand": [
+[
+"fa",
+"شرکت داروسازی اکسیر"
+]
+]
+},
+"fanap-infra": {
+"en": "Fanap Infrastructure",
+"fa": "فناپ‌زیرساخت",
+"cand": [
+[
+"fa",
+"فناپ‌زیرساخت"
+]
+]
+},
+"fanap": {
+"en": "Fanap (Pasargad Arian ICT)",
+"fa": "فناپ (فناوری اطلاعات و ارتباطات پاسارگاد آریان)",
+"cand": [
+[
+"en",
+"Pasargad Arian Communication and Information Technology Co"
+],
+[
+"fa",
+"فناپ"
+]
+]
+},
+"faran-shimi": {
+"en": "Faran Chemi Pharmaceuticals",
+"fa": "داروسازی فاران شیمی",
+"cand": [
+[
+"fa",
+"داروسازی فاران شیمی"
+]
+]
+},
+"fidibo": {
+"en": "Fidibo",
+"fa": "فیدیبو",
+"cand": [
+[
+"fa",
+"فیدیبو"
+]
+]
+},
+"filimo": {
+"en": "Filimo",
+"fa": "فیلیمو",
+"cand": [
+[
+"en",
+"Filimo"
+],
+[
+"fa",
+"فیلیمو"
+]
+]
+},
+"hamkaran-system": {
+"en": "Hamkaran System (System Group)",
+"fa": "همکاران سیستم",
+"cand": [
+[
+"en",
+"System Group"
+]
+]
+},
+"hamoon-furniture": {
+"en": "Hamoon Furniture",
+"fa": "هامون",
+"cand": []
+},
+"igap": {
+"en": "iGap",
+"fa": "آی‌گپ",
+"cand": [
+[
+"en",
+"IGap"
+],
+[
+"fa",
+"آیگپ"
+]
+]
+},
+"jaber": {
+"en": "Jaber Ebne Hayyan Pharmaceutical",
+"fa": "داروسازی جابر ابن حیان",
+"cand": [
+[
+"en",
+"Jaber Ebne Hayyan Pharmaceutical Company"
+],
+[
+"fa",
+"شرکت داروسازی جابر ابن حیان"
+]
+]
+},
+"kaveh-papyrus-paper": {
+"en": "Kaveh Papyrus Paper Co.",
+"fa": "کاغذ کاوه پاپیروس",
+"cand": []
+},
+"kavir-moghava-ardestan": {
+"en": "Kavir Moghava Ardestan",
+"fa": "کویر مقوای اردستان",
+"cand": []
+},
+"kerman-paper-cardboard": {
+"en": "Kerman Paper & Cardboard Industries",
+"fa": "صنایع کاغذ و مقوای کرمان",
+"cand": []
+},
+"latif-paper": {
+"en": "Latif Paper Co.",
+"fa": "کاغذ لطیف",
+"cand": []
+},
+"loghman": {
+"en": "Loghman Pharmaceutical & Hygienic",
+"fa": "دارویی و بهداشتی لقمان",
+"cand": [
+[
+"en",
+"Loghman Pharmaceuticals"
+],
+[
+"fa",
+"شرکت دارویی و بهداشتی لقمان"
+]
+]
+},
+"mazandaran-wood-and-paper": {
+"en": "Mazandaran Wood and Paper Industries",
+"fa": "صنایع چوب و کاغذ مازندران",
+"cand": []
+},
+"mobinnet": {
+"en": "Mobinnet",
+"fa": "مبین‌نت",
+"cand": [
+[
+"en",
+"Mobinnet"
+],
+[
+"fa",
+"ارتباطات مبین‌نت"
+]
+]
+},
+"namava": {
+"en": "Namava",
+"fa": "نماوا",
+"cand": [
+[
+"en",
+"Namava"
+],
+[
+"fa",
+"نماوا"
+]
+]
+},
+"neka-chub": {
+"en": "Neka Chub Company",
+"fa": "نکاچوب",
+"cand": []
+},
+"neshan": {
+"en": "Neshan",
+"fa": "نشان",
+"cand": [
+[
+"en",
+"Neshan (software)"
+],
+[
+"fa",
+"نشان (نرم‌افزار)"
+]
+]
+},
+"nilper": {
+"en": "Nilper",
+"fa": "نیلپر",
+"cand": []
+},
+"nosa": {
+"en": "Iran Software & Hardware Co. (NOSA)",
+"fa": "نرم‌افزار و سخت‌افزار ایران (نوسا)",
+"cand": [
+[
+"en",
+"Iran Software & Hardware Co. (NOSA)"
+]
+]
+},
+"novin-choob-industrial-group": {
+"en": "Novin Choob Industrial Group",
+"fa": "گروه صنعتی نوین چوب",
+"cand": []
+},
+"okala": {
+"en": "Okala",
+"fa": "اُکالا",
+"cand": [
+[
+"fa",
+"اکالا"
+]
+]
+},
+"paadiran": {
+"en": "Paadiran",
+"fa": "پادیران",
+"cand": []
+},
+"pactos": {
+"en": "Pactos",
+"fa": "پکتوس",
+"cand": [
+[
+"en",
+"Pactos"
+]
+]
+},
+"pakchoob-group": {
+"en": "Pakchoob Industrial Group",
+"fa": "گروه صنعتی پاک‌چوب",
+"cand": []
+},
+"pars-online": {
+"en": "ParsOnline",
+"fa": "پارس‌آنلاین",
+"cand": [
+[
+"en",
+"Pars Online"
+],
+[
+"fa",
+"پارس آنلاین"
+]
+]
+},
+"pars-paper": {
+"en": "Pars Paper Company",
+"fa": "صنایع کاغذ پارس",
+"cand": []
+},
+"parse-semiconductor": {
+"en": "Parsé Semiconductor",
+"fa": "نیمه‌هادی پارسه",
+"cand": [
+[
+"en",
+"Parsé Semiconductor Co."
+]
+]
+},
+"parsijoo": {
+"en": "Parsijoo",
+"fa": "پارسی‌جو",
+"cand": [
+[
+"en",
+"Parsijoo"
+],
+[
+"fa",
+"پارسی‌جو"
+]
+]
+},
+"ronak": {
+"en": "Ronak Pharma",
+"fa": "داروسازی روناک",
+"cand": [
+[
+"fa",
+"شرکت داروسازی روناک"
+]
+]
+},
+"royan": {
+"en": "Royan Institute",
+"fa": "پژوهشگاه رویان",
+"cand": [
+[
+"fa",
+"پژوهشگاه رویان"
+]
+]
+},
+"rubika": {
+"en": "Rubika",
+"fa": "روبیکا",
+"cand": [
+[
+"en",
+"Rubika"
+],
+[
+"fa",
+"روبیکا"
+]
+]
+},
+"sabaidea": {
+"en": "Saba Idea",
+"fa": "صباایده",
+"cand": [
+[
+"fa",
+"صباایده"
+]
+]
+},
+"saharkhiz-saffron": {
+"en": "Saharkhiz Saffron",
+"fa": "زعفران سحرخیز",
+"cand": []
+},
+"sheypoor": {
+"en": "Sheypoor",
+"fa": "شیپور",
+"cand": [
+[
+"en",
+"Sheypoor"
+],
+[
+"fa",
+"شیپور (وبگاه)"
+]
+]
+},
+"sina-robotics": {
+"en": "Sina Robotics and Medical Innovators",
+"fa": "نوآوران رباتیک و پزشکی سینا",
+"cand": [
+[
+"en",
+"Sina Robotic Surgical System"
+],
+[
+"fa",
+"سامانه جراحی سینا"
+]
+]
+},
+"snapp": {
+"en": "Snapp!",
+"fa": "اسنپ",
+"cand": [
+[
+"en",
+"Snapp!"
+],
+[
+"fa",
+"اسنپ"
+]
+]
+},
+"snowa": {
+"en": "Snowa",
+"fa": "اسنوا",
+"cand": [
+[
+"en",
+"Snowa"
+],
+[
+"fa",
+"اسنوا"
+]
+]
+},
+"sobhan": {
+"en": "Sobhan Darou Group",
+"fa": "گروه دارویی سبحان",
+"cand": [
+[
+"fa",
+"گروه دارویی سبحان"
+]
+]
+},
+"soroush-plus": {
+"en": "Soroush Plus",
+"fa": "سروش پلاس",
+"cand": [
+[
+"en",
+"Soroush Plus"
+],
+[
+"fa",
+"سروش پلاس"
+]
+]
+},
+"taaghche": {
+"en": "Taaghche",
+"fa": "طاقچه",
+"cand": [
+[
+"en",
+"Taaghche"
+],
+[
+"fa",
+"تاقچه"
+]
+]
+},
+"telewebion": {
+"en": "Telewebion",
+"fa": "تلوبیون",
+"cand": [
+[
+"en",
+"Telewebion"
+],
+[
+"fa",
+"تلوبیون"
+]
+]
+},
+"tipax": {
+"en": "Tipax",
+"fa": "تیپاکس",
+"cand": [
+[
+"fa",
+"تیپاکس"
+]
+]
+},
+"torob": {
+"en": "Torob",
+"fa": "ترب",
+"cand": [
+[
+"fa",
+"ترب (اپلیکیشن)"
+]
+]
+},
+"towlide-fibre-iran": {
+"en": "Towlide Fibre Iran Co.",
+"fa": "تولید فیبر ایران",
+"cand": []
+},
+"x-vision": {
+"en": "X.Vision",
+"fa": "ایکس.ویژن",
+"cand": [
+[
+"en",
+"X-Vision"
+],
+[
+"fa",
+"ایکس ویژن"
+]
+]
+},
+"zahravi": {
+"en": "Zahravi Pharmaceutical",
+"fa": "داروسازی زهراوی",
+"cand": [
+[
+"fa",
+"شرکت داروسازی زهراوی"
+]
+]
+},
+"zardband-pharmaceuticals": {
+"en": "Zardband Pharmaceuticals",
+"fa": "داروسازی زردبند",
+"cand": []
+},
+"zarinpal": {
+"en": "ZarinPal",
+"fa": "زرین‌پال",
+"cand": [
+[
+"fa",
+"زرین‌پال"
+]
+]
+}
+}
