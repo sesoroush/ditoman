@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>AI Takes a Big Step on a Millennium Prize Problem | هوش مصنوعی و مسئله‌ی یانگ–میلز | Ditoman</title>
+<meta name="description" content="گزارش ویژه دیتومان: اثبات هوش مصنوعی OpenAI برای وجود نظریه‌ی یانگ–میلز با تأیید گروه دیوید گراس؛ چه حل شده، چه باز مانده، Lean چیست و هفت مسئله‌ی جایزه‌ی هزاره. Ditoman special report on AI and the Yang-Mills problem." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:fixed;width:100%;min-width:0 !important}
+.tw td,.tw th{white-space:normal !important;word-break:normal;overflow-wrap:break-word;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261116c" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/ai-yang-mills.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/ai-yang-mills.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/ai-yang-mills.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/ai-yang-mills.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="AI Takes a Big Step on a Millennium Prize Problem | هوش مصنوعی و مسئله‌ی یانگ–میلز" />
+<meta property="og:description" content="گزارش ویژه دیتومان: اثبات هوش مصنوعی OpenAI برای وجود نظریه‌ی یانگ–میلز با تأیید گروه دیوید گراس؛ چه حل شده، چه باز مانده، Lean چیست و هفت مسئله‌ی جایزه‌ی هزاره. Ditoman special report on AI and the Yang-Mills problem." />
+<meta property="og:url" content="https://ditoman.com/ai-yang-mills.html" />
+<meta property="og:image" content="https://ditoman.com/social/ai-yang-mills/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/ai-yang-mills.html#article",
+   "mainEntityOfPage": "https://ditoman.com/ai-yang-mills.html",
+   "headline": "AI Takes a Big Step on a Millennium Prize Problem | هوش مصنوعی و مسئله‌ی یانگ–میلز",
+   "description": "گزارش ویژه دیتومان: اثبات هوش مصنوعی OpenAI برای وجود نظریه‌ی یانگ–میلز با تأیید گروه دیوید گراس؛ چه حل شده، چه باز مانده، Lean چیست و هفت مسئله‌ی جایزه‌ی هزاره. Ditoman special report on AI and the Yang-Mills problem.",
+   "image": "https://ditoman.com/social/ai-yang-mills/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   },
+   "datePublished": "2026-11-10"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "What Gen Z Asks AI About Money | نسل Z از هوش مصنوعی درباره‌ی پول چه می‌پرسد؟",
+     "item": "https://ditoman.com/ai-yang-mills.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/ai-yang-mills/card.webp" srcset="social/ai-yang-mills/card.webp 900w, social/ai-yang-mills/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Particle tracks in a bubble chamber (photo: NASA/JPL-Caltech)" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/ai-yang-mills/en-card.webp" srcset="social/ai-yang-mills/en-card.webp 900w, social/ai-yang-mills/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Particle tracks in a bubble chamber (photo: NASA/JPL-Caltech)" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · AI &amp; science</span><span lang="fa">گزارش ویژه · هوش مصنوعی و علم</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی یک گره‌ی ۷۰ ساله‌ی فیزیک را نیمه‌باز کرد</h1>
+<h1 lang="en">AI takes a big step on a Millennium Prize problem</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">پنج فیزیک‌دان برجسته به ریاست برنده‌ی نوبل، اثبات هوش مصنوعی OpenAI برای «وجود» نظریه‌ی یانگ–میلز را تأیید کردند؛ اما «شکاف جرمی» و جایزه‌ی یک میلیون دلاری هنوز باز است.</p>
+<p class="subtitle" lang="en">A Nobel-led panel backs an OpenAI proof that Yang-Mills theory exists; the mass gap and the $1 million prize remain open.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۱۹۵۴</b><b lang="en">1954</b><span lang="fa">تولد نظریه یانگ–میلز</span><span lang="en">Yang–Mills born</span></div>
+<div class="stat"><b lang="fa">۵</b><b lang="en">5</b><span lang="fa">فیزیک‌دان ارزیاب</span><span lang="en">physicist reviewers</span></div>
+<div class="stat"><b lang="fa">۱٬۱۴۷</b><b lang="en">1,147</b><span lang="fa">صفحه اثبات نوشتاری</span><span lang="en">pages of written proof</span></div>
+<div class="stat"><b lang="fa">۱ از ۷</b><b lang="en">1 of 7</b><span lang="fa">جایزه هزاره تاکنون حل شده</span><span lang="en">Millennium problems solved</span></div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<h3><span class="check-number">0.</span> در یک نگاه</h3>
+<p>یک مدل منتشرنشده‌ی هوش مصنوعی OpenAI، اثبات ریاضی بخشی از یکی از هفت <strong>مسئله‌ی جایزه‌ی هزاره</strong> را تولید کرده و گروهی پنج‌نفره از فیزیک‌دان‌های برجسته، به ریاست <strong>دیوید گراس</strong>، برنده‌ی نوبل فیزیک ۲۰۰۴، آن را تأیید کرده‌اند (<a href="https://dataconomy.com/2026/11/12/nobel-panel-validates-openais-yang-mills-existence-proof/" target="_blank" rel="noopener" style="color:#57D9C7">Dataconomy</a>).</p>
+<p>اما تیتر «هوش مصنوعی مسئله‌ی یک میلیون دلاری را حل کرد» دقیق نیست: <strong>نیمه‌ی دوم مسئله، یعنی «شکاف جرمی»، هنوز باز است.</strong></p>
+<div class="tw"><table><tr><th>شاخص</th><th>توضیح</th></tr><tr><td>مسئله</td><td>وجود نظریه‌ی یانگ–میلز و شکاف جرمی</td></tr><tr><td>عمر مسئله</td><td>نظریه از ۱۹۵۴؛ جزو جایزه‌های هزاره از ۲۰۰۰</td></tr><tr><td>جایزه</td><td>۱ میلیون دلار، مؤسسه‌ی ریاضی کلی</td></tr><tr><td>آنچه تأیید شد</td><td>«وجود» نسخه‌ی کوانتومی نظریه</td></tr><tr><td>آنچه باز است</td><td>شکاف جرمی و یکتایی حد حجم بی‌نهایت</td></tr><tr><td>اثبات نوشتاری</td><td>۱٬۱۴۷ صفحه؛ هنوز منتشر نشده</td></tr><tr><td>ابزار بررسی</td><td>زبان اثبات ریاضی Lean</td></tr></table></div>
+<h3><span class="check-number">1.</span> دقیقاً چه اتفاقی افتاد؟</h3>
+<div class="tw"><table><tr><th>تاریخ</th><th>رویداد</th></tr><tr><td>۹ سپتامبر ۲۰۲۶</td><td>مدل‌های OpenAI اثبات نوشتاری «وجود» نظریه‌ی یانگ–میلز را تولید کردند</td></tr><tr><td>۱۸ سپتامبر</td><td>اثبات مشابه برای کرومودینامیک کوانتومی، نظریه‌ی نیروی قوی</td></tr><tr><td>۱۶ اکتبر</td><td>اثبات به زبان Lean ترجمه و تکمیل شد؛ OpenAI از دیوید گراس خواست مسئولیت بررسی و انتشار آن را بپذیرد</td></tr><tr><td>۲۶ اکتبر</td><td>OpenAI دستاورد را عمومی اعلام کرد</td></tr><tr><td>۲۸ اکتبر</td><td>کد Lean تحویل گروه ارزیابی شد</td></tr><tr><td>۱۰ نوامبر</td><td>گروه ارزیابی نتیجه را اعلام کرد و کد و گزارش را روی <a href="https://github.com/yang-mills-group/YM" target="_blank" rel="noopener" style="color:#57D9C7">GitHub</a> منتشر کرد</td></tr><tr><td>۱۱ و ۱۲ نوامبر</td><td>ساینتیفیک امریکن و اکونومیست اهمیت و محدودیت‌های آن را بررسی کردند</td></tr></table></div>
+<p><strong>اعضای گروه ارزیابی:</strong> دیوید گراس (رئیس، نوبل ۲۰۰۴)، مایکل داگلاس، آرتور جفی، ایگور کلبانوف و نیکیتا نکراسوف؛ از چهره‌های اصلی فیزیک نظری جهان.</p>
+<h3><span class="check-number">2.</span> یانگ–میلز به زبان ساده</h3>
+<ul>
+<li><strong>سؤال پایه:</strong> ماده از اتم ساخته شده، هسته‌ی اتم از پروتون و نوترون، و این‌ها از <strong>کوارک</strong>. اما چه چیزی کوارک‌ها را کنار هم نگه می‌دارد؟</li>
+</ul>
+<ul>
+<li><strong>پاسخ:</strong> <strong>نیروی هسته‌ای قوی</strong>؛ قوی‌ترین نیروی طبیعت. نظریه‌ای که چن‌نینگ یانگ و رابرت میلز در <strong>۱۹۵۴</strong> نوشتند، زبان ریاضی این نیرو و بیشتر نیروهای بنیادی طبیعت است</li>
+</ul>
+<ul>
+<li><strong>پس مشکل چیست؟</strong></li>
+</ul>
+<p>این نظریه در آزمایشگاه‌ها، از جمله سرن، با دقت شگفت‌انگیزی کار می‌کند. اما هیچ‌کس نتوانسته بود ثابت کند که نسخه‌ی کوانتومی چهاربعدی آن، <strong>از نظر ریاضی واقعاً وجود دارد</strong> و تناقض ندارد. مثل ساختمانی که سال‌هاست سرپاست، اما نقشه‌ی محاسباتی‌اش هرگز کامل نوشته نشده</p>
+<ul>
+<li><strong>شکاف جرمی چیست؟</strong></li>
+</ul>
+<p>باید ثابت شود که کوچک‌ترین «بسته‌ی انرژی» در این نظریه، صفر نیست. همین ویژگی توضیح می‌دهد چرا نیروی قوی فقط در فاصله‌های بسیار کوتاه، درون هسته، عمل می‌کند</p>
+<h3><span class="check-number">3.</span> هفت مسئله‌ی جایزه‌ی هزاره</h3>
+<p>در سال ۲۰۰۰، مؤسسه‌ی ریاضی کلی برای هفت مسئله‌ی بزرگ ریاضی، هر کدام <strong>یک میلیون دلار</strong> جایزه گذاشت. در ۲۶ سال، فقط <strong>یکی</strong> حل شده است:</p>
+<div class="tw"><table><tr><th>مسئله</th><th>وضعیت</th></tr><tr><td>حدس پوانکاره</td><td>حل شد؛ گریگوری پرلمان، ۲۰۰۳. پرلمان جایزه را نپذیرفت</td></tr><tr><td>یانگ–میلز و شکاف جرمی</td><td>«وجود» با کمک هوش مصنوعی تأیید شد؛ شکاف جرمی باز است</td></tr><tr><td>P در برابر NP</td><td>باز</td></tr><tr><td>فرضیه‌ی ریمان</td><td>باز</td></tr><tr><td>معادلات ناویه–استوکس</td><td>باز</td></tr><tr><td>حدس هاج</td><td>باز</td></tr><tr><td>حدس بیرچ و سوینرتون-دایر</td><td>باز</td></tr></table></div>
+<h3><span class="check-number">4.</span> Lean؛ داوری که خطا نمی‌کند</h3>
+<ul>
+<li><strong>Lean چیست؟</strong></li>
+</ul>
+<p>یک زبان برنامه‌نویسی برای اثبات ریاضی. هر قدم استدلال، به دستوری دقیق تبدیل می‌شود و رایانه بررسی می‌کند که هر قدم واقعاً از قدم قبلی نتیجه می‌شود</p>
+<ul>
+<li><strong>چرا مهم است؟</strong></li>
+</ul>
+<p>اثبات‌های هزار صفحه‌ای را هیچ انسانی نمی‌تواند خط به خط با اطمینان کامل بخواند. Lean این کار را بی‌خستگی و بی‌خطا انجام می‌دهد</p>
+<ul>
+<li><strong>یک محدودیت مهم:</strong> Lean فقط تأیید می‌کند که نتیجه از <strong>فرض‌های نوشته‌شده</strong> درمی‌آید؛ نه اینکه آن فرض‌ها همان مسئله‌ی واقعی فیزیک‌دان‌ها هستند. برای همین گروه ارزیابی تعریف‌ها را با صورت‌بندی استاندارد مسئله هم مقایسه کرد</li>
+</ul>
+<ul>
+<li><strong>صداقت ارزیاب‌ها:</strong> گروه گفته هنوز ادعای درک کامل همه‌ی جزئیات اثبات را ندارد و به نسخه‌ی ۱٬۱۴۷ صفحه‌ای نوشتاری OpenAI هم تکیه نکرده است</li>
+</ul>
+<h3><span class="check-number">5.</span> سهم انسان و ماشین</h3>
+<ul>
+<li><strong>پایه‌های انسانی:</strong> روش‌های ریاضی <strong>تادئوش بالابان</strong> در دهه‌ی ۱۹۸۰ و دهه‌ها کار نظریه‌ی میدان کوانتومی، زمین این دستاورد را ساخته بودند</li>
+</ul>
+<ul>
+<li><strong>سهم هوش مصنوعی:</strong> تولید اثبات تازه و ترجمه‌ی آن به Lean</li>
+</ul>
+<ul>
+<li><strong>سهم ارزیاب‌ها:</strong> بازسازی کد، بررسی فرض‌ها و مشخص کردن مرز دقیق آنچه اثبات شده و نشده</li>
+</ul>
+<p>این یک همکاری سه‌لایه است، نه جایگزینی دانشمند با ماشین.</p>
+<h3><span class="check-number">6.</span> معنایش برای آینده</h3>
+<div class="tw"><table><tr><th>حوزه</th><th>اثر احتمالی</th></tr><tr><td>فیزیک بنیادی</td><td>محکم‌تر شدن پایه‌ی ریاضی نظریه‌ای که در آزمایش موفق بوده</td></tr><tr><td>ریاضیات</td><td>امکان بررسی اثبات‌های بسیار طولانی با کمک نرم‌افزار</td></tr><tr><td>هوش مصنوعی</td><td>نشانه‌ی تازه‌ای از توان مدل‌ها در تولید پژوهش اصیل، نه فقط خلاصه‌سازی</td></tr><tr><td>دانشگاه‌ها</td><td>شکل تازه‌ی همکاری پژوهشگر، مدل هوش مصنوعی و ابزار اثبات</td></tr><tr><td>اقتصاد</td><td>اثر تجاری مستقیم فعلاً نامعلوم؛ افزایش بهره‌وری پژوهش در بلندمدت ممکن است</td></tr></table></div>
+<p>اکونومیست می‌گوید این دستاورد احتمالاً <strong>روش کار روزمره‌ی فیزیک‌دان‌ها را در کوتاه‌مدت عوض نمی‌کند</strong> (<a href="https://www.livemint.com/global/ai-has-proved-that-a-theory-underpinning-fundamental-physics-is-trustworthy-11794487029331.html" target="_blank" rel="noopener" style="color:#57D9C7">Mint، بازنشر اکونومیست</a>). این خبر یعنی تراشه‌ی تازه یا نیروی تازه کشف نشده؛ یعنی <strong>شیوه‌ی تازه‌ای از کشف</strong> در حال شکل گرفتن است.</p>
+<h3><span class="check-number">7.</span> چه چیزهایی را دنبال کنیم؟</h3>
+<ul>
+<li>آیا ریاضی‌دان‌های مستقل در ماه‌های آینده اثبات را تأیید می‌کنند؟</li>
+</ul>
+<ul>
+<li>آیا OpenAI یا رقبایش به سراغ شکاف جرمی می‌روند؟</li>
+</ul>
+<ul>
+<li>واکنش مؤسسه‌ی ریاضی کلی؛ گروه ارزیابی گفته فعلاً ارتباطی با این مؤسسه ندارد</li>
+</ul>
+<ul>
+<li>انتشار نسخه‌ی کامل ۱٬۱۴۷ صفحه‌ای اثبات</li>
+</ul>
+<h3><span class="check-number">8.</span> نگاه دیتومان</h3>
+<p>هوش مصنوعی هنوز «مسئله‌ی یک میلیون دلاری» را حل نکرده؛ اما چیزی شاید مهم‌تر نشان داده است: <strong>ماشین اثبات می‌نویسد، نرم‌افزار منطقش را می‌سنجد و انسان معنایش را داوری می‌کند.</strong></p>
+<blockquote>اگر این روش در مسائل دیگر هم جواب بدهد، سرعت علم بنیادی می‌تواند چند برابر شود؛ بدون آنکه نیاز به داوری انسان از بین برود.</blockquote>
+<h3>بیشتر بخوانید</h3><ul><li><a href="ai-infrastructure.html">انویدیای بعدی کدام است؟</a></li><li><a href="geothermal-energy.html">گوگل به سراغ برق از اعماق زمین رفت</a></li><li><a href="prices.html">قیمت لحظه‌ای تتر، بیت‌کوین و طلا</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://dataconomy.com/2026/11/12/nobel-panel-validates-openais-yang-mills-existence-proof/" target="_blank" rel="noopener">Dataconomy: Nobel panel validates OpenAI’s Yang-Mills existence proof (12 Nov 2026)</a></li><li><a href="https://github.com/yang-mills-group/YM" target="_blank" rel="noopener">Yang-Mills working group: Lean code and assessment (GitHub)</a></li><li><a href="https://alexisdpc.github.io/yang-mills/references/assessment-1-2026-11-10.pdf" target="_blank" rel="noopener">Assessment report, 10 Nov 2026</a></li><li><a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank" rel="noopener">OpenAI: Building scientific understanding with academic communities</a></li><li><a href="https://tech.yahoo.com/science/articles/openai-shepherds-affirm-blockbuster-physics-123000155.html" target="_blank" rel="noopener">Scientific American (via Yahoo): OpenAI shepherds affirm blockbuster physics result</a></li><li><a href="https://www.livemint.com/global/ai-has-proved-that-a-theory-underpinning-fundamental-physics-is-trustworthy-11794487029331.html" target="_blank" rel="noopener">The Economist (via Mint): AI has proved that a theory underpinning fundamental physics is trustworthy</a></li><li><a href="https://startupfortune.com/nobel-laureate-david-grosss-committee-backs-openais-yang-mills-existence-proof/" target="_blank" rel="noopener">Startup Fortune: Gross committee backs OpenAI’s Yang-Mills existence proof</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۲۶ آبان ۱۴۰۵. اثبات هنوز در حال بررسی جامعه‌ی علمی است و ممکن است ارزیابی‌ها تغییر کند. تصویر کاور: NASA/JPL-Caltech.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<h3><span class="check-number">0.</span> At a glance</h3>
+<p>An unreleased OpenAI model produced a proof of part of one of the seven <strong>Millennium Prize problems</strong>, and a five-member panel of leading physicists chaired by Nobel laureate <strong>David Gross</strong> has endorsed it (<a href="https://dataconomy.com/2026/11/12/nobel-panel-validates-openais-yang-mills-existence-proof/" target="_blank" rel="noopener" style="color:#57D9C7">Dataconomy</a>). But "AI solves the $1 million problem" is not accurate: <strong>the mass gap, the second half of the problem, remains open.</strong></p>
+<div class="tw"><table><tr><th>Item</th><th>Detail</th></tr><tr><td>Problem</td><td>Yang–Mills existence and mass gap</td></tr><tr><td>Age</td><td>Theory from 1954; Millennium problem since 2000</td></tr><tr><td>Prize</td><td>$1 million, Clay Mathematics Institute</td></tr><tr><td>Verified</td><td>Existence of the quantum theory</td></tr><tr><td>Open</td><td>Mass gap; uniqueness of the infinite-volume limit</td></tr><tr><td>Written proof</td><td>1,147 pages, unreleased</td></tr><tr><td>Checker</td><td>The Lean proof language</td></tr></table></div>
+<h3><span class="check-number">1.</span> Timeline</h3>
+<p>9 Sept 2026: OpenAI's models produce a written existence proof. 18 Sept: a proof covering quantum chromodynamics. 16 Oct: Lean formalisation completed; OpenAI asks Gross to take custody. 26 Oct: public announcement. 28 Oct: Lean code submitted. 10 Nov: the working group reports and publishes code and assessment on <a href="https://github.com/yang-mills-group/YM" target="_blank" rel="noopener" style="color:#57D9C7">GitHub</a>. Panel: David Gross (chair), Michael Douglas, Arthur Jaffe, Igor Klebanov and Nikita Nekrasov.</p>
+<h3><span class="check-number">2.</span> Yang–Mills, simply</h3>
+<p>Quarks inside protons and neutrons are held together by the strong force. Chen-Ning Yang and Robert Mills's 1954 theory is the mathematical language for it and most fundamental forces. It works superbly in experiments, but nobody had proved that its four-dimensional quantum version exists mathematically. The mass gap asks for proof that the smallest energy packet is not zero, which explains why the strong force acts only at tiny distances.</p>
+<h3><span class="check-number">3.</span> The seven Millennium problems</h3>
+<p>Set by the Clay Institute in 2000 at $1 million each. Only the Poincaré conjecture is solved (Grigori Perelman, 2003, who declined the prize). Yang–Mills: existence now verified with AI help, mass gap open. P vs NP, the Riemann hypothesis, Navier–Stokes, the Hodge conjecture and Birch and Swinnerton-Dyer remain open.</p>
+<h3><span class="check-number">4.</span> Lean, the tireless referee</h3>
+<p>Lean turns each step of a proof into precise instructions a computer checks. It confirms conclusions follow from the stated assumptions, not that those assumptions are the physicists' real problem, so the panel also compared the definitions with standard formulations. Members say they do not yet claim to understand every detail.</p>
+<h3><span class="check-number">5.</span> Humans and machines</h3>
+<p>Tadeusz Balaban's methods from the 1980s laid the groundwork; the AI produced the new proof and its Lean version; the reviewers rebuilt the code, audited the assumptions and drew the line between what is and is not proved.</p>
+<h3><span class="check-number">6.</span> What it means</h3>
+<p>Stronger mathematical foundations for physics; software-checked long proofs; new evidence of AI producing original research; new forms of academic collaboration; no clear commercial impact yet. The Economist expects little short-term change to how physicists work (<a href="https://www.livemint.com/global/ai-has-proved-that-a-theory-underpinning-fundamental-physics-is-trustworthy-11794487029331.html" target="_blank" rel="noopener" style="color:#57D9C7">Mint</a>).</p>
+<h3><span class="check-number">7.</span> Ditoman's reading</h3>
+<p>AI has not yet solved the $1 million problem, but it has shown something perhaps bigger: <strong>the machine writes the proof, software checks its logic and humans judge its meaning.</strong> If that works on other problems, fundamental science could speed up without losing human judgement.</p>
+<h3>Read more</h3><ul><li><a href="ai-infrastructure.html">Who is the next Nvidia?</a></li><li><a href="geothermal-energy.html">Google bets on deep Earth energy</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://dataconomy.com/2026/11/12/nobel-panel-validates-openais-yang-mills-existence-proof/" target="_blank" rel="noopener">Dataconomy: Nobel panel validates OpenAI’s Yang-Mills existence proof (12 Nov 2026)</a></li><li><a href="https://github.com/yang-mills-group/YM" target="_blank" rel="noopener">Yang-Mills working group: Lean code and assessment (GitHub)</a></li><li><a href="https://alexisdpc.github.io/yang-mills/references/assessment-1-2026-11-10.pdf" target="_blank" rel="noopener">Assessment report, 10 Nov 2026</a></li><li><a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank" rel="noopener">OpenAI: Building scientific understanding with academic communities</a></li><li><a href="https://tech.yahoo.com/science/articles/openai-shepherds-affirm-blockbuster-physics-123000155.html" target="_blank" rel="noopener">Scientific American (via Yahoo): OpenAI shepherds affirm blockbuster physics result</a></li><li><a href="https://www.livemint.com/global/ai-has-proved-that-a-theory-underpinning-fundamental-physics-is-trustworthy-11794487029331.html" target="_blank" rel="noopener">The Economist (via Mint): AI has proved that a theory underpinning fundamental physics is trustworthy</a></li><li><a href="https://startupfortune.com/nobel-laureate-david-grosss-committee-backs-openais-yang-mills-existence-proof/" target="_blank" rel="noopener">Startup Fortune: Gross committee backs OpenAI’s Yang-Mills existence proof</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 17 November 2026. The proof is still under scientific review. Cover photo: NASA/JPL-Caltech.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261116d" defer></script>
+<script src="search.js?v=20261116c" defer></script>
+</body>
+</html>
