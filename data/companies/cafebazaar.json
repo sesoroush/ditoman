@@ -16,7 +16,7 @@
   "fa": "کافه‌بازار",
   "en": "Cafe Bazaar"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "فروشگاه برنامه‌ی اندروید برای فارسی‌زبانان؛ بیش از ۵۰۰ هزار برنامه",
   "en": "Android app store for Persian speakers; 500,000+ apps"
@@ -100,5 +100,11 @@
    "title_en": "Wikipedia: Cafe Bazaar",
    "url": "https://en.wikipedia.org/wiki/Cafe_Bazaar"
   }
- ]
+ ],
+ "logo_fa_only": true,
+ "logo_credit": {
+  "fa": "لوگو: منبع عمومی (PD)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: public source (PD); a trademark of its owner.",
+  "url": "https://en.wikipedia.org/wiki/File:Cafe_Bazaar_logo.svg"
+ }
 }

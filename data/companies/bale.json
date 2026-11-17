@@ -16,7 +16,7 @@
   "fa": "بله",
   "en": "Bale"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "پیام‌رسان و پرداخت؛ ساخته‌ی بانک ملی؛ بیش از ۶۰ میلیون کاربر",
   "en": "Messenger and payments built by Bank Melli; 60 million+ users"
@@ -100,5 +100,11 @@
    "title_en": "Wikipedia: Bale Messenger",
    "url": "https://en.wikipedia.org/wiki/Bale_Messenger"
   }
- ]
+ ],
+ "logo_fa_only": false,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (CC BY-SA 4.0)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (CC BY-SA 4.0); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Cropped-bale-logo-flat-270x270.png"
+ }
 }

@@ -16,7 +16,7 @@
   "fa": "آپارات",
   "en": "Aparat"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "پربازدیدترین سکوی ویدیوی ایران؛ ۶۰ میلیون کاربر ماهانه",
   "en": "Iran's most-visited video platform; 60 million monthly users"
@@ -100,5 +100,11 @@
    "title_en": "Wikipedia: Aparat",
    "url": "https://en.wikipedia.org/wiki/Aparat"
   }
- ]
+ ],
+ "logo_fa_only": false,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (CC BY-SA 4.0)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (CC BY-SA 4.0); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Aparat_English_Square.png"
+ }
 }

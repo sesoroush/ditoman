@@ -16,7 +16,7 @@
   "fa": "پژوهشگاه رویان",
   "en": "Royan Institute"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "پژوهش پزشکی تولیدمثل و زیست‌فناوری؛ وابسته به جهاد دانشگاهی",
   "en": "Reproductive-medicine and biotechnology research; part of ACECR"
@@ -87,5 +87,11 @@
    "title_en": "Wikipedia (Persian edition): Royan Institute",
    "url": "https://fa.wikipedia.org/wiki/%D9%BE%DA%98%D9%88%D9%87%D8%B4%DA%AF%D8%A7%D9%87_%D8%B1%D9%88%DB%8C%D8%A7%D9%86"
   }
- ]
+ ],
+ "logo_fa_only": false,
+ "logo_credit": {
+  "fa": "لوگو: منبع عمومی (website image, trademark of its owner)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: public source (website image, trademark of its owner); a trademark of its owner.",
+  "url": "http://www.royan.org/"
+ }
 }

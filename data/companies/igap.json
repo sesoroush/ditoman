@@ -16,7 +16,7 @@
   "fa": "آی‌گپ",
   "en": "iGap"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "پیام‌رسان متن‌باز با رمزنگاری سرتاسری؛ بیش از ۲۰ میلیون کاربر",
   "en": "Open-source messenger with end-to-end encryption; 20 million+ users"
@@ -100,5 +100,11 @@
    "title_en": "Wikipedia: IGap",
    "url": "https://en.wikipedia.org/wiki/IGap"
   }
- ]
+ ],
+ "logo_fa_only": false,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (CC BY-SA 4.0)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (CC BY-SA 4.0); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Igap.png"
+ }
 }

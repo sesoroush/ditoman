@@ -16,7 +16,7 @@
   "fa": "اسنپ",
   "en": "Snapp!"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "درخواست خودرو؛ قیمت از پیش مشخص؛ آغاز فوریه‌ی ۲۰۱۴",
   "en": "Ride hailing with fixed prices; launched February 2014"
@@ -100,5 +100,11 @@
    "title_en": "Wikipedia: Snapp!",
    "url": "https://en.wikipedia.org/wiki/Snapp!"
   }
- ]
+ ],
+ "logo_fa_only": false,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (Public domain)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (Public domain); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Snapp_logo.png"
+ }
 }

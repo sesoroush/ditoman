@@ -16,7 +16,7 @@
   "fa": "نرم‌افزار و سخت‌افزار ایران (نوسا)",
   "en": "Iran Software & Hardware Co. (NOSA)"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "نرم‌افزار سازمانی (ERP، BPMS، RFID، کتابخانه) از ۱۹۸۸",
   "en": "Enterprise software (ERP, BPMS, RFID, library) since 1988"
@@ -87,5 +87,11 @@
    "title_en": "Wikipedia: Iran Software & Hardware Co. (NOSA)",
    "url": "https://en.wikipedia.org/wiki/Iran_Software_%26_Hardware_Co._(NOSA)"
   }
- ]
+ ],
+ "logo_fa_only": true,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (CC BY-SA 4.0)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (CC BY-SA 4.0); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:NOSA_logo_SocialMedia_500pxE.png"
+ }
 }

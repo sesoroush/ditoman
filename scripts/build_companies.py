@@ -59,7 +59,7 @@ body[data-lang="fa"] .i-en, body[data-lang="en"] .i-fa { display: none !importan
 
 .k-id { display: flex; align-items: center; gap: 20px; margin-top: 26px; }
 .k-logo { flex: none; width: 92px; height: 92px; border-radius: 22px; background: #eef6f2; overflow: hidden; }
-.k-logo img { width: 100%; height: 100%; object-fit: contain; }
+.k-logo img { width: 100%; height: 100%; object-fit: contain; padding: 8px; box-sizing: border-box; }
 .k-id h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); line-height: 1; letter-spacing: -0.03em; font-weight: 800; }
 body[data-lang="fa"] .k-id h1 { font-family: var(--fa-display); font-weight: 400; letter-spacing: 0; }
 .k-tagline { font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--text); max-width: 34em; margin: 14px 0 26px; line-height: 1.6; font-weight: 500; }
@@ -342,8 +342,13 @@ def company_page(c):
         <p>{t(ex["europe"])}{refs(ex["europe_src"])}</p>
       </div>
     </section>'''
-    logo = (f'<div class="k-logo"><img src="companies/{e(slug)}/{e(c["logo"])}" alt="{e(c["name"]["en"])} logo" /></div>'
+    lc = c.get("logo_credit")
+    logo = (f'<div class="k-logo{" i-fa" if c.get("logo_fa_only") else ""}"><img src="companies/{e(slug)}/{e(c["logo"])}" alt="{e(c["name"]["en"])} logo" loading="lazy" /></div>'
             if c.get("logo") else "")
+    credit_html = ""
+    if lc:
+        link = f' <a href="{e(lc["url"])}" target="_blank" rel="noopener noreferrer">↗</a>' if lc.get("url") else ""
+        credit_html = f'<span class="{"i-fa" if c.get("logo_fa_only") else ""}">{t(lc)}{link}</span><br />'
     body = f"""  <main class="k-main wrap">
     <div class="k-bar">
       <a href="companies.html">{t(UI["section"])}</a>
@@ -384,7 +389,7 @@ def company_page(c):
     <section class="k-sec">
       <h2>{t(UI["sources"])}</h2>
       <ul class="k-sources">{sources}</ul>
-      <p class="k-disclose">{t(c["disclosure"])}<br />{t(UI["checked"])} {t(c["last_checked"])}</p>
+      <p class="k-disclose">{t(c["disclosure"])}<br />{credit_html}{t(UI["checked"])} {t(c["last_checked"])}</p>
     </section>
   </main>"""
     title = f'{c["name"]["en"]} ({c["name"]["fa"]}) | Iranian Companies | Ditoman'

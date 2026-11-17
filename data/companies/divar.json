@@ -16,7 +16,7 @@
   "fa": "دیوار",
   "en": "Divar"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "نیازمندی‌ها و تجارت الکترونیک؛ از ۲۰۱۲",
   "en": "Classified ads and e-commerce; since 2012"
@@ -87,5 +87,11 @@
    "title_en": "Wikipedia: Divar (website)",
    "url": "https://en.wikipedia.org/wiki/Divar_(website)"
   }
- ]
+ ],
+ "logo_fa_only": true,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (Public domain)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (Public domain); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Divar_Logo(1).svg"
+ }
 }

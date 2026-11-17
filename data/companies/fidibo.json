@@ -16,7 +16,7 @@
   "fa": "فیدیبو",
   "en": "Fidibo"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "فروشگاه قانونی کتاب الکترونیک فارسی",
   "en": "Legal Persian e-book store"
@@ -87,5 +87,11 @@
    "title_en": "Wikipedia (Persian edition): Fidibo",
    "url": "https://fa.wikipedia.org/wiki/%D9%81%DB%8C%D8%AF%DB%8C%D8%A8%D9%88"
   }
- ]
+ ],
+ "logo_fa_only": true,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (CC BY-SA 4.0)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (CC BY-SA 4.0); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Logo_typography_light.svg"
+ }
 }

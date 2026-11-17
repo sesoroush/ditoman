@@ -16,7 +16,7 @@
   "fa": "دیجی‌کالا",
   "en": "Digikala"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "بزرگ‌ترین فروشگاه اینترنتی ایران؛ از ۲۰۰۶",
   "en": "Iranian e-commerce; since 2006"
@@ -87,5 +87,11 @@
    "title_en": "Wikipedia: Digikala",
    "url": "https://en.wikipedia.org/wiki/Digikala"
   }
- ]
+ ],
+ "logo_fa_only": false,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (Public domain)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (Public domain); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Digikala-logo.png"
+ }
 }

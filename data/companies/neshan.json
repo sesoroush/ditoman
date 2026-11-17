@@ -16,7 +16,7 @@
   "fa": "نشان",
   "en": "Neshan"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "نقشه و مسیریاب موبایل؛ بیش از ۴ میلیون کاربر فعال روزانه",
   "en": "Mobile map and navigation; 4 million+ daily users"
@@ -100,5 +100,11 @@
    "title_en": "Wikipedia: Neshan (software)",
    "url": "https://en.wikipedia.org/wiki/Neshan_(software)"
   }
- ]
+ ],
+ "logo_fa_only": true,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (CC BY-SA 4.0)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (CC BY-SA 4.0); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Neshan-App-Logo.jpg"
+ }
 }

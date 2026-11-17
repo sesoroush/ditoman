@@ -16,7 +16,7 @@
   "fa": "صباایده",
   "en": "Saba Idea"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "شرکت پشت آپارات و فیلیمو",
   "en": "The company behind Aparat and Filimo"
@@ -100,5 +100,11 @@
    "title_en": "Wikipedia (Persian edition): Saba Idea",
    "url": "https://fa.wikipedia.org/wiki/%D8%B5%D8%A8%D8%A7%D8%A7%DB%8C%D8%AF%D9%87"
   }
- ]
+ ],
+ "logo_fa_only": false,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (Public domain)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (Public domain); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:SabaIdea_Logo_-_English_LogoType_-_Black.png"
+ }
 }

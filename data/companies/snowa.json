@@ -16,7 +16,7 @@
   "fa": "اسنوا",
   "en": "Snowa"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "لوازم خانگی؛ اصفهان؛ از گروه صنعتی انتخاب",
   "en": "Home appliances; Isfahan; Entekhab Industrial Group"
@@ -100,5 +100,11 @@
    "title_en": "Wikipedia: Snowa",
    "url": "https://en.wikipedia.org/wiki/Snowa"
   }
- ]
+ ],
+ "logo_fa_only": false,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (CC BY-SA 4.0)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (CC BY-SA 4.0); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:Snowa.jpg"
+ }
 }

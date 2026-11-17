@@ -16,7 +16,7 @@
   "fa": "مبین‌نت",
   "en": "Mobinnet"
  },
- "logo": null,
+ "logo": "logo.webp",
  "tagline": {
   "fa": "اینترنت پهن‌باند بی‌سیم LTE",
   "en": "Wireless broadband internet on LTE"
@@ -87,5 +87,11 @@
    "title_en": "Wikipedia: Mobinnet",
    "url": "https://en.wikipedia.org/wiki/Mobinnet"
   }
- ]
+ ],
+ "logo_fa_only": true,
+ "logo_credit": {
+  "fa": "لوگو: ویکی‌مدیا کامنز (CC0)؛ نشان تجاری صاحب آن است.",
+  "en": "Logo: Wikimedia Commons (CC0); a trademark of its owner.",
+  "url": "https://commons.wikimedia.org/wiki/File:%D9%86%D8%B4%D8%A7%D9%86%E2%80%8C%D9%88%D8%A7%D8%B1%D9%87%E2%80%8C%D9%85%D8%A8%DB%8C%D9%86%E2%80%8C%D9%86%D8%AA.png"
+ }
 }
