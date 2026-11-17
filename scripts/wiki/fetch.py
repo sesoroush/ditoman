@@ -52,4 +52,17 @@ if tf.exists():
             for pg in pages.values():
                 out[slug][lang] = {"title": pg.get("title"), "url": pg.get("fullurl"), "extract": (pg.get("extract") or "")[:2500], "missing": "missing" in pg}
     (OUT / "extracts.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+
+# Phase 3: full-text searches for knowledge-based / innovative companies
+SEARCH = {"fa": ["شرکت دانش‌بنیان", "شرکت دانش‌بنیان ایرانی تأسیس", "شرکت فناور ایرانی نوآوری", "استارتاپ ایرانی", "شرکت زیست‌فناوری ایرانی", "شرکت نانوفناوری ایرانی",
+                 "شرکت تولیدکننده تجهیزات پزشکی ایرانی", "شرکت نرم‌افزاری ایرانی", "شرکت هوش مصنوعی ایرانی", "پارک فناوری پردیس شرکت", "شرکت رباتیک ایرانی", "شرکت پهپاد غیرنظامی ایرانی"],
+          "en": ["knowledge-based company Iran", "Iranian technology startup", "Iranian biotechnology company", "Iranian nanotechnology company", "Iranian medical device manufacturer",
+                 "Iranian software company", "Iranian artificial intelligence company", "Pardis Technology Park company", "Iranian electric vehicle company", "Iranian fintech company"]}
+sr = {}
+for lang, qs in SEARCH.items():
+    for q in qs:
+        d = api(lang, action="query", list="search", srsearch=q, srlimit="60", srprop="snippet")
+        sr[f"{lang}:{q}"] = [{"t": x["title"], "s": x["snippet"][:200]} for x in d.get("query", {}).get("search", [])] if "query" in d else d
+(OUT / "search.json").write_text(json.dumps(sr, ensure_ascii=False, indent=1), encoding="utf-8")
+
 print({k: (len(v) if isinstance(v, list) else v) for k, v in res.items()})
