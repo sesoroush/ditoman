@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Who Is the Next Nvidia? Memory, Networking and Custom Chips | انویدیای بعدی کدام است؟ | Ditoman</title>
+<meta name="description" content="گزارش ویژه دیتومان: مایکرون، اس‌کی هاینیکس، AMD، آریستا و مارول؛ ارقام رسمی، تاریخچه، مالکیت، نماد بورس و ارزش بازار به دلار و تومان، کناره‌گیری جنسن هوانگ، مهندسی مالی و سناریوها تا ۲۰۳۰. Ditoman special report on AI infrastructure." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:fixed;width:100%;min-width:0 !important}
+.tw td,.tw th{white-space:normal !important;word-break:normal;overflow-wrap:break-word;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261116c" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/ai-infrastructure.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/ai-infrastructure.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/ai-infrastructure.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/ai-infrastructure.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Who Is the Next Nvidia? Memory, Networking and Custom Chips | انویدیای بعدی کدام است؟" />
+<meta property="og:description" content="گزارش ویژه دیتومان: مایکرون، اس‌کی هاینیکس، AMD، آریستا و مارول؛ ارقام رسمی، تاریخچه، مالکیت، نماد بورس و ارزش بازار به دلار و تومان، کناره‌گیری جنسن هوانگ، مهندسی مالی و سناریوها تا ۲۰۳۰. Ditoman special report on AI infrastructure." />
+<meta property="og:url" content="https://ditoman.com/ai-infrastructure.html" />
+<meta property="og:image" content="https://ditoman.com/social/ai-infrastructure/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/ai-infrastructure.html#article",
+   "mainEntityOfPage": "https://ditoman.com/ai-infrastructure.html",
+   "headline": "Who Is the Next Nvidia? Memory, Networking and Custom Chips | انویدیای بعدی کدام است؟",
+   "description": "گزارش ویژه دیتومان: مایکرون، اس‌کی هاینیکس، AMD، آریستا و مارول؛ ارقام رسمی، تاریخچه، مالکیت، نماد بورس و ارزش بازار به دلار و تومان، کناره‌گیری جنسن هوانگ، مهندسی مالی و سناریوها تا ۲۰۳۰. Ditoman special report on AI infrastructure.",
+   "image": "https://ditoman.com/social/ai-infrastructure/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   },
+   "datePublished": "2026-11-10"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "What Gen Z Asks AI About Money | نسل Z از هوش مصنوعی درباره‌ی پول چه می‌پرسد؟",
+     "item": "https://ditoman.com/ai-infrastructure.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/ai-infrastructure/card.webp" srcset="social/ai-infrastructure/card.webp 900w, social/ai-infrastructure/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Who is the next Nvidia: memory, networking and custom chips (illustration)" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/ai-infrastructure/en-card.webp" srcset="social/ai-infrastructure/en-card.webp 900w, social/ai-infrastructure/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Who is the next Nvidia: memory, networking and custom chips (illustration)" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · AI & markets</span><span lang="fa">گزارش ویژه · هوش مصنوعی و بازار</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">انویدیای بعدی کدام است؟ رقابت میلیارد دلاری بر سر حافظه، شبکه و تراشه</h1>
+<h1 lang="en">Who is the next Nvidia? The billion-dollar race for memory, networking and chips</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">مایکرون، اس‌کی هاینیکس، AMD، آریستا و مارول: ارقام رسمی به دلار و تومان، تاریخچه و مالکیت، کناره‌گیری جنسن هوانگ، مهندسی مالی و سناریوها تا ۲۰۳۰.</p>
+<p class="subtitle" lang="en">Micron, SK hynix, AMD, Arista and Marvell: official figures, history and ownership, Jensen Huang's exit, financial engineering and scenarios to 2030.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۱۳۳ میلیارد دلار</b><b lang="en">$133B</b><span lang="fa">درآمد سالانه مایکرون؛ حدود ۳۵٬۷۰۰ همت</span><span lang="en">Micron FY2026 revenue</span></div>
+<div class="stat"><b lang="fa">۶۳۲٪</b><b lang="en">+632%</b><span lang="fa">رشد سود فصل سوم اس‌کی هاینیکس</span><span lang="en">SK hynix Q3 operating profit</span></div>
+<div class="stat"><b lang="fa">۸٫۵ میلیارد دلار</b><b lang="en">$8.5B</b><span lang="fa">درآمد مراکز داده AMD؛ ۹۷٪ رشد</span><span lang="en">AMD data centre, up 97%</span></div>
+<div class="stat"><b lang="fa">۱۲۰ میلیارد دلار</b><b lang="en">$120B</b><span lang="fa">سقف قرارداد مارول و گوگل</span><span lang="en">Marvell–Google ceiling</span></div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<h3><span class="check-number">0.</span> در یک نگاه</h3>
+<p>برای پول ساختن از انقلاب هوش مصنوعی، لازم نیست بهترین پردازنده‌ی دنیا را بسازید. شرکت‌هایی که <strong>حافظه، شبکه و تراشه‌ی سفارشی</strong> مراکز داده را می‌سازند، حالا رکوردهایی ثبت می‌کنند که چند سال پیش فقط از انویدیا انتظار می‌رفت.</p>
+<p>و درست در همین روزها، انویدیا با یک شوک مدیریتی روبه‌روست: <strong>جنسن هوانگ</strong>، مدیرعامل ۳۳ ساله‌ی انویدیا، ۱۲ نوامبر از مدیرعاملی و هیئت‌مدیره کناره‌گیری کرد (<a href="https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress" target="_blank" rel="noopener" style="color:#57D9C7">الجزیره</a>).</p>
+<div class="tw"><table><tr><th>شرکت</th><th>رکورد تازه</th><th>منبع</th></tr><tr><td>مایکرون</td><td>درآمد سال مالی ۲۰۲۶: ۱۳۳٫۲ میلیارد دلار؛ سال قبل ۳۷٫۴ میلیارد</td><td>گزارش رسمی شرکت</td></tr><tr><td>اس‌کی هاینیکس</td><td>سود عملیاتی فصل سوم: ۸۳٫۳ هزار میلیارد وون؛ ۶۳۲٪ رشد سالانه</td><td>گزارش رسمی شرکت</td></tr><tr><td>AMD</td><td>درآمد مراکز داده‌ی فصل سوم: ۸٫۵ میلیارد دلار؛ ۹۷٪ رشد</td><td>گزارش رسمی شرکت</td></tr><tr><td>آریستا</td><td>درآمد فصل سوم: ۳٫۶۶ میلیارد دلار؛ ۵۸٫۵٪ رشد</td><td>گزارش رسمی شرکت</td></tr><tr><td>مارول</td><td>قرارداد تراشه‌ی سفارشی با گوگل؛ سقف ۱۲۰ میلیارد دلار تا ۲۰۳۳</td><td>پرونده‌ی رسمی بورس آمریکا</td></tr></table></div>
+<p><strong>همین ارقام به تومان</strong> (دلار آزاد حدود ۲۶۸ هزار تومان، ۲۶ آبان ۱۴۰۵؛ هر همت = هزار میلیارد تومان):</p>
+<div class="tw"><table><tr><th>رقم</th><th>به دلار</th><th>به تومان</th></tr><tr><td>درآمد سالانه‌ی مایکرون</td><td>۱۳۳٫۲ میلیارد</td><td>حدود ۳۵٬۷۰۰ همت</td></tr><tr><td>سود خالص سالانه‌ی مایکرون</td><td>۸۵ میلیارد</td><td>حدود ۲۲٬۸۰۰ همت</td></tr><tr><td>درآمد مراکز داده‌ی AMD در یک فصل</td><td>۸٫۵ میلیارد</td><td>حدود ۲٬۲۸۰ همت</td></tr><tr><td>درآمد فصلی آریستا</td><td>۳٫۶۶ میلیارد</td><td>حدود ۹۸۰ همت</td></tr><tr><td>سقف قرارداد مارول و گوگل</td><td>۱۲۰ میلیارد</td><td>حدود ۳۲٬۲۰۰ همت</td></tr><tr><td>ارزش بازار مایکرون</td><td>۸۸۰ میلیارد</td><td>حدود ۲۳۶ هزار همت</td></tr><tr><td>ارزش بازار AMD</td><td>۸۲۷ میلیارد</td><td>حدود ۲۲۲ هزار همت</td></tr></table></div>
+<blockquote>این گزارش آموزشی و تحلیلی است. سیگنال خرید یا فروش سهام نیست و هیچ سهمی را پیشنهاد نمی‌کند.</blockquote>
+<h3><span class="check-number">1.</span> اول، شوک انویدیا</h3>
+<ul>
+<li><strong>چه شد:</strong> انویدیا ۱۲ نوامبر ۲۰۲۶ اعلام کرد جنسن هوانگ، بنیان‌گذار و مدیرعامل از ۱۹۹۳، از مدیرعاملی و عضویت در هیئت‌مدیره کناره‌گیری کرده است</li>
+</ul>
+<ul>
+<li><strong>جانشین موقت:</strong> کولت کرس، مدیر مالی انویدیا از ۲۰۱۳، مدیرعامل موقت شده و هیئت‌مدیره دنبال جانشین دائم است</li>
+</ul>
+<ul>
+<li><strong>دلیل:</strong> شرکت دلیلی اعلام نکرد. کناره‌گیری پس از گزارش‌هایی درباره‌ی روابط شخصی و ادعاهایی درباره‌ی یک مدیر سابق شرکتی در سنگاپور منتشر شد. هیئت‌مدیره گفته دلیلی برای به خطر افتادن امنیت ملی نمی‌بیند</li>
+</ul>
+<ul>
+<li><strong>بازار:</strong> سهام انویدیا روز اعلام، در اوج افت، بیش از ۱۴٪ پایین آمد و بعد بخشی از افت را جبران کرد</li>
+</ul>
+<ul>
+<li><strong>چرا مهم است:</strong> بزرگ‌ترین مشتریان، یعنی غول‌های ابری، از قبل دنبال کم کردن وابستگی به یک تأمین‌کننده بودند. این شوک، توجه بازار را به بقیه‌ی زنجیره‌ی تأمین هوش مصنوعی بیشتر کرده است</li>
+</ul>
+<h3><span class="check-number">2.</span> چرا رقابت فقط بر سر پردازنده نیست؟</h3>
+<p>یک مرکز داده‌ی هوش مصنوعی مثل یک کارخانه است. پردازنده‌ی گرافیکی موتور آن است، اما بدون این‌ها کار نمی‌کند:</p>
+<div class="tw"><table><tr><th>لایه</th><th>چه می‌کند</th><th>چه کسانی</th></tr><tr><td>حافظه‌ی پرسرعت (HBM و DRAM)</td><td>داده را با سرعت بسیار بالا به پردازنده می‌رساند</td><td>اس‌کی هاینیکس، مایکرون، سامسونگ</td></tr><tr><td>پردازنده و شتاب‌دهنده</td><td>محاسبه‌ی اصلی</td><td>انویدیا، AMD، تراشه‌های اختصاصی گوگل و آمازون</td></tr><tr><td>تراشه‌ی سفارشی</td><td>تراشه‌ای که برای یک مشتری خاص طراحی می‌شود</td><td>برادکام، مارول</td></tr><tr><td>شبکه</td><td>هزاران پردازنده را به هم وصل می‌کند</td><td>آریستا، برادکام، انویدیا</td></tr><tr><td>ساخت تراشه</td><td>تولید پیشرفته‌ترین تراشه‌ها</td><td>TSMC</td></tr><tr><td>ابر و نرم‌افزار</td><td>اجاره‌ی ظرفیت و به‌کارگیری در شرکت‌ها</td><td>کورویو، پالانتیر</td></tr></table></div>
+<p>اگر یکی از این لایه‌ها عقب بماند، کل مرکز داده کند می‌شود. برای همین، کمبود حافظه در ۲۰۲۶ همان کاری را با سود سازندگان حافظه کرد که کمبود پردازنده در ۲۰۲۳ با انویدیا کرد.</p>
+<h3><span class="check-number">3.</span> مایکرون؛ از ۳۷ به ۱۳۳ میلیارد دلار</h3>
+<figure style="margin:18px 0"><img src="social/ai-infrastructure/growth.webp" alt="نمودار دیتومان: رشد درآمد و سود شرکت‌های زیرساخت هوش مصنوعی" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">نمودار دیتومان: رشد درآمد و سود شرکت‌های زیرساخت هوش مصنوعی</figcaption></figure>
+<div class="tw"><table><tr><th>مشخصه</th><th>توضیح</th></tr><tr><td>تأسیس</td><td>۱۹۷۸، بویزی، آیداهو، آمریکا</td></tr><tr><td>مدیرعامل</td><td>سانجی مهروترا</td></tr><tr><td>نماد بورس</td><td>MU، نزدک</td></tr><tr><td>مالکیت</td><td>شرکت سهامی عام؛ بیشتر سهام در دست صندوق‌ها و نهادهای سرمایه‌گذاری</td></tr><tr><td>محصولات</td><td>حافظه‌ی DRAM، حافظه‌ی پرسرعت HBM، حافظه‌ی NAND و SSD</td></tr></table></div>
+<p><strong>ارقام رسمی سال مالی ۲۰۲۶</strong> (پایان ۳ سپتامبر ۲۰۲۶، <a href="https://www.nasdaq.com/press-release/micron-technology-inc-reports-record-fiscal-fourth-quarter-and-full-year-2026-results" target="_blank" rel="noopener" style="color:#57D9C7">گزارش رسمی</a>):</p>
+<div class="tw"><table><tr><th>شاخص</th><th>رقم</th></tr><tr><td>درآمد سالانه</td><td>۱۳۳٫۱۹ میلیارد دلار؛ سال قبل ۳۷٫۳۸ میلیارد (حدود ۳٫۶ برابر)</td></tr><tr><td>سود خالص</td><td>۸۴٫۹۷ میلیارد دلار</td></tr><tr><td>درآمد فصل چهارم</td><td>۵۴٫۲۳ میلیارد دلار</td></tr><tr><td>حاشیه‌ی سود ناخالص فصل چهارم</td><td>۸۶٫۸٪</td></tr><tr><td>راهنمای فصل بعد</td><td>حدود ۶۱٫۵ میلیارد دلار درآمد</td></tr></table></div>
+<ul>
+<li><strong>سهم:</strong> حدود ۷۷۸ دلار در ۱۳ نوامبر؛ ارزش بازار حدود ۸۸۰ میلیارد دلار. از ابتدای سال حدود ۱۷۵٪ بالا رفته، اما حدود ۳۵٪ پایین‌تر از سقف ژوئن (۱٬۲۵۵ دلار) است (<a href="https://www.fool.com/investing/2026/11/16/buy-micron-stock-now-wall-street-has-clear-answer/" target="_blank" rel="noopener" style="color:#57D9C7">موتلی فول</a>)</li>
+</ul>
+<ul>
+<li><strong>نکته‌ی تحلیلی:</strong> حاشیه‌ی سود ناخالص ۸۷٪ برای یک شرکت حافظه بی‌سابقه است. بخش بزرگی از این جهش از <strong>افزایش قیمت حافظه</strong> آمده، نه فقط حجم فروش. حافظه همیشه صنعتی چرخه‌ای بوده: وقتی کمبود تمام شود و ظرفیت تازه برسد، قیمت‌ها می‌توانند تند پایین بیایند</li>
+</ul>
+<h3><span class="check-number">4.</span> اس‌کی هاینیکس؛ تا ۲۰۲۹ فروخته شده</h3>
+<div class="tw"><table><tr><th>مشخصه</th><th>توضیح</th></tr><tr><td>تأسیس</td><td>۱۹۸۳ با نام هیوندای الکترونیکس، کره‌ی جنوبی</td></tr><tr><td>تغییر نام</td><td>۲۰۰۱ به هاینیکس؛ ۲۰۱۲ خرید توسط گروه SK</td></tr><tr><td>بزرگ‌ترین سهام‌دار</td><td>گروه SK، از طریق SK Square</td></tr><tr><td>نماد بورس</td><td>000660 در بورس کره؛ از ۱۰ ژوئیه‌ی ۲۰۲۶ با نماد SKHY در نزدک</td></tr><tr><td>جایگاه</td><td>بزرگ‌ترین تأمین‌کننده‌ی HBM انویدیا؛ دومین شرکت بزرگ کره از نظر ارزش بازار</td></tr></table></div>
+<p><strong>ارقام فصل سوم ۲۰۲۶</strong> (<a href="https://news.skhynix.com/en/q3-2026-business-results/" target="_blank" rel="noopener" style="color:#57D9C7">گزارش شرکت</a> و <a href="https://www.trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed/" target="_blank" rel="noopener" style="color:#57D9C7">ترندفورس</a>):</p>
+<div class="tw"><table><tr><th>شاخص</th><th>رقم</th></tr><tr><td>درآمد</td><td>۱۰۴٫۶ هزار میلیارد وون؛ ۳۲۸٪ رشد سالانه</td></tr><tr><td>سود عملیاتی</td><td>۸۳٫۳ هزار میلیارد وون؛ ۶۳۲٪ رشد سالانه</td></tr><tr><td>حاشیه‌ی سود عملیاتی</td><td>۸۰٪، رکورد</td></tr><tr><td>مشتریان قرارداد بلندمدت</td><td>۱۴ مشتری بزرگ؛ پوشش بیش از ۵۰٪ ظرفیت ۲۰۲۷ و ۲۰۲۸</td></tr><tr><td>بازگشت سرمایه به سهام‌داران</td><td>حدود ۱۰۰ هزار میلیارد وون در ۲۰۲۶، شامل سود نقدی و بازخرید سهام</td></tr></table></div>
+<ul>
+<li><strong>ادعای «فروخته شده تا ۲۰۲۹»:</strong> خود شرکت گفته عرضه‌ی DRAM و HBM سه سال آینده، تا ۲۰۲۹، «تقریباً تمام فروخته شده است». البته قرارداد بلندمدت با قیمت ثابت فرق دارد؛ قیمت‌ها معمولاً هر سال دوباره مذاکره می‌شوند</li>
+</ul>
+<ul>
+<li><strong>عرضه در آمریکا:</strong> اس‌کی هاینیکس ۱۰ ژوئیه‌ی ۲۰۲۶ با فروش رسید سپرده‌ی سهام به قیمت ۱۴۹ دلار، حدود ۲۶٫۵ میلیارد دلار جمع کرد؛ سهم در روز اول حدود ۱۳٪ بالا رفت (<a href="https://w.media/?p=41583" target="_blank" rel="noopener" style="color:#57D9C7">W.Media</a>)</li>
+</ul>
+<h3><span class="check-number">5.</span> AMD؛ رقیب مستقیم انویدیا</h3>
+<div class="tw"><table><tr><th>مشخصه</th><th>توضیح</th></tr><tr><td>تأسیس</td><td>۱۹۶۹، کالیفرنیا</td></tr><tr><td>مدیرعامل</td><td>لیزا سو، از ۲۰۱۴</td></tr><tr><td>نماد بورس</td><td>AMD، نزدک</td></tr><tr><td>مالکیت</td><td>شرکت سهامی عام؛ بیشتر سهام در دست صندوق‌ها و نهادهای سرمایه‌گذاری</td></tr><tr><td>محصولات</td><td>پردازنده‌ی EPYC، شتاب‌دهنده‌ی Instinct MI450، رک‌های Helios</td></tr></table></div>
+<p><strong>ارقام فصل سوم ۲۰۲۶</strong> (<a href="https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html" target="_blank" rel="noopener" style="color:#57D9C7">گزارش رسمی</a>):</p>
+<div class="tw"><table><tr><th>شاخص</th><th>رقم</th></tr><tr><td>کل درآمد</td><td>۱۳٫۴ میلیارد دلار؛ ۴۵٪ رشد</td></tr><tr><td>درآمد مراکز داده</td><td>۸٫۵ میلیارد دلار؛ ۹۷٪ رشد، رکورد</td></tr><tr><td>سود خالص</td><td>۲٫۴ میلیارد دلار</td></tr><tr><td>حاشیه‌ی سود ناخالص</td><td>۵۴٪</td></tr><tr><td>راهنمای فصل چهارم</td><td>حدود ۱۷ میلیارد دلار؛ حدود ۶۶٪ رشد سالانه</td></tr></table></div>
+<ul>
+<li><strong>مشتریان:</strong> اوپن‌اِی‌آی، آنتروپیک، متا، مایکروسافت و اوراکل مدل‌ها و بارهای کاری خود را روی اولین رک‌های Helios اجرا می‌کنند</li>
+</ul>
+<ul>
+<li><strong>سهم:</strong> حدود ۵۰۴ دلار در ۱۶ نوامبر؛ ارزش بازار حدود ۸۲۷ میلیارد دلار. سهم در هفته‌ی گذشته پرنوسان بوده؛ ۱۱ نوامبر بیش از ۷٪ بالا رفت و ۱۶ نوامبر حدود ۵٫۶٪ افت کرد</li>
+</ul>
+<ul>
+<li><strong>نکته‌ی تحلیلی:</strong> برتری انویدیا فقط سخت‌افزار نیست؛ نرم‌افزار CUDA و عادت برنامه‌نویسان هم هست. موفقیت AMD به نرم‌افزار، مصرف برق و هزینه‌ی کل مالکیت برای مشتری هم بستگی دارد</li>
+</ul>
+<h3><span class="check-number">6.</span> آریستا؛ شبکه‌ای که پردازنده‌ها را به هم وصل می‌کند</h3>
+<div class="tw"><table><tr><th>مشخصه</th><th>توضیح</th></tr><tr><td>تأسیس</td><td>۲۰۰۴، کالیفرنیا</td></tr><tr><td>مدیرعامل</td><td>جایشری اولال، از ۲۰۰۸</td></tr><tr><td>نماد بورس</td><td>ANET، بورس نیویورک؛ عرضه‌ی اولیه ۲۰۱۴</td></tr><tr><td>محصولات</td><td>سوئیچ‌های پرسرعت اترنت و نرم‌افزار شبکه برای مراکز داده</td></tr></table></div>
+<p><strong>ارقام فصل سوم ۲۰۲۶</strong> (<a href="https://www.morningstar.com/news/business-wire/20261103862513/arista-networks-inc-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener" style="color:#57D9C7">گزارش رسمی</a>):</p>
+<div class="tw"><table><tr><th>شاخص</th><th>رقم</th></tr><tr><td>درآمد</td><td>۳٫۶۶ میلیارد دلار؛ ۵۸٫۵٪ رشد، سریع‌ترین از زمان عرضه‌ی اولیه</td></tr><tr><td>سود خالص</td><td>۱٫۵۶ میلیارد دلار؛ ۸۲٫۹٪ رشد</td></tr><tr><td>حاشیه‌ی سود ناخالص</td><td>۶۳٫۶٪</td></tr><tr><td>راهنمای فصل چهارم</td><td>۳٫۹ تا ۴ میلیارد دلار</td></tr></table></div>
+<ul>
+<li><strong>ریسک اصلی:</strong> بخش بزرگی از فروش به چند مشتری بسیار بزرگ وابسته است؛ و رقابت انویدیا و برادکام در شبکه جدی است</li>
+</ul>
+<h3><span class="check-number">7.</span> مارول و قرارداد گوگل؛ درس مهندسی مالی</h3>
+<div class="tw"><table><tr><th>مشخصه</th><th>توضیح</th></tr><tr><td>تأسیس</td><td>۱۹۹۵</td></tr><tr><td>مدیرعامل</td><td>مت مورفی، از ۲۰۱۶</td></tr><tr><td>نماد بورس</td><td>MRVL، نزدک</td></tr><tr><td>محصولات</td><td>تراشه‌ی سفارشی، اتصالات نوری و الکترونیکی پرسرعت مراکز داده</td></tr></table></div>
+<p><strong>قرارداد گوگل، دقیقاً چیست؟</strong> (<a href="https://futurumgroup.com/insights/marvell-attaches-across-googles-tpu-stack-with-a-warrant-vesting-toward-120b/" target="_blank" rel="noopener" style="color:#57D9C7">فیوچروم</a>)</p>
+<ul>
+<li><strong>تاریخ:</strong> قرارداد ۲۹ ژوئیه‌ی ۲۰۲۶ امضا و ۱۹ اوت در پرونده‌ی رسمی بورس آمریکا افشا شد</li>
+</ul>
+<ul>
+<li><strong>موضوع:</strong> تراشه‌های سفارشی کنار پردازنده‌های اختصاصی گوگل (TPU): شتاب‌دهنده‌ی استنتاج، کنترلر حافظه و ذخیره‌سازی، و کارت شبکه</li>
+</ul>
+<ul>
+<li><strong>حق خرید سهام (وارانت):</strong> مارول به گوگل حق خرید حدود ۵۹ میلیون سهم با قیمت ۲۰۶٫۵۸ دلار داده؛ حدود ۷٪ کل سهام، با ارزش اعمال حدود ۱۲٫۲ میلیارد دلار، تا اوت ۲۰۳۳</li>
+</ul>
+<ul>
+<li><strong>عدد ۱۲۰ میلیارد از کجا آمد:</strong> این حق در ۲۴۰ بخش آزاد می‌شود؛ هر بخش به ازای هر ۵۰۰ میلیون دلار درآمد از محصولات سفارشی. ۲۴۰ × ۵۰۰ میلیون = ۱۲۰ میلیارد دلار. <strong>این سقف است، نه تعهد خرید.</strong> قرارداد حداقل خرید یا انحصار ندارد</li>
+</ul>
+<ul>
+<li><strong>چرا این ساختار؟</strong></li>
+</ul>
+<p>گوگل هرچه بیشتر بخرد، سهام بیشتری از مارول با قیمت ثابت می‌گیرد؛ یعنی در موفقیت مارول شریک می‌شود. برای سهام‌داران فعلی، این یعنی احتمال <strong>رقیق شدن سهام</strong> در ازای درآمد بیشتر</p>
+<ul>
+<li><strong>سهم:</strong> حدود ۱۵۷ دلار در ۱۳ نوامبر؛ ارزش بازار حدود ۱۳۷ میلیارد دلار؛ بازه‌ی ۵۲ هفته‌ای ۷۱ تا ۳۳۰ دلار. یعنی سهم حالا زیر قیمت اعمال وارانت گوگل است</li>
+</ul>
+<h3><span class="check-number">8.</span> بقیه‌ی زنجیره‌ی ارزش</h3>
+<ul>
+<li><strong>برادکام:</strong> طراحی تراشه‌های سفارشی برای غول‌های ابری و تراشه‌های شبکه</li>
+</ul>
+<ul>
+<li><strong>TSMC:</strong> سازنده‌ی تقریباً همه‌ی شتاب‌دهنده‌های پیشرفته؛ گلوگاه تولید جهانی</li>
+</ul>
+<ul>
+<li><strong>کورویو:</strong> اجاره‌ی ظرفیت پردازش گرافیکی در ابر</li>
+</ul>
+<ul>
+<li><strong>پالانتیر:</strong> نرم‌افزار داده و به‌کارگیری هوش مصنوعی در شرکت‌ها و دولت‌ها</li>
+</ul>
+<ul>
+<li><strong>گوگل و آمازون:</strong> تراشه‌های اختصاصی خودشان (TPU و Trainium)؛ هم مشتری این شرکت‌ها هستند و هم رقیبشان</li>
+</ul>
+<p>مدل درآمد و ریسک این شرکت‌ها کاملاً متفاوت است؛ مقایسه‌ی رشد فروششان بدون توجه به حاشیه‌ی سود، سرمایه‌گذاری و قراردادها گمراه‌کننده است.</p>
+<h3><span class="check-number">9.</span> مقایسه در یک جدول</h3>
+<figure style="margin:18px 0"><img src="social/ai-infrastructure/cards.webp" alt="نمودار دیتومان: پنج شرکت زیرساخت هوش مصنوعی در یک نگاه، با معادل تومانی" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">نمودار دیتومان: پنج شرکت زیرساخت هوش مصنوعی در یک نگاه، با معادل تومانی</figcaption></figure>
+<div class="tw"><table><tr><th>شرکت</th><th>لایه</th><th>رشد اخیر</th><th>ارزش بازار تقریبی</th><th>ریسک اصلی</th></tr><tr><td>مایکرون</td><td>حافظه</td><td>درآمد سالانه ۳٫۶ برابر</td><td>۸۸۰ میلیارد دلار</td><td>چرخه‌ی قیمت حافظه</td></tr><tr><td>اس‌کی هاینیکس</td><td>حافظه HBM</td><td>سود عملیاتی ۷٫۳ برابر</td><td>دومین شرکت بزرگ کره</td><td>چرخه‌ی حافظه، رقابت سامسونگ</td></tr><tr><td>AMD</td><td>پردازنده</td><td>مراکز داده ۲ برابر</td><td>۸۲۷ میلیارد دلار</td><td>نرم‌افزار و رقابت انویدیا</td></tr><tr><td>آریستا</td><td>شبکه</td><td>درآمد ۵۸٫۵٪ رشد</td><td>-</td><td>تمرکز مشتری</td></tr><tr><td>مارول</td><td>تراشه‌ی سفارشی</td><td>قرارداد تا سقف ۱۲۰ میلیارد</td><td>۱۳۷ میلیارد دلار</td><td>زمان‌بندی، رقیق شدن سهام</td></tr></table></div>
+<h3><span class="check-number">10.</span> مهندسی مالی؛ چه چیزی ارزش سهم را تعیین می‌کند؟</h3>
+<ul>
+<li><strong>رشد درآمد کافی نیست:</strong> ارزش سهم به <strong>جریان نقد آزاد</strong> آینده بستگی دارد: درآمد منهای هزینه‌ها، مالیات و سرمایه‌گذاری لازم برای کارخانه و تجهیزات</li>
+</ul>
+<ul>
+<li><strong>مثال ساده:</strong> اگر سود یک شرکت ۵۰٪ رشد کند ولی بازار به جای ۳۰ برابر سود، فقط ۲۰ برابر برایش بپردازد (نسبت P/E)، ارزش سهم تقریباً ثابت می‌ماند. ۱٫۵ × ۲۰ = ۳۰</li>
+</ul>
+<ul>
+<li><strong>چرا P/E پایین مایکرون فریبنده است:</strong> P/E حدود ۱۰ برای شرکتی با این رشد ارزان به نظر می‌رسد؛ اما بازار برای شرکت‌های چرخه‌ای در اوج سود، ضریب پایین می‌دهد، چون انتظار دارد سود به حالت عادی برگردد</li>
+</ul>
+<ul>
+<li><strong>سرمایه‌بری:</strong> سازندگان حافظه برای هر کارخانه‌ی تازه ده‌ها میلیارد دلار خرج می‌کنند؛ سود حسابداری بالا لزوماً به معنای نقد آزاد بالا نیست</li>
+</ul>
+<ul>
+<li><strong>وارانت و رقیق شدن:</strong> در قراردادهایی مثل مارول و گوگل، باید قیمت اعمال، شرایط آزاد شدن، زمان‌بندی و اثر رقیق شدن سهام را جدا از درآمد فروش بررسی کرد</li>
+</ul>
+<ul>
+<li><strong>شاخص‌های لازم برای ارزش‌گذاری:</strong> ارزش شرکت به سود عملیاتی (EV/EBITDA)، ارزش شرکت به جریان نقد آزاد (EV/FCF)، P/E آینده، بدهی خالص و تعداد سهام پس از رقیق شدن</li>
+</ul>
+<h3><span class="check-number">11.</span> سه سناریو تا ۲۰۳۰</h3>
+<div class="tw"><table><tr><th>سناریو</th><th>چه اتفاقی می‌افتد</th><th>چه کسی سود می‌برد</th></tr><tr><td>رشد پرشتاب</td><td>تقاضا سریع‌تر از عرضه رشد می‌کند؛ قیمت حافظه و تجهیزات بالا می‌ماند</td><td>همه‌ی زنجیره، به‌ویژه حافظه</td></tr><tr><td>متعادل</td><td>ظرفیت تازه می‌رسد؛ رشد درآمد ادامه دارد اما حاشیه‌ی سود عادی می‌شود</td><td>شرکت‌هایی با مزیت نرم‌افزاری و قراردادهای بلندمدت</td></tr><tr><td>کندی سرمایه‌گذاری</td><td>بازده پروژه‌های هوش مصنوعی کمتر از انتظار است؛ مشتریان سفارش‌ها را عقب می‌اندازند</td><td>شرکت‌هایی با ترازنامه‌ی قوی و تنوع مشتری</td></tr></table></div>
+<p>این سناریوها تحلیل‌اند، نه پیش‌بینی قطعی.</p>
+<h3><span class="check-number">12.</span> چه چیزهایی را دنبال کنیم؟</h3>
+<ul>
+<li>انتخاب مدیرعامل دائم انویدیا و واکنش مشتریان بزرگ</li>
+</ul>
+<ul>
+<li>گزارش انویدیا و راهنمای فروشش</li>
+</ul>
+<ul>
+<li>قیمت قراردادی DRAM و HBM در ۲۰۲۷</li>
+</ul>
+<ul>
+<li>بودجه‌ی سرمایه‌گذاری غول‌های ابری: مایکروسافت، گوگل، آمازون و متا</li>
+</ul>
+<ul>
+<li>اولین درآمدهای واقعی مارول از قرارداد گوگل؛ احتمالاً از سال مالی ۲۰۲۸</li>
+</ul>
+<h3><span class="check-number">13.</span> نگاه دیتومان</h3>
+<p>«انویدیای بعدی» شاید یک شرکت نباشد؛ <strong>یک زنجیره</strong> باشد. AMD در پردازش، مایکرون و اس‌کی هاینیکس در حافظه، آریستا در شبکه و مارول در تراشه‌ی سفارشی، هر کدام بخشی از این زنجیره را در دست دارند.</p>
+<blockquote>برنده شدن یک شرکت در هوش مصنوعی، با برنده شدن سهام آن در بورس یکی نیست.</blockquote>
+<p>پرسش اصلی این است: وقتی کمبود عرضه تمام شود، کدام شرکت مزیت رقابتی و جریان نقد آزادش را حفظ می‌کند؟ پاسخ را رشد امروز نمی‌دهد؛ ساختار کسب‌وکار، نرم‌افزار، قراردادها و ترازنامه می‌دهد.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="silver-drivers.html">چه چیزی قیمت نقره را تعیین می‌کند؟</a></li><li><a href="china-hightech-october.html">جهش فناوری پیشرفته چین</a></li><li><a href="prices.html">قیمت لحظه‌ای تتر، بیت‌کوین و طلا</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress" target="_blank" rel="noopener">Al Jazeera: Why did Nvidia CEO Jensen Huang resign, and who is Colette Kress? (12 Nov 2026)</a></li><li><a href="https://www.nasdaq.com/press-release/micron-technology-inc-reports-record-fiscal-fourth-quarter-and-full-year-2026-results" target="_blank" rel="noopener">Micron: Record fiscal Q4 and full-year 2026 results</a></li><li><a href="https://news.skhynix.com/en/q3-2026-business-results/" target="_blank" rel="noopener">SK hynix: 3Q26 business results</a></li><li><a href="https://www.trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed/" target="_blank" rel="noopener">TrendForce: SK hynix 3Q26 OPM 80%, sold out to 2029</a></li><li><a href="https://en.fnnews.com/news/202610282128013224" target="_blank" rel="noopener">Financial News: SK hynix three years sold out</a></li><li><a href="https://w.media/?p=41583" target="_blank" rel="noopener">W.Media: SK hynix Nasdaq debut</a></li><li><a href="https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html" target="_blank" rel="noopener">AMD: Third quarter 2026 financial results</a></li><li><a href="https://www.morningstar.com/news/business-wire/20261103862513/arista-networks-inc-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Arista Networks: Third quarter 2026 financial results</a></li><li><a href="https://futurumgroup.com/insights/marvell-attaches-across-googles-tpu-stack-with-a-warrant-vesting-toward-120b/" target="_blank" rel="noopener">Futurum: Marvell and Google, a warrant vesting toward $120B</a></li><li><a href="https://www.fool.com/investing/2026/11/16/buy-micron-stock-now-wall-street-has-clear-answer/" target="_blank" rel="noopener">Motley Fool: Micron stock (16 Nov 2026)</a></li><li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-advanced-micro-devices-jumps-and-not-only-because-of-coreweave-s-results/" target="_blank" rel="noopener">Motley Fool: AMD on 11 Nov 2026</a></li><li><a href="https://www.tipranks.com/stocks/mrvl" target="_blank" rel="noopener">TipRanks: Marvell (MRVL)</a></li><li><a href="https://alanchand.com/en/currencies-price/usd" target="_blank" rel="noopener">Alanchand: US dollar to toman</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۲۶ آبان ۱۴۰۵. ارقام شرکت‌ها از گزارش‌های رسمی است؛ قیمت سهام و نرخ دلار تقریبی و متعلق به تاریخ ذکرشده‌اند. این گزارش آموزشی است و سیگنال خرید یا فروش سهام نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<h3><span class="check-number">0.</span> At a glance</h3>
+<p>You do not need the world's best processor to profit from the AI boom. The companies building <strong>memory, networking and custom chips</strong> for data centres are now posting the kind of records once expected only from Nvidia. And at the same moment, Nvidia faces a leadership shock: <strong>Jensen Huang</strong>, its chief executive for 33 years, resigned as CEO and from the board on 12 November (<a href="https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress" target="_blank" rel="noopener" style="color:#57D9C7">Al Jazeera</a>).</p>
+<div class="tw"><table><tr><th>Company</th><th>New record</th><th>Source</th></tr><tr><td>Micron</td><td>FY2026 revenue $133.2B, from $37.4B</td><td>Company results</td></tr><tr><td>SK hynix</td><td>Q3 operating profit KRW 83.3T, up 632%</td><td>Company results</td></tr><tr><td>AMD</td><td>Q3 data-centre revenue $8.5B, up 97%</td><td>Company results</td></tr><tr><td>Arista</td><td>Q3 revenue $3.66B, up 58.5%</td><td>Company results</td></tr><tr><td>Marvell</td><td>Google custom-chip deal, ceiling of $120B to 2033</td><td>SEC filing</td></tr></table></div>
+<blockquote>Educational analysis, not a buy or sell signal; no stock is recommended.</blockquote>
+<h3><span class="check-number">1.</span> The Nvidia shock</h3>
+<p>Nvidia announced on 12 November 2026 that Jensen Huang, founder and CEO since 1993, had resigned as CEO and director. CFO Colette Kress is interim CEO while the board searches for a successor. The company gave no reason; the resignation followed reports about his personal relationships and allegations about a former executive of a Singapore company, and the board said it had no reason to believe national security was compromised. Nvidia shares fell more than 14% at one point that day. Big cloud customers were already diversifying suppliers; the shock has turned attention to the rest of the AI supply chain.</p>
+<h3><span class="check-number">2.</span> Why it is not only about GPUs</h3>
+<div class="tw"><table><tr><th>Layer</th><th>What it does</th><th>Who</th></tr><tr><td>High-bandwidth memory</td><td>Feeds data to processors at speed</td><td>SK hynix, Micron, Samsung</td></tr><tr><td>Processors and accelerators</td><td>Core computation</td><td>Nvidia, AMD, Google and Amazon in-house chips</td></tr><tr><td>Custom chips</td><td>Silicon designed for one customer</td><td>Broadcom, Marvell</td></tr><tr><td>Networking</td><td>Connects thousands of processors</td><td>Arista, Broadcom, Nvidia</td></tr><tr><td>Manufacturing</td><td>Builds the most advanced chips</td><td>TSMC</td></tr><tr><td>Cloud and software</td><td>Rents capacity, deploys AI</td><td>CoreWeave, Palantir</td></tr></table></div>
+<p>If one layer lags, the whole data centre slows. The 2026 memory shortage did for memory makers' profits what the 2023 GPU shortage did for Nvidia.</p>
+<h3><span class="check-number">3.</span> Micron: from $37B to $133B</h3>
+<div class="tw"><table><tr><th>Item</th><th>Detail</th></tr><tr><td>Founded</td><td>1978, Boise, Idaho, USA</td></tr><tr><td>CEO</td><td>Sanjay Mehrotra</td></tr><tr><td>Ticker</td><td>MU, Nasdaq</td></tr><tr><td>Ownership</td><td>Widely held public company, mostly institutional investors</td></tr><tr><td>Products</td><td>DRAM, HBM, NAND and SSDs</td></tr></table></div>
+<p>Official FY2026 results (year to 3 September 2026, <a href="https://www.nasdaq.com/press-release/micron-technology-inc-reports-record-fiscal-fourth-quarter-and-full-year-2026-results" target="_blank" rel="noopener" style="color:#57D9C7">press release</a>): revenue $133.19B versus $37.38B; net income $84.97B; Q4 revenue $54.23B; Q4 gross margin 86.8%; next-quarter guidance about $61.5B. Shares were about $778 on 13 November, a market value of about $880B, up about 175% this year but about 35% below June's $1,255 peak (<a href="https://www.fool.com/investing/2026/11/16/buy-micron-stock-now-wall-street-has-clear-answer/" target="_blank" rel="noopener" style="color:#57D9C7">Motley Fool</a>). An 87% gross margin is unprecedented for a memory maker, and much of it comes from higher memory prices, not just volume. Memory has always been cyclical.</p>
+<h3><span class="check-number">4.</span> SK hynix: sold out to 2029</h3>
+<div class="tw"><table><tr><th>Item</th><th>Detail</th></tr><tr><td>Founded</td><td>1983 as Hyundai Electronics, South Korea</td></tr><tr><td>Renamed</td><td>Hynix in 2001; acquired by SK Group in 2012</td></tr><tr><td>Largest shareholder</td><td>SK Group, via SK Square</td></tr><tr><td>Tickers</td><td>000660 in Korea; SKHY on Nasdaq since 10 July 2026</td></tr><tr><td>Position</td><td>Nvidia's main HBM supplier; Korea's second-largest company by market value</td></tr></table></div>
+<p>Q3 2026 (<a href="https://news.skhynix.com/en/q3-2026-business-results/" target="_blank" rel="noopener" style="color:#57D9C7">company</a>, <a href="https://www.trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed/" target="_blank" rel="noopener" style="color:#57D9C7">TrendForce</a>): revenue KRW 104.6T (+328%); operating profit KRW 83.3T (+632%); a record 80% operating margin; 14 long-term-agreement customers covering over 50% of 2027 and 2028 capacity; about KRW 100T of shareholder returns in 2026. The company says DRAM and HBM supply through 2029 is "virtually all sold out", though long-term agreements are not fixed prices. Its US ADR offering on 10 July raised about $26.5B at $149 and rose about 13% on day one (<a href="https://w.media/?p=41583" target="_blank" rel="noopener" style="color:#57D9C7">W.Media</a>).</p>
+<h3><span class="check-number">5.</span> AMD: Nvidia's direct rival</h3>
+<div class="tw"><table><tr><th>Item</th><th>Detail</th></tr><tr><td>Founded</td><td>1969, California</td></tr><tr><td>CEO</td><td>Lisa Su, since 2014</td></tr><tr><td>Ticker</td><td>AMD, Nasdaq</td></tr><tr><td>Products</td><td>EPYC CPUs, Instinct MI450 accelerators, Helios racks</td></tr></table></div>
+<p>Q3 2026 (<a href="https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html" target="_blank" rel="noopener" style="color:#57D9C7">results</a>): revenue $13.4B (+45%); data centre a record $8.5B (+97%); net income $2.4B; gross margin 54%; Q4 guidance about $17B. OpenAI, Anthropic, Meta, Microsoft and Oracle are running workloads on the first Helios systems. Shares were about $504 on 16 November, a market value of about $827B, after a volatile week. Nvidia's edge is also software (CUDA) and developer habit; AMD's success depends on software, power use and total cost of ownership.</p>
+<h3><span class="check-number">6.</span> Arista: the network that connects the chips</h3>
+<div class="tw"><table><tr><th>Item</th><th>Detail</th></tr><tr><td>Founded</td><td>2004, California</td></tr><tr><td>CEO</td><td>Jayshree Ullal, since 2008</td></tr><tr><td>Ticker</td><td>ANET, NYSE; IPO 2014</td></tr><tr><td>Products</td><td>High-speed Ethernet switches and data-centre network software</td></tr></table></div>
+<p>Q3 2026 (<a href="https://www.morningstar.com/news/business-wire/20261103862513/arista-networks-inc-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener" style="color:#57D9C7">results</a>): revenue $3.66B (+58.5%, fastest since the IPO); net income $1.56B (+82.9%); gross margin 63.6%; Q4 guidance $3.9–4.0B. The main risks are dependence on a few very large customers and competition from Nvidia and Broadcom.</p>
+<h3><span class="check-number">7.</span> Marvell and Google: a lesson in financial engineering</h3>
+<div class="tw"><table><tr><th>Item</th><th>Detail</th></tr><tr><td>Founded</td><td>1995</td></tr><tr><td>CEO</td><td>Matt Murphy, since 2016</td></tr><tr><td>Ticker</td><td>MRVL, Nasdaq</td></tr><tr><td>Products</td><td>Custom silicon, high-speed optical and electrical interconnects</td></tr></table></div>
+<p>Signed on 29 July 2026 and disclosed on 19 August (<a href="https://futurumgroup.com/insights/marvell-attaches-across-googles-tpu-stack-with-a-warrant-vesting-toward-120b/" target="_blank" rel="noopener" style="color:#57D9C7">Futurum</a>), the deal covers custom chips around Google's TPUs. Marvell granted Google a warrant for about 59 million shares (about 7%) at $206.58, worth about $12.2B to exercise, expiring in August 2033. It vests in 240 tranches, one per $500M of custom-product revenue: 240 × $500M = $120B. <strong>It is a ceiling, not a purchase commitment</strong>; there is no minimum. The more Google buys, the more of Marvell it can own at a fixed price, which means potential dilution for existing shareholders. Shares were about $157 on 13 November (market value about $137B; 52-week range $71–330), below the warrant strike.</p>
+<h3><span class="check-number">8.</span> The rest of the chain</h3>
+<p>Broadcom (custom chips and networking), TSMC (manufacturer of almost every advanced accelerator), CoreWeave (GPU cloud), Palantir (enterprise AI software), and Google and Amazon, whose in-house TPU and Trainium chips make them both customers and rivals. Comparing sales growth without margins, capital spending and contract structures is misleading.</p>
+<h3><span class="check-number">9.</span> Side by side</h3>
+<div class="tw"><table><tr><th>Company</th><th>Layer</th><th>Recent growth</th><th>Approx. market value</th><th>Main risk</th></tr><tr><td>Micron</td><td>Memory</td><td>Annual revenue ×3.6</td><td>$880B</td><td>Memory price cycle</td></tr><tr><td>SK hynix</td><td>HBM memory</td><td>Operating profit ×7.3</td><td>Korea's no. 2</td><td>Memory cycle, Samsung</td></tr><tr><td>AMD</td><td>Processors</td><td>Data centre ×2</td><td>$827B</td><td>Software, Nvidia</td></tr><tr><td>Arista</td><td>Networking</td><td>Revenue +58.5%</td><td>-</td><td>Customer concentration</td></tr><tr><td>Marvell</td><td>Custom chips</td><td>Deal ceiling $120B</td><td>$137B</td><td>Timing, dilution</td></tr></table></div>
+<h3><span class="check-number">10.</span> Financial engineering: what sets a share's value?</h3>
+<p>Value depends on future <strong>free cash flow</strong>, not revenue alone. If earnings grow 50% but the market's multiple falls from 30 to 20 times, the share price is roughly flat (1.5 × 20 = 30). Micron's P/E of about 10 looks cheap, but markets give cyclical companies low multiples at peak earnings. Memory fabs cost tens of billions, so accounting profit is not the same as free cash flow. Warrant deals need strike price, vesting, timing and dilution analysed separately from revenue. Useful measures: EV/EBITDA, EV/FCF, forward P/E, net debt and fully diluted share count.</p>
+<h3><span class="check-number">11.</span> Three scenarios to 2030</h3>
+<div class="tw"><table><tr><th>Scenario</th><th>What happens</th><th>Who benefits</th></tr><tr><td>Rapid growth</td><td>Demand outruns supply; memory and equipment prices stay high</td><td>The whole chain, especially memory</td></tr><tr><td>Balanced</td><td>New capacity arrives; growth continues but margins normalise</td><td>Firms with software moats and long contracts</td></tr><tr><td>Slowdown</td><td>AI returns disappoint; customers delay orders</td><td>Strong balance sheets, diverse customers</td></tr></table></div>
+<p>These are analyses, not forecasts.</p>
+<h3><span class="check-number">12.</span> What to watch</h3>
+<p>Nvidia's permanent CEO and customer reactions; Nvidia's results and guidance; 2027 DRAM and HBM contract prices; cloud giants' capital budgets; and Marvell's first real revenue from Google, likely from fiscal 2028.</p>
+<h3><span class="check-number">13.</span> Ditoman's reading</h3>
+<p>"The next Nvidia" may not be one company but <strong>a chain</strong>. A company winning in AI is not the same as its stock winning in the market. The real question is who keeps a competitive edge and free cash flow once the shortage ends.</p>
+<h3>Read more</h3><ul><li><a href="silver-drivers.html">What drives the price of silver?</a></li><li><a href="china-hightech-october.html">China's high-tech leap</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress" target="_blank" rel="noopener">Al Jazeera: Why did Nvidia CEO Jensen Huang resign, and who is Colette Kress? (12 Nov 2026)</a></li><li><a href="https://www.nasdaq.com/press-release/micron-technology-inc-reports-record-fiscal-fourth-quarter-and-full-year-2026-results" target="_blank" rel="noopener">Micron: Record fiscal Q4 and full-year 2026 results</a></li><li><a href="https://news.skhynix.com/en/q3-2026-business-results/" target="_blank" rel="noopener">SK hynix: 3Q26 business results</a></li><li><a href="https://www.trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed/" target="_blank" rel="noopener">TrendForce: SK hynix 3Q26 OPM 80%, sold out to 2029</a></li><li><a href="https://en.fnnews.com/news/202610282128013224" target="_blank" rel="noopener">Financial News: SK hynix three years sold out</a></li><li><a href="https://w.media/?p=41583" target="_blank" rel="noopener">W.Media: SK hynix Nasdaq debut</a></li><li><a href="https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html" target="_blank" rel="noopener">AMD: Third quarter 2026 financial results</a></li><li><a href="https://www.morningstar.com/news/business-wire/20261103862513/arista-networks-inc-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Arista Networks: Third quarter 2026 financial results</a></li><li><a href="https://futurumgroup.com/insights/marvell-attaches-across-googles-tpu-stack-with-a-warrant-vesting-toward-120b/" target="_blank" rel="noopener">Futurum: Marvell and Google, a warrant vesting toward $120B</a></li><li><a href="https://www.fool.com/investing/2026/11/16/buy-micron-stock-now-wall-street-has-clear-answer/" target="_blank" rel="noopener">Motley Fool: Micron stock (16 Nov 2026)</a></li><li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-advanced-micro-devices-jumps-and-not-only-because-of-coreweave-s-results/" target="_blank" rel="noopener">Motley Fool: AMD on 11 Nov 2026</a></li><li><a href="https://www.tipranks.com/stocks/mrvl" target="_blank" rel="noopener">TipRanks: Marvell (MRVL)</a></li><li><a href="https://alanchand.com/en/currencies-price/usd" target="_blank" rel="noopener">Alanchand: US dollar to toman</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 17 November 2026. Company figures are from official results; share prices are approximate and dated. Educational report, not a buy or sell signal.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261116d" defer></script>
+<script src="search.js?v=20261116c" defer></script>
+</body>
+</html>
