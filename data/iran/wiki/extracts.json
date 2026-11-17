@@ -870,5 +870,359 @@
    "extract": "رباتیک، شاخه‌ای میان مهندسی و علم است که شامل مهندسی مکانیک، مهندسی برق و علوم رایانه می‌شود. رباتیک شامل طراحی، ساخت، راه‌اندازی و کاربرد ربات‌ها می‌شود. همچنین سامانه‌های رایانه‌ای، کنترل، بازخورد حسگرها و پردازش اطلاعات نیز در این گروه قرار می‌گیرند.",
    "missing": false
   }
+ },
+ "zoomit": {
+  "en": {
+   "title": "Zoomit (website)",
+   "url": "https://en.wikipedia.org/wiki/Zoomit_(website)",
+   "extract": "Zoomit is an Iranian website specializing in information technology, technology news, electronic product reviews, buying guides, and analytical content.",
+   "missing": false
+  },
+  "fa": {
+   "title": "زومیت",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B2%D9%88%D9%85%DB%8C%D8%AA",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "isam": {
+  "fa": {
+   "title": "ایسام",
+   "url": "https://fa.wikipedia.org/wiki/%D8%A7%DB%8C%D8%B3%D8%A7%D9%85",
+   "extract": "ایسام وبگاهی فعال در زمینه تجارت الکترونیک در ایران است. ایسام یک سیستم خدمات خرید و فروش آنلاین است که بر اساس الگویی بر گرفته از ای‌بی این امکان را برای فروشندگان به وجود می‌آورد که فروشگاه خود را راه‌اندازی کنند و به صورت آنلاین محصولات خود را به روش‌های مختلف از جمله مزایده به فروش برسانند. به ادعای سام مدن‌پور ایسام تنها سایتی است که علاوه بر امکان خرید و فروش کالا، مجوز برگزاری مزایدات آنلاین را نیز دارد.",
+   "missing": false
+  }
+ },
+ "samega": {
+  "fa": {
+   "title": "سمگا",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B3%D9%85%DA%AF%D8%A7",
+   "extract": "گروه سرمایه‌گذاری میراث فرهنگی و گردشگری ایران (یا به اختصار: سمگا) نخستین و بزرگترین شرکت ایرانی در زمینه اجرای پروژه‌های سرمایه‌گذاری در حوزه گردشگری است. این شرکت همچنین اولین هلدینگ گردشگری است که سهام آن در بورس با نماد سمگا مورد معامله قرار می‌گیرد.\nاین شرکت یکی از ۵ شرکت زیرمجموعه گروه مالی گردشگری است. بانک گردشگری، شرکت گسترش صنایع و معادن ماهان، شرکت اقتصادی نگین گردشگری ایران و گروه مهندسی و فناوری صنعت نفت و گاز لاوان از دیگر شرکت‌های زیر مجموعه گروه مالی گردشگری می‌باشند.",
+   "missing": false
+  }
+ },
+ "inshortech": {
+  "fa": {
+   "title": "اینشورتک",
+   "url": "https://fa.wikipedia.org/wiki/%D8%A7%DB%8C%D9%86%D8%B4%D9%88%D8%B1%D8%AA%DA%A9",
+   "extract": "اینشورتک بخشی را تعریف می‌کند که شرکت‌های بیمه، شرکت‌های فناوری و استارتاپ‌ها را گرد هم می‌آورد و از فناوری‌های جدید مانند هوش مصنوعی، تجزیه و تحلیل داده، بلاکچین، داده‌های بزرگ، رایانش ابری و غیره برای ایجاد اشکال جدید بیمه در در این بخش استفاده می‌کنند و محصولات و خدمات را به مشتری نهایی ارائه دهید. این کلمه از مفهوم که از کلمه فینتک الهام گرفته است.  شرکت‌های فین‌تک شامل استارتاپ‌ها و شرکت‌های فناوری و مالی معتبر هستند که هدف آن‌ها بهبود، تکمیل یا جایگزینی خدمات مالی سنتی است.",
+   "missing": false
+  }
+ },
+ "avatech": {
+  "fa": {
+   "title": "آواتک",
+   "url": "https://fa.wikipedia.org/wiki/%D8%A2%D9%88%D8%A7%D8%AA%DA%A9",
+   "extract": "آواتک (انگلیسی: Avatech) یک شتاب‌دهنده استارتاپ ایرانی است که در ۳۰ مهر ماه ۱۳۹۳ شروع به کار کرد. آواتک هر سال دو دوره شتاب‌دهی ۶ ماهه را اجرا می‌کند و در هر دوره ۲۰ تیم را شتاب‌دهی می‌کند.",
+   "missing": false
+  }
+ },
+ "dana-energy": {
+  "en": {
+   "title": "Dana Energy",
+   "url": "https://en.wikipedia.org/wiki/Dana_Energy",
+   "extract": "Dana Energy (Persian: شرکت انرژی دانا) is a private oil and gas company headquartered in Tehran, Iran. It is an exploration and production (E&P) and oilfield services company operating in Middle East and Asia. Formed in 2000, the company was initially an oilfield services company and ventured into field development in 2008. By the addition of petroleum products trading to its portfolio in 2013, Dana Energy extended their business into the midstream sector, however due to sanctions on Iran, their trading division came to a halt.\n\n",
+   "missing": false
+  },
+  "fa": {
+   "title": "انرژی دانا",
+   "url": "https://fa.wikipedia.org/wiki/%D8%A7%D9%86%D8%B1%DA%98%DB%8C_%D8%AF%D8%A7%D9%86%D8%A7",
+   "extract": "شرکت انرژی دانا که دفتر مرکزی آن در تهران قرار دارد، شرکتی خصوصی‌ست، بنا شده در سال ۱۳۷۹ ، فعال در بخش‌های گوناگون صنعت انرژی، با سابقه‌ای افزون بر دو دهه. این سازمان خود را نسبت به ایجاد ارزش از طریق افزایش بهره‌وری، تعالی عملیاتی، نوآوری و بازتعریف نقش بخش خصوصی در کشور متعهد می‌داند.\nاز اصول اساسی فلسفه انرژی دانا، بازشناسی دگرگونی و رشد، به‌عنوان مکانیزم‌های ضروری برای دستیابی به اهداف مهم سازمانی و اجتماعی، است. در باورهای بنیادین این شرکت، منافع پایدار برای مردم کشور -توامان- امری راهبری و وظیفه‌ای اخلاقی‌ تلقی‌ می‌شود. انرژی دانا رشد و پیشرفت معنادار را به‌گونه‌ای یکپارچه در کلیه فعالیت‌های خود دنبال می‌کند؛ یکپارچگی‌ای که از مجرای شیوه‌های نوآورانه، تعهد به تعالی عملیاتی، همکاری سازنده با شرکا، تعامل پویا با ذینفعان و استفاده مسئولانه از منابع انسانی و طبیعی، برای انتفاع اقتصادی، تحقق می‌یابد.\nپیشینه انرژی دانا -عمدتاً- بر سه بخش اصلی متمرکز است: اکتشاف و تولید، خدمات میادین نفتی و توسعه سرمایه؛ کسب‌وکارهایی که هریک واحدهای کسب‌و‌کاری گوناگونی را در‌بر‌می‌گیرند.",
+   "missing": false
+  }
+ },
+ "radiogeek": {
+  "fa": {
+   "title": "رادیو گیک",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B1%D8%A7%D8%AF%DB%8C%D9%88_%DA%AF%DB%8C%DA%A9",
+   "extract": "رادیو گیک که به رادیو جادی تغییر نام یافته یک پادکست رادیویی است که توسط جادی میرمیرانی در راستای وبلاگ «کیبورد آزاد» از سال ۱۳۹۱ تولید می‌شود. رادیو گیک جزو نخستین پادکست‌های فارسی است و اولین قسمتش در اسفند ۱۳۹۰ منتشر شد. جادی در آن دربارهٔ تقاطع تکنولوژی و جامعه صحبت می‌کند و برخلاف اسم آن محتوای پادکست تنها مربوط به فناوری نیست بلکه در خصوص موضوعات اجتماعی هم مطالبی گفته می‌شود. او این پادکست را اینطور معرفی می‌کند: «رادیو گیک ایستگاه رادیویی نیست، بلکه حرکتگاه رادیویی است.»\nموضوع شماره ۱۲۰ این پادکست دربارهٔ سانسور عمیق اینترنت و نحوه کمک شرکت‌های خصوصی تکنولوژی مثل ابر آروان در آن بود.\nساختار کلی رادیو گیک شامل دو بخش روی آب و در اعماق است که مسائل روی آب معمولاً اخبار جالب و سطحی است و اخبار و اتفاقات در عمق مسائلی است که شاید چندان بزرگ به نظر نرسند یا پر سر و صدا نباشند ولی تأثیر عمیق و مهمی دارند.\nشعاری که در ابتدای اکثر اپیزودهای این پادکست تکرار می‌شود:\n\n...رادیو گیک یک ایستگاه رادیویی نیست بلکه یک حرکتگاه رادیوییه؛ رادیو گیک برای کسانیه که ترجیح می‌دن یک پله عمیق‌تر بشن و تو تقاطع تکنولوژی و جامعه، دغدغه‌های انسانی‌شون رو مطرح کنن.\n رادیو گیک برای گیک‌های سرگردان در تقاطع جامعه و تکنولوژی...",
+   "missing": false
+  }
+ },
+ "farda-motors": {
+  "fa": {
+   "title": "فردا موتورز",
+   "url": "https://fa.wikipedia.org/wiki/%D9%81%D8%B1%D8%AF%D8%A7_%D9%85%D9%88%D8%AA%D9%88%D8%B1%D8%B2",
+   "extract": "صنایع اتومبیل‌سازی فردا یا فردا موتورز با نام تجاری اف‌ام‌سی (به انگلیسی: FMC) شرکت خودروسازی ایرانی است که در سال ۱۳۹۲ تأسیس شد. این شرکت از زیرمجموعه‌های گروه تجاری گلستان متعلق به خاندان گرامی می‌باشد.",
+   "missing": false
+  }
+ },
+ "artaban": {
+  "fa": {
+   "title": "آرتابان موتورز",
+   "url": "https://fa.wikipedia.org/wiki/%D8%A2%D8%B1%D8%AA%D8%A7%D8%A8%D8%A7%D9%86_%D9%85%D9%88%D8%AA%D9%88%D8%B1%D8%B2",
+   "extract": "آرتابان موتورز شرکت ایرانی فعال در صنعت خودروسازی است که از زیرمجموعه‌های شرکت میهن است. این شرکت خودروهای سواری، شاسی‌بلند و تجاری تولید می‌کند و کارخانهٔ آن واقع در استان قزوین است.",
+   "missing": false
+  }
+ },
+ "sina-surgical": {
+  "en": {
+   "title": "Sina Robotic Surgical System",
+   "url": "https://en.wikipedia.org/wiki/Sina_Robotic_Surgical_System",
+   "extract": "The Sina Robotic Surgical System is a robotic surgical system that uses a minimally invasive surgical approach. The system is manufactured by the company Sina Robotics and Medical Innovators. The system is used for prostatectomies, and increasingly for cardiac valve repair, and for renal and gynecologic surgical procedures.\nIn May 2023, two devices of this system have been exported to Indonesia. Russian institutions have also expressed interest in the device. In this context, a joint production agreement of this system has been signed with the Russian Central Research and Development Institute of Robotics and Cybernetic Technologies. According to this agreement, the Sina surgeon robot is supposed to be produced in Iran in semi-assembled form and exported to Russia as SKD and assembled in Saint Petersburg.",
+   "missing": false
+  },
+  "fa": {
+   "title": "سامانه جراحی سینا",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87_%D8%AC%D8%B1%D8%A7%D8%AD%DB%8C_%D8%B3%DB%8C%D9%86%D8%A7",
+   "extract": "سامانه رباتی سینا، محصولی از شرکت ایرانی نوآوران رباتیک و پزشکی سینا است که جراحی لاپاراسکوپی انجام می‌دهد. این سیستم جراحی رباتیک، جراحان را قادر به انجام جراحی‌های پیچیده می‌سازد. این سامانه در اداره ثبت اختراعات آمریکا نیز به تأیید و ثبت رسیده است.",
+   "missing": false
+  }
+ },
+ "simorgh": {
+  "fa": {
+   "title": "ابررایانه سیمرغ",
+   "url": "https://fa.wikipedia.org/wiki/%D8%A7%D8%A8%D8%B1%D8%B1%D8%A7%DB%8C%D8%A7%D9%86%D9%87_%D8%B3%DB%8C%D9%85%D8%B1%D8%BA",
+   "extract": "ابررایانه ملی سیمرغ یک ابررایانه است که به‌واسطهٔ همکاری وزارت علوم، تحقیقات و فناوری، وزارت ارتباطات و فناوری اطلاعات (پژوهشگاه ارتباطات و فناوری اطلاعات) و معاونت علمی و فناوری ریاست جمهوری با جمعی از استادان و دانشجویان دانشگاه صنعتی امیرکبیر در سال ۱۴۰۰ به بهره‌برداری رسیده‌است. نام سیمرغ برگفته از نام پرنده اساطیری در ایران باستان است.",
+   "missing": false
+  }
+ },
+ "sorena": {
+  "fa": {
+   "title": "سورنا (ربات)",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B3%D9%88%D8%B1%D9%86%D8%A7_(%D8%B1%D8%A8%D8%A7%D8%AA)",
+   "extract": "ربات سورنا ربات انسان‌نما است که توسط دانشگاه تهران ساخته شده است. نام‌گذاری این ربات بر اساس نام سردار اشکانی، سورنا، انجام گرفته است. ربات سورنا در۴ نسل طراحی و ساخته شده است و امکانات آن در هر مرحله پیشرفته می‌شود.",
+   "missing": false
+  }
+ },
+ "faran-shimi": {
+  "fa": {
+   "title": "داروسازی فاران شیمی",
+   "url": "https://fa.wikipedia.org/wiki/%D8%AF%D8%A7%D8%B1%D9%88%D8%B3%D8%A7%D8%B2%DB%8C_%D9%81%D8%A7%D8%B1%D8%A7%D9%86_%D8%B4%DB%8C%D9%85%DB%8C",
+   "extract": "داروسازی فاران شیمی (به انگلیسی: Faran Chemi Pharmaceuticals) در سال ۱۳۸۱ با ماهیت تعاونی تولیدی در زمینی با مساحتی حدود ۱۷۰۰۰ متر مربع در شهرک صنعتی تویسرکان تأسیس گردید. این شرکت کار خود را با تولید اسید سالیسیلیک آغاز و در سال ۱۳۸۶ به گروه صنعتی گلرنگ پیوست.\nشرکت فاران علاوه بر خط تولید محلول همودیالیز، از بهمن ماه سال ۹۱ مبادرت به احداث خط تولید انواع جامدات (قرص) به ظرفیت صدوپنجاه میلیون قرص در سال نمود.\nاین داروسازی ماده اولیه بوپرنورفین هیدروکلراید را در ایران تولید می‌کند. قرص بوپرنورفین به عنوان جایگزین قرص متادون مورد استفاده قرار می‌گیرد. این شرکت دانش بنیان در زمینه توسعه محصولات مرتبط با ترک مواد مخدر نیز فعال می‌باشد.\nاین شرکت در حال حاضر دارای ۵۹ داروی ژنریک می‌باشد در زمینه‌های (دیابت، دیالیز و همچنین محصولات مربوط به متادن و مکمل‌های داروهای و غذایی)\nاین داروسازی یک شرکت بورسی می‌باشد.",
+   "missing": false
+  }
+ },
+ "darou-pakhsh": {
+  "en": {
+   "title": "Darou Pakhsh",
+   "url": "https://en.wikipedia.org/wiki/Darou_Pakhsh",
+   "extract": "Karkhanjat Darupakhsh Company is the largest pharmaceutical company in Iran, 74% of whose shares belong to Social Security Investment Company (Shasta).\nDaropakhsh Pharmaceuticals Company operates in various fields of human medicine, veterinary medicine, biology, herbal medicine and health medicine.[1]\nThe subject of the company's activity is the production, preparation and import of human medicines, veterinary medicine, milk powder, baby food, food, medical supplies, cosmetics, laboratory and their distribution and sale throughout the country, as well as the purchase and sale of raw materials and providing Packaging services.\nEstablished in 1963 under the name of Daropakhsh pharmaceutical factory and producing 20 types of drugs including tablets and syrups and injectable products under license\n1978 under the ownership of the Ministry of Health and production of generic products\n1980, transformation in the organizational structure\n1992 under the ownership of the Social Security Organization\n1993 change from private to public shares\nIn 1998, one of the subsidiaries of Darupakhsh Company named Karkhanjat Darupakhsh Company\n(public shares)\n\nDarou Pakhsh Holding Company (Persian: شرکت کارخانجات داروپخش, Shirkæt-e Karxanujat-e Darvipaxesh, lit. drug distribution company)  is a major pharmaceutical company in Iran. The company is majority-owned by the Social Security Organization of Iran. The company manufactures, distributes, imports and exports finished products and pharmaceutical raw materials. Darou Pakhsh has an annual turnover of US$400m and claims to have the largest research and development operation of any Iranian drug firm. The company formed a plasmapheresis joint venture with a German medical firm, Biotest AG, in early 2004. Darou Pakhsh is listed on the Tehran Stock Exchange.",
+   "missing": false
+  },
+  "fa": {
+   "title": "شرکت هلدینگ داروپخش",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D9%87%D9%84%D8%AF%DB%8C%D9%86%DA%AF_%D8%AF%D8%A7%D8%B1%D9%88%D9%BE%D8%AE%D8%B4",
+   "extract": "شرکت داروپخش (سهامی عام) یکی از شرکت‌های هلدینگ دارویی ایران و دفتر مرکزی آن در تهران واقع است، پذیرفته شده در بورس اوراق بهادار تهران می‌باشد.",
+   "missing": false
+  }
+ },
+ "dpi": {
+  "en": {
+   "title": "Data Processing Iran Co.",
+   "url": "https://en.wikipedia.org/wiki/Data_Processing_Iran_Co.",
+   "extract": "Data Processing Iran Company (DPI; Persian: داده‌پردازی ایران, Dadheperdazi-ye Iran) is a computer, technology and IT Consulting corporation headquartered in Tehran, Iran. DPI is a major technology provider in Iran\nDPI manufactures and sells computer hardware and software (with a focus on the latter), and offers infrastructure services, hosting services, and consulting services in areas ranging from mainframe computers to nanotechnology.\nThe company also offers a series of  Internet-related services, namely dedicated servers; colocation services; Web hosting services, such as shared hosting, shared mail, DNS recording, and domain registration services; and managed services, including network services, security services, managed application services, storage and backup services, monitoring and reporting, and professional services.",
+   "missing": false
+  },
+  "fa": {
+   "title": "شرکت پردازش اطلاعات ایران",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D9%BE%D8%B1%D8%AF%D8%A7%D8%B2%D8%B4_%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "snappfood": {
+  "en": {
+   "title": "Snappfood",
+   "url": "https://en.wikipedia.org/wiki/Snappfood",
+   "extract": "",
+   "missing": true
+  },
+  "fa": {
+   "title": "اسنپ",
+   "url": "https://fa.wikipedia.org/wiki/%D8%A7%D8%B3%D9%86%D9%BE",
+   "extract": "اسنپ! (به انگلیسی: Snapp) یک شرکت ایرانی است که خدمات متنوعی شامل درخواست تاکسی، پیک موتوری، سفارش غذا، خرید کالا، خرید بیمه، رزرو هتل و بلیت، خدمات پزشکی، پرداخت آنلاین و سایر خدمات دیجیتال را در بستر اینترنت ارائه می‌دهد. این اپلیکیشن در سال ۱۳۹۲ توسط شرکت ایده گزین ارتباطات روماک، با نام تجاری «اسنپ» راه‌اندازی شد.",
+   "missing": false
+  }
+ },
+ "alibaba-com": {
+  "en": {
+   "title": "Alibaba.ir",
+   "url": "https://en.wikipedia.org/wiki/Alibaba.ir",
+   "extract": "",
+   "missing": true
+  },
+  "fa": {
+   "title": "علی‌بابا (شرکت)",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B9%D9%84%DB%8C%E2%80%8C%D8%A8%D8%A7%D8%A8%D8%A7_(%D8%B4%D8%B1%DA%A9%D8%AA)",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "anvito": {
+  "fa": {
+   "title": "انویتو",
+   "url": "https://fa.wikipedia.org/wiki/%D8%A7%D9%86%D9%88%DB%8C%D8%AA%D9%88",
+   "extract": "انواتو (به انگلیسی: Envato) یک شرکت خصوصی واقع دراسترالیا است که تخصص این شرکت در راه‌اندازی استارتاپ‌ها، ترویج و ترفیع سطح فروشگاه‌های آنلاین در زمینه‌های مختلف دیجیتالی است که به کاربران و فروشنده‌ها این امکان را می‌دهد تا به راحتی با هم تعامل برقرار کنند.\nانویتو یک سیستم برخط (مبتنی بر وب) است که به طراحان وب، از مبتدی تا حرفه‌ای این اجازه را می‌دهد که به‌طور مستقل فایل‌ها و طراحی‌های خود را به فروش برسانند.\nاین شرکت در حال حاضر در شهر هایی مثل Melbourneو Guadalajara و Los Angeles دفتر دارد و از بزرگترین شرکت ها در زمینه گرافیک میباشد.\nاین شرکت در سال ۲۰۰۶ توسط Collis Ta'eed و برادرش Cyan Ta'eed به همراه Jun Rung با شعار \" کمک کردن به مردم برای یادگیری و درآمد زایی برخط\" (به انگلیسی: helping people learn and earn online) بنیان نهاده شد.\nاز سال 2015 انواتو با ورود به بازار آمریکا و اعمال تحریم‌ها بر روی ایران، ورود کاربران ایرانی را بر روی این سامانه بست و فروشندگان نیز طی آن اقدام با هشدار چند روزه خارج شدند و در حال حاضر انواتو برای ایرانیان بسته است و با سیستم API از ورود آن‌ها به این سامانه جلوگیری می‌شود.",
+   "missing": false
+  }
+ },
+ "mayan": {
+  "en": {
+   "title": "Mayan group",
+   "url": "https://en.wikipedia.org/wiki/Mayan_group",
+   "extract": "MAYAN Group Co. MAYAN Group (Persian: گروه مایان) is Iran's largest private software development company. The company provides enterprise software solutions and support to businesses of all sizes located across the country.",
+   "missing": false
+  },
+  "fa": {
+   "title": "گروه مایان",
+   "url": "https://fa.wikipedia.org/wiki/%DA%AF%D8%B1%D9%88%D9%87_%D9%85%D8%A7%DB%8C%D8%A7%D9%86",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "pardis-park": {
+  "en": {
+   "title": "Pardis Technology Park",
+   "url": "https://en.wikipedia.org/wiki/Pardis_Technology_Park",
+   "extract": "Pardis Technology Park (PTP) (Persian: پارک فناوری پردیس) is under the auspices of the Vice-Presidency for Science and Technology. \nPTP is being directed by a board of trustees which has 14 members. Head of the board is first Vice President of Iran and includes legal members from ministries, science centers, and academies.\nIt is located in an area measuring 58 hectares (expandable to 1000 hectares) and is situated 20 km north east of Tehran.\n\nInnovation Paradise (phase No. 1),\nKnowledge Paradise (phase No. 2),\nand Entrepreneurship Paradise (phase No. 3)\nare three main existing phases in the Park. Other phases constitute the future stages in the expansion plan of the park which will eventually measure up to 1000 hectares. By being situated within the 97 km neighborhood of Imam Khomeini Int'l Airport (IKIA), it is located alongside the main north–south and east–west passages to Europe, central Asia, ECO countries, Persian Gulf, and CIS countries.\nIn addition to, technology Park is placed alongside the north–south fiber optics network and close neighborhood to scientific, research and academic centers and also four industrial zones, i.e. Khorram-dasht and Firouzkouh industrial zones.\n\n",
+   "missing": false
+  },
+  "fa": {
+   "title": "پارک فناوری پردیس",
+   "url": "https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D8%B1%DA%A9_%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C_%D9%BE%D8%B1%D8%AF%DB%8C%D8%B3",
+   "extract": "پارک فناوری پردیس به‌عنوان بزرگ‌ترین پارک فناوری منطقه غرب آسیا، یکی از سازمان‌های زیرمجموعهٔ معاونت علمی و فناوری و اقتصاد دانش بنیان ریاست‌جمهوری اسلامی ایران، و ترکیب هیئت امنای ۱۴ نفره از وزارتخانه‌ها، مراکز و افراد علمی و دانشگاهی، در ۲۰ کیلومتری شمال‌شرق تهران و روبروی شهر جدید پردیس و جنب روستای کرشت، در محدودهٔ کنونی به وسعت ۱۴۵ هکتار واقع شده است.",
+   "missing": false
+  }
+ },
+ "fanap-infra": {
+  "fa": {
+   "title": "فناپ‌زیرساخت",
+   "url": "https://fa.wikipedia.org/wiki/%D9%81%D9%86%D8%A7%D9%BE%E2%80%8C%D8%B2%DB%8C%D8%B1%D8%B3%D8%A7%D8%AE%D8%AA",
+   "extract": "فناپ زیرساخت با نام کامل زیرساخت فناوری اطلاعات و ارتباطات پاسارگاد آریان نام شرکت ایرانی است که در زمینه ایجاد زیرساخت‌های فناوری اطلاعات، شهر هوشمند مرکز داده و تحول دیجیتال فعال است. این شرکت با قریب به ۹۰۰ کارمند، در حوزه‌های مختلف خودکارسازی (اتوماسیون) و هوش مصنوعی مانند حمل و نقل هوشمند، یکپارچه‌سازی زیرساخت شبکه، راهکارهای جامع و برنامه‌ریزی منابع سازمانی (شیوه گسترش‌یافته‌ای از ERP) فعالیت می‌کند.\nاین شرکت که خود را اپراتور صنعت هوشمند معرفی می‌کند درتملک شرکت فناوری اطلاعات و ارتباطات پاسارگاد آریان (هلدینگ فناپ) وابسته به گروه مالی پاسارگاد است.",
+   "missing": false
+  }
+ },
+ "dana-pharma": {
+  "fa": {
+   "title": "داروسازی دانا",
+   "url": "https://fa.wikipedia.org/wiki/%D8%AF%D8%A7%D8%B1%D9%88%D8%B3%D8%A7%D8%B2%DB%8C_%D8%AF%D8%A7%D9%86%D8%A7",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "tehran-chemie": {
+  "en": {
+   "title": "Tehran Chemie",
+   "url": "https://en.wikipedia.org/wiki/Tehran_Chemie",
+   "extract": "",
+   "missing": true
+  },
+  "fa": {
+   "title": "تهران شیمی",
+   "url": "https://fa.wikipedia.org/wiki/%D8%AA%D9%87%D8%B1%D8%A7%D9%86_%D8%B4%DB%8C%D9%85%DB%8C",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "shad": {
+  "en": {
+   "title": "Shad (software)",
+   "url": "https://en.wikipedia.org/wiki/Shad_(software)",
+   "extract": "The  students education network (Persian: شبکه آموزشی دانش‌آموزان), with acronym Shad (Persian: شاد, romanized: Shaad) That in addition to the abbreviation of the full name of the program, it refers to the word Shaad meaning happy, is a communication and educational software that was launched following the spread of the coronavirus due to the absence of students in schools in Iran. The software is owned by the Ministry of Education of Iran, and students, teachers and headmasters are the people who use this software.\nAt first, on 2020 April 4, Shaad Software was run only on messaging apps, and principals, teachers, and students needed to install one of the Bale, Soroush, Gap, iGap, and Rubika, but on 2020 April 9, the Ministry of Education presented the software without needing to have those messengers. About 70% of Iranian students are members of this social network. Due to the emphasis of education on the installation and use of this software, a significant number of students were activated in this student network, which is estimated to be more than 17 million people. According to Mohammad Mehdi Nooripour, chairman of the Student Organization Assembly, Shad software has about 800,000 daily visits. 13 percent of Iranian students never had an electronic device for application setup.\n\n",
+   "missing": false
+  },
+  "fa": {
+   "title": "شاد (نرم‌افزار)",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B4%D8%A7%D8%AF_(%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1)",
+   "extract": "شبکهٔ آموزشی دانش‌آموز با سرواژهٔ شاد نرم‌افزاری ارتباطی و آموزشی است که در پی دنیاگیری کرونا ویروس در ایران به دلیل عدم امکان حضور دانش‌آموزان در مدارس ایران توسط تیم برنامه‌نویسان همراه اول راه‌اندازی شد. صاحب امتیاز این نرم‌افزار وزارت آموزش و پرورش ایران است و دانش‌آموزان، معلمان و مدیران افرادی هستند که از این برنامه استفاده می‌کنند. شاد یکی از پیام رسان های ایرانی (مانند ایتا و روبیکا) است که مخصوص برگزاری کلاس های مجازی و استفاده دانش آموزان،معلمان و مدیران‌مدارس است. \nدر ابتدا در ۱۶ فروردین نرم‌افزار شاد فقط روی برنامه‌های پیام‌رسان اجرا می‌شد و مدیران ، معلمان و دانش‌آموزان نیاز داشتند که یکی از پیام‌رسان‌های سروش، گپ، آی‌گپ یا روبیکا را نصب کنند اما در ۲۱ فروردین وزارت آموزش و پرورش از نرم‌افزار شاد بدون نیاز به این پیام‌رسان‌ها رونمایی کرد. بنا بر ادعای معاون آموزش متوسطهٔ وزیر آموزش و پرورش حدود ۸۴ درصد از دانش‌آموزان ایران عضو این شبکهٔ اجتماعی هستند. به دلیل تأکید آموزش و پرورش در نصب و استفاده از این نرم‌افزار، تعداد زیادی از دانش‌آموزان که دسترسی به اینترنت و گوشی هوشمند برای آن‌ها فراهم بود در این شبکه دانش‌آموزی فعال شدند. تا ۱۳ مهر ماه سال ۱۳۹۹ تعداد ۱۱ میلیون و ۴۰۸ دانش‌آموز در شبکهٔ شاد حضور پیدا کردند.\nهمچنین با به‌روزرسانی گسترده‌ای که برای این برنامه صورت گرفت (چهاردهم شهریور ۱۳۹۹ امکانات بیشتری به این برنامه اضافه شد. به گفته رئیس مجمع سازمان دانش‌آموزی ، نرم‌افزار شاد حدود ۸۰۰ هزار بازدید روزانه دارد. این پیام رسان طبق اعلام رسمی وبگاه خود ۲۴٬۹ میلیون کاربر دارد و از این جهت یکی از پیام‌رسان‌های ایرانی از لحاظ تعداد کاربر است.\n\n",
+   "missing": false
+  }
+ },
+ "rubika": {
+  "en": {
+   "title": "Rubika",
+   "url": "https://en.wikipedia.org/wiki/Rubika",
+   "extract": "Rubika (Persian: روبیکا) is an Iranian cloud-based, cross-platform, social media, instant messaging (IM), VoIP and VOD service developed by Tusca holding, MCI and MTN Irancell. It is the most popular social media app in Iran, with more than 70 million users and the largest social media app based in West Asia. It is available on Android, iOS and the web. Registration requires a mobile telephone number.",
+   "missing": false
+  },
+  "fa": {
+   "title": "روبیکا",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B1%D9%88%D8%A8%DB%8C%DA%A9%D8%A7",
+   "extract": "روبیکا'  یک پیام‌رسان ایرانی است که توسط شرکت توسکا، از زیرمجموعه‌های ستاد اجرایی فرمان امام، سازمانی شبه‌دولتی، به عنوان جایگزین اینستاگرام و پیام‌رسان‌های خارجی ایجاد شده و انتشار داده شده است. این نرم‌افزار اولین بار در اواسط دههٔ ۹۰ منتشر شد. به گزارش سازمان فناوری اطلاعات ایران در اسفند ۱۴۰۴، روبیکا در کنار پیام‌رسان ایتا، با ۵۵٫۵ میلیون کاربر فعال ماهانه، پراستفاده‌ترین پیام‌رسان ایرانی است.\nنسخه اندروید این پلتفرم در مرداد ماه ۱۴۰۰ به دلیل اخباری مبنی بر  سوءاستفاده از اطلاعات کاربران و ساخت حساب‌های جعلی در چندین سرویس از جمله گوگل پلی حذف شد. سپر دفاعی گوگل پلی نیز در آبان ۱۴۰۱، روبیکا را به عنوان یک جاسوس‌افزار معرفی کرد.",
+   "missing": false
+  }
+ },
+ "soroush": {
+  "en": {
+   "title": "Soroush Plus",
+   "url": "https://en.wikipedia.org/wiki/Soroush_Plus",
+   "extract": "Soroush Plus (Persian: سروش پلاس, Messenger angel) is an Iranian cross-platform, instant messaging (IM), social media and VoIP service developed by the Setak Houshmand Sharif. It is one of the most widely used messaging apps in Iran, with more than 35 million users. Soroush enables users to send text and voice messages, share images and videos, make voice and video calls, share files and locations, pay bills, and access AI and services.\nSoroush is available on Android, iOS, macOS, Windows, Linux, and the web. Registration requires a mobile telephone number.",
+   "missing": false
+  },
+  "fa": {
+   "title": "سروش پلاس",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B3%D8%B1%D9%88%D8%B4_%D9%BE%D9%84%D8%A7%D8%B3",
+   "extract": "سروش‌پلاس که پیش‌تر با نام سروش شناخته می‌شد یک نرم‌افزار پیام‌رسان ایرانی است. این پیام‌رسان دارای نسخه‌های رسمی اندروید و آی‌اواس برای تلفن‌های همراه هوشمند، و نسخه‌های آزمایشی برای ویندوز، مک و لینوکس برای رایانه‌های شخصی می‌باشد.\nپس از فراگیر شدن تلگرام در ایران، این نرم‌افزار از جمله پیام‌رسانی‌هایی بود که به عنوان جایگزین تلگرام پیشنهاد شد. به ادعای برخی منتقدان، این پیام‌رسان کپی‌برداری از کد منبع باز تلگرام است اما سرورهای آن در ایران قرار دارد. با این حال، مدیر تیم فنی پیام رسان سروش این ادعا که در این نرم‌افزار از کد تلگرام کپی‌برداری شده تکذیب کرده است.\nوبگاه رسمی این پیام‌رسان در مورد شمار نصب سروش ادعا کرد تا ۱۷ اردیبهشت ۱۳۹۷ بیش از ۱۰ میلیون بار نصب شده است.\nبر پایه مصوبهٔ شورای عالی فضای مجازی، دولت ایران موظف شده از پیام‌رسان‌های ایرانی از جمله سروش حمایت کند. اما پیام‌رسان‌ها هنوز از عدم حمایت کافی و عمل نکردن دولت به این مصوبه، گله‌مندند.\nبرای ترغیب هرچه بیشتر مردم برای استفاده از این پیام رسان، در ابتدای سال ۱۳۹۷ اعلام شد که حجم اینترنت استفاده شده با استفاده از این پیام‌رسان تا آخر سال ۱۳۹۷ رایگان است و تبلیغات گسترده‌ای بر این موضوع انجام شد. اما تنها پس از گذشت چند ماه در ابتدای تیر ماه سال ۱۳۹۷ بدون هیچ گونه اعلام قبلی این ویژگی حذف شد و هزینهٔ اینترنت مصرفی توسط این پیام‌رسان، به یک‌سوم میزان هزینهٔ مصرف‌شده افزایش یافت. چندی بعد مدیرعامل این پیام‌رسان رسماً اعلام کرد که اینترنت مصرفی این پیام‌رسان رایگان نیست.\nبا وجود صرف هزینهٔ بسیار و تلاش‌های گسترده برای جا انداختن پیام‌رسان سروش به جای تلگرام، در اسفند ۱۳۹۸ سازمان صداوسیما فراخوان مزایدهٔ سروش را آگهی کرد.\nدر سال ۱۳۹۸ با افزوده شدن برخی قابلیت‌های جدید به سروش پلاس تغییر نام داد.\nدر اردیبهشت ۱۴۰۵ مدیرعامل «سروش پلاس» از رفع محدودیت تماس برای کاربران ایرانی خارج از کشور خبر داد و اعلام کرد که آن‌ها اکنون می‌توانند بدون هیچ محدودیتی از تماس‌های متنی، صوتی و تصویری این پیام‌رسان استفاده کنند.",
+   "missing": false
+  }
+ },
+ "gap": {
+  "en": {
+   "title": "Gap Messenger",
+   "url": "https://en.wikipedia.org/wiki/Gap_Messenger",
+   "extract": "",
+   "missing": true
+  },
+  "fa": {
+   "title": "گپ (پیام‌رسان)",
+   "url": "https://fa.wikipedia.org/wiki/%DA%AF%D9%BE_(%D9%BE%DB%8C%D8%A7%D9%85%E2%80%8C%D8%B1%D8%B3%D8%A7%D9%86)",
+   "extract": "گپ یک پیام‌رسان ایرانی مخصوص تلفن‌های هوشمند و رایانه‌های شخصی است. این برنامه ۰٫۵ درصد سهم در بین بقیه پیام‌رسان‌ها در ایران دارد",
+   "missing": false
+  }
+ },
+ "iranian-messengers": {
+  "fa": {
+   "title": "پیام‌رسان‌های ایرانی",
+   "url": "https://fa.wikipedia.org/wiki/%D9%BE%DB%8C%D8%A7%D9%85%E2%80%8C%D8%B1%D8%B3%D8%A7%D9%86%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C",
+   "extract": "پیام‌رسان‌های ایرانی که بیشتر به صورت پیام‌رسان‌های داخلی یا پیام‌رسان‌های بومی شناخته می‌شود، به مجموعه‌ای از پیام‌رسان‌ها گفته می‌شود که ساخت کشور ایران می‌باشند؛ و توسط شرکت‌ها یا گروه‌های خصوصی و دولتی ایرانی ساخته شده‌اند. ایتا پرمخاطب‌ترین پیام‌رسان ایرانی است. روبیکا، بله و شاد به ترتیب در رتبه‌های دوم تا چهارم قرار دارند. از جمله مهم‌ترین پیام رسان‌های ایرانی می‌توان به ایتا، روبیکا، بله، شاد و در مرحله بعد به سروش پلاس، گپ، آیگپ و ویراستی (مشابه اکس) اشاره کرد.\nبی‌اعتمادی زیادی دربارهٔ برخی از این پیام‌رسان‌ها (مثل روبیکا) وجود دارد. در بحبوحه اعتراضات آبان ۱۳۹۸ و قطع اینترنت توسط وزارت ارتباطات برای جلوگیری از سوءاستفاده از پیام‌رسان‌ها و گسترش اعتراضات، سبب شد تا دسترسی به تلگرام و سایر پیام‌رسان‌های خارجی کاهش یابد. همچنین به‌طور گسترده دو پیام رسان بومی آیگپ و روبیکا به گونه بسیار گسترده‌ای در کانال‌ها و ابرگروه‌ها و نیز شبکه‌های تلویزیونی صدا و سیما تبلیغ می‌شدند. همه این موارد سبب شد تا استفاده از پیام‌رسان‌های داخلی افزایش قابل توجهی پیدا کند.\nبخشی از این نرم‌افزارها حمایت دولت را دارند.به گفته مدیر گروه بانکداری الکترونیک پژوهشکده پولی و بانکی اطلاعات کاربران این برنامه‌ها امن نیست، ولی این از سوی وزارت ارتباطات جمهوری اسلامی ایران و کارگروه فیلترینگ انکار می‌شود.\nتا ۱۴۰۲ این برخی از این پیام‌رسان‌‌ها ضعف امکانات حل نکرده دارند. تأمین مالی فاز ۱ و ۲ پیام رسان‌ها به ترتیب حدود ۲۰ میلیارد تومان و ۳۰۰ میلیارد تومان بوده است، هزینه پروژه روبیکا ۱۳۹۹ حدود ۲۵۰۰ میلیارد تومان بوده است، در ۱۳۹۴ بودجه موتور جستجوگر ۱۷۰ میلیارد تومان بوده است. وزیر صمت و وزارت ارتباطات برای یک میلیون واحد برند موبایل ایرانی زیر ۱۰۰ دلاری هم بودجهٔ ۵۰۰ میلیارد تومانی و زمین، سوله و تجهیزات تخصیص داده است و برای جایگزین کردن سیستم عامل موبایل اندروید حمایت داده است.همچنین طبق برنامه ۲۵ ساله چینی‌ها هم به ایرانی‌ها برای ساخت پیام‌رسان، لپ‌تاپ و موبایل هم کمک می‌کنند.",
+   "missing": false
+  }
+ },
+ "digiato": {
+  "en": {
+   "title": "Digiato",
+   "url": "https://en.wikipedia.org/wiki/Digiato",
+   "extract": "",
+   "missing": true
+  },
+  "fa": {
+   "title": "دیجیاتو",
+   "url": "https://fa.wikipedia.org/wiki/%D8%AF%DB%8C%D8%AC%DB%8C%D8%A7%D8%AA%D9%88",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "hamrahe-aval-bank": {
+  "fa": {
+   "title": "همراه‌ کارت",
+   "url": "https://fa.wikipedia.org/wiki/%D9%87%D9%85%D8%B1%D8%A7%D9%87%E2%80%8C_%DA%A9%D8%A7%D8%B1%D8%AA",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "kara-diet": {
+  "fa": {
+   "title": "تپسی‌فود",
+   "url": "https://fa.wikipedia.org/wiki/%D8%AA%D9%BE%D8%B3%DB%8C%E2%80%8C%D9%81%D9%88%D8%AF",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "raya": {
+  "fa": {
+   "title": "شرکت رایان همراه سیستم",
+   "url": "https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D8%B1%D8%A7%DB%8C%D8%A7%D9%86_%D9%87%D9%85%D8%B1%D8%A7%D9%87_%D8%B3%DB%8C%D8%B3%D8%AA%D9%85",
+   "extract": "",
+   "missing": true
+  }
+ },
+ "kamyaran": {
+  "fa": {
+   "title": "کامیاران",
+   "url": "https://fa.wikipedia.org/wiki/%DA%A9%D8%A7%D9%85%DB%8C%D8%A7%D8%B1%D8%A7%D9%86",
+   "extract": "کامیاران(به کردی :کامێران)یکی از شهرهای استان کردستان واقع در غرب ایران است. این شهر مرکز شهرستان کامیاران است.\nکامیاران در جنوبی‌ترین ناحیۀ استان کردستان، در ۴۲۰ کیلومتری غرب جنوبی تهران و ۵۸ کیلومتری جنوب سنندج، سر راه سنندج به کرمانشاه قرار دارد.\nفرهنگ این شهرستان نیز مانند سایر نواحی استان کردستان است و مردم آن به زبان کردی تکلم می‌کنند. گویش اصلی ساکنان شهر کامیاران کردی کلیایی  کردی جافی و کردی اردلانی است، بخشی از مردم این شهر کردنشین از گویشوران و کردی هورامی و کردی کرمانشاهی هستند.\nبرخی از طوایف اصلی شهر کامیاران که از ساکنین قدیمی به شمار می‌آیند پیرو دین یهودیت می‌باشند. در این شهر زبان فارسی به عنوان زبان نوشتاری و آموزش مورد استفاده قرار می‌گیرد.",
+   "missing": false
+  }
  }
 }
