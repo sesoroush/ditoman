@@ -31,7 +31,22 @@ def fix(s):
     return (s or "").replace("ي", "ی").replace("ك", "ک").replace("‌", " ").strip()
 
 
-rows = json.loads(get(MW, timeout=90))["marketwatch"]
+def mw(market, types):
+    q = "&".join(f"paperTypes[{i}]={t}" for i, t in enumerate(types))
+    url = f"https://cdn.tsetmc.com/api/ClosingPrice/GetMarketWatch?market={market}&{q}&showTraded=false&withBestLimits=true"
+    try:
+        return json.loads(get(url, timeout=90))["marketwatch"]
+    except Exception as e:  # noqa
+        print("mw fail", market, e)
+        return []
+
+
+seen, rows = set(), []
+for market, types in ((0, range(1, 10)), (0, range(1, 17)), (1, range(1, 17)), (2, range(1, 17)), (3, range(1, 17)), (4, range(1, 17))):
+    for r in mw(market, list(types)):
+        if r["insCode"] not in seen:
+            seen.add(r["insCode"]); rows.append(r)
+print("union rows", len(rows))
 (OUT / "marketwatch.json").write_bytes(json.dumps({"marketwatch": rows}, ensure_ascii=False).encode())
 best = {}
 for r in rows:
@@ -45,6 +60,18 @@ for r in rows:
     if code not in best or mc > best[code]["mcap"]:
         best[code] = dict(sym=sym, name=fix(r["lvc"]), isin=r["insID"], insCode=r["insCode"], price_rial=r["pcl"], shares=r["ztd"],
                           mcap=round(mc), yVal=r["yVal"], flow=r["flow"], csv=fix(r.get("csv")))
+MISSING = ["خودرو", "شپدیس", "وپاسار", "وشهر", "آریان", "فصبا", "رانفور", "سپ"]
+extra = {}
+have = {fix(r["lva"]) for r in rows}
+for sym in MISSING:
+    if sym in have:
+        continue
+    try:
+        j = json.loads(get("https://cdn.tsetmc.com/api/Instrument/GetInstrumentSearch/" + urllib.request.quote(sym)))
+        extra[sym] = j
+    except Exception as e:  # noqa
+        extra[sym] = {"error": str(e)[:100]}
+(OUT / "extra.json").write_text(json.dumps(extra, ensure_ascii=False, indent=1), encoding="utf-8")
 ranked = sorted(best.values(), key=lambda x: -x["mcap"])
 for i, x in enumerate(ranked, 1):
     x["rank"] = i
