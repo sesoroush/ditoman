@@ -1,5 +1,162 @@
 [
  {
+  "date": "2026-11-17",
+  "jalali": "1405/08/26",
+  "weekday_fa": "سه‌شنبه",
+  "post": "press/2026-11-17-post.webp",
+  "post_en": "press/2026-11-17-post-en.webp",
+  "lead_fa": "سه‌شنبه‌ی ۲۶ آبان: دلار دوباره بالای ۲۶۸ هزار تومان رفت و طلای ۱۸ عیار به ۲۴٫۵ میلیون رسید، بورس ۱۶ هزار واحد عقب نشست ولی شاخص هم‌وزن سبز بود، خودرو گران شد و تیرآهن ارزان. امروز آخرین مهلت خوداظهاری افزایش کالابرگ است و هوای تهران برای گروه‌های حساس ناسالم. امروز به تصویر صفحه‌های اول دسترسی نداشتیم و «روی جلد» از تیترهای اصلی سایت خود روزنامه‌هاست. با هم دنبال می‌کنیم.",
+  "lead_en": "Tuesday 17 November: the dollar climbed back above 268,000 tomans and 18-carat gold reached 24.5 million, Tehran stocks slipped 16,000 points while the equal-weight index stayed green, cars got pricier and steel beams cheaper. Today is the last day to apply for the Kalabarg top-up, and Tehran’s air is unhealthy for sensitive groups. We could not access the printed front pages today; the “front page” lines are the newspapers’ own lead web headlines.",
+  "front_fa": "دنیای اقتصاد (سایت): «نرخ دلار، طلا و یورو امروز؛ دلار و سکه صعودی شدند» · شرق (شماره‌ی ۵۵۲۹، سایت): «قیمت طلای دست‌دوم اعلام شد؛ طلا اوج گرفت» · جام‌جم (شماره‌ی ۷۴۷۱، سایت): «افزایش اعتبار کالابرگ خانوارهای کم‌درآمد به یک میلیون و ۵۰۰ هزار تومان در دستور کار است» · همشهری (سایت): «ماهیچه و گوشت آبگوشتی کیلویی چند شد؟»",
+  "front_en": "Donya-e-Eqtesad (web): “Dollar, gold and euro today: dollar and coin turn upward” · Shargh (issue 5529, web): “Second-hand gold prices announced; gold peaks” · Jam-e Jam (issue 7471, web): “Raising low-income households’ Kalabarg credit to 1.5 million tomans is on the agenda” · Hamshahri (web): “What does stew meat cost per kilo now?”",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازار",
+    "en": "Economy & markets",
+    "items": [
+     {
+      "fa": "دلار ۲۶۸ هزار و ۶۸۵ تومان: نرخ ظهر بازار آزاد دوباره بالا رفت و نرخ حواله هم افزایش داشت؛ دنیای اقتصاد تیتر زد «دلار گران شد». یعنی آرامش دیروز یک‌روزه بود؛ قیمت کالاهای وارداتی و خودرو همین امروز واکنش نشان دادند.",
+      "en": "Dollar at 268,685 tomans: the midday open-market rate rose again and remittance rates climbed too; Donya-e-Eqtesad headlined “the dollar got dearer”. Yesterday’s calm lasted a day; imported goods and car prices reacted the same day.",
+      "src": "خبرآنلاین، دنیای اقتصاد، نورنیوز",
+      "url": "https://www.khabaronline.ir/news/2303313/"
+     },
+     {
+      "fa": "طلای ۱۸ عیار ۲۴ میلیون و ۵۰۰ هزار تومان: طلا و سکه‌ی امامی همراه دلار گران شدند و شرق از «اوج گرفتن» طلای دست‌دوم نوشت. یعنی هر گرم طلا تقریباً ۹۰ دلار آزاد است؛ کسی که طلای دست‌دوم می‌فروشد امروز عدد بهتری می‌شنود.",
+      "en": "18-carat gold at 24.5 million tomans: gold and the Emami coin rose with the dollar, and Shargh wrote of second-hand gold “peaking”. A gram of gold is roughly 90 open-market dollars; anyone selling second-hand gold hears a better number today.",
+      "src": "باشگاه خبرنگاران دانشجویی، شرق، فرارو",
+      "url": "https://snn.ir/fa/news/1490921/"
+     },
+     {
+      "fa": "بورس ۱۶ هزار واحد افت کرد، ولی شاخص هم‌وزن بالا رفت. یعنی سهم‌های بزرگ و دلاری عقب نشستند و سهم‌های کوچک خریدار داشتند؛ بعد از سه روز سبز، بازار نفس تازه می‌کند نه این‌که برگردد.",
+      "en": "Tehran stocks fell 16,000 points, yet the equal-weight index rose. Large, dollar-linked shares stepped back while small caps found buyers; after three green days the market is catching its breath, not turning.",
+      "src": "مهر، تعادل، قدس آنلاین",
+      "url": "https://www.mehrnews.com/news/7013963/"
+     },
+     {
+      "fa": "گرانی به بازار خودرو برگشت: پژو ۲۰۷، شاهین، دنا و اطلس امروز گران شدند. یعنی عقب‌نشینی ۱۳ تا ۴۰ میلیونی دیروز یک روز دوام آورد؛ بازار خودرو هنوز با دلار بالا و پایین می‌رود.",
+      "en": "Price rises returned to the car market: Peugeot 207, Shahin, Dena and Atlas got dearer today. Yesterday’s 13–40 million step-back lasted one day; the car market still moves with the dollar.",
+      "src": "وانانیوز، رکنا، خبرجدید",
+      "url": "https://vananews.com/fa/news/670670/"
+     },
+     {
+      "fa": "کالابرگ: تا ساعت ۲۴ امشب آخرین مهلت خوداظهاری برای افزایش ۵۰۰ هزار تومانی است و یارانه‌ی آبان هم واریز شد؛ جام‌جم می‌نویسد رساندن اعتبار خانوارهای کم‌درآمد به ۱٫۵ میلیون تومان در دستور کار است. یعنی اگر جا مانده‌اید، همین امشب ثبت کنید؛ فردا دیر است.",
+      "en": "Kalabarg: tonight at midnight is the deadline to self-declare for the 500,000-toman top-up, and the Aban cash subsidy has been paid; Jam-e Jam reports a plan to raise low-income households’ credit to 1.5 million tomans. If you missed it, register tonight; tomorrow is too late.",
+      "src": "اقتصادآنلاین، ایران‌جیب، باشگاه خبرنگاران دانشجویی، جام‌جم",
+      "url": "https://www.eghtesadonline.com/fa/news/2176266/"
+     },
+     {
+      "fa": "بیت‌کوین ۱۷ میلیارد و ۵۵۰ میلیون تومان و تتر گران‌تر از دیروز. یعنی دلار دیجیتال با دلار اسکناس بالا رفت؛ فاصله‌ی تتر و دلار آزاد همان هزینه‌ی پنهانی است که خریدار ایرانی رمزارز می‌پردازد.",
+      "en": "Bitcoin at 17.55 billion tomans and tether pricier than yesterday. The digital dollar rose with the paper one; the gap between tether and the open-market dollar is the hidden cost every Iranian crypto buyer pays.",
+      "src": "خبرجدید، اقتصادنیوز، شرق",
+      "url": "https://khabarjadid.com/"
+     },
+     {
+      "fa": "آپارتمان ۸۵ متری در تهران حدود ۲۳ میلیارد تومان و وام مسکن ۲ میلیارد. یعنی وام کمتر از یک‌دهم قیمت را می‌پوشاند؛ خریدار اول باید ۹۰ درصد پول را از جای دیگری بیاورد.",
+      "en": "An 85-square-metre flat in Tehran costs about 23 billion tomans while the housing loan is 2 billion. The loan covers less than a tenth of the price; a first-time buyer has to bring 90 percent from elsewhere.",
+      "src": "نبض قیمت",
+      "url": "https://nabzgheymat.ir/"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و تولید",
+    "en": "Industry & production",
+    "items": [
+     {
+      "fa": "تیرآهن ذوب‌آهن ۶ هزار تومان ارزان شد و قیمت‌ها در بازار آهن عقب نشستند. یعنی برخلاف دلار، آهن امروز پایین آمد؛ سازنده‌ای که این هفته خرید می‌کند، چند استعلام بگیرد.",
+      "en": "Zob Ahan steel beams fell 6,000 tomans and prices across the steel market stepped back. Unlike the dollar, steel came down today; a builder buying this week should get several quotes.",
+      "src": "وانانیوز",
+      "url": "https://vananews.com/fa/news/670683/"
+     },
+     {
+      "fa": "رایتل با راهکارهای ۵G و هوش مصنوعی به نمایشگاه «ایران متافو ۱۴۰۵» می‌آید. یعنی اپراتور سوم روی شبکه‌ی صنعتی و معادن حساب باز کرده؛ ۵G در ایران از گوشی به کارخانه می‌رود.",
+      "en": "Rightel brings 5G and AI solutions to the “Iran Metafo 1405” fair. The third operator is betting on industrial and mining networks; 5G in Iran moves from phones to factories.",
+      "src": "زومیت",
+      "url": "https://www.zoomit.ir/iran-news/471239-rightel-5g-ai-iran-metafo/"
+     }
+    ]
+   },
+   {
+    "fa": "فناوری",
+    "en": "Technology",
+    "items": [
+     {
+      "fa": "دیجی‌کالا از «دیا» رونمایی کرد: دستیار هوش مصنوعی خرید با شبکه‌ای از ایجنت‌ها. یعنی جست‌وجوی کالا در بزرگ‌ترین فروشگاه آنلاین ایران دارد از «فیلتر زدن» به «گفت‌وگو» تبدیل می‌شود.",
+      "en": "Digikala unveiled “Dia”, an AI shopping assistant built on a network of agents. Product search on Iran’s largest online store is shifting from filters to conversation.",
+      "src": "زومیت",
+      "url": "https://www.zoomit.ir/report/471252-digikala-unveils-dia-ai-shopping-assistant/"
+     },
+     {
+      "fa": "صندوق بورسی هوش مصنوعی با سرمایه‌ی پیش‌بینی‌شده‌ی ۱٫۲ همت تشکیل می‌شود. یعنی سرمایه‌گذار خرد هم می‌تواند با چند صد هزار تومان سهمی از استارتاپ‌های هوش مصنوعی ایران بخرد.",
+      "en": "A stock-exchange AI fund with a projected 1.2 trillion tomans in capital is being set up. Small investors could own a slice of Iran’s AI startups for a few hundred thousand tomans.",
+      "src": "دیجیاتو، هوشیو",
+      "url": "https://digiato.com/iran-technology-news/iran-ai-investment-fund-approval"
+     }
+    ]
+   },
+   {
+    "fa": "جامعه و محیط‌زیست",
+    "en": "Society & environment",
+    "items": [
+     {
+      "fa": "هوای تهران ناسالم برای گروه‌های حساس: پایتخت دوباره در وضعیت نارنجی است. یعنی کودکان، سالمندان و بیماران قلبی و ریوی فعلاً ورزش بیرون را عقب بیندازند؛ باران، هوا را کامل نشست.",
+      "en": "Tehran’s air is unhealthy for sensitive groups: the capital is orange again. Children, the elderly and heart or lung patients should put off outdoor exercise; the rain did not fully clear the air.",
+      "src": "اقتصادآنلاین، فرارو، شرق",
+      "url": "https://www.eghtesadonline.com/fa/news/2176268/"
+     },
+     {
+      "fa": "ترافیک سنگین در محورهای منتهی به تهران: شرق از وضعیت راه‌های کشور امروز می‌نویسد. یعنی برای برگشت از سفر وسط هفته، یک ساعت بیشتر وقت بگذارید.",
+      "en": "Traffic on the routes into Tehran slowed the capital’s commute for hours. Allow an extra hour for a mid-week return from a trip.",
+      "src": "شرق",
+      "url": "https://www.sharghdaily.com/"
+     },
+     {
+      "fa": "دومین نمایشگاه اقوام ایرانی در اردبیل آغاز شد. یعنی اگر این هفته شمال غرب هستید، صنایع دستی و غذای اقوام ایران را در یک شهر می‌بینید.",
+      "en": "The second Iranian Ethnic Groups fair opened in Ardabil. If you are in the north-west this week, the crafts and food of Iran’s peoples are in one city.",
+      "src": "باشگاه خبرنگاران جوان",
+      "url": "https://www.yjc.ir/fa/news/9149849/"
+     }
+    ]
+   },
+   {
+    "fa": "سلامت",
+    "en": "Health",
+    "items": [
+     {
+      "fa": "شیوع آنفلوانزا از دو برابر آستانه‌ی هشدار گذشت و خوزستان هم بالای آستانه رفت. یعنی موج هنوز بالا می‌رود؛ ماسک در مترو و اتوبوس و ماندن در خانه با تب، ساده‌ترین کار است.",
+      "en": "Flu spread has passed twice the alert threshold and Khuzestan is now above it too. The wave is still rising; a mask on the metro and staying home with fever are the simplest moves.",
+      "src": "دیدارنیوز، صداوسیما",
+      "url": "https://www.didarnews.ir/fa/news/208147/"
+     },
+     {
+      "fa": "زمان افتتاح بیمارستان‌های کرج، رشت، بوشهر، شوشتر و لنگرود اعلام شد. یعنی تخت‌های تازه در شهرهایی که صف بیمارستان دولتی طولانی است؛ خبری که اثرش را باید در اورژانس دید.",
+      "en": "Opening dates for new hospitals in Karaj, Rasht, Bushehr, Shushtar and Langarud were announced. New beds in cities with long public-hospital queues; the effect shows in the emergency room.",
+      "src": "رکنا",
+      "url": "https://www.rokna.net/"
+     }
+    ]
+   },
+   {
+    "fa": "ورزش و فرهنگ",
+    "en": "Sport & culture",
+    "items": [
+     {
+      "fa": "جام حذفی از ۸ آذر برمی‌گردد و زمان ورود استقلال و پرسپولیس هم اعلام شد. یعنی دو هفته دیگر فوتبال وسط هفته هم داریم؛ تیم‌های شهرستانی شانس حذف بزرگ‌ها را پیدا می‌کنند.",
+      "en": "The Hazfi Cup returns on 29 November, and the entry dates for Esteghlal and Persepolis were announced. Mid-week football is back in two weeks; provincial clubs get their chance to knock out the big two.",
+      "src": "وانانیوز",
+      "url": "https://vananews.com/fa/news/670673/"
+     },
+     {
+      "fa": "ستاره‌ی پرسپولیس دوباره قید تیم ملی را زد و سرخ‌ها نگران رسیدن ملی‌پوشان به بازی با پیکان‌اند. یعنی فشردگی لیگ و تیم ملی به بدن بازیکن‌ها رسیده؛ هفته‌ی بعد نیمکت‌ها تعیین‌کننده‌اند.",
+      "en": "A Persepolis star has again turned down the national team, and the Reds worry whether their internationals make the Paykan match. The league-plus-national-team squeeze has reached players’ bodies; next week the benches decide.",
+      "src": "خبرورزشی، پارس فوتبال",
+      "url": "https://www.khabarvarzeshi.com/news/563750/"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-16",
   "jalali": "1405/08/25",
   "weekday_fa": "دوشنبه",
