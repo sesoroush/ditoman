@@ -1,0 +1,258 @@
+{
+"cinnagen": {
+"en": "Cinnagen",
+"fa": "سیناژن"
+},
+"aryogen": {
+"en": "AryoGen",
+"fa": "آریوژن"
+},
+"barekat": {
+"en": "Barkat Pharmaceutical Group",
+"fa": "مؤسسه دانش‌بنیان برکت"
+},
+"exir": {
+"en": "Exir Pharmaceutical Company",
+"fa": "شرکت داروسازی اکسیر"
+},
+"loghman": {
+"en": "Loghman Pharmaceuticals",
+"fa": "شرکت دارویی و بهداشتی لقمان"
+},
+"sobhan": {
+"en": "Sobhan Darou",
+"fa": "گروه دارویی سبحان"
+},
+"zahravi": {
+"en": "Zahravi Pharmaceutical Company",
+"fa": "شرکت داروسازی زهراوی"
+},
+"ronak": {
+"en": "Ronak Pharmaceutical",
+"fa": "شرکت داروسازی روناک"
+},
+"jaber": {
+"en": "Jaber Ebne Hayyan Pharmaceutical Company",
+"fa": "شرکت داروسازی جابر ابن حیان"
+},
+"cafebazaar": {
+"en": "Cafe Bazaar",
+"fa": "کافه بازار"
+},
+"hamkaran": {
+"en": "Hamkaran System",
+"fa": "همکاران سیستم"
+},
+"dotin": {
+"en": "Dotin",
+"fa": "داتین"
+},
+"sinasoft": {
+"en": "SinaSoft Corporation",
+"fa": "شرکت نرم‌افزاری سینا"
+},
+"nosa": {
+"en": "Iran Software & Hardware Co. (NOSA)",
+"fa": "نوسا"
+},
+"pactos": {
+"en": "Pactos",
+"fa": "پکتوس"
+},
+"system-group": {
+"en": "System Group",
+"fa": "گروه سیستم"
+},
+"aparat": {
+"en": "Aparat",
+"fa": "آپارات"
+},
+"filimo": {
+"en": "Filimo",
+"fa": "فیلیمو"
+},
+"fidibo": {
+"en": "Fidibo",
+"fa": "فیدیبو"
+},
+"neshan": {
+"en": "Neshan (software)",
+"fa": "نشان (نرم‌افزار)"
+},
+"eitaa": {
+"en": "Eitaa",
+"fa": "ایتا"
+},
+"bale": {
+"en": "Bale Messenger",
+"fa": "بله (پیام‌رسان)"
+},
+"igap": {
+"en": "IGap",
+"fa": "آی‌گپ"
+},
+"taaghche": {
+"en": "Taaghche",
+"fa": "طاقچه"
+},
+"snapp": {
+"en": "Snapp!",
+"fa": "اسنپ"
+},
+"digikala": {
+"en": "Digikala",
+"fa": "دیجی‌کالا"
+},
+"torob": {
+"en": "Torob",
+"fa": "ترب (اپلیکیشن)"
+},
+"divar": {
+"en": "Divar (website)",
+"fa": "دیوار (وبگاه)"
+},
+"sheypoor": {
+"en": "Sheypoor",
+"fa": "شیپور (وبگاه)"
+},
+"arvan": {
+"en": "ArvanCloud",
+"fa": "ابر آروان"
+},
+"asiatech": {
+"en": "Asiatech",
+"fa": "آسیاتک"
+},
+"sabaidea": {
+"en": "Sabaidea",
+"fa": "صباایده"
+},
+"pars-online": {
+"en": "Pars Online",
+"fa": "پارس آنلاین"
+},
+"parsijoo": {
+"en": "Parsijoo",
+"fa": "پارسی‌جو"
+},
+"xvision": {
+"en": "X-Vision",
+"fa": "ایکس‌ویژن"
+},
+"parse-semi": {
+"en": "Parsé Semiconductor Co.",
+"fa": ""
+},
+"fanap": {
+"en": "Fanap",
+"fa": "فناپ"
+},
+"pars-isotope": {
+"en": "Pars Isotope",
+"fa": "پارس ایزوتوپ"
+},
+"asan-pardakht": {
+"en": "Asan Pardakht",
+"fa": "آسان پرداخت"
+},
+"tapsi": {
+"en": "Tapsi",
+"fa": "تپسی"
+},
+"mobinnet": {
+"en": "Mobinnet",
+"fa": "مبین‌نت"
+},
+"shatel": {
+"en": "Shatel",
+"fa": "شاتل"
+},
+"rightel": {
+"en": "Rightel",
+"fa": "رایتل"
+},
+"mci": {
+"en": "Mobile Communications of Iran",
+"fa": "همراه اول"
+},
+"irancell": {
+"en": "Irancell",
+"fa": "ایرانسل"
+},
+"behpardakht": {
+"en": "Behpardakht Mellat",
+"fa": "به‌پرداخت ملت"
+},
+"samsung-iran-e": {
+"en": "",
+"fa": "شرکت پارس خزر"
+},
+"royan": {
+"en": "Royan Institute",
+"fa": "پژوهشگاه رویان"
+},
+"pasteur": {
+"en": "Pasteur Institute of Iran",
+"fa": "انستیتو پاستور ایران"
+},
+"snowa": {
+"en": "Snowa",
+"fa": "اسنوا"
+},
+"meva": {
+"en": "Meva",
+"fa": "میوا"
+},
+"ieid": {
+"en": "Iran Electronics Industries",
+"fa": "صنایع الکترونیک ایران"
+},
+"mapna": {
+"en": "MAPNA Group",
+"fa": "مپنا"
+},
+"iran-khodro": {
+"en": "Iran Khodro",
+"fa": "ایران خودرو"
+},
+"saipa": {
+"en": "Saipa",
+"fa": "سایپا"
+},
+"sadra": {
+"en": "Sadra (company)",
+"fa": "صدرا"
+},
+"namava": {
+"en": "Namava",
+"fa": "نماوا"
+},
+"telewebion": {
+"en": "Telewebion",
+"fa": "تلوبیون"
+},
+"lenz": {
+"en": "Lenz",
+"fa": "لنز"
+},
+"alibaba": {
+"en": "Alibaba.ir",
+"fa": "علی‌بابا"
+},
+"tebyan": {
+"en": "Tebyan",
+"fa": "تبیان"
+},
+"zarinpal": {
+"en": "ZarinPal",
+"fa": "زرین‌پال"
+},
+"ayandeh": {
+"en": "",
+"fa": "آینده‌روش"
+},
+"kia-robotics": {
+"en": "",
+"fa": "رباتیک"
+}
+}
