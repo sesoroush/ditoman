@@ -16,7 +16,7 @@ import html, json, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "iran" / "branches.json").read_text(encoding="utf-8"))
 COMPANIES = ROOT / "data" / "companies"
-TOP = json.loads((ROOT / "data" / "iran" / "top100.json").read_text(encoding="utf-8"))
+TOP = json.loads((ROOT / "data" / "iran" / "top200.json").read_text(encoding="utf-8"))
 BASE = "https://ditoman.com/"
 REVIEWED = {"fa": "۱۵ آبان ۱۴۰۵", "en": "6 November 2026"}
 
@@ -255,12 +255,12 @@ UI = {
     "subs_lead": {"fa": "هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.", "en": "Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics."},
     "companies": {"fa": "شرکت‌های این شاخه", "en": "Companies in this branch"},
     "leaders": {"fa": "بزرگ‌ترین‌های این شاخه", "en": "The biggest in this branch"},
-    "leaders_note": {"fa": "اول، شرکت‌های این شاخه از میان ۱۰۰ شرکت بزرگ بورس و فرابورس، به ترتیب ارزش بازار؛ بعد، چند نام بزرگِ بیرون از بورس. سال تأسیس، فروش و دارایی از صورت‌های مالی رسمی کم‌کم اضافه می‌شود.",
-                     "en": "First, this branch's companies from the 100 largest on the Tehran Stock Exchange and Farabourse, by market value; then a few big names outside the exchange. Founding year, sales and assets are added from official statements over time."},
-    "top_title": {"fa": "۱۰۰ شرکت بزرگ بورس و فرابورس", "en": "The 100 largest listed companies"},
+    "leaders_note": {"fa": "اول، شرکت‌های این شاخه از میان ۲۰۰ شرکت بزرگ بورس و فرابورس، به ترتیب ارزش بازار؛ بعد، چند نام بزرگِ بیرون از بورس. سال تأسیس، فروش و دارایی از صورت‌های مالی رسمی کم‌کم اضافه می‌شود.",
+                     "en": "First, this branch's companies from the 200 largest on the Tehran Stock Exchange and Farabourse, by market value; then a few big names outside the exchange. Founding year, sales and assets are added from official statements over time."},
+    "top_title": {"fa": "۲۰۰ شرکت بزرگ بورس و فرابورس", "en": "The 200 largest listed companies"},
     "top_lead": {"fa": "بزرگ‌ترین شرکت‌های بورس تهران و فرابورس به ترتیب ارزش بازار، هر کدام در شاخه‌ی خودش.", "en": "The largest companies on the Tehran Stock Exchange and Farabourse by market value, each filed under its branch."},
     "top_method": {"fa": "روش و منبع", "en": "Method and source"},
-    "top_link": {"fa": "فهرست کامل ۱۰۰ شرکت ←", "en": "The full list of 100 →"},
+    "top_link": {"fa": "فهرست کامل ۲۰۰ شرکت ←", "en": "The full list of 200 →"},
     "col_rank": {"fa": "رتبه", "en": "Rank"},
     "col_sym": {"fa": "نماد", "en": "ISIN"},
     "col_name": {"fa": "شرکت", "en": "Company"},
@@ -318,10 +318,11 @@ def page(title, desc, path, body, extra_css=""):
   <meta name="theme-color" content="#04090c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="fonts.css?v=1" />
-  <link rel="stylesheet" href="site.css?v=20261108" />
+  <link rel="stylesheet" href="site.css?v=20261113" />
   <style>{PAGE_CSS}{extra_css}</style>
+  <link rel="stylesheet" href="theme.css?v=20261116c" />
 </head>
 <body data-lang="fa">
 
@@ -350,8 +351,9 @@ def page(title, desc, path, body, extra_css=""):
 </script>
 
 <script src="menu.js?v=20261107"></script>
-<script src="join-bar.js?v=20261107b" defer></script>
+<script src="join-bar.js?v=20261116b" defer></script>
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="search.js?v=20261116c" defer></script>
 </body>
 </html>
 """
@@ -521,7 +523,7 @@ def leader_card(x, subname, color=None, share=None):
         for k, label in FIELDS)
     head = f'<b>{t(x)}</b><small>{t(subname[x["sub"]])}</small>'
     if x.get("rank"):
-        approx = "≈" if not x.get("mcap") else ""
+        approx = "*" if x.get("stale") else ("≈" if not x.get("mcap") else "")
         head = (f'<span class="ir-rank">{t({"fa": f"رتبه‌ی {approx}{fa_digits(x["rank"])} · {x["sym"]}", "en": f"Rank {approx}{x["rank"]}"})}</span>' + head)
     if x.get("slug"):
         head = f'<a href="{e(x["slug"])}.html">{head}<span class="k-go">{t(UI["leaders_open"])}</span></a>'
@@ -721,7 +723,7 @@ def map_section(branches, only=None):
         items.append({
             "rank": c["rank"], "sym": c["sym"], "fa": c["fa"], "en": c["en"], "w": c["weight"],
             "short": re.sub(r"\s*\(.*?\)", "", c["en"]),
-            "approx": not c.get("mcap"), "val": mcap_value(c), "b": b["slug"], "bname": b["name"],
+            "approx": bool(c.get("stale")) or not c.get("mcap"), "val": mcap_value(c), "b": b["slug"], "bname": b["name"],
             "sub": c["sub"], "subname": {"fa": sub["fa"], "en": sub["en"]},
             "g": c["sub"] if only else b["slug"], "gname": {"fa": sub["fa"], "en": sub["en"]} if only else b["name"],
             "color": color, "fam": c.get("family"), "famname": TOP["families"].get(c.get("family"), None),
@@ -759,7 +761,7 @@ def top_section(branches):
         sub = {s["id"]: s for s in b["subs"]}[c["sub"]]
         v = mcap_value(c)
         cls = "v" if c.get("mcap") else ("v min" if v else "v na")
-        approx = "" if c.get("mcap") else "≈"
+        approx = "*" if c.get("stale") else ("" if c.get("mcap") else "≈")
         rows.append(
             f'<tr data-branch="{b["slug"]}"><td class="n">{t({"fa": approx + fa_digits(c["rank"]), "en": approx + str(c["rank"])})}</td>'
             f'<td>{t({"fa": c["sym"], "en": c["isin"]})}</td><td class="name">{t(c)}</td>'
