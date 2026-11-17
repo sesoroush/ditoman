@@ -1,0 +1,18 @@
+name: Fetch Tehran exchange data
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/tse/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  tse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/tse/fetch.py || true
+      - run: |
+          git config user.name "ditoman-bot"; git config user.email "ditoman-bot@users.noreply.github.com"
+          git add data/iran/tse || true; git commit -m "Tehran exchange data fetch" || exit 0
+          git pull --rebase origin main; git push origin HEAD:main
