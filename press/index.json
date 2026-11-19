@@ -1,5 +1,150 @@
 [
  {
+  "date": "2026-11-19",
+  "jalali": "1405/08/28",
+  "weekday_fa": "پنجشنبه",
+  "post": "press/2026-11-19-post.webp",
+  "post_en": "press/2026-11-19-post-en.webp",
+  "lead_fa": "دلار با جهش چهار هزار تومانی به کانال ۲۷۰ هزار برگشت ولی طلا و سکه ارزان شدند؛ مصرف بنزین ۹ درصد کم شد و CNG رکورد زد؛ معاون بهداشت می‌گوید اوج آنفلوانزا اواسط آذر است و هواشناسی تا جمعه برای تهران برف و باد شدید هشدار داده. «روی جلد» امروز از تیترهای اصلی سایت روزنامه‌هاست. با هم دنبال می‌کنیم.",
+  "lead_en": "The dollar jumped about 4,000 tomans back into the 270,000 band while gold and coins got cheaper; petrol use fell 9% as CNG hit a record; the deputy health minister puts the flu peak in mid-Azar; and Tehran has a snow-and-wind warning through Friday. Today’s “front page” uses the main headlines on the papers’ own sites.",
+  "front_fa": "دنیای اقتصاد: «طلا و سکه نزولی شدند» · شرق: «بازگشت دلار به کانال ۲۷۰ هزار تومانی» · همشهری: «قیمت این خودروها ریخت» · تیتر مشترک روزنامه‌های صبح: «افزایش ۲۴ درصدی مصرف CNG»",
+  "front_en": "Donya-e-Eqtesad: “Gold and coins turn down” · Shargh: “Dollar returns to the 270,000-toman band” · Hamshahri: “These car prices tumbled” · Shared morning headline: “CNG use up 24%”",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازار",
+    "en": "Economy & markets",
+    "items": [
+     {
+      "fa": "دلار ۲۷۰٬۶۷۵ تومان: حدود ۴ هزار تومان جهش در یک روز و بازگشت به کانال ۲۷۰ هزار بعد از دو هفته. یعنی سقف روانی بازار شکست و قیمت کالای وارداتی از امروز با این نرخ حساب می‌شود، نه نرخ دیروز.",
+      "en": "Dollar at 270,675 tomans: a one-day jump of about 4,000 and a return to the 270,000 band after two weeks. The market’s psychological ceiling gave way, and imported goods now get priced off today’s rate, not yesterday’s.",
+      "src": "خبرآنلاین، شرق، ونانیوز",
+      "url": "https://www.khabaronline.ir/news/2304256/"
+     },
+     {
+      "fa": "طلا با وجود دلار ارزان شد: ۱۸ عیار حدود ۲۴٫۴۶ میلیون، سکه امامی حدود ۲۵۰٫۷ میلیون، اونس ۳٬۷۵۲ دلار. یعنی این روزها طلای داخلی دنباله‌روی اونس جهانی است، نه دلار؛ دلار بالا رفت و طلا پایین آمد.",
+      "en": "Gold fell despite the dollar: 18-carat about 24.46 million a gram, the Emami coin about 250.7 million, the ounce at $3,752. Domestic gold is tracking the global ounce rather than the dollar right now: the dollar rose and gold slipped.",
+      "src": "دنیای اقتصاد، اقتصادآنلاین، دیتومان",
+      "url": "https://ditoman.com/prices.html"
+     },
+     {
+      "fa": "بیت‌کوین ۶۲٬۷۰۰ دلار، نفت برنت ۸۹ تا ۹۱ دلار: بیت‌کوین ۳٫۳ درصد در یک روز و از ۶۸ هزار هفته‌ی پیش پایین‌تر آمد؛ برنت هم ۳ درصد افت کرد. یعنی پول از دارایی‌های پرریسک بیرون می‌رود، و نفت ارزان‌تر یعنی درآمد ارزی کمتر برای کشور.",
+      "en": "Bitcoin at $62,700, Brent at $89–91: bitcoin lost 3.3% in a day and is below last week’s 68,000; Brent fell about 3%. Money is leaving risky assets, and cheaper oil means less foreign-currency income for the country.",
+      "src": "دیتومان، نبض قیمت",
+      "url": "https://ditoman.com/prices.html"
+     },
+     {
+      "fa": "بورس، جمع‌بندی هفته: سهم‌های بزرگ باختند، سهم‌های کوچک و متوسط بردند و حقیقی‌ها باز هم پول بیرون کشیدند؛ چهارشنبه ۱٫۷ همت خروج پول حقیقی. یعنی پول خرد از شاخص‌سازها به سهم‌های کوچک کوچ کرده و افت شاخص کل تصویر کامل بازار نیست.",
+      "en": "Stock market, weekly wrap: large caps lost, small and mid caps won, and retail investors kept pulling money out, 1.7 trillion tomans on Wednesday alone. Retail money has migrated from index heavyweights to small stocks, so the headline index does not tell the whole story.",
+      "src": "اقتصادنیوز، دانشجو",
+      "url": "https://www.eghtesadnews.com/"
+     },
+     {
+      "fa": "بنزین ۹ درصد کمتر، CNG بالای ۱۸ میلیون مترمکعب در روز: مصرف بنزین در آبان ۹ درصد کم شد و تیتر مشترک روزنامه‌ها «افزایش ۲۴ درصدی مصرف CNG» است. یعنی خودروهای دوگانه‌سوز دوباره روی گاز رفته‌اند و هر لیتر بنزینی که مصرف نمی‌شود، واردات کمتری لازم دارد.",
+      "en": "Petrol down 9%, CNG above 18 million cubic metres a day: petrol consumption fell 9% in Aban and the papers’ shared headline is “CNG use up 24%”. Dual-fuel cars have switched back to gas, and every litre of petrol not burned is a litre less to import.",
+      "src": "رکنا، باشگاه خبرنگاران جوان",
+      "url": "https://www.yjc.ir/fa/news/9150432/"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و تولید",
+    "en": "Industry & production",
+    "items": [
+     {
+      "fa": "۸۵ درصد واحدهای صنعتی فعال‌اند: معاون صمت می‌گوید ۱۴ درصد مشکل تولید دارند و صادرکننده می‌تواند ارز صادراتش را خرج واردات بیش از ۳ هزار ردیف تعرفه کند. یعنی کارخانه‌ای که صادر می‌کند، مواد اولیه‌اش را بدون صف ارز وارد می‌کند.",
+      "en": "85% of industrial units are active: the industry ministry’s deputy says 14% have production problems, and exporters may spend their export currency on imports across more than 3,000 tariff lines. A factory that exports can bring in its raw materials without queuing for currency.",
+      "src": "خبرگزاری صداوسیما",
+      "url": "https://www.irib-news.ir/fa/news/5970239/"
+     },
+     {
+      "fa": "سهمیه‌ی سوخت کارخانه‌ها و معادن بر اساس تولید و سابقه‌ی مصرف تعیین می‌شود (وزیر صمت). یعنی زمستان امسال واحدی که بیشتر تولید کرده، گاز بیشتری می‌گیرد؛ سهمیه دیگر یکسان نیست.",
+      "en": "Fuel quotas for factories and mines will be set by output and past consumption, the industry minister says. This winter the plant that produced more gets more gas; quotas are no longer uniform.",
+      "src": "جهان صنعت",
+      "url": "https://jahanesanat.ir/"
+     }
+    ]
+   },
+   {
+    "fa": "فناوری",
+    "en": "Technology",
+    "items": [
+     {
+      "fa": "انویدیا ۱۱۵٫۸ میلیارد دلار در یک فصل: دو برابر پارسال؛ فروش تراشه‌های دیتاسنتر ۱۰۷٫۶ میلیارد و پیش‌بینی فصل بعد ۱۳۰ میلیارد دلار. یعنی تقاضای هوش مصنوعی هنوز سیر نشده و قیمت کارت گرافیک و سرور فعلاً پایین نمی‌آید.",
+      "en": "Nvidia: $115.8 billion in one quarter, double last year; data-centre chips brought $107.6 billion and next quarter is guided at $130 billion. AI demand is nowhere near saturated, so GPU and server prices are not coming down yet.",
+      "src": "انویدیا",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+     },
+     {
+      "fa": "دانش‌بنیان‌های ایرانی در هفته‌ی نوآوری ازبکستان: چند تفاهم‌نامه امضا شد و یک شرکت برای فروش محصولش در بازار ازبکستان توافق کرد؛ دارو، رنگ، معدن و آموزش. یعنی بازار آسیای میانه برای شرکت‌های کوچک فناور ایرانی باز می‌شود.",
+      "en": "Iranian knowledge-based firms at Uzbekistan Innovation Week 2026: several MoUs were signed and one company agreed to sell its product in the Uzbek market, in pharma, paints, mining and training. Central Asia is opening up for small Iranian tech firms.",
+      "src": "خبرگزاری صداوسیما",
+      "url": "https://www.irib-news.ir/fa/news/5970862/"
+     }
+    ]
+   },
+   {
+    "fa": "جامعه و محیط‌زیست",
+    "en": "Society & environment",
+    "items": [
+     {
+      "fa": "هشدار هواشناسی تهران تا جمعه ۲۹ آبان: برف و باران و باد شدید، ارتفاعات پایتخت سفیدپوش می‌شود. یعنی برنامه‌ی کوه و جاده‌ی شمال را برای جمعه با احتیاط بچینید؛ باران آلودگی را هم می‌شوید.",
+      "en": "Tehran weather warning through Friday 29 Aban: snow, rain and strong wind, with the capital’s heights turning white. Plan Friday mountain trips and the road north with care; the rain will also wash out the smog.",
+      "src": "انتخاب، نورنیوز، اکوایران",
+      "url": "https://www.entekhab.ir/fa/news/948597/"
+     },
+     {
+      "fa": "هوای تهران همچنان نارنجی است؛ ناسالم برای گروه‌های حساس تا رسیدن بارش. یعنی کودکان، سالمندان و بیماران قلبی و تنفسی امروز هم فعالیت بیرونی را کم کنند.",
+      "en": "Tehran’s air stays orange, unhealthy for sensitive groups until the rain arrives: children, the elderly and heart and lung patients should limit time outdoors today too.",
+      "src": "جهان صنعت، تعادل",
+      "url": "https://www.taadolnewspaper.ir/fa/news/411841/"
+     }
+    ]
+   },
+   {
+    "fa": "سلامت",
+    "en": "Health",
+    "items": [
+     {
+      "fa": "آنفلوانزا سه هفته زودتر آمده و اوجش اواسط آذر است: معاون بهداشت وزارت بهداشت می‌گوید ۲۵ تا ۳۰ درصد عفونت‌های تنفسی فعلی آنفلوانزا و ۱۸ درصد کروناست و موج تا دی ادامه دارد. یعنی سخت‌ترین هفته‌ها هنوز نیامده؛ تب و بدن‌درد را سرماخوردگی ساده حساب نکنید و بیمار را خانه نگه دارید.",
+      "en": "Flu arrived three weeks early and peaks in mid-Azar: the deputy health minister says 25–30% of current respiratory infections are flu and 18% are Covid, with the wave running into Dey. The hardest weeks are still ahead: do not treat fever and body aches as a simple cold, and keep the sick at home.",
+      "src": "تابناک، ایسنا، خبرفوری",
+      "url": "https://tabnak.ir/fa/news/4201384/"
+     }
+    ]
+   },
+   {
+    "fa": "ورزش و فرهنگ",
+    "en": "Sport & culture",
+    "items": [
+     {
+      "fa": "بختیاری‌زاده از استقلال استعفا داد و باشگاه مخالفت کرد: دلیل، نبود زمین چمن مناسب تمرین و کمبود امکانات؛ بازی بعدی با العین امارات، ۲ آذر. یعنی سرمربی تیم صدرنشین بر سر «چمن تمرین» با مدیریت درگیر است، نه نتیجه.",
+      "en": "Bakhtiarizadeh resigned as Esteghlal coach and the club refused it: he cites no proper training pitch and poor facilities; the next match is Al-Ain on 2 Azar. The league leader’s coach is at odds with management over a training pitch, not results.",
+      "src": "همشهری آنلاین، پارس فوتبال",
+      "url": "https://www.hamshahrionline.ir/news/1087653/"
+     },
+     {
+      "fa": "بیرانوند امشب در بانکوک نامزد مرد سال فوتبال آسیاست؛ مرضیه جعفری، احمدعباسی و طیبی هم در فهرست نامزدها هستند. یعنی ایران امشب در چهار جایزه‌ی آسیا نماینده دارد.",
+      "en": "Beiranvand is up for AFC Player of the Year in Bangkok tonight; Marzieh Jafari, Ahmadabbasi and Tayyebi are also nominated: Iran has a name in four Asian awards tonight.",
+      "src": "ورزش سه",
+      "url": "https://www.varzesh3.ir/"
+     },
+     {
+      "fa": "«خواب» رضا عطاران و «همسفر» اکران شدند: فیلم مانی مقدم از جشنواره‌ی بوسان به سینماها آمد؛ فروش هفته‌ی گذشته‌ی سینمای ایران ۵۰ میلیارد تومان بود. یعنی گیشه‌ی پاییز با کمدی و درام تازه گرم می‌شود.",
+      "en": "Reza Attaran’s “Khab” and “Hamsafar” open: Mani Moghaddam’s film comes to cinemas from the Busan festival, and Iranian cinemas sold 50 billion tomans of tickets last week. The autumn box office is warming up with fresh comedy and drama.",
+      "src": "ایسکانیوز، گیم‌فا",
+      "url": "https://iscanews.ir/news/1325329/"
+     },
+     {
+      "fa": "جشنواره‌ی فجر ۱۴۰۵: محمدحسین لطیفی با «دنا» می‌آید و بهروز افخمی کنار کشید.",
+      "en": "Fajr festival 1405: Mohammad-Hossein Latifi enters with “Dena” while Behrouz Afkhami has withdrawn.",
+      "src": "شهرآرا",
+      "url": "https://shahraranews.ir/fa/news/460777/"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-18",
   "jalali": "1405/08/27",
   "weekday_fa": "چهارشنبه",
