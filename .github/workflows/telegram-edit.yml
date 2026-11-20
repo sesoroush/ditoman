@@ -43,6 +43,11 @@ jobs:
           else
             text="$(cat "$FILE")"
           fi
+          # **bold** markers -> real Telegram bold (entities), markers removed from the text.
+          printf '%s' "$text" > /tmp/post.txt
+          conv="$(python3 scripts/tg_bold.py /tmp/post.txt)"
+          text="$(printf '%s' "$conv" | jq -r .text)"
+          ents="$(printf '%s' "$conv" | jq -c .entities)"
           call() {
             m="$1"; shift
             resp="$(curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/$m" "$@")"
@@ -55,10 +60,10 @@ jobs:
               --form-string 'media={"type":"photo","media":"attach://photo"}' -F "photo=@$image"
           fi
           if [ "$TEXT_ID" = "$PHOTO_ID" ]; then
-            payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" '{chat_id:$c, message_id:($i|tonumber), caption:$t}')"
+            payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" --argjson e "$ents" '{chat_id:$c, message_id:($i|tonumber), caption:$t, caption_entities:$e}')"
             call editMessageCaption -H 'Content-Type: application/json' -d "$payload"
           else
-            payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" '{chat_id:$c, message_id:($i|tonumber), text:$t, link_preview_options:{is_disabled:true}}')"
+            payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" --argjson e "$ents" '{chat_id:$c, message_id:($i|tonumber), text:$t, entities:$e, link_preview_options:{is_disabled:true}}')"
             call editMessageText -H 'Content-Type: application/json' -d "$payload"
           fi
       - name: Update website feed
