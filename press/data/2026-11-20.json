@@ -1,0 +1,177 @@
+{
+ "date": "2026-11-20",
+ "lead_fa": "جمعه روزنامه چاپ نمی‌شود؛ این مرور، روی جلد پنجشنبه و خبرهای سایت‌ها تا عصر امروز است. دلار دور ۲۷۰ هزار تومان ماند ولی طلا و سکه با افت اونس جهانی عقب نشستند؛ هوای تهران بعد از باران «قابل قبول» شد و امسال ۱۳ روز پاک داشته؛ آنفلوآنزا مدارس بوشهر را دو روز تعطیل کرد و بیرانوند مرد سال فوتبال آسیا شد. برای هر خبر یک خط هم نوشته‌ایم که برای زندگی و جیب ما یعنی چه. با هم دنبال می‌کنیم.",
+ "lead_en": "No papers print on Friday, so this is Thursday’s front pages plus today’s news sites. The dollar held around 270,000 tomans while gold and coins slipped with the global ounce; Tehran’s air turned “acceptable” after the rain and has had 13 clean days this year; flu closed Bushehr’s schools for two days; and Beiranvand was named Asia’s player of the year. Each item ends with one line on what it means for you.",
+ "front_fa": "تیتر مشترک روزنامه‌های پنجشنبه: «افزایش ۲۴ درصدی مصرف CNG» · روزنامه‌های اقتصادی: «متر جدید بیکاری جوانان» · همشهری: یادداشت «فسادستیزی؛ مبارزه با اژدهای هفت‌سر»",
+ "front_en": "Shared Thursday headline: “CNG use up 24%” · Economic dailies: “A new yardstick for youth unemployment” · Hamshahri: column “Fighting corruption, a seven-headed dragon”",
+ "sections": [
+  {
+   "fa": "اقتصاد و بازار",
+   "en": "Economy & markets",
+   "items": [
+    {
+     "fa": "دلار ۲۷۱٬۴۰۰ تومان: آخرین نرخ ثبت‌شده‌ی بازار تعطیل جمعه؛ از حدود ۲۶۶ هزار چهارشنبه به ۲۶۹٬۹۰۰ پنجشنبه رسید و بالای ۲۷۰ ماند. یعنی جهش پنجشنبه پس گرفته نشد و شنبه بازار با نرخ ۲۷۰ هزاری شروع می‌کند، نه ۲۶۶.",
+     "en": "Dollar at 271,400 tomans: the last rate recorded on the closed Friday market, up from about 266,000 on Wednesday to 269,900 on Thursday. Thursday’s jump was not given back, so Saturday opens on a 270,000 rate, not 266,000.",
+     "src": "اندیشه معاصر، تابناک",
+     "url": "https://tabnak.ir/fa/news/4202889/"
+    },
+    {
+     "fa": "طلای ۱۸ عیار ۲۴٫۲۹ میلیون، سکه امامی ۲۵۰٫۶ میلیون: اونس جهانی به ۳٬۷۵۷ دلار، پایین‌ترین سطح از شهریور پارسال، افت کرد و حباب سکه حدود ۱۳ میلیون تومان است. یعنی از هر سکه‌ای که می‌خرید، ۱۳ میلیونش ارزش طلا نیست و با آرام‌شدن بازار همان بخش اول آب می‌رود.",
+     "en": "18-carat gold at 24.29 million a gram, the Emami coin at 250.6 million: the ounce fell to $3,757, its lowest since September 2025, and the coin’s premium is about 13 million tomans. Of every coin you buy, 13 million is not gold value, and that part is what evaporates first when the market calms.",
+     "src": "اندیشه معاصر، رویترز",
+     "url": "https://www.nst.com.my/amp/business/economy/2026/11/1580594/gold-drops-2pct-over-one-year-low-hawkish-fed-signals-boost-dollar"
+    },
+    {
+     "fa": "نفت برنت ۹۲ دلار، بیت‌کوین ۶۴ هزار دلار: برنت در آبان نزدیک ۲۰ درصد ارزان شده و سومین هفته‌ی کاهشی را می‌گذراند، چون آژانس بین‌المللی انرژی مازاد عرضه‌ی ۲ میلیون بشکه در روز می‌بیند؛ بیت‌کوین هم در یک ماه ۲۱ درصد پایین آمده. یعنی دو درآمد و دارایی دلاری هم‌زمان کوچک شده‌اند؛ نفت ارزان یعنی ارز کمتر برای کشور.",
+     "en": "Brent at $92, bitcoin at $64,000: Brent is down nearly 20% in a month and heading for a third losing week as the IEA sees a 2 million-barrel-a-day surplus; bitcoin has lost 21% in a month. Two dollar earners have shrunk at once, and cheaper oil means less foreign currency for the country.",
+     "src": "تریدینگ‌اکونومیکس، فورچون",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/597881"
+    },
+    {
+     "fa": "بورس ۸ میلیون و ۳۹۱ هزار: چهارشنبه ۱٫۲ درصد افت و ۳٫۳ همت خروج پول حقیقی، ولی شاخص هم‌وزن مثبت بود و ۵۲ درصد نمادها سبز؛ پول از فلزات و بانک بیرون رفت و به خودرو آمد. یعنی شاخص کل حال بزرگان را می‌گوید، نه حال سبد شما؛ بازار دو تکه شده.",
+     "en": "Stock index at 8.391 million: Wednesday fell 1.2% with 3.3 trillion tomans of retail outflow, yet the equal-weight index rose and 52% of tickers were green; money left metals and banks for car makers. The main index tells you about the heavyweights, not your portfolio; the market has split in two.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4202722/"
+    },
+    {
+     "fa": "کوییک S: کارخانه ۱٬۰۳۲ میلیون، بازار ۱٬۸۱۳ میلیون تومان؛ دنا پلاس اتومات ۴٬۵۲۰ میلیون (+۱۰۰) و پژو ۲۰۷ اتومات ۴٬۱۹۰ میلیون (−۵۰) در بازار راکد جمعه. یعنی فاصله‌ی کارخانه تا بازار هنوز ۷۵ درصد است؛ هر کس در قرعه‌کشی برنده شود، همان روز این سود را برده.",
+     "en": "Quick S: 1,032 million tomans at the factory, 1,813 million on the street; Dena Plus automatic at 4,520 million (+100) and Peugeot 207 automatic at 4,190 million (−50) in a sluggish Friday market. The factory-to-market gap is still 75%, so whoever wins the lottery pockets that gap the same day.",
+     "src": "اندیشه معاصر به نقل از اقتصادآنلاین",
+     "url": "https://andishemoaser.ir/%D9%82%DB%8C%D9%85%D8%AA-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%A7%D9%85%D8%B1%D9%88%D8%B2-%D8%AC%D9%85%D8%B9%D9%87-%DB%B2%DB%B9-%D8%A2%D8%A8%D8%A7%D9%86-%DB%B1%DB%B4%DB%B0%DB%B5%D8%9B-%D8%AC%D8%AF%D9%88/"
+    },
+    {
+     "fa": "۹٬۸۹۷ خودروی ایران‌خودرو به «اتوپلازا»: تا ۲۰۰ میلیون زیر قیمت بازار، در حالی که مردم در صف قرعه‌کشی‌اند؛ ایدرو می‌گوید مجوزی نداشته و دادستانی تهران فروش را متوقف کرد. یعنی اگر آگهی «خرید فوری از اتوپلازا» دیدید، فعلاً معامله‌ای در کار نیست.",
+     "en": "9,897 Iran Khodro cars sent to “Autoplaza” at up to 200 million tomans below market while buyers queue in lotteries; IDRO says no permit was issued and Tehran’s prosecutor halted the sales. If you see an ad for “instant purchase from Autoplaza”, there is no deal for now.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4202986/"
+    },
+    {
+     "fa": "مرغ ۳۳۰ تا ۳۶۰ هزار تومان: فیله ۸۹۹ هزار و سینه با استخوان ۶۳۰ هزار؛ مرغ زنده ۲۳۰ هزار و بازار در «ثبات نسبی». یعنی هر کیلو فیله حدود دو و نیم برابر مرغ کامل است؛ خرید مرغ کامل و تکه‌کردن در خانه فرق جدی می‌کند.",
+     "en": "Chicken at 330–360 thousand tomans a kilo: fillet 899 thousand, bone-in breast 630 thousand, live bird 230 thousand, the market “relatively stable”. Fillet costs about two and a half times a whole bird, so buying whole and cutting at home makes a real difference.",
+     "src": "اندیشه معاصر",
+     "url": "https://andishemoaser.ir/%D9%82%DB%8C%D9%85%D8%AA-%DA%AF%D9%88%D8%B4%D8%AA-%D9%85%D8%B1%D8%BA-%D8%A7%D9%85%D8%B1%D9%88%D8%B2-%DB%B2%DB%B7-%D8%A2%D8%A8%D8%A7%D9%86-%DB%B1%DB%B4%DB%B0%DB%B5%D8%9B-%D9%81%DB%8C%D9%84%D9%87-%D9%85/"
+    },
+    {
+     "fa": "مسکن تهران، شکاف ۱۰ برابری: ولنجک متری یک میلیارد، خاوران ۹۸٫۵ میلیون؛ میانگین قیمت پیشنهادی سامانه‌ی کلید ۲۳۷ میلیون تومان. یعنی «میانگین تهران» برای خریدار واقعی معنای کمی دارد؛ قیمت محله‌تان را دنبال کنید، نه عدد شهر را.",
+     "en": "Tehran housing, a tenfold gap: Velenjak at one billion tomans a square metre, Khavaran at 98.5 million; the Kilid platform’s average asking price is 237 million. The “Tehran average” means little to a real buyer: follow your own neighbourhood, not the city figure.",
+     "src": "اندیشه معاصر",
+     "url": "https://andishemoaser.ir/%D8%B4%DA%A9%D8%A7%D9%81-%DB%B1%DB%B0-%D8%A8%D8%B1%D8%A7%D8%A8%D8%B1%DB%8C-%D9%82%DB%8C%D9%85%D8%AA-%D9%85%D8%B3%DA%A9%D9%86-%D8%AF%D8%B1-%D8%AA%D9%87%D8%B1%D8%A7%D9%86%D8%9B-%D8%AE%D8%A7%D9%86%D9%87/"
+    }
+   ]
+  },
+  {
+   "fa": "صنعت و تولید",
+   "en": "Industry & production",
+   "items": [
+    {
+     "fa": "۲۵ همت وام به دانش‌بنیان‌ها از ابتدای سال: معاون علمی رئیس‌جمهور می‌گوید صندوق نوآوری تا پایان سال به ۳۰ تا ۳۵ همت می‌رسد و جذب بدون آزمون ۱٬۷۵۰ نخبه در دستگاه‌های اجرایی از اوایل آذر شروع می‌شود. یعنی برای فارغ‌التحصیل نخبه، مسیر استخدام دولتی بدون کنکور استخدامی باز شده.",
+     "en": "25 trillion tomans lent to knowledge-based firms this year: the vice-president for science says the Innovation Fund will reach 30–35 trillion by year-end, and exam-free hiring of 1,750 top graduates into government bodies starts in early Azar. For an elite graduate, a route into public jobs without the civil-service exam has opened.",
+     "src": "باشگاه خبرنگاران جوان",
+     "url": "https://www.yjc.ir/fa/news/9150578/"
+    },
+    {
+     "fa": "صادرات ۳٫۶۷ میلیارد دلاری بوشهر در ۷ ماه: پنج برابر واردات ۷۳۱ میلیون دلاری استان؛ هشتمین نمایشگاه خرما با ۵۵ شرکت از ۱۰ استان تا امروز برپاست. یعنی یک استان به‌تنهایی تراز تجاری مثبت ۳ میلیارد دلاری دارد؛ خرما و میعانات گازی ارزآورند.",
+     "en": "Bushehr exported $3.67 billion in seven months, five times the province’s $731 million of imports; the eighth date-palm fair runs until today with 55 firms from 10 provinces. One province alone runs a $3 billion trade surplus; dates and gas condensate earn hard currency.",
+     "src": "باشگاه خبرنگاران جوان",
+     "url": "https://www.yjc.ir/fa/news/9150720/"
+    }
+   ]
+  },
+  {
+   "fa": "فناوری",
+   "en": "Technology",
+   "items": [
+    {
+     "fa": "انویدیا، نخستین گزارش مالی بدون جنسن هوانگ: با کولت کرس به‌عنوان مدیرعامل موقت، درآمد فصل ۱۱۵٫۸ میلیارد دلار و پیش‌بینی فصل بعد ۱۳۰ میلیارد دلار اعلام شد؛ سهم روز بعد ۳ درصد افت کرد. یعنی بازار، شرکت را بزرگ‌تر از یک نفر می‌داند، ولی تقاضای تراشه‌ی هوش مصنوعی هنوز سیر نشده و قیمت سرور و کارت گرافیک فعلاً پایین نمی‌آید.",
+     "en": "Nvidia’s first earnings without Jensen Huang: with Colette Kress as interim CEO, quarterly revenue came in at $115.8 billion with $130 billion guided for next quarter; the stock slipped 3% the next day. The market sees the company as bigger than one person, but AI-chip demand is not saturated and server and GPU prices are not coming down yet.",
+     "src": "فورچون، کیپلینگر",
+     "url": "https://fortune.com/2026/11/18/nvidia-posts-blockbuster-quarter-as-jensen-huangs-dealmaking-legacy-hangs-in-the-balance/"
+    },
+    {
+     "fa": "کلاهبرداری با برچسب «مجوز پلیس فتا»: پلیس فتا می‌گوید آگهی‌های وام با این عبارت، لینک آلوده‌ی پیامکی و درخواست پول برای «افتتاح حساب» یا «تشکیل پرونده» کلاهبرداری است؛ سیم‌کارت‌تان را هم برای «افزایش اعتبار» دست کسی ندهید. یعنی هیچ وام واقعی پیش‌پرداخت نمی‌خواهد؛ هر پرداختی قبل از وام، خودِ کلاهبرداری است.",
+     "en": "Scams wearing a “licensed by the cyber police” badge: FATA says loan ads with that phrase, SMS links and requests for money to “open an account” or “set up a file” are fraud, and never hand over your SIM for a “credit boost”. No real loan asks for money up front; any payment before the loan is the scam itself.",
+     "src": "باشگاه خبرنگاران جوان",
+     "url": "https://www.yjc.ir/fa/news/9149127/"
+    }
+   ]
+  },
+  {
+   "fa": "جامعه و محیط‌زیست",
+   "en": "Society & environment",
+   "items": [
+    {
+     "fa": "هوای تهران ۸۶، قابل قبول: باران شاخص را از نارنجی به زرد برگرداند. از ابتدای سال ۱۳ روز پاک (پارسال ۶) و ۳۶ روز ناسالم برای گروه‌های حساس (پارسال ۱۰۳). یعنی امسال تا این‌جا سه برابر کمتر از پارسال هوای ناسالم داشته‌ایم؛ امروز روز پیاده‌روی و هواخوری است.",
+     "en": "Tehran air at 86, acceptable: rain brought the index from orange back to yellow. Since the Iranian new year: 13 clean days (6 last year) and 36 days unhealthy for sensitive groups (103 last year). So far this year has had a third of last year’s unhealthy days; today is a day to walk outside.",
+     "src": "تابناک، باشگاه خبرنگاران جوان",
+     "url": "https://tabnak.ir/fa/news/4203045/"
+    },
+    {
+     "fa": "سدهای تهران ۲۰ درصد پر: ۳۵۰ میلیون مترمکعب از ظرفیت ۱٫۹ میلیارد؛ بارش پاییز حدود یک‌پنجم نرمال است، هرچند پارسال همین موقع صفر بود و سدها ۹۵ درصد خالی. یعنی امسال بهتر از پارسال شروع شده ولی هنوز چهار پنجم مخزن خالی است؛ صرفه‌جویی زمستان هم ادامه دارد.",
+     "en": "Tehran’s dams are 20% full: 350 million cubic metres of a 1.9 billion capacity; autumn rain is about a fifth of normal, though at this point last year it was zero and the dams were 95% empty. A better start than last year, but four fifths of the reservoir is still empty, so winter saving continues.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4202607/"
+    },
+    {
+     "fa": "هشدار زرد تهران تا ظهر امروز: مه و برف و کولاک در ارتفاعات، لغزندگی جاده و ریزش سنگ در گردنه‌ها؛ دمای شهر ۱۱ تا ۱۹ درجه. یعنی برنامه‌ی کوه و جاده‌ی شمال را برای بعدازظهر بگذارید و زنجیر چرخ را در ماشین داشته باشید.",
+     "en": "Yellow alert for Tehran until midday: fog, snow and blizzard on the heights, slippery roads and rockfall on passes; city temperatures 11–19°C. Leave mountain trips and the road north for the afternoon and keep snow chains in the car.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4202805/"
+    }
+   ]
+  },
+  {
+   "fa": "سلامت",
+   "en": "Health",
+   "items": [
+    {
+     "fa": "آنفلوآنزا از آستانه‌ی هشدار گذشت: نرخ مثبت نمونه‌ها در بوشهر ۵۱ درصد و در کردستان ۳۲٫۶ درصد در برابر آستانه‌ی ۱۰ درصد؛ ۱۴ استان از خط هشدار عبور کرده‌اند و مدارس بوشهر شنبه و یکشنبه غیرحضوری است. یعنی از هر دو نفری که با علائم آزمایش می‌دهند، یکی واقعاً آنفلوآنزا دارد؛ بچه‌ی تب‌دار را مدرسه نفرستید.",
+     "en": "Flu past the alert threshold: positive test rates are 51% in Bushehr and 32.6% in Kurdistan against a 10% threshold; 14 provinces have crossed the line and Bushehr’s schools go online on Saturday and Sunday. One in two people tested with symptoms actually has flu, so keep a feverish child home.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4203068/"
+    },
+    {
+     "fa": "آنتی‌بیوتیک برای آنفلوآنزا اثر ندارد: هفته‌ی آگاهی از مقاومت میکروبی است و دانشگاه‌های علوم پزشکی یادآوری می‌کنند آنتی‌بیوتیک فقط بر باکتری اثر می‌کند، نه ویروس؛ شماره‌ی ۱۹۰ برای پرسش دارویی. یعنی آموکسی‌سیلین خودسرانه سرماخوردگی را کوتاه نمی‌کند، فقط دفعه‌ی بعد که عفونت باکتریایی بگیرید، دارو کمتر جواب می‌دهد.",
+     "en": "Antibiotics do nothing for flu: during antimicrobial-resistance awareness week, medical universities remind people that antibiotics act on bacteria, not viruses; dial 190 for drug questions. Self-prescribed amoxicillin does not shorten a cold; it only makes the drug work less the next time you have a real bacterial infection.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4202726/"
+    },
+    {
+     "fa": "کمبود داروهای حیاتی از ۴۷ قلم به ۳۷ قلم رسید: سخنگوی سازمان غذا و دارو می‌گوید نیاز ارزی دارو و تجهیزات ۵٫۵ میلیارد دلار است و سهمیه‌ی مصوب ۴٫۵ میلیارد. یعنی فهرست کمبود کوتاه‌تر شده، ولی یک میلیارد دلار فاصله هنوز هست و قلم‌های گران‌تر اول کم می‌آیند.",
+     "en": "Shortages of essential medicines fell from 47 items to 37: the Food and Drug Organization’s spokesman puts the sector’s currency need at $5.5 billion against a $4.5 billion allocation. The shortage list is shorter, but a $1 billion gap remains and the dearer items run short first.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4202288/"
+    },
+    {
+     "fa": "هر ۵ میکروگرم آلودگی بیشتر، ۱۵ تا ۲۰ درصد حمله‌ی آسم بیشتر: مرکز تحقیقات آلودگی هوا می‌گوید حملات قلبی هم در ۴۸ ساعت تا ۱۲ درصد بالا می‌رود و سال ۱۴۰۳ حدود ۵۹ هزار مرگ منتسب به ذرات ریز ثبت شده. یعنی روزهای نارنجی برای بیمار قلبی و آسمی فقط «ناخوشایند» نیست؛ همان روز خطر واقعی دارد.",
+     "en": "Every extra 5 micrograms of pollution means 15–20% more asthma attacks: the air-pollution research centre says heart attacks also rise up to 12% within 48 hours, and about 59,000 deaths were attributed to fine particles in 1403. Orange days are not merely unpleasant for heart and asthma patients; the risk is real that same day.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4202877/"
+    }
+   ]
+  },
+  {
+   "fa": "ورزش و فرهنگ",
+   "en": "Sport & culture",
+   "items": [
+    {
+     "fa": "بیرانوند مرد سال فوتبال آسیا: نخستین دروازه‌بان برنده از آغاز این جایزه در ۱۹۹۴ و پنجمین ایرانی پس از عزیزی، دایی، مهدوی‌کیا و کریمی (۲۰۰۴)؛ مرضیه جعفری هم دومین سال پیاپی مربی سال زنان آسیا شد. یعنی دو جایزه‌ی اصلی قاره در یک شب به ایران رسید، بعد از ۲۲ سال انتظار.",
+     "en": "Beiranvand is AFC Player of the Year: the first goalkeeper to win since the award began in 1994 and the fifth Iranian after Azizi, Daei, Mahdavikia and Karimi (2004); Marzieh Jafari also took women’s coach of the year for a second straight season. Two of the continent’s main awards came to Iran in one night, after a 22-year wait.",
+     "src": "باشگاه خبرنگاران جوان، دان",
+     "url": "https://www.yjc.ir/fa/news/9150601/"
+    },
+    {
+     "fa": "گیشه‌ی هفته ۵۱ میلیارد تومان با ۴۳۴ هزار تماشاگر: «بورسیه» با ۲۴ میلیارد صدرنشین ماند و «خواب» رضا عطاران و «همسفر» از چهارشنبه اکران شدند. یعنی بلیت میانگین حدود ۱۱۸ هزار تومان است و رقابت آخر پاییز تازه از این هفته شروع می‌شود.",
+     "en": "Weekly box office of 51 billion tomans from 434,000 admissions: “Bursiyeh” stayed on top with 24 billion, and Reza Attaran’s “Khab” and “Hamsafar” opened on Wednesday. The average ticket is about 118,000 tomans, and the late-autumn race only starts this week.",
+     "src": "تابناک",
+     "url": "https://tabnak.ir/fa/news/4202702/"
+    },
+    {
+     "fa": "استقلال، استعفای کتبی بختیاری‌زاده: سرمربی بعد از غیبت در تمرین، استعفایش را به مدیرعامل داده و باشگاه هنوز رسماً تأیید نکرده؛ بازی بعدی دوشنبه ۲ آذر با العین است. یعنی صدرنشین لیگ ۷۲ ساعت پیش از بازی آسیایی هنوز نمی‌داند با چه نیمکتی به دبی می‌رود.",
+     "en": "Esteghlal: Bakhtiarizadeh’s written resignation went to the CEO after he skipped training, and the club has not officially confirmed it; the next match is Al-Ain on Monday 2 Azar. The league leader does not yet know, 72 hours before an Asian tie, which bench it takes to Dubai.",
+     "src": "باشگاه خبرنگاران جوان",
+     "url": "https://www.yjc.ir/fa/news/9150513/"
+    }
+   ]
+  }
+ ]
+}
