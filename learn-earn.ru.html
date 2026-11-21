@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+  <title>Учитесь и зарабатывайте TMN | Ditoman</title>
+  <meta name="description" content="Каждый вопрос теста взят из одного из этих уроков. Каждый урок занимает около пяти минут." />
+  <link rel="icon" href="tmn-logo-256.png" />
+  <meta name="theme-color" content="#04090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="site.css?v=20261113" />
+<script>try{if(localStorage.getItem("ditoman-lang")==="en"){var h=document.documentElement;h.lang="en";h.dir="ltr";h.setAttribute("data-lang","en")}}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+  .le [hidden], .le[hidden] { display: none !important; }
+  .le .kicker { color: var(--mint); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; margin-bottom: 10px; }
+  html[data-lang="fa"] .le .kicker { letter-spacing: 0; }
+  .le-steps { list-style: none; counter-reset: s; display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 0; padding: 0; }
+  .le-steps li { counter-increment: s; display: flex; align-items: center; gap: 10px; padding: 10px 16px; border: 1px solid var(--line-strong); border-radius: 999px; font-weight: 700; }
+  .le-steps li::before { content: counter(s); display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: #FFAD00; color: #101F22; font-weight: 800; }
+  html[data-lang="fa"] .le-steps li::before { content: counter(s, persian); }
+  .le-go, .le-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 999px; padding: 13px 24px; background: #FFAD00; color: #1a1300 !important; font: inherit; font-weight: 800; cursor: pointer; text-decoration: none !important; transition: filter .2s ease, transform .2s ease; }
+  .le-go { margin-top: 22px; }
+  .le-go:hover, .le-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+  .le-btn.ghost { background: transparent; color: var(--text) !important; border: 1px solid var(--line-strong); }
+  .le-reward { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 22px; padding: 26px; border-radius: 22px; border: 1px solid rgba(255,173,0,.45); background: rgba(255,173,0,.06); }
+  .le-label { color: var(--muted); font-weight: 700; font-size: .9rem; }
+  .le-amount { font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 800; color: #FFAD00; line-height: 1.3; margin-top: 6px; }
+  .le-note { color: var(--muted); margin-top: 8px; }
+  .le-rules { margin: 0; padding-inline-start: 20px; display: grid; gap: 8px; line-height: 1.8; }
+  .le-rules a { color: var(--mint); text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 720px) { .le-reward { grid-template-columns: 1fr; padding: 22px 20px; } }
+  .le-lessons { list-style: none; padding: 0; margin: 18px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+  .le-lessons a { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); color: var(--text); font-weight: 700; line-height: 1.5; height: 100%; transition: border-color .2s ease, transform .2s ease; }
+  .le-lessons a:hover { border-color: rgba(87,217,199,.6); transform: translateY(-2px); }
+  .le-lessons b { flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: rgba(87,217,199,.14); color: var(--mint); font-weight: 800; }
+  .le-quiz { display: grid; gap: 14px; margin-top: 18px; max-width: 820px; }
+  .le-q { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); padding: 18px 18px 12px; margin: 0; min-width: 0; }
+  .le-q legend { float: left; width: 100%; display: flex; gap: 10px; align-items: flex-start; font-weight: 800; font-size: 1.04rem; line-height: 1.6; margin-bottom: 10px; padding: 0; }
+  html[data-lang="fa"] .le-q legend { float: right; }
+  .le-n { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: #FFAD00; color: #101F22; font-size: .9rem; }
+  .le-opt { clear: both; display: flex; gap: 10px; align-items: flex-start; padding: 11px 12px; margin-bottom: 6px; border-radius: 12px; border: 1px solid transparent; cursor: pointer; line-height: 1.6; }
+  .le-opt:hover { background: rgba(87,217,199,.06); border-color: var(--line); }
+  .le-opt:has(input:checked) { background: rgba(87,217,199,.1); border-color: rgba(87,217,199,.55); }
+  .le-opt input { flex: none; width: 18px; height: 18px; margin-top: 4px; accent-color: #57D9C7; }
+  .le-submit { justify-self: start; }
+  .le-err { color: #ff8a7a; font-weight: 700; }
+  .le-result { margin-top: 18px; max-width: 820px; padding: 22px 24px; border-radius: 20px; background: var(--surface); border: 1px solid var(--line-strong); display: grid; gap: 12px; }
+  .le-big { font-size: 1.5rem; font-weight: 800; }
+  .le-big.ok { color: var(--mint); }
+  .le-review { margin: 0; padding-inline-start: 20px; line-height: 2; }
+  .le-review a { color: var(--mint); text-decoration: underline; text-underline-offset: 3px; }
+  .le-result .le-btn { justify-self: start; }
+  .le-claim { max-width: 720px; display: grid; gap: 14px; padding: 26px; border-radius: 22px; background: var(--surface); border: 1px solid rgba(87,217,199,.45); }
+  .le-field { display: grid; gap: 6px; font-weight: 700; }
+  .le-field input { width: 100%; padding: 13px 14px; border-radius: 12px; border: 1px solid var(--line-strong); background: #101F22; color: var(--text); font: 600 1rem/1.3 ui-monospace, Menlo, Consolas, monospace; }
+  .le-field input:focus { outline: 2px solid #57D9C7; outline-offset: 1px; }
+  .le-claim > .le-btn { justify-self: start; }
+  .le-ticket { display: grid; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line); }
+  .le-code { font: 800 1.7rem/1.2 ui-monospace, Menlo, Consolas, monospace; color: #FFAD00; letter-spacing: .04em; }
+  .le-msg { white-space: pre-wrap; overflow-wrap: anywhere; unicode-bidi: plaintext; text-align: start; margin: 0; padding: 14px; border-radius: 12px; background: #101F22; border: 1px solid var(--line); font: 500 .95rem/1.8 var(--en); color: var(--text); }
+  .le-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  @media (max-width: 520px) { .le-claim { padding: 20px 16px; } .le-q { padding: 16px 12px 8px; } .le-code { font-size: 1.35rem; } }
+  .le-help { border: 1px solid var(--line-strong); border-radius: 16px; padding: 14px 16px; background: rgba(87,217,199,.05); }
+  .le-help summary { cursor: pointer; font-weight: 800; color: var(--mint); }
+  .le-help ol { margin: 12px 0; padding-inline-start: 22px; display: grid; gap: 8px; line-height: 1.8; }
+  .le-lat { font-family: var(--en); unicode-bidi: isolate; direction: ltr; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/learn-earn.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/learn-earn.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/learn-earn.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/learn-earn.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/learn-earn.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/learn-earn.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/learn-earn.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/learn-earn.ru.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Учитесь и зарабатывайте TMN | Ditoman" />
+<meta property="og:description" content="Каждый вопрос теста взят из одного из этих уроков. Каждый урок занимает около пяти минут." />
+<meta property="og:url" content="https://ditoman.com/learn-earn.ru.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/learn-earn.ru.html#page",
+   "url": "https://ditoman.com/learn-earn.ru.html",
+   "name": "Учитесь и зарабатывайте TMN | Ditoman",
+   "description": "Каждый вопрос теста взят из одного из этих уроков. Каждый урок занимает около пяти минут.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Учитесь и зарабатывайте TMN",
+     "item": "https://ditoman.com/learn-earn.ru.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.ru.html" aria-label="Ditoman | دیتومان">
+        <span class="brand-en">DITOMAN</span>
+        <img src="tmn-logo-256.png" alt="" />
+        <span class="brand-fa" dir="rtl">دیتومان</span>
+      </a>
+      <nav class="nav-links" aria-label="Главная">
+        <a href="learn.ru.html">Учиться</a>
+        <a href="iran.en.html">Иран</a>
+        <a href="companies.en.html">Компании</a>
+        <a href="prices.ru.html">Цены</a>
+        <a href="calendar.en.html">Календарь</a>
+        <a href="tmn.ru.html" class="active">TMN</a>
+        <a href="index.ru.html#whitepapers">Whitepaper</a>
+        <a href="posts.en.html">Публикации</a>
+      </nav>
+      <div class="nav-right">
+        <a class="nav-cta" href="learn.ru.html">Начать учиться</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Открыть меню">
+          <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+          <span class="menu-word">Меню</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-panel" id="menuPanel" hidden>
+      <div class="wrap">
+        <p class="menu-kicker">Перейти к <span lang="fa">برو به</span></p>
+        <div class="menu-grid">
+          <a class="menu-tile" href="learn.ru.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 3l9 3.5-9 3.5-9-3.5z M6 9v5c0 1.7 2.7 3 6 3s6-1.3 6-3V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Уроки</span>
+            <span class="mt-fa" lang="fa">درس‌ها</span>
+            <span class="mt-desc">Короткие двуязычные уроки с тестами</span>
+          </a>
+          <a class="menu-tile" href="iran.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l4-3 4 3v11M13 20v-7l4-3 3 3v7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Что есть у Ирана</span>
+            <span class="mt-fa" lang="fa">ایران چه دارد</span>
+            <span class="mt-desc">Промышленность, энергетика, транспорт, недра, технологии, туризм</span>
+          </a>
+          <a class="menu-tile" href="lesson21.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l5-6 4 3 7-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="mt-en">Новейший урок</span>
+            <span class="mt-fa" lang="fa">درس تازه</span>
+            <span class="mt-desc">Как ИИ изменит будущее денег?</span>
+          </a>
+          <a class="menu-tile" href="tmn.ru.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z M8 9h8 M12 9v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Токен TMN</span>
+            <span class="mt-fa" lang="fa">توکن TMN</span>
+            <span class="mt-desc">Контракт, факты и честное раскрытие</span>
+          </a>
+          <a class="menu-tile" href="posts.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Публикации</span>
+            <span class="mt-fa" lang="fa">یادداشت‌ها</span>
+            <span class="mt-desc">Каждый пост канала — на сайте</span>
+          </a>
+          <a class="menu-tile" href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z M14 2.5V7h4.5 M9 12h6 M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Whitepaper</span>
+            <span class="mt-fa" lang="fa">وایت‌پیپر</span>
+            <span class="mt-desc">Полное направление в PDF</span>
+          </a>
+          <a class="menu-tile" href="calendar.en.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="mt-en">Календарь рынка</span>
+            <span class="mt-fa" lang="fa">تقویم بازار</span>
+            <span class="mt-desc">Что движет рынками каждый день</span>
+          </a>
+          <a class="menu-tile" href="prices.ru.html">
+            <span class="mt-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="6" r="1.6" fill="currentColor"/></svg></span>
+            <span class="mt-en">Цены за день</span>
+            <span class="mt-fa" lang="fa">قیمت‌های روزانه</span>
+            <span class="mt-desc">Доллар, золото и все ежедневные отчёты</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+  <main class="le">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker"><span lang="fa" dir="rtl">یاد بگیر، توکن بگیر</span><span lang="en">Учись и зарабатывай</span></p>
+        <h1 lang="fa" dir="rtl">ده درس بخوان، آزمون بده، TMN بگیر</h1>
+        <h1 lang="en">Прочитайте десять уроков, пройдите тест, получите TMN</h1>
+        <p class="hero-lede" lang="fa" dir="rtl">طرح آزمایشی دیتومان برای کسانی که می‌خواهند کریپتو را درست یاد بگیرند. درس‌ها را بخوان، به آزمون ده‌سؤالی جواب بده و با دست‌کم هشت جواب درست، پاداش TMN بگیر.</p>
+        <p class="hero-lede" lang="en">Пилот Ditoman для тех, кто хочет по-настоящему изучить крипто. Прочитайте уроки, пройдите тест из десяти вопросов и при не менее восьми верных ответах получите награду в TMN.</p>
+        <ol class="le-steps">
+          <li><span lang="fa" dir="rtl">ده درس را بخوان</span><span lang="en">Прочитайте десять уроков</span></li>
+          <li><span lang="fa" dir="rtl">آزمون ده‌سؤالی</span><span lang="en">Тест из десяти вопросов</span></li>
+          <li><span lang="fa" dir="rtl">کد و آدرس کیف پول را بفرست</span><span lang="en">Отправьте свой код и адрес кошелька</span></li>
+        </ol>
+        <a class="le-go" href="index.ru.html#test"><span lang="fa" dir="rtl">رفتن به آزمون</span><span lang="en">Перейти к тесту</span></a>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="le-reward">
+          <div class="le-reward-main">
+            <p class="le-label"><span lang="fa" dir="rtl">پاداش هر نفر</span><span lang="en">Награда на человека</span></p>
+            <p class="le-amount" id="leReward"></p>
+            <p class="le-note" id="leCap"></p>
+          </div>
+          <ul class="le-rules">
+            <li lang="fa" dir="rtl">هر کیف پول فقط یک بار پاداش می‌گیرد.</li>
+            <li lang="en">Каждый кошелёк может получить награду один раз.</li>
+            <li lang="fa" dir="rtl">آدرس باید کیف پول شخصی روی شبکه‌ی BNB Smart Chain باشد، نه آدرس صرافی. <a href="tmn-guide.en.html">راهنمای اضافه کردن TMN به کیف پول</a></li>
+            <li lang="en">Используйте личный кошелёк в BNB Smart Chain, а не адрес биржи. <a href="tmn-guide.en.html">Как добавить TMN в кошелёк</a></li>
+            <li lang="fa" dir="rtl">پاداش‌ها هر چند روز یک بار، دسته‌ای فرستاده می‌شوند.</li>
+            <li lang="en">Награды отправляются партиями раз в несколько дней.</li>
+            <li lang="fa" dir="rtl">این پاداش برای یادگیری است، نه وعده‌ی سود.</li>
+            <li lang="en">Награда — за обучение, а не обещание прибыли.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="lessons">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="fa" dir="rtl">قدم اول: ده درس</span><span lang="en">Шаг первый: десять уроков</span></h2>
+          <p lang="fa" dir="rtl">هر سؤال آزمون از یکی از این درس‌هاست. هر درس حدود پنج دقیقه وقت می‌گیرد.</p>
+          <p lang="en">Каждый вопрос теста взят из одного из этих уроков. Каждый урок занимает около пяти минут.</p>
+        </div>
+        <ol class="le-lessons" id="leLessons"></ol>
+      </div>
+    </section>
+
+    <section class="block" id="test">
+      <div class="wrap">
+        <div class="head">
+          <h2><span lang="fa" dir="rtl">قدم دوم: آزمون</span><span lang="en">Шаг второй: тест</span></h2>
+          <p lang="fa" dir="rtl">ده سؤال، از هر درس یکی. برای قبولی دست‌کم هشت جواب درست لازم است. اگر قبول نشدی، درس‌هایی را که اشتباه جواب دادی دوباره بخوان و باز امتحان کن.</p>
+          <p lang="en">Десять вопросов, по одному из каждого урока. Чтобы пройти, нужно не менее восьми верных ответов. Если не прошли, перечитайте уроки, в которых ошиблись, и попробуйте снова.</p>
+        </div>
+        <form class="le-quiz" id="leQuiz" novalidate></form>
+        <div class="le-result" id="leResult" hidden></div>
+      </div>
+    </section>
+
+    <section class="block" id="claim" hidden>
+      <div class="wrap">
+        <div class="le-claim">
+          <h2><span lang="fa" dir="rtl">قدم سوم: دریافت پاداش</span><span lang="en">Шаг третий: получите награду</span></h2>
+          <p lang="fa" dir="rtl">آدرس کیف پول BNB Smart Chain خودت را وارد کن. یک کد اختصاصی ساخته می‌شود. پیام آماده را کپی کن و برای دیتومان بفرست.</p>
+          <p lang="en">Введите адрес вашего кошелька BNB Smart Chain. Будет создан личный код. Скопируйте готовое сообщение и отправьте его Ditoman.</p>
+          <details class="le-help" open>
+            <summary><span lang="fa" dir="rtl">آدرس کیف پول را از کجا بیاورم؟</span><span lang="en">Где взять адрес кошелька?</span></summary>
+            <ol lang="fa" dir="rtl">
+              <li>یک کیف پول شخصی نصب کنید؛ مثلاً تراست ولت یا سیف‌پل. آدرس صرافی (نوبیتکس، والکس و مانند آن) قبول نیست.</li>
+              <li>کیف پول را بسازید و ۱۲ کلمه‌ی بازیابی را روی کاغذ بنویسید. آن را به هیچ‌کس ندهید.</li>
+              <li>در کیف پول، شبکه‌ی <b>BNB Smart Chain</b> را انتخاب کنید و «دریافت» (Receive) را بزنید.</li>
+              <li>آدرسی که نشان می‌دهد با <bdi class="le-lat">0x</bdi> شروع می‌شود و ۴۲ کاراکتر دارد. آن را کپی کنید و همین‌جا جای‌گذاری کنید.</li>
+            </ol>
+            <ol lang="en">
+              <li>Установите личный кошелёк, например Trust Wallet или SafePal. Адрес биржи не принимается.</li>
+              <li>Создайте кошелёк и запишите 12 слов восстановления на бумаге. Никому их не сообщайте.</li>
+              <li>В кошельке выберите <b>BNB Smart Chain</b> сеть и нажмите «Получить».</li>
+              <li>Показанный адрес начинается с 0x и содержит 42 символа. Скопируйте его и вставьте сюда.</li>
+            </ol>
+            <a class="le-btn ghost" href="tmn-guide.en.html" target="_blank" rel="noopener"><span lang="fa" dir="rtl">راهنمای تصویری قدم‌به‌قدم</span><span lang="en">Пошаговое руководство с картинками</span></a>
+          </details>
+          <label class="le-field">
+            <span><span lang="fa" dir="rtl">آدرس کیف پول (با <bdi class="le-lat">0x</bdi> شروع می‌شود)</span><span lang="en">Адрес кошелька (начинается с 0x)</span></span>
+            <input id="leWallet" type="text" dir="ltr" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="0x…" />
+          </label>
+          <label class="le-field">
+            <span><span lang="fa" dir="rtl">آیدی تلگرام یا بله (اختیاری)</span><span lang="en">Имя пользователя в Telegram или Bale (необязательно)</span></span>
+            <input id="leUser" type="text" dir="ltr" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="@username" />
+          </label>
+          <p class="le-err" id="leErr" hidden><span lang="fa" dir="rtl">این آدرس درست نیست. آدرس کیف پول BNB Smart Chain با <bdi class="le-lat">0x</bdi> شروع می‌شود و ۴۲ کاراکتر دارد.</span><span lang="en">Этот адрес недействителен. Адрес BNB Smart Chain начинается с 0x и содержит 42 символа.</span></p>
+          <button type="button" class="le-btn" id="leMake"><span lang="fa" dir="rtl">ساختن کد</span><span lang="en">Создать мой код</span></button>
+          <div class="le-ticket" id="leTicket" hidden>
+            <p class="le-label"><span lang="fa" dir="rtl">کد تو</span><span lang="en">Ваш код</span></p>
+            <p class="le-code" id="leCode" dir="ltr"></p>
+            <pre class="le-msg" id="leMsg"></pre>
+            <div class="le-actions">
+              <button type="button" class="le-btn" id="leCopy"><span lang="fa" dir="rtl">کپی پیام</span><span lang="en">Копировать сообщение</span></button>
+              <a class="le-btn ghost" id="leTg" target="_blank" rel="noopener noreferrer" hidden><span lang="fa" dir="rtl">ارسال در تلگرام</span><span lang="en">Отправить в Telegram</span></a>
+              <a class="le-btn ghost" id="leBale" target="_blank" rel="noopener noreferrer" hidden><span lang="fa" dir="rtl">ارسال در بله</span><span lang="en">Отправить в Bale</span></a>
+            </div>
+            <p class="le-note" id="leWhere"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="block" id="check" lang="fa" dir="rtl" hidden>
+      <div class="wrap">
+        <div class="le-claim">
+          <h2>بررسی کد</h2>
+          <p>آدرس کیف پول و کدی را که فرستاده شده وارد کن.</p>
+          <label class="le-field"><span>آدرس کیف پول</span><input id="ckWallet" type="text" dir="ltr" autocomplete="off" spellcheck="false" /></label>
+          <label class="le-field"><span>کد</span><input id="ckCode" type="text" dir="ltr" autocomplete="off" spellcheck="false" /></label>
+          <button type="button" class="le-btn" id="ckGo">بررسی</button>
+          <p class="le-note" id="ckOut"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Ditoman • Учись. Соединяйся. Развивайся. • С 2022 года</span>
+      <nav aria-label="Подвал">
+        <a href="index.ru.html">Главная</a>
+        <a href="iran.en.html">Иран</a>
+        <a href="learn.ru.html">Учиться</a>
+        <a href="prices.ru.html">Цены</a>
+        <a href="calendar.en.html">Календарь</a>
+        <a href="posts.en.html">Публикации</a>
+        <a href="whitepaper-v5.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+        <a href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <script src="learn-earn.js?v=20261113d" defer></script>
+  <script src="menu.js?v=20261107" defer></script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-ru.js?v=20261121a"></script>
+</body>
+</html>

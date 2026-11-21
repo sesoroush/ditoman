@@ -20,6 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts" / "i18n"))
 import ar_rules  # noqa: E402
+import hl  # noqa: E402
 
 BASE = "https://ditoman.com/"
 # posts, calendar and press are filled every day from Persian feeds; they get Arabic when the feeds do
@@ -90,19 +91,8 @@ def url_of(name):
     return BASE if name == "index.html" else BASE + name
 
 
-def hreflang_block(name):
-    fa, en, ar = url_of(name), BASE + name[:-5] + ".en.html", BASE + ar_name(name)
-    return (f'{HSTART}\n  <link rel="alternate" hreflang="fa" href="{fa}" />\n'
-            f'  <link rel="alternate" hreflang="en" href="{en}" />\n'
-            f'  <link rel="alternate" hreflang="ar" href="{ar}" />\n'
-            f'  <link rel="alternate" hreflang="x-default" href="{fa}" />\n  {HEND}')
-
-
 def put_hreflang(src, name):
-    block = hreflang_block(name)
-    if HSTART in src:
-        return re.sub(re.escape(HSTART) + r".*?" + re.escape(HEND), lambda m: block, src, flags=re.S)
-    return src.replace("</head>", "  " + block + "\n</head>", 1)
+    return hl.put(src, name)
 
 
 def make_ar(src, name):

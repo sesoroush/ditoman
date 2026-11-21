@@ -1,0 +1,281 @@
+260|Adım adım 21 kısa iki dilli ders: paradan ve enflasyondan bankalara, blokzincire ve yapay zekâya.
+261|Birinci dersle başla
+262|Tüm dersler
+263|Öğrenme yolu, adım adım
+264|Önceki
+265|Sonraki
+267|Para neden alım gücünü kaybeder?
+268|1. Para ve güven
+269|Adım 2
+270|Param nerede? Banka hesabından dijital cüzdana
+271|Adım 3
+272|Bugün al, yarın öde: fırsat mı borç tuzağı mı?
+273|Adım 4
+274|Kartı okuttuğunuzda para nasıl hareket eder?
+275|Adım 5
+276|Yurt dışına para göndermek neden hâlâ yavaş ve pahalı?
+278|Blokzincir nedir?
+279|2. Blokzincir ve Bitcoin
+281|Blokzincir neden önemli
+283|Bitcoin neden yaratıldı
+285|Satoshi Nakamoto kim?
+287|Adres, ağ, ücret: bir kripto işlemi nasıl çalışır
+288|3. Kriptoyu güvenle kullanmak
+290|Dijital paranızı nasıl kaybetmezsiniz
+292|Dokunmadan önce herhangi bir token nasıl kontrol edilir
+294|Satın almadan önce sorulacak beş soru
+296|Likidite kilidi gerçekte ne demek?
+298|Büyük haberler Bitcoin'i nasıl hareket ettirir
+299|4. Piyasalar ve tasarruf
+301|Fiyatlar neden aniden çöker?
+303|Altın, dolar ya da Bitcoin: tasarruf için nasıl farklılar?
+305|Dijital dolarlar: arkasında ne var?
+306|5. Paranın geleceği
+308|Paranızın son kullanma tarihi olsaydı?
+310|Bankalar gelecekte yok olacak mı?
+312|Yapay zekâ paramızın geleceğini nasıl değiştirecek?
+313|Tüm dersler ve öğrenme yolu
+314|Ditoman'ı keşfet
+315|Kripto ve para üzerine kısa dersler
+316|Sanayi, enerji, madenler, ulaşım, teknoloji, turizm
+317|İran şirketleri
+318|Kaynaklı şirket kayıtları
+319|Dolar, altın, sikke ve dünya piyasaları
+320|Ekonomik takvim
+321|Her günün önemli olayları
+322|Günlük basın özeti
+323|İran'ın manşetleri, her gün 16:00'da
+324|Ele aldığımız üç konu
+325|Üçünde de tek, kalıcı bir yayın kuralı: gerçek bilgi ve gerçek başarı; hiçbir taraftan siyasi yorum yok.
+326|Kripto ve para, uygulanabilir hâle getirildi
+327|Blokzincirler nasıl çalışır, bir token'a dokunmadan önce nasıl kontrol edilir ve dolandırıcılıklardan nasıl korunulur.
+328|Yapay zekâ, enerji ve işin geleceği
+329|Gelmekte olan değişimlerin dürüst analizi; okurlarımızın gerçekten durduğu yerden okunuyor.
+330|Gerçek İran başarısı
+331|İranlıların ve işletmelerin ne inşa ettiğini belgeliyoruz; her rakamın bir kaynağı var.
+332|İran'da neyin üretildiğinin, çıkarıldığının, taşındığının ve görüldüğünün yapılandırılmış haritası: altı kol, resmî alt kolları, öncü şirketler ve her rakam için bir kaynak.
+333|Bir fabrika salonunda çelik rulo ve turkuaz bir dişli
+334|Sanayi ve imalat
+335|Süt ürünlerinden çeliğe ve ilaca
+336|Gir ·
+337|Basra Körfezi kıyısında gün batımında bir gaz rafinerisini yansıtan su damlası
+338|Enerji ve su
+339|Petrol, gaz, elektrik, yenilenebilir enerji, su
+340|Bir kamyon ve yük treniyle dağ otoyolu köprüsü
+341|Ulaşım ve yollar
+342|Yollar, demiryolu, limanlar, havalimanları, lojistik
+343|Açık ocak madeninin üzerinde bir bakır külçesi
+344|Kaynaklar ve madencilik
+345|Demir, bakır, çinko, taş, mineraller
+346|Tahran siluetinin ve Milad Kulesi'nin önünde parlayan bir çip
+347|Teknoloji ve hizmetler
+348|Platformlar, fintek, bilgi tabanlı firmalar, sağlık
+349|İsfahan'daki Nakş-ı Cihan Meydanı, çini çiçek ve güllerle
+350|Turizm ve kültür
+351|Dünya mirası, doğa, el sanatları, yemek, sanat
+352|Tam haritayı aç ·
+353|İran'ın şirketleriyle tanışın
+354|Tarih, ürünler, liderlik ve rakamlar, sektör sektör, her rakam için bir kaynakla.
+355|Cafe Bazaar
+356|Bilgi tabanlı ve teknoloji şirketleri
+357|Farsça konuşanlar için Android uygulama mağazası; 500.000+ uygulama
+358|Kaydı gör
+359|CinnaGen
+360|Biyobenzer ilaçlar, laboratuvar reaktifleri ve rekombinant proteinler
+361|Digikala
+362|İran e-ticareti; 2006'dan beri
+363|Parsé Semiconductor
+364|Parsé
+365|Semiconductor
+366|ASIC, SoC ve FPGA tasarımı; 32 bit Aristo mikroişlemcisi
+367|Sina Robotics and Medical Innovators
+368|Sina Robotics
+369|and Medical
+370|Innovators
+371|Sina Robotik Cerrahi Sistemi
+372|Snapp!
+373|Sabit fiyatlı araç çağırma; Şubat 2014'te başladı
+374|Almase Sabz Kavir
+375|Kâğıt ve karton
+376|Almase Sabz
+377|Kavir
+378|Kraft ve yarı kraft kâğıt, oluklu mukavva ve koliler, karton; Yezd Sanayi Sitesi
+379|Polietilen granüller, Arya Sasol'ün ana ürünü (örnek fotoğraf)
+380|Petrokimya
+381|Arya Sasol Polymer
+382|İran'ın en büyük etilen ve polietilen üreticilerinden biri, Asaluye'de, üretimin %70'inden fazlasını ihraç ediyor
+383|Asreh Novin Industrial Group (AGE)
+384|(AGE)
+385|Ahşap ve paneller
+386|Asreh Novin
+387|Industrial Group
+388|Kaplamalı MDF levhalar ve profiller, PVC duvar panelleri, yapay taş, tavan levhaları; Enzeli Serbest Bölgesi, Gilan
+389|Barij Essence Pharmaceutical Co.
+390|Bitkisel ürünler, safran ve gül suyu
+391|Barij Essence
+392|Pharmaceutical
+393|Co.
+394|Bitkisel ilaçlar, kozmetik, gıda ürünleri ve uçucu yağlar; Kaşan, İsfahan (tesis Kamsar yakınında)
+395|Iran Wood and Paper Industries (Chuka)
+396|Iran Wood and
+397|Paper Industries
+398|(Chuka)
+399|Kâğıt hamuru ve kâğıt; Gilan
+400|Dorrin Golab Kashan Agro-Industry
+401|Dorrin Golab
+402|Kashan
+403|Agro-Industry
+404|Gül suyu, bitkisel damıtıklar, doğal şuruplar ve kurutulmuş bitkiler; Emirkebir 1 Sanayi Sitesi, Kaşan
+405|Tüm şirketleri gör
+406|2022'de başladı. Bilerek sessiz.
+407|Ditoman adını, İran parasının gündelik adı olan Toman'dan alır: bir "dijital Toman". TMN, Şubat 2022'de BNB Smart Chain üzerinde yayına alındı ve arkasında tek bir soru vardı: bilginin kendisi gerçek bir değer taşıyabilir mi?
+408|Neredeyse dört yıl boyunca bilerek sessiz kaldık. Pazarlama yok, token satışı yok, lansman yok. Bu geçmiş zincir üzerinde, herkesin kontrol edebileceği şekilde duruyor ve bunun hızlı bir pompa için kurulmadığının en net işareti.
+409|Tüm geçmişi gör
+410|Bir dersle başla
+411|Konuya göre kısa dersler, her biri yaklaşık beş dakika, iki dilde ve her biri bir sınavla bitiyor.
+412|Merkez bankası dijital paraları ve programlanabilir para: gerçek olan, abartılan ve İran'ın dijital riyalinin durumu.
+413|Dersi oku
+414|Piyasalar
+415|Güvenlik
+416|Bitcoin
+417|Temeller
+418|Tüm dersleri gör
+419|Her yeni ders önce Telegram'a düşer
+420|Dersler, kısa haber açıklamaları ve güncellemeler; Farsça ve İngilizce. Sinyal yok, abartı yok.
+421|Kanala katıl
+422|TMN bir araçtır, amaç değil.
+423|TMN, Ditoman'ın arkasındaki BEP-20 tokenıdır ve gerçek öğrenmeyi ve katkıyı tanımak için planlanmıştır. Yatırım ürünü değildir ve kimseden satın almasını istemiyoruz.
+424|Birkaç ilgisiz token TMN sembolünü kullanıyor. Tek resmî sözleşme budur:
+426|Kopyala
+427|Token gerçekleri ve açıklama
+428|BscScan'de doğrula
+429|TMN'yi cüzdanına ekle
+430|SafePal, Trust Wallet, MetaMask ve TokenPocket için görsel rehber ve video
+431|Ağ
+432|BNB Smart Chain
+433|Kaynak kodu
+434|Doğrulandı
+435|Sahiplik
+436|Terk edildi
+437|Yeni basım
+438|İmkânsız
+439|Dolaşımdan çıkan
+440|Arzın yaklaşık %20'si
+441|Likidite
+442|Çok düşük
+443|Arz
+444|Kurucularda yoğunlaşmış
+445|Zayıf noktaları da listeliyoruz, çünkü <a href="lesson05.html">token kontrol dersimiz</a> bunları aramayı öğretiyor.
+446|Yol haritası
+447|Tarihler değil, aşamalar. İlerlemeyi, işe yaramayanlar dâhil, dürüstçe bildiriyoruz.
+448|Tamamlandı
+449|Temel
+450|Sözleşme doğrulandı, sahiplik terk edildi, arzın yaklaşık %20'si dolaşımdan çıktı, iki dilli dersler yayımlandı, whitepaper nihai.
+451|Devam ediyor
+452|Topluluk yapısı
+453|Gerçek kuralları, hazır dersleri ve net bir karşılama akışı olan bir Telegram topluluğu; herhangi bir davetten önce.
+454|29 Ekim 2026:
+455|projenin ana cüzdanındaki tüm TMN/BNB likiditesi 29 Ekim 2027'ye kadar kilitlendi.
+456|Kilidi doğrula
+457|Ne anlama geliyor
+458|Kontrollü büyüme
+459|Farsça kripto ve diaspora topluluklarına katılmak ve kanıtlı ilk kamuya açık arz azaltımı.
+460|Şimdi açık
+461|Öğren ve kazan pilotu
+462|On ders oku, on soruluk testi geç ve ilk 1.000 kişiye 500.000 TMN kazan.
+463|Buradan başla
+464|Sorular
+465|Ditoman nedir?
+466|Üç sütun etrafında kurulmuş iki dilli bir eğitim projesi: uygulamalı kripto ve finansal okuryazarlık, yapay zekâ, enerji ve işin geleceğine dair dürüst analiz ve İranlıların ve işletmelerin gerçek başarılarının haberleştirilmesi.
+467|TMN almalı mıyım?
+468|Kimseden istemiyoruz. TMN'nin arzı yoğunlaşmış durumda. <a href="tmn.html">TMN sayfasını</a> oku ve herhangi bir token için kullanacağın aynı kontrollerle değerlendir.
+469|Bu finansal tavsiye mi?
+470|Hayır. Ditoman bir eğitim projesidir. Buradaki hiçbir şey yatırım tavsiyesi değildir ve dersler kendi kararını vermene yardımcı olmak için hazırlandı.
+471|Neden siyaset yok?
+472|Bu kalıcı bir yayın kuralıdır. Gerçek bilgiyi ve gerçek başarıyı belgeliyoruz, hiçbir taraftan siyasi yorumda bulunmuyoruz.
+473|Öğrenenler ödüllendirilecek mi?
+474|Evet. Öğren ve kazan pilotu açık: on ders oku, on soruluk testi geç ve ilk 1.000 kişiye 500.000 TMN kazan.
+475|Tek bir belge yönü belirler. Söylediğimiz herhangi bir şeye güvenmeden önce onu oku.
+476|FA
+477|Farsça whitepaper
+478|Whitepaper'ın tam Farsça metni. İki sürüm arasında fark olursa, referans İngilizce metindir.
+479|Farsça oku (PDF)
+480|EN
+481|Whitepaper: nihai yön
+482|Ditoman nedir, üç sütun, tam token gerçekleri, arz planı, yol haritası ve dürüst bir risk açıklaması. Bu sitedeki her şeyin referansı budur.
+483|Whitepaper'ı oku (PDF)
+484|Ditoman'ı takip et
+485|Raporlar, dersler ve umut veren hikâyeler, her gün Ditoman'ın kanallarında.
+486|Telegram
+487|Bale
+488|Instagram
+489|Ditoman • Öğren. Bağlan. Gelişim. • Kuruluş 2022
+490|Alt bilgi
+491|Ditoman Öğren
+492|Yapay zekâ kartla yaptığınız ödemenin şüpheli görünüp görünmediğine şimdiden karar veriyor ve insanlar adına alışveriş yapıp ödemeye başlıyor. Bu ders bugün gerçek olanı hâlâ vaat olandan ayırıyor ve yeni riskleri adlandırıyor
+493|Sistemleri öğren
+494|geleceğin ardındaki.
+495|Farsça ve İngilizce kısa, ücretsiz dersler. Her biri yaklaşık beş dakika sürer ve aklında kalanları kontrol edebilmen için bir sınavla biter.
+496|Öğren ve TMN kazan
+497|Dersleri keşfet
+498|Baştan başla
+499|Yapay zekâ kartla yaptığınız ödemenin şüpheli görünüp görünmediğine şimdiden karar veriyor ve insanlar adına alışveriş yapıp ödemeye başlıyor. Bu ders bugün gerçek olanı hâlâ vaat olandan ayırıyor ve yeni riskleri açıkça adlandırıyor.
+500|Gelecek
+501|Başlangıç
+503|Sınav
+504|Öğrenme yolu
+505|Öğrenmesi en kolay sırayla yirmi bir ders. 1. adımdan başla ya da ihtiyacın olan aşamaya atla.
+506|Buradan başla: paranın değeri, nerede durduğu ve nasıl hareket ettiği.
+507|Enflasyon, reel getiri ve 72 kuralı, sade sözlerle.
+508|Dersi oku
+509|Banka, borsa ya da kişisel cüzdan: anahtarı kim tutuyor?
+510|Taksit planının gerçek maliyeti.
+511|Tek bir alışveriş, beş oyuncu ve sonradan gelen para.
+512|SWIFT, muhabir bankalar, gizli maliyetler ve stabil kripto paralar.
+513|Kripto'nun arkasındaki fikir ve nereden geldiği.
+514|Blokzincire bilginin saklanması, doğrulanması ve korunması için yeni bir yol olarak basit bir giriş.
+515|Blokzincir, güveni kurumlardan ve platformlardan, herkesin doğrulayabileceği şeffaf sistemlere nasıl taşıyor.
+516|Bitcoin, kırılan güvene, merkezî kontrole ve yerel internet parasına duyulan ihtiyaca bir yanıt olarak nasıl ortaya çıktı.
+517|Bitcoin'in arkasındaki bilinmeyen yaratıcı ve gizemin neden kimlikten daha önemli olduğu.
+518|Gerçek para hareket etmeden önce göndermek, kontrol etmek ve korumak.
+519|Gönder'e basmadan önce üç kontrol.
+520|Beş yaygın tuzak ve her biri için bir alışkanlık.
+521|Herkesin yapabileceği beş ücretsiz kontrol: sözleşme doğrulama, sahip dağılımı, sahiplik, gizli kısıtlamalar ve likidite.
+522|Kontroller sana token hakkında bilgi verir. Bu sorular ise kendi muhakemen, riskin ve neden şimdi aldığın hakkında bilgi verir.
+523|Likidite havuzları, LP tokenları ve rug pull'lar; uygulamalı örnek olarak TMN'nin kendi kilidi ve bir kilidin neyi kanıtlamadığı.
+524|Fiyatlar neden hareket eder ve varlıklar nasıl farklılaşır.
+525|Faiz oranları, seçimler ve beklentiler: bir açıklama piyasaya nasıl ulaşabilir ve tarih neden nadiren net bir cevap verir.
+526|Kayma, kaldıraç ve tasfiye zinciri: kötü haberden sonra bir borsanın içinde ne olur ve kendini nasıl korursun.
+527|Dört sade soru, üç çok farklı varlık.
+528|Dijital dolarlar, merkez bankası parası, yeni bankalar ve yapay zekâ.
+529|Stabil kripto paralar açıklandı: sabitleme, üç tür teminat, rezerv raporları ve denetimler, 2022'deki UST çöküşü ve en önemli sınav olan itfa.
+530|Merkez bankası dijital paraları, programlanabilir para, manşetlerin ardındaki gerçek denemeler ve İran'ın dijital riyali.
+531|Neobankalar, fintek ve açık bankacılık, açıklamalı.
+532|Bugün neyin işe yaradığı, neyin geldiği ve yeni riskler.
+533|İran'da iş yapmak
+534|Hangi kurum neye lisans veriyor ve nereden başlanır, sektör sektör.
+535|İran Navigator: lisans rehberi
+536|Şirket kaydından her sektörün lisansına kadar bakanlıklar, kuruluşlar ve izinler haritası.
+537|Rehberi aç
+538|Elektrik piyasaları nasıl çalışır ve faturan için ne anlama gelir.
+539|Elektrik fiyatları negatife düştüğünde
+540|Üreticiler elektriği satmak için neden öder, Almanya ve Fransa'dan rakamlar ve negatif toptan fiyatın neden negatif fatura olmadığı.
+541|Gerçek anlayış önce gelir.
+542|Öğren ve kazan pilotu açık: on ders oku, on soruluk testi geç ve ilk 1.000 kişiye 500.000 TMN kazan.
+543|Telegram'da katıl
+544|Instagram'da takip et
+545|Ana sayfa
+546|Fiyat geçmişi | Dolar, altın ve günlük piyasa raporları | Ditoman
+547|İran'da serbest piyasa dolarının resmî kura karşı, 18 ayar altının ve Emami sikkesinin 2010'dan bugüne seyri ve Ditoman'ın günlük piyasa raporlarının arşivi. Farsça ve İngilizce.
+548|İran'da 15 yıl boyunca serbest piyasa ve resmî dolar, altın ve sikke ve Ditoman'ın her günlük piyasa raporu.
+549|Fiyat geçmişi.
+550|Her gün, kayıtta.
+551|İran'da serbest piyasa dolarının resmî kura karşı, altının ve Emami sikkesinin on yılı aşkın geçmişi. Aşağıda, tarihe göre her Ditoman günlük piyasa raporu. Yeni veriler her gece otomatik eklenir.
+552|Canlı fiyatlar
+553|Tether, bitcoin, ether ve dünya altını piyasadan her 30 saniyede bir yenilenir. 18 ayar altın fiyatı bir tahmindir: dünya altını çarpı tether kuru. Serbest piyasa doları ve sikke, Ditoman'ın en son günlük raporundan gelir. Buradaki hiçbir şey al ya da sat önerisi değildir.
+554|Serbest piyasa dolarına karşı resmî kur
+555|İki çizgi arasındaki fark, resmî kurun gizlediği şeydir. Fiyatlar toman cinsinden.
+556|Aralık
+557|Ölçek
+558|Doğrusal
+559|Logaritmik

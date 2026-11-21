@@ -236,13 +236,13 @@
   }
 
   btn.addEventListener("click", open);
-  btn.setAttribute("aria-label", "Search | جستجو");
+  btn.setAttribute("aria-label", document.documentElement.getAttribute("data-lang-lock") === "en" ? "Search" : "Search | جستجو");
 
   function markCurrent() {
     var here = (location.pathname.split("/").pop() || "index.html").toLowerCase();
     document.querySelectorAll("header .nav-links a[href]").forEach(function (a) {
       var h = (a.getAttribute("href") || "").split("#")[0].toLowerCase();
-      if (h && h === here && !/^index(\.en)?\.html$/.test(here)) { a.classList.add("is-current"); a.setAttribute("aria-current", "page"); }
+      if (h && h === here && !/^index(\.(en|ar|zh|tr|ru))?\.html$/.test(here)) { a.classList.add("is-current"); a.setAttribute("aria-current", "page"); }
     });
     // bring the current tab into view in the scrolling phone menu, without moving the page
     var cur = document.querySelector("header .nav-links a.is-current, header .nav-links a.active");

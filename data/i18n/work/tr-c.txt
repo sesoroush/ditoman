@@ -1,0 +1,177 @@
+560|Serbest piyasa
+561|Resmî
+562|Resmî kur: Kasım 2018'e kadar SANA (banka döviz büroları), o tarihten sonra NIMA (ihracatçı sistemi). Resmî çizgideki boşluklar kaynağın yayımlamadığı dönemlerdir. Kaynak: TGJU günlük kapanışlar.
+563|İran'da altın
+564|Gram başına 18 ayar altın ve Emami sikkesi, toman cinsinden.
+565|Seri
+566|18 ayar gram
+567|Sikke
+568|Kaynak: TGJU günlük kapanışlar.
+569|Günlük piyasa raporları
+570|Tarihe git
+571|Her gece Tahran saatiyle 20:00'de yayımlanır:
+572|ve Instagram.
+573|Yükleniyor…
+574|Günlük rapor
+575|‹ Daha eski
+576|Tam boyutta aç
+577|Daha yeni ›
+578|Kapat
+579|DiToman (TMN) tokenı | Sözleşme 0x86a5...790d
+580|SafePal, Trust Wallet, MetaMask için adım adım görseller ve 40 saniyelik video ve
+581|DiToman
+582|(TMN)
+583|DiToman tokenı, şeffaf ve kontrol edilebilir
+584|TMN, BNB Smart Chain üzerinde bir BEP-20 tokenıdır. Bir eğitim projesi içinde bir katılım aracıdır, projenin amacı değildir. Bu sayfadaki her şey BscScan'de bağımsız olarak kontrol edilebilir.
+585|Whitepaper'ı oku
+586|TMN'yi cüzdanına ekle ↓
+587|Cüzdan rehberi
+588|SafePal, Trust Wallet, MetaMask ve TokenPocket için adım adım görseller ve 40 saniyelik video.
+589|Token'ı ekle
+590|Adresini kopyala
+591|Adresi gönder
+592|Token gerçekleri
+593|Ad
+594|Ditoman (DiToman)
+595|Sembol
+596|Standart
+597|BEP-20
+598|Ondalık
+599|Toplam arz
+600|Ölü adreste
+601|Alım / satım vergisi
+602|Yok
+603|Yayına alındı
+604|Bilmen gerekenler
+605|Arz çok yoğunlaşmış durumda. Çoğu, kurucuların kontrolündeki cüzdanlarda ve BscScan'de herkes tarafından görülebiliyor.
+606|Planlanan kullanım henüz oluşturulmadı.
+607|Proje, iki kurucusu tarafından küçük ölçekte yürütülüyor.
+608|TMN, CoinGecko veya CoinMarketCap'te listeli değil. Havuzu DexScreener ve GeckoTerminal tarafından otomatik olarak izleniyor.
+609|Birkaç ilgisiz token TMN sembolünü kullanıyor. Her zaman tam sözleşme adresini kontrol et.
+610|Bunları açıkça belirtiyoruz, çünkü
+611|token kontrol dersimiz
+612|insanlara tam olarak bunu aramayı öğretiyor.
+613|Resmî bağlantılar
+614|Tek resmî TMN sözleşmesi, havuzu ve kanalları. Bir bağlantı bu listede değilse bize ait değildir.
+615|BscScan'de sözleşme
+616|BscScan'de sahipler
+617|PancakeSwap havuzu
+618|DexScreener
+619|GeckoTerminal
+620|Güvenlik raporu (GoPlus)
+621|Telegram kanalı
+622|Resmî web sitesi:
+623|ditoman.com
+624|. Ditoman asla özel anahtar veya kurtarma ifadesi istemez ve önce mesaj atan kişilere asla token göndermez.
+625|Geçmiş
+626|TMN yeni bir lansman değil. Yaşı ve sessiz yılları zincir üzerinde kayıtlı.
+627|Şubat 2022
+628|TMN yayına alındı
+629|DiToman tokenı, Toman'dan adını alarak BNB Smart Chain üzerinde oluşturuldu. Oluşturulma tarihini kendin şuradan kontrol edebilirsin:
+630|BscScan sözleşme sayfası
+631|2022'den 2025'e
+632|Sessiz yıllar
+633|Pazarlama yok, tanıtım yok, token satışı yok. Bu yıllar, whitepaper'ın birkaç taslağı boyunca Ditoman'ın gerçekte ne olması gerektiğini bulmakla geçti.
+634|Temel tamamlandı
+635|Sözleşme kaynağı doğrulandı, arzın yaklaşık %20'si iki zincir üstü adımda dolaşımdan çıkarıldı, sahiplik kalıcı olarak terk edildi, iki dilli dersler yayımlandı ve whitepaper nihai yön olarak belirlendi.
+636|Şimdi
+637|Topluluğu kurmak
+638|Herhangi bir davet veya tanıtımdan önce, yapılandırılmış bir Telegram topluluğu gelir.
+639|İki zincir üstü arz azaltımı
+640|Orijinal 21 trilyon TMN'nin yaklaşık %20'si iki adımda dolaşımdan çıkarıldı. İkisi de herkese açık ve BscScan'de kontrol edilebilir.
+641|1. adım, 24 Nisan – 14 Mayıs 2026:
+642|2.100.000.000.000 TMN (%10) herkese açık ölü adrese gönderildi
+643|0x…dEaD
+644|. Anahtarı kimsede yok, bu yüzden bu tokenlar bir daha asla hareket edemez, ama yine de totalSupply içinde sayılırlar.
+645|2. adım, 13 Eylül 2026:
+646|2.098.943.554.216,15 TMN (yaklaşık %10), sözleşmenin kendi yakma fonksiyonuyla
+647|tek bir işlemde
+648|yakıldı. Bu adım totalSupply'ı gerçekten azalttı: 21.000.000.000.000'dan 18.901.056.445.783,85'e.
+649|Ardından sahiplik terk edildi; bu, hem basımı hem de sözleşme yakma fonksiyonunu kalıcı olarak kapattı. Artık kimse yeni TMN yaratamaz.
+650|Gelecekteki her arz çıkarımı, kurucu cüzdanlarından herkese açık bir yakma adresine yapılan bir transfer olacak ve her işlem özeti bu sayfada yayımlanacak. Bu transferler tokenları dolaşımdan çıkarır ama sözleşmenin gösterdiği totalSupply rakamını değiştirmez ve biz de bunları öyle tanımlayacağız.
+651|Piyasa verileri
+652|Herkese açık borsa verilerinden otomatik olarak veya hiçbir izleyici TMN'yi listelemiyorsa doğrudan PancakeSwap havuzundan okunur.
+653|Fiyat (USD)
+654|Yükleniyor
+655|24 saatlik hacim
+656|24 saatlik değişim
+657|Herkese açık piyasa verileri kontrol ediliyor.
+658|TMN'nin piyasa verileri nasıl okunur
+659|"Piyasa değeri" gerçek değer değildir.
+660|İzleyiciler tüm arzı tek bir havuzdaki fiyatla çarpar. Sonuç bir hesaptır, tüm arzın satılabileceği bir değer değil.
+661|Arz yoğunlaşmış durumda.
+662|Dolaşımdaki arzın neredeyse tamamı tek bir kurucu cüzdanında ve BscScan'de herkes tarafından görülebiliyor.
+663|Farklı siteler farklı arz gösteriyor.
+664|Bazı izleyiciler hâlâ orijinal 21 trilyonu gösteriyor. Sözleşmenin kendisi, 13 Eylül 2026 yakımından sonra 18,90 trilyon bildiriyor.
+665|Güvenlik kontrolü
+666|Honeypot (satılamaz)
+667|Hayır
+668|Alım vergisi / satım vergisi
+669|Açık, doğrulanmış
+670|Sahip
+671|Yok (0x0'a terk edildi)
+672|Gizli sahip / sahipliği geri alma
+673|Hayır / Hayır
+674|Proxy (yükseltilebilir)
+675|Duraklatma, kara liste, beyaz liste
+676|Basım fonksiyonu
+677|Var, yalnızca sahibine ait, erişilemez
+678|Kaynak:
+679|GoPlus Security
+680|, 27 Ekim 2026'da kontrol edildi. Otomatik tarayıcılar fonksiyon kodda mevcut olduğu için "basılabilir" olarak işaretler. Yalnızca sahip çağırabilir ve sahip sıfır adrestir, dolayısıyla kimse çağıramaz.
+681|Likidite havuzu
+682|Tek havuz: PancakeSwap V2'de TMN / WBNB, Şubat 2022'de oluşturuldu.
+683|29 Ekim 2026'da projenin ana cüzdanında tutulan tüm TMN/BNB likidite tokenları PinkLock üzerinde
+684|29 Ekim 2027'ye kadar kilitlendi
+685|. O zamana kadar bu likidite çekilemez.
+686|Kilidi PinkLock'ta doğrula
+687|LP token sahiplerini BscScan'de gör
+688|TMN ne için
+689|Bu bir yön, bitmiş bir ürün değil. Özellikler, önceden değil, hazır olduklarında duyurulacak.
+690|Erişim
+691|Seçilmiş öğrenme materyali ve topluluk alanları.
+692|Tanınma
+693|Gerçek katılım için kredi: bitirilen dersler, faydalı katkılar, iyi tartışmalar ve erken destekçiler.
+694|Öğren ve kazan
+695|Doğrulanabilir öğrenmeye bağlı küçük ödüller. İlk pilot açık:
+696|TMN öğren ve kazan
+697|Tarihler değil, aşamalar. Whitepaper, tutulamayacak takvim sözlerinden bilerek kaçınır.
+698|Önemli:
+699|Ditoman bir eğitim projesidir. Bu sayfadaki hiçbir şey finansal veya yatırım tavsiyesi ya da gelecekteki değer vaadi değildir. Dijital varlıklar önemli risk taşır. Kimseyi TMN satın almaya teşvik etmiyoruz. Herhangi bir tokenla etkileşime girmeden önce sözleşme adresini, ağını, likiditesini ve sahip dağılımını kendin kontrol et.
+700|TMN öğren ve kazan | Ditoman
+701|Her test sorusu bu derslerden birinden gelir. Her ders yaklaşık beş dakika sürer.
+702|Öğren ve kazan
+703|On ders oku, testi geç, TMN al
+704|Kriptoyu düzgün öğrenmek isteyenler için Ditoman pilotu. Dersleri oku, on soruluk testi çöz ve en az sekiz doğru cevapla TMN ödülü kazan.
+705|On dersi oku
+706|On soruluk test
+707|Kodunu ve cüzdan adresini gönder
+708|Teste git
+709|Kişi başı ödül
+710|Her cüzdan ödülü yalnızca bir kez alabilir.
+711|BNB Smart Chain üzerinde kişisel bir cüzdan kullan, borsa adresi değil.
+712|TMN cüzdanına nasıl eklenir
+713|Ödüller birkaç günde bir toplu olarak gönderilir.
+714|Ödül öğrenme içindir, kâr vaadi değildir.
+715|Birinci adım: on ders
+716|Her test sorusu bu derslerden birinden gelir. Her ders yaklaşık beş dakika sürer.
+717|İkinci adım: test
+718|On soru, her dersten bir tane. Geçmek için en az sekiz doğru cevap gerekir. Geçemezsen yanlış yaptığın dersleri tekrar oku ve yeniden dene.
+719|Üçüncü adım: ödülünü al
+720|BNB Smart Chain cüzdan adresini gir. Kişisel bir kod oluşturulur. Hazır mesajı kopyala ve Ditoman'a gönder.
+721|Cüzdan adresini nereden bulurum?
+722|Kişisel bir cüzdan kur, örneğin Trust Wallet veya SafePal. Borsa adresi kabul edilmez.
+723|Cüzdanı oluştur ve 12 kurtarma kelimesini kâğıda yaz. Bunları asla kimseyle paylaşma.
+724|Cüzdanda şunu seç:
+725|ağını seç ve Al'a dokun.
+726|Gösterilen adres 0x ile başlar ve 42 karakterdir. Kopyala ve buraya yapıştır.
+727|Resimli adım adım rehber
+728|Cüzdan adresi (0x ile başlar)
+729|Telegram veya Bale kullanıcı adı (isteğe bağlı)
+730|@username
+731|Bu adres geçerli değil. BNB Smart Chain adresi 0x ile başlar ve 42 karakterdir.
+732|Kodumu oluştur
+733|Kodun
+734|Mesajı kopyala
+735|Telegram'da gönder
+736|Bale'de gönder

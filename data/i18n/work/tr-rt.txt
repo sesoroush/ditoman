@@ -1,0 +1,154 @@
+0|18 ayar altın / g
+1|18 ayar altın, gram
+2|18 ayar altın, gram, son
+3|500.000 TMN
+4|Bir yönetişim oyu
+5|Likidite havuzuna eklenen paranın makbuzu
+6|Token'ın şirketinden bir pay
+7|İşlem ücreti indirimi
+8|Yaklaşık %1
+9|Yaklaşık %10
+10|Yaklaşık %50
+11|Tümü
+12|Tüm fiyatlar ve grafikler →
+13|On sorunun hepsini yanıtla.
+14|Artık herkes yeni token oluşturabilir
+15|Cep telefonunda tutulması
+16|Banka kartıyla harcanması
+17|Bitcoin'in şu anki CEO'su
+18|Blokzincir güvenin işleyişini değiştirir
+19|Blokzincir yalnızca coin alım satımıyla ilgilidir
+20|Blokzincir yalnızca bankalar için yararlıdır
+21|Blokzincir tüm sistemlere olan ihtiyacı ortadan kaldırır
+22|Brent petrol
+23|Dönem içi değişim
+24|Çin yuanı
+25|Çin yuanı (günlük)
+26|Deutsch (yakında)
+27|Deutsch · yakında
+28|Emami sikkesi
+29|Emami sikkesi (günlük)
+30|Español (yakında)
+31|Español · yakında
+32|Euro
+33|Her ödeme hükümet onayı gerektirir
+34|Borsalar fiyatı sabitlemiştir
+35|Hızlı kararlar her zaman yanlıştır
+36|Takipte kal
+37|İlk 1.000 kişi için
+38|Français (yakında)
+39|Français · yakında
+40|Serbest
+41|Serbest piyasa, son
+42|Serbest ve resmî
+43|Serbest piyasa doları (günlük)
+44|Fark
+45|Altın, ons
+46|İyi fırsatlar her zaman yavaştır
+47|Her işlemi sonsuza dek gizlemek
+48|Bir sözleşmenin sahip fonksiyonu tamamen sıfır bir adres döndürürse bu ne anlama gelir?
+49|ABD doları cinsinden
+50|İran'ın ışıkları yanıyor
+51|Fiyatının her gün değişmesi
+52|Milyon toman
+53|Bu gece piyasalar
+54|Piyasalar geceleri kapanır
+55|Para asla dijital olamaz
+56|Daha fazla konu
+57|Ditoman'ın kanallarında her gün yeni raporlar ve dersler
+58|Daha yeni
+59|En yeni
+60|Resmî, son
+61|Daha eski
+62|Değeri yalnızca bankalar çevrimiçi hareket ettirebilir
+63|Sahiplik terk edildi ve yalnızca sahibine ait fonksiyonlar artık kullanılamaz
+64|Português (yakında)
+65|Português · yakında
+66|Düşünmeden harekete geçme baskısı manipülasyonun yaygın bir özelliğidir
+67|Bilgiyi şeffaf, doğrulanabilir bir şekilde kaydetmek
+68|İnternete olan ihtiyacı ortadan kaldırmak
+69|Tüm web sitelerinin yerini almak
+70|Paranın içine yazılmış kurallar; örneğin son kullanma tarihi veya nerede harcanabileceğine dair sınırlar
+71|Özel rapor
+72|Cevapları gönder
+73|T = toman
+74|Bitcoin'e sahip olan şirket
+75|Sözleşme bozuk
+76|Karar iptal edildi
+77|Japonya merkez bankası başkanı
+78|Piyasa beklenen sonuca göre önceden hareket etti
+79|Bitcoin'in bilinmeyen yaratıcısı ya da yaratıcılarının kullandığı ad
+80|Fiyat artık değişemez
+81|Token silindi
+82|Zaman
+83|ABD doları
+84|USD
+85|Değer, merkezî bir kapı bekçisi olmadan çevrimiçi hareket edebilir
+86|Bitcoin, internette değer taşıma konusunda neyi gösterdi?
+87|LP tokenları neyi temsil eder?
+88|Bir sonucun "fiyatlanmış" olması ne demek?
+89|Blokzincir esas olarak ne için kullanılır?
+90|"Blokzincir neden önemli" yazısının ana fikri nedir?
+91|Parayı "programlanabilir" yapan nedir?
+92|Aciliyet neden bir uyarı işareti sayılır?
+93|10× kaldıraç ve 100 dolar teminatla, teminat tükenmeden önce fiyat yaklaşık ne kadar düşmelidir?
+94|toman
+95|Blokzincirde merkeziyetsizlik ne demek?
+96|Kontrol ve veri bir ağa yayılmıştır
+97|Tüm kayıtları tek bir şirket kontrol eder
+98|Ağı tek bir banka işletir
+99|Kullanıcılar hiçbir şeyi doğrulayamaz
+100|Blokzincir güveni nereye taşır?
+101|Şeffaf, doğrulanabilir sistemlere doğru
+102|Gizli sistemlere doğru
+103|Tek bir şirkete doğru
+104|Yalnızca özel kayıtlara doğru
+105|Bitcoin esas olarak hangi soruna yanıttı?
+106|Merkezî kurumlara ve onların iznine fazlasıyla bağımlı güven
+107|Kâğıt para kıtlığı
+108|Yavaş web siteleri
+109|Kredi kartı yasağı
+110|Satoshi kenara çekildikten sonra Bitcoin neden çalışmaya devam etti?
+111|Açık kuralları başkalarının ağı doğrulamasına, çalıştırmasına ve korumasına izin veriyor
+112|Bir şirket devraldı
+113|Bir hükümet yeniden başlattı
+114|Satoshi hâlâ gizlice kontrol ediyor
+115|Arz yoğunlaşması neden önemlidir?
+116|Birkaç sahip tek bir kararla tüm piyasayı hareket ettirebilir
+117|Her zaman projenin sahtekâr olduğu anlamına gelir
+118|Sözleşmeyi doğrulanamaz kılar
+119|Token'ın hiçbir yerde listelenmesini engeller
+120|Bir token'ın değer kazanmasını beklemek için gerçek bir neden hangisidir?
+121|Yaptığı işi kullanan insan sayısı artıyor
+122|Fiyatı geçen hafta yükseldi
+123|Bir arkadaş bundan emin
+124|İnternetteki herkes bundan söz ediyor
+125|En basit anlatımla faiz oranı nedir?
+126|Para borç almanın fiyatı
+127|Kripto üzerindeki bir vergi
+128|Bitcoin'in fiyatı
+129|Borsalara ödenen bir ücret
+130|Merkez bankası dijital parasını (CBDC) kim çıkarır?
+131|Ülkenin merkez bankası
+132|Özel bir şirket
+133|Bitcoin madencileri
+134|Yalnızca ticari bankalar
+135|Likidite kilidi hakkında hangi ifade doğrudur?
+136|Yalnızca kilitli likiditenin kilit açılma tarihinden önce çekilmesini engeller
+137|Token'ın fiyatının yükseleceğini kanıtlar
+138|Token'ın asla satılamayacağı anlamına gelir
+139|Token'ı oluşturanın anonim olduğu anlamına gelir
+140|Tasfiye nedir?
+141|Teminat tükenmek üzereyken borsanın kaldıraçlı bir pozisyonu otomatik olarak kapatması
+142|Bir borsaya yeni bir token eklenmesi
+143|Birinin işlem kârını çekmesi
+144|Bir merkez bankasının faiz indirmesi
+145|Geçtin:
+146|Ödül kodunu almak için şimdi cüzdan adresini gir.
+147|/10 doğru
+148|En az
+149|geçmek için gerekli. Şu dersleri tekrar oku:
+150|Tekrar dene
+151|Mesajı kopyala, aç
+152|ve oraya gönder.
+153|Zaten geçtin:
