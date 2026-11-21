@@ -1,0 +1,7 @@
+/* Arabic pages (X.ar.html): an Arabic typeface for everything except the Latin brand line. */
+html[data-site-lang="ar"] body,
+html[data-site-lang="ar"] body *:not(svg):not(svg *):not(.tagline):not([translate="no"]):not(code):not(pre) {
+  font-family: "IBM Plex Sans Arabic", Inter, Tahoma, sans-serif !important;
+}
+html[data-site-lang="ar"] body { letter-spacing: 0 !important; }
+html[data-site-lang="ar"] h1, html[data-site-lang="ar"] h2, html[data-site-lang="ar"] h3 { letter-spacing: 0 !important; }
