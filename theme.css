@@ -1240,3 +1240,15 @@ html[data-lang="fa"] .ls-intro { direction: rtl; text-align: right; }
   .home-stories:not(.all) .hrow[data-cat="چراغ روشن"] .st-tile:nth-child(1) { grid-column: 1; }
   .home-stories:not(.all) .hrow[data-cat="چراغ روشن"] .st-tile:nth-child(1) b { font-size: 1.9rem; }
 }
+
+/* Quote block (Toffler) */
+.quote-block { padding: 0 0 var(--sec); }
+.quote-block .wrap { max-width: 880px; }
+.quote-block blockquote { margin: 0; padding: 28px 32px; border-inline-start: 4px solid var(--accent, #2fbfa3); background: rgba(47,191,163,0.07); border-radius: 0 16px 16px 0; }
+html[dir="rtl"] .quote-block blockquote { border-radius: 16px 0 0 16px; }
+.quote-block p { margin: 0; font-size: clamp(1.15rem, 2.2vw, 1.6rem); line-height: 1.6; font-weight: 700; color: var(--text); }
+.quote-block p[lang="en"] { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 600; direction: ltr; }
+.quote-block p[lang="fa"] { font-family: "IRANYekanX", Tahoma, sans-serif; direction: rtl; }
+.quote-block p + p { margin-top: 14px; opacity: 0.8; font-size: clamp(1rem, 1.6vw, 1.2rem); font-weight: 500; }
+.quote-block cite { display: block; margin-top: 16px; font-style: normal; font-size: 0.9rem; letter-spacing: 0.06em; color: var(--ink-muted, #5b6b68); font-family: var(--en, inherit); }
+.quote-block cite [lang="fa"] { font-family: "IRANYekanX", Tahoma, sans-serif; letter-spacing: 0; }
