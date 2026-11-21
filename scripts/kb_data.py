@@ -7,7 +7,7 @@ def add(slug, key, fa, en, br, sub, tfa, ten, facts, sfa, sen, official=None):
     K.append(dict(slug=slug, key=key, fa=fa, en=en, branch=br, sub=sub, tfa=tfa, ten=ten, facts=facts, sfa=sfa, sen=sen, official=official))
 
 # ---- biotech and pharma
-add("cinnagen","cinnagen","سیناژن","CinnaGen","industry","pharma",
+add("cinnagen-pharma","cinnagen","سیناژن","CinnaGen","industry","pharma",
  "داروهای زیستی‌مشابه، معرف‌های آزمایشگاهی و پروتئین‌های نوترکیب","Biosimilar drugs, laboratory reagents and recombinant proteins",
  [("founded","۱۹۹۴ میلادی","1994"),("activity","داروی زیستی‌مشابه، معرف آزمایشگاهی، پروتئین نوترکیب","Biosimilar drugs, in-vitro diagnostic reagents, recombinant proteins"),
   ("innov","سینووکس: زیستی‌مشابه اینترفرون بتا برای ام‌اس؛ تأیید سازمان غذا و دارو در ۲۰۰۷","Cinnovex, a biosimilar of interferon-beta for multiple sclerosis; approved by Iran's FDA in 2007")],

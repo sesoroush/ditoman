@@ -441,7 +441,7 @@ def directory(companies):
                 "draft" if draft else None)
 
 
-HOME_KB = ["cinnagen", "cafebazaar", "digikala", "snapp", "parse-semiconductor", "sina-robotics"]
+HOME_KB = ["cinnagen-pharma", "cafebazaar", "digikala", "snapp", "parse-semiconductor", "sina-robotics"]
 
 
 def homepage(companies):
