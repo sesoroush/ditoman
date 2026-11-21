@@ -617,6 +617,9 @@
     var daily={};
     fetch('market/latest.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(j){var ir=j.iran||{};
       ['usd_free','coin_emami','dollar','usd','coin'].forEach(function(k){if(ir[k]&&ir[k].value_toman)daily[k]=ir[k].value_toman});
+      var fx=(j.forex||{})['USD/CNY'];
+      if(ir.cny&&ir.cny.value_toman){daily.cny=ir.cny.value_toman;daily.cnyEst=false}
+      else if(fx&&fx.value&&(daily.usd_free||daily.dollar||daily.usd)){daily.cny=(daily.usd_free||daily.dollar||daily.usd)/fx.value;daily.cnyEst=true}
       daily.at=j.fetched_utc; draw();}).catch(function(){});
     var live={};
     function card(fk,ek,val,chg,unit){
@@ -627,6 +630,7 @@
       var h='';
       if(live.usdt) h+=card('تتر (USDT)','Tether (USDT)',nf(live.usdt),live.usdtC,['تومان','toman']);
       var d=daily.usd_free||daily.dollar||daily.usd; if(d) h+=card('دلار آزاد (گزارش روزانه)','Free-market dollar (daily)',nf(d),null,['تومان','toman']);
+      if(daily.cny) h+=card(daily.cnyEst?'یوان چین (محاسبه از دلار)':'یوان چین (گزارش روزانه)',daily.cnyEst?'Chinese yuan (from the dollar rate)':'Chinese yuan (daily)',nf(daily.cny),null,['تومان','toman']);
       if(live.btc) h+=card('بیت‌کوین','Bitcoin',nf(live.btc),live.btcC,['دلار','USD']);
       if(live.btcT) h+=card('بیت‌کوین به تومان','Bitcoin in toman',nf(live.btcT/1e6,1),null,['میلیون تومان','M toman']);
       if(live.eth) h+=card('اتریوم','Ether',nf(live.eth),live.ethC,['دلار','USD']);
@@ -656,6 +660,6 @@
 <script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="join-bar.js?v=20261116b" defer></script>
 
-<script src="search.js?v=20261116c" defer></script>
+<script src="search.js?v=20261121a" defer></script>
 </body>
 </html>

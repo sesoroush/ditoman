@@ -37,6 +37,7 @@
       (live ? both("قیمت زنده", "Live prices") : both("قیمت‌ها", "Prices")) + (stamp ? "<small>" + stamp + "</small>" : "") + "</a>";
     if (d.usdt) h += item("usdt", "تتر", "Tether", nf(d.usdt.v), "تومان", "toman", d.usdt.c);
     if (d.usd) h += item("usd", "دلار", "US dollar", nf(d.usd.v), "تومان", "toman", d.usd.c);
+    if (d.cny) h += item("cny", "یوان چین", "Chinese yuan", nf(d.cny.v), "تومان", "toman", d.cny.c);
     if (d.gold18) h += item("gold18", "طلای ۱۸ عیار", "18k gold, gram", nf(d.gold18.v / 1e6, 2), "میلیون تومان", "M toman", d.gold18.c);
     if (d.coin) h += item("coin", "سکه امامی", "Emami coin", nf(d.coin.v / 1e6, 1), "میلیون تومان", "M toman", d.coin.c);
     if (d.btc) h += item("btc", "بیت‌کوین", "Bitcoin", nf(d.btc.v), "دلار", "USD", d.btc.c);
@@ -58,6 +59,10 @@
     var ir = j.iran || {}, g = j.global || {};
     var put = function (k, src, field) { if (src && src[field] != null) data[k] = data[k] || { v: +src[field], c: src.chg }; };
     put("usd", ir.usd, "value_toman"); put("eur", ir.eur, "value_toman");
+    put("cny", ir.cny, "value_toman");
+    // No Tehran-market yuan quote in the file: fall back to the cross rate (dollar in toman / USD-CNY)
+    var fx = (j.forex || {})["USD/CNY"];
+    if (!data.cny && data.usd && fx && fx.value) data.cny = { v: data.usd.v / fx.value, c: null };
     put("gold18", ir.gold18_gram, "value_toman"); put("coin", ir.coin_emami, "value_toman");
     put("btc", g.btc, "value"); put("xau", g.gold, "value"); put("brent", g.brent, "value");
     if (!live && j.fetched_utc) stamp = hhmm(new Date(j.fetched_utc));

@@ -73,7 +73,7 @@ def zinc_te():
     return {"value": v, "chg": float(mc.group(1)) if mc else None, "source": "Trading Economics LME zinc"}
 
 # Iran open-market rates from TGJU (values in rial)
-TGJU = {"usd": "price_dollar_rl", "eur": "price_eur", "aed": "price_aed", "gold18_gram": "geram18", "coin_emami": "sekee"}
+TGJU = {"usd": "price_dollar_rl", "eur": "price_eur", "aed": "price_aed", "cny": "price_cny", "gold18_gram": "geram18", "coin_emami": "sekee"}
 try:
     raw = get("https://call1.tgju.org/ajax.json")
     j = json.loads(raw)

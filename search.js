@@ -268,7 +268,7 @@
 (function () {
   if (document.querySelector('script[src^="ticker.js"]')) return;
   var t = document.createElement("script");
-  t.src = "ticker.js?v=20261116";
+  t.src = "ticker.js?v=20261121";
   t.defer = true;
   document.head.appendChild(t);
 })();
