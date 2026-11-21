@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Bitcoin Halved From Its Peak: Why Crypto Fell and What Comes Next | بیت‌کوین نصف شد؛ چرا بازار کریپتو ریخت و چه در پیش است؟ | Ditoman</title>
+<meta name="description" content="گزارش ویژه دیتومان: بیت‌کوین زیر ۵۷ هزار دلار؛ نقش فدرال رزرو، سهام هوش مصنوعی، خروج از ETFها، ژئوپلیتیک و تحلیل تکنیکال، با سناریوهای مثبت و منفی برای یک هفته، چهار هفته و شش ماه. Ditoman special report on the November 2026 crypto sell-off." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:fixed;width:100%;min-width:0 !important}
+.tw td,.tw th{white-space:normal !important;word-break:normal;overflow-wrap:break-word;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261116c" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/crypto-selloff-nov-2026.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/crypto-selloff-nov-2026.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/crypto-selloff-nov-2026.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/crypto-selloff-nov-2026.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Bitcoin Halved From Its Peak: Why Crypto Fell and What Comes Next | بیت‌کوین نصف شد؛ چرا بازار کریپتو ریخت و چه در پیش است؟ | Ditoman" />
+<meta property="og:description" content="گزارش ویژه دیتومان: بیت‌کوین زیر ۵۷ هزار دلار؛ نقش فدرال رزرو، سهام هوش مصنوعی، خروج از ETFها، ژئوپلیتیک و تحلیل تکنیکال، با سناریوهای مثبت و منفی برای یک هفته، چهار هفته و شش ماه. Ditoman special report on the November 2026 crypto sell-off." />
+<meta property="og:url" content="https://ditoman.com/crypto-selloff-nov-2026.html" />
+<meta property="og:image" content="https://ditoman.com/social/crypto-selloff-nov-2026/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/crypto-selloff-nov-2026.html#article",
+   "mainEntityOfPage": "https://ditoman.com/crypto-selloff-nov-2026.html",
+   "headline": "Bitcoin Halved From Its Peak: Why Crypto Fell and What Comes Next | بیت‌کوین نصف شد؛ چرا بازار کریپتو ریخت و چ",
+   "description": "گزارش ویژه دیتومان: بیت‌کوین زیر ۵۷ هزار دلار؛ نقش فدرال رزرو، سهام هوش مصنوعی، خروج از ETFها، ژئوپلیتیک و تحلیل تکنیکال، با سناریوهای مثبت و منفی برای یک هفته، چهار هفته و شش ماه. Ditoman special report on the November 2026 crypto sell-off.",
+   "image": "https://ditoman.com/social/crypto-selloff-nov-2026/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Bitcoin Halved From Its Peak: Why Crypto Fell and What Comes Next | بیت‌کوین نصف شد؛ چرا بازار کریپتو ریخت و چه در پیش است؟",
+     "item": "https://ditoman.com/crypto-selloff-nov-2026.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/crypto-selloff-nov-2026/card.webp" srcset="social/crypto-selloff-nov-2026/card.webp 900w, social/crypto-selloff-nov-2026/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Bitcoin sell-off November 2026: key figures and scenarios" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/crypto-selloff-nov-2026/en-card.webp" srcset="social/crypto-selloff-nov-2026/en-card.webp 900w, social/crypto-selloff-nov-2026/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Bitcoin sell-off November 2026: key figures and scenarios" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · Markets</span><span lang="fa">گزارش ویژه · نقد و بررسی بازار</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">بیت‌کوین نصف شد؛ چرا بازار کریپتو ریخت و چه در پیش است؟</h1>
+<h1 lang="en">Bitcoin halved from its peak: why crypto fell and what comes next</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">فدرال رزرو، سهام هوش مصنوعی، خروج از ETFها، ژئوپلیتیک و نمودار؛ با سناریوهای مثبت و منفی برای یک هفته، چهار هفته و شش ماه آینده.</p>
+<p class="subtitle" lang="en">The Fed, AI stocks, ETF outflows, geopolitics and the chart, with positive and negative scenarios for one week, four weeks and six months.</p>
+<div class="stats">
+<div class="stat"><b lang="fa">زیر ۵۷ هزار</b><b lang="en">&lt;$57K</b><span lang="fa">کف بیت‌کوین؛ پایین‌ترین سطح دو سال</span><span lang="en">bitcoin low, two-year low</span></div>
+<div class="stat"><b lang="fa">۵۴٪−</b><b lang="en">−54%</b><span lang="fa">فاصله از سقف ۱۲۶ هزار دلاری</span><span lang="en">from the $126K peak</span></div>
+<div class="stat"><b lang="fa">۳٫۶ میلیارد</b><b lang="en">$3.6B</b><span lang="fa">دلار خروج از ETFها در نوامبر</span><span lang="en">ETF outflows in November</span></div>
+<div class="stat"><b lang="fa">۹</b><b lang="en">9</b><span lang="fa">شاخص ترس و طمع؛ ترس شدید</span><span lang="en">Fear &amp; Greed: extreme fear</span></div>
+</div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<h3><span class="check-number">0.</span> در یک نگاه</h3>
+<p>بیت‌کوین جمعه ۲۹ آبان ۱۴۰۵ (۲۰ نوامبر ۲۰۲۶) به زیر ۵۷ هزار دلار رسید؛ پایین‌ترین سطح از سپتامبر ۲۰۲۴ و حدود ۵۴ درصد پایین‌تر از سقف ۱۲۶ هزار دلاری اکتبر ۲۰۲۵ (<a href="https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone" target="_blank" rel="noopener" style="color:#57D9C7">CoinDesk</a>).</p>
+<div class="tw"><table><tr><th>شاخص</th><th>عدد</th></tr><tr><td>کف بیت‌کوین در ۲۰ نوامبر</td><td>زیر ۵۷ هزار دلار</td></tr><tr><td>اتریوم</td><td>حدود ۱٬۶۳۰ تا ۱٬۶۵۰ دلار</td></tr><tr><td>فاصله از سقف تاریخی</td><td>حدود ۵۴ درصد</td></tr><tr><td>لیکوییدیشن ۲۴ ساعته</td><td>۲٫۴ میلیارد دلار</td></tr><tr><td>خروج از ETFهای بیت‌کوین در نوامبر</td><td>حدود ۳٫۶ میلیارد دلار</td></tr><tr><td>شاخص ترس و طمع</td><td>۹ (ترس شدید)</td></tr><tr><td>افت نزدک در ۲۰ نوامبر</td><td>حدود ۵ درصد</td></tr><tr><td>RSI روزانه‌ی بیت‌کوین</td><td>حدود ۱۶</td></tr></table></div>
+<p><strong>ایده‌ی اصلی در یک جمله:</strong> این ریزش از جنس «پول گران» است، نه خرابی شبکه؛ سهام فناوری، طلا و کریپتو با هم افتادند.</p>
+<blockquote>قیمت‌ها مربوط به زمان انتشار منابع‌اند و لحظه‌ای نیستند. این گزارش تحلیل و آموزش است، نه توصیه‌ی خرید یا فروش.</blockquote>
+<h3><span class="check-number">1.</span> چه اتفاقی افتاد؟</h3>
+<ul>
+<li><strong>بیت‌کوین:</strong> کف تابستان (۵۷٬۷۰۰ دلار) شکست و قیمت به پایین‌ترین سطح دو سال اخیر رسید. رشد تابستان تا ۸۷ هزار دلار کاملاً پس داده شد</li>
+</ul>
+<ul>
+<li><strong>اتریوم و آلت‌کوین‌ها:</strong> اتریوم حدود ۷ درصد و سولانا، XRP و BNB هر کدام ۵ تا ۹ درصد در یک روز افتادند</li>
+</ul>
+<ul>
+<li><strong>سهام:</strong> نزدک حدود ۵ درصد و S&amp;P 500 حدود ۳٫۷ درصد افت کرد؛ نزدک به پایین‌ترین سطح از آوریل رسید</li>
+</ul>
+<ul>
+<li><strong>طلا و نقره:</strong> طلا به حدود ۳٬۵۰۰ دلار رسید؛ پایین‌ترین سطح از سپتامبر ۲۰۲۵</li>
+</ul>
+<p><strong>وقتی همه‌چیز با هم می‌ریزد، دلیل معمولاً بیرون از کریپتو است.</strong></p>
+<h3><span class="check-number">2.</span> فدرال رزرو؛ دلیل اصلی</h3>
+<ul>
+<li><strong>تورم:</strong> تورم هسته‌ی آمریکا در اکتبر ۰٫۳ درصد ماهانه بود؛ سومین ماه پیاپی و بالاتر از پیش‌بینی (<a href="https://www.indmoney.com/blog/us-stocks/us-inflation-fed-rate-hike-december" target="_blank" rel="noopener" style="color:#57D9C7">INDmoney</a>)</li>
+</ul>
+<ul>
+<li><strong>نرخ بهره:</strong> نرخ فعلی ۳٫۷۵ تا ۴ درصد است. بازار برای نشست ۸ و ۹ دسامبر (۱۷ و ۱۸ آذر) <strong>افزایش</strong> نرخ را قیمت‌گذاری کرده است</li>
+</ul>
+<ul>
+<li><strong>لحن مقام‌ها:</strong> کریستوفر والر، عضو فدرال رزرو، گفته اگر تورم هسته همین‌طور بماند باید افزایش بزرگ‌تر (۰٫۵ واحد) هم بررسی شود</li>
+</ul>
+<ul>
+<li><strong>چرا مهم است؟</strong> اوراق دوساله‌ی آمریکا حدود ۴٫۷ درصد سود می‌دهد. وقتی پول نقد چنین سودی دارد، نگه داشتن دارایی بدون سود مثل بیت‌کوین و طلا هزینه‌ی فرصت بیشتری دارد</li>
+</ul>
+<ul>
+<li><strong>یک نکته‌ی دقیق:</strong> بازده اوراق ده‌ساله در همان هفته حدود ۱۷ واحد پایه <strong>کم</strong> شد؛ یعنی بخشی از پول به اوراق بلندمدت پناه برد. پس «همه‌ی دارایی‌های امن فروخته شدند» دقیق نیست</li>
+</ul>
+<h3><span class="check-number">3.</span> لرزش سهام هوش مصنوعی</h3>
+<ul>
+<li><strong>انویدیا:</strong> درآمد فصلی ۱۱۵٫۸ میلیارد دلار، ۱۰۳ درصد بیشتر از پارسال و بالاتر از انتظار بود (<a href="https://finviz.com/news/424463/nvidia-shares-rise-3-as-revenue-doubles-to-11584-billion-and-company-raises-ai-growth-forecast" target="_blank" rel="noopener" style="color:#57D9C7">Finviz</a>). با این حال سهم در ۲۰ نوامبر نزدیک ۱۴ درصد افتاد</li>
+</ul>
+<ul>
+<li><strong>Anthropic:</strong> بزرگ‌ترین عرضه‌ی اولیه‌ی تاریخ با ۸۱٫۳ میلیارد دلار؛ قیمت عرضه ۸۳ دلار، بازگشایی ۱۱۱٫۵ و پایان روز اول ۹۷٫۱۷ دلار. روز دوم حدود ۹ درصد دیگر افت کرد</li>
+</ul>
+<ul>
+<li><strong>مسیر انتقال:</strong> سرمایه‌گذاری که هم سهام فناوری دارد و هم کریپتو، هنگام کم کردن ریسک هر دو را می‌فروشد. هم‌زمانی به‌تنهایی علیت را ثابت نمی‌کند، اما این مسیر قابل توضیح است</li>
+</ul>
+<h3><span class="check-number">4.</span> خروج پول از ETFها و دومینوی اهرم</h3>
+<div class="tw"><table><tr><th>روز</th><th>خالص جریان ETFهای بیت‌کوین</th></tr><tr><td>دوشنبه ۱۶ نوامبر</td><td>۷٫۹+ میلیون دلار</td></tr><tr><td>پنجشنبه ۱۹ نوامبر</td><td>۵۸۲٫۳− میلیون دلار (IBIT به‌تنهایی ۵۴۱٫۱−)</td></tr><tr><td>جمعه ۲۰ نوامبر</td><td>۱۲۴٫۵− میلیون دلار</td></tr><tr><td>کل هفته</td><td>۱٫۲۵− میلیارد دلار</td></tr><tr><td>نوامبر تا امروز</td><td>حدود ۳٫۵۹− میلیارد دلار</td></tr></table></div>
+<p>منبع: Farside به نقل از <a href="https://crypto.news/bitcoin-ether-etf-outflows-nov-16-20-2026/" target="_blank" rel="noopener" style="color:#57D9C7">crypto.news</a></p>
+<ul>
+<li><strong>اهرم:</strong> افت اولیه ارزش وثیقه‌ها را کم کرد و موقعیت‌های خرید اهرمی خودکار بسته شدند. Coinglass حدود ۲٫۴ میلیارد دلار لیکوییدیشن در ۲۴ ساعت ثبت کرد؛ بیش از ۱ میلیارد آن بیت‌کوین بود</li>
+</ul>
+<ul>
+<li><strong>ترس:</strong> شاخص ترس و طمع به ۹ رسید؛ یک هفته قبل ۱۸ و یک ماه قبل ۵۱ بود (<a href="https://decrypt.co/383702/bitcoin-breaks-below-60k-crypto-fear-greed-index-lowest" target="_blank" rel="noopener" style="color:#57D9C7">Decrypt</a>)</li>
+</ul>
+<ul>
+<li><strong>نکته:</strong> خروج از ETF همیشه به معنی فروش نهایی نیست؛ بخشی می‌تواند جابه‌جایی بین ابزارها باشد. برای تشخیص برگشت، سه تا پنج روز ورود پیوسته مهم‌تر از یک روز مثبت است</li>
+</ul>
+<h3><span class="check-number">5.</span> طلا، دلار و شوک نقدینگی</h3>
+<ul>
+<li>دلار به بالاترین سطح ۱۹ ماه اخیر رسید و شاخص VIX به حدود ۳۰ رفت</li>
+</ul>
+<ul>
+<li>فروش هم‌زمان طلا، سهام و کریپتو نشانه‌ی نیاز به پول نقد است. تحلیلگران Delphi Digital آن را «مشکل نقدینگی» نامیده‌اند، نه مشکل خاص کریپتو (<a href="https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play" target="_blank" rel="noopener" style="color:#57D9C7">CoinDesk</a>)</li>
+</ul>
+<h3><span class="check-number">6.</span> سیاست و ژئوپلیتیک</h3>
+<ul>
+<li><strong>جنگ ایران:</strong> جنگ نزدیک به نُه ماه است ادامه دارد و مذاکرات غیرمستقیم هنوز به آتش‌بس نرسیده است. CBS News در ۲۰ نوامبر به نقل از منابعش از بررسی حمله‌ای تازه خبر داد (<a href="https://www.cbsnews.com/news/iran-war-us-israel-considering-new-assault-sources-say/" target="_blank" rel="noopener" style="color:#57D9C7">CBS News</a>)</li>
+</ul>
+<ul>
+<li><strong>نفت:</strong> برنت حدود ۹۱ دلار است و در هفته حدود ۵ درصد افت کرده، چون بخشی از صادرات خلیج فارس به آسیا برگشته است (<a href="https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html" target="_blank" rel="noopener" style="color:#57D9C7">OilPrice</a>)</li>
+</ul>
+<ul>
+<li><strong>آمریکا:</strong> پس از انتخابات میان‌دوره‌ای، ترکیب کنگره از ژانویه تغییر می‌کند و قانون ساختار بازار کریپتو (CLARITY) متوقف مانده است</li>
+</ul>
+<ul>
+<li><strong>مرز شواهد:</strong> سهم دقیق هر یک از این عوامل را نمی‌توان جدا از افت سهام و سیاست پولی اندازه گرفت. مسیر اثرشان از راه قیمت نفت، تورم انتظاری و تقاضا برای دلار است</li>
+</ul>
+<h3><span class="check-number">7.</span> آیا شرکت‌ها در حال انباشت‌اند؟</h3>
+<ul>
+<li><strong>Strategy:</strong> در هفته‌ی ۹ تا ۱۵ نوامبر ۴۸۵ بیت‌کوین به ارزش ۳۳٫۴ میلیون دلار خرید. موجودی‌اش ۸۵۰٬۸۴۹ بیت‌کوین با میانگین خرید ۷۵٬۴۵۲ دلار است؛ یعنی فعلاً در زیان (<a href="https://theblock.co/news/business/2026-11-16-this-dip-could-use-a-little-orange-michael-saylor-strategy-bitcoin-tumbles-440886" target="_blank" rel="noopener" style="color:#57D9C7">The Block</a>)</li>
+</ul>
+<ul>
+<li><strong>Morgan Stanley:</strong> صندوق بیت‌کوین این بانک (MSBT) در همین هفته ۵۳٫۳ میلیون دلار ورودی مثبت داشت</li>
+</ul>
+<ul>
+<li><strong>دیگران:</strong> Metaplanet حدود ۴۴ هزار، Twenty One حدود ۴۳٬۵۰۰ و Strive حدود ۴۳ هزار بیت‌کوین دارند، اما بیشترشان سرعت خرید را کم کرده‌اند</li>
+</ul>
+<p><strong>باید میان «خرید اعلام‌شده» و «فرضیه‌ی انباشت پنهانی» فرق گذاشت.</strong> از خرید یک یا دو شرکت نمی‌توان نتیجه گرفت که همه‌ی نهادها آماده‌ی جهش‌اند.</p>
+<h3><span class="check-number">8.</span> نمودار چه می‌گوید؟</h3>
+<div class="tw"><table><tr><th>سطح</th><th>عدد (دلار)</th><th>معنا</th></tr><tr><td>مقاومت سوم</td><td>۶۸ تا ۷۰ هزار</td><td>میانگین ۲۰ روزه حدود ۷۰ هزار</td></tr><tr><td>مقاومت دوم</td><td>۶۵ هزار</td><td></td></tr><tr><td>مقاومت اول</td><td>۶۰ تا ۶۲ هزار</td><td>حمایت شکسته‌شده</td></tr><tr><td>قیمت حدودی</td><td>۵۷ تا ۵۸ هزار</td><td></td></tr><tr><td>حمایت اول</td><td>۵۵ تا ۵۶ هزار</td><td>کف اخیر</td></tr><tr><td>حمایت دوم</td><td>۴۹ تا ۵۲ هزار</td><td>سطح روانی ۵۰ هزار</td></tr></table></div>
+<ul>
+<li><strong>میانگین‌ها:</strong> قیمت زیر میانگین ۲۰۰ روزه (حدود ۷۲٬۵۰۰ دلار) و میانگین ۲۰۰ هفته است (<a href="https://blockchain.news/news/20261121-price-prediction-btc-sellers-keep-control-as-bitcoin-loses" target="_blank" rel="noopener" style="color:#57D9C7">Blockchain.News</a>)</li>
+</ul>
+<ul>
+<li><strong>RSI:</strong> حدود ۱۶؛ بسیار پایین‌تر از مرز ۳۰. اشباع فروش یعنی فروشنده‌ها خسته‌اند، نه اینکه روند برگشته است</li>
+</ul>
+<ul>
+<li><strong>تقاطع میانگین‌ها:</strong> میانگین ۲۱ روزه در ۱۹ نوامبر زیر میانگین ۲۰۰ روزه رفت. آخرین بار در ۲۰۲۳ پس از چنین وضعی بازار کف ساخت، اما به گفته‌ی خود تحلیلگر «یک نمونه برای الگو کافی نیست» (<a href="https://cointelegraph.com/markets/bitcoin-first-death-cross-repeat-2023-bottom-25k" target="_blank" rel="noopener" style="color:#57D9C7">Cointelegraph</a>)</li>
+</ul>
+<ul>
+<li><strong>مشتقات:</strong> به گفته‌ی CryptoQuant، با افت قیمت موقعیت‌های باز بیشتر شده؛ یعنی معامله‌گران فروش تازه باز می‌کنند (<a href="https://www.forbes.com/sites/digital-assets/2026/11/20/bitcoin-plunges-below-60000-as-risk-off-trading-fuels-widespread-losses/" target="_blank" rel="noopener" style="color:#57D9C7">Forbes</a>)</li>
+</ul>
+<h3><span class="check-number">9.</span> سناریوهای بیت‌کوین</h3>
+<div class="tw"><table><tr><th>بازه</th><th>سناریوی مثبت</th><th>سناریوی میانی</th><th>سناریوی منفی</th></tr><tr><td>یک هفته</td><td>۶۰ تا ۶۵ هزار دلار</td><td>۵۵ تا ۶۰ هزار دلار</td><td>۴۹ تا ۵۵ هزار دلار</td></tr><tr><td>چهار هفته</td><td>۶۵ تا ۷۵ هزار دلار</td><td>۵۲ تا ۶۵ هزار دلار</td><td>۴۲ تا ۵۲ هزار دلار</td></tr><tr><td>شش ماه</td><td>۷۵ تا ۹۵ هزار دلار</td><td>۵۵ تا ۷۵ هزار دلار</td><td>۴۰ تا ۵۰ هزار دلار</td></tr></table></div>
+<ul>
+<li><strong>یک هفته:</strong> چهارشنبه شاخص تورم PCE می‌آید و پنجشنبه تعطیلی شکرگزاری آمریکاست؛ حجم کم، نوسان بیشتر. سناریوی مثبت به کم شدن خروج از ETFها و آرام شدن سهام نیاز دارد</li>
+</ul>
+<ul>
+<li><strong>چهار هفته:</strong> همه‌چیز به نشست فدرال رزرو در ۱۷ و ۱۸ آذر بستگی دارد. افزایش ۰٫۲۵ واحدی با لحن ملایم به نفع سناریوی مثبت است؛ افزایش ۰٫۵ واحدی یا تشدید جنگ به نفع سناریوی منفی</li>
+</ul>
+<ul>
+<li><strong>شش ماه:</strong> سناریوی مثبت یعنی مهار تورم، توقف افزایش نرخ و برگشت پول به ETFها؛ در آن صورت پس گرفتن میانگین ۲۰۰ روزه و حرکت به سمت سقف تابستان (۸۷ هزار) ممکن می‌شود. سناریوی منفی یعنی نرخ بهره‌ی بالا همراه با کند شدن اقتصاد</li>
+</ul>
+<ul>
+<li><strong>یادآوری تاریخی:</strong> در چرخه‌های قبلی، بیت‌کوین از سقف تا کف ۷۵ تا ۸۵ درصد افت کرده بود. این چرخه تا امروز حدود ۵۴ درصد افت داشته است. گذشته تضمین آینده نیست، اما نشان می‌دهد بازه‌ها قطعی نیستند</li>
+</ul>
+<blockquote>این بازه‌ها سناریوی شرطی‌اند، نه پیش‌بینی قطعی و نه مدل احتمالاتی. قیمت می‌تواند از هر دو طرف آن‌ها عبور کند.</blockquote>
+<h3><span class="check-number">10.</span> پنج علامت برای پایش روزانه</h3>
+<ul>
+<li><strong>یک:</strong> خالص جریان ETFهای بیت‌کوین و اتریوم در چند روز پیاپی</li>
+</ul>
+<ul>
+<li><strong>دو:</strong> جهت نزدک و سهام نیمه‌هادی</li>
+</ul>
+<ul>
+<li><strong>سه:</strong> بازده واقعی اوراق آمریکا و قدرت دلار</li>
+</ul>
+<ul>
+<li><strong>چهار:</strong> موقعیت‌های باز، نرخ تأمین مالی و حجم لیکوییدیشن</li>
+</ul>
+<ul>
+<li><strong>پنج:</strong> حفظ یا شکست کف اخیر و حجم معاملات در برگشت‌ها</li>
+</ul>
+<h3><span class="check-number">11.</span> تقویم پیش رو</h3>
+<div class="tw"><table><tr><th>تاریخ</th><th>رویداد</th></tr><tr><td>۴ آذر (۲۵ نوامبر)</td><td>شاخص تورم PCE آمریکا برای اکتبر</td></tr><tr><td>۵ آذر (۲۶ نوامبر)</td><td>تعطیلی شکرگزاری؛ نقدینگی کم</td></tr><tr><td>۱۷ و ۱۸ آذر (۸ و ۹ دسامبر)</td><td>نشست و تصمیم نرخ بهره‌ی فدرال رزرو</td></tr><tr><td>۱۹ آذر (۱۰ دسامبر)</td><td>تورم مصرف‌کننده‌ی نوامبر آمریکا</td></tr></table></div>
+<h3><span class="check-number">12.</span> نگاه دیتومان</h3>
+<p>افت سریع بازار به معنی پایان فناوری بلاکچین نیست؛ همان‌طور که خرید چند شرکت به معنی آغاز قطعی بازار صعودی نیست. <strong>بیت‌کوین همان است که بود؛ قیمت پول عوض شده است.</strong></p>
+<p>فرق «جهش فنی» با «برگشت روند» را سه چیز مشخص می‌کند: ورود پایدار پول، ساختار قیمت و آرام شدن بازارهای جهانی. ترس شدید همیشگی نیست، اما زمان برگشت را هیچ‌کس نمی‌داند.</p>
+<blockquote>خرید پله‌ای هم خطر زیان را حذف نمی‌کند. هر تصمیم مالی باید با توجه به شرایط شخصی و با مسئولیت خود فرد گرفته شود.</blockquote>
+<h3>بیشتر بخوانید</h3><ul><li><a href="ai-infrastructure.html">انویدیای بعدی کدام است؟</a></li><li><a href="silver-drivers.html">چه چیزی قیمت نقره را تعیین می‌کند؟</a></li><li><a href="books.html">کتابخانه‌ی دیتومان</a></li><li><a href="prices.html">قیمت لحظه‌ای تتر، بیت‌کوین و طلا</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone" target="_blank" rel="noopener">CoinDesk: Bitcoin tanks below $57,000 for the first time in two years (21 Nov 2026)</a></li><li><a href="https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play" target="_blank" rel="noopener">CoinDesk: cash is king amid Fed fears (20 Nov 2026)</a></li><li><a href="https://www.forbes.com/sites/digital-assets/2026/11/20/bitcoin-plunges-below-60000-as-risk-off-trading-fuels-widespread-losses/" target="_blank" rel="noopener">Forbes: Bitcoin plunges below $60,000 as risk-off trading fuels losses (20 Nov 2026)</a></li><li><a href="https://crypto.news/bitcoin-ether-etf-outflows-nov-16-20-2026/" target="_blank" rel="noopener">crypto.news: Bitcoin and Ether ETFs shed $1.47B in weekly outflows (Farside data)</a></li><li><a href="https://decrypt.co/383702/bitcoin-breaks-below-60k-crypto-fear-greed-index-lowest" target="_blank" rel="noopener">Decrypt: Crypto Fear & Greed Index hits worst level since February</a></li><li><a href="https://blockchain.news/news/20261121-price-prediction-btc-sellers-keep-control-as-bitcoin-loses" target="_blank" rel="noopener">Blockchain.News: BTC technical levels (21 Nov 2026)</a></li><li><a href="https://cointelegraph.com/markets/bitcoin-first-death-cross-repeat-2023-bottom-25k" target="_blank" rel="noopener">Cointelegraph: rare bearish trend-line crossover</a></li><li><a href="https://theblock.co/news/business/2026-11-16-this-dip-could-use-a-little-orange-michael-saylor-strategy-bitcoin-tumbles-440886" target="_blank" rel="noopener">The Block: Strategy buys another 485 BTC (16 Nov 2026)</a></li><li><a href="https://www.indmoney.com/blog/us-stocks/us-inflation-fed-rate-hike-december" target="_blank" rel="noopener">INDmoney: US inflation and Fed pricing for December 2026</a></li><li><a href="https://finviz.com/news/424463/nvidia-shares-rise-3-as-revenue-doubles-to-11584-billion-and-company-raises-ai-growth-forecast" target="_blank" rel="noopener">Finviz: Nvidia revenue doubles to $115.84 billion</a></li><li><a href="https://www.cbsnews.com/news/iran-war-us-israel-considering-new-assault-sources-say/" target="_blank" rel="noopener">CBS News: U.S. and Israel considering new assault on Iran, sources say (20 Nov 2026)</a></li><li><a href="https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html" target="_blank" rel="noopener">OilPrice: Tankers are being hit daily. So why is oil falling?</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۳۰ آبان ۱۴۰۵. قیمت‌ها مربوط به زمان انتشار منابع‌اند. سناریوها شرطی‌اند، نه پیش‌بینی قطعی. این گزارش آموزشی و تحلیلی است و توصیه‌ی خرید یا فروش نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<h3><span class="check-number">0.</span> At a glance</h3>
+<p>Bitcoin fell below $57,000 on Friday 20 November 2026, its lowest level since September 2024 and about 54% below the October 2025 peak above $126,000 (<a href="https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone" target="_blank" rel="noopener" style="color:#57D9C7">CoinDesk</a>).</p>
+<div class="tw"><table><tr><th>Indicator</th><th>Figure</th></tr><tr><td>Bitcoin low, 20 Nov</td><td>below $57,000</td></tr><tr><td>Ether</td><td>about $1,630–1,650</td></tr><tr><td>Distance from all-time high</td><td>about 54%</td></tr><tr><td>24-hour liquidations</td><td>$2.4 billion</td></tr><tr><td>Bitcoin ETF outflows in November</td><td>about $3.6 billion</td></tr><tr><td>Fear &amp; Greed Index</td><td>9 (extreme fear)</td></tr><tr><td>Nasdaq on 20 Nov</td><td>down about 5%</td></tr><tr><td>Bitcoin daily RSI</td><td>about 16</td></tr></table></div>
+<p><strong>The idea in one line:</strong> this is a "money got expensive" sell-off, not a network failure; tech stocks, gold and crypto fell together.</p>
+<blockquote>Prices are as of each source's publication, not live. Educational analysis, not a recommendation to buy or sell.</blockquote>
+<h3><span class="check-number">1.</span> What happened</h3>
+<p>Bitcoin broke its summer low of $57,700 and erased the summer rebound to $87,000. Ether lost about 7% in a day; Solana, XRP and BNB lost 5–9%. The Nasdaq fell about 5% and the S&amp;P 500 about 3.7%, with the Nasdaq at its lowest since April. Gold slid toward $3,500, its lowest since September 2025. When everything falls together, the cause usually sits outside crypto.</p>
+<h3><span class="check-number">2.</span> The Fed: the main driver</h3>
+<p>US core inflation rose 0.3% month on month in October, the third month running and above forecast (<a href="https://www.indmoney.com/blog/us-stocks/us-inflation-fed-rate-hike-december" target="_blank" rel="noopener" style="color:#57D9C7">INDmoney</a>). The policy rate is 3.75–4.00%, and markets price a <strong>hike</strong> at the 8–9 December meeting. Governor Christopher Waller has said a larger half-point move should be considered if core inflation stays this firm. Two-year Treasuries yield about 4.7%, raising the opportunity cost of non-yielding assets such as bitcoin and gold. One nuance: the ten-year yield fell about 17 basis points over the week, so some money did seek safety in long bonds.</p>
+<h3><span class="check-number">3.</span> The AI stock wobble</h3>
+<p>Nvidia reported quarterly revenue of $115.8 billion, up 103% and above expectations (<a href="https://finviz.com/news/424463/nvidia-shares-rise-3-as-revenue-doubles-to-11584-billion-and-company-raises-ai-growth-forecast" target="_blank" rel="noopener" style="color:#57D9C7">Finviz</a>), yet its shares fell nearly 14% on 20 November. Anthropic's record $81.3 billion IPO priced at $83, opened at $111.50, closed day one at $97.17 and lost about 9% more on day two. Investors holding both tech stocks and crypto tend to sell both when cutting risk. Correlation is not proof of causation, but the transmission channel is plausible.</p>
+<h3><span class="check-number">4.</span> ETF outflows and the leverage cascade</h3>
+<div class="tw"><table><tr><th>Day</th><th>Net bitcoin ETF flow</th></tr><tr><td>Mon 16 Nov</td><td>+$7.9 million</td></tr><tr><td>Thu 19 Nov</td><td>−$582.3 million (IBIT alone −$541.1 million)</td></tr><tr><td>Fri 20 Nov</td><td>−$124.5 million</td></tr><tr><td>Week</td><td>−$1.25 billion</td></tr><tr><td>November to date</td><td>about −$3.59 billion</td></tr></table></div>
+<p>Source: Farside via <a href="https://crypto.news/bitcoin-ether-etf-outflows-nov-16-20-2026/" target="_blank" rel="noopener" style="color:#57D9C7">crypto.news</a>. Coinglass recorded about $2.4 billion of liquidations in 24 hours, over $1 billion in bitcoin. The Fear &amp; Greed Index hit 9, from 18 a week earlier and 51 a month earlier (<a href="https://decrypt.co/383702/bitcoin-breaks-below-60k-crypto-fear-greed-index-lowest" target="_blank" rel="noopener" style="color:#57D9C7">Decrypt</a>). ETF outflows are not always final selling; three to five consecutive inflow days matter more than one green day.</p>
+<h3><span class="check-number">5.</span> Gold, the dollar and a liquidity shock</h3>
+<p>The dollar reached a 19-month high and the VIX rose to about 30. Selling gold, stocks and crypto at once signals a need for cash. Delphi Digital calls it a liquidity problem rather than a crypto problem (<a href="https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play" target="_blank" rel="noopener" style="color:#57D9C7">CoinDesk</a>).</p>
+<h3><span class="check-number">6.</span> Politics and geopolitics</h3>
+<p>The Iran war is nearly nine months old and indirect talks have not produced a ceasefire; CBS News reported on 20 November, citing sources, that a new assault is being considered (<a href="https://www.cbsnews.com/news/iran-war-us-israel-considering-new-assault-sources-say/" target="_blank" rel="noopener" style="color:#57D9C7">CBS News</a>). Brent is near $91, down about 5% on the week as some Gulf exports to Asia resumed (<a href="https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html" target="_blank" rel="noopener" style="color:#57D9C7">OilPrice</a>). In the US, control of Congress changes in January after the midterms and the CLARITY market-structure bill is stalled. The exact share of each factor cannot be separated from equities and monetary policy.</p>
+<h3><span class="check-number">7.</span> Are companies accumulating?</h3>
+<p>Strategy bought 485 BTC for $33.4 million in the week of 9–15 November and holds 850,849 BTC at an average cost of $75,452, so it is currently under water (<a href="https://theblock.co/news/business/2026-11-16-this-dip-could-use-a-little-orange-michael-saylor-strategy-bitcoin-tumbles-440886" target="_blank" rel="noopener" style="color:#57D9C7">The Block</a>). Morgan Stanley's bitcoin fund (MSBT) took in $53.3 million during the week. Most other treasury companies have slowed their buying. Announced purchases are not the same as a hidden accumulation thesis; one or two buyers do not show that institutions are positioning for a rally.</p>
+<h3><span class="check-number">8.</span> What the chart says</h3>
+<div class="tw"><table><tr><th>Level</th><th>USD</th><th>Meaning</th></tr><tr><td>Third resistance</td><td>68,000–70,000</td><td>20-day average near 70,000</td></tr><tr><td>Second resistance</td><td>65,000</td><td></td></tr><tr><td>First resistance</td><td>60,000–62,000</td><td>broken support</td></tr><tr><td>Approximate price</td><td>57,000–58,000</td><td></td></tr><tr><td>First support</td><td>55,000–56,000</td><td>recent low</td></tr><tr><td>Second support</td><td>49,000–52,000</td><td>psychological 50,000</td></tr></table></div>
+<p>Price is below the 200-day average (about $72,500) and the 200-week average (<a href="https://blockchain.news/news/20261121-price-prediction-btc-sellers-keep-control-as-bitcoin-loses" target="_blank" rel="noopener" style="color:#57D9C7">Blockchain.News</a>). Daily RSI is about 16, deeply oversold: sellers are exhausted, which is not the same as a reversal. The 21-day average crossed below the 200-day on 19 November; the 2023 precedent was followed by a bottom, but the analyst himself says one case is not a pattern (<a href="https://cointelegraph.com/markets/bitcoin-first-death-cross-repeat-2023-bottom-25k" target="_blank" rel="noopener" style="color:#57D9C7">Cointelegraph</a>). CryptoQuant notes open interest rising as price falls, meaning fresh shorts (<a href="https://www.forbes.com/sites/digital-assets/2026/11/20/bitcoin-plunges-below-60000-as-risk-off-trading-fuels-widespread-losses/" target="_blank" rel="noopener" style="color:#57D9C7">Forbes</a>).</p>
+<h3><span class="check-number">9.</span> Bitcoin scenarios</h3>
+<div class="tw"><table><tr><th>Horizon</th><th>Positive</th><th>Middle</th><th>Negative</th></tr><tr><td>One week</td><td>$60,000–65,000</td><td>$55,000–60,000</td><td>$49,000–55,000</td></tr><tr><td>Four weeks</td><td>$65,000–75,000</td><td>$52,000–65,000</td><td>$42,000–52,000</td></tr><tr><td>Six months</td><td>$75,000–95,000</td><td>$55,000–75,000</td><td>$40,000–50,000</td></tr></table></div>
+<p><strong>One week:</strong> PCE inflation on Wednesday and the US Thanksgiving holiday on Thursday mean thin volume and bigger swings. <strong>Four weeks:</strong> the 8–9 December Fed meeting decides; a quarter-point hike with a soft tone favours the positive case, a half-point hike or war escalation the negative. <strong>Six months:</strong> the positive case needs contained inflation, an end to hikes and returning ETF inflows; the negative case is high rates with a slowing economy. In earlier cycles bitcoin fell 75–85% from peak to trough; this cycle is down about 54% so far. The past guarantees nothing, but it shows these ranges are not bounds.</p>
+<blockquote>These are conditional scenarios, not forecasts or a probability model. Price can break either side of them.</blockquote>
+<h3><span class="check-number">10.</span> Five signals to watch daily</h3>
+<p>1. Net bitcoin and ether ETF flows over consecutive days.</p>
+<p>2. The direction of the Nasdaq and semiconductor stocks.</p>
+<p>3. US real yields and dollar strength.</p>
+<p>4. Open interest, funding rates and liquidation volume.</p>
+<p>5. Whether the recent low holds, and volume on rebounds.</p>
+<h3><span class="check-number">11.</span> Calendar</h3>
+<div class="tw"><table><tr><th>Date</th><th>Event</th></tr><tr><td>25 November</td><td>US PCE inflation for October</td></tr><tr><td>26 November</td><td>Thanksgiving; thin liquidity</td></tr><tr><td>8–9 December</td><td>Fed meeting and rate decision</td></tr><tr><td>10 December</td><td>US CPI for November</td></tr></table></div>
+<h3><span class="check-number">12.</span> Ditoman's reading</h3>
+<p>A fast fall is not the end of blockchain technology, just as a few corporate purchases are not the certain start of a bull market. <strong>Bitcoin is what it was; the price of money has changed.</strong> A technical bounce becomes a trend change only with durable inflows, price structure and calmer global markets. Extreme fear does not last forever, but nobody knows the timing. Staged buying does not remove the risk of loss; every financial decision is the individual's own responsibility.</p>
+<h3>Read more</h3><ul><li><a href="ai-infrastructure.html">Who is the next Nvidia?</a></li><li><a href="silver-drivers.html">What drives the price of silver?</a></li><li><a href="books.html">The Ditoman library</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone" target="_blank" rel="noopener">CoinDesk: Bitcoin tanks below $57,000 for the first time in two years (21 Nov 2026)</a></li><li><a href="https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play" target="_blank" rel="noopener">CoinDesk: cash is king amid Fed fears (20 Nov 2026)</a></li><li><a href="https://www.forbes.com/sites/digital-assets/2026/11/20/bitcoin-plunges-below-60000-as-risk-off-trading-fuels-widespread-losses/" target="_blank" rel="noopener">Forbes: Bitcoin plunges below $60,000 as risk-off trading fuels losses (20 Nov 2026)</a></li><li><a href="https://crypto.news/bitcoin-ether-etf-outflows-nov-16-20-2026/" target="_blank" rel="noopener">crypto.news: Bitcoin and Ether ETFs shed $1.47B in weekly outflows (Farside data)</a></li><li><a href="https://decrypt.co/383702/bitcoin-breaks-below-60k-crypto-fear-greed-index-lowest" target="_blank" rel="noopener">Decrypt: Crypto Fear & Greed Index hits worst level since February</a></li><li><a href="https://blockchain.news/news/20261121-price-prediction-btc-sellers-keep-control-as-bitcoin-loses" target="_blank" rel="noopener">Blockchain.News: BTC technical levels (21 Nov 2026)</a></li><li><a href="https://cointelegraph.com/markets/bitcoin-first-death-cross-repeat-2023-bottom-25k" target="_blank" rel="noopener">Cointelegraph: rare bearish trend-line crossover</a></li><li><a href="https://theblock.co/news/business/2026-11-16-this-dip-could-use-a-little-orange-michael-saylor-strategy-bitcoin-tumbles-440886" target="_blank" rel="noopener">The Block: Strategy buys another 485 BTC (16 Nov 2026)</a></li><li><a href="https://www.indmoney.com/blog/us-stocks/us-inflation-fed-rate-hike-december" target="_blank" rel="noopener">INDmoney: US inflation and Fed pricing for December 2026</a></li><li><a href="https://finviz.com/news/424463/nvidia-shares-rise-3-as-revenue-doubles-to-11584-billion-and-company-raises-ai-growth-forecast" target="_blank" rel="noopener">Finviz: Nvidia revenue doubles to $115.84 billion</a></li><li><a href="https://www.cbsnews.com/news/iran-war-us-israel-considering-new-assault-sources-say/" target="_blank" rel="noopener">CBS News: U.S. and Israel considering new assault on Iran, sources say (20 Nov 2026)</a></li><li><a href="https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html" target="_blank" rel="noopener">OilPrice: Tankers are being hit daily. So why is oil falling?</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 21 November 2026. Prices are as of source publication. Scenarios are conditional, not forecasts. Educational analysis, not a recommendation to buy or sell.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261116d" defer></script>
+<script src="search.js?v=20261116c" defer></script>
+</body>
+</html>
