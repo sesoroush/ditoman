@@ -322,7 +322,7 @@ def page(title, desc, path, body, extra_css=""):
   <link rel="stylesheet" href="fonts.css?v=1" />
   <link rel="stylesheet" href="site.css?v=20261113" />
   <style>{PAGE_CSS}{extra_css}</style>
-  <link rel="stylesheet" href="theme.css?v=20261116c" />
+  <link rel="stylesheet" href="theme.css?v=20261121a" />
 </head>
 <body data-lang="fa">
 
