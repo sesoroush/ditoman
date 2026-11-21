@@ -123,6 +123,12 @@ def make_ar(src, name):
             return f'{m.group(1)}"{ar_name(target)}{rest}"'
         return m.group(0)
     s = re.sub(r'(href=)"([a-z0-9\-]+\.html)(#[^"]*)?"', link, s)
+    # Arabic editions of the cover images (scripts/ar_covers.py), where they exist
+    def cover(m):
+        folder, kind = m.group(1), m.group(2)
+        new = {"card": "ar-card", "thumb": "ar-thumb", "post": "ar"}[kind]
+        return f"social/{folder}/{new}.webp" if (ROOT / "social" / folder / f"{new}.webp").exists() else m.group(0)
+    s = re.sub(r'social/([^/"\s]+)/(card|thumb|post)\.webp', cover, s)
     s = re.sub(r'(href=)"(\./?)"', lambda m: 'href="index.ar.html"', s)
     if "ar.css" not in s:
         s = s.replace("</head>", "  " + FONT + "\n</head>", 1)
