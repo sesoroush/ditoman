@@ -37,59 +37,56 @@
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": "Organization",
-   "@id": "https://ditoman.com/#organization",
-   "name": "Ditoman",
-   "alternateName": [
-    "دیتومان",
-    "DiToman",
-    "Ditoman TMN"
-   ],
-   "url": "https://ditoman.com/",
-   "logo": {
-    "@type": "ImageObject",
-    "url": "https://ditoman.com/tmn-logo-512.png",
-    "width": 512,
-    "height": 512
-   },
-   "foundingDate": "2022",
-   "sameAs": [
-    "https://www.instagram.com/ditoman.tmn/",
-    "https://t.me/Ditoman_tm",
-    "https://ble.ir/Ditoman",
-    "https://eitaa.com/DiToman",
-    "https://rubika.ir/DiToman"
-   ]
-  },
-  {
-   "@type": "WebSite",
-   "@id": "https://ditoman.com/#website",
-   "name": "Ditoman",
-   "alternateName": [
-    "دیتومان",
-    "DiToman"
-   ],
-   "url": "https://ditoman.com/",
-   "inLanguage": [
-    "fa",
-    "en"
-   ],
-   "publisher": {
-    "@id": "https://ditoman.com/#organization"
-   }
-  },
-  {
    "@type": "WebPage",
-   "@id": "https://ditoman.com/#page",
-   "url": "https://ditoman.com/",
-   "name": "Ditoman (TMN) | دیتومان | Iran is building. We document it.",
-   "description": "دیتومان روایت صنعت و نوآوری ایران، آموزش ساده کریپتو و نگاهی به آینده، به فارسی و انگلیسی. Ditoman documents Iran's industry and technology, with free crypto lessons. Home of the TMN token.",
+   "@id": "https://ditoman.com/index.en.html#page",
+   "url": "https://ditoman.com/index.en.html",
+   "name": "Ditoman (TMN) | Iran is building. We document it.",
+   "description": "Read ten lessons, pass a ten-question test and receive 500,000 TMN, for the first 1,000 people. Start here",
    "isPartOf": {
     "@id": "https://ditoman.com/#website"
    },
-   "about": {
-    "@id": "https://ditoman.com/#organization"
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
    }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Ditoman (TMN) | Iran is building. We document it.",
+     "item": "https://ditoman.com/index.en.html"
+    }
+   ]
   }
  ]
 }
