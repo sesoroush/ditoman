@@ -62,7 +62,7 @@ CSS = """
 @font-face { font-family: PlexAr; src: url('{fonts}/IBMPlexSansArabic-SemiBold.ttf'); font-weight: 600; }
 @font-face { font-family: PlexAr; src: url('{fonts}/IBMPlexSansArabic-Bold.ttf'); font-weight: 700 900; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 1080px; height: 1080px; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
 body { background: #101f22; color: #f2f0e9; font-family: PlexAr, sans-serif; position: relative; overflow: hidden; }
 .glow { position: absolute; inset: 0;
   background: radial-gradient(70% 60% at 0% 0%, rgba(87,217,199,.13), transparent 70%),
@@ -98,7 +98,7 @@ def render(page, job):
     if len(dek) > 190:
         dek = dek[:190].rsplit(" ", 1)[0].rstrip("،؛,:") + "…"
     css = CSS.replace("{fonts}", FONTS.as_uri()).replace("{geo}", GEO.as_uri()).replace("{title}", str(size))
-    doc = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>{css}</style></head><body>
+    doc = f"""<!doctype html><html lang="ar"><head><meta charset="utf-8"><style>{css}</style></head><body>
 <div class="glow"></div><div class="field"></div><div class="rosette"></div>
 <div class="wrap">
   <div class="top"><div class="kick {job['accent']}">{html.escape(job['kicker'])}</div>
