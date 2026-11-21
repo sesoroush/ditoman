@@ -73,3 +73,7 @@ tmn/dexscreener.json | https://api.dexscreener.com/latest/dex/tokens/0x86a56e59f
 tmn/gecko.json | https://api.geckoterminal.com/api/v2/networks/bsc/tokens/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d | direct
 social/flag-iran.svg | https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg | direct
 social/flag-iraq.svg | https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg | direct
+fonts/IBMPlexSansArabic-Regular.ttf | https://github.com/google/fonts/raw/main/ofl/ibmplexsansarabic/IBMPlexSansArabic-Regular.ttf | direct
+fonts/IBMPlexSansArabic-SemiBold.ttf | https://github.com/google/fonts/raw/main/ofl/ibmplexsansarabic/IBMPlexSansArabic-SemiBold.ttf | direct
+fonts/IBMPlexSansArabic-Bold.ttf | https://github.com/google/fonts/raw/main/ofl/ibmplexsansarabic/IBMPlexSansArabic-Bold.ttf | direct
+fonts/IBMPlexSansArabic-OFL.txt | https://github.com/google/fonts/raw/main/ofl/ibmplexsansarabic/OFL.txt | direct
