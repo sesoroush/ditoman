@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<base href="../" />
+<title>نمونه‌ی صفحه‌ی اصلی | Ditoman preview</title>
+<link rel="icon" href="tmn-logo-256.png" />
+<link rel="stylesheet" href="fonts.css?v=1" />
+<style>
+:root{--bg:#101F22;--card:#192B2E;--text:#F2F0E9;--mut:#a9b8b4;--tq:#57D9C7;--yl:#FFAD00;--line:rgba(242,240,233,.12)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"IRANYekanX",Tahoma,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(16,31,34,.96);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--tq)}
+.brand img{width:38px;height:38px;border-radius:50%}
+.brand small{font:700 13px/1 Inter,sans-serif;letter-spacing:.2em;color:var(--text);opacity:.9}
+.sp{flex:1}
+.ib{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;background:transparent;color:var(--text)}
+.ib svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8}
+.nav{display:none;gap:22px;font-size:15px;color:var(--mut)}
+.nav a:hover{color:var(--tq)}
+/* price bar */
+.bar{background:#0c181a;border-bottom:1px solid var(--line);font-size:13px}
+.bar .wrap{display:flex;gap:18px;align-items:center;height:38px;overflow:hidden;white-space:nowrap;color:var(--mut)}
+.bar b{color:var(--text);font-weight:600}
+.bar a.go{margin-inline-start:auto;color:var(--tq);font-weight:600}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--tq);display:inline-block;margin-inline-end:6px}
+/* lead */
+.lead{display:grid;gap:22px;padding:26px 0 30px;border-bottom:1px solid var(--line)}
+.kick{color:var(--yl);font-weight:700;font-size:14px;letter-spacing:.02em}
+.lead h1{font-size:clamp(28px,7vw,46px);line-height:1.35;font-weight:800;margin:8px 0 12px}
+.lead p{color:var(--mut);font-size:17px;max-width:46ch}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--tq);color:#06201c;font-weight:700;padding:11px 22px;border-radius:999px}
+.btn.ghost{background:transparent;color:var(--tq);border:1px solid var(--tq)}
+.lead figure{background:var(--card);border-radius:14px;padding:10px;display:grid;place-items:center}
+.lead figure img{display:block;width:100%;max-width:420px;height:auto;border-radius:8px}
+.lead figcaption{font-size:12px;color:var(--mut);padding-top:8px;justify-self:start}
+/* sections */
+.sec{padding:30px 0;border-bottom:1px solid var(--line)}
+.sh{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px}
+.sh h2{font-size:22px;font-weight:800}
+.sh a{color:var(--tq);font-size:14px;font-weight:600}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(2,1fr)}
+.card{display:block}
+.card img{display:block;width:100%;height:auto;border-radius:10px;background:var(--card)}
+.card .k{color:var(--tq);font-size:12px;font-weight:700;margin:10px 0 2px}
+.card h3{font-size:16px;line-height:1.55;font-weight:700}
+.card:hover h3{color:var(--tq)}
+/* start */
+.start{background:var(--card);border-radius:16px;padding:22px;display:grid;gap:14px;border:1px solid var(--line)}
+.start h2{font-size:22px}
+.start p{color:var(--mut)}
+.steps{display:flex;gap:4px;direction:rtl}
+.steps i{flex:1;height:6px;border-radius:3px;background:rgba(242,240,233,.14)}
+.steps i:first-child{background:var(--tq)}
+.meta{display:flex;justify-content:space-between;font-size:13px;color:var(--mut)}
+/* pillars */
+.pil{display:grid;gap:14px}
+.pil a{background:var(--card);border-radius:14px;padding:18px;border:1px solid var(--line)}
+.pil b{display:block;font-size:18px;margin-bottom:4px}
+.pil span{color:var(--mut);font-size:14px}
+/* iran */
+.stats{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);text-align:center;margin:6px 0 16px}
+.stats div{background:var(--card);border-radius:12px;padding:16px 6px}
+.stats strong{display:block;font-size:28px;color:var(--yl);font-weight:800;line-height:1.2}
+.stats span{font-size:13px;color:var(--mut)}
+.note{font-size:13px;color:var(--mut);background:rgba(87,217,199,.07);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+footer{padding:26px 0 40px;color:var(--mut);font-size:13px}
+.tag{display:inline-block;font:600 11px Inter,sans-serif;background:var(--yl);color:#1a1200;border-radius:999px;padding:2px 10px;margin-inline-start:8px}
+@media(min-width:760px){
+ .nav{display:flex}
+ .lead{grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:40px 0}
+ .grid{grid-template-columns:repeat(4,1fr)}
+ .pil{grid-template-columns:repeat(3,1fr)}
+ .start{grid-template-columns:1.3fr 1fr;align-items:center}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="tmn-logo-256.png" alt="" width="38" height="38"><span>دیتومان</span><small>DITOMAN</small></a>
+  <nav class="nav" aria-label="بخش‌ها"><a href="learn.html">آموزش</a><a href="iran.html">ایران چه دارد</a><a href="companies.html">شرکت‌ها</a><a href="prices.html">قیمت‌ها</a><a href="posts.html">یادداشت‌ها</a><a href="tmn.html">TMN</a></nav>
+  <span class="sp"></span>
+  <button class="ib" aria-label="جست‌وجو"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+  <button class="ib" aria-label="زبان"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></button>
+</div></header>
+<div class="bar"><div class="wrap"><span><i class="dot"></i>قیمت‌های زنده</span><span>دلار · طلا · بیت‌کوین</span><a class="go" href="prices.html">همه‌ی قیمت‌ها ←</a></div></div>
+
+<main class="wrap">
+  <section class="lead" aria-label="گزارش شاخص">
+    <div>
+      <div class="kick">چراغ روشن · دستاوردهای ایرانیان</div>
+      <h1>دارویی ایرانی با مجوز در سراسر اروپا</h1>
+      <p>سیناژن چطور مجوز بازار اروپا را برای «زندوریا»، داروی زیست‌مشابه تریپاراتاید برای پوکی استخوان، گرفت؛ و چه چیزی هنوز باید ثابت شود.</p>
+      <a class="btn" href="cinnagen.html">خواندن گزارش</a>
+    </div>
+    <figure><img src="social/cinnagen/card.webp" alt="سیناژن و زندوریا" width="900" height="900"><figcaption>تصویرسازی دیتومان</figcaption></figure>
+  </section>
+
+  <section class="sec" aria-label="شروع">
+    <div class="start">
+      <div>
+        <h2>از کجا شروع کنم؟</h2>
+        <p>اگر تازه‌واردید، از درس اول شروع کنید: ۲۱ درس کوتاه و دوزبانه، از «چرا پول قدرت خریدش را از دست می‌دهد؟» تا بلاکچین و هوش مصنوعی.</p>
+        <a class="btn" href="lesson12.html">شروع از درس اول</a> <a class="btn ghost" href="learn.html">همه‌ی درس‌ها</a>
+      </div>
+      <div>
+        <div class="steps" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="meta"><span>قدم ۱ از ۲۱</span><span>هر درس حدود ۵ دقیقه</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-label="گزارش‌ها">
+    <div class="sh"><h2>تازه‌ترین گزارش‌ها</h2><a href="#" onclick="return false">همه ←</a></div>
+    <div class="grid">
+      <a class="card" href="iran-vehicles.html"><img src="social/iran-vehicles/card.webp" alt="" loading="lazy" width="900" height="900"><div class="k">صنعت و خودرو</div><h3>از پیکان تا ۴۳ میلیون وسیله‌ی نقلیه</h3></a>
+      <a class="card" href="desert-farming.html"><img src="social/desert-farming/card.webp" alt="" loading="lazy" width="900" height="900"><div class="k">فناوری و کشاورزی</div><h3>گوجه‌فرنگی در دل بیابان</h3></a>
+      <a class="card" href="geothermal-energy.html"><img src="social/geothermal-energy/card.webp" alt="" loading="lazy" width="900" height="900"><div class="k">انرژی</div><h3>گوگل به سراغ برق از اعماق زمین رفت</h3></a>
+      <a class="card" href="iran-zinc.html"><img src="social/iran-zinc/card.webp" alt="" loading="lazy" width="900" height="900"><div class="k">چراغ روشن · معدن</div><h3>ایران و گنج روی</h3></a>
+    </div>
+  </section>
+
+  <section class="sec" aria-label="سه محور">
+    <div class="sh"><h2>سه محور دیتومان</h2></div>
+    <div class="pil">
+      <a href="learn.html"><b>سواد مالی و کریپتو</b><span>پول، بانک و بلاکچین، به زبان ساده</span></a>
+      <a href="posts.html"><b>فناوری و اقتصاد</b><span>آنچه در زندگی و کار ما اثر دارد</span></a>
+      <a href="iran.html"><b>چراغ روشن</b><span>دستاوردهای مستند ایرانیان، با منبع</span></a>
+    </div>
+  </section>
+
+  <section class="sec" aria-label="ایران چه دارد">
+    <div class="sh"><h2>ایران چه دارد</h2><a href="iran.html">نقشه‌ی صنایع ←</a></div>
+    <div class="stats">
+      <div><strong>۲۰۰</strong><span>شرکت بزرگ بورسی</span></div>
+      <div><strong>۵۰</strong><span>شرکت دانش‌بنیان و فناور</span></div>
+      <div><strong>۹</strong><span>شاخه‌ی صنعت</span></div>
+    </div>
+    <a class="btn ghost" href="companies.html">معرفی شرکت‌ها</a>
+  </section>
+
+  <section class="sec" aria-label="TMN">
+    <div class="note"><b>درباره‌ی TMN:</b> ابزاری برای آموزش و آزمایش است، نه وعده‌ی سود. وضعیت پروژه، نقدشوندگی و ریسک‌ها در صفحه‌ی اختصاصی آمده. <a href="tmn.html" style="color:var(--tq);font-weight:700">خواندن ←</a></div>
+  </section>
+</main>
+<footer><div class="wrap">نمونه‌ی صفحه‌ی اصلی؛ برای بررسی است و در سایت منتشر نشده.<span class="tag">PREVIEW</span></div></footer>
+</body>
+</html>
