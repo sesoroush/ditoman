@@ -1,0 +1,230 @@
+2010|C. Oranı yükseltir
+2011|Tüketici Finansal Koruma Bürosu: bileşik faiz nedir (tanım ve yüzde 5'ten 1.000 dolar örneği)
+2012|Tanım ve ilk iki yıl CFPB'den gelir. 10 yıllık, 20 yıllık, günlük ve etkin getiri rakamları bizim kendi aritmetiğimizdir (1.000 × 1,05^10 ve 1,05^20; 1.000 × 0,05 × 30 ÷ 365; yüzde 5'in aylık bileşiklenmesi), yuvarlanmıştır. Genel yönlendirme, kişisel tavsiye değil.
+2013|Bir Döviz Kuru Nereden Gelir? | Ditoman Öğren
+2014|Doların fiyatı her gün değişir. Bu ders döviz kurunun ne olduğunu, kimin belirlediğini ve dalgalı ile sabit kur arasındaki farkın ne olduğunu açıklar
+2015|Bir Döviz Kuru Nereden Gelir? Ditoman ders görseli
+2016|Para • Döviz Kurları
+2017|Doların fiyatı her gün değişir. Bu ders döviz kurunun ne olduğunu, kimin belirlediğini ve dalgalı ile sabit kur arasındaki farkın ne olduğunu açıklar.
+2018|Lizbon'daki bir mağazada bir gömlek 50 euro. Amerika Birleşik Devletleri'nden bir gezgin soruyor: bu dolar olarak ne kadar? Cevap gömleğin üzerinde yazmıyor. Tek bir sayıya, döviz kuruna bağlı.
+2019|Bu dersteki kurlar örnek için seçilmiş yuvarlak sayılardır. Bugünün kurları değildir.
+2020|Döviz kuru nedir
+2021|IMF bunu basitçe tanımlar: döviz kuru, bir ülkenin parasının bir başkasının parasıyla ifade edilen fiyatıdır.
+2022|1 euro 1,10 dolara eşitse, 50 euroluk gömlek 50 × 1,10 = 55 dolara mal olur. Kur euro başına 1,20 dolara çıkarsa, aynı gömlek 50 × 1,20 = 60 dolara mal olur. Gömlek değişmedi. Para değişti.
+2023|Aynı gömlek, iki kur (örnek amaçlı)
+2024|Kur
+2025|Euro cinsinden fiyat
+2026|Dolar cinsinden fiyat
+2027|1 euro = 1,10 dolar
+2028|1 euro = 1,20 dolar
+2029|Fiyatı kim belirler
+2030|Bir ülkenin seçtiği sisteme bağlıdır.
+2031|Dalgalı:
+2032|arz ve talep belirler. Bir para birimini satmak isteyenden daha fazla alıcı varsa fiyatı yükselir. IMF, bir merkez bankasının ani dalgalanmaları yumuşatmak için yine de döviz alıp satabileceğini belirtir.
+2033|Sabit (sabitlenmiş):
+2034|ülke parasını başka bir para birimine ya da bir sepete bağlar. Bazıları sonuna kadar gider: Panama ABD dolarını kullanır ve Hong Kong bir para kurulu işletir.
+2035|Dalgalı bir kuru ne yönlendirir
+2036|Birçok şey arz ve talebi iter: bir ülkenin yurt dışına ne kadar sattığı ve yurt dışından ne kadar aldığı, faiz oranları, enflasyon ve gelecek beklentileri. Beklentiler insanların sandığından daha önemlidir, çünkü tüccarlar yalnızca olanlara değil, olacağına inandıkları şeye göre hareket eder.
+2037|Sabit kurun ödünleşimi
+2038|Sert bir sabitleme ithalatçılara ve gezginlere istikrar verir, ama ülke kendi faiz politikasından vazgeçer, çünkü bağlı olduğu para birimini izlemek zorundadır. Dalgalı bir kur bu özgürlüğü korur, bedeli hareket eden bir kurdur.
+2039|IMF ayrıca, kurun sabit ama tam olarak desteklenmediği yumuşak sabitlemelerin kırılgan olduğu ve kalıcı olmadığı eğiliminde olduğu konusunda uyarır.
+2040|Bu piyasa ne kadar büyük
+2041|Dünyanın en büyük finansal piyasasıdır. Uluslararası Ödemeler Bankası, döviz işlemlerinin Nisan 2025'te günde ortalama yaklaşık 9,6 trilyon dolar olduğunu, 2022'ye göre kabaca yüzde 28 daha yüksek olduğunu bildirdi. ABD doları işlemlerin yaklaşık yüzde 89'unun bir tarafındaydı.
+2042|Bu yüzden dolar, dünya çapında fiyatlar için ortak bir ölçüt görevi görür.
+2043|Sıradan insanlar için neden önemli
+2044|Örnekte, güçlü bir euro gömleği Amerikalı için pahalılaştırdı ve zayıf bir euro onu ucuzlatıyor. Bir hane için aynı mantık ters yönde çalışır: kendi para biriminiz zayıfladığında ithal mallar ve yurt dışı seyahat pahalılaşır; ithal parçalardan yapılan her şey de öyle. Ders 12, yükselen fiyatların satın alma gücünü nasıl yediğini gösterdi; döviz kuru, onların geldiği yollardan biridir.
+2045|Dijital tomanı da içeren canlı kurları fiyatlar sayfamızda izleyebilirsiniz.
+2046|Döviz kuru, bir paranın başka bir paradaki fiyatıdır.
+2047|Aynı 50 euroluk gömlek, yalnızca kur değiştiğinde 55 ya da 60 dolara mal olabilir.
+2048|Dalgalı kurlar arz ve talebi izler; sabitlenmiş kurlar politikayla bağlanır.
+2049|Sert bir sabitleme bağımsız faiz politikasını feda eder.
+2050|Döviz alım satımı devasadır ve ABD doları işlemlerin çoğunun bir tarafındadır.
+2051|Ders 12, yükselen fiyatların satın alma gücünü nasıl aşındırdığını açıklar. Ders 26, bir para biriminin arkasında sıkça duran kurumu gösterir: merkez bankası.
+2052|Bir merkez bankası ne yapar?
+2053|Döviz kuru
+2054|Dalgalı kur
+2055|Sabit (sabitlenmiş) kur
+2056|Para kurulu
+2057|Döviz piyasası
+2058|Parasal özerklik
+2059|Döviz kurunu tanımlayın.
+2060|Verilen bir kurla bir fiyatı dönüştürün.
+2061|Dalgalı kuru sabitlenmiş kurdan ayırın.
+2062|Sert bir sabitlemenin ödünleşimini açıklayın.
+2063|Döviz piyasasının ne kadar büyük olduğunu anlatın.
+2064|1 euro = 1,10 dolar. Bir gömlek 50 euro. Dolar cinsinden fiyatı:
+2065|Kur euro başına 1,20 dolara çıkıyor. Gömlek artık şu kadar tutuyor:
+2066|Dalgalı bir sistemde kuru esas olarak ne belirler?
+2067|A. Arz ve talep
+2068|B. Yıllık bir oylama
+2069|C. Gömleğin fiyatı
+2070|Sert bir sabitlemede ülke neden vazgeçer?
+2071|A. Bağımsız faiz politikasından
+2072|B. Bayrağından
+2073|C. İthalatından
+2074|BIS'e göre Nisan 2025'te günde yaklaşık ne kadar döviz işlemi yapıldı?
+2075|A. Yaklaşık 9,6 trilyon dolar
+2076|B. Yaklaşık 96 milyon dolar
+2077|C. Yaklaşık 1 milyar dolar
+2078|IMF, Finance & Development: Temellere Dönüş, döviz kurları, dalgalı ve sabit sistemler
+2079|Uluslararası Ödemeler Bankası: küresel döviz işlemleri Nisan 2025'te günde 9,6 trilyon dolara ulaştı (basın bülteni, 30 Eylül 2025)
+2080|Örnekteki euro ve dolar kurları aritmetiği göstermek için seçilmiş yuvarlak sayılardır, güncel kurlar değildir. Piyasa büyüklüğü rakamları BIS'in üç yılda bir yaptığı anketten gelir. Genel açıklama, herhangi bir kurun tahmini değil.
+2081|Bir Merkez Bankası Ne Yapar? | Ditoman Öğren
+2082|Neredeyse her ülkenin bir tanesi vardır ve haberler ondan her gün söz eder. Bu ders bir merkez bankasının ne olduğunu, fikrin nereden geldiğini ve başlıca işlerinin neler olduğunu sade sözlerle açıklar
+2083|Bir Merkez Bankası Ne Yapar? Ditoman ders görseli
+2084|Para • Merkez Bankaları
+2085|Neredeyse her ülkenin bir tanesi vardır ve haberler ondan her gün söz eder. Bu ders bir merkez bankasının ne olduğunu, fikrin nereden geldiğini ve başlıca işlerinin neler olduğunu sade sözlerle açıklar.
+2086|İnsanlar "merkez bankası faizleri artırdı" ya da "merkez bankası para bastı" dediklerinde, ondan tek bir güçlü kişiymiş gibi söz ederler. Aslında kısa bir iş listesi olan bir kurumdur ve her işin bir nedeni vardır.
+2087|Merkez bankası nedir
+2088|Merkez bankası, bir ülkenin para sisteminin merkezinde duran kamusal bir kurumdur. Sıradan bankalar müşterilere hizmet eder. Merkez bankası bankalara, hükümete ve sistemin bütününe hizmet eder.
+2089|Fikir nerede başladı
+2090|Dünyanın en eski merkez bankası İsveç'inkidir. Bank of England Müzesi, bugünkü Sveriges Riksbank olan Riksens Ständers Bank'ın, başarısız olmuş daha eski bir bankanın kalıntıları üzerinde 1668'de kurulduğunu belirtir ve onu dünyanın en eski merkez bankası olarak adlandırır.
+2091|Bank of England 1694'te sonra geldi ve esas olarak bir savaşı finanse etmek için hükümete borç vermek amacıyla kuruldu. Yani ilk merkez bankaları kuramdan değil, devletlerin ihtiyaçlarından doğdu.
+2092|ABD neden geç kaldı
+2093|1907'deki bir finansal paniğin ardından ABD, merkez bankası olmayan tek büyük finans gücüydü. Başkan Woodrow Wilson 23 Aralık 1913'te Federal Rezerv Yasası'nı imzaladı ve Federal Rezerv'i kurdu.
+2094|Üç erken merkez bankası
+2095|Kurum
+2096|Not
+2097|İsveç Riksbank'ı
+2098|Dünyanın en eski merkez bankası olarak anılır
+2099|Bank of England
+2100|Esas olarak bir savaş için hükümete borç vermek amacıyla kuruldu
+2101|ABD Federal Rezervi
+2102|Yasa, 1907 panikinden sonra 23 Aralık'ta imzalandı
+2103|Başlıca işler
+2104|Bank of England'ın kendi tanımı tipik listeyi gösterir.
+2105|Para ve ödemeler:
+2106|banknotları basar ve bankalar arasında para taşıyan sistemleri işletir.
+2107|Bankaları denetlemek:
+2108|Ihtiyatlı Düzenleme Otoritesi aracılığıyla, başarısız bir bankanın diğerlerini de peşinden sürüklememesi için 1.300'den fazla kuruluşu gözetir.
+2109|Faiz oranları:
+2110|diğer tüm oranları etkileyen temel borçlanma maliyeti olan Banka Oranı'nı (Bank Rate) belirler.
+2111|Rezervler:
+2112|ülkenin altın rezervlerine bakar.
+2113|Fiyat istikrarı işi
+2114|Faiz oranları bir amaca hizmet eder. Birleşik Krallık'ta hükümet, Banka'nın enflasyon hedefini tüketici fiyatlarıyla ölçülen yıllık yüzde 2 olarak belirler. Oranı artırmak harcamayı ve fiyat artışlarını soğutma eğilimindedir; düşürmek borçlanmayı ve harcamayı teşvik etme eğilimindedir.
+2115|Ders 12, istikrarlı fiyatların neden önemli olduğunu gösterdi: yükselen fiyatlar bir maaşın alabileceği şeyi aşındırır. Merkez bankası, bu aşınmayı küçük ve öngörülebilir tutma görevi verilmiş kurumdur.
+2116|Son başvuru kredi vereni
+2117|Bir panikte sağlıklı bir banka, herkes parasını aynı anda geri istediği için aniden nakitten yoksun kalabilir. Merkez bankası ona iyi teminat karşılığında borç verebilir. "Bankaların bankası" fikri budur.
+2118|Neyi yapmaz
+2119|Bir merkez bankası hesabınızı işletmez ve birikimlerinizi tutmaz. Ticari bankalar tutar. Her fiyatı da kontrol etmez. Koşulları etkiler ve sonuçlar gecikmeler ve belirsizlikle gelir.
+2120|Bunun dijital paraya bağlantısı
+2121|Ders 11, bir dijital doların neyle desteklendiğini sordu ve Ders 20, bankaların yok olup olmayacağını sordu. Merkez bankasının kendi rolünü bildiğinizde her iki soru da kolaylaşır.
+2122|Merkez bankası, bir ülkenin para sisteminin merkezindeki kamusal kurumdur.
+2123|En eskisi 1668'den İsveç Riksbank'ıdır; Bank of England 1694'te izledi; ABD Federal Rezerv Yasası 23 Aralık 1913'te imzalandı.
+2124|Tipik işler: banknotlar ve ödemeler, bankaları denetlemek, temel faiz oranını belirlemek, rezervleri tutmak.
+2125|Faiz oranları bir amaca hizmet eder: Birleşik Krallık'taki yüzde 2 hedefi gibi istikrarlı fiyatlar.
+2126|Sizin bankanız değildir ve her fiyatı kontrol etmez.
+2127|Ders 11, bir dijital doların arkasında ne durduğunu sorar. Ders 20, bankaların yok olup olmayacağını sorar.
+2128|Gelecekte bankalar yok olacak mı?
+2129|Merkez bankası
+2130|Ticari banka
+2131|Temel faiz oranı
+2132|Enflasyon hedefi
+2133|Denetim
+2134|Rezervler
+2135|Merkez bankasının ne olduğunu söyleyin.
+2136|Üç erken merkez bankasını ve yıllarını söyleyin.
+2137|Bir merkez bankasının başlıca işlerini sıralayın.
+2138|Faiz oranlarının neden fiyat istikrarına hizmet ettiğini açıklayın.
+2139|Merkez bankasının ne yapmadığını söyleyin.
+2140|Hangisi dünyanın en eski merkez bankası olarak anılır?
+2141|A. 1668'de kurulan İsveç Riksbank'ı
+2142|B. 1913'te Federal Rezerv
+2143|C. 1694'te Bank of England
+2144|Bank of England neden 1694'te kuruldu?
+2145|A. Esas olarak bir savaş için hükümete borç vermek amacıyla
+2146|B. Süpermarket işletmek için
+2147|C. Altın çıkarmak için
+2148|Woodrow Wilson Federal Rezerv Yasası'nı ne zaman imzaladı?
+2149|A. 23 Aralık 1913
+2150|B. 1 Ocak 1900
+2151|C. 4 Temmuz 1776
+2152|Hükümetin belirlediği Birleşik Krallık enflasyon hedefi nedir?
+2153|A. Yılda yüzde 2
+2154|B. Yılda yüzde 20
+2155|C. Yılda yüzde 0,2
+2156|Bunlardan hangisi tipik bir merkez bankası işi DEĞİLDİR?
+2157|A. Herkesin kişisel tasarruf hesaplarını tutmak
+2158|B. Temel faiz oranını belirlemek
+2159|C. Bankaları denetlemek
+2160|Bank of England Müzesi: Riksens Ständers Bank (1668) dünyanın en eski merkez bankası olarak; Bank of England, 1694
+2161|Bank of England: Bank of England ne yapar (banknotlar, ödemeler, 1.300'den fazla kuruluşun denetimi, Bank Rate, altın rezervleri)
+2162|Bank of England: enflasyon ve Hükümet tarafından belirlenen yüzde 2 hedefi
+2163|Federal Rezerv Tarihi: 23 Aralık 1913'te imzalanan Federal Rezerv Yasası
+2164|Görev ayrıntıları tipik bir örnek olarak Bank of England'dan alınmıştır; diğer merkez bankaları farklıdır. Güncel faiz düzeyleri değiştiği için aktarılmamıştır. Genel açıklama, finansal tavsiye değil.
+2165|Bir Blok Zincirini Kim Yönetir? | Ditoman Öğren
+2166|Hiçbir şirket Bitcoin ya da Ethereum'a sahip değildir, yine de defterleri doğru biçimde büyümeye devam eder. Bu ders madencilerin ve doğrulayıcıların defterleri nasıl dürüst tuttuğunu ve bunun neden bir maliyeti olduğunu açıklar
+2167|Bir Blok Zincirini Kim Yönetir? Ditoman ders görseli
+2168|Blok Zinciri • Madencilik ve Staking
+2169|Hiçbir şirket Bitcoin ya da Ethereum'a sahip değildir, yine de defterleri doğru biçimde büyümeye devam eder. Bu ders madencilerin ve doğrulayıcıların defterleri nasıl dürüst tuttuğunu ve bunun neden bir maliyeti olduğunu açıklar.
+2170|Bir bankanın bir sahibi, bir müdürü ve bir telefon numarası vardır. Bir kamusal blok zincirinde bunların hiçbiri yoktur. Dünyanın dört bir yanındaki binlerce bilgisayar aynı defteri tutar ve kimse ondan sorumlu değildir.
+2171|Peki hangi işlemlerin sıradaki olarak gireceğine kim karar verir? Ve neden biri hile yapsın ya da yapmasın?
+2172|Çözülecek sorun
+2173|Her defterin bir kurala ihtiyacı vardır: herkes bir sonraki sayfa üzerinde anlaşmalıdır. İki kişi iki farklı sonraki sayfa ekleyebilseydi, para iki kez harcanabilirdi.
+2174|Banka bunu tek hakem olarak çözer. Bir blok zinciri bunu mutabakat mekanizması denen bir yöntemle çözer: birçok yabancı birbirlerine güvenmeden anlaşır.
+2175|İş kanıtı: madencilik
+2176|Bitcoin iş kanıtı (proof of work) kullanır. Madenciler bekleyen işlemleri bir bloğa toplar ve sonra bloğun verileriyle birleştirilip hash'lendiğinde bir hedefin altında sonuç veren bir sayı bulmaya çalışır. learnmeabitcoin'in açıkladığı gibi bu, sonuç hedefin altına düşene kadar blok başlığını çift SHA-256 ile defalarca hash'lemek demektir.
+2177|Denemekten başka kısayol yoktur. Başarılı olan ilk madenci bloğu paylaşır ve diğerleri onu hızla kontrol eder.
+2178|Ağ yaklaşık her 10 dakikada bir yeni blok hedefler. Her 2.016 blokta, kabaca iki haftada bir, kaç madenci katılırsa veya ayrılırsa ayrılsın hız sabit kalsın diye zorluk ayarlanır.
+2179|Madenciler ne kazanır
+2180|Kazanan madenci blok için coinbase denen bir ödül ve işlemlerinin ücretlerini toplar. Ödül, 100 blok yaşına gelene kadar harcanamaz; bu, bir bloğun yerine başkasının geçmesine karşı korur.
+2181|Maliyet işin özüdür. Madenciler gerçek elektrik ve ekipman harcar, bu yüzden hile yapmak, dürüstçe yapmanın maliyetinden daha değerli olmak zorundadır.
+2182|İş kanıtı ve hisse kanıtı
+2183|İş kanıtı (Bitcoin)
+2184|Hisse kanıtı (Ethereum)
+2185|Blokları kim önerir
+2186|Madenciler
+2187|Doğrulayıcılar
+2188|Neyin riski var
+2189|Elektrik ve ekipman
+2190|Bir teminat (tek başına bir tane çalıştırmak için 32 ETH)
+2191|Hile cezası
+2192|Boşa giden iş
+2193|Teminatın kesilmesi (slashing)
+2194|Enerji kullanımı
+2195|Yüksek
+2196|Merge sonrasında yaklaşık yüzde 99,99 daha düşük (tahmin)
+2197|Hisse kanıtı: doğrulayıcılar
+2198|Ethereum hisse kanıtına geçti. Enerji harcamak yerine doğrulayıcılar parayı riske atar. Tek başına bir doğrulayıcı çalıştırmak için 32 ETH yatırırsınız ve daha azına sahip olanlar için havuzlar vardır.
+2199|Bir doğrulayıcı dürüst davranmazsa teminatının bir kısmı ya da tamamı yok edilebilir. Bu cezaya slashing denir. ethereum.org'a göre ilk ceza etkin bakiyenin 1/4096'sından başlar, 0,5 ETH ile sınırlıdır ve sonra doğrulayıcı çıkarılır.
+2200|Enerji ne kadar değişti
+2201|Değişim 15 Eylül 2022'de, Merge gününde geldi. Cambridge Alternatif Finans Merkezi, Ethereum'un elektrik kullanımının yaklaşık yüzde 99,99 düştüğünü tahmin etti.
+2202|Düğümler: kontrol edenler
+2203|Madenciler ve doğrulayıcılar blok önerir, ama yazılımı çalıştıran herhangi bir bilgisayar, yani bir düğüm (node), kuralları kontrol edebilir. Kuralları bozan bir blok, üretimi pahalı olsa bile reddedilir.
+2204|Çoğunluk hile yapabilir mi?
+2205|İş kanıtında, madencilik gücünün çoğunu kontrol eden biri yakın geçmişi yeniden yazabilir. Buna yüzde 51 saldırısı denir. Muazzam kaynak gerektirir ve ağ ne kadar küçükse hedef o kadar zayıflar.
+2206|Her iki sistem de aynı soruya cevap verir: hile yapmayı dürüstlükten daha pahalı hâle getirmek.
+2207|Bir blok zincirinin, yabancıların bir sonraki sayfa üzerinde anlaşması için bir yola ihtiyacı vardır.
+2208|İş kanıtı: madenciler, sonuç hedefin altına düşene kadar enerji harcayarak hash'ler.
+2209|Hisse kanıtı: doğrulayıcılar parayı riske atar ve kesilebilir.
+2210|Düğümler, blok üretmeseler bile kuralları kontrol eder.
+2211|İkisi de hile yapmayı dürüstlükten daha pahalı kılmayı amaçlar.
+2212|Ders 28, Ethereum'un bunun üzerinde ne çalıştırdığını gösterir: kendi kendine çalışan programlar. Ders 30, Bitcoin madencilerinin nasıl ödendiğini yöneten takvimi açıklar.
+2213|Ethereum ve akıllı sözleşmeler
+2214|Mutabakat mekanizması
+2215|İş kanıtı
+2216|Madencilik ve zorluk
+2217|Blok ödülü
+2218|Hisse kanıtı
+2219|Doğrulayıcı ve slashing
+2220|Düğüm (node)
+2221|Yüzde 51 saldırısı
+2222|Bir blok zincirinin neden bir mutabakat yöntemine ihtiyaç duyduğunu açıklayın.
+2223|İş kanıtını basit sözlerle anlatın.
+2224|Hisse kanıtını ve slashing'i anlatın.
+2225|Bir düğümün ne yaptığını söyleyin.
+2226|Yüzde 51 saldırısının ne olduğunu açıklayın.
+2227|Bitcoin ağı kabaca ne sıklıkla bir blok üretmeyi hedefler?
+2228|A. Yaklaşık her 10 dakikada
+2229|B. Her saniye
+2230|C. Günde bir kez
+2231|Bitcoin'in zorluğu ne sıklıkla ayarlanır?
+2232|A. Her 2.016 blokta, yaklaşık iki haftada
+2233|B. Her blokta
+2234|Slashing nedir?
+2235|A. Dürüst olmayan bir doğrulayıcının teminatının bir kısmını ya da tamamını yok etmek
+2236|B. Ücret indirimi
+2237|C. Yeni bir coin
+2238|Tek başına bir doğrulayıcı çalıştırmak için ne kadar ETH gerekir?
+2239|A. 32 ETH

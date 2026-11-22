@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="fa" data-lang-lock="fa" data-site-lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>أين مالي؟ من الحساب المصرفي إلى المحفظة الرقمية | Where Is My Money? From Bank Account to Digital Wallet | Ditoman Learn</title>
+<meta name="description" content="A balance on a screen can mean three very different things. This lesson compares a bank account, an exchange account and a personal wallet, and shows who really controls the money in each one." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson13.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson13.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson13.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson13.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson13.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson13.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson13.html" />
+  <!-- hreflang:end -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="ar.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson13.ar.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="أين مالي؟ من الحساب المصرفي إلى المحفظة الرقمية | Where Is My Money? From Bank Account to Digital Wallet | Ditoman Learn" />
+<meta property="og:description" content="A balance on a screen can mean three very different things. This lesson compares a bank account, an exchange account and a personal wallet, and shows who really controls the money in each one." />
+<meta property="og:url" content="https://ditoman.com/lesson13.ar.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson13.ar.html#page",
+   "url": "https://ditoman.com/lesson13.ar.html",
+   "name": "أين مالي؟ من الحساب المصرفي إلى المحفظة الرقمية | Where Is My Money? From Bank Account to Digital Wallet | Ditoman Learn",
+   "description": "A balance on a screen can mean three very different things. This lesson compares a bank account, an exchange account and a personal wallet, and shows who really controls the money in each one.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "أين مالي؟ من الحساب المصرفي إلى المحفظة الرقمية | Where Is My Money? From Bank Account to Digital Wallet",
+     "item": "https://ditoman.com/lesson13.ar.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.ar.html" aria-label="Ditoman | ديتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">ديتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.ar.html" class="active">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.ar.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.ar.html">TMN</a>
+<a href="index.ar.html#whitepapers">Whitepaper</a>
+<a href="posts.html">Posts</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson13-cover.jpg" alt="Where Is My Money? From Bank Account to Digital Wallet Ditoman lesson image" style="width:100%;height:auto"><img lang="en" src="lesson13-cover-en.jpg" alt="Where Is My Money? From Bank Account to Digital Wallet Ditoman lesson image" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Money • Custody</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">المال • الحفظ</div>
+<h1 lang="en">Where Is My Money? From Bank Account to Digital Wallet</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">أين أموالي؟ من الحساب المصرفي إلى المحفظة الرقمية</h1>
+<p class="subtitle" lang="en">A balance on a screen can mean three very different things. This lesson compares a bank account, an exchange account and a personal wallet, and shows who really controls the money in each one.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">الرقم الذي نراه على الشاشة قد يحمل ثلاثة معانٍ مختلفة تمامًا. يضع هذا الدرس الحساب المصرفي وحساب منصة الصرافة والمحفظة الشخصية جنبًا إلى جنب ويبيّن في كل منها بيد من السيطرة الفعلية على المال.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Level</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">المستوى</span><strong lang="en">Beginner</strong><strong lang="fa" dir="rtl" style="display:block">مبتدئ</strong></div>
+<div class="meta-box"><span lang="en">Reading Time</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">مدة القراءة</span><strong lang="en">6 Minutes</strong><strong lang="fa" dir="rtl" style="display:block">6 دقائق</strong></div>
+<div class="meta-box"><span lang="en">Learning Points</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">نقاط التعلّم</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">20 نقطة</strong></div>
+<div class="meta-box"><span lang="en">Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">اختبار قصير</span><strong lang="en">5 Questions</strong><strong lang="fa" dir="rtl" style="display:block">5 أسئلة</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Lesson Content</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوى الدرس</h2>
+<p class="section-subtitle" lang="en">Read the lesson in English or Persian.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">اقرأ الدرس بالفارسية أو الإنجليزية.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">English</button>
+<button class="lang-button" onclick="showLanguage('fa')">العربية</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Open a banking app and you see a number. Open an exchange app and you see another number. Open a crypto wallet and there is a third. They all look like "my money". They are not the same kind of thing.</p>
+<p lang="en">The difference comes down to one question we can ask of any balance: if I want this money right now, who has to say yes?</p>
+<h3><span class="check-number">01.</span> A bank balance is a promise</h3>
+<p lang="en">When you deposit money, it does not sit in a box with your name on it. The bank lends most of it out. What you own is a claim: the bank owes you that amount and promises to pay when you ask.</p>
+<p lang="en">That promise is protected in several ways. Banks are licensed and supervised, and many countries run a deposit guarantee that repays savers up to a ceiling if a bank fails. In the United States the ceiling is 250,000 dollars per depositor per bank, and in the European Union it is 100,000 euros. Iran has its own Deposit Guarantee Fund with its own ceiling. Above the ceiling, a saver waits in line with other creditors.</p>
+<h3><span class="check-number">02.</span> An exchange balance is also a promise</h3>
+<p lang="en">A crypto exchange works the same way in one important respect: the coins are in the exchange's wallets, and your account shows what the exchange owes you. You hold a claim on a company.</p>
+<p lang="en">The difference is the protection behind it. Most exchange accounts have no deposit guarantee. When the exchange FTX collapsed in November 2022, customers found that billions of dollars of their assets were missing, and they had to wait for a bankruptcy court.</p>
+<p lang="en">This does not mean every exchange is dishonest. It means the balance is only as good as the company behind it.</p>
+<h3><span class="check-number">03.</span> A personal wallet is a key</h3>
+<p lang="en">A personal wallet, also called a self-custody wallet, is different. The coins are recorded on the blockchain, and the wallet holds the <strong>private key</strong> that can move them. Nobody else has to approve a transfer.</p>
+<p lang="en">The key is usually shown once as a <strong>recovery phrase</strong>: 12 or 24 ordinary words. Whoever has those words controls the money. There is no "forgot my password" button and no office to call.</p>
+<figure class="lz-fig"><figcaption>Three balances, three meanings</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>Bank account</th>
+<th>Exchange account</th>
+<th>Personal wallet</th>
+</tr></thead><tbody>
+<tr><td>What you hold</td><td>A claim on the bank</td><td>A claim on the company</td><td>The key itself</td></tr>
+<tr><td>Who approves a transfer</td><td>The bank</td><td>The exchange</td><td>Only you</td></tr>
+<tr><td>If you forget the password</td><td>The bank resets it</td><td>The exchange resets it</td><td>No reset; only the recovery phrase</td></tr>
+<tr><td>If the institution fails</td><td>Guarantee up to a ceiling</td><td>Usually no guarantee</td><td>Does not depend on one</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> More control, more responsibility</h3>
+<p lang="en">With a bank, you trust an institution and get help when something goes wrong. With a personal wallet, you trust yourself and carry the whole responsibility.</p>
+<p lang="en"><strong>If you lose the recovery phrase,</strong> the money is gone, even though it is still visible on the blockchain.</p>
+<p lang="en"><strong>If someone else sees the phrase,</strong> they can empty the wallet from anywhere in the world, and the transfer cannot be reversed.</p>
+<p lang="en"><strong>If you send to the wrong address or network,</strong> there is usually no way back. Lesson 16 covers this step by step.</p>
+<h3><span class="check-number">05.</span> Simple habits that prevent most losses</h3>
+<p lang="en">Write the recovery phrase on paper and keep it somewhere safe and dry. Do not photograph it, and do not store it in a chat, an email or a notes app.</p>
+<p lang="en">Nobody legitimate will ever ask for the phrase. Not support staff, not a wallet company, not Ditoman.</p>
+<p lang="en">Start with a small amount and practise receiving and sending before you move anything that matters.</p>
+<p lang="en">Use a personal wallet for tokens an exchange does not support. TMN is one example: it must be received in a personal BNB Smart Chain wallet, as the TMN guide shows.</p>
+<h3>What to take from this</h3>
+<p lang="en">A balance is not always money in your hand. Ask who has to say yes before it moves.</p>
+<p lang="en">A bank deposit is a claim on a bank, with supervision and a guarantee up to a ceiling.</p>
+<p lang="en">An exchange balance is a claim on a company, usually without a guarantee.</p>
+<p lang="en">A personal wallet gives you the key and the full responsibility that comes with it.</p>
+<p lang="en">No arrangement is best for everyone. Many people use more than one, each for a different purpose.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">نفتح تطبيق البنك فنرى رقمًا. نفتح تطبيق المنصة فنرى رقمًا آخر. نفتح محفظة الكريبتو فنجد رقمًا ثالثًا. الثلاثة تبدو «مالي»، لكنها ليست من جنس واحد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">يتضح الفرق بسؤال واحد يمكن طرحه عن أي رصيد: لو أردت هذا المال الآن، من يجب أن يأذن؟</p>
+<h3><span class="check-number">01.</span> رصيد البنك وعد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">حين نودع المال في البنك فإنه لا يبقى في صندوق باسمنا. البنك يقرض معظمه. ما نملكه «مطالبة»: البنك مدين لنا بهذا المبلغ وقد وعد بدفعه متى طلبنا.</p>
+<p lang="fa" dir="rtl" style="text-align:right">ويُحمى هذا الوعد بعدة طرق. فالبنوك مرخَّصة وخاضعة للرقابة، وفي كثير من البلدان صندوق لضمان الودائع يعيد إلى المودع ماله حتى سقف معين إذا أفلس البنك. وفي الولايات المتحدة هذا السقف 250 ألف دولار لكل مودع في كل بنك، وفي الاتحاد الأوروبي 100 ألف يورو. ولإيران أيضًا صندوق لضمان الودائع بسقفه الخاص. وفيما يزيد عن السقف يبقى المودع في الصف مع بقية الدائنين.</p>
+<h3><span class="check-number">02.</span> رصيد المنصة وعد أيضًا</h3>
+<p lang="fa" dir="rtl" style="text-align:right">منصة الكريبتو تعمل من هذه الناحية المهمة بالطريقة نفسها: العملات في محافظ المنصة، وحسابنا يبيّن كم تدين المنصة لنا. لدينا مطالبة على شركة.</p>
+<p lang="fa" dir="rtl" style="text-align:right">الفرق في الحماية التي تقف خلف هذه المطالبة. فمعظم حسابات المنصات بلا ضمان ودائع. وحين انهارت منصة FTX في نوفمبر 2022، اكتشف العملاء أن مليارات الدولارات من أصولهم ليست في مكانها، وعليهم انتظار محكمة الإفلاس.</p>
+<p lang="fa" dir="rtl" style="text-align:right">لا يعني هذا أن كل منصة سيئة. يعني أن الرصيد لا يساوي إلا ما تساويه الشركة التي خلفه.</p>
+<h3><span class="check-number">03.</span> المحفظة الشخصية مفتاح</h3>
+<p lang="fa" dir="rtl" style="text-align:right">المحفظة الشخصية مختلفة. العملات مسجّلة على البلوكتشين، والمحفظة تحمل <strong>المفتاح الخاص</strong> وهو المفتاح الذي يستطيع نقلها. ولا يلزم إذن أي شخص آخر للنقل.</p>
+<p lang="fa" dir="rtl" style="text-align:right">وعادةً يُعرَض هذا المفتاح مرة واحدة في صورة <strong>عبارة الاسترداد</strong> وهي 12 أو 24 كلمة عادية. ومن يملك هذه الكلمات يتحكم في المال. لا يوجد زر «نسيت كلمة المرور»، ولا مكتب يمكن الاتصال به.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>ثلاثة أرصدة، ثلاثة معانٍ</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>الحساب المصرفي</th>
+<th>حساب المنصة</th>
+<th>المحفظة الشخصية</th>
+</tr></thead><tbody>
+<tr><td>ماذا تملك</td><td>مطالبة على البنك</td><td>مطالبة على شركة</td><td>المفتاح نفسه</td></tr>
+<tr><td>من يوافق على التحويل</td><td>البنك</td><td>المنصة</td><td>أنت وحدك</td></tr>
+<tr><td>إن نسيت كلمة المرور</td><td>البنك يعيد التعيين</td><td>المنصة تعيد التعيين</td><td>لا إعادة تعيين؛ فقط عبارة الاسترداد</td></tr>
+<tr><td>إن أفلست الجهة</td><td>ضمان حتى سقف</td><td>عادةً بلا ضمان</td><td>لا تعتمد على جهة</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> تحكّم أكبر، مسؤولية أكبر</h3>
+<p lang="fa" dir="rtl" style="text-align:right">في البنك نثق بجهة ونطلب المساعدة عند حدوث مشكلة. وفي المحفظة الشخصية نثق بأنفسنا والمسؤولية كلها علينا.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>إذا ضاعت عبارة الاسترداد،</strong> فالمال ضاع، وإن كان لا يزال ظاهرًا على البلوكتشين.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>إذا رأى شخص آخر العبارة،</strong> فيمكنه تفريغ المحفظة من أي مكان في العالم، ولا رجعة في هذا التحويل.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>إذا أرسلنا إلى عنوان أو شبكة خاطئة،</strong> فعادةً لا سبيل للتراجع. يشرح الدرس 16 ذلك خطوة بخطوة.</p>
+<h3><span class="check-number">05.</span> بضع عادات بسيطة تمنع معظم الخسائر</h3>
+<p lang="fa" dir="rtl" style="text-align:right">اكتب عبارة الاسترداد على ورق واحفظها في مكان آمن وجاف. لا تصوّرها ولا تحفظها في الدردشة أو البريد أو تطبيق الملاحظات.</p>
+<p lang="fa" dir="rtl" style="text-align:right">لا يطلب هذه العبارة أي شخص أو شركة نزيهة. لا الدعم ولا الشركة المصنّعة للمحفظة ولا ديتومان.</p>
+<p lang="fa" dir="rtl" style="text-align:right">ابدأ بمبلغ صغير ودرّب نفسك على الاستلام والإرسال قبل نقل مبلغ مهم.</p>
+<p lang="fa" dir="rtl" style="text-align:right">للرموز التي لا تدعمها المنصة تحتاج إلى محفظة شخصية. TMN مثال: يجب استلامه في محفظة شخصية على شبكة BNB Smart Chain؛ ودليل TMN يبيّن ذلك.</p>
+<h3>ماذا نستنتج</h3>
+<p lang="fa" dir="rtl" style="text-align:right">الرصيد لا يعني دائمًا مالًا في اليد. اسأل من يجب أن يأذن بنقله.</p>
+<p lang="fa" dir="rtl" style="text-align:right">الوديعة المصرفية مطالبة على البنك، مع رقابة وضمان حتى سقف.</p>
+<p lang="fa" dir="rtl" style="text-align:right">رصيد المنصة مطالبة على شركة وعادةً لا ضمان له.</p>
+<p lang="fa" dir="rtl" style="text-align:right">المحفظة الشخصية تعطيك المفتاح، مع كل مسؤوليته.</p>
+<p lang="fa" dir="rtl" style="text-align:right">لا توجد طريقة هي الأفضل للجميع. كثيرون يستخدمون أكثر من طريقة، كل واحدة لغرض.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Ready to try a personal wallet?</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">تريد تجربة محفظة شخصية؟</h2>
+<p lang="en">The TMN guide shows, with pictures, how to add a token to a personal wallet and copy your address. Lesson 17 then covers the mistakes and scams to watch for.</p>
+<p lang="fa" dir="rtl" style="text-align:right">يبيّن دليل TMN بالصور كيف تضيف رمزًا إلى محفظة شخصية وتنسخ عنوانك. ويراجع الدرس 17 الأخطاء وعمليات الاحتيال التي يجب الحذر منها.</p>
+<div class="cta-row">
+<a class="cta" href="tmn-guide.html"><span lang="en">Add TMN to your wallet</span><span lang="fa">إضافة TMN إلى المحفظة</span></a>
+<a class="button" href="lesson17.ar.html"><span lang="en">How not to lose your digital money</span><span lang="fa">كيف لا نخسر أموالنا الرقمية؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Key Concepts</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">المفاهيم الأساسية</h3>
+<ul lang="en"><li>Deposit as a claim</li><li>Deposit guarantee</li><li>Custody</li><li>Exchange (custodial) account</li><li>Personal (self-custody) wallet</li><li>Private key</li><li>Recovery phrase</li><li>Irreversible transfer</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>الوديعة بوصفها مطالبة</li><li>ضمان الودائع</li><li>حفظ الأصول</li><li>حساب المنصة (أمانة)</li><li>المحفظة الشخصية</li><li>المفتاح الخاص</li><li>عبارة الاسترداد</li><li>تحويل لا رجعة فيه</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Learning Objectives</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">أهداف التعلّم</h3>
+<ul lang="en"><li>Explain why a bank balance is a claim and not stored cash.</li><li>Compare the protection behind a bank account and an exchange account.</li><li>Describe what a private key and a recovery phrase do.</li><li>List three ways money can be lost in a personal wallet.</li><li>Name the habits that keep a recovery phrase safe.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>اشرح لماذا رصيد البنك مطالبة وليس مالًا محفوظًا جانبًا.</li><li>قارن الحماية خلف الحساب المصرفي وحساب المنصة.</li><li>قل ماذا يفعل المفتاح الخاص وعبارة الاسترداد.</li><li>سمِّ ثلاث طرق لضياع المال في المحفظة الشخصية.</li><li>عدّد العادات التي تحفظ عبارة الاسترداد آمنة.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Quiz</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">اختبار قصير</h2>
+<p class="section-subtitle" lang="en">Check what stayed with you. The answer is under each question.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">انظر ماذا علق في ذهنك. الإجابة تحت كل سؤال.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Question 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 1</h3>
+<p lang="en">What do you own when you deposit money in a bank?</p>
+<p lang="fa" dir="rtl" style="text-align:right">حين تضع المال في البنك، ماذا تملك؟</p>
+<p lang="en">A. Cash stored in your name</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. نقدًا محفوظًا جانبًا باسمك</p>
+<p lang="en">B. A claim on the bank</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. مطالبة على البنك</p>
+<p lang="en">C. A share of the bank</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. حصة في البنك</p>
+<p class="answer" lang="en">Correct answer: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 2</h3>
+<p lang="en">Who can move the coins in a personal wallet?</p>
+<p lang="fa" dir="rtl" style="text-align:right">من يستطيع نقل عملات محفظة شخصية؟</p>
+<p lang="en">A. Whoever holds the private key or recovery phrase</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. كل من يملك المفتاح الخاص أو عبارة الاسترداد</p>
+<p lang="en">B. The wallet company's support team</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. فريق الدعم في الشركة المصنّعة للمحفظة</p>
+<p lang="en">C. The exchange where they were bought</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. المنصة التي اشتُريت منها</p>
+<p class="answer" lang="en">Correct answer: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: أ</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 3</h3>
+<p lang="en">Someone from 'support' asks for your recovery phrase to fix a problem. What is this?</p>
+<p lang="fa" dir="rtl" style="text-align:right">شخص باسم «الدعم» يطلب عبارة الاسترداد لحل مشكلة. ما هذا؟</p>
+<p lang="en">A. A normal security step</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. خطوة أمنية عادية</p>
+<p lang="en">B. A scam</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. احتيال</p>
+<p lang="en">C. A legal requirement</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. شرط قانوني</p>
+<p class="answer" lang="en">Correct answer: B. Nobody legitimate ever asks for it.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: ب. لا يطلب هذه العبارة أي شخص أو شركة نزيهة.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 4</h3>
+<p lang="en">What usually protects an exchange balance if the exchange fails?</p>
+<p lang="fa" dir="rtl" style="text-align:right">إذا أفلست المنصة، ما الذي يحمي رصيدك عادةً؟</p>
+<p lang="en">A. A deposit guarantee, like a bank</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. ضمان الودائع كالبنك</p>
+<p lang="en">B. The blockchain</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. البلوكتشين</p>
+<p lang="en">C. Usually nothing; you wait with other creditors</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. عادةً لا شيء؛ تنتظر مع بقية الدائنين</p>
+<p class="answer" lang="en">Correct answer: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: ج</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 5</h3>
+<p lang="en">Where is the safest place for a recovery phrase?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ما أأمن مكان لعبارة الاسترداد؟</p>
+<p lang="en">A. A photo in your phone gallery</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. صورة في معرض الهاتف</p>
+<p lang="en">B. A message to yourself in a chat app</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. رسالة إلى نفسك في تطبيق مراسلة</p>
+<p lang="en">C. On paper, in a safe place</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. على ورق في مكان آمن</p>
+<p class="answer" lang="en">Correct answer: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: ج</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Sources</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">المصادر</h3>
+<ul><li><a href="https://www.fdic.gov/resources/deposit-insurance/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">FDIC: Deposit insurance (United States)</a></li><li><a href="https://finance.ec.europa.eu/banking/banking-regulation/deposit-guarantee-schemes_en" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">European Commission: Deposit guarantee schemes</a></li><li><a href="https://www.rte.ie/news/us/2024/0328/1440405-sam-bankman-fried" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">RTE News: FTX founder sentenced over the loss of customer funds (28 March 2024)</a></li><li><a href="https://ethereum.org/en/wallets/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">ethereum.org: Wallets, keys and recovery phrases</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Guarantee ceilings change. Check the current ceiling with the deposit guarantee body in your own country.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">سقف ضمان الودائع يتغير. اسأل جهة ضمان الودائع في بلدك عن السقف الحالي.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">نتابع معًا</span><span lang="en">Follow along</span></h2>
+<p lang="en">New lessons are announced first on Ditoman's channels.</p>
+<p lang="fa" dir="rtl" style="text-align:right">تُعرَض الدروس الجديدة أولًا على قنوات ديتومان.</p>
+<div class="cta-row">
+<a class="button" href="learn.ar.html"><span lang="en">Back to Learn</span><span lang="fa">العودة إلى التعلّم</span></a>
+<a class="button" href="lesson12.ar.html"><span lang="en">Previous Lesson</span><span lang="fa">الدرس السابق</span></a>
+<a class="button" href="lesson14.ar.html"><span lang="en">Next Lesson</span><span lang="fa">الدرس التالي</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Built on structure, driven by discovery.
+</div>
+<div class="container" lang="fa" dir="rtl">تعلّم ديتومان • نبني بالبنية، ونتقدّم بالاكتشاف.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="ar.js?v=20261121a"></script>
+</body>
+</html>

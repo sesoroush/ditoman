@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Куда уходят мои ежемесячные деньги? | Ditoman Learn</title>
+<meta name="description" content="Большинству людей кажется, что деньги исчезают до конца месяца. Этот урок показывает простой способ увидеть, куда они уходят, с помощью одного известного практического правила и привычки на один месяц" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson22.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson22.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson22.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson22.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson22.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson22.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson22.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson22.ru.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Куда уходят мои ежемесячные деньги? | Ditoman Learn" />
+<meta property="og:description" content="Большинству людей кажется, что деньги исчезают до конца месяца. Этот урок показывает простой способ увидеть, куда они уходят, с помощью одного известного практического правила и привычки на один месяц" />
+<meta property="og:url" content="https://ditoman.com/lesson22.ru.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson22.ru.html#page",
+   "url": "https://ditoman.com/lesson22.ru.html",
+   "name": "Куда уходят мои ежемесячные деньги? | Ditoman Learn",
+   "description": "Большинству людей кажется, что деньги исчезают до конца месяца. Этот урок показывает простой способ увидеть, куда они уходят, с помощью одного известного практического правила и привычки на один месяц",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Куда уходят мои ежемесячные деньги?",
+     "item": "https://ditoman.com/lesson22.ru.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.ru.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.ru.html" class="active">Учиться</a>
+<a href="iran.en.html">Иран</a>
+<a href="companies.en.html">Компании</a>
+<a href="prices.ru.html">Цены</a>
+<a href="calendar.en.html">Календарь</a>
+<a href="tmn.ru.html">TMN</a>
+<a href="index.ru.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Публикации</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson22-cover.jpg" alt="Куда уходят мои ежемесячные деньги? Иллюстрация урока Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson22-cover-en.jpg" alt="Куда уходят мои ежемесячные деньги? Иллюстрация урока Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Деньги • Бюджет</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پول • بودجه‌بندی</div>
+<h1 lang="en">Куда уходят мои ежемесячные деньги?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">پول ماهانه‌ام کجا می‌رود؟</h1>
+<p class="subtitle" lang="en">Большинству людей кажется, что деньги исчезают до конца месяца. Этот урок показывает простой способ увидеть, куда они уходят, с помощью одного известного практического правила и привычки на один месяц.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">بیشتر ما حس می‌کنیم پول پیش از پایان ماه آب می‌شود. این درس یک راه ساده نشان می‌دهد تا ببینیم کجا می‌رود؛ با یک قاعده‌ی سرانگشتیِ شناخته‌شده و یک عادت یک‌ماهه.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Уровень</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Для начинающих</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Время чтения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 минут</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Баллы обучения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Тест</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 вопросов</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Содержание урока</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Читайте урок на английском или персидском.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Русский</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Двадцатое число месяца, а счёт почти пуст. Ничего необычного не случилось: ни срочной нужды, ни крупной покупки. И всё же денег нет.</p>
+<p lang="en">Это самый распространённый денежный опыт в мире, и причина проста. Мелкие платежи легко забыть, а месяц достаточно длинный, чтобы их спрятать. Бюджет — не более чем способ увидеть месяц до того, как он наступит.</p>
+<h3><span class="check-number">01.</span> Что такое бюджет и чем он не является</h3>
+<p lang="en">Бюджет — это план вашего дохода: сколько приходит и для чего служит каждая его часть. Это не наказание и не обещание говорить «нет» всему.</p>
+<p lang="en">Представьте его как карту. Карта не мешает идти; она показывает, где вы. Без неё траты кажутся случайными. С ней можно выбирать.</p>
+<h3><span class="check-number">02.</span> Начинайте с наблюдения, а не с сокращений</h3>
+<p lang="en">Прежде чем что-то менять, один месяц только наблюдайте. Записывайте каждый платёж или пользуйтесь списком, который уже ведёт ваше банковское приложение.</p>
+<p lang="en">В конце месяца разложите платежи на три кучки: то, что вы должны платить, то, что вы решили платить, и деньги, которые вы отложили. Большинство людей удивляются размеру хотя бы одной кучки.</p>
+<p lang="en">Не судите цифры. Этот первый месяц нужен только для того, чтобы увидеть.</p>
+<h3><span class="check-number">03.</span> Одно известное практическое правило: 50/30/20</h3>
+<p lang="en">В своей книге 2005 года *All Your Worth* американский юрист, а позже сенатор Элизабет Уоррен описала простое разделение чистого дохода — денег, которые реально поступают на ваш счёт после налогов.</p>
+<p lang="en"><strong>50% на нужды:</strong> жильё, коммунальные услуги, транспорт, продукты, базовая одежда, страховка, здравоохранение и минимальные платежи по долгам.</p>
+<p lang="en"><strong>30% на желания:</strong> походы в рестораны, развлечения, путешествия, подписки, дополнительная одежда.</p>
+<p lang="en"><strong>20% на сбережения:</strong> резервный фонд, более крупная цель, дополнительные платежи по долгам.</p>
+<figure class="lz-fig"><figcaption>Правило 50/30/20 вкратце</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>Кучка</th>
+<th>Доля чистого дохода</th>
+<th>Примеры</th>
+<th>Если не получается</th>
+</tr></thead><tbody>
+<tr><td>Нужды</td><td>50%</td><td>Жильё, коммунальные услуги, транспорт, продукты, страховка, минимальные платежи по долгам</td><td>Сначала поищите самую большую нужду</td></tr>
+<tr><td>Желания</td><td>30%</td><td>Рестораны, развлечения, путешествия, подписки</td><td>Сокращайте здесь, прежде чем трогать сбережения</td></tr>
+<tr><td>Сбережения</td><td>20%</td><td>Резервный фонд, цели, дополнительные платежи по долгам</td><td>Держите меньшую долю, но держите</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> Как использовать правило, когда оно не подходит</h3>
+<p lang="en">Правило — отправная точка, а не закон. В некоторых городах одна только аренда занимает больше половины зарплаты. В некоторые месяцы медицинский счёт меняет всё.</p>
+<p lang="en">Если нужды выше 50%, не сдавайтесь. Сохраните идею и поменяйте цифры: возможно, пока 60/25/15. Важно, чтобы существовали все три кучки и чтобы сбережения были кучкой, а не тем, что осталось.</p>
+<h3><span class="check-number">05.</span> Сначала заплатите себе</h3>
+<p lang="en">Самая полезная привычка в бюджете мала. В день поступления дохода сначала переведите часть на сбережения, прежде чем что-либо тратить. Если ждать конца месяца, переводить обычно уже нечего.</p>
+<p lang="en">Даже небольшая сумма имеет значение. Привычка важнее размера, а размер может вырасти позже.</p>
+<h3><span class="check-number">06.</span> Ежемесячный обзор за десять минут</h3>
+<p lang="en">Раз в месяц садитесь на десять минут с тремя вопросами. Куда ушла большая часть денег? Что меня удивило? Какое одно изменение я попробую в следующем месяце?</p>
+<p lang="en">Одного изменения достаточно. Бюджеты проваливаются, когда пытаются исправить всё сразу.</p>
+<h3><span class="check-number">07.</span> Цены меняются, значит, бюджет тоже должен</h3>
+<p lang="en">Когда цены растут, тот же доход покупает меньше, как показал Урок 12. Бюджет, написанный полгода назад, может уже устареть. Пересматривайте цифры, когда меняется стоимость вашего базового набора, а не только в фиксированную дату.</p>
+<h3>Что из этого вынести</h3>
+<p lang="en">Бюджет — это карта вашего месяца, а не наказание.</p>
+<p lang="en">Прежде чем что-то менять, понаблюдайте один месяц.</p>
+<p lang="en">50/30/20 — практическое правило: нужды, желания, сбережения. Подгоняйте цифры под свою жизнь.</p>
+<p lang="en">Переводите сбережения первыми, в день поступления дохода.</p>
+<p lang="en">Пересматривайте раз в месяц и меняйте что-то одно за раз.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">بیستم ماه است و حساب تقریباً خالی. اتفاق عجیبی نیفتاده: نه اورژانسی بوده و نه خرید بزرگی. ولی پول رفته است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این رایج‌ترین تجربه‌ی مالی دنیاست و دلیلش ساده است: پرداخت‌های کوچک را راحت فراموش می‌کنیم و یک ماه آن‌قدر بلند است که آن‌ها را پنهان کند. بودجه چیزی نیست جز راهی برای دیدن ماه، پیش از آن‌که بگذرد.</p>
+<h3><span class="check-number">۰۱.</span> بودجه چیست و چه نیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بودجه برنامه‌ای برای درآمد است: چقدر می‌آید و هر بخشش برای چیست. تنبیه نیست و قول دادن به «نه» گفتن به همه‌چیز هم نیست.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آن را مثل یک نقشه ببینید. نقشه جلوی راه رفتن را نمی‌گیرد؛ نشان می‌دهد کجا ایستاده‌اید. بدون نقشه، خرج‌کردن تصادفی به نظر می‌رسد. با نقشه می‌شود انتخاب کرد.</p>
+<h3><span class="check-number">۰۲.</span> اول نگاه کنید، نه کم کنید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">پیش از آن‌که چیزی را عوض کنید، یک ماه فقط تماشا کنید. هر پرداخت را بنویسید یا از فهرستی استفاده کنید که اپ بانک‌تان خودش نگه می‌دارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آخر ماه پرداخت‌ها را در سه دسته بریزید: چیزهایی که باید می‌پرداختید، چیزهایی که خودتان انتخاب کردید و پولی که کنار گذاشتید. بیشتر آدم‌ها از اندازه‌ی دست‌کم یکی از این دسته‌ها تعجب می‌کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درباره‌ی عددها قضاوت نکنید. این ماه اول فقط برای دیدن است.</p>
+<h3><span class="check-number">۰۳.</span> یک قاعده‌ی سرانگشتیِ شناخته‌شده: ۵۰/۳۰/۲۰</h3>
+<p lang="fa" dir="rtl" style="text-align:right">الیزابت وارن، حقوقدان آمریکایی و بعدها سناتور، در کتاب ۲۰۰۵ خود به نام «All Your Worth» تقسیمی ساده از درآمد خالص را معرفی کرد؛ یعنی پولی که بعد از مالیات واقعاً به حسابتان می‌رسد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۵۰٪ برای نیازها:</strong> مسکن، قبض‌ها، رفت‌وآمد، خوراک، پوشاک اولیه، بیمه، درمان و حداقل قسط بدهی‌ها.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۳۰٪ برای خواسته‌ها:</strong> بیرون غذا خوردن، سرگرمی، سفر، اشتراک‌ها، لباس اضافه.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۲۰٪ برای پس‌انداز:</strong> صندوق روز مبادا، یک هدف بزرگ‌تر، پرداخت اضافه‌ی بدهی.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>قاعده‌ی ۵۰/۳۰/۲۰ در یک نگاه</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>دسته</th>
+<th>سهم از درآمد خالص</th>
+<th>نمونه‌ها</th>
+<th>اگر جور درنیامد</th>
+</tr></thead><tbody>
+<tr><td>نیازها</td><td>۵۰٪</td><td>مسکن، قبض‌ها، رفت‌وآمد، خوراک، بیمه، حداقل قسط</td><td>اول بزرگ‌ترین نیاز را بررسی کنید</td></tr>
+<tr><td>خواسته‌ها</td><td>۳۰٪</td><td>بیرون غذا خوردن، سرگرمی، سفر، اشتراک‌ها</td><td>پیش از دست‌زدن به پس‌انداز، از اینجا کم کنید</td></tr>
+<tr><td>پس‌انداز</td><td>۲۰٪</td><td>صندوق روز مبادا، هدف‌ها، پرداخت اضافه‌ی بدهی</td><td>سهم کوچک‌تر، ولی حتماً باشد</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۴.</span> وقتی قاعده جور درنمی‌آید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">این قاعده نقطه‌ی شروع است، نه قانون. در بعضی شهرها اجاره به‌تنهایی بیش از نیمی از حقوق را می‌برد. در بعضی ماه‌ها یک قبض درمان همه‌چیز را عوض می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر نیازها از ۵۰٪ بیشتر است، دست نکشید. ایده را نگه دارید و عددها را عوض کنید؛ مثلاً فعلاً ۶۰/۲۵/۱۵. مهم این است که هر سه دسته وجود داشته باشند و پس‌انداز یک دسته باشد، نه چیزی که ته ماه می‌ماند.</p>
+<h3><span class="check-number">۰۵.</span> اول به خودتان بپردازید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">مفیدترین عادت در بودجه‌بندی کوچک است: روزی که درآمد می‌رسد، پیش از هر خرجی سهم پس‌انداز را کنار بگذارید. اگر منتظر آخر ماه بمانید، معمولاً چیزی برای کنار گذاشتن نمانده است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">مبلغ کوچک هم حساب است. عادت مهم‌تر از اندازه است و اندازه را بعداً می‌شود بزرگ‌تر کرد.</p>
+<h3><span class="check-number">۰۶.</span> مرور ماهانه در ده دقیقه</h3>
+<p lang="fa" dir="rtl" style="text-align:right">ماهی یک بار ده دقیقه با سه پرسش بنشینید. بیشترِ پول کجا رفت؟ چه چیزی مرا غافلگیر کرد؟ فقط یک تغییری که ماه بعد امتحان می‌کنم چیست؟</p>
+<p lang="fa" dir="rtl" style="text-align:right">یک تغییر کافی است. بودجه‌ها وقتی شکست می‌خورند که می‌خواهند همه‌چیز را یک‌جا درست کنند.</p>
+<h3><span class="check-number">۰۷.</span> قیمت‌ها عوض می‌شوند، پس بودجه هم باید عوض شود</h3>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی قیمت‌ها بالا می‌روند، همان درآمد کمتر می‌خرد؛ همان‌طور که درس ۱۲ نشان داد. بودجه‌ای که شش ماه پیش نوشته‌اید شاید حالا کهنه شده باشد. عددها را وقتی مرور کنید که هزینه‌ی چیزهای پایه جابه‌جا می‌شود، نه فقط در یک تاریخ ثابت.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بودجه نقشه‌ی ماه ماست، نه تنبیه.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پیش از هر تغییری یک ماه فقط نگاه کنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">۵۰/۳۰/۲۰ یک قاعده‌ی سرانگشتی است: نیاز، خواسته، پس‌انداز. عددها را با زندگی خودتان تنظیم کنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پس‌انداز را اول کنار بگذارید، همان روزی که درآمد می‌رسد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">ماهی یک بار مرور کنید و هر بار یک چیز را عوض کنید.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Два связанных урока</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو درس مرتبط</h2>
+<p lang="en">Урок 12 объясняет, почему бюджет нужно обновлять, когда цены растут. Урок 19 показывает, как планы рассрочки тихо забирают большую долю дохода следующего месяца.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۲ توضیح می‌دهد چرا وقتی قیمت‌ها بالا می‌روند بودجه باید به‌روز شود. درس ۱۹ نشان می‌دهد قسط‌ها چطور بی‌صدا سهم بزرگ‌تری از درآمد ماه بعد را می‌برند.</p>
+<div class="cta-row">
+<a class="cta" href="lesson12.ru.html"><span lang="en">Почему деньги теряют покупательную способность?</span><span lang="fa">چرا پول ما هر سال قدرت خریدش را از دست می‌دهد؟</span></a>
+<a class="button" href="lesson19.ru.html"><span lang="en">Купить сегодня, заплатить завтра</span><span lang="fa">خرید امروز، پرداخت فردا</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Ключевые понятия</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Бюджет</li><li>Доход и чистый доход</li><li>Нужды и желания</li><li>Норма сбережений</li><li>Правило 50/30/20</li><li>Сначала заплатите себе</li><li>Ежемесячный обзор</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>بودجه</li><li>درآمد و درآمد خالص</li><li>نیاز و خواسته</li><li>نرخ پس‌انداز</li><li>قاعده‌ی ۵۰/۳۰/۲۰</li><li>اول به خود بپردازید</li><li>مرور ماهانه</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Цели обучения</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Скажите, что такое бюджет и чем он не является.</li><li>Отследите месяц расходов и разложите их на три кучки.</li><li>Объясните правило 50/30/20 и подстройте его под свои цифры.</li><li>Опишите, почему сбережения нужно переводить первыми.</li><li>Запланируйте ежемесячный обзор на десять минут.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>بگویید بودجه چیست و چه نیست.</li><li>خرج یک ماه را ثبت کنید و در سه دسته بریزید.</li><li>قاعده‌ی ۵۰/۳۰/۲۰ را توضیح بدهید و با عددهای خودتان تنظیم کنید.</li><li>توضیح بدهید چرا پس‌انداز باید اول کنار برود.</li><li>یک مرور ماهانه‌ی ده‌دقیقه‌ای برنامه‌ریزی کنید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Тест</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Проверьте, что у вас осталось в памяти. Ответ — под каждым вопросом.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Вопрос 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Какой лучший первый шаг в бюджетировании?</p>
+<p lang="fa" dir="rtl" style="text-align:right">بهترین قدم اول در بودجه‌بندی چیست؟</p>
+<p lang="en">A. Сократить сразу все категории расходов</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. همه‌ی دسته‌های خرج را یک‌جا کم کنید</p>
+<p lang="en">B. Месяц наблюдать и записывать расходы</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. یک ماه خرج را تماشا و ثبت کنید</p>
+<p lang="en">C. Открыть второй банковский счёт</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. یک حساب بانکی دوم باز کنید</p>
+<p class="answer" lang="en">Правильный ответ: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Что означает 20 в правиле 50/30/20?</p>
+<p lang="fa" dir="rtl" style="text-align:right">در قاعده‌ی ۵۰/۳۰/۲۰، عدد ۲۰ برای چیست؟</p>
+<p lang="en">A. Сбережения</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. پس‌انداز</p>
+<p lang="en">B. Желания</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. خواسته‌ها</p>
+<p lang="en">C. Налоги</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. مالیات</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">К каким деньгам применяются проценты?</p>
+<p lang="fa" dir="rtl" style="text-align:right">درصدها به کدام پول مربوط‌اند؟</p>
+<p lang="en">A. К чистому доходу после налогов</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. درآمد خالص، بعد از مالیات</p>
+<p lang="en">B. Только к премиям</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. فقط پاداش‌ها</p>
+<p lang="en">C. Только к уже накопленным сбережениям</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. فقط پس‌اندازی که قبلاً شده</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Нужды выше 50% вашего дохода. Что советует урок?</p>
+<p lang="fa" dir="rtl" style="text-align:right">نیازها بیش از ۵۰٪ درآمد شده‌اند. درس چه پیشنهادی دارد؟</p>
+<p lang="en">A. Отказаться от бюджета</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بودجه‌بندی را رها کنید</p>
+<p lang="en">B. Сохранить идею и изменить цифры</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ایده را نگه دارید و عددها را عوض کنید</p>
+<p lang="en">C. Полностью прекратить сберегать</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. پس‌انداز را کاملاً قطع کنید</p>
+<p class="answer" lang="en">Правильный ответ: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Что значит «сначала заплатите себе»?</p>
+<p lang="fa" dir="rtl" style="text-align:right">«اول به خودتان بپردازید» یعنی چه؟</p>
+<p lang="en">A. Сначала тратить на желания</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. اول خرج خواسته‌ها را بکنید</p>
+<p lang="en">B. Перевести часть на сбережения в день поступления дохода</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. همان روز رسیدن درآمد سهم پس‌انداز را کنار بگذارید</p>
+<p lang="en">C. Платить долги в последнюю очередь</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. بدهی‌ها را آخر بپردازید</p>
+<p class="answer" lang="en">Правильный ответ: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Источники</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.sofi.com/learn/content/50-30-20-budget/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">SoFi: бюджет 50/30/20, популяризированный Элизабет Уоррен в All Your Worth (2005), и его три категории</a></li></ul>
+<p lang="en" style="font-size:0.95rem">50/30/20 — практическое правило, а не официальный стандарт. Всё остальное в этом уроке — общие рекомендации, а не личная финансовая консультация.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">۵۰/۳۰/۲۰ یک قاعده‌ی سرانگشتی است، نه یک استاندارد رسمی. بقیه‌ی مطالب این درس راهنمای عمومی است و مشاوره‌ی مالی شخصی نیست.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Следите за новостями</span></h2>
+<p lang="en">Новые уроки сначала объявляются в каналах Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.ru.html"><span lang="en">Назад к обучению</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson21.ru.html"><span lang="en">Предыдущий урок</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson23.ru.html"><span lang="en">Следующий урок</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Построено на структуре, движимо открытием.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-ru.js?v=20261121a"></script>
+</body>
+</html>

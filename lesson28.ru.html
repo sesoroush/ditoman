@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Ethereum и смарт-контракты: программа, которая работает сама | Ditoman Learn</title>
+<meta name="description" content="Bitcoin ведёт реестр того, кому что принадлежит. Ethereum также хранит программы. Этот урок объясняет, что такое смарт-контракт, на примере торгового автомата, и что он может и чего не может" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson28.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson28.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson28.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson28.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson28.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson28.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson28.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson28.ru.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Ethereum и смарт-контракты: программа, которая работает сама | Ditoman Learn" />
+<meta property="og:description" content="Bitcoin ведёт реестр того, кому что принадлежит. Ethereum также хранит программы. Этот урок объясняет, что такое смарт-контракт, на примере торгового автомата, и что он может и чего не может" />
+<meta property="og:url" content="https://ditoman.com/lesson28.ru.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson28.ru.html#page",
+   "url": "https://ditoman.com/lesson28.ru.html",
+   "name": "Ethereum и смарт-контракты: программа, которая работает сама | Ditoman Learn",
+   "description": "Bitcoin ведёт реестр того, кому что принадлежит. Ethereum также хранит программы. Этот урок объясняет, что такое смарт-контракт, на примере торгового автомата, и что он может и чего не может",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Ethereum и смарт-контракты: программа, которая работает сама",
+     "item": "https://ditoman.com/lesson28.ru.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.ru.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.ru.html" class="active">Учиться</a>
+<a href="iran.en.html">Иран</a>
+<a href="companies.en.html">Компании</a>
+<a href="prices.ru.html">Цены</a>
+<a href="calendar.en.html">Календарь</a>
+<a href="tmn.ru.html">TMN</a>
+<a href="index.ru.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Публикации</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson28-cover.jpg" alt="Ethereum и смарт-контракты: программа, которая работает сама. Иллюстрация урока Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson28-cover-en.jpg" alt="Ethereum и смарт-контракты: программа, которая работает сама. Иллюстрация урока Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Блокчейн • Смарт-контракты</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">بلاکچین • قرارداد هوشمند</div>
+<h1 lang="en">Ethereum и смарт-контракты: программа, которая выполняется сама</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">اتریوم و قرارداد هوشمند: برنامه‌ای که خودش اجرا می‌شود</h1>
+<p class="subtitle" lang="en">Bitcoin ведёт реестр того, кому что принадлежит. Ethereum также хранит программы. Этот урок объясняет, что такое смарт-контракт, на примере торгового автомата, и что он может и чего не может.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">بیت‌کوین دفتری از این‌که چه کسی مالک چیست نگه می‌دارد. اتریوم برنامه‌ها را هم نگه می‌دارد. این درس با مثال دستگاه فروش خودکار توضیح می‌دهد قرارداد هوشمند چیست و چه می‌تواند و چه نمی‌تواند.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Уровень</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Для начинающих</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Время чтения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 минут</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Баллы обучения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Тест</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 вопросов</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Содержание урока</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Читайте урок на английском или персидском.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Русский</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Вы кладёте монету в торговый автомат и нажимаете B4. Никто не проверяет ваш запрос, и никто не может уговорить автомат дать вам две закуски. Если условия выполнены, он выдаёт. Если нет, ничего не делает.</p>
+<p lang="en">Этот маленький автомат — лучший образ смарт-контракта.</p>
+<h3><span class="check-number">01.</span> Что такое смарт-контракт</h3>
+<p lang="en">Собственная документация Ethereum говорит, что смарт-контракт — это просто программа, работающая в блокчейне Ethereum. Это набор кода, называемого функциями, и данных, называемых состоянием, находящийся по определённому адресу в цепочке.</p>
+<p lang="en">Сравнение с торговым автоматом тоже оттуда, и страница приписывает его специалисту по информатике Нику Сабо: пожалуй, лучшая метафора смарт-контракта.</p>
+<h3><span class="check-number">02.</span> Почему он «умный»</h3>
+<p lang="en">Он не интеллектуален. Он автоматический. Название означает, что правила записаны кодом и выполняются точно так, как написаны, кто бы их ни вызывал.</p>
+<figure class="lz-fig"><figcaption>Контракт как торговый автомат</figcaption>
+<ol class="lz-flow">
+<li><b>1</b><span>Кто-то отправляет платёж и запрос</span></li>
+<li><b>2</b><span>Код контракта проверяет правила</span></li>
+<li><b>3</b><span>Если правила выполнены, состояние обновляется</span></li>
+<li><b>4</b><span>Сеть фиксирует результат для всех</span></li>
+</ol>
+</figure>
+<h3><span class="check-number">03.</span> Как это выглядит на практике</h3>
+<p lang="en">Представьте простой контракт: «Если отправитель платит цену, выдать ему один билет и записать, что билет его». Кассира нет. Сеть проверяет платёж, а программа обновляет запись.</p>
+<p lang="en">Та же идея может хранить общую копилку, обмен между двумя видами денег или голосование.</p>
+<h3><span class="check-number">04.</span> Где он находится</h3>
+<p lang="en">Контракт развёртывается (deploy) в блокчейне, и с этого момента он находится по адресу, как счёт. Любой может вызывать его функции. Поскольку его выполняют многие компьютеры, результат не зависит от того, остаётся ли одна компания честной или онлайн.</p>
+<h3><span class="check-number">05.</span> После развёртывания его трудно изменить</h3>
+<p lang="en">Документация Ethereum говорит, что после развёртывания контракта никто из пользователей не контролирует его и по умолчанию его нельзя удалить. В этом и сила, и риск. Правило, которое нельзя изменить, даёт доверие. Ошибка, которую нельзя изменить, остаётся.</p>
+<p lang="en">Поэтому тщательные проекты открыто выбирают свои настройки полномочий. Например, в случае TMN владелец контракта токена был отозван (renounced), что означает, что центральный переключатель для изменения правил намеренно убран.</p>
+<h3><span class="check-number">06.</span> Чего контракт не может</h3>
+<p lang="en">Контракт знает только то, что находится в цепочке. Он не может сам прочитать газету или проверить погоду; информацию извне нужно привнести. И он не может исправить плохую идею: код, делающий в точности то, что сказано, всё равно может сделать нечто неразумное.</p>
+<h3><span class="check-number">07.</span> Стоимость выполнения</h3>
+<p lang="en">Каждое действие требует вычислений, и пользователи платят комиссию, в Ethereum известную как gas. Простые операции стоят мало; сложные — больше.</p>
+<h3><span class="check-number">08.</span> Почему это важно</h3>
+<p lang="en">Без смарт-контрактов не было бы токенов, построенных на Ethereum, и именно туда идёт следующий урок.</p>
+<h3>Что из этого вынести</h3>
+<p lang="en">Смарт-контракт — это программа, хранящаяся в блокчейне: код плюс данные по адресу.</p>
+<p lang="en">Торговый автомат — классическая картина: условия выполнены, результат выдан, кассира нет.</p>
+<p lang="en">После развёртывания никто из пользователей не контролирует его, и по умолчанию его нельзя удалить.</p>
+<p lang="en">Он знает только то, что находится в цепочке.</p>
+<p lang="en">«Умный» означает автоматический, а не интеллектуальный.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">یک سکه در دستگاه فروش خودکار می‌اندازید و B4 را می‌زنید. هیچ‌کس درخواستتان را بررسی نمی‌کند و هیچ‌کس نمی‌تواند دستگاه را متقاعد کند دو تنقلات به شما بدهد. اگر شرط‌ها برقرار باشد، تحویل می‌دهد. اگر نه، کاری نمی‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این دستگاه کوچک بهترین تصویر قرارداد هوشمند است.</p>
+<h3><span class="check-number">۰۱.</span> قرارداد هوشمند چیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">مستندات خود اتریوم می‌گوید قرارداد هوشمند صرفاً برنامه‌ای است که روی بلاکچین اتریوم اجرا می‌شود. مجموعه‌ای از کد، به نام توابع، و داده، به نام وضعیت، است که در یک نشانی مشخص روی زنجیره قرار دارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">مقایسه با دستگاه فروش هم از همان‌جاست و صفحه آن را به نیک سابو، دانشمند رایانه، نسبت می‌دهد: شاید بهترین استعاره برای قرارداد هوشمند.</p>
+<h3><span class="check-number">۰۲.</span> چرا «هوشمند» است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">باهوش نیست؛ خودکار است. اسم یعنی قواعد به شکل کد نوشته شده‌اند و دقیقاً همان‌طور که نوشته شده‌اند اجرا می‌شوند، هر که صدایشان بزند.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>یک قرارداد مثل دستگاه فروش</figcaption>
+<ol class="lz-flow">
+<li><b>۱</b><span>کسی پرداخت و درخواست می‌فرستد</span></li>
+<li><b>۲</b><span>کد قرارداد قواعد را بررسی می‌کند</span></li>
+<li><b>۳</b><span>اگر قواعد برقرار باشد، وضعیت به‌روز می‌شود</span></li>
+<li><b>۴</b><span>شبکه نتیجه را برای همه ثبت می‌کند</span></li>
+</ol>
+</figure>
+<h3><span class="check-number">۰۳.</span> در عمل چه شکلی است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">قرارداد ساده‌ای را تصور کنید: «اگر فرستنده قیمت را بپردازد، یک بلیت به او بده و ثبت کن که بلیت مال اوست.» صندوقداری در کار نیست. شبکه پرداخت را بررسی می‌کند و برنامه ثبت را به‌روز می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">همین ایده می‌تواند یک قلک مشترک، مبادله‌ی دو نوع پول یا یک رأی‌گیری را نگه دارد.</p>
+<h3><span class="check-number">۰۴.</span> کجا زندگی می‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">قرارداد روی بلاکچین مستقر می‌شود و از آن به بعد مثل یک حساب در یک نشانی می‌نشیند. هر کسی می‌تواند توابعش را صدا بزند. چون رایانه‌های زیادی اجرایش می‌کنند، نتیجه به صداقت یا آنلاین‌ماندن یک شرکت بستگی ندارد.</p>
+<h3><span class="check-number">۰۵.</span> بعد از استقرار تغییرش سخت است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">مستندات اتریوم می‌گوید وقتی قرارداد مستقر شد، هیچ کاربری کنترلش نمی‌کند و به‌طور پیش‌فرض قابل حذف نیست. این هم قوت است و هم خطر. قاعده‌ای که تغییر نمی‌کند اعتماد می‌آورد. اشتباهی که تغییر نمی‌کند می‌ماند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای همین پروژه‌های دقیق تنظیمات قدرت را آشکارا انتخاب می‌کنند. مثلاً در TMN مالکیت قرارداد توکن «رها» شده، یعنی یک کلید مرکزی برای تغییر قواعد عمداً از میان رفته است.</p>
+<h3><span class="check-number">۰۶.</span> قرارداد چه کارهایی نمی‌تواند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">قرارداد فقط آنچه روی زنجیره است را می‌داند. خودش نمی‌تواند روزنامه بخواند یا آب‌وهوا را بررسی کند؛ اطلاعات بیرونی باید به زنجیره آورده شود. و نمی‌تواند ایده‌ی بد را درست کند: کدی که دقیقاً همان کار نوشته‌شده را می‌کند هم باز می‌تواند کار نابخردانه‌ای بکند.</p>
+<h3><span class="check-number">۰۷.</span> هزینه‌ی اجرا</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هر عمل محاسبه می‌خواهد و کاربران کارمزد می‌دهند که در اتریوم «گس» (gas) نام دارد. عملیات ساده کم هزینه دارند و پیچیده‌ها بیشتر.</p>
+<h3><span class="check-number">۰۸.</span> چرا مهم است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بدون قرارداد هوشمند، توکنی روی اتریوم ساخته نمی‌شد؛ جایی که درس بعد به آن می‌رود.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">قرارداد هوشمند برنامه‌ای است ذخیره‌شده روی بلاکچین: کد به‌علاوه‌ی داده در یک نشانی.</p>
+<p lang="fa" dir="rtl" style="text-align:right">دستگاه فروش تصویر کلاسیک است: شرط برقرار، نتیجه تحویل، بدون صندوقدار.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بعد از استقرار هیچ کاربری کنترلش نمی‌کند و به‌طور پیش‌فرض قابل حذف نیست.</p>
+<p lang="fa" dir="rtl" style="text-align:right">فقط آنچه روی زنجیره است را می‌داند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">«هوشمند» یعنی خودکار، نه باهوش.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Два связанных урока</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو درس مرتبط</h2>
+<p lang="en">Урок 27 объясняет, кто поддерживает честность цепочки. Урок 29 показывает, что сделали возможным смарт-контракты: токены.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۲۷ توضیح می‌دهد چه کسی زنجیره را صادق نگه می‌دارد. درس ۲۹ نشان می‌دهد قراردادهای هوشمند چه چیزی را ممکن کردند: توکن‌ها.</p>
+<div class="cta-row">
+<a class="cta" href="lesson27.ru.html"><span lang="en">Кто управляет блокчейном?</span><span lang="fa">چه کسی بلاکچین را اداره می‌کند؟</span></a>
+<a class="button" href="lesson29.ru.html"><span lang="en">Монета и токен</span><span lang="fa">کوین و توکن چه فرقی دارند؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Ключевые понятия</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Смарт-контракт</li><li>Функция и состояние</li><li>Адрес</li><li>Развёртывание (deployment)</li><li>Gas</li><li>Неизменяемость</li><li>Данные в цепочке</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>قرارداد هوشمند</li><li>تابع و وضعیت</li><li>نشانی</li><li>استقرار</li><li>گس</li><li>تغییرناپذیری</li><li>داده‌ی روی زنجیره</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Цели обучения</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Определите смарт-контракт одним предложением.</li><li>Используйте торговый автомат, чтобы объяснить его.</li><li>Скажите, почему развёрнутый контракт трудно изменить.</li><li>Назовите одно ограничение того, что может знать контракт.</li><li>Объясните, за что платит gas.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>قرارداد هوشمند را در یک جمله تعریف کنید.</li><li>با دستگاه فروش آن را توضیح بدهید.</li><li>بگویید چرا قرارداد مستقرشده سخت تغییر می‌کند.</li><li>یک محدودیت در آنچه قرارداد می‌داند نام ببرید.</li><li>توضیح بدهید گس بابت چه چیزی است.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Тест</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Проверьте, что у вас осталось в памяти. Ответ — под каждым вопросом.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Вопрос 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Что такое смарт-контракт?</p>
+<p lang="fa" dir="rtl" style="text-align:right">قرارداد هوشمند چیست؟</p>
+<p lang="en">A. Программа, работающая в блокчейне</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. برنامه‌ای که روی بلاکچین اجرا می‌شود</p>
+<p lang="en">B. Бумажное соглашение, подписанное юристом</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. توافق کاغذی امضاشده نزد وکیل</p>
+<p lang="en">C. Вид банковского счёта</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. نوعی حساب بانکی</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Какая повседневная машина — классическая метафора?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام دستگاه روزمره استعاره‌ی کلاسیک است؟</p>
+<p lang="en">A. Торговый автомат</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. دستگاه فروش خودکار</p>
+<p lang="en">B. Стиральная машина</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ماشین لباسشویی</p>
+<p lang="en">C. Принтер</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. چاپگر</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Что по умолчанию происходит с развёрнутым контрактом?</p>
+<p lang="fa" dir="rtl" style="text-align:right">به‌طور پیش‌فرض، قرارداد مستقرشده چه می‌شود؟</p>
+<p lang="en">A. Никто из пользователей не контролирует его, и его нельзя удалить</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. هیچ کاربری کنترلش نمی‌کند و حذف نمی‌شود</p>
+<p lang="en">B. Его автор может свободно его править</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. نویسنده‌اش آزادانه ویرایشش می‌کند</p>
+<p lang="en">C. Он истекает через год</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. پس از یک سال منقضی می‌شود</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Что означает «умный» в смарт-контракте?</p>
+<p lang="fa" dir="rtl" style="text-align:right">«هوشمند» در قرارداد هوشمند یعنی چه؟</p>
+<p lang="en">A. Автоматический: правила выполняются как написаны</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. خودکار: قواعد همان‌طور که نوشته شده اجرا می‌شوند</p>
+<p lang="en">B. С искусственным интеллектом</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. دارای هوش مصنوعی</p>
+<p lang="en">C. Всегда прибыльный</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. همیشه سودآور</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Чего контракт не может делать сам по себе?</p>
+<p lang="fa" dir="rtl" style="text-align:right">قرارداد خودش چه کاری نمی‌تواند بکند؟</p>
+<p lang="en">A. Читать внешнюю информацию, например погоду</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. اطلاعات بیرونی مثل آب‌وهوا را بخواند</p>
+<p lang="en">B. Хранить данные</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. داده نگه دارد</p>
+<p lang="en">C. Иметь адрес</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. نشانی داشته باشد</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Источники</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://ethereum.org/en/developers/docs/smart-contracts/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">ethereum.org: введение в смарт-контракты (определение, код и состояние по адресу, метафора торгового автомата, по умолчанию не удаляется)</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Утверждение об отозванном владельце TMN следует странице токена на этом сайте. Цитируемая нами страница не называет дату появления термина, поэтому она не указана. Общее объяснение, а не аудит безопасности какого-либо контракта.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">بیان درباره‌ی رهاشدن مالکیت TMN از صفحه‌ی توکن همین سایت می‌آید. صفحه‌ی مرجع تاریخی برای ابداع این اصطلاح نمی‌دهد، پس تاریخی ذکر نشده. توضیح عمومی است و ممیزی امنیتی هیچ قراردادی نیست.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Следите за новостями</span></h2>
+<p lang="en">Новые уроки сначала объявляются в каналах Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.ru.html"><span lang="en">Назад к обучению</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson27.ru.html"><span lang="en">Предыдущий урок</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson29.ru.html"><span lang="en">Следующий урок</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Построено на структуре, движимо открытием.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-ru.js?v=20261121a"></script>
+</body>
+</html>

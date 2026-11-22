@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Para Neden Satın Alma Gücünü Kaybeder? | Ditoman Öğren</title>
+<meta name="description" content="Banknottaki sayı aynı kalır ama satın aldığı şey küçülür. Bu ders enflasyonu basit örneklerle açıklar, tasarruflara ne yaptığını nasıl ölçeceğinizi gösterir ve bitcoin veya stablecoin&#x27;lerin yardımcı olup olamayacağına dürüstçe bakar" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson12.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson12.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson12.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson12.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson12.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson12.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson12.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson12.tr.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Para Neden Satın Alma Gücünü Kaybeder? | Ditoman Öğren" />
+<meta property="og:description" content="Banknottaki sayı aynı kalır ama satın aldığı şey küçülür. Bu ders enflasyonu basit örneklerle açıklar, tasarruflara ne yaptığını nasıl ölçeceğinizi gösterir ve bitcoin veya stablecoin&#x27;lerin yardımcı olup olamayacağına dürüstçe bakar" />
+<meta property="og:url" content="https://ditoman.com/lesson12.tr.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson12.tr.html#page",
+   "url": "https://ditoman.com/lesson12.tr.html",
+   "name": "Para Neden Satın Alma Gücünü Kaybeder? | Ditoman Öğren",
+   "description": "Banknottaki sayı aynı kalır ama satın aldığı şey küçülür. Bu ders enflasyonu basit örneklerle açıklar, tasarruflara ne yaptığını nasıl ölçeceğinizi gösterir ve bitcoin veya stablecoin'lerin yardımcı olup olamayacağına dürüstçe bakar",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Para Neden Satın Alma Gücünü Kaybeder? | Ditoman Öğren",
+     "item": "https://ditoman.com/lesson12.tr.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.tr.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.tr.html" class="active">Öğren</a>
+<a href="iran.en.html">İran</a>
+<a href="companies.en.html">Şirketler</a>
+<a href="prices.tr.html">Fiyatlar</a>
+<a href="calendar.en.html">Takvim</a>
+<a href="tmn.tr.html">TMN</a>
+<a href="index.tr.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Gönderiler</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson12-cover.jpg" alt="Para neden satın alma gücünü kaybeder? Ditoman ders görseli" style="width:100%;height:auto"><img lang="en" src="lesson12-cover-en.jpg" alt="Para neden satın alma gücünü kaybeder? Ditoman ders görseli" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Para • Enflasyon</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پول • تورم</div>
+<h1 lang="en">Para neden alım gücünü kaybeder?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">چرا پول ما هر سال قدرت خریدش را از دست می‌دهد؟</h1>
+<p class="subtitle" lang="en">Banknottaki sayı aynı kalır ama satın aldığı şey küçülür. Bu ders enflasyonu basit örneklerle açıklar, tasarruflara ne yaptığını nasıl ölçeceğinizi gösterir ve bitcoin veya stablecoin'lerin yardımcı olup olamayacağına dürüstçe bakar.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">عدد روی اسکناس همان است، ولی چیزی که با آن می‌شود خرید کوچک‌تر می‌شود. این درس تورم را با مثال‌های ساده توضیح می‌دهد، نشان می‌دهد چطور اثرش را روی پس‌انداز حساب کنیم و صادقانه بررسی می‌کند که بیت‌کوین یا استیبل‌کوین کمکی می‌کنند یا نه.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Seviye</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Başlangıç</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Okuma Süresi</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 Dakika</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Öğrenme Puanı</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Sınav</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 Soru</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Ders İçeriği</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Dersi İngilizce veya Farsça okuyabilirsiniz.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Türkçe</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Birkaç yıl önce tek bir banknot koca bir torba market alışverişini karşılıyordu. Bugün aynı banknot o torbanın bir kısmını alıyor. Kimse banknotu elinizden almadı. Değişen, onunla ne kadar şey alabildiğiniz. Bu sessiz değişimin bir adı var: enflasyon.</p>
+<p lang="en">Buna birlikte bakıyoruz, çünkü tasarruftan borçlanmaya ve kripto almaya kadar hemen her para kararı tek bir soruyla başlar: bu para ileride ne kadar değer taşıyacak?</p>
+<h3><span class="check-number">01.</span> Enflasyon Nedir</h3>
+<p lang="en">Enflasyon, fiyatların zaman içinde genel olarak yükselmesidir. Tek bir ürünün pahalanması enflasyon değildir. Enflasyon, çoğu şeyin fiyatının birlikte yükselmesidir; böylece her para birimi daha az şey satın alır.</p>
+<p lang="en">İstatistikçiler bunu bir sepetle ölçer: tipik bir hanenin satın aldığı şeylerin sabit bir listesi; gıda, kira, ulaşım ve giyim gibi. Aynı sepeti her ay fiyatlandırırlar. Sepet geçen yıl 100'e mal olduysa ve şimdi 140'a mal oluyorsa, yıl içindeki enflasyon yüzde 40'tır.</p>
+<h3><span class="check-number">02.</span> Nereden Gelir</h3>
+<p lang="en">Ekonomistler ayrıntıları tartışır, ama üç kaynak tekrar tekrar karşımıza çıkar.</p>
+<p lang="en"><strong>Mallardan fazla para:</strong> bir ekonomideki para miktarı, satın alınacak şeylerden daha hızlı büyüdüğünde fiyatlar yükselir.</p>
+<p lang="en"><strong>Daha yüksek maliyetler:</strong> enerji, ithalat veya ücretler pahalandığında üreticiler maliyeti fiyatlara yansıtır.</p>
+<p lang="en"><strong>Beklentiler:</strong> herkes fiyatların yükseleceğini beklediğinde satıcılar fiyatları erken artırır ve alıcılar acele eder; bu da fiyatları daha da yukarı iter.</p>
+<h3><span class="check-number">03.</span> Haberlerde Göreceğiniz İki Rakam</h3>
+<p lang="en"><strong>Yıllık bazda (nokta-nokta) enflasyon</strong> bu ayın fiyatlarını geçen yılın aynı ayıyla karşılaştırır. <strong>Oniki aylık ortalama enflasyon</strong> geçen yılın tamamının ortalamasını alır, bu yüzden daha yavaş hareket eder.</p>
+<p lang="en">Örneğin İran İstatistik Merkezi, 21 Haziran 2026'da biten ayda yıllık bazda enflasyonun yüzde 88,6, oniki aylık ortalama enflasyonun ise yüzde 62 olduğunu bildirdi. İki rakam da aynı ekonomiyi anlatır. Farklı soruları yanıtlarlar.</p>
+<h3><span class="check-number">04.</span> Tasarruflara Ne Yapar</h3>
+<p lang="en">Hareketsiz duran para, enflasyon hızında satın alma gücünü kaybeder. Tablo, 100 milyon nakdin birkaç yıl sonra hâlâ ne alabildiğini gösterir.</p>
+<figure class="lz-fig"><figcaption>100 milyon nakit hâlâ ne alır</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>Yıllık enflasyon</th>
+<th>1 yıl sonra</th>
+<th>3 yıl sonra</th>
+<th>5 yıl sonra</th>
+</tr></thead><tbody>
+<tr><td>5%</td><td>95 milyon</td><td>86 milyon</td><td>78 milyon</td></tr>
+<tr><td>20%</td><td>83 milyon</td><td>58 milyon</td><td>40 milyon</td></tr>
+<tr><td>40%</td><td>71 milyon</td><td>36 milyon</td><td>19 milyon</td></tr>
+</tbody></table></div>
+</figure>
+<p lang="en">Hızlı bir tahmin yolu: 72'yi enflasyon oranına bölün. Sonuç kabaca fiyatların ikiye katlanması için gereken yıl sayısıdır. Yüzde 6'da yaklaşık on iki yıl. Yüzde 36'da yaklaşık iki yıl.</p>
+<p lang="en">Bir bankanın faiz oranına ikinci kez bakmak gerekmesinin nedeni de budur. Bir mevduat yüzde 20 ödüyorsa ve fiyatlar yüzde 40 artıyorsa, bakiye büyür ama satın alma gücü düşer. Dürüst rakam faiz eksi enflasyondur ve buna şu ad verilir: <strong>reel getiri</strong>.</p>
+<h3><span class="check-number">05.</span> Bitcoin veya stablecoin'ler yardımcı olabilir mi?</h3>
+<p lang="en">Bitcoin'in sabit bir 21 milyon coin sınırı vardır; bu yüzden kimse daha fazlasını basamaz. Bu, sıradan paradan gerçek bir farktır. Ancak sabit arz, istikrarlı fiyat demek değildir. Bitcoin birkaç kez yarıdan fazla düştü. Bir dönemde satın alma gücünü koruyabilir, başka bir dönemde ona zarar verebilir.</p>
+<p lang="en">Bir dolar stablecoin'i, Ders 11'de açıklandığı gibi doları izler. Bu daha zayıf bir para biriminden daha istikrarlı olabilir, ama dolarda da enflasyon vardır ve token kendi risklerini ekler: ihraççı, karşılık ve çıkış yolu.</p>
+<p lang="en">Yani hiçbiri düşünmeden yaslanabileceğiniz bir kalkan değildir. Kendi riskleri olan araçlardır ve Ders 06'daki sorular hâlâ geçerlidir.</p>
+<h3>Bundan Ne Çıkarmalı</h3>
+<p lang="en">Enflasyon, aynı paranın zaman içinde daha az şey satın alması demektir.</p>
+<p lang="en">Reel getiriye bakın: faiz eksi enflasyon.</p>
+<p lang="en">72 kuralı, bir enflasyon oranını hissedebileceğiniz bir yıl sayısına çevirir.</p>
+<p lang="en">Bitcoin'in arzı sabit ama fiyatı istikrarsızdır. Bir stablecoin doları izler ve ihraççısına bağlıdır.</p>
+<p lang="en">Enflasyonu anlamak ne alacağınızı söylemez. Önce hangi soruyu soracağınızı söyler.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">چند سال پیش با یک اسکناس می‌شد یک سبد کامل خرید کرد. امروز با همان اسکناس فقط بخشی از آن سبد را می‌شود خرید. کسی اسکناس را از ما نگرفته. چیزی که عوض شده مقدار خریدی است که از آن برمی‌آید. اسم این تغییر آرام «تورم» است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این موضوع را با هم نگاه می‌کنیم، چون تقریباً هر تصمیم مالی، از پس‌انداز و وام تا خرید کریپتو، با یک پرسش شروع می‌شود: این پول بعداً چقدر می‌ارزد؟</p>
+<h3><span class="check-number">۰۱.</span> تورم چیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">تورم یعنی بالا رفتن عمومی قیمت‌ها در طول زمان. گران شدن یک کالا تورم نیست. تورم وقتی است که قیمت بیشتر چیزها با هم بالا می‌رود و هر واحد پول، خرید کمتری می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آمارگیرها آن را با یک «سبد» اندازه می‌گیرند: فهرست ثابتی از چیزهایی که یک خانوار معمولی می‌خرد، مثل خوراک، اجاره، حمل‌ونقل و پوشاک. هر ماه قیمت همان سبد را حساب می‌کنند. اگر سبد پارسال ۱۰۰ بوده و امسال ۱۴۰ شده، تورم یک‌ساله ۴۰ درصد است.</p>
+<h3><span class="check-number">۰۲.</span> از کجا می‌آید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">اقتصاددان‌ها سر جزئیات بحث دارند، ولی سه ریشه بارها تکرار می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>پول بیشتر از کالا:</strong> وقتی مقدار پول در اقتصاد تندتر از کالاها و خدمات موجود رشد کند، قیمت‌ها بالا می‌رود.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>هزینه‌ی بالاتر:</strong> وقتی انرژی، واردات یا دستمزد گران‌تر شود، تولیدکننده این هزینه را روی قیمت می‌کشد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>انتظار:</strong> وقتی همه منتظر گرانی باشند، فروشنده زودتر قیمت را بالا می‌برد و خریدار زودتر می‌خرد و همین، قیمت را بالاتر می‌برد.</p>
+<h3><span class="check-number">۰۳.</span> دو عددی که در خبرها می‌بینید</h3>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>تورم نقطه‌به‌نقطه</strong> قیمت‌های این ماه را با همین ماه در سال قبل مقایسه می‌کند. <strong>تورم دوازده‌ماهه</strong> میانگین کل یک سال گذشته است و آرام‌تر تغییر می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای نمونه، مرکز آمار ایران اعلام کرد در خرداد ۱۴۰۵ تورم نقطه‌به‌نقطه ۸۸٫۶ درصد و تورم دوازده‌ماهه ۶۲ درصد بوده است. هر دو عدد یک اقتصاد را توصیف می‌کنند، ولی به دو پرسش متفاوت جواب می‌دهند.</p>
+<h3><span class="check-number">۰۴.</span> با پس‌انداز چه می‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">پولی که بی‌حرکت بماند، با سرعت تورم قدرت خریدش را از دست می‌دهد. جدول نشان می‌دهد ۱۰۰ میلیون پول نقد بعد از چند سال هنوز چقدر خرید می‌کند.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>۱۰۰ میلیون پول نقد هنوز چقدر خرید می‌کند</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>تورم سالانه</th>
+<th>بعد از ۱ سال</th>
+<th>بعد از ۳ سال</th>
+<th>بعد از ۵ سال</th>
+</tr></thead><tbody>
+<tr><td>۵٪</td><td>۹۵ میلیون</td><td>۸۶ میلیون</td><td>۷۸ میلیون</td></tr>
+<tr><td>۲۰٪</td><td>۸۳ میلیون</td><td>۵۸ میلیون</td><td>۴۰ میلیون</td></tr>
+<tr><td>۴۰٪</td><td>۷۱ میلیون</td><td>۳۶ میلیون</td><td>۱۹ میلیون</td></tr>
+</tbody></table></div>
+</figure>
+<p lang="fa" dir="rtl" style="text-align:right">یک راه سریع برای تخمین: عدد ۷۲ را بر نرخ تورم تقسیم کنید. جواب تقریباً تعداد سال‌هایی است که قیمت‌ها دو برابر می‌شود. با تورم ۶ درصد، حدود دوازده سال. با تورم ۳۶ درصد، حدود دو سال.</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای همین سود بانکی را هم باید دوباره نگاه کرد. اگر سپرده ۲۰ درصد سود بدهد و قیمت‌ها ۴۰ درصد بالا برود، عدد حساب بزرگ‌تر می‌شود ولی قدرت خریدش کمتر. عدد صادقانه «سود منهای تورم» است که به آن <strong>بازده واقعی</strong> می‌گویند.</p>
+<h3><span class="check-number">۰۵.</span> بیت‌کوین یا استیبل‌کوین کمکی می‌کنند؟</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بیت‌کوین سقف ثابت ۲۱ میلیون واحد دارد و کسی نمی‌تواند بیشتر از آن بسازد. این تفاوتی واقعی با پول معمولی است. ولی عرضه‌ی ثابت به معنی قیمت باثبات نیست. قیمت بیت‌کوین چند بار بیش از نصف افت کرده است. در یک دوره قدرت خرید را حفظ می‌کند و در دوره‌ای دیگر به آن آسیب می‌زند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">استیبل‌کوین دلاری دنبال دلار حرکت می‌کند؛ درس ۱۱ این را توضیح داد. این می‌تواند از یک پول ضعیف‌تر باثبات‌تر باشد، ولی خود دلار هم تورم دارد و توکن ریسک‌های خودش را اضافه می‌کند: ناشر، پشتوانه و راه خروج.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پس هیچ‌کدام سپری نیستند که بشود بدون فکر به آن تکیه کرد. ابزارهایی‌اند با ریسک خودشان، و پرسش‌های درس ۶ همین‌جا هم به کار می‌آیند.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">تورم یعنی همان پول در طول زمان خرید کمتری می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">به بازده واقعی نگاه کنید: سود منهای تورم.</p>
+<p lang="fa" dir="rtl" style="text-align:right">قاعده‌ی ۷۲ نرخ تورم را به تعداد سال تبدیل می‌کند؛ عددی که می‌شود حسش کرد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بیت‌کوین عرضه‌ی ثابت دارد ولی قیمت بی‌ثبات. استیبل‌کوین دنبال دلار است و به ناشرش وابسته.</p>
+<p lang="fa" dir="rtl" style="text-align:right">فهمیدن تورم نمی‌گوید چه بخرید. می‌گوید اول کدام پرسش را بپرسید.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Sıradaki: paranız aslında nerede duruyor</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">قدم بعد: پول شما واقعاً کجاست</h2>
+<p lang="en">Enflasyonun ne yaptığını bildiğinizde, bir sonraki soru paranın nerede tutulduğu ve kimin kontrol ettiğidir. Ders 13 bir banka hesabını, bir borsa hesabını ve kişisel bir cüzdanı karşılaştırır.</p>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی بدانیم تورم چه می‌کند، پرسش بعدی این است که پول کجا نگه داشته می‌شود و دست چه کسی است. درس ۱۳ حساب بانکی، حساب صرافی و کیف پول شخصی را کنار هم می‌گذارد.</p>
+<div class="cta-row">
+<a class="cta" href="lesson13.tr.html"><span lang="en">Param Nerede?</span><span lang="fa">پول من کجاست؟</span></a>
+<a class="button" href="lesson11.tr.html"><span lang="en">Dijital dolarlar: arkasında ne var?</span><span lang="fa">دلار دیجیتال، پشتوانه‌اش کجاست؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Temel Kavramlar</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Enflasyon</li><li>Fiyat sepeti (TÜFE)</li><li>Yıllık bazda (nokta-nokta) enflasyon</li><li>Oniki aylık ortalama enflasyon</li><li>Satın alma gücü</li><li>Reel getiri</li><li>72 kuralı</li><li>Sabit arz</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>تورم</li><li>سبد قیمت (شاخص قیمت مصرف‌کننده)</li><li>تورم نقطه‌به‌نقطه</li><li>تورم دوازده‌ماهه</li><li>قدرت خرید</li><li>بازده واقعی</li><li>قاعده‌ی ۷۲</li><li>عرضه‌ی ثابت</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Öğrenme Hedefleri</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Enflasyonu fiyat sepeti örneğiyle açıklayın.</li><li>Yıllık bazda enflasyonu oniki aylık ortalama enflasyondan ayırın.</li><li>Bir faiz oranı ve bir enflasyon oranından reel getiriyi hesaplayın.</li><li>Fiyatların ne kadar hızlı ikiye katlandığını tahmin etmek için 72 kuralını kullanın.</li><li>Neden ne bitcoin ne de bir stablecoin'in enflasyona riski olmayan bir yanıt olduğunu söyleyin.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>تورم را با مثال سبد قیمت توضیح دهید.</li><li>تورم نقطه‌به‌نقطه را از تورم دوازده‌ماهه تشخیص دهید.</li><li>از نرخ سود و نرخ تورم، بازده واقعی را حساب کنید.</li><li>با قاعده‌ی ۷۲ تخمین بزنید قیمت‌ها چقدر زود دو برابر می‌شود.</li><li>بگویید چرا بیت‌کوین و استیبل‌کوین هیچ‌کدام جواب بی‌ریسک تورم نیستند.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Sınav</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Aklınızda ne kaldığını kontrol edin. Yanıt her sorunun altında.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Soru 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Enflasyon nedir?</p>
+<p lang="fa" dir="rtl" style="text-align:right">تورم چیست؟</p>
+<p lang="en">A. Tek bir ürünün pahalanması</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. گران شدن یک کالا</p>
+<p lang="en">B. Fiyatların zaman içinde genel olarak yükselmesi</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. بالا رفتن عمومی قیمت‌ها در طول زمان</p>
+<p lang="en">C. Banknot sayısındaki düşüş</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. کم شدن تعداد اسکناس‌ها</p>
+<p class="answer" lang="en">Doğru cevap: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Soru 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Bir mevduat yüzde 20 ödüyor ve enflasyon yüzde 40. Satın alma gücüne ne olur?</p>
+<p lang="fa" dir="rtl" style="text-align:right">سپرده‌ای ۲۰٪ سود می‌دهد و تورم ۴۰٪ است. قدرت خرید آن چه می‌شود؟</p>
+<p lang="en">A. Artar</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بیشتر می‌شود</p>
+<p lang="en">B. Aynı kalır</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ثابت می‌ماند</p>
+<p lang="en">C. Düşer</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. کمتر می‌شود</p>
+<p class="answer" lang="en">Doğru cevap: C. Reel getiri negatiftir.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج. بازده واقعی منفی است.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Soru 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Yıllık yüzde 36 enflasyonla fiyatların ikiye katlanması yaklaşık ne kadar sürer (72 kuralı)?</p>
+<p lang="fa" dir="rtl" style="text-align:right">با تورم سالانه‌ی ۳۶٪، قیمت‌ها حدوداً چند سال بعد دو برابر می‌شود (قاعده‌ی ۷۲)؟</p>
+<p lang="en">A. Yaklaşık 2 yıl</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. حدود ۲ سال</p>
+<p lang="en">B. Yaklaşık 7 yıl</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. حدود ۷ سال</p>
+<p lang="en">C. Yaklaşık 12 yıl</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. حدود ۱۲ سال</p>
+<p class="answer" lang="en">Doğru cevap: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Soru 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Yıllık bazda enflasyon bu ayın fiyatlarını şununla karşılaştırır…</p>
+<p lang="fa" dir="rtl" style="text-align:right">تورم نقطه‌به‌نقطه قیمت‌های این ماه را با چه چیزی مقایسه می‌کند؟</p>
+<p lang="en">A. Geçen ay</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ماه قبل</p>
+<p lang="en">B. Geçen yılın aynı ayı</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. همین ماه در سال قبل</p>
+<p lang="en">C. Son on yılın ortalaması</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. میانگین ده سال گذشته</p>
+<p class="answer" lang="en">Doğru cevap: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Soru 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Bitcoin'in arzı sabittir. Bu fiyatı için ne anlama gelir?</p>
+<p lang="fa" dir="rtl" style="text-align:right">عرضه‌ی بیت‌کوین ثابت است. این برای قیمتش چه معنایی دارد؟</p>
+<p lang="en">A. Fiyat istikrarlıdır</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. قیمتش باثبات است</p>
+<p lang="en">B. Fiyat yalnızca yükselebilir</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. قیمتش فقط بالا می‌رود</p>
+<p lang="en">C. Fiyat yine de sert dalgalanabilir</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. قیمتش هنوز می‌تواند شدید بالا و پایین برود</p>
+<p class="answer" lang="en">Doğru cevap: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Kaynaklar</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Inflation" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">IMF, Temellere Dönüş: Enflasyon</a></li><li><a href="https://www.euronews.com/business/2026/06/30/irans-inflation-spiral-deepens-as-rial-slides-and-tensions-rise" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Euronews: İran İstatistik Merkezi'nin 21 Haziran 2026'da biten ay için enflasyon rakamları</a></li><li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Bitcoin: Eşler Arası Elektronik Nakit Sistemi (beyaz kitap)</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Tablo ve 72 kuralı aritmetik örneklerdir, tahmin değildir. Buradaki hiçbir şey yatırım tavsiyesi değildir.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">جدول و قاعده‌ی ۷۲ مثال حسابی‌اند، نه پیش‌بینی. هیچ بخشی از این درس توصیه‌ی سرمایه‌گذاری نیست.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Takipte kal</span></h2>
+<p lang="en">Yeni dersler önce Ditoman'ın kanallarında duyurulur.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.tr.html"><span lang="en">Öğren'e Dön</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson11.tr.html"><span lang="en">Önceki Ders</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson13.tr.html"><span lang="en">Sonraki Ders</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Öğren • Yapı üzerine kurulu, keşifle ilerleyen.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-tr.js?v=20261121a"></script>
+</body>
+</html>

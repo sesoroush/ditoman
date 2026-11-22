@@ -1,0 +1,220 @@
+1120|Maliyet nerede saklanır
+1121|Dünya Bankası, ülkeler arasında 200 dolar göndermenin maliyetini izler. 2025 başında küresel ortalama yaklaşık yüzde 6,5 idi; bu, Birleşmiş Milletler'in yüzde 3'lük hedefinin iki katından fazlaydı. Bankalar en pahalı kanaldı, dijital hizmetler en ucuzu.
+1122|Bu maliyetin üç parçası vardır.
+1123|Belirtilen ücret:
+1124|gönderirken gördüğünüz tutar.
+1125|Kur marjı:
+1126|hizmet sağlayıcı piyasa kurundan daha kötü bir kurla çevirir ve farkı cebine koyar. Bu çoğu zaman daha büyük kısımdır ve hiçbir fişte görünmez.
+1127|Yoldaki ücretler:
+1128|aracı bankaların her biri bir ücret kesebilir, bu yüzden gönderilenden daha azı ulaşır.
+1129|Sağlayıcıları karşılaştırmak için ilan edilen ücreti bir kenara bırakın ve tek bir soru sorun: bu tutarı ödersem, diğer para biriminde tam olarak ne kadar ulaşır?
+1130|Neden yavaş
+1131|Farklı saat dilimlerindeki bankalar farklı saatlerde açıktır ve birçok ödeme sistemi geceleri ve hafta sonları kapanır. Güzergâhtaki her banka ayrıca ödemeyi kara para aklama ve yaptırım kurallarına göre kontrol etmelidir. Belirsiz tek bir ayrıntı ödemeyi günlerce bekletebilir.
+1132|Eski gayriresmî yol
+1133|Bankalardan çok önce tüccarlar güven ağları kullanırdı. Gönderen bir şehirdeki bir komisyoncuya öder, komisyoncunun başka bir şehirdeki ortağı alıcıya öder. İki komisyoncu daha sonra kendi aralarında hesaplaşır. Birçok ülkede bu hawala olarak bilinir ve bankaların yavaş, pahalı ya da erişilemez olduğu yerlerde hâlâ büyük tutarları taşır.
+1134|Hızlı ve ucuz olabilir. Ama tamamen komisyoncunun dürüstlüğüne bağlıdır ve birçok yerde yasal korumanın dışında kalır.
+1135|Stablecoin'ler neyi değiştirir
+1136|Bir dolar stablecoin'i, küçük bir ağ ücretiyle, günün her saatinde dakikalar içinde iki cüzdan arasında hareket edebilir. Bu adımda hiçbir muhabir banka yer almaz. Stablecoin'lerin sınır ötesi ödemelerde giderek daha çok kullanılmasının ana nedeni budur.
+1137|Ama zor kısımlar iki uca kayar. Gönderen önce yerel parayı tokena çevirmelidir ve alıcı onu geri çevirmelidir; bu genellikle kendi ücreti, kuru ve kuralları olan bir borsa ya da komisyoncu üzerinden olur. Ve token, Ders 11'deki riskleri getirir: ihraççı, karşılık ve çıkış yolu.
+1138|Yani bir stablecoin yolculuğun ortasını kısaltabilir. İlk ve son adımı ortadan kaldırmaz.
+1139|Para sınırları geçmez. Mesajlar geçer ve bankalar birbirlerinde tuttukları hesapları düzenler.
+1140|SWIFT talimat taşır. Muhabir bankalar bakiyeleri taşır.
+1141|Gerçek maliyet, ücret artı kur marjıdır. Ne kadar ulaştığını sorun.
+1142|Gecikmeler saat dilimlerinden, kapalı sistemlerden ve uyum kontrollerinden gelir.
+1143|Stablecoin'ler rotanın ortasını hızlandırır. Maliyet ve risk hâlâ girişte ve çıkıştadır.
+1144|Kripto rotasını ayrıntılı görün
+1145|Ders 16 bir kripto transferini aynı şekilde izler: adres, ağ, ücret ve onay. Ders 11 bu ödemelerde kullanılan stablecoin'lerin arkasında ne olduğunu açıklar.
+1146|Sınır ötesi ödeme
+1147|Muhabir banka
+1148|SWIFT
+1149|Havale (remittance)
+1150|Kur marjı
+1151|Aracı ücretleri
+1152|Uyum kontrolleri
+1153|Hawala
+1154|Giriş ve çıkış kapısı (on-ramp / off-ramp)
+1155|Paranın kendisinin neden sınırı geçmediğini açıklayın.
+1156|Bir muhabir bankanın ne yaptığını anlatın.
+1157|SWIFT'in ne yaptığını ve ne yapmadığını söyleyin.
+1158|Uluslararası bir transferin maliyetinin üç parçasını bulun.
+1159|Bir stablecoin'in yolculuğun hangi bölümünü kısalttığını ve hangi bölümlerin kaldığını açıklayın.
+1160|SWIFT ne yapar?
+1161|A. Bankaların parasını tutar
+1162|B. Kurumlar arasında ödeme talimatları taşır
+1163|C. Döviz kurlarını belirler
+1164|Bir transferin maliyeti en sık nerede saklanır?
+1165|A. Kur marjında
+1166|B. Fiş kâğıdında
+1167|C. Alıcının telefon faturasında
+1168|Muhabir banka nedir?
+1169|A. Yabancı para basan banka
+1170|B. Diğer iki bankanın da hesap tuttuğu banka
+1171|C. Transferleri onaylayan bir devlet dairesi
+1172|Transfer hizmetlerini karşılaştırmak için en iyi tek soru nedir?
+1173|A. İlan edilen ücret nedir?
+1174|B. Kaç şubesi var?
+1175|C. Diğer para biriminde tam olarak ne kadar ulaşır?
+1176|Bir stablecoin uluslararası ödemenin hangi kısmını ortadan kaldırmaz?
+1177|A. Yerel parayı tokena ve geri çevirmeyi
+1178|B. Orta adımdaki muhabir bankayı
+1179|C. Hafta sonu kapanış saatlerini
+1180|Dünya Bankası: Dünya Genelinde Havale Fiyatları
+1181|SWIFT: Hakkımızda
+1182|BIS CPMI: Sınır ötesi ödemeler programı
+1183|Birleşmiş Milletler: SKH 10, havale maliyetlerine ilişkin 10.c hedefi
+1184|Ortalama maliyet, Dünya Bankası'nın 2025'in ilk çeyreği için Dünya Genelinde Havale Fiyatları raporundandır. Sonraki çeyrekler farklı olabilir.
+1185|Adres, Ağ, Ücret: Bir Kripto İşlemi Nasıl Çalışır | Ditoman Öğren
+1186|Kripto göndermek üç karar gerektirir: hangi adres, hangi ağ ve ne kadar ücret. Birini yanlış yaparsanız para sonsuza dek kaybolabilir. Bu ders bir transferi Gönder düğmesinden son onaya kadar izler
+1187|Adres, Ağ, Ücret: Bir Kripto İşlemi Nasıl Çalışır Ditoman ders görseli
+1188|Kripto • İşlemler
+1189|Kripto göndermek üç karar gerektirir: hangi adres, hangi ağ ve ne kadar ücret. Birini yanlış yaparsanız para sonsuza dek kaybolabilir. Bu ders bir transferi Gönder düğmesinden son onaya kadar izler.
+1190|Ders 14 bir kartlı ödemeyi beş şirketin içinden izledi. Bir kripto transferinde bunların hiçbiri yoktur. Siz, alıcı ve herkesin inceleyebileceği bir bilgisayar ağı vardır.
+1191|Bu, süreci hem daha basit hem de daha katı yapar. Ortada işleri yavaşlatacak kimse yoktur ve bir hatayı düzeltecek kimse de yoktur. Bu yüzden gerçek parayla yapmadan önce bir kez, yavaşça gözden geçirmeye değer.
+1192|Adres: nereye gider
+1193|Adres bir hesap numarası gibidir: bir cüzdanı tanımlayan uzun bir harf ve rakam dizisi. Ethereum ve BNB Smart Chain'de 0x ile başlar ve 42 karakterdir. Bitcoin ve Tron adresleri farklı görünür.
+1194|Adres herkese açıktır. Paylaşmak güvenlidir, çünkü yalnızca insanların size göndermesine izin verir. Gizli kalması gereken, Ders 13'teki özel anahtar veya kurtarma ifadesidir.
+1195|Adresi asla elle yazmayın. Kopyalayıp yapıştırın ya da QR kodu okutun, sonra ilk dört ve son dört karakteri aslıyla karşılaştırın. Bir yanlış karakter başka bir cüzdan demektir.
+1196|Ağ: hangi yoldan gider
+1197|Aynı token birkaç blok zincirinde bulunabilir. Örneğin USDT; Ethereum, Tron, BNB Smart Chain ve diğerlerinde ihraç edilir. Bunlar kendiliğinden bağlanmayan ayrı yollardır.
+1198|Kural basit:
+1199|gönderen ve alıcı aynı ağı kullanmalıdır.
+1200|Alıcının cüzdanı veya borsası bir ağı bekliyor ve siz başka bir ağdan gönderirseniz, coinler hiç görünmeyebilir ve geri almak zordan imkânsıza kadar değişir.
+1201|Bu, yeni başlayanların yaptığı en yaygın pahalı hatadır. Göndermeden önce alıcıya iki şey sorun: adres ve ağ.
+1202|Ücret: yer için ödeme
+1203|Her işlem, ağı çalıştıranlara bir ücret öder. Buna çoğunlukla gas denir. Ücret bir sonraki bloktaki yer için ödenir; bu yüzden ne kadar gönderdiğinize değil, ağın ne kadar yoğun olduğuna bağlıdır. 10 dolar da 10.000 dolar da göndermek aynı maliyette olabilir.
+1204|İki ayrıntı yeni başlayanları şaşırtır.
+1205|Ücret ağın kendi coininde ödenir.
+1206|BNB Smart Chain'de herhangi bir token göndermek için biraz BNB gerekir. Ethereum'da ETH, Tron'da TRX gerekir. Tokenları olan ama ağ coini olmayan bir cüzdan hiçbir şey gönderemez.
+1207|Ücretler ağlar arasında ve saatten saate
+1208|büyük farklılık gösterir. Cüzdanınız onaylamadan önce ücreti gösterir. Okuyun.
+1209|Gönder'e basmadan önce
+1210|Alıcıdan isteyin:
+1211|adres ve ağ.
+1212|Adresi yapıştırın
+1213|ve ilk dört ile son dört karakteri karşılaştırın.
+1214|Aynı ağı seçin,
+1215|alıcının belirttiği ağı.
+1216|Ağ coininiz olduğundan emin olun
+1217|ücret için ve ücreti okuyun.
+1218|Küçük bir deneme gönderin,
+1219|ulaşmasını bekleyin, sonra gerisini gönderin.
+1220|İşlem hash'ini kaydedin
+1221|ve bir blok gezgininde arayın.
+1222|Onay: ne zaman tamamlanır
+1223|Gönder'e bastıktan sonra işlem bir bloğa dahil edilmeyi bekler. Dahil edildiğinde bir onayı olur. Sonraki her blok bir tane daha ekler ve ne kadar çok onayı varsa geri almak o kadar zor olur.
+1224|Bitcoin yaklaşık her on dakikada bir blok üretir. Birçok yeni ağ birkaç saniye sürer. Borsalar çoğu zaman bir yatırımı hesaba geçirmeden önce birkaç onay bekler; bu yüzden bir transfer cüzdanınızda başarılı görünürken karşı tarafta hâlâ beklemede olabilir.
+1225|Kendiniz kontrol edin
+1226|Her işlemin hash adı verilen bir kimliği vardır. Onu bir blok gezginine, örneğin BNB Smart Chain için BscScan'e yapıştırın; göndereni, alıcıyı, tutarı, ücreti ve durumu görürsünüz. Hiçbir şirketin sözüne gerek yoktur.
+1227|Alıcı hiçbir şey gelmedi derse gezgin meseleyi çözer. Doğru ağda doğru adrese başarılı görünüyorsa coinler oradadır.
+1228|Geri alma yok
+1229|Onaylanmış bir işlem kesindir. Hiçbir banka, destek ekibi ya da mahkeme kararı onu blok zincirinde geri alamaz. Tek yol, alıcının geri göndermesidir.
+1230|Bu yüzden alışkanlıklar finansın başka hiçbir yerinden daha önemlidir.
+1231|Önce küçük bir deneme gönderin,
+1232|adres yeniyse ya da tutar büyükse.
+1233|Adresi ve ağı iki kez kontrol edin,
+1234|sonra onay ekranında ilk ve son karakterleri bir kez daha kontrol edin.
+1235|Ücret için biraz ağ coini bulundurun.
+1236|ücretler için.
+1237|alıcı onaylayana kadar.
+1238|Adres nereye olduğunu söyler. Ağ hangi yol olduğunu söyler. İkisi de alıcıyla uyuşmalıdır.
+1239|Ücret ağın kendi coininde ödenir ve tutara değil, trafiğe bağlıdır.
+1240|Onaylar bir işlemi kesin yapar ve kesin bir işlem geri alınamaz.
+1241|Bir blok gezgini her transferin gerçeğini gösterir.
+1242|Küçük bir deneme transferi, var olan en ucuz sigortadır.
+1243|TMN ile deneyin
+1244|TMN, BNB Smart Chain üzerindedir; bu yüzden onu almak için kişisel bir cüzdanda bir BNB Smart Chain adresi, göndermek için ise ücret olarak biraz BNB gerekir. TMN rehberi bunu resimlerle adım adım gösterir.
+1245|Cüzdan adresi
+1246|Ağ (blok zinciri)
+1247|Ağ ücreti (gas)
+1248|Ağ coini
+1249|Blok ve onay
+1250|İşlem hash'i
+1251|Kesinlik
+1252|Deneme transferi
+1253|Adresin ne olduğunu ve paylaşmanın neden güvenli olduğunu açıklayın.
+1254|Gönderen ile alıcının neden aynı ağı kullanması gerektiğini söyleyin.
+1255|Ağ ücretinin neyin karşılığı olduğunu ve hangi coinde ödendiğini açıklayın.
+1256|Onayın ne olduğunu anlatın.
+1257|Bir işlemi blok gezgininde arayın.
+1258|Göndermeden önce yapılacak kontrolleri sıralayın.
+1259|Cüzdan adresinizi paylaşmak güvenli midir?
+1260|A. Hayır, başkalarının coinlerinizi almasına izin verir
+1261|B. Evet, yalnızca başkalarının size göndermesine izin verir
+1262|C. Yalnızca bir kez paylaşırsanız
+1263|BNB Smart Chain'de USDT'niz var ama BNB'niz yok. Göndermeye çalışırsanız ne olur?
+1264|A. Ücret USDT'den alınır
+1265|B. Gönderilemez; ücret için BNB gerekir
+1266|C. Ücreti alıcı öder
+1267|Ağ ücreti esas olarak neye bağlıdır?
+1268|A. Ağın ne kadar yoğun olduğuna
+1269|B. Gönderdiğiniz tutara
+1270|C. Alıcının ülkesine
+1271|Alıcının beklediğinden farklı bir ağdan gönderdiniz. Olası sonuç nedir?
+1272|A. Ağlar bunu otomatik çevirir
+1273|B. Bir gün sonra size döner
+1274|C. Coinler görünmeyebilir ve kaybolabilir
+1275|Bir transferin ulaştığını nasıl kanıtlayabilirsiniz?
+1276|A. Cüzdanınızın ekran görüntüsüyle
+1277|B. Bir blok gezgininde işlem hash'iyle
+1278|C. Destekten gelen bir mesajla
+1279|ethereum.org: Gas ve ücretler
+1280|Bitcoin geliştirici kılavuzu: İşlemler
+1281|BNB Chain belgeleri: BNB Smart Chain'e genel bakış
+1282|BscScan: BNB Smart Chain blok gezgini
+1283|Blok süreleri ve ücretler ağlar güncellendikçe değişir. Onaylamadan önce her zaman kendi cüzdanınızda gösterilen ücreti ve ağı okuyun.
+1284|Dijital Paranızı Nasıl Kaybetmezsiniz | Ditoman Öğren
+1285|Kripto kaybeden çoğu kişi hacklenmez. İkna edilir, acele ettirilir ya da basitçe küçük bir hata yapar. Bu ders paranın kaybedildiği en yaygın beş yolu ve her birini durduran sade alışkanlıkları ele alır
+1286|Dijital Paranızı Nasıl Kaybetmezsiniz Ditoman ders görseli
+1287|Güvenlik • Dolandırıcılıklar
+1288|Kripto kaybeden çoğu kişi hacklenmez. İkna edilir, acele ettirilir ya da basitçe küçük bir hata yapar. Bu ders paranın kaybedildiği en yaygın beş yolu ve her birini durduran sade alışkanlıkları ele alır.
+1289|İnsanlar kripto kaybetmeyi hayal ettiklerinde, karanlık bir odada bir şifreyi kıran bir hacker düşünür. Bu nadiren böyle olur. Çoğu durumda sahibi kapıyı kendisi açar: sahte bir sayfaya bir ifade yazarak, okumadan bir şeyi onaylayarak ya da yeni bir "arkadaşa" para göndererek.
+1290|Ders 16 bunun neden bu kadar önemli olduğunu açıkladı: bir blok zinciri transferi geri alınamaz. Bir banka bazen parayı geri çekebilir. Bir blok zinciri çekemez. Yani önleme işin tamamıdır ve iyi haber, önlemenin çoğunlukla bir alışkanlık meselesi olmasıdır.
+1291|Sorun ne kadar büyük
+1292|Analiz şirketi Chainalysis, kripto dolandırıcılıklarının 2025'te kurbanlardan 17 milyar dolardan fazlasını aldığını, bunun bir rekor olduğunu tahmin etti. Suçluların bir yetkili, bir şirket ya da bir destek temsilcisi gibi başka biri gibi davrandığı dolandırıcılıklar bir yılda yüzde 1.400'den fazla arttı; sahte sesleri, yüzleri ve mesajları inandırıcı kılan yapay zekâ araçları bunu destekledi.
+1293|Bu rakamlar korkmak için bir neden değil. Beş örüntüyü öğrenmek için bir nedendir.
+1294|1. Sahte sayfa (kimlik avı)
+1295|Cüzdanınıza, borsanıza ya da bir tokenin web sitesine benzeyen bir bağlantı alırsınız. Sayfa bir kopyadır. Giriş yapmanızı ya da kurtarma ifadenizi girerek cüzdanınızı "doğrulamanızı" ister. Bunu yaptığınız anda cüzdan boşalır.
+1296|Alışkanlık:
+1297|mesajlardaki, reklamlardaki ya da arama sonuçlarındaki bağlantıları para tutan hiçbir yere gitmek için asla izlemeyin. Adresi kendiniz yazın ya da kayıtlı bir yer imi kullanın. Ve Ders 13'ün kuralını hatırlayın: meşru hiç kimse kurtarma ifadesi istemez.
+1298|2. Sahte yardımcı
+1299|Herkese açık bir grupta bir soru sorarsınız. Bir dakika içinde bir "destek temsilcisi" size özelden yazar ve nazikçe çözmeyi teklif eder. Ifadenizi, ekranınızı ya da küçük bir "doğrulama" ödemesini ister.
+1300|gerçek destek özel sohbet başlatmaz. Size ilk ulaşan herkes, profil resmi ne derse desin, bir yabancıdır.
+1301|3. Körü körüne imza
+1302|Birçok uygulama cüzdanınızdan bir onayı imzalamasını ister. Bazı onaylar bir sözleşmeye tokenlarınızı taşıma izni verir; bazen sınırsız ve bitiş tarihsiz. Sahte bir airdrop ya da "ücretsiz mint" sitesi tam olarak bunu kullanır: bir hediye aldığınızı sanırsınız ve erişimi devrediyorsunuzdur.
+1303|cüzdanın neyi imzalamanızı istediğini okuyun. Anlamıyorsanız reddedin. Yeni siteleri denemek için küçük tutarlı ayrı bir cüzdan bulundurun ve birikimlerinizi tutan cüzdanı asla bağlamayın.
+1304|4. Sabırlı arkadaş
+1305|Bir sosyal uygulamada ya da bir flört sitesinde samimi biri belirir. Haftalarca hoş sohbetler olur. Sonra harika giden bir yatırımdan söz eder ve nasıl katılacağınızı gösterir. Platform büyüyen kârlar gösterir. Para çekmeye çalıştığınızda önce ödemeniz gereken "vergiler" ve "ücretler" çıkar. Kârlar hiçbir zaman gerçek değildi.
+1306|sizi bir yatırıma yönlendiren bir internet tanıdığı bir senaryoyu uyguluyordur. Orada durun ve para göndermeden önce yüz yüze tanıdığınız biriyle konuşun.
+1307|5. Garantili getiri
+1308|Bir proje sabit, yüksek bir getiri vaat eder; günlük ya da haftalık ödenir ve arkadaş getirene bonuslar vardır. İlk üyeler gerçekten ödenir, ama sonraki üyelerin parasıyla. Yeni yatırımlar yavaşlayınca her şey durur.
+1309|finansta riski olmayan yüksek getiri diye bir şey yoktur. Paranın nereden geldiğini sorun. Dürüst cevap "yeni üyelerden" ise bu bir piramittir.
+1310|Beş uyarı işareti ve her biri için bir cevap
+1311|Biri...
+1312|Büyük olasılıkla bu...
+1313|Şunu yapın
+1314|kurtarma ifadenizi istiyor
+1315|hırsızlık
+1316|Durun. Kimsenin ona ihtiyacı yok.
+1317|size 'destek' olarak ilk o yazıyor
+1318|sahte yardımcı
+1319|Yalnızca resmî siteyi kullanın.
+1320|hemen harekete geçmeniz gerektiğini söylüyor
+1321|düşünmenizi engellemek için baskı
+1322|Bir gün bekleyin.
+1323|sabit yüksek getiri vaat ediyor
+1324|bir piramit
+1325|Paranın nereden geldiğini sorun.
+1326|'almanız' için ücretsiz bir token öneriyor
+1327|bir imza tuzağı
+1328|Ana cüzdanınızı bağlamayın.
+1329|Dürüst hatalar
+1330|Her kayıpta bir suçlu yoktur. İnsanlar yanlış ağdan göndererek, yanlış adresi yapıştırarak ya da kurtarma ifadelerinin yazılı olduğu kâğıdı kaybederek de para kaybeder. Ders 13 ve 16 bunları ele alır ve her durumda alışkanlık aynıdır: yavaşlayın, iki kez kontrol edin, küçük bir tutarla deneyin.
+1331|Daha yeni bir hile hata ile dolandırıcılığın arasında durur. Bir dolandırıcı, sizin kullandığınız bir adresle aynı başlayıp biten bir adresten çok küçük bir tutar gönderir. Daha sonra gerçeği yerine geçmişinizden bu benzer adresi kopyalarsınız. Bu yüzden adresleri geçmiş işlemlerden değil, kaynağından kopyalayın.
+1332|Zaten olduysa
+1333|Geriye kalan her şeyi yeni bir kurtarma ifadesine sahip yeni bir cüzdana taşıyın. İşlem hash'lerini ve mesajları kaydedin. İlgili platforma ve ülkenizdeki polise bildirin.
+1334|Sonra ikinci kez dikkatli olun. Soyulanlara sıklıkla peşin bir ücret karşılığında parayı geri getirmeyi vaat eden "kurtarma hizmetleri" ulaşır. Bu, aynı suçun tekrarıdır.
+1335|Çoğu kayıp hackleme ile değil, ikna ile başlar.
+1336|Beş örüntü çoğu durumu kapsar: sahte sayfa, sahte yardımcı, körü körüne imza, sabırlı arkadaş, garantili getiri.
+1337|Ortak nokta aciliyettir. Gerçek bir fırsat bir günlük düşünmeden sağ çıkar.
+1338|Kurtarma ifadesini asla paylaşmayın, okuyamadığınızı asla imzalamayın, paranıza giden bir bağlantıyı asla izlemeyin.
+1339|Bir şey ters giderse kalanı güvene alın, kanıtları saklayın ve kurtarma satan herkesi görmezden gelin.

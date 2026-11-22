@@ -1,0 +1,240 @@
+880|C. Fiyat yine de sert dalgalanabilir
+881|IMF, Temellere Dönüş: Enflasyon
+882|Euronews: İran İstatistik Merkezi'nin 21 Haziran 2026'da biten ay için enflasyon rakamları
+883|Bitcoin: Eşler Arası Elektronik Nakit Sistemi (beyaz kitap)
+884|Tablo ve 72 kuralı aritmetik örneklerdir, tahmin değildir. Buradaki hiçbir şey yatırım tavsiyesi değildir.
+885|Yeni dersler önce Ditoman'ın kanallarında duyurulur.
+886|Param Nerede? Banka Hesabından Dijital Cüzdana | Ditoman Öğren
+887|Ekrandaki bir bakiye üç çok farklı anlama gelebilir. Bu ders bir banka hesabını, bir borsa hesabını ve kişisel bir cüzdanı karşılaştırır ve her birinde parayı gerçekte kimin kontrol ettiğini gösterir
+888|Param Nerede? Banka Hesabından Dijital Cüzdana Ditoman ders görseli
+889|Para • Saklama
+890|Ekrandaki bir bakiye üç çok farklı anlama gelebilir. Bu ders bir banka hesabını, bir borsa hesabını ve kişisel bir cüzdanı karşılaştırır ve her birinde parayı gerçekte kimin kontrol ettiğini gösterir.
+891|Bir bankacılık uygulaması açarsınız ve bir sayı görürsünüz. Bir borsa uygulaması açarsınız ve başka bir sayı görürsünüz. Bir kripto cüzdanı açarsınız ve üçüncüsü vardır. Hepsi "benim param" gibi görünür. Aynı türden şeyler değiller.
+892|Fark, herhangi bir bakiyeye sorabileceğimiz tek bir soruya iner: bu parayı şimdi istersem, kimin "evet" demesi gerekir?
+893|Banka bakiyesi bir sözdür
+894|Para yatırdığınızda, üzerinde adınız yazan bir kutuda durmaz. Banka büyük kısmını borç verir. Sahip olduğunuz şey bir alacaktır: banka size o tutarı borçludur ve istediğinizde ödeyeceğine söz verir.
+895|Bu söz çeşitli yollarla korunur. Bankalar lisanslıdır ve denetlenir, birçok ülkede bir banka iflas ederse tasarruf sahiplerine belirli bir tavana kadar ödeme yapan bir mevduat güvencesi işler. ABD'de tavan banka başına mevduat sahibi başına 250.000 dolar, Avrupa Birliği'nde 100.000 euro. İran'ın kendi tavanı olan kendi Mevduat Garanti Fonu var. Tavanın üzerinde, bir tasarruf sahibi diğer alacaklılarla sırada bekler.
+896|Borsa bakiyesi de bir sözdür
+897|Bir kripto borsası önemli bir açıdan aynı şekilde çalışır: coinler borsanın cüzdanlarındadır ve hesabınız borsanın size ne borçlu olduğunu gösterir. Bir şirkete karşı bir alacağa sahipsiniz.
+898|Fark, arkasındaki korumadır. Çoğu borsa hesabında mevduat güvencesi yoktur. Borsa FTX Kasım 2022'de çöktüğünde, müşteriler varlıklarının milyarlarca dolarının kayıp olduğunu gördü ve bir iflas mahkemesini beklemek zorunda kaldı.
+899|Bu, her borsanın sahtekâr olduğu anlamına gelmez. Bakiyenin ancak arkasındaki şirket kadar iyi olduğu anlamına gelir.
+900|Kişisel Cüzdan Bir Anahtardır
+901|Kişisel cüzdan, kendi saklama cüzdanı olarak da adlandırılır, farklıdır. Coinler blok zincirinde kayıtlıdır ve cüzdan onları hareket ettirebilen
+902|özel anahtarı
+903|tutar. Bir transferi başka kimsenin onaylaması gerekmez.
+904|Anahtar genellikle bir kez, bir
+905|kurtarma ifadesi
+906|olarak gösterilir: 12 veya 24 sıradan sözcük. Bu sözcüklere kim sahipse parayı o kontrol eder. "Şifremi unuttum" düğmesi yoktur ve arayacak bir ofis de yoktur.
+907|Üç bakiye, üç anlam
+908|Banka hesabı
+909|Borsa hesabı
+910|Kişisel cüzdan
+911|Elinizde ne var
+912|Bankaya karşı bir alacak
+913|Şirkete karşı bir alacak
+914|Anahtarın kendisi
+915|Transferi kim onaylar
+916|Banka
+917|Borsa
+918|Yalnızca siz
+919|Şifreyi unutursanız
+920|Banka sıfırlar
+921|Borsa sıfırlar
+922|Sıfırlama yok; yalnızca kurtarma ifadesi
+923|Kurum iflas ederse
+924|Bir tavana kadar güvence
+925|Genellikle güvence yok
+926|Hiçbirine bağlı değildir
+927|Daha çok kontrol, daha çok sorumluluk
+928|Bir bankada bir kuruma güvenirsiniz ve bir şey ters gittiğinde yardım alırsınız. Kişisel bir cüzdanda kendinize güvenirsiniz ve tüm sorumluluğu taşırsınız.
+929|Kurtarma ifadesini kaybederseniz,
+930|para blok zincirinde hâlâ görünür olsa bile gitmiştir.
+931|Başkası ifadeyi görürse,
+932|cüzdanı dünyanın herhangi bir yerinden boşaltabilir ve transfer geri alınamaz.
+933|Yanlış adrese veya ağa gönderirseniz,
+934|genellikle geri dönüş yoktur. Ders 16 bunu adım adım ele alır.
+935|Kayıpların Çoğunu Önleyen Basit Alışkanlıklar
+936|Kurtarma ifadesini kâğıda yazın ve güvenli, kuru bir yerde saklayın. Fotoğrafını çekmeyin ve bir sohbette, e-postada ya da not uygulamasında saklamayın.
+937|Meşru hiç kimse ifadeyi asla istemez. Destek ekibi, cüzdan şirketi ya da Ditoman da.
+938|Önemli bir şeyi taşımadan önce küçük bir tutarla başlayın ve almayı ve göndermeyi deneyin.
+939|Bir borsanın desteklemediği tokenlar için kişisel bir cüzdan kullanın. TMN bir örnektir: TMN rehberinin gösterdiği gibi kişisel bir BNB Smart Chain cüzdanında alınmalıdır.
+940|Bir bakiye her zaman elinizdeki para değildir. Taşınmadan önce kimin "evet" demesi gerektiğini sorun.
+941|Banka mevduatı bir bankaya karşı alacaktır; denetim ve bir tavana kadar güvence vardır.
+942|Borsa bakiyesi bir şirkete karşı alacaktır; genellikle güvencesizdir.
+943|Kişisel cüzdan size anahtarı ve onunla gelen tüm sorumluluğu verir.
+944|Herkes için en iyi tek bir düzenleme yoktur. Birçok kişi her biri farklı bir amaç için birden fazlasını kullanır.
+945|Kişisel bir cüzdan denemeye hazır mısınız?
+946|TMN rehberi, bir tokeni kişisel bir cüzdana nasıl ekleyeceğinizi ve adresinizi nasıl kopyalayacağınızı resimlerle gösterir. Ders 17 ardından dikkat etmeniz gereken hatalara ve dolandırıcılıklara değinir.
+947|Dijital Paranızı Nasıl Kaybetmezsiniz
+948|Alacak olarak mevduat
+949|Mevduat güvencesi
+950|Saklama
+951|Borsa (emanet) hesabı
+952|Kişisel (kendi saklama) cüzdanı
+953|Özel anahtar
+954|Kurtarma ifadesi
+955|Geri alınamaz transfer
+956|Bir banka bakiyesinin neden saklanan nakit değil bir alacak olduğunu açıklayın.
+957|Bir banka hesabının ve bir borsa hesabının arkasındaki korumayı karşılaştırın.
+958|Özel anahtar ve kurtarma ifadesinin ne işe yaradığını anlatın.
+959|Kişisel bir cüzdanda paranın kaybedilebileceği üç yolu sayın.
+960|Kurtarma ifadesini güvende tutan alışkanlıkları sayın.
+961|Bankaya para yatırdığınızda neye sahip olursunuz?
+962|A. Adınıza saklanan nakit
+963|B. Bankaya karşı bir alacak
+964|C. Bankanın bir payı
+965|Kişisel bir cüzdandaki coinleri kim hareket ettirebilir?
+966|A. Özel anahtarı veya kurtarma ifadesini elinde tutan
+967|B. Cüzdan şirketinin destek ekibi
+968|C. Satın alındıkları borsa
+969|'Destek'ten biri bir sorunu çözmek için kurtarma ifadenizi istiyor. Bu nedir?
+970|A. Normal bir güvenlik adımı
+971|B. Bir dolandırıcılık
+972|C. Bir yasal gereklilik
+973|Doğru cevap: B. Meşru hiç kimse bunu istemez.
+974|Borsa iflas ederse bir borsa bakiyesini genellikle ne korur?
+975|A. Banka gibi bir mevduat güvencesi
+976|B. Blok zinciri
+977|C. Genellikle hiçbir şey; diğer alacaklılarla birlikte beklersiniz
+978|Bir kurtarma ifadesi için en güvenli yer neresidir?
+979|A. Telefon galerisinde bir fotoğraf
+980|B. Bir sohbet uygulamasında kendinize mesaj
+981|C. Güvenli bir yerde, kâğıt üzerinde
+982|FDIC: Mevduat sigortası (Amerika Birleşik Devletleri)
+983|Avrupa Komisyonu: Mevduat güvence sistemleri
+984|RTE News: FTX kurucusu müşteri fonlarının kaybı nedeniyle mahkûm edildi (28 Mart 2024)
+985|ethereum.org: Cüzdanlar, anahtarlar ve kurtarma ifadeleri
+986|Güvence tavanları değişir. Güncel tavanı kendi ülkenizdeki mevduat güvence kuruluşundan kontrol edin.
+987|Kartınızı Okuttuğunuzda Para Nasıl Hareket Eder? | Ditoman Öğren
+988|Bir kartlı ödeme anlık hissedilir, ama bu iki saniyede birkaç şirket birbiriyle konuşur ve paranın kendisi daha sonra gelir. Bu ders bir alışverişi kart okuyucudan mağazanın hesabına kadar izler
+989|Kartınızı okuttuğunuzda para nasıl hareket eder? Ditoman ders görseli
+990|Ödemeler • Kartlar
+991|Bir kartlı ödeme anlık hissedilir, ama bu iki saniyede birkaç şirket birbiriyle konuşur ve paranın kendisi daha sonra gelir. Bu ders bir alışverişi kart okuyucudan mağazanın hesabına kadar izler.
+992|Kartı okuyucuya tutarsınız, bir bip sesi duyarsınız, fişi alıp gidersiniz. İki saniye. Sanki para hesabınızdan mağazaya sıçramış gibi hissedilir.
+993|Sıçramadı, en azından henüz. O iki saniyede yolculuk eden bir soru ve bir cevaptı. Para daha sonra gelir. Farkı görmek; ücretleri, iadeleri, başarısız ödemeleri ve bu serinin ilerleyen bölümlerinde kripto ödemelerinin neden bu kadar farklı çalıştığını açıklar.
+994|Beş oyuncu
+995|Her kartlı ödemede, hangi ülke olursa olsun, aynı kadro vardır.
+996|Kart sahibi:
+997|siz.
+998|Satıcı:
+999|mağaza.
+1000|Kartı veren banka:
+1001|size kartı veren ve hesabınızı tutan banka.
+1002|Ödeme alan kuruluş (acquirer):
+1003|mağazanın bankası veya ödeme şirketi; kart okuyucuyu sağlar ve mağaza adına parayı toplar.
+1004|Ağ:
+1005|ortada duran, tüm bankaları birbirine bağlayan ve kuralları koyan sistem.
+1006|Dünyanın çoğunda ağ Visa veya Mastercard'dır. İran'da Shaparak kart okuyucuları ve çevrimiçi ağ geçitlerini bankalara bağlar, Shetab ise bankaları birbirine bağlar.
+1007|Birinci adım: soru (yetkilendirme)
+1008|Okuttuğunuzda, okuyucu ödeme alan kuruluş ve ağ üzerinden bankanıza bir mesaj gönderir: bu kart, bu tutar, bu mağaza. Uygun mu?
+1009|Bankanız kartın geçerli olduğunu, PIN'in veya okutmanın doğru olduğunu, bakiyenin yeterli olduğunu ve hiçbir şeyin dolandırıcılık gibi görünmediğini kontrol eder. Sonra evet veya hayır yanıtını verir. Evet ise tutar üzerinde bir blokaj koyar. Bütün bunlar o bip sesidir.
+1010|Bir Kartlı Ödeme, Adım Adım
+1011|Kartı okutursunuz.
+1012|Okuyucu kartı ve tutarı okur.
+1013|Ödeme alan kuruluş isteği iletir
+1014|ağa.
+1015|Ağ yönlendirir
+1016|kartınızı veren bankaya.
+1017|Bankanız kontrol eder
+1018|bakiye, PIN ve dolandırıcılık sinyallerini, sonra evet veya hayır yanıtı verir.
+1019|Yanıt döner
+1020|okuyucuya: bip sesi.
+1021|Daha sonra bankalar mahsuplaşır
+1022|ve mağazanın hesabına alacak kaydedilir.
+1023|İkinci adım: para (takas ve mutabakat)
+1024|Gün sonunda onaylanan ödemeler toplanır ve toplamları alınır. Buna
+1025|takas
+1026|denir: kimin kime ne borçlu olduğunu hesaplamak.
+1027|Sonra
+1028|mutabakat (settlement)
+1029|gelir: bankalar gerçekten birbirine öder, genellikle merkez bankasındaki hesaplar aracılığıyla, ve mağazanın hesabına alacak kaydedilir. Bu çoğu zaman bir sonraki iş gününde olur, bazen daha geç.
+1030|Yani mağazanın fişi paranın geleceğine dair bir sözdür. Müşteri için anlık hissedilir. Mağaza için değildir.
+1031|Bütün Bunların Parasını Kim Öder?
+1032|Kart okuyucular, ağlar ve dolandırıcılık sistemleri para harcatır. Çoğu ülkede satıcı her satışın küçük bir yüzdesini öder ve bu ücretin bir kısmı, interchange denir, kartı veren bankaya gider.
+1033|Seviye çok değişir. Avrupa Birliği interchange'i banka kartlarında yüzde 0,2, kredi kartlarında yüzde 0,3 ile sınırlar. Diğer piyasalarda toplam ücret yüzde iki ya da üç olabilir. İran'da düzenleme alışılmışın dışında oldu: yıllarca maliyeti bankalar üstlendi ve mağazalar kartlı alışverişler için hiçbir şey ödemedi.
+1034|Bir mağaza nakitte indirim verdiğinde ya da kartlı ödemeye ek ücret koyduğunda, nedeni genellikle bu ücrettir.
+1035|Ödemeler Neden Bazen Başarısız Olur veya Geri Döner
+1036|Reddedildi:
+1037|kartı veren banka bakiye, limitler veya bir dolandırıcılık kontrolü nedeniyle hayır yanıtı verdi.
+1038|Para bloke ama alışveriş başarısız:
+1039|blokaj konuldu ama yanıt okuyucuya hiç ulaşmadı. Blokaj daha sonra çözülür; bu yüzden para bir süre sonra "geri gelir".
+1040|İadeler ve itirazlar:
+1041|bankalar ortada durduğu için bir kartlı ödeme geri alınabilir. Bu alıcıları korur. Aynı zamanda mağazalar için bir maliyet ve risktir.
+1042|Bunun Kriptoyla Karşılaştırması
+1043|Bir kartlı ödeme, mesajları ileten güvenilir şirketlerden oluşan bir zincirdir ve mutabakat daha sonra olur. Bir blok zinciri ödemesinde ihraççı, ödeme alan kuruluş ya da ağ şirketi yoktur. Transferin kendisi mutabakattır ve onaylandıktan sonra bir banka tarafından geri alınamaz.
+1044|Bu onu hızlı ve herkese açık yapar, aynı zamanda güvenlik ağını da ortadan kaldırır. Ders 16 bir kripto işlemini aynı adım adım biçimde izler.
+1045|Bip sesi bir sorunun cevabıdır. Para daha sonra hareket eder.
+1046|Beş oyuncu yer alır: kart sahibi, satıcı, kartı veren banka, ödeme alan kuruluş ve ağ.
+1047|Yetkilendirme anlıktır. Takas ve mutabakat saatler veya günler sürer.
+1048|Sistemin parasını her zaman biri öder, genellikle satıcı, ve kurallar ülkeye göre değişir.
+1049|Kartlı ödemeler geri alınabilir. Blok zinciri ödemeleri alınamaz. Her birinin bir bedeli vardır.
+1050|Aynı soru, bir sınırın ötesinde
+1051|Bir ülkenin içinde ağ her bankayı birbirine bağlar. Ülkeler arasında tek bir ağ yoktur ve maliyet ile gecikme tam burada başlar. Ders 15 yurt dışına yapılan bir ödemeyi izler.
+1052|Yurt Dışına Para Göndermek Neden Hâlâ Zor?
+1053|Bir kripto işlemi nasıl çalışır
+1054|Kart sahibi ve satıcı
+1055|Kartı veren banka
+1056|Ödeme alan kuruluş
+1057|Kart ağı
+1058|Yetkilendirme
+1059|Takas
+1060|Mutabakat
+1061|Interchange ücreti
+1062|Ödeme itirazı (chargeback)
+1063|Bir kartlı ödemedeki beş oyuncuyu ve her birinin ne yaptığını sayın.
+1064|Yetkilendirme ile mutabakat arasındaki farkı açıklayın.
+1065|Bir mağazanın parasını müşterinin sandığından neden daha geç aldığını söyleyin.
+1066|Kart ücretlerini genellikle kimin ödediğini ve ülkelere göre neden farklılaştığını açıklayın.
+1067|Geri alınabilir bir kartlı ödemeyi, kesin bir blok zinciri ödemesiyle karşılaştırın.
+1068|Bip sesinden önceki iki saniyede gerçekte ne olur?
+1069|A. Para mağazanın hesabına geçer
+1070|B. Bankanız bir isteği yanıtlar ve tutarı bloke eder
+1071|C. Merkez bankası bir fiş basar
+1072|Kartınızı hangi banka verdi ve hesabınızı tutar?
+1073|A. Kartı veren banka
+1074|B. Ödeme alan kuruluş
+1075|C. Ağ
+1076|Mutabakat nedir?
+1077|A. PIN'i kontrol etmek
+1078|B. Fişi basmak
+1079|C. Bankaların gerçekten birbirine ödeme yapması
+1080|Tutar bakiyenizden çıktı ama alışveriş başarısız oldu. Büyük olasılıkla ne oldu?
+1081|A. Mağaza parayı aldı
+1082|B. Bir blokaj konuldu ve çözülecek
+1083|C. Kart iptal edildi
+1084|Onaylanmış bir blok zinciri ödemesi bir kartlı ödemeden nasıl farklıdır?
+1085|A. Bir banka onu geri alabilir
+1086|B. Kesindir ve hiçbir banka geri alamaz
+1087|C. Her zaman yüzde üçe mal olur
+1088|AB'nin kart bazlı ödemeler için interchange ücretlerine ilişkin 2015/751 sayılı Tüzüğü
+1089|BIS CPMI: Ödeme ve piyasa altyapısı terminolojisi sözlüğü
+1090|Shaparak: İran'ın elektronik kartlı ödeme ağı
+1091|Mehr News: İran'da kartlı ödeme ücretleri ve onları kimin ödediği
+1092|Ücret düzeyleri ve kurallar değişir. Buradaki rakamlar genel yapıyı tanımlar, herhangi bir mağaza veya banka için bir teklif değildir.
+1093|Yurt Dışına Para Göndermek Neden Hâlâ Yavaş ve Pahalı? | Ditoman Öğren
+1094|Bir mesaj dünyayı bir saniyede dolaşır, ama para günler alabilir ve yolda yüzde birkaç kaybedebilir. Bu ders iki ülkedeki iki banka arasında neler olduğunu, maliyetin nerede saklandığını ve stablecoin'lerin neyi değiştirip neyi değiştirmediğini gösterir
+1095|Yurt dışına para göndermek neden hâlâ yavaş ve pahalı? Ditoman ders görseli
+1096|Ödemeler • Sınır Ötesi
+1097|Bir mesaj dünyayı bir saniyede dolaşır, ama para günler alabilir ve yolda yüzde birkaç kaybedebilir. Bu ders iki ülkedeki iki banka arasında neler olduğunu, maliyetin nerede saklandığını ve stablecoin'lerin neyi değiştirip neyi değiştirmediğini gösterir.
+1098|Yurt dışındaki bir işçi ailesine 200 dolar gönderir. Bir öğrenci başka bir ülkedeki üniversiteye ücret ödemek zorundadır. Küçük bir işletme yurt dışındaki bir tedarikçiye ödeme yapar. Üçü de aynı sürprizle karşılaşır: transfer günler sürer ve paranın görünür bir kısmı yolda kaybolur.
+1099|Bir ülkenin içinde Ders 14, her bankayı birbirine bağlayan tek bir ağ gösterdi. Ülkeler arasında böyle bir ağ yoktur. Bu tek gerçek, bu dersteki hemen her şeyi açıklar.
+1100|Para Seyahat Etmez
+1101|Bilinmesi gereken ilk şey, paranın aslında sınırı geçmediğidir. Geçen bir mesajdır ve ardından bankalar defterlerini düzenler.
+1102|Bir ülkedeki Banka A, başka bir ülkedeki Banka B'ye ödeme yapmak istiyorsa, ikisinin de hesabı olan bir yere ihtiyaçları vardır. Genellikle bu, büyük bir uluslararası bankadır ve
+1103|muhabir banka
+1104|denir. Banka A'nın oradaki hesabı azalır, Banka B'nin hesabı artar ve ödeme tamamlanır.
+1105|İki banka ortak bir muhabir paylaşmadığında, ödeme art arda iki ya da üç bankadan atlayarak geçer. Her atlama zaman, ücret ve bir uyum kontrolü ekler.
+1106|SWIFT Nedir ve Ne Değildir
+1107|SWIFT, 200'den fazla ülkedeki 11.000'den fazla finans kuruluşunun birbirine ödeme talimatları göndermek için kullandığı güvenli bir mesajlaşma ağıdır. 1973'te kurulmuştur.
+1108|SWIFT talimatı taşır. Parayı tutmaz ve taşımaz. Para yukarıda anlatılan muhabir hesaplar üzerinden hareket eder. Bir ülkenin bankaları için SWIFT'ten kesilmenin neden bu kadar önemli olduğu da budur: mesajlar olmadan olağan yol kapanır.
+1109|İki Ülke Arasında Bir Banka Transferi
+1110|Gönderen bankasına öder
+1111|yerel para biriminde.
+1112|Banka parayı çevirir
+1113|kendi kuruyla ve çoğu zaman SWIFT üzerinden bir talimat gönderir.
+1114|Bir muhabir banka
+1115|iki bankanın hesapları arasında bakiyeyi taşır. Birden fazla olabilir.
+1116|Her banka kontrollerini yapar
+1117|ve bir ücret kesebilir.
+1118|Alıcının bankası hesaba alacak kaydeder
+1119|, saatler ya da günler sonra.

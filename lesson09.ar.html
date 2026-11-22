@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="fa" data-lang-lock="fa" data-site-lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>ماذا يعني قفل السيولة فعلًا؟ | الدرس 09 | Ditoman Learn</title>
+<meta name="description" content="Ditoman Learn. What a liquidity pool and LP tokens are, how a rug pull happens, what a liquidity lock protects against and what it does not prove, using the TMN lock as the example." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson09.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson09.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson09.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson09.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson09.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson09.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson09.html" />
+  <!-- hreflang:end -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="ar.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson09.ar.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="ماذا يعني قفل السيولة فعلًا؟ | الدرس 09 | Ditoman Learn" />
+<meta property="og:description" content="Ditoman Learn. What a liquidity pool and LP tokens are, how a rug pull happens, what a liquidity lock protects against and what it does not prove, using the TMN lock as the example." />
+<meta property="og:url" content="https://ditoman.com/lesson09.ar.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson09.ar.html#page",
+   "url": "https://ditoman.com/lesson09.ar.html",
+   "name": "ماذا يعني قفل السيولة فعلًا؟ | الدرس 09 | Ditoman Learn",
+   "description": "Ditoman Learn. What a liquidity pool and LP tokens are, how a rug pull happens, what a liquidity lock protects against and what it does not prove, using the TMN lock as the example.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "ماذا يعني قفل السيولة فعلًا؟ | الدرس 09",
+     "item": "https://ditoman.com/lesson09.ar.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.ar.html" aria-label="Ditoman | ديتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">ديتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.ar.html" class="active">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.ar.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.ar.html">TMN</a>
+<a href="index.ar.html#whitepapers">Whitepaper</a>
+<a href="posts.html">Posts</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson09-liquidity-lock.jpg" alt="What does a liquidity lock mean? Ditoman lesson image" onerror="this.parentElement.style.display='none'"><img lang="en" src="lesson09-liquidity-lock-en.jpg" alt="What does a liquidity lock mean? Ditoman lesson image" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge" lang="en">Security • Token Checks</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">الأمان • فحص الرمز</div>
+<h1 lang="en">What Does a Liquidity Lock Actually Mean?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">ماذا يعني قفل السيولة فعلًا؟</h1>
+<p class="subtitle" lang="en">
+Today we locked TMN's liquidity. This lesson uses our own lock as the example: what a liquidity pool is, what LP tokens are, what a lock protects against, what it does not prove, and how to check any lock yourself.
+</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">اليوم قفلنا سيولة TMN. يتخذ هذا الدرس قفلنا نحن مثالًا: ما هو مجمّع السيولة، وما رمز LP، وممَّ يحمي القفل، وما الذي لا يثبته، وكيف تفحص أي قفل بنفسك.</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span lang="en">Level</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">المستوى</span><strong lang="en">Beginner</strong><strong lang="fa" dir="rtl" style="display:block">مبتدئ</strong></div>
+<div class="meta-box">
+<span lang="en">Reading Time</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">مدة القراءة</span><strong lang="en">6 Minutes</strong><strong lang="fa" dir="rtl" style="display:block">6 دقائق</strong></div>
+<div class="meta-box">
+<span lang="en">Learning Points</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">نقاط التعلّم</span><strong lang="en">15 LP</strong><strong lang="fa" dir="rtl" style="display:block">15 نقطة</strong></div>
+<div class="meta-box">
+<span lang="en">Future Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">الاختبار القصير القادم</span><strong lang="en">5 Questions</strong><strong lang="fa" dir="rtl" style="display:block">5 أسئلة</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Lesson Content</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوى الدرس</h2>
+<p class="section-subtitle" lang="en">
+Read the lesson in English or Persian. This structure is designed for future quiz, score, reputation, and reward systems.
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">اقرأ الدرس بالعربية أو الإنجليزية. صُمّم هذا الهيكل للاختبار القصير والنقاط والسمعة ومكافآت ستُضاف مستقبلًا.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">English</button>
+<button class="lang-button" onclick="showLanguage('fa')">العربية</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>In lesson 05 we listed five checks to run on any token before you touch it. Check five was: is there real liquidity, and is it locked? Today we did that for our own token. This lesson explains what we did and what it means.</p>
+
+<h3><span class="check-number">01.</span> What liquidity is</h3>
+<p>For a token to be bought and sold on a decentralised exchange such as PancakeSwap, someone has to put two things side by side in a pool: the token itself and something people already value, such as BNB. Buyers put BNB in and take tokens out; sellers do the opposite.</p>
+<p>That pool is the token's liquidity. Without it, there is nowhere to trade.</p>
+
+<h3><span class="check-number">02.</span> LP tokens are a receipt</h3>
+<p>Whoever adds money to the pool receives LP tokens (liquidity provider tokens). Think of them as a receipt. Whoever holds the receipt can hand it back to the pool at any time and take their share of the BNB and tokens out.</p>
+
+<h3><span class="check-number">03.</span> The risk: a rug pull</h3>
+<p>If a project's team holds the receipt, they can empty the pool overnight. Holders are left with tokens that can no longer be sold. This is called a rug pull, and it is one of the most common ways people lose money on small tokens.</p>
+
+<h3><span class="check-number">04.</span> What a lock does</h3>
+<p>A lock puts the LP tokens into a separate smart contract with an unlock date. Until that date, nobody can take them back, including the person who locked them. Lockers such as PinkLock, UNCX and Team Finance publish every lock as a public record, so anyone can check it.</p>
+
+<h3><span class="check-number">05.</span> What we did with TMN</h3>
+<p>On 29 October 2026 we locked all of the TMN/BNB LP tokens in the project's main wallet in PinkLock on BNB Smart Chain: 0.2277 LP first, then, after adding more BNB liquidity the same day, a total of 0.3461 LP from the PancakeSwap V2 pool. The unlock date is 29 October 2027. The record is public: <a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">PinkLock record #2089923</a>.</p>
+<p>This follows the earlier steps: contract ownership renounced, so no new TMN can ever be minted, and 10% of the original supply removed.</p>
+
+<h3><span class="check-number">06.</span> What a lock does not prove</h3>
+<p>A lock removes one specific risk: that the locked liquidity is pulled before the unlock date. It does not prove that a token is valuable, that the project will succeed, or that the price will rise.</p>
+<p>It also does not answer the other checks. TMN's supply is still concentrated in founder wallets, which you can see on BscScan. We say that openly, and you should check it for any token, including ours.</p>
+
+<h3><span class="check-number">07.</span> How to check any lock yourself</h3>
+<p>Open the lock record and confirm four things: the pair address matches the token's real pool, the amount locked, the unlock date, and how much of the whole pool that amount represents. A lock that ends next week, or covers a tiny part of the pool, means very little.</p>
+
+<h3>What to take from this</h3>
+<p>Trust is not a promise. It is something you can check. Don't trust. Verify.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>في الدرس الخامس ذكرنا خمسة فحوصات يجب إجراؤها قبل لمس أي رمز. وكان الفحص الخامس: هل لديه سيولة حقيقية وهل هي مقفلة؟ اليوم فعلنا ذلك لرمزنا. يشرح هذا الدرس ما فعلناه وما معناه.</p>
+
+<h3><span class="check-number">01.</span> ما هي السيولة</h3>
+<p>لكي يُتداول رمز على منصة صرافة لا مركزية مثل PancakeSwap، يجب أن يضع أحدهم شيئين معًا في مجمّع: الرمز نفسه، وشيئًا يقدّره الناس مثل BNB. يضع المشتري BNB ويأخذ الرمز؛ ويفعل البائع العكس.</p>
+<p>هذا المجمّع هو سيولة الرمز. بدونه لا يوجد مكان للتداول.</p>
+
+<h3><span class="check-number">02.</span> رمز LP إيصال</h3>
+<p>كل من يضيف مالًا إلى المجمّع يحصل على «رموز LP». تخيّلها إيصالًا. يستطيع حامل الإيصال متى شاء أن يعيده إلى المجمّع ويسحب حصته من BNB والرمز.</p>
+
+<h3><span class="check-number">03.</span> الخطر: سحب البساط (Rug Pull)</h3>
+<p>إذا كان الإيصال بيد فريق المشروع، فيمكنهم تفريغ المجمّع بين ليلة وضحاها. فيبقى حائزو الرمز مع رموز لم تعد قابلة للبيع. يسمّى هذا «سحب البساط» (rug pull)، وهو من أكثر الطرق شيوعًا للخسارة في الرموز الصغيرة.</p>
+
+<h3><span class="check-number">04.</span> ماذا يفعل القفل</h3>
+<p>يضع القفل رموز LP في عقد ذكي منفصل بتاريخ فك محدد. وحتى ذلك التاريخ لا يستطيع أحد سحبها، حتى من قام بالقفل. وتنشر جهات القفل مثل PinkLock وUNCX وTeam Finance كل قفل كسجل عام يمكن لأي شخص التحقق منه.</p>
+
+<h3><span class="check-number">05.</span> ماذا فعلنا مع TMN</h3>
+<p>في 29 أكتوبر 2026 قفلنا في PinkLock على شبكة BNB كل رموز LP الخاصة بمجمّع TMN/BNB الموجودة في المحفظة الرئيسية للمشروع: أولًا 0.2277 LP، وفي اليوم نفسه، بعد إضافة BNB جديد إلى المجمّع، ما مجموعه 0.3461 LP من مجمّع PancakeSwap V2. تاريخ الفك هو 29 أكتوبر 2027. والسجل عام: <a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">سجل PinkLock رقم 2089923</a>.</p>
+<p>هذه الخطوة تأتي بعد الخطوات السابقة: تم التخلي عن ملكية العقد، فلن يُصنع أي TMN جديد أبدًا، وحُذف 10% من المعروض الأولي.</p>
+
+<h3><span class="check-number">06.</span> ما الذي لا يثبته القفل</h3>
+<p>يزيل القفل خطرًا محددًا: أن تُسحب السيولة المقفلة قبل تاريخ الفك. لكنه لا يثبت أن الرمز ذو قيمة، ولا أن المشروع سينجح، ولا أن السعر سيرتفع.</p>
+<p>ولا يجيب عن الفحوصات الأخرى. فمعروض TMN لا يزال مركّزًا في محافظ المؤسسين، ويمكنك رؤية ذلك في BscScan. نقول هذا صراحةً، وعليك أن تفحصه في كل رمز، ومنه رمزنا.</p>
+
+<h3><span class="check-number">07.</span> كيف تفحص أي قفل بنفسك</h3>
+<p>افتح سجل القفل وتحقق من أربعة أمور: أن عنوان المجمّع هو نفسه المجمّع الحقيقي للرمز، والكمية المقفلة، وتاريخ الفك، والنسبة التي تمثلها هذه الكمية من المجمّع كله. القفل الذي ينتهي الأسبوع القادم أو يغطي جزءًا صغيرًا من المجمّع لا معنى كبيرًا له.</p>
+
+<h3>ماذا نستنتج</h3>
+<p>الثقة ليست وعدًا، بل شيء يمكن التحقق منه. لا تثق؛ تحقق.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Applying Check Five to TMN</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">الفحص الخامس على TMN</h2>
+<p lang="en">
+Lesson 05 showed that TMN failed two of the five checks: concentrated supply and no locked liquidity. With today's lock, the liquidity held in the project's main wallet is locked until October 2027. Supply concentration is still open, and we will report on it as it changes.
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">أظهر الدرس الخامس أن TMN كان سيرسب في فحصين من خمسة: معروض مركّز وسيولة غير مقفلة. وبقفل اليوم، أصبحت سيولة المحفظة الرئيسية للمشروع مقفلة حتى أكتوبر 2027. أما تركّز المعروض فما زال مسألة مفتوحة، وسنعلن أي تغيير فيه.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer"><span lang="en">Verify the Lock</span><span lang="fa">فحص القفل</span></a>
+<a class="button" href="lesson05.ar.html"><span lang="en">How to Check Any Token</span><span lang="fa">كيف نفحص أي رمز</span></a>
+<a class="button" href="tmn.ar.html"><span lang="en">About TMN</span><span lang="fa">عن TMN</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Key Concepts</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">المفاهيم الأساسية</h3>
+<ul lang="en">
+<li>Liquidity pool</li>
+<li>LP tokens as a receipt</li>
+<li>Rug pull</li>
+<li>Liquidity lock and unlock date</li>
+<li>Public lock records</li>
+<li>What a lock does not prove</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>مجمّع السيولة</li>
+<li>رمز LP بوصفه إيصالًا</li>
+<li>سحب البساط</li>
+<li>قفل السيولة وتاريخ الفك</li>
+<li>سجلات القفل العامة</li>
+<li>ما لا يثبته القفل</li>
+</ul>
+</div>
+<div class="card">
+<h3 lang="en">Learning Objectives</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">أهداف التعلّم</h3>
+<ul lang="en">
+<li>Explain what a liquidity pool is and why a token needs one.</li>
+<li>Describe what LP tokens represent.</li>
+<li>Explain how a rug pull happens.</li>
+<li>Read a lock record and check its pair, amount, date and share of the pool.</li>
+<li>Name what a lock does not tell you about a token.</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>اشرح ما هو مجمّع السيولة ولماذا يحتاجه كل رمز.</li>
+<li>صِف ما تمثله رموز LP.</li>
+<li>اشرح كيف يحدث سحب البساط.</li>
+<li>اقرأ سجل قفل وتحقق من الزوج والكمية والتاريخ ونسبته من المجمّع.</li>
+<li>اذكر ما لا يخبرك به القفل عن الرمز.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Future Quiz Bank</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بنك أسئلة الاختبار القصير القادم</h2>
+<p class="section-subtitle" lang="en">
+These questions are prepared for the future Ditoman quiz and participation system. They may later support learning scores, reputation layers, and possible TMN reward eligibility.
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">هذه الأسئلة مُعدّة لنظام الاختبار القصير والمشاركة المستقبلي في ديتومان. وقد تصبح لاحقًا أساس نقاط التعلّم وطبقات السمعة وربما شروط الحصول على مكافأة TMN.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Question 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 1</h3>
+<p lang="en">What do LP tokens represent?</p>
+<p lang="fa" dir="rtl" style="text-align:right">علامَ تدلّ رموز LP؟</p>
+<p lang="en">A. A share of the token's company</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. حصة في الشركة المنشئة للرمز</p><p lang="en">B. A receipt for money added to a liquidity pool</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. إيصال بالمال المضاف إلى مجمّع السيولة</p><p lang="en">C. A trading fee discount</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. خصم على رسوم التداول</p><p lang="en">D. A governance vote</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. حق التصويت في إدارة المشروع</p>
+<p class="answer" lang="en">Correct answer: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 2</h3>
+<p lang="en">What is a rug pull?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ما هو سحب البساط؟</p>
+<p class="answer" lang="en">Correct answer: When whoever holds the LP tokens removes the liquidity, leaving holders unable to sell.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: أن يسحب من بيده رموز LP السيولة، فلا يعود حائزو الرمز قادرين على البيع.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 3</h3>
+<p lang="en">True or False: a liquidity lock proves that a token's price will rise.</p>
+<p lang="fa" dir="rtl" style="text-align:right">صح أم خطأ: قفل السيولة يثبت أن سعر الرمز سيرتفع.</p>
+<p class="answer" lang="en">Correct answer: False. It only prevents the locked liquidity from being removed before the unlock date.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: خطأ. القفل يمنع فقط سحب السيولة المقفلة حتى تاريخ الفك.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 4</h3>
+<p lang="en">Which of these should you check on a lock record?</p>
+<p lang="fa" dir="rtl" style="text-align:right">في سجل القفل، أيّ هذه الأمور يجب أن تفحص؟</p>
+<p lang="en">A. The pair address</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. عنوان الزوج</p><p lang="en">B. The amount locked and its share of the pool</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. الكمية المقفلة ونسبتها من المجمّع</p><p lang="en">C. The unlock date</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. تاريخ الفك</p><p lang="en">D. All of the above</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. كل ما سبق</p>
+<p class="answer" lang="en">Correct answer: D</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: د</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 5</h3>
+<p lang="en">When does TMN's locked liquidity unlock?</p>
+<p lang="fa" dir="rtl" style="text-align:right">متى تُفك سيولة TMN المقفلة؟</p>
+<p lang="en">A. 29 October 2026</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. 29 أكتوبر 2026</p><p lang="en">B. 29 October 2027</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. 29 أكتوبر 2027</p><p lang="en">C. Never</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. أبدًا</p><p lang="en">D. Whenever the founders choose</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. متى شاء المؤسسون</p>
+<p class="answer" lang="en">Correct answer: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Sources</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">المصادر</h3>
+<ul>
+<li><a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">PinkLock record #2089923, TMN/WBNB liquidity lock</a></li>
+<li><a href="https://bscscan.com/token/0x6f1836B15de0C6294C16aAec67903515f532fa1C" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BscScan, TMN/WBNB PancakeSwap pair (LP token)</a></li>
+<li><a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BscScan, DiToman (TMN) token contract</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title" lang="en">Instagram Summary</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">ملخص على إنستغرام</h2>
+<p lang="en">
+This lesson was first introduced on Ditoman Instagram. The Instagram version gives a short visual summary, while this page provides the full learning version.
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">نُشر الملخص المصوّر لهذا الدرس أولًا على إنستغرام ديتومان. نسخة إنستغرام تعريف قصير ومصوّر، وهذه الصفحة هي النسخة التعليمية الكاملة.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">View on Instagram</span><span lang="fa">المشاهدة على إنستغرام</span></a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span lang="en">Join on Telegram</span><span lang="fa">الانضمام إلى تلغرام</span></a>
+<a class="button" href="learn.ar.html"><span lang="en">Back to Learn</span><span lang="fa">العودة إلى التعلّم</span></a>
+<a class="button" href="lesson08.ar.html"><span lang="en">Previous Lesson</span><span lang="fa">الدرس السابق</span></a>
+<a class="button" href="lesson10.ar.html"><span lang="en">Next Lesson</span><span lang="fa">الدرس التالي</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Built on structure, driven by discovery.
+</div>
+<div class="container" lang="fa" dir="rtl">تعلّم ديتومان • نبني بالبنية، ونتقدّم بالاكتشاف.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="ar.js?v=20261121a"></script>
+</body>
+</html>

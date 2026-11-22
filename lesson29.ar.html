@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="fa" data-lang-lock="fa" data-site-lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>ما الفرق بين العملة والرمز؟ | What Is the Difference Between a Coin and a Token? | Ditoman Learn</title>
+<meta name="description" content="People use the two words as if they were the same. They are not. This lesson gives one simple test and shows why it matters, including where TMN fits." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson29.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson29.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson29.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson29.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson29.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson29.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson29.html" />
+  <!-- hreflang:end -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="ar.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson29.ar.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="ما الفرق بين العملة والرمز؟ | What Is the Difference Between a Coin and a Token? | Ditoman Learn" />
+<meta property="og:description" content="People use the two words as if they were the same. They are not. This lesson gives one simple test and shows why it matters, including where TMN fits." />
+<meta property="og:url" content="https://ditoman.com/lesson29.ar.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson29.ar.html#page",
+   "url": "https://ditoman.com/lesson29.ar.html",
+   "name": "ما الفرق بين العملة والرمز؟ | What Is the Difference Between a Coin and a Token? | Ditoman Learn",
+   "description": "People use the two words as if they were the same. They are not. This lesson gives one simple test and shows why it matters, including where TMN fits.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "ما الفرق بين العملة والرمز؟ | What Is the Difference Between a Coin and a Token?",
+     "item": "https://ditoman.com/lesson29.ar.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.ar.html" aria-label="Ditoman | ديتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">ديتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.ar.html" class="active">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.ar.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.ar.html">TMN</a>
+<a href="index.ar.html#whitepapers">Whitepaper</a>
+<a href="posts.html">Posts</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson29-cover.jpg" alt="What Is the Difference Between a Coin and a Token? Ditoman lesson image" style="width:100%;height:auto"><img lang="en" src="lesson29-cover-en.jpg" alt="What Is the Difference Between a Coin and a Token? Ditoman lesson image" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Blockchain • Coins and Tokens</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">البلوكتشين • العملة والرمز</div>
+<h1 lang="en">What Is the Difference Between a Coin and a Token?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">ما الفرق بين العملة والرمز (توكن)؟</h1>
+<p class="subtitle" lang="en">People use the two words as if they were the same. They are not. This lesson gives one simple test and shows why it matters, including where TMN fits.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">يستخدم الناس الكلمتين كأنهما واحد، لكنهما ليستا واحدًا. يعطي هذا الدرس اختبارًا بسيطًا ويبيّن لماذا هو مهم، ومنه مكان TMN.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Level</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">المستوى</span><strong lang="en">Beginner</strong><strong lang="fa" dir="rtl" style="display:block">مبتدئ</strong></div>
+<div class="meta-box"><span lang="en">Reading Time</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">مدة القراءة</span><strong lang="en">6 Minutes</strong><strong lang="fa" dir="rtl" style="display:block">6 دقائق</strong></div>
+<div class="meta-box"><span lang="en">Learning Points</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">نقاط التعلّم</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">20 نقطة</strong></div>
+<div class="meta-box"><span lang="en">Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">اختبار قصير</span><strong lang="en">5 Questions</strong><strong lang="fa" dir="rtl" style="display:block">5 أسئلة</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Lesson Content</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوى الدرس</h2>
+<p class="section-subtitle" lang="en">Read the lesson in English or Persian.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">اقرأ الدرس بالفارسية أو الإنجليزية.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">English</button>
+<button class="lang-button" onclick="showLanguage('fa')">العربية</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">In a shop you can pay with the country's own banknotes, or with a voucher the shop itself issued. Both are called money in daily speech, but they live in different places.</p>
+<p lang="en">Crypto has the same split, and the words are coin and token.</p>
+<h3><span class="check-number">01.</span> The one-line test</h3>
+<p lang="en">A coin is native to its own blockchain. A token is built on top of another blockchain. Kraken's guide gives the examples: BTC and ETH are coins; USDT and UNI are tokens.</p>
+<p lang="en">Ask one question: does this asset have its own chain, or does it live on someone else's? That settles it.</p>
+<figure class="lz-fig"><figcaption>Coin vs token</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>Coin</th>
+<th>Token</th>
+</tr></thead><tbody>
+<tr><td>Where it lives</td><td>On its own blockchain</td><td>On another blockchain</td></tr>
+<tr><td>Examples</td><td>BTC, ETH</td><td>USDT, UNI, TMN</td></tr>
+<tr><td>Created by</td><td>The chain's own rules</td><td>A smart contract</td></tr>
+<tr><td>Depends on</td><td>Its chain</td><td>Its chain and its contract</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">02.</span> Why coins exist</h3>
+<p lang="en">A coin is what the chain itself uses. It pays the fees and rewards the people who keep it running, as Lesson 27 showed. Without the coin the network would have no way to pay for its own operation.</p>
+<h3><span class="check-number">03.</span> How tokens are made</h3>
+<p lang="en">Tokens are made by smart contracts, the programs from Lesson 28. A developer writes a contract that keeps a list of balances and rules for moving them. No new blockchain is needed.</p>
+<h3><span class="check-number">04.</span> Why a standard helps</h3>
+<p lang="en">Ethereum has a standard for this called ERC-20, for fungible tokens, where one unit is interchangeable with another. The standard fixes the common names of the functions: name, symbol, decimals, total supply, balance of an address, transfer and approve, and two events that record transfers and approvals.</p>
+<p lang="en">Because every compliant token speaks the same language, a wallet or an app that supports the standard can work with any of them without special code.</p>
+<h3><span class="check-number">05.</span> One warning from the standard</h3>
+<p lang="en">ethereum.org notes that a plain ERC-20 can lose tokens that are sent to a contract that does not know how to handle them. Tokens are not magic: sending to a wrong address is still a mistake you cannot undo.</p>
+<h3><span class="check-number">06.</span> Other chains, similar standards</h3>
+<p lang="en">Other chains have their own versions. BNB Smart Chain uses BEP-20, which follows the same idea. TMN, the digital toman, is a BEP-20 token on BNB Smart Chain, as described on its page on this site.</p>
+<h3><span class="check-number">07.</span> Why the difference matters to you</h3>
+<p lang="en">A coin depends on its chain's own security. A token depends on both its chain and its contract. Understanding what an asset sits on tells you what could go wrong, and who, if anyone, can change it.</p>
+<p lang="en">The question is not which is better. It is knowing which one you hold.</p>
+<h3>What to take from this</h3>
+<p lang="en">A coin is native to its own blockchain; a token is built on another.</p>
+<p lang="en">BTC and ETH are coins; USDT and UNI are tokens.</p>
+<p lang="en">Tokens are created by smart contracts, with no new chain needed.</p>
+<p lang="en">Standards such as ERC-20 and BEP-20 let wallets work with many tokens.</p>
+<p lang="en">TMN is a BEP-20 token on BNB Smart Chain.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">في متجر يمكنك الدفع بالأوراق النقدية لبلدك نفسه أو بقسيمة أصدرها المتجر نفسه. وفي الحديث اليومي يسمى كلاهما «مالًا»، لكنهما يعيشان في مكانين مختلفين.</p>
+<p lang="fa" dir="rtl" style="text-align:right">وفي العملات المشفّرة التقسيم نفسه، وكلمتاه العملة (coin) والرمز (token).</p>
+<h3><span class="check-number">01.</span> اختبار بسطر واحد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">العملة أصيلة في بلوكتشينها هي. والرمز يُبنى على بلوكتشين آخر. ويضرب دليل Kraken مثالًا: BTC وETH عملتان؛ وUSDT وUNI رمزان.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اسأل سؤالًا واحدًا: هل لهذا الأصل سلسلته الخاصة أم يعيش على سلسلة أخرى؟ وهذا يحدد الجواب.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>العملة والرمز</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>العملة</th>
+<th>الرمز</th>
+</tr></thead><tbody>
+<tr><td>أين يعيش</td><td>على بلوكتشينها هي</td><td>على بلوكتشين آخر</td></tr>
+<tr><td>أمثلة</td><td>BTC، ETH</td><td>USDT، UNI، TMN</td></tr>
+<tr><td>مصنوعة بواسطة</td><td>قواعد السلسلة نفسها</td><td>عقد ذكي</td></tr>
+<tr><td>تعتمد على</td><td>سلسلتها</td><td>السلسلة وعقدها هو</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">02.</span> لماذا توجد العملات</h3>
+<p lang="fa" dir="rtl" style="text-align:right">العملة هي ما تستخدمه السلسلة نفسها. تدفع الرسوم وتكافئ من يُبقون السلسلة تعمل، كما بيّن الدرس 27. وبلا عملة لن يكون للشبكة وسيلة لدفع تكلفة عملها.</p>
+<h3><span class="check-number">03.</span> كيف تُصنع الرموز</h3>
+<p lang="fa" dir="rtl" style="text-align:right">تصنع الرموزَ عقودٌ ذكية، وهي البرامج نفسها في الدرس 28. يكتب المطوّر عقدًا يحفظ قائمة أرصدة وقواعد انتقالها. ولا حاجة إلى بلوكتشين جديد.</p>
+<h3><span class="check-number">04.</span> لماذا يفيد المعيار</h3>
+<p lang="fa" dir="rtl" style="text-align:right">لدى إيثريوم معيار لهذا يسمى ERC-20، للرموز المتماثلة، حيث تكون كل وحدة قابلة للاستبدال بأخرى. ويثبّت المعيار أسماء الدوال المشتركة: الاسم والرمز وعدد الخانات العشرية والعرض الكلي ورصيد عنوان والتحويل والموافقة، وحدثين يسجلان التحويلات والموافقات.</p>
+<p lang="fa" dir="rtl" style="text-align:right">ولأن كل رمز مطابق يتكلم اللغة نفسها، تستطيع محفظة أو برنامج يدعم المعيار العمل معها كلها دون شيفرة خاصة.</p>
+<h3><span class="check-number">05.</span> تحذير من المعيار نفسه</h3>
+<p lang="fa" dir="rtl" style="text-align:right">يذكّر ethereum.org بأن ERC-20 البسيط قد يفقد الرموز التي تُرسل إلى عقد لا يعرف كيف يتعامل معها. الرموز ليست سحرًا: الإرسال إلى عنوان خاطئ ما زال خطأً لا رجعة فيه.</p>
+<h3><span class="check-number">06.</span> سلاسل أخرى، معايير مشابهة</h3>
+<p lang="fa" dir="rtl" style="text-align:right">للسلاسل الأخرى نسختها الخاصة. تستخدم BNB Smart Chain معيار BEP-20 الذي يتبع الفكرة نفسها. وTMN، التومان الرقمي، رمز BEP-20 على BNB Smart Chain، كما ورد في صفحته في هذا الموقع نفسه.</p>
+<h3><span class="check-number">07.</span> لماذا يهمك هذا الفرق</h3>
+<p lang="fa" dir="rtl" style="text-align:right">العملة تعتمد على أمان سلسلتها. والرمز يعتمد على سلسلته وعلى عقده. ومعرفة ما يقوم عليه الأصل تبيّن ما الذي قد يسوء ومن، إن وُجد، يستطيع تغييره.</p>
+<p lang="fa" dir="rtl" style="text-align:right">السؤال ليس أيهما أفضل. بل أن تعرف أيهما بين يديك.</p>
+<h3>ماذا نستنتج</h3>
+<p lang="fa" dir="rtl" style="text-align:right">العملة أصيلة في بلوكتشينها؛ والرمز يُبنى على بلوكتشين آخر.</p>
+<p lang="fa" dir="rtl" style="text-align:right">BTC وETH عملتان؛ وUSDT وUNI رمزان.</p>
+<p lang="fa" dir="rtl" style="text-align:right">الرموز تصنعها عقود ذكية، بلا سلسلة جديدة.</p>
+<p lang="fa" dir="rtl" style="text-align:right">معايير مثل ERC-20 وBEP-20 تمكّن المحافظ من العمل مع رموز كثيرة.</p>
+<p lang="fa" dir="rtl" style="text-align:right">TMN رمز BEP-20 على BNB Smart Chain.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Two lessons that connect</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">درسان مرتبطان</h2>
+<p lang="en">Lesson 28 explains the smart contracts that make tokens. Lesson 5 shows how to check any token before you touch it.</p>
+<p lang="fa" dir="rtl" style="text-align:right">يشرح الدرس 28 العقود الذكية التي تصنع الرموز. ويبيّن الدرس 5 كيف تفحص أي رمز قبل أن تمسّه.</p>
+<div class="cta-row">
+<a class="cta" href="lesson28.ar.html"><span lang="en">Ethereum and smart contracts</span><span lang="fa">إيثريوم والعقد الذكي</span></a>
+<a class="button" href="lesson05.ar.html"><span lang="en">How to check any token before you touch it</span><span lang="fa">قبل أن تلمس أي رمز، افحص هذه الأمور</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Key Concepts</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">المفاهيم الأساسية</h3>
+<ul lang="en"><li>Coin</li><li>Token</li><li>Native asset</li><li>ERC-20</li><li>BEP-20</li><li>Fungible</li><li>Wallet compatibility</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>العملة</li><li>الرمز</li><li>أصل أصيل</li><li>ERC-20</li><li>BEP-20</li><li>متماثل</li><li>التوافق مع المحفظة</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Learning Objectives</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">أهداف التعلّم</h3>
+<ul lang="en"><li>Apply the one-line test to any asset.</li><li>Give two examples of coins and two of tokens.</li><li>Explain how a token is created.</li><li>Say why a standard such as ERC-20 helps.</li><li>Place TMN correctly.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>طبّق اختبار السطر الواحد على أي أصل.</li><li>اضرب مثالين على العملة ومثالين على الرمز.</li><li>اشرح كيف يُصنع الرمز.</li><li>قل لماذا يفيد معيار مثل ERC-20.</li><li>ضع TMN في مكانه الصحيح.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Quiz</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">اختبار قصير</h2>
+<p class="section-subtitle" lang="en">Check what stayed with you. The answer is under each question.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">انظر ماذا علق في ذهنك. الإجابة تحت كل سؤال.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Question 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 1</h3>
+<p lang="en">Which one is a coin?</p>
+<p lang="fa" dir="rtl" style="text-align:right">أيٌّ منها عملة؟</p>
+<p lang="en">A. ETH</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. ETH</p>
+<p lang="en">B. USDT</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. USDT</p>
+<p lang="en">C. UNI</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. UNI</p>
+<p class="answer" lang="en">Correct answer: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: أ</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 2</h3>
+<p lang="en">What is the one-line test?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ما اختبار السطر الواحد؟</p>
+<p lang="en">A. Does it have its own blockchain?</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. هل له بلوكتشينه الخاص؟</p>
+<p lang="en">B. Is its price high?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. هل سعره مرتفع؟</p>
+<p lang="en">C. Is its name short?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. هل اسمه قصير؟</p>
+<p class="answer" lang="en">Correct answer: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: أ</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 3</h3>
+<p lang="en">What creates a token?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ما الذي يصنع الرمز؟</p>
+<p lang="en">A. A smart contract</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. عقد ذكي</p>
+<p lang="en">B. A new mining rig</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. جهاز تعدين جديد</p>
+<p lang="en">C. A central bank</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. بنك مركزي</p>
+<p class="answer" lang="en">Correct answer: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: أ</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 4</h3>
+<p lang="en">What does ERC-20 standardise?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ما الذي يوحّده ERC-20؟</p>
+<p lang="en">A. The common functions of fungible tokens</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. الدوال المشتركة للرموز المتماثلة</p>
+<p lang="en">B. The price of tokens</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. سعر الرموز</p>
+<p lang="en">C. Block time</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. زمن الكتلة</p>
+<p class="answer" lang="en">Correct answer: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: أ</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">السؤال 5</h3>
+<p lang="en">TMN is a token of which standard and chain?</p>
+<p lang="fa" dir="rtl" style="text-align:right">TMN رمز أي معيار وأي سلسلة؟</p>
+<p lang="en">A. BEP-20 on BNB Smart Chain</p>
+<p lang="fa" dir="rtl" style="text-align:right">أ. BEP-20 على BNB Smart Chain</p>
+<p lang="en">B. A coin on Bitcoin</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. عملة على البيتكوين</p>
+<p lang="en">C. Its own blockchain</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. بلوكتشين مستقل خاص به</p>
+<p class="answer" lang="en">Correct answer: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">الإجابة الصحيحة: أ</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Sources</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">المصادر</h3>
+<ul><li><a href="https://www.kraken.com/learn/crypto-coins-tokens-difference" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Kraken Learn: the difference between crypto coins and tokens (BTC and ETH are coins; USDT and UNI are tokens)</a></li><li><a href="https://ethereum.org/developers/docs/standards/tokens/erc-20.md" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">ethereum.org: the ERC-20 token standard (shared interface, risk of tokens sent to contracts that cannot handle them)</a></li></ul>
+<p lang="en" style="font-size:0.95rem">TMN's standard and chain follow the token page on this site. General explanation, not investment advice.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">معيار TMN وسلسلته مأخوذان من صفحة الرمز في هذا الموقع نفسه. شرح عام لا نصيحة استثمارية.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">نتابع معًا</span><span lang="en">Follow along</span></h2>
+<p lang="en">New lessons are announced first on Ditoman's channels.</p>
+<p lang="fa" dir="rtl" style="text-align:right">تُعرَض الدروس الجديدة أولًا على قنوات ديتومان.</p>
+<div class="cta-row">
+<a class="button" href="learn.ar.html"><span lang="en">Back to Learn</span><span lang="fa">العودة إلى التعلّم</span></a>
+<a class="button" href="lesson28.ar.html"><span lang="en">Previous Lesson</span><span lang="fa">الدرس السابق</span></a>
+<a class="button" href="lesson30.ar.html"><span lang="en">Next Lesson</span><span lang="fa">الدرس التالي</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Built on structure, driven by discovery.
+</div>
+<div class="container" lang="fa" dir="rtl">تعلّم ديتومان • نبني بالبنية، ونتقدّم بالاكتشاف.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="ar.js?v=20261121a"></script>
+</body>
+</html>

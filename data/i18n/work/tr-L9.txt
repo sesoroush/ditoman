@@ -1,0 +1,220 @@
+1790|Ayın yirmisi ve hesap neredeyse boş. Olağandışı bir şey olmadı: ne acil bir durum ne de büyük bir alışveriş. Yine de para gitti.
+1791|Bu, dünyadaki en yaygın para deneyimidir ve basit bir nedeni vardır. Küçük ödemeler kolay unutulur ve bir ay onları saklamaya yetecek kadar uzundur. Bütçe, ayı daha olmadan görmenin bir yolundan ibarettir.
+1792|Bütçe nedir ve ne değildir
+1793|Bütçe, gelirinizin planıdır: ne kadar geliyor ve her bölümü ne için. Bir ceza değildir ve her şeye hayır deme sözü de değildir.
+1794|Onu bir harita olarak düşünün. Harita yürümenizi engellemez; nerede olduğunuzu gösterir. Onsuz harcama rastgele hissedilir. Onunla seçebilirsiniz.
+1795|Kesmeyle değil, bakmayla başlayın
+1796|Herhangi bir şeyi değiştirmeden önce bir ay yalnızca izleyin. Her ödemeyi yazın ya da banka uygulamanızın zaten tuttuğu listeyi kullanın.
+1797|Ay sonunda ödemeleri üç yığına ayırın: ödemeniz gerekenler, ödemeyi seçtikleriniz ve kenara koyduğunuz para. Çoğu insan en az bir yığının büyüklüğüne şaşırır.
+1798|Rakamları yargılamayın. Bu ilk ay yalnızca görmek içindir.
+1799|Bilinen bir pratik kural: 50/30/20
+1800|Amerikalı hukukçu ve sonradan senatör olan Elizabeth Warren, 2005 tarihli *All Your Worth* kitabında, vergiden sonra hesabınıza fiilen ulaşan eline geçen maaşın basit bir bölünmesini anlattı.
+1801|İhtiyaçlar için yüzde 50:
+1802|konut, faturalar, ulaşım, market, temel giyim, sigorta, sağlık ve borçların asgari ödemeleri.
+1803|İstekler için yüzde 30:
+1804|dışarıda yemek, eğlence, seyahat, abonelikler, fazladan giysiler.
+1805|Birikim için yüzde 20:
+1806|acil durum fonu, daha büyük bir hedef, ek borç ödemeleri.
+1807|50/30/20 kuralına bir bakış
+1808|Yığın
+1809|Eline geçen maaştan pay
+1810|Örnekler
+1811|Uymuyorsa
+1812|İhtiyaçlar
+1813|Konut, faturalar, ulaşım, market, sigorta, asgari borç ödemeleri
+1814|Önce en büyük ihtiyacı arayın
+1815|İstekler
+1816|Dışarıda yemek, eğlence, seyahat, abonelikler
+1817|Birikime dokunmadan önce burada kısın
+1818|Birikim
+1819|Acil durum fonu, hedefler, ek borç ödemeleri
+1820|Daha küçük bir pay tutun ama tutun
+1821|Kural uymadığında kullanmak
+1822|Kural bir başlangıç noktasıdır, bir yasa değil. Bazı şehirlerde tek başına kira maaşın yarısından fazlasını alır. Bazı aylarda bir tıbbi fatura her şeyi değiştirir.
+1823|İhtiyaçlar yüzde 50'nin üzerindeyse vazgeçmeyin. Fikri koruyun, rakamları değiştirin: belki şimdilik 60/25/15. Önemli olan üç yığının da var olması ve birikimin artakalan değil, bir yığın olmasıdır.
+1824|Önce kendinize ödeyin
+1825|Bütçelemedeki en yararlı alışkanlık küçüktür. Gelirinizin geldiği gün, bir şey harcamadan önce birikim kısmını ilk olarak taşıyın. Ay sonuna kadar beklerseniz, genellikle taşınacak bir şey kalmaz.
+1826|Küçük bir tutar bile sayılır. Alışkanlık büyüklükten daha önemlidir ve büyüklük sonradan artabilir.
+1827|On dakikada aylık gözden geçirme
+1828|Ayda bir, üç soruyla on dakika oturun. Paranın çoğu nereye gitti? Beni ne şaşırttı? Gelecek ay deneyeceğim tek değişiklik ne?
+1829|Bir değişiklik yeter. Bütçeler her şeyi bir anda düzeltmeye çalıştıklarında başarısız olur.
+1830|Fiyatlar değişir, bu yüzden bütçe de değişmelidir
+1831|Fiyatlar yükseldiğinde, Ders 12'nin gösterdiği gibi aynı gelir daha azını alır. Altı ay önce yazılmış bir bütçe şimdiden eskimiş olabilir. Temel masraflarınızın maliyeti değiştiğinde rakamları gözden geçirin, yalnızca belirli bir tarihte değil.
+1832|Bütçe ayınızın bir haritasıdır, bir ceza değil.
+1833|Bir şeyi değiştirmeden önce bir ay boyunca bakın.
+1834|50/30/20 bir pratik kuraldır: ihtiyaçlar, istekler, birikim. Rakamları hayatınıza göre ayarlayın.
+1835|Gelir geldiği gün önce birikimi taşıyın.
+1836|Ayda bir gözden geçirin ve her seferinde tek bir şeyi değiştirin.
+1837|Birbirine bağlanan iki ders
+1838|Ders 12, fiyatlar yükseldiğinde bir bütçenin neden güncellenmesi gerektiğini açıklar. Ders 19, taksit planlarının gelecek ayın gelirinden nasıl sessizce daha büyük bir pay aldığını gösterir.
+1839|Para neden satın alma gücünü kaybeder?
+1840|Bugün al, yarın öde
+1841|Bütçe
+1842|Gelir ve eline geçen maaş
+1843|İhtiyaçlar ve istekler
+1844|Birikim oranı
+1845|50/30/20 kuralı
+1846|Aylık gözden geçirme
+1847|Bütçenin ne olduğunu ve ne olmadığını söyleyin.
+1848|Bir aylık harcamayı izleyin ve üç yığına ayırın.
+1849|50/30/20 kuralını açıklayın ve kendi rakamlarınıza göre ayarlayın.
+1850|Birikimin neden önce taşınması gerektiğini anlatın.
+1851|On dakikalık bir aylık gözden geçirme planlayın.
+1852|Bütçelemede en iyi ilk adım nedir?
+1853|A. Her harcama kategorisini bir anda kesmek
+1854|B. Bir aylık harcamayı izleyip kaydetmek
+1855|C. İkinci bir banka hesabı açmak
+1856|50/30/20 kuralında 20 neyi temsil eder?
+1857|A. Birikim
+1858|B. İstekler
+1859|C. Vergiler
+1860|Yüzdeler hangi paraya uygulanır?
+1861|A. Vergiden sonra eline geçen maaş
+1862|B. Yalnızca ikramiyeler
+1863|C. Yalnızca zaten yapılmış birikim
+1864|İhtiyaçlar gelirinizin yüzde 50'sinin üzerinde. Ders ne öneriyor?
+1865|A. Bütçelemeden vazgeçmek
+1866|B. Fikri korumak ve rakamları değiştirmek
+1867|C. Birikimi tamamen bırakmak
+1868|'Önce kendinize ödeyin' ne demektir?
+1869|A. Önce isteklere harcamak
+1870|B. Gelir geldiği gün birikim kısmını taşımak
+1871|C. Borçları en sona bırakmak
+1872|SoFi: Elizabeth Warren'ın All Your Worth (2005) kitabıyla yaygınlaştırdığı 50/30/20 bütçesi ve üç kategorisi
+1873|50/30/20 bir pratik kuraldır, resmî bir standart değil. Bu dersteki diğer her şey genel yönlendirmedir, kişisel finansal tavsiye değil.
+1874|Elinizin Altında Her Zaman Ne Kadar Para Olmalı? | Ditoman Öğren
+1875|Bir araba tamiri, bir tıbbi fatura, gelirsiz bir ay: sürprizler normaldir. Bu ders acil durum fonunun ne olduğunu, ne kadar büyük olması gerektiğini, nerede tutulacağını ve küçük nasıl başlanacağını açıklar
+1876|Elinizin Altında Her Zaman Ne Kadar Para Olmalı? Ditoman ders görseli
+1877|Para • Güvenlik Ağı
+1878|Bir araba tamiri, bir tıbbi fatura, gelirsiz bir ay: sürprizler normaldir. Bu ders acil durum fonunun ne olduğunu, ne kadar büyük olması gerektiğini, nerede tutulacağını ve küçük nasıl başlanacağını açıklar.
+1879|İki kişi aynı maaşı kazanıyor. Bir gün ikisi de beklenmedik bir faturayla karşılaşıyor. Birincisi küçük bir rezervden öder ve devam eder. İkincisi borçlanır, diğer ödemelerde geride kalır ve aylarca yetişmeye çalışır.
+1880|Aralarındaki fark gelir değildir. Sürpriz gelmeden önce orada olan bir rezervdir.
+1881|Acil durum fonu nedir
+1882|Acil durum fonu yalnızca plansız, zorunlu masraflar için kenara ayrılmış paradır: ani bir tamir, bir tıbbi fatura, iki iş arasındaki boşluk. Tatil, indirim ya da yatırım için değildir.
+1883|İşi, bir krizi bir rahatsızlığa dönüştürmektir. Sürpriz geldiğinde, Ders 19'un uyardığı gibi yüksek bedelle borçlanmak yerine fondan ödersiniz.
+1884|Bir tanesine sahip olmak ne kadar yaygın?
+1885|ABD'de Federal Rezerv her yıl hane halklarına sorar. 2024 anketinde yetişkinlerin yüzde 63'ü 400 dolarlık bir acil gideri nakit ya da eşdeğeriyle karşılayacağını söyledi. Ve yüzde 55'i üç aylık masrafı karşılayacak kadar para ayırdığını söyledi.
+1886|Tersinden söylersek, dünyanın en zengin ülkesinde yetişkinlerin büyük bir kısmı küçük bir sürprizde zorlanır. Rezerv tutmak sağduyudur ama yaygın bir uygulama değildir.
+1887|Fonu dört adımda oluşturmak
+1888|Tipik bir sürpriz için küçük bir tampon
+1889|Bir aylık temel masraf
+1890|Üç ay, gelir düzensizse daha fazla
+1891|Kullandıktan sonra: yeni isteklerden önce önce doldurun
+1892|Ne kadar büyük olmalı?
+1893|Tek bir doğru büyüklük yoktur. ABD Tüketici Finansal Koruma Bürosu sabit bir hedef vermez; doğru tutarın durumunuza bağlı olduğunu söyler ve daha önce karşılaştığınız beklenmedik masraflara bakmanızı önerir.
+1894|Birçok rehber üç ila altı aylık temel masrafı pratik kural olarak kullanır ve Federal Rezerv'in üç aylık sorusu da aynı fikri izler. Onu bir sınav değil, bir yön olarak görün.
+1895|Düşünmenin pratik bir yolu adım adım düşünmektir. Önce tipik bir sürpriz için küçük bir tampon. Sonra bir aylık temel masraflar. Sonra üç ay, geliriniz düzensizse ya da başkalarına bakıyorsanız daha fazla.
+1896|Nerede tutulur
+1897|Fon güvenli, erişilebilir ve harcaması hafifçe zahmetli olmalıdır. CFPB, bir banka veya kredi birliği hesabını en güvenli yerlerden biri olarak, aşırı harcayamayacağınız bir ön ödemeli kartı veya güvenli bir yerde tutulan nakdi sayar ve nakdin kaybolabileceği veya çalınabileceği uyarısını yapar.
+1898|Ayrı bir hesap yardımcı olur, çünkü parayı sıradan bir günde gözden uzak tutar.
+1899|Fonun ne yapması gerektiğini düşünün: gelecek ay, aynı tutarda orada olmak. Fiyatı sert düşebilecek bir varlık, Ders 10 ve 18'in gösterdiği gibi, bu iş için kötü bir uyumdur. Bu herhangi bir ürün hakkında tavsiye değil, paranın görevinin bir tarifidir.
+1900|Küçük nasıl başlanır
+1901|CFPB, küçük bir tutarın bile bir miktar güvence sağladığını vurgular ve büyük jestler yerine alışkanlıklar önerir.
+1902|Otomatikleştirin:
+1903|gelir geldiği gün, ne kadar küçük olursa olsun, düzenli bir transfer.
+1904|Tek seferlik parayı biriktirin:
+1905|bir vergi iadesi, bir hediye, bir ikramiye.
+1906|Akışı izleyin:
+1907|daha güçlü bir haftada fazlasını fona taşıyın.
+1908|Kullanmak ve yeniden doldurmak
+1909|Fonu kullanmak başarısızlık değildir. Tam da var olduğu şeydir. Sonrasında, onu yeniden doldurmayı sonraki ayların ilk hedefi yapın.
+1910|Neyin acil durum sayılacağını önceden belirleyin. İstediğiniz bir şeyde indirim, acil durum değildir.
+1911|Acil durum fonu bir krizi bir rahatsızlığa dönüştürür.
+1912|Tek bir doğru büyüklük yoktur. Küçük bir tamponla, sonra bir ayla, sonra üç ayla başlayın.
+1913|Güvenli, erişilebilir ve kolay ulaşımın biraz dışında tutun.
+1914|Küçük transferleri otomatikleştirin; alışkanlık tutardan daha önemlidir.
+1915|Kullanmak onun amacıdır. Sonrasında yeniden doldurun.
+1916|Ders 22, aylık bütçede birikim için yüzde 20'yi nasıl bulacağınızı gösterir. Ders 18, birikimleri tutma yerleri olarak altın, dolar ve Bitcoin'i karşılaştırır.
+1917|Aylık param nereye gidiyor?
+1918|Birikim için altın, dolar ya da Bitcoin
+1919|Acil durum fonu
+1920|Temel masraflar
+1921|Pratik kural
+1922|Otomatik transfer
+1923|Fonu yeniden doldurma
+1924|Acil durum fonunun ne işe yaradığını açıklayın.
+1925|Ne kadar büyük olabileceğini adım adım anlatın.
+1926|Nerede güvenle tutulabileceğini söyleyin.
+1927|Küçük bir otomatik alışkanlık başlatın.
+1928|Neyin acil durum sayılacağını önceden belirleyin.
+1929|Acil durum fonu ne içindir?
+1930|A. Plansız, zorunlu masraflar
+1931|B. Tatil harcaması
+1932|C. İndirimde alışveriş
+1933|Federal Rezerv'in 2024 anketinde, ABD'li yetişkinlerin yüzde kaçı 400 dolarlık bir acil gideri nakit veya eşdeğeriyle karşılardı?
+1934|CFPB bir acil durum fonu için sabit bir büyüklük belirler mi?
+1935|A. Evet, tam altı ay
+1936|B. Hayır, durumunuza bağlıdır
+1937|C. Evet, bir hafta
+1938|Fiyatı sert düşen bir varlık neden acil durum fonu için kötü bir uyumdur?
+1939|A. Fonun gelecek ay aynı tutarda orada olması gerekir
+1940|B. Tutması yasa dışıdır
+1941|C. Bankalar saklamayı reddeder
+1942|CFPB birikim oluşturmak için hangi alışkanlığı önerir?
+1943|A. Otomatik düzenli transferler
+1944|B. Ay sonuna kadar beklemek
+1945|C. Biriktirmek için borçlanmak
+1946|Federal Rezerv: 2024'te ABD Hane Halklarının Ekonomik Refahı, birikim ve yatırımlar (2025)
+1947|Tüketici Finansal Koruma Bürosu: acil durum fonu oluşturmak için temel rehber
+1948|Anket rakamları ABD'li yetişkinleri tanımlar ve bir rezervin ne kadar yaygın olduğuna dair örnek olarak verilmiştir. Üç ila altı ay fikri yaygın bir pratik kuraldır, resmî bir hedef değil. Genel yönlendirme, kişisel tavsiye değil.
+1949|Banka Faizi Nasıl Hesaplanır? | Ditoman Öğren
+1950|Basit, bileşik ve günlük faiz kulağa benzer gelir, ama on ya da yirmi yıl içinde çok farklı sonuçlar verir. Bu ders üçünü elle kontrol edebileceğiniz küçük sayılarla gösterir
+1951|Banka Faizi Nasıl Hesaplanır? Ditoman ders görseli
+1952|Para • Faiz
+1953|Basit, bileşik ve günlük faiz kulağa benzer gelir, ama on ya da yirmi yıl içinde çok farklı sonuçlar verir. Bu ders üçünü elle kontrol edebileceğiniz küçük sayılarla gösterir.
+1954|Yılda yüzde 5 ödeyen bir hesaba 1.000 birim koyuyorsunuz. Bir yıl sonra 1.050'niz var. Bu konuda herkes aynı fikirde. Anlaşmazlık ikinci yılda başlar.
+1955|Yüzde 5 yine 1.000 üzerinden mi uygulanır, yoksa 1.050 üzerinden mi? Bu küçük soru, basit ve bileşik faiz arasındaki tüm farktır.
+1956|Basit faiz
+1957|Basit faizde oran her zaman asıl tutara uygulanır. Faiz, her yıl 1.000'in yüzde 5'idir, yani 50.
+1958|10 yıl sonra: 1.000 + 10 × 50 = 1.500. 20 yıl sonra: 2.000. Bakiye düz bir çizgide büyür.
+1959|ABD Tüketici Finansal Koruma Bürosu bunu şöyle ifade eder: bileşik faiz, hem biriktirdiğiniz paraya hem de yol boyunca kazandığınız faize faiz kazandığınız durumdur.
+1960|Kendi örneği yılda yüzde 5'ten 1.000 dolardır: birinci yıl sonunda 1.050 ve ikinci yıl sonunda 1.102,50. Fazladan 2,50 faizin faizidir.
+1961|Yılda yüzde 5'ten 1.000: basit ve bileşik
+1962|Yıl
+1963|Basit
+1964|Bileşik
+1965|Zamanın farka yaptığı
+1966|Fark çok küçük başlar ve sonra büyür. Aynı yıllık yüzde 5'te:
+1967|10 yıl:
+1968|basit 1.500, bileşik yaklaşık 1.628,89.
+1969|20 yıl:
+1970|basit 2.000, bileşik yaklaşık 2.653,30.
+1971|Oran hakkında hiçbir şey değişmedi. Yalnızca oranın uygulandığı baz değişti. CFPB ekler: daha sık bileşikleme, daha yüksek oran ya da anaparaya ekleme yapmak birikimin hepsini daha hızlı büyütür.
+1972|Günlük faiz
+1973|Bazı hesaplar ve krediler faizi günlük hesaplar. Yıllık yüzde 5'lik basit günlük faizle bir gün 1.000 × 0,05 ÷ 365 kazandırır ve 30 gün yaklaşık 4,11 kazandırır.
+1974|Günlük hesaplama önemlidir, çünkü paranın bir yerde ne kadar durduğunu gösterir. Ayın sonlarında gelen para daha az gün kazanır ve geç ödenen bir kredi daha fazla gün maliyet çıkarır.
+1975|Oran ve getiri
+1976|Yılda yüzde 5, aylık bileşikleme olarak verilen bir oran yıl boyunca tam olarak yüzde 5 vermez. Her ayın faizi de faiz kazandığı için etkin yıllık sonuç yaklaşık yüzde 5,12'dir.
+1977|İki teklifi karşılaştırırken aynı temelde karşılaştırın: aynı dönem ve aynı bileşikleme. Tek başına manşet oranı yeterli değildir.
+1978|Aynı matematik size karşı da çalışır
+1979|Bileşik faiz iki yönde de çalışır. Birikimde yararlıdır; bir borçta, bir şey ödeseniz bile bakiyenin büyüyebilmesinin nedenidir. Ders 19 taksit maliyetlerinin nasıl biriktiğini gösterdi ve bu, altındaki motordur.
+1980|Enflasyon da bileşiklenir
+1981|Bir banka oranı yalnızca sayının büyümesini söyler. Ders 12, fiyatların da bileşiklendiğini açıklar. Paranızın gerçekten büyüyüp büyümediği, faizin fiyat artışıyla karşılaştırılmasına bağlıdır, yalnızca faize değil.
+1982|Basit faiz asıl tutara uygulanır; bileşik faiz tutara artı geçmiş faize uygulanır.
+1983|1.000'e yüzde 5'ten 20 yılda: basit 2.000, bileşik yaklaşık 2.653.
+1984|Teklifleri aynı dönemde ve aynı bileşiklemeyle karşılaştırın.
+1985|Bileşikleme tasarruf sahibine yardım eder, borçluya zarar verir.
+1986|Faiz, fiyat artışlarıyla karşılaştırılmadıkça pek bir şey ifade etmez.
+1987|Ders 12, faizin neden fiyat artışlarıyla karşılaştırılması gerektiğini gösterir. Ders 19, maliyet tarafını gösterir: taksitlerin gerçekte neye ulaştığını.
+1988|Anapara
+1989|Faiz oranı
+1990|Etkin yıllık getiri
+1991|Bileşikleme sıklığı
+1992|Basit faizi elle hesaplayın.
+1993|Bileşik faizi faizin faizi olarak açıklayın.
+1994|Aynı oranda 10 ve 20 yıllık sonuçları karşılaştırın.
+1995|Günlük bir faiz tutarını hesaplayın.
+1996|İki teklifi aynı temelde karşılaştırın.
+1997|10 yıl boyunca yüzde 5 basit faizle 1.000 şunu verir:
+1998|Faizi bileşik yapan nedir?
+1999|A. Önceki faiz üzerinden de faiz kazanılır
+2000|B. Banka her yıl oranı yükseltir
+2001|C. Hesap erken kapatılır
+2002|20 yıl boyunca yüzde 5 bileşikle 1.000 yaklaşık şu kadar olur:
+2003|Yılda yüzde 5'ten 1.000, 30 günde kabaca ne kadar basit faiz kazandırır?
+2004|A. Yaklaşık 4,11
+2005|B. Yaklaşık 50
+2006|C. Yaklaşık 0,41
+2007|Teklifleri neden aynı bileşikleme temelinde karşılaştırmalı?
+2008|A. Tek başına manşet oranı yıllık sonucu gizler
+2009|B. Bankalar bunu zorunlu kılar

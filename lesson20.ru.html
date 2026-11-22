@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Исчезнут ли банки в будущем? | Ditoman Learn</title>
+<meta name="description" content="Отделения закрываются, приложения открываются. Этот урок отделяет то, что делает банк, от того, где он это делает, простыми словами объясняет необанки и открытый банкинг и показывает, какие задачи за экраном по-прежнему требуют банка" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson20.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson20.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson20.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson20.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson20.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson20.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson20.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson20.ru.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Исчезнут ли банки в будущем? | Ditoman Learn" />
+<meta property="og:description" content="Отделения закрываются, приложения открываются. Этот урок отделяет то, что делает банк, от того, где он это делает, простыми словами объясняет необанки и открытый банкинг и показывает, какие задачи за экраном по-прежнему требуют банка" />
+<meta property="og:url" content="https://ditoman.com/lesson20.ru.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson20.ru.html#page",
+   "url": "https://ditoman.com/lesson20.ru.html",
+   "name": "Исчезнут ли банки в будущем? | Ditoman Learn",
+   "description": "Отделения закрываются, приложения открываются. Этот урок отделяет то, что делает банк, от того, где он это делает, простыми словами объясняет необанки и открытый банкинг и показывает, какие задачи за экраном по-прежнему требуют банка",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Исчезнут ли банки в будущем?",
+     "item": "https://ditoman.com/lesson20.ru.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.ru.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.ru.html" class="active">Учиться</a>
+<a href="iran.en.html">Иран</a>
+<a href="companies.en.html">Компании</a>
+<a href="prices.ru.html">Цены</a>
+<a href="calendar.en.html">Календарь</a>
+<a href="tmn.ru.html">TMN</a>
+<a href="index.ru.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Публикации</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson20-cover.jpg" alt="Исчезнут ли банки в будущем? Иллюстрация урока Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson20-cover-en.jpg" alt="Исчезнут ли банки в будущем? Иллюстрация урока Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Финтех • Банковское дело</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">فین‌تک • بانکداری</div>
+<h1 lang="en">Исчезнут ли банки в будущем?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">آیا بانک‌ها در آینده ناپدید می‌شوند؟</h1>
+<p class="subtitle" lang="en">Отделения закрываются, приложения открываются. Этот урок отделяет то, что делает банк, от того, где он это делает, простыми словами объясняет необанки и открытый банкинг и показывает, какие задачи за экраном по-прежнему требуют банка.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">شعبه‌ها بسته می‌شوند و اپ‌ها باز. این درس کاری را که بانک می‌کند از جایی که آن کار انجام می‌شود جدا می‌کند، نئوبانک و بانکداری باز را به زبان ساده توضیح می‌دهد و نشان می‌دهد کدام کارها هنوز پشت صفحه به بانک نیاز دارند.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Уровень</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Для начинающих</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Время чтения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 минут</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Баллы обучения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Тест</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 вопросов</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Содержание урока</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Читайте урок на английском или персидском.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Русский</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Вспомните, когда вы последний раз стояли в отделении банка. Для многих это было годы назад. Открыть счёт, отправить деньги, оплатить счёт, даже взять кредит — всё это теперь происходит в телефоне.</p>
+<p lang="en">Так что справедливо спросить: если здание больше не нужно, нужен ли ещё банк? Чтобы ответить, нужно посмотреть, что на самом деле делает банк. Это не одна работа. Это четыре.</p>
+<h3><span class="check-number">01.</span> Четыре задачи банка</h3>
+<p lang="en"><strong>Сохранять деньги:</strong> хранить вклады и возвращать их по требованию.</p>
+<p lang="en"><strong>Перемещать деньги:</strong> платежи, переводы и карты, как в Уроке 14.</p>
+<p lang="en"><strong>Кредитовать:</strong> превращать краткосрочные вклады многих людей в долгосрочные кредиты на дома и бизнес.</p>
+<p lang="en"><strong>Нести доверие:</strong> иметь лицензию, находиться под надзором и стоять за гарантией вкладов, как в Уроке 13.</p>
+<p lang="en">Век эти четыре задачи приходили одним пакетом из одного здания. Технологии теперь разделяют их, и разные компании соревнуются за каждую часть.</p>
+<h3><span class="check-number">02.</span> Что такое финтех</h3>
+<p lang="en">Fintech — сокращение от financial technology (финансовые технологии): компании, использующие программное обеспечение, чтобы выполнять одну финансовую задачу лучше, чем раньше. Платёжное приложение, кредитное приложение, инвестиционное приложение и страховое приложение — всё это финтех.</p>
+<p lang="en">У большинства финтех-компаний нет банковской лицензии. Они создают экран, к которому вы прикасаетесь, а за экраном деньги хранит лицензированный банк. Вы видите приложение. Банк — двигатель под ним.</p>
+<h3><span class="check-number">03.</span> Что такое необанк</h3>
+<p lang="en">Необанк — это банк без отделений. Всё, от проверки личности до доставки карты, происходит через приложение.</p>
+<p lang="en">У некоторых необанков есть собственная лицензия. Другие — бренд, построенный поверх традиционного банка. В Иране известные примеры относятся ко второй группе: Blubank работает на Saman Bank, Bankino — на Middle East Bank, а Wepod — на Pasargad Bank.</p>
+<p lang="en">Модель может вырасти очень большой. Бразильский Nubank, основанный в 2013 году и начавший с одной кредитной карты, сообщил о более чем 112 миллионах клиентов в январе 2026 года и заявил, что это делает его крупнейшим частным финансовым учреждением Бразилии по числу клиентов.</p>
+<p lang="en">Без отделений, за которые надо платить, необанк может брать меньше и двигаться быстрее. Вопросы те же, что и к любому банку: у кого лицензия и покрыт ли мой вклад гарантией?</p>
+<figure class="lz-fig"><figcaption>Кто что делает</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>Традиционный банк</th>
+<th>Необанк</th>
+<th>Финтех-приложение</th>
+<th>Личный криптокошелёк</th>
+</tr></thead><tbody>
+<tr><td>Отделения</td><td>Да</td><td>Нет</td><td>Нет</td><td>Нет</td></tr>
+<tr><td>Банковская лицензия</td><td>Собственная</td><td>Собственная или банка-партнёра</td><td>Обычно банка-партнёра</td><td>Нет</td></tr>
+<tr><td>Страхование вкладов</td><td>Да, до лимита</td><td>Через лицензированный банк</td><td>Зависит от партнёра</td><td>Нет</td></tr>
+<tr><td>Кто исправляет ошибку</td><td>Банк</td><td>Банк, через приложение</td><td>Приложение и его партнёр</td><td>Никто</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> Что такое открытый банкинг</h3>
+<p lang="en">Долгое время ваш банк был единственной компанией, видевшей данные вашего счёта. Открытый банкинг меняет это правило: с вашего разрешения банк обязан позволить другой лицензированной компании читать ваши данные или инициировать платёж от вашего имени через защищённое соединение.</p>
+<p lang="en">Европейский союз закрепил это законом в 2018 году, и многие страны последовали. Именно это позволяет одному приложению показывать счета из нескольких банков или кредитору проверять ваш доход за секунды без бумажных выписок.</p>
+<p lang="en">Важные слова — «с вашего разрешения». Читайте, к чему приложение запрашивает доступ, и отзывайте разрешение, когда перестаёте им пользоваться.</p>
+<h3><span class="check-number">05.</span> Где здесь криптовалюта</h3>
+<p lang="en">Криптовалюта идёт на шаг дальше финтеха. Личный кошелёк перемещает деньги вообще без банка под ним, а некоторые приложения кредитуют и торгуют только с помощью кода.</p>
+<p lang="en">Это убирает посредника, а вместе с ним и четыре защиты, которые несёт банк. Нет надзирателя, нет гарантии и некому отменить ошибку. Уроки 13 и 16 разобрали, что это значит на практике.</p>
+<h3><span class="check-number">06.</span> Так исчезнут ли банки?</h3>
+<p lang="en">Здание исчезает. Задачи — нет.</p>
+<p lang="en">Кто-то всё равно должен надёжно хранить вклады, кредитовать на двадцать лет и отвечать перед регулятором, когда что-то идёт не так. Эти задачи трудно выполнять без лицензии и капитала, поэтому даже самые современные приложения обычно опираются на банк.</p>
+<p lang="en">Меняется то, с кем вы имеете дело. Банк может стать чем-то на заднем плане, что вы редко видите, как электросеть за розеткой. Борьба следующего десятилетия идёт за то, кому принадлежит экран.</p>
+<h3>Что из этого вынести</h3>
+<p lang="en">Банк выполняет четыре задачи: хранить, перемещать, кредитовать и нести доверие.</p>
+<p lang="en">Финтех-компании берут одну задачу и выполняют её через программное обеспечение, обычно с лицензированным банком за спиной.</p>
+<p lang="en">Необанк — банк без отделений. Спрашивайте, у кого лицензия и застрахованы ли вклады.</p>
+<p lang="en">Открытый банкинг позволяет другим приложениям использовать ваши банковские данные, только с вашего разрешения.</p>
+<p lang="en">Банки становятся менее заметными, а не менее необходимыми.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">آخرین باری را که در شعبه‌ی بانک ایستادید به یاد بیاورید. برای خیلی‌ها چند سال پیش بوده است. باز کردن حساب، فرستادن پول، پرداخت قبض و حتی گرفتن وام حالا روی گوشی انجام می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پس پرسش به‌جایی است: اگر دیگر به ساختمان نیازی نیست، به خودِ بانک هم نیازی هست؟ برای جواب باید ببینیم بانک واقعاً چه می‌کند. کارش یکی نیست، چهار تاست.</p>
+<h3><span class="check-number">۰۱.</span> چهار کار بانک</h3>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>نگه داشتن پول:</strong> سپرده را نگه می‌دارد و هر وقت بخواهیم پس می‌دهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>جابه‌جا کردن پول:</strong> پرداخت، انتقال و کارت؛ همان درس ۱۴.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>وام دادن:</strong> سپرده‌های کوتاه‌مدت آدم‌های زیاد را به وام‌های بلندمدت برای خانه و کسب‌وکار تبدیل می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>حمل اعتماد:</strong> مجوز دارد، زیر نظارت است و ضمانت سپرده پشتش است؛ همان درس ۱۳.</p>
+<p lang="fa" dir="rtl" style="text-align:right">یک قرن این چهار کار در یک بسته و از یک ساختمان عرضه می‌شد. حالا فناوری دارد آن‌ها را از هم جدا می‌کند و شرکت‌های مختلف بر سر هر تکه رقابت می‌کنند.</p>
+<h3><span class="check-number">۰۲.</span> فین‌تک چیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">فین‌تک کوتاه‌شده‌ی «فناوری مالی» است: شرکت‌هایی که با نرم‌افزار، یک کار مالی را بهتر از قبل انجام می‌دهند. اپ پرداخت، اپ وام، اپ سرمایه‌گذاری و اپ بیمه همه فین‌تک‌اند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بیشتر فین‌تک‌ها مجوز بانکی ندارند. صفحه‌ای را می‌سازند که ما لمس می‌کنیم و پشت آن صفحه، یک بانک دارای مجوز پول را نگه می‌دارد. ما اپ را می‌بینیم. بانک موتوری است که زیر آن کار می‌کند.</p>
+<h3><span class="check-number">۰۳.</span> نئوبانک چیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">نئوبانک بانکی است که شعبه ندارد. همه‌چیز، از احراز هویت تا رسیدن کارت، از راه اپ انجام می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بعضی نئوبانک‌ها مجوز خودشان را دارند. بعضی دیگر برندی‌اند که روی یک بانک سنتی ساخته شده‌اند. نمونه‌های شناخته‌شده‌ی ایران از همین گروه دوم‌اند: بلوبانک روی بانک سامان کار می‌کند، بانکینو روی بانک خاورمیانه و ویپاد روی بانک پاسارگاد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این مدل می‌تواند خیلی بزرگ شود. نوبانکِ برزیل که در سال ۲۰۱۳ تأسیس شد و با یک کارت اعتباری شروع کرد، در ژانویه‌ی ۲۰۲۶ از بیش از ۱۱۲ میلیون مشتری خبر داد و گفت با این عدد، از نظر تعداد مشتری بزرگ‌ترین نهاد مالی خصوصی برزیل شده است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نئوبانک چون هزینه‌ی شعبه ندارد، می‌تواند ارزان‌تر و سریع‌تر باشد. پرسش‌ها همان پرسش‌های هر بانک دیگری است: مجوز دست چه کسی است و سپرده‌ی من زیر پوشش ضمانت هست یا نه؟</p>
+<figure class="lz-fig" dir="rtl"><figcaption>چه کسی چه کاری می‌کند</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>بانک سنتی</th>
+<th>نئوبانک</th>
+<th>اپ فین‌تک</th>
+<th>کیف پول شخصی کریپتو</th>
+</tr></thead><tbody>
+<tr><td>شعبه</td><td>دارد</td><td>ندارد</td><td>ندارد</td><td>ندارد</td></tr>
+<tr><td>مجوز بانکی</td><td>مال خودش</td><td>خودش یا بانک همکار</td><td>معمولاً بانک همکار</td><td>ندارد</td></tr>
+<tr><td>ضمانت سپرده</td><td>دارد، تا یک سقف</td><td>از راه بانک دارای مجوز</td><td>بسته به بانک همکار</td><td>ندارد</td></tr>
+<tr><td>اشتباه را چه کسی درست می‌کند</td><td>بانک</td><td>بانک، از راه اپ</td><td>اپ و بانک همکار</td><td>هیچ‌کس</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۴.</span> بانکداری باز چیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">سال‌ها بانک ما تنها شرکتی بود که می‌توانست داده‌های حسابمان را ببیند. بانکداری باز این قاعده را عوض می‌کند: با اجازه‌ی ما، بانک باید بگذارد یک شرکت دارای مجوز دیگر، از راه یک اتصال امن، داده‌هایمان را بخواند یا از طرف ما پرداختی را شروع کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اتحادیه‌ی اروپا این را در سال ۲۰۱۸ قانون کرد و کشورهای زیادی همین راه را رفته‌اند. به همین دلیل است که یک اپ می‌تواند حساب‌های چند بانک را کنار هم نشان بدهد یا یک وام‌دهنده بدون صورت‌حساب کاغذی، در چند ثانیه درآمد ما را بررسی کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">عبارت مهم «با اجازه‌ی ما» است. ببینید هر اپ به چه چیزی دسترسی می‌خواهد و وقتی دیگر از آن استفاده نمی‌کنید، اجازه را بردارید.</p>
+<h3><span class="check-number">۰۵.</span> کریپتو کجای این تصویر است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">کریپتو یک قدم از فین‌تک جلوتر می‌رود. کیف پول شخصی پول را جابه‌جا می‌کند بی‌آن‌که اصلاً بانکی زیرش باشد و بعضی برنامه‌ها فقط با کد، وام می‌دهند و معامله می‌کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این کار واسطه را برمی‌دارد و همراهش آن چهار محافظتی را که بانک با خود دارد. نه ناظری هست، نه ضمانتی و نه کسی که اشتباه را برگرداند. درس‌های ۱۳ و ۱۶ نشان دادند این در عمل یعنی چه.</p>
+<h3><span class="check-number">۰۶.</span> پس بانک‌ها ناپدید می‌شوند؟</h3>
+<p lang="fa" dir="rtl" style="text-align:right">ساختمان دارد کم‌رنگ می‌شود. کارها نه.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هنوز کسی باید سپرده را امن نگه دارد، وام بیست‌ساله بدهد و وقتی مشکلی پیش آمد به ناظر جواب بدهد. این کارها بدون مجوز و سرمایه سخت است و برای همین حتی مدرن‌ترین اپ‌ها معمولاً روی یک بانک ایستاده‌اند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">چیزی که عوض می‌شود طرفِ حساب ماست. بانک ممکن است به چیزی در پس‌زمینه تبدیل شود که کمتر می‌بینیمش؛ مثل شبکه‌ی برق پشت پریز. رقابت دهه‌ی آینده بر سر این است که صفحه‌ی گوشی مال چه کسی باشد.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بانک چهار کار می‌کند: نگه داشتن، جابه‌جا کردن، وام دادن و حمل اعتماد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">فین‌تک‌ها یک کار را برمی‌دارند و با نرم‌افزار انجامش می‌دهند؛ معمولاً با یک بانک دارای مجوز پشت سرشان.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نئوبانک بانکِ بدون شعبه است. بپرسید مجوز دست چه کسی است و سپرده ضمانت دارد یا نه.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بانکداری باز به اپ‌های دیگر اجازه می‌دهد از داده‌ی بانکی ما استفاده کنند، فقط با اجازه‌ی خودمان.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بانک‌ها کمتر دیده می‌شوند، نه کمتر لازم.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Следующая перемена уже здесь</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">تغییر بعدی از همین حالا شروع شده</h2>
+<p lang="en">Если приложения заменили отделения, что заменит нажатия? Урок 21 рассматривает искусственный интеллект в деньгах: что уже работает и где новые риски.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر اپ جای شعبه را گرفت، چه چیزی جای لمس کردن صفحه را می‌گیرد؟ درس ۲۱ به هوش مصنوعی در پول نگاه می‌کند: چه چیزی همین حالا کار می‌کند و ریسک‌های تازه کجاست.</p>
+<div class="cta-row">
+<a class="cta" href="lesson21.ru.html"><span lang="en">Как ИИ изменит будущее денег?</span><span lang="fa">هوش مصنوعی چطور آینده‌ی پول را تغییر می‌دهد؟</span></a>
+<a class="button" href="lesson13.ru.html"><span lang="en">Где мои деньги?</span><span lang="fa">پول من کجاست؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Ключевые понятия</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Четыре задачи банка</li><li>Финтех</li><li>Необанк</li><li>Банковская лицензия</li><li>Банк-партнёр</li><li>Открытый банкинг</li><li>Согласие на передачу данных</li><li>Страхование вкладов</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>چهار کار بانک</li><li>فین‌تک</li><li>نئوبانک</li><li>مجوز بانکی</li><li>بانک همکار</li><li>بانکداری باز</li><li>اجازه‌ی اشتراک داده</li><li>ضمانت سپرده</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Цели обучения</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Назовите четыре задачи банка.</li><li>Объясните разницу между финтех-приложением и банком.</li><li>Скажите, что такое необанк и что проверить перед его использованием.</li><li>Объясните открытый банкинг и роль вашего разрешения.</li><li>Объясните, почему банки становятся менее заметными, но остаются необходимыми.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>چهار کار بانک را نام ببرید.</li><li>تفاوت اپ فین‌تک و بانک را توضیح دهید.</li><li>بگویید نئوبانک چیست و پیش از استفاده چه چیزی را باید بررسی کرد.</li><li>بانکداری باز و نقش اجازه‌ی خودتان را توضیح دهید.</li><li>توضیح دهید چرا بانک‌ها کمتر دیده می‌شوند ولی هنوز لازم‌اند.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Тест</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Проверьте, что у вас осталось в памяти. Ответ — под каждым вопросом.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Вопрос 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Что из этого является одной из четырёх задач банка?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام‌یک از کارهای چهارگانه‌ی بانک است؟</p>
+<p lang="en">A. Установление цены золота</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. تعیین قیمت طلا</p>
+<p lang="en">B. Превращение краткосрочных вкладов в долгосрочные кредиты</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. تبدیل سپرده‌ی کوتاه‌مدت به وام بلندمدت</p>
+<p lang="en">C. Печать банкнот</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. چاپ اسکناس</p>
+<p class="answer" lang="en">Правильный ответ: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Где обычно находятся деньги, когда вы пользуетесь финтех-приложением?</p>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی از یک اپ فین‌تک استفاده می‌کنید، پول معمولاً کجاست؟</p>
+<p lang="en">A. Внутри телефона</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. داخل گوشی</p>
+<p lang="en">B. В лицензированном банке за приложением</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. نزد یک بانک دارای مجوز، پشت اپ</p>
+<p lang="en">C. В магазине приложений</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. نزد فروشگاه اپلیکیشن</p>
+<p class="answer" lang="en">Правильный ответ: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Что такое необанк?</p>
+<p lang="fa" dir="rtl" style="text-align:right">نئوبانک چیست؟</p>
+<p lang="en">A. Банк без отделений</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بانکی بدون شعبه</p>
+<p lang="en">B. Банк без клиентов</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. بانکی بدون مشتری</p>
+<p lang="en">C. Банк, работающий только с криптовалютой</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. بانکی که فقط با کریپتو کار می‌کند</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">При открытом банкинге, когда другая компания может читать данные вашего счёта?</p>
+<p lang="fa" dir="rtl" style="text-align:right">در بانکداری باز، شرکت دیگر چه زمانی می‌تواند داده‌ی حساب شما را بخواند؟</p>
+<p lang="en">A. Когда захочет</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. هر وقت بخواهد</p>
+<p lang="en">B. Только когда банк согласится</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. فقط وقتی بانک موافق باشد</p>
+<p lang="en">C. Только с вашего разрешения</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. فقط با اجازه‌ی خود شما</p>
+<p class="answer" lang="en">Правильный ответ: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Каков ответ урока на вопрос «исчезнут ли банки»?</p>
+<p lang="fa" dir="rtl" style="text-align:right">جواب این درس به «آیا بانک‌ها ناپدید می‌شوند» چیست؟</p>
+<p lang="en">A. Да, в течение пяти лет</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بله، تا پنج سال دیگر</p>
+<p lang="en">B. Они становятся менее заметными, но задачи остаются</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. کمتر دیده می‌شوند ولی کارها سر جایش می‌ماند</p>
+<p lang="en">C. Нет, ничего не меняется</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. نه، چیزی عوض نمی‌شود</p>
+<p class="answer" lang="en">Правильный ответ: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Источники</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://nu.com/en/newsroom/company/nubank-reaches-more-than-112-million-customers-and-becomes-the-largest-private-financial-institution-in-brazil-according-to-the-central-bank" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Nubank newsroom: более 112 миллионов клиентов (22 января 2026 г.)</a></li><li><a href="https://finance.ec.europa.eu/consumer-finance-and-payments/payment-services/payment-services_en" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Европейская комиссия: платёжные услуги (PSD2) и открытый банкинг</a></li><li><a href="https://www.bis.org/publ/work1041.htm" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Рабочий документ BIS 1041: влияние финтех-кредитования на доступ малого бизнеса США к кредиту</a></li><li><a href="https://blubank.com/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Blubank (Saman Bank)</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Примеры компаний описывают, как каждый сервис говорит о своём устройстве. Это не рекомендации, и договорённости могут меняться.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">نمونه‌ی شرکت‌ها همان چیزی است که هر سرویس درباره‌ی ساختار خودش می‌گوید. این‌ها توصیه نیستند و ممکن است تغییر کنند.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Следите за новостями</span></h2>
+<p lang="en">Новые уроки сначала объявляются в каналах Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.ru.html"><span lang="en">Назад к обучению</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson19.ru.html"><span lang="en">Предыдущий урок</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson21.ru.html"><span lang="en">Следующий урок</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Построено на структуре, движимо открытием.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-ru.js?v=20261121a"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+420|Bu TMN İçin Ne Anlama Geliyor
+421|Bu ders, TMN hakkında değil, çevrenizdeki piyasayı anlamakla ilgilidir.
+422|Ditoman seçimler, hükümetler veya hiçbir tarafın politikası konusunda tutum almaz. Sistemlerin nasıl çalıştığını açıklar, görüşleri size bırakırız.
+423|Ders 06: Beş Soru
+424|Faiz oranı paranın fiyatı olarak
+425|Güvenli varlıklar ve riskli varlıklar
+426|Kaldıraç ve zorunlu satış
+427|Beklentiler ve "fiyatlanmış"
+428|Sürpriz ve duyuru
+429|Seçimler, Kongre ve düzenleme
+430|Korelasyon ve nedensellik
+431|Faiz oranının ne olduğunu sade bir dille açıklayın.
+432|Faiz değişikliklerinin Bitcoin'e ulaşabileceği üç yolu anlatın.
+433|Bir sürprizin kararın kendisinden neden daha önemli olduğunu açıklayın.
+434|Seçimlerin kripto piyasaları için neden önemli olabileceğini açıklayın.
+435|Üç tarihsel örneğin neden bir örüntü oluşturmadığını fark edin.
+436|En basit ifadeyle faiz oranı nedir?
+437|A. Kripto üzerindeki bir vergi
+438|B. Borç para almanın fiyatı
+439|C. Bitcoin'in fiyatı
+440|D. Borsalara ödenen bir ücret
+441|Yüksek faiz oranları Bitcoin gibi riskli varlıklar üzerinde neden baskı yaratabilir?
+442|Doğru cevap: Güvenli varlıklar daha fazla öder, bu yüzden riskli olanlar daha az çekici görünür ve onları almak için borçlanmak pahalılaşır.
+443|Bir sonucun "fiyatlanmış" olması ne demektir?
+444|A. Karar iptal edilmiştir
+445|B. Piyasa beklenen sonuca göre önceden hareket etmiştir
+446|C. Fiyat artık değişemez
+447|D. Borsalar sabit bir fiyat belirlemiştir
+448|Doğru mu yanlış mı: Bitcoin geçmişteki üç ara seçimden önce düştüğü için bir sonrakinden önce de düşecektir.
+449|Doğru cevap: Yanlış. Üç gözlem bir örüntü değildir ve birçok başka etken de işin içindeydi.
+450|Kripto fiyatları büyük haberler çevresinde, hafta sonları bile neden hızlı hareket edebilir?
+451|A. Çünkü gece gündüz işlem görür ve kaldıraç zorunlu satışa yol açabilir
+452|B. Çünkü merkez bankaları tarafından kontrol edilir
+453|C. Çünkü haberler yalnızca kriptoyu etkiler
+454|D. Çünkü borsalar hafta içi kapanır
+455|Bu ders ilk olarak Ditoman Instagram'ında tanıtıldı. Instagram sürümü kısa bir görsel özet sunar, bu sayfa ise tam öğrenme sürümünü sunar.
+456|Paranızın Son Kullanma Tarihi Olsaydı? Merkez Bankası Dijital Para Birimleri | Ditoman Öğren
+457|Merkez bankası dijital para birimleri ve "programlanabilir para": nedir, ne kadar yol aldı, neler gerçek, neler abartılı ve İran'ın dijital riyali nerede duruyor
+458|Paranızın son kullanma tarihi olsaydı? Ditoman ders görseli
+459|Para • Dijital Para Birimleri
+460|Paranızın Son Kullanma Tarihi Olsaydı?
+461|Merkez bankası dijital para birimleri ve "programlanabilir para": nedir, ne kadar yol aldı, neler gerçek, neler abartılı ve İran'ın dijital riyali nerede duruyor.
+462|Bir soruyla başlayan bir paylaşım görmüş olabilirsiniz: paranızın son kullanma tarihi olsaydı? Cumaya kadar harcayın, yoksa yok olur. Yalnızca onaylı mağazalarda harcayın, yoksa çalışmaz.
+463|Bilim kurguya benziyor ama gerçek bir şeye dokunuyor. Dünyanın dört bir yanındaki merkez bankaları yeni bir para biçimini inceliyor ve bunların bir kısmı teknik olarak böyle kurallar taşıyabilir. Bu ders gerçeği abartıdan ayırır.
+464|CBDC Aslında Nedir
+465|Merkez bankası dijital para birimi (CBDC), bir ülkenin merkez bankası tarafından doğrudan ihraç edilen dijital paradır. Cüzdanınızdaki banknotun dijital sürümüdür.
+466|Bu, bugün banka hesabınızdaki paradan farklıdır. Bir bankacılık uygulamasında bakiye gördüğünüzde, bu bankanızın size verdiği bir sözdür. CBDC ise nakit gibi, merkez bankasının kendisine doğrudan bir alacak hakkı olurdu.
+467|Ayrıca Bitcoin'den de çok farklıdır. Bitcoin'in ihraççısı yoktur ve kurallarını tek başına değiştirebilecek kimse yoktur. CBDC ise devlet tarafından ihraç edilir, kontrol edilir ve tasarlanır.
+468|Ne Kadar İlerledi?
+469|Atlantic Council'ın takipçisine göre, toplam olarak dünya ekonomisinin %98'inden fazlasını oluşturan 146 ülke ve para birliği CBDC'yi araştırıyor. Paylaşımlarda gördüğünüz büyük sayıların kaynağı budur.
+470|Ancak araştırmak, hayata geçirmek değildir. Aynı takipçiye göre yalnızca üç ülke tam olarak başlattı: Bahamalar, Jamaika ve Nijerya. Yaklaşık 41 pilot çalışıyor. Çin'in dijital yuanı dünyanın en büyük pilotudur.
+471|Euro bölgesi bir dijital euro hazırlıyor. Bir Avrupa Parlamentosu komitesi pozisyonunu Haziran 2026'da onayladı ve konuşulan en erken başlangıç 2029. ABD ise tersine gitti: Ocak 2025'teki bir başkanlık kararnamesi bir ABD CBDC'si üzerindeki çalışmayı yasakladı.
+472|"Programlanabilir Para" Ne Demek
+473|Sıradan para onunla ne yaptığınızı umursamaz. Programlanabilir para, içine kurallar yazılmış paradır. Kural kişiyle değil, paranın kendisiyle birlikte gider.
+474|Olası kurallara örnekler: bu para yalnızca belirli bir tarihten önce harcanabilir. Yalnızca belirli türde mağazalarda. Yalnızca bu kişi tarafından ve devredilemez. Yalnızca ulaşım ya da yiyecek gibi belirtilen bir amaç için.
+475|Bazı kullanımlar zararsız ve hatta yararlıdır: mal geldiğinde otomatik serbest kalan bir ödeme ya da doğru insanlara ulaşan yardım parası. Endişe, kuralları kimin yazdığı ve bunların sizin onayınız olmadan gündelik paraya uygulanıp uygulanamayacağı hakkındadır.
+476|Gerçek mi, Abartılı mı?
+477|Son kullanma tarihi gerçektir, ama yalnızca denemelerde. Ocak 2021'de Çin'in Shenzhen kentinde 100.000 sakine çekilişle 200'er dijital yuan verildi. Para yalnızca 7-17 Ocak arasında belirlenen işyerlerinde harcanabiliyordu, devredilemiyordu ve kullanılmayan tutarlar geri çekildi. 2021'de Chengdu, yalnızca toplu taşıma ve paylaşımlı bisikletlerde kullanılabilen dijital yuan dağıttı.
+478|Bunlar sistemi sınamak ve harcamayı teşvik etmek için tasarlanmış promosyonlardı; insanların normal birikimlerine uygulanan kurallar değildi. Hiçbir ülke gündelik CBDC bakiyelerine son kullanma tarihi koymadı.
+479|Avrupa Merkez Bankası, dijital euronun bu türden programlanabilir para olmayacağını söyledi. Her hükümetin ileride bu sözü tutup tutmayacağı yerinde bir sorudur ve CBDC'lerin tasarımının ve çevresindeki hukukun neden önemli olduğunun bir nedenidir.
+480|İran'ın Dijital Riyali
+481|İran Merkez Bankası planlarını ilk kez 2018'de duyurdu. 2023'te Kiş Adası'nda, kişiden kişiye transferleri ve işyeri ödemelerini kapsayan bir pilot başladı ve o zamandan beri genişletildi. Dijital riyal, sıradan riyale bire bir bağlıdır ve yurt içi kullanım içindir.
+482|Pilota ilişkin kamuya açık bilgi sınırlıdır: kaç kişinin kullandığına dair bağımsız olarak doğrulanmış rakamlar yok ve ülke çapında bir başlangıç için kamuya açık bir tarih yok. Şimdilik bu bir testtir, çoğu İranlının kullandığı bir para değil.
+483|Sorulması Gereken Gerçek Sorular
+484|Bir CBDC'nin iyi ya da kötü olması neredeyse tamamen tasarımına ve çevresindeki hukuka bağlıdır. Herhangi bir ülke için önemli olan sorular şunlardır:
+485|Gizlilik:
+486|ödemelerinizi kim görebilir ve hangi kurallarla?
+487|Sınırlar:
+488|ne kadar tutabileceğinize bir üst sınır var mı? Dijital euro bankaları korumak için bir sınır planlıyor.
+489|Programlanabilirlik:
+490|sıradan bakiyelere koşullar getirilebilir mi, yoksa yalnızca onayladığınız belirli ödemelere mi?
+491|Çevrimdışı kullanım:
+492|nakit gibi internet olmadan çalışır mı?
+493|Nakit:
+494|fiziksel nakit onunla birlikte kullanılmaya devam eder mi?
+495|Bundan Ne Çıkarmalı
+496|CBDC bir araçtır. Aynı teknoloji ödemeleri daha ucuz ve hızlı yapabilir ya da onu kontrol edene, nakdin hiç vermediği kadar fazla görünürlük ve güç verebilir. Hangisini elde edeceğiniz tasarımda ve hukukta belirlenir.
+497|Dijital para hakkında çarpıcı bir iddia gördüğünüzde üç şeyi sorun: bu bir deneme mi yoksa gerçek sistem mi, hangi ülke ve hukuk gerçekte ne diyor?
+498|CBDC'ler ve Kripto Aynı Şey Değildir
+499|CBDC, dijital biçimdeki devlet parasıdır. Bitcoin ve TMN gibi tokenlar hiçbir merkez bankası tarafından ihraç edilmez ve kuralları bir hükümet tarafından değil, herkese açık kodla belirlenir. Bu ders kripto öğrenen herkes için tam da bu fark yüzünden önemlidir.
+500|Ditoman hiçbir hükümetin para politikası konusunda siyasi tutum almaz. Sistemlerin nasıl çalıştığını ve kanıtların ne gösterdiğini açıklarız.
+501|Merkez bankası dijital para birimi (CBDC)
+502|Banka parası ve merkez bankası parası
+503|Programlanabilir para
+504|Pilot ve başlatma
+505|Tutma sınırları ve gizlilik
+506|Dijital riyal
+507|CBDC ve kripto para
+508|CBDC'nin ne olduğunu ve kimin ihraç ettiğini açıklayın.
+509|Araştırma, pilot ve başlatma arasındaki farkı ayırt edin.
+510|Parayı neyin programlanabilir yaptığını anlatın.
+511|Gerçek deneme örneklerini abartılı iddialardan ayırın.
+512|Bir CBDC'nin kullanıcılar için güvenli olup olmadığını belirleyen tasarım sorularını sayın.
+513|CBDC'yi kim ihraç eder?
+514|A. Özel bir şirket
+515|B. Ülkenin merkez bankası
+516|C. Bitcoin madencileri
+517|D. Yalnızca ticari bankalar
+518|Atlantic Council takipçisine göre kaç ülke bir CBDC'yi tam olarak başlattı?
+519|D. Hiçbiri
+520|Doğru cevap: C (Bahamalar, Jamaika ve Nijerya)
+521|Parayı "programlanabilir" yapan nedir?
+522|Doğru cevap: Paranın kendisine yazılmış kurallar; örneğin son kullanma tarihi veya nerede harcanabileceğine dair sınırlar.
+523|Doğru mu yanlış mı: Çin'in dijital yuan bakiyeleri herkes için sona erer.
+524|Doğru cevap: Yanlış. Son kullanma tarihleri, Ocak 2021'deki Shenzhen gibi sınırlı promosyon denemelerinde kullanıldı; gündelik bakiyelerde değil.
+525|Bir CBDC'yi değerlendirirken hangi soru en önemlidir?
+526|A. Rengi ve logosu
+527|B. Tasarımı ve çevresindeki hukuk: gizlilik, sınırlar, programlanabilirlik, çevrimdışı kullanım
+528|C. Fiyatının ne kadar hızlı yükseldiği
+529|D. Kaç ülkenin bundan söz ettiği
+530|Kaynaklar
+531|Atlantic Council, Merkez Bankası Dijital Para Birimi Takipçisi
+532|(Mayıs 2026 itibarıyla rakamlar)
+533|Finance Magnates, Shenzhen dijital yuan dağıtımı (Ocak 2021)
+534|The Block, Chengdu programlanabilir dijital yuan testi (Temmuz 2021)
+535|Euronews, Avrupa Parlamentosu komitesi dijital euroyu destekliyor (Haziran 2026)
+536|Nasdaq, bir CBDC'yi yasaklayan ABD başkanlık kararnamesi (Ocak 2025)
+537|CBDC Wiki, İran dijital riyal durumu (Mart 2026)
+538|Likidite Kilidi Aslında Ne Anlama Gelir? | Ditoman Öğren
+539|Bugün TMN'nin likiditesini kilitledik. Bu ders kendi kilidimizi örnek alır: likidite havuzu nedir, LP tokenları nedir, kilit neye karşı korur, neyi kanıtlamaz ve herhangi bir kilidi nasıl kontrol edersiniz
+540|Likidite kilidi ne anlama gelir? Ditoman ders görseli
+541|Güvenlik • Token Kontrolleri
+542|Likidite Kilidi Aslında Ne Anlama Gelir?
+543|Bugün TMN'nin likiditesini kilitledik. Bu ders kendi kilidimizi örnek alır: likidite havuzu nedir, LP tokenları nedir, kilit neye karşı korur, neyi kanıtlamaz ve herhangi bir kilidi kendiniz nasıl kontrol edersiniz.
+544|Ders 05'te herhangi bir tokene dokunmadan önce uygulanacak beş kontrolü sıraladık. Beşinci kontrol şuydu: gerçek likidite var mı ve kilitli mi? Bugün bunu kendi tokenimiz için yaptık. Bu ders ne yaptığımızı ve bunun ne anlama geldiğini açıklar.
+545|Likidite Nedir
+546|Bir tokenin PancakeSwap gibi merkeziyetsiz bir borsada alınıp satılabilmesi için, birinin iki şeyi bir havuzda yan yana koyması gerekir: tokenin kendisi ve insanların zaten değer verdiği bir şey, örneğin BNB. Alıcılar BNB koyar, token alır; satıcılar bunun tersini yapar.
+547|Bu havuz, tokenin likiditesidir. O olmadan işlem yapılacak bir yer yoktur.
+548|LP Tokenları Bir Makbuzdur
+549|Havuza para ekleyen kişi LP tokenları (likidite sağlayıcı tokenları) alır. Bunu bir makbuz olarak düşünün. Makbuzu elinde tutan kişi, onu istediği zaman havuza geri verip BNB ve tokenlerden kendi payını çekebilir.
+550|Risk: Rug Pull
+551|Bir projenin ekibi makbuzu elinde tutuyorsa, havuzu bir gecede boşaltabilir. Sahipler artık satılamayan tokenlerle kalır. Buna rug pull denir ve küçük tokenlerde insanların para kaybetmesinin en yaygın yollarından biridir.
+552|Kilit Ne Yapar
+553|Kilit, LP tokenlarını bir açılma tarihi olan ayrı bir akıllı sözleşmeye koyar. O tarihe kadar, kilitleyen kişi dahil kimse onları geri alamaz. PinkLock, UNCX ve Team Finance gibi kilit hizmetleri her kilidi herkese açık bir kayıt olarak yayımlar, böylece herkes kontrol edebilir.
+554|TMN ile Ne Yaptık
+555|29 Ekim 2026'da projenin ana cüzdanındaki tüm TMN/BNB LP tokenlarını BNB Smart Chain üzerindeki PinkLock'a kilitledik: önce 0,2277 LP, ardından aynı gün daha fazla BNB likiditesi eklendikten sonra PancakeSwap V2 havuzundan toplam 0,3461 LP. Açılma tarihi 29 Ekim 2027. Kayıt herkese açıktır:
+556|PinkLock kaydı #2089923
+557|Bu, daha önceki adımları izler: sözleşme sahipliği terk edildi, böylece yeni TMN asla basılamaz ve ilk arzın %10'u kaldırıldı.
+558|Bir Kilit Neyi Kanıtlamaz
+559|Kilit belirli bir riski ortadan kaldırır: kilitli likiditenin açılma tarihinden önce çekilmesi. Bir tokenin değerli olduğunu, projenin başarılı olacağını veya fiyatın yükseleceğini kanıtlamaz.
+560|Diğer kontrollere de yanıt vermez. TMN'nin arzı hâlâ kurucu cüzdanlarında yoğunlaşmıştır ve bunu BscScan'de görebilirsiniz. Bunu açıkça söylüyoruz ve sizin de bunu bizimki dahil her token için kontrol etmeniz gerekir.
+561|Herhangi Bir Kilidi Kendiniz Nasıl Kontrol Edersiniz
+562|Kilit kaydını açın ve dört şeyi doğrulayın: çift adresinin tokenin gerçek havuzuyla eşleşmesi, kilitlenen miktar, açılma tarihi ve bu miktarın tüm havuzun ne kadarını temsil ettiği. Gelecek hafta sona eren veya havuzun yalnızca küçük bir kısmını kapsayan bir kilit çok az şey ifade eder.
+563|Güven bir söz değildir. Kontrol edebileceğiniz bir şeydir. Güvenme. Doğrula.
+564|Beşinci Kontrolü TMN'ye Uygulamak
+565|Ders 05, TMN'nin beş kontrolden ikisini geçemediğini gösterdi: yoğunlaşmış arz ve kilitli olmayan likidite. Bugünkü kilitle birlikte, projenin ana cüzdanında tutulan likidite Ekim 2027'ye kadar kilitlidir. Arz yoğunlaşması hâlâ açık bir konudur ve değiştikçe bunu raporlayacağız.
+566|Kilidi Doğrula
+567|Herhangi Bir Token Nasıl Kontrol Edilir
+568|TMN Hakkında
+569|Makbuz olarak LP tokenları
+570|Rug pull
+571|Likidite kilidi ve açılma tarihi
+572|Herkese açık kilit kayıtları
+573|Likidite havuzunun ne olduğunu ve bir tokenin neden ona ihtiyaç duyduğunu açıklayın.
+574|LP tokenlarının neyi temsil ettiğini anlatın.
+575|Bir rug pull'un nasıl gerçekleştiğini açıklayın.
+576|Bir kilit kaydını okuyun ve çiftini, miktarını, tarihini ve havuzdaki payını kontrol edin.
+577|Bir kilidin bir token hakkında neyi söylemediğini belirtin.
+578|A. Tokenin şirketinden bir pay
+579|B. Likidite havuzuna eklenen para için bir makbuz
+580|C. İşlem ücreti indirimi
+581|D. Bir yönetişim oyu
+582|Rug pull nedir?
+583|Doğru cevap: LP tokenlarını elinde tutan kişinin likiditeyi çekmesi ve sahiplerin satamaz hale gelmesi.
+584|Doğru mu yanlış mı: Bir likidite kilidi, tokenin fiyatının yükseleceğini kanıtlar.
+585|Doğru cevap: Yanlış. Yalnızca kilitli likiditenin açılma tarihinden önce çekilmesini engeller.
+586|Bir kilit kaydında bunlardan hangisini kontrol etmelisiniz?
+587|A. Çift adresi
+588|B. Kilitlenen miktar ve havuzdaki payı
+589|C. Açılma tarihi
+590|D. Hepsi
+591|Doğru cevap: D
+592|TMN'nin kilitli likiditesi ne zaman açılır?
+593|A. 29 Ekim 2026
+594|B. 29 Ekim 2027
+595|C. Asla
+596|D. Kurucular ne zaman isterse
+597|PinkLock kaydı #2089923, TMN/WBNB likidite kilidi
+598|BscScan, TMN/WBNB PancakeSwap çifti (LP token)
+599|BscScan, DiToman (TMN) token sözleşmesi
+600|Fiyatlar Neden Birden Çöker? Haberler, Kaldıraç ve Tasfiyeler | Ditoman Öğren
+601|Haber düşüşü başlatır. Bu ders bir borsanın içinde sonra neler olduğunu gösterir: geri çekilen alıcılar, kayma, kaldıraç ve tasfiye zinciri; örnek olarak 5 Kasım 2026 satış dalgası
+602|Fiyatlar neden birden çöker? Ditoman ders görseli
+603|Piyasalar • Risk
+604|Fiyatlar Neden Birden Çöker?
+605|Haber düşüşü başlatır. Bu ders bir borsanın içinde sonra neler olduğunu gösterir: geri çekilen alıcılar, kayma, kaldıraç ve tasfiye zinciri; örnek olarak 5 Kasım 2026 satış dalgası.
+606|Ders 07'de haberlerin piyasanın beklentisini nasıl değiştirdiğini gördük. Bu ders bir adım daha ileri gider: haber geldiğinde, bir borsanın içinde normal bir geri çekilmeyi sert bir çöküşe çevirebilecek ne olur? Kısa yanıt, birlikte çalışan üç şey: gergin alıcılar, ince emir defterleri ve borç para.
+607|Piyasalar Sürprizlere Tepki Verir
+608|John Authers'ın bir Bloomberg Opinion grafiği, küresel hisse senetlerinin (FTSE All-World endeksi) iki yıl boyunca yükselişini ve her biri büyük bir siyasi ya da ekonomik şoka bağlı birkaç sert düşüşle kesildiğini gösteriyor. Örüntü dersin kendisidir: haberler insanların beklediğinden farklı olduğunda fiyatlar en çok hareket eder ve korku sakinlikten daha hızlı yayılır.
+609|Gerçek Bir Örnek: 5 Kasım 2026
+610|5 Kasım 2026 Perşembe günü teknoloji hisseleri yapay zekâ harcamalarına ilişkin endişelerle satıldı. Nasdaq 100 bir günde yaklaşık %5,5, Nasdaq Composite %4,9 düştü. Bitcoin 76.000 doların altına indi ve yaklaşık 75.500 dolara değdi. Aynı 24 saatte CoinGlass verileri, yaklaşık 1 milyar dolarlık kaldıraçlı kripto pozisyonunun zorla kapatıldığını ve 201.000'den fazla yatırımcıyı etkilediğini gösterdi. Bunun yaklaşık %89'u, yani yaklaşık 927 milyon doları, fiyatların yükseleceğine yapılan bahislerdi.
+611|Ekrandaki Fiyat Her Zaman Sizin Fiyatınız Değildir
+612|Grafik son işlemi gösterir. Satmak için bir alıcıya ihtiyacınız var. Son işlemin 100 dolar olduğunu, ancak 100 dolarda yalnızca bir alıcı bulunduğunu ve bir sonrakinin 95 dolarda olduğunu düşünün. İki birimi birden satarsanız, ilkinden 100, ikincisinden 95 dolar alırsınız: ortalama 97,50. Bu farka
+613|kayma (slippage)
+614|denir. Kötü haberden sonra alıcılar geri çekildiğinde aralarındaki boşluklar büyür ve her piyasa satış emri fiyatı biraz daha aşağı iter.
+615|Kaldıraç: Borç Parayla İşlem
+616|Birçok kripto borsası kaldıraçla işlem yapmanıza izin verir. 10× kaldıraçla, kendi 100 dolarınız (
+617|teminatınız
+618|), 1.000 dolarlık bir pozisyonu kontrol eder. Fiyat %10 yükselirse paranız ikiye katlanır. Yaklaşık %10 düşerse 100 dolarınız biter.
+619|Tasfiye: Borsa İşlemi Sizin Yerinize Kapatır
+620|Teminatınız sıfıra ulaşmadan önce borsa, pozisyonunuzu piyasa fiyatından satarak otomatik olarak kapatır. Buna
+621|tasfiye
+622|denir. Anı siz seçmezsiniz; fiyat seçer.
+623|Zincirleme Etki
+624|Şimdi hepsini birleştirin. Kötü haber alıcıların geri çekilmesine yol açar. Küçük bir düşüş ilk tasfiyeleri tetikler. Bu zorunlu satışlar ince bir emir defterine çarpar, bu yüzden fiyat daha da kayar. Düşen fiyat bir sonraki tasfiye grubunu tetikler ve böyle devam eder. Kripto bu yüzden dakikalar içinde yalnızca haberin haklı çıkaracağından çok daha fazla düşebilir ve zorunlu satış bittiğinde çoğu zaman toparlanır.
+625|Bitcoin Bağımsızsa, Neden Hisse Senetleriyle Birlikte Düşer?
+626|Bitcoin ağı hiçbir hükümete veya şirkete bağlı değildir (ders 01 ile 04). Fiyatı ise başka bir konudur. Birçok yatırımcı hem hisse senedi hem kripto tutar ve daha az risk istediklerinde ikisinden de bir kısmını satarlar. Bir ağ bağımsız olabilir, fiyatı ise aynı insanların ruh haliyle birlikte hareket edebilir.
+627|Kendinizi Nasıl Korursunuz
+628|Kaldıracın kazançları olduğu kadar kayıpları da katladığını bilin; çoğu yeni başlayan onsuz daha iyidir.
+629|Piyasalar hızlı hareket ederken, fiyatı sizin seçmeniz için piyasa emirleri yerine limit emirleri kullanın.
+630|Büyük bir işlemden önce yalnızca grafiğe değil, emir defterine de bakın.
+631|Yalnızca kaybı hane bütçenizi bozmayacak parayı kullanın.
+632|Bir çöküşün ilk dakikalarında karar vermeyin; zorunlu satış çoğu zaman başladığı kadar hızlı biter.
+633|Bu ders piyasaların nasıl çalıştığını açıklar. Hiçbir şeyi alma ya da satma tavsiyesi değildir.
+634|Haber düşüşü başlatır. İnce emir defterleri ve borç para ne kadar ileri gideceğini belirler.
+635|Kendiniz Deneyin
+636|Kullandığınız bir borsada herhangi bir coinin emir defterini açın. Mevcut fiyatın %1'i ve %5'i içindeki alış emirlerinin toplamını hesaplayın. Kendinize sorun: tüm pozisyonumu şimdi piyasa fiyatından satsam ortalama hangi fiyatı alırım?
+637|Ders 07: Haberler Fiyatları Nasıl Hareket Ettirir
+638|Satın Almadan Önce Beş Soru
+639|Beklentiler ve sürpriz

@@ -1,0 +1,220 @@
+1340|Güvenmeden önce kontrol edin
+1341|Bu ders paranızı almaya çalışan insanlarla ilgili. Ders 05 tokenin kendisiyle ilgili: herhangi bir sözleşmede yapabileceğiniz beş kontrol. Ders 06 ise kendi satın alma nedenlerinizle ilgili.
+1342|Herhangi bir token nasıl kontrol edilir
+1343|Satın almadan önce beş soru
+1344|Kimlik avı (phishing)
+1345|Kimliğe bürünme
+1346|Token onayı
+1347|Cüzdan boşaltıcı
+1348|Romantik yatırım dolandırıcılığı
+1349|Ponzi ve piramit şemaları
+1350|Adres zehirleme
+1351|Kurtarma dolandırıcılığı
+1352|Geri alınamazlık
+1353|Beş yaygın dolandırıcılık örüntüsünü tanıyın.
+1354|Aciliyetin neden ortak nokta olduğunu açıklayın.
+1355|Bir token onayının neye izin verebileceğini söyleyin.
+1356|Benzer adres hilesini ve nasıl kaçınılacağını anlatın.
+1357|Bir kayıptan sonra atılacak ilk adımları sıralayın.
+1358|Çoğu insan kriptoyu nasıl kaybeder?
+1359|A. Bir hacker blok zincirini kırar
+1360|B. İkna edilir ya da acele ettirilerek erişim verirler
+1361|C. Ağ eski cüzdanları siler
+1362|Bir site, cüzdanınızı bağlayıp imzalarsanız ücretsiz token teklif ediyor. Ana risk nedir?
+1363|A. Token küçük olabilir
+1364|B. İmza bir sözleşmenin tokenlarınızı taşımasına izin verebilir
+1365|C. Site yavaş olabilir
+1366|Borsa veya cüzdan sitenizi açmanın en güvenli yolu hangisidir?
+1367|A. Bir mesajdaki bağlantı
+1368|B. Aramadaki ilk reklam
+1369|C. Kendi kaydettiğiniz bir yer imi
+1370|Bir proje günde sabit yüzde 2 ve arkadaş davet etmek için bonus ödüyor. Bu büyük olasılıkla nedir?
+1371|A. Bir piramit şeması
+1372|B. Bir banka mevduatı
+1373|C. Bir stablecoin
+1374|Bir hırsızlıktan sonra biri peşin ücret karşılığında paranızı geri almayı teklif ediyor. Ne yapmalısınız?
+1375|A. İz soğumadan hızlıca ödemek
+1376|B. Kontrol edebilmeleri için kurtarma ifadenizi göndermek
+1377|C. Görmezden gelmek; bu ikinci bir dolandırıcılıktır
+1378|Decrypt: Chainalysis'in 2025 kripto dolandırıcılığı kayıpları tahmini (14 Ocak 2026)
+1379|Chainalysis: Kripto suçu araştırması
+1380|ABD Federal Ticaret Komisyonu: Kripto para ve dolandırıcılıklar hakkında bilmeniz gerekenler
+1381|FBI İnternet Suçları Şikâyet Merkezi (IC3)
+1382|Kayıp rakamları blok zinciri analizinden gelen tahminlerdir ve genellikle sonradan yukarı doğru revize edilir. Toplamlardan çok örüntüler önemlidir.
+1383|Altın, Dolar ya da Bitcoin: Birikim İçin Nasıl Farklılar? | Ditoman Öğren
+1384|İnsanlar nakde güvenmeyi bıraktığında üç şeye yönelir. Bu ders hangisini alacağınızı söylemez. Onları dört sade soruyla karşılaştırır: fiyat ne kadar dalgalanır, ne kadar kolay satılır, saklamak ne kadara mal olur ve neler ters gidebilir
+1385|Altın, Dolar ya da Bitcoin: Birikim İçin Nasıl Farklılar? Ditoman ders görseli
+1386|Birikim • Varlıklar
+1387|İnsanlar nakde güvenmeyi bıraktığında üç şeye yönelir. Bu ders hangisini alacağınızı söylemez. Onları dört sade soruyla karşılaştırır: fiyat ne kadar dalgalanır, ne kadar kolay satılır, saklamak ne kadara mal olur ve neler ters gidebilir.
+1388|Ders 12, enflasyonun yerinde duran nakde ne yaptığını gösterdi. Doğal sonraki düşünce şu: o zaman başka bir şey tutmalıyım. Birçok ailede cevap kuşaklardır aynı: altın ya da dolar. Son birkaç yılda üçüncü bir isim tartışmaya katıldı: bitcoin.
+1389|İnsanlar en iyisinin hangisi olduğunu tek bir cevap varmış gibi tartışır. Yoktur, çünkü bu üçü farklı türden şeylerdir. Onları aynı dört soruyla adil biçimde karşılaştırabiliriz.
+1390|Önce, birikim spekülasyon değildir
+1391|Birikim,
+1392|paranın ihtiyaç duyduğunuzda orada olması için kenara konmasıdır. Amaç satın alma gücünü korumaktır.
+1393|Yatırım,
+1394|üretken bir şeyden gelen getiri için risk almaktır: bir iş, bir mülk, bir kredi.
+1395|Spekülasyon,
+1396|bir şeyi esas olarak fiyatının yükselmesini beklediğiniz için almaktır.
+1397|Aynı varlık üçünden herhangi birine hizmet edebilir. Değişen, zaman ufkunuz ve ne kadar kayba dayanabileceğinizdir. Altı ay içinde ihtiyaç duyacağınız para, on yıl dokunmayacağınız paradan çok farklı bir konumdadır.
+1398|Soru 1: Fiyat ne kadar dalgalanır?
+1399|Üçü de hareket eder, ama aynı miktarda değil.
+1400|Dolar
+1401|kısa vadede mallara karşı en az hareket eder, ancak kendi enflasyonu yüzünden satın alma gücünü yavaşça kaybeder. ABD enflasyonu 2022 ortasında yüzde 9'un üzerine çıktı.
+1402|Altın
+1403|uzun sakin dönemler ve sonra keskin hareketler yaşar. Ons başına 1.900 dolara yakın 2011 zirvesinden sonra, sonraki dört yılda yaklaşık yüzde 45 düştü ve daha sonra toparlandı.
+1404|çok daha fazla dalgalanır. Kasım 2021'de yaklaşık 69.000 dolardan bir yıl sonra 16.000 doların altına düştü, yüzde 75'ten fazla bir düşüş, ve daha sonra Ekim 2025'te 126.000 doların üzerinde yeni zirvelere çıktı.
+1405|Büyük bir dalgalanma kendi başına iyi ya da kötü değildir. Ne kadar bekleyebilmeniz gerektiğini belirler.
+1406|Soru 2: Ne kadar kolay satılır?
+1407|Bu likiditedir: varlığı hızla ve belirtilen fiyata yakın bir şekilde harcanabilir paraya geri çevirmek.
+1408|Dolar ve altın sikkelerin neredeyse her yerde derin piyasaları vardır, ama alış ve satış fiyatları farklıdır. Bu fark, yani
+1409|makas (spread),
+1410|iki kez ödediğiniz bir maliyettir. Küçük altın parçaları ve işçilik ücreti olan takılar için fark geniştir.
+1411|Bitcoin günün her saati işlem görür ve büyük tutarlar büyük borsalarda dakikalar içinde satılabilir. Ancak pratikte kendi likiditeniz, bir borsaya ve diğer tarafta bir bankaya ya da komisyoncuya erişiminize bağlıdır.
+1412|Soru 3: Saklamak ne kadara mal olur?
+1413|Fiziksel dolar ve altın, hırsızlıktan, yangından ve hasardan korunaklı güvenli bir yerde saklanmalıdır. Yıpranmış ya da eski banknotlar satılmakta daha zor olabilir.
+1414|Bitcoin'in ağırlığı yoktur, ama onu güvenle saklamak bir anahtarı yönetmek ya da bir saklayıcıya güvenmek anlamına gelir; Ders 13'te açıklandığı gibi.
+1415|Üçü de yerinde durarak faiz ödemez. Bu, bir mevduattan, bir tahvilden ya da bir işletmeden gerçek bir farktır.
+1416|Soru 4: Neler ters gidebilir?
+1417|Her birinde neler ters gidebilir
+1418|Dolar (nakit)
+1419|Fiyat
+1420|Enflasyona yavaş kayıp
+1421|Uzun zayıf dönemler
+1422|Yarıdan fazla düşüşler
+1423|Saklamak
+1424|Hırsızlık, hasar, yıpranmış banknot
+1425|Hırsızlık, sahteler, ayar
+1426|Kayıp anahtar, dolandırıcılıklar, çöken borsa
+1427|Satmak
+1428|Alış-satış farkı
+1429|Fark ve işçilik ücreti
+1430|Borsa erişimi gerekir
+1431|Kurallar
+1432|Tutma ya da işlem yapma sınırları
+1433|Vergiler ve ticaret sınırları
+1434|Değişen düzenleme
+1435|Her satır farklı türden bir risktir. Hiçbir sütunun boş olmadığına dikkat edin.
+1436|İnsanlar birikimlerini neden dağıtır
+1437|Üçü farklı şekillerde başarısız olduğu için her zaman birlikte düşmezler. Paraya ne zaman ihtiyacınız olacağına uyan tutarlarda birden fazla varlık türü tutmaya
+1438|çeşitlendirme
+1439|denir. Riski ortadan kaldırmaz. Tek bir hikâyenin doğru çıkmasına bağımlı olmaktan kaçınır.
+1440|Her birinden ne kadar, varsa, gelirinize, ihtiyaçlarınıza ve ülkenizin kurallarına bağlıdır. Bu, bu dersin sizin yerinize veremeyeceği kişisel bir karardır.
+1441|Bir varlık seçmeden önce birikim mi yaptığınızı, yatırım mı yaptığınızı yoksa spekülasyon mu yaptığınızı bilin.
+1442|Varlıkları aynı dört soruyla karşılaştırın: dalgalanma, likidite, saklama maliyeti ve neler ters gidebilir.
+1443|Dolar daha istikrarlıdır ama değeri yavaşça kaybeder. Altın eski ve yavaştır, uzun zayıf dönemleri vardır. Bitcoin hızla yükselebilir ve yarıdan fazla düşebilir.
+1444|Makas, iki uçta da ödenen bir maliyettir.
+1445|Buradaki hiçbir şey bir şey almak ya da satmak için bir tavsiye değildir.
+1446|Bu dersle birlikte giden iki ders
+1447|Ders 12, insanları alternatif aramaya iten enflasyonu açıklar. Ders 06, herhangi bir şey almadan önce kendinize sormanız gereken beş soruyu verir.
+1448|Para satın alma gücünü neden kaybeder
+1449|Birikim, yatırım, spekülasyon
+1450|Zaman ufku
+1451|Oynaklık
+1452|Maksimum düşüş
+1453|Makas (spread)
+1454|Saklama ve emanet
+1455|Çeşitlendirme
+1456|Birikimi yatırım ve spekülasyondan ayırın.
+1457|Dolar, altın ve bitcoin'i fiyat dalgalanmaları açısından karşılaştırın.
+1458|Likiditeyi ve makası açıklayın.
+1459|Üçünün her biri için bir saklama riski söyleyin.
+1460|Çeşitlendirmenin ne yaptığını ve ne yapmadığını söyleyin.
+1461|Birikimin amacı nedir?
+1462|A. Mümkün olan en yüksek getiri
+1463|B. Paraya ihtiyaç duyulduğunda satın alma gücünü korumak
+1464|C. Başkalarının getirisini geçmek
+1465|Üçünden hangisi en büyük fiyat düşüşlerini göstermiştir?
+1466|A. Dolar
+1467|B. Altın
+1468|C. Bitcoin
+1469|Doğru cevap: C. Kasım 2021 ile Kasım 2022 arasında yüzde 75'ten fazla düştü.
+1470|Makas (spread) nedir?
+1471|A. Alış ve satış fiyatları arasındaki fark
+1472|B. Yıllık faiz
+1473|C. Bir sikkenin ağırlığı
+1474|Üç varlığın hepsi için hangi ifade doğrudur?
+1475|A. Elinizde tutarken faiz öderler
+1476|B. Yerinde durarak hiçbir şey ödemezler
+1477|C. Fiyatları asla düşmez
+1478|Çeşitlendirme ne yapar?
+1479|A. Tüm riski ortadan kaldırır
+1480|B. Kâr garanti eder
+1481|C. Tek bir varlığın doğru çıkmasına bağımlı olmaktan kaçınır
+1482|ABD İşgücü İstatistikleri Bürosu: Tüketici Fiyat Endeksi
+1483|Dünya Altın Konseyi: Altın fiyat geçmişi
+1484|CoinGecko: Bitcoin fiyat geçmişi
+1485|ABD SEC Investor.gov: Birikim ve yatırımın temelleri
+1486|Geçmiş fiyat hareketleri her varlığın nasıl davrandığına dair örneklerdir. Bundan sonra ne olacağını tahmin etmezler.
+1487|Bugün Al, Yarın Öde: Fırsat mı, Borç Tuzağı mı? | Ditoman Öğren
+1488|Taksit düğmeleri artık hemen her ödeme sayfasının yanında duruyor. Bu ders bir kredinin ya da taksit planının gerçekte neye mal olduğunu, faizin faiz üzerine nasıl büyüdüğünü ve 'sonra öde'ye dokunmadan önce sorulacak dört soruyu gösterir
+1489|Bugün Al, Yarın Öde: Fırsat mı, Borç Tuzağı mı? Ditoman ders görseli
+1490|Kredi • Borç
+1491|Taksit düğmeleri artık hemen her ödeme sayfasının yanında duruyor. Bu ders bir kredinin ya da taksit planının gerçekte neye mal olduğunu, faizin faiz üzerine nasıl büyüdüğünü ve 'sonra öde'ye dokunmadan önce sorulacak dört soruyu gösterir.
+1492|Bir telefon 40 milyona mal oluyor. Bugün 40 milyonunuz yok. Fiyatın altındaki bir düğme diyor ki: dört taksit, evrak yok, bir dakikada onay. Bir dokunuş ve telefon sizin.
+1493|O düğme bir kredidir. Küçük, dostça, iyi tasarlanmış bir kredi, ama bir kredi. Borçlanmak kendi başına kötü değildir. Evler, eğitim ve işletmeler onun üzerine kurulur. Beceri, belirli bir kredinin ne kadara mal olacağını almadan önce bilmektir ve birlikte üzerinde çalışacağımız şey de budur.
+1494|"Şimdi al, sonra öde" nasıl çalışır
+1495|Bir kredi şirketi bugün sizin yerinize mağazaya öder. Siz de borcu kredi verene taksitlerle ödersiniz. Olağan kısa sürümde birkaç hafta içinde faizsiz dört ödeme vardır ve kredi veren, mağazanın ödediği bir ücretten ve gecikme ücretlerinden kazanır.
+1496|Aynı fikir dünyaya yayıldı ve İran'da alışveriş ve ödeme uygulamaları aracılığıyla büyüyor. Çok aylara yayılan daha uzun planlar, adı faiz, ücret ya da "hizmet bedeli" olsun, genellikle faiz alır.
+1497|Neden bedava gibi hissettirir
+1498|Bir fiyatı dörde bölmek her sayıyı küçültür ve zihin küçük sayıyı yargılar. Kırk milyon ağır gelir. On milyon iyi gelir. Toplam aynıdır.
+1499|İkinci bir etki daha önemlidir. Her plan tek başına zararsız görünür, bu yüzden birikirler. ABD tüketici finansmanı düzenleyicisinin bir çalışması, 'sonra öde' kullanıcılarının yüzde 63'ünün yıl içinde aynı anda birden fazla böyle krediye sahip olduğunu ve yaklaşık üçte birinin birden fazla kredi verenden borçlandığını buldu. Her kredi veren yalnızca kendi kredisini görür. Toplamı yalnızca siz görürsünüz.
+1500|Bir kredinin gerçek fiyatı
+1501|Herhangi iki krediyi karşılaştırmak için her şeyi tek bir sayıya koyun: geri ödediğiniz toplam, eksi aldığınız tutar.
+1502|Basit bir örnek alın. 100 milyon borçlanıyorsunuz ve on iki ay boyunca ayda 9,5 milyon ödüyorsunuz. 114 milyon geri ödüyorsunuz. Kredi 14 milyona mal oldu.
+1503|Ama 100 milyonun tamamına bütün yıl boyunca sahip olmadığınıza dikkat edin. Onu ay ay geri veriyordunuz, yani ortalamada yalnızca yaklaşık yarısını tuttunuz. Bu, gerçek yıllık oranı ilk görünenin kabaca iki katı yapar; bu örnekte 14 değil, yaklaşık yüzde 25.
+1504|Bu yüzden birçok ülkede kredi verenlerin tüm ücretleri içeren bir yıllık oran göstermesi zorunludur. Bir plan yalnızca aylık taksiti gösterdiğinde, toplamı kendiniz hesaplayın.
+1505|Örnek: 12 ay vadeli 100 milyonluk kredi
+1506|Tutar
+1507|Alınan tutar
+1508|100 milyon
+1509|Aylık taksit
+1510|9,5 milyon
+1511|Geri ödenen toplam
+1512|114 milyon
+1513|Kredinin maliyeti
+1514|14 milyon
+1515|Basit yüzde
+1516|Gerçek yıllık oran (yaklaşık)
+1517|yaklaşık yüzde 25
+1518|Faiz üzerine faiz
+1519|Bir borç ödenmediğinde faiz borca eklenir ve bir sonraki sefer daha büyük tutar üzerinden faiz işler. Buna
+1520|bileşik faiz
+1521|denir. Bir tasarruf sahibine yardım eden aynı güçtür, ters yönde çalışır. Yıllık yüzde 30'dan 100 milyonluk bir borç, dokunulmadan bırakılırsa bir yıl sonra 130 milyon, iki yıl sonra 169 milyon ve üç yıl sonra yaklaşık 220 milyon olur. Ders 12'deki 72 kuralı burada da geçerlidir: yüzde 30'da bir borç yaklaşık iki buçuk yılda ikiye katlanır.
+1522|Gecikme ücretleri aynı yönde çalışır. Kaçırılan bir taksit ceza ekler ve ceza bir sonraki ödemeyi zorlaştırır.
+1523|İyi borç, pahalı borç
+1524|Resmî bir çizgi yoktur, ama bir soru çoğu durumu ayırır: borçlandığım şey geri ödemelerden daha uzun mu dayanacak ve bana para kazandıracak ya da tasarruf ettirecek mi?
+1525|İş için bir alet, gelirinizi artıran bir kurs ya da bir ev bu sınavı geçebilir. Bir tatil, bir restoran yemeği ya da ihtiyacınız olmayan bir telefon genellikle geçemez: keyif biter, taksitler devam eder.
+1526|Dokunmadan önce dört soru
+1527|Toplam nedir?
+1528|Her taksiti ve her ücreti toplayın.
+1529|Geç kalırsam ne olur?
+1530|Cezayı bilmeniz gerekmeden önce okuyun.
+1531|Zaten başka ne ödüyorum?
+1532|Önümüzdeki üç ay içinde vadesi gelen her taksiti, her uygulamadan, yazın.
+1533|Bunu bu fiyata nakit olarak alır mıydım?
+1534|Cevap hayırsa, taksit planı kararı sizin yerinize veriyor demektir.
+1535|"Sonra öde" bir kredidir, düğmede ne yazarsa yazsın.
+1536|Küçük taksitler toplamı gizler. Toplayın.
+1537|Aylık ödenen bir kredide gerçek yıllık oran, basit yüzdenin kabaca iki katıdır.
+1538|Ödenmeyen borç bileşik faiz ve gecikme ücretleriyle kendi üzerine büyür.
+1539|Geri ödemelerden daha uzun ömürlü şeyler için borçlanın.
+1540|Borç ve enflasyon buluşur
+1541|Enflasyon, borçlu olduğunuz para da dahil, paranın değerini küçültür. Ders 12 reel getirileri açıklar ve aynı hesap bir kredi için de geçerlidir: reel maliyet, kredi oranı eksi enflasyondur.
+1542|Bankalar yok olacak mı?
+1543|Şimdi al, sonra öde
+1544|Taksit
+1545|Toplam kredi maliyeti
+1546|Ücretler dahil yıllık oran
+1547|Bileşik faiz
+1548|Gecikme ücreti
+1549|Kredi yığma
+1550|Kredi puanlaması
+1551|Bir 'sonra öde' planının nasıl çalıştığını ve parasını kimin ödediğini açıklayın.
+1552|Bir kredinin toplam maliyetini taksitlerinden hesaplayın.
+1553|Gerçek yıllık oranın basit yüzdeden neden yüksek olduğunu söyleyin.
+1554|Ödenmeyen bir borçtaki bileşik faizi açıklayın.
+1555|Bir taksit teklifini yargılamak için dört soruyu kullanın.
+1556|Sade bir dille 'sonra öde' düğmesi nedir?
+1557|A. Bir indirim
+1558|B. Bir kredi
+1559|C. Mağazadan bir hediye

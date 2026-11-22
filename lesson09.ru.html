@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Что на самом деле значит блокировка ликвидности? | Ditoman Learn</title>
+<meta name="description" content="Сегодня мы заблокировали ликвидность TMN. Этот урок берёт нашу блокировку как пример: что такое пул ликвидности, что такое LP-токены, от чего защищает блокировка, чего она не доказывает и как проверить любую блокировку" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson09.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson09.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson09.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson09.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson09.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson09.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson09.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson09.ru.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Что на самом деле значит блокировка ликвидности? | Ditoman Learn" />
+<meta property="og:description" content="Сегодня мы заблокировали ликвидность TMN. Этот урок берёт нашу блокировку как пример: что такое пул ликвидности, что такое LP-токены, от чего защищает блокировка, чего она не доказывает и как проверить любую блокировку" />
+<meta property="og:url" content="https://ditoman.com/lesson09.ru.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson09.ru.html#page",
+   "url": "https://ditoman.com/lesson09.ru.html",
+   "name": "Что на самом деле значит блокировка ликвидности? | Ditoman Learn",
+   "description": "Сегодня мы заблокировали ликвидность TMN. Этот урок берёт нашу блокировку как пример: что такое пул ликвидности, что такое LP-токены, от чего защищает блокировка, чего она не доказывает и как проверить любую блокировку",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Что на самом деле значит блокировка ликвидности?",
+     "item": "https://ditoman.com/lesson09.ru.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.ru.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.ru.html" class="active">Учиться</a>
+<a href="iran.en.html">Иран</a>
+<a href="companies.en.html">Компании</a>
+<a href="prices.ru.html">Цены</a>
+<a href="calendar.en.html">Календарь</a>
+<a href="tmn.ru.html">TMN</a>
+<a href="index.ru.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Публикации</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson09-liquidity-lock.jpg" alt="Что значит блокировка ликвидности? Иллюстрация урока Ditoman" onerror="this.parentElement.style.display='none'"><img lang="en" src="lesson09-liquidity-lock-en.jpg" alt="Что значит блокировка ликвидности? Иллюстрация урока Ditoman" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge" lang="en">Безопасность • Проверки токенов</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">امنیت • بررسی توکن</div>
+<h1 lang="en">Что на самом деле значит блокировка ликвидности?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">قفل لیکوئیدیتی واقعاً یعنی چه؟</h1>
+<p class="subtitle" lang="en">
+Сегодня мы заблокировали ликвидность TMN. Этот урок берёт нашу блокировку как пример: что такое пул ликвидности, что такое LP-токены, от чего защищает блокировка, чего она не доказывает и как самим проверить любую блокировку.
+</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">امروز لیکوئیدیتی TMN را قفل کردیم. این درس قفل خود ما را نمونه قرار می‌دهد: استخر لیکوئیدیتی چیست، توکن LP چیست، قفل از چه چیزی محافظت می‌کند، چه چیزی را ثابت نمی‌کند، و هر قفلی را خودتان چطور بررسی کنید.</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span lang="en">Уровень</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Для начинающих</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box">
+<span lang="en">Время чтения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 минут</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box">
+<span lang="en">Баллы обучения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">15 LP</strong><strong lang="fa" dir="rtl" style="display:block">۱۵ امتیاز</strong></div>
+<div class="meta-box">
+<span lang="en">Будущий тест</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک آینده</span><strong lang="en">5 вопросов</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Содержание урока</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">
+Читайте урок на английском или персидском. Эта структура создана для будущих систем тестов, баллов, репутации и наград.
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمونک، امتیاز، اعتبار و پاداش‌هایی طراحی شده که در آینده اضافه می‌شوند.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Русский</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>В уроке 05 мы перечислили пять проверок для любого токена перед тем, как к нему прикасаться. Пятая проверка была такой: есть ли реальная ликвидность и заблокирована ли она? Сегодня мы сделали это для нашего собственного токена. Этот урок объясняет, что мы сделали и что это значит.</p>
+
+<h3><span class="check-number">01.</span> Что такое ликвидность</h3>
+<p>Чтобы токен можно было покупать и продавать на децентрализованной бирже, такой как PancakeSwap, кто-то должен поместить в пул две вещи рядом: сам токен и что-то, что люди уже ценят, например BNB. Покупатели вносят BNB и забирают токены; продавцы делают обратное.</p>
+<p>Этот пул и есть ликвидность токена. Без него торговать негде.</p>
+
+<h3><span class="check-number">02.</span> LP-токены — это расписка</h3>
+<p>Тот, кто добавляет деньги в пул, получает LP-токены (токены поставщика ликвидности). Считайте их распиской. Владелец расписки может в любой момент вернуть её в пул и забрать свою долю BNB и токенов.</p>
+
+<h3><span class="check-number">03.</span> Риск: rug pull</h3>
+<p>Если расписка у команды проекта, она может опустошить пул за ночь. Держатели остаются с токенами, которые больше нельзя продать. Это называется rug pull и является одним из самых частых способов потерять деньги на небольших токенах.</p>
+
+<h3><span class="check-number">04.</span> Что делает блокировка</h3>
+<p>Блокировка помещает LP-токены в отдельный смарт-контракт с датой разблокировки. До этой даты никто не может забрать их обратно, включая того, кто их заблокировал. Сервисы блокировки, такие как PinkLock, UNCX и Team Finance, публикуют каждую блокировку как публичную запись, поэтому любой может её проверить.</p>
+
+<h3><span class="check-number">05.</span> Что мы сделали с TMN</h3>
+<p>29 октября 2026 года мы заблокировали все LP-токены TMN/BNB основного кошелька проекта в PinkLock на BNB Smart Chain: сначала 0,2277 LP, а затем, после добавления в тот же день ещё BNB-ликвидности, всего 0,3461 LP из пула PancakeSwap V2. Дата разблокировки — 29 октября 2027 года. Запись публична: <a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Запись PinkLock #2089923</a>.</p>
+<p>Это следует за прежними шагами: владение контрактом отозвано, поэтому новые TMN выпустить уже нельзя, и 10% первоначального предложения изъято.</p>
+
+<h3><span class="check-number">06.</span> Чего блокировка не доказывает</h3>
+<p>Блокировка устраняет один конкретный риск: что заблокированную ликвидность выведут до даты разблокировки. Она не доказывает, что токен ценен, что проект добьётся успеха или что цена вырастет.</p>
+<p>Она также не отвечает на другие проверки. Предложение TMN по-прежнему сосредоточено в кошельках основателей, что видно на BscScan. Мы говорим об этом открыто, и вы должны проверять это для любого токена, включая наш.</p>
+
+<h3><span class="check-number">07.</span> Как самим проверить любую блокировку</h3>
+<p>Откройте запись о блокировке и подтвердите четыре вещи: адрес пары совпадает с реальным пулом токена, заблокированная сумма, дата разблокировки и какую долю всего пула составляет эта сумма. Блокировка, которая заканчивается на следующей неделе или охватывает крошечную часть пула, значит очень мало.</p>
+
+<h3>Что из этого вынести</h3>
+<p>Доверие — это не обещание. Это то, что можно проверить. Не доверяй. Проверяй.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>در درس پنجم، پنج بررسی را گفتیم که قبل از دست زدن به هر توکنی باید انجام داد. بررسی پنجم این بود: آیا لیکوئیدیتی واقعی دارد و آیا قفل شده؟ امروز همین کار را برای توکن خودمان انجام دادیم. این درس توضیح می‌دهد چه کردیم و یعنی چه.</p>
+
+<h3><span class="check-number">۰۱.</span> لیکوئیدیتی چیست</h3>
+<p>برای اینکه یک توکن در صرافی غیرمتمرکزی مثل PancakeSwap خرید و فروش شود، کسی باید دو چیز را کنار هم در یک استخر بگذارد: خود توکن، و چیزی که مردم برایش ارزش قائل‌اند مثل BNB. خریدار BNB می‌گذارد و توکن برمی‌دارد؛ فروشنده برعکس.</p>
+<p>این استخر، لیکوئیدیتی توکن است. بدون آن، جایی برای معامله وجود ندارد.</p>
+
+<h3><span class="check-number">۰۲.</span> توکن LP یک رسید است</h3>
+<p>هر کسی که به استخر پول اضافه کند، «توکن LP» می‌گیرد. آن را مثل یک رسید در نظر بگیرید. صاحب رسید هر وقت بخواهد می‌تواند آن را به استخر پس بدهد و سهمش از BNB و توکن را بیرون بکشد.</p>
+
+<h3><span class="check-number">۰۳.</span> خطر: راگ‌پول</h3>
+<p>اگر رسید دست تیم پروژه باشد، می‌توانند یک‌شبه استخر را خالی کنند. دارندگان توکن با توکن‌هایی می‌مانند که دیگر قابل فروش نیست. به این «راگ‌پول» می‌گویند و یکی از رایج‌ترین راه‌های ضرر کردن روی توکن‌های کوچک است.</p>
+
+<h3><span class="check-number">۰۴.</span> قفل چه می‌کند</h3>
+<p>قفل، توکن‌های LP را در یک قرارداد هوشمند جداگانه با تاریخ آزاد شدن مشخص می‌گذارد. تا آن تاریخ هیچ‌کس، حتی کسی که قفل کرده، نمی‌تواند آن‌ها را پس بگیرد. قفل‌کننده‌هایی مثل PinkLock، UNCX و Team Finance هر قفل را به‌صورت رکورد عمومی منتشر می‌کنند تا هر کسی بتواند بررسی‌اش کند.</p>
+
+<h3><span class="check-number">۰۵.</span> ما با TMN چه کردیم</h3>
+<p>در ۷ آبان ۱۴۰۵ (۲۹ اکتبر ۲۰۲۶) همه‌ی توکن‌های LP استخر TMN/BNB را که در کیف‌پول اصلی پروژه بود در PinkLock روی شبکه‌ی BNB قفل کردیم: اول ۰.۲۲۷۷ LP، و همان روز پس از افزودن BNB تازه به استخر، در مجموع ۰.۳۴۶۱ LP از استخر PancakeSwap V2. تاریخ آزاد شدن ۷ آبان ۱۴۰۶ (۲۹ اکتبر ۲۰۲۷) است. رکورد عمومی است: <a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">رکورد PinkLock شماره‌ی ۲۰۸۹۹۲۳</a>.</p>
+<p>این قدم بعد از قدم‌های قبلی است: مالکیت قرارداد رنانس شده، پس هیچ TMN تازه‌ای هرگز ساخته نمی‌شود، و ۱۰٪ عرضه‌ی اولیه حذف شده است.</p>
+
+<h3><span class="check-number">۰۶.</span> قفل چه چیزی را ثابت نمی‌کند</h3>
+<p>قفل یک خطر مشخص را حذف می‌کند: اینکه لیکوئیدیتی قفل‌شده قبل از تاریخ آزاد شدن بیرون کشیده شود. ثابت نمی‌کند که توکن ارزش دارد، پروژه موفق می‌شود یا قیمت بالا می‌رود.</p>
+<p>بررسی‌های دیگر را هم جواب نمی‌دهد. عرضه‌ی TMN هنوز در کیف‌پول‌های بنیان‌گذاران متمرکز است و این را در BscScan می‌توانید ببینید. ما این را صریح می‌گوییم، و شما باید برای هر توکنی، از جمله توکن ما، بررسی‌اش کنید.</p>
+
+<h3><span class="check-number">۰۷.</span> چطور هر قفلی را خودتان بررسی کنید</h3>
+<p>رکورد قفل را باز کنید و چهار چیز را چک کنید: آدرس استخر با استخر واقعی توکن یکی باشد، مقدار قفل‌شده، تاریخ آزاد شدن، و اینکه این مقدار چه سهمی از کل استخر است. قفلی که هفته‌ی بعد باز می‌شود یا فقط بخش کوچکی از استخر را پوشش می‌دهد، معنای زیادی ندارد.</p>
+
+<h3>چه برداشتی کنیم</h3>
+<p>اعتماد یک قول نیست؛ چیزی است که می‌شود بررسی‌اش کرد. اعتماد نکن؛ بررسی کن.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Применяем пятую проверку к TMN</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بررسی پنجم روی TMN</h2>
+<p lang="en">
+Урок 05 показал, что TMN не прошёл две из пяти проверок: сконцентрированное предложение и отсутствие заблокированной ликвидности. С сегодняшней блокировкой ликвидность в основном кошельке проекта заблокирована до октября 2027 года. Концентрация предложения остаётся открытым вопросом, и мы будем сообщать о ней по мере изменений.
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس پنجم نشان داد که TMN در دو بررسی از پنج بررسی رد می‌شد: عرضه‌ی متمرکز و لیکوئیدیتی قفل‌نشده. با قفل امروز، لیکوئیدیتی کیف‌پول اصلی پروژه تا اکتبر ۲۰۲۷ قفل است. تمرکز عرضه هنوز مسئله‌ای باز است و هر تغییری در آن را گزارش می‌کنیم.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer"><span lang="en">Проверить блокировку</span><span lang="fa">بررسی قفل</span></a>
+<a class="button" href="lesson05.ru.html"><span lang="en">Как проверить любой токен</span><span lang="fa">هر توکنی را چطور بررسی کنیم</span></a>
+<a class="button" href="tmn.ru.html"><span lang="en">О TMN</span><span lang="fa">درباره‌ی TMN</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Ключевые понятия</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en">
+<li>Пул ликвидности</li>
+<li>LP-токены как расписка</li>
+<li>Rug pull</li>
+<li>Блокировка ликвидности и дата разблокировки</li>
+<li>Публичные записи о блокировках</li>
+<li>Чего блокировка не доказывает</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>استخر لیکوئیدیتی</li>
+<li>توکن LP به‌عنوان رسید</li>
+<li>راگ‌پول</li>
+<li>قفل لیکوئیدیتی و تاریخ آزاد شدن</li>
+<li>رکوردهای عمومی قفل</li>
+<li>آنچه یک قفل ثابت نمی‌کند</li>
+</ul>
+</div>
+<div class="card">
+<h3 lang="en">Цели обучения</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en">
+<li>Объяснить, что такое пул ликвидности и зачем он токену.</li>
+<li>Описать, что представляют LP-токены.</li>
+<li>Объяснить, как происходит rug pull.</li>
+<li>Прочитать запись о блокировке и проверить её пару, сумму, дату и долю в пуле.</li>
+<li>Назвать, чего блокировка не говорит о токене.</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>توضیح دهید استخر لیکوئیدیتی چیست و چرا هر توکن به آن نیاز دارد.</li>
+<li>شرح دهید توکن‌های LP نشان‌دهنده‌ی چه چیزی هستند.</li>
+<li>توضیح دهید راگ‌پول چطور اتفاق می‌افتد.</li>
+<li>رکورد یک قفل را بخوانید و جفت‌ارز، مقدار، تاریخ و سهم آن از استخر را بررسی کنید.</li>
+<li>بگویید یک قفل چه چیزهایی را درباره‌ی توکن به شما نمی‌گوید.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Банк вопросов будущего теста</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بانک پرسش‌های آزمونک آینده</h2>
+<p class="section-subtitle" lang="en">
+Эти вопросы подготовлены для будущей системы тестов и участия Ditoman. Позже они могут использоваться для баллов обучения, уровней репутации и возможного права на награду в TMN.
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">این پرسش‌ها برای سامانه‌ی آزمونک و مشارکت آینده‌ی دیتومان آماده شده‌اند. ممکن است بعدها مبنای امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN شوند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Вопрос 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Что представляют LP-токены?</p>
+<p lang="fa" dir="rtl" style="text-align:right">توکن‌های LP نشان‌دهنده‌ی چه چیزی هستند؟</p>
+<p lang="en">A. Долю в компании токена</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. سهمی از شرکت سازنده‌ی توکن</p><p lang="en">B. Расписка за деньги, добавленные в пул ликвидности</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. رسیدی برای پولی که به استخر لیکوئیدیتی اضافه شده</p><p lang="en">C. Скидка на торговую комиссию</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. تخفیف کارمزد معامله</p><p lang="en">D. Голос в управлении</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. حق رأی در اداره‌ی پروژه</p>
+<p class="answer" lang="en">Правильный ответ: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Что такое rug pull?</p>
+<p lang="fa" dir="rtl" style="text-align:right">راگ‌پول چیست؟</p>
+<p class="answer" lang="en">Правильный ответ: когда тот, кто держит LP-токены, выводит ликвидность, и держатели не могут продать.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: وقتی کسی که توکن‌های LP دستش است لیکوئیدیتی را بیرون می‌کشد و دارندگان توکن دیگر نمی‌توانند بفروشند.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Верно или неверно: блокировка ликвидности доказывает, что цена токена вырастет.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درست یا نادرست: قفل لیکوئیدیتی ثابت می‌کند که قیمت توکن بالا می‌رود.</p>
+<p class="answer" lang="en">Правильный ответ: неверно. Она лишь не позволяет вывести заблокированную ликвидность до даты разблокировки.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: نادرست. قفل فقط جلوی بیرون کشیدن لیکوئیدیتی قفل‌شده را تا تاریخ آزاد شدن می‌گیرد.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Что из этого нужно проверить в записи о блокировке?</p>
+<p lang="fa" dir="rtl" style="text-align:right">در رکورد یک قفل، کدام‌یک را باید بررسی کنید؟</p>
+<p lang="en">A. Адрес пары</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. آدرس جفت‌ارز</p><p lang="en">B. Заблокированную сумму и её долю в пуле</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. مقدار قفل‌شده و سهم آن از استخر</p><p lang="en">C. Дату разблокировки</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. تاریخ آزاد شدن</p><p lang="en">D. Всё перечисленное</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. همه‌ی موارد</p>
+<p class="answer" lang="en">Правильный ответ: D</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: د</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Когда разблокируется заблокированная ликвидность TMN?</p>
+<p lang="fa" dir="rtl" style="text-align:right">لیکوئیدیتی قفل‌شده‌ی TMN چه زمانی آزاد می‌شود؟</p>
+<p lang="en">A. 29 октября 2026</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۲۹ اکتبر ۲۰۲۶</p><p lang="en">B. 29 октября 2027</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۲۹ اکتبر ۲۰۲۷</p><p lang="en">C. Никогда</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. هرگز</p><p lang="en">D. Когда решат основатели</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. هر وقت بنیان‌گذاران بخواهند</p>
+<p class="answer" lang="en">Правильный ответ: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Источники</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul>
+<li><a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Запись PinkLock #2089923, блокировка ликвидности TMN/WBNB</a></li>
+<li><a href="https://bscscan.com/token/0x6f1836B15de0C6294C16aAec67903515f532fa1C" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BscScan, пара TMN/WBNB на PancakeSwap (LP-токен)</a></li>
+<li><a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BscScan, контракт токена DiToman (TMN)</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title" lang="en">Краткое содержание из Instagram</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">خلاصه در اینستاگرام</h2>
+<p lang="en">
+Этот урок впервые был представлен в Instagram Ditoman. Версия в Instagram даёт короткое визуальное резюме, а эта страница — полную учебную версию.
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">خلاصه‌ی تصویری این درس ابتدا در اینستاگرام دیتومان منتشر شد. نسخه‌ی اینستاگرام یک معرفی کوتاه و تصویری است و این صفحه نسخه‌ی کامل آموزشی آن است.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">Смотреть в Instagram</span><span lang="fa">دیدن در اینستاگرام</span></a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span lang="en">Вступить в Telegram</span><span lang="fa">عضویت در تلگرام</span></a>
+<a class="button" href="learn.ru.html"><span lang="en">Назад к обучению</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson08.ru.html"><span lang="en">Предыдущий урок</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson10.ru.html"><span lang="en">Следующий урок</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Построено на структуре, движимо открытием.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-ru.js?v=20261121a"></script>
+</body>
+</html>

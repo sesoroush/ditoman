@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>第05课 | 如何在接触任何代币之前先检查它 | Ditoman 学习</title>
+<meta name="description" content="Ditoman 学习 第05课。任何人在与代币交互之前都可以免费进行的五项检查：合约验证、持有者分布、所有权、隐藏函数和流动性。" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.check-table {
+display: grid;
+gap: 12px;
+margin: 24px 0;
+}
+.check-row {
+display: grid;
+grid-template-columns: 1fr auto;
+gap: 16px;
+align-items: center;
+padding: 16px 20px;
+border-radius: 16px;
+background: rgba(5, 15, 22, 0.7);
+border: 1px solid rgba(78, 227, 206, 0.14);
+}
+.check-row span {
+color: #c1dbde;
+}
+.check-row strong {
+font-weight: 800;
+white-space: nowrap;
+}
+.pass {
+color: #7ff5de;
+}
+.fail {
+color: #ffb74d;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+.check-row {
+grid-template-columns: 1fr;
+gap: 6px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson05.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson05.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson05.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson05.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson05.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson05.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson05.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson05.zh.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="第05课 | 如何在接触任何代币之前先检查它 | Ditoman 学习" />
+<meta property="og:description" content="Ditoman 学习 第05课。任何人在与代币交互之前都可以免费进行的五项检查：合约验证、持有者分布、所有权、隐藏函数和流动性。" />
+<meta property="og:url" content="https://ditoman.com/lesson05.zh.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson05.zh.html#page",
+   "url": "https://ditoman.com/lesson05.zh.html",
+   "name": "第05课 | 如何在接触任何代币之前先检查它 | Ditoman 学习",
+   "description": "Ditoman 学习 第05课。任何人在与代币交互之前都可以免费进行的五项检查：合约验证、持有者分布、所有权、隐藏函数和流动性。",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "第05课 | 如何在接触任何代币之前先检查它 | Ditoman 学习",
+     "item": "https://ditoman.com/lesson05.zh.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.zh.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.zh.html" class="active">学习</a>
+<a href="iran.en.html">伊朗</a>
+<a href="companies.en.html">企业</a>
+<a href="prices.zh.html">价格</a>
+<a href="calendar.en.html">日历</a>
+<a href="tmn.zh.html">TMN</a>
+<a href="index.zh.html#whitepapers">白皮书</a>
+<a href="posts.en.html">动态</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="lesson05-token-checklist.png" alt="如何在接触任何代币之前先检查它，Ditoman 课程图片">
+</div>
+<div lang="en">
+<div class="lesson-badge">第05课 • 安全系列</div>
+<h1>如何在接触任何代币之前先检查它</h1>
+<p class="subtitle">
+五项检查。五分钟。零成本。大多数在加密货币中亏钱的人从未做过这些检查。
+</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span>难度</span>
+<strong>入门</strong>
+</div>
+<div class="meta-box">
+<span>阅读时间</span>
+<strong>7分钟</strong>
+</div>
+<div class="meta-box">
+<span>学习积分</span>
+<strong>15 LP</strong>
+</div>
+<div class="meta-box">
+<span>未来测验</span>
+<strong>5道题</strong>
+</div>
+</div>
+</div>
+<div lang="fa" dir="rtl">
+<div class="lesson-badge" style="letter-spacing:0">درس ۰۵ • مجموعه امنیت</div>
+<h1>پیش از دست زدن به هر توکن، این‌ها را بررسی کنید</h1>
+<p class="subtitle">پنج بررسی. پنج دقیقه. بدون هزینه. بیشتر کسانی که در کریپتو پول از دست می‌دهند، هیچ‌وقت این بررسی‌ها را انجام نداده‌اند.</p>
+<div class="meta-grid">
+<div class="meta-box"><span style="letter-spacing:0">سطح</span><strong>مقدماتی</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">زمان مطالعه</span><strong>۷ دقیقه</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">امتیاز یادگیری</span><strong>۱۵ امتیاز</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">آزمون آینده</span><strong>۵ سؤال</strong></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div lang="en">
+<h2 class="section-title">课程内容</h2>
+<p class="section-subtitle">
+可用英文或波斯文阅读本课。这一结构为未来的测验、积分、声誉和奖励系统而设计。
+</p>
+</div>
+<div lang="fa" dir="rtl">
+<h2 class="section-title">متن درس</h2>
+<p class="section-subtitle">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمون‌ها، امتیازها، اعتبار و سیستم‌های پاداش آینده طراحی شده است.</p>
+</div>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">中文</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>大多数在代币上亏钱的人并不是选错了项目。他们只是从未检查过关键的东西。</p>
+<p>下面每一项检查都是免费、公开的，只需约一分钟。你不需要技术知识，只需要知道去哪里看。</p>
+
+<h3><span class="check-number">01.</span> 合约是否已验证？</h3>
+<p>在 BscScan 等区块浏览器中打开该代币，进入“合约”标签。如果源代码已验证，你会看到可读的代码和一个确认标记。如果未验证，你只能看到机器码，这意味着团队之外没有人能读懂这个代币实际在做什么。</p>
+<p>未验证并不自动意味着不诚实。但这意味着你信任的是一句承诺，而不是亲自阅读规则。</p>
+
+<h3><span class="check-number">02.</span> 谁持有供应量？</h3>
+<p>打开“持有者”标签。看看前几名钱包控制着总供应量的多少。</p>
+<p>如果少数钱包几乎持有全部，那么一个人的一个决定就能撼动整个市场。集中度并不能证明存在恶意，很多早期项目都是这样开始的。但这始终是一种风险，最好在行动之前就知道，而不是之后。</p>
+
+<h3><span class="check-number">03.</span> 还能继续创建新代币吗？</h3>
+<p>在“读取合约”部分，找到名为 owner 的函数。如果它返回一个普通钱包地址，那么这个人仍然控制合约中所有仅限所有者的函数，其中可能包括创建新代币。</p>
+<p>如果它返回一个全部由零组成的地址，说明所有权已被放弃。这些权力已永久消失，包括原团队在内，没有人能把它们找回来。</p>
+<p>这一点很重要，因为可以无限增长的供应量会稀释所有持有该代币的人。</p>
+
+<h3><span class="check-number">04.</span> 是否有隐藏的限制？</h3>
+<p>阅读合约代码，查看是否有转账税、暂停函数，或封锁特定地址的功能。有些代币被设计成买入正常，卖出却不行。</p>
+<p>这是最常见的陷阱之一，而且在你花出任何钱之前，就能在代码中看到。</p>
+
+<h3><span class="check-number">05.</span> 是否有真实的流动性？</h3>
+<p>屏幕上的价格不是钱。只有当有人愿意与之交易时，它才会变成钱。</p>
+<p>查看是否存在真实的流动性池，以及它有多深。没有流动性，无论显示什么数字，都没有退出的可能。</p>
+
+<h3>真正重要的习惯</h3>
+<p>这五项检查不会让你预测哪些项目会成功。没有任何方法能做到这一点。</p>
+<p>它们能做的，是去除人们亏钱时最常见、也最可避免的方式：看不懂的代币、看不到的供应、不知道存在的权力，以及从来就不存在的退出通道。</p>
+<p>先检查，后决定。</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>بیشتر کسانی که روی یک توکن ضرر می‌کنند، پروژه اشتباهی را انتخاب نکرده‌اند. آن‌ها هرگز چیزهای درست را بررسی نکرده‌اند.</p>
+<p>همه بررسی‌های زیر رایگان، عمومی و حدود یک دقیقه‌ای هستند. به دانش فنی نیاز ندارید. فقط باید بدانید کجا را نگاه کنید.</p>
+
+<h3><span class="check-number">۰۱.</span> آیا قرارداد تأیید شده است؟</h3>
+<p>توکن را در یک بلاک اکسپلورر مانند BscScan باز کنید و به بخش Contract بروید. اگر سورس کد تأیید شده باشد، کد قابل خواندن و یک علامت تأیید می‌بینید. اگر تأیید نشده باشد، فقط کد ماشین دیده می‌شود، یعنی هیچ‌کس بیرون از تیم نمی‌تواند بفهمد این توکن واقعاً چه کاری انجام می‌دهد.</p>
+<p>تأیید نشدن لزوماً به معنای نادرستی نیست. اما یعنی شما به جای خواندن قوانین، به یک وعده اعتماد می‌کنید.</p>
+
+<h3><span class="check-number">۰۲.</span> چه کسی عرضه را در اختیار دارد؟</h3>
+<p>بخش Holders را باز کنید و ببینید کیف‌پول‌های اصلی چه مقدار از کل عرضه را کنترل می‌کنند.</p>
+<p>اگر تعداد کمی کیف پول تقریباً همه چیز را در اختیار داشته باشند، یک تصمیم از یک نفر می‌تواند کل بازار را جابه‌جا کند. تمرکز عرضه به‌خودی‌خود نشانه نیت بد نیست و بسیاری از پروژه‌های تازه این‌گونه شروع می‌شوند. اما همیشه یک ریسک است، و بهتر است پیش از اقدام از آن باخبر باشید، نه بعد از آن.</p>
+
+<h3><span class="check-number">۰۳.</span> آیا هنوز می‌توان توکن جدید ساخت؟</h3>
+<p>در بخش Read Contract دنبال تابعی به نام owner بگردید. اگر یک آدرس معمولی برگرداند، آن شخص هنوز کنترل توابع مخصوص مالک را دارد که می‌تواند شامل ساخت توکن جدید باشد.</p>
+<p>اگر آدرسی که تماماً از صفر تشکیل شده برگرداند، مالکیت سلب شده است. آن اختیارات برای همیشه از بین رفته‌اند و هیچ‌کس، حتی تیم اولیه، نمی‌تواند آن‌ها را بازگرداند.</p>
+<p>این موضوع مهم است، چون عرضه‌ای که بدون محدودیت رشد کند، ارزش دارایی همه دارندگان را کاهش می‌دهد.</p>
+
+<h3><span class="check-number">۰۴.</span> آیا محدودیت پنهانی وجود دارد؟</h3>
+<p>کد قرارداد را از نظر مالیات انتقال، تابع توقف، یا امکان مسدود کردن آدرس‌های مشخص بررسی کنید. برخی توکن‌ها طوری ساخته شده‌اند که خرید به‌درستی کار می‌کند اما فروش انجام نمی‌شود.</p>
+<p>این یکی از رایج‌ترین تله‌هاست و پیش از آنکه پولی خرج کنید، در کد قابل مشاهده است.</p>
+
+<h3><span class="check-number">۰۵.</span> آیا نقدشوندگی واقعی وجود دارد؟</h3>
+<p>قیمتی که روی صفحه می‌بینید پول نیست. وقتی پول می‌شود که کسی حاضر باشد در مقابل آن معامله کند.</p>
+<p>بررسی کنید که آیا استخر نقدشوندگی واقعی وجود دارد و چه عمقی دارد. بدون نقدشوندگی، راه خروجی وجود ندارد، هر عددی هم که نمایش داده شود.</p>
+
+<h3>عادتی که اهمیت دارد</h3>
+<p>این پنج بررسی باعث نمی‌شود در تشخیص پروژه‌های موفق درست عمل کنید. هیچ چیز چنین تضمینی نمی‌دهد.</p>
+<p>کاری که انجام می‌دهند این است: رایج‌ترین و قابل‌پیشگیری‌ترین راه‌های از دست دادن پول را حذف می‌کنند. توکن‌هایی که نمی‌شد خواند، عرضه‌ای که دیده نمی‌شد، اختیاراتی که از آن‌ها خبر نداشتید، و راه خروجی که اصلاً وجود نداشت.</p>
+<p>اول بررسی کنید. بعد تصمیم بگیرید.</p>
+</div>
+</div>
+</section>
+
+<section lang="en" class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title">现在对我们自己运行一遍</h2>
+<p>
+只有当清单也适用于发布它的人时，它才是诚实的。下面是用同样五项检查衡量 TMN 的结果，包括我们没有通过的几项。
+</p>
+<div class="check-table">
+<div class="check-row">
+<span>01. 合约源代码已在 BscScan 验证</span>
+<strong class="pass">是</strong>
+</div>
+<div class="check-row">
+<span>02. 持有者之间的供应分布</span>
+<strong class="fail">高度集中</strong>
+</div>
+<div class="check-row">
+<span>03. 所有权已放弃，无法再创建新代币</span>
+<strong class="pass">是，永久</strong>
+</div>
+<div class="check-row">
+<span>04. 无转账税、无黑名单、无暂停函数</span>
+<strong class="pass">已在代码中确认</strong>
+</div>
+<div class="check-row">
+<span>05. 流动性代币已锁定</span>
+<strong class="pass">至2027年10月29日</strong>
+</div>
+</div>
+<p>
+TMN 于2022年部署，从未被分发或推广，这就是供应仍然集中的原因。我们公开说明这一点，而不是等别人发现，因为一个要求人们去验证的项目，自己也应当是可验证的。
+</p>
+<div class="cta-row">
+<a class="cta" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">在 BscScan 上验证 TMN</a>
+<a class="button" href="tmn.zh.html">TMN 代币页面</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title">حالا روی خودمان امتحان کنیم</h2>
+<p>
+یک چک‌لیست فقط وقتی صادقانه است که برای منتشرکننده‌اش هم به کار برود. این‌جا TMN را با همین پنج بررسی می‌سنجیم، از جمله مواردی که در آن‌ها قبول نمی‌شویم.
+</p>
+<div class="check-table">
+<div class="check-row">
+<span>۰۱. سورس کد قرارداد در BscScan تأیید شده است</span>
+<strong class="pass">بله</strong>
+</div>
+<div class="check-row">
+<span>۰۲. پراکندگی عرضه میان دارندگان</span>
+<strong class="fail">بسیار متمرکز</strong>
+</div>
+<div class="check-row">
+<span>۰۳. مالکیت واگذار شده و ساخت توکن جدید ممکن نیست</span>
+<strong class="pass">بله، برای همیشه</strong>
+</div>
+<div class="check-row">
+<span>۰۴. بدون مالیات انتقال، بدون لیست سیاه، بدون تابع توقف</span>
+<strong class="pass">در کد تأیید شده</strong>
+</div>
+<div class="check-row">
+<span>۰۵. قفل توکن‌های نقدینگی</span>
+<strong class="pass">تا ۷ آبان ۱۴۰۶</strong>
+</div>
+</div>
+<p>
+TMN در سال ۲۰۲۲ ساخته شد و هیچ‌وقت توزیع یا تبلیغ نشد. به همین دلیل عرضه هنوز متمرکز است. این را آشکارا می‌گوییم و منتظر نمی‌مانیم کسی خودش آن را کشف کند، چون پروژه‌ای که از مردم می‌خواهد همه چیز را بررسی کنند، خودش هم باید قابل بررسی باشد.
+</p>
+<p>
+همین پنج بررسی را روی TMN انجام دهید. نقاط قوت و نقاط ضعف ما هر دو در این جدول آمده است. عرضه همچنان متمرکز است و ما این را پنهان نمی‌کنیم.
+</p>
+<div class="cta-row">
+<a class="cta" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">بررسی TMN در BscScan</a>
+<a class="button" href="tmn.zh.html">صفحه توکن TMN</a>
+</div>
+</div>
+</div>
+</section>
+
+<section lang="en" class="section">
+<div class="container grid-two">
+<div class="card">
+<h3>核心概念</h3>
+<ul>
+<li>合约验证</li>
+<li>区块浏览器</li>
+<li>持有者分布</li>
+<li>供应集中度</li>
+<li>所有权放弃</li>
+<li>增发</li>
+<li>转账税</li>
+<li>黑名单函数</li>
+<li>流动性池</li>
+</ul>
+</div>
+<div class="card">
+<h3>学习目标</h3>
+<ul>
+<li>知道在哪里找到代币合约并读取其状态。</li>
+<li>理解供应集中为何是一种风险。</li>
+<li>检查是否还能创建新代币。</li>
+<li>识别写入合约中的隐藏限制。</li>
+<li>理解流动性为何决定是否存在退出通道。</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container grid-two">
+<div class="card">
+<h3>مفاهیم کلیدی</h3>
+<ul style="padding-left:0;padding-right:22px">
+<li>تأیید قرارداد</li>
+<li>بلاک اکسپلورر</li>
+<li>پراکندگی دارندگان</li>
+<li>تمرکز عرضه</li>
+<li>واگذاری مالکیت</li>
+<li>ساخت توکن جدید (مینت)</li>
+<li>مالیات انتقال</li>
+<li>تابع لیست سیاه</li>
+<li>استخر نقدشوندگی</li>
+</ul>
+</div>
+<div class="card">
+<h3>اهداف یادگیری</h3>
+<ul style="padding-left:0;padding-right:22px">
+<li>بدانیم قرارداد یک توکن را کجا پیدا کنیم و وضعیتش را چطور بخوانیم.</li>
+<li>بفهمیم چرا تمرکز عرضه یک ریسک است.</li>
+<li>بررسی کنیم که آیا هنوز می‌شود توکن جدید ساخت.</li>
+<li>محدودیت‌های پنهانی را که در قرارداد نوشته شده‌اند تشخیص دهیم.</li>
+<li>بفهمیم چرا نقدشوندگی تعیین می‌کند راه خروجی وجود دارد یا نه.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section lang="en" class="section">
+<div class="container">
+<h2 class="section-title">未来测验题库</h2>
+<p class="section-subtitle">
+这些问题是为未来的 Ditoman 测验与参与系统准备的。它们日后可能用于学习积分、声誉层级，以及可能的 TMN 奖励资格。
+</p>
+
+<div class="quiz-list">
+<div class="quiz-item">
+<h3>第1题</h3>
+<p>未验证的合约意味着什么？</p>
+<p>A. 该代币肯定是骗局</p>
+<p>B. 公众无法读取或检查源代码</p>
+<p>C. 该代币无法交易</p>
+<p>D. 该代币没有供应上限</p>
+<p class="answer">正确答案：B</p>
+</div>
+
+<div class="quiz-item">
+<h3>第2题</h3>
+<p>如果 owner 函数返回全零地址，意味着什么？</p>
+<p>A. 合约已损坏</p>
+<p>B. 代币已被删除</p>
+<p>C. 所有权已被放弃，仅限所有者的函数不能再使用</p>
+<p>D. 现在任何人都可以创建新代币</p>
+<p class="answer">正确答案：C</p>
+</div>
+
+<div class="quiz-item">
+<h3>第3题</h3>
+<p>以下哪些可以通过阅读代币合约发现？</p>
+<p>A. 转账税</p>
+<p>B. 黑名单或封锁地址的函数</p>
+<p>C. 是否还能创建新代币</p>
+<p>D. 代币的未来价格</p>
+<p class="answer">正确答案：A、B、C</p>
+</div>
+
+<div class="quiz-item">
+<h3>第4题</h3>
+<p>判断：行情网站上显示的价格证明你可以卖出该代币。</p>
+<p class="answer">正确答案：错误。没有流动性就没有退出通道。</p>
+</div>
+
+<div class="quiz-item">
+<h3>第5题</h3>
+<p>供应量集中为什么重要？</p>
+<p>A. 这总是意味着项目不诚实</p>
+<p>B. 少数持有者一个决定就能撼动整个市场</p>
+<p>C. 它使合约无法验证</p>
+<p>D. 它使代币无法在任何地方上市</p>
+<p class="answer">正确答案：B</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container">
+<h2 class="section-title">بانک سؤالات آزمون آینده</h2>
+<p class="section-subtitle">این سؤال‌ها برای سیستم آزمون و مشارکت آینده دیتومان آماده شده‌اند. ممکن است بعدها پایه امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN باشند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3>سؤال ۱</h3>
+<p>قرارداد تأییدنشده یعنی چه؟</p>
+<p>الف. توکن قطعاً کلاهبرداری است</p>
+<p>ب. سورس کد برای عموم قابل خواندن و بررسی نیست</p>
+<p>ج. توکن قابل معامله نیست</p>
+<p>د. عرضه توکن سقف ندارد</p>
+<p class="answer">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۲</h3>
+<p>اگر تابع owner آدرسی برگرداند که تماماً از صفر تشکیل شده، یعنی چه؟</p>
+<p>الف. قرارداد خراب است</p>
+<p>ب. توکن حذف شده است</p>
+<p>ج. مالکیت واگذار شده و دیگر نمی‌شود از توابع مخصوص مالک استفاده کرد</p>
+<p>د. حالا هر کسی می‌تواند توکن جدید بسازد</p>
+<p class="answer">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۳</h3>
+<p>کدام موارد را می‌شود با خواندن قرارداد یک توکن فهمید؟</p>
+<p>الف. مالیات انتقال</p>
+<p>ب. توابع لیست سیاه یا مسدود کردن آدرس</p>
+<p>ج. اینکه آیا هنوز می‌شود توکن جدید ساخت</p>
+<p>د. قیمت آینده توکن</p>
+<p class="answer">پاسخ‌های درست: الف، ب، ج</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۴</h3>
+<p>درست یا نادرست: قیمتی که در یک سایت ردیابی قیمت نمایش داده می‌شود ثابت می‌کند که می‌توانید توکن را بفروشید.</p>
+<p class="answer">پاسخ درست: نادرست. بدون نقدشوندگی، راه خروجی وجود ندارد.</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۵</h3>
+<p>چرا تمرکز عرضه اهمیت دارد؟</p>
+<p>الف. همیشه یعنی پروژه صادق نیست</p>
+<p>ب. تعداد کمی دارنده می‌توانند با یک تصمیم کل بازار را جابه‌جا کنند</p>
+<p>ج. قرارداد را غیرقابل تأیید می‌کند</p>
+<p>د. مانع لیست شدن توکن در هر جایی می‌شود</p>
+<p class="answer">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section lang="en" class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">Instagram 摘要</h2>
+<p>
+本课最早作为教育系列的一部分发布在 Ditoman 的 Instagram 上。Instagram 版本提供简短的图文摘要，而本页提供完整的学习版本。
+</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">在 Instagram 上查看</a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">在 Telegram 加入</a>
+<a class="button" href="lesson06.zh.html">下一课</a>
+<a class="button" href="learn.zh.html">返回学习</a>
+<a class="button" href="lesson04.zh.html">上一课</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">خلاصه اینستاگرام</h2>
+<p>خلاصه تصویری این درس ابتدا در اینستاگرام دیتومان منتشر شد. نسخه اینستاگرام یک معرفی کوتاه و تصویری است، اما این صفحه نسخه کامل آموزشی آن است.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">مشاهده در اینستاگرام</a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">عضویت در تلگرام</a>
+<a class="button" href="lesson06.zh.html">درس بعدی</a>
+<a class="button" href="learn.zh.html">بازگشت به آموزش</a>
+<a class="button" href="lesson04.zh.html">درس قبلی</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman 学习 • 以结构为基础，以探索为动力。</span><span lang="fa" dir="rtl">آموزش دیتومان • بر پایه ساختار، با انگیزه کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-zh.js?v=20261121a"></script>
+</body>
+</html>

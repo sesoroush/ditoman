@@ -24,7 +24,7 @@ import hl  # noqa: E402
 
 BASE = "https://ditoman.com/"
 # posts, calendar and press are filled every day from Persian feeds; they get Arabic when the feeds do
-AR_PAGES = ["index.html", "learn.html", "prices.html", "tmn.html", "learn-earn.html"]
+AR_PAGES = ["index.html", "learn.html", "prices.html", "tmn.html", "learn-earn.html"] + [f"lesson{n:02d}.html" for n in range(1, 31)]
 FA = re.compile(r"[؀-ۿ]")
 HSTART, HEND = "<!-- hreflang:start -->", "<!-- hreflang:end -->"
 ATTRS = ("alt", "title", "aria-label", "placeholder", "data-fa", "data-fa-label", "data-kicker")

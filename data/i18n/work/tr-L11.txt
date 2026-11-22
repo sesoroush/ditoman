@@ -1,0 +1,218 @@
+2240|B. 1 ETH
+2241|C. 1.000 ETH
+2242|Her iki mutabakat yöntemi neyi hedefler?
+2243|A. Hile yapmayı dürüstlükten daha pahalı kılmayı
+2244|B. Defteri gizlemeyi
+2245|C. Bir şirketi patron seçmeyi
+2246|learnmeabitcoin: madencilik, blok süresi, her 2.016 blokta zorluk ayarı, coinbase olgunlaşması, yüzde 51 saldırısı
+2247|ethereum.org: hisse kanıtı, 32 ETH teminatı, staking havuzları ve slashing
+2248|Cambridge Alternatif Finans Merkezi: Merge sonrası Ethereum'un elektrik kullanımı (15 Eylül 2022)
+2249|Yüzde 99,99 rakamı Cambridge Alternatif Finans Merkezi'nin bir tahminidir. Blok aralığı ve zorluk dönemi tasarım hedefleridir, herhangi bir tek blok için garanti değildir. Genel açıklama, yatırım tavsiyesi değil.
+2250|Ethereum ve Akıllı Sözleşmeler: Kendi Kendine Çalışan Bir Program | Ditoman Öğren
+2251|Bitcoin kimin neye sahip olduğuna dair bir defter tutar. Ethereum ayrıca programlar da tutar. Bu ders, otomattan yararlanarak akıllı sözleşmenin ne olduğunu ve neler yapıp yapamayacağını açıklar
+2252|Ethereum ve Akıllı Sözleşmeler: Kendi Kendine Çalışan Bir Program Ditoman ders görseli
+2253|Blok Zinciri • Akıllı Sözleşmeler
+2254|Bitcoin kimin neye sahip olduğuna dair bir defter tutar. Ethereum ayrıca programlar da tutar. Bu ders, otomattan yararlanarak akıllı sözleşmenin ne olduğunu ve neler yapıp yapamayacağını açıklar.
+2255|Bir otomata bir bozuk para atıp B4'e basarsınız. Kimse isteğinizi kontrol etmez ve kimse makineyi size iki atıştırmalık vermeye ikna edemez. Kurallar karşılanırsa teslim eder. Karşılanmazsa hiçbir şey yapmaz.
+2256|O küçük makine, akıllı sözleşmenin en iyi resmidir.
+2257|Akıllı sözleşme nedir
+2258|Ethereum'un kendi belgeleri, akıllı sözleşmenin Ethereum blok zincirinde çalışan bir program olduğunu söyler. Zincir üzerinde belirli bir adreste duran, fonksiyon denen kod ile durum (state) denen verilerin bir topluluğudur.
+2259|Otomat karşılaştırması da oradan gelir ve sayfa bunu bilgisayar bilimci Nick Szabo'ya atfeder: belki de bir akıllı sözleşme için en iyi metafor.
+2260|Neden "akıllı"
+2261|Zeki değildir. Otomatiktir. İsim, kuralların kod olarak yazıldığı ve onları kim çağırırsa çağırsın yazıldığı gibi çalıştığı anlamına gelir.
+2262|Bir otomat tipi sözleşme
+2263|Biri bir ödeme ve bir istek gönderir
+2264|Sözleşmenin kodu kuralları kontrol eder
+2265|Kurallar karşılanırsa durum güncellenir
+2266|Ağ sonucu herkes için kaydeder
+2267|Pratikte nasıl görünür
+2268|Basit bir sözleşme düşünün: "Gönderen fiyatı öderse ona bir bilet ver ve biletin onun olduğunu kaydet." Kasiyer yok. Ağ ödemeyi kontrol eder ve program kaydı günceller.
+2269|Aynı fikir ortak bir birikim kumbarası, iki tür para arasında bir takas ya da bir oylama tutabilir.
+2270|Nerede durur
+2271|Bir sözleşme blok zincirine yayına alınır (deploy edilir) ve o andan itibaren bir hesap gibi bir adreste durur. Herkes fonksiyonlarını çağırabilir. Birçok bilgisayar onu çalıştırdığı için sonuç, tek bir şirketin dürüst ya da çevrimiçi kalmasına bağlı değildir.
+2272|Yayına alındıktan sonra değiştirmek zordur
+2273|Ethereum'un belgeleri, bir sözleşme yayına alındığında hiçbir kullanıcının onu kontrol etmediğini ve varsayılan olarak silinemediğini söyler. Bu hem gücüdür hem riskidir. Değiştirilemeyen bir kural güven verir. Değiştirilemeyen bir hata kalır.
+2274|Bu yüzden özenli projeler yetki ayarlarını açıkça seçer. Örneğin TMN durumunda, token sözleşmesinin sahipliği devredilmiştir (renounced); bu, kuralları değiştirmek için merkezî bir anahtarın bilerek ortadan kaldırıldığı anlamına gelir.
+2275|Bir sözleşmenin yapamadıkları
+2276|Bir sözleşme yalnızca zincirde olanı bilir. Kendi başına gazete okuyamaz ya da havayı kontrol edemez; dışarıdan gelen bilginin içeri getirilmesi gerekir. Ve kötü bir fikri düzeltemez: tam olarak söylediğini yapan kod yine de akılsızca bir şey yapabilir.
+2277|Çalıştırmanın maliyeti
+2278|Her eylem hesaplama gerektirir ve kullanıcılar bir ücret öder; Ethereum'da bu gas olarak bilinir. Basit işlemler az, karmaşık olanlar daha çok tutar.
+2279|Bu neden önemli
+2280|Akıllı sözleşmeler olmasaydı, Ethereum üzerinde kurulan tokenlar olmazdı; bir sonraki ders de oraya gider.
+2281|Akıllı sözleşme, bir blok zincirinde saklanan bir programdır: bir adreste kod artı veri.
+2282|Otomat klasik resimdir: kurallar karşılandı, sonuç teslim edildi, kasiyer yok.
+2283|Bir kez yayına alındığında hiçbir kullanıcı onu kontrol etmez ve varsayılan olarak silinemez.
+2284|Yalnızca zincirde olanı bilir.
+2285|"Akıllı" otomatik demektir, zeki değil.
+2286|Ders 27, zinciri kimin dürüst tuttuğunu açıklar. Ders 29, akıllı sözleşmelerin neyi mümkün kıldığını gösterir: tokenları.
+2287|Bir blok zincirini kim yönetir?
+2288|Coin ve token
+2289|Akıllı sözleşme
+2290|Fonksiyon ve durum
+2291|Adres
+2292|Yayına alma (deployment)
+2293|Gas
+2294|Zincir üstü veri
+2295|Akıllı sözleşmeyi tek cümleyle tanımlayın.
+2296|Onu açıklamak için otomatı kullanın.
+2297|Yayına alınmış bir sözleşmenin neden değiştirilmesi zor olduğunu söyleyin.
+2298|Bir sözleşmenin bilebileceği şeylerin bir sınırını söyleyin.
+2299|Gas'ın neyin karşılığı olduğunu açıklayın.
+2300|Akıllı sözleşme nedir?
+2301|A. Bir blok zincirinde çalışan bir program
+2302|B. Bir avukatın imzaladığı kâğıt bir anlaşma
+2303|C. Bir tür banka hesabı
+2304|Hangi gündelik makine klasik metafordur?
+2305|A. Bir otomat
+2306|B. Bir çamaşır makinesi
+2307|C. Bir yazıcı
+2308|Varsayılan olarak, yayına alınmış bir sözleşmeye ne olur?
+2309|A. Hiçbir kullanıcı onu kontrol etmez ve silinemez
+2310|B. Yazarı onu özgürce düzenleyebilir
+2311|C. Bir yıl sonra sona erer
+2312|Akıllı sözleşmedeki 'akıllı' ne demektir?
+2313|A. Otomatik: kurallar yazıldığı gibi çalışır
+2314|B. Yapay zekâlı
+2315|C. Her zaman kârlı
+2316|Bir sözleşme kendi başına neyi yapamaz?
+2317|A. Hava durumu gibi dış bilgiyi okumak
+2318|B. Veri tutmak
+2319|C. Adresi olmak
+2320|ethereum.org: akıllı sözleşmelere giriş (tanım, bir adreste kod ve durum, otomat metaforu, varsayılan olarak silinemez)
+2321|TMN'in devredilmiş sahipliğine ilişkin ifade, bu sitedeki token sayfasını izler. Alıntıladığımız sayfa terimin ortaya çıkış tarihini vermez, bu yüzden belirtilmemiştir. Genel açıklama, herhangi bir sözleşmenin güvenlik denetimi değil.
+2322|Coin ile Token Arasındaki Fark Nedir? | Ditoman Öğren
+2323|İnsanlar iki sözcüğü aynıymış gibi kullanır. Aynı değiller. Bu ders basit bir test verir ve TMN'in nereye oturduğu dahil, bunun neden önemli olduğunu gösterir
+2324|Coin ile Token Arasındaki Fark Nedir? Ditoman ders görseli
+2325|Blok Zinciri • Coin'ler ve Token'lar
+2326|İnsanlar iki sözcüğü aynıymış gibi kullanır. Aynı değiller. Bu ders basit bir test verir ve TMN'in nereye oturduğu dahil, bunun neden önemli olduğunu gösterir.
+2327|Bir mağazada ülkenin kendi banknotlarıyla ya da mağazanın kendi çıkardığı bir kuponla ödeme yapabilirsiniz. İkisine de günlük konuşmada para denir, ama farklı yerlerde yaşarlar.
+2328|Kriptoda da aynı ayrım vardır ve sözcükler coin ile token'dır.
+2329|Tek satırlık test
+2330|Bir coin kendi blok zincirine özgüdür. Bir token başka bir blok zincirinin üzerine kurulur. Kraken'ın rehberi örnekleri verir: BTC ve ETH coin'dir; USDT ve UNI token'dır.
+2331|Tek bir soru sorun: bu varlığın kendi zinciri mi var, yoksa başkasının zincirinde mi yaşıyor? Mesele bununla çözülür.
+2332|Token
+2333|Kendi blok zincirinde
+2334|Başka bir blok zincirinde
+2335|BTC, ETH
+2336|USDT, UNI, TMN
+2337|Kim oluşturur
+2338|Zincirin kendi kuralları
+2339|Bir akıllı sözleşme
+2340|Neye bağlıdır
+2341|Zincirine
+2342|Zincirine ve sözleşmesine
+2343|Coin'ler neden vardır
+2344|Coin, zincirin kendisinin kullandığı şeydir. Ücretleri öder ve Ders 27'nin gösterdiği gibi çalışmasını sürdürenleri ödüllendirir. Coin olmadan ağın kendi işleyişini ödemenin bir yolu olmazdı.
+2345|Token'lar nasıl yapılır
+2346|Token'lar, Ders 28'deki programlar olan akıllı sözleşmelerle yapılır. Bir geliştirici, bakiyelerin bir listesini ve onları taşımanın kurallarını tutan bir sözleşme yazar. Yeni bir blok zincirine gerek yoktur.
+2347|Bir standart neden yardımcı olur
+2348|Ethereum'un bunun için ERC-20 adında bir standardı vardır; bir biriminin bir diğeriyle değiştirilebilir olduğu fungible token'lar içindir. Standart fonksiyonların ortak adlarını sabitler: ad, sembol, ondalık basamaklar, toplam arz, bir adresin bakiyesi, transfer ve onay (approve) ve transferleri ve onayları kaydeden iki olay.
+2349|Uyumlu her token aynı dili konuştuğu için, standardı destekleyen bir cüzdan ya da uygulama özel kod olmadan hepsiyle çalışabilir.
+2350|Standarttan bir uyarı
+2351|ethereum.org, sade bir ERC-20'nin, onları nasıl işleyeceğini bilmeyen bir sözleşmeye gönderilen tokenları kaybedebileceğini belirtir. Token'lar sihir değildir: yanlış bir adrese göndermek yine geri alamayacağınız bir hatadır.
+2352|Diğer zincirler, benzer standartlar
+2353|Diğer zincirlerin kendi sürümleri vardır. BNB Smart Chain, aynı fikri izleyen BEP-20'yi kullanır. Dijital toman olan TMN, bu sitedeki sayfasında anlatıldığı gibi BNB Smart Chain üzerinde bir BEP-20 tokenıdır.
+2354|Bu fark sizin için neden önemli
+2355|Bir coin, zincirinin kendi güvenliğine bağlıdır. Bir token hem zincirine hem de sözleşmesine bağlıdır. Bir varlığın neyin üzerinde durduğunu anlamak, neyin ters gidebileceğini ve onu, varsa, kimin değiştirebileceğini söyler.
+2356|Soru hangisinin daha iyi olduğu değil. Hangisini elinizde tuttuğunuzu bilmektir.
+2357|Bir coin kendi blok zincirine özgüdür; bir token başka birinin üzerine kurulur.
+2358|BTC ve ETH coin'dir; USDT ve UNI token'dır.
+2359|Token'lar akıllı sözleşmelerle oluşturulur, yeni bir zincire gerek yoktur.
+2360|ERC-20 ve BEP-20 gibi standartlar cüzdanların birçok tokenla çalışmasını sağlar.
+2361|TMN, BNB Smart Chain üzerinde bir BEP-20 tokenıdır.
+2362|Ders 28, token'ları yapan akıllı sözleşmeleri açıklar. Ders 5, herhangi bir tokena dokunmadan önce onu nasıl kontrol edeceğinizi gösterir.
+2363|Yerel varlık
+2364|ERC-20
+2365|Fungible (değiştirilebilir)
+2366|Cüzdan uyumluluğu
+2367|Tek satırlık testi herhangi bir varlığa uygulayın.
+2368|İki coin ve iki token örneği verin.
+2369|Bir tokenin nasıl oluşturulduğunu açıklayın.
+2370|ERC-20 gibi bir standardın neden yardımcı olduğunu söyleyin.
+2371|TMN'i doğru yere yerleştirin.
+2372|Hangisi bir coin'dir?
+2373|A. ETH
+2374|B. USDT
+2375|C. UNI
+2376|Tek satırlık test nedir?
+2377|A. Kendi blok zinciri var mı?
+2378|B. Fiyatı yüksek mi?
+2379|C. Adı kısa mı?
+2380|Bir tokeni ne oluşturur?
+2381|A. Bir akıllı sözleşme
+2382|B. Yeni bir madencilik cihazı
+2383|C. Bir merkez bankası
+2384|ERC-20 neyi standartlaştırır?
+2385|A. Fungible token'ların ortak fonksiyonlarını
+2386|B. Token fiyatlarını
+2387|C. Blok süresini
+2388|TMN hangi standardın ve zincirin tokenıdır?
+2389|A. BNB Smart Chain üzerinde BEP-20
+2390|B. Bitcoin üzerinde bir coin
+2391|C. Kendi blok zinciri
+2392|Kraken Learn: kripto coin'ler ile token'lar arasındaki fark (BTC ve ETH coin'dir; USDT ve UNI token'dır)
+2393|ethereum.org: ERC-20 token standardı (ortak arayüz, işleyemeyen sözleşmelere gönderilen tokenların riski)
+2394|TMN'in standardı ve zinciri bu sitedeki token sayfasını izler. Genel açıklama, yatırım tavsiyesi değil.
+2395|Bitcoin Yarılanması (Halving) Nedir ve Neden Dört Yılda Bir Gelir? | Ditoman Öğren
+2396|Bitcoin'in kurallarına yazılmış sabit bir ihraç takvimi vardır. Bu ders ödülün nasıl yarıya indiğini, bunun kaç coin bıraktığını ve son bitcoin'in neden yaklaşık 2140 yılında geldiğini gösterir
+2397|Bitcoin Yarılanması (Halving) Nedir ve Neden Dört Yılda Bir Gelir? Ditoman ders görseli
+2398|Bitcoin • Yarılanma
+2399|Çoğu para, ihraççısı ne zaman karar verirse o zaman yaratılabilir. Bitcoin yaratılamaz. İhracı bir takvimdir ve takvim herkes için aynıdır.
+2400|Bu takvimin en görünür kısmı yarılanmadır (halving).
+2401|Yarılanma nedir
+2402|Ders 27'de açıklandığı gibi, madenciler ekledikleri her blok için bir ödül alır. Yarılanma bu ödülü otomatik olarak her 210.000 blokta yarıya indirir. Yaklaşık her on dakikada bir blokla bu kabaca dört yıl eder.
+2403|Hiç kimse bunun için oy kullanmaz ve o sırada kimse onu kapatamaz. Her düğümün kontrol ettiği kuralların bir parçasıdır.
+2404|Şimdiye kadarki tarih
+2405|Trezor'un rehberi en sonuncusunu listeler: 20 Nisan 2024 yarılanması ödülü blok başına 6,25 bitcoin'den 3,125'e düşürdü.
+2406|Tüm dizi şöyledir: 2009'daki başlangıçta blok başına 50 bitcoin, sonra 2012'de 25, 2016'da 12,5, 2020'de 6,25 ve 2024'te 3,125.
+2407|Çağlara göre Bitcoin ihracı
+2408|Çağ
+2409|Başlangıç
+2410|Blok başına ödül
+2411|Çağda yaratılan
+2412|20 Nisan 2024
+2413|Sabit bir tavan
+2414|Ödül sürekli yarıya indiği için toplam sınırlıdır. Azami arz 21 milyon bitcoin'dir. Son bitcoin'in 2140 yıllarında, 6.930.000. blokta gelmesi beklenir.
+2415|Aritmetiği kontrol etmek
+2416|Her çağda 210.000 blok vardır; bu yüzden bir çağda yaratılan miktar, o çağın ödülünün 210.000 katıdır.
+2417|İlk çağ 10.500.000 bitcoin yarattı. İkincisi 5.250.000, üçüncüsü 2.625.000 ve dördüncüsü 1.312.500 yarattı. Birlikte, 2024'teki dördüncü çağın sonunda 19.687.500 eder.
+2418|2024'te başlayan beşinci çağ 656.250 daha yaratır. Ve böyle devam eder, miktarlar 21 milyona yaklaşana kadar her seferinde küçülür.
+2419|Sırada ne var
+2420|Bir sonraki yarılanma, 2028 civarında beklenen 1.050.000. blokta. Ödül o zaman blok başına 1,5625 bitcoin olacak.
+2421|Ödüller solduktan sonra madenciler ne kazanır
+2422|Blok ödülleri küçülür ama işlem ücretleri kalır. Uzun vadede ağın ücretlerle finanse edilmesi amaçlanır. Bunun işe yarayıp yaramayacağı açık bir sorudur, bir söz değil.
+2423|Yarılanmanın size söylemedikleri
+2424|Size gelecekteki fiyat hakkında bir şey söylemez. Takvim yıllar öncesinden bilinir ve bu ders bir yarılanmanın bir fiyat hareketine yol açtığı iddiasında bulunmaz. Bu, arz hakkında bir kuraldır, değer hakkında bir tahmin değil.
+2425|Yarılanma, madencilerin blok ödülünü her 210.000 blokta, yaklaşık dört yılda bir yarıya indirir.
+2426|Ödül 50, 25, 12,5, 6,25, 3,125 oldu; son yarılanma 20 Nisan 2024'teydi.
+2427|Azami arz 21 milyon bitcoin'dir ve sonuncusunun 2140 civarında gelmesi beklenir.
+2428|Dördüncü çağın sonunda yaklaşık 19,69 milyon bitcoin ihraç edildi.
+2429|Bu bir arz kuralıdır, fiyat tahmini değil.
+2430|Ders 27, blok ödülünü kimin ve neden kazandığını açıklar. Ders 18, Bitcoin'i bir birikim saklama aracı olarak altın ve dolarla karşılaştırır.
+2431|Yarılanma (halving)
+2432|210.000 bloklu çağ
+2433|Azami arz
+2434|İhraç takvimi
+2435|İşlem ücretleri
+2436|Yarılanmanın ne olduğunu ve ne sıklıkla gerçekleştiğini söyleyin.
+2437|2009'dan 2024'e ödülleri sıralayın.
+2438|Arzın neden 21 milyonla sınırlandığını açıklayın.
+2439|İhraç aritmetiğini kontrol edin.
+2440|Bir arz kuralını bir fiyat tahmininden ayırın.
+2441|20 Nisan 2024 yarılanmasından sonra blok başına ödül şudur:
+2442|A. 3,125 BTC
+2443|B. 6,25 BTC
+2444|C. 12,5 BTC
+2445|Yarılanmalar arasında kaç blok vardır?
+2446|Bitcoin'in azami arzı nedir?
+2447|A. 21 milyon
+2448|B. 210 milyon
+2449|C. Sınırsız
+2450|İlk çağ (blok başına 50, 210.000 blok) kaç bitcoin yarattı?
+2451|Bu ders yarılanmanın fiyat artışlarına yol açtığını iddia ediyor mu?
+2452|A. Hayır, bir arz kuralıdır, tahmin değil
+2453|B. Evet, her zaman
+2454|C. Evet, bir hafta içinde
+2455|Trezor Learn: Bitcoin yarılanması 2024 (20 Nisan 2024, ödül 6,25'ten 3,125'e, her 210.000 blokta, 21 milyon tavanı, son bitcoin 2140 civarı)
+2456|learnmeabitcoin: madencilik ve blok ödülleri
+2457|Çağ toplamları ve bir sonraki yarılanma rakamları bizim kendi aritmetiğimizdir (210.000 × ödül; 1.050.000. blok ve 1,5625 ödül), gösterildiği gibi yuvarlanmıştır. 2028 tarihi on dakikalık bloklara dayalı bir beklentidir, sabit bir tarih değil. Fiyat tahmini değil.

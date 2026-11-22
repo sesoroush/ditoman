@@ -1,0 +1,220 @@
+200|Bu, insanların güven hakkındaki düşüncesini değiştirdi.
+201|Satoshi Nakamoto
+202|Bitcoin'in bilinmeyen yaratıcısının veya yaratıcılarının kullandığı ad.
+203|Bitcoin Beyaz Kitabı
+204|2008'de yayımlanan ve Bitcoin'i uçtan uca bir elektronik nakit sistemi olarak tanıtan belge.
+205|Merkeziyetsiz Köken
+206|Bitcoin, tek bir kurucuya ya da merkezi bir kuruluşa bağımlı kalmadığı için güçlendi.
+207|Kurallar Yoluyla Güven
+208|Bitcoin, kişisel güvenin yerine açık kuralları, doğrulamayı ve ağ katılımını koydu.
+209|Satoshi Nakamoto'nun Bitcoin tarihinde kim olduğunu anlayın.
+210|Satoshi'nin kimliğinin neden bilinmediğini anlayın.
+211|Satoshi'nin kaybolmasının Bitcoin'i neden daha merkeziyetsiz yaptığını anlayın.
+212|Bitcoin'in ardındaki fikrin neden yaratıcısından daha önemli hale geldiğini anlayın.
+213|Bilgi Kontrolü
+214|Bu sorular ileride Ditoman sınavlarının, katılım puanlarının ve olası TMN ödül hakkının bir parçası olabilir.
+215|Soru 01
+216|Bitcoin'i tanıtan bilinmeyen yaratıcı veya yaratıcılar.
+217|Soru 02
+218|Satoshi'nin kimliği neden hâlâ önemli?
+219|Çünkü Bitcoin'in tek bir kişinin ötesine geçtiğini gösteriyor.
+220|Soru 03
+221|Satoshi 2008'de ne yayımladı?
+222|Bitcoin beyaz kitabını.
+223|Soru 04
+224|Satoshi kaybolduktan sonra Bitcoin neden devam etti?
+225|Çünkü açık kurallara, doğrulamaya ve ağ katılımına dayanıyordu.
+226|Soru 05
+227|Satoshi'nin hikâyesinden çıkan ana ders nedir?
+228|Fikir, kimlikten daha önemli hale geldi.
+229|Bu ders, Satoshi Nakamoto hakkındaki resmî Ditoman Instagram paylaşımını yapılandırılmış bir öğrenme kaynağına genişletir. Orijinal paylaşım, Bitcoin'in yaratıcısının ardındaki gizemi tanıtır ve kimliğin, Satoshi kaybolduktan sonra devam eden sistemden neden daha az önemli olduğunu açıklar.
+230|Orijinal Instagram paylaşımını aşağıda görün:
+231|Instagram Paylaşımını Aç
+232|Ders 05 tarihten pratiğe geçer:
+233|Dokunmadan Önce Herhangi Bir Token Nasıl Kontrol Edilir
+234|Ditoman • Öğren. Bağlan. Gelişim.
+235|Ders 05 | Dokunmadan Önce Herhangi Bir Token Nasıl Kontrol Edilir | Ditoman Öğren
+236|Ditoman Öğren Ders 05. Herkesin bir token ile etkileşime girmeden önce uygulayabileceği beş ücretsiz kontrol: sözleşme doğrulaması, sahip dağılımı, sahiplik, gizli fonksiyonlar ve likidite.
+237|Dokunmadan önce herhangi bir token nasıl kontrol edilir, Ditoman ders görseli
+238|Ders 05 • Güvenlik Serisi
+239|Beş kontrol. Beş dakika. Ücretsiz. Kriptoda para kaybeden çoğu kişi bunları hiç yapmadı.
+240|7 Dakika
+241|Bir tokenda para kaybeden çoğu kişi yanlış projeyi seçmedi. Doğru şeyleri hiç kontrol etmediler.
+242|Aşağıdaki her kontrol ücretsiz, herkese açık ve yaklaşık bir dakika sürer. Teknik bilgi gerekmez. Sadece nereye bakacağınızı bilmeniz yeterli.
+243|Sözleşme doğrulanmış mı?
+244|Tokeni BscScan gibi bir blok gezgininde açın ve Contract sekmesine gidin. Kaynak kod doğrulanmışsa okunabilir kod ve bir onay işareti görürsünüz. Doğrulanmamışsa yalnızca makine kodu görürsünüz; bu, ekip dışında hiç kimsenin tokenin gerçekte ne yaptığını okuyamadığı anlamına gelir.
+245|Doğrulanmamış olması otomatik olarak sahtekârlık demek değildir. Ancak kuralları kendiniz okumak yerine bir söze güvendiğiniz anlamına gelir.
+246|Arzı kim elinde tutuyor?
+247|Holders sekmesini açın. En büyük cüzdanların toplam arzın ne kadarını kontrol ettiğine bakın.
+248|Az sayıda cüzdan neredeyse her şeye sahipse, tek bir kişinin tek bir kararı tüm piyasayı hareket ettirebilir. Yoğunlaşma kötü niyetin kanıtı değildir ve birçok genç proje böyle başlar. Ama her zaman bir risktir ve bunu hareket ettikten sonra değil, önce bilmek daha iyidir.
+249|Hâlâ yeni token oluşturulabilir mi?
+250|Read Contract bölümünde owner adlı bir fonksiyon arayın. Normal bir cüzdan adresi döndürüyorsa, sözleşmedeki yalnızca sahibe ait fonksiyonları, yeni token oluşturma dahil, o kişi hâlâ kontrol ediyor demektir.
+251|Tamamen sıfırlardan oluşan bir adres döndürüyorsa sahiplik terk edilmiş demektir. Bu yetkiler kalıcı olarak gitmiştir ve ilk ekip dahil kimse onları geri getiremez.
+252|Bu önemlidir, çünkü sınırsız büyüyebilen bir arz, tokeni elinde tutan herkesin payını sulandırabilir.
+253|Gizli kısıtlamalar var mı?
+254|Sözleşme kodunda transfer vergilerini, duraklatma fonksiyonlarını veya belirli adresleri engelleme yetkisini arayın. Bazı tokenlar, alım normal işlerken satış işlemeyecek biçimde tasarlanır.
+255|Bu, en yaygın tuzaklardan biridir ve henüz hiçbir şey harcamadan önce kodda görülebilir.
+256|Gerçek likidite var mı?
+257|Ekrandaki bir fiyat para değildir. Yalnızca biri onunla işlem yapmaya razı olduğunda paraya dönüşür.
+258|Gerçek bir likidite havuzunun olup olmadığına ve ne kadar derin olduğuna bakın. Likidite yoksa, ekranda hangi sayı yazarsa yazsın çıkış yoktur.
+259|Önemli olan alışkanlık
+260|Bu beş kontrol, hangi projelerin başarılı olacağı konusunda sizi haklı çıkarmaz. Bunu hiçbir şey yapamaz.
+261|Yaptıkları şey, insanların para kaybettiği en yaygın ve en kolay önlenebilir yolları ortadan kaldırmaktır: okuyamadıkları tokenlar, göremedikleri arz, varlığından haberdar olmadıkları yetkiler ve hiç var olmayan çıkışlar.
+262|Önce kontrol et. Sonra karar ver.
+263|Şimdi Bunu Bizim Üzerimizde Çalıştırın
+264|Bir kontrol listesi, ancak onu yayımlayanlara da uygulanıyorsa dürüsttür. İşte TMN'nin aynı beş kontrole göre durumu; geçemediklerimiz dahil.
+265|01. Sözleşme kaynak kodu BscScan'de doğrulandı
+266|Evet
+267|02. Arzın sahipler arasındaki dağılımı
+268|Çok yoğunlaşmış
+269|03. Sahiplik terk edildi, yeni token oluşturulamaz
+270|Evet, kalıcı
+271|04. Transfer vergisi, kara liste ve duraklatma fonksiyonu yok
+272|Kodda doğrulandı
+273|05. Likidite tokenları kilitli
+274|29 Ekim 2027'ye kadar
+275|TMN 2022'de dağıtıma açıldı ve hiçbir zaman dağıtılmadı ya da tanıtılmadı; arzın hâlâ yoğunlaşmış olmasının nedeni budur. Bunu keşfedilmeye bırakmak yerine açıkça belirtiyoruz, çünkü insanlardan bir şeyleri doğrulamalarını isteyen bir proje, kendisi de doğrulanabilir olmalıdır.
+276|TMN'yi BscScan'de Doğrula
+277|TMN Token Sayfası
+278|Sözleşme doğrulaması
+279|Blok gezgini
+280|Sahip dağılımı
+281|Arz yoğunlaşması
+282|Sahipliğin terk edilmesi
+283|Basım (mint)
+284|Transfer vergisi
+285|Kara liste fonksiyonu
+286|Bir tokenin sözleşmesini nerede bulacağınızı ve durumunu nasıl okuyacağınızı bilin.
+287|Arz yoğunlaşmasının neden bir risk olduğunu anlayın.
+288|Yeni token oluşturulup oluşturulamayacağını kontrol edin.
+289|Sözleşmeye yazılmış gizli kısıtlamaları tanıyın.
+290|Likiditenin bir çıkışın var olup olmadığını neden belirlediğini anlayın.
+291|Doğrulanmamış bir sözleşme ne anlama gelir?
+292|A. Token kesinlikle bir dolandırıcılıktır
+293|B. Kaynak kod kamuoyu tarafından okunamaz veya kontrol edilemez
+294|C. Token alınıp satılamaz
+295|D. Tokenin arz sınırı yoktur
+296|owner fonksiyonu tamamen sıfırlardan oluşan bir adres döndürürse bu ne anlama gelir?
+297|A. Sözleşme bozuktur
+298|B. Token silinmiştir
+299|C. Sahiplik terk edilmiştir ve yalnızca sahibe ait fonksiyonlar artık kullanılamaz
+300|D. Artık herkes yeni token oluşturabilir
+301|Bunlardan hangileri bir tokenin sözleşmesi okunarak öğrenilebilir?
+302|A. Transfer vergileri
+303|B. Kara liste veya adres engelleme fonksiyonları
+304|C. Yeni token oluşturulup oluşturulamayacağı
+305|D. Tokenin gelecekteki fiyatı
+306|Doğru mu yanlış mı: Bir takip sitesinde gösterilen fiyat, tokeni satabileceğinizi kanıtlar.
+307|Doğru cevap: Yanlış. Likidite olmadan çıkış yoktur.
+308|A. Bu her zaman projenin dürüst olmadığı anlamına gelir
+309|B. Az sayıda sahip tek bir kararla tüm piyasayı hareket ettirebilir
+310|C. Sözleşmeyi doğrulanamaz hale getirir
+311|D. Tokenin hiçbir yerde listelenmesini engeller
+312|Önceki Ders
+313|Ders 06 | Satın Almadan Önce Sorulacak Beş Soru | Ditoman Öğren
+314|Son ders tokeni kontrol etmekle ilgiliydi. Bu ders ise kendinizi kontrol etmekle ilgili
+315|Satın almadan önce sorulacak beş soru, Ditoman ders görseli
+316|Ders 06 • Güvenlik Serisi
+317|Satın Almadan Önce Sorulacak Beş Soru
+318|Son ders tokeni kontrol etmekle ilgiliydi. Bu ders ise kendinizi kontrol etmekle ilgili.
+319|Son derste bir tokenin nasıl kontrol edileceğine baktık: sözleşme doğrulanmış mı, arzı kim elinde tutuyor, yeni token oluşturulabilir mi, gizli kısıtlamalar var mı, gerçek likidite var mı.
+320|Bir token bu kontrollerin hepsinden geçip yine de sizin için kötü bir karar olabilir.
+321|Çünkü bu kontroller tokeni anlatır. Mantığınız, zamanlamanız veya kaybetmeyi göze alabileceğiniz miktar hakkında hiçbir şey söylemez. Bu beş soru söyler.
+322|Aslında ne satın alıyorum?
+323|İsmi değil. Logoyu değil. Bu proje ne yapıyor ve tokenin önem kazanması için neyi başarması gerekir?
+324|Bunu kripto hakkında hiçbir şey bilmeyen birine iki üç sade cümleyle anlatamıyorsanız, henüz anlamamışsınız demektir. Bu utanılacak bir şey değil. Beklemek için bir nedendir.
+325|Kayıpların çoğu karmaşık hatalardan gelmez. İlgili hiç kimsenin net biçimde tanımlayamadığı bir şeyi satın almaktan gelir.
+326|Bunun ileride daha değerli olacağını neden düşünüyorum?
+327|Bu sorunun gerçek bir yanıtı da var, sahte bir yanıtı da.
+328|Gerçek yanıt belirli bir şeye işaret eder: onu kullanan daha fazla insan, çözdüğü bir sorun, büyüyemeyen bir arz, büyüdükçe güçlenen bir ağ.
+329|Sahte yanıt fiyatın kendisine işaret eder: geçen hafta yükseldi, biri yükselmeye devam edeceğini söyledi, herkes bundan söz ediyor. Bu bir neden değil. Başkalarının davranışı hakkında bir gözlem ve başkaları her an durabilir.
+330|Yanıldığımı bana ne gösterir?
+331|Neredeyse kimsenin sormadığı soru bu ve buradaki en değerli soru.
+332|Fikrin işe yaramadığını neyin gösterdiğine önceden karar verin. Yerine getirilmeyen bir söz. Sessizleşen bir ekip. Hiç ortaya çıkmayan bir kullanım. Satın almadan önce, hâlâ net düşünürken yazın.
+333|Bu olmadan, fiyattaki her düşüş ders çıkarılacak bir şey değil, açıklanıp geçilecek bir şeye dönüşür. İnsanlar genellikle her şeyi tek bir kararla kaybetmez. Bir dizi küçük işareti kabul etmeyi reddederek kaybeder.
+334|Bunu tamamen kaybetmeyi göze alabilir miyim?
+335|"Canımı yakar mı" değil. Bu tutar sıfıra inip bir daha geri gelmezse, hayatınız normal akışında devam edebilir mi?
+336|Bu, parası zaten istikrarsız olan insanlar için daha da önemlidir; çünkü ayartı daha güçlü, tampon ise daha incedir. Kira, yemek, ilaç ya da aile için ihtiyacınız olan para bir tokendaysa, yatırım yapmıyorsunuz. Risk altındasınız.
+337|Pozisyonunuzun büyüklüğü, baskı altında nasıl davranacağınızı belirler. Çok büyükse, kararlarınızı korku verir.
+338|Bunu anladığım için mi alıyorum, yoksa kaçırmaktan korktuğum için mi?
+339|Dürüst olun, çünkü yanıtı yalnızca siz bileceksiniz.
+340|Aciliyet, bu alandaki en güvenilir uyarı işaretidir. Gerçek fırsatlar genellikle önümüzdeki on dakikada kaybolmaz. Sizi düşünmeden önce harekete geçirmek için tasarlanmış her şey, ister bir geri sayım, ister bir kalabalık, ister emin bir arkadaş olsun, daha az değil, daha fazla şüpheyi hak eder.
+341|Bugün satın almanızın nedeni yarın nasıl hissedeceğinizden korkmaksa, bu analiz değil, baskıdır.
+342|Beşinin de amacı
+343|Bu soruların hiçbiri hangi tokenin başarılı olacağını söylemez. Bunu hiçbir şey yapamaz ve aksini iddia eden biri bir şey satıyordur.
+344|Yaptıkları şey, kararın gerçekten sizin olmasını sağlamaktır: anlaşılmış, doğru boyutlandırılmış ve yanılmanın nasıl görüneceğine dair net bir fikirle verilmiş.
+345|Tokeni kontrol edin. Sonra kendinizi.
+346|Aynı Kural Burada da Geçerli
+347|Bu sorular TMN için de diğer tüm tokenlar için olduğu gibi geçerlidir. Ditoman'ın ne inşa ettiğini anlayıp yavaşça karar vermenizi, heyecanla çabucak hareket etmenize tercih ederiz.
+348|TMN'nin arzı yoğunlaşmıştır ve anlatılan kullanım alanı işler değil, planlanmıştır. Bu gerçekler beyaz kitabımızda ve token sayfamızda belirtilmiştir, arkalarında gizlenmemiştir.
+349|Ders 05: Tokeni Kontrol Edin
+350|Sahip olduğunuzu anlamak
+351|Tez ile fiyat hareketi
+352|Çıkışınızı önceden belirlemek
+353|Pozisyon boyutlandırma
+354|Risk sermayesi
+355|Kaçırma korkusu
+356|Yapay aciliyet
+357|Satın almadan önce bir projenin ne yaptığını sade bir dille açıklayın.
+358|Gerçek bir neden ile fiyat gözlemini birbirinden ayırın.
+359|Fikrin yanlış olduğunu neyin kanıtlayacağına önceden karar verin.
+360|Pozisyonu tamamen kaybetmeyi göze alabileceğiniz tutara göre boyutlandırın.
+361|Aciliyeti fırsat olarak değil, uyarı işareti olarak görün.
+362|Bunlardan hangisi bir tokenin değer kazanmasını beklemek için gerçek bir nedendir?
+363|A. Fiyat geçen hafta yükseldi
+364|B. Bir arkadaş bundan emin
+365|C. Yaptığı işi kullanan insan sayısı artıyor
+366|D. İnternette yaygın biçimde konuşuluyor
+367|Yanıldığınızı neyin kanıtlayacağına neden önceden karar verilir?
+368|A. Kâr garanti eder
+369|B. Sonraki olayları, onları açıklayıp geçmek yerine net bir ölçüte göre değerlendirmenizi sağlar
+370|C. Tokeni daha güvenli kılar
+371|D. Borsalar bunu zorunlu tutar
+372|"Bunu tamamen kaybetmeyi göze alabilir miyim" gerçekte ne demek?
+373|Doğru cevap: Tutar sıfıra inip bir daha geri gelmese bile hayatınızın normal akışında devam edebilmesi.
+374|Doğru mu yanlış mı: Tüm teknik kontrollerden geçen bir token sizin için otomatik olarak iyi bir karardır.
+375|Doğru cevap: Yanlış. Teknik kontroller tokeni tanımlar; sizin mantığınızı, zamanlamanızı veya riskinizi değil.
+376|A. Çünkü iyi fırsatlar her zaman yavaştır
+377|B. Çünkü düşünmeden önce harekete geçme baskısı manipülasyonun yaygın bir özelliğidir
+378|C. Çünkü hızlı kararlar her zaman yanlıştır
+379|D. Çünkü piyasalar geceleri kapanır
+380|Bu ders ilk olarak Ditoman Instagram'ında Güvenlik Serisi kapsamında tanıtıldı. Instagram sürümü kısa bir görsel özet sunar, bu sayfa ise tam öğrenme sürümünü sunar.
+381|Büyük Haberler Bitcoin'i Nasıl Hareket Ettirir: Faiz Oranları ve Seçimler | Ditoman Öğren
+382|Faiz oranları, seçimler ve beklentiler: Washington'daki bir duyuru neden hiç uyumayan bir piyasayı sarsabilir ve neden kimse yönünü güvenilir biçimde söyleyemez
+383|Büyük haberler Bitcoin'i nasıl hareket ettirir, Ditoman ders görseli
+384|Piyasalar • Fiyatlar Nasıl Hareket Eder
+385|Büyük Haberler Bitcoin'i Nasıl Hareket Ettirir
+386|Faiz oranları, seçimler ve beklentiler: Washington'daki bir duyuru neden hiç uyumayan bir piyasayı sarsabilir ve neden kimse yönünü güvenilir biçimde söyleyemez.
+387|18 LP
+388|Zaman zaman tüm piyasa, planlanmış bir duyurudan önce nefesini tutmuş gibi görünür. En büyük iki örnek faiz kararları ve seçimlerdir.
+389|Örneğin, ABD Merkez Bankası Fed faiz kararını 28 Ekim 2026 Çarşamba günü açıklıyor ve ABD ara seçimleri 3 Kasım 2026'da yapılıyor. Bu ders o tarihlerle ilgili değil. Bunların ardındaki mekanizmaları açıklar; böylece benzer herhangi bir haftayı soğukkanlılıkla okuyabilirsiniz.
+390|Ayrıca aynı derecede önemli bir şeyi de açıklar: bunların hiçbiri neden bir sonra ne olacağını söylemez.
+391|Faiz oranı paranın fiyatıdır
+392|Bir merkez bankası, kendi para biriminde borçlanmanın temel maliyetini belirler. Bu maliyet yüksekken krediler pahalıdır ve tasarruf kazandırır. Düşükken krediler ucuzdur ve tasarruf az getirir.
+393|Bu tek sayı, herkesin parasıyla ne yaptığını sessizce şekillendirir: bir işletmenin büyümek için borçlanıp borçlanmadığını, bir kişinin ev alıp almadığını, bir yatırımcının güvenliği mi riski mi tercih ettiğini.
+394|Faiz oranlarından Bitcoin'e üç yol
+395|Alternatifler yolu.
+396|Devlet tahvilleri veya tasarruf gibi güvenli varlıklar daha fazla getiri sağladığında, riskli varlıklar buna kıyasla daha az çekici görünür. Para güvenliğe doğru kayabilir. Güvenli varlıklar daha az getirdiğinde ise para getiriyi başka yerde arar.
+397|Borçlanma yolu.
+398|Birçok yatırımcı riskli varlık almak için borç para kullanır. Yüksek faiz bu borçlanmayı pahalılaştırır ve piyasalara akan parayı azaltır. Düşük faiz ise tersini yapar.
+399|Para birimi yolu.
+400|Faiz değişiklikleri ABD dolarını güçlendirebilir veya zayıflatabilir ve çoğu kripto dolar cinsinden fiyatlanır. Güçlü bir dolar, dolar cinsinden fiyatları baskılayabilir. Bu etki gerçektir ama güvenilir değildir.
+401|"Olabilir" ve "mümkün" sözcüklerine dikkat edin. Bunlar baskıdır, kural değil.
+402|Beklentiler kararın kendisinden daha önemlidir
+403|Piyasalar duyuruyu beklemez. Önceden tahmin eder ve fiyatlar bu tahmine göre hareket eder. Karar geldiğinde beklenen sonuç zaten "fiyatlanmıştır".
+404|Piyasayı hareket ettiren sürprizdir: beklenen ile gerçekte olan arasındaki fark. Herkesin beklediği bir faiz indirimi çok az şey değiştirebilir. Kimsenin beklemediği bir sabit tutma ise çok şey değiştirebilir.
+405|Kullanılan sözcükler de önemlidir. Ardından gelen açıklama ve basın toplantısı bir sonraki toplantıya ilişkin beklentileri değiştirebilir ve yatırımcılar çoğu zaman en çok buna tepki verir.
+406|Seçimler neden önemli
+407|Seçimler kuralları kimin yazıp onaylayacağını belirler. ABD'de Kongre; vergiler, harcamalar ve kriptoyu da içeren finansal ürünlerin nasıl düzenleneceği konusunda yasaları çıkarır.
+408|Ara seçimler, bir başkanın görev süresinin ortasında yapılır. Temsilciler Meclisi'ndeki 435 sandalyenin tamamı ve Senato'nun yaklaşık üçte biri yarışır; bu yüzden sonuç, sonraki iki yıl için siyaseten nelerin mümkün olduğunu değiştirebilir.
+409|İki etki vardır. Biri genellikle aylar ya da yıllar süren gerçek politika değişikliğidir. Diğeri oylamadan önceki belirsizliktir; piyasalar bundan genellikle hoşlanmaz ve sonuç bilindiğinde hızla silinebilir.
+410|Kripto neden önce ve en sert tepki verir
+411|Hisse senedi piyasaları geceleri ve hafta sonları kapanır. Bitcoin her ülkede, günün her saati işlem görür. Haber piyasa saatleri dışında geldiğinde, tepki çoğu zaman ilk olarak kriptoda görünür.
+412|Kaldıraç bunu daha keskin yapar. Fiyat düştüğünde borç para kullanan yatırımcılar otomatik olarak satmaya zorlanabilir ve bu zorunlu satışlar fiyatı daha da aşağı çeker. Hızlı hareketler çoğu zaman kısmen mekaniktir; yalnızca habere verilen bir hüküm değildir.
+413|Tarih neyi söyleyebilir, neyi söyleyemez
+414|"Bitcoin ara seçimden önce hep düşer, sonra yükselir" gibi iddialar göreceksiniz. Bunların arkasında ne kadar az şey olduğuna bakın.
+415|Bitcoin, anlamlı hacimle yalnızca üç ABD ara seçiminden geçti: 2014, 2018 ve 2022. Üç gözlem bir örüntü değildir. O yıllarda faiz değişiklikleri ve Bitcoin'in kendi arz döngüsü gibi başka şeyler de oluyordu; bu yüzden neyin neye yol açtığını söylemek imkânsızdır.
+416|Bitcoin ile faiz oranları arasındaki bağ da zamanla değişir. Bazen güçlüdür. Bazen kaybolur. Size kendinden emin bir tahmin veren herkes, var olmayan bir kesinliği satıyordur.
+417|Bütün bunlarla ne yapmalı
+418|Tarihi bilin; büyük bir duyuru sizi hazırlıksız yakalamasın. Zaten neyin beklendiğini sorun, çünkü fiyatın içerdiği şey odur. Büyük olayların çevresinde borç parayla en dikkatli olun. Ve her pozisyonu, son derste olduğu gibi, kaybetmeyi göze alabileceğiniz tutara göre boyutlandırın.
+419|Hepsinden önemlisi, manşetle işlem yapmayın. Manşetin içinde bulunduğu sistemi anlayın.

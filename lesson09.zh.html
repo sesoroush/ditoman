@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>流动性锁定究竟意味着什么？ | Ditoman 学习</title>
+<meta name="description" content="今天我们锁定了 TMN 的流动性。本课以我们自己的锁定为例：什么是流动性池、什么是 LP 代币、锁定能防范什么、不能证明什么，以及如何自行检查任何一个锁定" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson09.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson09.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson09.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson09.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson09.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson09.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson09.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson09.zh.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="流动性锁定究竟意味着什么？ | Ditoman 学习" />
+<meta property="og:description" content="今天我们锁定了 TMN 的流动性。本课以我们自己的锁定为例：什么是流动性池、什么是 LP 代币、锁定能防范什么、不能证明什么，以及如何自行检查任何一个锁定" />
+<meta property="og:url" content="https://ditoman.com/lesson09.zh.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson09.zh.html#page",
+   "url": "https://ditoman.com/lesson09.zh.html",
+   "name": "流动性锁定究竟意味着什么？ | Ditoman 学习",
+   "description": "今天我们锁定了 TMN 的流动性。本课以我们自己的锁定为例：什么是流动性池、什么是 LP 代币、锁定能防范什么、不能证明什么，以及如何自行检查任何一个锁定",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "流动性锁定究竟意味着什么？ | Ditoman 学习",
+     "item": "https://ditoman.com/lesson09.zh.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.zh.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.zh.html" class="active">学习</a>
+<a href="iran.en.html">伊朗</a>
+<a href="companies.en.html">企业</a>
+<a href="prices.zh.html">价格</a>
+<a href="calendar.en.html">日历</a>
+<a href="tmn.zh.html">TMN</a>
+<a href="index.zh.html#whitepapers">白皮书</a>
+<a href="posts.en.html">动态</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson09-liquidity-lock.jpg" alt="流动性锁定意味着什么？Ditoman 课程图片" onerror="this.parentElement.style.display='none'"><img lang="en" src="lesson09-liquidity-lock-en.jpg" alt="流动性锁定意味着什么？Ditoman 课程图片" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge" lang="en">安全 • 代币检查</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">امنیت • بررسی توکن</div>
+<h1 lang="en">流动性锁定究竟意味着什么？</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">قفل لیکوئیدیتی واقعاً یعنی چه؟</h1>
+<p class="subtitle" lang="en">
+今天我们锁定了 TMN 的流动性。本课以我们自己的锁定为例：什么是流动性池、什么是 LP 代币、锁定能防范什么、不能证明什么，以及如何自行检查任何一个锁定。
+</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">امروز لیکوئیدیتی TMN را قفل کردیم. این درس قفل خود ما را نمونه قرار می‌دهد: استخر لیکوئیدیتی چیست، توکن LP چیست، قفل از چه چیزی محافظت می‌کند، چه چیزی را ثابت نمی‌کند، و هر قفلی را خودتان چطور بررسی کنید.</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span lang="en">难度</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">入门</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box">
+<span lang="en">阅读时间</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6分钟</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box">
+<span lang="en">学习积分</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">15 LP</strong><strong lang="fa" dir="rtl" style="display:block">۱۵ امتیاز</strong></div>
+<div class="meta-box">
+<span lang="en">未来测验</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک آینده</span><strong lang="en">5道题</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">课程内容</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">
+可用英文或波斯文阅读本课。这一结构为未来的测验、积分、声誉和奖励系统而设计。
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمونک، امتیاز، اعتبار و پاداش‌هایی طراحی شده که در آینده اضافه می‌شوند.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">中文</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>在第05课中，我们列出了在接触任何代币之前要做的五项检查。第五项是：是否有真实的流动性，是否已锁定？今天我们为自己的代币做了这件事。本课解释我们做了什么以及它意味着什么。</p>
+
+<h3><span class="check-number">01.</span> 什么是流动性</h3>
+<p>要让代币能在 PancakeSwap 这样的去中心化交易所被买卖，就必须有人把两样东西并排放进一个池子：代币本身，以及人们已经认可其价值的东西，比如 BNB。买家放入 BNB、取走代币；卖家则相反。</p>
+<p>这个池子就是代币的流动性。没有它，就无处交易。</p>
+
+<h3><span class="check-number">02.</span> LP 代币是一张收据</h3>
+<p>向池子添加资金的人会收到 LP 代币（流动性提供者代币）。可以把它看作一张收据。持有收据的人可以随时把它交还给池子，取走自己那份 BNB 和代币。</p>
+
+<h3><span class="check-number">03.</span> 风险：撤池跑路（rug pull）</h3>
+<p>如果项目团队持有这张收据，他们就可以在一夜之间把池子抽空。持有者手里只剩下再也卖不出去的代币。这被称为 rug pull，是人们在小型代币上亏钱最常见的方式之一。</p>
+
+<h3><span class="check-number">04.</span> 锁定做了什么</h3>
+<p>锁定是把 LP 代币放入一个单独的智能合约，并设定解锁日期。在那之前，没有人能把它们取回，包括锁定它们的人。PinkLock、UNCX 和 Team Finance 等锁仓服务会把每一次锁定公开为记录，任何人都可以查验。</p>
+
+<h3><span class="check-number">05.</span> 我们对 TMN 做了什么</h3>
+<p>2026年10月29日，我们把项目主钱包中全部的 TMN/BNB LP 代币锁进了 BNB Smart Chain 上的 PinkLock：先是 0.2277 LP，随后在当天追加了更多 BNB 流动性后，来自 PancakeSwap V2 池的总计 0.3461 LP。解锁日期是2027年10月29日。记录是公开的： <a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">PinkLock 记录 #2089923</a>.</p>
+<p>这是在此前步骤之后进行的：合约所有权已放弃，因此永远无法再铸造新的 TMN，并且原始供应量的10%已被移除。</p>
+
+<h3><span class="check-number">06.</span> 锁定不能证明什么</h3>
+<p>锁定消除了一种特定风险：被锁定的流动性在解锁日期之前被抽走。它不能证明代币有价值、项目会成功或价格会上涨。</p>
+<p>它也无法回答其他几项检查。TMN 的供应仍然集中在创始人钱包中，你可以在 BscScan 上看到。我们公开说明这一点，你对任何代币也都应当检查这一点，包括我们的。</p>
+
+<h3><span class="check-number">07.</span> 如何自己检查任何锁定</h3>
+<p>打开锁定记录并确认四件事：交易对地址与代币真实的池子一致、锁定数量、解锁日期，以及该数量占整个池子的比例。如果锁定下周就到期，或只覆盖池子的一小部分，那意义就很小。</p>
+
+<h3>本课要点</h3>
+<p>信任不是承诺，而是你可以检查的东西。不要相信，去验证。</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>در درس پنجم، پنج بررسی را گفتیم که قبل از دست زدن به هر توکنی باید انجام داد. بررسی پنجم این بود: آیا لیکوئیدیتی واقعی دارد و آیا قفل شده؟ امروز همین کار را برای توکن خودمان انجام دادیم. این درس توضیح می‌دهد چه کردیم و یعنی چه.</p>
+
+<h3><span class="check-number">۰۱.</span> لیکوئیدیتی چیست</h3>
+<p>برای اینکه یک توکن در صرافی غیرمتمرکزی مثل PancakeSwap خرید و فروش شود، کسی باید دو چیز را کنار هم در یک استخر بگذارد: خود توکن، و چیزی که مردم برایش ارزش قائل‌اند مثل BNB. خریدار BNB می‌گذارد و توکن برمی‌دارد؛ فروشنده برعکس.</p>
+<p>این استخر، لیکوئیدیتی توکن است. بدون آن، جایی برای معامله وجود ندارد.</p>
+
+<h3><span class="check-number">۰۲.</span> توکن LP یک رسید است</h3>
+<p>هر کسی که به استخر پول اضافه کند، «توکن LP» می‌گیرد. آن را مثل یک رسید در نظر بگیرید. صاحب رسید هر وقت بخواهد می‌تواند آن را به استخر پس بدهد و سهمش از BNB و توکن را بیرون بکشد.</p>
+
+<h3><span class="check-number">۰۳.</span> خطر: راگ‌پول</h3>
+<p>اگر رسید دست تیم پروژه باشد، می‌توانند یک‌شبه استخر را خالی کنند. دارندگان توکن با توکن‌هایی می‌مانند که دیگر قابل فروش نیست. به این «راگ‌پول» می‌گویند و یکی از رایج‌ترین راه‌های ضرر کردن روی توکن‌های کوچک است.</p>
+
+<h3><span class="check-number">۰۴.</span> قفل چه می‌کند</h3>
+<p>قفل، توکن‌های LP را در یک قرارداد هوشمند جداگانه با تاریخ آزاد شدن مشخص می‌گذارد. تا آن تاریخ هیچ‌کس، حتی کسی که قفل کرده، نمی‌تواند آن‌ها را پس بگیرد. قفل‌کننده‌هایی مثل PinkLock، UNCX و Team Finance هر قفل را به‌صورت رکورد عمومی منتشر می‌کنند تا هر کسی بتواند بررسی‌اش کند.</p>
+
+<h3><span class="check-number">۰۵.</span> ما با TMN چه کردیم</h3>
+<p>در ۷ آبان ۱۴۰۵ (۲۹ اکتبر ۲۰۲۶) همه‌ی توکن‌های LP استخر TMN/BNB را که در کیف‌پول اصلی پروژه بود در PinkLock روی شبکه‌ی BNB قفل کردیم: اول ۰.۲۲۷۷ LP، و همان روز پس از افزودن BNB تازه به استخر، در مجموع ۰.۳۴۶۱ LP از استخر PancakeSwap V2. تاریخ آزاد شدن ۷ آبان ۱۴۰۶ (۲۹ اکتبر ۲۰۲۷) است. رکورد عمومی است: <a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">رکورد PinkLock شماره‌ی ۲۰۸۹۹۲۳</a>.</p>
+<p>این قدم بعد از قدم‌های قبلی است: مالکیت قرارداد رنانس شده، پس هیچ TMN تازه‌ای هرگز ساخته نمی‌شود، و ۱۰٪ عرضه‌ی اولیه حذف شده است.</p>
+
+<h3><span class="check-number">۰۶.</span> قفل چه چیزی را ثابت نمی‌کند</h3>
+<p>قفل یک خطر مشخص را حذف می‌کند: اینکه لیکوئیدیتی قفل‌شده قبل از تاریخ آزاد شدن بیرون کشیده شود. ثابت نمی‌کند که توکن ارزش دارد، پروژه موفق می‌شود یا قیمت بالا می‌رود.</p>
+<p>بررسی‌های دیگر را هم جواب نمی‌دهد. عرضه‌ی TMN هنوز در کیف‌پول‌های بنیان‌گذاران متمرکز است و این را در BscScan می‌توانید ببینید. ما این را صریح می‌گوییم، و شما باید برای هر توکنی، از جمله توکن ما، بررسی‌اش کنید.</p>
+
+<h3><span class="check-number">۰۷.</span> چطور هر قفلی را خودتان بررسی کنید</h3>
+<p>رکورد قفل را باز کنید و چهار چیز را چک کنید: آدرس استخر با استخر واقعی توکن یکی باشد، مقدار قفل‌شده، تاریخ آزاد شدن، و اینکه این مقدار چه سهمی از کل استخر است. قفلی که هفته‌ی بعد باز می‌شود یا فقط بخش کوچکی از استخر را پوشش می‌دهد، معنای زیادی ندارد.</p>
+
+<h3>چه برداشتی کنیم</h3>
+<p>اعتماد یک قول نیست؛ چیزی است که می‌شود بررسی‌اش کرد. اعتماد نکن؛ بررسی کن.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">把第五项检查用在 TMN 上</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بررسی پنجم روی TMN</h2>
+<p lang="en">
+第05课显示 TMN 未通过五项检查中的两项：供应集中、没有锁定流动性。有了今天的锁定，项目主钱包中持有的流动性已锁定至2027年10月。供应集中问题仍未解决，我们会随其变化持续报告。
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس پنجم نشان داد که TMN در دو بررسی از پنج بررسی رد می‌شد: عرضه‌ی متمرکز و لیکوئیدیتی قفل‌نشده. با قفل امروز، لیکوئیدیتی کیف‌پول اصلی پروژه تا اکتبر ۲۰۲۷ قفل است. تمرکز عرضه هنوز مسئله‌ای باز است و هر تغییری در آن را گزارش می‌کنیم.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer"><span lang="en">验证锁定</span><span lang="fa">بررسی قفل</span></a>
+<a class="button" href="lesson05.zh.html"><span lang="en">如何检查任何代币</span><span lang="fa">هر توکنی را چطور بررسی کنیم</span></a>
+<a class="button" href="tmn.zh.html"><span lang="en">关于 TMN</span><span lang="fa">درباره‌ی TMN</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">核心概念</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en">
+<li>流动性池</li>
+<li>LP 代币即收据</li>
+<li>撤池跑路（Rug pull）</li>
+<li>流动性锁定与解锁日期</li>
+<li>公开的锁定记录</li>
+<li>锁定不能证明什么</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>استخر لیکوئیدیتی</li>
+<li>توکن LP به‌عنوان رسید</li>
+<li>راگ‌پول</li>
+<li>قفل لیکوئیدیتی و تاریخ آزاد شدن</li>
+<li>رکوردهای عمومی قفل</li>
+<li>آنچه یک قفل ثابت نمی‌کند</li>
+</ul>
+</div>
+<div class="card">
+<h3 lang="en">学习目标</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en">
+<li>解释什么是流动性池以及代币为什么需要它。</li>
+<li>描述 LP 代币代表什么。</li>
+<li>解释撤池跑路是如何发生的。</li>
+<li>读懂一条锁定记录并检查其交易对、数量、日期和占池比例。</li>
+<li>说出锁定不能告诉你关于代币的哪些事。</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>توضیح دهید استخر لیکوئیدیتی چیست و چرا هر توکن به آن نیاز دارد.</li>
+<li>شرح دهید توکن‌های LP نشان‌دهنده‌ی چه چیزی هستند.</li>
+<li>توضیح دهید راگ‌پول چطور اتفاق می‌افتد.</li>
+<li>رکورد یک قفل را بخوانید و جفت‌ارز، مقدار، تاریخ و سهم آن از استخر را بررسی کنید.</li>
+<li>بگویید یک قفل چه چیزهایی را درباره‌ی توکن به شما نمی‌گوید.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">未来测验题库</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بانک پرسش‌های آزمونک آینده</h2>
+<p class="section-subtitle" lang="en">
+这些问题是为未来的 Ditoman 测验与参与系统准备的。它们日后可能用于学习积分、声誉层级，以及可能的 TMN 奖励资格。
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">این پرسش‌ها برای سامانه‌ی آزمونک و مشارکت آینده‌ی دیتومان آماده شده‌اند. ممکن است بعدها مبنای امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN شوند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">第1题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">LP 代币代表什么？</p>
+<p lang="fa" dir="rtl" style="text-align:right">توکن‌های LP نشان‌دهنده‌ی چه چیزی هستند؟</p>
+<p lang="en">A. 代币所属公司的一份股份</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. سهمی از شرکت سازنده‌ی توکن</p><p lang="en">B. 向流动性池添加资金的收据</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. رسیدی برای پولی که به استخر لیکوئیدیتی اضافه شده</p><p lang="en">C. 交易费折扣</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. تخفیف کارمزد معامله</p><p lang="en">D. 一张治理投票权</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. حق رأی در اداره‌ی پروژه</p>
+<p class="answer" lang="en">正确答案：B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第2题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">什么是 rug pull？</p>
+<p lang="fa" dir="rtl" style="text-align:right">راگ‌پول چیست؟</p>
+<p class="answer" lang="en">正确答案：持有 LP 代币的人撤走流动性，使持有者无法卖出。</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: وقتی کسی که توکن‌های LP دستش است لیکوئیدیتی را بیرون می‌کشد و دارندگان توکن دیگر نمی‌توانند بفروشند.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第3题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">判断：流动性锁定证明代币价格会上涨。</p>
+<p lang="fa" dir="rtl" style="text-align:right">درست یا نادرست: قفل لیکوئیدیتی ثابت می‌کند که قیمت توکن بالا می‌رود.</p>
+<p class="answer" lang="en">正确答案：错误。它只能防止被锁定的流动性在解锁日期前被撤走。</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: نادرست. قفل فقط جلوی بیرون کشیدن لیکوئیدیتی قفل‌شده را تا تاریخ آزاد شدن می‌گیرد.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第4题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">在锁定记录上你应该检查以下哪项？</p>
+<p lang="fa" dir="rtl" style="text-align:right">در رکورد یک قفل، کدام‌یک را باید بررسی کنید؟</p>
+<p lang="en">A. 交易对地址</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. آدرس جفت‌ارز</p><p lang="en">B. 锁定数量及其占池子的比例</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. مقدار قفل‌شده و سهم آن از استخر</p><p lang="en">C. 解锁日期</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. تاریخ آزاد شدن</p><p lang="en">D. 以上全部</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. همه‌ی موارد</p>
+<p class="answer" lang="en">正确答案：D</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: د</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第5题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">TMN 锁定的流动性何时解锁？</p>
+<p lang="fa" dir="rtl" style="text-align:right">لیکوئیدیتی قفل‌شده‌ی TMN چه زمانی آزاد می‌شود؟</p>
+<p lang="en">A. 2026年10月29日</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۲۹ اکتبر ۲۰۲۶</p><p lang="en">B. 2027年10月29日</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۲۹ اکتبر ۲۰۲۷</p><p lang="en">C. 永不</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. هرگز</p><p lang="en">D. 创始人想什么时候就什么时候</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. هر وقت بنیان‌گذاران بخواهند</p>
+<p class="answer" lang="en">正确答案：B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">来源</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul>
+<li><a href="https://www.pinksale.finance/pinklock/bsc/record/2089923" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">PinkLock 记录 #2089923，TMN/WBNB 流动性锁定</a></li>
+<li><a href="https://bscscan.com/token/0x6f1836B15de0C6294C16aAec67903515f532fa1C" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BscScan，TMN/WBNB PancakeSwap 交易对（LP 代币）</a></li>
+<li><a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BscScan，DiToman (TMN) 代币合约</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title" lang="en">Instagram 摘要</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">خلاصه در اینستاگرام</h2>
+<p lang="en">
+本课最早发布在 Ditoman 的 Instagram 上。Instagram 版本提供简短的图文摘要，而本页提供完整的学习版本。
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">خلاصه‌ی تصویری این درس ابتدا در اینستاگرام دیتومان منتشر شد. نسخه‌ی اینستاگرام یک معرفی کوتاه و تصویری است و این صفحه نسخه‌ی کامل آموزشی آن است.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">在 Instagram 上查看</span><span lang="fa">دیدن در اینستاگرام</span></a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span lang="en">在 Telegram 加入</span><span lang="fa">عضویت در تلگرام</span></a>
+<a class="button" href="learn.zh.html"><span lang="en">返回学习</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson08.zh.html"><span lang="en">上一课</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson10.zh.html"><span lang="en">下一课</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container" lang="en">
+Ditoman 学习 • 以结构为基础，以探索为动力。
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-zh.js?v=20261121a"></script>
+</body>
+</html>

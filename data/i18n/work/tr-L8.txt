@@ -1,0 +1,230 @@
+1560|100 milyon borçlanıp 12 ay boyunca ayda 9,5 milyon ödüyorsunuz. Kredi neye mal oldu?
+1561|A. 9,5 milyon
+1562|B. 14 milyon
+1563|C. Hiçbir şeye
+1564|Bu kredinin gerçek yıllık oranı neden yüzde 14'ten yüksektir?
+1565|A. Çünkü her ay paranın bir kısmını geri ödediniz
+1566|B. Çünkü bankalar gizli bir vergi ekler
+1567|C. Çünkü aylar yıllardan kısadır
+1568|Bir borçta bileşik faiz nedir?
+1569|A. Her yıl düşen faiz
+1570|B. Yalnızca bir kez alınan faiz
+1571|C. Önceki faiz üzerinden de alınan faiz
+1572|Hangi alışveriş borçlanmaya en uygundur?
+1573|A. Bir restoran yemeği
+1574|B. Yıllarca gelir sağlayan bir alet
+1575|C. İhtiyacınız olmayan ikinci bir telefon
+1576|ABD Tüketici Finansal Koruma Bürosu: Tüketicilerin 'şimdi al, sonra öde' kullanımı (Ocak 2025)
+1577|Consumer Financial Services Law Monitor: CFPB raporunun özeti
+1578|ABD SEC Investor.gov: Bileşik faiz hesaplayıcısı
+1579|Kredi örneği yöntemi göstermek için yuvarlanmış aritmetiktir. Gerçek tekliflerin kendi oranları, ücretleri ve kuralları vardır.
+1580|Gelecekte Bankalar Yok Olacak mı? | Ditoman Öğren
+1581|Şubeler kapanıyor, uygulamalar açılıyor. Bu ders bir bankanın ne yaptığını nerede yaptığından ayırır, neobank'ları ve açık bankacılığı sade sözlerle açıklar ve ekranın arkasında hangi işlerin hâlâ bir banka gerektirdiğini gösterir
+1582|Gelecekte Bankalar Yok Olacak mı? Ditoman ders görseli
+1583|Fintech • Bankacılık
+1584|Şubeler kapanıyor, uygulamalar açılıyor. Bu ders bir bankanın ne yaptığını nerede yaptığından ayırır, neobank'ları ve açık bankacılığı sade sözlerle açıklar ve ekranın arkasında hangi işlerin hâlâ bir banka gerektirdiğini gösterir.
+1585|Bir banka şubesinde en son ne zaman durduğunuzu düşünün. Birçok insan için yıllar önceydi. Hesap açmak, para göndermek, fatura ödemek, hatta kredi almak artık bir telefonda oluyor.
+1586|O hâlde sormak yerinde: binaya artık ihtiyacımız yoksa, bankaya hâlâ ihtiyacımız var mı? Cevaplamak için bir bankanın gerçekte ne yaptığına bakmalıyız. Bu tek bir iş değil. Dört iş.
+1587|Bir bankanın dört işi
+1588|Parayı güvende tutmak:
+1589|mevduatı tutmak ve talep edildiğinde geri vermek.
+1590|Parayı taşımak:
+1591|Ders 14'teki gibi ödemeler, transferler ve kartlar.
+1592|Borç vermek:
+1593|birçok insanın kısa vadeli mevduatını evler ve işletmeler için uzun vadeli kredilere dönüştürmek.
+1594|Güveni taşımak:
+1595|Ders 13'teki gibi bir lisansa sahip olmak, denetlenmek ve bir mevduat güvencesinin arkasında durmak.
+1596|Bir asır boyunca bu dördü tek bir paket hâlinde, tek bir binadan geldi. Teknoloji şimdi onları birbirinden ayırıyor ve farklı şirketler her parça için yarışıyor.
+1597|Fintech nedir
+1598|Fintech, finansal teknolojinin kısaltmasıdır: bir finansal işi öncekinden daha iyi yapmak için yazılım kullanan şirketler. Bir ödeme uygulaması, bir kredi uygulaması, bir yatırım uygulaması ve bir sigorta uygulaması hep fintech'tir.
+1599|Çoğu fintech'in bankacılık lisansı yoktur. Dokunduğunuz ekranı yaparlar ve ekranın arkasında lisanslı bir banka parayı tutar. Siz uygulamayı görürsünüz. Banka, altındaki motordur.
+1600|Neobank nedir
+1601|Neobank, şubesi olmayan bir bankadır. Kimlik kontrollerinden kart teslimatına kadar her şey bir uygulama üzerinden olur.
+1602|Bazı neobank'ların kendi lisansı vardır. Diğerleri geleneksel bir bankanın üzerine kurulmuş bir markadır. İran'da bilinen örnekler bu ikinci gruba aittir: Blubank, Saman Bank üzerinde, Bankino, Middle East Bank üzerinde ve Wepod, Pasargad Bank üzerinde çalışır.
+1603|Model çok büyüyebilir. 2013'te kurulan ve tek bir kredi kartıyla başlayan Brezilya'nın Nubank'ı, Ocak 2026'da 112 milyondan fazla müşteri bildirdi ve bunun onu müşteri sayısına göre Brezilya'nın en büyük özel finans kuruluşu yaptığını söyledi.
+1604|Ödenecek şubeleri olmayan bir neobank daha az ücret alabilir ve daha hızlı hareket edebilir. Sorulacak sorular her banka için aynıdır: lisansı kim tutuyor ve mevduatım bir güvenceyle kapsanıyor mu?
+1605|Kim ne yapar
+1606|Geleneksel banka
+1607|Neobank
+1608|Fintech uygulaması
+1609|Kişisel kripto cüzdanı
+1610|Şubeler
+1611|Bankacılık lisansı
+1612|Kendisinin
+1613|Kendisinin veya ortak bankanın
+1614|Genellikle ortak bankanın
+1615|Evet, bir tavana kadar
+1616|Lisanslı banka aracılığıyla
+1617|Ortağa bağlıdır
+1618|Hatayı kim düzeltir
+1619|Banka, uygulama üzerinden
+1620|Uygulama ve ortağı
+1621|Kimse
+1622|Açık bankacılık nedir
+1623|Uzun süre hesap verilerinizi görebilen tek şirket bankanızdı. Açık bankacılık bu kuralı değiştirir: izninizle, bir banka güvenli bir bağlantı üzerinden lisanslı başka bir şirketin verilerinizi okumasına ya da sizin adınıza bir ödeme başlatmasına izin vermek zorundadır.
+1624|Avrupa Birliği bunu 2018'de yasalaştırdı ve birçok ülke onu izledi. Bir uygulamanın birkaç bankadan hesapları göstermesini ya da bir kredi verenin gelirinizi kâğıt ekstre olmadan saniyeler içinde kontrol etmesini sağlayan budur.
+1625|Önemli sözcükler "izninizle"dir. Bir uygulamanın neye erişmek istediğini okuyun ve kullanmayı bıraktığınızda izni kaldırın.
+1626|Kripto nerede durur
+1627|Kripto, fintech'ten bir adım daha ileri gider. Kişisel bir cüzdan altında hiç banka olmadan para taşır ve bazı uygulamalar yalnızca kod aracılığıyla borç verir ve işlem yapar.
+1628|Bu, aracıyı ve onunla birlikte bankanın taşıdığı dört korumayı ortadan kaldırır. Denetçi yok, güvence yok ve bir hatayı geri alacak kimse yok. Ders 13 ve 16 bunun pratikte ne anlama geldiğini ele aldı.
+1629|Peki, bankalar yok olacak mı?
+1630|Bina siliniyor. İşler silinmiyor.
+1631|Birinin hâlâ mevduatı güvende tutması, yirmi yıllığına borç vermesi ve işler ters gittiğinde bir düzenleyiciye hesap vermesi gerekir. Bu işleri lisans ve sermaye olmadan yapmak zordur; bu yüzden en modern uygulamalar bile genellikle bir bankanın üzerinde durur.
+1632|Değişen, kiminle muhatap olduğunuzdur. Banka, bir prizin arkasındaki elektrik şebekesi gibi, nadiren gördüğünüz arka plandaki bir şey hâline gelebilir. Önümüzdeki on yılın mücadelesi, ekranın kime ait olacağı üzerinedir.
+1633|Bir banka dört iş yapar: saklamak, taşımak, borç vermek ve güveni taşımak.
+1634|Fintech'ler bir işi alır ve yazılım üzerinden yapar; genellikle arkalarında lisanslı bir banka vardır.
+1635|Neobank, şubesiz bir bankadır. Lisansı kimin tuttuğunu ve mevduatın güvence altında olup olmadığını sorun.
+1636|Açık bankacılık diğer uygulamaların banka verilerinizi kullanmasına yalnızca izninizle izin verir.
+1637|Bankalar daha az görünür oluyor, daha az gerekli değil.
+1638|Sonraki değişim zaten burada
+1639|Uygulamalar şubelerin yerini aldıysa, dokunmanın yerini ne alır? Ders 21, paradaki yapay zekâya bakar: zaten neyin işe yaradığına ve yeni risklerin nerede olduğuna.
+1640|Fintech
+1641|Ortak banka
+1642|Açık bankacılık
+1643|Veri paylaşımına rıza
+1644|Bir bankanın yaptığı dört işi sayın.
+1645|Bir fintech uygulaması ile bir banka arasındaki farkı açıklayın.
+1646|Neobank'ın ne olduğunu ve birini kullanmadan önce neyi kontrol etmeniz gerektiğini söyleyin.
+1647|Açık bankacılığı ve izninizin rolünü açıklayın.
+1648|Bankaların neden daha az görünür olduğunu ama gerekli kaldığını açıklayın.
+1649|Aşağıdakilerden hangisi bir bankanın dört işinden biridir?
+1650|A. Altının fiyatını belirlemek
+1651|B. Kısa vadeli mevduatı uzun vadeli kredilere dönüştürmek
+1652|C. Banknot basmak
+1653|Bir fintech uygulaması kullandığınızda para genellikle nerede durur?
+1654|A. Telefonun içinde
+1655|B. Uygulamanın arkasındaki lisanslı bir bankada
+1656|C. Uygulama mağazasında
+1657|Neobank nedir?
+1658|A. Şubesi olmayan bir banka
+1659|B. Müşterisi olmayan bir banka
+1660|C. Yalnızca kriptoyla uğraşan bir banka
+1661|Açık bankacılıkta başka bir şirket hesap verilerinizi ne zaman okuyabilir?
+1662|A. İstediği zaman
+1663|B. Yalnızca banka kabul ettiğinde
+1664|C. Yalnızca sizin izninizle
+1665|Dersin 'bankalar yok olacak mı' sorusuna cevabı nedir?
+1666|A. Evet, beş yıl içinde
+1667|B. Daha az görünür hâle gelirler ama işler kalır
+1668|C. Hayır, hiçbir şey değişmiyor
+1669|Nubank haber odası: 112 milyondan fazla müşteri (22 Ocak 2026)
+1670|Avrupa Komisyonu: Ödeme hizmetleri (PSD2) ve açık bankacılık
+1671|BIS Çalışma Belgesi 1041: Fintech kredisinin ABD küçük işletmelerinin krediye erişimine etkisi
+1672|Blubank (Saman Bank)
+1673|Şirket örnekleri her hizmetin kendini nasıl kurguladığını söylediğini anlatır. Bunlar tavsiye değildir ve düzenlemeler değişebilir.
+1674|Yapay Zekâ Paramızın Geleceğini Nasıl Değiştirecek? | Ditoman Öğren
+1675|Yapay Zekâ Paramızın Geleceğini Nasıl Değiştirecek? Ditoman ders görseli
+1676|Gelecek • Yapay Zekâ
+1677|Ders 20 parayı şubeden uygulamaya kadar izledi. Bir sonraki adım zaten başladı: uygulamadan sizin yerinize işler yapan bir asistana.
+1678|Yapay zekâ, ya da YZ, yalnızca sabit kuralları izlemek yerine verilerden örüntüler öğrenen yazılımın geniş bir adıdır. Dikkatle bakmaya değer, çünkü para konusunda umut verici hikâyeler de korkutucu hikâyeler de kısmen doğrudur.
+1679|YZ'nin zaten sessizce çalıştığı yerler
+1680|Finansta yıllardır YZ kullanıyorsunuz ama görmüyorsunuz.
+1681|Dolandırıcılık tespiti:
+1682|bankanız Ders 14'teki soruyu yanıtladığında, bir model ödemeyi saniyenin kesri içinde milyonlarca diğeriyle karşılaştırır. Alışılmadık bir yerde ve alışılmadık bir saatte yapılan bir alışveriş engellenir veya kontrol edilir.
+1683|Kredi kararları:
+1684|kredi verenler kimin geri ödeyeceğini tahmin etmek için modeller kullanır; Ders 19'daki gibi bir kredinin bir dakikada onaylanabilmesinin yolu budur.
+1685|Müşteri hizmetleri:
+1686|sohbet asistanları rutin soruları her saatte yanıtlar.
+1687|Bu kullanımlar olgundur. Finansı daha hızlı ve ucuz yaparlar ve insanların kaçıracağı çok sayıda dolandırıcılığı yakalarlar.
+1688|Yeni olan: konuşabileceğiniz asistanlar
+1689|Daha yeni YZ sistemleri sıradan dili anlar. Bu, sıradan insanların erişimine üç şey sokar.
+1690|Açıklamak:
+1691|bir asistan bir sözleşmeyi, bir ücret tablosunu ya da bir finans terimini sade sözlerle, kendi dilinizde açıklayabilir.
+1692|Düzenlemek:
+1693|bir yıllık harcamayı kategorilere ayırabilir ve paranın nereye gittiğini gösterebilir.
+1694|Planlamak:
+1695|bir karar için seçenekleri ve sorulacak soruları ortaya koyabilir.
+1696|Bu gerçek bir yardımdır ve hiç finansal danışmana erişimi olmamış insanlar için yenidir.
+1697|Gelmekte olan: ödeme yapan YZ
+1698|Şu anda inşa edilen adım, yalnızca tavsiye vermeyen, harekete geçen bir asistandır: ürünü bulur, fiyatları karşılaştırır ve öder.
+1699|Ödeme ağları buna hazırlanıyor. Mastercard, ağında bir YZ ajanı tarafından yapılan ilk ödemenin 2025'in üçüncü çeyreğinde gerçekleştiğini ve bu tür ajanları kaydeden ve doğrulayan bir hizmeti kullanıma sunduğunu söyledi. Visa benzer araçlar geliştiriyor. Bazı kripto projeleri, stablecoin'ler kullanan yazılım ajanları arasındaki ödemeleri tasarlıyor.
+1700|Bunun güvenli olması için her ödemede üç şey açık olmalıdır: ajan hangi kişi adına hareket ediyor, o kişi hangi sınırları koydu ve yanlış bir şey satın aldığında kim sorumlu. Bu kurallar hâlâ yazılıyor.
+1701|Paradaki YZ'nin üç aşaması
+1702|Aşama
+1703|Ne yapar
+1704|Şu anki durum
+1705|Sizin payınız
+1706|Arka planda
+1707|Dolandırıcılığı fark eder, kredileri puanlar
+1708|Olgun, yıllardır kullanılıyor
+1709|Bir kararın neden verildiğini sorun
+1710|Asistan
+1711|Açıklar, düzenler, planlar
+1712|Şu an mevcut
+1713|Önemli gerçekleri kontrol edin
+1714|Ajan
+1715|Sizin için alışveriş yapar ve öder
+1716|Geliyor; kurallar yazılıyor
+1717|Sınır koyun ve gözden geçirin
+1718|Yeni riskler
+1719|İkna edici sahteler:
+1720|aynı teknoloji klonlanmış sesler ve yüzler üretir. 2024'te Hong Kong'daki mühendislik şirketi Arup'un bir çalışanı, diğer tüm katılımcıların sahte olduğu bir görüntülü görüşmeden sonra yaklaşık 25 milyon dolar gönderdi. Ders 17, kimliğe bürünme dolandırıcılıklarının ne kadar hızlı büyüdüğünü gösterdi.
+1721|Kendinden emin hatalar:
+1722|bir dil modeli sakin, akıcı bir sesle yanlış bir şey söyleyebilir. Bir sayı, bir kural ya da bir kaynak uydurabilir. Parayla ilgili olarak, doğru gibi duyulan bir hata, yanlış gibi duyulandan daha tehlikelidir.
+1723|Gizli adaletsizlik:
+1724|geçmiş kararlar üzerinde eğitilen bir model geçmiş önyargıyı tekrarlayabilir ve insanları kimsenin onlara açıklayamayacağı nedenlerle reddedebilir.
+1725|bir asistan yalnızca verdiğiniz veri kadar yardımcı olur. Banka ekstreleri, bakiyeler ve kimlik belgeleri bir suçlunun da tam olarak istediği şeylerdir.
+1726|Parayla YZ'yi iyi kullanmak
+1727|Bir asistanı çok okumuş bir yardımcı olarak görün, bir otorite olarak değil.
+1728|Açıklamasını isteyin, sonra önemli gerçekleri kontrol edin
+1729|orijinal sözleşmeye, resmî siteye ya da hesap verebilir bir kişiye karşı.
+1730|Asla sır yapıştırmayın:
+1731|kurtarma ifadesi, kart numarası, tek kullanımlık kod yok. Ders 13'ün kuralının makineler için istisnası yoktur.
+1732|Bir aile kod sözcüğü belirleyin
+1733|telefonla ya da görüntülü acil para istekleri için. Klonlanmış bir ses onu bilmez.
+1734|Son karar sizde kalsın.
+1735|Bir asistan harcayabiliyorsa ona küçük bir sınır verin ve ne yaptığını gözden geçirin.
+1736|Bunun gidebileceği yer
+1737|Parçalar bir araya gelirse, tablo umut vericidir: daha iyi bir oranı izleyen, bir ücretten önce sizi uyaran, bir dolandırıcılığı siz yanıt vermeden yakalayan ve her adımı kendi dilinizde açıklayan bir asistan. Eskiden zenginlere ait olan iyi finansal yardım sıradan hâle gelebilir.
+1738|Oraya varmak, daha akıllı modellerden çok net kurallara, dürüst tasarıma ve araçların neyi yapıp neyi yapamayacağını anlayan insanlara bağlıdır. Son kısım, bu derslerin amacıdır.
+1739|YZ yıllardır finansın arka planında çalışıyor; esas olarak dolandırıcılığa karşı ve kredi vermede.
+1740|Yeni asistanlar iyi açıklar ve düzenler. Kendinden emin biçimde yanılabilirler de.
+1741|Sizin için ödeme yapan YZ geliyor ve sorumluluk kuralları hâlâ yazılıyor.
+1742|Aynı araçlar daha iyi dolandırıcılıkları da besler. Acil istekleri ikinci bir kanaldan doğrulayın.
+1743|YZ'yi anlamak için kullanın. Sırları ve son kararları kendinize saklayın.
+1744|Siteden iki hikâye
+1745|Ders 17, YZ'nin artık daha ikna edici hâle getirdiği dolandırıcılık örüntülerini ele alır. Ders 20, bu adımdan önce gelen şubelerden uygulamalara geçişi açıklar.
+1746|Yapay zekâ
+1747|Makine öğrenmesi modeli
+1748|Dolandırıcılık tespiti
+1749|Dil asistanı
+1750|YZ ajanı
+1751|Ajan tabanlı ödemeler
+1752|Deepfake
+1753|Kendinden emin hata (halüsinasyon)
+1754|İkinci kanaldan doğrulama
+1755|YZ'nin finansta zaten çalıştığı üç yeri söyleyin.
+1756|Bir dil asistanının neyi iyi yaptığını ve nerede başarısız olabileceğini söyleyin.
+1757|Ödeme yapan bir YZ ajanının ne olduğunu ve hangi üç şeyin net olması gerektiğini açıklayın.
+1758|Dört yeni riski sıralayın.
+1759|Parayla YZ kullanmanın güvenli alışkanlıklarını anlatın.
+1760|YZ finansta yıllardır nerede çalışıyor?
+1761|A. Kartlı ödemelerde dolandırıcılık tespiti
+1762|B. Banknot basmak
+1763|C. Merkez bankası faiz oranlarını belirlemek
+1764|Bir dil asistanının hatalarının ana tehlikesi nedir?
+1765|A. Her zaman belli olurlar
+1766|B. Kendinden emin ve doğru gibi görünebilirler
+1767|C. Yalnızca İngilizcede olurlar
+1768|Bir YZ ajanının güvenle ödeme yapabilmesi için ne net olmalıdır?
+1769|A. Uygulamanın rengi
+1770|B. Kimin adına hareket ettiği, sınırları ve kimin sorumlu olduğu
+1771|C. Kaç dil konuştuğu
+1772|Bir akraba görüntülü arayıp acilen para istiyor. En güvenli adım nedir?
+1773|A. Hemen göndermek
+1774|B. Asistana yüzün gerçek görünüp görünmediğini sormak
+1775|C. İkinci bir kanaldan ya da bir aile kod sözcüğüyle doğrulamak
+1776|Bir YZ asistanına asla ne yapıştırılmamalıdır?
+1777|A. Bir kurtarma ifadesi ya da tek kullanımlık kod
+1778|B. Enflasyon hakkında bir soru
+1779|C. Açıklanmasını istediğiniz bir finans terimi
+1780|Digital Commerce 360: Mastercard'ın ilk ajan tabanlı işlemi ve Agent Pay'in kullanıma sunulması (31 Ekim 2025)
+1781|Decrypt: 2025 kripto dolandırıcılıklarında YZ ve kimliğe bürünme, Chainalysis
+1782|Fortune: Arup'un Hong Kong'daki 25 milyon dolarlık deepfake dolandırıcılığının mağduru olduğu doğrulandı (17 Mayıs 2024)
+1783|Uluslararası Ödemeler Bankası, 2024 Yıllık Raporu: Yapay zekâ ve ekonomi
+1784|Bu alan hızla değişiyor. Ürün adları ve kullanıma sunma tarihleri kaynaklarda bildirildiği gibidir ve ilerlemiş olabilir.
+1785|Aylık Param Nereye Gidiyor? | Ditoman Öğren
+1786|Çoğu insan paranın ay bitmeden kaybolduğunu hisseder. Bu ders, bilinen bir pratik kural ve bir aylık bir alışkanlık kullanarak nereye gittiğini görmenin basit bir yolunu gösterir
+1787|Aylık Param Nereye Gidiyor? Ditoman ders görseli
+1788|Para • Bütçe
+1789|Çoğu insan paranın ay bitmeden kaybolduğunu hisseder. Bu ders, bilinen bir pratik kural ve bir aylık bir alışkanlık kullanarak nereye gittiğini görmenin basit bir yolunu gösterir.

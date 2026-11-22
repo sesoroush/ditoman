@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>刷卡时，钱是如何流动的？ | Ditoman 学习</title>
+<meta name="description" content="刷卡支付感觉是瞬间完成的，但在那两秒里有好几家公司在互相通信，而钱本身是稍后才到账的。本课跟随一笔购物，从刷卡机一直到商店的账户" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson14.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson14.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson14.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson14.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson14.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson14.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson14.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson14.zh.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="刷卡时，钱是如何流动的？ | Ditoman 学习" />
+<meta property="og:description" content="刷卡支付感觉是瞬间完成的，但在那两秒里有好几家公司在互相通信，而钱本身是稍后才到账的。本课跟随一笔购物，从刷卡机一直到商店的账户" />
+<meta property="og:url" content="https://ditoman.com/lesson14.zh.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson14.zh.html#page",
+   "url": "https://ditoman.com/lesson14.zh.html",
+   "name": "刷卡时，钱是如何流动的？ | Ditoman 学习",
+   "description": "刷卡支付感觉是瞬间完成的，但在那两秒里有好几家公司在互相通信，而钱本身是稍后才到账的。本课跟随一笔购物，从刷卡机一直到商店的账户",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "刷卡时，钱是如何流动的？ | Ditoman 学习",
+     "item": "https://ditoman.com/lesson14.zh.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.zh.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.zh.html" class="active">学习</a>
+<a href="iran.en.html">伊朗</a>
+<a href="companies.en.html">企业</a>
+<a href="prices.zh.html">价格</a>
+<a href="calendar.en.html">日历</a>
+<a href="tmn.zh.html">TMN</a>
+<a href="index.zh.html#whitepapers">白皮书</a>
+<a href="posts.en.html">动态</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson14-cover.jpg" alt="刷卡时，钱是如何流动的？Ditoman 课程图片" style="width:100%;height:auto"><img lang="en" src="lesson14-cover-en.jpg" alt="刷卡时，钱是如何流动的？Ditoman 课程图片" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">支付 • 银行卡</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پرداخت • کارت</div>
+<h1 lang="en">刷卡时，钱是如何流动的？</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">وقتی کارت می‌کشیم، پول چطور جابه‌جا می‌شود؟</h1>
+<p class="subtitle" lang="en">刷卡支付感觉是瞬间完成的，但在那两秒里有好几家公司在互相通信，而钱本身是稍后才到账的。本课跟随一笔购物，从刷卡机一直到商店的账户。</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">خرید با کارت آنی به نظر می‌رسد، ولی در همان دو ثانیه چند شرکت با هم حرف می‌زنند و خودِ پول دیرتر می‌رسد. این درس یک خرید را از کارتخوان تا حساب فروشنده دنبال می‌کند.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">难度</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">入门</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">阅读时间</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6分钟</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">学习积分</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">测验</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5道题</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">课程内容</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">可用英文或波斯文阅读本课。</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">中文</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">你把卡靠近读卡器，听到“嘀”的一声，拿走小票离开。两秒钟。感觉就像钱从你的账户跳到了商店。</p>
+<p lang="en">其实没有，至少现在还没有。那两秒钟里传递的是一个问题和一个回答。钱是随后才到的。看清这一差别，就能解释手续费、退款、支付失败，以及本系列后面为什么加密货币支付的运作方式如此不同。</p>
+<h3><span class="check-number">01.</span> 五个参与者</h3>
+<p lang="en">无论在哪个国家，每笔刷卡支付都有同样的角色。</p>
+<p lang="en"><strong>持卡人：</strong> 你自己。</p>
+<p lang="en"><strong>商户：</strong> 商店。</p>
+<p lang="en"><strong>发卡行：</strong> 给你发卡并持有你账户的银行。</p>
+<p lang="en"><strong>收单方：</strong> 商店的银行或支付公司，提供读卡器并为商店收款。</p>
+<p lang="en"><strong>卡组织网络：</strong> 位于中间、把所有银行相互连接并制定规则的系统。</p>
+<p lang="en">在世界大多数地方，这个网络是 Visa 或 Mastercard。在伊朗，Shaparak 把读卡器和在线网关连接到银行，Shetab 则把银行彼此连接起来。</p>
+<h3><span class="check-number">02.</span> 第一步：提问（授权）</h3>
+<p lang="en">当你刷卡时，读卡器通过收单方和网络向你的银行发送一条消息：这张卡，这个金额，这家店。可以吗？</p>
+<p lang="en">你的银行检查卡是否有效、PIN 或刷卡是否正确、余额是否足够，以及是否有欺诈迹象。然后回答是或否。回答是时，它会冻结该金额。这一切就是那声“嘀”。</p>
+<figure class="lz-fig"><figcaption>一笔刷卡支付，一步一步</figcaption>
+<ol class="lz-flow">
+<li><b>1</b><span><strong>你刷卡。</strong> 读卡器读取卡片和金额。</span></li>
+<li><b>2</b><span><strong>收单方转发请求</strong> 给卡组织网络。</span></li>
+<li><b>3</b><span><strong>网络将其路由</strong> 到发行你那张卡的银行。</span></li>
+<li><b>4</b><span><strong>你的银行检查</strong> 余额、PIN 和欺诈信号，然后回答是或否。</span></li>
+<li><b>5</b><span><strong>回答返回</strong> 读卡器：那声“嘀”。</span></li>
+<li><b>6</b><span><strong>稍后，银行结算</strong> 商店的账户到账。</span></li>
+</ol>
+</figure>
+<h3><span class="check-number">03.</span> 第二步：钱（清算与结算）</h3>
+<p lang="en">当天结束时，已批准的支付会被汇总并合计。这就是 <strong>清算</strong>：算出谁欠谁多少。</p>
+<p lang="en">然后是 <strong>结算</strong>：银行之间真正相互付款，通常通过在央行的账户，商店的账户随之入账。这往往发生在下一个工作日，有时更晚。</p>
+<p lang="en">所以商店的小票是一份钱即将到来的承诺。对顾客来说感觉是即时的，对商店来说并不是。</p>
+<h3><span class="check-number">04.</span> 这一切由谁来付钱？</h3>
+<p lang="en">读卡器、卡组织网络和反欺诈系统都需要成本。在大多数国家，商户为每笔销售支付一小部分百分比，其中一部分费用称为交换费（interchange），归发卡行所有。</p>
+<p lang="en">水平差别很大。欧盟将借记卡的交换费上限定为0.2%，信用卡为0.3%。在其他市场，总费用可能是2%或3%。在伊朗，安排一直很特殊：多年来由银行承担成本，商店对刷卡购物不付任何费用。</p>
+<p lang="en">当商店对现金给折扣，或加收刷卡附加费时，通常就是这笔费用的缘故。</p>
+<h3><span class="check-number">05.</span> 为什么支付有时失败或退回</h3>
+<p lang="en"><strong>被拒：</strong> 发卡行回答了否，原因是余额、限额或欺诈检查。</p>
+<p lang="en"><strong>钱被冻结但购买失败：</strong> 冻结已经设置，但回答从未到达读卡器。冻结之后会被释放，所以钱过一段时间会“回来”。</p>
+<p lang="en"><strong>退款与争议：</strong> 因为银行站在中间，刷卡支付可以被撤销。这保护买家，同时也是商店的成本和风险。</p>
+<h3><span class="check-number">06.</span> 这与加密货币相比如何</h3>
+<p lang="en">刷卡支付是一条由受信任的公司传递消息的链条，稍后结算。区块链支付没有发卡行、收单方或网络公司。转账本身就是结算，一旦确认，银行无法撤销。</p>
+<p lang="en">这使它快速且对任何人开放，同时也去掉了安全网。第16课以同样的逐步方式跟随一笔加密交易。</p>
+<h3>本课要点</h3>
+<p lang="en">那声“嘀”是对一个问题的回答。钱稍后才会移动。</p>
+<p lang="en">五个参与者：持卡人、商户、发卡行、收单方和卡组织网络。</p>
+<p lang="en">授权是即时的。清算和结算需要几小时或几天。</p>
+<p lang="en">总有人为这个系统付费，通常是商户，而且各国规则不同。</p>
+<p lang="en">刷卡支付可以撤销。区块链支付不能。各有成本。</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">کارت را به کارتخوان نزدیک می‌کنیم، یک بوق می‌شنویم، رسید را می‌گیریم و می‌رویم. دو ثانیه. به نظر می‌رسد پول از حساب ما به حساب مغازه پریده است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">ولی هنوز این اتفاق نیفتاده. چیزی که در آن دو ثانیه جابه‌جا شد یک پرسش و یک پاسخ بود. خودِ پول بعداً می‌آید. دیدن این تفاوت، کارمزد، برگشت پول و تراکنش ناموفق را توضیح می‌دهد، و در ادامه‌ی همین مجموعه نشان می‌دهد چرا پرداخت کریپتویی این‌قدر متفاوت کار می‌کند.</p>
+<h3><span class="check-number">۰۱.</span> پنج بازیگر</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هر پرداخت کارتی، در هر کشوری، همین بازیگران را دارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>دارنده‌ی کارت:</strong> خود ما.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>فروشنده (پذیرنده):</strong> مغازه یا فروشگاه.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>بانک صادرکننده:</strong> بانک ما که کارت را داده و حسابمان پیش اوست.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>بانک پذیرنده:</strong> بانک یا شرکت پرداختِ مغازه که کارتخوان را می‌دهد و پول را برای فروشنده جمع می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>شبکه:</strong> سامانه‌ای در میانه که همه‌ی بانک‌ها را به هم وصل می‌کند و قواعد را تعیین می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">در بیشتر دنیا این شبکه ویزا یا مسترکارت است. در ایران، شاپرک کارتخوان‌ها و درگاه‌های اینترنتی را به بانک‌ها وصل می‌کند و شتاب بانک‌ها را به یکدیگر.</p>
+<h3><span class="check-number">۰۲.</span> قدم اول: پرسش (تأیید تراکنش)</h3>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی کارت می‌کشیم، کارتخوان پیامی را از راه شرکت پرداخت و شبکه به بانک ما می‌فرستد: این کارت، این مبلغ، این فروشگاه. تأیید می‌کنی؟</p>
+<p lang="fa" dir="rtl" style="text-align:right">بانک ما بررسی می‌کند که کارت معتبر باشد، رمز درست باشد، موجودی کافی باشد و نشانه‌ای از تقلب نباشد. بعد جواب می‌دهد: بله یا نه. اگر جواب بله باشد، آن مبلغ را در حساب مسدود می‌کند. همه‌ی این‌ها همان یک بوق است.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>یک پرداخت کارتی، قدم‌به‌قدم</figcaption>
+<ol class="lz-flow">
+<li><b>۱</b><span><strong>کارت می‌کشیم.</strong> کارتخوان کارت و مبلغ را می‌خواند.</span></li>
+<li><b>۲</b><span><strong>شرکت پرداختِ فروشنده</strong> درخواست را به شبکه می‌دهد.</span></li>
+<li><b>۳</b><span><strong>شبکه</strong> آن را به بانک صادرکننده‌ی کارت می‌رساند.</span></li>
+<li><b>۴</b><span><strong>بانک ما</strong> موجودی، رمز و نشانه‌های تقلب را بررسی می‌کند و جواب بله یا نه می‌دهد.</span></li>
+<li><b>۵</b><span><strong>پاسخ</strong> به کارتخوان برمی‌گردد: همان بوق.</span></li>
+<li><b>۶</b><span><strong>بعداً بانک‌ها تسویه می‌کنند</strong> و پول به حساب فروشنده می‌نشیند.</span></li>
+</ol>
+</figure>
+<h3><span class="check-number">۰۳.</span> قدم دوم: پول (پایاپای و تسویه)</h3>
+<p lang="fa" dir="rtl" style="text-align:right">آخر روز، پرداخت‌های تأییدشده جمع و حساب می‌شوند. به این کار <strong>پایاپای</strong> می‌گویند: معلوم می‌شود چه کسی به چه کسی چقدر بدهکار است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بعد نوبت <strong>تسویه</strong> است: بانک‌ها واقعاً به هم پول می‌دهند، معمولاً از راه حساب‌هایشان نزد بانک مرکزی، و پول به حساب فروشنده می‌نشیند. این کار اغلب روز کاری بعد انجام می‌شود و گاهی دیرتر.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پس رسید فروشنده قولی است که پول در راه است. برای خریدار آنی به نظر می‌رسد. برای فروشنده این‌طور نیست.</p>
+<h3><span class="check-number">۰۴.</span> هزینه‌ی این همه را چه کسی می‌دهد؟</h3>
+<p lang="fa" dir="rtl" style="text-align:right">کارتخوان، شبکه و سامانه‌های ضدتقلب هزینه دارند. در بیشتر کشورها فروشنده درصد کمی از هر فروش را می‌پردازد و بخشی از آن کارمزد، به بانکی می‌رسد که کارت را صادر کرده است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اندازه‌ی این کارمزد خیلی فرق می‌کند. اتحادیه‌ی اروپا سقف آن را برای کارت نقدی ۰٫۲ درصد و برای کارت اعتباری ۰٫۳ درصد گذاشته است. در بازارهای دیگر کل کارمزد می‌تواند دو یا سه درصد باشد. در ایران وضع متفاوت بوده: سال‌ها این هزینه را بانک‌ها می‌پرداختند و فروشنده برای خرید کارتی چیزی نمی‌داد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی فروشگاهی برای پرداخت نقدی تخفیف می‌دهد یا برای کارت مبلغی اضافه می‌گیرد، دلیلش معمولاً همین کارمزد است.</p>
+<h3><span class="check-number">۰۵.</span> چرا پرداخت گاهی ناموفق می‌شود یا پول برمی‌گردد</h3>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>رد شدن:</strong> بانک صادرکننده جواب «نه» داده؛ به‌خاطر موجودی، سقف تراکنش یا بررسی تقلب.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>پول کم شد ولی خرید انجام نشد:</strong> مبلغ مسدود شده ولی پاسخ به کارتخوان نرسیده است. این مبلغ بعداً آزاد می‌شود و برای همین پول «بعد از مدتی برمی‌گردد».</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>برگشت پول و اعتراض:</strong> چون بانک‌ها در میانه‌اند، پرداخت کارتی را می‌شود برگرداند. این از خریدار محافظت می‌کند و برای فروشنده هزینه و ریسک دارد.</p>
+<h3><span class="check-number">۰۶.</span> مقایسه با کریپتو</h3>
+<p lang="fa" dir="rtl" style="text-align:right">پرداخت کارتی زنجیره‌ای از شرکت‌های مورد اعتماد است که به هم پیام می‌دهند و تسویه بعداً انجام می‌شود. در پرداخت روی بلاکچین، بانک صادرکننده، شرکت پرداخت و شرکت شبکه‌ای وجود ندارد. خودِ انتقال همان تسویه است و بعد از تأیید، هیچ بانکی نمی‌تواند آن را برگرداند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این آن را سریع و برای همه در دسترس می‌کند و هم‌زمان تور ایمنی را هم برمی‌دارد. درس ۱۶ یک تراکنش کریپتویی را به همین شکل قدم‌به‌قدم دنبال می‌کند.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">آن بوق، پاسخ به یک پرسش است. پول بعداً جابه‌جا می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پنج بازیگر در کارند: دارنده‌ی کارت، فروشنده، بانک صادرکننده، بانک پذیرنده و شبکه.</p>
+<p lang="fa" dir="rtl" style="text-align:right">تأیید آنی است. پایاپای و تسویه چند ساعت یا چند روز طول می‌کشد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">همیشه کسی هزینه‌ی این سامانه را می‌دهد، معمولاً فروشنده، و قواعدش در هر کشور فرق دارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پرداخت کارتی را می‌شود برگرداند. پرداخت روی بلاکچین را نمی‌شود. هر کدام هزینه‌ای دارد.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">同样的问题，跨越国界</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">همین پرسش، آن طرف مرز</h2>
+<p lang="en">在一个国家内部，网络连接每一家银行。在国家之间没有单一网络，成本和延迟就从这里开始。第15课跟随一笔跨境支付。</p>
+<p lang="fa" dir="rtl" style="text-align:right">داخل یک کشور، شبکه همه‌ی بانک‌ها را به هم وصل می‌کند. میان کشورها شبکه‌ی واحدی نیست و هزینه و تأخیر از همان‌جا شروع می‌شود. درس ۱۵ یک پرداخت به خارج را دنبال می‌کند.</p>
+<div class="cta-row">
+<a class="cta" href="lesson15.zh.html"><span lang="en">为什么向国外汇款仍然这么难？</span><span lang="fa">چرا فرستادن پول به خارج هنوز سخت است؟</span></a>
+<a class="button" href="lesson16.zh.html"><span lang="en">加密交易如何运作</span><span lang="fa">یک تراکنش کریپتویی چطور کار می‌کند؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">核心概念</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>持卡人和商户</li><li>发卡行</li><li>收单方</li><li>卡组织网络</li><li>授权</li><li>清算</li><li>结算</li><li>交换费</li><li>拒付</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>دارنده‌ی کارت و فروشنده</li><li>بانک صادرکننده</li><li>بانک پذیرنده</li><li>شبکه‌ی کارت</li><li>تأیید تراکنش</li><li>پایاپای</li><li>تسویه</li><li>کارمزد</li><li>برگشت پرداخت</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">学习目标</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>说出刷卡支付中的五个参与者及各自的作用。</li><li>解释授权与结算的区别。</li><li>说明为什么商店收到钱的时间比顾客想的要晚。</li><li>解释通常由谁支付刷卡费用，以及为什么各国不同。</li><li>比较可撤销的刷卡支付与最终性的区块链支付。</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>پنج بازیگر یک پرداخت کارتی و کار هر کدام را نام ببرید.</li><li>تفاوت تأیید تراکنش و تسویه را توضیح دهید.</li><li>بگویید چرا پول دیرتر از آنچه خریدار فکر می‌کند به فروشنده می‌رسد.</li><li>توضیح دهید کارمزد کارت را معمولاً چه کسی می‌دهد و چرا در هر کشور فرق دارد.</li><li>پرداخت کارتیِ برگشت‌پذیر را با پرداخت قطعی روی بلاکچین مقایسه کنید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">测验</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">检查一下你记住了什么。答案在每道题下面。</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">第1题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">在“嘀”之前的两秒里实际发生了什么？</p>
+<p lang="fa" dir="rtl" style="text-align:right">در دو ثانیه‌ی پیش از بوق، واقعاً چه اتفاقی می‌افتد؟</p>
+<p lang="en">A. 钱转到了商店的账户</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. پول به حساب فروشنده می‌رود</p>
+<p lang="en">B. 你的银行回答了请求并冻结了金额</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. بانک ما به یک درخواست جواب می‌دهد و مبلغ را مسدود می‌کند</p>
+<p lang="en">C. 央行打印了一张小票</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. بانک مرکزی رسید صادر می‌کند</p>
+<p class="answer" lang="en">正确答案：B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第2题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">哪家银行给你发卡并持有你的账户？</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام بانک کارت شما را داده و حسابتان پیش اوست؟</p>
+<p lang="en">A. 发卡行</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بانک صادرکننده</p>
+<p lang="en">B. 收单方</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. بانک پذیرنده</p>
+<p lang="en">C. 卡组织网络</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. شبکه</p>
+<p class="answer" lang="en">正确答案：A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第3题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">什么是结算？</p>
+<p lang="fa" dir="rtl" style="text-align:right">تسویه چیست؟</p>
+<p lang="en">A. 检查 PIN</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بررسی رمز کارت</p>
+<p lang="en">B. 打印小票</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. چاپ رسید</p>
+<p lang="en">C. 银行之间真正相互付款</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. پرداخت واقعی بانک‌ها به یکدیگر</p>
+<p class="answer" lang="en">正确答案：C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第4题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">金额从你的余额中扣除了，但购买失败了。最可能发生了什么？</p>
+<p lang="fa" dir="rtl" style="text-align:right">مبلغ از موجودی کم شد ولی خرید انجام نشد. به احتمال زیاد چه شده؟</p>
+<p lang="en">A. 商店拿走了钱</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. فروشنده پول را برداشته</p>
+<p lang="en">B. 设置了冻结，之后会被释放</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. مبلغ مسدود شده و بعداً آزاد می‌شود</p>
+<p lang="en">C. 卡被注销了</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. کارت باطل شده</p>
+<p class="answer" lang="en">正确答案：B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第5题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">已确认的区块链支付与刷卡支付有何不同？</p>
+<p lang="fa" dir="rtl" style="text-align:right">پرداخت تأییدشده روی بلاکچین چه فرقی با پرداخت کارتی دارد؟</p>
+<p lang="en">A. 银行可以撤销它</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بانک می‌تواند آن را برگرداند</p>
+<p lang="en">B. 它是最终的，没有银行能撤销</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. قطعی است و هیچ بانکی نمی‌تواند آن را برگرداند</p>
+<p lang="en">C. 它总是花费3%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. همیشه سه درصد کارمزد دارد</p>
+<p class="answer" lang="en">正确答案：B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">来源</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://eur-lex.europa.eu/eli/reg/2015/751/oj" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">欧盟第2015/751号关于卡基支付交换费的条例</a></li><li><a href="https://www.bis.org/cpmi/publ/d00b.htm" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BIS CPMI：支付与市场基础设施术语表</a></li><li><a href="https://www.shaparak.ir/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Shaparak：伊朗的电子刷卡支付网络</a></li><li><a href="https://www.mehrnews.com/news/5770024/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Mehr News：伊朗的刷卡手续费以及谁一直在支付</a></li></ul>
+<p lang="en" style="font-size:0.95rem">费用水平和规则会变化。这里的数字描述的是总体结构，不是任何商店或银行的报价。</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">اندازه‌ی کارمزدها و قواعد تغییر می‌کند. عددهای این درس ساختار کلی را نشان می‌دهند، نه نرخ یک فروشگاه یا بانک مشخص را.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">关注我们</span></h2>
+<p lang="en">新课程会首先在 Ditoman 的各个渠道发布。</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.zh.html"><span lang="en">返回学习</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson13.zh.html"><span lang="en">上一课</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson15.zh.html"><span lang="en">下一课</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman 学习 • 以结构为基础，以探索为动力。
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-zh.js?v=20261121a"></script>
+</body>
+</html>

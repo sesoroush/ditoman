@@ -1,0 +1,240 @@
+640|Emir defteri ve piyasa derinliği
+641|Kayma (slippage)
+642|Kaldıraç ve teminat
+643|Tasfiye ve tasfiye zinciri
+644|Ağ bağımsızlığı ve fiyat davranışı
+645|Grafikteki fiyatın aldığınız fiyattan neden farklı olabileceğini açıklayın.
+646|İnce bir emir defteri üzerinden bir piyasa emrinin ortalama fiyatını hesaplayın.
+647|Kaldıraç ve teminatın nasıl çalıştığını ve tasfiyenin ne zaman gerçekleştiğini anlatın.
+648|Tasfiyelerin bir zincir içinde birbirini nasıl besleyebildiğini açıklayın.
+649|Bu riskleri azaltmanın pratik yollarını sayın.
+650|Son işlem 100 dolardı. 100 dolarda bir alıcı, bir sonraki 95 dolarda. İki birimi piyasa fiyatından satıyorsunuz. Ortalama fiyatınız nedir?
+651|10× kaldıraç ve 100 dolar teminatla, teminatınız bitmeden önce fiyatın yaklaşık ne kadar düşmesi gerekir?
+652|Doğru cevap: Teminat tükenmek üzereyken borsanın kaldıraçlı pozisyonu otomatik olarak kapatması.
+653|Doğru mu yanlış mı: Bitcoin'in ağı hükümetlerden bağımsızsa, fiyatı hisse senetleriyle birlikte düşemez.
+654|Doğru cevap: Yanlış. Birçok yatırımcı ikisini de tutar ve daha az risk istediklerinde ikisini de satar.
+655|5 Kasım 2026'da yaklaşık 1 milyar dolarlık kripto tasfiyelerinin kabaca yüzde kaçı fiyatların yükseleceğine yapılan bahislerdi?
+656|A. Yaklaşık %11
+657|B. Yaklaşık %50
+658|C. Yaklaşık %89
+659|Bloomberg Opinion, John Authers: FTSE All-World endeksi grafiği (Instagram paylaşımı, Kasım 2026)
+660|CryptoSlate, 5 Kasım 2026: Nasdaq 100 −%5,5, tasfiyeler yaklaşık 1 milyar dolar, 201.000'den fazla yatırımcı
+661|The Coin Republic, 5 Kasım 2026: Bitcoin dip 75.463 dolar, CoinGlass tasfiye verileri
+662|Ditoman Ders 07: Büyük haberler Bitcoin'i nasıl hareket ettirir
+663|Yeni dersler önce Ditoman'ın Telegram ve Instagram hesaplarında duyurulur.
+664|Dijital dolarlar: Arkalarında ne var? | Ditoman Öğren
+665|Stablecoin'ler basit görünür: bir token, bir dolar. Ama bu bağ bir sözdür ve bir söz ancak arkasındaki şey kadar güçlüdür. Bu derste stablecoin'lerin arkasında ne olduğunu, ünlü bir stablecoin'in Mayıs 2022'de nasıl çöktüğünü ve herhangi bir tokene güvenmeden önce en önemli olan tek testi göreceksiniz…
+666|Dijital dolarlar: Arkalarında ne var? Ditoman ders görseli
+667|Para • Stablecoin'ler
+668|Dijital Dolarlar: Arkalarında Ne Var?
+669|Stablecoin'ler basit görünür: bir token, bir dolar. Ama bu bağ bir sözdür ve bir söz ancak arkasındaki şey kadar güçlüdür. Bu derste stablecoin'lerin arkasında ne olduğunu, ünlü bir stablecoin'in Mayıs 2022'de nasıl çöktüğünü ve herhangi bir tokene güvenmeden önce en önemli olan tek testi göreceksiniz.
+670|12 Dakika
+671|30 LP
+672|Dersi İngilizce veya Farsça okuyabilirsiniz.
+673|Muhtemelen USDT, USDC ve diğer tokenların gün be gün neredeyse tam bir dolar olarak fiyatlandığını, bitcoin'in ise binlerce dolar sıçradığını görmüşsünüzdür. Bu neden olur? Çünkü biri tokeni orada tutacağına söz vermiştir. Bu söze inanıp inanmamanız üç şeye bağlıdır: kim veriyor, arkasında ne var ve tokeni yeniden dolara çevirebilir misiniz.
+674|Bu dersi kısa bir dedektif hikâyesi gibi düşünün. Her stablecoin'in bir şüphelisi (ihraççı), bir zulası (karşılık) ve bir çıkış yolu (itfa) vardır. Göreviniz üçünü de kontrol etmek.
+675|Stablecoin Nedir
+676|Stablecoin, değerini bir ABD dolarına yakın tutmak üzere tasarlanmış dijital bir tokendir. Dolara bu bağlanmaya bağlama (peg) denir. Her zaman bir dolar değerinde olması amaçlanan bir hediye kartı düşünün: kartın kendisi yalnızca bir plastik parçasıdır ve değeri tamamen arkasındaki sözden gelir.
+677|Bu, banka hesabınızdaki paradan farklıdır. Banka mevduatı bir bankaya karşı bir alacaktır. Stablecoin ise ihraç edene karşı bir alacaktır ve bu alacağın koşulları bir banka şubesinde değil, ihraççının belgelerinde yazılıdır. Güvenmeden önce bu koşulları okuyun.
+678|Bir Tokeni Desteklemenin Üç Yolu
+679|Çoğu stablecoin üç tür karşılıktan birine dayanır. Aşağıdaki resim bunları yan yana gösterir.
+680|Nakit ve devlet tahvilleri:
+681|ihraççı, ihraç ettiği tokenlar için nakit veya kısa vadeli devlet tahvili tutar. Büyük stablecoin'ler arasında en yaygın model budur. Soru her zaman bu rezervlerin gerçekte ne kadar güvenli olduğu ve ne kadar kolay satılabildiğidir.
+682|Kripto teminatı:
+683|token, teminat olarak kilitlenmiş diğer kripto varlıklarla desteklenir; genellikle ihraç edilen tokenlardan daha değerlidir. Bu varlıklar sert düşerse sistem stres testine girer ve ayakta kalmak için güvenlik payına ihtiyaç duyar.
+684|Algoritmik model:
+685|gerçek bir rezerv yoktur. Sistem fiyatı arz kuralları ve ikinci bir tokenle tutmaya çalışır. Mayıs 2022'de başarısız olan model budur ve aşağıdaki vaka çalışmasının konusudur.
+686|Stablecoin'ler için üç karşılık türü: nakit ve devlet tahvilleri, kripto teminatı, algoritmik model
+687|Rezerv Raporu Denetim Değildir
+688|Bir ihraççı tokenin tamamen karşılıklı olduğunu söylediğinde, bu iddia attestation adı verilen bir rapordan gelebilir. Attestation genellikle belirli bir tarih için hazırlanmış tek bir anın anlık görüntüsüdür. Tam bir denetim daha derine iner ve daha uzun bir dönemi kapsar. Bunlar farklı araçlardır ve bir manşet hangisini okuduğunuzu nadiren söyler.
+689|ABD yasası artık daha sağlam kurallar koyuyor. GENIUS Yasası uyarınca stablecoin'ler ABD doları ve kısa vadeli hazine bonoları gibi likit varlıklarla desteklenmeli ve ihraççılar rezerv bileşimini her ay kamuya açıklamalıdır. 50 milyar doların üzerindeki ihraççılar ayrıca yıllık denetimden de geçmelidir. Bunlar dünyanın herhangi bir yerinde herhangi bir ihraççıya sorulması gereken iyi sorulardır.
+690|Herhangi bir rezerv raporu hakkında dört soru sorun: ne tutuluyor? Bunun ne kadarı nakit? Kim denetliyor? Ne sıklıkla yayımlanıyor?
+691|İtfa: En Önemli Test
+692|Bir stablecoin, ancak pratikte onu dolara çevirebiliyorsanız bir dolar değerindedir. Genellikle ihraççı tokenları yalnızca onaylı müşteriler için, belirlenen koşullar ve asgari tutarlarla itfa eder. Çoğu insan yalnızca piyasada, başka bir alıcıya, piyasanın sunduğu fiyattan satabilir.
+693|Sahipler karşılıktan şüphe ederse ya da piyasa ince ise fiyat bir doların altına düşebilir. Önce nakde ihtiyaç duyanlar genellikle en kötü anlaşmayı yapar, çünkü paniğe satarlar. Dolayısıyla asıl soru yalnızca tokenin ne değerde olduğunu iddia ettiği değil, kimin onu bozdurabildiği ve hangi fiyattan olduğudur.
+694|Vaka Çalışması: UST Bağını Nasıl Kaybetti
+695|2022'de TerraUSD (UST) en bilinen stablecoin'lerden biriydi. Algoritmik bir tokendi: dolar ya da başka bir varlıkla desteklenmiyordu. Bunun yerine bağını bir token çiftiyle koruyordu. Bir UST her zaman bir dolar değerindeki LUNA yakılarak basılabilir ve bir UST bir dolar değerinde LUNA karşılığında itfa edilebilirdi. Mekanizmanın tamamı buydu.
+696|Talebi, UST mevduatlarına yıllık yaklaşık %18 ila %20 ödeyen bir borç verme platformu olan Anchor artırdı. Bu getiri normalin çok üzerindeydi ve sıradan borç vermeyle üretilmiyordu. Mayıs 2022'nin başında UST yaklaşık 98 sente düşmüştü ve bazı büyük sahipler çekilmeye başladı.
+697|Sonra döngü tersine döndü. UST bir doların altında satıldıkça, arbitraj tasarımın varsaydığı gibi işlemedi. Luna Foundation Guard rezervlerini harcayarak bağı savunmaya çalıştı. 16 Mayıs 2022'ye kadar 100 milyon doların altında değiştirilebilir varlık kaldığını söyledi. LUNA'nın değeri sıfıra doğru çöktü, UST birkaç sente düştü ve zarar tek bir tokenin çok ötesine yayıldı.
+698|Ders, algoritmaların kötü olduğu değildir. Yalnızca güven ve ikinci bir tokenle ayakta tutulan bir sözün günler içinde yok olabileceğidir. Bugün sorulacak soru basit: yarın güven kırılsa, sahiplere ödeme yapmak için gerçekte ne kalıyor?
+699|Bırakılması Gereken Üç Mit
+700|Mit 1: Bir stablecoin her zaman güvenlidir, bankadaki nakit gibi.
+701|Bir stablecoin ihraççısına karşı bir alacaktır, hükümet güvencesi değildir. Güvenliği karşılığa, itfa kurallarına ve ihraççının davranışına bağlıdır.
+702|Mit 2: 'Tamamen karşılıklı' bozulamaz demektir.
+703|Bir rezerv gerçek olup yine de likit olmayabilir ya da hızlıca satılamayan bir biçimde tutuluyor olabilir. İyi karşılıklı bir token bile korku nakitten daha hızlı yayıldığında sallanabilir.
+704|Mit 3: Tüm stablecoin'ler aynı şekilde çalışır.
+705|Çalışmazlar. Karşılıkları, ihraççıları ve itfaları farklıdır ve her birini ayrı ayrı kontrol etmelisiniz.
+706|Bu Sıradan İnsanlar İçin Neden Önemli
+707|Stablecoin'ler parayı birçok geleneksel kanaldan daha hızlı ve ucuz taşıyabilir ve günün her saati çalışır. İnsanların daha istikrarlı bir değer saklama aracı aradığı yerlerde dolar bazlı paraya erişim sunarlar; bu, bu kadar hızlı büyümelerinin bir nedenidir.
+708|Ama kolaylık risk taşır. Karşılık ne kadar zayıfsa, güven kırıldığında zarar o kadar büyük olur. Hız her iki yönde de çalışır: içeri hızlıca girmenize yardım eder, herkesin hızlıca çıkmasına da.
+709|Kurallar Yazılıyor
+710|ABD'de GENIUS Yasası 18 Temmuz 2025'te yasalaştı. Stablecoin'ler için ilk federal düzenleyici çerçeveyi oluşturdu. Yasa, iki tarihten erken olanında yürürlüğe girer: yürürlük sonrası 18 ay veya ana düzenleyicilerin nihai kurallarını yayımlamasından 120 gün sonra.
+711|Yani ayrıntılı kurallar hâlâ yazılıyor ve her yerde aynı değil. Avrupa Birliği, Hong Kong ve diğerlerinin kendi çerçeveleri var. Her yeni kuralı üç soruyu aklınızda tutarak okuyun: kim ihraç ediyor, neyle destekleniyor ve itfa gerçek mi.
+712|Kendiniz Deneyin: Bir Rezerv Raporu Okuyun
+713|Bildiğiniz herhangi bir stablecoin'i seçin ve şu altı adımı izleyin. Yaklaşık on dakika sürer.
+714|1. Resmî sayfayı bulun.
+715|Özet siteyi değil, ihraççının kendi şeffaflık veya rezerv sayfasını kullanın.
+716|2. Tarihi kontrol edin.
+717|Eski bir rapor yalnızca geçmişi anlatır.
+718|3. Rezervleri listeleyin.
+719|Nakit, kısa vadeli devlet tahvilleri, diğer varlıklar. Ne kadarı nakit benzeri?
+720|4. Rapor türünü belirleyin.
+721|Attestation mı, denetim mi? Kim yazmış?
+722|5. İtfa koşullarını bulun.
+723|Kim itfa edebilir, asgari tutar nedir, hangi ücretler uygulanır ve ne kadar sürer?
+724|6. Tek bir cümle yazın.
+725|'Bu tokene güvenirdim çünkü…' ya da 'Güvenmezdim çünkü…'. Gerekçeniz asıl derstir.
+726|TMN Nerede Duruyor
+727|TMN bir stablecoin değildir. Dolar bağı yoktur ve onu itfa etmeyi vaat eden bir ihraççı yoktur; bu yüzden fiyatı piyasa tarafından belirlenir. Bu nedenle Ders 05'teki kontroller ve Ders 09'daki likidite fikirleri TMN için doğru araçlardır, itfa testi ise ona uygulanmaz.
+728|Bu ders hiçbir projeyi yargılamaz. Yalnızca bir token kategorisini açıklar; böylece onunla karşılaştığınızda kategoriyi tanıyabilirsiniz.
+729|Stablecoin bir sözdür. Değeri, arkasında neyin olduğuna ve gerçekten itfa edip edemeyeceğinize bağlıdır.
+730|Birine güvenmeden önce üç şey sorun: kim ihraç ediyor? Neyle destekleniyor ve bu yayımlanıyor mu? Dolara itfa edebilir misiniz?
+731|Bir rezerv raporu ile tam denetim farklı araçlardır. Manşeti okumadan önce farkı okuyun.
+732|Tarih önemlidir: yalnızca güvenle ayakta tutulan bir söz, 2022'de UST'nin gösterdiği gibi günler içinde yok olabilir.
+733|Stablecoin olsun ya da olmasın her tokene Ders 05 kontrol listesini uygulayın.
+734|Stablecoin'ler ve TMN Aynı Şey Değil
+735|TMN bir stablecoin değildir ve dolar bağı yoktur. Fiyatı piyasa tarafından belirlenir; bu yüzden onu okumak için doğru araçlar Ders 05'teki kontroller ve Ders 09'daki likidite fikirleridir. Bu ders bir projeyi değil, kategoriyi açıklar.
+736|Likidite Kilidi Ne Anlama Gelir?
+737|Stablecoin
+738|Bağlama (peg)
+739|Rezerv karşılığı
+740|Attestation ve denetim
+741|İtfa
+742|Teminat
+743|Algoritmik model
+744|Bağın kopması (depeg)
+745|GENIUS Yasası
+746|Stablecoin'in ne olduğunu ve bağın ne anlama geldiğini açıklayın.
+747|Üç ana karşılık türünü ve her birinin ana riskini sayın.
+748|Attestation raporunu tam denetimden ayırın ve GENIUS Yasası'nın neyi şart koştuğunu söyleyin.
+749|UST vakasını kullanarak itfanın bağın tutup tutmayacağını neden belirlediğini açıklayın.
+750|Bir rezerv raporunu adım adım okuyun ve gerekçeli bir hüküm yazın.
+751|Herhangi bir stablecoin'e güvenmeden önce üç soruyu uygulayın.
+752|Bu sorular, gelecekteki Ditoman sınav ve katılım sistemi için hazırlanmıştır.
+753|Bir stablecoin'in ana amacı nedir?
+754|A. Hızlı fiyat artışı
+755|B. Değerini bir dolara yakın tutmak
+756|C. Merkez bankasının yerini tamamen almak
+757|UST hangi karşılık türüne dayanıyordu ve Mayıs 2022'de başarısız oldu?
+758|A. Nakit rezervler
+759|B. Kripto teminatı
+760|C. İkinci bir tokenli algoritmik model
+761|Doğru cevap: C. UST'nin dolar rezervi yoktu; LUNA'ya ve basım ile yakıma dayanıyordu.
+762|Tam bir denetimle karşılaştırıldığında, attestation raporu neyi gösterir?
+763|A. Tam denetimle aynı şeyi
+764|B. Tek bir anın görüntüsünü
+765|C. Hükümet güvencesini
+766|İhraççı yalnızca onaylı müşteriler için itfa ediyorsa, sıradan bir sahip genellikle ne yapabilir?
+767|A. Piyasada satabilir; fiyatın bir doların altına düşme riskiyle
+768|B. Merkez bankasından geri ödeme talep edebilir
+769|C. Hiçbir şey; token zaten bir dolar değerindedir
+770|Bir stablecoin'e güvenmeden önce sorulacak doğru soru hangisidir?
+771|A. Kim ihraç ediyor?
+772|B. Fiyatı yükselecek mi?
+773|C. Arkadaşlarım aldı mı?
+774|Mayer Brown: GENIUS Yasası yasalaştı (18 Temmuz 2025)
+775|— İmza tarihi ve ödeme stablecoin'leri için ilk federal çerçeve
+776|Latham & Watkins: 2025 GENIUS Yasası
+777|— Yürürlük tarihi kuralı (nihai düzenlemelerden 18 ay veya 120 gün sonra)
+778|Bloomberg via BNN: Trump stablecoin yasasını imzaladı
+779|— Likit varlık karşılığı ve aylık rezerv bileşimi açıklaması
+780|The Block: Trump GENIUS Yasası'nı imzaladı
+781|— Tam dolar karşılığı ve 50 milyar doların üzerindeki ihraççılar için yıllık denetim
+782|The Block: Terra, Luna ve UST, buraya nasıl geldik (11 Mayıs 2022)
+783|— UST bağının nasıl çalıştığı ve çöküşün ilk günleri
+784|Corporate Finance Institute: Terra'ya ne oldu
+785|— Terra çöküşüne genel bakış ve piyasa kayıpları
+786|CoolWallet: Terra otopsisi
+787|— 16 Mayıs 2022'de Luna Foundation Guard'da kalan rezerv
+788|CVJ: TerraUSD (UST) genel bakış
+789|— Anchor'un %18 ila %20'lik getirisi ve 98 sente erken düşüş
+790|UST vakasına ilişkin rakamlar yukarıdaki kaynaklardan gelir ve sonraki araştırmalarla revize edilebilir. Üç mit ve okuma alıştırması eğitim amaçlıdır, yatırım tavsiyesi değildir.
+791|Bu dersin kısa bir görsel sürümü Instagram'da. Bu sayfa tam öğrenme sürümüdür.
+792|Para Neden Satın Alma Gücünü Kaybeder? | Ditoman Öğren
+793|Banknottaki sayı aynı kalır ama satın aldığı şey küçülür. Bu ders enflasyonu basit örneklerle açıklar, tasarruflara ne yaptığını nasıl ölçeceğinizi gösterir ve bitcoin veya stablecoin'lerin yardımcı olup olamayacağına dürüstçe bakar
+794|Para neden satın alma gücünü kaybeder? Ditoman ders görseli
+795|Para • Enflasyon
+796|Banknottaki sayı aynı kalır ama satın aldığı şey küçülür. Bu ders enflasyonu basit örneklerle açıklar, tasarruflara ne yaptığını nasıl ölçeceğinizi gösterir ve bitcoin veya stablecoin'lerin yardımcı olup olamayacağına dürüstçe bakar.
+797|20 LP
+798|Birkaç yıl önce tek bir banknot koca bir torba market alışverişini karşılıyordu. Bugün aynı banknot o torbanın bir kısmını alıyor. Kimse banknotu elinizden almadı. Değişen, onunla ne kadar şey alabildiğiniz. Bu sessiz değişimin bir adı var: enflasyon.
+799|Buna birlikte bakıyoruz, çünkü tasarruftan borçlanmaya ve kripto almaya kadar hemen her para kararı tek bir soruyla başlar: bu para ileride ne kadar değer taşıyacak?
+800|Enflasyon Nedir
+801|Enflasyon, fiyatların zaman içinde genel olarak yükselmesidir. Tek bir ürünün pahalanması enflasyon değildir. Enflasyon, çoğu şeyin fiyatının birlikte yükselmesidir; böylece her para birimi daha az şey satın alır.
+802|İstatistikçiler bunu bir sepetle ölçer: tipik bir hanenin satın aldığı şeylerin sabit bir listesi; gıda, kira, ulaşım ve giyim gibi. Aynı sepeti her ay fiyatlandırırlar. Sepet geçen yıl 100'e mal olduysa ve şimdi 140'a mal oluyorsa, yıl içindeki enflasyon yüzde 40'tır.
+803|Nereden Gelir
+804|Ekonomistler ayrıntıları tartışır, ama üç kaynak tekrar tekrar karşımıza çıkar.
+805|Mallardan fazla para:
+806|bir ekonomideki para miktarı, satın alınacak şeylerden daha hızlı büyüdüğünde fiyatlar yükselir.
+807|Daha yüksek maliyetler:
+808|enerji, ithalat veya ücretler pahalandığında üreticiler maliyeti fiyatlara yansıtır.
+809|Beklentiler:
+810|herkes fiyatların yükseleceğini beklediğinde satıcılar fiyatları erken artırır ve alıcılar acele eder; bu da fiyatları daha da yukarı iter.
+811|Haberlerde Göreceğiniz İki Rakam
+812|Yıllık bazda (nokta-nokta) enflasyon
+813|bu ayın fiyatlarını geçen yılın aynı ayıyla karşılaştırır.
+814|Oniki aylık ortalama enflasyon
+815|geçen yılın tamamının ortalamasını alır, bu yüzden daha yavaş hareket eder.
+816|Örneğin İran İstatistik Merkezi, 21 Haziran 2026'da biten ayda yıllık bazda enflasyonun yüzde 88,6, oniki aylık ortalama enflasyonun ise yüzde 62 olduğunu bildirdi. İki rakam da aynı ekonomiyi anlatır. Farklı soruları yanıtlarlar.
+817|Tasarruflara Ne Yapar
+818|Hareketsiz duran para, enflasyon hızında satın alma gücünü kaybeder. Tablo, 100 milyon nakdin birkaç yıl sonra hâlâ ne alabildiğini gösterir.
+819|100 milyon nakit hâlâ ne alır
+820|Yıllık enflasyon
+821|1 yıl sonra
+822|3 yıl sonra
+823|5 yıl sonra
+824|95 milyon
+825|86 milyon
+826|78 milyon
+827|83 milyon
+828|58 milyon
+829|40 milyon
+830|71 milyon
+831|36 milyon
+832|19 milyon
+833|Hızlı bir tahmin yolu: 72'yi enflasyon oranına bölün. Sonuç kabaca fiyatların ikiye katlanması için gereken yıl sayısıdır. Yüzde 6'da yaklaşık on iki yıl. Yüzde 36'da yaklaşık iki yıl.
+834|Bir bankanın faiz oranına ikinci kez bakmak gerekmesinin nedeni de budur. Bir mevduat yüzde 20 ödüyorsa ve fiyatlar yüzde 40 artıyorsa, bakiye büyür ama satın alma gücü düşer. Dürüst rakam faiz eksi enflasyondur ve buna şu ad verilir:
+835|reel getiri
+836|Bitcoin veya stablecoin'ler yardımcı olabilir mi?
+837|Bitcoin'in sabit bir 21 milyon coin sınırı vardır; bu yüzden kimse daha fazlasını basamaz. Bu, sıradan paradan gerçek bir farktır. Ancak sabit arz, istikrarlı fiyat demek değildir. Bitcoin birkaç kez yarıdan fazla düştü. Bir dönemde satın alma gücünü koruyabilir, başka bir dönemde ona zarar verebilir.
+838|Bir dolar stablecoin'i, Ders 11'de açıklandığı gibi doları izler. Bu daha zayıf bir para biriminden daha istikrarlı olabilir, ama dolarda da enflasyon vardır ve token kendi risklerini ekler: ihraççı, karşılık ve çıkış yolu.
+839|Yani hiçbiri düşünmeden yaslanabileceğiniz bir kalkan değildir. Kendi riskleri olan araçlardır ve Ders 06'daki sorular hâlâ geçerlidir.
+840|Enflasyon, aynı paranın zaman içinde daha az şey satın alması demektir.
+841|Reel getiriye bakın: faiz eksi enflasyon.
+842|72 kuralı, bir enflasyon oranını hissedebileceğiniz bir yıl sayısına çevirir.
+843|Bitcoin'in arzı sabit ama fiyatı istikrarsızdır. Bir stablecoin doları izler ve ihraççısına bağlıdır.
+844|Enflasyonu anlamak ne alacağınızı söylemez. Önce hangi soruyu soracağınızı söyler.
+845|Sıradaki: paranız aslında nerede duruyor
+846|Enflasyonun ne yaptığını bildiğinizde, bir sonraki soru paranın nerede tutulduğu ve kimin kontrol ettiğidir. Ders 13 bir banka hesabını, bir borsa hesabını ve kişisel bir cüzdanı karşılaştırır.
+847|Param Nerede?
+848|Enflasyon
+849|Fiyat sepeti (TÜFE)
+850|Satın alma gücü
+851|Reel getiri
+852|72 kuralı
+853|Sabit arz
+854|Enflasyonu fiyat sepeti örneğiyle açıklayın.
+855|Yıllık bazda enflasyonu oniki aylık ortalama enflasyondan ayırın.
+856|Bir faiz oranı ve bir enflasyon oranından reel getiriyi hesaplayın.
+857|Fiyatların ne kadar hızlı ikiye katlandığını tahmin etmek için 72 kuralını kullanın.
+858|Neden ne bitcoin ne de bir stablecoin'in enflasyona riski olmayan bir yanıt olduğunu söyleyin.
+859|Aklınızda ne kaldığını kontrol edin. Yanıt her sorunun altında.
+860|Enflasyon nedir?
+861|A. Tek bir ürünün pahalanması
+862|B. Fiyatların zaman içinde genel olarak yükselmesi
+863|C. Banknot sayısındaki düşüş
+864|Bir mevduat yüzde 20 ödüyor ve enflasyon yüzde 40. Satın alma gücüne ne olur?
+865|A. Artar
+866|B. Aynı kalır
+867|C. Düşer
+868|Doğru cevap: C. Reel getiri negatiftir.
+869|Yıllık yüzde 36 enflasyonla fiyatların ikiye katlanması yaklaşık ne kadar sürer (72 kuralı)?
+870|A. Yaklaşık 2 yıl
+871|B. Yaklaşık 7 yıl
+872|C. Yaklaşık 12 yıl
+873|Yıllık bazda enflasyon bu ayın fiyatlarını şununla karşılaştırır…
+874|A. Geçen ay
+875|B. Geçen yılın aynı ayı
+876|C. Son on yılın ortalaması
+877|Bitcoin'in arzı sabittir. Bu fiyatı için ne anlama gelir?
+878|A. Fiyat istikrarlıdır
+879|B. Fiyat yalnızca yükselebilir

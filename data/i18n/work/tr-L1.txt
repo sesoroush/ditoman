@@ -1,0 +1,200 @@
+0|Ders 01 | Blok Zinciri Nedir? | Ditoman Öğren
+1|Ditoman Öğren Ders 01. Blok zinciri nedir? Güven, şeffaflık, merkeziyetsizlik, güvenlik ve geleceğin sistemleri hakkında iki dilli bir eğitim dersi.
+2|Blok Zinciri Nedir Ditoman ders görseli
+3|Ders 01 • Temel Seri
+4|Blok Zinciri Nedir?
+5|Blok zinciri yalnızca kripto para ile ilgili değildir. Dijital sistemlere güven, şeffaflık ve güvenlik katmanın yeni bir yoludur.
+6|Seviye
+7|Okuma Süresi
+8|5 Dakika
+9|Öğrenme Puanı
+10|10 LP
+11|Gelecek Sınavı
+12|5 Soru
+13|Ders İçeriği
+14|Dersi İngilizce veya Farsça okuyabilirsiniz. Bu yapı gelecekteki sınav, puan, itibar ve ödül sistemleri için tasarlanmıştır.
+15|Türkçe
+16|Çoğu insan blok zincirinin yalnızca kripto para ile ilgili olduğunu düşünür.
+17|Ama blok zinciri bundan çok daha büyüktür.
+18|Özünde blok zinciri, bilgiyi şeffaf, güvenli ve değiştirilmesi zor bir biçimde kaydeden bir sistemdir.
+19|Tüm sistemi tek bir merkezi otoritenin kontrol etmesi yerine, blok zinciri bilgiyi bir ağa dağıtır. Bu, sistemi daha açık, daha doğrulanabilir ve tek bir kontrol noktasına daha az bağımlı hale getirir.
+20|Blok zinciri, olayların veya işlemlerin dijital bir kaydı olarak anlaşılabilir. Bilgi eklendikten sonra değiştirmek ya da silmek çok zorlaşır. Bu, insanlar birbirine körü körüne güvendiği için değil, sistemin kendisi kontrol edilip doğrulanabildiği için güven yaratır.
+21|Blok zincirinin önemi bu yüzden.
+22|Şeffaflığın sisteme yerleşik olduğu, verinin doğrulanabildiği ve kontrolün yalnızca tek bir varlığın elinde olmadığı sistemler kurmanın yeni bir yolunu sunar.
+23|Önümüzdeki yıllarda blok zincirini anlamak yalnızca kripto dünyasındaki insanlar için faydalı olmayacak. Dijital kimliği, finansı, mülkiyeti, altyapıyı, tedarik zincirlerini, yapay zekâ sistemlerini ve güvenin geleceğini anlamaya çalışan herkes için önemli hale gelecek.
+24|Blok zinciri yalnızca bir teknoloji değildir.
+25|Sistemlerin kurulma biçimindeki yeni bir yoldur.
+26|Temel Kavramlar
+27|Blok zinciri
+28|Güven
+29|Merkeziyetsizlik
+30|Şeffaflık
+31|Güvenlik
+32|Değiştirilemezlik
+33|Dijital kayıt
+34|Doğrulama
+35|Öğrenme Hedefleri
+36|Blok zincirinin ne anlama geldiğini anlayın.
+37|Merkezi ve dağıtık sistemler arasındaki farkı anlayın.
+38|Şeffaflık ve güvenliğin neden önemli olduğunu fark edin.
+39|Blok zincirinin neden yalnızca kriptoyla ilgili olmadığını anlayın.
+40|Blok zincirini dijital sistemlerin geleceğiyle ilişkilendirin.
+41|Gelecek Sınavı Soru Bankası
+42|Bu sorular, gelecekteki Ditoman sınav ve katılım sistemi için hazırlanmıştır. İleride öğrenme puanlarını, itibar katmanlarını ve olası TMN ödül hakkını destekleyebilirler.
+43|Soru 1
+44|A. Bilgiyi şeffaf ve doğrulanabilir biçimde kaydetmek
+45|B. Tüm web sitelerinin yerini almak
+46|C. Her işlemi sonsuza dek gizlemek
+47|D. İnternet ihtiyacını ortadan kaldırmak
+48|Doğru cevap: A
+49|Soru 2
+50|A. Tüm kayıtları tek bir şirket kontrol eder
+51|B. Ağı tek bir banka kontrol eder
+52|C. Kontrol ve veri bir ağa dağıtılmıştır
+53|D. Kullanıcılar hiçbir şeyi doğrulayamaz
+54|Doğru cevap: C
+55|Soru 3
+56|Bunlardan hangileri blok zincirinin temel özellikleridir?
+57|A. Şeffaflık
+58|B. Değiştirilemezlik
+59|C. Merkezi kontrol
+60|D. Doğrulama
+61|Doğru cevaplar: A, B, D
+62|Soru 4
+63|Doğru mu yanlış mı: Blok zinciri yalnızca kripto para için yararlıdır.
+64|Doğru cevap: Yanlış
+65|Soru 5
+66|Blok zinciri neden güven yaratır?
+67|A. Çünkü kimse veriyi göremez
+68|B. Çünkü sistem kontrol edilip doğrulanabilir
+69|C. Çünkü tüm ağı tek bir kişi kontrol eder
+70|D. Çünkü finanstan tüm teknolojiyi kaldırır
+71|Doğru cevap: B
+72|Instagram Özeti
+73|Bu ders ilk olarak Ditoman Instagram'ında Eğitim Serisi kapsamında tanıtıldı. Instagram sürümü kısa bir görsel özet sunar, bu sayfa ise tam öğrenme sürümünü sunar.
+74|Instagram'da Gör
+75|Öğren'e Dön
+76|Sonraki Ders
+77|Ditoman Öğren • Yapı üzerine kurulu, keşifle ilerleyen.
+78|Ders 02 | Blok Zinciri Neden Önemli? | Ditoman Öğren
+79|Ditoman Öğren Ders 02. Blok zinciri neden önemli? Güven, kurumlar, doğrulama, şeffaflık, sistemler ve geleceğin dijital altyapısı hakkında iki dilli bir eğitim dersi.
+80|Blok Zinciri Neden Önemli Ditoman ders görseli
+81|Ders 02 • Temel Seri
+82|Blok Zinciri Neden Önemli?
+83|Blok zinciri önemlidir çünkü güvenin işleyişini değiştirir. Güveni kurumlardan ve platformlardan şeffaf, doğrulanabilir ve merkeziyetsiz sistemlere doğru kaydırır.
+84|Dersi İngilizce veya Farsça okuyabilirsiniz. Bu ders, blok zincirinin neden yalnızca kriptoyla değil, güven, doğrulama ve geleceğin sistemlerinin nasıl kurulacağıyla ilgili olduğunu açıklar.
+85|Çoğu insan blok zincirinin kripto ile ilgili olduğunu düşünür.
+86|Öyle değil.
+87|Blok zinciri güvenin nasıl işlediğiyle ilgilidir.
+88|Bugün insanlar doğrulamak, kontrol etmek, korumak ve erişim vermek için kurumlara güveniyor. Bankalar parayı tutar ve yönetir. Hükümetler kurallar koyar ve uygular. Platformlar veriyi depolar, hesapları kontrol eder ve dijital alanlara kimin girip çıkacağına karar verir.
+89|Bu sistemler önemlidir ama bağımlılık da yaratır. Güven yalnızca tek bir kuruma, şirkete veya platforma bağlandığında, kullanıcılar sistemin doğru davranacağını, dürüst kalacağını ve erişimlerini koruyacağını kabul etmek zorundadır.
+90|Blok zinciri bu yapıyı değiştirir.
+91|Dünyadan güveni kaldırmaz. Güvenin nereye konduğunu değiştirir. Yalnızca insanlara veya kurumlara güvenmek yerine, blok zinciri güvenin şeffaf sistemlere, ortak kayıtlara ve doğrulanabilir kurallara kaymasını sağlar.
+92|Bilgiyi doğrulamayı, mülkiyeti kanıtlamayı ve işlemleri izlemeyi kolaylaştırabilir; sistemlerin görünürlük olmadan manipüle edilmesini de zorlaştırabilir.
+93|Bu değişim paradan daha büyüktür.
+94|Altyapıyı, veriyi, erişimi, karar almayı, dijital kimliği, finansı ve insanların sistemlerle etkileşim biçimini etkiler.
+95|Blok zincirini anlamak isteğe bağlı olmayacak.
+96|Şart olacak.
+97|Kurumlar
+98|Kontrol
+99|Protokol
+100|Sistemler
+101|Veri
+102|Karar alma
+103|Blok zincirinin neden kriptodan daha büyük olduğunu anlayın.
+104|İnsanların bugün kurumlara ve platformlara nasıl güvendiğini açıklayın.
+105|Blok zincirinin güvenin konduğu yeri nasıl değiştirdiğini anlayın.
+106|Şeffaflık ve doğrulamanın neden önemli olduğunu fark edin.
+107|Blok zincirini altyapı, veri ve geleceğin sistemleriyle ilişkilendirin.
+108|Bu dersin ana fikri nedir?
+109|A. Blok zinciri yalnızca coin alım satımıdır
+110|B. Blok zinciri güvenin işleyişini değiştirir
+111|C. Blok zinciri tüm sistemlere duyulan ihtiyacı ortadan kaldırır
+112|D. Blok zinciri yalnızca bankalar için yararlıdır
+113|İnsanlar bugün sıklıkla hangi kurumlara güvenir?
+114|A. Bankalar
+115|B. Hükümetler
+116|C. Platformlar
+117|D. Hiçbiri
+118|Doğru cevaplar: A, B, C
+119|Blok zinciri güveni neye doğru kaydırır?
+120|A. Gizli sistemlere
+121|B. Tek bir şirkete
+122|C. Şeffaf ve doğrulanabilir sistemlere
+123|D. Yalnızca özel kayıtlara
+124|Doğru mu yanlış mı: Blok zinciri yalnızca dijital para yarattığı için önemlidir.
+125|Blok zinciri hangi alanları etkileyebilir?
+126|A. Altyapı
+127|B. Veri
+128|C. Karar alma
+129|D. Dijital kimlik
+130|Doğru cevaplar: A, B, C, D
+131|Bu ders ilk olarak Ditoman Instagram'ında Eğitim Serisi kapsamında tanıtıldı. Instagram sürümü blok zincirinin güveni nasıl değiştirdiğini açıklar, bu sayfa ise tam öğrenme sürümünü sunar.
+132|Ders 03 | Bitcoin Neden Yaratıldı? | Ditoman Öğren
+133|Bitcoin'in neden yaratıldığını, arkasındaki güven krizini ve merkeziyetsiz sistemlerin değer ve ağların geleceğini nasıl değiştirdiğini öğrenin.
+134|Ditoman Logosu
+135|Bitcoin Neden Yaratıldı?
+136|Ders 03 • Temel Seri
+137|Bitcoin, yalnızca bir dijital varlık daha olmak için yaratılmadı. Kurumlar, kontrol, izin ve merkezi sistemlerle ilgili daha derin bir küresel güven sorunundan doğdu.
+138|6 Dakika
+139|15 LP
+140|6 Soru
+141|Türkçe Ders
+142|Çoğu insan Bitcoin'in dijital bir coin olmak için yaratıldığını düşünür.
+143|Öyle değildi.
+144|Bitcoin daha derin bir sorundan doğdu.
+145|Güvenin kurumlara, kontrole ve izne fazlasıyla bağlı olduğu bir dünya.
+146|Bankalar. Hükümetler. Sistemler.
+147|Bu güven kırıldığında yeni bir fikir ortaya çıktı.
+148|Kuralların görülebildiği bir sistem.
+149|İşlemlerin doğrulanabildiği.
+150|Ağı hiçbir tekil varlığın kontrol etmediği.
+151|Bitcoin yalnızca bir yenilik değildi.
+152|Bir yanıttı.
+153|Paranın internete özgü hale gelebileceğinin bir işareti.
+154|Kapı bekçileri olmadan. Merkezi kontrol olmadan.
+155|Güveni, değeri ve sistemleri anlama biçimimizi değiştirir.
+156|Temellerden başlıyoruz.
+157|Öğren. Bağlan. Gelişim.
+158|Bitcoin, güvenin kurumlardan şeffaf kurallara ve ağlara doğru kayabildiği sistemler getirdi.
+159|İşlemler, dağıtık defterler aracılığıyla görünür ve doğrulanabilir hale geldi.
+160|Hiçbir tekil otorite ağı kontrol etmez ya da katılımın sahibi değildir.
+161|İnternete Özgü Değer
+162|Bitcoin, değerin merkezi kapı bekçileri olmadan dijital olarak hareket edebileceğini gösterdi.
+163|“Bitcoin yalnızca bir yenilik değildi. Bir yanıttı.”
+164|Güven krizini anlayın
+165|Merkezi sistemlere duyulan güvensizlik arttıktan sonra Bitcoin'in neden ortaya çıktığını öğrenin.
+166|Merkeziyetsiz sistemleri anlayın
+167|Sistemlerin merkezi bir denetleyici olmadan nasıl işleyebildiğini keşfedin.
+168|Şeffaflığı anlayın
+169|Dijital ağlarda görünür kuralların ve doğrulamanın neden önemli olduğunu öğrenin.
+170|Blok zinciri temellerini anlayın
+171|Blok zincirinin ve dijital değer sistemlerinin ardındaki daha derin fikirleri keşfedin.
+172|Bitcoin neden yaratıldı?
+173|Bitcoin hangi soruna yanıt veriyordu?
+174|Merkeziyetsizlik ne demektir?
+175|Şeffaf kurallar neden önemlidir?
+176|Küresel güven krizinden sonra ne değişti?
+177|Değer, merkezi kapı bekçileri olmadan nasıl hareket edebilir?
+178|Orijinal Ditoman Instagram eğitim paylaşımı:
+179|Instagram Paylaşımını Gör
+180|Öğren • Bağlan • Gelişim • Ditoman.com
+181|Ditoman Öğren | Ders 04 | Satoshi Nakamoto Kimdir?
+182|Ditoman Ders 04, Satoshi Nakamoto'nun kim olduğunu, gizemin neden önemli olduğunu ve Bitcoin'in ardındaki fikrin neden yaratıcısının kimliğinden daha önemli hale geldiğini açıklar.
+183|Ders 04 • Temel Seri
+184|Satoshi Nakamoto Kimdir?
+185|Bitcoin'in ardındaki bilinmeyen yaratıcı ve gizemin neden kimlikten daha önemli olduğu.
+186|Satoshi Nakamoto Kimdir Ditoman ders ana görseli
+187|Ders Genel Bakışı
+188|Satoshi Nakamoto, Bitcoin'i dünyaya tanıtan kişinin veya grubun kullandığı addır. Ancak Satoshi'nin asıl önemi yalnızca kimlik gizemi değildir. Bir sistemin tek bir merkezi kişiye bağlı olmadan sürebileceği fikridir.
+189|Odak
+190|Bitcoin'in Kökeni
+191|Bitcoin'in Ardındaki İsim
+192|Satoshi Nakamoto, Bitcoin'in yaratılışına bağlanan addır. 2008'de bu isim, yeni türde bir dijital parayı açıklayan bir belgeyle ortaya çıktı. Bu para bir banka, hükümet ya da şirket tarafından kontrol edilmiyordu.
+193|Fikir basit ama güçlüydü: insanlar, doğrulamaya, kriptografiye ve ortak kurallara dayanan bir sistem aracılığıyla birbirlerine doğrudan değer gönderebilirdi.
+194|Bitcoin 2009'da başlatıldı. Satoshi ilk yazılımın geliştirilmesine yardım etti, geliştiricilerle iletişim kurdu ve ardından kamusal faaliyetten yavaş yavaş çekildi.
+195|Bu kayboluş hikâyeyi daha da güçlü kıldı. Bitcoin, bir kurucu onu kontrol ettiği için devam etmedi. Sistem, başkalarının doğrulayabileceği, çalıştırabileceği, geliştirebileceği ve koruyabileceği kadar açık olduğu için devam etti.
+196|Satoshi'nin gizeminin önemli olmasının nedeni bu. Bitcoin'in en güçlü yanının bir kişi değil, yapı olduğunu gösteriyor.
+197|Temel Fikir
+198|Satoshi önemlidir çünkü Bitcoin kişisel otoritenin ötesine geçmek üzere tasarlandı.
+199|Yaratıcı kayboldu ama sistem devam etti.

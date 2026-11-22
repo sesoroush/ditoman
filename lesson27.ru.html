@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Кто управляет блокчейном? | Ditoman Learn</title>
+<meta name="description" content="Ни одной компании не принадлежит Bitcoin или Ethereum, но их реестры продолжают расти правильно. Этот урок объясняет, как майнеры и валидаторы держат книги честными и почему это чего-то стоит" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson27.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson27.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson27.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson27.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson27.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson27.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson27.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson27.ru.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Кто управляет блокчейном? | Ditoman Learn" />
+<meta property="og:description" content="Ни одной компании не принадлежит Bitcoin или Ethereum, но их реестры продолжают расти правильно. Этот урок объясняет, как майнеры и валидаторы держат книги честными и почему это чего-то стоит" />
+<meta property="og:url" content="https://ditoman.com/lesson27.ru.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson27.ru.html#page",
+   "url": "https://ditoman.com/lesson27.ru.html",
+   "name": "Кто управляет блокчейном? | Ditoman Learn",
+   "description": "Ни одной компании не принадлежит Bitcoin или Ethereum, но их реестры продолжают расти правильно. Этот урок объясняет, как майнеры и валидаторы держат книги честными и почему это чего-то стоит",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Кто управляет блокчейном?",
+     "item": "https://ditoman.com/lesson27.ru.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.ru.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.ru.html" class="active">Учиться</a>
+<a href="iran.en.html">Иран</a>
+<a href="companies.en.html">Компании</a>
+<a href="prices.ru.html">Цены</a>
+<a href="calendar.en.html">Календарь</a>
+<a href="tmn.ru.html">TMN</a>
+<a href="index.ru.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Публикации</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson27-cover.jpg" alt="Кто управляет блокчейном? Иллюстрация урока Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson27-cover-en.jpg" alt="Кто управляет блокчейном? Иллюстрация урока Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Блокчейн • Майнинг и стейкинг</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">بلاکچین • استخراج و اعتبارسنجی</div>
+<h1 lang="en">Кто управляет блокчейном?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">چه کسی بلاکچین را اداره می‌کند؟</h1>
+<p class="subtitle" lang="en">Ни одной компании не принадлежит Bitcoin или Ethereum, но их реестры продолжают расти правильно. Этот урок объясняет, как майнеры и валидаторы держат книги честными и почему это чего-то стоит.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">هیچ شرکتی مالک بیت‌کوین یا اتریوم نیست، ولی دفترشان درست بزرگ می‌شود. این درس توضیح می‌دهد استخراج‌کننده‌ها و اعتبارسنج‌ها چطور دفتر را صادق نگه می‌دارند و چرا این کار هزینه دارد.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Уровень</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Для начинающих</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Время чтения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">7 минут</strong><strong lang="fa" dir="rtl" style="display:block">۷ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Баллы обучения</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Тест</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 вопросов</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Содержание урока</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Читайте урок на английском или персидском.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Русский</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">У банка есть владелец, управляющий и номер телефона. У публичного блокчейна нет ничего из этого. Тысячи компьютеров по всему миру хранят один и тот же реестр, и никто им не управляет.</p>
+<p lang="en">Так кто решает, какие транзакции войдут следующими? И зачем кому-то жульничать или не жульничать?</p>
+<h3><span class="check-number">01.</span> Проблема, которую нужно решить</h3>
+<p lang="en">Любому реестру нужно одно правило: все должны согласиться по поводу следующей страницы. Если бы два человека могли добавить две разные следующие страницы, деньги можно было бы потратить дважды.</p>
+<p lang="en">Банк решает это, будучи единственным судьёй. Блокчейн решает это методом, называемым механизмом консенсуса, при котором множество незнакомцев приходят к согласию, не доверяя друг другу.</p>
+<h3><span class="check-number">02.</span> Доказательство выполнения работы: майнинг</h3>
+<p lang="en">Bitcoin использует доказательство выполнения работы (proof of work). Майнеры собирают ожидающие транзакции в блок, а затем пытаются найти число, которое в сочетании с данными блока и после хеширования даёт результат ниже целевого значения. Как объясняет learnmeabitcoin, это означает многократное хеширование заголовка блока двойным SHA-256, пока результат не окажется ниже цели.</p>
+<p lang="en">Короткого пути, кроме перебора, нет. Первый успешный майнер делится блоком, а остальные быстро его проверяют.</p>
+<p lang="en">Сеть стремится получать новый блок примерно каждые 10 минут. Каждые 2016 блоков, примерно раз в две недели, сложность корректируется, чтобы темп оставался стабильным, сколько бы майнеров ни присоединялось или ни уходило.</p>
+<h3><span class="check-number">03.</span> Чем платят майнерам</h3>
+<p lang="en">Выигравший майнер получает награду за блок, называемую coinbase, плюс комиссии за его транзакции. Награду нельзя потратить, пока блоку не исполнится 100 блоков, что защищает от замены блока.</p>
+<p lang="en">Стоимость — в этом суть. Майнеры тратят реальное электричество и оборудование, поэтому жульничество должно быть выгоднее, чем затраты на честную работу.</p>
+<figure class="lz-fig"><figcaption>Доказательство работы и доказательство доли</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>Доказательство работы (Bitcoin)</th>
+<th>Доказательство доли (Ethereum)</th>
+</tr></thead><tbody>
+<tr><td>Кто предлагает блоки</td><td>Майнеры</td><td>Валидаторы</td></tr>
+<tr><td>Что поставлено на кон</td><td>Электричество и оборудование</td><td>Депозит (32 ETH, чтобы запустить одного самостоятельно)</td></tr>
+<tr><td>Наказание за жульничество</td><td>Напрасная работа</td><td>Слэшинг депозита (slashing)</td></tr>
+<tr><td>Потребление энергии</td><td>Высокое</td><td>Примерно на 99,99% ниже после Merge (оценка)</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> Доказательство доли: валидаторы</h3>
+<p lang="en">Ethereum перешёл на доказательство доли (proof of stake). Вместо траты энергии валидаторы рискуют деньгами. Чтобы запустить валидатора самостоятельно, нужно внести 32 ETH, а для тех, у кого меньше, существуют пулы.</p>
+<p lang="en">Если валидатор ведёт себя нечестно, часть или весь его депозит могут быть уничтожены. Это наказание называется слэшингом. По данным ethereum.org, начальное наказание составляет 1/4096 эффективного баланса, ограничено 0,5 ETH, а затем валидатор исключается.</p>
+<h3><span class="check-number">05.</span> Насколько изменилось энергопотребление</h3>
+<p lang="en">Перемена произошла 15 сентября 2022 года, в день Merge. Кембриджский центр альтернативных финансов оценил, что потребление электричества Ethereum снизилось примерно на 99,99%.</p>
+<h3><span class="check-number">06.</span> Ноды: те, кто проверяет</h3>
+<p lang="en">Майнеры и валидаторы предлагают блоки, но любой компьютер, на котором работает программа, то есть нода, может проверять правила. Блок, нарушающий правила, отвергается, даже если его создание было дорогим.</p>
+<h3><span class="check-number">07.</span> Может ли большинство жульничать?</h3>
+<p lang="en">При доказательстве работы тот, кто контролирует большую часть майнинговой мощности, мог бы переписать недавнюю историю. Это называется атакой 51%. Она требует огромных ресурсов, а цель становится слабее, чем меньше сеть.</p>
+<p lang="en">Обе системы отвечают на один и тот же вопрос: сделать жульничество дороже честности.</p>
+<h3>Что из этого вынести</h3>
+<p lang="en">Блокчейну нужен способ, чтобы незнакомцы согласились по поводу следующей страницы.</p>
+<p lang="en">Доказательство работы: майнеры тратят энергию на хеширование, пока результат не окажется ниже цели.</p>
+<p lang="en">Доказательство доли: валидаторы рискуют деньгами и могут быть подвергнуты слэшингу.</p>
+<p lang="en">Ноды проверяют правила, даже не создавая блоки.</p>
+<p lang="en">Обе направлены на то, чтобы жульничество стоило дороже честности.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">یک بانک مالک، مدیر و شماره‌ی تلفن دارد. بلاکچین عمومی هیچ‌کدام را ندارد. هزاران رایانه در سراسر دنیا یک دفتر را نگه می‌دارند و هیچ‌کس مسئولش نیست.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پس چه کسی تصمیم می‌گیرد کدام تراکنش‌ها بعدی وارد شوند؟ و چرا کسی تقلب کند یا نکند؟</p>
+<h3><span class="check-number">۰۱.</span> مسئله‌ای که باید حل شود</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هر دفتری یک قاعده لازم دارد: همه باید روی صفحه‌ی بعدی توافق کنند. اگر دو نفر بتوانند دو صفحه‌ی بعدی متفاوت اضافه کنند، پول می‌تواند دو بار خرج شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بانک با داور واحدبودن این را حل می‌کند. بلاکچین با روشی حلش می‌کند به نام سازوکار اجماع، که در آن غریبه‌های زیادی بدون اعتماد به هم توافق می‌کنند.</p>
+<h3><span class="check-number">۰۲.</span> اثبات کار: استخراج</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بیت‌کوین از اثبات کار استفاده می‌کند. استخراج‌کننده‌ها تراکنش‌های در انتظار را در یک بلاک جمع می‌کنند و سپس دنبال عددی می‌گردند که همراه داده‌ی بلاک هش شود و نتیجه‌اش زیر یک هدف باشد. به توضیح learnmeabitcoin، این یعنی هش‌کردن سرآیند بلاک با double SHA-256 بارها و بارها تا نتیجه زیر هدف بیفتد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">میان‌بری جز امتحان‌کردن نیست. اولین استخراج‌کننده‌ای که موفق شود بلاک را منتشر می‌کند و بقیه سریع بررسی‌اش می‌کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">شبکه هدفش یک بلاک جدید در هر حدود ۱۰ دقیقه است. هر ۲٬۰۱۶ بلاک، تقریباً دو هفته، دشواری تنظیم می‌شود تا هر قدر استخراج‌کننده بیاید یا برود، سرعت ثابت بماند.</p>
+<h3><span class="check-number">۰۳.</span> استخراج‌کننده‌ها چه می‌گیرند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">استخراج‌کننده‌ی برنده پاداش بلاک را می‌گیرد، به نام «کوین‌بیس»، به‌علاوه‌ی کارمزد تراکنش‌های آن. این پاداش تا ۱۰۰ بلاک بعد قابل خرج نیست، که جلوی جایگزین‌شدن بلاک را می‌گیرد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هزینه همان نکته است. استخراج‌کننده‌ها برق و تجهیزات واقعی خرج می‌کنند، پس تقلب باید ارزشش از هزینه‌ی صادقانه‌کار‌کردن بیشتر باشد.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>اثبات کار و اثبات سهام</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>اثبات کار (بیت‌کوین)</th>
+<th>اثبات سهام (اتریوم)</th>
+</tr></thead><tbody>
+<tr><td>چه کسی بلاک پیشنهاد می‌دهد</td><td>استخراج‌کننده‌ها</td><td>اعتبارسنج‌ها</td></tr>
+<tr><td>چه چیزی در خطر است</td><td>برق و تجهیزات</td><td>یک سپرده (۳۲ اتر برای اجرای مستقل)</td></tr>
+<tr><td>جریمه‌ی تقلب</td><td>کار هدررفته</td><td>اسلشینگ سپرده</td></tr>
+<tr><td>مصرف انرژی</td><td>زیاد</td><td>حدود ۹۹٫۹۹٪ کمتر پس از ادغام (برآورد)</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۴.</span> اثبات سهام: اعتبارسنج‌ها</h3>
+<p lang="fa" dir="rtl" style="text-align:right">اتریوم به اثبات سهام تغییر کرد. به‌جای خرج انرژی، اعتبارسنج‌ها پول را در معرض خطر می‌گذارند. برای اداره‌ی یک اعتبارسنج مستقل ۳۲ اتر سپرده می‌کنید و برای کسانی که کمتر دارند «استخر» هست.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر اعتبارسنجی نادرست رفتار کند، بخشی از سپرده یا همه‌ی آن می‌تواند نابود شود. این جریمه «اسلشینگ» (slashing) نام دارد. طبق ethereum.org جریمه‌ی اولیه از ۱/۴۰۹۶ موجودی مؤثر شروع می‌شود، سقفش ۰٫۵ اتر است، و بعد اعتبارسنج کنار گذاشته می‌شود.</p>
+<h3><span class="check-number">۰۵.</span> مصرف انرژی چقدر عوض شد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">این تغییر در ۱۵ سپتامبر ۲۰۲۲، روز «ادغام» (Merge) اتفاق افتاد. مرکز مالی جایگزین دانشگاه کمبریج برآورد کرد مصرف برق اتریوم حدود ۹۹٫۹۹٪ کاهش یافت.</p>
+<h3><span class="check-number">۰۶.</span> نودها: کسانی که بررسی می‌کنند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">استخراج‌کننده‌ها و اعتبارسنج‌ها بلاک پیشنهاد می‌دهند، ولی هر رایانه‌ای که نرم‌افزار را اجرا کند، یعنی یک نود، می‌تواند قاعده‌ها را بررسی کند. بلاکی که قاعده را بشکند رد می‌شود، حتی اگر ساختنش گران بوده باشد.</p>
+<h3><span class="check-number">۰۷.</span> آیا اکثریت می‌تواند تقلب کند؟</h3>
+<p lang="fa" dir="rtl" style="text-align:right">در اثبات کار، کسی که بیشترِ توان استخراج را در دست داشته باشد می‌تواند تاریخ اخیر را بازنویسی کند. این «حمله‌ی ۵۱٪» نام دارد. منابع عظیمی می‌خواهد و هر چه شبکه کوچک‌تر باشد هدف ضعیف‌تر است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هر دو نظام به یک پرسش جواب می‌دهند: تقلب را گران‌تر از صداقت کنید.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بلاکچین راهی لازم دارد تا غریبه‌ها روی صفحه‌ی بعدی توافق کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اثبات کار: استخراج‌کننده‌ها انرژی خرج می‌کنند و هش می‌زنند تا نتیجه زیر هدف بیفتد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اثبات سهام: اعتبارسنج‌ها پول را در معرض خطر می‌گذارند و ممکن است اسلش شوند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نودها قاعده‌ها را بررسی می‌کنند، حتی بدون ساختن بلاک.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هر دو می‌خواهند تقلب را گران‌تر از صداقت کنند.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Два связанных урока</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو درس مرتبط</h2>
+<p lang="en">Урок 28 показывает, что Ethereum запускает поверх этого: программы, выполняющиеся сами по себе. Урок 30 объясняет график, определяющий, как платят майнерам Bitcoin.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۲۸ نشان می‌دهد اتریوم روی این پایه چه چیزی اجرا می‌کند: برنامه‌هایی که خودشان اجرا می‌شوند. درس ۳۰ برنامه‌ای را توضیح می‌دهد که پاداش استخراج‌کننده‌های بیت‌کوین را تعیین می‌کند.</p>
+<div class="cta-row">
+<a class="cta" href="lesson28.ru.html"><span lang="en">Ethereum и смарт-контракты</span><span lang="fa">اتریوم و قرارداد هوشمند</span></a>
+<a class="button" href="lesson30.ru.html"><span lang="en">Что такое халвинг биткоина?</span><span lang="fa">هاوینگ بیت‌کوین چیست؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Ключевые понятия</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Механизм консенсуса</li><li>Доказательство работы</li><li>Майнинг и сложность</li><li>Награда за блок</li><li>Доказательство доли</li><li>Валидатор и слэшинг</li><li>Нода</li><li>Атака 51%</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>سازوکار اجماع</li><li>اثبات کار</li><li>استخراج و دشواری</li><li>پاداش بلاک</li><li>اثبات سهام</li><li>اعتبارسنج و اسلشینگ</li><li>نود</li><li>حمله‌ی ۵۱٪</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Цели обучения</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Объясните, почему блокчейну нужен метод консенсуса.</li><li>Опишите доказательство работы простыми словами.</li><li>Опишите доказательство доли и слэшинг.</li><li>Скажите, что делает нода.</li><li>Объясните, что такое атака 51%.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>توضیح بدهید چرا بلاکچین به روش اجماع نیاز دارد.</li><li>اثبات کار را ساده توصیف کنید.</li><li>اثبات سهام و اسلشینگ را توصیف کنید.</li><li>بگویید نود چه می‌کند.</li><li>توضیح بدهید حمله‌ی ۵۱٪ چیست.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Тест</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Проверьте, что у вас осталось в памяти. Ответ — под каждым вопросом.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Вопрос 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Как часто примерно сеть Bitcoin стремится создавать блок?</p>
+<p lang="fa" dir="rtl" style="text-align:right">شبکه‌ی بیت‌کوین تقریباً هر چند وقت یک بلاک را هدف می‌گیرد؟</p>
+<p lang="en">A. Примерно каждые 10 минут</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. تقریباً هر ۱۰ دقیقه</p>
+<p lang="en">B. Каждую секунду</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. هر ثانیه</p>
+<p lang="en">C. Раз в день</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. روزی یک بار</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Как часто корректируется сложность Bitcoin?</p>
+<p lang="fa" dir="rtl" style="text-align:right">دشواری بیت‌کوین هر چند وقت تنظیم می‌شود؟</p>
+<p lang="en">A. Каждые 2016 блоков, примерно раз в две недели</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. هر ۲٬۰۱۶ بلاک، حدود دو هفته</p>
+<p lang="en">B. Каждый блок</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. هر بلاک</p>
+<p lang="en">C. Никогда</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. هرگز</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Что такое слэшинг?</p>
+<p lang="fa" dir="rtl" style="text-align:right">اسلشینگ چیست؟</p>
+<p lang="en">A. Уничтожение части или всего депозита нечестного валидатора</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. نابودکردن بخشی یا همه‌ی سپرده‌ی اعتبارسنج نادرست</p>
+<p lang="en">B. Скидка на комиссию</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. تخفیف کارمزد</p>
+<p lang="en">C. Новая монета</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. یک کوین جدید</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Сколько ETH нужно, чтобы запустить валидатора самостоятельно?</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای اجرای مستقل یک اعتبارسنج چند اتر لازم است؟</p>
+<p lang="en">A. 32 ETH</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۳۲ اتر</p>
+<p lang="en">B. 1 ETH</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۱ اتر</p>
+<p lang="en">C. 1000 ETH</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۱٬۰۰۰ اتر</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Вопрос 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">К чему стремятся оба метода консенсуса?</p>
+<p lang="fa" dir="rtl" style="text-align:right">هر دو روش اجماع چه هدفی دارند؟</p>
+<p lang="en">A. Сделать жульничество дороже честности</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. گران‌تر کردن تقلب از صداقت</p>
+<p lang="en">B. Скрыть реестр</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. پنهان‌کردن دفتر</p>
+<p lang="en">C. Выбрать одну компанию начальником</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. انتخاب یک شرکت به‌عنوان رئیس</p>
+<p class="answer" lang="en">Правильный ответ: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Источники</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://learnmeabitcoin.com/mining" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">learnmeabitcoin: майнинг, время блока, корректировка сложности каждые 2016 блоков, созревание coinbase, атака 51%</a></li><li><a href="https://ethereum.org/pt/developers/docs/consensus-mechanisms/pos" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">ethereum.org: доказательство доли, депозит 32 ETH, пулы стейкинга и слэшинг</a></li><li><a href="https://ccaf.io/cbnsi/ethereum/ethereum_merge" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Кембриджский центр альтернативных финансов: потребление электричества Ethereum после Merge (15 сентября 2022 г.)</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Цифра 99,99% — оценка Кембриджского центра альтернативных финансов. Интервал блоков и период сложности — проектные цели, а не гарантии для любого отдельного блока. Общее объяснение, а не инвестиционная рекомендация.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">رقم ۹۹٫۹۹٪ برآورد مرکز مالی جایگزین کمبریج است. فاصله‌ی بلاک‌ها و دوره‌ی دشواری اهداف طراحی‌اند، نه تضمین برای هر بلاک. توضیح عمومی است، نه توصیه‌ی سرمایه‌گذاری.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Следите за новостями</span></h2>
+<p lang="en">Новые уроки сначала объявляются в каналах Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.ru.html"><span lang="en">Назад к обучению</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson26.ru.html"><span lang="en">Предыдущий урок</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson28.ru.html"><span lang="en">Следующий урок</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Построено на структуре, движимо открытием.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-ru.js?v=20261121a"></script>
+</body>
+</html>

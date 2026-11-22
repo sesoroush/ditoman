@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>价格为什么会突然暴跌？消息、杠杆与强制平仓 | Ditoman 学习</title>
+<meta name="description" content="消息引发下跌。本课展示接下来在交易所内部发生了什么：买家退缩、滑点、杠杆和强平连锁反应，并以2026年11月5日的抛售为例" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson10.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson10.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson10.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson10.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson10.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson10.ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson10.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson10.zh.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="价格为什么会突然暴跌？消息、杠杆与强制平仓 | Ditoman 学习" />
+<meta property="og:description" content="消息引发下跌。本课展示接下来在交易所内部发生了什么：买家退缩、滑点、杠杆和强平连锁反应，并以2026年11月5日的抛售为例" />
+<meta property="og:url" content="https://ditoman.com/lesson10.zh.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson10.zh.html#page",
+   "url": "https://ditoman.com/lesson10.zh.html",
+   "name": "价格为什么会突然暴跌？消息、杠杆与强制平仓 | Ditoman 学习",
+   "description": "消息引发下跌。本课展示接下来在交易所内部发生了什么：买家退缩、滑点、杠杆和强平连锁反应，并以2026年11月5日的抛售为例",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "价格为什么会突然暴跌？消息、杠杆与强制平仓 | Ditoman 学习",
+     "item": "https://ditoman.com/lesson10.zh.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.zh.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.zh.html" class="active">学习</a>
+<a href="iran.en.html">伊朗</a>
+<a href="companies.en.html">企业</a>
+<a href="prices.zh.html">价格</a>
+<a href="calendar.en.html">日历</a>
+<a href="tmn.zh.html">TMN</a>
+<a href="index.zh.html#whitepapers">白皮书</a>
+<a href="posts.en.html">动态</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson10-price-crash.jpg" alt="价格为什么会突然暴跌？Ditoman 课程图片" onerror="this.parentElement.style.display='none'"><img lang="en" src="lesson10-price-crash-en.jpg" alt="价格为什么会突然暴跌？Ditoman 课程图片" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge" lang="en">市场 • 风险</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">بازارها • ریسک</div>
+<h1 lang="en">价格为什么会突然暴跌？</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">چرا قیمت یک‌دفعه می‌ریزد؟</h1>
+<p class="subtitle" lang="en">
+消息引发下跌。本课展示接下来在交易所内部发生了什么：买家退缩、滑点、杠杆和强平连锁反应，并以2026年11月5日的抛售为例。
+</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">خبر سقوط را شروع می‌کند. این درس نشان می‌دهد بعدش داخل صرافی چه می‌گذرد: عقب کشیدن خریدارها، لغزش قیمت، اهرم و آبشار لیکوئیدیشن؛ با ریزش ۱۴ آبان ۱۴۰۵ به‌عنوان نمونه.</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span lang="en">难度</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">入门</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box">
+<span lang="en">阅读时间</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">7分钟</strong><strong lang="fa" dir="rtl" style="display:block">۷ دقیقه</strong></div>
+<div class="meta-box">
+<span lang="en">学习积分</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">15 LP</strong><strong lang="fa" dir="rtl" style="display:block">۱۵ امتیاز</strong></div>
+<div class="meta-box">
+<span lang="en">未来测验</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک آینده</span><strong lang="en">5道题</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">课程内容</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">
+可用英文或波斯文阅读本课。这一结构为未来的测验、积分、声誉和奖励系统而设计。
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمونک، امتیاز، اعتبار و پاداش‌هایی طراحی شده که در آینده اضافه می‌شوند.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">中文</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>在第07课中，我们看到消息如何改变市场的预期。本课再往前一步：消息到来之后，交易所内部发生了什么，会让一次正常的回调变成急剧暴跌？简短的回答是三件事共同作用：紧张的买家、稀薄的订单簿和借来的钱。</p>
+
+<h3><span class="check-number">01.</span> 市场对意外做出反应</h3>
+<p>约翰·奥瑟斯（John Authers）的一幅彭博观点图表显示，全球股市（富时全球指数）上涨了两年，其间被几次急剧下跌打断，每一次都与重大政治或经济冲击有关。规律就是教训：当消息与人们的预期不同时，价格波动最大，而恐惧比平静传播得更快。</p>
+
+<h3><span class="check-number">02.</span> 一个真实例子：2026年11月5日</h3>
+<p>2026年11月5日星期四，科技股因对 AI 支出的担忧而被抛售。纳斯达克100指数一天下跌约5.5%，纳斯达克综合指数下跌4.9%。比特币跌破76,000美元，触及约75,500美元。在同样的24小时内，CoinGlass 数据显示约有10亿美元的杠杆加密货币仓位被强制平仓，涉及超过20.1万名交易者。其中约89%，约9.27亿美元，是押注价格上涨的仓位。</p>
+
+<h3><span class="check-number">03.</span> 屏幕上的价格并不总是你的价格</h3>
+<p>图表显示的是最近一笔成交。要卖出，你需要一个买家。设想最近一笔成交价是100美元，但100美元只有一个买家，下一个买家在95美元。如果你一次卖出两个单位，第一个得到100美元，第二个得到95美元：平均97.50美元。这种差距叫作 <strong>滑点</strong>。当买家在坏消息后退缩，他们之间的间隔会扩大，每一笔市价卖单都会把价格进一步压低。</p>
+
+<h3><span class="check-number">04.</span> 杠杆：用借来的钱交易</h3>
+<p>许多加密交易所允许你使用杠杆交易。使用10倍杠杆时，你自己的100美元（你的 <strong>保证金</strong>，或称抵押品）可以控制1,000美元的仓位。如果价格上涨10%，你的钱翻倍。如果下跌约10%，你的100美元就没了。</p>
+
+<h3><span class="check-number">05.</span> 强制平仓：交易所替你平仓</h3>
+<p>在你的保证金归零之前，交易所会自动以市价卖出来平掉你的仓位。这就是 <strong>强制平仓</strong>。你无法选择时机；价格替你选择。</p>
+
+<h3><span class="check-number">06.</span> 连锁反应</h3>
+<p>现在把这些放在一起。坏消息让买家退缩。一次小幅下跌触发第一批强平。这些被迫卖出打在稀薄的订单簿上，价格因此进一步下滑。更低的价格触发下一批强平，依此类推。这就是加密货币可以在几分钟内下跌得远超消息本身所能解释的幅度，也是为什么强制卖出结束后它常常反弹。</p>
+
+<h3><span class="check-number">07.</span> 如果比特币是独立的，为什么它会随股市下跌？</h3>
+<p>比特币网络不依赖任何政府或公司（第01至04课）。但它的价格是另一回事。许多投资者既持有股票也持有加密货币，当他们想降低风险时，会同时卖出一部分。网络可以是独立的，而它的价格仍会随着同一批人的情绪而波动。</p>
+
+<h3><span class="check-number">08.</span> 如何保护自己</h3>
+<ul>
+<li>要知道杠杆会放大亏损，也会放大收益；对大多数新手来说，不用杠杆更好。</li>
+<li>行情快速变动时，使用限价单而不是市价单，这样价格由你来定。</li>
+<li>在大额交易之前，不仅要看图表，还要看订单簿。</li>
+<li>只使用损失后不会让家庭预算崩溃的钱。</li>
+<li>不要在暴跌的最初几分钟做决定；强制卖出往往结束得和开始时一样快。</li>
+</ul>
+<p>本课解释市场如何运作，不构成买入或卖出任何东西的建议。</p>
+
+<h3>本课要点</h3>
+<p>消息引发下跌。稀薄的订单簿和借来的钱决定下跌多远。</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>در درس هفتم دیدیم خبر چطور انتظار بازار را عوض می‌کند. این درس یک قدم جلوتر می‌رود: بعد از رسیدن خبر، داخل صرافی چه اتفاقی می‌افتد که یک افت معمولی به سقوط تند تبدیل می‌شود؟ جواب کوتاه: سه چیز با هم کار می‌کنند؛ خریدارهای نگران، دفتر سفارش کم‌عمق و پول قرضی.</p>
+
+<h3><span class="check-number">۰۱.</span> بازار به غافلگیری واکنش نشان می‌دهد</h3>
+<p>نموداری از جان آترز در Bloomberg Opinion نشان می‌دهد شاخص سهام جهانی FTSE All-World دو سال بالا رفته و چند بار به‌تندی افت کرده؛ هر بار همراه یک شوک بزرگ سیاسی یا اقتصادی. درس همین الگوست: قیمت وقتی بیشتر حرکت می‌کند که خبر با انتظار مردم فرق داشته باشد، و ترس سریع‌تر از آرامش پخش می‌شود.</p>
+
+<h3><span class="check-number">۰۲.</span> یک نمونه‌ی واقعی: ۱۴ آبان ۱۴۰۵</h3>
+<p>پنجشنبه ۱۴ آبان ۱۴۰۵ (۵ نوامبر ۲۰۲۶) سهام فناوری با نگرانی درباره‌ی هزینه‌های هوش مصنوعی ریخت. نزدک ۱۰۰ در یک روز حدود ۵٫۵٪ و نزدک مرکب ۴٫۹٪ افت کرد. بیت‌کوین به زیر ۷۶ هزار دلار رسید و تا حدود ۷۵٬۵۰۰ دلار پایین رفت. در همان ۲۴ ساعت، طبق داده‌ی CoinGlass، حدود یک میلیارد دلار معامله‌ی اهرمی کریپتو به‌زور بسته شد و بیش از ۲۰۱ هزار معامله‌گر را درگیر کرد. حدود ۸۹٪ آن، نزدیک ۹۲۷ میلیون دلار، شرط‌هایی بود که روی بالا رفتن قیمت بسته شده بود.</p>
+
+<h3><span class="check-number">۰۳.</span> قیمت روی صفحه همیشه قیمت شما نیست</h3>
+<p>نمودار آخرین معامله را نشان می‌دهد. برای فروش، خریدار لازم است. فرض کنید آخرین معامله ۱۰۰ دلار بوده، اما فقط یک خریدار در ۱۰۰ هست و خریدار بعدی در ۹۵. اگر دو واحد را فوری بفروشید، اولی ۱۰۰ و دومی ۹۵ دلار فروخته می‌شود؛ میانگین ۹۷٫۵ دلار. به این فاصله <strong>لغزش قیمت</strong> (Slippage) می‌گویند. وقتی بعد از خبر بد خریدارها عقب می‌کشند، فاصله‌ی بینشان بیشتر می‌شود و هر سفارش فروش فوری قیمت را پایین‌تر می‌برد.</p>
+
+<h3><span class="check-number">۰۴.</span> اهرم: معامله با پول قرضی</h3>
+<p>بسیاری از صرافی‌های کریپتو معامله‌ی اهرمی دارند. با اهرم ۱۰ برابر، ۱۰۰ دلار پول خودتان (یعنی <strong>وثیقه</strong> یا مارجین) یک معامله‌ی ۱۰۰۰ دلاری را کنترل می‌کند. اگر قیمت ۱۰٪ بالا برود، پولتان دو برابر می‌شود. اگر حدود ۱۰٪ پایین بیاید، همه‌ی ۱۰۰ دلار از دست رفته است.</p>
+
+<h3><span class="check-number">۰۵.</span> لیکوئیدیشن: صرافی معامله را به‌جای شما می‌بندد</h3>
+<p>پیش از اینکه وثیقه‌تان به صفر برسد، صرافی معامله را خودکار و با قیمت بازار می‌فروشد. به این <strong>لیکوئیدیشن</strong> یا فروش اجباری می‌گویند. لحظه‌اش را شما انتخاب نمی‌کنید؛ قیمت انتخاب می‌کند.</p>
+
+<h3><span class="check-number">۰۶.</span> آبشار فروش</h3>
+<p>حالا همه را کنار هم بگذارید. خبر بد خریدارها را عقب می‌کشد. یک افت کوچک اولین لیکوئیدیشن‌ها را فعال می‌کند. این فروش‌های اجباری به دفتر سفارش کم‌عمق می‌خورند و قیمت بیشتر می‌لغزد. قیمت پایین‌تر گروه بعدی لیکوئیدیشن‌ها را فعال می‌کند، و همین‌طور ادامه دارد. برای همین کریپتو گاهی در چند دقیقه خیلی بیشتر از وزن خود خبر می‌ریزد، و وقتی فروش اجباری تمام شد، اغلب کمی برمی‌گردد.</p>
+
+<h3><span class="check-number">۰۷.</span> اگر بیت‌کوین مستقل است، چرا با بورس می‌ریزد؟</h3>
+<p>شبکه‌ی بیت‌کوین به هیچ دولت یا شرکتی وابسته نیست (درس‌های ۱ تا ۴). اما قیمتش موضوع دیگری است. خیلی از سرمایه‌گذارها هم سهام دارند و هم کریپتو، و وقتی بخواهند ریسکشان را کم کنند، از هر دو می‌فروشند. شبکه می‌تواند مستقل باشد و قیمتش هنوز با حال و هوای همان آدم‌ها تکان بخورد.</p>
+
+<h3><span class="check-number">۰۸.</span> چطور از خودمان محافظت کنیم</h3>
+<ul>
+<li>اهرم ضرر را به همان اندازه‌ی سود چند برابر می‌کند؛ برای بیشتر تازه‌کارها بهتر است سراغش نروند.</li>
+<li>در بازار پرنوسان به‌جای سفارش فوری (مارکت) از سفارش با قیمت مشخص (لیمیت) استفاده کنید تا قیمت را خودتان انتخاب کنید.</li>
+<li>پیش از معامله‌ی بزرگ، علاوه بر نمودار، دفتر سفارش را هم نگاه کنید.</li>
+<li>فقط با پولی معامله کنید که از دست دادنش بودجه‌ی خانه را به هم نریزد.</li>
+<li>در چند دقیقه‌ی اول سقوط تصمیم نگیرید؛ فروش اجباری اغلب همان‌قدر سریع که شروع می‌شود، تمام می‌شود.</li>
+</ul>
+<p>این درس سازوکار بازار را توضیح می‌دهد و توصیه‌ای برای خرید یا فروش هیچ دارایی نیست.</p>
+
+<h3>چه برداشتی کنیم</h3>
+<p>خبر سقوط را شروع می‌کند. دفتر سفارش کم‌عمق و پول قرضی تعیین می‌کنند تا کجا ادامه پیدا کند.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">自己试一试</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">خودتان امتحان کنید</h2>
+<p lang="en">
+在你使用的交易所里，打开任意一种币的订单簿。把当前价格1%以内和5%以内的买单数量加起来。问问自己：如果我现在以市价卖出全部仓位，平均能得到什么价格？
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">دفتر سفارش یک ارز را در صرافی‌ای که استفاده می‌کنید باز کنید. جمع سفارش‌های خرید تا ۱٪ و تا ۵٪ زیر قیمت فعلی را حساب کنید. از خودتان بپرسید: اگر همین حالا کل دارایی‌ام را فوری بفروشم، میانگین چه قیمتی می‌گیرم؟</p>
+<div class="cta-row">
+<a class="button" href="lesson07.zh.html"><span lang="en">第07课：消息如何推动价格</span><span lang="fa">درس ۷: خبر چطور قیمت را تکان می‌دهد</span></a>
+<a class="button" href="lesson06.zh.html"><span lang="en">买入前的五个问题</span><span lang="fa">پنج پرسش پیش از خرید</span></a>
+<a class="button" href="household-economy.en.html"><span lang="en">经济是什么意思？</span><span lang="fa">اقتصاد یعنی چه؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">核心概念</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en">
+<li>预期与意外</li>
+<li>订单簿与市场深度</li>
+<li>滑点</li>
+<li>杠杆与保证金</li>
+<li>强制平仓与强平连锁反应</li>
+<li>网络独立性与价格表现</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>انتظار و غافلگیری</li>
+<li>دفتر سفارش و عمق بازار</li>
+<li>لغزش قیمت</li>
+<li>اهرم و وثیقه</li>
+<li>لیکوئیدیشن و آبشار فروش</li>
+<li>استقلال شبکه در برابر رفتار قیمت</li>
+</ul>
+</div>
+<div class="card">
+<h3 lang="en">学习目标</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en">
+<li>解释为什么图表上的价格可能与你实际成交的价格不同。</li>
+<li>计算市价单穿过稀薄订单簿时的平均价格。</li>
+<li>描述杠杆和保证金如何运作，以及何时会发生强制平仓。</li>
+<li>解释强平如何像连锁反应一样相互助推。</li>
+<li>说出降低这些风险的实用方法。</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>توضیح دهید چرا قیمت روی نمودار با قیمتی که می‌گیرید فرق می‌کند.</li>
+<li>میانگین قیمت یک سفارش فوری را در دفتر سفارش کم‌عمق حساب کنید.</li>
+<li>شرح دهید اهرم و وثیقه چطور کار می‌کنند و لیکوئیدیشن کی اتفاق می‌افتد.</li>
+<li>توضیح دهید لیکوئیدیشن‌ها چطور در یک آبشار همدیگر را تشدید می‌کنند.</li>
+<li>راه‌های عملی کم کردن این ریسک‌ها را نام ببرید.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">未来测验题库</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بانک پرسش‌های آزمونک آینده</h2>
+<p class="section-subtitle" lang="en">
+这些问题是为未来的 Ditoman 测验与参与系统准备的。它们日后可能用于学习积分、声誉层级，以及可能的 TMN 奖励资格。
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">این پرسش‌ها برای سامانه‌ی آزمونک و مشارکت آینده‌ی دیتومان آماده شده‌اند. ممکن است بعدها مبنای امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN شوند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">第1题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">最近一笔成交价是100美元。100美元有一个买家，下一个在95美元。你以市价卖出两个单位。你的平均价格是多少？</p>
+<p lang="fa" dir="rtl" style="text-align:right">آخرین معامله ۱۰۰ دلار بوده. یک خریدار در ۱۰۰ و بعدی در ۹۵ دلار است. دو واحد را فوری می‌فروشید. میانگین قیمت فروش چقدر است؟</p>
+<p lang="en">A. $100</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۱۰۰ دلار</p>
+<p lang="en">B. $97.50</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۹۷٫۵ دلار</p>
+<p lang="en">C. $95</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۹۵ دلار</p>
+<p lang="en">D. $102.50</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. ۱۰۲٫۵ دلار</p>
+<p class="answer" lang="en">正确答案：B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第2题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">在10倍杠杆和100美元保证金下，价格大约要下跌多少，保证金才会耗尽？</p>
+<p lang="fa" dir="rtl" style="text-align:right">با اهرم ۱۰ برابر و ۱۰۰ دلار وثیقه، قیمت حدوداً چقدر باید بیفتد تا وثیقه از دست برود؟</p>
+<p lang="en">A. 1%</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۱٪</p>
+<p lang="en">B. 10%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۱۰٪</p>
+<p lang="en">C. 50%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۵۰٪</p>
+<p lang="en">D. 100%</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. ۱۰۰٪</p>
+<p class="answer" lang="en">正确答案：B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第3题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">什么是爆仓？</p>
+<p lang="fa" dir="rtl" style="text-align:right">لیکوئیدیشن چیست؟</p>
+<p class="answer" lang="en">正确答案：当保证金即将耗尽时，交易所自动平掉杠杆仓位。</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: وقتی صرافی یک معامله‌ی اهرمی را به‌خاطر تمام شدن وثیقه، خودکار می‌بندد.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第4题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">判断：如果比特币网络独立于政府，它的价格就不会和股票一起下跌。</p>
+<p lang="fa" dir="rtl" style="text-align:right">درست یا نادرست: اگر شبکه‌ی بیت‌کوین از دولت‌ها مستقل است، قیمتش نمی‌تواند هم‌زمان با سهام بریزد.</p>
+<p class="answer" lang="en">正确答案：错误。许多投资者两者都持有，想降低风险时会两者都卖。</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: نادرست. خیلی از سرمایه‌گذارها هر دو را دارند و برای کم کردن ریسک از هر دو می‌فروشند.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">第5题</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">2026年11月5日，约10亿美元的加密货币强平中，大约多少比例是押注价格上涨的仓位？</p>
+<p lang="fa" dir="rtl" style="text-align:right">در ۱۴ آبان ۱۴۰۵، حدوداً چه سهمی از لیکوئیدیشن یک میلیارد دلاری کریپتو، شرط روی بالا رفتن قیمت بود؟</p>
+<p lang="en">A. 约11%</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. حدود ۱۱٪</p>
+<p lang="en">B. 约50%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. حدود ۵۰٪</p>
+<p lang="en">C. 约89%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. حدود ۸۹٪</p>
+<p lang="en">D. 100%</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. ۱۰۰٪</p>
+<p class="answer" lang="en">正确答案：C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">来源</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul>
+<li><a href="https://www.instagram.com/bloombergopinion/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Bloomberg Opinion，约翰·奥瑟斯：富时全球指数图表（Instagram 帖子，2026年11月）</a></li>
+<li><a href="https://cryptoslate.com/bitcoin-crashes-below-76000-as-ai-bubble-fears-wipe-2-5-trillion-from-wall-street/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">CryptoSlate，2026年11月5日：纳斯达克100下跌5.5%，强平约10亿美元，超过20.1万名交易者</a></li>
+<li><a href="https://www.thecoinrepublic.com/2026/11/05/crypto-market-crash-sends-btc-below-76k-as-liquidations-top-1b/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">The Coin Republic，2026年11月5日：比特币最低价75,463美元，CoinGlass 强平数据</a></li>
+<li><a href="lesson07.zh.html" style="color:#7ff5de">Ditoman 第07课：重大消息如何推动比特币</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title" lang="en">关注 Ditoman</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دیتومان را دنبال کنید</h2>
+<p lang="en">
+新课程会首先在 Ditoman 的 Telegram 和 Instagram 上发布。
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در تلگرام و اینستاگرام دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span lang="en">在 Telegram 加入</span><span lang="fa">عضویت در تلگرام</span></a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">在 Instagram 上查看</span><span lang="fa">دیدن در اینستاگرام</span></a>
+<a class="button" href="learn.zh.html"><span lang="en">返回学习</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson09.zh.html"><span lang="en">上一课</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson11.zh.html"><span lang="en">下一课</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container" lang="en">
+Ditoman 学习 • 以结构为基础，以探索为动力。
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-zh.js?v=20261121a"></script>
+</body>
+</html>
