@@ -9,14 +9,14 @@ LESSON = {
         "قیمت دلار هر روز عوض می‌شود. این درس توضیح می‌دهد نرخ ارز چیست، چه کسی تعیینش می‌کند و فرق نرخ شناور با نرخ ثابت چیست.",
     ),
     "en": """
-A shirt costs 2,000 zar in a made-up country called Zarland. A traveller from abroad asks: how much is that in dollars? The answer is not written on the shirt. It depends on one number, the exchange rate.
+A shirt in a shop in Lisbon costs 50 euros. A traveller from the United States asks: how much is that in dollars? The answer is not written on the shirt. It depends on one number, the exchange rate.
 
-This lesson uses an invented currency, the zar, so no real country is blamed or praised.
+The rates in this lesson are round numbers chosen for the example. They are not today's rates.
 
 ## What an exchange rate is
 The IMF defines it simply: an exchange rate is the price of one country's money in terms of another's.
 
-If 1 dollar equals 100 zar, the 2,000-zar shirt costs 20 dollars. If the rate moves to 125 zar per dollar, the same shirt costs 2,000 ÷ 125 = 16 dollars. The shirt did not change. The money did.
+If 1 euro equals 1.10 dollars, the 50-euro shirt costs 50 × 1.10 = 55 dollars. If the rate moves to 1.20 dollars per euro, the same shirt costs 50 × 1.20 = 60 dollars. The shirt did not change. The money did.
 
 [[fig]]
 
@@ -41,14 +41,14 @@ It is the largest financial market on earth. The Bank for International Settleme
 That is why the dollar acts as a common yardstick for prices around the world.
 
 ## Why it matters to ordinary people
-A weaker home currency makes imports and foreign travel more expensive, and can raise prices of anything made from imported parts. A stronger one does the opposite. Lesson 12 showed how rising prices eat purchasing power; the exchange rate is one road by which they arrive.
+In the example, a stronger euro made the shirt dearer for the American and a weaker euro makes it cheaper. For a household the same logic runs the other way: when your own currency weakens, imports and foreign travel get more expensive, and so can anything made from imported parts. Lesson 12 showed how rising prices eat purchasing power; the exchange rate is one road by which they arrive.
 
 You can watch live rates, including the digital toman, on our prices page.
 
 ##! What to take from this
 An exchange rate is the price of one money in another.
 
-The same shirt can cost 20 or 16 dollars when only the rate changes.
+The same 50-euro shirt can cost 55 or 60 dollars when only the rate changes.
 
 Floating rates follow supply and demand; pegged rates are tied by policy.
 
@@ -57,14 +57,14 @@ A hard peg trades away independent interest-rate policy.
 Currency trading is huge, and the US dollar sits on one side of most of it.
 """,
     "fa": """
-در کشوری خیالی به نام زارلند، یک پیراهن ۲٬۰۰۰ زار قیمت دارد. مسافری از خارج می‌پرسد: این چند دلار است؟ جواب روی پیراهن نوشته نیست. به یک عدد بستگی دارد: نرخ ارز.
+در یک مغازه‌ی لیسبون، یک پیراهن ۵۰ یورو قیمت دارد. مسافری از آمریکا می‌پرسد: این چند دلار است؟ جواب روی پیراهن نوشته نیست. به یک عدد بستگی دارد: نرخ ارز.
 
-این درس از یک پول ساختگی به نام «زار» استفاده می‌کند تا کشور واقعی‌ای متهم یا ستایش نشود.
+نرخ‌های این درس عددهای گرد و انتخابی برای مثال‌اند؛ نرخ امروز نیستند.
 
 ## نرخ ارز چیست
 صندوق بین‌المللی پول ساده تعریفش می‌کند: نرخ ارز قیمت پول یک کشور بر حسب پول کشور دیگر است.
 
-اگر ۱ دلار برابر ۱۰۰ زار باشد، پیراهن ۲٬۰۰۰ زاری ۲۰ دلار می‌شود. اگر نرخ به ۱۲۵ زار برای هر دلار برسد، همان پیراهن ۲٬۰۰۰ ÷ ۱۲۵ = ۱۶ دلار می‌شود. پیراهن عوض نشده. پول عوض شده.
+اگر ۱ یورو برابر ۱٫۱۰ دلار باشد، پیراهن ۵۰ یورویی ۵۰ × ۱٫۱۰ = ۵۵ دلار می‌شود. اگر نرخ به ۱٫۲۰ دلار برای هر یورو برسد، همان پیراهن ۵۰ × ۱٫۲۰ = ۶۰ دلار می‌شود. پیراهن عوض نشده. پول عوض شده.
 
 [[fig]]
 
@@ -89,14 +89,14 @@ Currency trading is huge, and the US dollar sits on one side of most of it.
 برای همین دلار مثل یک خط‌کش مشترک برای قیمت‌ها در دنیا عمل می‌کند.
 
 ## چرا برای مردم عادی مهم است
-پول داخلیِ ضعیف‌تر واردات و سفر خارجی را گران‌تر می‌کند و می‌تواند قیمت هر چیزی را که از قطعات وارداتی ساخته می‌شود بالا ببرد. پول قوی‌تر عکس این را می‌کند. درس ۱۲ نشان داد افزایش قیمت‌ها چطور قدرت خرید را می‌خورد؛ نرخ ارز یکی از راه‌های رسیدنشان است.
+در مثال، یورو قوی‌تر پیراهن را برای آمریکایی گران‌تر کرد و یورو ضعیف‌تر ارزان‌ترش می‌کند. برای یک خانوار منطق همین است، فقط برعکس: وقتی پول خودتان ضعیف می‌شود، واردات و سفر خارجی گران‌تر می‌شود و هر چیزی هم که از قطعات وارداتی ساخته شود. درس ۱۲ نشان داد افزایش قیمت‌ها چطور قدرت خرید را می‌خورد؛ نرخ ارز یکی از راه‌های رسیدنشان است.
 
 نرخ‌های زنده، از جمله تومان دیجیتال، را در صفحه‌ی قیمت‌های ما ببینید.
 
 ##! چه برداشتی کنیم
 نرخ ارز قیمت یک پول بر حسب پول دیگر است.
 
-یک پیراهن می‌تواند ۲۰ یا ۱۶ دلار باشد، وقتی فقط نرخ عوض شده.
+یک پیراهن ۵۰ یورویی می‌تواند ۵۵ یا ۶۰ دلار باشد، وقتی فقط نرخ عوض شده.
 
 نرخ شناور از عرضه و تقاضا می‌آید؛ نرخ مهارشده با سیاست گره خورده است.
 
@@ -106,11 +106,11 @@ Currency trading is huge, and the US dollar sits on one side of most of it.
 """,
     "fig": {
         "type": "table",
-        "title": ("The same shirt, two rates (made-up currency)", "یک پیراهن، دو نرخ (پول ساختگی)"),
-        "cols": [("Rate", "نرخ"), ("Price in zar", "قیمت به زار"), ("Price in dollars", "قیمت به دلار")],
+        "title": ("The same shirt, two rates (illustrative)", "یک پیراهن، دو نرخ (برای مثال)"),
+        "cols": [("Rate", "نرخ"), ("Price in euros", "قیمت به یورو"), ("Price in dollars", "قیمت به دلار")],
         "rows": [
-            [("100 zar per dollar", "۱۰۰ زار برای هر دلار"), ("2,000", "۲٬۰۰۰"), ("20", "۲۰")],
-            [("125 zar per dollar", "۱۲۵ زار برای هر دلار"), ("2,000", "۲٬۰۰۰"), ("16", "۱۶")],
+            [("1 euro = 1.10 dollars", "۱ یورو = ۱٫۱۰ دلار"), ("50", "۵۰"), ("55", "۵۵")],
+            [("1 euro = 1.20 dollars", "۱ یورو = ۱٫۲۰ دلار"), ("50", "۵۰"), ("60", "۶۰")],
         ],
     },
     "related": {
@@ -130,10 +130,10 @@ Currency trading is huge, and the US dollar sits on one side of most of it.
         ["نرخ ارز را تعریف کنید.", "با یک نرخ داده‌شده قیمت را تبدیل کنید.", "نرخ شناور را از نرخ مهارشده تشخیص بدهید.", "بده‌بستان مهار سخت را توضیح بدهید.", "اندازه‌ی بازار ارز را توصیف کنید."],
     ),
     "quiz": [
-        {"q": ("1 dollar = 100 zar. A shirt costs 2,000 zar. Its price in dollars is:", "۱ دلار = ۱۰۰ زار. یک پیراهن ۲٬۰۰۰ زار است. قیمتش به دلار:"),
-         "options": [("20", "۲۰"), ("200", "۲۰۰"), ("2", "۲")], "answer": 0},
-        {"q": ("The rate moves to 125 zar per dollar. The shirt now costs:", "نرخ به ۱۲۵ زار برای هر دلار می‌رسد. پیراهن حالا چند دلار است؟"),
-         "options": [("16", "۱۶"), ("25", "۲۵"), ("20", "۲۰")], "answer": 0},
+        {"q": ("1 euro = 1.10 dollars. A shirt costs 50 euros. Its price in dollars is:", "۱ یورو = ۱٫۱۰ دلار. یک پیراهن ۵۰ یورو است. قیمتش به دلار:"),
+         "options": [("55", "۵۵"), ("45", "۴۵"), ("5.5", "۵٫۵")], "answer": 0},
+        {"q": ("The rate moves to 1.20 dollars per euro. The shirt now costs:", "نرخ به ۱٫۲۰ دلار برای هر یورو می‌رسد. پیراهن حالا چند دلار است؟"),
+         "options": [("60", "۶۰"), ("55", "۵۵"), ("41.67", "۴۱٫۶۷")], "answer": 0},
         {"q": ("In a floating system, what mainly sets the rate?", "در نظام شناور، چه چیزی عمدتاً نرخ را تعیین می‌کند؟"),
          "options": [("Supply and demand", "عرضه و تقاضا"), ("A yearly vote", "یک رأی‌گیری سالانه"), ("The shirt's price", "قیمت پیراهن")], "answer": 0},
         {"q": ("What does a country give up under a hard peg?", "کشور در مهار سخت از چه چیزی می‌گذرد؟"),
@@ -146,7 +146,7 @@ Currency trading is huge, and the US dollar sits on one side of most of it.
         ("https://www.bis.org/media-releases/20250930-global-fx-trading-hits-96-trillion-day-april-2025-and-otc-interest-rate-derivatives-surge-79", "Bank for International Settlements: global FX trading hits 9.6 trillion dollars a day in April 2025 (press release, 30 September 2025)"),
     ],
     "source_note": (
-        "The zar is an invented currency used only to illustrate the arithmetic. Market-size figures are from the BIS triennial survey. General explanation, not a forecast of any rate.",
-        "«زار» یک پول ساختگی است که فقط برای نشان‌دادن محاسبه به کار رفته. اندازه‌ی بازار از پیمایش سه‌ساله‌ی BIS است. توضیح عمومی است و پیش‌بینی هیچ نرخی نیست.",
+        "The euro and dollar rates in the example are round numbers chosen to show the arithmetic, not current rates. Market-size figures are from the BIS triennial survey. General explanation, not a forecast of any rate.",
+        "نرخ‌های یورو و دلار در مثال عددهای گردِ انتخابی برای نشان‌دادن محاسبه‌اند، نه نرخ‌های فعلی. اندازه‌ی بازار از پیمایش سه‌ساله‌ی BIS است. توضیح عمومی است و پیش‌بینی هیچ نرخی نیست.",
     ),
 }
