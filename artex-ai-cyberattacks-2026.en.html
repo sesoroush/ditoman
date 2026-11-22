@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>AI Hacking in Under Three Hours: The ARTEX Case | Ditoman</title>
+<meta name="description" content="A security-testing tool was used in real attacks. What is proven, what is not, and what individuals and companies should" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:fixed;width:100%;min-width:0 !important}
+.tw td,.tw th{white-space:normal !important;word-break:normal;overflow-wrap:break-word;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/artex-ai-cyberattacks-2026.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/artex-ai-cyberattacks-2026.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/artex-ai-cyberattacks-2026.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/artex-ai-cyberattacks-2026.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="AI Hacking in Under Three Hours: The ARTEX Case | Ditoman" />
+<meta property="og:description" content="A security-testing tool was used in real attacks. What is proven, what is not, and what individuals and companies should" />
+<meta property="og:url" content="https://ditoman.com/artex-ai-cyberattacks-2026.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/artex-ai-cyberattacks-2026.en.html#page",
+   "url": "https://ditoman.com/artex-ai-cyberattacks-2026.en.html",
+   "name": "AI Hacking in Under Three Hours: The ARTEX Case | Ditoman",
+   "description": "A security-testing tool was used in real attacks. What is proven, what is not, and what individuals and companies should",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "AI Hacking in Under Three Hours: The ARTEX Case",
+     "item": "https://ditoman.com/artex-ai-cyberattacks-2026.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/artex-ai-cyberattacks-2026/card.webp" srcset="social/artex-ai-cyberattacks-2026/card.webp 900w, social/artex-ai-cyberattacks-2026/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="AI hacking in under three hours: the ARTEX case" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/artex-ai-cyberattacks-2026/en-card.webp" srcset="social/artex-ai-cyberattacks-2026/en-card.webp 900w, social/artex-ai-cyberattacks-2026/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="AI hacking in under three hours: the ARTEX case" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · Cybersecurity</span><span lang="fa">گزارش ویژه · امنیت سایبری</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی؛ هک در کمتر از سه ساعت: پرونده‌ی ARTEX و حمله به بانک‌های کره‌ی جنوبی</h1>
+<h1 lang="en">AI hacking in under three hours: the ARTEX case and the attacks on South Korean banks</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">یک ابزار آزمایش امنیت، در حمله‌ی واقعی به کار رفت. چه ثابت شده، چه هنوز نه، و مردم و شرکت‌ها چه درسی بگیرند؟</p>
+<p class="subtitle" lang="en">A security-testing tool was used in real attacks. What is proven, what is not, and what individuals and companies should learn?</p>
+<div class="stats">
+<div class="stat"><b lang="fa">< ۳ ساعت</b><b lang="en">&lt; 3 h</b><span lang="fa">زمان رسیدن به دسترسی بالا در بعضی نفوذها (FBI)</span><span lang="en">to high-privilege access in some intrusions (FBI)</span></div>
+<div class="stat"><b lang="fa">≈ ۶۷ هزار</b><b lang="en">~67,000</b><span lang="fa">نفر با اطلاعات افشاشده در بانک‌های کره (FBI)</span><span lang="en">people with leaked data at Korean institutions (FBI)</span></div>
+<div class="stat"><b lang="fa">۱۶۰۰+</b><b lang="en">1,600+</b><span lang="fa">کنسول ARTEX در دسترس از اینترنت (نوامبر)</span><span lang="en">ARTEX consoles exposed to the internet (Nov)</span></div>
+<div class="stat"><b lang="fa">۹+</b><b lang="en">9+</b><span lang="fa">بانک کره‌ای هدف یا قربانی (رویترز)</span><span lang="en">Korean banks targeted or hit (Reuters)</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<h3><span class="check-number">1.</span> چه اتفاقی افتاد؟</h3>
+<p>از اواخر سپتامبر ۲۰۲۶، چند مؤسسه‌ی مالی کره‌ی جنوبی با نفوذ غیرمجاز و افشای اطلاعات مشتریان روبه‌رو شدند. شرکت‌های امنیتی بعداً نشانه‌هایی از یک ابزار به نام <strong>ARTEX</strong> در زیرساخت مهاجم پیدا کردند: ابزاری که برای آزمایش امنیت ساخته شده بود و حالا در حمله‌ی واقعی به کار رفته بود.</p>
+<p>خبر مهم‌تر از «چینی بودن نرم‌افزار» یا «هک با آیفون» است. نکته این است که <strong>عامل‌های هوش مصنوعی</strong> حالا می‌توانند چند مرحله‌ی نفوذ را پشت سر هم و تقریباً خودکار انجام دهند، و این یعنی سرعت حمله بالا رفته است.</p>
+<blockquote>این گزارش فقط به آنچه منابع معتبر تأیید کرده‌اند تکیه می‌کند و جدا می‌کند چه چیزی اثبات شده و چه چیزی هنوز در دست بررسی است.</blockquote>
+<h3><span class="check-number">2.</span> ARTEX چیست؟</h3>
+<p>ARTEX یک چارچوب متن‌باز در چین است که چند «عامل» هوش مصنوعی را هماهنگ می‌کند تا <strong>آزمایش نفوذ</strong> را خودکار کنند. خودش مدل هوش مصنوعی نیست؛ به مدل‌های زبانی بیرونی وصل می‌شود.</p>
+<p>آزمایش نفوذ یعنی یک متخصص با اجازه‌ی صاحب سیستم تلاش می‌کند راه ورود غیرمجاز را پیدا کند تا پیش از مهاجم واقعی، ضعف‌ها بسته شوند. تفاوت ابزار جدید با روش سنتی این است:</p>
+<div class="tw"><table><tr><th></th><th>روش سنتی</th><th>عامل هوش مصنوعی</th></tr><tr><td>شناسایی هدف</td><td>کارشناس دستی بررسی می‌کند</td><td>عامل خودش اطلاعات جمع می‌کند</td></tr><tr><td>انتخاب مرحله‌ی بعد</td><td>کارشناس تصمیم می‌گیرد</td><td>نرم‌افزار بر اساس نتیجه تصمیم می‌گیرد</td></tr><tr><td>سرعت</td><td>ساعت‌ها تا روزها</td><td>چند مرحله‌ی پیوسته در زمان کوتاه</td></tr><tr><td>مستندسازی</td><td>دستی</td><td>خودکار</td></tr></table></div>
+<p>همین قابلیت دو لبه دارد: برای مدافعان، آزمایش امنیتی ارزان‌تر و سریع‌تر می‌شود؛ برای مهاجمان، مهارت فنی کمتری لازم است.</p>
+<h3><span class="check-number">3.</span> خط زمانی</h3>
+<div class="tw"><table><tr><th>تاریخ</th><th>رویداد</th></tr><tr><td>اواخر سپتامبر ۲۰۲۶</td><td>شروع نفوذ به مؤسسات مالی کره‌ی جنوبی. یک بانک در سرویس استعلام وام برای کارگزاران و بانکی دیگر در سامانه‌ی موبایلی پشتیبانی کارکنان نفوذ شده بود</td></tr><tr><td>۷ اکتبر</td><td>CrowdStrike گزارش داد از ARTEX و مدل‌های هوش مصنوعی در این کارزار استفاده شده است</td></tr><tr><td>۸ اکتبر</td><td>سازنده‌ی ARTEX اعلام کرد پروژه بسته (closed source) می‌شود و صفحه‌ی گیت‌هاب برداشته شد</td></tr><tr><td>۵ نوامبر</td><td>Check Point گزارش داد مجرمان دیگر هم از ARTEX استفاده می‌کنند</td></tr><tr><td>۱۳ نوامبر</td><td>هشدار رسمی FBI درباره‌ی ARTEX منتشر شد</td></tr></table></div>
+<h3><span class="check-number">4.</span> «کمتر از سه ساعت» یعنی چه؟</h3>
+<p>بنا بر هشدار FBI (که رسانه‌ها گزارش کرده‌اند)، بعضی نفوذهای مرتبط با ARTEX از لحظه‌ی هدف‌گیری تا <strong>دسترسی با امتیاز بالا</strong> کمتر از سه ساعت طول کشیده‌اند. دسترسی با امتیاز بالا یعنی مهاجم به حساب یا بخشی از سیستم برسد که اختیارات بیشتری از کاربر عادی دارد.</p>
+<p>این عدد نشان نمی‌دهد هر بانک ظرف سه ساعت هک می‌شود. نمونه‌ای از سرعت بعضی حمله‌هاست و خطر واقعی همین است: وقتی حمله سریع باشد، فرصت واکنش انسانی کم می‌شود.</p>
+<p>FBI همچنین گفته در اوایل نوامبر بیش از ۱۶۰۰ کنسول ARTEX از اینترنت در دسترس بوده است. این عدد شمار حمله‌های موفق نیست؛ نشان می‌دهد ابزار چقدر پخش شده و FBI می‌گوید شمار واقعی احتمالاً بیشتر است، چون سامانه‌های خصوصی دیده نمی‌شوند.</p>
+<h3><span class="check-number">5.</span> چه کسانی و چه چیزی هدف بود؟</h3>
+<ul>
+<li>FBI از سرقت اطلاعات شخصی حدود <strong>۶۷ هزار نفر</strong> در حمله به مؤسسات مالی کره‌ی جنوبی خبر داده است. Recorded Future با تکیه بر گزارش‌های عمومی از دست‌کم ۶۸ هزار نفر در دست‌کم هفت مؤسسه نوشته</li>
+</ul>
+<ul>
+<li>رویترز نوشته دست‌کم نه بانک کره‌ای از اواخر سپتامبر هدف یا قربانی شده‌اند. پلیس و سازمان نظارت مالی تحقیق را شروع کرده‌اند</li>
+</ul>
+<ul>
+<li>در گزارش‌ها از Shinhan، KB Kookmin و Hana نام برده شده است، اما این اسامی بخشی از یک سلسله افشاگری‌اند و هر رخداد را نمی‌توان قطعاً به یک مهاجم نسبت داد</li>
+</ul>
+<ul>
+<li>نفوذ لزوماً به هسته‌ی بانکداری نبود؛ سامانه‌های جانبی هدف بودند</li>
+</ul>
+<p>سه نکته را باید جدا نگه داشت: افشای اطلاعات شخصی با سرقت پول از حساب فرق دارد؛ هدف قرار گرفتن بانک به معنی موفقیت مهاجم نیست؛ و تعداد قربانیان در منابع مختلف اندکی متفاوت است.</p>
+<h3><span class="check-number">6.</span> ARTEX دست مجرمان دیگر</h3>
+<p>Check Point در گزارش ۵ نوامبر سه کارزار دیگر را بررسی کرد. نکته‌ی آموزشی این بخش، هم توانایی عامل‌ها و هم خطاهایشان است:</p>
+<ul>
+<li><strong>گواهی‌های امضای برنامه‌ی iOS:</strong> عامل‌ها بیش از ۳۰۰ گواهی و رمز به دست آوردند، اما فقط ۳ مورد از فهرست اعتبارسنجی گذشت</li>
+</ul>
+<ul>
+<li><strong>بازارهای حساب بازی:</strong> از ۱۳ بازار، بیش از ۱۹۰ هزار مشخصات ورود به دست آمد. نمونه‌گیری نشان داد حدود ۳٫۳٪ هنوز معتبر است، یعنی حدود ۶ هزار حساب. Check Point تأکید می‌کند این برآورد است، نه شمارش تأییدشده</li>
+</ul>
+<ul>
+<li><strong>۲۹۲ دامنه‌ی مرتبط با رمزارز:</strong> عامل‌ها پایگاه‌داده و API ناامن پیدا کردند. مالک سایت فایل دست‌کاری‌شده را به حالت اولیه برگرداند و Check Point ندید پولی به کیف پول مهاجم برسد</li>
+</ul>
+<p>نکته‌ی جالب: بعضی «موفقیت‌های برداشت پول» که عامل‌ها گزارش دادند، توهم بود و فقط بر اساس پاسخ موفق یک API ساخته شده بود. یعنی عامل‌های هوش مصنوعی هنوز اشتباه می‌کنند، اما اشتباه‌شان جلوی حمله را نمی‌گیرد.</p>
+<h3><span class="check-number">7.</span> نقش مدل‌های هوش مصنوعی</h3>
+<p>ARTEX خودش مدل نیست و به مدل‌های بیرونی وصل می‌شود. بنا بر CrowdStrike، در نمونه‌ی کره‌ی جنوبی مدل اصلی <strong>DeepSeek v4.1-flash</strong> بود و در بخشی از جلسات، GLM-5.3 و Grok 4.6 از طریق Claude Code به کار رفتند. در پرونده‌های مهاجم، تاریخچه‌ی جلسه‌های Claude Code هم پیدا شد. Check Point هم نوشته در ده نمونه‌ی بررسی‌شده مدل‌های چینی، به‌ویژه خانواده‌ی DeepSeek Flash، غالب بودند و تأکید کرده این مشاهده مقایسه‌ی کلی ایمنی مدل‌ها نیست.</p>
+<p>نکته‌ی مهم‌تر برای آینده: Check Point می‌گوید مهاجمان وقتی مدلی جلوی درخواستشان را می‌گرفت، به مدل دیگری می‌رفتند. یعنی ایمنی یک مدل به‌تنهایی کافی نیست؛ اکوسیستم کامل (ابزارها، مدل‌های باز، سرویس‌های واسط) مهم است.</p>
+<h3><span class="check-number">8.</span> آیا هر کسی با آیفون می‌تواند هک کند؟</h3>
+<p>خیر. تیتر کوتاه خبرهای شبکه‌های اجتماعی ساده‌سازی بیش از حد است. در منابعی که بررسی کردیم، هیچ شاهدی نیست که با یک آیفون و این ابزار بشود به هر سامانه‌ی بانکی نفوذ کرد.</p>
+<p>گوشی فقط می‌تواند ابزار دسترسی به یک داشبورد باشد. حمله به زیرساخت، سرور، هدف آسیب‌پذیر و شرایط دیگری نیاز دارد. Recorded Future در محیط مهاجم یک فضای آزمایش موبایل دیده، اما می‌نویسد نفوذ موبایلی تأییدشده‌ای ثبت نشده است.</p>
+<p>واقعیت دقیق این است: هوش مصنوعی نیاز به انجام دستی کارهای تخصصی را کم می‌کند؛ محدودیت‌های فنی از بین نرفته‌اند.</p>
+<h3><span class="check-number">9.</span> آیا چین پشت حمله است؟</h3>
+<p>باید دقیق بود:</p>
+<ul>
+<li>ARTEX در چین ساخته شده و پرامپت‌های مهاجم چینی بوده‌اند</li>
+</ul>
+<ul>
+<li>CrowdStrike با <strong>اطمینان متوسط</strong> ارزیابی کرده مهاجم احتمالاً چینی‌زبان و با انگیزه‌ی مالی است</li>
+</ul>
+<ul>
+<li>مهاجم با نام مشخص معرفی نشده است. شخصی که در رسانه‌ها مظنون خوانده شده، به گزارش Korea JoongAng Daily، دخالت را رد می‌کند و می‌گوید هویتش سرقت شده. ما نامی از او نمی‌آوریم، چون هویت تأیید نشده است</li>
+</ul>
+<ul>
+<li>ساخته شدن یک نرم‌افزار در چین، ارتباط دولت چین با حمله را ثابت نمی‌کند. سخنگوی وزارت خارجه‌ی چین هم به رویترز گفت از پرونده اطلاعی ندارد و چین مخالف هک است</li>
+</ul>
+<h3><span class="check-number">10.</span> واکنش سازنده‌ی ARTEX</h3>
+<p>سازنده با نام کاربری «Autumn-27» اعلام کرد: «با توجه به سوءاستفاده از ابزار، پروژه‌ی ARTEX دیگر به‌روز نمی‌شود و به نرم‌افزار بسته تبدیل می‌شود.» او نگفته این حمله به بانک‌ها بوده است.</p>
+<p>بسته کردن کد، نسخه‌های قبلاً پخش‌شده را از بین نمی‌برد. FBI تأکید کرده نسخه‌های فورک، آرشیوشده، محلی‌شده و یک نسخه‌ی تجاری به نام ARTEX PRO هنوز در گردش‌اند. این یک درس کلی است: کد متن‌باز دوباره قابل پس‌گرفتن نیست.</p>
+<h3><span class="check-number">11.</span> درس‌ها برای مردم عادی</h3>
+<p>اطلاعات افشاشده بیشتر از همه به کلاهبرداران کمک می‌کند پیام و تماس‌هایی بسازند که واقعی‌تر به نظر برسند. چند اقدام ساده خطر را کم می‌کند:</p>
+<ul>
+<li>برای ایمیل و بانک رمزهای متفاوت بگذار</li>
+</ul>
+<ul>
+<li>ورود دومرحله‌ای را فعال کن، ترجیحاً با اپلیکیشن احراز هویت یا کلید امنیتی</li>
+</ul>
+<ul>
+<li>به بانک از اپلیکیشن یا نشانی رسمی وارد شو، نه از لینک پیامک</li>
+</ul>
+<ul>
+<li>اعلان تراکنش را روشن نگه دار</li>
+</ul>
+<ul>
+<li>اگر بانک خبر افشا داد، فقط دستورالعمل خود همان بانک را دنبال کن و به تماس یا پیامک مشکوک رمز یا کد نده</li>
+</ul>
+<h3><span class="check-number">12.</span> درس‌ها برای شرکت‌ها</h3>
+<ul>
+<li><strong>آزمایش دوره‌ای کافی نیست.</strong> وقتی حمله ساعتی است، نظارت مداوم لازم است</li>
+</ul>
+<ul>
+<li><strong>سطح در معرض اینترنت را بشناسید:</strong> پورتال تأمین‌کنندگان، پشتیبان‌گیری ابری، سامانه‌های جانبی. FBI هم ConnectWise Cloud Backup را مثال زده: تلاش ورود به بیش از ۲۲۵۰ مشتری پایین‌دست (این‌ها تلاش بودند، نه نفوذ تأییدشده)</li>
+</ul>
+<ul>
+<li><strong>حداقل دسترسی:</strong> هر حساب فقط همان‌قدر اختیار داشته باشد که لازم است</li>
+</ul>
+<ul>
+<li><strong>ورود و تغییر مجوزها را زیر نظر بگیرید</strong> و لاگ‌ها را نگه دارید</li>
+</ul>
+<ul>
+<li><strong>سرعت واکنش را به سرعت حمله نزدیک کنید:</strong> واکنش‌های از پیش تأییدشده برای تهدیدهای شناخته‌شده</li>
+</ul>
+<h3><span class="check-number">13.</span> نگاه دیتومان</h3>
+<p>این خبر فقط تهدید نیست. همان فناوری می‌تواند دفاع را هم سریع‌تر و ارزان‌تر کند: اگر عامل هوش مصنوعی ضعف را زودتر از مهاجم پیدا کند، تیم امنیت وقت بیشتری برای بستنش دارد. Recorded Future هم می‌گوید هوش مصنوعی «لبه‌ی ناهموار» دارد: در بعضی کارها قوی است و در بعضی اشتباه‌های ساده می‌کند.</p>
+<p>پیام اصلی برای دیتومان: رقابت امنیت سایبری بر سر قوی‌تر شدن ابزارها نیست؛ بر سر این است که چه کسی زودتر ضعف را پیدا و برطرف می‌کند. بازیگرانی که هوش مصنوعی را با نظارت انسانی برای دفاع به کار می‌گیرند، شانس بیشتری دارند. و برای کاربر عادی، مهم‌ترین دفاع هنوز ساده است: رمز جدا، ورود دومرحله‌ای و بی‌اعتمادی به لینک پیامکی.</p>
+<blockquote>این گزارش تحلیل و آموزش است، نه توصیه‌ی سرمایه‌گذاری، حقوقی یا امنیتی تخصصی.</blockquote>
+<h3>بیشتر بخوانید</h3><ul><li><a href="ai-infrastructure.en.html">انویدیای بعدی کدام است؟</a></li><li><a href="turkey-energy-hub-2026.en.html">ترکیه و هاب انرژی</a></li><li><a href="crypto-selloff-nov-2026.en.html">چرا بازار کریپتو ریخت؟</a></li><li><a href="prices.en.html">قیمت لحظه‌ای تتر، بیت‌کوین و طلا</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance.html" target="_blank" rel="noopener">CrowdStrike: Unknown threat actor uses ARTEX to target South Korean finance</a></li><li><a href="https://www.ibtimes.co.uk/fbi-warns-ai-artex-cyberattacks-1833001" target="_blank" rel="noopener">IBTimes: FBI warns hackers are using AI to automate attacks (FBI advisory, 13 Nov 2026)</a></li><li><a href="https://www.esecurityplanet.com/threats/news-artex-ai-agents-credential-theft/" target="_blank" rel="noopener">eSecurityPlanet: ARTEX cyberattacks, AI agents steal credentials (Check Point report)</a></li><li><a href="https://www.thestandard.com.hk/innovation/article/345036/Chinese-developer-makes-ARTEX-AI-agent-closed-source-after-Korean-bank-hack" target="_blank" rel="noopener">Reuters via The Standard: Chinese developer makes ARTEX closed source</a></li><li><a href="https://www.koreatimes.co.kr/southkorea/law-crime/20261008/chinese-speaking-hacker-possibly-linked-to-ai-driven-attacks-on-s-korean-banks-report" target="_blank" rel="noopener">Korea Times (Yonhap): Chinese-speaking hacker possibly linked to attacks</a></li><li><a href="https://www.koreajoongangdaily.com/business/chinese-ai-tool-linked-to-korean-bank-hacks-halts-public-updates-as-suspect-denies-involvement/12913376" target="_blank" rel="noopener">Korea JoongAng Daily: ARTEX halts public updates as suspect denies involvement</a></li><li><a href="https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/" target="_blank" rel="noopener">BleepingComputer: Hacker used ARTEX AI and Claude agents against South Korean banks</a></li><li><a href="https://www.recordedfuture.com/blog/tag-217-artex-south-korean-banks" target="_blank" rel="noopener">Recorded Future: TAG-217 targets South Korean financial services with ARTEX</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۱ آذر ۱۴۰۵. متن اصلی هشدار FBI را مستقیم باز نکردیم و ارقام آن را از گزارش‌های رسانه‌ای نقل کرده‌ایم. تعداد قربانیان در منابع مختلف اندکی متفاوت است و هویت مهاجم تأیید نشده. این گزارش پژوهشی و آموزشی است، نه توصیه‌ی تخصصی.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<h3><span class="check-number">1.</span> What happened?</h3>
+<p>From late September 2026, several South Korean financial institutions suffered unauthorized access and customer-data leaks. Security firms later found traces of a tool called <strong>ARTEX</strong> on attacker infrastructure: a tool built for security testing, now used in a real attack.</p>
+<p>The real story is not that the software is Chinese or that an iPhone is involved. It is that <strong>AI agents</strong> can now chain several steps of an intrusion together almost automatically, which raises the speed of attacks.</p>
+<blockquote>This report relies only on what credible sources have confirmed and separates what is proven from what is still under investigation.</blockquote>
+<h3><span class="check-number">2.</span> What is ARTEX?</h3>
+<p>ARTEX is an open-source framework developed in China that coordinates several AI “agents” to automate <strong>penetration testing</strong>. It is not an AI model itself; it plugs into outside language models.</p>
+<p>In a penetration test, a specialist, with the owner’s permission, tries to find ways in so the holes are closed before a real attacker finds them. Compared with the traditional approach:</p>
+<div class="tw"><table><tr><th></th><th>Traditional</th><th>AI agent</th></tr><tr><td>Reconnaissance</td><td>An analyst checks manually</td><td>The agent gathers information itself</td></tr><tr><td>Choosing the next step</td><td>The analyst decides</td><td>The software decides from the result</td></tr><tr><td>Speed</td><td>Hours to days</td><td>Several steps chained in a short time</td></tr><tr><td>Documentation</td><td>Manual</td><td>Automatic</td></tr></table></div>
+<p>The same capability cuts both ways: defenders get cheaper, faster testing; attackers need less technical skill.</p>
+<h3><span class="check-number">3.</span> Timeline</h3>
+<div class="tw"><table><tr><th>Date</th><th>Event</th></tr><tr><td>Late September 2026</td><td>Intrusions begin at South Korean financial institutions. One bank’s loan-inquiry service for brokers and another’s mobile work-support system for staff were reported breached</td></tr><tr><td>7 October</td><td>CrowdStrike reports that ARTEX and AI models were used in the campaign</td></tr><tr><td>8 October</td><td>ARTEX’s developer announces it will go closed source; the GitHub page is taken down</td></tr><tr><td>5 November</td><td>Check Point reports other criminals using ARTEX</td></tr><tr><td>13 November</td><td>FBI publishes its advisory on ARTEX</td></tr></table></div>
+<h3><span class="check-number">4.</span> What does “under three hours” mean?</h3>
+<p>According to the FBI advisory (as reported by the media), some ARTEX-linked intrusions went from first targeting to <strong>high-privilege access</strong> in under three hours. High-privilege access means the attacker reaches an account or part of the system with more authority than an ordinary user.</p>
+<p>This does not mean every bank can be breached in three hours. It is an example of how fast some attacks are, and that is the real risk: when an attack is fast, there is little time for human response.</p>
+<p>The FBI also said more than 1,600 ARTEX consoles were reachable from the internet in early November. That is not a count of successful attacks; it shows how widely the tool has spread, and the FBI says the real number is likely higher because private systems are not visible.</p>
+<h3><span class="check-number">5.</span> Who and what was targeted?</h3>
+<ul>
+<li>The FBI reports theft of personal data of about <strong>67,000 people</strong> in attacks on South Korean financial institutions. Recorded Future, citing public reporting, writes of at least 68,000 people across at least seven institutions</li>
+</ul>
+<ul>
+<li>Reuters reports at least nine Korean banks have been targeted or hit since late September. Police and the financial regulator opened investigations</li>
+</ul>
+<ul>
+<li>Reports named Shinhan, KB Kookmin and Hana, but those names belong to a wider series of breaches and not every incident can be pinned on one attacker</li>
+</ul>
+<ul>
+<li>The intrusions did not necessarily reach core banking; peripheral systems were hit</li>
+</ul>
+<p>Keep three things apart: leaking personal data is not the same as stealing money from accounts; a bank being targeted does not mean the attacker succeeded; and victim counts differ slightly between sources.</p>
+<h3><span class="check-number">6.</span> ARTEX in other criminals’ hands</h3>
+<p>In its 5 November report Check Point examined three other campaigns. The lesson here is both the agents’ power and their mistakes:</p>
+<ul>
+<li><strong>iOS app-signing certificates:</strong> agents obtained more than 300 certificates and passwords, but only 3 passed the validation checklist</li>
+</ul>
+<ul>
+<li><strong>Game-account marketplaces:</strong> from 13 marketplaces, more than 190,000 sets of credentials. Sampling suggested about 3.3% still worked, roughly 6,000 accounts. Check Point stresses this is an estimate, not a verified count</li>
+</ul>
+<ul>
+<li><strong>292 crypto-related domains:</strong> agents found exposed databases and weak APIs. The site owner restored the tampered file and Check Point saw no funds reach the attacker’s wallet</li>
+</ul>
+<p>A telling detail: some “successful cash-outs” the agents reported were hallucinations built from a successful API response. AI agents still make mistakes, but those mistakes do not stop the attack.</p>
+<h3><span class="check-number">7.</span> The role of AI models</h3>
+<p>ARTEX is not a model; it connects to outside ones. According to CrowdStrike, in the South Korean case the main model was <strong>DeepSeek v4.1-flash</strong>, with GLM-5.3 and Grok 4.6 used through Claude Code in some sessions. Claude Code session histories were also found in the attacker’s files. Check Point adds that among ten analyzed instances Chinese models, especially the DeepSeek Flash family, dominated, and stresses this is not a general safety comparison of models.</p>
+<p>The point for the future: Check Point says operators switched to another model when one blocked their request. Safeguards on a single model are not enough; the whole ecosystem (tools, open models, relay services) matters.</p>
+<h3><span class="check-number">8.</span> Can anyone hack with an iPhone?</h3>
+<p>No. The short headline on social media is an oversimplification. In the sources we reviewed there is no evidence that someone with an iPhone and this tool can break into any bank system.</p>
+<p>A phone can simply be a way to reach a dashboard. An attack still needs infrastructure, servers, a vulnerable target and other conditions. Recorded Future saw a mobile-testing workspace in the attacker’s environment but notes no confirmed mobile compromise.</p>
+<p>The accurate picture: AI reduces the need to do specialist tasks by hand; the technical limits have not disappeared.</p>
+<h3><span class="check-number">9.</span> Is China behind the attacks?</h3>
+<p>Precision is needed:</p>
+<ul>
+<li>ARTEX was developed in China and the attacker’s prompts were in Chinese</li>
+</ul>
+<ul>
+<li>CrowdStrike assesses with <strong>moderate confidence</strong> that the attacker is likely Chinese-speaking and financially motivated</li>
+</ul>
+<ul>
+<li>No attacker has been named. A person described in the media as a suspect denies involvement and says his identity was stolen, according to Korea JoongAng Daily. We do not name him because the identification is unconfirmed</li>
+</ul>
+<ul>
+<li>Software built in China does not prove a link to the Chinese state. China’s foreign ministry spokesperson told Reuters she was not familiar with the case and that China opposes hacking</li>
+</ul>
+<h3><span class="check-number">10.</span> The developer’s response</h3>
+<p>The developer, using the handle “Autumn-27”, announced that, given misuse of the tool, ARTEX would no longer be updated and would become closed source. The statement did not mention the bank attacks.</p>
+<p>Closing the source does not remove copies already distributed. The FBI stresses that forks, archived versions, localized variants and a commercial edition called ARTEX PRO remain in circulation. A general lesson: released open-source code cannot be recalled.</p>
+<h3><span class="check-number">11.</span> Lessons for individuals</h3>
+<p>Leaked data mostly helps scammers craft messages and calls that look more real. A few simple steps reduce the risk:</p>
+<ul>
+<li>Use different passwords for email and banking</li>
+</ul>
+<ul>
+<li>Turn on two-step login, ideally with an authenticator app or security key</li>
+</ul>
+<ul>
+<li>Open your bank through its official app or address, not an SMS link</li>
+</ul>
+<ul>
+<li>Keep transaction alerts on</li>
+</ul>
+<ul>
+<li>If your bank reports a leak, follow that bank’s own instructions, and never give a code or password to a suspicious call or message</li>
+</ul>
+<h3><span class="check-number">12.</span> Lessons for companies</h3>
+<ul>
+<li><strong>Periodic testing is not enough.</strong> When attacks take hours, continuous monitoring is needed</li>
+</ul>
+<ul>
+<li><strong>Know your internet-facing surface:</strong> supplier portals, cloud backup, peripheral systems. The FBI cited ConnectWise Cloud Backup: sign-in attempts against more than 2,250 downstream tenants (attempts, not confirmed breaches)</li>
+</ul>
+<ul>
+<li><strong>Least privilege:</strong> each account gets only the authority it needs</li>
+</ul>
+<ul>
+<li><strong>Watch sign-ins and permission changes</strong> and preserve logs</li>
+</ul>
+<ul>
+<li><strong>Bring response speed closer to attack speed:</strong> pre-approved responses for well-understood threats</li>
+</ul>
+<h3><span class="check-number">13.</span> The Ditoman view</h3>
+<p>This is not only a threat story. The same technology can make defense faster and cheaper: if an AI agent finds a weakness before the attacker does, the security team has more time to fix it. Recorded Future also says AI has a “jagged edge”: strong at some tasks, prone to basic mistakes at others.</p>
+<p>The main message: the cybersecurity race is not about stronger tools; it is about who finds and fixes the weakness first. Players who use AI for defense under human oversight have the better odds. And for ordinary users the best defense is still simple: separate passwords, two-step login and distrust of SMS links.</p>
+<blockquote>This report is analysis and education, not investment, legal or professional security advice.</blockquote>
+<h3>Read more</h3><ul><li><a href="ai-infrastructure.en.html">Who is the next Nvidia?</a></li><li><a href="turkey-energy-hub-2026.en.html">Turkey’s energy hub plan</a></li><li><a href="crypto-selloff-nov-2026.en.html">Why crypto fell</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance.html" target="_blank" rel="noopener">CrowdStrike: Unknown threat actor uses ARTEX to target South Korean finance</a></li><li><a href="https://www.ibtimes.co.uk/fbi-warns-ai-artex-cyberattacks-1833001" target="_blank" rel="noopener">IBTimes: FBI warns hackers are using AI to automate attacks (FBI advisory, 13 Nov 2026)</a></li><li><a href="https://www.esecurityplanet.com/threats/news-artex-ai-agents-credential-theft/" target="_blank" rel="noopener">eSecurityPlanet: ARTEX cyberattacks, AI agents steal credentials (Check Point report)</a></li><li><a href="https://www.thestandard.com.hk/innovation/article/345036/Chinese-developer-makes-ARTEX-AI-agent-closed-source-after-Korean-bank-hack" target="_blank" rel="noopener">Reuters via The Standard: Chinese developer makes ARTEX closed source</a></li><li><a href="https://www.koreatimes.co.kr/southkorea/law-crime/20261008/chinese-speaking-hacker-possibly-linked-to-ai-driven-attacks-on-s-korean-banks-report" target="_blank" rel="noopener">Korea Times (Yonhap): Chinese-speaking hacker possibly linked to attacks</a></li><li><a href="https://www.koreajoongangdaily.com/business/chinese-ai-tool-linked-to-korean-bank-hacks-halts-public-updates-as-suspect-denies-involvement/12913376" target="_blank" rel="noopener">Korea JoongAng Daily: ARTEX halts public updates as suspect denies involvement</a></li><li><a href="https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/" target="_blank" rel="noopener">BleepingComputer: Hacker used ARTEX AI and Claude agents against South Korean banks</a></li><li><a href="https://www.recordedfuture.com/blog/tag-217-artex-south-korean-banks" target="_blank" rel="noopener">Recorded Future: TAG-217 targets South Korean financial services with ARTEX</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 22 November 2026. We did not open the FBI advisory itself; its figures are taken from media reports. Victim counts differ slightly between sources and the attacker’s identity is unconfirmed. Research and educational report, not professional advice.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.en.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.en.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
