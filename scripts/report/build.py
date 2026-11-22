@@ -193,6 +193,7 @@ def from_latest(path):
         {"en":"US dollar · open market","fa":"دلار آزاد","value":i["usd"]["value_toman"],"dp":0,"chg":nz(i["usd"])},
         {"en":"Euro","fa":"یورو","value":i["eur"]["value_toman"],"dp":0,"chg":nz(i["eur"])},
         {"en":"UAE dirham","fa":"درهم امارات","value":i["aed"]["value_toman"],"dp":0,"chg":nz(i["aed"])},
+        {"en":"Chinese yuan","fa":"یوان چین","value":i["cny"]["value_toman"],"dp":0,"chg":nz(i["cny"])},
         {"en":"18k gold · per gram","fa":"طلای ۱۸ عیار · گرمی","value":i["gold18_gram"]["value_toman"],"dp":0,"chg":nz(i["gold18_gram"])},
         {"en":"Emami gold coin","fa":"سکه امامی","value":i["coin_emami"]["value_toman"],"dp":0,"chg":nz(i["coin_emami"])}],
       "food": [
@@ -225,6 +226,7 @@ def caption(data, L):
         fa_date,
         "",
         f'💵 دلار آزاد: {toman(i["دلار آزاد"])} تومان{ch(i["دلار آزاد"])}',
+        f'💴 یوان چین: {toman(i["یوان چین"])} تومان{ch(i["یوان چین"])}',
         f'🟡 طلای ۱۸ عیار (گرمی): {toman(i["طلای ۱۸ عیار · گرمی"])} تومان{ch(i["طلای ۱۸ عیار · گرمی"])}',
         f'🪙 سکه امامی: {toman(i["سکه امامی"])} تومان{ch(i["سکه امامی"])}',
         f'₿ بیت‌کوین: {f"{g['بیت‌کوین']['value']:,.0f}".translate(FA_NUM)} دلار{ch(g["بیت‌کوین"])}',
