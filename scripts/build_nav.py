@@ -24,8 +24,8 @@ FA_DIGITS = "۰۱۲۳۴۵۶۷۸۹"
 
 # learning order, the same five stages as learn.html
 STAGES = [
-    ("Money and trust", "پول و اعتماد", [12, 13, 19, 14, 15]),
-    ("Blockchain and Bitcoin", "بلاکچین و بیت‌کوین", [1, 2, 3, 4]),
+    ("Money and trust", "پول و اعتماد", [12, 13, 19, 14, 15, 22, 23, 24, 25, 26]),
+    ("Blockchain and Bitcoin", "بلاکچین و بیت‌کوین", [1, 2, 3, 4, 27, 28, 29, 30]),
     ("Using crypto safely", "استفاده‌ی امن از کریپتو", [16, 17, 5, 6, 9]),
     ("Markets and saving", "بازار و پس‌انداز", [7, 10, 18]),
     ("The future of money", "آینده‌ی پول", [11, 8, 20, 21]),

@@ -98,10 +98,10 @@ def run(lang, names):
         s = re.sub(r'(href=)"(\./?)"', lambda m: f'href="index.{lang}.html"', s)
 
         def cover(m):
-            folder, kind = m.group(1), m.group(2)
+            folder, kind = m.group(1), m.group(2) or ""
             new = {"card": f"{lang}-card", "thumb": f"{lang}-thumb", "": lang}[kind]
             return f"social/{folder}/{new}.webp" if (ROOT / "social" / folder / f"{new}.webp").exists() else m.group(0)
-        s = re.sub(r"social/([^/\"\s]+)/en(?:-(card|thumb))?\.webp", lambda m: cover(type("M", (), {"group": lambda self, i: (m.group(1), m.group(2) or "")[i - 1]})()), s)
+        s = re.sub(r"social/([^/\"\s]+)/en(?:-(card|thumb))?\.webp", cover, s)
         if "i18n.css" not in s:
             s = s.replace("</head>", "  " + CSS + "\n</head>", 1)
         if f"i18n-{lang}.js" not in s:

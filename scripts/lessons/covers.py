@@ -175,6 +175,41 @@ ART = {
     "lesson21": lambda: bot(60, 90, 1.5) + coin(380, 330, 70, "$")
     + f'<path d="M400 60 l12 34 l34 12 l-34 12 l-12 34 l-12 -34 l-34 -12 l34 -12 Z" fill="{YELLOW}" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
     + f'<rect x="70" y="360" width="220" height="70" rx="22" fill="{WHITE}" stroke="{INK}" stroke-width="6"/><rect x="96" y="384" width="120" height="12" rx="6" fill="{TEAL}"/><rect x="96" y="404" width="80" height="10" rx="5" fill="{INK}" opacity=".25"/>',
+    # budget: three piles of coins, a note, a pie of 50/30/20
+    "lesson22": lambda: f'<circle cx="170" cy="200" r="120" fill="{TEAL}" stroke="{INK}" stroke-width="6"/><path d="M170 200 L170 80 A120 120 0 0 1 274 260 Z" fill="{YELLOW}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/><path d="M170 200 L274 260 A120 120 0 0 1 220 312 Z" fill="{MINT}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+    + note(250, 60, 200, 100, WHITE, 8) + coin(380, 330, 60, "$") + coin(300, 400, 40, "$") + tag(60, 400, "50/30/20", INK, MINT, 34),
+    # emergency fund: shield over a jar of coins
+    "lesson23": lambda: shield(60, 40, 1.5, MINT, "check")
+    + f'<rect x="270" y="190" width="170" height="220" rx="30" fill="{WHITE}" stroke="{INK}" stroke-width="6"/><rect x="290" y="165" width="130" height="34" rx="12" fill="{YELLOW}" stroke="{INK}" stroke-width="6"/>'
+    + coin(355, 330, 46, "$") + coin(330, 260, 30, "$") + calendar(40, 330, .7),
+    # interest: two growth curves, simple vs compound
+    "lesson24": lambda: f'<path d="M40 420 H450 M40 420 V60" fill="none" stroke="{INK}" stroke-width="6" stroke-linecap="round"/>'
+    + chart("40,400 150,350 260,300 440,215", TEAL, 12) + chart("40,400 150,370 260,290 360,180 440,60", SAFFRON, 14)
+    + coin(110, 110, 50, "%") + coin(400, 90, 34, "$"),
+    # exchange rate: two notes, swap arrows
+    "lesson25": lambda: note(20, 70, 210, 110, YELLOW, -8) + note(250, 290, 210, 110, MINT, 8)
+    + arrow("M120 230 Q240 200 330 270", SAFFRON, 12) + arrow("M360 230 Q250 270 150 340", INK, 12)
+    + coin(380, 110, 56, "$") + coin(100, 380, 46, "€"),
+    # central bank: columned building with a dial
+    "lesson26": lambda: bank(60, 90, 1.7, WHITE) + coin(390, 120, 52, "%") + coin(400, 360, 44, "$")
+    + f'<circle cx="100" cy="400" r="40" fill="{MINT}" stroke="{INK}" stroke-width="6"/><path d="M100 400 L124 376" stroke="{INK}" stroke-width="8" stroke-linecap="round"/>',
+    # who runs a chain: a block chain with a pickaxe-like key and a lock
+    "lesson27": lambda: chain(30, 120, 1.2) + lock(60, 290, 1.1, YELLOW) + coin(380, 340, 64, "₿") + key(200, 410, .6, 0)
+    + tag(40, 60, "PoW · PoS", INK, MINT, 34),
+    # smart contract: vending machine
+    "lesson28": lambda: f'<rect x="120" y="40" width="240" height="380" rx="22" fill="{WHITE}" stroke="{INK}" stroke-width="7"/><rect x="146" y="70" width="140" height="230" rx="12" fill="{MINT}" stroke="{INK}" stroke-width="5"/>'
+    + "".join(f'<rect x="{160 + c * 40}" y="{90 + r * 66}" width="28" height="44" rx="6" fill="{YELLOW}" stroke="{INK}" stroke-width="3"/>' for r in range(3) for c in range(3))
+    + f'<rect x="302" y="90" width="40" height="86" rx="8" fill="{INK}"/><circle cx="322" cy="210" r="14" fill="{SAFFRON}" stroke="{INK}" stroke-width="4"/><rect x="156" y="334" width="120" height="60" rx="10" fill="{INK}"/>'
+    + coin(60, 120, 36, "Ξ") + tag(20, 420, "if … then", INK, MINT, 30),
+    # coin vs token: a big coin and small tokens riding on it
+    "lesson29": lambda: coin(210, 260, 140, "₿") + coin(60, 80, 44, "T") + coin(160, 70, 36, "U") + coin(380, 90, 52, "T", MINT)
+    + coin(420, 330, 40, "U", WHITE) + tag(30, 420, "coin · token", INK, MINT, 30),
+    # halving: a coin cut in half with falling steps
+    "lesson30": lambda: '<defs><clipPath id="hl"><rect x="0" y="0" width="150" height="480"/></clipPath><clipPath id="hr"><rect x="150" y="0" width="330" height="480"/></clipPath></defs>'
+    + '<g clip-path="url(#hl)" transform="translate(-22 0)">' + coin(150, 170, 110, "₿") + '</g><g clip-path="url(#hr)" transform="translate(22 0)">' + coin(150, 170, 110, "₿") + '</g>'
+    + f'<path d="M270 270 H470 M270 270 V440" fill="none" stroke="{INK}" stroke-width="6" stroke-linecap="round"/>'
+    + "".join(f'<rect x="{292 + i * 44}" y="{300 + i * 26}" width="34" height="{140 - i * 26}" rx="6" fill="{[YELLOW, SAFFRON, MINT, TEAL][i]}" stroke="{INK}" stroke-width="4"/>' for i in range(4))
+    + tag(30, 400, "÷ 2", INK, YELLOW, 40),
 }
 
 CSS = """
@@ -216,6 +251,15 @@ LINES = {
     "lesson19": ("What an instalment plan really costs.", "خرید قسطی واقعاً چقدر تمام می‌شود."),
     "lesson20": ("Neobanks, fintech and open banking, explained.", "نئوبانک، فین‌تک و بانکداری باز به زبان ساده."),
     "lesson21": ("What works today, what is coming, and the new risks.", "چه چیزی امروز کار می‌کند، چه در راه است و ریسک‌های تازه."),
+    "lesson22": ("Where the month goes, and a simple 50/30/20 split.", "پول ماه کجا می‌رود و یک تقسیم ساده‌ی ۵۰/۳۰/۲۰."),
+    "lesson23": ("How big a safety net, where to keep it, how to start.", "صندوق روز مبادا چقدر، کجا و از کجا شروع شود."),
+    "lesson24": ("Simple, compound and daily interest with numbers you can check.", "سود ساده، مرکب و روزشمار با عددهایی که می‌شود وارسی کرد."),
+    "lesson25": ("The same shirt, two rates: floating and pegged.", "یک پیراهن، دو نرخ: شناور و مهارشده."),
+    "lesson26": ("From Sweden in 1668 to the jobs central banks do today.", "از سوئد ۱۶۶۸ تا کارهای امروز بانک‌های مرکزی."),
+    "lesson27": ("Miners, validators and nodes: how strangers agree.", "استخراج‌کننده، اعتبارسنج و نود: غریبه‌ها چطور توافق می‌کنند."),
+    "lesson28": ("A program that runs by itself, like a vending machine.", "برنامه‌ای که خودش اجرا می‌شود، مثل دستگاه فروش."),
+    "lesson29": ("One question tells a coin from a token.", "یک پرسش کوین را از توکن جدا می‌کند."),
+    "lesson30": ("50, 25, 12.5, 6.25, 3.125: the schedule behind 21 million.", "۵۰، ۲۵، ۱۲٫۵، ۶٫۲۵، ۳٫۱۲۵: برنامه‌ی پشت ۲۱ میلیون."),
 }
 
 
