@@ -101,6 +101,8 @@ jobs:
               text="$(cat "$f")"
             fi
             # **bold** markers -> real Telegram bold (entities), markers removed from the text.
+            # prices.html had a cached old preview in Telegram; the extensionless URL shows the new homepage image.
+            text="$(printf '%s' "$text" | sed 's#https://ditoman.com/prices.html#https://ditoman.com/prices#g')"
             printf '%s' "$text" > /tmp/post.txt
             conv="$(python3 scripts/tg_bold.py /tmp/post.txt)"
             text="$(printf '%s' "$conv" | jq -r .text)"
