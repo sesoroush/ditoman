@@ -1,1 +1,189 @@
-[]
+[
+ {
+  "date": "2026-11-23",
+  "jalali": "1405/09/02",
+  "weekday_fa": "دوشنبه",
+  "post": "world/2026-11-23-post.webp",
+  "post_en": "world/2026-11-23-post-en.webp",
+  "lead_fa": "بعد از سخت‌ترین هفته‌ی بازارها از ۲۰۲۰ به این سو، دوشنبه با برگشت قراردادهای آتی آمریکا شروع شد. مرور رسانه‌های جهان از وال‌استریت تا سئول و ریاض؛ برای هر خبر یک خط هم نوشته‌ایم که برای ما یعنی چه. با هم دنبال می‌کنیم.",
+  "lead_en": "After markets' roughest week in years, Monday opened with a rebound in US futures. A tour of world media from Wall Street to Seoul and Riyadh, with one line on what each story means for us.",
+  "front_fa": "آسوشیتدپرس: «آتی‌های آمریکا بالا رفتند؛ سهام بزرگ فناوری در آسیا افت کرد» · رویترز: «تحقیق کمیسیون بورس آمریکا درباره‌ی حسابداری انویدیا» · فایننشال تایمز: «آمازون نزدیک خرید ۷٫۵ میلیارد دلاری دکارت»",
+  "front_en": "AP: “US futures climb as Big Tech stocks fall in Asia” · Reuters: SEC probe into Nvidia's accounting · FT: Amazon close to a $7.5bn deal for Decart",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازارهای جهانی",
+    "en": "Global economy & markets",
+    "items": [
+     {
+      "fa": "آتی S&P 500 حدود ۲٫۶٪ بالا: بعد از هفت روز افت پیاپی و ریزش ۳٫۷ درصدی جمعه تا ۶٬۹۱۰ واحد. یعنی وال‌استریت وارد اصلاح بیش از ۱۰ درصدی شده و نوسان بازارهای پرریسک، از رمزارز تا طلا، بالا می‌ماند.",
+      "en": "S&P 500 futures up about 2.6% after seven straight losses and Friday's 3.7% drop to 6,910. Wall Street is in a 10%+ correction, so volatility in risk assets, from crypto to gold, stays high.",
+      "src": "آسوشیتدپرس",
+      "url": "https://www.cp24.com/news/money/2026/11/23/us-futures-climb-and-world-shares-are-mixed-as-big-tech-stocks-fall-in-asia/"
+     },
+     {
+      "fa": "بیت‌کوین ۶۱ هزار دلار: آخر هفته تا حدود ۵۵٬۱۰۰ دلار پایین رفت؛ صندوق‌های ETF آمریکا در نوامبر ۳٫۴۷ میلیارد دلار خروجی داشتند. یعنی تتر و رمزارز در بازار داخلی هم با همین نوسان بالا و پایین می‌رود.",
+      "en": "Bitcoin at $61,000 after a weekend low near $55,100; US spot ETFs saw $3.47bn of November outflows. Local crypto prices swing with it.",
+      "src": "کوکوین",
+      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-23-2026"
+     },
+     {
+      "fa": "اونس طلا دوباره بالای ۳٬۶۰۰ دلار: جمعه به ۳٬۵۶۲ دلار، کمترین در بیش از یک سال رسیده بود و دوشنبه حدود ۲٫۳٪ برگشت. یعنی بخشی از نوسان سکه و طلای داخل از بیرون می‌آید، نه فقط از دلار.",
+      "en": "Gold back above $3,600 after Friday's $3,562, a more-than-one-year low, with a ~2.3% Monday bounce. Part of local gold-coin swings comes from abroad, not just the dollar.",
+      "src": "ساکسو، نیوزاسکوآک",
+      "url": "https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take--23-november-2026-23112026"
+     },
+     {
+      "fa": "نفت برنت ۹۲ دلار: ۰٫۶٪ پایین‌تر؛ وست‌تگزاس ۸۳ دلار و سه هفته افت پیاپی. یعنی درآمد نفتی صادرکنندگان منطقه کمی کوچک‌تر می‌شود، هرچند هنوز بسیار بالاتر از ۷۲ دلار اسفند است.",
+      "en": "Brent at $92, down 0.6%; WTI $83 after three losing weeks. Regional exporters' oil income shrinks a bit, though still far above February's ~$72.",
+      "src": "آسوشیتدپرس، رویترز",
+      "url": "https://www.cp24.com/news/money/2026/11/23/us-futures-climb-and-world-shares-are-mixed-as-big-tech-stocks-fall-in-asia/"
+     },
+     {
+      "fa": "۹۱٪ احتمال افزایش نرخ بهره‌ی فدرال رزرو در ۹ دسامبر: بازار پیش‌بینی پلی‌مارکت؛ بازده اوراق ۱۰ ساله حدود ۴٫۹٪. یعنی دلار جهانی قوی می‌ماند و وام و سرمایه برای بازارهای نوظهور گران‌تر.",
+      "en": "91% odds of a Fed hike on 9 Dec (Polymarket); 10-year yield near 4.9%. A strong global dollar and costlier capital for emerging markets.",
+      "src": "یاهو فایننس",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و انرژی",
+    "en": "Industry & energy",
+    "items": [
+     {
+      "fa": "سرور هوش مصنوعی تا ۴۵٪ گران‌تر: دل (Dell) و اچ‌پی‌ای (HPE) پس از امضای قرارداد، افزایش قیمت خواستند. یعنی کمبود حافظه و تراشه هنوز قیمت سخت‌افزار و قطعات کامپیوتر را بالا نگه می‌دارد.",
+      "en": "AI servers up to 45% dearer: Dell and HPE sought post-signing price rises. Memory and chip shortages keep hardware and PC-part prices high.",
+      "src": "فایننشال تایمز",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-23-2026/"
+     },
+     {
+      "fa": "اسپیس‌ایکس ۷۴ میلیارد دلار برای پردیس‌های هوش مصنوعی: در تگزاس و آریزونا؛ مصرف برق آریزونا در اوج حدود ۶ گیگاوات. یعنی هوش مصنوعی حالا یک صنعت برق‌خوار است و برق ارزان مزیت رقابتی هر کشور.",
+      "en": "SpaceX's $74bn AI campuses in Texas and Arizona, ~6GW in Arizona at full build-out. AI is now a power-hungry industry; cheap electricity is a national edge.",
+      "src": "فورچون",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-23-2026/"
+     },
+     {
+      "fa": "انتشار کربن متا ۴۰٪ بیشتر شد: از ۱۵٫۶ به بیش از ۲۱٫۷ میلیون تن در یک سال و متا هدف صفر کربن ۲۰۳۰ را بازبینی می‌کند. یعنی رشد دیتاسنترها با هدف‌های اقلیمی شرکت‌ها برخورد کرده است.",
+      "en": "Meta's emissions up ~40%, from 15.6 to over 21.7mn tonnes, and its 2030 net-zero goal under review. Data-centre growth is colliding with climate pledges.",
+      "src": "آرس تکنیکا",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-23-2026/"
+     },
+     {
+      "fa": "مس لحظه‌ای زیر ۱۲ هزار دلار: حدود ۱۶ تا ۱۸٪ پایین‌تر از رکورد شهریور. یعنی فلزات صنعتی ارزان‌تر شده‌اند؛ هم برای صادرکنندگان معدنی خبر است، هم برای تولیدکنندگان کابل و لوازم برقی.",
+      "en": "Copper briefly below $12,000/t, 16–18% under its September record. Cheaper industrial metals matter for miners and for cable and appliance makers.",
+      "src": "نیوزاسکوآک، ساکسو",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---23rd-november-2026"
+     }
+    ]
+   },
+   {
+    "fa": "هوش مصنوعی و فناوری",
+    "en": "AI & technology",
+    "items": [
+     {
+      "fa": "انویدیا (Nvidia) ۸٫۵٪ بالا پیش از بازگشایی: پس از افت ۱۴ درصدی جمعه؛ رویترز از تحقیق کمیسیون بورس آمریکا درباره‌ی حسابداری آن خبر داد. یعنی قیمت کارت گرافیک و سرویس‌های هوش مصنوعی به سرنوشت همین یک شرکت گره خورده است.",
+      "en": "Nvidia up 8.5% premarket after Friday's 14% fall; Reuters reported an SEC probe into its accounting. GPU and AI-service prices hang on this one company.",
+      "src": "رویترز، یاهو فایننس",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+     },
+     {
+      "fa": "آنتروپیک (Anthropic) ۸۱٫۳ میلیارد دلار جذب کرد: بزرگ‌ترین عرضه‌ی اولیه‌ی تاریخ؛ سهم جمعه ۸٫۵٪ افت کرد و دوشنبه پیش از بازار ۳٪ بالا بود. یعنی سرمایه‌ی جهانی هنوز روی شرکت‌های مدل‌ساز هوش مصنوعی شرط بسته است.",
+      "en": "Anthropic raised $81.3bn in history's biggest IPO; shares fell 8.5% Friday and were up 3% premarket Monday. Global capital is still betting on AI model makers.",
+      "src": "یاهو فایننس، آسوشیتدپرس",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-23-2026/"
+     },
+     {
+      "fa": "آمازون نزدیک خرید ۷٫۵ میلیارد دلاری دکارت (Decart): یک استارتاپ هوش مصنوعی. یعنی برای استارتاپ‌های هوش مصنوعی، فروش به غول‌ها همچنان مسیر اصلی خروج است.",
+      "en": "Amazon near a $7.5bn deal for AI start-up Decart. Selling to a giant remains the main exit for AI start-ups.",
+      "src": "فایننشال تایمز",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---23rd-november-2026"
+     },
+     {
+      "fa": "دیتابریکس (Databricks) با ارزش حدود ۲۲۵ میلیارد دلار: در حال مذاکره برای جذب سرمایه. یعنی مهارت داده و زیرساخت داده یکی از پرتقاضاترین مهارت‌های بازار کار جهانی می‌ماند.",
+      "en": "Databricks in talks to raise at about a $225bn valuation. Data skills remain among the most demanded in the global job market.",
+      "src": "نیوزاسکوآک",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---23rd-november-2026"
+     }
+    ]
+   },
+   {
+    "fa": "تجارت و کسب‌وکار",
+    "en": "Trade & business",
+    "items": [
+     {
+      "fa": "تی‌اس‌ام‌سی و سامسونگ: توقف بخشی از ارسال تراشه به مشتریان چینی. یعنی زنجیره‌ی تأمین تراشه دوتکه‌تر می‌شود و کالای الکترونیکی چینی ممکن است گران‌تر یا کمیاب‌تر شود.",
+      "en": "TSMC and Samsung suspended some chip shipments to Chinese customers. Chip supply chains split further; Chinese electronics may get pricier or scarcer.",
+      "src": "فایننشال تایمز",
+      "url": "https://peterlewismoneytalk.substack.com/p/peters-asian-business-and-finance-b51"
+     },
+     {
+      "fa": "آمریکا نزدیک ممنوعیت خودروی چینی: به گزارش بلومبرگ، بی‌وای‌دی و جیلی کنار گذاشته می‌شوند و مرسدس بنز معاف می‌ماند. یعنی خودروسازان چینی برای بازارهای دیگر، از جمله منطقه‌ی ما، تهاجمی‌تر می‌شوند.",
+      "en": "US lawmakers near a Chinese-car ban; Bloomberg says BYD and Geely blocked, Mercedes spared. Chinese carmakers will push harder into other markets, including ours.",
+      "src": "بلومبرگ",
+      "url": "https://peterlewismoneytalk.substack.com/p/peters-asian-business-and-finance-b51"
+     },
+     {
+      "fa": "اعتصاب بندر لس‌آنجلس منتفی شد: بزرگ‌ترین بندر کانتینری آمریکا. یعنی یک گره‌ی احتمالی در حمل دریایی جهانی و کرایه‌ی کانتینر پیش از فصل خرید باز شد.",
+      "en": "A Port of Los Angeles strike was averted, removing a possible knot in global shipping and container rates before the holiday season.",
+      "src": "نیوزاسکوآک",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---23rd-november-2026"
+     }
+    ]
+   },
+   {
+    "fa": "از آسیا تا استرالیا",
+    "en": "Asia & Oceania",
+    "items": [
+     {
+      "fa": "ژاپن تا ۸ میلیون بشکه نفت سعودی برای ذخیره می‌خرد: عربستان هم ۱۶ میلیون بشکه فضای ذخیره‌سازی تازه در ژاپن می‌گیرد. یعنی خریداران آسیایی دارند برای امنیت انرژی، نفت خلیج فارس را از قبل انبار می‌کنند.",
+      "en": "Japan will buy up to 8mn bbl of Saudi crude for reserves; Saudi gets 16mn bbl of new storage in Japan. Asian buyers are stockpiling Gulf oil for energy security.",
+      "src": "ام‌یواف‌جی",
+      "url": "https://www.mufgresearch.com/macro/middle-east-daily-23-november-2026"
+     },
+     {
+      "fa": "عربستان: مالیات تکمیلی ۱۵٪ از ۲۰۲۷: برای شرکت‌های چندملیتی با درآمد حداقل ۷۵۰ میلیون یورو. یعنی بهشت مالیاتی منطقه کوچک‌تر می‌شود و حساب هزینه‌ی دفتر در خلیج فارس تغییر می‌کند.",
+      "en": "Saudi Arabia to add a 15% top-up tax from 2027 on multinationals with €750m+ revenue. The Gulf's low-tax pitch narrows.",
+      "src": "ام‌یواف‌جی",
+      "url": "https://www.mufgresearch.com/macro/middle-east-daily-23-november-2026"
+     },
+     {
+      "fa": "کاسپی کره ۳٫۳٪ پایین، تایوان ۲٫۲٪ بالا: سئول به ۴٬۷۰۸ واحد رسید و دولت کره از صندوق تثبیت بازار گفت؛ تایوان پس از بدترین هفته از ۱۹۹۱ برگشت. یعنی موج فروش سهام تراشه هنوز آسیا را تکان می‌دهد.",
+      "en": "Kospi down 3.3% to 4,708 as Seoul readies a stabilisation fund; Taiex up 2.2% after its worst week since 1991. The chip-stock sell-off still rocks Asia.",
+      "src": "آسوشیتدپرس، ساکسو",
+      "url": "https://www.cp24.com/news/money/2026/11/23/us-futures-climb-and-world-shares-are-mixed-as-big-tech-stocks-fall-in-asia/"
+     },
+     {
+      "fa": "صادرات مالزی ۶۱٪ رشد کرد: رکورد ۲۳۹٫۲ میلیارد رینگیت در اکتبر و مازاد تجاری ۱۰٫۲ میلیارد دلاری. یعنی موج تقاضای الکترونیک و هوش مصنوعی به جنوب‌شرق آسیا هم رسیده است.",
+      "en": "Malaysia's exports jumped 61% to a record MYR 239.2bn in October, a $10.2bn surplus. The electronics and AI demand wave is reaching Southeast Asia.",
+      "src": "مانی‌تاک",
+      "url": "https://peterlewismoneytalk.substack.com/p/peters-asian-business-and-finance-b51"
+     },
+     {
+      "fa": "سنسکس هند ۱٫۷٪ پایین، ASX استرالیا ۰٫۳٪: واردات چین از استرالیا در ۱۰ ماه ۴۰٫۹٪ رشد کرد (گمرک چین). یعنی تقاضای چین برای سنگ آهن و انرژی هنوز موتور اقتصاد استرالیاست.",
+      "en": "India's Sensex down 1.7%, ASX 200 down 0.3%; China's imports from Australia rose 40.9% in Jan–Oct. Chinese demand still drives Australia.",
+      "src": "آسوشیتدپرس، گمرک چین",
+      "url": "https://www.cp24.com/news/money/2026/11/23/us-futures-climb-and-world-shares-are-mixed-as-big-tech-stocks-fall-in-asia/"
+     }
+    ]
+   },
+   {
+    "fa": "فرهنگ و خبرهای عجیب",
+    "en": "Culture & curious news",
+    "items": [
+     {
+      "fa": "فرضیه‌ی ریمان و هوش مصنوعی: پژوهشگری در آنتروپیک می‌گوید Claude در تولید یک اثبات کمک کرده؛ هنوز ریاضی‌دانان آن را رسماً نپذیرفته‌اند.",
+      "en": "An Anthropic researcher says Claude helped produce a Riemann hypothesis proof; mathematicians have not formally accepted it.",
+      "src": "تک‌کرانچ",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-23-2026/"
+     },
+     {
+      "fa": "۷۳ میلیون مسافر شکرگزاری: آمریکایی‌ها برای تعطیلات این هفته راهی جاده‌اند؛ بنزین گالنی ۳٫۶۹ دلار.",
+      "en": "About 73mn Americans travel for Thanksgiving this week; gasoline $3.69 a gallon.",
+      "src": "AAA",
+      "url": "https://peterlewismoneytalk.substack.com/p/peters-asian-business-and-finance-b51"
+     }
+    ]
+   }
+  ]
+ }
+]
