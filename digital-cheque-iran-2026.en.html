@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>10 Million Digital Cheques in Iran | Ditoman</title>
+<meta name="description" content="How digital cheques work, what the central bank roadmap says, what other countries did, and how to use them" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/digital-cheque-iran-2026.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/digital-cheque-iran-2026.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/digital-cheque-iran-2026.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/digital-cheque-iran-2026.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="10 Million Digital Cheques in Iran | Ditoman" />
+<meta property="og:description" content="How digital cheques work, what the central bank roadmap says, what other countries did, and how to use them" />
+<meta property="og:url" content="https://ditoman.com/digital-cheque-iran-2026.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/digital-cheque-iran-2026.en.html#page",
+   "url": "https://ditoman.com/digital-cheque-iran-2026.en.html",
+   "name": "10 Million Digital Cheques in Iran | Ditoman",
+   "description": "How digital cheques work, what the central bank roadmap says, what other countries did, and how to use them",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "10 Million Digital Cheques in Iran",
+     "item": "https://ditoman.com/digital-cheque-iran-2026.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/digital-cheque-iran-2026/card.webp" srcset="social/digital-cheque-iran-2026/card.webp 900w, social/digital-cheque-iran-2026/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="A century of electricity in Iran" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/digital-cheque-iran-2026/en-card.webp" srcset="social/digital-cheque-iran-2026/en-card.webp 900w, social/digital-cheque-iran-2026/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="A century of electricity in Iran" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · Digital banking</span><span lang="fa">گزارش ویژه · بانکداری دیجیتال</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">۱۰ میلیون چک دیجیتال؛ آیا دوران دسته‌چک کاغذی رو به پایان است؟</h1>
+<h1 lang="en">10 million digital cheques: is the paper cheque book on its way out in Iran?</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">چک دیجیتال چطور کار می‌کند، نقشه‌ی راه بانک مرکزی چه می‌گوید، دنیا چه کرده و چطور امن از آن استفاده کنیم</p>
+<p class="subtitle" lang="en">How digital cheques work, what the central bank roadmap says, what other countries did, and how to use them safely</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۱۰٫۲۷ میلیون</b><b lang="en">10.27M</b><span lang="fa">چکنو صادرشده تا مهر ۱۴۰۵ (بانک صادرات)</span><span lang="en">Chekno cheques to Oct 2026 (Bank Saderat)</span></div>
+<div class="stat"><b lang="fa">۸٫۴ میلیون+</b><b lang="en">8.4M+</b><span lang="fa">چک الکترونیکی کل شبکه تا تیر ۱۴۰۵</span><span lang="en">e-cheques, whole network, to Jul 2026</span></div>
+<div class="stat"><b lang="fa">۸۰٪</b><b lang="en">80%</b><span lang="fa">هدف سهم چک الکترونیکی تا تیر ۱۴۰۶</span><span lang="en">target e-cheque share by Jul 2027</span></div>
+<div class="stat"><b lang="fa">۲۰۱۵</b><b lang="en">2015</b><span lang="fa">سال چک الکترونیکی در هنگ‌کنگ</span><span lang="en">Hong Kong’s e-Cheque launch</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>بانک صادرات می‌گوید مشتریانش بیش از ۱۰ میلیون برگ چک دیجیتال صادر کرده‌اند و بانک مرکزی برای کل شبکه‌ی بانکی نقشه‌ی راه حذف تدریجی چک کاغذی را از مهر ۱۴۰۵ آغاز کرده است. این گزارش توضیح می‌دهد چک دیجیتال چیست، چطور کار می‌کند، دنیا چه کرده و برای مردم و کسب‌وکارها چه چیزی تغییر می‌کند.</blockquote>
+<h3><span class="check-number">1.</span> خبر چیست؟</h3>
+<p>بانک صادرات ایران اعلام کرده از دی ۱۴۰۱ تا پایان مهر ۱۴۰۵، مشتریانش <strong>۱۰ میلیون و ۲۷۳ هزار و ۳۶۵ برگ چک دیجیتال</strong> از طریق خدمت «چکنو» صادر کرده‌اند. این آمار در ۱۹ آبان ۱۴۰۵ منتشر شد و بانک صادرات خود را در صدور چک دیجیتال رتبه‌ی نخست شبکه‌ی بانکی معرفی کرده است. همین بانک پیش‌تر گفته بود ارزش چکنوهای وصول‌شده در شش ماه نخست ۱۴۰۵ نسبت به سال قبل ۹۴٪ رشد کرده است.</p>
+<p>این آمار تجمعی است، یعنی حاصل نزدیک به چهار سال، و ادعای خود بانک است. اهمیت خبر بیشتر در جهتی است که نشان می‌دهد: چک، یکی از قدیمی‌ترین ابزارهای معاملات مدت‌دار در ایران، در حال دیجیتال شدن است.</p>
+<h3><span class="check-number">2.</span> چک دیجیتال دقیقاً چیست؟</h3>
+<p>یک مثال: فروشنده‌ای لوازم خانگی به ارزش ۱۵۰ میلیون تومان می‌فروشد و خریدار قرار است سه ماه بعد پول را بدهد.</p>
+<ul>
+<li><strong>روش کاغذی:</strong> خریدار برگ چک را می‌نویسد، امضا می‌کند و حضوری تحویل می‌دهد. فروشنده باید برگ را نگه دارد و در سررسید به بانک ببرد</li>
+</ul>
+<ul>
+<li><strong>روش دیجیتال:</strong> خریدار در اپلیکیشن یا اینترنت‌بانک، چک را با <strong>امضای دیجیتال</strong> صادر می‌کند. فروشنده آن را در اپلیکیشن بانک خودش می‌بیند، تأیید می‌کند و در سررسید برای وصول ارائه می‌دهد یا به نفر بعد منتقل می‌کند</li>
+</ul>
+<p>چک دیجیتال از نظر حقوقی همان چک است: همان تعهد پرداخت در تاریخ مشخص، با همان قواعد سابقه‌ی چک برگشتی و اعتبارسنجی. تفاوت در ابزار صدور است، نه در تعهد.</p>
+<p><strong>امضای دیجیتال چطور کار می‌کند؟</strong></p>
+<ul>
+<li>پس از احراز هویت دارنده‌ی حساب، یک <strong>کلید الکترونیکی یکتا</strong> برای او صادر می‌شود</li>
+</ul>
+<ul>
+<li>امضا تصویر اسکن‌شده‌ی امضای دستی نیست؛ با همین کلید ساخته می‌شود و به شخص، گوشی و سیم‌کارت او گره خورده است</li>
+</ul>
+<ul>
+<li>هر تغییری در چک بعد از امضا، حتی مبلغ، امضا را باطل می‌کند</li>
+</ul>
+<ul>
+<li>صدور با احراز هویت چندمرحله‌ای و شماره‌ی تلفنی که به نام خود فرد است انجام می‌شود</li>
+</ul>
+<ul>
+<li>دسته‌چک الکترونیکی هم مثل دسته‌چک کاغذی صادر می‌شود و از ۱۰ برگ شروع می‌شود</li>
+</ul>
+<h3><span class="check-number">3.</span> اسم‌ها را قاطی نکنیم</h3>
+<div class="tw"><table><tr><th>نام</th><th>چیست؟</th></tr><tr><td>صیاد</td><td>سامانه‌ی یکپارچه‌ی صدور و ثبت چک بانک مرکزی؛ هر چک (کاغذی یا دیجیتال) شناسه‌ی صیادی دارد</td></tr><tr><td>چکاد</td><td>زیرساخت مرکزی چک الکترونیکی در شبکه‌ی بانکی</td></tr><tr><td>چکاوک</td><td>سامانه‌ی تبادل و تسویه‌ی چک بین بانک‌ها</td></tr><tr><td>چکنو</td><td>نام تجاری خدمت چک دیجیتال بانک صادرات</td></tr></table></div>
+<h3><span class="check-number">4.</span> کاغذی در برابر دیجیتال</h3>
+<div class="tw"><table><tr><th></th><th>چک کاغذی</th><th>چک دیجیتال</th></tr><tr><td>صدور</td><td>دستی، با خودکار</td><td>در اپلیکیشن یا اینترنت‌بانک</td></tr><tr><td>امضا</td><td>دست‌خط، قابل جعل</td><td>امضای دیجیتال گره‌خورده به شخص و گوشی</td></tr><tr><td>تحویل</td><td>حضوری</td><td>غیرحضوری</td></tr><tr><td>گم شدن یا سوختن</td><td>ممکن</td><td>برگه‌ای وجود ندارد</td></tr><tr><td>انتقال به نفر بعد (پشت‌نویسی)</td><td>روی برگ</td><td>در سامانه، با سابقه‌ی ثبت‌شده</td></tr><tr><td>پیگیری</td><td>دستی</td><td>سابقه‌ی صدور، دریافت و انتقال در سامانه</td></tr><tr><td>تضمین پرداخت</td><td>ندارد</td><td>ندارد</td></tr></table></div>
+<h3><span class="check-number">5.</span> وضعیت کل شبکه‌ی بانکی</h3>
+<ul>
+<li>بانک مرکزی گفته از آغاز طرح تا تیر ۱۴۰۵ بیش از <strong>۸ میلیون و ۴۰۰ هزار</strong> چک الکترونیکی در کل شبکه‌ی بانکی صادر شده است</li>
+</ul>
+<ul>
+<li>برای مقایسه با حجم کل چک: در مرداد ۱۴۰۵ بیش از <strong>۸٫۳ میلیون فقره چک</strong> فقط در یک ماه بین بانک‌ها مبادله شد (چک کاغذی و الکترونیکی با هم). ۸۷٫۶٪ از نظر تعداد و ۸۵٫۹٪ از نظر مبلغ وصول شد</li>
+</ul>
+<p>یعنی کل چک‌های الکترونیکی صادره تا تیر ۱۴۰۵ تقریباً هم‌اندازه‌ی چک‌هایی است که فقط در یک ماه بین بانک‌ها جابه‌جا می‌شود. چک دیجیتال رشد کرده، اما هنوز سهم کوچکی از کل بازار چک دارد.</p>
+<h3><span class="check-number">6.</span> نقشه‌ی راه بانک مرکزی</h3>
+<p>بانک مرکزی اجرای «نقشه‌ی راه توسعه‌ی چک الکترونیکی» را از <strong>۱ مهر ۱۴۰۵</strong> آغاز کرد. دو ابزار اصلی:</p>
+<ul>
+<li><strong>سقف دسته‌چک کاغذی</strong> که از مهر ۱۴۰۵ به‌صورت پلکانی کاهش می‌یابد</li>
+</ul>
+<ul>
+<li><strong>سهم هدف چک الکترونیکی</strong> از کل دسته‌چک‌های صادرشده در هر بانک:</li>
+</ul>
+<div class="tw"><table><tr><th>مهلت</th><th>سهم هدف چک الکترونیکی</th></tr><tr><td>پایان آذر ۱۴۰۵</td><td>۲۵٪</td></tr><tr><td>پایان اسفند ۱۴۰۵</td><td>۴۰٪</td></tr><tr><td>پایان اردیبهشت ۱۴۰۶</td><td>۶۰٪</td></tr><tr><td>پایان تیر ۱۴۰۶</td><td>۸۰٪</td></tr></table></div>
+<p>هدف مشابهی برای سهم واگذاری غیرحضوری چک‌های الکترونیکی هم تعیین شده است. این اعداد هدف‌اند، نه آمار تحقق‌یافته؛ پله‌های ۲۵٪ و ۸۰٪ در گزارش‌های متعدد آمده و پله‌های میانی بر اساس گزارش‌های رسانه‌ای است.</p>
+<h3><span class="check-number">7.</span> دنیا چه کرده؟</h3>
+<p>کشورها سه مسیر متفاوت رفته‌اند:</p>
+<div class="tw"><table><tr><th>کشور</th><th>مسیر</th><th>جزئیات</th></tr><tr><td>هنگ‌کنگ</td><td>چک کاملاً الکترونیکی</td><td>از ۷ دسامبر ۲۰۱۵؛ ارائه‌ی آنلاین یا موبایلی، با «صندوق e-Cheque» که بیش از ۱۵۰ بانک را پوشش می‌دهد</td></tr><tr><td>سنگاپور</td><td>حذف چک و جایگزینی</td><td>از ۲۸ ژوئیه‌ی ۲۰۲۵ ابزارهای پرداخت مدت‌دار الکترونیکی EDP و EDP+ در ۷ بانک؛ از ۱ ژانویه‌ی ۲۰۲۶ دسته‌چک شرکتی دلار سنگاپور صادر نمی‌شود و از ۱ ژانویه‌ی ۲۰۲۷ پردازش آن متوقف می‌شود؛ چک افراد فعلاً می‌ماند</td></tr><tr><td>هند</td><td>دیجیتال کردن تسویه</td><td>سامانه‌ی CTS از ۲۰۰۸ (دهلی) تصویر چک را به‌جای خود برگ منتقل می‌کند؛ از اکتبر ۲۰۲۳ یک شبکه‌ی ملی واحد؛ از ۲۰۲۵ تسویه‌ی پیوسته و واریز تا یک ساعت پس از تسویه</td></tr><tr><td>بریتانیا</td><td>دیجیتال کردن تسویه</td><td>سامانه‌ی تسویه‌ی تصویری از ۲۰۱۹؛ چک واریزی تا پایان روز کاری بعد قابل برداشت است</td></tr></table></div>
+<p>ایران با «چک دیجیتال صادرشده از ابتدا» به مدل هنگ‌کنگ نزدیک‌تر است، اما با یک تفاوت مهم: در ایران چک ابزار اعتباری رایج و پرحجم معاملات مدت‌دار است، در حالی که در بیشتر این کشورها چک سال‌هاست رو به کاهش است.</p>
+<h3><span class="check-number">8.</span> چه کسی چه سودی می‌برد؟</h3>
+<ul>
+<li><strong>مردم:</strong> معامله‌ی غیرحضوری، حذف خطر گم شدن یا دزدیده شدن برگه، کاهش جعل امضا و دست‌کاری مبلغ</li>
+</ul>
+<ul>
+<li><strong>کسب‌وکارها:</strong> مدیریت منظم چک‌های دریافتی و پرداختی، پیگیری سررسیدها، انتقال سریع‌تر به تأمین‌کنندگان</li>
+</ul>
+<ul>
+<li><strong>بانک‌ها:</strong> هزینه‌ی کمتر چاپ، حمل، بایگانی و پردازش دستی</li>
+</ul>
+<ul>
+<li><strong>اقتصاد:</strong> داده‌ی دقیق‌تر از تعهدات مدت‌دار و شفافیت بیشتر در زنجیره‌ی پرداخت</li>
+</ul>
+<h3><span class="check-number">9.</span> ریسک‌ها و محدودیت‌ها</h3>
+<ul>
+<li><strong>چک دیجیتال تضمین پرداخت نیست.</strong> اگر صادرکننده در سررسید موجودی نداشته باشد، چک همچنان برگشت می‌خورد</li>
+</ul>
+<ul>
+<li><strong>امنیت حساب و گوشی:</strong> امضا به گوشی و سیم‌کارت گره خورده؛ گوشی گم‌شده یا کد لورفته یعنی ریسک</li>
+</ul>
+<ul>
+<li><strong>سواد دیجیتال:</strong> بخشی از کاربران، به‌ویژه سالمندان و کسب‌وکارهای سنتی، به آموزش و پشتیبانی نیاز دارند</li>
+</ul>
+<ul>
+<li><strong>اینترنت و قطعی:</strong> وابستگی به اپلیکیشن و شبکه یعنی قطعی اینترنت یا برق می‌تواند صدور و وصول را عقب بیندازد</li>
+</ul>
+<ul>
+<li><strong>هماهنگی بین بانک‌ها:</strong> تجربه‌ی کاربر فقط وقتی خوب است که چک صادرشده در یک بانک به‌سادگی در بانک دیگر دیده و وصول شود</li>
+</ul>
+<h3><span class="check-number">10.</span> راهنمای عملی: امن کار کنیم</h3>
+<ul>
+<li>فقط از اپلیکیشن رسمی بانک خودت استفاده کن، نه لینک پیامکی</li>
+</ul>
+<ul>
+<li>کد یکبار مصرف و رمز امضای دیجیتال را به هیچ‌کس، حتی «کارمند بانک»، نده</li>
+</ul>
+<ul>
+<li>قبل از صدور، کد ملی و نام گیرنده را دقیق چک کن؛ چک دیجیتال به نام شخص مشخص صادر می‌شود</li>
+</ul>
+<ul>
+<li>وقتی چک دریافت می‌کنی، آن را در اپلیکیشن <strong>تأیید</strong> کن تا ثبت شود؛ اعتبارسنجی صادرکننده را هم ببین</li>
+</ul>
+<ul>
+<li>اگر گوشی یا سیم‌کارتت گم شد، فوراً به بانک خبر بده تا دسترسی امضا مسدود شود</li>
+</ul>
+<h3><span class="check-number">11.</span> آمار را درست بخوانیم</h3>
+<ul>
+<li>عدد بانک صادرات (بیش از ۱۰ میلیون تا مهر ۱۴۰۵) و عدد بانک مرکزی (بیش از ۸٫۴ میلیون تا تیر ۱۴۰۵ برای کل شبکه) به بازه‌ها و احتمالاً تعریف‌های متفاوتی برمی‌گردند</li>
+</ul>
+<ul>
+<li>ممکن است «برگ چک صادرشده» شامل برگ‌های دسته‌چک الکترونیکی باشد که هنوز استفاده نشده‌اند، در حالی که «چک صادره» ممکن است فقط چک‌های امضا و صادرشده را بشمارد</li>
+</ul>
+<ul>
+<li>برای قضاوت درباره‌ی موفقیت، معیارهای بهتر این‌هاست: تعداد چک‌های <strong>وصول‌شده</strong>، نرخ برگشت، سهم از کل مبادلات چک و رضایت کاربران</li>
+</ul>
+<h3><span class="check-number">12.</span> نگاه دیتومان</h3>
+<p>اهمیت این تحول فقط حذف کاغذ نیست. چک در ایران ستون معاملات مدت‌دار است: از بازار خودرو و مسکن تا بنکداری و پیمانکاری. اگر چک دیجیتال میان همه‌ی بانک‌ها یکپارچه شود و مردم به آن اعتماد کنند، بخش بزرگی از این معاملات سریع‌تر، قابل‌پیگیری‌تر و کم‌هزینه‌تر می‌شود و داده‌ی بهتری برای اعتبارسنجی به‌دست می‌آید.</p>
+<p>اما موفقیت را باید با عدد درست سنجید: نه فقط تعداد چک صادرشده، بلکه چک‌های وصول‌شده، نرخ برگشت و تجربه‌ی کاربر. سنگاپور نشان داده که حتی کشوری با بانکداری پیشرفته، حذف چک را مرحله‌به‌مرحله و با جایگزین آماده انجام می‌دهد. آینده‌ی بانکداری فقط انتقال سریع‌تر پول نیست؛ مدیریت بهتر تعهدات مالی هم هست.</p>
+<blockquote>این گزارش آموزشی و تحلیلی است و توصیه‌ی مالی یا حقوقی نیست. آمار بانک صادرات ادعای خود بانک است و جزئیات کامل نقشه‌ی راه بانک مرکزی را از گزارش‌های رسانه‌ای نقل کرده‌ایم.</blockquote>
+<h3>بیشتر بخوانید</h3><ul><li><a href="artex-ai-cyberattacks-2026.en.html">هک بانک‌ها با هوش مصنوعی</a></li><li><a href="iran-electricity-century.en.html">صد سال برق در ایران</a></li><li><a href="prices.en.html">قیمت لحظه‌ای تتر، بیت‌کوین و طلا</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.rouydad24.ir/fa/news/477095/" target="_blank" rel="noopener">Rouydad24: Bank Saderat Chekno passes 10 million digital cheques (Nov 2026)</a></li><li><a href="https://www.didbaniran.ir/%D8%A8%D8%AE%D8%B4-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C-4/413100" target="_blank" rel="noopener">Didban Iran: Chekno first-half 1405, collected value up 94%</a></li><li><a href="https://www.yjc.ir/fa/news/9125177/" target="_blank" rel="noopener">YJC: electronic cheques, more than 8.4 million issued; how the digital signature works</a></li><li><a href="https://www.ibena.ir/fa/news/186904/" target="_blank" rel="noopener">IBENA: central bank electronic cheque roadmap begins, paper cheque cap reduced from Mehr 1405</a></li><li><a href="https://nabzgheymat.ir/%D9%86%D9%82%D8%B4%D9%87-%D8%B1%D8%A7%D9%87-%DA%86%DA%A9-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9-%D8%A7%D8%A8%D9%84%D8%A7%D8%BA-%D8%B4%D8%AF-%E2%94%82-%D8%B3%D9%82%D9%81-%D8%AF%D8%B3/" target="_blank" rel="noopener">Nabz-e Gheymat: roadmap, 80% electronic share by Tir 1406</a></li><li><a href="https://www.mehrnews.com/news/6963648/" target="_blank" rel="noopener">Mehr News: cheque statistics, Mordad 1405</a></li><li><a href="https://www.hkma.gov.hk/eng/news-and-media/press-releases/2015/12/20151211-4/" target="_blank" rel="noopener">HKMA: e-Cheque service launching ceremony (Dec 2015)</a></li><li><a href="https://www.abs.org.sg/e-payments" target="_blank" rel="noopener">Association of Banks in Singapore: discontinuation of SGD corporate cheques</a></li><li><a href="https://www.rbi.org.in/SCRIPTs/FAQView.aspx?Id=175" target="_blank" rel="noopener">Reserve Bank of India: Cheque Truncation System FAQ (Jan 2026)</a></li><li><a href="https://www.wearepay.uk/what-we-do/payment-systems/image-clearing-system/" target="_blank" rel="noopener">Pay.UK: Image Clearing System</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۲ آذر ۱۴۰۵. آمار چکنو ادعای خود بانک صادرات است. متن کامل نقشه‌ی راه بانک مرکزی را مستقیم ندیدیم و جزئیات آن از گزارش‌های رسانه‌ای است. این گزارش آموزشی است، نه توصیه‌ی مالی یا حقوقی.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>Bank Saderat says its customers have issued more than 10 million digital cheques, and Iran’s central bank began a roadmap in September 2026 to phase out paper cheques across the banking system. This report explains what a digital cheque is, how it works, what other countries have done, and what changes for people and businesses.</blockquote>
+<h3><span class="check-number">1.</span> What is the news?</h3>
+<p>Bank Saderat Iran says that from December 2022 to 22 October 2026 (end of Mehr 1405) its customers issued <strong>10,273,365 digital cheques</strong> through its “Chekno” service. The figure was published on 10 November 2026, and the bank describes itself as the leader of the banking system in digital cheque issuance. The same bank earlier said the value of Chekno cheques collected in the first half of the Iranian year 1405 was 94% higher than a year earlier.</p>
+<p>The figure is cumulative, covering nearly four years, and is the bank’s own claim. The news matters more for the direction it shows: the cheque, one of the oldest tools for deferred payments in Iran, is going digital.</p>
+<h3><span class="check-number">2.</span> What exactly is a digital cheque?</h3>
+<p>An example: a seller sells home appliances worth 150 million tomans, and the buyer will pay three months later.</p>
+<ul>
+<li><strong>Paper:</strong> the buyer writes and signs a cheque leaf and hands it over in person. The seller must keep the leaf and take it to the bank on the due date</li>
+</ul>
+<ul>
+<li><strong>Digital:</strong> the buyer issues the cheque in a banking app or internet bank with a <strong>digital signature</strong>. The seller sees it in their own bank’s app, accepts it, and on the due date presents it for payment or transfers it to someone else</li>
+</ul>
+<p>Legally a digital cheque is still a cheque: the same promise to pay on a set date, with the same rules on bounced-cheque history and credit checks. The tool changes, not the obligation.</p>
+<p><strong>How does the digital signature work?</strong></p>
+<ul>
+<li>After identity verification, the account holder receives a <strong>unique electronic key</strong></li>
+</ul>
+<ul>
+<li>The signature is not a scanned image of a handwritten one; it is generated with this key and tied to the person, their phone and their SIM card</li>
+</ul>
+<ul>
+<li>Any change to the cheque after signing, even the amount, invalidates the signature</li>
+</ul>
+<ul>
+<li>Issuance uses multi-step authentication and a phone number registered in the person’s own name</li>
+</ul>
+<ul>
+<li>Electronic cheque books are issued like paper ones, starting at 10 leaves</li>
+</ul>
+<h3><span class="check-number">3.</span> Getting the names right</h3>
+<div class="tw"><table><tr><th>Name</th><th>What it is</th></tr><tr><td>Sayad</td><td>The central bank’s unified cheque issuance and registration system; every cheque, paper or digital, has a Sayad ID</td></tr><tr><td>Chekad</td><td>The central infrastructure for electronic cheques in the banking network</td></tr><tr><td>Chakavak</td><td>The interbank cheque exchange and clearing system</td></tr><tr><td>Chekno</td><td>Bank Saderat’s brand name for its digital cheque service</td></tr></table></div>
+<h3><span class="check-number">4.</span> Paper vs digital</h3>
+<div class="tw"><table><tr><th></th><th>Paper cheque</th><th>Digital cheque</th></tr><tr><td>Issuing</td><td>By hand</td><td>In an app or internet bank</td></tr><tr><td>Signature</td><td>Handwritten, can be forged</td><td>Digital signature tied to person and phone</td></tr><tr><td>Delivery</td><td>In person</td><td>Remote</td></tr><tr><td>Lost or destroyed</td><td>Possible</td><td>No paper to lose</td></tr><tr><td>Transfer to a third party</td><td>Endorsed on the leaf</td><td>In the system, with a recorded history</td></tr><tr><td>Tracking</td><td>Manual</td><td>Issue, receipt and transfer history in the system</td></tr><tr><td>Guaranteed payment</td><td>No</td><td>No</td></tr></table></div>
+<h3><span class="check-number">5.</span> The whole banking system</h3>
+<ul>
+<li>The central bank says more than <strong>8.4 million</strong> electronic cheques had been issued across the banking system from launch to July 2026</li>
+</ul>
+<ul>
+<li>For scale: in Mordad 1405 (July–August 2026) alone, more than <strong>8.3 million cheques</strong> were exchanged between banks (paper and electronic combined). 87.6% were collected by number and 85.9% by value</li>
+</ul>
+<p>In other words, all electronic cheques issued up to July 2026 roughly equal the cheques exchanged between banks in a single month. Digital cheques are growing but are still a small share of the market.</p>
+<h3><span class="check-number">6.</span> The central bank’s roadmap</h3>
+<p>The central bank began implementing its “electronic cheque development roadmap” on <strong>23 September 2026</strong> (1 Mehr 1405). Two main levers:</p>
+<ul>
+<li><strong>A cap on paper cheque books</strong>, reduced step by step from September 2026</li>
+</ul>
+<ul>
+<li><strong>A target share of electronic cheque books</strong> among all cheque books each bank issues:</li>
+</ul>
+<div class="tw"><table><tr><th>Deadline</th><th>Target electronic share</th></tr><tr><td>End of Azar 1405 (Dec 2026)</td><td>25%</td></tr><tr><td>End of Esfand 1405 (Mar 2027)</td><td>40%</td></tr><tr><td>End of Ordibehesht 1406 (May 2027)</td><td>60%</td></tr><tr><td>End of Tir 1406 (Jul 2027)</td><td>80%</td></tr></table></div>
+<p>A similar target applies to the share of electronic cheques transferred remotely. These are targets, not achieved figures; the 25% and 80% steps appear in multiple reports, and the middle steps are based on media reports.</p>
+<h3><span class="check-number">7.</span> What has the world done?</h3>
+<p>Countries have taken three different paths:</p>
+<div class="tw"><table><tr><th>Country</th><th>Path</th><th>Details</th></tr><tr><td>Hong Kong</td><td>Fully electronic cheques</td><td>Since 7 December 2015; presented online or by mobile, with an e-Cheque Drop Box covering more than 150 banks</td></tr><tr><td>Singapore</td><td>Phase-out and replacement</td><td>Electronic deferred payments EDP and EDP+ since 28 July 2025 at 7 banks; no new SGD corporate cheque books from 1 January 2026 and no processing from 1 January 2027; personal cheques remain for now</td></tr><tr><td>India</td><td>Digital clearing</td><td>The CTS system has sent cheque images instead of paper since 2008 (Delhi); one national grid since October 2023; continuous clearing from 2025, with funds released within an hour of settlement</td></tr><tr><td>United Kingdom</td><td>Digital clearing</td><td>Image-based clearing since 2019; a paid-in cheque is available by the end of the next working day</td></tr></table></div>
+<p>With cheques issued digitally from the start, Iran is closest to Hong Kong’s model, with one big difference: in Iran the cheque is a widely used, high-volume credit tool for deferred payments, while in most of these countries cheque use has been falling for years.</p>
+<h3><span class="check-number">8.</span> Who benefits?</h3>
+<ul>
+<li><strong>People:</strong> remote transactions, no risk of a lost or stolen leaf, less signature forgery and amount tampering</li>
+</ul>
+<ul>
+<li><strong>Businesses:</strong> organised management of cheques received and issued, tracking due dates, faster transfers to suppliers</li>
+</ul>
+<ul>
+<li><strong>Banks:</strong> lower costs of printing, transport, archiving and manual processing</li>
+</ul>
+<ul>
+<li><strong>The economy:</strong> more accurate data on deferred obligations and more transparency in the payment chain</li>
+</ul>
+<h3><span class="check-number">9.</span> Risks and limits</h3>
+<ul>
+<li><strong>A digital cheque is not a guaranteed payment.</strong> If the issuer lacks funds on the due date, it still bounces</li>
+</ul>
+<ul>
+<li><strong>Account and phone security:</strong> the signature is tied to the phone and SIM; a lost phone or leaked code is a risk</li>
+</ul>
+<ul>
+<li><strong>Digital literacy:</strong> some users, especially older people and traditional businesses, need training and support</li>
+</ul>
+<ul>
+<li><strong>Internet and outages:</strong> reliance on apps and networks means internet or power cuts can delay issuing and collection</li>
+</ul>
+<ul>
+<li><strong>Interbank coordination:</strong> the experience is only good if a cheque issued at one bank is easily seen and collected at another</li>
+</ul>
+<h3><span class="check-number">10.</span> Practical guide: staying safe</h3>
+<ul>
+<li>Use only your bank’s official app, never an SMS link</li>
+</ul>
+<ul>
+<li>Never share one-time codes or your digital signature PIN with anyone, even someone claiming to be bank staff</li>
+</ul>
+<ul>
+<li>Before issuing, check the recipient’s national ID and name carefully; a digital cheque is issued to a named person</li>
+</ul>
+<ul>
+<li>When you receive a cheque, <strong>accept</strong> it in the app so it is registered, and check the issuer’s credit status</li>
+</ul>
+<ul>
+<li>If your phone or SIM is lost, tell your bank immediately so signature access can be blocked</li>
+</ul>
+<h3><span class="check-number">11.</span> Reading the numbers correctly</h3>
+<ul>
+<li>Bank Saderat’s figure (more than 10 million to 22 October 2026) and the central bank’s (more than 8.4 million to July 2026 for the whole network) cover different periods and possibly different definitions</li>
+</ul>
+<ul>
+<li>“Cheque leaves issued” may include unused leaves in electronic cheque books, while “cheques issued” may count only signed and issued cheques</li>
+</ul>
+<ul>
+<li>Better measures of success: the number of cheques <strong>collected</strong>, the bounce rate, the share of all cheque exchanges, and user satisfaction</li>
+</ul>
+<h3><span class="check-number">12.</span> The Ditoman view</h3>
+<p>This change is about more than removing paper. In Iran the cheque is the backbone of deferred payments, from car and housing markets to wholesale trade and contracting. If digital cheques work smoothly across all banks and people trust them, much of this activity becomes faster, more traceable and cheaper, and produces better data for credit scoring.</p>
+<p>But success should be measured by the right numbers: not only cheques issued, but cheques collected, bounce rates and user experience. Singapore shows that even a country with advanced banking phases out cheques step by step, with a ready replacement. The future of banking is not only faster money transfer; it is better management of financial obligations.</p>
+<blockquote>This report is educational and analytical, not financial or legal advice. Bank Saderat’s figures are the bank’s own claim, and full details of the central bank roadmap are taken from media reports.</blockquote>
+<h3>Read more</h3><ul><li><a href="artex-ai-cyberattacks-2026.en.html">AI hacking of banks: the ARTEX case</a></li><li><a href="iran-electricity-century.en.html">10 million digital cheques in Iran</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.rouydad24.ir/fa/news/477095/" target="_blank" rel="noopener">Rouydad24: Bank Saderat Chekno passes 10 million digital cheques (Nov 2026)</a></li><li><a href="https://www.didbaniran.ir/%D8%A8%D8%AE%D8%B4-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C-4/413100" target="_blank" rel="noopener">Didban Iran: Chekno first-half 1405, collected value up 94%</a></li><li><a href="https://www.yjc.ir/fa/news/9125177/" target="_blank" rel="noopener">YJC: electronic cheques, more than 8.4 million issued; how the digital signature works</a></li><li><a href="https://www.ibena.ir/fa/news/186904/" target="_blank" rel="noopener">IBENA: central bank electronic cheque roadmap begins, paper cheque cap reduced from Mehr 1405</a></li><li><a href="https://nabzgheymat.ir/%D9%86%D9%82%D8%B4%D9%87-%D8%B1%D8%A7%D9%87-%DA%86%DA%A9-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9-%D8%A7%D8%A8%D9%84%D8%A7%D8%BA-%D8%B4%D8%AF-%E2%94%82-%D8%B3%D9%82%D9%81-%D8%AF%D8%B3/" target="_blank" rel="noopener">Nabz-e Gheymat: roadmap, 80% electronic share by Tir 1406</a></li><li><a href="https://www.mehrnews.com/news/6963648/" target="_blank" rel="noopener">Mehr News: cheque statistics, Mordad 1405</a></li><li><a href="https://www.hkma.gov.hk/eng/news-and-media/press-releases/2015/12/20151211-4/" target="_blank" rel="noopener">HKMA: e-Cheque service launching ceremony (Dec 2015)</a></li><li><a href="https://www.abs.org.sg/e-payments" target="_blank" rel="noopener">Association of Banks in Singapore: discontinuation of SGD corporate cheques</a></li><li><a href="https://www.rbi.org.in/SCRIPTs/FAQView.aspx?Id=175" target="_blank" rel="noopener">Reserve Bank of India: Cheque Truncation System FAQ (Jan 2026)</a></li><li><a href="https://www.wearepay.uk/what-we-do/payment-systems/image-clearing-system/" target="_blank" rel="noopener">Pay.UK: Image Clearing System</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 23 November 2026. Chekno figures are Bank Saderat’s own claim. We did not see the full central bank roadmap; its details come from media reports. Educational report, not financial or legal advice.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.en.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.en.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
