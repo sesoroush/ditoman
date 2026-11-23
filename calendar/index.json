@@ -1,5 +1,77 @@
 [
  {
+  "date": "2026-11-23",
+  "jalali": "1405/09/02",
+  "weekday_fa": "دوشنبه",
+  "headline_fa": "امروز، نبض اقتصاد آمریکا",
+  "post": "calendar/2026-11-23-post.png",
+  "story": "calendar/2026-11-23-story.png",
+  "post_en": "calendar/2026-11-23-post-en.webp",
+  "today": [
+   {
+    "key": true,
+    "fa": "شاخص مدیران خرید آمریکا",
+    "en": "S&P Global US Manufacturing & Services PMI (flash, Nov)",
+    "tehran": "18:15",
+    "lisbon": "14:45",
+    "note_fa": "اولین عکس از حال کارخانه‌ها و خدمات آمریکا در نوامبر، بعد از هفته‌ی سخت بورس‌ها؛ مهم برای دلار، طلا و بیت‌کوین.",
+    "expected": "Mfg 54.5 · Services 55.6"
+   },
+   {
+    "fa": "PMI مقدماتی آلمان و منطقه‌ی یورو",
+    "note_fa": "حال اقتصاد اروپا، پیش از آمریکا",
+    "tehran": "12:00",
+    "lisbon": "08:30",
+    "en": "Germany & Eurozone flash PMIs (Nov)",
+    "expected": ""
+   },
+   {
+    "fa": "سخنرانی جان ویلیامز، فدرال رزرو نیویورک",
+    "note_fa": "بامداد سه‌شنبه؛ سرنخ نرخ بهره‌ی دسامبر",
+    "tehran": "00:30",
+    "lisbon": "21:00",
+    "en": "NY Fed President John Williams speaks",
+    "expected": ""
+   }
+  ],
+  "week": [
+   {
+    "day_fa": "سه‌شنبه",
+    "date": "2026-11-24",
+    "fa": "سود فصلی دل (Dell)",
+    "note_fa": "بعد از بسته شدن بازار؛ تقاضای سرور هوش مصنوعی",
+    "tehran": "حدود 00:30",
+    "lisbon": "after close",
+    "en": "Dell earnings",
+    "expected": "after US close"
+   },
+   {
+    "day_fa": "چهارشنبه",
+    "date": "2026-11-25",
+    "fa": "رشد اقتصادی و تورم PCE آمریکا",
+    "note_fa": "GDP فصل سوم و شاخص محبوب تورم فدرال رزرو، با هم",
+    "tehran": "17:00",
+    "lisbon": "13:30",
+    "en": "US GDP Q3 (2nd est.) · Core PCE (Oct)",
+    "expected": "GDP 3.5% · Core PCE 0.3% m/m"
+   },
+   {
+    "day_fa": "پنجشنبه",
+    "date": "2026-11-26",
+    "fa": "تعطیلی شکرگزاری؛ بورس آمریکا بسته",
+    "note_fa": "جمعه هم بازار زودتر بسته می‌شود",
+    "tehran": "تمام روز",
+    "lisbon": "all day",
+    "en": "US Thanksgiving: markets closed",
+    "expected": "early close Fri"
+   }
+  ],
+  "sources": [
+   "https://fxempire.com/forecasts/article/the-week-ahead-pce-in-focus-after-ai-sell-off-in-holiday-shortened-week-1646337",
+   "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-23112026-29112026/"
+  ]
+ },
+ {
   "date": "2026-11-13",
   "jalali": "1405/08/22",
   "weekday_fa": "جمعه",
