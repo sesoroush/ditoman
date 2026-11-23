@@ -43,6 +43,7 @@ jobs:
           else
             text="$(cat "$FILE")"
           fi
+          text="$(printf '%s' "$text" | sed 's#https://ditoman.com/prices.html#https://ditoman.com/prices#g')"
           # **bold** markers -> real Telegram bold (entities), markers removed from the text.
           printf '%s' "$text" > /tmp/post.txt
           conv="$(python3 scripts/tg_bold.py /tmp/post.txt)"
@@ -63,7 +64,7 @@ jobs:
             payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" --argjson e "$ents" '{chat_id:$c, message_id:($i|tonumber), caption:$t, caption_entities:$e}')"
             call editMessageCaption -H 'Content-Type: application/json' -d "$payload"
           else
-            payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" --argjson e "$ents" '{chat_id:$c, message_id:($i|tonumber), text:$t, entities:$e, link_preview_options:{is_disabled:true}}')"
+            payload="$(jq -n --arg c "$CHAT_ID" --arg i "$TEXT_ID" --arg t "$text" --arg img "$image" --argjson e "$ents" '{chat_id:$c, message_id:($i|tonumber), text:$t, entities:$e, link_preview_options:{is_disabled:($img != "")}}')"
             call editMessageText -H 'Content-Type: application/json' -d "$payload"
           fi
       - name: Update website feed
