@@ -1,6 +1,7 @@
 """Ditoman daily press review (خلاصه روزنامه‌های ایران): cover image + website archive.
 
-Usage:  python3 scripts/press/build.py press/data/2026-11-13.json
+Usage:  python3 scripts/press/build.py press/data/2026-11-13.json   (Iran press, 10:00 Tehran)
+        python3 scripts/press/build.py world/data/2026-11-23.json   (world press, 16:00 Tehran; or "kind": "world")
 
 Data file:
 {
@@ -55,19 +56,39 @@ body{width:1254px;height:1254px;overflow:hidden;position:relative;background:url
 .foot .r{font-family:PlayI,serif;font-style:italic;font-size:31px;color:#57D9C7}
 """
 
-HTML = """<!doctype html><html><head><meta charset="utf-8"><style>%(css)s</style></head><body>
+HTML = """<!doctype html><html><head><meta charset="utf-8"><style>%(css)s%(xcss)s</style></head><body>%(extra)s
 <img class="abs logo" src="%(logo)s">
 <div class="abs wm"><div class="fa">دیتومان</div><div class="en">DITOMAN</div></div>
 <div class="abs div"></div>
 <div class="abs badge">مرور روز<svg viewBox="0 0 64 58" fill="none" stroke="#F3ECE0" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 8h44v38a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V18h4z"/><path d="M12 8v38"/><path d="M20 18h12v12H20zM38 18h12M38 25h12M20 37h30M20 44h30"/></svg></div>
-<div class="abs head">خلاصه <b>روزنامه‌های</b> ایران</div>
-<div class="abs sub">مرور مهم‌ترین خبرهای امروز در اقتصاد، فناوری، جامعه، صنعت، سلامت و ورزش</div>
+<div class="abs head">%(head_fa)s</div>
+<div class="abs sub">%(sub_fa)s</div>
 <div class="abs rule" style="left:60px;width:536px"></div><div class="abs rule" style="left:672px;width:522px"></div>
-<div class="abs en1">Iran Daily Press Summary</div>
-<div class="abs en2">Key headlines from today’s Iranian newspapers<br>in economy, technology, society, industry, health and sports</div>
+<div class="abs en1">%(en1)s</div>
+<div class="abs en2">%(en2)s</div>
 <div class="abs date" dir="rtl">%(fa_date)s &nbsp;·&nbsp; <span class="g">%(en_date)s</span></div>
 <div class="abs foot"><span class="l">DITOMAN | TMN · DITOMAN.COM</span><span class="r">Learn · Connect · Evolve</span></div>
 </body></html>"""
+
+
+KINDS = {
+    "iran": dict(dir="press",
+        head_fa="خلاصه <b>روزنامه‌های</b> ایران",
+        sub_fa="مرور مهم‌ترین خبرهای امروز در اقتصاد، فناوری، جامعه، صنعت، سلامت و ورزش",
+        en1="Iran Daily Press Summary",
+        en2="Key headlines from today’s Iranian newspapers<br>in economy, technology, society, industry, health and sports",
+        e_head="Iran Daily <b>Press</b> Summary", e_sub="Key headlines from today’s Iranian newspapers",
+        e_en1="ECONOMY · TECHNOLOGY · SOCIETY", e_en2="industry, health and sports, reviewed every day at 10:00 Tehran",
+        extra="", xcss="", e_xcss=""),
+    "world": dict(dir="world",
+        head_fa="خلاصه <b>رسانه‌های</b> جهان",
+        sub_fa="مرور مهم‌ترین خبرهای امروز دنیا در اقتصاد، صنعت، نوآوری، هوش مصنوعی و تجارت",
+        en1="World Daily Press Summary",
+        en2="Key stories from today’s global media<br>in economy, industry, innovation, AI and trade",
+        e_head="World Daily <b>Press</b> Summary", e_sub="Key stories from today’s global media",
+        e_en1="ECONOMY · AI · TRADE", e_en2="industry and innovation, reviewed every day at 16:00 Tehran",
+        extra='<div class="abs mast"></div><svg class="abs globe" viewBox="0 0 200 200" fill="none" stroke="#2b2622" stroke-width="2.2"><circle cx="100" cy="100" r="92"/><ellipse cx="100" cy="100" rx="44" ry="92"/><ellipse cx="100" cy="100" rx="78" ry="92"/><path d="M100 8v184M8 100h184M20 55h160M20 145h160"/></svg>', xcss='.mast{left:0;right:0;top:118px;height:385px;backdrop-filter:blur(7px) sepia(.25);-webkit-mask:linear-gradient(180deg,transparent,#000 18%,#000 80%,transparent)}.globe{left:487px;top:180px;width:280px;height:280px;opacity:.55}', e_xcss='.head{font-size:88px}'),
+}
 
 
 def dates(d):
@@ -84,26 +105,26 @@ HTML_EN = """<!doctype html><html><head><meta charset="utf-8"><style>%(css)s
 .sub{font-family:PlayI,serif;font-style:italic;direction:ltr;font-size:33px;top:632px}
 .en1{font-family:Brico,sans-serif;font-weight:700;font-size:40px;letter-spacing:.16em;top:752px;color:#2b2622}
 .en2{top:816px;font-size:30px}
-</style></head><body>
+%(xcss)s%(e_xcss)s</style></head><body>%(extra)s
 <img class="abs logo" src="%(logo)s">
 <div class="abs wm"><div class="en">DITOMAN</div></div>
 <div class="abs div"></div>
 <div class="abs badge">DAILY REVIEW<svg viewBox="0 0 64 58" fill="none" stroke="#F3ECE0" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 8h44v38a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V18h4z"/><path d="M12 8v38"/><path d="M20 18h12v12H20zM38 18h12M38 25h12M20 37h30M20 44h30"/></svg></div>
-<div class="abs head">Iran Daily <b>Press</b> Summary</div>
-<div class="abs sub">Key headlines from today’s Iranian newspapers</div>
+<div class="abs head">%(e_head)s</div>
+<div class="abs sub">%(e_sub)s</div>
 <div class="abs rule" style="left:60px;width:536px"></div><div class="abs rule" style="left:672px;width:522px"></div>
-<div class="abs en1">ECONOMY · TECHNOLOGY · SOCIETY</div>
-<div class="abs en2">industry, health and sports, reviewed every day at 16:00 Tehran</div>
+<div class="abs en1">%(e_en1)s</div>
+<div class="abs en2">%(e_en2)s</div>
 <div class="abs date"><span class="g">%(en_date)s</span></div>
 <div class="abs foot"><span class="l">DITOMAN | TMN · DITOMAN.COM</span><span class="r">Learn · Connect · Evolve</span></div>
 </body></html>"""
 
 
-def render(d, out_png, en_only=False):
+def render(d, out_png, en_only=False, kind="iran"):
     from playwright.sync_api import sync_playwright
     fa, en, _, _ = dates(d)
     tpl = HTML_EN if en_only else HTML
-    doc = tpl % dict(css=CSS % dict(f=FONTS.as_uri(), bg=BG.as_uri()), logo=LOGO.as_uri(), fa_date=fa, en_date=en)
+    doc = tpl % dict(css=CSS % dict(f=FONTS.as_uri(), bg=BG.as_uri()), logo=LOGO.as_uri(), fa_date=fa, en_date=en, **KINDS[kind])
     tmp = out_png.with_suffix(".html"); tmp.write_text(doc, encoding="utf-8")
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1254, "height": 1254})
@@ -117,19 +138,22 @@ def render(d, out_png, en_only=False):
 def main(path):
     data = json.loads(pathlib.Path(path).read_text(encoding="utf-8"))
     d = data["date"]
-    out = ROOT / "press" / f"{d}-post.png"
-    render(d, out)
-    render(d, ROOT / "press" / f"{d}-post-en.png", en_only=True)
+    kind = data.get("kind", "world" if "/world/" in str(pathlib.Path(path).resolve()) else "iran")
+    od = KINDS[kind]["dir"]
+    (ROOT / od).mkdir(exist_ok=True)
+    out = ROOT / od / f"{d}-post.png"
+    render(d, out, kind=kind)
+    render(d, ROOT / od / f"{d}-post-en.png", en_only=True, kind=kind)
     fa, en, jal, wd = dates(d)
-    idx_p = ROOT / "press" / "index.json"
+    idx_p = ROOT / od / "index.json"
     idx = json.loads(idx_p.read_text(encoding="utf-8")) if idx_p.exists() else []
     idx = [x for x in idx if x["date"] != d]
-    idx.append({"date": d, "jalali": jal, "weekday_fa": wd, "post": f"press/{d}-post.webp", "post_en": f"press/{d}-post-en.webp",
+    idx.append({"date": d, "jalali": jal, "weekday_fa": wd, "post": f"{od}/{d}-post.webp", "post_en": f"{od}/{d}-post-en.webp",
                 "lead_fa": data.get("lead_fa", ""), "lead_en": data.get("lead_en", ""),
                 "front_fa": data.get("front_fa", ""), "front_en": data.get("front_en", ""), "sections": data["sections"]})
     idx.sort(key=lambda x: x["date"], reverse=True)
     idx_p.write_text(json.dumps(idx, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("wrote", out, "and press/index.json", f"({len(idx)} days)")
+    print("wrote", out, f"and {od}/index.json", f"({len(idx)} days)")
 
 
 if __name__ == "__main__":
