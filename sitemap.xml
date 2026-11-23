@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ditoman.com/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ditoman.com/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://ditoman.com/ai-cyber-disaster.en.html</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://ditoman.com/ai-cyber-disaster.html</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://ditoman.com/ai-infrastructure.en.html</loc><lastmod>2026-11-21</lastmod></url>
@@ -52,7 +52,7 @@
   <url><loc>https://ditoman.com/cafebazaar.en.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/cafebazaar.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/calendar.en.html</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://ditoman.com/calendar.html</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ditoman.com/calendar.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://ditoman.com/carbon-bends.en.html</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://ditoman.com/carbon-bends.html</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://ditoman.com/china-global-investment-2026.en.html</loc><lastmod>2026-11-22</lastmod></url>
@@ -124,12 +124,14 @@
   <url><loc>https://ditoman.com/igap.en.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/igap.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/index.ar.html</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://ditoman.com/index.en.html</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ditoman.com/index.en.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://ditoman.com/index.ru.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/index.tr.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/index.zh.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/iran-built.en.html</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://ditoman.com/iran-built.html</loc><lastmod>2026-11-21</lastmod></url>
+  <url><loc>https://ditoman.com/iran-electricity-century.en.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://ditoman.com/iran-electricity-century.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://ditoman.com/iran-energy.en.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/iran-energy.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/iran-industry.en.html</loc><lastmod>2026-11-22</lastmod></url>
@@ -415,14 +417,12 @@
   <url><loc>https://ditoman.com/pistachio-ai.en.html</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://ditoman.com/pistachio-ai.html</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://ditoman.com/posts.en.html</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://ditoman.com/posts.html</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://ditoman.com/press.en.html</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://ditoman.com/world.html</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://ditoman.com/world.en.html</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://ditoman.com/press.html</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ditoman.com/posts.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://ditoman.com/press.en.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://ditoman.com/press.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://ditoman.com/prices.ar.html</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://ditoman.com/prices.en.html</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://ditoman.com/prices.html</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ditoman.com/prices.en.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://ditoman.com/prices.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://ditoman.com/prices.ru.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/prices.tr.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/prices.zh.html</loc><lastmod>2026-11-22</lastmod></url>
@@ -488,6 +488,8 @@
   <url><loc>https://ditoman.com/trilateral-summit.html</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://ditoman.com/turkey-energy-hub-2026.en.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/turkey-energy-hub-2026.html</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ditoman.com/world.en.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://ditoman.com/world.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://ditoman.com/x-vision.en.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/x-vision.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ditoman.com/zahravi.en.html</loc><lastmod>2026-11-22</lastmod></url>
