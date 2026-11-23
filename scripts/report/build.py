@@ -141,8 +141,8 @@ h1 i {{ color:{T["accent"]}; font-weight:700; }}
     <span class="dl"><span class="en">{en_date}</span><span class="doy">{doy_both}</span></span></div>
 
   <div class="kicker caps" dir="ltr" style="text-align:left">The Daily Markets Report</div>
-  <h1>Markets <i>Tonight.</i></h1>
-  <div class="h1fa">بازارها، <span>امشب.</span></div>
+  <h1>Markets <i>{"Morning." if data.get("slot") == "morning" else "Tonight."}</i></h1>
+  <div class="h1fa">بازارها، <span>{"صبح." if data.get("slot") == "morning" else "امشب."}</span></div>
 
   <div class="sec">
     <div class="sh"><span class="fa">ایران · به تومان</span><span class="en caps">Iran · Toman</span></div>
@@ -222,7 +222,7 @@ def caption(data, L):
         return f' ({"▲" if c > 0 else "▼"} {abs(c):.2f}'.replace(".", "٫").translate(FA_NUM) + '٪)'
     def toman(x): return f'{x["value"]:,.0f}'.translate(FA_NUM)
     lines = [
-        "📊 گزارش روزانه‌ی بازار | دیتومان",
+        "📊 قیمت‌های صبح | دیتومان" if data.get("slot") == "morning" else "📊 قیمت‌های امشب | دیتومان",
         fa_date,
         "",
         f'💵 دلار آزاد: {toman(i["دلار آزاد"])} تومان{ch(i["دلار آزاد"])}',
@@ -285,6 +285,7 @@ if __name__ == "__main__":
     day = t.date() - datetime.timedelta(days=1) if t.hour < 4 else t.date()   # after midnight still counts as "tonight"
     data["date"] = day.isoformat()
     data["time_fa"] = f"{t:%H:%M}".translate(FA_NUM) + " تهران"
+    data["slot"] = "morning" if 4 <= t.hour < 14 else "evening"   # 06:00 report = morning, 18:00 = tonight
     out = ROOT / "market" / "reports" / f"{day.isoformat()}.png"
     out.parent.mkdir(parents=True, exist_ok=True)
     fit = render(data, out, theme="ft")

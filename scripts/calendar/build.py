@@ -123,7 +123,7 @@ def build(d):
     s_en, s_fa = ("NEXT WEEK", "هفتهٔ آینده") if ahead else ("TODAY", "امروز")
     story = ('<div class="page">' + MAST.format(en=s_en, fa=s_fa) +
              f'<div class="head"><div class="date">{fa_date}<span class="en">{dd} {EN_M[m-1]} {y}</span></div><h1>{str(len(picks)).translate(FA_DIG)} خبر مهمِ <span class="hl">{s_fa}</span></h1></div>'
-             f'<div class="items">{items}</div><div class="note">آمار قیمت‌ها: <span class="hl">امشب ساعت ۲۰:۰۰ تهران</span></div>' + FOOT + "</div>")
+             f'<div class="items">{items}</div><div class="note">آمار قیمت‌ها: <span class="hl">امروز ساعت ۱۸:۰۰ تهران</span></div>' + FOOT + "</div>")
     return fa_date, page(POST_CSS, post, "post"), page(STORY_CSS, story, "story")
 
 EN_WD_LONG = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
