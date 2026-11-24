@@ -21,6 +21,19 @@ SERIES = {
     "usd_mex":      ("mex_usd_sell",    "US dollar, Iran Center of Exchange (markaz-e mobadele) rate"),
     "gold18_gram":  ("geram18",         "18k gold, per gram"),
     "coin_emami":   ("sekee",           "Emami gold coin"),
+    "coin_half":    ("nim",             "Half Bahar Azadi gold coin"),
+    "coin_quarter": ("rob",             "Quarter Bahar Azadi gold coin"),
+    "eur":          ("price_eur",       "Euro, open market"),
+    "gbp":          ("price_gbp",       "British pound, open market"),
+    "aed":          ("price_aed",       "UAE dirham, open market"),
+    "try":          ("price_try",       "Turkish lira, open market"),
+    "cny":          ("price_cny",       "Chinese yuan, open market"),
+    "usdt":         ("crypto-tether-irr", "Tether (USDT) in toman"),
+    # World prices in US dollars (no rial -> toman conversion)
+    "gold_oz":      ("ons",             "Gold, troy ounce", "usd"),
+    "silver_oz":    ("silver",          "Silver, troy ounce", "usd"),
+    "brent":        ("oil_brent",       "Brent crude oil, barrel", "usd"),
+    "btc":          ("crypto-bitcoin",  "Bitcoin", "usd"),
 }
 FA2EN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
 
@@ -33,7 +46,7 @@ def num(c):
     c = re.sub(r"[^\d.]", "", c)
     return float(c) if c else None
 
-def fetch(code, full):
+def fetch(code, full, div=10):
     rows, start, page = [], 0, 500 if full else 15
     while True:
         j = get(f"https://api.tgju.org/v1/market/indicator/summary-table-data/{code}?lang=fa&order_dir=desc&draw=1&start={start}&length={page}")
@@ -45,7 +58,7 @@ def fetch(code, full):
                 continue
             close = num(r[3])
             if close:
-                rows.append([d.isoformat(), round(close / 10, 2)])
+                rows.append([d.isoformat(), round(close / div, 4 if close / div < 10 else 2)])
         if not full or len(data) < page or start > 20000:
             break
         start += page
@@ -56,11 +69,17 @@ def main():
     full = "--full" in sys.argv
     OUT.mkdir(parents=True, exist_ok=True)
     report = {}
-    for key, (code, desc) in SERIES.items():
+    only = [a for a in sys.argv[1:] if not a.startswith("--")]
+    for key, spec in SERIES.items():
+        if only and key not in only:
+            continue
+        code, desc = spec[0], spec[1]
+        unit = spec[2] if len(spec) > 2 else "toman"
         path = OUT / f"{key}.json"
-        old = json.loads(path.read_text()) if path.exists() else {"key": key, "code": code, "desc": desc, "unit": "toman", "data": []}
+        # A new series has no history yet, so backfill it fully even on a nightly run.
+        old = json.loads(path.read_text()) if path.exists() else {"key": key, "code": code, "desc": desc, "unit": unit, "data": []}
         try:
-            new = fetch(code, full)
+            new = fetch(code, full or not old["data"], 10 if unit == "toman" else 1)
         except Exception as e:
             report[key] = f"error: {e!r}"[:200]
             continue
