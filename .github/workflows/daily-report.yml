@@ -54,7 +54,14 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
 
+      - name: One-time Telegram skip (Soroush's request, 25 Nov 2026 morning only)
+        id: tgskip
+        run: |
+          D="$(TZ=Asia/Tehran date +%F)"; H="$(TZ=Asia/Tehran date +%H)"
+          if [ "$D" = "2026-11-25" ] && [ "$((10#$H))" -lt 12 ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; echo "Skipping the Telegram photo this once"; else echo "skip=false" >> "$GITHUB_OUTPUT"; fi
+
       - name: Post to Telegram
+        if: steps.tgskip.outputs.skip != 'true'
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID || '@Ditoman_tm' }}
