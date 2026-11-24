@@ -66,17 +66,7 @@
    133340000.0
   ]
  },
- "coin_quarter": {
-  "rows": 3471,
-  "first": [
-   "2013-07-22",
-   355000.0
-  ],
-  "last": [
-   "2026-11-23",
-   74000000.0
-  ]
- },
+ "coin_quarter": "error: <HTTPError 500: 'Internal Server Error'>",
  "eur": {
   "rows": 3779,
   "first": [
