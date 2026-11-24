@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Bitcoin Weekly Outlook: Extreme Fear and Three Scenarios | Ditoman</title>
+<meta name="description" content="Bitcoin, ETFs, the Fear and Greed Index and three scenarios for the week" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/bitcoin-weekly-outlook-fear-zone.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/bitcoin-weekly-outlook-fear-zone.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/bitcoin-weekly-outlook-fear-zone.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/bitcoin-weekly-outlook-fear-zone.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Bitcoin Weekly Outlook: Extreme Fear and Three Scenarios | Ditoman" />
+<meta property="og:description" content="Bitcoin, ETFs, the Fear and Greed Index and three scenarios for the week" />
+<meta property="og:url" content="https://ditoman.com/bitcoin-weekly-outlook-fear-zone.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/bitcoin-weekly-outlook-fear-zone.en.html#page",
+   "url": "https://ditoman.com/bitcoin-weekly-outlook-fear-zone.en.html",
+   "name": "Bitcoin Weekly Outlook: Extreme Fear and Three Scenarios | Ditoman",
+   "description": "Bitcoin, ETFs, the Fear and Greed Index and three scenarios for the week",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Bitcoin Weekly Outlook: Extreme Fear and Three Scenarios",
+     "item": "https://ditoman.com/bitcoin-weekly-outlook-fear-zone.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/bitcoin-weekly-outlook-fear-zone/card.webp" srcset="social/bitcoin-weekly-outlook-fear-zone/card.webp 900w, social/bitcoin-weekly-outlook-fear-zone/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Bitcoin weekly outlook: extreme fear" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/bitcoin-weekly-outlook-fear-zone/en-card.webp" srcset="social/bitcoin-weekly-outlook-fear-zone/en-card.webp 900w, social/bitcoin-weekly-outlook-fear-zone/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Bitcoin weekly outlook: extreme fear" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Weekly report · Crypto markets</span><span lang="fa">گزارش هفتگی · بازار کریپتو</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">بازار در منطقه‌ی ترس شدید</h1>
+<h1 lang="en">The market in extreme fear</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">بیت‌کوین، ETFها، شاخص ترس و طمع و سه سناریوی یک هفته‌ی آینده</p>
+<p class="subtitle" lang="en">Bitcoin, ETFs, the Fear and Greed Index and three scenarios for the week ahead</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۵۹٫۸</b><b lang="en">$59.8K</b><span lang="fa">هزار دلار؛ قیمت بیت‌کوین</span><span lang="en">Bitcoin price</span></div>
+<div class="stat"><b lang="fa">۴٫۷۱</b><b lang="en">$4.71B</b><span lang="fa">میلیارد دلار خروج از ETFها در نوامبر</span><span lang="en">ETF outflows in November</span></div>
+<div class="stat"><b lang="fa">۱۱</b><b lang="en">11</b><span lang="fa">شاخص ترس و طمع (ترس شدید)</span><span lang="en">Fear and Greed Index (extreme fear)</span></div>
+<div class="stat"><b lang="fa">۹۵٪</b><b lang="en">95%</b><span lang="fa">احتمال افزایش نرخ فدرال رزرو در ۹ دسامبر</span><span lang="en">odds of a Fed hike on 9 December</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>بیت‌کوین امروز ۳ آذر ۱۴۰۵ دوباره زیر ۶۰ هزار دلار رفت. دوشنبه یک خبر خوب بازار سهام را بالا برد، ولی کریپتو نتوانست آن را نگه دارد. این گزارش نمی‌گوید «بخر» یا «بفروش»؛ می‌گوید بازار الان کجاست، شاخص‌ها چه معنایی دارند، سه سناریوی محتمل برای هفته‌ی پیش رو چیست و چه چیزی را باید دید.</blockquote>
+<h3>در یک نگاه</h3>
+<ul>
+<li><strong>قیمت:</strong> حدود ۵۹٬۸۵۰ دلار؛ ۳٫۳٪ افت در ۲۴ ساعت، ۷٫۵٪ در هفته و ۲۳٫۵٪ در ماه</li>
+</ul>
+<ul>
+<li><strong>ETFها:</strong> خروج ۵۷۰ میلیون دلار در روز دوشنبه، پنجمین روز پیاپی. جمع خروج نوامبر ۴٫۷۱ میلیارد دلار؛ بدترین ماه از زمان راه‌اندازی</li>
+</ul>
+<ul>
+<li><strong>احساسات:</strong> شاخص ترس و طمع ۱۱؛ هشت روز پیاپی در «ترس شدید»</li>
+</ul>
+<ul>
+<li><strong>فدرال رزرو:</strong> بازار احتمال افزایش نرخ بهره در ۹ دسامبر را حدود ۹۵٪ می‌داند</li>
+</ul>
+<ul>
+<li><strong>رویداد کلیدی:</strong> چهارشنبه ۴ آذر (۲۵ نوامبر)، انتشار گزارش تورم PCE</li>
+</ul>
+<h3><span class="check-number">1.</span> بازار الان کجاست؟</h3>
+<p><strong>دوشنبه:</strong><br>خبر انویدیا سهام آمریکا را بالا برد (نزدیک ۶٫۵٪ برای Nasdaq) و بیت‌کوین تا حدود ۶۴٬۵۰۰ دلار رفت. ولی ظرف چند ساعت همه‌ی آن را پس داد. وقتی یک خبر خوب در بازار نمی‌ماند، یعنی فروشنده‌ها هنوز دست بالا را دارند.</p>
+<p><strong>امروز:</strong><br><a href="https://www.forexfactory.com/news/1438400-us-prepares-to-raise-tariffs-on-china-and" target="_blank" rel="noopener" style="color:#57D9C7">گزارش WSJ</a> از تعرفه‌های تازه‌ی آمریکا علیه چین، ژاپن، کره‌ی جنوبی و چند کشور دیگر (شاید همین هفته) آمد. Nasdaq حدود ۲٪ افتاد و بیت‌کوین دوباره زیر ۶۰ هزار دلار رفت.</p>
+<p><strong>آلت‌کوین‌ها ضعیف‌تر از بیت‌کوین‌اند.</strong> در ۲۴ ساعت گذشته:</p>
+<div class="tw"><table><tr><th>ارز</th><th>تغییر</th></tr><tr><td>سولانا (SOL)</td><td>‏−۶٫۱٪</td></tr><tr><td>اتریوم (ETH)</td><td>‏−۴٫۵٪</td></tr><tr><td>هایپرلیکوئید (HYPE)</td><td>‏−۸٫۲٪</td></tr><tr><td>آوالانچ (AVAX)</td><td>‏−۵٫۴٪</td></tr><tr><td>ریپل (XRP)</td><td>‏−۴٫۲٪</td></tr></table></div>
+<p><a href="https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto" target="_blank" rel="noopener" style="color:#57D9C7">CoinDesk</a> و <a href="https://www.tradingview.com/news/invezz:3010a2e06094b:0-why-is-bitcoin-down-today-btc-drops-below-60-000-as-etf-outflows-mount/" target="_blank" rel="noopener" style="color:#57D9C7">Invezz</a> هم همین تصویر را گزارش کرده‌اند.</p>
+<h3><span class="check-number">2.</span> چهار شاخص را چطور بخوانیم؟</h3>
+<p><strong>۱. جریان ETFها:</strong><br>صندوق‌های قابل‌معامله‌ی بیت‌کوین راهی برای خرید بدون نگهداری مستقیم‌اند. ورود پول یعنی خریدار نهادی؛ خروج یعنی برعکس. <a href="https://en.coin-turk.com/bitcoin-holds-near-60000-as-etf-outflows-surpass-4-7-billion-in-november" target="_blank" rel="noopener" style="color:#57D9C7">پنج روز خروج پیاپی</a> نشان می‌دهد خریدار بزرگ فعلاً کنار ایستاده.</p>
+<p><strong>۲. شاخص ترس و طمع:</strong><br>عددی بین ۰ تا ۱۰۰ که حال‌وهوای بازار را می‌سنجد. <a href="https://financefeeds.com/crypto-fear-and-greed-hits-11/" target="_blank" rel="noopener" style="color:#57D9C7">عدد ۱۱</a> یعنی ترس شدید. ترس شدید یعنی بازار احساسی شده، اما به‌تنهایی نشانه‌ی کف نیست؛ بازار می‌تواند مدتی در ترس بماند.</p>
+<p><strong>۳. قیمت تحقق‌یافته (Realized Price):</strong><br>میانگین قیمتی که همه‌ی بیت‌کوین‌های موجود آخرین بار در آن جابه‌جا شده‌اند؛ یعنی تقریباً «میانگین قیمت خرید کل بازار». طبق <a href="https://bitbo.io/news/glassnode-bitcoin-capitulation-ftx-losses/" target="_blank" rel="noopener" style="color:#57D9C7">Glassnode</a> این عدد الان حدود ۵۳٬۲۰۰ دلار است. در بازارهای نزولی قبلی، کف معمولاً زیر همین سطح شکل گرفته. Glassnode نشانه‌های شروع تسلیم فروشنده‌ها را می‌بیند، ولی اعلام کف نمی‌کند.</p>
+<p><strong>۴. فدرال رزرو و تورم:</strong><br>وقتی نرخ بهره بالا می‌رود، دارایی‌های پرریسک معمولاً زیر فشار می‌روند. <a href="https://en.coinotag.com/traders-price-december-fed-rate-hike-odds-pce" target="_blank" rel="noopener" style="color:#57D9C7">بازار</a> افزایش ۹ دسامبر را حدود ۹۵٪ قطعی می‌داند و دلار در قوی‌ترین سطح خود از مارس ۲۰۲۵ است. گزارش PCE که چهارشنبه می‌آید، مهم‌ترین عدد این هفته است.</p>
+<h3><span class="check-number">3.</span> سه سناریو برای هفته‌ی پیش رو</h3>
+<p>درصدها برآورد تحلیلی دیتومان است، نه محاسبه‌ی دقیق و نه قطعیت.</p>
+<p><strong>۱. نوسان با تمایل به پایین (حدود ۵۵٪)</strong><br>محدوده‌ی تقریبی ۵۵ تا ۶۳ هزار دلار. پنجشنبه بازار آمریکا تعطیل (روز شکرگزاری) و جمعه نیمه‌وقت است؛ حرکت‌های تند در هر دو جهت معنای زیادی ندارند.</p>
+<p><strong>۲. ادامه‌ی ریزش (حدود ۳۰٪)</strong><br>اگر قیمت روزانه زیر ۵۸٬۵۰۰ دلار ببندد، اول کف حدود ۵۵ هزار دوباره تست می‌شود. اگر آن هم بشکند، سطح بعدی همان قیمت تحقق‌یافته‌ی حدود ۵۳٬۲۰۰ دلار است.</p>
+<p><strong>۳. برگشت (حدود ۱۵٪)</strong><br>PCE ملایم بیاید و خروج از ETFها متوقف شود. تا وقتی قیمت روزانه بالای ۶۴٬۵۰۰ دلار (سقف دوشنبه) نبسته، هر صعودی فقط یک برگشت موقت است.</p>
+<h3><span class="check-number">4.</span> چه چیزهایی را باید دید؟</h3>
+<p><strong>۱. چهارشنبه ۴ آذر (۲۵ نوامبر)، گزارش PCE اکتبر و بازنگری GDP.</strong><br><a href="https://admiralmarkets.com/analytics/traders-blog/pce-inflation-october-2026-preview" target="_blank" rel="noopener" style="color:#57D9C7">برای PCE هسته</a> حدود ۰٫۳٪ ماهانه انتظار می‌رود. ۰٫۴٪ یا بالاتر برای بازار بد است (بحث افزایش بزرگ‌تر نرخ بهره جدی می‌شود) و ۰٫۲٪ یا کمتر خوب. <a href="https://finance.biggo.com/news/99d78157-4337-43e5-947b-d68cd672ef05" target="_blank" rel="noopener" style="color:#57D9C7">این تحلیل</a> هم همین دو را کلید هفته می‌داند.</p>
+<p><strong>۲. اعلام رسمی تعرفه‌ها.</strong><br>ممکن است همین هفته باشد و دوباره نوسان بیاورد.</p>
+<p><strong>۳. جریان روزانه‌ی ETFها.</strong><br>تا خروج پول متوقف نشود، برگشت پایدار قابل‌اتکا نیست.</p>
+<h3>تحلیل دیتومان</h3>
+<p>بازار کریپتو هر چرخه پایین و بالا دارد. ترس شدید برای کسی که سازوکار را می‌شناسد، بیشتر فرصتی برای یادگرفتن است تا دلیلی برای فرار: بفهم چرا ETFها مهم‌اند، تورم چطور به قیمت می‌رسد و کف را چطور با داده می‌سنجند، نه با حس.</p>
+<p>نکته‌ی ساده: هیچ‌کس قیمت هفته‌ی آینده را قطعی نمی‌داند، و کسی که این را قبول دارد، با هر خبر از جا نمی‌پرد. تصمیم مالی هر کس به وضع و توان خودش بستگی دارد.</p>
+<p>این گزارش تحلیلی و آموزشی است و توصیه‌ی خرید، فروش یا سرمایه‌گذاری نیست. عددها از منابع زیر گرفته شده‌اند و ممکن است تا انتشار تغییر کرده باشند.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="turkey-digital-dollar-circle-paribu.en.html">دلار دیجیتال در استانبول</a></li><li><a href="weight-loss-drugs-economy-glp1.en.html">آمپولی که سبد خرید دنیا را عوض کرد</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto" target="_blank" rel="noopener">CoinDesk: Bitcoin pulls back below $60,000 as tariffs re-enter the picture (24 Nov 2026)</a></li><li><a href="https://www.tradingview.com/news/invezz:3010a2e06094b:0-why-is-bitcoin-down-today-btc-drops-below-60-000-as-etf-outflows-mount/" target="_blank" rel="noopener">Invezz / TradingView: Why is Bitcoin down today?</a></li><li><a href="https://en.coin-turk.com/bitcoin-holds-near-60000-as-etf-outflows-surpass-4-7-billion-in-november" target="_blank" rel="noopener">CoinTurk: ETF outflows surpass $4.7 billion in November</a></li><li><a href="https://financefeeds.com/crypto-fear-and-greed-hits-11/" target="_blank" rel="noopener">FinanceFeeds: Crypto Fear and Greed hits 11</a></li><li><a href="https://bitbo.io/news/glassnode-bitcoin-capitulation-ftx-losses/" target="_blank" rel="noopener">Bitbo: Glassnode on Bitcoin capitulation</a></li><li><a href="https://kucoin.com/news/articles/crypto-daily-market-report-november-24-2026" target="_blank" rel="noopener">KuCoin: Crypto Daily Market Report, 24 Nov</a></li><li><a href="https://admiralmarkets.com/analytics/traders-blog/pce-inflation-october-2026-preview" target="_blank" rel="noopener">Admiral Markets: PCE report 25 November preview</a></li><li><a href="https://finance.biggo.com/news/99d78157-4337-43e5-947b-d68cd672ef05" target="_blank" rel="noopener">BigGo Finance: PCE, GDP and a near-certain Fed hike</a></li><li><a href="https://en.coinotag.com/traders-price-december-fed-rate-hike-odds-pce" target="_blank" rel="noopener">Coinotag: 95.1% odds of a December Fed hike</a></li><li><a href="https://www.forexfactory.com/news/1438400-us-prepares-to-raise-tariffs-on-china-and" target="_blank" rel="noopener">Forex Factory: U.S. prepares to raise tariffs on China and others (WSJ)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۳ آذر ۱۴۰۵. عددها از منابع بالا گرفته شده و ممکن است تا انتشار تغییر کرده باشند. درصد سناریوها برآورد تحلیلی دیتومان است. این گزارش آموزشی و تحلیلی است و توصیه‌ی خرید، فروش یا سرمایه‌گذاری نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>Bitcoin slipped back under $60,000 today, 24 November 2026. On Monday a piece of good news lifted stocks, but crypto could not hold the gain. This report does not say "buy" or "sell". It says where the market is, what the indicators mean, which three scenarios look most likely for next week and what to watch.</blockquote>
+<h3>At a glance</h3>
+<ul>
+<li><strong>Price:</strong> about $59,850; down 3.3% in 24 hours, 7.5% in a week and 23.5% in a month</li>
+</ul>
+<ul>
+<li><strong>ETFs:</strong> $570 million left on Monday, the fifth straight day of outflows. November's total is $4.71 billion, the worst month since launch</li>
+</ul>
+<ul>
+<li><strong>Sentiment:</strong> the Fear and Greed Index is 11, eight days in a row in "extreme fear"</li>
+</ul>
+<ul>
+<li><strong>The Fed:</strong> markets price about a 95% chance of a rate hike on 9 December</li>
+</ul>
+<ul>
+<li><strong>Key event:</strong> Wednesday 25 November, the US PCE inflation report</li>
+</ul>
+<h3><span class="check-number">1.</span> Where is the market now?</h3>
+<p><strong>Monday:</strong><br>Nvidia news lifted US stocks (Nasdaq up nearly 6.5%) and Bitcoin reached about $64,500. Within hours it gave all of it back. When good news does not stick, sellers still have the upper hand.</p>
+<p><strong>Today:</strong><br>A <a href="https://www.forexfactory.com/news/1438400-us-prepares-to-raise-tariffs-on-china-and" target="_blank" rel="noopener" style="color:#57D9C7">WSJ report</a> said new US tariffs on China, Japan, South Korea and others may come as soon as this week. Nasdaq fell about 2% and Bitcoin dropped under $60,000 again.</p>
+<p><strong>Altcoins are weaker than Bitcoin.</strong> Over the last 24 hours:</p>
+<div class="tw"><table><tr><th>Coin</th><th>Change</th></tr><tr><td>Solana (SOL)</td><td>−6.1%</td></tr><tr><td>Ethereum (ETH)</td><td>−4.5%</td></tr><tr><td>Hyperliquid (HYPE)</td><td>−8.2%</td></tr><tr><td>Avalanche (AVAX)</td><td>−5.4%</td></tr><tr><td>XRP</td><td>−4.2%</td></tr></table></div>
+<p><a href="https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto" target="_blank" rel="noopener" style="color:#57D9C7">CoinDesk</a> and <a href="https://www.tradingview.com/news/invezz:3010a2e06094b:0-why-is-bitcoin-down-today-btc-drops-below-60-000-as-etf-outflows-mount/" target="_blank" rel="noopener" style="color:#57D9C7">Invezz</a> report the same picture.</p>
+<h3><span class="check-number">2.</span> How to read four indicators</h3>
+<p><strong>1. ETF flows:</strong><br>Spot Bitcoin ETFs let people buy without holding coins directly. Money in means institutional buyers; money out means the opposite. <a href="https://en.coin-turk.com/bitcoin-holds-near-60000-as-etf-outflows-surpass-4-7-billion-in-november" target="_blank" rel="noopener" style="color:#57D9C7">Five straight days of outflows</a> show the big buyers are on the sidelines for now.</p>
+<p><strong>2. Fear and Greed Index:</strong><br>A 0–100 gauge of market mood. <a href="https://financefeeds.com/crypto-fear-and-greed-hits-11/" target="_blank" rel="noopener" style="color:#57D9C7">A reading of 11</a> is extreme fear. That means the market is emotional, but it is not a bottom signal by itself; markets can stay fearful for a while.</p>
+<p><strong>3. Realized price:</strong><br>The average price at which all existing coins last moved, roughly "the market's average cost basis". According to <a href="https://bitbo.io/news/glassnode-bitcoin-capitulation-ftx-losses/" target="_blank" rel="noopener" style="color:#57D9C7">Glassnode</a> it is about $53,200 now. In earlier bear markets the bottom usually formed below this level. Glassnode sees early signs of seller capitulation but does not call a bottom.</p>
+<p><strong>4. The Fed and inflation:</strong><br>When interest rates rise, risky assets usually come under pressure. <a href="https://en.coinotag.com/traders-price-december-fed-rate-hike-odds-pce" target="_blank" rel="noopener" style="color:#57D9C7">Markets</a> see a 9 December hike as nearly certain, and the dollar is at its strongest since March 2025. Wednesday's PCE report is the most important number this week.</p>
+<h3><span class="check-number">3.</span> Three scenarios for next week</h3>
+<p>The percentages are Ditoman's analytical estimates, not precise calculations and not certainty.</p>
+<p><strong>1. Choppy with a downward lean (about 55%)</strong><br>A rough range of $55,000 to $63,000. US markets are closed Thursday (Thanksgiving) and trade a half day on Friday, so sharp moves either way mean little.</p>
+<p><strong>2. Further decline (about 30%)</strong><br>If the daily close falls below $58,500, the low near $55,000 gets retested first. If that breaks too, the next level is the realized price near $53,200.</p>
+<p><strong>3. A bounce (about 15%)</strong><br>A mild PCE and an end to ETF outflows. Until a daily close above $64,500 (Monday's high), any rise is only a temporary bounce.</p>
+<h3><span class="check-number">4.</span> What to watch</h3>
+<p><strong>1. Wednesday 25 November: October PCE and the GDP revision.</strong><br><a href="https://admiralmarkets.com/analytics/traders-blog/pce-inflation-october-2026-preview" target="_blank" rel="noopener" style="color:#57D9C7">For core PCE</a> about 0.3% month on month is expected. 0.4% or higher is bad for markets (a larger hike becomes a live debate); 0.2% or lower is good. <a href="https://finance.biggo.com/news/99d78157-4337-43e5-947b-d68cd672ef05" target="_blank" rel="noopener" style="color:#57D9C7">This analysis</a> also treats those two as the week's key.</p>
+<p><strong>2. The official tariff announcement.</strong><br>It could land this week and bring volatility again.</p>
+<p><strong>3. Daily ETF flows.</strong><br>Until outflows stop, a lasting rebound is hard to rely on.</p>
+<h3>Ditoman's view</h3>
+<p>Crypto has a down and an up in every cycle. For someone who understands the mechanics, extreme fear is less a scare than a chance to learn: why ETFs matter, how inflation reaches prices, and how to judge a bottom by data rather than gut feeling.</p>
+<p>One simple point: nobody knows next week's price, and anyone who accepts that is not thrown around by every headline. Financial decisions depend on each person's own situation and capacity.</p>
+<p>This report is analytical and educational, not a recommendation to buy, sell or invest. Figures come from the sources below and may have changed by the time you read this.</p>
+<h3>Read more</h3><ul><li><a href="turkey-digital-dollar-circle-paribu.en.html">Digital dollars in Istanbul</a></li><li><a href="weight-loss-drugs-economy-glp1.en.html">The shot that rewired the shopping basket</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto" target="_blank" rel="noopener">CoinDesk: Bitcoin pulls back below $60,000 as tariffs re-enter the picture (24 Nov 2026)</a></li><li><a href="https://www.tradingview.com/news/invezz:3010a2e06094b:0-why-is-bitcoin-down-today-btc-drops-below-60-000-as-etf-outflows-mount/" target="_blank" rel="noopener">Invezz / TradingView: Why is Bitcoin down today?</a></li><li><a href="https://en.coin-turk.com/bitcoin-holds-near-60000-as-etf-outflows-surpass-4-7-billion-in-november" target="_blank" rel="noopener">CoinTurk: ETF outflows surpass $4.7 billion in November</a></li><li><a href="https://financefeeds.com/crypto-fear-and-greed-hits-11/" target="_blank" rel="noopener">FinanceFeeds: Crypto Fear and Greed hits 11</a></li><li><a href="https://bitbo.io/news/glassnode-bitcoin-capitulation-ftx-losses/" target="_blank" rel="noopener">Bitbo: Glassnode on Bitcoin capitulation</a></li><li><a href="https://kucoin.com/news/articles/crypto-daily-market-report-november-24-2026" target="_blank" rel="noopener">KuCoin: Crypto Daily Market Report, 24 Nov</a></li><li><a href="https://admiralmarkets.com/analytics/traders-blog/pce-inflation-october-2026-preview" target="_blank" rel="noopener">Admiral Markets: PCE report 25 November preview</a></li><li><a href="https://finance.biggo.com/news/99d78157-4337-43e5-947b-d68cd672ef05" target="_blank" rel="noopener">BigGo Finance: PCE, GDP and a near-certain Fed hike</a></li><li><a href="https://en.coinotag.com/traders-price-december-fed-rate-hike-odds-pce" target="_blank" rel="noopener">Coinotag: 95.1% odds of a December Fed hike</a></li><li><a href="https://www.forexfactory.com/news/1438400-us-prepares-to-raise-tariffs-on-china-and" target="_blank" rel="noopener">Forex Factory: U.S. prepares to raise tariffs on China and others (WSJ)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 24 November 2026. Figures come from the sources above and may have changed since. Scenario percentages are Ditoman’s analytical estimates. This is an educational, analytical report, not a recommendation to buy, sell or invest.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.en.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.en.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
