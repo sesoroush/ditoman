@@ -1,0 +1,166 @@
+{
+ "date": "2026-11-24",
+ "kind": "world",
+ "lead_fa": "بعد از هفته‌ی سخت بازارها، دوشنبه وال‌استریت قوی‌ترین روزش را از آوریل ۲۰۲۵ ثبت کرد و موج برگشت به آسیا هم رسید. مرور رسانه‌های جهان از نیویورک تا سئول، دبی و سیدنی؛ برای هر خبر یک خط هم نوشته‌ایم که برای ما یعنی چه. با هم دنبال می‌کنیم.",
+ "lead_en": "After a rough week, Wall Street had its strongest day since April 2025 and the rebound spread to Asia. A tour of world media from New York to Seoul, Dubai and Sydney, with one line on what each story means for us.",
+ "front_fa": "بلومبرگ: «بزرگ‌ترین جهش سهام انویدیا از ۲۰۰۳» · رویترز: «بیشتر بورس‌های خلیج فارس با تحرک دیپلماتیک بالا بسته شدند» · ای‌بی‌سی استرالیا: «رالی یک‌روزه‌ی وال‌استریت بزرگ‌تر از کل ASX 200» · سی‌ان‌ان: «جنسن هوانگ دوباره مدیرعامل انویدیا شد»",
+ "front_en": "Bloomberg: Nvidia's biggest jump since 2003 · Reuters: “Most Gulf bourses end higher, buoyed by diplomatic momentum” · ABC Australia: “Wall St's one-day rally bigger than ASX 200” · CNN: Jensen Huang reinstated as Nvidia CEO",
+ "sections": [
+  {
+   "fa": "اقتصاد و بازارهای جهانی",
+   "en": "Global economy & markets",
+   "items": [
+    {
+     "fa": "S&P 500 با ۴٫۷٪ رشد: نزدک ۱۰۰ هم ۶٫۹٪ بالا رفت؛ قوی‌ترین روز وال‌استریت از آوریل ۲۰۲۵ و حدود ۳ هزار میلیارد دلار ارزش تازه. یعنی بازارهای پرریسک نفسی تازه کردند، اما نوسان هنوز بالاست.",
+     "en": "S&P 500 up 4.7%, Nasdaq 100 up 6.9%: Wall Street's best day since April 2025, adding about $3tn. Risk assets got a breather, but volatility stays high.",
+     "src": "ساکسو",
+     "url": "https://home.saxo/en-mena/content/articles/macro/market-quick-take---nvidias-ceo-returns-and-wall-street-rebounds---24-november-2026-24112026"
+    },
+    {
+     "fa": "بیت‌کوین حدود ۶۰٬۵۰۰ دلار: با وجود رالی سهام ۱٫۲٪ پایین؛ صندوق‌های بیت‌کوین آمریکا در هفته‌ی منتهی به ۲۰ نوامبر ۱٫۷۹ میلیارد دلار خروجی داشتند. یعنی رمزارز هنوز پشت سر سهام مانده و قیمت داخلی آن هم آرام نیست.",
+     "en": "Bitcoin near $60,500, down 1.2% despite the equity rally; US bitcoin funds lost $1.79bn in the week to 20 November. Crypto lags stocks, so local crypto prices stay jumpy.",
+     "src": "ای‌بی‌سی استرالیا",
+     "url": "https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524"
+    },
+    {
+     "fa": "اونس طلا حدود ۳٬۶۳۵ دلار: آتی طلا دوشنبه ۳٫۴٪ برگشت، بعد از رسیدن به کمترین سطح ۱۴ ماه در جمعه. یعنی بخشی از بالا و پایین سکه و طلای داخل از بازار جهانی می‌آید.",
+     "en": "Gold near $3,635/oz; futures rebounded 3.4% on Monday after Friday's 14-month low. Part of the swing in local coin and gold prices comes from abroad.",
+     "src": "ساکسو",
+     "url": "https://home.saxo/en-mena/content/articles/macro/market-quick-take---nvidias-ceo-returns-and-wall-street-rebounds---24-november-2026-24112026"
+    },
+    {
+     "fa": "برنت ۸۸٫۹۷ دلار: کمترین بسته‌شدن از ۳۱ اوت؛ دویچه‌بانک مازاد عرضه‌ی جهانی را ۱٫۷ میلیون بشکه در روز برآورد می‌کند. یعنی درآمد نفتی صادرکنندگان منطقه کوچک‌تر و سوخت دنیا ارزان‌تر می‌شود.",
+     "en": "Brent at $88.97, its lowest close since 31 August; Deutsche Bank sees a 1.7m b/d global surplus. Oil revenue for regional exporters shrinks while fuel gets cheaper.",
+     "src": "رویترز",
+     "url": "https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524"
+    },
+    {
+     "fa": "بازده اوراق ۱۰ ساله‌ی آمریکا تا ۴٫۹۸٪: ین ژاپن هم تا ۱۵۹٫۵ در برابر دلار ضعیف شد؛ تصمیم بعدی فدرال رزرو ۹ دسامبر است. یعنی دلار جهانی قوی است و پول برای بازارهای نوظهور گران‌تر.",
+     "en": "US 10-year yield peaked near 4.98% and the yen weakened to 159.5 per dollar; the Fed decides on 9 December. A strong dollar makes money costlier for emerging markets.",
+     "src": "ساکسو",
+     "url": "https://home.saxo/en-mena/content/articles/macro/market-quick-take---nvidias-ceo-returns-and-wall-street-rebounds---24-november-2026-24112026"
+    }
+   ]
+  },
+  {
+   "fa": "صنعت و انرژی",
+   "en": "Industry & energy",
+   "items": [
+    {
+     "fa": "ال‌ان‌جی آسیا زیر ۲۹ دلار: تقاضای جهانی گاز مایع در دسامبر ۳۹٫۳ میلیون تن پیش‌بینی می‌شود، ۱۱٪ بیشتر از نوامبر؛ گاز اروپا (TTF) هم تا ۸٫۶٪ جهید. یعنی زمستان، گاز را به گران‌ترین کالای انرژی دنیا تبدیل کرده است.",
+     "en": "Asian LNG just under $29/MMBtu; December demand seen at 39.3m tonnes, up 11% on November, while European TTF gas jumped up to 8.6%. Winter makes gas the priciest energy commodity.",
+     "src": "ای‌بی‌سی استرالیا",
+     "url": "https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524"
+    },
+    {
+     "fa": "ای‌اس‌ام‌ال (ASML) ۸٫۹٪ و زیمنس انرژی ۷٪ بالا: سازندگان ماشین تراشه و تجهیزات برق اروپا پیشتاز رالی بودند. یعنی زنجیره‌ی برق و تراشه هنوز موتور سرمایه‌گذاری صنعتی دنیاست.",
+     "en": "ASML up 8.9%, Siemens Energy nearly 7%: Europe's chip-tool and power-equipment makers led the rally. Power and chip supply chains still drive industrial investment.",
+     "src": "ساکسو",
+     "url": "https://home.saxo/en-mena/content/articles/macro/market-quick-take---nvidias-ceo-returns-and-wall-street-rebounds---24-november-2026-24112026"
+    },
+    {
+     "fa": "خودروی برقی بیش از ۷۰٪ فروش خودرو در چین: هشتمین رکورد ماهانه‌ی پیاپی در راه است. یعنی خودروهای بنزینی چینی ارزان‌تر به بازارهای دیگر، از جمله منطقه‌ی ما، سرازیر می‌شوند.",
+     "en": "EVs top 70% of China's car sales, heading for an eighth straight monthly record. Cheaper Chinese petrol cars will flow to other markets, including ours.",
+     "src": "ساوت چاینا مورنینگ پست",
+     "url": "https://www.scmp.com/economy/china-economy"
+    }
+   ]
+  },
+  {
+   "fa": "هوش مصنوعی و فناوری",
+   "en": "AI & technology",
+   "items": [
+    {
+     "fa": "انویدیا (Nvidia) ۳۱٪ بالا: بعد از بازگشت جنسن هوانگ به مدیرعاملی، حدود هزار میلیارد دلار به ارزش شرکت اضافه شد. یعنی قیمت کارت گرافیک و سرویس‌های هوش مصنوعی به سرنوشت یک شرکت گره خورده است.",
+     "en": "Nvidia up 31% after Jensen Huang's reinstatement, adding about $1tn in value. GPU and AI service prices are tied to one company's fortunes.",
+     "src": "بلومبرگ",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-22/asia-braces-for-more-volatility-after-us-selloff-markets-wrap"
+    },
+    {
+     "fa": "دیپ‌مایند: هزینه‌ی محاسبه ۱۱٫۸ برابر کمتر: عامل‌های هوش مصنوعی گوگل الگوریتم‌های کوانتومی پژوهش همجوشی هسته‌ای را بهینه کردند و نتیجه با اثبات صوری تأیید شد. یعنی هوش مصنوعی از دستیار نوشتن به ابزار کشف علمی تبدیل می‌شود.",
+     "en": "DeepMind agents cut the estimated compute cost of quantum algorithms for fusion research 11.8x, verified by formal proof. AI is moving from writing aid to scientific discovery tool.",
+     "src": "گوگل دیپ‌مایند",
+     "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+    },
+    {
+     "fa": "۷۰۰ هزار زن در آزمایش هوش مصنوعی سرطان پستان: نظام سلامت بریتانیا (NHS) سه سال بررسی می‌کند که آیا هوش مصنوعی تشخیص زودهنگام را سریع‌تر می‌کند. یعنی پزشکی هوشمند به‌زودی به استاندارد غربالگری تبدیل می‌شود.",
+     "en": "UK NHS begins a three-year AI breast-screening trial with nearly 700,000 women. AI-assisted diagnosis is heading toward standard screening.",
+     "src": "سمافور",
+     "url": "https://semafor.com/article/11/23/2026/uk-starts-major-ai-breast-cancer-trial"
+    }
+   ]
+  },
+  {
+   "fa": "تجارت و کسب‌وکار",
+   "en": "Trade & business",
+   "items": [
+    {
+     "fa": "کراوداسترایک ۴۳٫۹ میلیارد دلار برای زی‌اسکیلر: بزرگ‌ترین معامله‌ی امنیت سایبری سال، تمام‌سهمی؛ سهام خریدار ۸٫۹٪ افت کرد. یعنی امنیت سایبری یکی از پردرآمدترین مهارت‌های بازار کار می‌ماند.",
+     "en": "CrowdStrike agrees a $43.9bn all-share deal for Zscaler; its shares fell 8.9%. Cybersecurity stays one of the best-paid skills.",
+     "src": "ساکسو",
+     "url": "https://home.saxo/en-mena/content/articles/macro/market-quick-take---nvidias-ceo-returns-and-wall-street-rebounds---24-november-2026-24112026"
+    },
+    {
+     "fa": "مگااسپید سنگاپور در فهرست سیاه تجاری آمریکا: به اتهام صادرات تراشه‌ی انویدیا به چین؛ شرکت تخلف را رد می‌کند. یعنی کنترل صادرات تراشه سخت‌تر و سخت‌افزار هوش مصنوعی در بازارهای واسطه گران‌تر می‌شود.",
+     "en": "US blacklists Singapore's Megaspeed over alleged Nvidia chip exports to China; the firm denies wrongdoing. Tighter chip controls make AI hardware pricier in grey markets.",
+     "src": "بی‌بی‌سی",
+     "url": "https://www.bbc.com/news/articles/cv98xpg5dg5zo"
+    },
+    {
+     "fa": "واردات طلای چین ۱۷۴٫۱٪ بالا: خانوارهای چینی برای حفظ پس‌انداز به طلا رو آورده‌اند. یعنی تقاضای آسیا یکی از پایه‌های قیمت جهانی طلاست.",
+     "en": "China's gold imports rose 174.1% in October as households diversify savings. Asian demand underpins world gold prices.",
+     "src": "ساوت چاینا مورنینگ پست",
+     "url": "https://www.scmp.com/economy/china-economy"
+    }
+   ]
+  },
+  {
+   "fa": "از آسیا تا استرالیا",
+   "en": "Asia & Oceania",
+   "items": [
+    {
+     "fa": "تایوان ۹٫۱٪، کاسپی ۷٫۵٪، نیکی ۴٫۵٪: سهام تراشه‌سازان آسیا با موج انویدیا برگشتند؛ توکیو الکترون ۱۰٪ و ادونتست ۱۲٪ بالا. یعنی تراشه‌ی آسیا هنوز قلب اقتصاد هوش مصنوعی است.",
+     "en": "Taiwan +9.1%, Kospi +7.5%, Nikkei +4.5%; Tokyo Electron +10%, Advantest +12%. Asian chips remain the heart of the AI economy.",
+     "src": "ای‌بی‌سی استرالیا",
+     "url": "https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524"
+    },
+    {
+     "fa": "دبی ۱٫۳٪ بالا؛ دبی اسلامیک بانک ۱۱٪: بیشترین رشد از ۲۰۱۴؛ در ریاض جریر ۸٪ افت کرد چون مالیات حداقلی تازه از ۲۰۲۷ سودش را کم می‌کند. یعنی هزینه‌ی کسب‌وکار در خلیج فارس با قواعد مالیاتی تازه بالا می‌رود.",
+     "en": "Dubai index +1.3%, Dubai Islamic Bank +11%, its best since 2014; in Riyadh, Jarir fell 8% as a new minimum top-up tax hits profits from 2027. Doing business in the Gulf gets costlier.",
+     "src": "رویترز",
+     "url": "https://www.brecorder.com/news/40450436/most-gulf-bourses-end-higher-buoyed-by-diplomatic-momentum"
+    },
+    {
+     "fa": "واردات نفت روسیه به هند ۱٫۹۹ میلیون بشکه در روز: رقمی رکوردی؛ چین هم ۲٫۳۴ میلیون بشکه در روز خرید. یعنی رقابت برای مشتری‌های آسیایی نفت سخت‌تر و تخفیف‌ها بیشتر می‌شود.",
+     "en": "India imports a record 1.99m b/d of Russian oil; China 2.34m b/d. Competition for Asian oil buyers gets tougher.",
+     "src": "رویترز",
+     "url": "https://www.business-standard.com/economy/news/china-india-set-for-record-russian-oil-imports-in-2026-amid-iran-war-126112400502_1.html"
+    },
+    {
+     "fa": "ASX 200 استرالیا ۱٫۸٪ بالا: نخستین رشد در دو هفته؛ دلار نیوزیلند به کمترین سطح ۱۷ سال (۰٫۵۴۳۴) رسید. یعنی ارزهای کالایی هم زیر سایه‌ی دلار قوی آمریکا هستند.",
+     "en": "ASX 200 up 1.8%, its first gain in two weeks; the NZ dollar hit a 17-year low of 0.5434. Commodity currencies sit in the strong dollar's shadow.",
+     "src": "ای‌بی‌سی استرالیا",
+     "url": "https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524"
+    }
+   ]
+  },
+  {
+   "fa": "فرهنگ و خبرهای عجیب",
+   "en": "Culture & curious news",
+   "items": [
+    {
+     "fa": "سریالی که خودت بازیگرش هستی: درخواست ثبت اختراع گوگل از برنامه‌های تلویزیونی ساخت هوش مصنوعی می‌گوید که نسخه‌ی دیجیتال بیننده با صدای خودش در آن بازی کند؛ هنوز محصولی در کار نیست.",
+     "en": "A Google patent application describes AI-made TV shows starring a digital copy of the viewer, in their own voice; no product yet.",
+     "src": "گیزمودو",
+     "url": "https://gizmodo.com/google-wants-to-make-ai-tv-shows-starring-you-2000844299"
+    },
+    {
+     "fa": "امارات، پایتخت «طول عمر» خلیج فارس: ۲٬۲۰۰ مرکز و شرکت مرتبط با افزایش طول عمر، بیشترین سهم در کشورهای حاشیه‌ی خلیج فارس.",
+     "en": "The UAE hosts 2,200 longevity-related organisations, the largest share in the GCC.",
+     "src": "گلف نیوز",
+     "url": "https://gulfnews.com/uae/health/how-the-uae-became-the-gulfs-longevity-hub-1.500759309"
+    }
+   ]
+  }
+ ]
+}
