@@ -1,5 +1,174 @@
 [
  {
+  "date": "2026-11-24",
+  "jalali": "1405/09/03",
+  "weekday_fa": "سه‌شنبه",
+  "post": "press/2026-11-24-post.webp",
+  "post_en": "press/2026-11-24-post-en.webp",
+  "lead_fa": "سوم آذر با دلار ۲۷۰ هزار تومانی و تتر رکوردشکن شروع شد، سکه به ۲۵۸ میلیون رسید، بورس برای سومین روز سبز ماند و نفت به ۸۸ دلار عقب نشست. روی جلد روزنامه‌ها بیشتر سیاسی است؛ ما سراغ خبرهای زندگی و جیب رفته‌ایم و برای هر کدام نوشته‌ایم یعنی چه. با هم دنبال می‌کنیم.",
+  "lead_en": "3 Azar opened with the dollar at 270,000 tomans and tether at a record, the Emami coin at 258 million, a third green day on the Tehran exchange and Brent back at $88. Most front pages are political; we picked the news that touches daily life and the wallet, with one line on what each means.",
+  "front_fa": "شرق: «نقشه تازه برای حکمرانی فضای مجازی» · پیام ما: «سرخدارها در محاصره مجوز معدن» · خبرورزشی: «آبروداری استقلال»",
+  "front_en": "Shargh: “A new map for governing cyberspace” · Payam-e Ma: “Yew trees besieged by a mining permit” · Khabar Varzeshi: “Esteghlal keeps its honour”",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازار",
+    "en": "Economy & markets",
+    "items": [
+     {
+      "fa": "دلار ۲۷۰ هزار تومان، تتر ۲۷۴ هزار: بازار ارز صبح امروز صعودی شد و تتر رکورد زد؛ فاصله‌ی تتر با دلار آزاد باز شده و اختلاف تابلوهای صرافی‌ها هم زیاد است. یعنی خریدار ارز دیجیتال جلوتر از تابلوی صرافی حرکت می‌کند؛ برای فهم جهت بازار، نرخ تتر را زودتر نگاه کنید و برای معامله، چند تابلو را.",
+      "en": "Dollar 270,000 tomans, tether 274,000: the currency market opened higher and tether set a record, with a widening gap to the free-market dollar and big differences between exchange boards. Crypto buyers are moving ahead of the exchange boards: watch tether for direction, and compare several boards before any trade.",
+      "src": "اقتصادنیوز، تعادل، خبر پتروشیمی، نبض قیمت",
+      "url": "https://www.eghtesadonline.com/fa/news/2177658/"
+     },
+     {
+      "fa": "سکه امامی ۲۵۸ میلیون تومان: طلای آب‌شده ۶٫۱۸ درصد جهش کرد و طلای ۱۸ عیار بالا رفت؛ رشد اونس جهانی اثر افت مقطعی دلار را خنثی کرد. یعنی قیمت طلای داخل این روزها بیشتر از اونس خط می‌گیرد تا از دلار؛ کسی که طلا می‌خرد باید هر دو عدد را ببیند، نه فقط دلار را.",
+      "en": "Emami coin 258 million tomans: melted gold jumped 6.18% and 18-carat gold rose, as the global ounce offset a brief dip in the dollar. Domestic gold is currently tracking the ounce more than the dollar, so a buyer needs to watch both numbers, not just the exchange rate.",
+      "src": "نورنیوز، دنیای اقتصاد، خبر پتروشیمی، نبض قیمت",
+      "url": "https://nournews.ir/fa/news/365284/"
+     },
+     {
+      "fa": "بورس ۸ میلیون و ۳۹۴ هزار واحد: شاخص کل دوشنبه ۶۷ هزار واحد (۰٫۸۱ درصد) بالا رفت، هم‌وزن ۱٫۶۹ درصد، ۳٫۵ همت پول حقیقی وارد شد و ۸۶ درصد نمادها مثبت بستند؛ فلزات اساسی پیشتاز بود. یعنی رشد این بار پهن است نه مال چند نماد بزرگ؛ وقتی هم‌وزن دو برابر شاخص کل رشد می‌کند، سهم‌های کوچک و متوسط موتور بازارند.",
+      "en": "Tehran stocks at 8,394,000: the index rose 67,000 points (0.81%) on Monday, the equal-weighted index 1.69%, retail inflow was 3.5 trillion tomans and 86% of symbols closed higher, led by basic metals. The rally is broad, not a few heavyweights: when the equal-weighted index grows twice as fast as the main one, small and mid caps are the engine.",
+      "src": "صداوسیما، تعادل، شرق",
+      "url": "https://www.irib-news.ir/fa/news/5974608/"
+     },
+     {
+      "fa": "نفت برنت ۸۸ دلار: دیروز بیش از ۳ درصد ریخت و به پایین‌ترین قیمت از پایان اوت رسید؛ دلیلش عرضه‌ی بیشتر است، از جمله بازگشایی خط لوله‌ی لیبی. یعنی نگاه بازار از ترس کمبود به مازاد چرخیده و هر دلار افت برنت مستقیم روی درآمد ارزی کشور می‌نشیند.",
+      "en": "Brent at $88: it fell more than 3% yesterday to its lowest since late August, on rising supply including the reopened Libyan pipeline. The market has swung from fear of shortage to expectation of surplus, and every dollar off Brent comes straight out of the country’s currency income.",
+      "src": "جهان صنعت، خبرگزاری مهر، خبرگزاری دانشجو",
+      "url": "https://www.mehrnews.com/news/7021180/"
+     },
+     {
+      "fa": "فرمان بازار خودرو چرخید: همشهری می‌گوید مونتاژی‌ها گران و داخلی‌ها ارزان شدند؛ سهند اتوماتیک ۷۵ میلیون تومان پایین آمد. یعنی دلار بالا اول روی خودروهایی می‌نشیند که قطعه‌ی وارداتی دارند، و خودروی تمام‌داخلی فعلاً با خریدارِ کم دست‌وپنجه نرم می‌کند.",
+      "en": "The car market turned: Hamshahri reports assembled imports getting dearer while domestic models fell; the automatic Sahand dropped 75 million tomans. A higher dollar hits cars with imported parts first, while fully domestic models are still fighting thin demand.",
+      "src": "همشهری آنلاین، قدس آنلاین",
+      "url": "https://www.hamshahrionline.ir/news/1089009/"
+     },
+     {
+      "fa": "کالابرگ، معیارهای حذف: در مجلس پیشنهاد شد خودرو و مسکن هم به معیارهای حذف اضافه شود؛ زنگنه می‌گوید معیار دارایی ۷٫۵ میلیارد تومانی و سنجش خودرو و خانه بدون نگاه به درآمد دقیق نیست. یعنی داشتن یک خانه و یک خودرو فعلاً به‌تنهایی حذف نمی‌کند، اما فهرست معیارها در حال تغییر است؛ پیامک حذف را جدی بگیرید و اعتراض را در سامانه ثبت کنید.",
+      "en": "Food-voucher eligibility: parliament is weighing adding a car and a home to the removal criteria; MP Zanganeh says the 7.5-billion-toman asset test and car-plus-house checks without looking at income are not accurate. One home and one car alone do not disqualify you for now, but the list is moving; take any removal SMS seriously and file an objection in the system.",
+      "src": "اقتصادنیوز، خبرجدید، وانانیوز",
+      "url": "https://www.eghtesadnews.com/بخش-اقتصادی-67/818600-"
+     },
+     {
+      "fa": "۱۱ هزار و ۲۰۰ میلیارد تومان به خزانه برگشت: دیوان محاسبات بخشی از بدهی شرکت‌های پتروشیمی و فولادی به دولت را وصول کرد. یعنی پولی که باید از سود شرکت‌های بزرگ به بودجه می‌رسید، با پیگیری برگشت؛ هر ریالش یعنی استقراض کمتر دولت از بانک مرکزی و فشار تورمی کمتر.",
+      "en": "11,200 billion tomans back in the treasury: the Supreme Audit Court recovered part of what petrochemical and steel companies owed the state. Money that should have reached the budget from big-company profits came back after follow-up; every rial of it means less government borrowing from the central bank and less inflationary pressure.",
+      "src": "خبرگزاری مهر، صداوسیما، شفقنا",
+      "url": "https://www.mehrnews.com/news/7021257/"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و تولید",
+    "en": "Industry & production",
+    "items": [
+     {
+      "fa": "ضربه‌ی گازی به فولادی‌ها: دنیای اقتصاد و فولادنیوز می‌نویسند محدودیت گاز صنایع پیش از رسیدن سرما جدی شده و سهمیه‌بندی چهارماهه روی میز است؛ بازار آهن هم در رکود است و میلگرد و تیرآهن ثابت ماند. یعنی عرضه‌ی فولاد در زمستان کم می‌شود اما فعلاً تقاضا هم ضعیف است و قیمت تکان نخورده؛ اگر پروژه‌ی ساخت دارید، خرید آهن را با این دو نیرو بسنجید.",
+      "en": "Gas squeeze on steelmakers: Donya-e-Eqtesad and Foolad News report industrial gas limits tightening before the cold sets in, with a four-month rationing plan on the table; the iron market is flat, with rebar and beam prices unchanged. Winter steel supply will shrink, but demand is weak too, which is why prices have not moved; builders should weigh both forces before buying.",
+      "src": "دنیای اقتصاد، فولادنیوز، آخرین خبر، ایران اکونومیست",
+      "url": "https://iraneconomist.com/fa/news/845039/"
+     },
+     {
+      "fa": "۹۰۰ شرکت دانش‌بنیان تازه در ۷ ماه: معاونت علمی می‌گوید شمار شرکت‌های ثبت‌شده به ۱۱ هزار و ۴۲۲ و محصولاتشان به حدود ۱۸ هزار رسیده؛ اعتبار دانش‌بنیانی ۱۵ ماه تمدید شد و فهرست کالاهای دانش‌بنیان با تمرکز بر هوش مصنوعی و فوتونیک بازنویسی شده است. یعنی در سالی سخت هنوز ماهی ۱۳۰ شرکت فناور تازه ثبت می‌شود و معافیت‌هایشان تا بعد از این دوره امن است.",
+      "en": "900 new knowledge-based firms in seven months: the vice-presidency for science says registered companies now number 11,422 with about 18,000 products; certifications were extended by 15 months and the product list rewritten around AI and photonics. Even in a hard year, roughly 130 new tech firms a month are being registered, and their tax breaks are safe through this period.",
+      "src": "صداوسیما",
+      "url": "https://www.irib-news.ir/fa/news/5974715/"
+     }
+    ]
+   },
+   {
+    "fa": "فناوری",
+    "en": "Technology",
+    "items": [
+     {
+      "fa": "نقشه‌ی تازه برای فضای مجازی: شرق پیش‌نویس «نظام حقوقی فضای مجازی» را بررسی کرده: ۱۰ ماده و ۴۴ اقدام تا افق ۱۴۱۰، شورای عالی فضای مجازی یگانه مرجع سیاست‌گذار؛ سند هنوز مصوب نیست و برای نظر کارشناسان و بخش خصوصی منتشر شده. یعنی قانون بازی کسب‌وکارهای آنلاین دارد نوشته می‌شود و پنجره‌ی نظر دادن فعلاً باز است.",
+      "en": "A new map for cyberspace: Shargh reviews the draft “legal system for cyberspace”, 10 articles and 44 actions to 2031, with the Supreme Council of Cyberspace as sole policymaker; the text is not yet approved and is out for expert and private-sector comment. The rules of the game for online business are being written now, and the comment window is still open.",
+      "src": "شرق، شفقنا",
+      "url": "https://fa.shafaqna.com/news/2409097/"
+     },
+     {
+      "fa": "راهنمای هوش مصنوعی در پژوهش ابلاغ شد: به گزارش مهر، دانشگاه‌ها و پژوهشگران از این پس چارچوب رسمی دارند که کجا و چطور می‌توانند از ابزارهای هوش مصنوعی استفاده کنند. یعنی مرز «کمک گرفتن» و «تقلب» در پایان‌نامه و مقاله روشن‌تر می‌شود؛ دانشجو بهتر است متن راهنما را قبل از فصل بعد بخواند.",
+      "en": "AI-in-research guidelines issued: per Mehr, universities and researchers now have an official framework for where and how AI tools may be used. The line between “assistance” and “cheating” in theses and papers gets clearer; students should read it before next term.",
+      "src": "خبرگزاری مهر",
+      "url": "https://www.mehrnews.com/news/7020382/"
+     },
+     {
+      "fa": "۹ فناوری شهری تازه: از پهپاد آب‌رسان تا تولید برق از آسفالت معرفی شد. یعنی شهر دارد ابزارهای تازه‌ای برای آب و برق و خدمات امتحان می‌کند؛ نسخه‌ی نهایی وقتی مهم است که از نمایشگاه به خیابان برسد.",
+      "en": "Nine new urban technologies: from water-delivery drones to electricity generated from asphalt, unveiled this week. The city is testing new tools for water, power and services; what matters is when they move from the showcase to the street.",
+      "src": "خبرگزاری مهر",
+      "url": "https://www.mehrnews.com/news/7019266/"
+     }
+    ]
+   },
+   {
+    "fa": "جامعه و محیط‌زیست",
+    "en": "Society & environment",
+    "items": [
+     {
+      "fa": "هوای تهران از امروز آلوده‌تر: هشدار رسمی داده شد که با سکون هوا آلودگی از سه‌شنبه بالا می‌رود. یعنی تا رسیدن سامانه‌ی بارشی، کودکان و سالمندان فعالیت بیرونی را کم کنند و ماسک در ترافیک بی‌فایده نیست.",
+      "en": "Tehran’s air worsens from today: an official warning says still air will push pollution up from Tuesday. Until the rain system arrives, children and the elderly should cut outdoor activity, and a mask in traffic is not a bad idea.",
+      "src": "شرق، آفتاب‌نیوز، رکنا، جهان صنعت",
+      "url": "https://www.sharghdaily.com/بخش-جامعه-220/1144075-"
+     },
+     {
+      "fa": "باران تا پنجشنبه، سرما از چهارشنبه: هواشناسی می‌گوید دو موج بارشی این هفته وارد کشور می‌شود، بارش شمال ادامه دارد و دما از چهارشنبه پایین می‌آید. یعنی اگر سفر شمال دارید جاده‌ی لغزنده و مه را حساب کنید، و اگر در تهران هستید، باران خبر خوبی برای هوای آلوده است.",
+      "en": "Rain until Thursday, cold from Wednesday: the weather service expects two rain systems this week, continued rain in the north and falling temperatures from Wednesday. Plan for slippery roads and fog on the way north; in Tehran, the rain is good news for the smog.",
+      "src": "خبرآنلاین، شهرآرا، راهبرد معاصر",
+      "url": "https://www.khabaronline.ir/news/2305852/"
+     },
+     {
+      "fa": "سرخدارها در محاصره‌ی معدن: پیام ما از معدن سنگ لاشه‌ی شیرین‌آباد در علی‌آباد کتول گلستان می‌نویسد؛ اهالی و دوستداران محیط‌زیست می‌گویند بیش از دو هزار درخت جنگل هیرکانی، از جمله سرخدارهای کهن، در خطر قطع است و خواستار ابطال مجوزند. یعنی جنگلی که میراث جهانی ثبت شده با یک مجوز محلی می‌تواند زخم بردارد؛ گزارش کارشناسی مستقل هنوز منتشر نشده.",
+      "en": "Yew trees besieged by a mine: Payam-e Ma reports on the Shirin-Abad rubble-stone mine in Aliabad-e Katul, Golestan; residents and environmentalists say more than 2,000 Hyrcanian-forest trees, including old yews, could be felled and want the permit revoked. A World Heritage forest can be scarred by a single local permit; no independent assessment has been published yet.",
+      "src": "پیام ما، شفقنا",
+      "url": "https://fa.shafaqna.com/news/2409097/"
+     }
+    ]
+   },
+   {
+    "fa": "سلامت",
+    "en": "Health",
+    "items": [
+     {
+      "fa": "آنفلوآنزا از آستانه‌ی هشدار گذشت: مرکز مدیریت بیماری‌های واگیر می‌گوید ۳۰٫۷ درصد نمونه‌های تنفسی مثبت شده، ۵۲ درصد مبتلایان کودک‌اند (بیشتر ۲ تا ۱۵ سال) و بوشهر، خراسان جنوبی و کردستان بالاترین نرخ را دارند. یعنی موج اصلی از مدرسه و مهد شروع شده؛ کودک تب‌دار را خانه نگه دارید و در اتوبوس و بیمارستان ماسک بزنید.",
+      "en": "Flu past the alert threshold: the communicable-disease centre says 30.7% of respiratory samples are positive, 52% of cases are children (mostly 2–15) and Bushehr, South Khorasan and Kurdistan have the highest rates. The wave is starting in schools and nurseries: keep a feverish child home and wear a mask on buses and in hospitals.",
+      "src": "صداوسیما، سلامت‌نیوز، برنا",
+      "url": "https://www.irib-news.ir/fa/news/5974597/"
+     },
+     {
+      "fa": "آنتی‌بیوتیک برای آنفلوآنزا بی‌فایده است: هشدار سازمان غذا و دارو که سرماخوردگی و آنفلوآنزا ویروسی‌اند و آنتی‌بیوتیک اثری ندارد. یعنی پول و دارو را هدر ندهید و مقاومت میکروبی نسازید؛ استراحت، مایعات و تب‌بر کافی است، مگر پزشک عفونت باکتریایی تشخیص دهد.",
+      "en": "Antibiotics do nothing for flu: the Food and Drug Administration warns that colds and flu are viral and antibiotics have no effect. Do not waste money or breed resistance; rest, fluids and a fever reducer are enough unless a doctor finds a bacterial infection.",
+      "src": "دنیای اقتصاد",
+      "url": "https://donya-e-eqtesad.com/fa/tiny/news-4309501"
+     }
+    ]
+   },
+   {
+    "fa": "ورزش و فرهنگ",
+    "en": "Sport & culture",
+    "items": [
+     {
+      "fa": "«آبروداری استقلال»: تیتر خبرورزشی بعد از نمایش آسیایی آبی‌ها؛ یاسر آسانی بهترین بازیکن هفته‌ی چهارم لیگ نخبگان آسیا شد و صالح حردانی بازی با نفتچی را از دست داد. یعنی استقلال در آسیا نماینده‌ی آبرومندی است، اما در بازی بعدی باید بدون مدافع کلیدی‌اش دفاع کند.",
+      "en": "“Esteghlal keeps its honour”: Khabar Varzeshi’s headline after the Blues’ Asian showing; Yaser Asani was named AFC Champions League Elite player of week 4, while Saleh Hardani will miss the Neftchi game. Esteghlal is a creditable flag-bearer in Asia, but must defend the next match without a key defender.",
+      "src": "خبرورزشی، پارس فوتبال",
+      "url": "https://www.khabarvarzeshi.com/news/564456/"
+     },
+     {
+      "fa": "بیرانوند: «هیچ ارتباطی با مدیران پرسپولیس ندارم»؛ دروازه‌بان تیم ملی می‌گوید خدمت سربازی‌اش دو ماه دیگر تمام می‌شود. در سرخ‌ها هم دو مهره‌ی کلیدی در آستانه‌ی محرومیت مقابل سپاهان‌اند. یعنی پرسپولیس هم‌زمان با یک پرونده‌ی باز و یک جدول پرخطر وارد هفته‌ی سخت می‌شود.",
+      "en": "Beiranvand: “I have no contact with Persepolis management”; the national keeper says his military service ends in two months, while two key Persepolis players risk suspension for the Sepahan match. The Reds enter a hard week with an open dispute and a risky table at once.",
+      "src": "خبرورزشی، پارس فوتبال",
+      "url": "https://www.khabarvarzeshi.com/news/564454/"
+     },
+     {
+      "fa": "هوش مصنوعی به وزنه‌برداری می‌آید: معاون رئیس‌جمهور وعده داد زیرساخت تحلیل هوشمند برای وزنه‌برداری در سه ماه آماده شود. یعنی حرکت ورزشکار با داده و دوربین تحلیل می‌شود نه فقط با چشم مربی.",
+      "en": "AI comes to weightlifting: the vice-president promised AI analysis infrastructure for the federation within three months. Lifts get analysed with data and cameras, not just a coach’s eye.",
+      "src": "خبرگزاری مهر، خبرگزاری دانشجو",
+      "url": "https://www.mehrnews.com/news/7021276/"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-22",
   "jalali": "1405/09/01",
   "weekday_fa": "یکشنبه",
