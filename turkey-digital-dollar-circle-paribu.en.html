@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Digital Dollars in Istanbul: Circle and Paribu | Ditoman</title>
+<meta name="description" content="The Circle–Paribu MOU: how digital dollars work, Türkiye’s lesson from 85% inflation, where Iran stands and the opportunities" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/turkey-digital-dollar-circle-paribu.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/turkey-digital-dollar-circle-paribu.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/turkey-digital-dollar-circle-paribu.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/turkey-digital-dollar-circle-paribu.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Digital Dollars in Istanbul: Circle and Paribu | Ditoman" />
+<meta property="og:description" content="The Circle–Paribu MOU: how digital dollars work, Türkiye’s lesson from 85% inflation, where Iran stands and the opportunities" />
+<meta property="og:url" content="https://ditoman.com/turkey-digital-dollar-circle-paribu.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/turkey-digital-dollar-circle-paribu.en.html#page",
+   "url": "https://ditoman.com/turkey-digital-dollar-circle-paribu.en.html",
+   "name": "Digital Dollars in Istanbul: Circle and Paribu | Ditoman",
+   "description": "The Circle–Paribu MOU: how digital dollars work, Türkiye’s lesson from 85% inflation, where Iran stands and the opportunities",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Digital Dollars in Istanbul: Circle and Paribu",
+     "item": "https://ditoman.com/turkey-digital-dollar-circle-paribu.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/turkey-digital-dollar-circle-paribu/card.webp" srcset="social/turkey-digital-dollar-circle-paribu/card.webp 900w, social/turkey-digital-dollar-circle-paribu/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Digital dollars in Istanbul: Circle and Paribu" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/turkey-digital-dollar-circle-paribu/en-card.webp" srcset="social/turkey-digital-dollar-circle-paribu/en-card.webp 900w, social/turkey-digital-dollar-circle-paribu/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Digital dollars in Istanbul: Circle and Paribu" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · Money and trade</span><span lang="fa">گزارش ویژه · پول و تجارت</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">دلار دیجیتال در استانبول؛ ترکیه از دل نوسان ارز، زیرساخت مالی می‌سازد</h1>
+<h1 lang="en">Digital dollars in Istanbul: how Türkiye is turning currency turmoil into financial infrastructure</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">تفاهم‌نامه‌ی Circle، صادرکننده‌ی USDC، با Paribu؛ سازوکار دلار دیجیتال، درس ترکیه از تورم ۸۵ درصدی، جایگاه ایران و فرصت‌های آینده</p>
+<p class="subtitle" lang="en">The Circle–Paribu MOU: how digital dollars work, Türkiye’s lesson from 85% inflation, where Iran stands and the opportunities ahead</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۷۳٫۳</b><b lang="en">$73.3B</b><span lang="fa">میلیارد دلار USDC در گردش (میانگین فصل سوم ۲۰۲۶)</span><span lang="en">USDC in circulation, Q3 2026 average</span></div>
+<div class="stat"><b lang="fa">۱۳٫۹</b><b lang="en">$13.9T</b><span lang="fa">تریلیون دلار تراکنش USDC در یک فصل</span><span lang="en">onchain USDC volume in one quarter</span></div>
+<div class="stat"><b lang="fa">از ۸۵ به ۳۰</b><b lang="en">85% → 30%</b><span lang="fa">درصد تورم ترکیه، ۱۴۰۱ تا ۱۴۰۵</span><span lang="en">Turkish inflation, 2022 to 2026</span></div>
+<div class="stat"><b lang="fa">۵٫۶۸</b><b lang="en">$5.68B</b><span lang="fa">میلیارد دلار تجارت ایران و ترکیه (۲۰۲۴)</span><span lang="en">Iran–Türkiye trade, 2024</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>سوم آذر ۱۴۰۵، شرکت آمریکایی Circle، صادرکننده‌ی دلار دیجیتال USDC، با Paribu، یکی از بزرگ‌ترین پلتفرم‌های دارایی دیجیتال ترکیه، تفاهم‌نامه‌ای امضا کرد تا گسترش دلار دیجیتال و خدمات مالی روی بلاکچین در ترکیه را بررسی کنند. این گزارش فقط درباره‌ی یک قرارداد نیست. درباره‌ی این است که پول امروز چطور ساخته و جابه‌جا می‌شود، چرا کشوری که چهار سال پیش تورم ۸۵ درصدی داشت حالا زیرساخت مالی آینده را می‌سازد، و ما در ایران از آن چه یاد می‌گیریم.</blockquote>
+<h3>در یک نگاه</h3>
+<ul>
+<li><strong>خبر:</strong> Circle و Paribu در دفتر مرکزی Circle در نیویورک تفاهم‌نامه امضا کردند. اعلام رسمی از استانبول بود</li>
+</ul>
+<ul>
+<li><strong>ماهیت:</strong> تفاهم‌نامه‌ی «بررسی فرصت‌ها» است، نه راه‌اندازی قطعی یک سرویس تازه</li>
+</ul>
+<ul>
+<li><strong>چیزی که از قبل کار می‌کند:</strong> Paribu از روز راه‌اندازی شبکه‌ی Arc (۲۵ شهریور ۱۴۰۵) واریز و برداشت USDC روی این شبکه را فعال کرده است</li>
+</ul>
+<ul>
+<li><strong>درس بزرگ:</strong> ترکیه در اوج بحران لیر قانون رمزدارایی نوشت، مجوز داد و حالا شریک زیرساخت مالی جهانی است</li>
+</ul>
+<ul>
+<li><strong>ایران:</strong> Circle ایران را در فهرست مناطق تحریمی دارد؛ این توافق راهی برای پرداخت ایرانی باز نمی‌کند، اما نقشه‌ی تجارت آینده‌ی همسایه‌ها را نشان می‌دهد</li>
+</ul>
+<h3><span class="check-number">1.</span> امروز چه اتفاقی افتاد؟</h3>
+<p>بر اساس <a href="https://www.stocktitan.net/news/CRCL/paribu-and-circle-sign-mou-to-explore-usdc-access-and-onchain-9s8uoenmsaee.html" target="_blank" rel="noopener" style="color:#57D9C7">اطلاعیه‌ی رسمی دو شرکت</a> که از طریق PR Newswire منتشر شد، یاسین اورال، بنیان‌گذار و مدیرعامل Paribu، و جرمی آلر، مدیرعامل Circle، این تفاهم‌نامه را امضا کردند. نسخه‌ی Paribu را هم در <a href="https://www.paribu.com/blog/en/news/paribu-circle-mou/" target="_blank" rel="noopener" style="color:#57D9C7">وبلاگ رسمی Paribu</a> می‌شود خواند.</p>
+<div class="tw"><table><tr><th>حوزه‌ی همکاری</th><th>یعنی چه؟</th></tr><tr><td>دسترسی به USDC</td><td>ساده‌تر شدن خرید، نگهداری و انتقال دلار دیجیتال در ترکیه</td></tr><tr><td>محصولات روی شبکه‌ی Arc</td><td>سرویس‌های مالی روی بلاکچین تازه‌ی Circle</td></tr><tr><td>توکنیزه کردن دارایی واقعی</td><td>تبدیل اوراق، کالا یا ملک به توکن قابل معامله</td></tr><tr><td>نگهداری سازمانی</td><td>خدمات امانت‌داری دارایی دیجیتال برای شرکت‌ها و نهادها</td></tr><tr><td>آموزش و پژوهش</td><td>برنامه‌های مشترک برای توسعه‌دهندگان و دانشگاه‌ها</td></tr></table></div>
+<p><strong>نکته‌ی مهم:</strong><br>این همکاری از صفر شروع نمی‌شود. Paribu در ترکیه شریک روز اول شبکه‌ی Arc بود و بخش امانت‌داری سازمانی‌اش، Paribu Custody، هم از Arc پشتیبانی می‌کند. ولی خدمات تازه‌ای که تفاهم‌نامه از آن‌ها حرف می‌زند هنوز در مرحله‌ی بررسی‌اند و تاریخ راه‌اندازی اعلام نشده است.</p>
+<h3><span class="check-number">2.</span> قیمت ارز یا سازوکار ارز؟</h3>
+<p>این روزها نرخ ارز تیتر اول همه‌ی گفت‌وگوهاست. خیلی از ما روزی چند بار قیمت دلار و تتر را نگاه می‌کنیم. ولی عدد امروز فقط نتیجه‌ی آخر یک ماشین بزرگ است. کسی که سازوکار آن ماشین را بفهمد، برای فردا آماده‌تر است.</p>
+<p><strong>ترکیه همین مسیر را رفته است:</strong><br>مهر ۱۴۰۱ (اکتبر ۲۰۲۲) تورم سالانه‌ی ترکیه به ۸۵٫۵ درصد رسید و لیر به‌شدت سقوط کرد. ترک‌ها هم ساعت‌به‌ساعت نرخ دلار را چک می‌کردند. اما در همین سال‌ها ترکیه قانون رمزدارایی نوشت، برای صرافی‌ها مجوز اجباری گذاشت، شرکت‌هایش امانت‌داری دیجیتال ساختند و حالا با Circle تفاهم‌نامه امضا می‌کنند. تورم ترکیه در مهر ۱۴۰۵ به <a href="https://www.hurriyetdailynews.com/turkiyes-annual-inflation-edges-up-to-29-77-pct-228953" target="_blank" rel="noopener" style="color:#57D9C7">۲۹٫۷۷ درصد</a> رسیده است. طوفان گذشت؛ زیرساخت ماند.</p>
+<p><strong>ایران هم همیشه با نوسان ارز زندگی کرده است.</strong><br>این روزها هم می‌گذرد و به امید خدا روزهای بهتر برمی‌گردد. چیزی که از این دوره برای ما می‌ماند، دانشی است که امروز جمع می‌کنیم.</p>
+<p>سه چیزی که بیشتر از عدد امروز ارزش دانستن دارد:</p>
+<ul>
+<li><strong>پول چطور ساخته می‌شود و پشتوانه‌اش چیست؟</strong> بخش ۳</li>
+</ul>
+<ul>
+<li><strong>پول چطور جابه‌جا و تسویه می‌شود؟</strong> بخش ۴ و ۵</li>
+</ul>
+<ul>
+<li><strong>چه کسی می‌تواند جلوی پول را بگیرد؟</strong> بخش ۹ و ۱۲</li>
+</ul>
+<h3><span class="check-number">3.</span> USDC چیست و چطور یک دلار می‌ماند؟</h3>
+<p>USDC یک «استیبل‌کوین» است: توکنی روی بلاکچین که قرار است همیشه برابر یک دلار آمریکا بماند. صادرکننده‌اش شرکت Circle است که سهامش در بورس نیویورک با نماد CRCL معامله می‌شود. دولت آمریکا صادرکننده‌ی آن نیست.</p>
+<p><strong>ساخته شدن (Mint):</strong><br>یک نهاد مالی دلار واقعی به Circle می‌دهد و Circle به همان اندازه USDC می‌سازد.</p>
+<p><strong>بازخرید (Redeem):</strong><br>نهاد USDC را پس می‌دهد، توکن‌ها سوزانده می‌شوند و دلار برمی‌گردد. طبق <a href="https://www.circle.com/legal/usdc-terms" target="_blank" rel="noopener" style="color:#57D9C7">شرایط رسمی USDC</a>، Circle متعهد است هر یک USDC را با یک دلار بازخرید کند (منهای کارمزد در صورت وجود).</p>
+<p><strong>پشتوانه:</strong><br>طبق همان شرایط، USDC به‌طور کامل با دارایی‌های دلاری پشتیبانی می‌شود، عمدتاً پول نقد و اوراق کوتاه‌مدت خزانه‌ی آمریکا. سود این ذخایر به دارنده‌ی USDC نمی‌رسد و یکی از درآمدهای اصلی Circle است.</p>
+<p><strong>اندازه‌ی امروز:</strong><br>در فصل سوم ۲۰۲۶ به‌طور میانگین ۷۳٫۳ میلیارد دلار USDC در گردش بود و حجم تراکنش زنجیره‌ای آن در همان سه ماه به ۱۳٫۹ تریلیون دلار رسید، ۴۹ درصد بیشتر از سال قبل (<a href="https://www.mitrade.com/insights/news/live-news/article-3-2240394-20261109" target="_blank" rel="noopener" style="color:#57D9C7">گزارش فصلی Circle</a>).</p>
+<p><strong>فرقش با تتر (USDT):</strong><br>تتر که ایرانی‌ها بیشتر می‌شناسند، صادرکننده‌ی دیگری دارد (شرکت Tether). منطق هر دو یکی است: توکنی که با دارایی دلاری پشتیبانی می‌شود. تفاوت در صادرکننده، مقررات و نحوه‌ی گزارش ذخایر است.</p>
+<h3><span class="check-number">4.</span> پول چطور از استانبول به آن سوی دنیا می‌رود؟</h3>
+<p>فرض کنید یک کارخانه‌ی ترکیه‌ای می‌خواهد بابت تجهیزات ۱۰۰ هزار دلار به یک فروشنده‌ی خارجی واجد شرایط بپردازد.</p>
+<div class="tw"><table><tr><th></th><th>مسیر بانکی سنتی</th><th>مسیر بلاکچینی (USDC)</th></tr><tr><td>مسیر پول</td><td>خریدار ← بانک مبدأ ← بانک‌های واسطه ← بانک مقصد ← فروشنده</td><td>خریدار ← ارائه‌دهنده‌ی مجاز ← شبکه‌ی USDC ← ارائه‌دهنده‌ی مقصد ← فروشنده</td></tr><tr><td>زمان</td><td>معمولاً از چند ساعت تا چند روز کاری</td><td>انتقال شبکه‌ای در چند ثانیه</td></tr><tr><td>ساعت کاری</td><td>تابع ساعت کاری و تعطیلات بانک‌ها</td><td>شبانه‌روزی، حتی در تعطیلات</td></tr><tr><td>ردیابی</td><td>پیام‌های بین‌بانکی</td><td>ثبت عمومی و قابل پیگیری روی بلاکچین</td></tr><tr><td>هزینه</td><td>کارمزد چند واسطه و هزینه‌ی تبدیل</td><td>کارمزد شبکه و هزینه‌ی تبدیل ارز در دو سر مسیر</td></tr></table></div>
+<p>این یک مدل مفهومی است. تبدیل لیر به دلار، احراز هویت و تسویه با بانک در دو سر مسیر جداگانه زمان و هزینه دارد.</p>
+<p><strong>یک قدم جلوتر:</strong><br>قراردادهای هوشمند می‌توانند پرداخت را به شرطی گره بزنند، مثلاً «پول وقتی آزاد شود که تحویل کالا در گمرک تأیید شد». این همان چیزی است که در تجارت به آن «اعتبار اسنادی» می‌گوییم، این بار با کد به‌جای کاغذ.</p>
+<p><strong>مثال تازه از آسیا:</strong><br><a href="https://www.dbs.com/newsroom/DBS_and_Circle_expand_institutional_access_to_USDC_in_Asia" target="_blank" rel="noopener" style="color:#57D9C7">بانک DBS سنگاپور</a> شش روز پیش (۲۷ آبان) اعلام کرد مشتریان سازمانی‌اش می‌توانند شبانه‌روزی و مستقیم از طریق این بانک USDC بسازند و بازخرید کنند، بدون محدودیت ساعت کاری بانک.</p>
+<h3><span class="check-number">5.</span> Arc؛ بزرگراه تازه‌ی Circle</h3>
+<p><a href="https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet" target="_blank" rel="noopener" style="color:#57D9C7">شبکه‌ی Arc</a> بلاکچین لایه‌ی یک خود Circle است که شبکه‌ی اصلی‌اش ۲۵ شهریور ۱۴۰۵ (۱۶ سپتامبر ۲۰۲۶) راه افتاد.</p>
+<ul>
+<li><strong>کارمزد به دلار:</strong> کارمزد تراکنش‌ها با خود USDC پرداخت می‌شود، نه با یک توکن نوسانی</li>
+</ul>
+<ul>
+<li><strong>قطعیت زیر یک ثانیه:</strong> تراکنش در کمتر از یک ثانیه نهایی می‌شود</li>
+</ul>
+<ul>
+<li><strong>سازگار با اتریوم (EVM):</strong> قراردادهای نوشته‌شده با زبان Solidity روی آن اجرا می‌شوند</li>
+</ul>
+<ul>
+<li><strong>اعتبارسنج‌های بزرگ:</strong> طبق <a href="https://www.theblock.co/news/ecosystems/2026-09-16-circle-launches-arc-mainnet-blackrock-and-visa-among-validators-mints-10-billion-arc-tokens-415250" target="_blank" rel="noopener" style="color:#57D9C7">گزارش The Block</a>، از میان ۱۱ نهاد اعتبارسنج اولیه نام BlackRock، Visa، Mastercard، DTCC و ICE آمده است</li>
+</ul>
+<ul>
+<li><strong>سابقه‌ی آزمایشی:</strong> شبکه‌ی آزمایشی Arc از پاییز ۱۴۰۴ بیش از ۷۰۰ میلیون تراکنش پردازش کرده بود</li>
+</ul>
+<h3><span class="check-number">6.</span> درس ترکیه: از تورم ۸۵ درصدی تا زیرساخت مالی</h3>
+<p><strong>۱۴۰۰ (آوریل ۲۰۲۱):</strong><br>بانک مرکزی ترکیه استفاده از رمزدارایی‌ها در پرداخت را ممنوع کرد. این ممنوعیت هنوز پابرجاست و تفاهم‌نامه‌ی امروز هم آن را تغییر نمی‌دهد.</p>
+<p><strong>۱۴۰۱ (اکتبر ۲۰۲۲):</strong><br>تورم به ۸۵٫۵ درصد رسید؛ بالاترین رقم در بیش از دو دهه.</p>
+<p><strong>۱۴۰۳ (ژوئیه ۲۰۲۴):</strong><br>اصلاحیه‌ی قانون بازار سرمایه اجرا شد و صرافی‌های رمزدارایی ملزم به گرفتن مجوز از هیئت بازار سرمایه (CMB) شدند. فعالیت بدون مجوز تا ۵ سال حبس دارد (<a href="https://cms.law/en/int/expert-guides/cms-expert-guide-to-crypto-regulation/turkiye" target="_blank" rel="noopener" style="color:#57D9C7">راهنمای حقوقی CMS</a>).</p>
+<p><strong>۱۴۰۴ (اکتبر ۲۰۲۵):</strong><br>Paribu از CMB مجوز تأسیس یک شرکت کارگزاری بورس گرفت.</p>
+<p><strong>۱۴۰۵ (۲۰۲۶):</strong><br>تورم به حدود ۳۰ درصد رسید و تفاهم‌نامه با Circle امضا شد.</p>
+<p><strong>بازاری بزرگ اما هنوز سفته‌بازانه:</strong><br>طبق <a href="https://cointelegraph.com/news/turkey-s-200b-crypto-boom-is-built-on-speculation-not-adoption-chainalysis" target="_blank" rel="noopener" style="color:#57D9C7">گزارش Chainalysis</a>، حجم سالانه‌ی تراکنش رمزارز در ترکیه نزدیک ۲۰۰ میلیارد دلار و اول خاورمیانه و شمال آفریقاست؛ امارات با ۵۳ میلیارد دلار دوم است. همین گزارش هشدار می‌دهد که بخش بزرگی از این حجم سفته‌بازی است، نه استفاده‌ی واقعی. همکاری‌هایی مثل Circle و Paribu دقیقاً می‌خواهند این بازار را به سمت کاربرد واقعی ببرند: تسویه‌ی تجاری، امانت‌داری و دارایی توکنیزه.</p>
+<p><strong>اقتصاد پشت این بازار:</strong><br>تولید ناخالص داخلی ترکیه در ۲۰۲۵ حدود <a href="https://turkiyetoday.com/business/turkiyes-economy-grows-36-in-2025-gdp-reaches-16t-3215436" target="_blank" rel="noopener" style="color:#57D9C7">۱٫۵۹ تریلیون دلار</a> بود، با رشد ۳٫۶ درصد. شرکت‌های زیرمجموعه‌ی Paribu در ترکیه هم روی هم ۷ میلیارد لیر سرمایه‌ی پرداخت‌شده دارند.</p>
+<h3><span class="check-number">7.</span> Paribu و CoinMENA؛ پل ترکیه به خلیج فارس</h3>
+<p>آذر ۱۴۰۴ (دسامبر ۲۰۲۵)، Paribu صرافی CoinMENA را در معامله‌ای تا سقف ۲۴۰ میلیون دلار خرید؛ معامله‌ای که <a href="https://tech.eu/2025/12/05/turkiye-s-largest-fintech-acquisition-paribu-buys-coinmena-crypto-exchange/" target="_blank" rel="noopener" style="color:#57D9C7">Tech.eu</a> آن را بزرگ‌ترین خرید فین‌تک ترکیه خواند.</p>
+<ul>
+<li><strong>مجوزها:</strong> CoinMENA از بانک مرکزی بحرین و نهاد ناظر دارایی مجازی دبی (VARA) مجوز دارد (<a href="https://www.theblock.co/news/business/2025-12-05-turkeys-paribu-to-buy-coinmena-in-deal-worth-up-to-240-million-adding-dubai-and-bahrain-licenses-381511" target="_blank" rel="noopener" style="color:#57D9C7">The Block</a>)</li>
+</ul>
+<ul>
+<li><strong>دامنه:</strong> فعالیت در ۴۵ کشور و بیش از ۱٫۵ میلیون کاربر</li>
+</ul>
+<ul>
+<li><strong>نکته‌ی جالب:</strong> خود Circle پیش‌تر از سرمایه‌گذاران CoinMENA بوده است</li>
+</ul>
+<div class="tw"><table><tr><th>شرکت</th><th>جایگاه</th><th>نقش در این زنجیره</th></tr><tr><td>Circle</td><td>آمریکا</td><td>دلار دیجیتال و زیرساخت جهانی</td></tr><tr><td>Paribu</td><td>ترکیه</td><td>بازار داخلی و خدمات سازمانی</td></tr><tr><td>CoinMENA</td><td>بحرین و دبی</td><td>دسترسی به بازارهای خلیج فارس</td></tr></table></div>
+<p>اگر خدمات مشترک توسعه پیدا کند و مجوزهای لازم صادر شود، این سه حلقه می‌توانند بازارهای مالی ترکیه، کشورهای عربی و شبکه‌ی جهانی دارایی دیجیتال را بیشتر به هم وصل کنند.</p>
+<h3><span class="check-number">8.</span> ترکیه، هاب انرژی و هاب پول</h3>
+<p>ترکیه سال‌هاست می‌خواهد از کشور مصرف‌کننده و مسیر عبور انرژی، به مرکز تجارت انرژی منطقه تبدیل شود (<a href="https://ditoman.com/turkey-energy-hub-2026.en.html" target="_blank" rel="noopener" style="color:#57D9C7">گزارش کامل دیتومان درباره‌ی هاب انرژی ترکیه</a>).</p>
+<div class="tw"><table><tr><th>خط لوله</th><th>کارکرد</th><th>ظرفیت اسمی سالانه</th></tr><tr><td>TurkStream</td><td>گاز روسیه</td><td>۳۱٫۵ میلیارد مترمکعب</td></tr><tr><td>Blue Stream</td><td>گاز روسیه</td><td>۱۶ میلیارد مترمکعب</td></tr><tr><td>TANAP</td><td>گاز آذربایجان</td><td>۱۶ میلیارد مترمکعب</td></tr><tr><td>TAP</td><td>ادامه‌ی مسیر گاز آذربایجان به اروپا</td><td>۱۰ میلیارد مترمکعب</td></tr><tr><td>تبریز – آنکارا</td><td>گاز ایران</td><td>قرارداد تا ۹٫۶ میلیارد مترمکعب</td></tr><tr><td>باکو – تفلیس – جیهان</td><td>نفت آذربایجان</td><td>—</td></tr><tr><td>کرکوک – جیهان</td><td>نفت عراق</td><td>—</td></tr></table></div>
+<p>منابع: <a href="https://www.mfa.gov.tr/turkeys-energy-strategy.en.mfa" target="_blank" rel="noopener" style="color:#57D9C7">وزارت خارجه‌ی ترکیه</a> و <a href="https://www.iea.org/reports/turkiye-2026" target="_blank" rel="noopener" style="color:#57D9C7">بررسی ۲۰۲۶ آژانس بین‌المللی انرژی</a>. ظرفیت اسمی با حجم واقعی انتقال فرق دارد.</p>
+<p>اما هاب واقعی انرژی فقط لوله نیست. بازار معامله، تأمین مالی، بیمه، قیمت‌گذاری و تسویه‌ی بین‌المللی هم لازم است. بلاکچین، اگر قانونی و سازمانی پذیرفته شود، می‌تواند این‌جا کمک کند:</p>
+<ul>
+<li><strong>تسویه‌ی معاملات انرژی:</strong> کوتاه‌تر شدن فاصله‌ی تحویل گاز یا برق تا دریافت پول</li>
+</ul>
+<ul>
+<li><strong>تأمین مالی پروژه:</strong> انتشار اوراق دیجیتال برای نیروگاه و خط انتقال</li>
+</ul>
+<ul>
+<li><strong>گواهی برق تجدیدپذیر:</strong> ثبت قابل پیگیری منشأ هر مگاوات‌ساعت</li>
+</ul>
+<ul>
+<li><strong>تجارت برق:</strong> تسویه‌ی خودکار بر اساس داده‌ی تأییدشده‌ی تولید و مصرف</li>
+</ul>
+<p>در تفاهم‌نامه‌ی امروز هیچ قرارداد نفت، گاز یا برقی اعلام نشده است. این بخش تحلیل ظرفیت آینده است.</p>
+<h3><span class="check-number">9.</span> ایران کجای این تصویر است؟</h3>
+<p>ایران و ترکیه مرز مشترک، تجارت انرژی، گردشگری، مواد اولیه و کالای مصرفی دارند. طبق داده‌های مؤسسه‌ی آمار ترکیه که در <a href="https://www.eliamep.gr/en/turkey-iran-managed-rivalry-under-maximum-pressure/" target="_blank" rel="noopener" style="color:#57D9C7">پژوهش ELIAMEP</a> آمده:</p>
+<div class="tw"><table><tr><th>سال</th><th>صادرات ترکیه به ایران</th><th>صادرات ایران به ترکیه</th><th>کل تجارت</th></tr><tr><td>۲۰۲۳</td><td>۳٫۳۱ میلیارد دلار</td><td>۲٫۱۸ میلیارد دلار</td><td>۵٫۴۹ میلیارد دلار</td></tr><tr><td>۲۰۲۴</td><td>۳٫۲۳ میلیارد دلار</td><td>۲٫۴۵ میلیارد دلار</td><td>۵٫۶۸ میلیارد دلار</td></tr><tr><td>۲۰۲۵ (۱۱ ماه)</td><td>۲٫۸۰ میلیارد دلار</td><td>۲٫۳۰ میلیارد دلار</td><td>۵٫۱۰ میلیارد دلار</td></tr></table></div>
+<p><strong>گاز:</strong><br>قرارداد ۲۵ ساله‌ی گاز ایران و ترکیه ژوئیه‌ی ۲۰۲۶ (مرداد ۱۴۰۵) به پایان رسید. ترکیه در شش ماه اول ۲۰۲۶ حدود ۴٫۵ میلیارد مترمکعب گاز ایران وارد کرد، ۳۴ درصد بیشتر از سال قبل (<a href="https://www.iranintl.com/en/202608211942" target="_blank" rel="noopener" style="color:#57D9C7">ایران اینترنشنال</a>).</p>
+<p><strong>یک واقعیت روشن:</strong><br>Circle در <a href="https://www.circle.com/legal/usdc-terms" target="_blank" rel="noopener" style="color:#57D9C7">شرایط به‌روزشده‌ی ۲۳ مهر ۱۴۰۵</a>، ایران را همراه کوبا و کره‌ی شمالی جزو مناطق تحت تحریم سراسری آورده و حق دارد آدرس‌های مرتبط با فعالیت ممنوع را مسدود کند. پس این توافق مسیر پرداخت مستقیم ایران و ترکیه را باز نمی‌کند و محدودیت‌های بانکی ایران را برنمی‌دارد.</p>
+<p><strong>پس چه سودی برای ما دارد؟</strong><br>همسایه‌های ما دارند ابزارهایی را آزمایش می‌کنند که ممکن است استاندارد تجارت منطقه در سال‌های آینده شود. شرکت ایرانی‌ای که امروز با ترکیه کار می‌کند، فردا با طرفی روبه‌رو است که پرداخت شبانه‌روزی، قرارداد هوشمند و دارایی توکنیزه را می‌شناسد. هرچه زودتر این زبان را یاد بگیریم، روزی که درها بازتر شود آماده‌تریم. ایران هم مسیر خودش را در نوسازی پرداخت دارد؛ مثلاً <a href="https://ditoman.com/digital-cheque-iran-2026.en.html" target="_blank" rel="noopener" style="color:#57D9C7">چک دیجیتال</a>.</p>
+<h3><span class="check-number">10.</span> فرصت‌های شغلی و مهارت‌های آینده</h3>
+<p>این موج فقط برای سرمایه‌گذارها نیست. برای کسی که مهارت درست را دارد، کار می‌سازد:</p>
+<ul>
+<li><strong>توسعه‌دهنده‌ی بلاکچین:</strong> Arc با اتریوم سازگار است؛ کسی که Solidity بلد است، روی ده‌ها شبکه کار پیدا می‌کند</li>
+</ul>
+<ul>
+<li><strong>متخصص انطباق و مبارزه با پول‌شویی:</strong> هر صرافی و بانکی که وارد این بازار می‌شود به آن نیاز دارد</li>
+</ul>
+<ul>
+<li><strong>کارشناس تأمین مالی تجارت:</strong> کسی که هم اعتبار اسنادی و هم قرارداد هوشمند را بفهمد، کمیاب است</li>
+</ul>
+<ul>
+<li><strong>حقوق‌دان دارایی دیجیتال:</strong> توکنیزه کردن اوراق و ملک بدون چارچوب حقوقی ممکن نیست</li>
+</ul>
+<ul>
+<li><strong>امنیت و امانت‌داری:</strong> نگهداری کلید خصوصی نهادها، تخصصی جدا و پردرآمد است</li>
+</ul>
+<h3><span class="check-number">11.</span> ترکیه تنها نیست</h3>
+<div class="tw"><table><tr><th>کشور یا منطقه</th><th>کاربرد احتمالی</th></tr><tr><td>🇦🇿 آذربایجان</td><td>تجارت انرژی و تأمین مالی زیرساخت</td></tr><tr><td>🇮🇶 عراق</td><td>تجارت کالا، تجهیزات و پیمانکاری در چارچوب مجاز</td></tr><tr><td>🇦🇪 امارات</td><td>اتصال بازارهای مالی و خدمات دارایی دیجیتال</td></tr><tr><td>🇬🇪 گرجستان</td><td>ترانزیت، لجستیک و تجارت منطقه‌ای</td></tr><tr><td>🇪🇺 اتحادیه‌ی اروپا</td><td>تسویه‌ی تجاری و دارایی توکنیزه</td></tr><tr><td>🇸🇬 سنگاپور</td><td>ساخت و بازخرید شبانه‌روزی USDC از طریق DBS</td></tr><tr><td>🇮🇷 ایران</td><td>ظرفیت فنی بلندمدت، با محدودیت جدی حقوقی و مالی فعلی</td></tr></table></div>
+<p>این جدول ظرفیت‌های احتمالی را نشان می‌دهد، نه کشورهای عضو توافق امروز. رقابت در صنعت رمزارز کم‌کم از خرید و فروش توکن به ساخت زیرساخت مالی نهادها رسیده است.</p>
+<h3><span class="check-number">12.</span> موانع و ریسک‌ها</h3>
+<ul>
+<li><strong>ممنوعیت پرداخت:</strong> استفاده از رمزدارایی در پرداخت در ترکیه هنوز ممنوع است</li>
+</ul>
+<ul>
+<li><strong>دلاری شدن:</strong> گسترش دلار دیجیتال می‌تواند وابستگی به دلار را بیشتر کند و کار سیاست پولی را سخت‌تر</li>
+</ul>
+<ul>
+<li><strong>خروج سپرده از بانک‌ها:</strong> بخشی از منابع ممکن است از شبکه‌ی بانکی سنتی بیرون برود</li>
+</ul>
+<ul>
+<li><strong>مسدود شدن:</strong> صادرکننده می‌تواند آدرس‌ها را مسدود کند</li>
+</ul>
+<ul>
+<li><strong>امنیت و خطا:</strong> حمله‌ی سایبری، اشتباه در آدرس و هزینه‌ی تبدیل ارز همچنان وجود دارد</li>
+</ul>
+<p>سرعت بلاکچین به‌تنهایی تضمین نمی‌کند هر معامله‌ای ارزان‌تر یا ساده‌تر شود. هنوز هم حجم معاملات، بودجه و زمان راه‌اندازی خدمات تازه اعلام نشده است.</p>
+<h3>تحلیل دیتومان</h3>
+<p>ترکیه در محل اتصال سه شبکه ایستاده است: انرژی، حمل کالا و بازارهای مالی اروپا و آسیا. حالا دارد شبکه‌ی چهارم را اضافه می‌کند: پول دیجیتال.</p>
+<p>ارزش اصلی خبر امروز در قیمت یک رمزارز نیست؛ در کاربرد بلاکچین برای کم کردن اصطکاک تجارت واقعی است.</p>
+<p><strong>و برای ما:</strong><br>عدد دلار هر روز عوض می‌شود. سازوکار پول، قواعد تسویه و مهارت ساختن، یک بار که یاد گرفته شود می‌ماند. ترکیه از دل تورم ۸۵ درصدی زیرساخت ساخت. ایران هم بارها از دل نوسان عبور کرده و این بار هم عبور می‌کند. بیایید به‌جای نگاه کردن به عدد، ماشین پشت عدد را یاد بگیریم.</p>
+<p><strong>یاد بگیر، وصل شو، رشد کن.</strong></p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="turkey-energy-hub-2026.en.html">ترکیه، هاب انرژی منطقه</a></li><li><a href="digital-cheque-iran-2026.en.html">چک دیجیتال در ایران</a></li><li><a href="prices.en.html">قیمت لحظه‌ای تتر، بیت‌کوین و طلا</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.stocktitan.net/news/CRCL/paribu-and-circle-sign-mou-to-explore-usdc-access-and-onchain-9s8uoenmsaee.html" target="_blank" rel="noopener">Paribu & Circle joint release (PR Newswire), 24 Nov 2026</a></li><li><a href="https://www.paribu.com/blog/en/news/paribu-circle-mou/" target="_blank" rel="noopener">Paribu blog: Paribu–Circle MOU</a></li><li><a href="https://www.circle.com/legal/usdc-terms" target="_blank" rel="noopener">Circle: USDC Terms (last updated 15 Oct 2026)</a></li><li><a href="https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet" target="_blank" rel="noopener">Circle: Arc mainnet launch, 16 Sep 2026</a></li><li><a href="https://www.theblock.co/news/ecosystems/2026-09-16-circle-launches-arc-mainnet-blackrock-and-visa-among-validators-mints-10-billion-arc-tokens-415250" target="_blank" rel="noopener">The Block: Arc mainnet, validators</a></li><li><a href="https://www.dbs.com/newsroom/DBS_and_Circle_expand_institutional_access_to_USDC_in_Asia" target="_blank" rel="noopener">DBS: DBS and Circle expand institutional access to USDC in Asia</a></li><li><a href="https://www.mitrade.com/insights/news/live-news/article-3-2240394-20261109" target="_blank" rel="noopener">Circle Q3 2026 results (Mitrade summary)</a></li><li><a href="https://www.theblock.co/news/business/2025-12-05-turkeys-paribu-to-buy-coinmena-in-deal-worth-up-to-240-million-adding-dubai-and-bahrain-licenses-381511" target="_blank" rel="noopener">The Block: Paribu to buy CoinMENA (Dec 2025)</a></li><li><a href="https://tech.eu/2025/12/05/turkiye-s-largest-fintech-acquisition-paribu-buys-coinmena-crypto-exchange/" target="_blank" rel="noopener">Tech.eu: Paribu buys CoinMENA</a></li><li><a href="https://www.hurriyetdailynews.com/turkiyes-annual-inflation-edges-up-to-29-77-pct-228953" target="_blank" rel="noopener">Hürriyet Daily News: Turkish inflation 29.77% (Oct 2026)</a></li><li><a href="https://turkiyetoday.com/business/turkiyes-economy-grows-36-in-2025-gdp-reaches-16t-3215436" target="_blank" rel="noopener">Türkiye Today: 2025 GDP (TurkStat)</a></li><li><a href="https://cms.law/en/int/expert-guides/cms-expert-guide-to-crypto-regulation/turkiye" target="_blank" rel="noopener">CMS: crypto regulation in Türkiye</a></li><li><a href="https://cointelegraph.com/news/turkey-s-200b-crypto-boom-is-built-on-speculation-not-adoption-chainalysis" target="_blank" rel="noopener">Cointelegraph: Chainalysis on Türkiye's $200B crypto market</a></li><li><a href="https://www.eliamep.gr/en/turkey-iran-managed-rivalry-under-maximum-pressure/" target="_blank" rel="noopener">ELIAMEP (2026): Turkey–Iran, managed rivalry</a></li><li><a href="https://www.iranintl.com/en/202608211942" target="_blank" rel="noopener">Iran International: Turkey's gas pivot (Aug 2026)</a></li><li><a href="https://www.mfa.gov.tr/turkeys-energy-strategy.en.mfa" target="_blank" rel="noopener">Türkiye MFA: energy strategy</a></li><li><a href="https://www.iea.org/reports/turkiye-2026" target="_blank" rel="noopener">IEA: Türkiye 2026 review</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۳ آذر ۱۴۰۵. متن تفاهم‌نامه، شرایط USDC و ارقام اصلی را از منبع اصلی بررسی کردیم. آمار فصلی Circle را از گزارش‌های منتشرشده نقل کرده‌ایم. این گزارش آموزشی است و توصیه‌ی سرمایه‌گذاری یا خرید و فروش نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>On 24 November 2026, Circle, the US issuer of the USDC digital dollar, signed a memorandum of understanding with Paribu, one of Türkiye's largest digital asset platforms, to explore wider access to USDC and onchain finance in Türkiye. This report is about more than one agreement. It is about how money is created and moved today, why a country that had 85% inflation four years ago is now building tomorrow's financial plumbing, and what Iran can learn from it.</blockquote>
+<h3>At a glance</h3>
+<ul>
+<li><strong>The news:</strong> Circle and Paribu signed the MOU at Circle's headquarters in New York; the announcement came from Istanbul</li>
+</ul>
+<ul>
+<li><strong>What it is:</strong> an MOU to "explore opportunities", not a firm launch of a new service</li>
+</ul>
+<ul>
+<li><strong>What already works:</strong> Paribu has supported USDC deposits and withdrawals on Circle's Arc network since Arc's launch on 16 September 2026</li>
+</ul>
+<ul>
+<li><strong>The big lesson:</strong> in the middle of a currency crisis, Türkiye wrote a crypto law, licensed providers, and is now a partner in global financial infrastructure</li>
+</ul>
+<ul>
+<li><strong>Iran:</strong> Circle lists Iran as a sanctioned territory, so this deal opens no payment route for Iran, but it shows the trade map Iran's neighbours are drawing</li>
+</ul>
+<h3><span class="check-number">1.</span> What happened today?</h3>
+<p>According to the <a href="https://www.stocktitan.net/news/CRCL/paribu-and-circle-sign-mou-to-explore-usdc-access-and-onchain-9s8uoenmsaee.html" target="_blank" rel="noopener" style="color:#57D9C7">official joint release</a> distributed by PR Newswire, Paribu founder and CEO Yasin Oral and Circle CEO Jeremy Allaire signed the MOU. Paribu's version is on the <a href="https://www.paribu.com/blog/en/news/paribu-circle-mou/" target="_blank" rel="noopener" style="color:#57D9C7">Paribu blog</a>.</p>
+<div class="tw"><table><tr><th>Area of cooperation</th><th>What it means</th></tr><tr><td>USDC access</td><td>Easier buying, holding and moving of digital dollars in Türkiye</td></tr><tr><td>Arc-based products</td><td>Financial services built on Circle's own blockchain</td></tr><tr><td>Real-world asset tokenization</td><td>Turning bonds, commodities or property into tradable tokens</td></tr><tr><td>Institutional custody</td><td>Safekeeping of digital assets for companies and institutions</td></tr><tr><td>Education and research</td><td>Joint programmes for developers and universities</td></tr></table></div>
+<p><strong>Key point:</strong><br>This does not start from zero. Paribu was a Day 1 Arc launch partner in Türkiye, and its institutional arm, Paribu Custody, also supports Arc. The new services in the MOU are still being explored, and no launch date has been given.</p>
+<h3><span class="check-number">2.</span> The price of money, or how money works?</h3>
+<p>Exchange rates are the headline everywhere right now. Many people check the dollar several times a day. But today's number is only the final output of a large machine. Whoever understands the machine is better prepared for tomorrow.</p>
+<p><strong>Türkiye has been down this road:</strong><br>In October 2022 Turkish annual inflation hit 85.5% and the lira slumped. Turks checked the dollar rate hour by hour too. Yet over the same years Türkiye wrote a crypto law, made licences compulsory for exchanges, its companies built digital custody, and now they sign with Circle. Turkish inflation was <a href="https://www.hurriyetdailynews.com/turkiyes-annual-inflation-edges-up-to-29-77-pct-228953" target="_blank" rel="noopener" style="color:#57D9C7">29.77% in October 2026</a>. The storm passed; the infrastructure stayed.</p>
+<p><strong>Iran has always lived with currency swings.</strong><br>These days will pass too, and better days will come. What stays with us from this period is the knowledge we gather now.</p>
+<p>Three things worth knowing more than today's number:</p>
+<ul>
+<li><strong>How is money created, and what backs it?</strong> Section 3</li>
+</ul>
+<ul>
+<li><strong>How is money moved and settled?</strong> Sections 4 and 5</li>
+</ul>
+<ul>
+<li><strong>Who can stop money?</strong> Sections 9 and 12</li>
+</ul>
+<h3><span class="check-number">3.</span> What is USDC and how does it stay at one dollar?</h3>
+<p>USDC is a "stablecoin": a token on a blockchain designed to stay equal to one US dollar. It is issued by Circle, which trades on the New York Stock Exchange as CRCL. The US government does not issue it.</p>
+<p><strong>Minting:</strong><br>A financial institution sends real dollars to Circle, and Circle creates the same amount of USDC.</p>
+<p><strong>Redemption:</strong><br>The institution returns USDC, the tokens are burned, and the dollars come back. Under the <a href="https://www.circle.com/legal/usdc-terms" target="_blank" rel="noopener" style="color:#57D9C7">official USDC terms</a>, Circle commits to redeem 1 USDC for 1 US dollar, less any applicable fees.</p>
+<p><strong>Backing:</strong><br>The same terms say USDC is fully backed by US dollar-denominated assets, mainly cash and short-dated US Treasuries. Interest on these reserves does not go to USDC holders; it is one of Circle's main sources of income.</p>
+<p><strong>Size today:</strong><br>In Q3 2026 an average of $73.3 billion USDC was in circulation, and onchain USDC volume over those three months reached $13.9 trillion, up 49% year on year (<a href="https://www.mitrade.com/insights/news/live-news/article-3-2240394-20261109" target="_blank" rel="noopener" style="color:#57D9C7">Circle's quarterly results</a>).</p>
+<p><strong>How it differs from Tether (USDT):</strong><br>USDT, better known in Iran, has a different issuer (Tether). The logic is the same: a token backed by dollar assets. The differences are the issuer, regulation and how reserves are reported.</p>
+<h3><span class="check-number">4.</span> How does money travel from Istanbul to the other side of the world?</h3>
+<p>Imagine a Turkish factory paying $100,000 for equipment to an eligible foreign supplier.</p>
+<div class="tw"><table><tr><th></th><th>Traditional bank route</th><th>Blockchain route (USDC)</th></tr><tr><td>Path</td><td>Buyer → sending bank → correspondent banks → receiving bank → seller</td><td>Buyer → licensed provider → USDC network → receiving provider → seller</td></tr><tr><td>Time</td><td>Usually hours to several business days</td><td>Network transfer in seconds</td></tr><tr><td>Hours</td><td>Bank hours and holidays apply</td><td>24/7, holidays included</td></tr><tr><td>Tracking</td><td>Interbank messages</td><td>Public, traceable blockchain record</td></tr><tr><td>Cost</td><td>Several intermediaries' fees plus FX</td><td>Network fee plus FX at both ends</td></tr></table></div>
+<p>This is a conceptual model. Converting lira to dollars, identity checks and bank settlement at each end take their own time and cost.</p>
+<p><strong>One step further:</strong><br>Smart contracts can tie payment to a condition, for example "release funds once customs confirms delivery". That is what trade calls a letter of credit, written in code instead of paper.</p>
+<p><strong>A fresh example from Asia:</strong><br>Six days ago (18 November), <a href="https://www.dbs.com/newsroom/DBS_and_Circle_expand_institutional_access_to_USDC_in_Asia" target="_blank" rel="noopener" style="color:#57D9C7">DBS in Singapore</a> said its institutional clients can mint and redeem USDC directly through the bank, around the clock, without bank cut-off times.</p>
+<h3><span class="check-number">5.</span> Arc: Circle's new highway</h3>
+<p><a href="https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet" target="_blank" rel="noopener" style="color:#57D9C7">Arc</a> is Circle's own layer-1 blockchain. Its mainnet went live on 16 September 2026.</p>
+<ul>
+<li><strong>Fees in dollars:</strong> transaction fees are paid in USDC itself, not in a volatile token</li>
+</ul>
+<ul>
+<li><strong>Sub-second finality:</strong> transactions are final in under a second</li>
+</ul>
+<ul>
+<li><strong>EVM-compatible:</strong> contracts written in Solidity run on it</li>
+</ul>
+<ul>
+<li><strong>Big validators:</strong> according to <a href="https://www.theblock.co/news/ecosystems/2026-09-16-circle-launches-arc-mainnet-blackrock-and-visa-among-validators-mints-10-billion-arc-tokens-415250" target="_blank" rel="noopener" style="color:#57D9C7">The Block</a>, the 11 founding validator institutions include BlackRock, Visa, Mastercard, DTCC and ICE</li>
+</ul>
+<ul>
+<li><strong>Test record:</strong> Arc's public testnet processed more than 700 million transactions from autumn 2025</li>
+</ul>
+<h3><span class="check-number">6.</span> The Turkish lesson: from 85% inflation to financial infrastructure</h3>
+<p><strong>April 2021:</strong><br>Türkiye's central bank banned the use of crypto assets in payments. The ban still stands, and today's MOU does not change it.</p>
+<p><strong>October 2022:</strong><br>Inflation hit 85.5%, the highest in more than two decades.</p>
+<p><strong>July 2024:</strong><br>Amendments to the Capital Markets Law took effect, requiring crypto asset service providers to be licensed by the Capital Markets Board (CMB). Operating without a licence can mean up to five years in prison (<a href="https://cms.law/en/int/expert-guides/cms-expert-guide-to-crypto-regulation/turkiye" target="_blank" rel="noopener" style="color:#57D9C7">CMS legal guide</a>).</p>
+<p><strong>October 2025:</strong><br>Paribu received CMB approval to set up a brokerage firm.</p>
+<p><strong>2026:</strong><br>Inflation fell to around 30%, and the MOU with Circle was signed.</p>
+<p><strong>A big market, still speculative:</strong><br>According to <a href="https://cointelegraph.com/news/turkey-s-200b-crypto-boom-is-built-on-speculation-not-adoption-chainalysis" target="_blank" rel="noopener" style="color:#57D9C7">Chainalysis</a>, Türkiye's annual crypto volume is close to $200 billion, first in the Middle East and North Africa; the UAE is second with $53 billion. The same report warns that much of it is speculation rather than real use. Partnerships like Circle and Paribu aim to push the market towards real use: trade settlement, custody and tokenized assets.</p>
+<p><strong>The economy behind the market:</strong><br>Türkiye's GDP was about <a href="https://turkiyetoday.com/business/turkiyes-economy-grows-36-in-2025-gdp-reaches-16t-3215436" target="_blank" rel="noopener" style="color:#57D9C7">$1.59 trillion in 2025</a>, growing 3.6%. Paribu's subsidiaries in Türkiye hold TRY 7 billion in combined paid-in capital.</p>
+<h3><span class="check-number">7.</span> Paribu and CoinMENA: Türkiye's bridge to the Gulf</h3>
+<p>In December 2025 Paribu bought the CoinMENA exchange in a deal worth up to $240 million, which <a href="https://tech.eu/2025/12/05/turkiye-s-largest-fintech-acquisition-paribu-buys-coinmena-crypto-exchange/" target="_blank" rel="noopener" style="color:#57D9C7">Tech.eu</a> called Türkiye's largest fintech acquisition.</p>
+<ul>
+<li><strong>Licences:</strong> CoinMENA is licensed by the Central Bank of Bahrain and Dubai's Virtual Assets Regulatory Authority, VARA (<a href="https://www.theblock.co/news/business/2025-12-05-turkeys-paribu-to-buy-coinmena-in-deal-worth-up-to-240-million-adding-dubai-and-bahrain-licenses-381511" target="_blank" rel="noopener" style="color:#57D9C7">The Block</a>)</li>
+</ul>
+<ul>
+<li><strong>Reach:</strong> operations in 45 countries and more than 1.5 million users</li>
+</ul>
+<ul>
+<li><strong>A neat detail:</strong> Circle itself was an earlier investor in CoinMENA</li>
+</ul>
+<div class="tw"><table><tr><th>Company</th><th>Base</th><th>Role in the chain</th></tr><tr><td>Circle</td><td>United States</td><td>Digital dollar and global infrastructure</td></tr><tr><td>Paribu</td><td>Türkiye</td><td>Domestic market and institutional services</td></tr><tr><td>CoinMENA</td><td>Bahrain and Dubai</td><td>Access to Gulf markets</td></tr></table></div>
+<p>If joint services develop and the needed licences are granted, these three links could tie Türkiye's financial markets, the Arab Gulf and the global digital asset network more closely together.</p>
+<h3><span class="check-number">8.</span> Türkiye: an energy hub and a money hub</h3>
+<p>Türkiye has long wanted to move from energy consumer and transit route to regional energy trading centre (<a href="https://ditoman.com/turkey-energy-hub-2026.en.html" target="_blank" rel="noopener" style="color:#57D9C7">Ditoman's full report on Türkiye's energy hub</a>).</p>
+<div class="tw"><table><tr><th>Pipeline</th><th>Carries</th><th>Nominal annual capacity</th></tr><tr><td>TurkStream</td><td>Russian gas</td><td>31.5 bcm</td></tr><tr><td>Blue Stream</td><td>Russian gas</td><td>16 bcm</td></tr><tr><td>TANAP</td><td>Azerbaijani gas</td><td>16 bcm</td></tr><tr><td>TAP</td><td>Azerbaijani gas onward to Europe</td><td>10 bcm</td></tr><tr><td>Tabriz–Ankara</td><td>Iranian gas</td><td>Contract up to 9.6 bcm</td></tr><tr><td>Baku–Tbilisi–Ceyhan</td><td>Azerbaijani oil</td><td>—</td></tr><tr><td>Kirkuk–Ceyhan</td><td>Iraqi oil</td><td>—</td></tr></table></div>
+<p>Sources: <a href="https://www.mfa.gov.tr/turkeys-energy-strategy.en.mfa" target="_blank" rel="noopener" style="color:#57D9C7">Türkiye's Ministry of Foreign Affairs</a> and the <a href="https://www.iea.org/reports/turkiye-2026" target="_blank" rel="noopener" style="color:#57D9C7">IEA's Türkiye 2026 review</a>. Nominal capacity differs from actual flows.</p>
+<p>But a real energy hub is more than pipes. It needs a trading market, finance, insurance, price discovery and international settlement. If accepted legally and institutionally, blockchain can help here:</p>
+<ul>
+<li><strong>Energy trade settlement:</strong> a shorter gap between delivering gas or power and getting paid</li>
+</ul>
+<ul>
+<li><strong>Project finance:</strong> digital bonds for power plants and transmission lines</li>
+</ul>
+<ul>
+<li><strong>Renewable certificates:</strong> a traceable record of where each megawatt-hour came from</li>
+</ul>
+<ul>
+<li><strong>Power trading:</strong> automatic settlement based on verified generation and consumption data</li>
+</ul>
+<p>No oil, gas or power contract was announced in today's MOU. This section is an analysis of future potential.</p>
+<h3><span class="check-number">9.</span> Where does Iran stand?</h3>
+<p>Iran and Türkiye share a border and trade in energy, tourism, raw materials and consumer goods. TurkStat data compiled in <a href="https://www.eliamep.gr/en/turkey-iran-managed-rivalry-under-maximum-pressure/" target="_blank" rel="noopener" style="color:#57D9C7">ELIAMEP's research paper</a>:</p>
+<div class="tw"><table><tr><th>Year</th><th>Turkish exports to Iran</th><th>Iranian exports to Türkiye</th><th>Total trade</th></tr><tr><td>2023</td><td>$3.31B</td><td>$2.18B</td><td>$5.49B</td></tr><tr><td>2024</td><td>$3.23B</td><td>$2.45B</td><td>$5.68B</td></tr><tr><td>2025 (11 months)</td><td>$2.80B</td><td>$2.30B</td><td>$5.10B</td></tr></table></div>
+<p><strong>Gas:</strong><br>The 25-year Iran–Türkiye gas contract expired in July 2026. Türkiye imported about 4.5 bcm of Iranian gas in the first half of 2026, 34% more than a year earlier (<a href="https://www.iranintl.com/en/202608211942" target="_blank" rel="noopener" style="color:#57D9C7">Iran International</a>).</p>
+<p><strong>A plain fact:</strong><br>In its <a href="https://www.circle.com/legal/usdc-terms" target="_blank" rel="noopener" style="color:#57D9C7">terms updated on 15 October 2026</a>, Circle lists Iran, with Cuba and North Korea, as subject to territory-wide sanctions, and it can block addresses linked to prohibited activity. So this deal does not open a direct Iran–Türkiye payment route or lift Iran's banking restrictions.</p>
+<p><strong>So what is in it for Iran?</strong><br>Iran's neighbours are testing tools that may become the region's trade standard in the coming years. An Iranian company that trades with Türkiye today will tomorrow face partners who know 24/7 payments, smart contracts and tokenized assets. The sooner we learn that language, the readier we are when doors open wider. Iran is modernising its own payments too, for example with the <a href="https://ditoman.com/digital-cheque-iran-2026.en.html" target="_blank" rel="noopener" style="color:#57D9C7">digital cheque</a>.</p>
+<h3><span class="check-number">10.</span> Jobs and skills for the future</h3>
+<p>This wave is not only for investors. It creates work for people with the right skills:</p>
+<ul>
+<li><strong>Blockchain developer:</strong> Arc is EVM-compatible; Solidity skills open doors on dozens of networks</li>
+</ul>
+<ul>
+<li><strong>Compliance and AML specialist:</strong> every exchange and bank entering this market needs one</li>
+</ul>
+<ul>
+<li><strong>Trade finance specialist:</strong> someone who understands both letters of credit and smart contracts is rare</li>
+</ul>
+<ul>
+<li><strong>Digital asset lawyer:</strong> tokenizing bonds and property is impossible without a legal framework</li>
+</ul>
+<ul>
+<li><strong>Security and custody:</strong> safeguarding institutions' private keys is a separate, well-paid speciality</li>
+</ul>
+<h3><span class="check-number">11.</span> Türkiye is not alone</h3>
+<div class="tw"><table><tr><th>Country or region</th><th>Potential use</th></tr><tr><td>🇦🇿 Azerbaijan</td><td>Energy trade and infrastructure finance</td></tr><tr><td>🇮🇶 Iraq</td><td>Trade in goods, equipment and contracting, within permitted frameworks</td></tr><tr><td>🇦🇪 UAE</td><td>Linking financial markets and digital asset services</td></tr><tr><td>🇬🇪 Georgia</td><td>Transit, logistics and regional trade</td></tr><tr><td>🇪🇺 European Union</td><td>Trade settlement and tokenized assets</td></tr><tr><td>🇸🇬 Singapore</td><td>24/7 USDC minting and redemption through DBS</td></tr><tr><td>🇮🇷 Iran</td><td>Long-term technical potential, with serious legal and financial limits today</td></tr></table></div>
+<p>This table shows possible uses, not members of today's agreement. Competition in crypto is shifting from trading tokens to building institutional financial infrastructure.</p>
+<h3><span class="check-number">12.</span> Obstacles and risks</h3>
+<ul>
+<li><strong>Payment ban:</strong> using crypto assets for payments is still banned in Türkiye</li>
+</ul>
+<ul>
+<li><strong>Dollarisation:</strong> wider use of digital dollars could deepen dollar dependence and complicate monetary policy</li>
+</ul>
+<ul>
+<li><strong>Deposit flight:</strong> some funds may leave the traditional banking system</li>
+</ul>
+<ul>
+<li><strong>Freezing:</strong> the issuer can block addresses</li>
+</ul>
+<ul>
+<li><strong>Security and errors:</strong> cyberattacks, wrong addresses and FX costs remain</li>
+</ul>
+<p>Blockchain speed alone does not guarantee every deal gets cheaper or simpler. Volumes, budgets and launch dates for the new services have not been announced.</p>
+<h3>Ditoman analysis</h3>
+<p>Türkiye sits where three networks meet: energy, freight and the financial markets of Europe and Asia. Now it is adding a fourth: digital money.</p>
+<p>The real value of today's news is not the price of a token; it is blockchain being used to cut friction in real trade.</p>
+<p><strong>And for us:</strong><br>The dollar rate changes every day. How money works, how settlement works and the skill to build, once learned, stay. Türkiye built infrastructure out of 85% inflation. Iran has come through currency storms many times and will come through this one. Instead of staring at the number, let's learn the machine behind it.</p>
+<p><strong>Learn · Connect · Evolve.</strong></p>
+<h3>Read more</h3><ul><li><a href="turkey-energy-hub-2026.en.html">Türkiye as a regional energy hub</a></li><li><a href="digital-cheque-iran-2026.en.html">Iran’s digital cheque</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.stocktitan.net/news/CRCL/paribu-and-circle-sign-mou-to-explore-usdc-access-and-onchain-9s8uoenmsaee.html" target="_blank" rel="noopener">Paribu & Circle joint release (PR Newswire), 24 Nov 2026</a></li><li><a href="https://www.paribu.com/blog/en/news/paribu-circle-mou/" target="_blank" rel="noopener">Paribu blog: Paribu–Circle MOU</a></li><li><a href="https://www.circle.com/legal/usdc-terms" target="_blank" rel="noopener">Circle: USDC Terms (last updated 15 Oct 2026)</a></li><li><a href="https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet" target="_blank" rel="noopener">Circle: Arc mainnet launch, 16 Sep 2026</a></li><li><a href="https://www.theblock.co/news/ecosystems/2026-09-16-circle-launches-arc-mainnet-blackrock-and-visa-among-validators-mints-10-billion-arc-tokens-415250" target="_blank" rel="noopener">The Block: Arc mainnet, validators</a></li><li><a href="https://www.dbs.com/newsroom/DBS_and_Circle_expand_institutional_access_to_USDC_in_Asia" target="_blank" rel="noopener">DBS: DBS and Circle expand institutional access to USDC in Asia</a></li><li><a href="https://www.mitrade.com/insights/news/live-news/article-3-2240394-20261109" target="_blank" rel="noopener">Circle Q3 2026 results (Mitrade summary)</a></li><li><a href="https://www.theblock.co/news/business/2025-12-05-turkeys-paribu-to-buy-coinmena-in-deal-worth-up-to-240-million-adding-dubai-and-bahrain-licenses-381511" target="_blank" rel="noopener">The Block: Paribu to buy CoinMENA (Dec 2025)</a></li><li><a href="https://tech.eu/2025/12/05/turkiye-s-largest-fintech-acquisition-paribu-buys-coinmena-crypto-exchange/" target="_blank" rel="noopener">Tech.eu: Paribu buys CoinMENA</a></li><li><a href="https://www.hurriyetdailynews.com/turkiyes-annual-inflation-edges-up-to-29-77-pct-228953" target="_blank" rel="noopener">Hürriyet Daily News: Turkish inflation 29.77% (Oct 2026)</a></li><li><a href="https://turkiyetoday.com/business/turkiyes-economy-grows-36-in-2025-gdp-reaches-16t-3215436" target="_blank" rel="noopener">Türkiye Today: 2025 GDP (TurkStat)</a></li><li><a href="https://cms.law/en/int/expert-guides/cms-expert-guide-to-crypto-regulation/turkiye" target="_blank" rel="noopener">CMS: crypto regulation in Türkiye</a></li><li><a href="https://cointelegraph.com/news/turkey-s-200b-crypto-boom-is-built-on-speculation-not-adoption-chainalysis" target="_blank" rel="noopener">Cointelegraph: Chainalysis on Türkiye's $200B crypto market</a></li><li><a href="https://www.eliamep.gr/en/turkey-iran-managed-rivalry-under-maximum-pressure/" target="_blank" rel="noopener">ELIAMEP (2026): Turkey–Iran, managed rivalry</a></li><li><a href="https://www.iranintl.com/en/202608211942" target="_blank" rel="noopener">Iran International: Turkey's gas pivot (Aug 2026)</a></li><li><a href="https://www.mfa.gov.tr/turkeys-energy-strategy.en.mfa" target="_blank" rel="noopener">Türkiye MFA: energy strategy</a></li><li><a href="https://www.iea.org/reports/turkiye-2026" target="_blank" rel="noopener">IEA: Türkiye 2026 review</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 24 November 2026. We checked the MOU release, the USDC terms and the main figures against their sources. Circle’s quarterly figures are quoted from published reports. Educational report, not investment advice.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.en.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.en.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
