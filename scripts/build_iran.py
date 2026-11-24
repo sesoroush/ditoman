@@ -301,7 +301,7 @@ def chrome(active="iran.html"):
 def page(title, desc, path, body, extra_css=""):
     header, footer = chrome()
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />

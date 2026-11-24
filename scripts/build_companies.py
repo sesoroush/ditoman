@@ -226,7 +226,7 @@ def page(title, desc, path, body, image=None):
     header, footer = chrome()
     robots = '<meta name="robots" content="noindex" />' if image == "draft" else ""
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
