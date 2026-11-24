@@ -44,8 +44,11 @@ def norm(s):
 
 def tr(raw, where):
     t = norm(raw)
-    if not t or not FA.search(t):
+    if not t:
         return None
+    if not FA.search(t):
+        # English-only text on a bilingual page: translate only when a translation exists
+        return D.get(t)
     out = D.get(t) or ar_rules.apply(t)
     if out is None:
         missing.setdefault(t, where)

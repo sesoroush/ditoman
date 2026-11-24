@@ -40,6 +40,9 @@ def norm(s):
     return " ".join(html.unescape(s).split())
 
 
+MAX_MISSING = 20
+
+
 def run(lang, names):
     D = {}
     for f in sorted((ROOT / "data" / "i18n" / "src").glob(f"{lang}-*.json")):
@@ -129,7 +132,9 @@ def main():
         done = 0
         for name, out in built:
             f = ROOT / f"{name}.{lang}.html"
-            if name in left and "--force" not in sys.argv:
+            # A few new strings (e.g. today's headlines on the homepage) stay in English until
+            # translated; only a page that is largely untranslated is held back.
+            if len(left.get(name, [])) > MAX_MISSING and "--force" not in sys.argv:
                 if f.exists():
                     f.unlink()
                 continue
