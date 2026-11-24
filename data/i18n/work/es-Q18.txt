@@ -1,0 +1,90 @@
+1609|Introduce una nueva forma de construir sistemas donde la transparencia viene de serie, los datos se pueden verificar y el control no está en manos de una sola entidad.
+1610|Es una nueva forma de construir sistemas.
+1611|Es una regla editorial permanente. Documentamos conocimiento real y logros reales, y nos mantenemos fuera del comentario político de cualquier lado.
+1612|Es una regla de oferta, no una previsión de precio.
+1613|También es muy distinta de Bitcoin. Bitcoin no tiene emisor ni nadie que pueda cambiar sus reglas en solitario. Una CBDC la emite, controla y diseña el Estado.
+1614|No es inteligente. Es automático. El nombre significa que las reglas están escritas en código y se ejecutan tal como se escribieron, las llame quien las llame.
+1615|No es tu banco y no controla todos los precios.
+1616|No lo es.
+1617|Probablemente es…
+1618|Es el mayor mercado financiero del planeta. El Banco de Pagos Internacionales informó de que el comercio de divisas promedió unos 9,6 billones de dólares diarios en abril de 2025, alrededor de un 28% más que en 2022. El dólar estadounidense estaba en un lado de alrededor del 89% de las operaciones.
+1619|Es la misma fuerza que ayuda al ahorrador, trabajando en sentido contrario. Una deuda de 100 millones al 30 por ciento anual, sin tocar, se convierte en 130 millones al cabo de un año, 169 millones al de dos y unos 220 millones al de tres. La regla del 72 de la lección 12 también vale aquí: al 30 por ciento, una deuda se duplica en unos dos años y medio.
+1620|Es día veinte del mes y la cuenta está casi vacía. No pasó nada raro: ninguna emergencia, ninguna compra grande. Aun así, el dinero se fue.
+1621|Hace que el contrato no se pueda verificar
+1622|Significa que el token nunca se podrá vender
+1623|Significa que el creador del token es anónimo
+1624|Solo sabe lo que hay en la cadena.
+1625|Solo impide que la liquidez bloqueada se retire antes de la fecha de desbloqueo
+1626|Demuestra que el precio del token subirá
+1627|Suena a ciencia ficción, pero toca algo real. Los bancos centrales de todo el mundo estudian una nueva forma de dinero, y parte de ella puede, técnicamente, llevar reglas así. Esta lección separa lo real de lo exagerado.
+1628|Impide que el token cotice en ningún sitio
+1629|Fue una respuesta.
+1630|No lo fue.
+1631|Será esencial.
+1632|Su cadena
+1633|Su cadena y su contrato
+1634|Su función es convertir una crisis en una molestia. Cuando llega la sorpresa, pagas del fondo en lugar de pedir prestado caro, como advirtió la lección 19.
+1635|Sus reglas abiertas permiten a otros verificar, ejecutar y proteger la red
+1636|Propia
+1637|Su propio ejemplo es 1.000 dólares al 5% anual: 1.050 al final del primer año y 1.102,50 al final del segundo. Los 2,50 de más son interés sobre interés.
+1638|Propia o de un banco socio
+1639|Su precio cambia cada día
+1640|Su precio subió la semana pasada
+1641|Únete en Telegram
+1642|Únete al canal
+1643|Entrada en comunidades cripto y de la diáspora en persa, y la primera retirada pública de oferta con prueba.
+1644|Ir a
+1645|=
+1646|=
+1647|Guarda un poco de la moneda de la red
+1648|Guarda una parte menor, pero guárdala
+1649|Mantenlo seguro, accesible y un poco fuera de tu alcance fácil.
+1650|La decisión final es tuya.
+1651|Guardarlo
+1652|Guardar el dinero:
+1653|Conceptos clave
+1654|Sabe que el apalancamiento multiplica las pérdidas tanto como las ganancias; a la mayoría de los principiantes les va mejor sin él.
+1655|Conoce la fecha, para que un gran anuncio no te pille por sorpresa. Pregunta qué se espera ya, porque eso es lo que el precio ya contiene. Ten el máximo cuidado con el dinero prestado en torno a grandes acontecimientos. Y dimensiona cualquier posición según lo que puedas permitirte perder, como en la lección anterior.
+1656|Saber dónde encontrar el contrato de un token y leer su estado.
+1657|Saber si ahorras, inviertes o especulas antes de elegir un activo.
+1658|Comprueba lo aprendido
+1659|Empresas de base tecnológica y del conocimiento
+1660|Papel kraft y semikraft, cartón ondulado y cajas, cartón; polígono industrial de Yazd
+1661|Kraken Learn: la diferencia entre monedas y tokens cripto (BTC y ETH son monedas; USDT y UNI son tokens)
+1662|Los tokens LP son un recibo
+1663|Los tokens LP como recibo
+1664|Asistente de lenguaje
+1665|Recargo por demora
+1666|Los recargos por demora funcionan en el mismo sentido. Un plazo impagado añade una penalización, y la penalización hace más difícil el siguiente pago.
+1667|Después, los bancos liquidan
+1668|Lo último
+1669|Últimas historias
+1670|Latham & Watkins: la Ley GENIUS de 2025
+1671|Aprender
+1672|Aprende y gana
+1673|Aprende y gana TMN
+1674|Aprende y gana TMN | Ditoman
+1675|Aprende los sistemas
+1676|Descubre por qué surgió Bitcoin tras una creciente desconfianza hacia los sistemas centralizados.
+1677|Descubre por qué se creó Bitcoin, la crisis de confianza detrás y cómo los sistemas descentralizados cambiaron el futuro del valor y las redes.
+1678|Descubre por qué importan las reglas visibles y la verificación en las redes digitales.
+1679|Aprende · Conecta · Evoluciona
+1680|Aprende • Conecta • Evoluciona • Ditoman.com
+1681|Aprende y gana
+1682|Piloto «aprende y gana»
+1683|Aprende. Conecta. Evoluciona.
+1684|Objetivos de aprendizaje
+1685|Puntos de aprendizaje
+1686|Itinerario de aprendizaje
+1687|Prestamista de última instancia
+1688|Prestar:
+1689|Lección 01 | ¿Qué es la blockchain? | Ditoman Learn
+1690|Lección 01 • Serie Fundamentos
+1691|Lección 02 | Por qué importa la blockchain | Ditoman Learn
+1692|Lección 02 • Serie Fundamentos
+1693|Lección 03 | Por qué se creó Bitcoin | Ditoman Learn
+1694|Lección 03 • Serie Fundamentos
+1695|Lección 04 • Serie Fundamentos
+1696|La lección 05 pasa de la historia a la práctica:
+1697|La lección 05 mostró que TMN no superaba dos de las cinco comprobaciones: oferta concentrada y liquidez sin bloquear. Con el bloqueo de hoy, la liquidez de la billetera principal del proyecto queda bloqueada hasta octubre de 2027. La concentración de la oferta sigue abierta, e informaremos a medida que cambie.
+1698|Lección 05 | Cómo comprobar cualquier token antes de tocarlo | Ditoman Learn

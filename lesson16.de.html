@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion | Ditoman Learn</title>
+<meta name="description" content="Krypto zu senden erfordert drei Entscheidungen: welche Adresse, welches Netzwerk und welche Gebühr. Ist eine falsch, kann das Geld für immer verloren sein. Diese Lektion verfolgt eine Überweisung vom Senden-Knopf bis zur" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson16.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson16.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson16.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson16.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson16.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson16.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson16.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson16.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson16.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson16.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson16.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson16.de.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion | Ditoman Learn" />
+<meta property="og:description" content="Krypto zu senden erfordert drei Entscheidungen: welche Adresse, welches Netzwerk und welche Gebühr. Ist eine falsch, kann das Geld für immer verloren sein. Diese Lektion verfolgt eine Überweisung vom Senden-Knopf bis zur" />
+<meta property="og:url" content="https://ditoman.com/lesson16.de.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson16.de.html#page",
+   "url": "https://ditoman.com/lesson16.de.html",
+   "name": "Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion | Ditoman Learn",
+   "description": "Krypto zu senden erfordert drei Entscheidungen: welche Adresse, welches Netzwerk und welche Gebühr. Ist eine falsch, kann das Geld für immer verloren sein. Diese Lektion verfolgt eine Überweisung vom Senden-Knopf bis zur",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion",
+     "item": "https://ditoman.com/lesson16.de.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.de.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.de.html" class="active">Lernen</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Unternehmen</a>
+<a href="prices.de.html">Preise</a>
+<a href="calendar.en.html">Kalender</a>
+<a href="tmn.de.html">TMN</a>
+<a href="index.de.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Beiträge</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson16-cover.jpg" alt="Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion, Ditoman-Lektionsbild" style="width:100%;height:auto"><img lang="en" src="lesson16-cover-en.jpg" alt="Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion, Ditoman-Lektionsbild" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Krypto • Transaktionen</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">کریپتو • تراکنش</div>
+<h1 lang="en">Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">آدرس، شبکه، کارمزد: یک تراکنش کریپتویی چطور کار می‌کند؟</h1>
+<p class="subtitle" lang="en">Krypto zu senden erfordert drei Entscheidungen: welche Adresse, welches Netzwerk und welche Gebühr. Ist eine falsch, kann das Geld für immer verloren sein. Diese Lektion verfolgt eine Überweisung vom Senden-Knopf bis zur endgültigen Bestätigung.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">فرستادن کریپتو سه تصمیم دارد: کدام آدرس، کدام شبکه و چقدر کارمزد. اگر یکی اشتباه باشد، پول ممکن است برای همیشه از دست برود. این درس یک انتقال را از دکمه‌ی «ارسال» تا تأیید نهایی دنبال می‌کند.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Niveau</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Einsteiger</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Lesezeit</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">7 Minuten</strong><strong lang="fa" dir="rtl" style="display:block">۷ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Lernpunkte</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 Fragen</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Lektionsinhalt</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Lesen Sie die Lektion auf Englisch oder Persisch.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Englisch</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Lektion 14 verfolgte eine Kartenzahlung durch fünf Unternehmen. Eine Krypto-Überweisung hat keines davon. Es gibt Sie, den Empfänger und ein Computernetzwerk, das jeder einsehen kann.</p>
+<p lang="en">Das macht den Ablauf zugleich einfacher und strenger. Niemand steht in der Mitte, um die Dinge zu bremsen, und niemand, um einen Fehler zu beheben. Es lohnt sich also, ihn einmal langsam durchzugehen, bevor man es mit echtem Geld tut.</p>
+<h3><span class="check-number">01.</span> Die Adresse: wohin es geht</h3>
+<p lang="en">Eine Adresse ist wie eine Kontonummer: eine lange Folge von Buchstaben und Ziffern, die eine Wallet identifiziert. Auf Ethereum und BNB Smart Chain beginnt sie mit 0x und hat 42 Zeichen. Bitcoin- und Tron-Adressen sehen anders aus.</p>
+<p lang="en">Eine Adresse ist öffentlich. Sie zu teilen ist sicher, denn andere können Ihnen damit nur etwas schicken. Geheim bleiben müssen der private Schlüssel oder die Wiederherstellungsphrase aus Lektion 13.</p>
+<p lang="en">Tippen Sie nie eine Adresse von Hand. Kopieren und einfügen oder den QR-Code scannen und dann die ersten vier und letzten vier Zeichen mit dem Original vergleichen. Ein falsches Zeichen bedeutet eine andere Wallet.</p>
+<h3><span class="check-number">02.</span> Das Netzwerk: welche Straße es nimmt</h3>
+<p lang="en">Derselbe Token kann auf mehreren Blockchains existieren. USDT etwa wird auf Ethereum, Tron, BNB Smart Chain und anderen ausgegeben. Das sind getrennte Straßen, die sich nicht von selbst verbinden.</p>
+<p lang="en">Die Regel ist einfach: <strong>Sender und Empfänger müssen dasselbe Netzwerk nutzen.</strong> Erwartet die Wallet oder Börse des Empfängers ein Netzwerk und Sie senden über ein anderes, erscheinen die Coins womöglich nie, und sie zurückzubekommen reicht von schwierig bis unmöglich.</p>
+<p lang="en">Das ist der häufigste teure Fehler von Einsteigern. Fragen Sie den Empfänger vor dem Senden nach zwei Dingen: Adresse und Netzwerk.</p>
+<h3><span class="check-number">03.</span> Die Gebühr: für Platz bezahlen</h3>
+<p lang="en">Jede Transaktion zahlt eine Gebühr an die Betreiber des Netzwerks, oft Gas genannt. Die Gebühr bezahlt einen Platz im nächsten Block, hängt also davon ab, wie ausgelastet das Netzwerk ist, nicht davon, wie viel Sie senden. 10 Dollar oder 10.000 Dollar zu senden kann gleich viel kosten.</p>
+<p lang="en">Zwei Details überraschen Einsteiger.</p>
+<p lang="en"><strong>Die Gebühr wird im eigenen Coin des Netzwerks bezahlt.</strong> Um einen Token auf der BNB Smart Chain zu senden, braucht man etwas BNB. Auf Ethereum braucht man ETH, auf Tron TRX. Eine Wallet mit Tokens, aber ohne Netzwerk-Coin, kann nichts senden.</p>
+<p lang="en"><strong>Gebühren unterscheiden sich stark zwischen Netzwerken</strong> und von Stunde zu Stunde. Ihre Wallet zeigt die Gebühr vor der Bestätigung. Lesen Sie sie.</p>
+<figure class="lz-fig"><figcaption>Bevor Sie auf Senden drücken</figcaption>
+<ol class="lz-flow">
+<li><b>1</b><span><strong>Fragen Sie den Empfänger</strong> nach Adresse und Netzwerk.</span></li>
+<li><b>2</b><span><strong>Adresse einfügen</strong> und vergleichen Sie die ersten vier und letzten vier Zeichen.</span></li>
+<li><b>3</b><span><strong>Wählen Sie dasselbe Netzwerk</strong> das der Empfänger genannt hat.</span></li>
+<li><b>4</b><span><strong>Prüfen Sie, ob Sie den Netzwerk-Coin haben</strong> für die Gebühr, und lesen Sie die Gebühr.</span></li>
+<li><b>5</b><span><strong>Einen kleinen Test senden,</strong> warten Sie, bis er ankommt, und senden Sie dann den Rest.</span></li>
+<li><b>6</b><span><strong>Den Transaktions-Hash aufbewahren</strong> und schlagen Sie ihn in einem Block-Explorer nach.</span></li>
+</ol>
+</figure>
+<h3><span class="check-number">04.</span> Bestätigung: wann es erledigt ist</h3>
+<p lang="en">Nachdem Sie auf Senden gedrückt haben, wartet die Transaktion auf die Aufnahme in einen Block. Ist sie aufgenommen, hat sie eine Bestätigung. Jeder spätere Block fügt eine weitere hinzu, und je mehr Bestätigungen, desto schwerer wäre es, sie rückgängig zu machen.</p>
+<p lang="en">Bitcoin erzeugt etwa alle zehn Minuten einen Block. Viele neuere Netzwerke brauchen wenige Sekunden. Börsen warten oft mehrere Bestätigungen ab, bevor sie eine Einzahlung gutschreiben; deshalb kann eine Überweisung in Ihrer Wallet erfolgreich aussehen und auf der anderen Seite noch ausstehen.</p>
+<h3><span class="check-number">05.</span> Prüfen Sie es selbst</h3>
+<p lang="en">Jede Transaktion erhält eine Kennung, den Hash. Fügen Sie ihn in einen Block-Explorer ein, etwa BscScan für die BNB Smart Chain, und Sie sehen Absender, Empfänger, Betrag, Gebühr und Status. Das Wort keiner Firma ist nötig.</p>
+<p lang="en">Sagt ein Empfänger, es sei nichts angekommen, klärt der Explorer es. Zeigt er Erfolg an die richtige Adresse im richtigen Netzwerk, sind die Coins dort.</p>
+<h3><span class="check-number">06.</span> Es gibt kein Rückgängig</h3>
+<p lang="en">Eine bestätigte Transaktion ist endgültig. Keine Bank, kein Support und kein Gerichtsbeschluss kann sie auf der Blockchain rückgängig machen. Der einzige Weg zurück ist, dass der Empfänger sie zurückschickt.</p>
+<p lang="en">Deshalb zählen Gewohnheiten hier mehr als irgendwo sonst im Finanzwesen.</p>
+<p lang="en"><strong>Zuerst einen kleinen Test senden</strong> wenn die Adresse neu oder der Betrag groß ist.</p>
+<p lang="en"><strong>Prüfen Sie Adresse und Netzwerk zweimal,</strong> prüfen Sie dann auf dem Bestätigungsbildschirm noch einmal die ersten und letzten Zeichen.</p>
+<p lang="en"><strong>Behalten Sie etwas vom Netzwerk-Coin</strong> für Gebühren.</p>
+<p lang="en"><strong>Den Transaktions-Hash aufbewahren</strong> bis der Empfänger bestätigt.</p>
+<h3>Was man daraus mitnimmt</h3>
+<p lang="en">Die Adresse sagt, wohin. Das Netzwerk sagt, auf welchem Weg. Beides muss zum Empfänger passen.</p>
+<p lang="en">Die Gebühr wird im eigenen Coin des Netzwerks bezahlt und hängt vom Verkehr ab, nicht vom Betrag.</p>
+<p lang="en">Bestätigungen machen eine Transaktion endgültig, und eine endgültige Transaktion lässt sich nicht rückgängig machen.</p>
+<p lang="en">Ein Block-Explorer zeigt die Wahrheit über jede Überweisung.</p>
+<p lang="en">Eine kleine Testüberweisung ist die billigste Versicherung, die es gibt.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۴ یک پرداخت کارتی را میان پنج شرکت دنبال کرد. در انتقال کریپتویی هیچ‌کدام از آن‌ها نیستند. فقط ما هستیم، گیرنده و شبکه‌ای از کامپیوترها که هر کسی می‌تواند آن را ببیند و بررسی کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این، کار را هم ساده‌تر می‌کند و هم سخت‌گیرانه‌تر. کسی در میانه نیست که کار را کند کند و کسی هم نیست که اشتباه را درست کند. برای همین می‌ارزد پیش از انجامش با پول واقعی، یک بار آرام از اول تا آخرش را با هم برویم.</p>
+<h3><span class="check-number">۰۱.</span> آدرس: به کجا می‌رود</h3>
+<p lang="fa" dir="rtl" style="text-align:right">آدرس مثل شماره‌حساب است: رشته‌ای بلند از حرف و عدد که یک کیف پول را مشخص می‌کند. در اتریوم و BNB Smart Chain با <bdi class="lz-lat">0x</bdi> شروع می‌شود و ۴۲ کاراکتر دارد. آدرس‌های بیت‌کوین و ترون شکل دیگری دارند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آدرس عمومی است. دادنش به دیگران خطری ندارد، چون فقط اجازه می‌دهد برایتان بفرستند. چیزی که باید پنهان بماند کلید خصوصی یا عبارت بازیابی درس ۱۳ است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هیچ‌وقت آدرس را با دست تایپ نکنید. کپی و جای‌گذاری کنید یا کد QR را اسکن کنید و بعد چهار کاراکتر اول و چهار کاراکتر آخر را با آدرس اصلی مقایسه کنید. یک کاراکتر اشتباه یعنی یک کیف پول دیگر.</p>
+<h3><span class="check-number">۰۲.</span> شبکه: از کدام جاده</h3>
+<p lang="fa" dir="rtl" style="text-align:right">یک توکن می‌تواند روی چند بلاکچین وجود داشته باشد. مثلاً USDT روی اتریوم، ترون، BNB Smart Chain و چند شبکه‌ی دیگر منتشر شده است. این‌ها جاده‌های جدایی‌اند که خودبه‌خود به هم وصل نیستند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">قاعده ساده است: <strong>فرستنده و گیرنده باید از یک شبکه استفاده کنند.</strong> اگر کیف پول یا صرافی گیرنده منتظر یک شبکه باشد و ما روی شبکه‌ی دیگری بفرستیم، کوین‌ها ممکن است هرگز دیده نشوند و برگرداندنشان از سخت تا ناممکن است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این رایج‌ترین اشتباه پرهزینه‌ی تازه‌کارهاست. پیش از ارسال، دو چیز را از گیرنده بپرسید: آدرس و شبکه.</p>
+<h3><span class="check-number">۰۳.</span> کارمزد: هزینه‌ی جا</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هر تراکنش کارمزدی به کسانی می‌دهد که شبکه را اداره می‌کنند. به آن «گس» هم می‌گویند. این کارمزد بهای جا در بلاک بعدی است، پس به شلوغی شبکه بستگی دارد، نه به مبلغی که می‌فرستیم. فرستادن ۱۰ دلار یا ۱۰ هزار دلار می‌تواند یک اندازه هزینه داشته باشد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">دو نکته تازه‌واردها را غافلگیر می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>کارمزد با کوین خودِ شبکه پرداخت می‌شود.</strong> برای فرستادن هر توکنی روی BNB Smart Chain کمی BNB لازم است. روی اتریوم ETH و روی ترون TRX. کیف پولی که توکن دارد ولی کوین شبکه را ندارد، هیچ چیزی نمی‌تواند بفرستد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>کارمزد شبکه‌ها با هم خیلی فرق دارد</strong> و ساعت‌به‌ساعت هم عوض می‌شود. کیف پول پیش از تأیید، کارمزد را نشان می‌دهد. آن را بخوانید.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>پیش از زدن «ارسال»</figcaption>
+<ol class="lz-flow">
+<li><b>۱</b><span><strong>از گیرنده</strong> آدرس و شبکه را بپرسید.</span></li>
+<li><b>۲</b><span><strong>آدرس را جای‌گذاری کنید</strong> و چهار کاراکتر اول و آخر را مقایسه کنید.</span></li>
+<li><b>۳</b><span><strong>همان شبکه‌ای را انتخاب کنید</strong> که گیرنده گفته است.</span></li>
+<li><b>۴</b><span><strong>کوین شبکه را داشته باشید</strong> تا کارمزد پرداخت شود، و مبلغ کارمزد را بخوانید.</span></li>
+<li><b>۵</b><span><strong>یک مبلغ کوچک آزمایشی بفرستید،</strong> صبر کنید برسد و بعد بقیه را بفرستید.</span></li>
+<li><b>۶</b><span><strong>هش تراکنش را نگه دارید</strong> و آن را در مرورگر بلاک ببینید.</span></li>
+</ol>
+</figure>
+<h3><span class="check-number">۰۴.</span> تأیید: کی تمام می‌شود</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بعد از زدن «ارسال»، تراکنش منتظر می‌ماند تا در یک بلاک قرار بگیرد. وقتی قرار گرفت، یک تأیید دارد. هر بلاک بعدی یک تأیید دیگر اضافه می‌کند و هرچه تأییدها بیشتر شود، برگرداندنش سخت‌تر می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بیت‌کوین تقریباً هر ده دقیقه یک بلاک می‌سازد. بسیاری از شبکه‌های جدیدتر چند ثانیه وقت می‌برند. صرافی‌ها اغلب پیش از نشاندن واریز منتظر چند تأیید می‌مانند؛ برای همین انتقال می‌تواند در کیف پول ما موفق باشد و آن طرف هنوز «در انتظار».</p>
+<h3><span class="check-number">۰۵.</span> خودتان بررسی کنید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هر تراکنش یک شناسه دارد که به آن «هش» می‌گویند. آن را در یک مرورگر بلاک، مثل BscScan برای BNB Smart Chain، جای‌گذاری کنید تا فرستنده، گیرنده، مبلغ، کارمزد و وضعیت را ببینید. به حرف هیچ شرکتی نیاز نیست.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر گیرنده بگوید چیزی نرسیده، مرورگر بلاک تکلیف را روشن می‌کند. اگر نشان بدهد تراکنش به آدرس درست و روی شبکه‌ی درست موفق بوده، کوین‌ها همان‌جا هستند.</p>
+<h3><span class="check-number">۰۶.</span> دکمه‌ی برگشت وجود ندارد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">تراکنش تأییدشده قطعی است. هیچ بانک، پشتیبانی یا حکم دادگاهی نمی‌تواند آن را روی بلاکچین برگرداند. تنها راه برگشت این است که گیرنده خودش پس بفرستد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای همین عادت‌ها این‌جا از هر جای دیگر در امور مالی مهم‌ترند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>اول یک مبلغ کوچک آزمایشی بفرستید،</strong> وقتی آدرس تازه است یا مبلغ بزرگ.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>آدرس و شبکه را دو بار بررسی کنید</strong> و در صفحه‌ی تأیید، یک بار دیگر کاراکترهای اول و آخر را ببینید.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>کمی از کوین شبکه</strong> برای کارمزد نگه دارید.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>هش تراکنش را نگه دارید</strong> تا گیرنده رسیدنش را تأیید کند.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">آدرس می‌گوید کجا. شبکه می‌گوید از کدام جاده. هر دو باید با گیرنده یکی باشد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">کارمزد با کوین خودِ شبکه پرداخت می‌شود و به شلوغی بستگی دارد، نه به مبلغ.</p>
+<p lang="fa" dir="rtl" style="text-align:right">تأییدها تراکنش را قطعی می‌کنند و تراکنش قطعی برگشت ندارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">مرورگر بلاک حقیقتِ هر انتقال را نشان می‌دهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">یک انتقال آزمایشی کوچک ارزان‌ترین بیمه‌ی ممکن است.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Mit TMN ausprobieren</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">با TMN تمرین کنید</h2>
+<p lang="en">TMN lebt auf der BNB Smart Chain. Zum Empfangen braucht man eine BNB-Smart-Chain-Adresse in einer eigenen Wallet, zum Senden etwas BNB für die Gebühr. Der TMN-Leitfaden zeigt das mit Bildern.</p>
+<p lang="fa" dir="rtl" style="text-align:right">TMN روی شبکه‌ی BNB Smart Chain است؛ پس برای دریافتش آدرس BNB Smart Chain در یک کیف پول شخصی لازم است و برای فرستادنش کمی BNB برای کارمزد. راهنمای TMN این کار را با تصویر نشان می‌دهد.</p>
+<div class="cta-row">
+<a class="cta" href="tmn-guide.en.html"><span lang="en">TMN zur Wallet hinzufügen</span><span lang="fa">اضافه کردن TMN به کیف پول</span></a>
+<a class="button" href="lesson17.de.html"><span lang="en">Wie Sie Ihr digitales Geld nicht verlieren</span><span lang="fa">چطور پول دیجیتالمان را از دست ندهیم؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Schlüsselbegriffe</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Wallet-Adresse</li><li>Netzwerk (Blockchain)</li><li>Netzwerkgebühr (Gas)</li><li>Netzwerk-Coin</li><li>Block und Bestätigung</li><li>Transaktions-Hash</li><li>Block-Explorer</li><li>Endgültigkeit</li><li>Testüberweisung</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>آدرس کیف پول</li><li>شبکه (بلاکچین)</li><li>کارمزد شبکه (گس)</li><li>کوین شبکه</li><li>بلاک و تأیید</li><li>هش تراکنش</li><li>مرورگر بلاک</li><li>قطعی بودن</li><li>انتقال آزمایشی</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Lernziele</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Erklären Sie, was eine Adresse ist und warum ihr Teilen sicher ist.</li><li>Sagen, warum Sender und Empfänger dasselbe Netzwerk nutzen müssen.</li><li>Erklären Sie, wofür die Netzwerkgebühr bezahlt und in welchem Coin sie gezahlt wird.</li><li>Beschreiben Sie, was eine Bestätigung ist.</li><li>Eine Transaktion in einem Block-Explorer nachschlagen.</li><li>Nennen Sie die Prüfungen vor dem Senden.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>توضیح دهید آدرس چیست و چرا دادنش به دیگران خطری ندارد.</li><li>بگویید چرا فرستنده و گیرنده باید از یک شبکه استفاده کنند.</li><li>توضیح دهید کارمزد شبکه بهای چیست و با کدام کوین پرداخت می‌شود.</li><li>بگویید تأیید تراکنش یعنی چه.</li><li>یک تراکنش را در مرورگر بلاک پیدا کنید.</li><li>بررسی‌های پیش از ارسال را بشمارید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Quiz</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Prüfen Sie, was hängen geblieben ist. Die Antwort steht unter jeder Frage.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Frage 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Ist es sicher, Ihre Wallet-Adresse zu teilen?</p>
+<p lang="fa" dir="rtl" style="text-align:right">دادن آدرس کیف پول به دیگران خطری دارد؟</p>
+<p lang="en">A. Nein, damit können andere Ihre Coins nehmen</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بله، دیگران می‌توانند کوین‌ها را بردارند</p>
+<p lang="en">B. Ja, damit kann man Ihnen nur etwas senden</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. نه، فقط اجازه می‌دهد برایتان بفرستند</p>
+<p lang="en">C. Nur wenn Sie sie einmal teilen</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. فقط اگر یک بار بدهید خطری ندارد</p>
+<p class="answer" lang="en">Richtige Antwort: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Sie halten USDT auf der BNB Smart Chain, aber kein BNB. Was passiert, wenn Sie senden wollen?</p>
+<p lang="fa" dir="rtl" style="text-align:right">روی BNB Smart Chain تتر دارید ولی BNB ندارید. وقتی بخواهید بفرستید چه می‌شود؟</p>
+<p lang="en">A. Die Gebühr wird vom USDT abgezogen</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. کارمزد از خود تتر کم می‌شود</p>
+<p lang="en">B. Es kann nicht gesendet werden; die Gebühr braucht BNB</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ارسال نمی‌شود؛ کارمزد BNB می‌خواهد</p>
+<p lang="en">C. Der Empfänger zahlt die Gebühr</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. گیرنده کارمزد را می‌دهد</p>
+<p class="answer" lang="en">Richtige Antwort: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Wovon hängt die Netzwerkgebühr hauptsächlich ab?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کارمزد شبکه بیشتر به چه چیزی بستگی دارد؟</p>
+<p lang="en">A. Wie ausgelastet das Netzwerk ist</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. شلوغی شبکه</p>
+<p lang="en">B. Der Betrag, den Sie senden</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. مبلغی که می‌فرستید</p>
+<p lang="en">C. Das Land des Empfängers</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. کشور گیرنده</p>
+<p class="answer" lang="en">Richtige Antwort: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Sie haben über ein anderes Netzwerk gesendet, als der Empfänger erwartet hat. Was ist das wahrscheinliche Ergebnis?</p>
+<p lang="fa" dir="rtl" style="text-align:right">روی شبکه‌ای غیر از شبکه‌ی مورد انتظار گیرنده فرستاده‌اید. نتیجه‌ی محتمل چیست؟</p>
+<p lang="en">A. Die Netzwerke wandeln es automatisch um</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. شبکه‌ها خودکار تبدیلش می‌کنند</p>
+<p lang="en">B. Es kommt nach einem Tag zu Ihnen zurück</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. بعد از یک روز به شما برمی‌گردد</p>
+<p lang="en">C. Die Coins tauchen eventuell nicht auf und sind verloren</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. کوین‌ها ممکن است دیده نشوند و از دست بروند</p>
+<p class="answer" lang="en">Richtige Antwort: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Wie können Sie beweisen, dass eine Überweisung angekommen ist?</p>
+<p lang="fa" dir="rtl" style="text-align:right">چطور می‌شود ثابت کرد یک انتقال رسیده است؟</p>
+<p lang="en">A. Ein Screenshot Ihrer Wallet</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. عکس از صفحه‌ی کیف پول</p>
+<p lang="en">B. Der Transaktions-Hash in einem Block-Explorer</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. هش تراکنش در مرورگر بلاک</p>
+<p lang="en">C. Eine Nachricht vom Support</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. پیامی از پشتیبانی</p>
+<p class="answer" lang="en">Richtige Antwort: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Quellen</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://ethereum.org/en/developers/docs/gas/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">ethereum.org: Gas und Gebühren</a></li><li><a href="https://developer.bitcoin.org/devguide/transactions.html" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Bitcoin-Entwicklerleitfaden: Transaktionen</a></li><li><a href="https://docs.bnbchain.org/bnb-smart-chain/overview/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BNB-Chain-Dokumentation: Überblick über die BNB Smart Chain</a></li><li><a href="https://bscscan.com/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">BscScan: Block-Explorer der BNB Smart Chain</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Blockzeiten und Gebühren ändern sich mit Netzwerk-Upgrades. Lesen Sie vor dem Bestätigen immer die Gebühr und das Netzwerk in Ihrer eigenen Wallet.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">زمان بلاک و کارمزد با به‌روزرسانی شبکه‌ها تغییر می‌کند. پیش از تأیید، همیشه کارمزد و شبکه‌ای را که کیف پول خودتان نشان می‌دهد بخوانید.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Bleiben Sie dran</span></h2>
+<p lang="en">Neue Lektionen werden zuerst auf Ditomans Kanälen angekündigt.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.de.html"><span lang="en">Zurück zu Lernen</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson15.de.html"><span lang="en">Vorherige Lektion</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson17.de.html"><span lang="en">Nächste Lektion</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Auf Struktur gebaut, von Entdeckung getrieben.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-de.js?v=20261121a"></script>
+</body>
+</html>

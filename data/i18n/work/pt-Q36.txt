@@ -1,0 +1,112 @@
+3028|Qual é o lugar mais seguro para uma frase de recuperação?
+3029|De onde vem
+3030|Onde está
+3031|Ponto da situação
+3032|Onde nenhuma entidade única controla a rede.
+3033|Onde se esconde o custo
+3034|Onde começou a ideia
+3035|Para onde vai o mês, e uma divisão simples 50/30/20.
+3036|Para onde isto pode ir
+3037|Onde guardá-lo
+3038|Onde as transações são verificáveis.
+3039|Se uma CBDC é boa ou má depende quase inteiramente do seu desenho e da lei à sua volta. Estas são as perguntas que importam, em qualquer país:
+3040|Que áreas pode a blockchain afetar?
+3041|Que banco emitiu o seu cartão e tem a sua conta?
+3042|Que entidade licencia o quê, e por onde começar, setor a setor.
+3043|Que máquina do dia a dia é a metáfora clássica?
+3044|Que hábito sugere o CFPB para criar poupança?
+3045|Em que instituições as pessoas costumam confiar hoje?
+3046|Qual é uma razão real para esperar que um token ganhe valor?
+3047|Qual é descrito como o banco central mais antigo do mundo?
+3048|Qual é a pergunta certa a fazer antes de confiar numa stablecoin?
+3049|Qual é a forma mais segura de abrir o site da sua corretora ou carteira?
+3050|Em que tipo de respaldo assentava a UST, que falhou em maio de 2022?
+3051|Qual dos três mostrou as maiores quedas de preço?
+3052|Quais destas são características-chave da blockchain?
+3053|Qual destas coisas se pode descobrir lendo o contrato de um token?
+3054|Qual destas NÃO é uma função típica de um banco central?
+3055|Qual destas é uma razão real para esperar que um token ganhe valor?
+3056|Qual destas é uma das quatro funções de um banco?
+3057|Qual destas deve verificar num registo de bloqueio?
+3058|Qual é uma moeda?
+3059|Que parte de um pagamento internacional uma stablecoin não elimina?
+3060|Que compra se adequa melhor a um empréstimo?
+3061|Que pergunta importa mais ao avaliar uma CBDC?
+3062|Que afirmação sobre um bloqueio de liquidez é verdadeira?
+3063|Que afirmação é verdadeira para os três ativos?
+3064|Whitepaper
+3065|Whitepaper: rumo final
+3066|Quem é Satoshi Nakamoto, imagem principal da lição Ditoman
+3067|Quem é Satoshi Nakamoto?
+3068|Quem será a próxima Nvidia? Memória, redes e chips personalizados
+3069|De quem é o carbono?
+3070|Quem gere uma blockchain?
+3071|Quem gere uma blockchain? Imagem da lição Ditoman
+3072|Quem gere uma blockchain? | Ditoman Learn
+3073|Quem aprova uma transferência
+3074|Quem pode mover as moedas numa carteira pessoal?
+3075|Quem pode resgatar, qual é o valor mínimo, que comissões se aplicam e quanto tempo demora?
+3076|Quem faz o quê
+3077|Quem corrige um erro
+3078|Quem detém a oferta?
+3079|Quem é Satoshi Nakamoto?
+3080|Quem está na corrida, porque o quântico se compara à IA e ao nuclear, e o que significa para a encriptação e a Bitcoin.
+3081|Quem será a próxima Nvidia
+3082|Quem emite uma CBDC?
+3083|Quem emite uma moeda digital de banco central (CBDC)?
+3084|De quem é o carbono? Os maiores exportadores de CO2
+3085|Quem paga tudo isto?
+3086|Quem propõe os blocos
+3087|Quem gere uma blockchain?
+3088|Quem define o preço
+3089|Quem acrescenta dinheiro ao pool recebe tokens LP (tokens de fornecedor de liquidez). Pense neles como um recibo. Quem tiver o recibo pode devolvê-lo ao pool a qualquer momento e levantar a sua parte de BNB e de tokens.
+3090|Porque foi criada a Bitcoin
+3091|Porque foi criada a Bitcoin
+3092|Porque importa a blockchain
+3093|Porque importa a blockchain, imagem da lição Ditoman
+3094|Porque caem os preços de repente?
+3095|Porque caem os preços de repente? Notícias, alavancagem e liquidações | Ditoman Learn
+3096|Porque perde o dinheiro poder de compra?
+3097|Porque perde o dinheiro poder de compra? Imagem da lição Ditoman
+3098|Porque perde o dinheiro poder de compra? | Ditoman Learn
+3099|Porque é que enviar dinheiro para o estrangeiro ainda é lento e caro?
+3100|Porque é que enviar dinheiro para o estrangeiro ainda é lento e caro? Imagem da lição Ditoman
+3101|Porque é que enviar dinheiro para o estrangeiro ainda é lento e caro? | Ditoman Learn
+3102|Porque a United proibiu agentes de IA de reservar voos
+3103|Porque a United proibiu agentes de IA de reservar voos
+3104|Porque deixámos de nos encontrar
+3105|Porque ajuda uma norma
+3106|Porque são importantes as regras transparentes?
+3107|Porque importa a blockchain
+3108|Porque podem os preços cripto mexer depressa perante grandes notícias, mesmo ao fim de semana?
+3109|Porque podem taxas de juro mais altas pressionar ativos de risco como a Bitcoin?
+3110|Porque existem as moedas
+3111|Porque comparar ofertas na mesma base de capitalização?
+3112|Porque as cripto caíram com as tecnológicas e o ouro: a Fed, as ações de IA, as saídas dos ETF e a geopolítica, com cenários a uma semana, quatro semanas e seis meses.
+3113|Porque as cripto reagem primeiro e com mais força
+3114|Porque decidir de antemão o que provaria que está errado?
+3115|Porque continuou a Bitcoin depois de Satoshi desaparecer?
+3116|Porque continuou a Bitcoin a funcionar depois de Satoshi se afastar?
+3117|Porque acho que isto valerá mais no futuro?
+3118|Porque caem os preços de repente?
+3119|Porque caem os preços de repente? Imagem da lição Ditoman
+3120|Porque cria a blockchain confiança?
+3121|Porque perde o dinheiro poder de compra?
+3122|Porque importa a concentração da oferta?
+3123|Porque importam as eleições
+3124|Porque é que a identidade de Satoshi ainda importa?
+3125|Porque é que um ativo cujo preço cai a pique não serve bem para um fundo de emergência?
+3126|Porque é que enviar dinheiro para o estrangeiro ainda é difícil?
+3127|Porque é que a taxa anual real desse empréstimo é superior a 14%?
+3128|Porque é que a urgência é tratada como sinal de alerta?
+3129|Porque parece grátis
+3130|Porque é «inteligente»
+3131|Porque é lento
+3132|Porque importa às pessoas comuns
+3133|Porque perde o dinheiro poder de compra
+3134|Porquê sem política?
+3135|Porque é que os pagamentos às vezes falham ou são devolvidos
+3136|Porque é que as pessoas repartem as poupanças
+3137|Porque mexem os preços e como diferem os ativos.
+3138|Porque é que os produtores pagam para vender eletricidade, os números da Alemanha e de França, e porque um preço grossista negativo não é uma fatura negativa.
+3139|Porque é que os produtores às vezes pagam para vender eletricidade, e porque a sua fatura não fica negativa.

@@ -1,0 +1,76 @@
+400|Agent
+401|Zahlungen durch Agenten
+402|Ein Familien-Codewort vereinbaren
+403|Agrartechnik
+404|Agrarindustrie
+405|Flughafenlautsprecher sprechen jetzt direkt in Ihre Ohren
+406|Algorithmisches Modell
+407|Algorithmisches Modell:
+408|Alle
+409|Alle Lektionen
+410|Alle Lektionen und der Lernpfad
+411|Alle Preise und Charts →
+412|Alle drei schwanken, aber nicht gleich stark.
+413|=
+414|=
+415|Fast das gesamte umlaufende Angebot liegt in einer Gründer-Wallet, für jeden auf BscScan sichtbar.
+416|Fast jedes Land hat eine, und die Nachrichten erwähnen sie täglich. Diese Lektion erklärt in einfachen Worten, was eine Zentralbank ist, woher die Idee stammt und was ihre Hauptaufgaben sind
+417|Fast jedes Land hat eine, und die Nachrichten erwähnen sie täglich. Diese Lektion erklärt in einfachen Worten, was eine Zentralbank ist, woher die Idee stammt und was ihre Hauptaufgaben sind.
+418|Kaufe ich, weil ich es verstehe, oder weil ich Angst habe, etwas zu verpassen?
+419|=
+420|Betrag
+421|Erhaltener Betrag
+422|Ein Imperium ohne Flagge?
+423|Ein iranisches KI-Sortiersystem trifft auf einen hundertjährigen Exporthandel.
+424|Ein iranisches Medikament, in ganz Europa zugelassen
+425|Ein iranisches Medikament, in ganz Europa zugelassen
+426|Ein iranischer Chirurgieroboter: was belegt ist und was noch Behauptung des Herstellers ist.
+427|Ein im Iran hergestellter EO-Katalysator lässt die Glykolanlage von Morvarid Petrochemical jetzt mit voller Kapazität laufen.
+428|Eine Adresse ist wie eine Kontonummer: eine lange Folge von Buchstaben und Ziffern, die eine Wallet identifiziert. Auf Ethereum und BNB Smart Chain beginnt sie mit 0x und hat 42 Zeichen. Bitcoin- und Tron-Adressen sehen anders aus.
+429|Eine Adresse ist öffentlich. Sie zu teilen ist sicher, denn andere können Ihnen damit nur etwas schicken. Geheim bleiben müssen der private Schlüssel oder die Wiederherstellungsphrase aus Lektion 13.
+430|Die Adresse sagt, wohin. Das Netzwerk sagt, auf welchem Weg. Beides muss zum Empfänger passen.
+431|Ein Notgroschen ist Geld, das nur für ungeplante, notwendige Kosten zurückgelegt wird: eine plötzliche Reparatur, eine Arztrechnung, eine Lücke zwischen zwei Jobs. Er ist nicht für Urlaub, Schnäppchen oder Geldanlagen.
+432|Ein Notgroschen macht aus einer Krise eine Unannehmlichkeit.
+433|Ein Imperium ohne Flagge? Chinas Auslandsinvestitionen
+434|Ein Börsenguthaben ist eine Forderung an ein Unternehmen, meist ohne Garantie.
+435|Auch ein Börsenguthaben ist ein Versprechen
+436|Ein Wechselkurs ist der Preis einer Währung in einer anderen.
+437|Der Zinssatz ist der Preis des Geldes
+438|Ein alter Bericht erzählt nur von der Vergangenheit.
+439|Android-App-Store für Persischsprachige; über 500.000 Apps
+440|Jahreszins inklusive Gebühren
+441|Beantworten Sie alle zehn Fragen.
+442|Jede künftige Angebotsentnahme wird eine Überweisung von Gründer-Wallets an eine öffentliche Burn-Adresse sein, mit jedem Transaktions-Hash auf dieser Seite. Diese Überweisungen nehmen Tokens aus dem Umlauf, ändern aber nicht die totalSupply-Zahl des Vertrags, und so werden wir sie auch beschreiben.
+443|Jedes Hauptbuch braucht eine Regel: Alle müssen sich auf die nächste Seite einigen. Könnten zwei Leute zwei verschiedene nächste Seiten anfügen, ließe sich Geld zweimal ausgeben.
+444|Jetzt kann jeder neue Tokens erzeugen
+445|Wenden Sie den Ein-Zeilen-Test auf jeden Vermögenswert an.
+446|Stellen Sie drei Fragen, bevor Sie einem Stablecoin vertrauen.
+447|Prüfung 5 auf TMN angewandt
+448|Das Knochengerüst aus Magnesium und Graphenoxid der Universität Arak: Laborergebnisse, wie Deutschland und Korea auf den Markt kamen, Irans 5. Platz auf dem Gebiet und der Weg in den OP.
+449|Gibt es versteckte Einschränkungen?
+450|Kommt; Regeln werden geschrieben
+451|Künstliche Intelligenz
+452|Künstliche Intelligenz entscheidet schon heute, ob Ihre Kartenzahlung verdächtig wirkt, und beginnt, im Namen von Menschen einzukaufen und zu bezahlen. Diese Lektion trennt, was heute real ist, von dem, was noch ein Versprechen ist, und benennt die neuen Risiken
+453|Künstliche Intelligenz entscheidet schon heute, ob Ihre Kartenzahlung verdächtig wirkt, und beginnt, im Namen von Menschen einzukaufen und zu bezahlen. Diese Lektion trennt, was heute real ist, von dem, was noch ein Versprechen ist, und benennt die neuen Risiken klar.
+454|Künstliche Intelligenz, kurz KI, ist ein Sammelbegriff für Software, die Muster aus Daten lernt, statt nur festen Regeln zu folgen. Ein genauer Blick lohnt sich, denn beim Geld sind die hoffnungsvollen und die beängstigenden Geschichten beide zum Teil wahr.
+455|=
+456|Wie Lektion 27 erklärte, erhalten Miner für jeden hinzugefügten Block eine Belohnung. Das Halving halbiert diese Belohnung automatisch alle 210.000 Blöcke. Bei etwa einem Block alle zehn Minuten sind das rund vier Jahre.
+457|Stellen Sie zu jedem Reservebericht vier Fragen: Was wird gehalten? Wie viel davon ist Bargeld? Wer prüft es? Wie oft wird er veröffentlicht?
+458|Lassen Sie es erklären und prüfen Sie dann die wichtigen Fakten
+459|Stellen Sie eine Frage: Hat dieser Vermögenswert eine eigene Chain, oder lebt er auf einer fremden? Das entscheidet es.
+460|Fragen Sie den Empfänger
+461|Fragen Sie, woher das Geld kommt.
+462|Fragen Sie, warum eine Entscheidung getroffen wurde
+463|=
+464|=
+465|Assistent
+466|Mit 5 % auf 1.000 über 20 Jahre: 2.000 mit einfachem Zins gegenüber etwa 2.653 mit Zinseszins.
+467|Im Kern ist die Blockchain ein System, um Informationen transparent, sicher und schwer veränderbar festzuhalten.
+468|An der Dead-Adresse
+469|Am Ende des Tages werden die genehmigten Zahlungen gesammelt und summiert. Das ist die
+470|Sortieren Sie am Monatsende die Zahlungen in drei Stapel: was Sie zahlen mussten, was Sie zahlen wollten und was Sie zurückgelegt haben. Die meisten sind von der Größe mindestens eines Stapels überrascht.
+471|Atlantic Council, Tracker für digitale Zentralbankwährungen
+472|Bestätigung oder Prüfung
+473|Auracast in Frankfurt, München und Brighton, der Weltmarkt, KI, die Unternehmen, die Standards und die Chance für den Iran.
+474|Autorisierung
+475|Die Autorisierung erfolgt sofort. Clearing und Abwicklung dauern Stunden oder Tage.

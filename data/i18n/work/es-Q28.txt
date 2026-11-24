@@ -1,0 +1,66 @@
+2445|La respuesta vuelve
+2446|La app y su socio
+2447|El coste medio procede del informe Remittance Prices Worldwide del Banco Mundial para el primer trimestre de 2025. Los trimestres posteriores pueden diferir.
+2448|El banco
+2449|El banco convierte la divisa
+2450|El banco la restablece
+2451|El banco, a través de la app
+2452|El pitido es la respuesta a una pregunta. El dinero se mueve después.
+2453|El camino del préstamo.
+2454|El edificio se desvanece. Las funciones no.
+2455|El titular de la tarjeta:
+2456|La cascada
+2457|Las propias reglas de la cadena
+2458|El cambio llegó el 15 de septiembre de 2022, el día del Merge. El Cambridge Centre for Alternative Finance estimó que el consumo eléctrico de Ethereum cayó cerca de un 99,99%.
+2459|El gráfico muestra la última operación. Para vender, necesitas un comprador. Imagina que la última operación fue a 100 dólares, pero solo hay un comprador a 100 y el siguiente está a 95. Si vendes dos unidades a la vez, obtienes 100 por la primera y 95 por la segunda: una media de 97,50. Esa diferencia se llama
+2460|Las comprobaciones te hablan del token. Estas preguntas te hablan de tu propio razonamiento, tu riesgo y por qué compras ahora.
+2461|La empresa dueña de Bitcoin
+2462|El contrato está roto
+2463|El código del contrato comprueba las reglas
+2464|El coste es la clave. Los mineros gastan electricidad y equipos reales, así que hacer trampa tiene que valer más que el coste de actuar honestamente.
+2465|El coste de funcionamiento
+2466|El banco central del país
+2467|El creador desapareció, pero el sistema continuó.
+2468|El camino de la divisa.
+2469|La decisión se ha cancelado
+2470|La definición y los dos primeros años proceden de la CFPB. Las cifras a 10 años, 20 años, diarias y de rendimiento efectivo son cálculos nuestros (1.000 × 1,05^10 y 1,05^20; 1.000 × 0,05 × 30 ÷ 365; capitalización mensual del 5%), redondeados. Orientación general, no asesoramiento personal.
+2471|La diferencia entre ellas no son los ingresos. Es una reserva que ya estaba antes de que llegara la sorpresa.
+2472|La diferencia se reduce a una pregunta que podemos hacer sobre cualquier saldo: si quiero este dinero ahora mismo, ¿quién tiene que decir que sí?
+2473|La diferencia es la protección que hay detrás. La mayoría de las cuentas en exchanges no tienen garantía de depósitos. Cuando el exchange FTX se hundió en noviembre de 2022, los clientes descubrieron que faltaban miles de millones de dólares de sus activos, y tuvieron que esperar a un tribunal de quiebras.
+2474|La diferencia empieza siendo mínima y luego crece. Al mismo 5% anual:
+2475|El documento publicado en 2008 que presentó Bitcoin como un sistema de efectivo electrónico entre pares.
+2476|El dólar
+2477|El dólar es más estable pero pierde valor poco a poco. El oro es antiguo y lento, con largos periodos débiles. Bitcoin puede subir rápido y caer más de la mitad.
+2478|Los tipos del euro y del dólar del ejemplo son números redondos elegidos para mostrar el cálculo, no tipos actuales. Las cifras del tamaño del mercado proceden de la encuesta trienal del BPI. Explicación general, no una previsión de ningún tipo.
+2479|La zona euro prepara un euro digital. Una comisión del Parlamento Europeo aprobó su posición en junio de 2026, y el lanzamiento más temprano que se discute es 2029. Estados Unidos fue en la dirección contraria: una orden ejecutiva de enero de 2025 prohibió trabajar en una CBDC estadounidense.
+2480|El exchange
+2481|El margen del tipo de cambio:
+2482|El exchange la restablece
+2483|La fecha de caducidad es real, pero solo en pruebas. En enero de 2021, Shenzhen, en China, dio por sorteo 200 yuanes digitales a cada uno de 100.000 residentes. El dinero solo podía gastarse entre el 7 y el 17 de enero en comercios designados, no podía transferirse y lo no gastado se retiró. En 2021, Chengdu repartió yuan digital que solo podía usarse en transporte público y bicicletas compartidas.
+2484|La comisión se paga en la moneda propia de la red y depende del tráfico, no de la cantidad.
+2485|La comisión se paga en la moneda propia de la red.
+2486|La comisión: pagar por el espacio
+2487|La quinta era, que empezó en 2024, crea 656.250 más. Y así sucesivamente, cada vez menos, hasta que las cantidades se acercan a 21 millones.
+2488|La primera era creó 10.500.000 bitcoins. La segunda 5.250.000, la tercera 2.625.000 y la cuarta 1.312.500. En total, 19.687.500 al final de la cuarta era, en 2024.
+2489|Lo primero que hay que saber es que el dinero no cruza realmente la frontera. Lo que cruza es un mensaje, y luego los bancos ajustan sus libros.
+2490|Los cinco actores
+2491|La base está terminada
+2492|Las cuatro funciones de un banco
+2493|El texto completo en persa del whitepaper. Si alguna vez las dos versiones difieren, el texto en inglés es la referencia.
+2494|El rumbo completo, en PDF
+2495|El fondo debe ser seguro, accesible y algo incómodo de gastar. La CFPB menciona como uno de los lugares más seguros una cuenta en un banco o cooperativa de crédito, una tarjeta prepago con la que no puedes gastar de más, o efectivo guardado en un lugar seguro, con la advertencia de que el efectivo puede perderse o ser robado.
+2496|La distancia entre las dos líneas es lo que oculta el tipo oficial. Precios en tomanes.
+2497|El gobernador del banco central de Japón
+2498|El hábito que importa
+2499|El hábito:
+2500|El halving reduce a la mitad la recompensa de bloque de los mineros cada 210.000 bloques, unos cuatro años.
+2501|El corazón de la cadena de la botella PET, ahora fabricado en Irán
+2502|La historia hasta ahora
+2503|Los errores honestos
+2504|La idea se volvió más importante que la identidad.
+2505|La idea detrás de las cripto y de dónde viene.
+2506|La idea era simple pero potente: las personas podían enviarse valor directamente a través de un sistema basado en verificación, criptografía y reglas compartidas.
+2507|El implante que desaparece cuando el hueso sana
+2508|Las palabras importantes son «con tu permiso». Lee a qué pide acceso una app y retira el permiso cuando dejes de usarla.
+2509|El emisor:
+2510|Los acontecimientos clave de cada día

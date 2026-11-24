@@ -1,0 +1,118 @@
+931|Frequência de capitalização
+932|A capitalização ajuda quem poupa e prejudica quem deve.
+933|Concentrada nos fundadores
+934|Erro confiante (alucinação)
+935|Erros confiantes:
+936|Confirmação: quando está feito
+937|As confirmações tornam uma transação final, e uma transação final não pode ser revertida.
+938|Confirmado no código
+939|Ligar a blockchain à infraestrutura, aos dados e aos sistemas do futuro.
+940|Ligar a blockchain ao futuro dos sistemas digitais.
+941|Mecanismo de consenso
+942|Consentimento para partilhar dados
+943|Consumer Financial Protection Bureau: guia essencial para criar um fundo de emergência
+944|Consumer Financial Protection Bureau: o que é o juro composto (definição e o exemplo de 1 000 dólares a 5%)
+945|Consumer Financial Services Law Monitor: resumo do relatório do CFPB
+946|Contrato no BscScan
+947|Código-fonte do contrato verificado, cerca de 20% da oferta retirada de circulação em dois passos na cadeia, propriedade renunciada para sempre, lições bilingues publicadas e o livro branco definido como direção final.
+948|Verificação do contrato
+949|Contrato verificado, propriedade renunciada, cerca de 20% da oferta fora de circulação, lições bilingues publicadas, livro branco final.
+950|Contrato, factos e divulgação honesta
+951|Controlo
+952|O controlo e os dados estão distribuídos por uma rede
+953|Crescimento controlado
+954|Converta um preço com uma taxa dada.
+955|Falsificações convincentes:
+956|CoolWallet: autópsia da Terra
+957|Copiar
+958|Copiar mensagem
+959|Copie a mensagem, abra
+960|Copie o seu endereço
+961|Ideia central
+962|Corporate Finance Institute: o que aconteceu à Terra
+963|Resposta certa: A
+964|Resposta certa: B
+965|Resposta certa: B. Ninguém de boa-fé a pede alguma vez.
+966|Resposta certa: C
+967|Resposta certa: C (Bahamas, Jamaica e Nigéria)
+968|Resposta certa: C. Caiu mais de 75% entre novembro de 2021 e novembro de 2022.
+969|Resposta certa: C. O retorno real é negativo.
+970|Resposta certa: C. O UST não tinha reserva em dólares; dependia da LUNA e de cunhar e queimar.
+971|Resposta certa: D
+972|Resposta certa: Falso
+973|Resposta certa: Falso. As datas de validade foram usadas em testes promocionais limitados, como em Shenzhen em janeiro de 2021, não em saldos do dia a dia.
+974|Resposta certa: Falso. Só impede que a liquidez bloqueada seja retirada antes da data de desbloqueio.
+975|Resposta certa: Falso. Muitos investidores têm os dois e vendem os dois quando querem menos risco.
+976|Resposta certa: Falso. As verificações técnicas descrevem o token, não o seu raciocínio, o momento ou o risco.
+977|Resposta certa: Falso. Três observações não são um padrão, e havia muitos outros fatores em jogo.
+978|Resposta certa: Falso. Sem liquidez não há saída.
+979|Resposta certa: regras escritas no próprio dinheiro, por exemplo uma data de validade ou limites sobre onde pode ser gasto.
+980|Resposta certa: os ativos seguros rendem mais, por isso os arriscados parecem menos atrativos, e pedir emprestado para os comprar fica mais caro.
+981|Resposta certa: que a sua vida pudesse continuar normalmente se o valor fosse a zero e nunca voltasse.
+982|Resposta certa: quando a corretora fecha automaticamente uma posição alavancada porque a margem está a esgotar-se.
+983|Resposta certa: quando quem tem os tokens LP retira a liquidez, deixando os detentores sem conseguir vender.
+984|Respostas certas: A, B, C
+985|Respostas certas: A, B, C, D
+986|Respostas certas: A, B, D
+987|Correlação versus causalidade
+988|Banco correspondente
+989|Custo do empréstimo
+990|Criar o meu código
+991|Crie a carteira e escreva as 12 palavras de recuperação em papel. Nunca as dê a ninguém.
+992|Criado por
+993|Criados na era
+994|Decisões de crédito:
+995|Reconhecimento pela participação real: lições concluídas, contributos úteis, boa discussão e apoiantes iniciais.
+996|Avaliação de crédito
+997|Crédito • Dívida
+998|Pagamento internacional
+999|Cripto
+1000|Queda do mercado cripto: 550 mil milhões apagados
+1001|Cripto e dinheiro, de forma prática
+1002|Garantia em cripto:
+1003|As cripto vão um passo além das fintech. Uma carteira pessoal move dinheiro sem qualquer banco por baixo, e algumas aplicações emprestam e negoceiam apenas através de código.
+1004|As cripto têm a mesma divisão, e as palavras são moeda e token.
+1005|Mercado cripto
+1006|Queda do mercado cripto
+1007|Cripto • Transações
+1008|CryptoSlate, 5 nov 2026: Nasdaq 100 −5,5%, liquidações de cerca de mil milhões de dólares, mais de 201 000 traders
+1009|Moedas
+1010|Conselho monetário (currency board)
+1011|A negociação de divisas é enorme, e o dólar americano está num dos lados da maior parte dela.
+1012|Custódia
+1013|Apoio ao cliente:
+1014|Ciberataques a bancos
+1015|Ciberataques a bancos
+1016|Cibersegurança
+1017|D. Uma taxa paga às corretoras
+1018|D. Uma votação de governança
+1019|D. Todas as anteriores
+1020|D. Agora qualquer pessoa pode criar novos tokens
+1021|D. Porque as corretoras fecham nos dias úteis
+1022|D. Porque retira toda a tecnologia das finanças
+1023|D. Porque os mercados fecham à noite
+1024|D. A blockchain só é útil para bancos
+1025|D. Só bancos comerciais
+1026|D. Identidade digital
+1027|D. As corretoras fixaram um preço
+1028|D. Quantos países falam dela
+1029|D. Fala-se muito disso na internet
+1030|D. É exigido pelas corretoras
+1031|D. Impede que o token seja listado em qualquer lado
+1032|D. Nenhum
+1033|D. Nenhuma das anteriores
+1034|D. Só registos privados
+1035|D. Dispensar a internet
+1036|D. O preço futuro do token
+1037|D. O token não tem limite de oferta
+1038|D. Os utilizadores não podem verificar nada
+1039|D. Verificação
+1040|D. Quando os fundadores quiserem
+1041|=
+1042|O cálculo diário importa porque mostra quanto tempo o dinheiro esteve onde. O dinheiro que chega no fim do mês rende menos dias, e um empréstimo pago tarde custa mais dias.
+1043|Juro diário
+1044|Relatórios diários de mercado
+1045|Resumo diário da imprensa
+1046|Preços diários
+1047|Relatório diário
+1048|Daniel Chidiac sobre pensar demais, limites e autossabotagem, e porque um intervalo entre o acontecimento e a reação importa nas decisões de dinheiro.

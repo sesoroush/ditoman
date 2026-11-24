@@ -1,0 +1,103 @@
+1217|Toda a gente na internet fala disso
+1218|Exemplo: um empréstimo de 100 milhões a 12 meses
+1219|Exemplos
+1220|Exemplos de regras possíveis: este dinheiro só pode ser gasto até certa data. Só em certos tipos de lojas. Só por esta pessoa e não pode ser transferido. Só para um fim indicado, como transportes ou alimentação.
+1221|Conta numa corretora (custódia)
+1222|Conta na corretora
+1223|Taxa de câmbio
+1224|Margem da taxa de câmbio
+1225|As corretoras fixaram o preço
+1226|Existe, só para o proprietário, inacessível
+1227|Expectativas e «já descontado no preço»
+1228|Expectativa e surpresa
+1229|As expectativas importam mais do que a decisão
+1230|Expectativas:
+1231|Explique o juro composto como juro sobre juro.
+1232|Explique o juro composto numa dívida não paga.
+1233|Explique como funciona um plano «pagar depois» e quem o paga.
+1234|Explique como acontece um rug pull.
+1235|Explique como é criado um token.
+1236|Explique como as liquidações se alimentam umas às outras em cascata.
+1237|Explique como as pessoas confiam hoje em instituições e plataformas.
+1238|Explique em linguagem simples o que um projeto faz antes de o comprar.
+1239|Explique em linguagem simples o que é uma taxa de juro.
+1240|Explique a inflação com o exemplo do cabaz de preços.
+1241|Explique a liquidez e o spread.
+1242|Explique o open banking e o papel da sua autorização.
+1243|Explique a regra 50/30/20 e ajuste-a aos seus números.
+1244|Explique a diferença entre uma aplicação fintech e um banco.
+1245|Explique a diferença entre autorização e liquidação.
+1246|Explique a contrapartida de uma paridade rígida.
+1247|Explique o que é um ataque de 51%.
+1248|Explique o que é uma CBDC e quem a emite.
+1249|Explique o que é um pool de liquidez e porque um token precisa de um.
+1250|Explique o que é uma stablecoin e o que significa a paridade.
+1251|Explique o que é um agente de IA que paga e que três coisas têm de estar claras.
+1252|Explique o que é um endereço e porque é seguro partilhá-lo.
+1253|Explique para que serve um fundo de emergência.
+1254|Explique o que paga o gas.
+1255|Explique o que paga a comissão de rede e em que moeda é paga.
+1256|Explique que parte do percurso uma stablecoin encurta e que partes ficam.
+1257|Explique quem paga normalmente as comissões dos cartões e porque variam de país para país.
+1258|Explique porque um saldo bancário é um crédito e não dinheiro guardado.
+1259|Explique porque uma blockchain precisa de um método de consenso.
+1260|Explique porque uma surpresa importa mais do que a própria decisão.
+1261|Explique porque os bancos estão a ficar menos visíveis mas continuam necessários.
+1262|Explique porque as eleições podem importar aos mercados cripto.
+1263|Explique porque as taxas de juro servem a estabilidade dos preços.
+1264|Explique porque o dinheiro em si não atravessa fronteiras.
+1265|Explique, com o caso UST, porque o resgate decide se a paridade aguenta.
+1266|Explique porque a oferta tem um limite de 21 milhões.
+1267|Explique porque o preço no gráfico pode ser diferente do preço que obtém.
+1268|Explique porque a urgência é o fio comum.
+1269|Explicar:
+1270|Explica, organiza, planeia
+1271|Explorar a Ditoman
+1272|Explore como os sistemas podem funcionar sem um controlador central.
+1273|FBI Internet Crime Complaint Center (IC3)
+1274|FDIC: seguro de depósitos (Estados Unidos)
+1275|Quedas de mais de metade
+1276|As decisões rápidas estão sempre erradas
+1277|Medo de ficar de fora
+1278|Fevereiro de 2022
+1279|Federal Reserve History: a Lei da Reserva Federal assinada a 23 de dezembro de 1913
+1280|Reserva Federal: bem-estar económico das famílias dos EUA em 2024, poupança e investimentos (2025)
+1281|Os níveis e regras das comissões mudam. Os números aqui descrevem a estrutura geral, não a tabela de nenhuma loja ou banco.
+1282|As comissões variam muito entre redes
+1283|Comissões pelo caminho:
+1284|Cinquenta anos de construção em números: quase seis vezes mais casas, 52 000 unidades industriais, sexto do mundo em cimento.
+1285|Os números do caso UST vêm das fontes acima e podem ser revistos por investigação posterior. Os três mitos e o exercício de leitura são educativos, não aconselhamento de investimento.
+1286|Finalidade
+1287|Finance Magnates, oferta de yuan digital em Shenzhen (janeiro de 2021)
+1288|Identifique as três partes do custo de uma transferência internacional.
+1289|=
+1290|Fintech e cripto
+1291|Aplicação fintech
+1292|Fintech é a abreviatura de tecnologia financeira: empresas que usam software para fazer uma tarefa financeira melhor do que antes. Uma app de pagamentos, de crédito, de investimento ou de seguros são todas fintechs.
+1293|Fintech • Banca
+1294|As fintechs pegam numa tarefa e fazem-na com software, normalmente com um banco licenciado por trás.
+1295|Primeiro: poupar não é especular
+1296|Cinco perguntas antes de comprar
+1297|Cinco perguntas a fazer antes de comprar
+1298|Cinco verificações. Cinco minutos. Sem custo. A maioria de quem perde dinheiro em cripto nunca as fez.
+1299|Cinco armadilhas comuns e um hábito para cada uma.
+1300|Cinco verificações gratuitas que qualquer pessoa pode fazer: verificação do contrato, distribuição pelos detentores, propriedade, restrições escondidas e liquidez.
+1301|Cinco padrões cobrem a maioria dos casos: página falsa, falso ajudante, assinatura às cegas, amigo paciente, retorno garantido.
+1302|Participam cinco intervenientes: titular, comerciante, emissor, adquirente e rede.
+1303|Cinco perguntas antes de comprar
+1304|Cinco perguntas a fazer antes de comprar
+1305|Cinco perguntas a fazer antes de comprar, imagem da lição Ditoman
+1306|Cinco sinais de alerta e uma resposta para cada um
+1307|Câmbio fixo (paridade)
+1308|Fixo (paridade):
+1309|Oferta fixa
+1310|Câmbio flutuante
+1311|O câmbio flutuante segue a oferta e a procura; o fixo está ligado por decisão política.
+1312|Flutuante:
+1313|Foco
+1314|Siga a Ditoman
+1315|Acompanhe
+1316|Siga no Instagram
+1317|Rodapé
+1318|Durante um século, estas quatro funções vinham num pacote, de um só edifício. A tecnologia está agora a separá-las, e empresas diferentes disputam cada peça.
+1319|Durante muito tempo, o seu banco foi a única empresa que podia ver os dados da sua conta. O open banking muda essa regra: com a sua autorização, um banco tem de deixar outra empresa licenciada ler os seus dados ou iniciar um pagamento por si, através de uma ligação segura.

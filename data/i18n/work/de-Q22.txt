@@ -1,0 +1,77 @@
+1933|Bei einem monatlich getilgten Kredit ist der echte Jahreszins ungefähr doppelt so hoch wie der einfache Prozentsatz.
+1934|Auf einer anderen Blockchain
+1935|Auf der eigenen Blockchain
+1936|On-Chain-Daten
+1937|On-Ramp und Off-Ramp
+1938|Setzen Sie sich einmal im Monat zehn Minuten mit drei Fragen hin. Wohin ging das meiste Geld? Was hat mich überrascht? Welche eine Änderung probiere ich nächsten Monat aus?
+1939|Einmal bereitgestellt, ist er schwer zu ändern
+1940|Einmal bereitgestellt, kontrolliert ihn kein Nutzer, und standardmäßig kann er nicht gelöscht werden.
+1941|Wenn Sie wissen, was Inflation bewirkt, lautet die nächste Frage, wo Geld aufbewahrt wird und wer es kontrolliert. Lektion 13 vergleicht ein Bankkonto, ein Börsenkonto und eine eigene Wallet.
+1942|Eine Kartenzahlung, Schritt für Schritt
+1943|Eine Änderung reicht. Budgets scheitern, wenn sie alles auf einmal reparieren wollen.
+1944|Ein Unternehmen kontrolliert alle Einträge
+1945|Eine einzige Lagerstätte in Yazd enthält etwa so viel Zink wie alle Reserven Perus.
+1946|Ein Dokument gibt die Richtung vor. Lesen Sie es, bevor Sie irgendetwas glauben, was wir sagen.
+1947|Ein Monat notwendiger Ausgaben
+1948|Ein neuerer Trick liegt zwischen Fehler und Betrug. Ein Betrüger sendet einen winzigen Betrag von einer Adresse, die so beginnt und endet wie eine, die Sie nutzen. Später kopieren Sie diese ähnliche Adresse aus dem Verlauf statt der echten. Kopieren Sie Adressen also aus der Quelle, nicht aus früheren Transaktionen.
+1949|Einer der größten Ethylen- und Polyethylenhersteller Irans, in Asaluyeh, der über 70 % seiner Produktion exportiert
+1950|Eine dauerhafte redaktionelle Regel für alle drei: echtes Wissen und echte Leistung, keine politischen Kommentare von irgendeiner Seite.
+1951|Ein Pool: TMN / WBNB auf PancakeSwap V2, erstellt im Februar 2022.
+1952|Ein Kauf, fünf Beteiligte und Geld, das später ankommt.
+1953|Eine Frage unterscheidet einen Coin von einem Token.
+1954|Eine Warnung aus dem Standard
+1955|Eine bekannte Faustregel: 50/30/20
+1956|Nur Banken können Werte online bewegen
+1957|Nutzen Sie nur Geld, dessen Verlust Ihr Haushaltsbudget nicht sprengt.
+1958|Nur Sie
+1959|Instagram-Beitrag öffnen
+1960|Öffnen Sie eine Banking-App, sehen Sie eine Zahl. Öffnen Sie eine Börsen-App, sehen Sie eine andere. Öffnen Sie eine Krypto-Wallet, gibt es eine dritte. Alle sehen aus wie „mein Geld“. Es ist nicht dieselbe Art von Sache.
+1961|Open Banking
+1962|Open Banking erlaubt anderen Apps, Ihre Bankdaten zu nutzen, nur mit Ihrer Zustimmung.
+1963|In voller Größe öffnen
+1964|Menü öffnen
+1965|Jetzt öffnen
+1966|Öffnen Sie den Reiter Holders. Sehen Sie, wie viel der Gesamtmenge die größten Wallets kontrollieren.
+1967|Vollständige Karte öffnen ·
+1968|Leitfaden öffnen
+1969|Öffnen Sie den Sperreintrag und prüfen Sie vier Dinge: ob die Paar-Adresse zum echten Pool des Tokens passt, die gesperrte Menge, das Freigabedatum und welchen Anteil des ganzen Pools diese Menge ausmacht. Eine Sperre, die nächste Woche endet oder einen winzigen Teil des Pools abdeckt, bedeutet sehr wenig.
+1970|Öffnen Sie das Orderbuch eines beliebigen Coins auf einer Börse, die Sie nutzen. Addieren Sie die Kaufgebote innerhalb von 1 % und 5 % des aktuellen Preises. Fragen Sie sich: Wenn ich jetzt meine ganze Position zum Marktpreis verkaufte, welchen Durchschnittspreis bekäme ich?
+1971|Öffnen Sie den Token in einem Block-Explorer wie BscScan und gehen Sie zum Reiter Contract. Ist der Quellcode verifiziert, sehen Sie lesbaren Code und ein Bestätigungszeichen. Ist er es nicht, sehen Sie nur Maschinencode, und niemand außerhalb des Teams kann lesen, was der Token wirklich tut.
+1972|Offen, verifiziert
+1973|Spiegel im Orbit, die Energierechnung, Flächenbedarf, die Sorge der Astronomen und vier Zukunftsszenarien.
+1974|Orderbuch und Markttiefe
+1975|Gewöhnlichem Geld ist egal, was Sie damit tun. Programmierbares Geld ist Geld mit eingeschriebenen Regeln. Die Regel reist mit dem Geld selbst, nicht mit der Person.
+1976|Ordnen:
+1977|Ursprünglicher Bildungsbeitrag von Ditoman auf Instagram:
+1978|Andere Chains haben eigene Versionen. Die BNB Smart Chain nutzt BEP-20, das derselben Idee folgt. TMN, der digitale Toman, ist ein BEP-20-Token auf der BNB Smart Chain, wie auf seiner Seite auf dieser Website beschrieben.
+1979|Andere Chains, ähnliche Standards
+1980|Außer Umlauf
+1981|Eigentümer
+1982|Eigentum
+1983|Verzicht auf Eigentümerrechte
+1984|Auf die Eigentümerrechte wurde verzichtet; Eigentümerfunktionen können nicht mehr genutzt werden
+1985|Danach wurde auf die Eigentümerrechte verzichtet, wodurch Minting und die Burn-Funktion des Vertrags dauerhaft geschlossen wurden. Niemand kann je neue TMN erzeugen.
+1986|PancakeSwap-Pool
+1987|Papierindustrie
+1988|Papier und Karton
+1989|Paraguays Bankenkollaps
+1990|Der Zusammenbruch der Ueno-Bank in Paraguay
+1991|=
+1992|=
+1993|Partnerbank
+1994|Frühere Kursbewegungen sind Beispiele dafür, wie sich jede Anlage verhalten hat. Sie sagen nicht voraus, was als Nächstes kommt.
+1995|Adresse einfügen
+1996|Pause, Sperrliste, Freigabeliste
+1997|Bezahlen Sie zuerst sich selbst
+1998|Zahlungsnetzwerke bereiten sich darauf vor. Mastercard erklärte, die erste von einem KI-Agenten getätigte Zahlung habe im dritten Quartal 2025 in seinem Netzwerk stattgefunden, und führt einen Dienst ein, der solche Agenten registriert und verifiziert. Visa baut ähnliche Werkzeuge. Einige Krypto-Projekte entwerfen Zahlungen zwischen Software-Agenten mit Stablecoins.
+1999|Zahlungen • Karten
+2000|Zahlungen • Grenzüberschreitend
+2001|Kopplung (Peg)
+2002|Strafe für Betrug
+2003|Man streitet, was am besten ist, als gäbe es eine einzige Antwort. Die gibt es nicht, denn die drei sind verschiedene Arten von Dingen. Mit denselben vier Fragen lassen sie sich fair vergleichen.
+2004|Man verwendet die beiden Wörter, als wären sie gleich. Sind sie nicht. Diese Lektion gibt einen einfachen Test und zeigt, warum er wichtig ist, auch wo TMN
+2005|Man verwendet die beiden Wörter, als wären sie gleich. Sind sie nicht. Diese Lektion gibt einen einfachen Test und zeigt, warum er wichtig ist, auch wo TMN einzuordnen ist.
+2006|Eigene Wallet (Selbstverwahrung)
+2007|Eigene Krypto-Wallet
+2008|Eigene Wallet
+2009|Peter Zeihans Buch von 2016 über Schiefergas und eine Welt ohne Amerika als Weltpolizist, mit einer Bilanz seiner Prognosen.

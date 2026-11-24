@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Oro, dólares o Bitcoin: ¿en qué se diferencian para ahorrar? | Ditoman Learn</title>
+<meta name="description" content="Tres cosas a las que la gente recurre cuando deja de confiar en el efectivo. Esta lección no dice cuál comprar. Las compara con cuatro preguntas sencillas: cuánto oscila el precio, con qué facilidad se vende, cuánto cuesta guardarlo y qué puede salir" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson18.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson18.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson18.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson18.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson18.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson18.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson18.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson18.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson18.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson18.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson18.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson18.es.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Oro, dólares o Bitcoin: ¿en qué se diferencian para ahorrar? | Ditoman Learn" />
+<meta property="og:description" content="Tres cosas a las que la gente recurre cuando deja de confiar en el efectivo. Esta lección no dice cuál comprar. Las compara con cuatro preguntas sencillas: cuánto oscila el precio, con qué facilidad se vende, cuánto cuesta guardarlo y qué puede salir" />
+<meta property="og:url" content="https://ditoman.com/lesson18.es.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson18.es.html#page",
+   "url": "https://ditoman.com/lesson18.es.html",
+   "name": "Oro, dólares o Bitcoin: ¿en qué se diferencian para ahorrar? | Ditoman Learn",
+   "description": "Tres cosas a las que la gente recurre cuando deja de confiar en el efectivo. Esta lección no dice cuál comprar. Las compara con cuatro preguntas sencillas: cuánto oscila el precio, con qué facilidad se vende, cuánto cuesta guardarlo y qué puede salir",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Oro, dólares o Bitcoin: ¿en qué se diferencian para ahorrar?",
+     "item": "https://ditoman.com/lesson18.es.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.es.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.es.html" class="active">Aprender</a>
+<a href="iran.en.html">Irán</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.es.html">Precios</a>
+<a href="calendar.en.html">Calendario</a>
+<a href="tmn.es.html">TMN</a>
+<a href="index.es.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicaciones</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson18-cover.jpg" alt="Oro, dólares o Bitcoin: ¿en qué se diferencian para ahorrar? Imagen de la lección Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson18-cover-en.jpg" alt="Oro, dólares o Bitcoin: ¿en qué se diferencian para ahorrar? Imagen de la lección Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Ahorro • Activos</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پس‌انداز • دارایی‌ها</div>
+<h1 lang="en">Oro, dólares o Bitcoin: ¿en qué se diferencian para ahorrar?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">طلا، دلار یا بیت‌کوین؛ فرقشان برای پس‌انداز چیست؟</h1>
+<p class="subtitle" lang="en">Tres cosas a las que la gente recurre cuando deja de confiar en el efectivo. Esta lección no dice cuál comprar. Las compara con cuatro preguntas sencillas: cuánto oscila el precio, con qué facilidad se vende, cuánto cuesta guardarlo y qué puede salir mal.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">سه چیزی که آدم‌ها وقتی اعتمادشان به پول نقد کم می‌شود سراغش می‌روند. این درس نمی‌گوید کدام را بخرید. آن‌ها را با چهار پرسش ساده مقایسه می‌کند: قیمت چقدر بالا و پایین می‌رود، چقدر راحت فروخته می‌شود، نگه داشتنش چه هزینه‌ای دارد و چه چیزی ممکن است خراب شود.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Nivel</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Principiante</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Tiempo de lectura</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">7 minutos</strong><strong lang="fa" dir="rtl" style="display:block">۷ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Puntos de aprendizaje</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Cuestionario</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 preguntas</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Contenido de la lección</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Lee la lección en inglés o persa.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Inglés</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">La lección 12 mostró lo que la inflación le hace al dinero quieto. El siguiente pensamiento natural es: entonces debería guardar otra cosa. En muchas familias la respuesta lleva generaciones siendo la misma: oro o dólares. En los últimos años, un tercer nombre se ha sumado a la conversación: bitcoin.</p>
+<p lang="en">La gente discute cuál es el mejor como si hubiera una sola respuesta. No la hay, porque los tres son cosas de distinto tipo. Podemos compararlos con justicia con las mismas cuatro preguntas.</p>
+<h3>Primero: ahorrar no es especular</h3>
+<p lang="en"><strong>Ahorrar</strong> es apartar dinero para que esté ahí cuando lo necesites. El objetivo es mantener el poder adquisitivo.</p>
+<p lang="en"><strong>Inversión</strong> es aceptar riesgo a cambio de un rendimiento que viene de algo productivo: un negocio, un inmueble, un préstamo.</p>
+<p lang="en"><strong>Especular</strong> es comprar algo sobre todo porque esperas que suba el precio.</p>
+<p lang="en">El mismo activo puede servir para cualquiera de los tres. Lo que cambia es tu horizonte temporal y cuánta pérdida puedes soportar. El dinero que necesitarás dentro de seis meses está en una situación muy distinta del que no tocarás en diez años.</p>
+<h3>Pregunta 1: ¿cuánto oscila el precio?</h3>
+<p lang="en">Los tres se mueven, pero no en la misma medida.</p>
+<p lang="en"><strong>El dólar</strong> es lo que menos se mueve frente a los bienes a corto plazo, aunque pierde poder adquisitivo poco a poco por su propia inflación. La inflación de EE. UU. tocó máximos por encima del 9 por ciento a mediados de 2022.</p>
+<p lang="en"><strong>Oro</strong> tiene largos periodos tranquilos y luego movimientos bruscos. Tras su máximo de 2011, cerca de 1.900 dólares la onza, cayó alrededor de un 45 por ciento en los cuatro años siguientes antes de recuperarse.</p>
+<p lang="en"><strong>Bitcoin</strong> oscila mucho más. De unos 69.000 dólares en noviembre de 2021 cayó por debajo de 16.000 dólares un año después, una caída de más del 75 por ciento, y más tarde subió a nuevos máximos por encima de 126.000 dólares en octubre de 2025.</p>
+<p lang="en">Una gran oscilación no es buena ni mala por sí sola. Decide cuánto tiempo debes poder esperar.</p>
+<h3>Pregunta 2: ¿con qué facilidad se vende?</h3>
+<p lang="en">Esto es liquidez: convertir de nuevo el activo en dinero utilizable rápido y cerca del precio cotizado.</p>
+<p lang="en">Los dólares y las monedas de oro tienen mercados profundos casi en todas partes, pero los precios de compra y de venta difieren. Esa diferencia, el <strong>diferencial</strong>, es un coste que pagas dos veces. En piezas pequeñas de oro, y en joyas con coste de hechura, la diferencia es grande.</p>
+<p lang="en">Bitcoin cotiza las 24 horas, y en los grandes exchanges se pueden vender grandes cantidades en minutos. En la práctica, sin embargo, tu propia liquidez depende de tu acceso a un exchange y a un banco o intermediario al otro lado.</p>
+<h3>Pregunta 3: ¿cuánto cuesta guardarlo?</h3>
+<p lang="en">Los dólares físicos y el oro deben guardarse en un lugar seguro frente a robos, incendios y daños. Los billetes gastados o antiguos pueden ser más difíciles de vender.</p>
+<p lang="en">Bitcoin no pesa nada, pero guardarlo con seguridad implica gestionar una clave o confiar en un custodio, como explicó la lección 13.</p>
+<p lang="en">Ninguno de los tres paga intereses por estar quieto. Es una diferencia real frente a un depósito, un bono o un negocio.</p>
+<h3>Pregunta 4: ¿qué puede salir mal?</h3>
+<figure class="lz-fig"><figcaption>Qué puede salir mal con cada uno</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>Dólares (efectivo)</th>
+<th>Oro</th>
+<th>Bitcoin</th>
+</tr></thead><tbody>
+<tr><td>Precio</td><td>Pérdida lenta por inflación</td><td>Largos periodos débiles</td><td>Caídas de más de la mitad</td></tr>
+<tr><td>Guardarlo</td><td>Robo, daños, billetes gastados</td><td>Robo, falsificaciones, pureza</td><td>Clave perdida, estafas, exchange quebrado</td></tr>
+<tr><td>Venderlo</td><td>Diferencia entre compra y venta</td><td>Diferencia y coste de hechura</td><td>Requiere acceso a un exchange</td></tr>
+<tr><td>Reglas</td><td>Límites para tener u operar</td><td>Impuestos y límites comerciales</td><td>Regulación cambiante</td></tr>
+</tbody></table></div>
+</figure>
+<p lang="en">Cada fila es un tipo distinto de riesgo. Fíjate en que ninguna columna está vacía.</p>
+<h3>Por qué la gente reparte sus ahorros</h3>
+<p lang="en">Como los tres fallan de maneras distintas, no siempre caen juntos. Tener más de un tipo de activo, en cantidades acordes con cuándo necesitarás el dinero, se llama <strong>diversificación</strong>. No elimina el riesgo. Evita depender de que una sola historia sea la correcta.</p>
+<p lang="en">Cuánto de cada uno, si algo, depende de tus ingresos, tus necesidades y las normas de tu país. Es una decisión personal que esta lección no puede tomar por ti.</p>
+<h3>Qué sacar de esto</h3>
+<p lang="en">Saber si ahorras, inviertes o especulas antes de elegir un activo.</p>
+<p lang="en">Compara activos con las mismas cuatro preguntas: oscilación, liquidez, coste de guardarlo y qué puede salir mal.</p>
+<p lang="en">El dólar es más estable pero pierde valor poco a poco. El oro es antiguo y lento, con largos periodos débiles. Bitcoin puede subir rápido y caer más de la mitad.</p>
+<p lang="en">El diferencial es un coste que se paga en ambos extremos.</p>
+<p lang="en">Nada de lo que hay aquí es una recomendación de compra o venta.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۲ نشان داد تورم با پول نقدی که بی‌حرکت می‌ماند چه می‌کند. فکر بعدی طبیعی است: پس باید چیز دیگری نگه دارم. در خیلی از خانواده‌ها جواب نسل‌هاست که یکی بوده: طلا یا دلار. در چند سال اخیر نام سومی هم به این گفت‌وگو اضافه شده: بیت‌کوین.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آدم‌ها طوری بحث می‌کنند که انگار یک جواب درست وجود دارد. وجود ندارد، چون این سه از یک جنس نیستند. می‌شود آن‌ها را منصفانه با چهار پرسش یکسان کنار هم گذاشت.</p>
+<h3>اول: پس‌انداز با سفته‌بازی فرق دارد</h3>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>پس‌انداز</strong> یعنی کنار گذاشتن پول تا وقتی لازم شد، باشد. هدفش حفظ قدرت خرید است.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>سرمایه‌گذاری</strong> یعنی پذیرفتن ریسک برای بازدهی که از یک کار مولد می‌آید: کسب‌وکار، ملک یا وام.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>سفته‌بازی</strong> یعنی خریدن چیزی، بیشتر به این امید که قیمتش بالا برود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">یک دارایی می‌تواند برای هر سه به کار برود. چیزی که فرق می‌کند افق زمانی شما و مقدار ضرری است که تحملش را دارید. پولی که شش ماه دیگر لازم می‌شود با پولی که ده سال به آن دست نمی‌زنید در دو وضع کاملاً متفاوت است.</p>
+<h3>پرسش ۱: قیمت چقدر بالا و پایین می‌رود؟</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هر سه تکان می‌خورند، ولی نه به یک اندازه.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>دلار</strong> در کوتاه‌مدت کمتر از همه در برابر کالاها تکان می‌خورد، هرچند با تورم خودش آرام‌آرام قدرت خرید از دست می‌دهد. تورم آمریکا در میانه‌ی ۲۰۲۲ از ۹ درصد بالاتر رفت.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>طلا</strong> دوره‌های آرام طولانی دارد و بعد حرکت‌های تند. بعد از اوج سال ۲۰۱۱ نزدیک ۱٬۹۰۰ دلار برای هر اونس، در چهار سال بعد حدود ۴۵ درصد افت کرد و بعدها دوباره بالا رفت.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>بیت‌کوین</strong> خیلی بیشتر نوسان دارد. از حدود ۶۹ هزار دلار در نوامبر ۲۰۲۱ یک سال بعد به زیر ۱۶ هزار دلار رسید، یعنی افتی بیش از ۷۵ درصد، و بعدها در اکتبر ۲۰۲۵ به اوج تازه‌ای بالای ۱۲۶ هزار دلار رفت.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نوسان زیاد به‌خودی‌خود خوب یا بد نیست. تعیین می‌کند چقدر باید بتوانید صبر کنید.</p>
+<h3>پرسش ۲: چقدر راحت فروخته می‌شود؟</h3>
+<p lang="fa" dir="rtl" style="text-align:right">این همان نقدشوندگی است: تبدیل سریع دارایی به پول قابل‌خرج، با قیمتی نزدیک به قیمت اعلام‌شده.</p>
+<p lang="fa" dir="rtl" style="text-align:right">دلار و سکه‌ی طلا تقریباً همه‌جا بازار پررونقی دارند، ولی قیمت خرید و فروششان یکی نیست. این فاصله، هزینه‌ای است که دو بار می‌پردازید. برای قطعه‌های کوچک طلا و برای زیورآلاتی که اجرت ساخت دارند، این فاصله زیاد است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بیت‌کوین شبانه‌روز معامله می‌شود و در صرافی‌های بزرگ می‌شود مبلغ زیادی را در چند دقیقه فروخت. ولی در عمل، نقدشوندگی برای خودِ شما به دسترسی‌تان به صرافی و به بانک یا واسطه‌ی آن طرف بستگی دارد.</p>
+<h3>پرسش ۳: نگه داشتنش چه هزینه‌ای دارد؟</h3>
+<p lang="fa" dir="rtl" style="text-align:right">دلار و طلای فیزیکی را باید جایی نگه داشت که از دزدی، آتش و آسیب در امان باشد. اسکناس فرسوده یا قدیمی‌تر هم ممکن است سخت‌تر فروخته شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بیت‌کوین وزنی ندارد، ولی نگهداری امنش یعنی مدیریت یک کلید یا اعتماد به یک نگه‌دارنده؛ درس ۱۳ این را توضیح داد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هیچ‌کدام از این سه با بی‌حرکت ماندن سودی نمی‌دهند. این تفاوتی واقعی با سپرده، اوراق یا کسب‌وکار است.</p>
+<h3>پرسش ۴: چه چیزی ممکن است خراب شود؟</h3>
+<figure class="lz-fig" dir="rtl"><figcaption>در هر کدام چه چیزی ممکن است خراب شود</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th></th>
+<th>دلار (نقد)</th>
+<th>طلا</th>
+<th>بیت‌کوین</th>
+</tr></thead><tbody>
+<tr><td>قیمت</td><td>افت آرام با تورم</td><td>دوره‌های ضعف طولانی</td><td>افت بیش از نصف</td></tr>
+<tr><td>نگهداری</td><td>دزدی، آسیب، اسکناس فرسوده</td><td>دزدی، تقلبی بودن، عیار</td><td>گم شدن کلید، کلاهبرداری، ورشکستگی صرافی</td></tr>
+<tr><td>فروش</td><td>فاصله‌ی خرید و فروش</td><td>فاصله‌ی قیمت و اجرت</td><td>نیاز به دسترسی به صرافی</td></tr>
+<tr><td>قواعد</td><td>محدودیت نگهداری یا معامله</td><td>مالیات و محدودیت معامله</td><td>مقررات در حال تغییر</td></tr>
+</tbody></table></div>
+</figure>
+<p lang="fa" dir="rtl" style="text-align:right">هر ردیف نوع دیگری از ریسک است. دقت کنید که هیچ ستونی خالی نیست.</p>
+<h3>چرا آدم‌ها پس‌اندازشان را پخش می‌کنند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">چون این سه به شکل‌های متفاوتی آسیب می‌بینند، همیشه با هم پایین نمی‌آیند. نگه داشتن بیش از یک نوع دارایی، به اندازه‌ای که با زمان نیازتان به پول بخواند، <strong>تنوع‌بخشی</strong> نام دارد. ریسک را حذف نمی‌کند. فقط نمی‌گذارد همه‌چیز به درست بودن یک روایت بسته باشد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این‌که از هر کدام چقدر، یا اصلاً نه، به درآمد، نیازها و قواعد کشور شما بستگی دارد. این تصمیمی شخصی است که این درس نمی‌تواند به‌جای شما بگیرد.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">پیش از انتخاب دارایی، بدانید دارید پس‌انداز می‌کنید، سرمایه‌گذاری یا سفته‌بازی.</p>
+<p lang="fa" dir="rtl" style="text-align:right">دارایی‌ها را با همان چهار پرسش مقایسه کنید: نوسان، نقدشوندگی، هزینه‌ی نگهداری و چیزهایی که ممکن است خراب شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">دلار باثبات‌تر است ولی آرام‌آرام ارزش از دست می‌دهد. طلا قدیمی و کند است و دوره‌های ضعف طولانی دارد. بیت‌کوین می‌تواند تند بالا برود و بیش از نصف افت کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">فاصله‌ی قیمت خرید و فروش هزینه‌ای است که در هر دو سر می‌پردازید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هیچ بخشی از این درس توصیه به خرید یا فروش چیزی نیست.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Dos lecciones que acompañan a esta</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو درسی که کنار این درس می‌نشینند</h2>
+<p lang="en">La lección 12 explica la inflación que lleva a la gente a buscar alternativas. La lección 06 da cinco preguntas que hacerte antes de comprar cualquier cosa.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۲ تورمی را توضیح می‌دهد که آدم‌ها را به فکر جایگزین می‌اندازد. درس ۶ پنج پرسشی را می‌دهد که پیش از خرید هر چیزی باید از خودمان بپرسیم.</p>
+<div class="cta-row">
+<a class="cta" href="lesson12.es.html"><span lang="en">Por qué el dinero pierde poder adquisitivo</span><span lang="fa">چرا پول قدرت خریدش را از دست می‌دهد؟</span></a>
+<a class="button" href="lesson06.es.html"><span lang="en">Cinco preguntas antes de comprar</span><span lang="fa">پنج پرسش پیش از خرید</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Conceptos clave</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Ahorrar, invertir, especular</li><li>Horizonte temporal</li><li>Volatilidad</li><li>Caída desde el máximo</li><li>Liquidez</li><li>Diferencial</li><li>Almacenamiento y custodia</li><li>Diversificación</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>پس‌انداز، سرمایه‌گذاری، سفته‌بازی</li><li>افق زمانی</li><li>نوسان</li><li>افت از اوج</li><li>نقدشوندگی</li><li>فاصله‌ی قیمت خرید و فروش</li><li>نگهداری</li><li>تنوع‌بخشی</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Objetivos de aprendizaje</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Distinguir ahorrar de invertir y especular.</li><li>Compara dólares, oro y bitcoin en oscilación de precios.</li><li>Explica la liquidez y el diferencial.</li><li>Nombra un riesgo de custodia para cada uno de los tres.</li><li>Decir qué hace y qué no hace la diversificación.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>پس‌انداز را از سرمایه‌گذاری و سفته‌بازی تشخیص دهید.</li><li>دلار، طلا و بیت‌کوین را از نظر نوسان قیمت مقایسه کنید.</li><li>نقدشوندگی و فاصله‌ی قیمت خرید و فروش را توضیح دهید.</li><li>برای هر کدام از این سه، یک ریسک نگهداری نام ببرید.</li><li>بگویید تنوع‌بخشی چه کاری می‌کند و چه کاری نمی‌کند.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Cuestionario</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Mira qué se te ha quedado. La respuesta está bajo cada pregunta.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Pregunta 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">¿Cuál es el objetivo de ahorrar?</p>
+<p lang="fa" dir="rtl" style="text-align:right">هدف پس‌انداز چیست؟</p>
+<p lang="en">A. La mayor rentabilidad posible</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بیشترین سود ممکن</p>
+<p lang="en">B. Conservar poder adquisitivo para cuando se necesite el dinero</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. حفظ قدرت خرید برای وقتی که پول لازم می‌شود</p>
+<p lang="en">C. Superar los rendimientos de otros</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. جلو زدن از سود دیگران</p>
+<p class="answer" lang="en">Respuesta correcta: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">¿Cuál de los tres ha sufrido las mayores caídas de precio?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام‌یک از این سه بزرگ‌ترین افت قیمت را نشان داده است؟</p>
+<p lang="en">A. Dólares</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. دلار</p>
+<p lang="en">B. Oro</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. طلا</p>
+<p lang="en">C. Bitcoin</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. بیت‌کوین</p>
+<p class="answer" lang="en">Respuesta correcta: C. Cayó más de un 75% entre noviembre de 2021 y noviembre de 2022.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج. از نوامبر ۲۰۲۱ تا نوامبر ۲۰۲۲ بیش از ۷۵٪ افت کرد.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">¿Qué es el diferencial?</p>
+<p lang="fa" dir="rtl" style="text-align:right">فاصله‌ی قیمت خرید و فروش چیست؟</p>
+<p lang="en">A. La diferencia entre el precio de compra y el de venta</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. تفاوت قیمتی که می‌خرید با قیمتی که می‌فروشید</p>
+<p lang="en">B. El interés anual</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. سود سالانه</p>
+<p lang="en">C. El peso de una moneda</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. وزن یک سکه</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">¿Qué afirmación es cierta para los tres activos?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام جمله درباره‌ی هر سه دارایی درست است؟</p>
+<p lang="en">A. Pagan intereses mientras los tienes</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. در مدت نگهداری سود می‌دهند</p>
+<p lang="en">B. No rinden nada por estar quietos</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. با بی‌حرکت ماندن سودی نمی‌دهند</p>
+<p lang="en">C. Su precio nunca baja</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. قیمتشان هرگز پایین نمی‌آید</p>
+<p class="answer" lang="en">Respuesta correcta: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">¿Qué hace la diversificación?</p>
+<p lang="fa" dir="rtl" style="text-align:right">تنوع‌بخشی چه کاری می‌کند؟</p>
+<p lang="en">A. Elimina todo el riesgo</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. همه‌ی ریسک را حذف می‌کند</p>
+<p lang="en">B. Garantiza beneficios</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. سود را تضمین می‌کند</p>
+<p lang="en">C. Evita depender de que un solo activo acierte</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. نمی‌گذارد همه‌چیز به یک دارایی بسته باشد</p>
+<p class="answer" lang="en">Respuesta correcta: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Fuentes</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.bls.gov/cpi/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Oficina de Estadísticas Laborales de EE. UU.: Índice de Precios al Consumo</a></li><li><a href="https://www.gold.org/goldhub/data/gold-prices" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">World Gold Council: historial del precio del oro</a></li><li><a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">CoinGecko: historial de precios de Bitcoin</a></li><li><a href="https://www.investor.gov/introduction-investing/investing-basics/save-and-invest" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">SEC de EE. UU., Investor.gov: nociones básicas de ahorro e inversión</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Los movimientos de precio pasados son ejemplos de cómo se ha comportado cada activo. No predicen lo que viene.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">حرکت‌های گذشته‌ی قیمت نمونه‌هایی از رفتار هر دارایی‌اند و آینده را پیش‌بینی نمی‌کنند.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Síguenos</span></h2>
+<p lang="en">Las nuevas lecciones se anuncian primero en los canales de Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.es.html"><span lang="en">Volver a Aprender</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson17.es.html"><span lang="en">Lección anterior</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson19.es.html"><span lang="en">Siguiente lección</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Construido con estructura, impulsado por el descubrimiento.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-es.js?v=20261121a"></script>
+</body>
+</html>

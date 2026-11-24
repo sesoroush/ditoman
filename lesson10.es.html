@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>¿Por qué se desploman los precios de repente? Noticias, apalancamiento y liquidaciones | Ditoman Learn</title>
+<meta name="description" content="La noticia inicia la caída. Esta lección muestra lo que pasa después dentro de un exchange: compradores que se retiran, deslizamiento, apalancamiento y la liquidación en cascada, con la venta masiva del 5 de noviembre de 2026 como" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson10.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson10.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson10.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson10.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson10.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson10.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson10.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson10.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson10.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson10.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson10.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson10.es.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="¿Por qué se desploman los precios de repente? Noticias, apalancamiento y liquidaciones | Ditoman Learn" />
+<meta property="og:description" content="La noticia inicia la caída. Esta lección muestra lo que pasa después dentro de un exchange: compradores que se retiran, deslizamiento, apalancamiento y la liquidación en cascada, con la venta masiva del 5 de noviembre de 2026 como" />
+<meta property="og:url" content="https://ditoman.com/lesson10.es.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson10.es.html#page",
+   "url": "https://ditoman.com/lesson10.es.html",
+   "name": "¿Por qué se desploman los precios de repente? Noticias, apalancamiento y liquidaciones | Ditoman Learn",
+   "description": "La noticia inicia la caída. Esta lección muestra lo que pasa después dentro de un exchange: compradores que se retiran, deslizamiento, apalancamiento y la liquidación en cascada, con la venta masiva del 5 de noviembre de 2026 como",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "¿Por qué se desploman los precios de repente? Noticias, apalancamiento y liquidaciones",
+     "item": "https://ditoman.com/lesson10.es.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.es.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.es.html" class="active">Aprender</a>
+<a href="iran.en.html">Irán</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.es.html">Precios</a>
+<a href="calendar.en.html">Calendario</a>
+<a href="tmn.es.html">TMN</a>
+<a href="index.es.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicaciones</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson10-price-crash.jpg" alt="¿Por qué se desploman los precios de repente? Imagen de la lección de Ditoman" onerror="this.parentElement.style.display='none'"><img lang="en" src="lesson10-price-crash-en.jpg" alt="¿Por qué se desploman los precios de repente? Imagen de la lección de Ditoman" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge" lang="en">Mercados • Riesgo</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">بازارها • ریسک</div>
+<h1 lang="en">¿Por qué se desploman los precios de repente?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">چرا قیمت یک‌دفعه می‌ریزد؟</h1>
+<p class="subtitle" lang="en">
+La noticia inicia la caída. Esta lección muestra lo que pasa después dentro de un exchange: compradores que se retiran, deslizamiento, apalancamiento y la liquidación en cascada, con la venta masiva del 5 de noviembre de 2026 como ejemplo.
+</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">خبر سقوط را شروع می‌کند. این درس نشان می‌دهد بعدش داخل صرافی چه می‌گذرد: عقب کشیدن خریدارها، لغزش قیمت، اهرم و آبشار لیکوئیدیشن؛ با ریزش ۱۴ آبان ۱۴۰۵ به‌عنوان نمونه.</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span lang="en">Nivel</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Principiante</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box">
+<span lang="en">Tiempo de lectura</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">7 minutos</strong><strong lang="fa" dir="rtl" style="display:block">۷ دقیقه</strong></div>
+<div class="meta-box">
+<span lang="en">Puntos de aprendizaje</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">15 LP</strong><strong lang="fa" dir="rtl" style="display:block">۱۵ امتیاز</strong></div>
+<div class="meta-box">
+<span lang="en">Cuestionario futuro</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک آینده</span><strong lang="en">5 preguntas</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Contenido de la lección</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">
+Lee la lección en inglés o persa. Esta estructura está pensada para futuros sistemas de cuestionarios, puntuación, reputación y recompensas.
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمونک، امتیاز، اعتبار و پاداش‌هایی طراحی شده که در آینده اضافه می‌شوند.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Inglés</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>En la lección 07 vimos cómo las noticias cambian lo que espera el mercado. Esta lección va un paso más allá: cuando llega la noticia, ¿qué pasa dentro de un exchange que puede convertir una bajada normal en un desplome? La respuesta corta son tres cosas a la vez: compradores nerviosos, libros de órdenes poco profundos y dinero prestado.</p>
+
+<h3><span class="check-number">01.</span> Los mercados reaccionan a las sorpresas</h3>
+<p>Un gráfico de John Authers en Bloomberg Opinion muestra las bolsas mundiales (índice FTSE All-World) subiendo durante dos años, interrumpidas por unas pocas caídas bruscas, cada una ligada a un gran choque político o económico. El patrón es la lección: los precios se mueven más cuando las noticias difieren de lo esperado, y el miedo se propaga más rápido que la calma.</p>
+
+<h3><span class="check-number">02.</span> Un ejemplo real: 5 de noviembre de 2026</h3>
+<p>El jueves 5 de noviembre de 2026, las acciones tecnológicas cayeron por el temor al gasto en IA. El Nasdaq 100 bajó cerca de un 5,5% en un día y el Nasdaq Composite un 4,9%. Bitcoin cayó por debajo de 76.000 dólares y tocó unos 75.500. En esas mismas 24 horas, los datos de CoinGlass mostraron unos 1.000 millones de dólares en posiciones cripto apalancadas cerradas a la fuerza, que afectaron a más de 201.000 operadores. Alrededor del 89%, unos 927 millones de dólares, eran apuestas a que los precios subirían.</p>
+
+<h3><span class="check-number">03.</span> El precio de la pantalla no siempre es tu precio</h3>
+<p>El gráfico muestra la última operación. Para vender, necesitas un comprador. Imagina que la última operación fue a 100 dólares, pero solo hay un comprador a 100 y el siguiente está a 95. Si vendes dos unidades a la vez, obtienes 100 por la primera y 95 por la segunda: una media de 97,50. Esa diferencia se llama <strong>deslizamiento</strong>. Cuando los compradores se retiran tras malas noticias, los huecos entre ellos crecen, y cada orden de venta a mercado empuja el precio aún más abajo.</p>
+
+<h3><span class="check-number">04.</span> Apalancamiento: operar con dinero prestado</h3>
+<p>Muchos exchanges cripto permiten operar con apalancamiento. Con un apalancamiento de 10×, 100 dólares de tu propio dinero (tu <strong>margen</strong>, o garantía) controla una posición de 1.000 dólares. Si el precio sube un 10%, duplicas tu dinero. Si baja alrededor de un 10%, tus 100 dólares desaparecen.</p>
+
+<h3><span class="check-number">05.</span> Liquidación: el exchange cierra la operación por ti</h3>
+<p>Antes de que tu margen llegue a cero, el exchange cierra tu posición automáticamente vendiéndola a mercado. Esto es una <strong>liquidación</strong>. No eliges tú el momento; lo elige el precio.</p>
+
+<h3><span class="check-number">06.</span> La cascada</h3>
+<p>Ahora júntalo todo. Las malas noticias hacen que los compradores se retiren. Una pequeña caída activa las primeras liquidaciones. Esas ventas forzosas golpean un libro de órdenes poco profundo, y el precio resbala más. El precio más bajo activa el siguiente grupo de liquidaciones, y así sucesivamente. Por eso las cripto pueden caer en minutos mucho más de lo que justificaría la noticia, y por eso a menudo rebotan cuando terminan las ventas forzosas.</p>
+
+<h3><span class="check-number">07.</span> Si Bitcoin es independiente, ¿por qué cae con la bolsa?</h3>
+<p>La red de Bitcoin no depende de ningún gobierno ni empresa (lecciones 01 a 04). Su precio es otra cuestión. Muchos inversores tienen acciones y cripto, y cuando quieren menos riesgo venden algo de ambas. Una red puede ser independiente mientras su precio se mueve con el ánimo de la misma gente.</p>
+
+<h3><span class="check-number">08.</span> Cómo protegerte</h3>
+<ul>
+<li>Sabe que el apalancamiento multiplica las pérdidas tanto como las ganancias; a la mayoría de los principiantes les va mejor sin él.</li>
+<li>Usa órdenes limitadas en lugar de órdenes a mercado cuando los mercados se mueven rápido, para elegir tu precio.</li>
+<li>Antes de una operación grande, mira el libro de órdenes, no solo el gráfico.</li>
+<li>Usa solo dinero cuya pérdida no rompa el presupuesto de tu hogar.</li>
+<li>No decidas en los primeros minutos de un desplome; la venta forzada suele terminar tan rápido como empieza.</li>
+</ul>
+<p>Esta lección explica cómo funcionan los mercados. No es una recomendación de compra o venta.</p>
+
+<h3>Qué sacar de esto</h3>
+<p>La noticia inicia la caída. Los libros de órdenes poco profundos y el dinero prestado deciden hasta dónde llega.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>در درس هفتم دیدیم خبر چطور انتظار بازار را عوض می‌کند. این درس یک قدم جلوتر می‌رود: بعد از رسیدن خبر، داخل صرافی چه اتفاقی می‌افتد که یک افت معمولی به سقوط تند تبدیل می‌شود؟ جواب کوتاه: سه چیز با هم کار می‌کنند؛ خریدارهای نگران، دفتر سفارش کم‌عمق و پول قرضی.</p>
+
+<h3><span class="check-number">۰۱.</span> بازار به غافلگیری واکنش نشان می‌دهد</h3>
+<p>نموداری از جان آترز در Bloomberg Opinion نشان می‌دهد شاخص سهام جهانی FTSE All-World دو سال بالا رفته و چند بار به‌تندی افت کرده؛ هر بار همراه یک شوک بزرگ سیاسی یا اقتصادی. درس همین الگوست: قیمت وقتی بیشتر حرکت می‌کند که خبر با انتظار مردم فرق داشته باشد، و ترس سریع‌تر از آرامش پخش می‌شود.</p>
+
+<h3><span class="check-number">۰۲.</span> یک نمونه‌ی واقعی: ۱۴ آبان ۱۴۰۵</h3>
+<p>پنجشنبه ۱۴ آبان ۱۴۰۵ (۵ نوامبر ۲۰۲۶) سهام فناوری با نگرانی درباره‌ی هزینه‌های هوش مصنوعی ریخت. نزدک ۱۰۰ در یک روز حدود ۵٫۵٪ و نزدک مرکب ۴٫۹٪ افت کرد. بیت‌کوین به زیر ۷۶ هزار دلار رسید و تا حدود ۷۵٬۵۰۰ دلار پایین رفت. در همان ۲۴ ساعت، طبق داده‌ی CoinGlass، حدود یک میلیارد دلار معامله‌ی اهرمی کریپتو به‌زور بسته شد و بیش از ۲۰۱ هزار معامله‌گر را درگیر کرد. حدود ۸۹٪ آن، نزدیک ۹۲۷ میلیون دلار، شرط‌هایی بود که روی بالا رفتن قیمت بسته شده بود.</p>
+
+<h3><span class="check-number">۰۳.</span> قیمت روی صفحه همیشه قیمت شما نیست</h3>
+<p>نمودار آخرین معامله را نشان می‌دهد. برای فروش، خریدار لازم است. فرض کنید آخرین معامله ۱۰۰ دلار بوده، اما فقط یک خریدار در ۱۰۰ هست و خریدار بعدی در ۹۵. اگر دو واحد را فوری بفروشید، اولی ۱۰۰ و دومی ۹۵ دلار فروخته می‌شود؛ میانگین ۹۷٫۵ دلار. به این فاصله <strong>لغزش قیمت</strong> (Slippage) می‌گویند. وقتی بعد از خبر بد خریدارها عقب می‌کشند، فاصله‌ی بینشان بیشتر می‌شود و هر سفارش فروش فوری قیمت را پایین‌تر می‌برد.</p>
+
+<h3><span class="check-number">۰۴.</span> اهرم: معامله با پول قرضی</h3>
+<p>بسیاری از صرافی‌های کریپتو معامله‌ی اهرمی دارند. با اهرم ۱۰ برابر، ۱۰۰ دلار پول خودتان (یعنی <strong>وثیقه</strong> یا مارجین) یک معامله‌ی ۱۰۰۰ دلاری را کنترل می‌کند. اگر قیمت ۱۰٪ بالا برود، پولتان دو برابر می‌شود. اگر حدود ۱۰٪ پایین بیاید، همه‌ی ۱۰۰ دلار از دست رفته است.</p>
+
+<h3><span class="check-number">۰۵.</span> لیکوئیدیشن: صرافی معامله را به‌جای شما می‌بندد</h3>
+<p>پیش از اینکه وثیقه‌تان به صفر برسد، صرافی معامله را خودکار و با قیمت بازار می‌فروشد. به این <strong>لیکوئیدیشن</strong> یا فروش اجباری می‌گویند. لحظه‌اش را شما انتخاب نمی‌کنید؛ قیمت انتخاب می‌کند.</p>
+
+<h3><span class="check-number">۰۶.</span> آبشار فروش</h3>
+<p>حالا همه را کنار هم بگذارید. خبر بد خریدارها را عقب می‌کشد. یک افت کوچک اولین لیکوئیدیشن‌ها را فعال می‌کند. این فروش‌های اجباری به دفتر سفارش کم‌عمق می‌خورند و قیمت بیشتر می‌لغزد. قیمت پایین‌تر گروه بعدی لیکوئیدیشن‌ها را فعال می‌کند، و همین‌طور ادامه دارد. برای همین کریپتو گاهی در چند دقیقه خیلی بیشتر از وزن خود خبر می‌ریزد، و وقتی فروش اجباری تمام شد، اغلب کمی برمی‌گردد.</p>
+
+<h3><span class="check-number">۰۷.</span> اگر بیت‌کوین مستقل است، چرا با بورس می‌ریزد؟</h3>
+<p>شبکه‌ی بیت‌کوین به هیچ دولت یا شرکتی وابسته نیست (درس‌های ۱ تا ۴). اما قیمتش موضوع دیگری است. خیلی از سرمایه‌گذارها هم سهام دارند و هم کریپتو، و وقتی بخواهند ریسکشان را کم کنند، از هر دو می‌فروشند. شبکه می‌تواند مستقل باشد و قیمتش هنوز با حال و هوای همان آدم‌ها تکان بخورد.</p>
+
+<h3><span class="check-number">۰۸.</span> چطور از خودمان محافظت کنیم</h3>
+<ul>
+<li>اهرم ضرر را به همان اندازه‌ی سود چند برابر می‌کند؛ برای بیشتر تازه‌کارها بهتر است سراغش نروند.</li>
+<li>در بازار پرنوسان به‌جای سفارش فوری (مارکت) از سفارش با قیمت مشخص (لیمیت) استفاده کنید تا قیمت را خودتان انتخاب کنید.</li>
+<li>پیش از معامله‌ی بزرگ، علاوه بر نمودار، دفتر سفارش را هم نگاه کنید.</li>
+<li>فقط با پولی معامله کنید که از دست دادنش بودجه‌ی خانه را به هم نریزد.</li>
+<li>در چند دقیقه‌ی اول سقوط تصمیم نگیرید؛ فروش اجباری اغلب همان‌قدر سریع که شروع می‌شود، تمام می‌شود.</li>
+</ul>
+<p>این درس سازوکار بازار را توضیح می‌دهد و توصیه‌ای برای خرید یا فروش هیچ دارایی نیست.</p>
+
+<h3>چه برداشتی کنیم</h3>
+<p>خبر سقوط را شروع می‌کند. دفتر سفارش کم‌عمق و پول قرضی تعیین می‌کنند تا کجا ادامه پیدا کند.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Pruébalo tú</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">خودتان امتحان کنید</h2>
+<p lang="en">
+Abre el libro de órdenes de cualquier moneda en un exchange que uses. Suma cuánto hay en órdenes de compra dentro del 1% y del 5% del precio actual. Pregúntate: si vendiera ahora toda mi posición a mercado, ¿qué precio medio obtendría?
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">دفتر سفارش یک ارز را در صرافی‌ای که استفاده می‌کنید باز کنید. جمع سفارش‌های خرید تا ۱٪ و تا ۵٪ زیر قیمت فعلی را حساب کنید. از خودتان بپرسید: اگر همین حالا کل دارایی‌ام را فوری بفروشم، میانگین چه قیمتی می‌گیرم؟</p>
+<div class="cta-row">
+<a class="button" href="lesson07.es.html"><span lang="en">Lección 07: Cómo mueven los precios las noticias</span><span lang="fa">درس ۷: خبر چطور قیمت را تکان می‌دهد</span></a>
+<a class="button" href="lesson06.es.html"><span lang="en">Cinco preguntas antes de comprar</span><span lang="fa">پنج پرسش پیش از خرید</span></a>
+<a class="button" href="household-economy.en.html"><span lang="en">¿Qué significa la economía?</span><span lang="fa">اقتصاد یعنی چه؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Conceptos clave</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en">
+<li>Expectativa y sorpresa</li>
+<li>Libro de órdenes y profundidad de mercado</li>
+<li>Deslizamiento</li>
+<li>Apalancamiento y margen</li>
+<li>Liquidación y liquidación en cascada</li>
+<li>Independencia de la red frente al comportamiento del precio</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>انتظار و غافلگیری</li>
+<li>دفتر سفارش و عمق بازار</li>
+<li>لغزش قیمت</li>
+<li>اهرم و وثیقه</li>
+<li>لیکوئیدیشن و آبشار فروش</li>
+<li>استقلال شبکه در برابر رفتار قیمت</li>
+</ul>
+</div>
+<div class="card">
+<h3 lang="en">Objetivos de aprendizaje</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en">
+<li>Explica por qué el precio del gráfico puede diferir del precio que obtienes.</li>
+<li>Calcula el precio medio de una orden a mercado en un libro de órdenes poco profundo.</li>
+<li>Describe cómo funcionan el apalancamiento y el margen, y cuándo se produce una liquidación.</li>
+<li>Explica cómo las liquidaciones se alimentan unas a otras en cascada.</li>
+<li>Nombra formas prácticas de reducir estos riesgos.</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>توضیح دهید چرا قیمت روی نمودار با قیمتی که می‌گیرید فرق می‌کند.</li>
+<li>میانگین قیمت یک سفارش فوری را در دفتر سفارش کم‌عمق حساب کنید.</li>
+<li>شرح دهید اهرم و وثیقه چطور کار می‌کنند و لیکوئیدیشن کی اتفاق می‌افتد.</li>
+<li>توضیح دهید لیکوئیدیشن‌ها چطور در یک آبشار همدیگر را تشدید می‌کنند.</li>
+<li>راه‌های عملی کم کردن این ریسک‌ها را نام ببرید.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Banco de preguntas futuro</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بانک پرسش‌های آزمونک آینده</h2>
+<p class="section-subtitle" lang="en">
+Estas preguntas están preparadas para el futuro sistema de cuestionarios y participación de Ditoman. Más adelante podrían sustentar puntuaciones de aprendizaje, capas de reputación y una posible elegibilidad para recompensas en TMN.
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">این پرسش‌ها برای سامانه‌ی آزمونک و مشارکت آینده‌ی دیتومان آماده شده‌اند. ممکن است بعدها مبنای امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN شوند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Pregunta 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">La última operación fue a 100 dólares. Hay un comprador a 100 y el siguiente a 95. Vendes dos unidades a mercado. ¿Cuál es tu precio medio?</p>
+<p lang="fa" dir="rtl" style="text-align:right">آخرین معامله ۱۰۰ دلار بوده. یک خریدار در ۱۰۰ و بعدی در ۹۵ دلار است. دو واحد را فوری می‌فروشید. میانگین قیمت فروش چقدر است؟</p>
+<p lang="en">A. $100</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۱۰۰ دلار</p>
+<p lang="en">B. $97.50</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۹۷٫۵ دلار</p>
+<p lang="en">C. $95</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۹۵ دلار</p>
+<p lang="en">D. $102.50</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. ۱۰۲٫۵ دلار</p>
+<p class="answer" lang="en">Respuesta correcta: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Con un apalancamiento de 10× y 100 dólares de margen, ¿cuánto debe caer aproximadamente el precio para que desaparezca tu margen?</p>
+<p lang="fa" dir="rtl" style="text-align:right">با اهرم ۱۰ برابر و ۱۰۰ دلار وثیقه، قیمت حدوداً چقدر باید بیفتد تا وثیقه از دست برود؟</p>
+<p lang="en">A. 1%</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۱٪</p>
+<p lang="en">B. 10%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۱۰٪</p>
+<p lang="en">C. 50%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۵۰٪</p>
+<p lang="en">D. 100%</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. ۱۰۰٪</p>
+<p class="answer" lang="en">Respuesta correcta: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">¿Qué es una liquidación?</p>
+<p lang="fa" dir="rtl" style="text-align:right">لیکوئیدیشن چیست؟</p>
+<p class="answer" lang="en">Respuesta correcta: cuando el exchange cierra automáticamente una posición apalancada porque el margen se agota.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: وقتی صرافی یک معامله‌ی اهرمی را به‌خاطر تمام شدن وثیقه، خودکار می‌بندد.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Verdadero o falso: si la red de Bitcoin es independiente de los gobiernos, su precio no puede caer junto con las acciones.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درست یا نادرست: اگر شبکه‌ی بیت‌کوین از دولت‌ها مستقل است، قیمتش نمی‌تواند هم‌زمان با سهام بریزد.</p>
+<p class="answer" lang="en">Respuesta correcta: Falso. Muchos inversores tienen ambos y venden ambos cuando quieren menos riesgo.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: نادرست. خیلی از سرمایه‌گذارها هر دو را دارند و برای کم کردن ریسک از هر دو می‌فروشند.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">El 5 de noviembre de 2026, ¿qué parte aproximada de las liquidaciones cripto de unos 1.000 millones de dólares eran apuestas al alza?</p>
+<p lang="fa" dir="rtl" style="text-align:right">در ۱۴ آبان ۱۴۰۵، حدوداً چه سهمی از لیکوئیدیشن یک میلیارد دلاری کریپتو، شرط روی بالا رفتن قیمت بود؟</p>
+<p lang="en">A. Alrededor del 11%</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. حدود ۱۱٪</p>
+<p lang="en">B. Alrededor del 50%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. حدود ۵۰٪</p>
+<p lang="en">C. Alrededor del 89%</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. حدود ۸۹٪</p>
+<p lang="en">D. 100%</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. ۱۰۰٪</p>
+<p class="answer" lang="en">Respuesta correcta: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Fuentes</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul>
+<li><a href="https://www.instagram.com/bloombergopinion/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Bloomberg Opinion, John Authers: gráfico del índice FTSE All-World (publicación en Instagram, noviembre de 2026)</a></li>
+<li><a href="https://cryptoslate.com/bitcoin-crashes-below-76000-as-ai-bubble-fears-wipe-2-5-trillion-from-wall-street/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">CryptoSlate, 5 nov 2026: Nasdaq 100 −5,5%, liquidaciones de unos mil millones de dólares, más de 201.000 traders</a></li>
+<li><a href="https://www.thecoinrepublic.com/2026/11/05/crypto-market-crash-sends-btc-below-76k-as-liquidations-top-1b/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">The Coin Republic, 5 nov 2026: mínimo de Bitcoin de 75.463 dólares, datos de liquidaciones de CoinGlass</a></li>
+<li><a href="lesson07.es.html" style="color:#7ff5de">Lección 07 de Ditoman: cómo mueven a Bitcoin las grandes noticias</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title" lang="en">Sigue a Ditoman</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دیتومان را دنبال کنید</h2>
+<p lang="en">
+Las nuevas lecciones se anuncian primero en el Telegram y el Instagram de Ditoman.
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در تلگرام و اینستاگرام دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span lang="en">Únete en Telegram</span><span lang="fa">عضویت در تلگرام</span></a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">Ver en Instagram</span><span lang="fa">دیدن در اینستاگرام</span></a>
+<a class="button" href="learn.es.html"><span lang="en">Volver a Aprender</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson09.es.html"><span lang="en">Lección anterior</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson11.es.html"><span lang="en">Siguiente lección</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Construido con estructura, impulsado por el descubrimiento.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-es.js?v=20261121a"></script>
+</body>
+</html>

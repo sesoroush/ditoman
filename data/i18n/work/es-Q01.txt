@@ -1,0 +1,41 @@
+108|Una CBDC es dinero del Estado en forma digital. Bitcoin y tokens como TMN no los emite ningún banco central, y sus reglas las fija código público, no un gobierno. Esa diferencia es justo la razón por la que esta lección importa a quien aprende sobre cripto.
+109|Un siglo de electricidad en Irán
+110|Un panel liderado por un Nobel respalda la prueba de existencia de Yang-Mills de OpenAI; la brecha de masa y el premio de 1 millón de dólares siguen abiertos.
+111|Una comunidad de Telegram con reglas reales, lecciones iniciales y una entrada clara, antes de cualquier invitación.
+112|Un saldo no siempre es dinero en tu mano. Pregunta quién tiene que decir que sí antes de que se mueva.
+113|Un saldo en una pantalla puede significar tres cosas muy distintas. Esta lección compara una cuenta bancaria, una cuenta en un exchange y una billetera personal, y muestra quién controla realmente el dinero en cada
+114|Un saldo en una pantalla puede significar tres cosas muy distintas. Esta lección compara una cuenta bancaria, una cuenta en un exchange y una billetera personal, y muestra quién controla realmente el dinero en cada una.
+115|Prohibición de tarjetas de crédito
+116|Un saldo bancario es una promesa
+117|Un depósito bancario es un derecho frente a un banco, con supervisión y una garantía hasta un límite.
+118|Un banco hace cuatro trabajos: guardar, mover, prestar y sostener la confianza.
+119|Un banco tiene dueño, director y número de teléfono. Una blockchain pública no tiene nada de eso. Miles de ordenadores en el mundo guardan el mismo libro contable y nadie está al mando.
+120|El tipo del banco solo te dice cuánto crece el número. La lección 12 explica que los precios también se capitalizan. Si tu dinero crece de verdad depende del interés comparado con la subida de precios, no solo del interés.
+121|Un banco lo resuelve siendo el único árbitro. Una blockchain lo resuelve con un método, llamado mecanismo de consenso, en el que muchos desconocidos se ponen de acuerdo sin confiar entre sí.
+122|Una transferencia bancaria entre dos países
+123|Un proyecto educativo bilingüe con tres pilares: alfabetización práctica en cripto y finanzas, análisis honesto de la IA, la energía y el futuro del trabajo, y cobertura de logros reales de personas y empresas iraníes.
+124|Un explorador de bloques muestra la verdad sobre cualquier transferencia.
+125|Una blockchain puede entenderse como un registro digital de hechos o transacciones. Una vez añadida, la información es muy difícil de cambiar o borrar. Eso genera confianza no porque la gente confíe ciegamente, sino porque el propio sistema se puede comprobar y verificar.
+126|Una blockchain necesita una forma de que desconocidos se pongan de acuerdo sobre la página siguiente.
+127|Un presupuesto es el mapa de tu mes, no un castigo.
+128|Un presupuesto es un plan para tus ingresos: cuánto entra y para qué sirve cada parte. No es un castigo ni una promesa de decir que no a todo.
+129|Una reparación del coche, una factura médica, un mes sin ingresos: las sorpresas son normales. Esta lección explica qué es un fondo de emergencia, qué tamaño debe tener, dónde guardarlo y cómo empezar
+130|Una reparación del coche, una factura médica, un mes sin ingresos: las sorpresas son normales. Esta lección explica qué es un fondo de emergencia, qué tamaño debe tener, dónde guardarlo y cómo empezar poco a poco.
+131|Un pago con tarjeta parece instantáneo, pero varias empresas hablan entre sí en esos dos segundos, y el dinero llega después. Esta lección sigue una compra desde el datáfono hasta la cuenta
+132|Un pago con tarjeta parece instantáneo, pero varias empresas hablan entre sí en esos dos segundos, y el dinero llega después. Esta lección sigue una compra desde el datáfono hasta la cuenta de la tienda.
+133|Un pago con tarjeta es una cadena de empresas de confianza que se pasan mensajes, con la liquidación después. Un pago en blockchain no tiene emisor, adquirente ni red. La propia transferencia es la liquidación y, una vez confirmada, ningún banco puede revertirla.
+134|Una moneda digital de banco central, o CBDC, es dinero digital emitido directamente por el banco central de un país. Es la versión digital del billete de tu cartera.
+135|Un banco central no lleva tu cuenta ni guarda tus ahorros. Eso lo hacen los bancos comerciales. Tampoco controla todos los precios. Influye en las condiciones, y los resultados llegan con retraso e incertidumbre.
+136|Un banco central es una institución pública en el centro del sistema monetario de un país. Los bancos comunes atienden a clientes. El banco central atiende a los bancos, al gobierno y al sistema en su conjunto.
+137|Un banco central es la institución pública en el centro del sistema monetario de un país.
+138|Un banco central fija el coste básico de pedir prestado en su moneda. Cuando ese coste es alto, los préstamos son caros y ahorrar compensa. Cuando es bajo, los préstamos son baratos y ahorrar rinde poco.
+139|Un siglo de electricidad en Irán
+140|Una lista de comprobación solo es honesta si se aplica a quien la publica. Aquí está TMN medido con las mismas cinco comprobaciones, incluidas las que no superamos.
+141|Un derecho frente al banco
+142|Un derecho frente a la empresa
+143|Una moneda depende de la seguridad de su propia cadena. Un token depende de su cadena y de su contrato. Entender sobre qué se apoya un activo te dice qué puede salir mal y quién, si alguien, puede cambiarlo.
+144|Una moneda es nativa de su propia blockchain. Un token se construye sobre otra blockchain. La guía de Kraken da los ejemplos: BTC y ETH son monedas; USDT y UNI son tokens.
+145|Una moneda es nativa de su blockchain; un token se construye sobre otra.
+146|La moneda es lo que usa la propia cadena. Paga las comisiones y recompensa a quienes la mantienen en marcha, como mostró la lección 27. Sin la moneda, la red no tendría forma de pagar su propio funcionamiento.
+147|Una empresa se hizo con él
+148|Una transacción confirmada es definitiva. Ningún banco, servicio de atención ni orden judicial puede revertirla en la blockchain. La única vuelta atrás es que el receptor la devuelva.

@@ -1,0 +1,129 @@
+271|A. Parce que vous avez remboursé une partie chaque mois
+272|A. La blockchain ne sert qu'à échanger des coins
+273|A. Des réserves en espèces
+274|A. De l'argent conservé à votre nom
+275|A. La vérification du code PIN
+276|A. Convertir la monnaie locale en token et inversement
+277|A. Réduire toutes les dépenses d'un coup
+278|A. Détruire tout ou partie du dépôt d'un validateur malhonnête
+279|A. A-t-il sa propre blockchain ?
+280|A. Des dollars
+281|=
+282|A. Tous les 2 016 blocs, environ deux semaines
+283|A. Une hausse rapide du prix
+284|A. La détection de fraude sur les paiements par carte
+285|A. Abandonner le budget
+286|A. Des systèmes cachés
+287|A. Tenir les comptes d'épargne personnels de chacun
+288|A. L'encombrement du réseau
+289|A. Dans la marge sur le taux de change
+290|A. Une politique de taux indépendante
+291|A. Infrastructure
+292|A. Dans le téléphone
+293|A. Des intérêts sont aussi gagnés sur les intérêts précédents
+294|A. Un intérêt qui baisse chaque année
+295|A. Cela signifie toujours que le projet est malhonnête
+296|A. Cela garantit un profit
+297|A. Il détient l'argent des banques
+298|A. Il augmente
+299|A. Sa couleur et son logo
+300|A. Le mois dernier
+301|A. Surtout pour prêter à l'État pour une guerre
+302|A. Rendre la triche plus coûteuse que l'honnêteté
+303|A. L'argent passe sur le compte du commerçant
+304|A. Aucun utilisateur ne le contrôle et il ne peut pas être supprimé
+305|A. Non, c'est une règle d'offre, pas une prévision
+306|A. Non, cela permet à d'autres de prendre vos coins
+307|A. Une entreprise contrôle tous les registres
+308|A. Un produit qui devient plus cher
+309|A. Payer vite avant que la piste ne refroidisse
+310|A. Lire des informations extérieures comme la météo
+311|A. Enregistrer l'information de façon transparente et vérifiable
+312|A. Supprime tout risque
+313|A. Épargne
+314|A. Vendre sur le marché, avec le risque que le prix tombe sous un dollar
+315|A. L'envoyer tout de suite
+316|A. Fixer le prix de l'or
+317|A. Dépenser d'abord pour les envies
+318|A. L'offre et la demande
+319|A. La Riksbank de Suède, fondée en 1668
+320|A. Le salaire net, après impôts
+321|A. La couleur de l'application
+322|A. Les fonctions communes des tokens fongibles
+323|A. Le contrat est défectueux
+324|A. La décision a été annulée
+325|A. Les frais sont prélevés sur l'USDT
+326|A. Le fonds doit être là le mois suivant, du même montant
+327|A. L'écart entre prix d'achat et prix de vente
+328|A. Le rendement le plus élevé possible
+329|A. L'émetteur
+330|A. Les réseaux le convertissent automatiquement
+331|A. L'adresse de la paire
+332|A. Le prix est stable
+333|A. Le prix a monté la semaine dernière
+334|A. La même chose qu'un audit complet
+335|A. Le commerçant a pris l'argent
+336|A. Le token est forcément une arnaque
+337|A. Le token peut être modeste
+338|A. Elles sont toujours évidentes
+339|A. Ils versent des intérêts pendant que vous les détenez
+340|A. Des taxes de transfert
+341|A. Transparence
+342|A. Des dépenses nécessaires et imprévues
+343|A. Quels sont les frais affichés ?
+344|A. Quand elle veut
+345|A. Qui l'émet ?
+346|A. Quiconque détient la clé privée ou la phrase de récupération
+347|A. Oui, exactement six mois
+348|A. Oui, d'ici cinq ans
+349|IA et marchés
+350|IA et science
+351|Piratage par IA en moins de trois heures
+352|L'IA fait un grand pas sur un problème du millénaire
+353|Agent d'IA
+354|L'IA et les petites entreprises iraniennes : guide complet
+355|L'IA et les petites entreprises iraniennes
+356|IA et entreprise
+357|L'IA et le déluge cyber
+358|L'IA et le problème de Yang-Mills
+359|IA et voyage
+360|Piratage par IA en moins de trois heures : l'affaire ARTEX
+361|L'IA travaille depuis des années en coulisses dans la finance, surtout contre la fraude et dans le crédit.
+362|L'IA sur la ligne de pistaches
+363|Contrôle qualité par IA sur une ligne de pistaches (illustration)
+364|L'IA qui paie pour vous arrive, et les règles de responsabilité sont encore en cours d'écriture.
+365|IA, énergie et avenir du travail
+366|Conception ASIC, SoC et FPGA ; le microprocesseur Aristo 32 bits
+367|Environ 1 %
+368|Environ 10 %
+369|Environ 19,69 millions de bitcoins avaient été émis à la fin de la quatrième ère.
+370|Environ 20 % de l'offre
+371|Environ 20 % des 21 000 milliards de TMN d'origine ont été retirés de la circulation en deux étapes. Les deux sont publiques et vérifiables sur BscScan.
+372|Environ 50 %
+373|Environ 99,99 % de moins après le Merge (estimation)
+374|À propos de TMN
+375|Accès
+376|Selon le suivi de l'Atlantic Council, combien de pays ont pleinement lancé une CBDC ?
+377|Selon le suivi de l'Atlantic Council, 146 pays et unions monétaires, représentant plus de 98 % de l'économie mondiale, étudient une CBDC. C'est l'origine des grands chiffres que vous voyez dans les publications.
+378|Selon la BRI, combien de devises s'échangeaient environ par jour en avril 2025 ?
+379|Acquéreur
+380|Loi signée le 23 décembre, après la panique de 1907
+381|Ajoutez TMN à votre portefeuille
+382|Ajoutez TMN à votre portefeuille ↓
+383|Ajouter le token
+384|Additionnez chaque mensualité et chaque frais.
+385|Adresse
+386|Empoisonnement d'adresse
+387|Adresse, réseau, frais : comment fonctionne une transaction crypto
+388|Adresse, réseau, frais : comment fonctionne une transaction crypto, image de la leçon Ditoman
+389|Adresse, réseau, frais : comment fonctionne une transaction crypto | Ditoman Learn
+390|Les adultes achètent désormais un jouet sur cinq. Cinquante ans de jouets, pourquoi les enfants en veulent toujours et la chance de l'Iran de devenir un pôle régional du jouet.
+391|Après 1 an
+392|Après 10 ans : 1 000 + 10 × 50 = 1 500. Après 20 ans : 2 000. Le solde croît en ligne droite.
+393|Après 3 ans
+394|Après 5 ans
+395|Après la panique financière de 1907, les États-Unis étaient la seule grande puissance financière sans banque centrale. Le président Woodrow Wilson a signé le Federal Reserve Act le 23 décembre 1913, créant la Réserve fédérale.
+396|Après un vol, quelqu'un propose de récupérer votre argent contre des frais payés d'avance. Que faire ?
+397|Après le halving du 20 avril 2024, la récompense par bloc est :
+398|Après usage : reconstituer d'abord, avant de nouvelles envies
+399|Après avoir appuyé sur Envoyer, la transaction attend d'être incluse dans un bloc. Une fois incluse, elle a une confirmation. Chaque bloc suivant en ajoute une, et plus elle en a, plus il serait difficile de l'annuler.

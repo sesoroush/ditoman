@@ -13,6 +13,14 @@ R = {
                read=lambda n: f"{n} dk okuma", mins=lambda n: f"{n} dk", step=lambda n: f"Adım {n}"),
     "ru": dict(date=lambda d, m: f"{d} " + ["янв.", "февр.", "мар.", "апр.", "мая", "июн.", "июл.", "авг.", "сент.", "окт.", "нояб.", "дек."][_m(m) - 1],
                read=lambda n: f"{n} мин чтения", mins=lambda n: f"{n} мин", step=lambda n: f"Шаг {n}"),
+    "pt": dict(date=lambda d, m: f"{d} " + ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"][_m(m) - 1],
+               read=lambda n: f"{n} min de leitura", mins=lambda n: f"{n} min", step=lambda n: f"Passo {n}"),
+    "es": dict(date=lambda d, m: f"{d} " + ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sept", "oct", "nov", "dic"][_m(m) - 1],
+               read=lambda n: f"{n} min de lectura", mins=lambda n: f"{n} min", step=lambda n: f"Paso {n}"),
+    "fr": dict(date=lambda d, m: f"{d} " + ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."][_m(m) - 1],
+               read=lambda n: f"{n} min de lecture", mins=lambda n: f"{n} min", step=lambda n: f"Étape {n}"),
+    "de": dict(date=lambda d, m: f"{d}. " + ["Jan.", "Feb.", "März", "Apr.", "Mai", "Juni", "Juli", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."][_m(m) - 1],
+               read=lambda n: f"{n} Min. Lesezeit", mins=lambda n: f"{n} Min.", step=lambda n: f"Schritt {n}"),
 }
 
 

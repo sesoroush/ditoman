@@ -147,7 +147,7 @@ def make_en(src, name, names):
 
 
 def main():
-    pages = sorted(p for p in ROOT.glob("*.html") if not p.name.endswith((".en.html", ".ar.html", ".zh.html", ".tr.html", ".ru.html")) and p.name not in SKIP)
+    pages = sorted(p for p in ROOT.glob("*.html") if not p.name.endswith((".en.html", ".ar.html", ".zh.html", ".tr.html", ".ru.html", ".pt.html", ".es.html", ".fr.html", ".de.html")) and p.name not in SKIP)
     names = {p.name for p in pages}
     for p in pages:
         src = p.read_text(encoding="utf-8")

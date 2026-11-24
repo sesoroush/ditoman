@@ -1,0 +1,37 @@
+2625|Ces questions pourront plus tard faire partie des quiz Ditoman, des scores de participation et d'une éventuelle éligibilité aux récompenses en TMN.
+2626|Ces systèmes sont importants, mais ils créent aussi une dépendance. Quand la confiance repose sur une seule institution, une seule entreprise ou une seule plateforme, les utilisateurs doivent accepter que le système agisse correctement, reste honnête et protège leur accès.
+2627|Ces usages sont matures. Ils rendent la finance plus rapide et moins chère, et repèrent beaucoup de fraudes que les humains manqueraient.
+2628|Il s'agissait d'opérations promotionnelles pour tester le système et encourager la consommation, pas de règles sur l'épargne normale des gens. Aucun pays n'a mis de date d'expiration sur les soldes courants en CBDC.
+2629|Thèse ou mouvement de prix
+2630|Non. Leur garantie, leur émetteur et leur remboursement diffèrent, et il faut vérifier chacun séparément.
+2631|Pensez à la dernière fois que vous êtes entré dans une agence bancaire. Pour beaucoup, c'était il y a des années. Ouvrir un compte, envoyer de l'argent, payer une facture, même emprunter se fait désormais sur téléphone.
+2632|Pensez à ce que le fonds doit faire : être là le mois prochain, pour le même montant. Un actif dont le prix peut chuter fortement, comme l'ont montré les leçons 10 et 18, convient mal à cette tâche. Ce n'est pas un conseil sur un produit, juste la description du rôle de cet argent.
+2633|Voyez-le comme une carte. Une carte ne vous empêche pas de marcher ; elle montre où vous êtes. Sans elle, les dépenses semblent aléatoires. Avec elle, vous pouvez choisir.
+2634|Voyez cette leçon comme une courte enquête policière. Chaque stablecoin a un suspect (l'émetteur), une cachette (la garantie) et une sortie (le remboursement). Votre travail est de vérifier les trois.
+2635|Trente leçons dans l'ordre qui les rend le plus faciles à apprendre. Commencez à l'étape 1, ou allez directement à l'étape dont vous avez besoin.
+2636|Cela a changé la façon dont on pense la confiance.
+2637|Cette disparition a rendu l'histoire encore plus forte. Bitcoin n'a pas continué parce qu'un fondateur le contrôlait. Il a continué parce que le système était assez ouvert pour que d'autres le vérifient, le fassent tourner, l'améliorent et le protègent.
+2638|Cela ne veut pas dire que toutes les plateformes sont malhonnêtes. Cela veut dire que le solde ne vaut que ce que vaut l'entreprise derrière.
+2639|Ce domaine évolue vite. Les noms de produits et dates de déploiement sont ceux rapportés par les sources et peuvent avoir changé.
+2640|Cela fait suite aux étapes précédentes : renonciation à la propriété du contrat, donc plus aucun nouveau TMN ne pourra être émis, et retrait de 10 % de l'offre initiale.
+2641|C'est une orientation, pas un produit fini. Les fonctionnalités seront annoncées une fois construites, pas avant.
+2642|C'est aussi pourquoi le taux d'intérêt d'une banque mérite un second regard. Si un dépôt rapporte 20 % et que les prix montent de 40 %, le solde augmente mais son pouvoir d'achat baisse. Le chiffre honnête, ce sont les intérêts moins l'inflation, appelé
+2643|C'est différent de l'argent sur votre compte bancaire. Un dépôt bancaire est une créance sur une banque. Un stablecoin est une créance sur son émetteur, et les conditions de cette créance sont écrites dans les documents de l'émetteur, pas dans une agence bancaire. Lisez ces conditions avant de vous y fier.
+2644|C'est la liquidité : reconvertir l'actif en argent utilisable rapidement et près du prix affiché.
+2645|C'est l'un des pièges les plus courants, et il est visible dans le code avant même de dépenser quoi que ce soit.
+2646|C'est une aide réelle et, pour ceux qui n'ont jamais eu accès à un conseiller financier, c'est nouveau.
+2647|C'est l'erreur coûteuse la plus fréquente chez les débutants. Avant d'envoyer, demandez deux choses au destinataire : l'adresse et le réseau.
+2648|C'est l'expérience d'argent la plus répandue au monde, et elle a une cause simple. Les petits paiements s'oublient facilement, et un mois suffit à les cacher. Un budget n'est rien d'autre qu'un moyen de voir le mois avant qu'il n'arrive.
+2649|C'est la question que presque personne ne pose, et c'est ici la plus précieuse.
+2650|Voilà pourquoi la blockchain compte.
+2651|C'est pourquoi, dans de nombreux pays, les prêteurs doivent afficher un taux annuel incluant tous les frais. Quand un plan n'affiche qu'une mensualité, calculez le total vous-même.
+2652|Cette leçon ne juge aucun projet. Elle explique seulement une catégorie de token, pour que vous la reconnaissiez quand vous la croisez.
+2653|Cette leçon développe la publication Instagram officielle de Ditoman sur Satoshi Nakamoto en une ressource d'apprentissage structurée. La publication d'origine présente le mystère du créateur de Bitcoin et explique pourquoi l'identité compte moins que le système qui a continué après la disparition de Satoshi.
+2654|Cette leçon explique le fonctionnement des marchés. Ce n'est pas une recommandation d'achat ou de vente.
+2655|Cette leçon porte sur les gens qui essaient de prendre votre argent. La leçon 05 porte sur le token lui-même : cinq vérifications applicables à tout contrat. La leçon 06 porte sur vos propres raisons d'acheter.
+2656|Cette leçon vise à comprendre le marché qui vous entoure, pas TMN.
+2657|Cette leçon a d'abord été présentée sur l'Instagram de Ditoman dans la Série Éducation. La version Instagram explique comment la blockchain change la confiance, et cette page en propose la version complète.
+2658|Cette leçon a d'abord été présentée sur l'Instagram de Ditoman dans la Série Éducation. La version Instagram en donne un court résumé visuel, et cette page en propose la version complète.
+2659|Cette leçon a d'abord été présentée sur l'Instagram de Ditoman dans la Série Sécurité. La version Instagram en donne un court résumé visuel, et cette page en propose la version complète.
+2660|Cette leçon a d'abord été présentée sur l'Instagram de Ditoman. La version Instagram en donne un court résumé visuel, et cette page en propose la version complète.
+2661|C'est important, car une offre qui peut croître sans limite peut diluer tous les détenteurs du token.

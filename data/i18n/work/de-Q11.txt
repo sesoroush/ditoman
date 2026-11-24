@@ -1,0 +1,90 @@
+1049|Daten
+1050|Wo Schulden und Inflation sich treffen
+1051|Dezentralisierung
+1052|Dezentraler Ursprung
+1053|Legen Sie vorher fest, was als Notfall gilt.
+1054|Legen Sie vorher fest, was als Notfall gilt. Ein Sonderangebot für etwas, das Sie wollten, ist keiner.
+1055|Legen Sie vorher fest, was die Idee widerlegen würde.
+1056|Legen Sie vorher fest, woran Sie erkennen würden, dass die Idee nicht funktioniert hat. Ein nicht gehaltenes Versprechen. Ein Team, das verstummt. Eine Nutzung, die nie kommt. Schreiben Sie es vor dem Kauf auf, solange Sie noch klar denken.
+1057|Den Ausstieg vorher festlegen
+1058|Dezimalstellen
+1059|Entscheidungsfindung
+1060|Abgelehnt:
+1061|Decrypt: KI und Identitätsbetrug bei Krypto-Betrug 2025, Chainalysis
+1062|Decrypt: Schätzung von Chainalysis zu den Krypto-Betrugsverlusten 2025 (14. Januar 2026)
+1063|Deepfake
+1064|Betrugsfall mit Deepfake-CEO
+1065|Definieren Sie einen Smart Contract in einem Satz.
+1066|Definieren Sie einen Wechselkurs.
+1067|Verzögerungen entstehen durch Zeitzonen, geschlossene Systeme und Compliance-Prüfungen.
+1068|Die Nachfrage wurde von Anchor angeheizt, einer Kreditplattform, die rund 18 bis 20 Prozent im Jahr auf UST-Einlagen zahlte. Diese Rendite lag weit über dem Üblichen und stammte nicht aus normalem Kreditgeschäft. Anfang Mai 2022 war UST auf etwa 98 Cent gefallen, und einige große Inhaber begannen abzuziehen.
+1069|Entkopplung (Depeg)
+1070|Hängt ab von
+1071|Hängt vom Partner ab
+1072|Bereitgestellt
+1073|Bereitstellung
+1074|Die Einlage als Forderung
+1075|Einlagengarantie
+1076|Beschreiben Sie in Stufen, wie groß er sein kann.
+1077|Beschreiben Sie, wie groß der Devisenmarkt ist.
+1078|Beschreiben Sie, wie Hebel und Margin funktionieren und wann eine Liquidation passiert.
+1079|Beschreiben Sie Proof of Stake und Slashing.
+1080|Beschreiben Sie Proof of Work in einfachen Worten.
+1081|Beschreiben Sie sichere Gewohnheiten im Umgang mit KI und Geld.
+1082|Beschreiben Sie den Trick mit der ähnlichen Adresse und wie man ihn vermeidet.
+1083|Beschreiben Sie drei Wege, auf denen Zinsänderungen Bitcoin erreichen können.
+1084|Beschreiben Sie, wofür LP-Tokens stehen.
+1085|Beschreiben Sie, was eine Bestätigung ist.
+1086|Beschreiben Sie, was eine Korrespondenzbank tut.
+1087|Beschreiben Sie, was ein privater Schlüssel und eine Wiederherstellungsphrase tun.
+1088|Beschreiben Sie, was Geld programmierbar macht.
+1089|Beschreiben Sie, warum das Sparen zuerst abgezweigt werden sollte.
+1090|Als älteste Zentralbank der Welt beschrieben
+1091|Die Einzelheiten der Aufgaben stammen von der Bank of England als typischem Beispiel; andere Zentralbanken unterscheiden sich. Aktuelle Zinsniveaus werden nicht genannt, weil sie sich ändern. Allgemeine Erklärung, keine Finanzberatung.
+1092|Deutsch
+1093|Deutsch
+1094|=
+1095|=
+1096|DiToman (TMN) Token | Vertrag 0x86a5...790d
+1097|Verschiedene Seiten zeigen verschiedenes Angebot.
+1098|=
+1099|Digital Commerce 360: Mastercards erste Agenten-Transaktion und die Einführung von Agent Pay (31. Oktober 2025)
+1100|Digitale Dollar in Istanbul
+1101|Digitale Dollar: Was deckt sie?
+1102|Digitales Banking
+1103|Digitale Dollar in Istanbul
+1104|Digitale Dollar, Zentralbankgeld, neue Banken und KI.
+1105|Digitale Dollar: Was deckt sie?
+1106|Digitale Dollar: Was deckt sie? Ditoman-Lektionsbild
+1107|Digitale Dollar: Was deckt sie? | Ditoman Learn
+1108|Digitales Register
+1109|Digitaler Rial
+1110|Dirham
+1111|Entdecken Sie die tieferen Ideen hinter Blockchain und digitalen Wertsystemen.
+1112|=
+1113|Ditoman (TMN) | Iran baut. Wir dokumentieren es.
+1114|=
+1115|Ditoman Learn, Lektion 01. Was ist eine Blockchain? Eine zweisprachige Lektion über Vertrauen, Transparenz, Dezentralisierung, Sicherheit und künftige Systeme.
+1116|Ditoman Learn, Lektion 02. Warum die Blockchain wichtig ist. Eine zweisprachige Lektion über Vertrauen, Institutionen, Überprüfung, Transparenz, Systeme und künftige digitale Infrastruktur.
+1117|Ditoman Learn, Lektion 05. Fünf kostenlose Prüfungen, die jeder vor dem Umgang mit einem Token machen kann: Vertragsverifizierung, Verteilung der Inhaber, Eigentum, versteckte Funktionen und Liquidität.
+1118|Ditoman Learn | Lektion 04 | Wer ist Satoshi Nakamoto?
+1119|Ditoman Learn • Auf Struktur gebaut, von Entdeckung getrieben.
+1120|Ditoman-Lektion 04 erklärt, wer Satoshi Nakamoto ist, warum das Rätsel wichtig ist und warum die Idee hinter Bitcoin wichtiger wurde als die Identität ihres Schöpfers.
+1121|Ditoman-Lektion 07: Wie große Nachrichten Bitcoin bewegen
+1122|Ditoman-Logo
+1123|Ditoman ist ein Bildungsprojekt. Nichts auf dieser Seite ist Finanz- oder Anlageberatung oder ein Versprechen künftigen Werts. Digitale Vermögenswerte bergen erhebliche Risiken. Wir ermutigen niemanden, TMN zu kaufen. Bevor Sie mit einem Token interagieren, prüfen Sie selbst Vertragsadresse, Netzwerk, Liquidität und Verteilung der Inhaber.
+1124|Ditoman ist nach dem Toman benannt, dem Alltagsnamen für iranisches Geld: ein „digitaler Toman“. TMN wurde im Februar 2022 auf der BNB Smart Chain bereitgestellt, mit einer Frage dahinter: Kann Wissen selbst echten Wert tragen?
+1125|Ditoman bezieht keine politische Position zur Geldpolitik irgendeiner Regierung. Wir erklären, wie die Systeme funktionieren und was die Belege zeigen.
+1126|Ditoman bezieht keine Position zu Wahlen, Regierungen oder Politik irgendeiner Seite. Wir erklären, wie Systeme funktionieren, und überlassen Ihnen die Meinung.
+1127|Ditoman • Lernen. Verbinden. Entwickeln.
+1128|Ditoman • Lernen. Verbinden. Entwickeln. • Seit 2022
+1129|Ditomans Pilotprogramm für alle, die Krypto richtig lernen wollen. Lesen Sie die Lektionen, machen Sie den Test mit zehn Fragen, und mit mindestens acht richtigen Antworten erhalten Sie eine TMN-Belohnung.
+1130|Ditoman: <span class="spectrum">Im Iran brennen die Lichter</span>
+1131|Diversifikation
+1132|Verbinden Sie nicht Ihre Haupt-Wallet.
+1133|Entscheiden Sie nicht in den ersten Minuten eines Crashs; erzwungene Verkäufe enden oft so schnell, wie sie begonnen haben.
+1134|Bewerten Sie die Zahlen nicht. Dieser erste Monat dient nur dem Sehen.
+1135|So geht's
+1136|Dokumentieren, was iranische Menschen und Unternehmen aufgebaut haben, mit einer Quelle für jede Zahl.
+1137|Hängt nicht von einem ab
+1138|Gelten die 5 % wieder für 1.000 oder für 1.050? Diese kleine Frage ist der ganze Unterschied zwischen einfachem Zins und Zinseszins.

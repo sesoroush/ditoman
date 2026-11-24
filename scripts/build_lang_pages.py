@@ -21,10 +21,10 @@ import hl  # noqa: E402
 import lang_rules  # noqa: E402
 
 BASE = "https://ditoman.com/"
-LOCALE = {"zh": "zh_CN", "tr": "tr_TR", "ru": "ru_RU"}
+LOCALE = {"zh": "zh_CN", "tr": "tr_TR", "ru": "ru_RU", "pt": "pt_PT", "es": "es_ES", "fr": "fr_FR", "de": "de_DE"}
 # page sets, by stage; a page not listed for a language is not built for it
 CORE = ["index", "learn", "prices", "tmn", "learn-earn"]
-PAGES = {"zh": list(CORE), "tr": list(CORE), "ru": list(CORE)}
+PAGES = {l: list(CORE) for l in ("zh", "tr", "ru", "pt", "es", "fr", "de")}
 try:
     PAGES.update(json.loads((ROOT / "scripts" / "lang_pages.json").read_text(encoding="utf-8")))
 except FileNotFoundError:

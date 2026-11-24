@@ -1,0 +1,74 @@
+2954|Ce que cela signifie
+2955|Ce qu'est la liquidité
+2956|Qu'est-ce qui fait que les intérêts se composent ?
+2957|Qu'est-ce qui rend l'argent « programmable » ?
+2958|Qu'est-ce qui rend l'argent « programmable » ?
+2959|Ce que touchent les mineurs
+2960|Ce que gagneront les mineurs quand les récompenses s'éteindront
+2961|Ce qui fait bouger un marché, c'est la surprise : l'écart entre ce qui était attendu et ce qui s'est réellement passé. Une baisse de taux que tout le monde attendait peut changer très peu. Un statu quo que personne n'attendait peut faire beaucoup bouger.
+2962|Ce qui fait bouger les marchés, chaque jour
+2963|Ce qu'est l'open banking
+2964|À quel problème Bitcoin répondait-il ?
+2965|Que ne faut-il jamais coller dans un assistant d'IA ?
+2966|Ce que changent les stablecoins
+2967|Ce que testent les Émirats, sa place en Iran, comment cela protège les sols et quelles entreprises iraniennes le font déjà.
+2968|Ce que le halving ne vous dit pas
+2969|Ce qu'est le halving
+2970|Ce qu'elles font, c'est s'assurer que la décision est vraiment la vôtre : comprise, bien dimensionnée et prise avec une idée claire de ce que serait une erreur.
+2971|Ce qu'elles font, c'est éliminer les façons les plus courantes et les plus évitables de perdre de l'argent : des tokens illisibles, une offre invisible, des pouvoirs dont on ignorait l'existence et des sorties qui n'ont jamais existé.
+2972|Ce que le temps fait à l'écart
+2973|Que faire de tout cela
+2974|Ce qu'il faut en retenir
+2975|Qu'est-ce qui protège généralement un solde sur une plateforme si celle-ci fait faillite ?
+2976|Ce que nous avons fait avec TMN
+2977|Ce qui fonctionne aujourd'hui, ce qui arrive, et les nouveaux risques.
+2978|Qu'est-ce qui me montrerait que j'ai tort ?
+2979|Ce que vous détenez
+2980|Ce qu'il faut savoir
+2981|Quand l'électricité devient négative
+2982|Quand vous présentez votre carte, comment l'argent circule-t-il ?
+2983|Quand vous présentez votre carte, comment l'argent circule-t-il ? Image de la leçon Ditoman
+2984|Quand vous présentez votre carte, comment l'argent circule-t-il ? | Ditoman Learn
+2985|Quand une banque centrale baisse ses taux
+2986|Quand une dette n'est pas remboursée, les intérêts s'ajoutent à la dette, et la fois suivante, les intérêts portent sur le montant plus élevé. C'est
+2987|Quand un nouveau token est ajouté à une plateforme
+2988|Quand un commerçant accorde une remise en espèces ou ajoute un supplément carte, ces frais en sont généralement la raison.
+2989|Quand un émetteur affirme qu'un token est entièrement garanti, l'affirmation peut venir d'un rapport appelé attestation. Une attestation est généralement un instantané d'un moment, préparé pour une date précise. Un audit complet va plus loin et couvre une période plus longue. Ce sont des outils différents, et un titre dit rarement lequel vous lisez.
+2990|Quand Woodrow Wilson a-t-il signé le Federal Reserve Act ?
+2991|Quand la liquidité verrouillée de TMN sera-t-elle déverrouillée ?
+2992|Quand les prix de l'électricité deviennent négatifs
+2993|Quand on imagine perdre ses cryptos, on pense à un pirate dans une pièce sombre qui casse un code. C'est rarement ainsi. Dans la plupart des cas, c'est le propriétaire qui ouvre la porte : en tapant une phrase sur une fausse page, en approuvant quelque chose sans le lire ou en envoyant de l'argent à un nouvel « ami ».
+2994|Quand on dit « la banque centrale a relevé ses taux » ou « la banque centrale a fait tourner la planche à billets », on en parle comme d'une seule personne puissante. En réalité, c'est une institution avec une courte liste de missions, chacune ayant sa raison.
+2995|Quand les prix montent, le même revenu achète moins, comme l'a montré la leçon 12. Un budget fait il y a six mois peut déjà être dépassé. Revoyez les chiffres quand le coût de l'essentiel change, pas seulement à date fixe.
+2996|Quand les actifs sûrs, comme les obligations d'État ou l'épargne, rapportent plus, les actifs risqués paraissent moins attrayants en comparaison. L'argent peut se tourner vers la sécurité. Quand les actifs sûrs rapportent moins, l'argent cherche du rendement ailleurs.
+2997|Quand quelqu'un retire ses gains de trading
+2998|Quand cette confiance s'est brisée, une nouvelle idée est apparue.
+2999|Quand la plateforme ferme automatiquement une position à effet de levier parce que la marge s'épuise
+3000|Quand les deux banques n'ont pas de correspondant commun, le paiement passe par deux ou trois banques d'affilée. Chaque étape ajoute du temps, des frais et un contrôle de conformité.
+3001|Quand vous comparez deux offres, comparez-les sur la même base : même période et même capitalisation. Un taux d'appel seul ne suffit pas.
+3002|Quand vous déposez de l'argent, il ne reste pas dans une boîte à votre nom. La banque en prête la majeure partie. Ce que vous possédez est une créance : la banque vous doit ce montant et promet de le payer sur demande.
+3003|Face à une affirmation spectaculaire sur la monnaie numérique, posez trois questions : est-ce un essai ou le vrai système, quel pays, et que dit réellement la loi ?
+3004|Quand vous présentez votre carte, le terminal envoie un message, via l'acquéreur et le réseau, à votre banque : cette carte, ce montant, ce commerçant. Est-ce bon ?
+3005|Là où l'IA travaille déjà discrètement
+3006|Où les Iraniens s'informent-ils ?
+3007|Où part mon argent chaque mois ?
+3008|Où part mon argent chaque mois ? Image de la leçon Ditoman
+3009|Où part mon argent chaque mois ? | Ditoman Learn
+3010|D'où vient un taux de change ?
+3011|D'où vient un taux de change ? Image de la leçon Ditoman
+3012|D'où vient un taux de change ? | Ditoman Learn
+3013|Où vivent les Iraniens et pourquoi : un siècle de carte démographique, l'eau, les infrastructures et les 20 prochaines années.
+3014|Où est mon argent ?
+3015|Où est mon argent ? Du compte bancaire au portefeuille numérique
+3016|Où est mon argent ? Du compte bancaire au portefeuille numérique, image de la leçon Ditoman
+3017|Où est mon argent ? Du compte bancaire au portefeuille numérique | Ditoman Learn
+3018|La place de TMN
+3019|La place de la crypto
+3020|Où obtenir une adresse de portefeuille ?
+3021|Par où commencer ?
+3022|Où les Iraniens s'informent-ils ?
+3023|Vers où la blockchain déplace-t-elle la confiance ?
+3024|Où part mon argent chaque mois ?
+3025|Où se trouve généralement l'argent quand vous utilisez une appli fintech ?
+3026|Où l'IA travaille-t-elle dans la finance depuis des années ?
+3027|Où se cache le plus souvent le coût d'un transfert ?

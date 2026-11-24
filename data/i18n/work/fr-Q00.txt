@@ -1,0 +1,108 @@
+0|La « capitalisation boursière » n'est pas une valeur réelle.
+1|« Payer plus tard » est un prêt, quoi que dise le bouton.
+2|« Intelligent » veut dire automatique, pas malin.
+3|« Les illettrés du XXIe siècle ne seront pas ceux qui ne savent ni lire ni écrire, mais ceux qui ne savent pas apprendre, désapprendre et
+4|« Les illettrés du XXIe siècle ne seront pas ceux qui ne savent ni lire ni écrire, mais ceux qui ne savent pas apprendre, désapprendre et réapprendre. »
+5|% de variation
+6|« Je ferais confiance à ce token parce que… » ou « Je ne lui ferais pas confiance parce que… ». Votre raison est la vraie leçon.
+7|(Chuka)
+8|(chiffres de mai 2026)
+9|, vérifié le 27 octobre 2026. Les scanners automatiques signalent « mintable » parce que la fonction existe dans le code. Seul le propriétaire peut l'appeler, et le propriétaire est l'adresse zéro, donc personne ne pourra jamais l'appeler.
+10|, des heures ou des jours plus tard.
+11|, est un coût que vous payez deux fois. Pour les petites pièces d'or, et pour les bijoux avec frais de façon, l'écart est large.
+12|, ou garantie) contrôle une position de 1 000 dollars. Si le prix monte de 10 %, vous doublez votre argent. S'il baisse d'environ 10 %, vos 100 dollars disparaissent.
+13|. Le compte de la banque A y diminue, celui de la banque B augmente, et le paiement est fait.
+14|. Ditoman ne demande jamais de clés privées ni de phrases de récupération et n'envoie jamais de tokens à ceux qui écrivent en premier.
+15|. Cela ne supprime pas le risque. Cela évite de dépendre d'une seule histoire qui doit être juste.
+16|. Personne n'en détient la clé, donc ces tokens ne pourront plus jamais bouger, mais ils comptent toujours dans totalSupply.
+17|. Celle-ci a bien réduit le totalSupply, de 21 000 000 000 000 à 18 901 056 445 783,85.
+18|. Quand les acheteurs reculent après une mauvaise nouvelle, les écarts entre eux s'élargissent, et chaque ordre de vente au marché pousse le prix encore plus bas.
+19|. Ce n'est pas vous qui choisissez le moment ; c'est le prix.
+20|01. Code source du contrat vérifié sur BscScan
+21|02. Répartition de l'offre entre les détenteurs
+22|03. Propriété renoncée, aucun nouveau token possible
+23|04. Pas de taxe de transfert, pas de liste noire, pas de fonction de pause
+24|05. Tokens de liquidité verrouillés
+25|=
+26|1 euro = 1,10 dollar
+27|1 euro = 1,10 dollar. Une chemise coûte 50 euros. Son prix en dollars est :
+28|1 euro = 1,20 dollar
+29|1 000 à 5 % par an : simple ou composé
+30|1 000 à 5 % composés pendant 20 ans donnent environ :
+31|1 000 à 5 % d'intérêt simple pendant 10 ans donnent :
+32|1. Trouvez la page officielle.
+33|1. Argent et confiance
+34|1. La fausse page (hameçonnage)
+35|10 millions de chèques numériques en Iran
+36|10 millions de chèques numériques en Iran
+37|10 ans :
+38|100 millions
+39|114 millions
+40|12 minutes
+41|14 millions
+42|Or 18 carats
+43|Or 18 carats / g
+44|L'or 18 carats au gramme et la pièce Emami, en tomans.
+45|Or 18 carats, gramme
+46|Or 18 carats, gramme, dernier
+47|18 carats, gramme
+48|19 millions
+49|2 098 943 554 216,15 TMN (environ 10 %) ont été brûlés par la fonction de destruction du contrat lui-même en
+50|2 100 000 000 000 TMN (10 %) ont été envoyés à l'adresse morte publique
+51|2. Blockchain et Bitcoin
+52|2. Vérifiez la date.
+53|2. Le faux assistant
+54|20 avril 2024
+55|20 ans :
+56|20 % pour l'épargne :
+57|21 banques mondiales engagent environ 270 millions de dollars dans le projet Faro : l'histoire, le marché de 295 milliards, la fintech, la blockchain et ce que cela signifie pour l'Iran.
+58|21 leçons bilingues courtes, pas à pas : de la monnaie et de l'inflation aux banques, à la blockchain et à l'IA.
+59|Variation 24 h
+60|Volume 24 h
+61|29 oct. 2026 :
+62|3. Listez les réserves.
+63|3. La signature à l'aveugle
+64|3. Utiliser la crypto en sécurité
+65|30 ans, deux courbes : le carbone fléchit, le solaire et l'éolien s'envolent
+66|30 leçons courtes, pas à pas : de la monnaie et de l'inflation aux banques, à la blockchain et à l'IA.
+67|30 % pour les envies :
+68|36 millions
+69|Imprimantes 3D +86 %, batteries +30 %, robots +26 %, alors que les ventes au détail n'ont progressé que de 0,4 % : ce que cela signifie pour le monde et pour l'Iran.
+70|4. Identifiez le type de rapport.
+71|4. Marchés et épargne
+72|4. L'ami patient
+73|40 millions
+74|40 % des enfants britanniques se tournent vers l'IA pour des conseils d'argent : ce qu'ils demandent, la justesse des réponses et la place de l'Iran et de ses voisins.
+75|5 minutes
+76|5 questions
+77|5. Trouvez les conditions de remboursement.
+78|5. L'avenir de l'argent
+79|5. Le rendement garanti
+80|50 % pour les besoins :
+81|50, 25, 12,5, 6,25, 3,125 : le calendrier derrière les 21 millions.
+82|50/30/20 est une règle empirique, pas une norme officielle. Tout le reste de cette leçon est un conseil général, pas un conseil financier personnel.
+83|50/30/20 est une règle empirique : besoins, envies, épargne. Adaptez les chiffres à votre vie.
+84|Règle 50/30/20
+85|Attaque des 51 %
+86|58 millions
+87|6 minutes
+88|6 questions
+89|6. Écrivez une phrase.
+90|65 % des 18–29 ans s'informent d'abord en ligne, 2,5 % lisent souvent la presse papier, et l'économie est la rubrique la plus lue.
+91|7 minutes
+92|71 millions
+93|78 millions
+94|8 112 espèces végétales, un siècle de changement, l'économie des arbres et des plantes, l'Iran à côté de ses voisins et 21 entreprises.
+95|83 millions
+96|86 millions
+97|9,5 millions
+98|95 millions
+99|: 12 ou 24 mots ordinaires. Qui détient ces mots contrôle l'argent. Il n'y a pas de bouton « mot de passe oublié » ni de guichet à appeler.
+100|: les banques se paient réellement entre elles, généralement via des comptes à la banque centrale, et le compte du commerçant est crédité. Cela se fait souvent le jour ouvré suivant, parfois plus tard.
+101|: déterminer qui doit quoi à qui.
+102|@nomutilisateur
+103|Une fraude de 129 millions de dollars qui aurait utilisé des voix et des visages clonés, et trois règles pour vous protéger.
+104|Un réacteur de polymérisation de 40 mètres construit à Chiraz pour un complexe pétrochimique à Asalouyeh, et les entreprises derrière lui.
+105|Un réacteur de 500 tonnes construit à Chiraz
+106|Un graphique de John Authers dans Bloomberg Opinion montre les actions mondiales (indice FTSE All-World) monter pendant deux ans, interrompues par quelques chutes brutales, chacune liée à un grand choc politique ou économique. Le schéma est la leçon : les prix bougent le plus quand la nouvelle diffère de ce qu'on attendait, et la peur se propage plus vite que le calme.
+107|Une CBDC est un outil. La même technologie peut rendre les paiements moins chers et plus rapides, ou donner à celui qui la contrôle bien plus de visibilité et de pouvoir sur l'argent que les espèces n'en ont jamais donné. Ce que l'on obtient se décide dans la conception et dans la loi.

@@ -1,0 +1,72 @@
+1422|Comment calcule-t-on les intérêts bancaires ? | Ditoman Learn
+1423|Combien d'argent faut-il toujours avoir sous la main ?
+1424|Combien d'argent faut-il toujours avoir sous la main ? Image de la leçon Ditoman
+1425|Combien d'argent faut-il toujours avoir sous la main ? | Ditoman Learn
+1426|Comment ne pas perdre votre argent numérique
+1427|Comment ne pas perdre votre argent numérique, image de la leçon Ditoman
+1428|Comment ne pas perdre votre argent numérique | Ditoman Learn
+1429|Comment l'IA va-t-elle changer l'avenir de notre argent ?
+1430|Comment l'IA va-t-elle changer l'avenir de notre argent ? Image de la leçon Ditoman
+1431|Comment l'IA va-t-elle changer l'avenir de notre argent ? | Ditoman Learn
+1432|Comment fonctionne une transaction crypto
+1433|Quelle taille de filet de sécurité, où le garder, comment commencer.
+1434|L'ampleur du problème
+1435|La taille de ce marché
+1436|Comment les grandes nouvelles font bouger le bitcoin
+1437|Comment les grandes nouvelles font bouger le bitcoin, image de la leçon Ditoman
+1438|Quelle taille doit-il avoir ?
+1439|Comment la blockchain déplace la confiance des institutions et des plateformes vers des systèmes transparents vérifiables par tous.
+1440|Comment fonctionnent les blockchains, comment vérifier un token avant d'y toucher et comment se protéger des arnaques.
+1441|Comment la valeur peut-elle circuler sans gardiens centralisés ?
+1442|Comment prouver qu'un transfert est arrivé ?
+1443|Est-il courant d'en avoir un ?
+1444|Comment fonctionnent les chèques numériques, la feuille de route de la banque centrale vers 80 % d'électronique, les leçons de Hong Kong, Singapour, l'Inde et le Royaume-Uni, et comment les utiliser en sécurité.
+1445|Comment la plupart des gens perdent-ils leur crypto ?
+1446|En quoi un paiement confirmé sur blockchain diffère-t-il d'un paiement par carte ?
+1447|Comment fonctionnent les marchés de l'électricité et ce que cela change pour votre facture.
+1448|Où en est-on ?
+1449|Comment on fabrique la poudre d'or, les machines et leurs prix, l'économie de la bijouterie en Iran et l'idée d'un or redessinable.
+1450|Combien de bitcoins la première ère (50 par bloc, 210 000 blocs) a-t-elle créés ?
+1451|Combien de blocs entre deux halvings ?
+1452|Combien d'ETH faut-il pour faire tourner seul un validateur ?
+1453|L'ampleur du changement énergétique
+1454|La part de chacun, si part il y a, dépend de vos revenus, de vos besoins et des règles de votre pays. C'est une décision personnelle que cette leçon ne peut pas prendre à votre place.
+1455|Comment ne pas perdre votre argent numérique
+1456|À quelle fréquence la difficulté du bitcoin s'ajuste-t-elle ?
+1457|Comparaison avec la crypto
+1458|Comment vérifier n'importe quel token
+1459|Comment vérifier n'importe quel token avant d'y toucher
+1460|Comment ajouter TMN à votre portefeuille
+1461|Comment vérifier vous-même un verrouillage
+1462|Comment vérifier n'importe quel token
+1463|Comment vérifier n'importe quel token avant d'y toucher
+1464|Comment vérifier n'importe quel token avant d'y toucher, image de la leçon Ditoman
+1465|Comment se protéger
+1466|Comment lire les données de marché de TMN
+1467|Comment commencer petit
+1468|Comment naissent les tokens
+1469|Comment l'IA va-t-elle changer l'avenir de l'argent ?
+1470|FMI, Back to Basics : l'inflation
+1471|FMI, Finance & Développement : Back to Basics, taux de change, régimes flottants et fixes
+1472|Si 1 euro vaut 1,10 dollar, la chemise de 50 euros coûte 50 × 1,10 = 55 dollars. Si le taux passe à 1,20 dollar par euro, la même chemise coûte 50 × 1,20 = 60 dollars. La chemise n'a pas changé. La monnaie, si.
+1473|Si la banque A d'un pays veut payer la banque B d'un autre, les deux ont besoin d'un endroit où chacune a un compte. En général, c'est une grande banque internationale, appelée
+1474|Si le bitcoin est indépendant, pourquoi baisse-t-il avec les actions ?
+1475|Si la fonction owner d'un contrat renvoie une adresse composée uniquement de zéros, qu'est-ce que cela signifie ?
+1476|Si l'équipe d'un projet détient le reçu, elle peut vider le pool du jour au lendemain. Les détenteurs se retrouvent avec des tokens invendables. C'est ce qu'on appelle un rug pull, l'une des façons les plus courantes de perdre de l'argent sur de petits tokens.
+1477|Si un destinataire dit que rien n'est arrivé, l'explorateur tranche. S'il indique un succès vers la bonne adresse sur le bon réseau, les coins sont bien là.
+1478|Si quelques portefeuilles détiennent presque tout, une seule décision d'une seule personne peut faire bouger tout le marché. La concentration ne prouve pas une mauvaise intention, et beaucoup de jeunes projets commencent ainsi. Mais c'est toujours un risque, et mieux vaut le savoir avant d'agir qu'après.
+1479|Si un validateur se comporte de façon malhonnête, tout ou partie de son dépôt peut être détruit. Cette pénalité s'appelle le slashing. Selon ethereum.org, la pénalité initiale commence à 1/4096 du solde effectif, plafonnée à 0,5 ETH, puis le validateur est exclu.
+1480|Si un assistant peut dépenser, donnez-lui une petite limite et vérifiez ce qu'il a fait.
+1481|Si les applications ont remplacé les agences, qu'est-ce qui remplacera le geste sur l'écran ? La leçon 21 examine l'intelligence artificielle dans l'argent : ce qui fonctionne déjà et où sont les nouveaux risques.
+1482|Si les détenteurs doutent de la réserve, ou si le marché est peu profond, le prix peut passer sous un dollar. Ceux qui ont besoin de liquidités les premiers obtiennent souvent le pire prix, car ils vendent dans la panique. La vraie question n'est donc pas seulement ce que le token prétend valoir, mais qui peut l'encaisser, et à quel prix.
+1483|Si cela ne colle pas
+1484|Si c'est déjà arrivé
+1485|S'il renvoie une adresse composée uniquement de zéros, la propriété a été abandonnée. Ces pouvoirs ont disparu définitivement et personne ne peut les récupérer, pas même l'équipe d'origine.
+1486|Si les besoins dépassent 50 %, n'abandonnez pas. Gardez l'idée et changez les chiffres : peut-être 60/25/15 pour l'instant. L'important est que les trois piles existent et que l'épargne soit une pile, pas ce qui reste.
+1487|Si quelqu'un d'autre voit la phrase,
+1488|Si quelqu'un…
+1489|En cas de problème, sécurisez ce qui reste, gardez les preuves et ignorez ceux qui vendent de la récupération.
+1490|Si la réponse est non, le paiement échelonné décide à votre place.
+1491|Si l'établissement fait faillite
+1492|Si l'émetteur ne rembourse que des clients agréés, que peut faire en général un détenteur ordinaire ?
+1493|Si la fonction owner renvoie une adresse composée uniquement de zéros, qu'est-ce que cela signifie ?

@@ -1,0 +1,112 @@
+3028|¿Cuál es el lugar más seguro para una frase de recuperación?
+3029|De dónde viene
+3030|Dónde está
+3031|Situación actual
+3032|Donde ninguna entidad controla la red.
+3033|Dónde se esconde el coste
+3034|Dónde empezó la idea
+3035|Adónde va el mes, y un reparto sencillo 50/30/20.
+3036|Hacia dónde puede ir esto
+3037|Dónde guardarlo
+3038|Donde las transacciones son verificables.
+3039|Que una CBDC sea buena o mala depende casi por completo de su diseño y de la ley que la rodea. Estas son las preguntas que importan, en cualquier país:
+3040|¿Qué ámbitos puede afectar la blockchain?
+3041|¿Qué banco emitió tu tarjeta y tiene tu cuenta?
+3042|Qué organismo concede qué licencia y por dónde empezar, sector por sector.
+3043|¿Qué máquina cotidiana es la metáfora clásica?
+3044|¿Qué hábito sugiere la CFPB para crear ahorro?
+3045|¿En qué instituciones suele confiar la gente hoy?
+3046|¿Cuál es una razón real para esperar que un token gane valor?
+3047|¿Cuál se describe como el banco central más antiguo del mundo?
+3048|¿Cuál es la pregunta correcta antes de confiar en una stablecoin?
+3049|¿Cuál es la forma más segura de abrir la web de tu exchange o billetera?
+3050|¿En qué tipo de respaldo se apoyaba UST, que falló en mayo de 2022?
+3051|¿Cuál de los tres ha sufrido las mayores caídas de precio?
+3052|¿Cuáles de estas son características clave de la blockchain?
+3053|¿Cuál de estas cosas se puede descubrir leyendo el contrato de un token?
+3054|¿Cuál de estas NO es una función típica de un banco central?
+3055|¿Cuál de estas es una razón real para esperar que un token gane valor?
+3056|¿Cuál de estas es una de las cuatro funciones de un banco?
+3057|¿Cuál de estas debes comprobar en un registro de bloqueo?
+3058|¿Cuál es una moneda?
+3059|¿Qué parte de un pago internacional no elimina una stablecoin?
+3060|¿Qué compra encaja mejor con un préstamo?
+3061|¿Qué pregunta importa más al valorar una CBDC?
+3062|¿Qué afirmación sobre un bloqueo de liquidez es cierta?
+3063|¿Qué afirmación es cierta para los tres activos?
+3064|Whitepaper
+3065|Whitepaper: rumbo final
+3066|¿Quién es Satoshi Nakamoto?, imagen principal de la lección de Ditoman
+3067|¿Quién es Satoshi Nakamoto?
+3068|¿Quién será la próxima Nvidia? Memoria, redes y chips a medida
+3069|¿De quién es el carbono?
+3070|¿Quién gestiona una blockchain?
+3071|¿Quién gestiona una blockchain? Imagen de la lección de Ditoman
+3072|¿Quién gestiona una blockchain? | Ditoman Learn
+3073|Quién aprueba una transferencia
+3074|¿Quién puede mover las monedas de una billetera personal?
+3075|¿Quién puede reembolsar, cuál es la cantidad mínima, qué comisiones se aplican y cuánto tarda?
+3076|Quién hace qué
+3077|Quién corrige un error
+3078|¿Quién tiene la oferta?
+3079|¿Quién es Satoshi Nakamoto?
+3080|Quién compite, por qué lo cuántico se equipara a la IA y la energía nuclear, y qué significa para el cifrado y Bitcoin.
+3081|Quién será la próxima Nvidia
+3082|¿Quién emite una CBDC?
+3083|¿Quién emite una moneda digital de banco central (CBDC)?
+3084|¿De quién es el carbono? Los mayores exportadores de CO2
+3085|¿Quién paga todo esto?
+3086|Quién propone los bloques
+3087|¿Quién gestiona una blockchain?
+3088|Quién fija el precio
+3089|Quien añade dinero al pool recibe tokens LP (tokens de proveedor de liquidez). Piensa en ellos como un recibo. Quien tenga el recibo puede devolverlo al pool en cualquier momento y retirar su parte de BNB y tokens.
+3090|Por qué se creó Bitcoin
+3091|Por qué se creó Bitcoin
+3092|Por qué importa la blockchain
+3093|Por qué importa la blockchain, imagen de la lección de Ditoman
+3094|¿Por qué se desploman los precios de repente?
+3095|¿Por qué se desploman los precios de repente? Noticias, apalancamiento y liquidaciones | Ditoman Learn
+3096|¿Por qué pierde el dinero poder adquisitivo?
+3097|¿Por qué pierde el dinero poder adquisitivo? Imagen de la lección de Ditoman
+3098|¿Por qué pierde el dinero poder adquisitivo? | Ditoman Learn
+3099|¿Por qué enviar dinero al extranjero sigue siendo lento y caro?
+3100|¿Por qué enviar dinero al extranjero sigue siendo lento y caro? Imagen de la lección de Ditoman
+3101|¿Por qué enviar dinero al extranjero sigue siendo lento y caro? | Ditoman Learn
+3102|Por qué United prohibió a los agentes de IA reservar vuelos
+3103|Por qué United prohibió a los agentes de IA reservar vuelos
+3104|Por qué dejamos de quedar
+3105|Por qué ayuda un estándar
+3106|¿Por qué son importantes las reglas transparentes?
+3107|Por qué importa la blockchain
+3108|¿Por qué pueden moverse rápido los precios cripto ante grandes noticias, incluso en fin de semana?
+3109|¿Por qué unos tipos de interés más altos pueden presionar a activos de riesgo como Bitcoin?
+3110|Por qué existen las monedas
+3111|¿Por qué comparar ofertas con la misma base de capitalización?
+3112|Por qué las cripto cayeron con las tecnológicas y el oro: la Fed, las acciones de IA, las salidas de ETF y la geopolítica, con escenarios a una semana, cuatro semanas y seis meses.
+3113|Por qué las cripto reaccionan primero y con más fuerza
+3114|¿Por qué decidir de antemano qué demostraría que te equivocas?
+3115|¿Por qué siguió Bitcoin tras la desaparición de Satoshi?
+3116|¿Por qué siguió funcionando Bitcoin después de que Satoshi se retirara?
+3117|¿Por qué creo que esto valdrá más en el futuro?
+3118|¿Por qué se desploman los precios de repente?
+3119|¿Por qué se desploman los precios de repente? Imagen de la lección de Ditoman
+3120|¿Por qué crea confianza la blockchain?
+3121|¿Por qué pierde el dinero poder adquisitivo?
+3122|¿Por qué importa la concentración de la oferta?
+3123|Por qué importan las elecciones
+3124|¿Por qué sigue siendo importante la identidad de Satoshi?
+3125|¿Por qué un activo cuyo precio cae bruscamente encaja mal en un fondo de emergencia?
+3126|¿Por qué sigue siendo difícil enviar dinero al extranjero?
+3127|¿Por qué la tasa anual real de ese préstamo supera el 14%?
+3128|¿Por qué se trata la urgencia como una señal de alarma?
+3129|Por qué parece gratis
+3130|Por qué es «inteligente»
+3131|Por qué es lento
+3132|Por qué importa a la gente corriente
+3133|Por qué el dinero pierde poder adquisitivo
+3134|¿Por qué sin política?
+3135|Por qué los pagos a veces fallan o se devuelven
+3136|Por qué la gente reparte sus ahorros
+3137|Por qué se mueven los precios y en qué se diferencian los activos.
+3138|Por qué los productores pagan por vender electricidad, las cifras de Alemania y Francia, y por qué un precio mayorista negativo no es una factura negativa.
+3139|Por qué los productores a veces pagan por vender electricidad, y por qué tu factura no se vuelve negativa.

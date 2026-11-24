@@ -1,0 +1,78 @@
+193|Uma taxa anunciada como 5% ao ano, capitalizada mensalmente, não dá exatamente 5% no ano. Como os juros de cada mês rendem juros, o resultado anual efetivo é cerca de 5,12%.
+194|Uma resposta real aponta para algo concreto: mais pessoas a usá-lo, um problema que resolve, uma oferta que não pode crescer, uma rede que fica mais forte à medida que cresce.
+195|Um exemplo real: 5 de novembro de 2026
+196|Um recibo do dinheiro adicionado a um pool de liquidez
+197|Um familiar liga por vídeo a pedir dinheiro com urgência. Qual é o passo mais seguro?
+198|Uma reserva pode ser real e mesmo assim pouco líquida, ou estar numa forma que não se vende depressa. Até um token bem respaldado pode vacilar quando o medo corre mais depressa do que o dinheiro.
+199|Um relatório de reservas e uma auditoria completa são ferramentas diferentes. Leia a diferença antes de ler a manchete.
+200|Um relatório de reservas não é uma auditoria
+201|Um segundo efeito pesa mais. Cada plano parece inofensivo sozinho, por isso acumulam-se. Um estudo do regulador financeiro do consumidor dos EUA concluiu que 63 por cento de quem usa «pagar depois» tinha mais de um empréstimo desses ao mesmo tempo durante o ano, e cerca de um terço pediu a mais de uma financeira. Cada financeira só vê o seu. Só você vê o total.
+202|Uma ferramenta de testes de segurança usada em ataques reais a bancos sul-coreanos: o que o FBI, a CrowdStrike e a Check Point confirmaram, o que ainda não está provado e o que fazer.
+203|Uma conta separada ajuda porque mantém o dinheiro fora da vista num dia normal.
+204|Uma participação na empresa do token
+205|Uma camisa numa loja em Lisboa custa 50 euros. Um viajante dos Estados Unidos pergunta: quanto é em dólares? A resposta não está escrita na camisa. Depende de um número, a taxa de câmbio.
+206|Uma versão visual curta desta lição está no Instagram. Esta página é a versão completa de aprendizagem.
+207|Falta de papel-moeda
+208|Um sinal de que o dinheiro podia tornar-se nativo da internet.
+209|Uma introdução simples à blockchain como nova forma de guardar, verificar e proteger informação.
+210|Um único banco gere a rede
+211|Um site oferece um token grátis se ligar a carteira e assinar. Qual é o principal risco?
+212|Uma pequena reserva para uma surpresa típica
+213|Uma pequena transferência de teste é o seguro mais barato que existe.
+214|Um contrato inteligente
+215|Um contrato inteligente é um programa guardado numa blockchain: código mais dados num endereço.
+216|Uma stablecoin é um crédito sobre o emissor, não uma garantia de um governo. A sua segurança depende da reserva, das regras de resgate e da conduta do emissor.
+217|Uma stablecoin é um token digital criado para manter o valor perto de um dólar americano. Essa ligação ao dólar chama-se paridade (peg). Pense num cartão-presente que deve valer sempre um dólar: o cartão em si é só plástico, e o seu valor vem inteiramente da promessa por trás.
+218|Uma stablecoin é uma promessa. O seu valor depende do que a respalda e de se consegue de facto resgatá-la.
+219|Uma stablecoin só vale um dólar se, na prática, a puder converter em dólares. Normalmente o emissor só resgata tokens a clientes aprovados, com condições e montantes mínimos. A maioria das pessoas só pode vender no mercado, a outro comprador, ao preço que o mercado oferecer.
+220|Primeiro vem uma comunidade estruturada no Telegram, antes de qualquer convite ou promoção.
+221|Um mapa estruturado do que se fabrica, extrai, transporta e vê no Irão: seis ramos, os seus sub-ramos oficiais, as empresas líderes e uma fonte para cada número.
+222|Um sistema em que as regras são visíveis.
+223|Um imposto sobre cripto
+224|Um token pode passar em todas estas verificações e mesmo assim ser uma má decisão para si.
+225|Uma ferramenta de trabalho, um curso que aumenta o rendimento ou uma casa podem passar neste teste. Umas férias, uma refeição num restaurante ou um telemóvel de que não precisava normalmente não: o prazer acaba e as prestações continuam.
+226|Um desconto nas comissões de negociação
+227|Um contrato tipo máquina de venda
+228|Um El Niño muito forte por cima do aquecimento de longo prazo pode fazer de 2027 um ano recorde. O que significa para os preços dos alimentos, a eletricidade, a água e o Irão.
+229|Uma gota de água a refletir uma refinaria de gás ao pôr do sol na costa do Golfo Pérsico
+230|Um trabalhador no estrangeiro envia 200 dólares à família. Um estudante precisa de pagar uma propina noutro país. Uma pequena empresa paga a um fornecedor no estrangeiro. Os três têm a mesma surpresa: a transferência demora dias e uma parte visível do dinheiro desaparece pelo caminho.
+231|Um mundo em que a confiança dependia demasiado de instituições, controlo e autorização.
+232|A. 2% ao ano
+233|A. 21 milhões
+234|A. 23 de dezembro de 1913
+235|A. 29 de outubro de 2026
+236|=
+237|=
+238|A. 9,5 milhões
+239|A. Um banco pode revertê-la
+240|A. Um banco que imprime moeda estrangeira
+241|A. Um banco sem balcões
+242|A. Uma garantia de depósitos, como num banco
+243|A. Um desconto
+244|A. Um hacker quebra a blockchain
+245|A. Uma taxa anunciada sozinha esconde o resultado anual
+246|A. Um link numa mensagem
+247|A. Um passo normal de segurança
+248|A. Uma foto na galeria do telemóvel
+249|A. Uma empresa privada
+250|A. Um programa que corre numa blockchain
+251|A. Um esquema em pirâmide
+252|A. Uma frase de recuperação ou um código de uso único
+253|A. Uma refeição num restaurante
+254|A. Uma captura de ecrã da carteira
+255|A. Uma participação na empresa do token
+256|A. Um contrato inteligente
+257|A. Um imposto sobre cripto
+258|A. Uma máquina de venda automática
+259|A. Cerca de 11%
+260|A. Cerca de 2 anos
+261|A. Cerca de 4,11
+262|A. Cerca de 9,6 biliões de dólares
+263|A. Mais ou menos a cada 10 minutos
+264|A. Transferências automáticas recorrentes
+265|A. Automático: as regras correm como foram escritas
+266|A. BEP-20 na BNB Smart Chain
+267|A. Bancos
+268|A. Porque as boas oportunidades são sempre lentas
+269|A. Porque negoceia 24 horas por dia, e a alavancagem pode forçar vendas
+270|A. Porque ninguém pode ver os dados

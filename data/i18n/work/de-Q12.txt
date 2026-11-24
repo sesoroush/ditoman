@@ -1,0 +1,78 @@
+1139|Legt das CFPB eine feste Größe für den Notgroschen fest?
+1140|Behauptet diese Lektion, dass das Halving Preisanstiege verursacht?
+1141|Geschäfte im Iran
+1142|Dollar (NIMA)
+1143|Dollar (frei)
+1144|Dollar, Gold und jeder Tagesbericht
+1145|Dollar, Gold, Münzen und Weltmärkte
+1146|Dollar (bar)
+1147|Dollar und Goldmünzen haben fast überall tiefe Märkte, aber Kauf- und Verkaufspreis unterscheiden sich. Diese Lücke, die
+1148|=
+1149|=
+1150|Zweistellige Inflation in 46 von 50 Jahren: warum Spätstarter weiter hinten stehen, warum das nicht ihre Schuld ist und was noch in unserer Hand liegt.
+1151|Rückgang vom Hoch
+1152|=
+1153|EU-Verordnung 2015/751 über Interbankenentgelte für kartengebundene Zahlungsvorgänge
+1154|Jede Bank führt ihre Prüfungen durch
+1155|Jede Ära hat 210.000 Blöcke, also ist die in einer Ära erzeugte Menge 210.000 mal die Belohnung dieser Ära.
+1156|Jede Zeile ist eine andere Art von Risiko. Beachten Sie, dass keine Spalte leer ist.
+1157|Jede Testfrage stammt aus einer dieser Lektionen. Jede Lektion dauert etwa fünf
+1158|Jede Testfrage stammt aus einer dieser Lektionen. Jede Lektion dauert etwa fünf Minuten.
+1159|Jede Wallet kann die Belohnung einmal erhalten.
+1160|Essen gehen, Unterhaltung, Reisen, Abos
+1161|Wirtschaftskalender
+1162|Ökonomen streiten über Details, aber drei Ursachen tauchen immer wieder auf.
+1163|Wirtschaft
+1164|Wirtschaft und Leben
+1165|Ökonomie hieß einst, einen Haushalt zu führen: wie Familien die Wirtschaft wirklich erleben, das iranische Haushaltsbudget in Zahlen und die Fähigkeiten, mit denen sie zurechtkommen.
+1166|Wirtschaft, KI und Handel, täglich um 16:00
+1167|Effektive Jahresrendite
+1168|Wahlen entscheiden, wer die Regeln schreibt und beschließt. In den USA verabschiedet der Kongress die Gesetze zu Steuern, Ausgaben und der Regulierung von Finanzprodukten, einschließlich Krypto.
+1169|Wahlen, Kongress und Regulierung
+1170|Strom und Ausrüstung
+1171|Emami-Münze
+1172|Emami-Münze (täglich)
+1173|Notgroschen
+1174|Notgroschen, Ziele, Sondertilgungen
+1175|Energie
+1176|Energie und Wasser
+1177|Energiewirtschaft
+1178|Energietechnik
+1179|Energieverbrauch
+1180|Englisch
+1181|Englische Lektion
+1182|Geben Sie Ihre BNB-Smart-Chain-Wallet-Adresse ein. Ein persönlicher Code wird erstellt. Kopieren Sie die fertige Nachricht und senden Sie sie an Ditoman.
+1183|Eingeben ·
+1184|Ära
+1185|Ära von 210.000 Blöcken
+1186|Die Summen je Ära und die Zahlen zum nächsten Halving sind unsere eigene Rechnung (210.000 × Belohnung; Block 1.050.000 mit Belohnung 1,5625), gerundet wie angegeben. Das Jahr 2028 ist eine Erwartung auf Basis von Zehn-Minuten-Blöcken, kein festes Datum. Keine Preisprognose.
+1187|Español (bald)
+1188|Español · bald
+1189|Grundausgaben
+1190|Ethereum und Smart Contracts: ein Programm, das von selbst läuft
+1191|Ethereum und Smart Contracts: ein Programm, das von selbst läuft, Ditoman-Lektionsbild
+1192|Ethereum und Smart Contracts: ein Programm, das von selbst läuft | Ditoman Learn
+1193|Ethereum und Smart Contracts
+1194|Ethereum ist zu Proof of Stake gewechselt. Statt Energie zu verbrauchen, setzen Validatoren Geld aufs Spiel. Um allein einen Validator zu betreiben, hinterlegt man 32 ETH, und für Menschen mit weniger gibt es Pools.
+1195|Ethereum hat dafür einen Standard namens ERC-20 für fungible Tokens, bei denen jede Einheit gegen eine andere austauschbar ist. Der Standard legt die gemeinsamen Funktionsnamen fest: Name, Symbol, Dezimalstellen, Gesamtangebot, Guthaben einer Adresse, Überweisen und Genehmigen sowie zwei Ereignisse, die Überweisungen und Genehmigungen festhalten.
+1196|Die Ethereum-Dokumentation sagt, dass ein bereitgestellter Vertrag von keinem Nutzer kontrolliert wird und standardmäßig nicht gelöscht werden kann. Das ist Stärke und Risiko zugleich. Eine Regel, die sich nicht ändern lässt, schafft Vertrauen. Ein Fehler, der sich nicht ändern lässt, bleibt.
+1197|Die Ethereum-Dokumentation sagt, ein Smart Contract ist einfach ein Programm, das auf der Ethereum-Blockchain läuft. Er ist eine Sammlung von Code, den Funktionen, und Daten, dem Zustand, die unter einer bestimmten Adresse auf der Chain liegt.
+1198|=
+1199|Euronews: Ausschuss des Europäischen Parlaments unterstützt den digitalen Euro (Juni 2026)
+1200|Euronews: Inflationszahlen des iranischen Statistikzentrums für den Monat bis 21. Juni 2026
+1201|Europa steht für die Hälfte der weltweiten Sozialausgaben, und seine Schulden steigen: wer zahlt, warum Europa keine einheitliche Geschichte ist und welche Chancen sich für die Region eröffnen.
+1202|Europas teurer Sozialstaat: Wer zahlt die Rechnung?
+1203|Europas teurer Sozialstaat: Wer zahlt die Rechnung?
+1204|Europäische Kommission: Einlagensicherungssysteme
+1205|Europäische Kommission: Zahlungsdienste (PSD2) und Open Banking
+1206|Auch ein kleiner Betrag zählt. Die Gewohnheit ist wichtiger als die Höhe, und die Höhe kann später wachsen.
+1207|Jede Aktion braucht Rechenleistung, und Nutzer zahlen eine Gebühr, auf Ethereum Gas genannt. Einfache Vorgänge kosten wenig, komplexe mehr.
+1208|Jede Kartenzahlung hat dieselben Beteiligten, egal in welchem Land.
+1209|Jeder Kanalbeitrag, im Web
+1210|Jede der folgenden Prüfungen ist kostenlos, öffentlich und dauert etwa eine Minute. Sie brauchen kein Fachwissen. Sie müssen nur wissen, wo Sie nachsehen.
+1211|Jeden Tag, festgehalten.
+1212|Jede neue Lektion erscheint zuerst auf Telegram
+1213|Jede Zahlung braucht staatliche Genehmigung
+1214|Ab und zu scheint der ganze Markt vor einer geplanten Ankündigung den Atem anzuhalten. Die zwei größten Beispiele sind Zinsentscheidungen und Wahlen.
+1215|Jede Transaktion erhält eine Kennung, den Hash. Fügen Sie ihn in einen Block-Explorer ein, etwa BscScan für die BNB Smart Chain, und Sie sehen Absender, Empfänger, Betrag, Gebühr und Status. Das Wort keiner Firma ist nötig.
+1216|Jede Transaktion zahlt eine Gebühr an die Betreiber des Netzwerks, oft Gas genannt. Die Gebühr bezahlt einen Platz im nächsten Block, hängt also davon ab, wie ausgelastet das Netzwerk ist, nicht davon, wie viel Sie senden. 10 Dollar oder 10.000 Dollar zu senden kann gleich viel kosten.

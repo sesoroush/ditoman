@@ -1,0 +1,74 @@
+1859|Nasdaq : décret présidentiel américain interdisant une CBDC (janvier 2025)
+1860|Valeur native d'Internet
+1861|Actif natif
+1862|Besoins
+1863|Besoins et envies
+1864|Les besoins dépassent 50 % de vos revenus. Que suggère la leçon ?
+1865|Nécessite l'accès à une plateforme
+1866|Prix de gros négatifs de l'électricité
+1867|Néobanque
+1868|Néobanques, fintech et open banking, expliqués.
+1869|Réseau
+1870|Réseau (blockchain)
+1871|Coin du réseau
+1872|Frais de réseau (gas)
+1873|Indépendance du réseau vs comportement du prix
+1874|Ne collez jamais de secrets :
+1875|Ne partagez jamais une phrase de récupération, ne signez jamais ce que vous ne pouvez pas lire, ne suivez jamais un lien vers votre argent.
+1876|Ne tapez jamais une adresse à la main. Copiez-collez-la ou scannez le QR code, puis comparez les quatre premiers et les quatre derniers caractères avec l'original. Un seul caractère faux, et c'est un autre portefeuille.
+1877|Les nouveaux assistants expliquent et organisent bien. Ils peuvent aussi se tromper avec aplomb.
+1878|Les nouvelles leçons sont d'abord annoncées sur le Telegram et l'Instagram de Ditoman.
+1879|Les nouvelles leçons sont d'abord annoncées sur les canaux de Ditoman.
+1880|Nouvelle émission
+1881|Nouveaux rapports et leçons chaque jour sur les canaux de Ditoman
+1882|Plus récent
+1883|Plus récent ›
+1884|Les plus récents
+1885|Dernière leçon
+1886|L'actualité déclenche la chute. Des carnets d'ordres minces et l'argent emprunté décident jusqu'où elle va.
+1887|L'actualité déclenche la chute. Cette leçon montre ce qui se passe ensuite au sein d'une plateforme : acheteurs qui reculent, slippage, effet de levier et liquidations en cascade, avec la vague de ventes du 5 novembre 2026 comme
+1888|L'actualité déclenche la chute. Cette leçon montre ce qui se passe ensuite au sein d'une plateforme : acheteurs qui reculent, slippage, effet de levier et liquidations en cascade, avec la vague de ventes du 5 novembre 2026 comme exemple.
+1889|Suivant
+1890|Leçon suivante
+1891|Ensuite : où se trouve vraiment votre argent
+1892|Aucune solution n'est la meilleure pour tous. Beaucoup en utilisent plusieurs, chacune pour un usage différent.
+1893|Aucune entreprise ne possède Bitcoin ou Ethereum, et pourtant leurs registres continuent de croître correctement. Cette leçon explique comment mineurs et validateurs gardent les comptes honnêtes, et pourquoi cela coûte
+1894|Aucune entreprise ne possède Bitcoin ou Ethereum, et pourtant leurs registres continuent de croître correctement. Cette leçon explique comment mineurs et validateurs gardent les comptes honnêtes, et pourquoi cela coûte quelque chose.
+1895|Pas de marketing, pas de promotion, pas de vente de tokens. Ces années ont servi à définir ce que Ditoman devait vraiment être, au fil de plusieurs versions du livre blanc.
+1896|Pas de réinitialisation ; seulement la phrase de récupération
+1897|Aucune autorité unique ne contrôle le réseau ni ne possède la participation.
+1898|Non. Ditoman est un projet éducatif. Rien ici n'est un conseil en investissement, et les leçons sont conçues pour vous aider à décider par vous-même.
+1899|Personne
+1900|Personne de légitime ne vous demandera jamais la phrase. Ni le support, ni une société de portefeuilles, ni Ditoman.
+1901|Personne ne vote dessus et personne ne peut l'arrêter sur le moment. Cela fait partie des règles que chaque nœud vérifie.
+1902|Nœud
+1903|Les nœuds vérifient les règles, même sans produire de blocs.
+1904|Nœuds : ceux qui vérifient
+1905|Aucun
+1906|Aucun (renoncé vers 0x0)
+1907|Aucun des trois ne rapporte d'intérêts en restant immobile. C'est une vraie différence avec un dépôt, une obligation ou une entreprise.
+1908|Aucune de ces questions ne vous dira quel token réussira. Rien ne le dit, et quiconque prétend le contraire vend quelque chose.
+1909|Pas « est-ce que ça ferait mal ». Votre vie peut-elle continuer normalement si ce montant tombe à zéro et ne revient jamais ?
+1910|Toutes les pertes n'impliquent pas un criminel. On perd aussi de l'argent en envoyant sur le mauvais réseau, en collant la mauvaise adresse ou en perdant le papier de sa phrase de récupération. Les leçons 13 et 16 couvrent ces cas, et l'habitude est la même : ralentir, vérifier deux fois, tester avec un petit montant.
+1911|Pas le nom. Pas le logo. Que fait ce projet, et que devrait-il accomplir pour que le token compte ?
+1912|Remarque
+1913|Rien n'a changé dans le taux. Seule la base à laquelle il s'applique a changé. Le CFPB ajoute qu'une capitalisation plus fréquente, un taux plus élevé ou des versements supplémentaires font croître l'épargne plus vite.
+1914|Rien ici n'est une recommandation d'acheter ou de vendre quoi que ce soit.
+1915|Remarquez les mots « peut » et « pourrait ». Ce sont des pressions, pas des règles.
+1916|Maintenant
+1917|Appliquez-le maintenant à nous
+1918|Saisissez maintenant l'adresse de votre portefeuille pour obtenir votre code de récompense.
+1919|Assemblons le tout. Les mauvaises nouvelles font reculer les acheteurs. Une petite baisse déclenche les premières liquidations. Ces ventes forcées frappent un carnet d'ordres mince, et le prix glisse davantage. Le prix plus bas déclenche le groupe suivant de liquidations, et ainsi de suite. Voilà pourquoi la crypto peut chuter en quelques minutes bien plus que l'actualité ne le justifierait, et pourquoi elle rebondit souvent une fois les ventes forcées terminées.
+1920|Salle de presse de Nubank : plus de 112 millions de clients (22 janvier 2026)
+1921|Officiel
+1922|Liens officiels
+1923|Taux officiel : SANA (bureaux de change bancaires) jusqu'en novembre 2018, NIMA (système des exportateurs) ensuite. Les trous dans la ligne officielle sont des périodes où la source n'a pas publié. Source : clôtures quotidiennes de TGJU.
+1924|Site officiel :
+1925|Officiel, le plus récent
+1926|Usage hors ligne :
+1927|Pétrole, gaz, électricité, renouvelables, eau
+1928|Plus ancien
+1929|Le 29 octobre 2026, tous les tokens de liquidité TMN/BNB détenus dans le portefeuille principal du projet ont été
+1930|Le 29 octobre 2026, nous avons verrouillé tous les tokens LP TMN/BNB du portefeuille principal du projet dans PinkLock sur BNB Smart Chain : d'abord 0,2277 LP puis, après avoir ajouté de la liquidité en BNB le même jour, un total de 0,3461 LP du pool PancakeSwap V2. La date de déverrouillage est le 29 octobre 2027. L'enregistrement est public :
+1931|Le 5 novembre 2026, quelle part approximative des quelque 1 milliard de dollars de liquidations crypto étaient des paris à la hausse ?
+1932|Le jeudi 5 novembre 2026, les valeurs technologiques ont chuté sur fond d'inquiétudes autour des dépenses en IA. Le Nasdaq 100 a perdu environ 5,5 % en une journée et le Nasdaq Composite 4,9 %. Le bitcoin est passé sous 76 000 dollars, touchant environ 75 500. Sur les mêmes 24 heures, les données de CoinGlass ont montré environ 1 milliard de dollars de positions crypto à effet de levier fermées de force, touchant plus de 201 000 traders. Environ 89 % de ce montant, soit près de 927 millions de dollars, étaient des paris à la hausse.

@@ -1,0 +1,60 @@
+3296|rendimento real
+3297|o apoio verdadeiro não inicia conversas privadas. Quem o contacta primeiro é um desconhecido, diga o que disser a foto de perfil.
+3298|frase de recuperação
+3299|diz que tem de agir já
+3300|liquidação
+3301|simples 1 500, composto cerca de 1 628,89.
+3302|simples 2 000, composto cerca de 2 653,30.
+3303|slippage
+3304|spread
+3305|decidem a oferta e a procura. Se mais pessoas quiserem comprar uma moeda do que vendê-la, o seu preço sobe. O FMI nota que um banco central pode ainda assim comprar ou vender divisas para suavizar oscilações bruscas.
+3306|oscila muito mais. De cerca de 69 000 dólares em novembro de 2021 caiu abaixo de 16 000 dólares um ano depois, uma queda de mais de 75 por cento, e mais tarde subiu a novos máximos acima de 126 000 dólares em outubro de 2025.
+3307|ensina as pessoas a procurar exatamente isto.
+3308|que as pode mover. Mais ninguém tem de aprovar uma transferência.
+3309|a comissão que vê quando envia.
+3310|o país liga a sua moeda a outra moeda ou a um cabaz. Alguns vão até ao fim: o Panamá usa o dólar americano, e Hong Kong tem um conselho monetário.
+3311|o valor foi cativado mas a resposta nunca chegou ao terminal. A cativação é libertada mais tarde, e é por isso que o dinheiro «volta» passado algum tempo.
+3312|o emissor respondeu que não, por causa do saldo, dos limites ou de uma verificação de fraude.
+3313|o emissor detém numerário ou títulos do Estado de curto prazo pelos tokens que emite. É o modelo mais comum entre as grandes stablecoins. A questão é sempre quão seguras são realmente essas reservas, e com que facilidade podem ser vendidas.
+3314|o dinheiro perdeu-se, embora continue visível na blockchain.
+3315|o prestador converte a uma taxa pior do que a de mercado e fica com a diferença. Muitas vezes é a parte maior, e não aparece em nenhum recibo.
+3316|que o destinatário indicou.
+3317|a mesma tecnologia produz vozes e rostos clonados. Em 2024, um funcionário da empresa de engenharia Arup em Hong Kong enviou cerca de 25 milhões de dólares após uma videochamada em que todos os outros participantes eram falsos. A lição 17 mostrou a rapidez com que crescem as burlas de usurpação de identidade.
+3318|o remetente e o destinatário têm de usar a mesma rede.
+3319|o banco ou empresa de pagamentos da loja, que fornece o terminal e recebe o dinheiro pela loja.
+3320|a loja.
+3321|o sistema no meio que liga todos os bancos entre si e define as regras.
+3322|o token é garantido por outros criptoativos bloqueados como colateral, normalmente de valor superior aos tokens emitidos. Se esses ativos caírem a pique, o sistema é posto à prova e precisa de uma margem de segurança para se manter intacto.
+3323|roubo
+3324|depois verifique mais uma vez os primeiros e últimos caracteres no ecrã de confirmação.
+3325|não há reserva real. O sistema tenta manter o preço com regras de oferta e um segundo token. Foi este modelo que falhou em maio de 2022, o caso de estudo abaixo.
+3326|normalmente não há volta atrás. A lição 16 explica isto passo a passo.
+3327|podem esvaziar a carteira de qualquer parte do mundo, e a transferência não pode ser revertida.
+3328|através da sua Prudential Regulation Authority supervisiona mais de 1 300 empresas, para que um banco em dificuldades não arraste os restantes.
+3329|para passar. Releia estas lições:
+3330|para o banco que emitiu o seu cartão.
+3331|para a rede.
+3332|para o terminal: o bip.
+3333|lição de verificação de tokens
+3334|toman
+3335|transformar os depósitos de curto prazo de muitas pessoas em empréstimos de longo prazo para casas e empresas.
+3336|até o destinatário confirmar.
+3337|espere que chegue e depois envie o resto.
+3338|quando a energia, as importações ou os salários ficam mais caros, os produtores passam o custo adiante.
+3339|quando todos esperam que os preços subam, os vendedores sobem os preços mais cedo e os compradores apressam-se a comprar, o que empurra os preços ainda mais para cima.
+3340|quando o endereço é novo ou o valor é grande.
+3341|quando a quantidade de dinheiro numa economia cresce mais depressa do que as coisas que há para comprar, os preços sobem.
+3342|quando o seu banco responde à pergunta da lição 14, um modelo compara o pagamento com milhões de outros numa fração de segundo. Uma compra num lugar invulgar a uma hora invulgar é bloqueada ou verificada.
+3343|quem pode ver os seus pagamentos, e com que regras?
+3344|você.
+3345|o seu banco, que lhe deu o cartão e tem a sua conta.
+3346|— Rendimento da Anchor de 18 a 20 por cento e a primeira descida para 98 cêntimos
+3347|— Regra da data de entrada em vigor (18 meses ou 120 dias após a regulamentação final)
+3348|— Respaldo integral em dólares e auditorias anuais para emissores acima de 50 mil milhões de dólares
+3349|— Como funcionava a paridade da UST e os primeiros dias do colapso
+3350|— Respaldo em ativos líquidos e divulgação mensal da composição das reservas
+3351|— Reserva restante da Luna Foundation Guard a 16 de maio de 2022
+3352|— Data de assinatura e o primeiro quadro federal para stablecoins de pagamento
+3353|— Visão geral do colapso da Terra e perdas de mercado
+3354|«A Bitcoin não foi apenas inovação. Foi uma resposta.»
+3355|‹ Mais antigo

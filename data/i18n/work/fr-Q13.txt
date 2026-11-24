@@ -1,0 +1,103 @@
+1217|Tout le monde en parle en ligne
+1218|Exemple : un prêt de 100 millions sur 12 mois
+1219|Exemples
+1220|Exemples de règles possibles : cet argent ne peut être dépensé qu'avant une certaine date. Seulement dans certains types de magasins. Seulement par cette personne, sans transfert. Seulement pour un usage précis, comme le transport ou l'alimentation.
+1221|Compte sur une plateforme (dépositaire)
+1222|Compte sur une plateforme
+1223|Taux de change
+1224|Marge sur le taux de change
+1225|Les plateformes ont fixé le prix
+1226|Existe, réservée au propriétaire, inaccessible
+1227|Anticipations et « déjà intégré au prix »
+1228|Anticipation et surprise
+1229|Les anticipations comptent plus que la décision
+1230|Anticipations :
+1231|Expliquez les intérêts composés comme des intérêts sur les intérêts.
+1232|Expliquez les intérêts composés sur une dette impayée.
+1233|Expliquez comment fonctionne un plan « payer plus tard » et qui le paie.
+1234|Expliquez comment se produit un rug pull.
+1235|Expliquez comment un token est créé.
+1236|Expliquez comment les liquidations s'alimentent les unes les autres en cascade.
+1237|Expliquez comment les gens font aujourd'hui confiance aux institutions et aux plateformes.
+1238|Expliquez simplement ce que fait un projet avant de l'acheter.
+1239|Expliquez simplement ce qu'est un taux d'intérêt.
+1240|Expliquez l'inflation avec l'exemple du panier de prix.
+1241|Expliquez la liquidité et l'écart.
+1242|Expliquez l'open banking et le rôle de votre autorisation.
+1243|Expliquez la règle 50/30/20 et adaptez-la à vos propres chiffres.
+1244|Expliquez la différence entre une application fintech et une banque.
+1245|Expliquez la différence entre autorisation et règlement.
+1246|Expliquez le compromis d'un ancrage strict.
+1247|Expliquez ce qu'est une attaque des 51 %.
+1248|Expliquez ce qu'est une CBDC et qui l'émet.
+1249|Expliquez ce qu'est un pool de liquidité et pourquoi un token en a besoin.
+1250|Expliquez ce qu'est un stablecoin et ce que signifie l'ancrage.
+1251|Expliquez ce qu'est un agent d'IA qui paie, et quelles trois choses doivent être claires.
+1252|Expliquez ce qu'est une adresse et pourquoi la partager est sans danger.
+1253|Expliquez à quoi sert un fonds d'urgence.
+1254|Expliquez ce que paie le gas.
+1255|Expliquez ce que paient les frais de réseau et dans quelle monnaie.
+1256|Expliquez quelle partie du trajet un stablecoin raccourcit et quelles parties restent.
+1257|Expliquez qui paie généralement les frais de carte et pourquoi ils varient selon les pays.
+1258|Expliquez pourquoi un solde bancaire est une créance et non de l'argent stocké.
+1259|Expliquez pourquoi une blockchain a besoin d'une méthode de consensus.
+1260|Expliquez pourquoi une surprise compte plus que la décision elle-même.
+1261|Expliquez pourquoi les banques deviennent moins visibles mais restent nécessaires.
+1262|Expliquez pourquoi les élections peuvent compter pour les marchés crypto.
+1263|Expliquez pourquoi les taux d'intérêt servent la stabilité des prix.
+1264|Expliquez pourquoi l'argent lui-même ne franchit pas de frontière.
+1265|Expliquez, avec le cas UST, pourquoi le remboursement décide si l'ancrage tient.
+1266|Expliquez pourquoi l'offre est plafonnée à 21 millions.
+1267|Expliquez pourquoi le prix du graphique peut différer du prix obtenu.
+1268|Expliquez pourquoi l'urgence est le fil conducteur.
+1269|Expliquer :
+1270|Explique, organise, planifie
+1271|Découvrir Ditoman
+1272|Découvrez comment des systèmes peuvent fonctionner sans contrôleur central.
+1273|FBI Internet Crime Complaint Center (IC3)
+1274|FDIC : assurance des dépôts (États-Unis)
+1275|Chutes de plus de moitié
+1276|Les décisions rapides sont toujours mauvaises
+1277|La peur de rater quelque chose
+1278|Février 2022
+1279|Federal Reserve History : le Federal Reserve Act signé le 23 décembre 1913
+1280|Réserve fédérale : bien-être économique des ménages américains en 2024, épargne et placements (2025)
+1281|Les niveaux et règles des frais changent. Les chiffres décrivent la structure générale, pas un tarif d'un commerce ou d'une banque.
+1282|Les frais varient beaucoup d'un réseau à l'autre
+1283|Frais en route :
+1284|Cinquante ans de construction en chiffres : près de six fois plus de logements, 52 000 unités industrielles, sixième producteur mondial de ciment.
+1285|Les chiffres du cas UST viennent des sources ci-dessus et peuvent être révisés par des recherches ultérieures. Les trois idées reçues et l'exercice de lecture sont pédagogiques, pas des conseils d'investissement.
+1286|Caractère définitif
+1287|Finance Magnates, distribution de yuans numériques à Shenzhen (janvier 2021)
+1288|Identifiez les trois parties du coût d'un virement international.
+1289|=
+1290|Fintech et crypto
+1291|Application fintech
+1292|Fintech est l'abréviation de technologie financière : des entreprises qui utilisent le logiciel pour mieux faire un métier financier. Une application de paiement, de crédit, d'investissement ou d'assurance est une fintech.
+1293|Fintech • Banque
+1294|Les fintechs prennent un métier et le font par logiciel, généralement avec une banque agréée derrière elles.
+1295|D'abord : épargner n'est pas spéculer
+1296|Cinq questions avant d'acheter
+1297|Cinq questions à se poser avant d'acheter
+1298|Cinq vérifications. Cinq minutes. Gratuites. La plupart des gens qui perdent de l'argent en crypto ne les ont jamais faites.
+1299|Cinq pièges courants et une habitude pour chacun.
+1300|Cinq vérifications gratuites accessibles à tous : vérification du contrat, répartition des détenteurs, propriété, restrictions cachées et liquidité.
+1301|Cinq schémas couvrent la plupart des cas : fausse page, faux assistant, signature à l'aveugle, ami patient, rendement garanti.
+1302|Cinq acteurs interviennent : porteur, commerçant, émetteur, acquéreur et réseau.
+1303|Cinq questions avant d'acheter
+1304|Cinq questions à se poser avant d'acheter
+1305|Cinq questions à se poser avant d'acheter, image de la leçon Ditoman
+1306|Cinq signaux d'alerte et une réponse pour chacun
+1307|Taux fixe (ancré)
+1308|Fixe (ancré) :
+1309|Offre fixe
+1310|Taux flottant
+1311|Les taux flottants suivent l'offre et la demande ; les taux ancrés sont fixés par décision politique.
+1312|Flottant :
+1313|Axe
+1314|Suivre Ditoman
+1315|Suivez-nous
+1316|Suivre sur Instagram
+1317|Pied de page
+1318|Pendant un siècle, ces quatre métiers formaient un seul bloc, dans un seul bâtiment. La technologie les sépare désormais, et différentes entreprises se disputent chaque morceau.
+1319|Longtemps, votre banque était la seule entreprise à voir les données de votre compte. L'open banking change cette règle : avec votre autorisation, une banque doit laisser une autre entreprise agréée lire vos données ou lancer un paiement pour vous, via une connexion sécurisée.

@@ -1,0 +1,64 @@
+2252|El interés simple, el compuesto y el diario suenan parecidos, pero a diez o veinte años dan resultados muy distintos. Esta lección muestra los tres con números pequeños que puedes comprobar a mano.
+2253|Interés simple, compuesto y diario con números que puedes comprobar.
+2254|Sistema quirúrgico robótico Sina
+2255|=
+2256|Sina Robotics and Medical Innovators
+2257|Robot quirúrgico Sina
+2258|Robot quirúrgico Sina (ilustración)
+2259|Dimensiona una posición según lo que puedas permitirte perder por completo.
+2260|Recorte del depósito (slashing)
+2261|Deslizamiento
+2262|Deslizamiento, apalancamiento y liquidación en cascada: qué pasa dentro de un exchange tras una mala noticia y cómo protegerte.
+2263|Pérdida lenta por inflación
+2264|Sitios web lentos
+2265|Las cuotas pequeñas esconden el total. Súmalo.
+2266|Pequeñas recompensas ligadas a un aprendizaje verificable. El primer piloto está abierto:
+2267|Contrato inteligente
+2268|Megafonía y avisos públicos inteligentes
+2269|=
+2270|Así que una stablecoin puede acortar el tramo central del recorrido. No elimina el primer ni el último paso.
+2271|Así que es justo preguntar: si ya no necesitamos el edificio, ¿seguimos necesitando el banco? Para responder hay que ver qué hace realmente un banco. No es una función. Son cuatro.
+2272|Así que ninguno es un escudo en el que apoyarse sin pensar. Son herramientas con sus propios riesgos, y las preguntas de la lección 06 siguen valiendo.
+2273|Así que las reglas detalladas aún se están escribiendo, y no son iguales en todas partes. La Unión Europea, Hong Kong y otros tienen sus propios marcos. Lee cada nueva norma con las tres preguntas en mente: quién la emite, qué la respalda y si el reembolso es real.
+2274|Por eso los hábitos importan más que en ningún otro rincón de las finanzas.
+2275|Así que el recibo de la tienda es una promesa de que el dinero llegará. Para el cliente parece instantáneo. Para la tienda no lo es.
+2276|Entonces, ¿quién decide qué transacciones entran a continuación? ¿Y por qué alguien haría trampa o no?
+2277|Entonces, ¿desaparecerán los bancos?
+2278|SoFi: el presupuesto 50/30/20, popularizado por Elizabeth Warren en All Your Worth (2005), y sus tres categorías
+2279|Algunas cuentas y préstamos calculan el interés por días. Con un interés simple diario del 5% anual, un día genera 1.000 × 0,05 ÷ 365, y 30 días generan unos 4,11.
+2280|Algunos neobancos tienen licencia propia. Otros son una marca construida sobre un banco tradicional. En Irán, los ejemplos conocidos pertenecen a este segundo grupo: Blubank funciona sobre Saman Bank, Bankino sobre Middle East Bank y Wepod sobre Pasargad Bank.
+2281|Algunos agregadores todavía muestran los 21 billones originales. El propio contrato indica 18,90 billones tras la quema del 13 de septiembre de 2026.
+2282|Algunos usos son inofensivos o incluso útiles: un pago que se libera automáticamente al llegar la mercancía, o una ayuda que llega a quien debe. La preocupación es quién escribe las reglas y si pueden aplicarse al dinero cotidiano sin tu consentimiento.
+2283|Alguien siempre paga el sistema, normalmente el comercio, y las reglas varían según el país.
+2284|Alguien simpático aparece en una red social o una web de citas. Siguen semanas de conversación agradable. Luego menciona una inversión que va de maravilla y te enseña cómo entrar. La plataforma muestra beneficios crecientes. Cuando intentas retirar, hay «impuestos» y «comisiones» que pagar antes. Los beneficios nunca fueron reales.
+2285|Alguien de «soporte» te pide tu frase de recuperación para arreglar un problema. ¿Qué es esto?
+2286|Alguien envía un pago y una petición
+2287|Alguien tiene que seguir guardando los depósitos, prestar a veinte años y responder ante un regulador cuando algo sale mal. Esas funciones son difíciles sin licencia ni capital, y por eso incluso las apps más modernas suelen apoyarse en un banco.
+2288|Tecnología de sonido
+2289|Código fuente
+2290|Fuente:
+2291|Fuente: cierres diarios de TGJU.
+2292|Fuentes
+2293|Informe especial
+2294|Especular
+2295|Dividir un precio en cuatro hace pequeño cada número, y la mente juzga el número pequeño. Cuarenta millones pesan. Diez millones parecen bien. El total es el mismo.
+2296|Detecta fraudes, puntúa préstamos
+2297|Diferencial
+2298|Stablecoin
+2299|Las stablecoins y TMN no son lo mismo
+2300|Las stablecoins pueden mover dinero más rápido y más barato que muchos canales tradicionales, y funcionan a todas horas. Donde la gente busca un depósito de valor más estable, dan acceso a dinero basado en el dólar, una de las razones de su rápido crecimiento.
+2301|Stablecoins explicadas: la paridad, los tres tipos de respaldo, informes de reservas frente a auditorías, el colapso de UST en 2022 y el reembolso, la prueba que más importa.
+2302|Las stablecoins parecen sencillas: un token, un dólar. Pero ese vínculo es una promesa, y una promesa vale lo que haya detrás. En esta lección verás qué hay detrás de las stablecoins, cómo se hundió una stablecoin famosa en mayo de 2022 y la prueba que más importa antes de confiar en cualquier token.
+2303|Las stablecoins parecen sencillas: un token, un dólar. Pero ese vínculo es una promesa, y una promesa vale lo que haya detrás. En esta lección verás qué hay detrás de las stablecoins, cómo se hundió una stablecoin famosa en mayo de 2022 y la prueba que más importa antes de confiar en cualquier…
+2304|Las stablecoins aceleran el tramo central. Entrar y salir sigue siendo donde están el coste y el riesgo.
+2305|Etapa
+2306|Estándar
+2307|Estándares como ERC-20 y BEP-20 permiten que las billeteras funcionen con muchos tokens.
+2308|Empieza un pequeño hábito automático.
+2309|Empieza por mirar, no por recortar
+2310|Empezar desde el principio
+2311|Empieza aquí
+2312|Empieza aquí: cuánto vale el dinero, dónde está y cómo se mueve.
+2313|Empezar a aprender
+2314|Empieza con una lección
+2315|Empieza con una cantidad pequeña y practica recibir y enviar antes de mover algo que importe.

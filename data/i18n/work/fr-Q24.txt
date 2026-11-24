@@ -1,0 +1,107 @@
+2145|Faites le point une fois par mois et changez une chose à la fois.
+2146|Récompense par bloc
+2147|Récompense par personne
+2148|Les récompenses sont envoyées par lots tous les quelques jours.
+2149|VTC à prix fixes ; lancé en février 2014
+2150|Capital à risque
+2151|Feuille de route
+2152|Routes, rail, ports, aéroports, logistique
+2153|Arnaque sentimentale à l'investissement
+2154|Eau de rose, distillats de plantes, sirops naturels et herbes séchées ; zone industrielle Amirkabir 1, Kashan
+2155|Combien d'intérêts simples rapportent environ 1 000 à 5 % par an en 30 jours ?
+2156|À quelle fréquence environ le réseau Bitcoin vise-t-il à produire un bloc ?
+2157|Rug pull
+2158|Règle de 72
+2159|Règle empirique
+2160|Règles
+2161|Des règles inscrites dans l'argent lui-même, comme une date d'expiration ou des limites sur l'endroit où il est dépensé
+2162|La Russie ouvre une crypto réglementée
+2163|La Russie, l'Arabie saoudite et l'Australie sont les plus grands exportateurs de CO2 de l'histoire ; l'Iran est cinquième. L'argent, les emplois, le droit et pourquoi les règles climatiques actuelles en tiennent à peine compte.
+2164|SWIFT transmet des instructions. Les banques correspondantes déplacent les soldes.
+2165|SWIFT transmet l'instruction. Il ne détient ni ne déplace l'argent. L'argent passe par les comptes de correspondants décrits plus haut. C'est aussi pourquoi être coupé de SWIFT pèse tant sur les banques d'un pays : sans les messages, la voie normale est fermée.
+2166|SWIFT est un réseau de messagerie sécurisé que plus de 11 000 institutions financières dans plus de 200 pays utilisent pour s'envoyer des instructions de paiement. Il a été fondé en 1973.
+2167|SWIFT, banques correspondantes, coûts cachés et stablecoins.
+2168|SWIFT : qui sommes-nous
+2169|Actifs sûrs et actifs risqués
+2170|Sécurité
+2171|La même question, de l'autre côté d'une frontière
+2172|=
+2173|Satoshi Nakamoto est le nom associé à la création de Bitcoin. En 2008, ce nom est apparu avec un document décrivant un nouveau type de monnaie numérique. Elle n'était contrôlée ni par une banque, ni par un gouvernement, ni par une entreprise.
+2174|Satoshi Nakamoto est le nom utilisé par la personne ou le groupe qui a présenté Bitcoin au monde. Mais l'importance réelle de Satoshi ne tient pas qu'au mystère de son identité. Elle tient à l'idée qu'un système peut continuer sans dépendre d'une personne centrale.
+2175|Satoshi compte parce que Bitcoin a été conçu pour dépasser l'autorité personnelle.
+2176|Satoshi le contrôle encore en secret
+2177|Épargnez l'argent ponctuel :
+2178|Conservez le hash de la transaction
+2179|Épargner
+2180|Épargne • Actifs
+2181|Épargner, investir, spéculer
+2182|Épargne
+2183|Taux d'épargne
+2184|Dire ce que fait SWIFT et ce qu'il ne fait pas.
+2185|Dire ce qu'est un budget et ce qu'il n'est pas.
+2186|Dire ce que ne fait pas une banque centrale.
+2187|Dire ce qu'est une banque centrale.
+2188|Dire ce qu'un assistant linguistique fait bien et où il peut échouer.
+2189|Dire ce qu'est une néobanque et ce qu'il faut vérifier avant d'en utiliser une.
+2190|Dire ce que fait un nœud.
+2191|Dire ce qu'une autorisation de token peut permettre.
+2192|Dire ce que la diversification fait et ne fait pas.
+2193|Dire ce qu'est le halving et à quelle fréquence il a lieu.
+2194|Dire où il peut être conservé en sécurité.
+2195|Dire pourquoi un contrat déployé est difficile à modifier.
+2196|Dire pourquoi un commerçant reçoit son argent plus tard que le client ne le pense.
+2197|Dire pourquoi une norme comme l'ERC-20 est utile.
+2198|Dire pourquoi ni le bitcoin ni un stablecoin ne sont une réponse sans risque à l'inflation.
+2199|Dire pourquoi l'expéditeur et le destinataire doivent utiliser le même réseau.
+2200|Dire pourquoi le vrai taux annuel est plus élevé que le pourcentage simple.
+2201|Échelle
+2202|Vérification par un second canal
+2203|Rubriques
+2204|Sécurité
+2205|Contrôle de sécurité
+2206|Rapport de sécurité (GoPlus)
+2207|Sécurité • Arnaques
+2208|Sécurité • Vérification des tokens
+2209|Voir les détenteurs de tokens LP sur BscScan
+2210|Voir toutes les entreprises
+2211|Voir toutes les leçons
+2212|Tout voir →
+2213|Voir la voie crypto en détail
+2214|Voir l'historique complet
+2215|Ressources d'apprentissage sélectionnées et espaces communautaires.
+2216|Le vendre
+2217|Semi-conducteurs
+2218|Envoyez d'abord un petit test
+2219|Envoyez un petit test,
+2220|Envoyer sur Bale
+2221|Envoyer sur Telegram
+2222|Envoyer l'adresse
+2223|Envoyez votre code et l'adresse de votre portefeuille
+2224|Envoyer des cryptos demande trois décisions : quelle adresse, quel réseau et quels frais. Une erreur et l'argent peut être perdu pour de bon. Cette leçon suit un transfert du bouton Envoyer jusqu'à la
+2225|Envoyer des cryptos demande trois décisions : quelle adresse, quel réseau et quels frais. Une erreur et l'argent peut être perdu pour de bon. Cette leçon suit un transfert du bouton Envoyer jusqu'à la confirmation finale.
+2226|Envoyer, vérifier et protéger, avant de déplacer de l'argent réel.
+2227|Distinguer une règle d'offre d'une prévision de prix.
+2228|Distinguer les exemples d'essais réels des affirmations exagérées.
+2229|Série
+2230|Fixer des limites et faire le point
+2231|Créée surtout pour prêter à l'État pour une guerre
+2232|Règlement
+2233|Plusieurs tokens sans lien utilisent le ticker TMN. Vérifiez toujours l'adresse complète du contrat.
+2234|Plusieurs tokens sans lien utilisent le ticker TMN. Voici le seul contrat officiel :
+2235|Shaparak : le réseau iranien de paiement électronique par carte
+2236|Part du salaire net
+2237|Fait vos achats et paie pour vous
+2238|Leçons courtes bilingues avec quiz
+2239|Leçons courtes par thème, d'environ cinq minutes chacune, dans les deux langues, chacune se terminant par un quiz.
+2240|Leçons courtes sur la crypto et l'argent
+2241|Leçons courtes et gratuites en persan et en anglais. Chacune dure environ cinq minutes et se termine par un quiz pour vérifier ce que vous avez retenu.
+2242|Dois-je acheter du TMN ?
+2243|Afficher toutes les histoires
+2244|Suse, Rey et Hamadan font partie de dix cités antiques restées habitées et ayant gardé leur nom, et elles relient l'Iran à la Syrie et au Liban.
+2245|Argent ($)
+2246|Simple
+2247|Des habitudes simples qui évitent la plupart des pertes
+2248|Intérêts simples
+2249|Les intérêts simples s'appliquent au montant initial ; les intérêts composés au montant plus les intérêts passés.
+2250|Pourcentage simple
+2251|Intérêts simples, composés et journaliers se ressemblent, mais sur dix ou vingt ans ils donnent des résultats très différents. Cette leçon présente les trois avec de petits chiffres que vous pouvez vérifier

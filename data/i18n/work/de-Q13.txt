@@ -1,0 +1,103 @@
+1217|Online reden alle darüber
+1218|Beispiel: ein Kredit über 100 Millionen auf 12 Monate
+1219|Beispiele
+1220|Beispiele möglicher Regeln: Dieses Geld darf nur bis zu einem bestimmten Datum ausgegeben werden. Nur in bestimmten Geschäften. Nur von dieser Person, ohne Weitergabe. Nur für einen bestimmten Zweck, etwa Verkehr oder Lebensmittel.
+1221|Börsenkonto (verwahrt)
+1222|Börsenkonto
+1223|Wechselkurs
+1224|Wechselkursmarge
+1225|Börsen haben den Preis festgelegt
+1226|Vorhanden, nur für den Eigentümer, unerreichbar
+1227|Erwartungen und „eingepreist“
+1228|Erwartung und Überraschung
+1229|Erwartungen zählen mehr als die Entscheidung
+1230|Erwartungen:
+1231|Erklären Sie Zinseszins als Zinsen auf Zinsen.
+1232|Erklären Sie Zinseszins bei einer unbezahlten Schuld.
+1233|Erklären Sie, wie ein „Später bezahlen“-Plan funktioniert und wer ihn bezahlt.
+1234|Erklären Sie, wie ein Rug Pull abläuft.
+1235|Erklären Sie, wie ein Token erzeugt wird.
+1236|Erklären Sie, wie Liquidationen sich in einer Kaskade gegenseitig verstärken.
+1237|Erklären Sie, wie Menschen heute Institutionen und Plattformen vertrauen.
+1238|Erklären Sie in einfachen Worten, was ein Projekt tut, bevor Sie kaufen.
+1239|Erklären Sie in einfachen Worten, was ein Zinssatz ist.
+1240|Erklären Sie Inflation am Beispiel des Warenkorbs.
+1241|Erklären Sie Liquidität und Spanne.
+1242|Erklären Sie Open Banking und die Rolle Ihrer Erlaubnis.
+1243|Erklären Sie die 50/30/20-Regel und passen Sie sie an Ihre Zahlen an.
+1244|Erklären Sie den Unterschied zwischen einer Fintech-App und einer Bank.
+1245|Erklären Sie den Unterschied zwischen Autorisierung und Abwicklung.
+1246|Erklären Sie den Zielkonflikt einer harten Bindung.
+1247|Erklären Sie, was ein 51-%-Angriff ist.
+1248|Erklären Sie, was eine CBDC ist und wer sie ausgibt.
+1249|Erklären Sie, was ein Liquiditätspool ist und warum ein Token einen braucht.
+1250|Erklären Sie, was ein Stablecoin ist und was der Peg bedeutet.
+1251|Erklären Sie, was ein zahlender KI-Agent ist und welche drei Dinge klar sein müssen.
+1252|Erklären Sie, was eine Adresse ist und warum ihr Teilen sicher ist.
+1253|Erklären Sie, wofür ein Notgroschen da ist.
+1254|Erklären Sie, wofür Gas bezahlt.
+1255|Erklären Sie, wofür die Netzwerkgebühr bezahlt und in welchem Coin sie gezahlt wird.
+1256|Erklären Sie, welchen Teil des Weges ein Stablecoin verkürzt und welche Teile bleiben.
+1257|Erklären Sie, wer Kartengebühren meist zahlt und warum sie je nach Land verschieden sind.
+1258|Erklären Sie, warum ein Bankguthaben eine Forderung und kein gelagertes Bargeld ist.
+1259|Erklären Sie, warum eine Blockchain ein Konsensverfahren braucht.
+1260|Erklären Sie, warum eine Überraschung mehr zählt als die Entscheidung selbst.
+1261|Erklären Sie, warum Banken weniger sichtbar, aber weiter nötig sind.
+1262|Erklären Sie, warum Wahlen für Kryptomärkte wichtig sein können.
+1263|Erklären Sie, warum Zinsen der Preisstabilität dienen.
+1264|Erklären Sie, warum Geld selbst keine Grenze überquert.
+1265|Erklären Sie am Fall UST, warum die Rücknahme entscheidet, ob die Bindung hält.
+1266|Erklären Sie, warum das Angebot bei 21 Millionen gedeckelt ist.
+1267|Erklären Sie, warum der Preis im Chart vom erzielten Preis abweichen kann.
+1268|Erklären Sie, warum Dringlichkeit der rote Faden ist.
+1269|Erklären:
+1270|Erklärt, ordnet, plant
+1271|Ditoman entdecken
+1272|Erkunden Sie, wie Systeme ohne zentrale Steuerung funktionieren können.
+1273|FBI Internet Crime Complaint Center (IC3)
+1274|FDIC: Einlagensicherung (USA)
+1275|Rückgänge um mehr als die Hälfte
+1276|Schnelle Entscheidungen sind immer falsch
+1277|Angst, etwas zu verpassen
+1278|Februar 2022
+1279|Federal Reserve History: der Federal Reserve Act, unterzeichnet am 23. Dezember 1913
+1280|Federal Reserve: Wirtschaftliches Wohlergehen der US-Haushalte 2024, Ersparnisse und Anlagen (2025)
+1281|Gebührenhöhen und Regeln ändern sich. Die Zahlen beschreiben die allgemeine Struktur, kein Angebot eines Geschäfts oder einer Bank.
+1282|Gebühren unterscheiden sich stark zwischen Netzwerken
+1283|Gebühren unterwegs:
+1284|Fünfzig Jahre Bauen in Zahlen: fast sechsmal so viele Wohnungen, 52.000 Industriebetriebe, Platz sechs weltweit bei Zement.
+1285|Die Zahlen zum Fall UST stammen aus den obigen Quellen und können durch spätere Forschung korrigiert werden. Die drei Mythen und die Leseübung dienen der Bildung und sind keine Anlageberatung.
+1286|Endgültigkeit
+1287|Finance Magnates, Verlosung von digitalem Yuan in Shenzhen (Januar 2021)
+1288|Finden Sie die drei Kostenteile einer internationalen Überweisung.
+1289|=
+1290|Fintech und Krypto
+1291|Fintech-App
+1292|Fintech steht für Finanztechnologie: Firmen, die mit Software eine Finanzaufgabe besser erledigen als zuvor. Eine Bezahl-, Kredit-, Anlage- oder Versicherungs-App sind alles Fintechs.
+1293|Fintech • Bankwesen
+1294|Fintechs übernehmen eine Aufgabe und erledigen sie per Software, meist mit einer lizenzierten Bank im Hintergrund.
+1295|Zuerst: Sparen ist kein Spekulieren
+1296|Fünf Fragen vor dem Kauf
+1297|Fünf Fragen, die Sie vor dem Kauf stellen sollten
+1298|Fünf Prüfungen. Fünf Minuten. Kostenlos. Die meisten, die bei Krypto Geld verlieren, haben sie nie gemacht.
+1299|Fünf häufige Fallen und eine Gewohnheit für jede.
+1300|Fünf kostenlose Prüfungen für jeden: Vertragsverifizierung, Verteilung der Inhaber, Eigentum, versteckte Einschränkungen und Liquidität.
+1301|Fünf Muster decken die meisten Fälle ab: gefälschte Seite, falscher Helfer, Blindsignatur, geduldiger Freund, garantierte Rendite.
+1302|Fünf Beteiligte: Karteninhaber, Händler, Herausgeber, Acquirer und Netzwerk.
+1303|Fünf Fragen vor dem Kauf
+1304|Fünf Fragen, die Sie vor dem Kauf stellen sollten
+1305|Fünf Fragen, die Sie vor dem Kauf stellen sollten, Ditoman-Lektionsbild
+1306|Fünf Warnzeichen und eine Antwort auf jedes
+1307|Fester (gebundener) Kurs
+1308|Fest (gebunden):
+1309|Festes Angebot
+1310|Freier Wechselkurs
+1311|Freie Kurse folgen Angebot und Nachfrage; gebundene Kurse sind politisch festgelegt.
+1312|Frei:
+1313|Schwerpunkt
+1314|Ditoman folgen
+1315|Bleiben Sie dran
+1316|Auf Instagram folgen
+1317|Fußzeile
+1318|Ein Jahrhundert lang kamen diese vier Aufgaben im Paket aus einem Gebäude. Die Technik trennt sie nun, und verschiedene Firmen konkurrieren um jedes Stück.
+1319|Lange war Ihre Bank die einzige Firma, die Ihre Kontodaten sehen konnte. Open Banking ändert diese Regel: Mit Ihrer Erlaubnis muss eine Bank einer anderen lizenzierten Firma über eine sichere Verbindung erlauben, Ihre Daten zu lesen oder für Sie eine Zahlung auszulösen.

@@ -1,0 +1,59 @@
+623|Banken. Regierungen. Systeme.
+624|=
+625|=
+626|Leitzins
+627|Grundlagen
+628|Seien Sie ehrlich, denn nur Sie kennen die Antwort.
+629|Weil jeder konforme Token dieselbe Sprache spricht, kann eine Wallet oder App, die den Standard unterstützt, mit allen ohne Spezialcode arbeiten.
+630|Weil es zeigt, wie Bitcoin über eine einzelne Person hinauswuchs.
+631|Weil es auf offenen Regeln, Überprüfung und Teilnahme am Netzwerk beruhte.
+632|Weil sich die Belohnung immer weiter halbiert, ist die Gesamtmenge begrenzt. Das Maximalangebot beträgt 21 Millionen Bitcoin. Der letzte Bitcoin wird um das Jahr 2140 erwartet, bei Block 6.930.000.
+633|Weil die drei auf unterschiedliche Weise versagen, fallen sie nicht immer gemeinsam. Mehr als eine Art von Vermögenswert zu halten, in Beträgen passend dazu, wann Sie das Geld brauchen, nennt man
+634|Bevor Sie etwas ändern, beobachten Sie einen Monat lang nur. Schreiben Sie jede Zahlung auf oder nutzen Sie die Liste, die Ihre Banking-App schon führt.
+635|Bevor Sie auf Senden drücken
+636|Bevor Sie einem vertrauen, fragen Sie drei Dinge: Wer gibt ihn heraus? Was deckt ihn, und wird das veröffentlicht? Können Sie ihn in Dollar einlösen?
+637|Bevor Ihre Margin null erreicht, schließt die Börse Ihre Position automatisch durch einen Verkauf zum Marktpreis. Das ist eine
+638|Einsteiger
+639|Auf einem Handy gespeichert werden
+640|Mit einer Bankkarte ausgegeben werden
+641|Biosimilars, Laborreagenzien und rekombinante Proteine
+642|=
+643|=
+644|Bitcoin hat sich seit dem Hoch halbiert
+645|Der Ursprung von Bitcoin
+646|Bitcoin-Whitepaper
+647|Bitcoin wurde stärker, weil es nicht von einem Gründer oder einer zentralen Organisation abhängig blieb.
+648|Bitcoin-Entwicklerleitfaden: Transaktionen
+649|Bitcoin hat einen festen Ausgabeplan in seinen Regeln. Diese Lektion zeigt, wie sich die Belohnung halbiert, wie viele Coins das ergibt und warum der letzte Bitcoin um das Jahr
+650|Bitcoin hat einen festen Ausgabeplan in seinen Regeln. Diese Lektion zeigt, wie sich die Belohnung halbiert, wie viele Coins das ergibt und warum der letzte Bitcoin um das Jahr 2140 kommt.
+651|Bitcoin hat eine feste Grenze von 21 Millionen Coins, also kann niemand mehr davon drucken. Das ist ein echter Unterschied zu gewöhnlichem Geld. Aber festes Angebot heißt nicht stabiler Preis. Bitcoin ist mehrfach um mehr als die Hälfte gefallen. Es kann die Kaufkraft in einem Zeitraum schützen und in einem anderen schädigen.
+652|Bitcoin hat ein festes Angebot, aber einen unruhigen Preis. Ein Stablecoin folgt dem Dollar und hängt von seinem Herausgeber ab.
+653|Bitcoin wurde erst in drei US-Zwischenwahlen mit nennenswertem Volumen gehandelt: 2014, 2018 und 2022. Drei Beobachtungen sind kein Muster. In diesen Jahren passierte auch anderes, etwa Zinsänderungen und Bitcoins eigener Angebotszyklus, sodass sich nicht sagen lässt, was was verursacht hat.
+654|Bitcoin führte Systeme ein, in denen Vertrauen von Institutionen zu transparenten Regeln und Netzwerken wandern konnte.
+655|Bitcoin-Ausgabe nach Ära
+656|Bitcoin führt ein Register, wem was gehört. Ethereum speichert zudem Programme. Diese Lektion erklärt am Beispiel des Verkaufsautomaten, was ein Smart Contract ist und was er kann und nicht
+657|Bitcoin führt ein Register, wem was gehört. Ethereum speichert zudem Programme. Diese Lektion erklärt am Beispiel des Verkaufsautomaten, was ein Smart Contract ist und was er kann und nicht kann.
+658|Bitcoin-Miner
+659|Bitcoin erzeugt etwa alle zehn Minuten einen Block. Viele neuere Netzwerke brauchen wenige Sekunden. Börsen warten oft mehrere Bestätigungen ab, bevor sie eine Einzahlung gutschreiben; deshalb kann eine Überweisung in Ihrer Wallet erfolgreich aussehen und auf der anderen Seite noch ausstehen.
+660|Bitcoin ersetzte persönliches Vertrauen durch offene Regeln, Überprüfung und Teilnahme am Netzwerk.
+661|Bitcoin-Ausverkauf, November 2026
+662|Bitcoin zeigte, dass Wert sich digital ohne zentrale Torwächter bewegen kann.
+663|Bitcoin wird rund um die Uhr gehandelt, und große Beträge lassen sich an großen Börsen in Minuten verkaufen. In der Praxis hängt Ihre eigene Liquidität aber von Ihrem Zugang zu einer Börse und zu einer Bank oder einem Vermittler auf der anderen Seite ab.
+664|Bitcoin nutzt Proof of Work. Miner sammeln ausstehende Transaktionen in einem Block und suchen eine Zahl, die zusammen mit den Blockdaten gehasht ein Ergebnis unter einem Zielwert ergibt. Wie learnmeabitcoin erklärt, heißt das, den Blockheader mit doppeltem SHA-256 immer wieder zu hashen, bis ein Ergebnis unter dem Ziel liegt.
+665|Bitcoin entstand aus einem tieferen Problem.
+666|Bitcoin startete 2009. Satoshi half beim Bau der frühen Software, tauschte sich mit Entwicklern aus und verschwand dann allmählich aus der Öffentlichkeit.
+667|Auf welches Problem war Bitcoin vor allem eine Antwort?
+668|Bitcoin wurde nicht nur geschaffen, um ein weiterer digitaler Vermögenswert zu sein. Es entstand aus einem tieferen globalen Vertrauensproblem rund um Institutionen, Kontrolle, Erlaubnis und zentralisierte Systeme.
+669|Bitcoin war nicht nur Innovation.
+670|Bitcoin wiegt nichts, aber es sicher aufzubewahren heißt, einen Schlüssel zu verwalten oder einem Verwahrer zu vertrauen, wie Lektion 13 erklärte.
+671|Bitcoin • Halving
+672|Der aktuelle CEO von Bitcoin
+673|Das Bitcoin-Netzwerk hängt von keiner Regierung und keinem Unternehmen ab (Lektionen 01 bis 04). Sein Preis ist etwas anderes. Viele Anleger halten Aktien und Krypto, und wenn sie weniger Risiko wollen, verkaufen sie etwas von beidem. Ein Netzwerk kann unabhängig sein, während sein Preis mit der Stimmung derselben Menschen schwankt.
+674|Das Bitcoin-Angebot ist fest. Was bedeutet das für seinen Preis?
+675|Bitcoin, Ether und USDT für Privatanleger nur über lizenzierte Vermittler, mit einer Obergrenze von 300.000 Rubel.
+676|Bitcoin: Ein elektronisches Peer-to-Peer-Bargeldsystem (Whitepaper)
+677|Sperrlisten-Funktion
+678|Block und Bestätigung
+679|Block-Explorer
+680|Blockbelohnung
+681|Blockbelohnungen schrumpfen, aber Transaktionsgebühren bleiben. Langfristig soll das Netzwerk durch Gebühren bezahlt werden. Ob das funktioniert, ist eine offene Frage, kein Versprechen.

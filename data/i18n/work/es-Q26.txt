@@ -1,0 +1,76 @@
+2316|Empieza por la lección uno
+2317|Empezó en 2022. Discreto a propósito.
+2318|Empieza
+2319|Los estadísticos la miden con una cesta: una lista fija de cosas que compra un hogar típico, como comida, alquiler, transporte y ropa. Ponen precio a la misma cesta cada mes. Si la cesta costaba 100 el año pasado y ahora cuesta 140, la inflación del año fue del 40 por ciento.
+2320|Bobina de acero y un engranaje verde azulado en una nave industrial
+2321|Paso 1, del 24 de abril al 14 de mayo de 2026:
+2322|Paso 2, 13 de septiembre de 2026:
+2323|Paso uno: la pregunta (autorización)
+2324|Paso uno: las diez lecciones
+2325|Paso tres: reclama tu recompensa
+2326|Paso dos: el dinero (compensación y liquidación)
+2327|Paso dos: el test
+2328|Guía paso a paso con imágenes
+2329|Imágenes paso a paso y un vídeo de 40 segundos para SafePal, Trust Wallet, MetaMask y
+2330|Imágenes paso a paso y un vídeo de 40 segundos para SafePal, Trust Wallet, MetaMask y TokenPocket.
+2331|Las bolsas cierran de noche y los fines de semana. Bitcoin cotiza a todas horas, todos los días, en todos los países. Cuando llega una noticia fuera del horario de mercado, las cripto suelen ser el primer lugar donde aparece la reacción.
+2332|Deja que no todo te afecte
+2333|Para. Nadie la necesita.
+2334|Almacenamiento y custodia
+2335|Enviar respuestas
+2336|Supervisar a los bancos:
+2337|Supervisión
+2338|Oferta
+2339|Concentración de la oferta
+2340|La oferta está concentrada.
+2341|La oferta está muy concentrada. La mayor parte está en billeteras controladas por el fundador, visibles para cualquiera en BscScan.
+2342|Sorpresa frente a anuncio
+2343|Riksbank de Suecia
+2344|Símbolo
+2345|Sistemas
+2346|T = tomán
+2347|Página del token TMN
+2348|TMN es un token BEP-20 en BNB Smart Chain.
+2349|TMN es un token BEP-20 en BNB Smart Chain. Es una herramienta de participación dentro de un proyecto educativo, no su objetivo. Todo lo que hay en esta página se puede comprobar de forma independiente en BscScan.
+2350|¿TMN es un token de qué estándar y qué cadena?
+2351|TMN es una herramienta, no el objetivo.
+2352|TMN está desplegado
+2353|TMN no es un lanzamiento nuevo. Su antigüedad y sus años de silencio están registrados en la cadena.
+2354|TMN no es una stablecoin ni tiene paridad con el dólar. Su precio lo fija el mercado, así que las comprobaciones de la lección 05 y las ideas de liquidez de la lección 09 son las herramientas adecuadas para leerlo. Esta lección explica la categoría, no un proyecto.
+2355|TMN no es una stablecoin. No tiene paridad con el dólar ni emisor que prometa reembolsarlo, así que su precio lo fija el mercado. Por eso las comprobaciones de la lección 05 y las ideas de liquidez de la lección 09 son las herramientas adecuadas para TMN, y la prueba de reembolso no se le aplica.
+2356|TMN no cotiza en CoinGecko ni en CoinMarketCap. Su pool lo siguen automáticamente DexScreener y GeckoTerminal.
+2357|TMN es el token BEP-20 detrás de Ditoman, pensado para reconocer el aprendizaje y la contribución reales. No es un producto de inversión y no pedimos a nadie que lo compre.
+2358|TMN vive en BNB Smart Chain, así que recibirlo exige una dirección de BNB Smart Chain en una billetera personal, y enviarlo exige un poco de BNB para la comisión. La guía de TMN lo explica con imágenes.
+2359|Token TMN
+2360|TMN se desplegó en 2022 y nunca se distribuyó ni promocionó, por eso la oferta sigue concentrada. Lo decimos abiertamente en lugar de dejar que se descubra, porque un proyecto que pide a la gente que compruebe las cosas debe ser comprobable él mismo.
+2361|El estándar y la cadena de TMN siguen la página del token de este sitio. Explicación general, no asesoramiento de inversión.
+2362|La oferta de TMN está concentrada, y la utilidad descrita está planificada, no operativa. Estos hechos se declaran en nuestro whitepaper y en la página del token, no se esconden tras ellos.
+2363|Un ejemplo sencillo. Pides prestados 100 millones y devuelves 9,5 millones al mes durante doce meses. Devuelves 114 millones. El préstamo costó 14 millones.
+2364|Impuestos y límites comerciales
+2365|Tecnología
+2366|Tecnología
+2367|Tecnología y servicios
+2368|Tecnología y economía en la vida diaria
+2369|Telegram
+2370|Canal de Telegram
+2371|Usuario de Telegram o Bale (opcional)
+2372|Distinguir un tipo flotante de uno fijo.
+2373|Distinguir un informe de atestación de una auditoría completa, y decir qué exige la Ley GENIUS.
+2374|Distinguir la inflación interanual de la inflación de doce meses.
+2375|Distinguir ahorrar de invertir y especular.
+2376|Distinguir una razón real de una observación de precio.
+2377|Distinguir entre explorar, pilotar y lanzar.
+2378|Diez ciudades que nunca se apagaron
+2379|Diez ciudades que nunca se apagaron
+2380|Diez grandes medios digitales iraníes
+2381|Diez grandes medios digitales iraníes comparados: historia, dinero, audiencia, la red nacional durante el apagón, IA y lectores en el extranjero.
+2382|Diez preguntas, una de cada lección. Necesitas al menos ocho aciertos para aprobar. Si no apruebas, relee las lecciones en las que fallaste e inténtalo de nuevo.
+2383|Test de diez preguntas
+2384|Transferencia de prueba
+2385|Tether
+2386|Tether, bitcoin, ether y el oro mundial se actualizan con el mercado cada 30 segundos. El precio del oro de 18 quilates es una estimación: oro mundial por la cotización de tether. El dólar y la moneda de oro del mercado libre vienen del último informe diario de Ditoman. Nada de esto es una recomendación de compra o venta.
+2387|Esa dirección no es válida. Una dirección de BNB Smart Chain empieza por 0x y tiene 42 caracteres.
+2388|Ese botón es un préstamo. Un préstamo pequeño, amable y bien diseñado, pero un préstamo. Pedir prestado no es malo en sí. Con ello se construyen casas, estudios y negocios. La habilidad está en saber cuánto cuesta un préstamo antes de pedirlo, y eso es lo que veremos juntos.
+2389|Ese coste tiene tres partes.
+2390|Es porque las comprobaciones te hablan del token. No dicen nada de tu razonamiento, tu momento ni de lo que puedes permitirte perder. Estas cinco preguntas sí.
+2391|Eso es distinto del dinero que tienes hoy en tu cuenta bancaria. Cuando ves un saldo en una app bancaria, es una promesa de tu banco. Una CBDC sería un derecho directo sobre el propio banco central, igual que el efectivo.

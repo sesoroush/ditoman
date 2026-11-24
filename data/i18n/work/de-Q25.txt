@@ -1,0 +1,64 @@
+2252|Einfache, Zinseszins- und Tageszinsen klingen ähnlich, liefern aber über zehn oder zwanzig Jahre sehr unterschiedliche Ergebnisse. Diese Lektion zeigt alle drei mit kleinen Zahlen, die Sie von Hand nachrechnen können.
+2253|Einfache, Zinseszins- und Tageszinsen mit nachprüfbaren Zahlen.
+2254|Robotisches Chirurgiesystem Sina
+2255|=
+2256|Sina Robotics and Medical Innovators
+2257|Chirurgieroboter Sina
+2258|Chirurgieroboter Sina (Illustration)
+2259|Bemessen Sie eine Position danach, was Sie komplett verlieren können.
+2260|Kürzung der Einlage (Slashing)
+2261|Slippage
+2262|Slippage, Hebel und Liquidationskaskade: was nach schlechten Nachrichten in einer Börse passiert und wie Sie sich schützen.
+2263|Langsamer Verlust durch Inflation
+2264|Langsame Websites
+2265|Kleine Raten verbergen die Gesamtsumme. Rechnen Sie sie zusammen.
+2266|Kleine Belohnungen für nachweisbares Lernen. Der erste Pilot ist offen:
+2267|Smart Contract
+2268|Intelligente Durchsage- und Rufanlagen
+2269|=
+2270|Ein Stablecoin kann also die Mitte des Weges verkürzen. Den ersten und letzten Schritt beseitigt er nicht.
+2271|Man darf also fragen: Wenn wir das Gebäude nicht mehr brauchen, brauchen wir dann noch die Bank? Dazu müssen wir ansehen, was eine Bank tatsächlich tut. Es ist nicht eine Aufgabe. Es sind vier.
+2272|Keines davon ist also ein Schild, auf das man sich gedankenlos verlassen kann. Es sind Werkzeuge mit eigenen Risiken, und die Fragen aus Lektion 06 gelten weiterhin.
+2273|Die detaillierten Regeln werden also noch geschrieben, und sie sind nicht überall gleich. Die Europäische Union, Hongkong und andere haben eigene Rahmenwerke. Lesen Sie jede neue Regel mit den drei Fragen im Kopf: Wer gibt ihn aus, was deckt ihn und ist der Rücktausch echt?
+2274|Deshalb zählen Gewohnheiten hier mehr als irgendwo sonst im Finanzwesen.
+2275|Der Beleg des Geschäfts ist also ein Versprechen, dass Geld kommt. Für den Kunden fühlt es sich sofort an. Für das Geschäft nicht.
+2276|Wer entscheidet also, welche Transaktionen als Nächstes hineinkommen? Und warum sollte jemand betrügen oder nicht?
+2277|Werden Banken also verschwinden?
+2278|SoFi: das 50/30/20-Budget, bekannt gemacht von Elizabeth Warren in All Your Worth (2005), und seine drei Kategorien
+2279|Manche Konten und Kredite berechnen Zinsen tageweise. Bei einfachen Tageszinsen von 5 % im Jahr bringt ein Tag 1.000 × 0,05 ÷ 365, und 30 Tage bringen etwa 4,11.
+2280|Manche Neobanken haben eine eigene Lizenz. Andere sind eine Marke auf einer traditionellen Bank. Im Iran gehören die bekannten Beispiele zur zweiten Gruppe: Blubank läuft über die Saman Bank, Bankino über die Middle East Bank und Wepod über die Pasargad Bank.
+2281|Manche Tracker zeigen noch die ursprünglichen 21 Billionen. Der Vertrag selbst meldet nach dem Burn vom 13. September 2026 18,90 Billionen.
+2282|Manche Anwendungen sind harmlos oder sogar nützlich: eine Zahlung, die sich bei Lieferung der Ware automatisch freigibt, oder Hilfsgeld, das die Richtigen erreicht. Die Sorge gilt der Frage, wer die Regeln schreibt und ob sie ohne Ihre Zustimmung auf Alltagsgeld angewendet werden können.
+2283|Jemand zahlt immer für das System, meist der Händler, und die Regeln unterscheiden sich je nach Land.
+2284|Eine freundliche Person taucht in einer sozialen App oder auf einer Dating-Seite auf. Es folgen Wochen angenehmer Gespräche. Dann erwähnt sie eine Anlage, die großartig läuft, und zeigt Ihnen, wie Sie einsteigen. Die Plattform zeigt wachsende Gewinne. Wenn Sie abheben wollen, sind zuerst „Steuern“ und „Gebühren“ fällig. Die Gewinne waren nie echt.
+2285|Jemand vom „Support“ fragt nach Ihrer Wiederherstellungsphrase, um ein Problem zu lösen. Was ist das?
+2286|Jemand sendet eine Zahlung und eine Anfrage
+2287|Jemand muss weiterhin Einlagen sicher verwahren, auf zwanzig Jahre Kredit geben und einer Aufsicht Rede und Antwort stehen, wenn etwas schiefgeht. Ohne Lizenz und Kapital ist das schwer, weshalb selbst die modernsten Apps meist auf einer Bank stehen.
+2288|Tontechnik
+2289|Quellcode
+2290|Quelle:
+2291|Quelle: TGJU-Tagesschlusskurse.
+2292|Quellen
+2293|Sonderbericht
+2294|Spekulieren
+2295|Einen Preis in vier Teile zu zerlegen macht jede Zahl klein, und der Kopf beurteilt die kleine Zahl. Vierzig Millionen fühlen sich schwer an. Zehn Millionen fühlen sich gut an. Die Summe ist dieselbe.
+2296|Erkennt Betrug, bewertet Kredite
+2297|Spread
+2298|Stablecoin
+2299|Stablecoins und TMN sind nicht dasselbe
+2300|Stablecoins können Geld schneller und günstiger bewegen als viele traditionelle Kanäle, und das rund um die Uhr. Wo Menschen einen stabileren Wertspeicher suchen, bieten sie Zugang zu dollarbasiertem Geld, ein Grund für ihr schnelles Wachstum.
+2301|Stablecoins erklärt: die Kopplung, die drei Arten der Deckung, Reserveberichte vs. Prüfungen, der UST-Zusammenbruch 2022 und der Rücktausch, der wichtigste Test.
+2302|Stablecoins wirken einfach: ein Token, ein Dollar. Doch diese Verbindung ist ein Versprechen, und ein Versprechen ist nur so stark wie das, was dahinter steht. In dieser Lektion sehen Sie, was hinter Stablecoins steht, wie ein bekannter Stablecoin im Mai 2022 zusammenbrach, und den wichtigsten Test, bevor Sie einem Token vertrauen.
+2303|Stablecoins wirken einfach: ein Token, ein Dollar. Doch diese Verbindung ist ein Versprechen, und ein Versprechen ist nur so stark wie das, was dahinter steht. In dieser Lektion sehen Sie, was hinter Stablecoins steht, wie ein bekannter Stablecoin im Mai 2022 zusammenbrach, und den wichtigsten Test, bevor Sie einem…
+2304|Stablecoins beschleunigen die Mitte des Weges. Beim Ein- und Ausstieg liegen weiterhin Kosten und Risiko.
+2305|Phase
+2306|Standard
+2307|Standards wie ERC-20 und BEP-20 ermöglichen Wallets, mit vielen Tokens zu arbeiten.
+2308|Eine kleine automatische Gewohnheit beginnen.
+2309|Erst beobachten, nicht kürzen
+2310|Von vorn beginnen
+2311|Hier starten
+2312|Hier starten: was Geld wert ist, wo es liegt und wie es sich bewegt.
+2313|Lernen beginnen
+2314|Mit einer Lektion beginnen
+2315|Beginnen Sie mit einem kleinen Betrag und üben Sie Empfangen und Senden, bevor Sie etwas Wichtiges bewegen.

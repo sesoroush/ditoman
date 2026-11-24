@@ -1,0 +1,44 @@
+1494|Wenn die Teile zusammenkommen, ist das Bild hoffnungsvoll: ein Assistent, der nach einem besseren Kurs sucht, vor einer Gebühr warnt, einen Betrug erkennt, bevor Sie antworten, und jeden Schritt in Ihrer Sprache erklärt. Gute Finanzhilfe, früher etwas für Wohlhabende, könnte alltäglich werden.
+1495|Wenn Sie heute kaufen, weil Sie Angst haben, wie Sie sich morgen fühlen, ist das keine Analyse. Das ist Druck.
+1496|Erwartet die Wallet oder Börse des Empfängers ein Netzwerk und Sie senden über ein anderes, erscheinen die Coins womöglich nie, und sie zurückzubekommen reicht von schwierig bis unmöglich.
+1497|Sind die Regeln erfüllt, wird der Zustand aktualisiert
+1498|Wenn Sie es niemandem ohne Krypto-Wissen in zwei, drei einfachen Sätzen erklären können, verstehen Sie es noch nicht. Das ist kein Grund zur Scham. Es ist ein Grund zu warten.
+1499|Wenn Sie das Passwort vergessen
+1500|Wenn Sie die Wiederherstellungsphrase verlieren,
+1501|Wenn Sie an die falsche Adresse oder über das falsche Netzwerk senden,
+1502|Stellen Sie sich einen einfachen Vertrag vor: „Wenn der Absender den Preis zahlt, gib ihm eine Fahrkarte und halte fest, dass sie ihm gehört.“ Es gibt keinen Kassierer. Das Netzwerk prüft die Zahlung, und das Programm aktualisiert den Eintrag.
+1503|Unveränderlichkeit
+1504|Identitätsbetrug
+1505|Wichtig:
+1506|Unmöglich
+1507|2022 war TerraUSD (UST) einer der bekanntesten Stablecoins. Er war ein algorithmischer Token: weder durch Dollar noch durch andere Werte gedeckt. Seine Bindung hielt er über ein Token-Paar. Ein UST ließ sich immer prägen, indem man LUNA im Wert eines Dollars verbrannte, und ein UST ließ sich gegen LUNA im Wert eines Dollars eintauschen. Das war der ganze Mechanismus.
+1508|In US-Dollar
+1509|Was bestimmt in einem freien System hauptsächlich den Kurs?
+1510|In einer Panik kann einer gesunden Bank plötzlich das Bargeld fehlen, weil alle ihr Geld gleichzeitig zurückwollen. Die Zentralbank kann ihr gegen gute Sicherheiten Geld leihen. Das ist die Idee der „Bank der Banken“.
+1511|In einem Geschäft können Sie mit den Banknoten des Landes zahlen oder mit einem Gutschein, den das Geschäft selbst ausgegeben hat. Im Alltag heißt beides Geld, aber es lebt an verschiedenen Orten.
+1512|In ihrem Buch *All Your Worth* von 2005 beschrieb die US-Juristin und spätere Senatorin Elizabeth Warren eine einfache Aufteilung des Nettoeinkommens, des Geldes, das nach Steuern tatsächlich auf Ihrem Konto ankommt.
+1513|In Lektion 05 haben wir fünf Prüfungen aufgelistet, die man vor jedem Token machen sollte. Die fünfte lautete: Gibt es echte Liquidität, und ist sie gesperrt? Heute haben wir das für unseren eigenen Token getan. Diese Lektion erklärt, was wir getan haben und was es bedeutet.
+1514|In Lektion 07 haben wir gesehen, wie Nachrichten die Erwartungen des Marktes verändern. Diese Lektion geht einen Schritt weiter: Was passiert nach der Nachricht in einer Börse, das einen normalen Rücksetzer in einen scharfen Crash verwandeln kann? Kurz gesagt wirken drei Dinge zusammen: nervöse Käufer, dünne Orderbücher und geliehenes Geld.
+1515|In den meisten Ländern ist das Netzwerk Visa oder Mastercard. Im Iran verbindet Shaparak Kartenterminals und Online-Gateways mit den Banken, und Shetab verbindet die Banken untereinander.
+1516|In Arbeit
+1517|Bei Proof of Work könnte jemand, der den Großteil der Mining-Leistung kontrolliert, die jüngste Geschichte umschreiben. Das heißt 51-%-Angriff. Er erfordert enorme Mittel, und das Ziel ist umso schwächer, je kleiner das Netzwerk ist.
+1518|Wofür steht in der 50/30/20-Regel die 20?
+1519|Welcher Anteil der US-Erwachsenen würde laut der Fed-Umfrage 2024 einen Notfall von 400 Dollar mit Bargeld oder Gleichwertigem decken?
+1520|Suchen Sie im Bereich Read Contract nach einer Funktion namens owner. Liefert sie eine normale Wallet-Adresse, kontrolliert diese Person noch die Eigentümer-Funktionen des Vertrags, zu denen auch das Erzeugen neuer Tokens gehören kann.
+1521|In den USA befragt die Federal Reserve jedes Jahr die Haushalte. In ihrer Umfrage 2024 sagten 63 % der Erwachsenen, sie würden eine Notausgabe von 400 Dollar mit Bargeld oder Gleichwertigem decken. Und 55 % sagten, sie hätten genug für drei Monate Ausgaben zurückgelegt.
+1522|In den USA wurde der GENIUS Act am 18. Juli 2025 Gesetz. Er schuf den ersten bundesweiten Regulierungsrahmen für Stablecoins. Das Gesetz tritt zum früheren von zwei Terminen in Kraft: 18 Monate nach Verabschiedung oder 120 Tage nach Veröffentlichung der endgültigen Regeln durch die wichtigsten Aufsichtsbehörden.
+1523|Im Hintergrund
+1524|In den kommenden Jahren wird das Verständnis der Blockchain nicht nur für Krypto-Leute nützlich sein. Es wird für alle wichtig, die digitale Identität, Finanzen, Eigentum, Infrastruktur, Lieferketten, KI-Systeme und die Zukunft des Vertrauens verstehen wollen.
+1525|Im Beispiel machte ein stärkerer Euro das Hemd für den Amerikaner teurer, ein schwächerer macht es billiger. Für einen Haushalt läuft dieselbe Logik umgekehrt: Wird die eigene Währung schwächer, werden Importe und Auslandsreisen teurer, ebenso alles aus importierten Teilen. Lektion 12 zeigte, wie steigende Preise die Kaufkraft fressen; der Wechselkurs ist einer der Wege, auf denen sie kommen.
+1526|In der letzten Lektion haben wir gesehen, wie man einen Token prüft: Ist der Vertrag verifiziert, wer hält das Angebot, können neue Tokens erzeugt werden, gibt es versteckte Einschränkungen, gibt es echte Liquidität.
+1527|Was ist ein Zinssatz, ganz einfach gesagt?
+1528|Wählen Sie in der Wallet das
+1529|Einkommen und Nettoeinkommen
+1530|Industriegruppe
+1531|Industrie und Fertigung
+1532|Industrie gegen Märkte: Verwendung, das Defizit, Rekord und Absturz 2026, Gold und andere Metalle und der Ausblick.
+1533|Industrie, Energie, Bergbau, Verkehr, Technik, Tourismus
+1534|Industrie, Energie, Verkehr, Bergbau, Technik, Tourismus
+1535|Inflation
+1536|Auch Inflation verzinst sich
+1537|Inflation ist ein allgemeiner Preisanstieg über die Zeit. Wenn ein Produkt teurer wird, ist das keine Inflation. Inflation ist, wenn die Preise der meisten Dinge gemeinsam steigen, sodass jede Geldeinheit weniger kauft.

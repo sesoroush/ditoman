@@ -1,0 +1,44 @@
+149|Un contrato se despliega en la blockchain y desde entonces vive en una dirección, como una cuenta. Cualquiera puede llamar a sus funciones. Como lo ejecutan muchos ordenadores, el resultado no depende de que una empresa siga siendo honesta o esté en línea.
+150|Un contrato solo sabe lo que hay en la cadena. No puede leer un periódico ni mirar el tiempo por sí mismo; la información de fuera hay que traerla. Y no arregla una mala idea: un código que hace exactamente lo que dice puede hacer algo imprudente.
+151|Una pepita de cobre sobre una mina a cielo abierto
+152|Un banco corresponsal
+153|Un país que importa el 95% de su gas planea barcos-central, GNL y un corredor eléctrico. Las cifras, quién gana, a quién le preocupa y qué falta por demostrar.
+154|Un exchange de cripto funciona igual en un aspecto importante: las monedas están en las billeteras del exchange, y tu cuenta muestra lo que el exchange te debe. Tienes un derecho frente a una empresa.
+155|Un depósito (32 ETH para operar en solitario)
+156|Un depósito paga un 20% y la inflación es del 40%. ¿Qué le pasa a su poder adquisitivo?
+157|Un banco digital con 2,9 millones de clientes fue intervenido, el presidente destituido, y lo que realmente cubren las garantías de depósitos.
+158|Una stablecoin en dólares puede pasar entre dos billeteras en minutos, a cualquier hora, por una pequeña comisión de red. En ese paso no interviene ningún banco corresponsal. Es la razón principal por la que las stablecoins se usan cada vez más en pagos internacionales.
+159|Una stablecoin en dólares sigue al dólar, como explicó la lección 11. Puede ser más estable que una moneda más débil, pero el dólar también tiene inflación, y el token añade sus propios riesgos: el emisor, el respaldo y la salida.
+160|Una respuesta falsa apunta al propio precio: subió la semana pasada, alguien dijo que seguirá, todo el mundo habla de ello. Eso no es una razón. Es una observación sobre el comportamiento de otros, y los otros pueden parar en cualquier momento.
+161|Una comisión que se paga a los exchanges
+162|Unos pocos tenedores pueden mover todo el mercado con una decisión
+163|Hace unos años, un solo billete pagaba una bolsa entera de la compra. Hoy el mismo billete compra parte de esa bolsa. Nadie se llevó el billete. Lo que cambió es cuánto compra. Ese cambio silencioso tiene nombre: inflación.
+164|Un límite fijo
+165|Un amigo está seguro
+166|Un chip luminoso frente al horizonte de Teherán y la Torre Milad
+167|Una votación de gobernanza
+168|Un gobierno lo reactivó
+169|Una paridad fija da estabilidad a importadores y viajeros, pero el país renuncia a su propia política de tipos, porque debe seguir a la moneda a la que está atado. Un tipo flotante conserva esa libertad, a costa de un tipo que se mueve.
+170|Una paridad fija renuncia a una política de tipos independiente.
+171|Una gran oscilación no es buena ni mala por sí sola. Decide cuánto tiempo debes poder esperar.
+172|Una financiera paga hoy a la tienda por ti. Tú le devuelves el dinero a plazos. En la versión corta habitual son cuatro pagos en pocas semanas sin intereses, y la financiera gana con una comisión que paga la tienda y con los recargos por demora.
+173|Un bloqueo coloca los tokens LP en un contrato inteligente aparte con una fecha de desbloqueo. Hasta esa fecha nadie puede retirarlos, ni siquiera quien los bloqueó. Servicios como PinkLock, UNCX y Team Finance publican cada bloqueo como registro público, para que cualquiera pueda comprobarlo.
+174|Un bloqueo elimina un riesgo concreto: que la liquidez bloqueada se retire antes de la fecha de desbloqueo. No demuestra que un token valga algo, que el proyecto vaya a triunfar ni que el precio vaya a subir.
+175|Un mensaje cruza el mundo en un segundo, pero el dinero puede tardar días y perder varios puntos por el camino. Esta lección muestra qué pasa entre dos bancos de dos países, dónde se esconde el coste y qué cambian y qué no
+176|Un mensaje cruza el mundo en un segundo, pero el dinero puede tardar días y perder varios puntos por el camino. Esta lección muestra qué pasa entre dos bancos de dos países, dónde se esconde el coste y qué cambian y qué no cambian las stablecoins.
+177|Una revisión mensual en diez minutos
+178|Un puente de autopista en la montaña con un camión y un tren de mercancías
+179|Un neobanco es un banco sin oficinas. Todo, desde la verificación de identidad hasta la entrega de la tarjeta, ocurre en una app.
+180|Un neobanco es un banco sin oficinas. Pregunta quién tiene la licencia y si los depósitos están garantizados.
+181|Una billetera personal te da la llave y toda la responsabilidad que conlleva.
+182|Una billetera personal es una llave
+183|Una billetera personal, también llamada de autocustodia, es diferente. Las monedas están registradas en la blockchain, y la billetera guarda la
+184|Un teléfono cuesta 40 millones. Hoy no tienes 40 millones. Un botón bajo el precio dice: cuatro plazos, sin papeleo, aprobado en un minuto. Un toque y el teléfono es tuyo.
+185|Un aglutinante de baterías hecho de plantas y agua: el mercado, las emisiones, la salud, los precios, nuevos negocios y la oportunidad para Irán.
+186|Una forma práctica de pensarlo es por escalones. Primero, un pequeño colchón para una sorpresa típica. Después, un mes de gastos esenciales. Después, tres meses, o más si tus ingresos son irregulares o mantienes a otros.
+187|Un precio en una pantalla no es dinero. Solo se convierte en dinero cuando alguien está dispuesto a operar contra él.
+188|Una empresa privada
+189|Un programa que funciona solo, como una máquina expendedora.
+190|Un proyecto paga un 2% fijo al día y un bono por invitar a amigos. ¿Qué es lo más probable?
+191|Un proyecto promete una rentabilidad fija y alta, pagada a diario o cada semana, con bonos por traer amigos. Los primeros miembros cobran de verdad, con dinero de los siguientes. Cuando los nuevos depósitos se frenan, se para.
+192|Una forma rápida de estimar: divide 72 entre la tasa de inflación. El resultado es aproximadamente cuántos años tardan los precios en duplicarse. Al 6 por ciento, unos doce años. Al 36 por ciento, unos dos años.

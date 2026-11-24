@@ -1,0 +1,71 @@
+1699|Leçon 05 • Série Sécurité
+1700|Leçon 05 : Vérifier le token
+1701|Leçon 06 | Cinq questions à se poser avant d'acheter | Ditoman Learn
+1702|Leçon 06 • Série Sécurité
+1703|Leçon 06 : Cinq questions
+1704|Leçon 07 : Comment l'actualité fait bouger les prix
+1705|La leçon 11 demandait ce qui garantit un dollar numérique, et la leçon 20 si les banques allaient disparaître. Ces deux questions sont plus simples une fois qu'on connaît le rôle de la banque centrale elle-même.
+1706|La leçon 11 demande ce qui se trouve derrière un dollar numérique. La leçon 20 demande si les banques vont disparaître.
+1707|La leçon 12 explique comment la hausse des prix érode le pouvoir d'achat. La leçon 26 présente l'institution souvent derrière une monnaie : la banque centrale.
+1708|La leçon 12 explique l'inflation qui pousse les gens à chercher des alternatives. La leçon 06 propose cinq questions à se poser avant d'acheter quoi que ce soit.
+1709|La leçon 12 explique pourquoi un budget doit être mis à jour quand les prix montent. La leçon 19 montre comment les paiements échelonnés prennent discrètement une plus grande part des revenus du mois suivant.
+1710|La leçon 12 a montré ce que l'inflation fait à l'argent qui dort. La pensée suivante est naturelle : alors je devrais détenir autre chose. Dans beaucoup de familles, la réponse est la même depuis des générations : l'or ou le dollar. Ces dernières années, un troisième nom s'est invité dans la conversation : le bitcoin.
+1711|La leçon 12 a montré pourquoi des prix stables comptent : la hausse des prix érode ce qu'un salaire permet d'acheter. La banque centrale est l'institution chargée de garder cette érosion faible et prévisible.
+1712|La leçon 12 montre pourquoi il faut comparer les intérêts à la hausse des prix. La leçon 19 montre le côté coût : ce que coûtent vraiment les échéances.
+1713|La leçon 14 a suivi un paiement par carte à travers cinq entreprises. Un transfert crypto n'en a aucune. Il y a vous, le destinataire et un réseau d'ordinateurs que chacun peut inspecter.
+1714|La leçon 16 a expliqué pourquoi c'est si important : un transfert sur la blockchain est irréversible. Une banque peut parfois récupérer l'argent. Une blockchain, non. La prévention est donc tout, et la bonne nouvelle est qu'elle relève surtout de l'habitude.
+1715|La leçon 16 suit un transfert crypto de la même façon : adresse, réseau, frais et confirmation. La leçon 11 explique ce qui se trouve derrière les stablecoins utilisés pour ces paiements.
+1716|La leçon 17 couvre les arnaques que l'IA rend désormais plus convaincantes. La leçon 20 explique le passage des agences aux applis qui a précédé cette étape.
+1717|La leçon 20 a suivi l'argent de l'agence à l'appli. L'étape suivante a déjà commencé : de l'appli à un assistant qui agit pour vous.
+1718|La leçon 22 montre comment trouver les 20 % d'épargne dans un budget mensuel. La leçon 18 compare l'or, le dollar et le bitcoin comme lieux d'épargne.
+1719|La leçon 27 explique qui gagne la récompense de bloc et pourquoi. La leçon 18 compare le bitcoin à l'or et au dollar comme réserve d'épargne.
+1720|La leçon 27 explique qui garde la chaîne honnête. La leçon 29 montre ce que les contrats intelligents ont rendu possible : les tokens.
+1721|La leçon 28 explique les contrats intelligents qui créent les tokens. La leçon 5 montre comment vérifier n'importe quel token avant d'y toucher.
+1722|La leçon 28 montre ce qu'Ethereum fait tourner par-dessus : des programmes qui s'exécutent seuls. La leçon 30 explique le calendrier qui régit la rémunération des mineurs de Bitcoin.
+1723|Contenu de la leçon
+1724|Aperçu de la leçon
+1725|Leçons
+1726|Leçons, brèves explications de l'actualité et mises à jour, en persan et en anglais. Pas de signaux, pas de battage.
+1727|Niveau
+1728|Effet de levier et ventes forcées
+1729|Effet de levier et marge
+1730|L'effet de levier rend les choses plus brutales. Quand un prix baisse, ceux qui tradent avec de l'argent emprunté peuvent être forcés de vendre automatiquement, et ces ventes forcées font encore baisser le prix. Les mouvements rapides sont souvent en partie mécaniques, pas seulement un verdict sur l'actualité.
+1731|Effet de levier : trader avec de l'argent emprunté
+1732|Lumières allumées
+1733|Lumières allumées : réussites iraniennes documentées
+1734|Limites de détention ou de négociation
+1735|Limites :
+1736|Linéaire
+1737|Liquidation et liquidations en cascade
+1738|Liquidation : la plateforme ferme la position à votre place
+1739|Liquidations, effet de levier, cinq causes, une comparaison sur un an, trois scénarios et ce que cela signifie pour les investisseurs iraniens.
+1740|Liquidité
+1741|Verrouillage de liquidité et date de déverrouillage
+1742|Pool de liquidité
+1743|Pools de liquidité, tokens LP et rug pulls, avec le verrouillage de TMN comme exemple concret, et ce qu'un verrouillage ne prouve pas.
+1744|Livre
+1745|Listez les vérifications à faire avant d'envoyer.
+1746|Listez les premières étapes après une perte.
+1747|Listez les quatre nouveaux risques.
+1748|Listez les principales missions d'une banque centrale.
+1749|Listez la récompense de 2009 à 2024.
+1750|Listez trois façons de perdre de l'argent dans un portefeuille personnel.
+1751|Prix en direct
+1752|Chargement
+1753|Chargement…
+1754|Cumul de crédits
+1755|Logarithmique
+1756|Bien avant les banques, les marchands utilisaient des réseaux de confiance. L'expéditeur paie un intermédiaire dans une ville, et l'associé de cet intermédiaire dans une autre ville paie le destinataire. Les deux intermédiaires règlent leurs comptes plus tard. Dans de nombreux pays, cela s'appelle la hawala, et elle déplace encore de grosses sommes là où les banques sont lentes, chères ou absentes.
+1757|Longues périodes de faiblesse
+1758|Avant une grosse opération, regardez le carnet d'ordres, pas seulement le graphique.
+1759|Regardez le rendement réel : intérêts moins inflation.
+1760|Observez pendant un mois avant de changer quoi que ce soit.
+1761|Cherchez d'abord le besoin le plus important
+1762|Rechercher une transaction dans un explorateur de blocs.
+1763|Les chiffres de pertes sont des estimations issues de l'analyse de la blockchain et sont généralement revus à la hausse ensuite. Les schémas comptent plus que les totaux.
+1764|Clé perdue, arnaques, plateforme en faillite
+1765|M tomans
+1766|Modèle d'apprentissage automatique
+1767|Principal
+1768|Urgence fabriquée
+1769|De nombreuses applis demandent à votre portefeuille de signer une autorisation. Certaines donnent à un contrat le droit de déplacer vos tokens, parfois sans limite ni date de fin. Un faux airdrop ou un site de « mint gratuit » utilise exactement cela : vous croyez réclamer un cadeau et vous cédez l'accès.

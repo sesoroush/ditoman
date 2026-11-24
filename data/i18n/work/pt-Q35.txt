@@ -1,0 +1,74 @@
+2954|O que significa
+2955|O que é a liquidez
+2956|O que faz o juro compor-se?
+2957|O que torna o dinheiro «programável»?
+2958|O que torna o dinheiro «programável»?
+2959|O que recebem os mineradores
+2960|O que ganham os mineradores quando as recompensas se esgotarem
+2961|O que move um mercado é a surpresa: a diferença entre o esperado e o que realmente aconteceu. Um corte de taxas que todos esperavam pode mudar muito pouco. Uma manutenção que ninguém esperava pode mexer muito.
+2962|O que move os mercados, todos os dias
+2963|O que é o open banking
+2964|A que problema respondia a Bitcoin?
+2965|O que nunca deve ser colado num assistente de IA?
+2966|O que as stablecoins mudam
+2967|O que os Emirados estão a testar, onde se encaixa no Irão, como protege o solo e que empresas iranianas já o fazem.
+2968|O que o halving não lhe diz
+2969|O que é o halving
+2970|O que fazem é garantir que a decisão é realmente sua: compreendida, bem dimensionada e tomada com uma ideia clara do que seria estar errado.
+2971|O que fazem é eliminar as formas mais comuns e mais evitáveis de perder dinheiro: tokens que não se conseguiam ler, oferta que não se via, poderes cuja existência se desconhecia e saídas que nunca existiram.
+2972|O que o tempo faz à diferença
+2973|O que fazer com tudo isto
+2974|O que retirar disto
+2975|O que costuma proteger um saldo numa corretora se a corretora falir?
+2976|O que fizemos com o TMN
+2977|O que funciona hoje, o que está a chegar e os novos riscos.
+2978|O que me mostraria que estava errado?
+2979|O que possui
+2980|O que deve saber
+2981|Quando a eletricidade fica negativa
+2982|Quando passa o cartão, como se move o dinheiro?
+2983|Quando passa o cartão, como se move o dinheiro? Imagem da lição Ditoman
+2984|Quando passa o cartão, como se move o dinheiro? | Ditoman Learn
+2985|Quando um banco central corta as taxas de juro
+2986|Quando uma dívida não é amortizada, o juro é somado à dívida, e da vez seguinte o juro incide sobre o valor maior. Isso é
+2987|Quando um novo token é adicionado a uma corretora
+2988|Quando uma loja dá desconto em numerário, ou acrescenta uma sobretaxa ao cartão, esta comissão costuma ser a razão.
+2989|Quando um emissor diz que um token está totalmente garantido, a afirmação pode vir de um relatório chamado atestação. Uma atestação é normalmente uma fotografia de um momento, preparada para uma data específica. Uma auditoria completa vai mais fundo e cobre um período mais longo. São ferramentas diferentes, e um título raramente diz qual delas está a ler.
+2990|Quando assinou Woodrow Wilson a lei da Reserva Federal?
+2991|Quando se desbloqueia a liquidez bloqueada do TMN?
+2992|Quando os preços da eletricidade ficam negativos
+2993|Quando as pessoas imaginam perder cripto, pensam num pirata informático num quarto escuro a quebrar um código. Raramente é assim. Na maioria dos casos é o próprio dono que abre a porta: ao escrever uma frase numa página falsa, ao aprovar algo sem ler ou ao enviar dinheiro a um novo «amigo».
+2994|Quando se diz «o banco central subiu as taxas» ou «o banco central imprimiu dinheiro», fala-se dele como de uma só pessoa poderosa. Na verdade é uma instituição com uma lista curta de funções, e cada função tem uma razão.
+2995|Quando os preços sobem, o mesmo rendimento compra menos, como mostrou a lição 12. Um orçamento feito há seis meses pode já estar desatualizado. Reveja os números quando o custo do essencial mudar, não só numa data fixa.
+2996|Quando os ativos seguros, como obrigações do Estado ou poupanças, pagam mais, os ativos de risco parecem menos atrativos em comparação. O dinheiro pode deslocar-se para a segurança. Quando os ativos seguros pagam menos, o dinheiro procura rendimento noutro lado.
+2997|Quando alguém levanta o lucro das suas negociações
+2998|Quando essa confiança se quebrou, surgiu uma nova ideia.
+2999|Quando a corretora fecha automaticamente uma posição alavancada porque a margem se está a esgotar
+3000|Quando os dois bancos não partilham um correspondente, o pagamento salta por dois ou três bancos seguidos. Cada salto acrescenta tempo, uma comissão e uma verificação de conformidade.
+3001|Quando comparar duas ofertas, compare-as na mesma base: o mesmo período e a mesma capitalização. Uma taxa de destaque por si só não chega.
+3002|Quando deposita dinheiro, ele não fica numa caixa com o seu nome. O banco empresta a maior parte. O que possui é um crédito: o banco deve-lhe esse valor e promete pagá-lo quando o pedir.
+3003|Quando vir uma afirmação dramática sobre dinheiro digital, pergunte três coisas: é um teste ou o sistema real, de que país, e o que diz realmente a lei?
+3004|Quando passa o cartão, o terminal envia uma mensagem através do adquirente e da rede para o seu banco: este cartão, este valor, esta loja. Está tudo bem?
+3005|Onde a IA já trabalha discretamente
+3006|Onde se informam os iranianos?
+3007|Para onde vai o meu dinheiro do mês?
+3008|Para onde vai o meu dinheiro do mês? Imagem da lição Ditoman
+3009|Para onde vai o meu dinheiro do mês? | Ditoman Learn
+3010|De onde vem uma taxa de câmbio?
+3011|De onde vem uma taxa de câmbio? Imagem da lição Ditoman
+3012|De onde vem uma taxa de câmbio? | Ditoman Learn
+3013|Onde vivem os iranianos e porquê: um século do mapa populacional, água, infraestruturas e os próximos 20 anos.
+3014|Onde está o meu dinheiro?
+3015|Onde está o meu dinheiro? Da conta bancária à carteira digital
+3016|Onde está o meu dinheiro? Da conta bancária à carteira digital, imagem da lição Ditoman
+3017|Onde está o meu dinheiro? Da conta bancária à carteira digital | Ditoman Learn
+3018|Onde se encaixa o TMN
+3019|Onde se encaixam as cripto
+3020|Onde obtenho um endereço de carteira?
+3021|Por onde começo?
+3022|Onde se informam os iranianos?
+3023|Para onde desloca a blockchain a confiança?
+3024|Para onde vai o meu dinheiro do mês?
+3025|Onde está normalmente o dinheiro quando usa uma aplicação fintech?
+3026|Onde trabalha a IA nas finanças há anos?
+3027|Onde se esconde mais vezes o custo de uma transferência?

@@ -1,0 +1,108 @@
+0|La «capitalización de mercado» no es valor real.
+1|«Pagar después» es un préstamo, diga lo que diga el botón.
+2|«Inteligente» significa automático, no listo.
+3|«Los analfabetos del siglo XXI no serán los que no sepan leer y escribir, sino los que no sepan aprender, desaprender y
+4|«Los analfabetos del siglo XXI no serán los que no sepan leer y escribir, sino los que no sepan aprender, desaprender y reaprender.»
+5|% de cambio
+6|«Confiaría en este token porque…» o «No confiaría en él porque…». Tu razón es la verdadera lección.
+7|(Chuka)
+8|(datos a mayo de 2026)
+9|, comprobado el 27 de octubre de 2026. Los escáneres automáticos marcan «mintable» porque la función existe en el código. Solo puede llamarla el propietario, y el propietario es la dirección cero, así que nadie podrá llamarla nunca.
+10|, horas o días después.
+11|, es un coste que pagas dos veces. En piezas pequeñas de oro, y en joyas con coste de hechura, la diferencia es grande.
+12|, o garantía) controla una posición de 1.000 dólares. Si el precio sube un 10%, duplicas tu dinero. Si baja alrededor de un 10%, tus 100 dólares desaparecen.
+13|. La cuenta del banco A allí baja, la del banco B sube, y el pago queda hecho.
+14|. Ditoman nunca pide claves privadas ni frases semilla y nunca envía tokens a quien escribe primero.
+15|. No elimina el riesgo. Evita depender de que una sola historia sea la correcta.
+16|. Nadie tiene su clave, así que estos tokens no podrán moverse nunca más, pero siguen contando dentro de totalSupply.
+17|. Esta sí redujo el totalSupply, de 21.000.000.000.000 a 18.901.056.445.783,85.
+18|. Cuando los compradores se retiran tras malas noticias, los huecos entre ellos crecen, y cada orden de venta a mercado empuja el precio aún más abajo.
+19|. No eliges tú el momento; lo elige el precio.
+20|01. Código fuente del contrato verificado en BscScan
+21|02. Distribución de la oferta entre los tenedores
+22|03. Propiedad renunciada, no es posible crear nuevos tokens
+23|04. Sin impuesto de transferencia, sin lista negra, sin función de pausa
+24|05. Tokens de liquidez bloqueados
+25|=
+26|1 euro = 1,10 dólares
+27|1 euro = 1,10 dólares. Una camisa cuesta 50 euros. Su precio en dólares es:
+28|1 euro = 1,20 dólares
+29|1.000 al 5% anual: simple frente a compuesto
+30|1.000 al 5% compuesto durante 20 años da aproximadamente:
+31|1.000 al 5% de interés simple durante 10 años da:
+32|1. Encuentra la página oficial.
+33|1. Dinero y confianza
+34|1. La página falsa (phishing)
+35|10 millones de cheques digitales en Irán
+36|10 millones de cheques digitales en Irán
+37|10 años:
+38|100 millones
+39|114 millones
+40|12 minutos
+41|14 millones
+42|Oro de 18 quilates
+43|Oro 18K / g
+44|Oro de 18 quilates por gramo y la moneda Emami, en tomanes.
+45|Oro 18K, gramo
+46|Oro 18K, gramo, último
+47|18K gramo
+48|19 millones
+49|2.098.943.554.216,15 TMN (alrededor del 10%) se quemaron con la propia función de quema del contrato en
+50|2.100.000.000.000 TMN (10%) se enviaron a la dirección muerta pública
+51|2. Blockchain y Bitcoin
+52|2. Comprueba la fecha.
+53|2. El falso ayudante
+54|20 de abril de 2024
+55|20 años:
+56|20% para ahorro:
+57|21 bancos globales comprometen unos 270 millones de dólares en el Proyecto Faro: la historia, el mercado de 295.000 millones, fintech, blockchain y lo que significa para Irán.
+58|21 lecciones bilingües breves, paso a paso: del dinero y la inflación a los bancos, la blockchain y la IA.
+59|Cambio 24 h
+60|Volumen 24 h
+61|29 oct 2026:
+62|3. Enumera las reservas.
+63|3. La firma a ciegas
+64|3. Usar cripto con seguridad
+65|30 años, dos líneas: el carbono se frena, el sol y el viento se disparan
+66|30 lecciones breves, paso a paso: del dinero y la inflación a los bancos, la blockchain y la IA.
+67|30% para deseos:
+68|36 millones
+69|Impresoras 3D +86%, baterías +30%, robots +26%, mientras las ventas minoristas crecieron solo un 0,4%: lo que significa para el mundo e Irán.
+70|4. Identifica el tipo de informe.
+71|4. Mercados y ahorro
+72|4. El amigo paciente
+73|40 millones
+74|El 40% de los niños del Reino Unido recurre a la IA para consejos sobre dinero: qué preguntan, qué tan precisas son las respuestas y dónde están Irán y sus vecinos.
+75|5 minutos
+76|5 preguntas
+77|5. Encuentra las condiciones de reembolso.
+78|5. El futuro del dinero
+79|5. La rentabilidad garantizada
+80|50% para necesidades:
+81|50, 25, 12,5, 6,25, 3,125: el calendario detrás de los 21 millones.
+82|50/30/20 es una regla práctica, no un estándar oficial. Todo lo demás en esta lección es orientación general, no asesoramiento financiero personal.
+83|50/30/20 es una regla práctica: necesidades, deseos, ahorro. Ajusta los números a tu vida.
+84|Regla 50/30/20
+85|Ataque del 51%
+86|58 millones
+87|6 minutos
+88|6 preguntas
+89|6. Escribe una frase.
+90|El 65% de los jóvenes de 18 a 29 años se informa primero en internet, el 2,5% lee a menudo prensa en papel, y la economía es la sección más leída.
+91|7 minutos
+92|71 millones
+93|78 millones
+94|8.112 especies de plantas, un siglo de cambio, la economía de los árboles y las plantas, Irán junto a sus vecinos y 21 empresas.
+95|83 millones
+96|86 millones
+97|9,5 millones
+98|95 millones
+99|: 12 o 24 palabras corrientes. Quien tiene esas palabras controla el dinero. No hay botón de «olvidé mi contraseña» ni oficina a la que llamar.
+100|: los bancos se pagan de verdad entre sí, normalmente mediante cuentas en el banco central, y se abona la cuenta de la tienda. Suele ocurrir el siguiente día hábil, a veces más tarde.
+101|: calcular quién debe qué a quién.
+102|@usuario
+103|Un fraude de 129 millones de dólares supuestamente con voces y caras clonadas, y tres reglas para protegerte.
+104|Un reactor de polimerización de 40 metros construido en Shiraz para un complejo petroquímico en Asaluyeh, y las empresas detrás.
+105|Un reactor de 500 toneladas construido en Shiraz
+106|Un gráfico de John Authers en Bloomberg Opinion muestra las bolsas mundiales (índice FTSE All-World) subiendo durante dos años, interrumpidas por unas pocas caídas bruscas, cada una ligada a un gran choque político o económico. El patrón es la lección: los precios se mueven más cuando las noticias difieren de lo esperado, y el miedo se propaga más rápido que la calma.
+107|Una CBDC es una herramienta. La misma tecnología puede abaratar y acelerar los pagos, o dar a quien la controla mucha más visibilidad y poder sobre el dinero del que jamás dio el efectivo. Lo que obtienes se decide en el diseño y en la ley.

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>E se o seu dinheiro tivesse prazo de validade? Moedas digitais de bancos centrais | Ditoman Learn</title>
+<meta name="description" content="Moedas digitais de bancos centrais e «dinheiro programável»: o que são, até onde chegaram, o que é real e o que é exagerado, e onde está o rial digital do Irão" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson08.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson08.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson08.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson08.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson08.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson08.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson08.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson08.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson08.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson08.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson08.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson08.pt.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="E se o seu dinheiro tivesse prazo de validade? Moedas digitais de bancos centrais | Ditoman Learn" />
+<meta property="og:description" content="Moedas digitais de bancos centrais e «dinheiro programável»: o que são, até onde chegaram, o que é real e o que é exagerado, e onde está o rial digital do Irão" />
+<meta property="og:url" content="https://ditoman.com/lesson08.pt.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson08.pt.html#page",
+   "url": "https://ditoman.com/lesson08.pt.html",
+   "name": "E se o seu dinheiro tivesse prazo de validade? Moedas digitais de bancos centrais | Ditoman Learn",
+   "description": "Moedas digitais de bancos centrais e «dinheiro programável»: o que são, até onde chegaram, o que é real e o que é exagerado, e onde está o rial digital do Irão",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "E se o seu dinheiro tivesse prazo de validade? Moedas digitais de bancos centrais",
+     "item": "https://ditoman.com/lesson08.pt.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.pt.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.pt.html" class="active">Aprender</a>
+<a href="iran.en.html">Irão</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.pt.html">Preços</a>
+<a href="calendar.en.html">Calendário</a>
+<a href="tmn.pt.html">TMN</a>
+<a href="index.pt.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicações</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson08-programmable-money.jpg" alt="E se o seu dinheiro tivesse prazo de validade? Imagem da lição Ditoman" onerror="this.parentElement.style.display='none'"><img lang="en" src="lesson08-programmable-money-en.jpg" alt="E se o seu dinheiro tivesse prazo de validade? Imagem da lição Ditoman" onerror="this.parentElement.style.display='none'">
+</div>
+<div class="lesson-badge" lang="en">Dinheiro • Moedas digitais</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پول • ارزهای دیجیتال</div>
+<h1 lang="en">E se o seu dinheiro tivesse prazo de validade?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">اگر پولت تاریخ انقضا داشت؟</h1>
+<p class="subtitle" lang="en">
+Moedas digitais de bancos centrais e «dinheiro programável»: o que são, até onde chegaram, o que é real e o que é exagerado, e onde está o rial digital do Irão.
+</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">پول دیجیتال بانک مرکزی و «پول برنامه‌پذیر»: چیستند، تا کجا پیش رفته‌اند، چه چیزی واقعی است و چه چیزی اغراق، و ریال دیجیتال ایران کجا ایستاده است.</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span lang="en">Nível</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Iniciante</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box">
+<span lang="en">Tempo de leitura</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">7 minutos</strong><strong lang="fa" dir="rtl" style="display:block">۷ دقیقه</strong></div>
+<div class="meta-box">
+<span lang="en">Pontos de aprendizagem</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">18 LP</strong><strong lang="fa" dir="rtl" style="display:block">۱۸ امتیاز</strong></div>
+<div class="meta-box">
+<span lang="en">Questionário futuro</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک آینده</span><strong lang="en">5 perguntas</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Conteúdo da lição</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">
+Leia a lição em inglês ou persa. Esta estrutura foi pensada para futuros sistemas de questionários, pontuação, reputação e recompensas.
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمونک، امتیاز، اعتبار و پاداش‌هایی طراحی شده که در آینده اضافه می‌شوند.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Inglês</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>Talvez tenha visto uma publicação que começa com uma pergunta: e se o seu dinheiro tivesse prazo de validade? Gaste-o até sexta, ou desaparece. Gaste-o só em lojas aprovadas, ou não funciona.</p>
+<p>Parece ficção científica, mas toca em algo real. Os bancos centrais de todo o mundo estudam uma nova forma de dinheiro, e parte dela pode, tecnicamente, levar regras destas. Esta lição separa o que é real do que é exagerado.</p>
+
+<h3><span class="check-number">01.</span> O que é realmente uma CBDC</h3>
+<p>Uma moeda digital de banco central, ou CBDC, é dinheiro digital emitido diretamente pelo banco central de um país. É a versão digital da nota que tem na carteira.</p>
+<p>Isso é diferente do dinheiro que hoje tem na conta bancária. Quando vê um saldo numa aplicação bancária, é uma promessa do seu banco. Uma CBDC seria um crédito direto sobre o próprio banco central, tal como as notas.</p>
+<p>Também é muito diferente da Bitcoin. A Bitcoin não tem emissor nem ninguém que possa mudar as regras sozinho. Uma CBDC é emitida, controlada e desenhada pelo Estado.</p>
+
+<h3><span class="check-number">02.</span> Até onde chegou?</h3>
+<p>Segundo o monitor do Atlantic Council, 146 países e uniões monetárias, que somam mais de 98% da economia mundial, estão a estudar uma CBDC. É daí que vêm os números grandes que vê nas publicações.</p>
+<p>Mas estudar não é lançar. Pelo mesmo monitor, só três países lançaram por completo: Bahamas, Jamaica e Nigéria. Há cerca de 41 projetos-piloto em curso. O yuan digital da China é o maior piloto do mundo.</p>
+<p>A zona euro prepara um euro digital. Uma comissão do Parlamento Europeu aprovou a sua posição em junho de 2026, e o lançamento mais cedo em discussão é 2029. Os Estados Unidos seguiram o caminho oposto: uma ordem executiva de janeiro de 2025 proibiu o trabalho numa CBDC americana.</p>
+
+<h3><span class="check-number">03.</span> O que significa «dinheiro programável»</h3>
+<p>O dinheiro comum não se importa com o que faz com ele. Dinheiro programável é dinheiro com regras escritas nele. A regra viaja com o próprio dinheiro, não com a pessoa.</p>
+<p>Exemplos de regras possíveis: este dinheiro só pode ser gasto até certa data. Só em certos tipos de lojas. Só por esta pessoa e não pode ser transferido. Só para um fim indicado, como transportes ou alimentação.</p>
+<p>Alguns usos são inofensivos ou até úteis: um pagamento que se liberta automaticamente quando a mercadoria chega, ou ajuda que chega às pessoas certas. A preocupação é sobre quem escreve as regras, e se podem ser aplicadas ao dinheiro do dia a dia sem o seu acordo.</p>
+
+<h3><span class="check-number">04.</span> Real ou exagerado?</h3>
+<p>A data de validade é real, mas só em testes. Em janeiro de 2021, Shenzhen, na China, deu por sorteio 200 yuan digitais a cada um de 100 000 residentes. O dinheiro só podia ser gasto entre 7 e 17 de janeiro em comerciantes designados, não podia ser transferido e os valores não usados foram retirados. Em 2021, Chengdu distribuiu yuan digital que só podia ser usado em transportes públicos e bicicletas partilhadas.</p>
+<p>Eram promoções pensadas para testar o sistema e incentivar o consumo, não regras sobre as poupanças normais das pessoas. Nenhum país pôs uma data de validade nos saldos diários de CBDC.</p>
+<p>O Banco Central Europeu afirmou que o euro digital não seria dinheiro programável deste tipo. Se todos os governos cumprirão essa promessa no futuro é uma pergunta justa, e uma razão pela qual o desenho e a lei em torno das CBDC importam.</p>
+
+<h3><span class="check-number">05.</span> O rial digital do Irão</h3>
+<p>O Banco Central do Irão anunciou os planos pela primeira vez em 2018. Um piloto começou em 2023 na ilha de Kish, abrangendo transferências entre pessoas e pagamentos a comerciantes, e foi depois alargado. O rial digital está indexado um para um ao rial comum e destina-se a uso interno.</p>
+<p>A informação pública sobre o piloto é limitada: não há números verificados de forma independente sobre quantas pessoas o usam, nem data pública para um lançamento nacional. Por agora, é um teste, não dinheiro que a maioria dos iranianos utilize.</p>
+
+<h3><span class="check-number">06.</span> As perguntas que realmente importam</h3>
+<p>Se uma CBDC é boa ou má depende quase inteiramente do seu desenho e da lei à sua volta. Estas são as perguntas que importam, em qualquer país:</p>
+<p><strong>Privacidade:</strong> quem pode ver os seus pagamentos, e com que regras? <strong>Limites:</strong> há um limite ao valor que pode ter? O euro digital prevê um, para proteger os bancos. <strong>Programabilidade:</strong> podem ser impostas condições aos saldos comuns, ou só a pagamentos específicos com que concorde? <strong>Uso offline:</strong> funciona sem internet, como o dinheiro físico? <strong>Dinheiro vivo:</strong> o dinheiro físico continua disponível em paralelo?</p>
+
+<h3>O que retirar disto</h3>
+<p>Uma CBDC é uma ferramenta. A mesma tecnologia pode tornar os pagamentos mais baratos e rápidos, ou dar a quem a controla muito mais visibilidade e poder sobre o dinheiro do que o dinheiro vivo alguma vez deu. O que se obtém decide-se no desenho e na lei.</p>
+<p>Quando vir uma afirmação dramática sobre dinheiro digital, pergunte três coisas: é um teste ou o sistema real, de que país, e o que diz realmente a lei?</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>شاید پستی دیده باشید که با این پرسش شروع می‌شود: اگر پولت تاریخ انقضا داشت چه؟ تا جمعه خرجش کن، وگرنه ناپدید می‌شود. فقط در فروشگاه‌های مجاز خرجش کن، وگرنه کار نمی‌کند.</p>
+<p>به داستان علمی‌تخیلی شبیه است، اما به چیزی واقعی اشاره می‌کند. بانک‌های مرکزی در سراسر دنیا در حال بررسی نوع تازه‌ای از پول هستند که از نظر فنی می‌تواند چنین قاعده‌هایی داشته باشد. این درس واقعیت را از اغراق جدا می‌کند.</p>
+
+<h3><span class="check-number">۰۱.</span> CBDC دقیقاً چیست</h3>
+<p>پول دیجیتال بانک مرکزی یا CBDC، پولی دیجیتال است که مستقیم توسط بانک مرکزی یک کشور منتشر می‌شود. نسخه‌ی دیجیتال همان اسکناسی است که در کیف پولتان دارید.</p>
+<p>این با پول حساب بانکی امروز فرق دارد. موجودی‌ای که در اپ بانک می‌بینید، تعهد بانک شماست. CBDC ادعای مستقیم بر خود بانک مرکزی است، درست مثل اسکناس.</p>
+<p>با بیت‌کوین هم کاملاً فرق دارد. بیت‌کوین منتشرکننده ندارد و هیچ‌کس به‌تنهایی نمی‌تواند قواعدش را تغییر دهد. CBDC را دولت منتشر می‌کند، کنترل می‌کند و طراحی می‌کند.</p>
+
+<h3><span class="check-number">۰۲.</span> تا کجا پیش رفته؟</h3>
+<p>طبق ردیاب اتلانتیک کانسل، ۱۴۶ کشور و اتحادیه‌ی پولی که روی هم بیش از ۹۸٪ اقتصاد جهان را تشکیل می‌دهند، در حال بررسی CBDC هستند. عددهای بزرگی که در پست‌ها می‌بینید از همین‌جا می‌آید.</p>
+<p>اما بررسی کردن با راه‌اندازی فرق دارد. طبق همین ردیاب، فقط سه کشور CBDC را کامل راه‌اندازی کرده‌اند: باهاما، جامائیکا و نیجریه. حدود ۴۱ طرح آزمایشی در جریان است و یوان دیجیتال چین بزرگ‌ترین آن‌هاست.</p>
+<p>منطقه‌ی یورو در حال آماده‌کردن یورو دیجیتال است. یک کمیسیون پارلمان اروپا در ژوئن ۲۰۲۶ موضعش را تصویب کرد و زودترین زمان راه‌اندازی که مطرح است ۲۰۲۹ است. آمریکا مسیر مخالف را رفت: یک فرمان اجرایی در ژانویه‌ی ۲۰۲۵ کار روی CBDC آمریکا را ممنوع کرد.</p>
+
+<h3><span class="check-number">۰۳.</span> «پول برنامه‌پذیر» یعنی چه</h3>
+<p>پول معمولی برایش مهم نیست با آن چه می‌کنید. پول برنامه‌پذیر پولی است که قاعده‌هایی داخلش نوشته شده. قاعده همراه خود پول جابه‌جا می‌شود، نه همراه آدم.</p>
+<p>نمونه‌هایی از قاعده‌های ممکن: این پول فقط تا تاریخ مشخصی خرج می‌شود. فقط در فروشگاه‌های خاص. فقط توسط همین شخص و قابل انتقال نیست. فقط برای هدفی مشخص مثل حمل‌ونقل یا غذا.</p>
+<p>بعضی کاربردها بی‌خطر یا حتی مفیدند: پرداختی که با رسیدن کالا خودکار آزاد می‌شود، یا کمک مالی‌ای که به دست افراد درست می‌رسد. نگرانی این است که چه کسی قاعده‌ها را می‌نویسد، و آیا می‌شود آن‌ها را بدون رضایت شما روی پول روزمره اعمال کرد.</p>
+
+<h3><span class="check-number">۰۴.</span> واقعی یا اغراق‌شده؟</h3>
+<p>تاریخ انقضا واقعی است، اما فقط در آزمایش‌ها. در ژانویه‌ی ۲۰۲۱ شهر شنژن چین با قرعه‌کشی به ۱۰۰ هزار نفر هر کدام ۲۰۰ یوان دیجیتال داد. این پول فقط از ۷ تا ۱۷ ژانویه و فقط در فروشگاه‌های مشخص خرج می‌شد، قابل انتقال نبود، و مبلغ خرج‌نشده پس گرفته شد. در ۲۰۲۱ شهر چنگدو یوان دیجیتالی داد که فقط برای حمل‌ونقل عمومی و دوچرخه‌ی اشتراکی قابل استفاده بود.</p>
+<p>این‌ها طرح‌های تبلیغاتی برای آزمایش سیستم و تشویق خرج‌کردن بودند، نه قاعده‌ای روی پس‌انداز معمولی مردم. هیچ کشوری روی موجودی روزمره‌ی CBDC تاریخ انقضا نگذاشته است.</p>
+<p>بانک مرکزی اروپا گفته که یورو دیجیتال چنین پول برنامه‌پذیری نخواهد بود. اینکه همه‌ی دولت‌ها در آینده به این قول پایبند بمانند پرسش منصفانه‌ای است، و دلیلی است که طراحی و قانون پشت CBDC اهمیت دارد.</p>
+
+<h3><span class="check-number">۰۵.</span> ریال دیجیتال ایران</h3>
+<p>بانک مرکزی ایران اولین بار در ۲۰۱۸ برنامه‌اش را اعلام کرد. آزمایش در ۲۰۲۳ در جزیره‌ی کیش شروع شد و انتقال فرد به فرد و پرداخت به فروشگاه را پوشش می‌دهد. از آن زمان تمدید شده است. ریال دیجیتال یک‌به‌یک با ریال معمولی برابر است و برای استفاده‌ی داخلی طراحی شده.</p>
+<p>اطلاعات عمومی درباره‌ی این آزمایش محدود است: آمار مستقلی از تعداد کاربرانش منتشر نشده و تاریخ عمومی برای راه‌اندازی سراسری اعلام نشده. فعلاً یک آزمایش است، نه پولی که بیشتر ایرانی‌ها با آن سروکار دارند.</p>
+
+<h3><span class="check-number">۰۶.</span> پرسش‌های واقعی</h3>
+<p>خوب یا بد بودن یک CBDC تقریباً کامل به طراحی‌اش و قانون پشتش بستگی دارد. این‌ها پرسش‌هایی است که برای هر کشوری اهمیت دارد:</p>
+<p><strong>حریم خصوصی:</strong> چه کسی پرداخت‌های شما را می‌بیند و با چه قاعده‌ای؟ <strong>سقف:</strong> آیا برای مقدار نگهداری سقف وجود دارد؟ یورو دیجیتال برای حفاظت از بانک‌ها سقف دارد. <strong>برنامه‌پذیری:</strong> آیا می‌شود روی موجودی معمولی شرط گذاشت، یا فقط روی پرداخت‌های مشخصی که خودتان قبول می‌کنید؟ <strong>استفاده‌ی آفلاین:</strong> آیا مثل پول نقد بدون اینترنت کار می‌کند؟ <strong>پول نقد:</strong> آیا اسکناس در کنارش باقی می‌ماند؟</p>
+
+<h3>چه برداشتی کنیم</h3>
+<p>CBDC یک ابزار است. همین فناوری می‌تواند پرداخت را ارزان‌تر و سریع‌تر کند، یا به کسی که کنترلش را دارد دید و قدرتی بر پول بدهد که پول نقد هرگز نداشت. اینکه کدام را بگیرید در طراحی و قانون تعیین می‌شود.</p>
+<p>وقتی ادعای هیجان‌انگیزی درباره‌ی پول دیجیتال دیدید، سه چیز بپرسید: این آزمایش است یا سیستم اصلی؟ کدام کشور؟ و قانون واقعاً چه می‌گوید؟</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">As CBDC e as cripto não são a mesma coisa</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">پول دیجیتال بانک مرکزی و کریپتو یکی نیستند</h2>
+<p lang="en">
+Uma CBDC é dinheiro do Estado em forma digital. A Bitcoin e tokens como o TMN não são emitidos por nenhum banco central, e as suas regras são definidas por código público e não por um governo. Essa diferença é exatamente a razão por que esta lição importa a quem aprende sobre cripto.
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">پول دیجیتال بانک مرکزی همان پول دولتی در شکل دیجیتال است. بیت‌کوین و توکن‌هایی مثل TMN را هیچ بانک مرکزی‌ای منتشر نمی‌کند و قواعدشان را کد عمومی تعیین می‌کند، نه دولت. همین تفاوت است که این درس را برای هر کسی که کریپتو یاد می‌گیرد مهم می‌کند.</p>
+<p lang="en">
+A Ditoman não toma posição política sobre a política monetária de nenhum governo. Explicamos como os sistemas funcionam e o que mostram os dados.
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">دیتومان درباره‌ی سیاست پولی هیچ دولتی موضع سیاسی نمی‌گیرد. ما توضیح می‌دهیم این سیستم‌ها چطور کار می‌کنند و شواهد چه نشان می‌دهند.</p>
+<div class="cta-row">
+<a class="cta" href="lesson03.pt.html"><span lang="en">Porque foi criada a Bitcoin</span><span lang="fa">بیت‌کوین چرا ساخته شد</span></a>
+<a class="button" href="lesson07.pt.html"><span lang="en">Como as grandes notícias movem a Bitcoin</span><span lang="fa">خبرهای بزرگ چطور قیمت بیت‌کوین را تکان می‌دهند</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Conceitos-chave</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en">
+<li>Moeda digital de banco central (CBDC)</li>
+<li>Dinheiro dos bancos versus dinheiro do banco central</li>
+<li>Dinheiro programável</li>
+<li>Piloto versus lançamento</li>
+<li>Limites de detenção e privacidade</li>
+<li>Rial digital</li>
+<li>CBDC versus criptomoeda</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>پول دیجیتال بانک مرکزی</li>
+<li>پول بانکی در برابر پول بانک مرکزی</li>
+<li>پول برنامه‌پذیر</li>
+<li>طرح آزمایشی در برابر راه‌اندازی کامل</li>
+<li>سقف نگهداری و حریم خصوصی</li>
+<li>ریال دیجیتال</li>
+<li>پول دیجیتال بانک مرکزی در برابر رمزارز</li>
+</ul>
+</div>
+<div class="card">
+<h3 lang="en">Objetivos de aprendizagem</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en">
+<li>Explique o que é uma CBDC e quem a emite.</li>
+<li>Distinguir explorar, testar e lançar.</li>
+<li>Descreva o que torna o dinheiro programável.</li>
+<li>Separar exemplos reais de testes de afirmações exageradas.</li>
+<li>Indique as questões de desenho que decidem se uma CBDC é segura para os utilizadores.</li>
+</ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px">
+<li>توضیح دهید پول دیجیتال بانک مرکزی چیست و چه کسی آن را منتشر می‌کند.</li>
+<li>فرق بررسی اولیه، اجرای آزمایشی و راه‌اندازی کامل را تشخیص دهید.</li>
+<li>توضیح دهید چه چیزی پول را برنامه‌پذیر می‌کند.</li>
+<li>نمونه‌های واقعی آزمایش‌ها را از ادعاهای اغراق‌آمیز جدا کنید.</li>
+<li>پرسش‌های طراحی را نام ببرید که تعیین می‌کنند یک پول دیجیتال بانک مرکزی برای کاربران امن است یا نه.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Banco de perguntas futuro</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بانک پرسش‌های آزمونک آینده</h2>
+<p class="section-subtitle" lang="en">
+Estas perguntas foram preparadas para o futuro sistema de questionários e participação do Ditoman. Mais tarde poderão sustentar pontuações de aprendizagem, camadas de reputação e uma eventual elegibilidade para recompensas em TMN.
+</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">این پرسش‌ها برای سامانه‌ی آزمونک و مشارکت آینده‌ی دیتومان آماده شده‌اند. ممکن است بعدها مبنای امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN شوند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Pergunta 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Quem emite uma CBDC?</p>
+<p lang="fa" dir="rtl" style="text-align:right">پول دیجیتال بانک مرکزی را چه کسی منتشر می‌کند؟</p>
+<p lang="en">A. Uma empresa privada</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. یک شرکت خصوصی</p><p lang="en">B. O banco central do país</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. بانک مرکزی همان کشور</p><p lang="en">C. Os mineradores de Bitcoin</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. استخراج‌کنندگان بیت‌کوین</p><p lang="en">D. Só bancos comerciais</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. فقط بانک‌های تجاری</p>
+<p class="answer" lang="en">Resposta certa: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pergunta 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Segundo o monitor do Atlantic Council, quantos países lançaram por completo uma CBDC?</p>
+<p lang="fa" dir="rtl" style="text-align:right">طبق ردیاب شورای آتلانتیک، چند کشور پول دیجیتال بانک مرکزی را به‌طور کامل راه‌اندازی کرده‌اند؟</p>
+<p lang="en">A. 146</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۱۴۶</p><p lang="en">B. 41</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۴۱</p><p lang="en">C. 3</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۳</p><p lang="en">D. Nenhum</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. هیچ‌کدام</p>
+<p class="answer" lang="en">Resposta certa: C (Bahamas, Jamaica e Nigéria)</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج (باهاما، جامائیکا و نیجریه)</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pergunta 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">O que torna o dinheiro «programável»?</p>
+<p lang="fa" dir="rtl" style="text-align:right">چه چیزی پول را «برنامه‌پذیر» می‌کند؟</p>
+
+<p class="answer" lang="en">Resposta certa: regras escritas no próprio dinheiro, por exemplo uma data de validade ou limites sobre onde pode ser gasto.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: قواعدی که در خود پول نوشته می‌شود، مثلاً تاریخ انقضا یا محدودیت در جاهایی که می‌شود خرجش کرد.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pergunta 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Verdadeiro ou falso: os saldos de yuan digital da China expiram para todos.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درست یا نادرست: موجودی یوآن دیجیتال چین برای همه منقضی می‌شود.</p>
+
+<p class="answer" lang="en">Resposta certa: Falso. As datas de validade foram usadas em testes promocionais limitados, como em Shenzhen em janeiro de 2021, não em saldos do dia a dia.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: نادرست. تاریخ انقضا فقط در آزمایش‌های تبلیغاتی محدود به کار رفت، مثل شنژن در ژانویه‌ی ۲۰۲۱، نه روی موجودی‌های روزمره.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pergunta 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Que pergunta importa mais ao avaliar uma CBDC?</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای قضاوت درباره‌ی یک پول دیجیتال بانک مرکزی، کدام پرسش از همه مهم‌تر است؟</p>
+<p lang="en">A. A cor e o logótipo</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. رنگ و لوگوی آن</p><p lang="en">B. O seu desenho e a lei à volta: privacidade, limites, programabilidade, uso offline</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. طراحی آن و قانونی که بر آن حاکم است: حریم خصوصی، سقف‌ها، برنامه‌پذیری، استفاده‌ی آفلاین</p><p lang="en">C. A rapidez com que o preço sobe</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. قیمتش چقدر سریع بالا می‌رود</p><p lang="en">D. Quantos países falam dela</p>
+<p lang="fa" dir="rtl" style="text-align:right">د. چند کشور درباره‌اش حرف می‌زنند</p>
+<p class="answer" lang="en">Resposta certa: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Fontes</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul>
+<li><a href="https://www.atlanticcouncil.org/cbdctracker/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Atlantic Council, monitor de moedas digitais de bancos centrais</a> <span lang="en">(dados de maio de 2026)</span><span lang="fa">(آمار تا مه ۲۰۲۶)</span></li>
+<li><a href="https://www.financemagnates.com/cryptocurrency/news/shenzhen-announces-20-million-digital-yuan-giveaway/amp/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Finance Magnates, oferta de yuan digital em Shenzhen (janeiro de 2021)</a></li>
+<li><a href="https://www.theblock.co/post/110377/china-digital-yuan-test-programmable-chengdu" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">The Block: teste do yuan digital programável em Chengdu (julho de 2021)</a></li>
+<li><a href="https://www.euronews.com/business/2026/06/23/european-parliament-backs-long-awaited-digital-euro-to-reduce-us-dominance-in-payments" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Euronews, comissão do Parlamento Europeu apoia o euro digital (junho de 2026)</a></li>
+<li><a href="https://www.nasdaq.com/articles/president-trump-signs-executive-order-ban-central-bank-digital-currencies-cbdc" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Nasdaq: ordem executiva dos EUA que proíbe uma CBDC (janeiro de 2025)</a></li>
+<li><a href="https://cbdc.wiki/cbdc/iran-digital-rial" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">CBDC Wiki, estado do rial digital do Irão (março de 2026)</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title" lang="en">Resumo no Instagram</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">خلاصه در اینستاگرام</h2>
+<p lang="en">
+Esta lição foi apresentada primeiro no Instagram do Ditoman. A versão do Instagram dá um breve resumo visual, e esta página oferece a versão completa da lição.
+</p>
+<p lang="fa" dir="rtl" style="text-align:right">خلاصه‌ی تصویری این درس ابتدا در اینستاگرام دیتومان منتشر شد. نسخه‌ی اینستاگرام یک معرفی کوتاه و تصویری است و این صفحه نسخه‌ی کامل آموزشی آن است.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">Ver no Instagram</span><span lang="fa">دیدن در اینستاگرام</span></a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span lang="en">Entrar no Telegram</span><span lang="fa">عضویت در تلگرام</span></a>
+<a class="button" href="learn.pt.html"><span lang="en">Voltar a Aprender</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson07.pt.html"><span lang="en">Lição anterior</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson09.pt.html"><span lang="en">Lição seguinte</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Construído com estrutura, movido pela descoberta.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-pt.js?v=20261121a"></script>
+</body>
+</html>

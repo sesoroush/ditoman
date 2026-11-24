@@ -1,0 +1,112 @@
+3028|Wo ist eine Wiederherstellungsphrase am sichersten aufbewahrt?
+3029|Woher es kommt
+3030|Wo es liegt
+3031|Stand der Dinge
+3032|Wo keine einzelne Instanz das Netzwerk kontrolliert.
+3033|Wo sich die Kosten verstecken
+3034|Wo die Idee begann
+3035|Wohin der Monat geht, und eine einfache 50/30/20-Aufteilung.
+3036|Wohin das führen kann
+3037|Wo man ihn aufbewahrt
+3038|Wo Transaktionen überprüfbar sind.
+3039|Ob eine CBDC gut oder schlecht ist, hängt fast ganz von ihrer Gestaltung und dem Recht um sie herum ab. Das sind die entscheidenden Fragen, für jedes Land:
+3040|Welche Bereiche kann die Blockchain beeinflussen?
+3041|Welche Bank hat Ihre Karte ausgegeben und führt Ihr Konto?
+3042|Welche Stelle was genehmigt und wo man anfängt, Branche für Branche.
+3043|Welche Alltagsmaschine ist die klassische Metapher?
+3044|Welche Gewohnheit empfiehlt das CFPB zum Aufbau von Ersparnissen?
+3045|Auf welche Institutionen verlassen sich Menschen heute oft?
+3046|Was ist ein echter Grund, einen Wertzuwachs eines Tokens zu erwarten?
+3047|Welche gilt als älteste Zentralbank der Welt?
+3048|Welche Frage sollte man stellen, bevor man einem Stablecoin vertraut?
+3049|Was ist der sicherste Weg, die Website Ihrer Börse oder Wallet zu öffnen?
+3050|Auf welche Art der Deckung stützte sich UST, das im Mai 2022 scheiterte?
+3051|Welche der drei hatte die größten Kursstürze?
+3052|Welche davon sind Kernmerkmale der Blockchain?
+3053|Was davon lässt sich durch Lesen eines Token-Vertrags herausfinden?
+3054|Was davon ist KEINE typische Aufgabe einer Zentralbank?
+3055|Was davon ist ein echter Grund, einen Wertzuwachs eines Tokens zu erwarten?
+3056|Was davon ist eine der vier Aufgaben einer Bank?
+3057|Was davon sollten Sie in einem Sperreintrag prüfen?
+3058|Welcher ist ein Coin?
+3059|Welchen Teil einer internationalen Zahlung beseitigt ein Stablecoin nicht?
+3060|Welcher Kauf eignet sich am ehesten für einen Kredit?
+3061|Welche Frage ist bei der Beurteilung einer CBDC am wichtigsten?
+3062|Welche Aussage über eine Liquiditätssperre ist richtig?
+3063|Welche Aussage trifft auf alle drei Anlagen zu?
+3064|Whitepaper
+3065|Whitepaper: endgültige Richtung
+3066|Wer ist Satoshi Nakamoto, Titelbild der Ditoman-Lektion
+3067|Wer ist Satoshi Nakamoto?
+3068|Wer wird die nächste Nvidia? Speicher, Netzwerke und Spezialchips
+3069|Wem gehört das CO2?
+3070|Wer betreibt eine Blockchain?
+3071|Wer betreibt eine Blockchain? Ditoman-Lektionsbild
+3072|Wer betreibt eine Blockchain? | Ditoman Learn
+3073|Wer eine Überweisung genehmigt
+3074|Wer kann die Coins in einer eigenen Wallet bewegen?
+3075|Wer kann zurücktauschen, wie hoch ist der Mindestbetrag, welche Gebühren fallen an und wie lange dauert es?
+3076|Wer was macht
+3077|Wer einen Fehler behebt
+3078|Wer hält das Angebot?
+3079|Wer ist Satoshi Nakamoto?
+3080|Wer im Rennen ist, warum Quantentechnik mit KI und Kernkraft gleichzieht und was das für Verschlüsselung und Bitcoin bedeutet.
+3081|Wer wird die nächste Nvidia
+3082|Wer gibt eine CBDC heraus?
+3083|Wer gibt digitales Zentralbankgeld (CBDC) heraus?
+3084|Wem gehört das CO2? Die größten CO2-Exporteure
+3085|Wer bezahlt das alles?
+3086|Wer Blöcke vorschlägt
+3087|Wer betreibt eine Blockchain?
+3088|Wer den Preis bestimmt
+3089|Wer Geld in den Pool einzahlt, erhält LP-Tokens (Liquiditätsanbieter-Tokens). Sehen Sie sie als Quittung. Wer die Quittung hält, kann sie jederzeit an den Pool zurückgeben und seinen Anteil an BNB und Tokens herausnehmen.
+3090|Warum Bitcoin geschaffen wurde
+3091|Warum Bitcoin geschaffen wurde
+3092|Warum die Blockchain wichtig ist
+3093|Warum die Blockchain wichtig ist, Ditoman-Lektionsbild
+3094|Warum stürzen Preise plötzlich ab?
+3095|Warum stürzen Preise plötzlich ab? Nachrichten, Hebel und Liquidationen | Ditoman Learn
+3096|Warum verliert Geld an Kaufkraft?
+3097|Warum verliert Geld an Kaufkraft? Ditoman-Lektionsbild
+3098|Warum verliert Geld an Kaufkraft? | Ditoman Learn
+3099|Warum sind Auslandsüberweisungen immer noch langsam und teuer?
+3100|Warum sind Auslandsüberweisungen immer noch langsam und teuer? Ditoman-Lektionsbild
+3101|Warum sind Auslandsüberweisungen immer noch langsam und teuer? | Ditoman Learn
+3102|Warum United KI-Agenten das Buchen von Flügen verbot
+3103|Warum United KI-Agenten das Buchen von Flügen verbot
+3104|Warum wir uns nicht mehr treffen
+3105|Warum ein Standard hilft
+3106|Warum sind transparente Regeln wichtig?
+3107|Warum die Blockchain wichtig ist
+3108|Warum können sich Kryptopreise bei großen Nachrichten schnell bewegen, sogar am Wochenende?
+3109|Warum können höhere Zinsen riskante Anlagen wie Bitcoin unter Druck setzen?
+3110|Warum es Coins gibt
+3111|Warum Angebote auf gleicher Verzinsungsbasis vergleichen?
+3112|Warum Krypto mit Tech-Aktien und Gold fiel: die Fed, KI-Aktien, ETF-Abflüsse und Geopolitik, mit Szenarien für eine Woche, vier Wochen und sechs Monate.
+3113|Warum Krypto zuerst und am stärksten reagiert
+3114|Warum vorab festlegen, was beweisen würde, dass Sie falschliegen?
+3115|Warum lief Bitcoin weiter, nachdem Satoshi verschwand?
+3116|Warum funktionierte Bitcoin weiter, nachdem Satoshi sich zurückzog?
+3117|Warum glaube ich, dass das später mehr wert sein wird?
+3118|Warum stürzen Preise plötzlich ab?
+3119|Warum stürzen Preise plötzlich ab? Ditoman-Lektionsbild
+3120|Warum schafft die Blockchain Vertrauen?
+3121|Warum verliert Geld an Kaufkraft?
+3122|Warum ist Angebotskonzentration wichtig?
+3123|Warum Wahlen wichtig sind
+3124|Warum ist Satoshis Identität noch wichtig?
+3125|Warum passt eine Anlage mit stark fallendem Preis schlecht zu einem Notfallfonds?
+3126|Warum sind Auslandsüberweisungen noch immer schwierig?
+3127|Warum liegt der echte Jahreszins dieses Kredits über 14 %?
+3128|Warum gilt Dringlichkeit als Warnsignal?
+3129|Warum es sich kostenlos anfühlt
+3130|Warum er „smart“ ist
+3131|Warum es langsam ist
+3132|Warum es für gewöhnliche Menschen wichtig ist
+3133|Warum Geld an Kaufkraft verliert
+3134|Warum keine Politik?
+3135|Warum Zahlungen manchmal scheitern oder zurückkommen
+3136|Warum Menschen ihre Ersparnisse streuen
+3137|Warum sich Preise bewegen und wie sich Anlagen unterscheiden.
+3138|Warum Erzeuger zahlen, um Strom zu verkaufen, die Zahlen aus Deutschland und Frankreich, und warum ein negativer Großhandelspreis keine negative Rechnung ist.
+3139|Warum Erzeuger manchmal zahlen, um Strom zu verkaufen, und warum Ihre Rechnung nicht negativ wird.

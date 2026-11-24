@@ -1,0 +1,147 @@
+476|Automatize:
+477|Automatize pequenas transferências; o hábito conta mais do que o montante.
+478|Transferência automática
+479|Disponível agora
+480|=
+481|B. 1 de janeiro de 1900
+482|B. 14 milhões
+483|B. 20% ao ano
+484|B. 210 milhões
+485|B. 29 de outubro de 2027
+486|=
+487|B. Um depósito bancário
+488|B. Um banco onde outros dois bancos têm conta
+489|B. Um banco sem clientes
+490|B. Um crédito sobre o banco
+491|B. Uma moeda na Bitcoin
+492|B. Um desconto nas comissões
+493|B. Um amigo tem a certeza
+494|B. Uma subida geral dos preços ao longo do tempo
+495|B. Foi feita uma cativação que será libertada
+496|B. Um empréstimo
+497|B. Uma mensagem para si próprio numa app de conversação
+498|B. Uma nova máquina de mineração
+499|B. Um acordo em papel assinado por um advogado
+500|B. Uma imagem de um momento
+501|B. Uma pergunta sobre a inflação
+502|B. Um recibo do dinheiro adicionado a um pool de liquidez
+503|B. Uma burla
+504|B. Uma única empresa
+505|B. Um pequeno número de detentores pode mover todo o mercado com uma decisão
+506|B. Uma ferramenta que gera rendimento durante anos
+507|B. Uma máquina de lavar
+508|B. Uma votação anual
+509|B. Cerca de 50
+510|B. Cerca de 50%
+511|B. Cerca de 7 anos
+512|B. Cerca de 96 milhões de dólares
+513|B. Dotado de inteligência artificial
+514|B. Perguntar ao assistente se o rosto parece real
+515|B. Os bancos exigem-no
+516|B. Porque os bancos acrescentam um imposto escondido
+517|B. Porque é controlada pelos bancos centrais
+518|B. Porque a pressão para agir antes de pensar é uma marca comum da manipulação
+519|B. Porque o sistema pode ser verificado
+520|B. Funções de lista negra ou bloqueio de endereços
+521|B. A blockchain muda a forma como a confiança funciona
+522|B. Garantia em cripto
+523|B. Dados
+524|B. Exigir reembolso ao banco central
+525|B. Em cada bloco
+526|B. Em cada segundo
+527|B. Ouro
+528|B. Governos
+529|B. Garante lucro
+530|B. Esconder o livro-razão
+531|B. Guardar dados
+532|B. Despesas de férias
+533|B. Quantos balcões tem?
+534|B. Imutabilidade
+535|B. No papel do talão
+536|B. Juro cobrado só uma vez
+537|B. O preço é alto?
+538|B. Não pode ser enviado; a comissão precisa de BNB
+539|B. Transporta instruções de pagamento entre instituições
+540|B. É final e nenhum banco a pode reverter
+541|B. É ilegal tê-lo
+542|B. Permite julgar acontecimentos futuros com um critério claro em vez de os desculpar
+543|B. Volta para si ao fim de um dia
+544|B. Mantém-se igual
+545|B. O autor pode editá-lo livremente
+546|B. O seu desenho e a lei à volta: privacidade, limites, programabilidade, uso offline
+547|B. A bandeira
+548|B. Manter a ideia e mudar os números
+549|B. Manter poder de compra para quando o dinheiro for preciso
+550|B. Manter o valor perto de um dólar
+551|B. Separar a parte da poupança no dia em que chega o rendimento
+552|B. Não, depende da sua situação
+553|B. Só os bónus
+554|B. Só quando o banco concorda
+555|B. Imprimir notas
+556|B. Imprimir o talão
+557|B. Substituir todos os sites
+558|B. Enviar a frase de recuperação para eles verificarem
+559|B. Fixar a taxa de juro de referência
+560|B. A Reserva Federal, 1913
+561|B. O adquirente
+562|B. O montante bloqueado e a sua parte do pool
+563|B. O montante que envia
+564|B. O banco sobe a taxa todos os anos
+565|B. A blockchain
+566|B. O banco correspondente no passo do meio
+567|B. O banco central do país
+568|B. O primeiro anúncio numa pesquisa
+569|B. O mercado já se moveu antecipadamente com o resultado esperado
+570|B. A rede é controlada por um único banco
+571|B. O preço só pode subir
+572|B. O preço de pedir dinheiro emprestado
+573|B. O preço dos tokens
+574|B. O mesmo mês do ano passado
+575|B. A assinatura pode permitir que um contrato mova os seus tokens
+576|B. O código-fonte não pode ser lido nem verificado pelo público
+577|B. O token foi apagado
+578|B. O hash da transação num explorador de blocos
+579|B. O apoio ao cliente da empresa da carteira
+580|B. O juro anual
+581|B. São convencidos ou apressados a dar acesso
+582|B. Ficam menos visíveis, mas as funções continuam
+583|B. Podem soar confiantes e corretos
+584|B. Não rendem nada por estarem parados
+585|B. Para gerir supermercados
+586|B. Transformar depósitos de curto prazo em empréstimos de longo prazo
+587|=
+588|B. Esperar pelo fim do mês
+589|B. Desejos
+590|B. Observar e registar um mês de despesas
+591|B. Para quem age, os seus limites e quem é responsável
+592|B. O preço vai subir?
+593|B. Num banco licenciado por trás da aplicação
+594|B. Sim, sempre
+595|B. Sim, só permite que lhe enviem
+596|B. O seu banco responde a um pedido e cativa o montante
+597|=
+598|BIS CPMI: programa de pagamentos internacionais
+599|BIS CPMI: glossário de terminologia de pagamentos e infraestruturas de mercado
+600|BIS Working Paper 1041: o impacto do crédito fintech no acesso ao crédito das pequenas empresas dos EUA
+601|Documentação da BNB Chain: visão geral da BNB Smart Chain
+602|=
+603|BTC e ETH são moedas; USDT e UNI são tokens.
+604|=
+605|Voltar a Aprender
+606|=
+607|Conta bancária
+608|Banco de Pagamentos Internacionais, Relatório Anual 2024: a inteligência artificial e a economia
+609|Banco de Pagamentos Internacionais: o mercado cambial global atinge 9,6 biliões de dólares por dia em abril de 2025 (comunicado, 30 de setembro de 2025)
+610|Dinheiro dos bancos versus dinheiro do banco central
+611|Banco de Inglaterra
+612|Museu do Banco de Inglaterra: o Riksens Ständers Bank (1668) como o banco central mais antigo do mundo; o Banco de Inglaterra, 1694
+613|Banco de Inglaterra: a inflação e a meta de 2% fixada pelo Governo
+614|Banco de Inglaterra: o que faz o Banco de Inglaterra (notas, pagamentos, supervisão de mais de 1 300 entidades, Bank Rate, reservas de ouro)
+615|O Banco da Rússia abre a negociação regulada de Bitcoin
+616|Banco, corretora ou carteira pessoal: quem tem a chave?
+617|Banca
+618|Licença bancária
+619|Os bancos entram na corrida das stablecoins
+620|Os bancos estão a ficar menos visíveis, não menos necessários.
+621|Os bancos entram na corrida das stablecoins: o Projeto Faro
+622|Os bancos em fusos horários diferentes abrem a horas diferentes, e muitos sistemas de pagamento fecham à noite e ao fim de semana. Cada banco do percurso tem ainda de verificar o pagamento face às regras de branqueamento de capitais e sanções. Um detalhe pouco claro pode reter um pagamento durante dias.

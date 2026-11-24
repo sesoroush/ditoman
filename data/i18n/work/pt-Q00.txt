@@ -1,0 +1,108 @@
+0|A «capitalização de mercado» não é valor real.
+1|«Pagar depois» é um empréstimo, diga o botão o que disser.
+2|«Inteligente» quer dizer automático, não esperto.
+3|«Os analfabetos do século XXI não serão os que não sabem ler e escrever, mas os que não sabem aprender, desaprender e
+4|«Os analfabetos do século XXI não serão os que não sabem ler e escrever, mas os que não sabem aprender, desaprender e reaprender.»
+5|% de variação
+6|«Confiaria neste token porque…» ou «Não confiaria nele porque…». A sua razão é a verdadeira lição.
+7|(Chuka)
+8|(dados de maio de 2026)
+9|, verificado a 27 de outubro de 2026. Os scanners automáticos assinalam «mintable» porque a função existe no código. Só pode ser chamada pelo proprietário, e o proprietário é o endereço zero, por isso ninguém a pode chamar.
+10|, horas ou dias depois.
+11|, é um custo que paga duas vezes. Em peças pequenas de ouro, e em joias com custo de feitio, a diferença é grande.
+12|, ou garantia) controla uma posição de 1 000 dólares. Se o preço subir 10%, duplica o seu dinheiro. Se descer cerca de 10%, os seus 100 dólares desaparecem.
+13|. A conta do banco A lá desce, a do banco B sobe, e o pagamento fica feito.
+14|. A Ditoman nunca pede chaves privadas nem frases de recuperação e nunca envia tokens a quem escreve primeiro.
+15|. Não elimina o risco. Evita depender de que uma única história esteja certa.
+16|. Ninguém tem a chave, por isso estes tokens nunca mais se podem mover, mas continuam a contar no totalSupply.
+17|. Esta reduziu de facto o totalSupply, de 21 000 000 000 000 para 18 901 056 445 783,85.
+18|. Quando os compradores recuam depois de más notícias, os intervalos entre eles aumentam, e cada ordem de venda a mercado empurra o preço ainda mais para baixo.
+19|. Não é você que escolhe o momento; é o preço.
+20|01. Código-fonte do contrato verificado no BscScan
+21|02. Distribuição da oferta entre os detentores
+22|03. Propriedade renunciada, sem novos tokens possíveis
+23|04. Sem taxa de transferência, sem lista negra, sem função de pausa
+24|05. Tokens de liquidez bloqueados
+25|=
+26|1 euro = 1,10 dólares
+27|1 euro = 1,10 dólares. Uma camisa custa 50 euros. O seu preço em dólares é:
+28|1 euro = 1,20 dólares
+29|1 000 a 5% ao ano: simples vs composto
+30|1 000 a 5% compostos durante 20 anos dá cerca de:
+31|1 000 a 5% de juro simples durante 10 anos dá:
+32|1. Encontre a página oficial.
+33|1. Dinheiro e confiança
+34|1. A página falsa (phishing)
+35|10 milhões de cheques digitais no Irão
+36|10 milhões de cheques digitais no Irão
+37|10 anos:
+38|100 milhões
+39|114 milhões
+40|12 minutos
+41|14 milhões
+42|Ouro de 18 quilates
+43|Ouro 18K / g
+44|Ouro de 18 quilates por grama e a moeda Emami, em tomans.
+45|Ouro 18K, grama
+46|Ouro 18K, grama, último
+47|18K grama
+48|19 milhões
+49|2 098 943 554 216,15 TMN (cerca de 10%) foram queimados através da própria função de queima do contrato em
+50|2 100 000 000 000 TMN (10%) foram enviados para o endereço morto público
+51|2. Blockchain e Bitcoin
+52|2. Verifique a data.
+53|2. O falso ajudante
+54|20 de abril de 2024
+55|20 anos:
+56|20% para poupança:
+57|21 bancos globais comprometem cerca de 270 milhões de dólares com o Projeto Faro: a história, o mercado de 295 mil milhões, fintech, blockchain e o que significa para o Irão.
+58|21 lições bilingues curtas, passo a passo: do dinheiro e da inflação aos bancos, à blockchain e à IA.
+59|Variação 24h
+60|Volume 24h
+61|29 out 2026:
+62|3. Liste as reservas.
+63|3. A assinatura às cegas
+64|3. Usar cripto com segurança
+65|30 anos, duas linhas: o carbono abranda, o sol e o vento disparam
+66|30 lições curtas, passo a passo: do dinheiro e da inflação aos bancos, à blockchain e à IA.
+67|30% para desejos:
+68|36 milhões
+69|Impressoras 3D +86%, baterias +30%, robôs +26%, enquanto o retalho cresceu apenas 0,4%: o que significa para o mundo e para o Irão.
+70|4. Identifique o tipo de relatório.
+71|4. Mercados e poupança
+72|4. O amigo paciente
+73|40 milhões
+74|40% das crianças do Reino Unido recorrem à IA para conselhos sobre dinheiro: o que perguntam, quão certas são as respostas e onde estão o Irão e os vizinhos.
+75|5 minutos
+76|5 perguntas
+77|5. Encontre as condições de resgate.
+78|5. O futuro do dinheiro
+79|5. O retorno garantido
+80|50% para necessidades:
+81|50, 25, 12,5, 6,25, 3,125: o calendário por trás dos 21 milhões.
+82|50/30/20 é uma regra prática, não uma norma oficial. Tudo o resto nesta lição é orientação geral, não aconselhamento financeiro pessoal.
+83|50/30/20 é uma regra prática: necessidades, desejos, poupança. Ajuste os números à sua vida.
+84|Regra 50/30/20
+85|Ataque de 51%
+86|58 milhões
+87|6 minutos
+88|6 perguntas
+89|6. Escreva uma frase.
+90|65% dos jovens de 18 a 29 anos leem notícias primeiro online, 2,5% leem jornais em papel com frequência, e a economia é a secção mais lida.
+91|7 minutos
+92|71 milhões
+93|78 milhões
+94|8 112 espécies de plantas, um século de mudança, a economia das árvores e das plantas, o Irão ao lado dos vizinhos e 21 empresas.
+95|83 milhões
+96|86 milhões
+97|9,5 milhões
+98|95 milhões
+99|: 12 ou 24 palavras comuns. Quem tem essas palavras controla o dinheiro. Não há botão «esqueci-me da palavra-passe» nem balcão a quem ligar.
+100|: os bancos pagam-se de facto uns aos outros, normalmente através de contas no banco central, e a conta da loja é creditada. Isso acontece muitas vezes no dia útil seguinte, às vezes mais tarde.
+101|: apurar quem deve o quê a quem.
+102|@utilizador
+103|Uma fraude de 129 milhões de dólares alegadamente com vozes e rostos clonados, e três regras para se proteger.
+104|Um reator de polimerização de 40 metros construído em Xiraz para um complexo petroquímico em Asaluyeh, e as empresas por trás dele.
+105|Um reator de 500 toneladas construído em Xiraz
+106|Um gráfico de John Authers na Bloomberg Opinion mostra as ações mundiais (índice FTSE All-World) a subir durante dois anos, interrompidas por algumas quedas bruscas, cada uma ligada a um grande choque político ou económico. O padrão é a lição: os preços movem-se mais quando as notícias diferem do que se esperava, e o medo espalha-se mais depressa do que a calma.
+107|Uma CBDC é uma ferramenta. A mesma tecnologia pode tornar os pagamentos mais baratos e rápidos, ou dar a quem a controla muito mais visibilidade e poder sobre o dinheiro do que o dinheiro vivo alguma vez deu. O que se obtém decide-se no desenho e na lei.

@@ -1,0 +1,78 @@
+1139|¿Fija el CFPB un tamaño concreto para el fondo de emergencia?
+1140|¿Afirma esta lección que el halving provoca subidas de precio?
+1141|Hacer negocios en Irán
+1142|Dólar (NIMA)
+1143|Dólar (libre)
+1144|Dólar, oro y todos los informes diarios
+1145|Dólar, oro, monedas y mercados mundiales
+1146|Dólares (efectivo)
+1147|Los dólares y las monedas de oro tienen mercados profundos casi en todas partes, pero los precios de compra y de venta difieren. Esa diferencia, el
+1148|=
+1149|=
+1150|Inflación de dos dígitos en 46 de 50 años: por qué quien empieza tarde queda más atrás, por qué no es culpa suya y qué sigue en nuestras manos.
+1151|Caída desde el máximo
+1152|=
+1153|Reglamento (UE) 2015/751 sobre las tasas de intercambio en las operaciones de pago con tarjeta
+1154|Cada banco hace sus comprobaciones
+1155|Cada era tiene 210.000 bloques, así que la cantidad creada en una era es 210.000 veces la recompensa de esa era.
+1156|Cada fila es un tipo distinto de riesgo. Fíjate en que ninguna columna está vacía.
+1157|Cada pregunta del test sale de una de estas lecciones. Cada lección lleva unos cinco
+1158|Cada pregunta del test sale de una de estas lecciones. Cada lección lleva unos cinco minutos.
+1159|Cada billetera puede recibir la recompensa una sola vez.
+1160|Comer fuera, ocio, viajes, suscripciones
+1161|Calendario económico
+1162|Los economistas discuten los detalles, pero tres causas aparecen una y otra vez.
+1163|Economía
+1164|Economía y vida
+1165|Economía significaba antes llevar una casa: cómo viven de verdad la economía las familias, el presupuesto del hogar iraní en cifras y las habilidades que usan para salir adelante.
+1166|Economía, IA y comercio, cada día a las 16:00
+1167|Rendimiento anual efectivo
+1168|Las elecciones deciden quién escribe y aprueba las reglas. En Estados Unidos, el Congreso aprueba las leyes sobre impuestos, gasto y cómo se regulan los productos financieros, incluidas las cripto.
+1169|Elecciones, Congreso y regulación
+1170|Electricidad y equipos
+1171|Moneda Emami
+1172|Moneda Emami (diario)
+1173|Fondo de emergencia
+1174|Fondo de emergencia, objetivos, pagos extra de deudas
+1175|Energía
+1176|Energía y agua
+1177|Economía de la energía
+1178|Tecnología energética
+1179|Consumo de energía
+1180|Inglés
+1181|Lección en inglés
+1182|Introduce la dirección de tu billetera en BNB Smart Chain. Se crea un código personal. Copia el mensaje listo y envíalo a Ditoman.
+1183|Entrar ·
+1184|Era
+1185|Era de 210.000 bloques
+1186|Los totales por era y las cifras del próximo halving son cálculos nuestros (210.000 × recompensa; bloque 1.050.000 con recompensa 1,5625), redondeados como se muestra. La fecha de 2028 es una expectativa basada en bloques de diez minutos, no una fecha fija. No es una previsión de precio.
+1187|Español
+1188|Español
+1189|Gastos esenciales
+1190|Ethereum y los contratos inteligentes: un programa que funciona solo
+1191|Ethereum y los contratos inteligentes: un programa que funciona solo, imagen de la lección Ditoman
+1192|Ethereum y los contratos inteligentes: un programa que funciona solo | Ditoman Learn
+1193|Ethereum y los contratos inteligentes
+1194|Ethereum pasó a la prueba de participación. En lugar de gastar energía, los validadores ponen dinero en riesgo. Para operar un validador en solitario se depositan 32 ETH, y hay pools para quien tiene menos.
+1195|Ethereum tiene un estándar para esto llamado ERC-20, para tokens fungibles, donde una unidad es intercambiable por otra. El estándar fija los nombres comunes de las funciones: nombre, símbolo, decimales, oferta total, saldo de una dirección, transferir y aprobar, y dos eventos que registran transferencias y aprobaciones.
+1196|La documentación de Ethereum dice que, una vez desplegado, ningún usuario controla un contrato y, por defecto, no se puede borrar. Esa es su fuerza y también su riesgo. Una regla que no cambia da confianza. Un error que no cambia se queda.
+1197|La propia documentación de Ethereum dice que un contrato inteligente es simplemente un programa que se ejecuta en la blockchain de Ethereum. Es un conjunto de código, llamado funciones, y datos, llamado estado, que vive en una dirección concreta de la cadena.
+1198|=
+1199|Euronews, una comisión del Parlamento Europeo respalda el euro digital (junio de 2026)
+1200|Euronews: cifras de inflación del Centro de Estadística de Irán para el mes que terminó el 21 de junio de 2026
+1201|Europa concentra la mitad del gasto social del mundo y su deuda sube: quién paga, por qué Europa no es una sola historia y las oportunidades que abre para la región.
+1202|El caro Estado del bienestar europeo: ¿quién paga la factura?
+1203|El caro Estado del bienestar europeo: ¿quién paga la factura?
+1204|Comisión Europea: sistemas de garantía de depósitos
+1205|Comisión Europea: servicios de pago (PSD2) y banca abierta
+1206|Hasta una cantidad pequeña cuenta. El hábito importa más que el tamaño, y el tamaño puede crecer después.
+1207|Cada acción requiere cálculo, y los usuarios pagan una comisión, llamada gas en Ethereum. Las operaciones sencillas cuestan poco; las complejas, más.
+1208|Todo pago con tarjeta tiene el mismo reparto, sea cual sea el país.
+1209|Todas las publicaciones del canal, en la web
+1210|Cada comprobación de abajo es gratuita, pública y lleva un minuto. No necesitas conocimientos técnicos. Solo saber dónde mirar.
+1211|Cada día, registrado.
+1212|Cada lección nueva llega primero a Telegram
+1213|Cada pago necesita aprobación del gobierno
+1214|De vez en cuando todo el mercado parece contener la respiración antes de un anuncio programado. Los dos mayores ejemplos son las decisiones sobre tipos de interés y las elecciones.
+1215|Cada transacción recibe un identificador, llamado hash. Pégalo en un explorador de bloques, como BscScan para BNB Smart Chain, y verás el remitente, el receptor, la cantidad, la comisión y el estado. No hace falta la palabra de ninguna empresa.
+1216|Cada transacción paga una comisión a quienes hacen funcionar la red. Se suele llamar gas. La comisión paga un sitio en el bloque siguiente, así que depende de lo congestionada que esté la red, no de cuánto envíes. Enviar 10 dólares o 10.000 dólares puede costar lo mismo.

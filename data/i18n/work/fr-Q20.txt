@@ -1,0 +1,89 @@
+1770|De nombreuses plateformes crypto permettent de trader avec effet de levier. Avec un levier de 10×, 100 dollars de votre propre argent (votre
+1771|De nombreux guides retiennent trois à six mois de dépenses essentielles comme règle empirique, et la question des trois mois de la Réserve fédérale suit la même idée. Voyez-la comme une direction, pas comme un examen.
+1772|Beaucoup de choses influencent l'offre et la demande : ce qu'un pays vend et achète à l'étranger, les taux d'intérêt, l'inflation et les anticipations. Les anticipations comptent plus qu'on ne le pense, car les traders agissent sur ce qu'ils croient qu'il va se passer, pas seulement sur ce qui s'est passé.
+1773|Beaucoup de traders achètent des actifs risqués avec de l'argent emprunté. Des taux plus élevés renchérissent ces emprunts et réduisent l'argent qui afflue sur les marchés. Des taux plus bas font l'inverse.
+1774|Calendrier des marchés
+1775|Données de marché
+1776|Revue des marchés
+1777|Marchés
+1778|Les marchés ce soir
+1779|Les marchés ferment la nuit
+1780|Les marchés n'attendent pas l'annonce. Ils la devinent à l'avance, et les prix bougent sur ce pari. Quand la décision tombe, le résultat attendu est déjà « dans les prix ».
+1781|Les marchés réagissent aux surprises
+1782|Marchés • Comment bougent les prix
+1783|Marchés • Risque
+1784|Mature, utilisée depuis des années
+1785|Offre maximale
+1786|Mayer Brown : le GENIUS Act promulgué (18 juillet 2025)
+1787|Médias
+1788|Découvrez les entreprises iraniennes
+1789|Mehr News : les frais de paiement par carte en Iran et qui les a payés
+1790|Menu
+1791|Métaux
+1792|Micron, SK hynix, AMD, Arista et Marvell : chiffres officiels, actionnariat, la sortie de Jensen Huang et scénarios jusqu'en 2030.
+1793|Panne mondiale de Microsoft : 16 heures sans e-mail ni Teams
+1794|Panne mondiale de Microsoft
+1795|Mineurs
+1796|Mineurs et validateurs proposent des blocs, mais tout ordinateur qui fait tourner le logiciel, un nœud, peut vérifier les règles. Un bloc qui enfreint les règles est rejeté même s'il a coûté cher à produire.
+1797|Mineurs, validateurs et nœuds : comment des inconnus se mettent d'accord.
+1798|Minage et difficulté
+1799|Fonction mint
+1800|Émission (mint)
+1801|Mode
+1802|Autonomie monétaire
+1803|L'argent et la crypto, en pratique
+1804|Argent et paiements :
+1805|L'argent ne peut jamais être numérique
+1806|L'argent ne traverse pas les frontières. Les messages, oui, et les banques ajustent les comptes qu'elles détiennent les unes chez les autres.
+1807|L'argent ne voyage pas
+1808|Argent bloqué mais achat échoué :
+1809|Éducation financière
+1810|L'argent qui dort perd du pouvoir d'achat au rythme de l'inflation. Le tableau montre ce que 100 millions en espèces permettent encore d'acheter après quelques années.
+1811|Argent • Budget
+1812|Argent • Banques centrales
+1813|Argent • Conservation
+1814|Argent • Monnaies numériques
+1815|Argent • Taux de change
+1816|Argent • Inflation
+1817|Argent • Intérêts
+1818|Argent • Filet de sécurité
+1819|Argent • Stablecoins
+1820|Mensualité
+1821|Revue mensuelle
+1822|Plus de contrôle, plus de responsabilité
+1823|Plus d'argent que de biens :
+1824|Plus de gens utilisent ce qu'elle fait
+1825|Plus de sujets
+1826|La plupart des fintechs n'ont pas de licence bancaire. Elles construisent l'écran que vous touchez, et derrière l'écran une banque agréée détient l'argent. Vous voyez l'appli. La banque est le moteur en dessous.
+1827|La plupart des pertes ne viennent pas d'erreurs compliquées. Elles viennent de l'achat de quelque chose que personne n'aurait su décrire clairement.
+1828|La plupart des pertes commencent par la persuasion, pas par le piratage.
+1829|La plupart des monnaies peuvent être créées quand leur émetteur le décide. Pas le bitcoin. Son émission suit un calendrier, le même pour tous.
+1830|Surtout, ne tradez pas le titre. Comprenez le système dans lequel il s'inscrit.
+1831|La plupart des gens ont l'impression que l'argent disparaît avant la fin du mois. Cette leçon montre une façon simple de voir où il part, avec une règle empirique connue et une
+1832|La plupart des gens ont l'impression que l'argent disparaît avant la fin du mois. Cette leçon montre une façon simple de voir où il part, avec une règle empirique connue et une habitude d'un mois.
+1833|La plupart des gens pensent que le bitcoin a été créé pour devenir une pièce numérique.
+1834|La plupart des gens pensent que la blockchain, c'est la crypto.
+1835|La plupart des gens pensent que la blockchain ne concerne que les cryptomonnaies.
+1836|La plupart des gens qui perdent leurs cryptos ne sont pas piratés. Ils sont persuadés, pressés ou font simplement une petite erreur. Cette leçon couvre les cinq façons les plus courantes de perdre de l'argent et les habitudes simples qui bloquent chacune
+1837|La plupart des gens qui perdent leurs cryptos ne sont pas piratés. Ils sont persuadés, pressés ou font simplement une petite erreur. Cette leçon couvre les cinq façons les plus courantes de perdre de l'argent et les habitudes simples qui bloquent chacune d'elles.
+1838|La plupart de ceux qui perdent de l'argent sur un token n'ont pas choisi le mauvais projet. Ils n'ont jamais vérifié les bonnes choses.
+1839|La plupart des stablecoins reposent sur l'un de trois types de garantie. L'image ci-dessous les montre côte à côte.
+1840|Déplacez ce qui reste vers un nouveau portefeuille avec une nouvelle phrase de récupération. Conservez les hashs des transactions et les messages. Signalez-le à la plateforme concernée et à la police de votre pays.
+1841|Mettez l'épargne de côté en premier, le jour où le revenu arrive.
+1842|Déplacer de l'argent :
+1843|Mythe 1 : un stablecoin est toujours sûr, comme de l'argent à la banque.
+1844|Mythe 2 : « entièrement garanti » signifie qu'il ne peut pas lâcher.
+1845|Mythe 3 : tous les stablecoins fonctionnent de la même façon.
+1846|Nom
+1847|Citez une limite de ce qu'un contrat peut savoir.
+1848|Citez un risque de conservation pour chacun des trois.
+1849|Citez des moyens pratiques de réduire ces risques.
+1850|Citez les questions de conception qui décident si une CBDC est sûre pour les utilisateurs.
+1851|Citez les cinq acteurs d'un paiement par carte et le rôle de chacun.
+1852|Citez les quatre métiers d'une banque.
+1853|Citez les habitudes qui protègent une phrase de récupération.
+1854|Citez les trois principaux types de garantie et le principal risque de chacun.
+1855|Citez trois banques centrales anciennes et leurs dates.
+1856|Citez trois domaines où l'IA travaille déjà dans la finance.
+1857|Citez ce qu'un verrouillage ne vous dit pas sur un token.
+1858|Place Naqsh-e Jahan à Ispahan avec une fleur en céramique et des roses

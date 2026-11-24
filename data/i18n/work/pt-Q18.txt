@@ -1,0 +1,90 @@
+1609|Introduz uma nova forma de construir sistemas em que a transparência vem de origem, os dados podem ser verificados e o controlo não está nas mãos de uma só entidade.
+1610|É uma nova forma de construir sistemas.
+1611|É uma regra editorial permanente. Documentamos conhecimento real e conquistas reais, e ficamos fora do comentário político de qualquer lado.
+1612|É uma regra de oferta, não uma previsão de preço.
+1613|Também é muito diferente da Bitcoin. A Bitcoin não tem emissor nem ninguém que possa mudar as regras sozinho. Uma CBDC é emitida, controlada e desenhada pelo Estado.
+1614|Não é inteligente. É automático. O nome significa que as regras estão escritas em código e correm exatamente como escritas, seja quem for que as chame.
+1615|Não é o seu banco e não controla todos os preços.
+1616|Não é.
+1617|Provavelmente é…
+1618|É o maior mercado financeiro do planeta. O Banco de Pagamentos Internacionais indicou que a negociação cambial atingiu em média cerca de 9,6 biliões de dólares por dia em abril de 2025, cerca de 28% acima de 2022. O dólar americano estava num dos lados de cerca de 89% das operações.
+1619|É a mesma força que ajuda quem poupa, a trabalhar no sentido contrário. Uma dívida de 100 milhões a 30 por cento ao ano, deixada sem pagar, passa a 130 milhões ao fim de um ano, 169 milhões ao fim de dois e cerca de 220 milhões ao fim de três. A regra dos 72 da lição 12 também se aplica: a 30 por cento, uma dívida duplica em cerca de dois anos e meio.
+1620|É dia vinte do mês e a conta está quase vazia. Não aconteceu nada de especial: nenhuma emergência, nenhuma compra grande. Mesmo assim, o dinheiro desapareceu.
+1621|Torna o contrato impossível de verificar
+1622|Significa que o token nunca pode ser vendido
+1623|Significa que o criador do token é anónimo
+1624|Só sabe o que está na cadeia.
+1625|Só impede que a liquidez bloqueada seja retirada antes da data de desbloqueio
+1626|Prova que o preço do token vai subir
+1627|Parece ficção científica, mas toca em algo real. Os bancos centrais de todo o mundo estudam uma nova forma de dinheiro, e parte dela pode, tecnicamente, levar regras destas. Esta lição separa o que é real do que é exagerado.
+1628|Impede que o token seja listado em qualquer lado
+1629|Foi uma resposta.
+1630|Não foi.
+1631|Será essencial.
+1632|A sua cadeia
+1633|A sua cadeia e o seu contrato
+1634|A sua função é transformar uma crise num incómodo. Quando chega a surpresa, paga do fundo em vez de pedir emprestado caro, como avisou a lição 19.
+1635|As suas regras abertas permitem que outros verifiquem, executem e protejam a rede
+1636|Próprio
+1637|O seu próprio exemplo é 1 000 dólares a 5% ao ano: 1 050 ao fim do primeiro ano e 1 102,50 ao fim do segundo. Os 2,50 a mais são juro sobre juro.
+1638|Próprio ou de um banco parceiro
+1639|O preço muda todos os dias
+1640|O preço subiu na semana passada
+1641|Entrar no Telegram
+1642|Entrar no canal
+1643|Entrada em comunidades cripto e da diáspora em língua persa, e a primeira retirada pública de oferta com prova.
+1644|Ir para
+1645|=
+1646|=
+1647|Guarde um pouco da moeda da rede
+1648|Guarde uma parte menor, mas guarde
+1649|Mantenha-o seguro, acessível e um pouco fora do alcance fácil.
+1650|A decisão final é sempre sua.
+1651|Guardar
+1652|Guardar o dinheiro em segurança:
+1653|Conceitos-chave
+1654|Saiba que a alavancagem multiplica as perdas tanto quanto os ganhos; a maioria dos principiantes fica melhor sem ela.
+1655|Saiba a data, para que um grande anúncio não o apanhe de surpresa. Pergunte o que já é esperado, porque é isso que o preço já contém. Tenha o máximo cuidado com dinheiro emprestado à volta de grandes acontecimentos. E dimensione qualquer posição pelo que pode perder, como na lição anterior.
+1656|Saiba onde encontrar o contrato de um token e ler o seu estado.
+1657|Saiba se está a poupar, investir ou especular antes de escolher um ativo.
+1658|Teste de conhecimentos
+1659|Empresas de base tecnológica e do conhecimento
+1660|Papel kraft e semikraft, cartão canelado e caixas, cartão; zona industrial de Yazd
+1661|Kraken Learn: a diferença entre moedas e tokens cripto (BTC e ETH são moedas; USDT e UNI são tokens)
+1662|Os tokens LP são um recibo
+1663|Os tokens LP como recibo
+1664|Assistente de linguagem
+1665|Multa por atraso
+1666|As multas por atraso funcionam no mesmo sentido. Uma prestação falhada acrescenta uma penalização, e a penalização torna o pagamento seguinte mais difícil.
+1667|Depois, os bancos liquidam
+1668|Mais recentes
+1669|Últimas histórias
+1670|Latham & Watkins: a Lei GENIUS de 2025
+1671|Aprender
+1672|Aprender e ganhar
+1673|Aprenda e ganhe TMN
+1674|Aprenda e ganhe TMN | Ditoman
+1675|Aprenda os sistemas
+1676|Aprenda porque a Bitcoin surgiu depois de uma desconfiança crescente em relação aos sistemas centralizados.
+1677|Aprenda porque a Bitcoin foi criada, a crise de confiança por trás dela e como os sistemas descentralizados mudaram o futuro do valor e das redes.
+1678|Aprenda porque as regras visíveis e a verificação importam nas redes digitais.
+1679|Aprender · Ligar · Evoluir
+1680|Aprender • Ligar • Evoluir • Ditoman.com
+1681|Aprender e ganhar
+1682|Piloto «aprender e ganhar»
+1683|Aprender. Ligar. Evoluir.
+1684|Objetivos de aprendizagem
+1685|Pontos de aprendizagem
+1686|Percurso de aprendizagem
+1687|Credor de último recurso
+1688|Emprestar:
+1689|Lição 01 | O que é a blockchain? | Ditoman Learn
+1690|Lição 01 • Série Fundamentos
+1691|Lição 02 | Porque importa a blockchain | Ditoman Learn
+1692|Lição 02 • Série Fundamentos
+1693|Lição 03 | Porque foi criada a Bitcoin | Ditoman Learn
+1694|Lição 03 • Série Fundamentos
+1695|Lição 04 • Série Fundamentos
+1696|A lição 05 passa da história à prática:
+1697|A lição 05 mostrou que o TMN falhava duas das cinco verificações: oferta concentrada e liquidez não bloqueada. Com o bloqueio de hoje, a liquidez detida na carteira principal do projeto está bloqueada até outubro de 2027. A concentração da oferta continua em aberto, e informaremos à medida que mudar.
+1698|Lição 05 | Como verificar qualquer token antes de lhe tocar | Ditoman Learn

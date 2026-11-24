@@ -1,0 +1,79 @@
+2662|Isto pesa mais para quem já tem uma moeda instável, porque a tentação é maior e a almofada é mais fina. Se o dinheiro de que precisa para a renda, a comida, os medicamentos ou a família estiver num token, não está a investir. Está exposto.
+2663|Esta mudança é maior do que o dinheiro.
+2664|Esses números não são motivo para medo. São motivo para aprender cinco padrões.
+2665|Três saldos, três significados
+2666|Três verificações antes de carregar em Enviar.
+2667|Três bancos centrais antigos
+2668|Três meses, ou mais se o rendimento for irregular
+2669|Três mitos a abandonar
+2670|Três caminhos das taxas de juro até à Bitcoin
+2671|Três fases da IA no dinheiro
+2672|Três coisas a que as pessoas recorrem quando deixam de confiar no dinheiro. Esta lição não diz qual comprar. Compara-as com quatro perguntas simples: quanto oscila o preço, com que facilidade se vende, quanto custa guardá-lo e o que pode correr
+2673|Três coisas a que as pessoas recorrem quando deixam de confiar no dinheiro. Esta lição não diz qual comprar. Compara-as com quatro perguntas simples: quanto oscila o preço, com que facilidade se vende, quanto custa guardá-lo e o que pode correr mal.
+2674|Três coisas que abordamos
+2675|Três tipos de respaldo das stablecoins: numerário e títulos do Estado, garantia em cripto, modelo algorítmico
+2676|Três formas de sustentar um token
+2677|Através do banco licenciado
+2678|Marque pelo menos um mercado acima.
+2679|Marque os mercados que quer ver. Em «% de variação» todas as linhas começam em zero, para ver qual subiu ou desceu mais no mesmo período.
+2680|Tempo
+2681|Horizonte temporal
+2682|Para comparar dois empréstimos, ponha tudo num número: o total que paga, menos o que recebeu.
+2683|Para comparar prestadores, ignore a comissão anunciada e faça uma pergunta: se pagar este valor, quanto chega exatamente na outra moeda?
+2684|Para enviar qualquer token na BNB Smart Chain precisa de um pouco de BNB. Na Ethereum precisa de ETH, na Tron de TRX. Uma carteira com tokens mas sem a moeda da rede não consegue enviar nada.
+2685|Hoje bloqueámos a liquidez do TMN. Esta lição usa o nosso próprio bloqueio como exemplo: o que é um pool de liquidez, o que são tokens LP, contra o que protege um bloqueio, o que não prova e como verificar qualquer bloqueio
+2686|Hoje bloqueámos a liquidez do TMN. Esta lição usa o nosso próprio bloqueio como exemplo: o que é um pool de liquidez, o que são tokens LP, contra o que protege um bloqueio, o que não prova e como verificar qualquer bloqueio por si.
+2687|Hoje, as pessoas dependem de instituições para verificar, controlar, proteger e dar acesso. Os bancos guardam e gerem o dinheiro. Os governos criam regras e fazem-nas cumprir. As plataformas guardam dados, controlam contas e decidem quem pode entrar ou sair dos espaços digitais.
+2688|Juntos conhecemos a indústria, as empresas e o panorama empresarial do Irão, e aprendemos cripto e fintech em linguagem simples.
+2689|Token
+2690|Aprovação de token
+2691|Factos do token
+2692|Factos e divulgação do token
+2693|Os tokens são criados por contratos inteligentes, sem necessidade de uma nova cadeia.
+2694|Os tokens são feitos por contratos inteligentes, os programas da lição 28. Um programador escreve um contrato que mantém uma lista de saldos e regras para os mover. Não é preciso uma nova blockchain.
+2695|Os preços em tomans e em dólares (onça de ouro, prata, petróleo, bitcoin) são desenhados em escala logarítmica no modo «Preço» para caberem juntos. Fonte: fechos diários da TGJU.
+2696|Tomates no deserto: cultivar com cada gota
+2697|Tomates no deserto
+2698|Custo total do crédito
+2699|Total pago
+2700|Oferta total
+2701|Turismo e cultura
+2702|Rumo a uma única empresa
+2703|Rumo a sistemas ocultos
+2704|Rumo a registos apenas privados
+2705|Rumo a sistemas transparentes e verificáveis
+2706|Registe um mês de gastos e separe-os em três pilhas.
+2707|Siga o fluxo:
+2708|Os agregadores multiplicam a oferta total pelo preço num único pool. O resultado é um cálculo, não um valor a que toda a oferta pudesse ser vendida.
+2709|Banco tradicional
+2710|Taxas de transação
+2711|Hash da transação
+2712|As transações tornaram-se visíveis e verificáveis através de registos distribuídos.
+2713|Imposto de transferência
+2714|Transparência
+2715|Transportes e estradas
+2716|Trate um assistente como um ajudante bem informado, não como uma autoridade.
+2717|Trezor Learn: halving da Bitcoin de 2024 (20 de abril de 2024, recompensa de 6,25 para 3,125, a cada 210 000 blocos, limite de 21 milhões, última bitcoin por volta de 2140)
+2718|O guia da Trezor indica o mais recente: o halving de 20 de abril de 2024 cortou a recompensa de 6,25 para 3,125 bitcoins por bloco.
+2719|Corte aqui antes de tocar na poupança
+2720|Verdadeiro ou falso: um preço mostrado num site de acompanhamento prova que pode vender o token.
+2721|Verdadeiro ou falso: um token que passa todas as verificações técnicas é automaticamente uma boa decisão para si.
+2722|Verdadeiro ou falso: como a Bitcoin caiu antes de três eleições intercalares passadas, vai cair antes da próxima.
+2723|Verdadeiro ou falso: a blockchain só é importante porque cria dinheiro digital.
+2724|Verdadeiro ou falso: a blockchain só é útil para criptomoedas.
+2725|Verdadeiro ou falso: os saldos de yuan digital da China expiram para todos.
+2726|Verdadeiro ou falso: um bloqueio de liquidez prova que o preço de um token vai subir.
+2727|Verdadeiro ou falso: se a rede da Bitcoin é independente dos governos, o seu preço não pode cair juntamente com as ações.
+2728|Taxa anual real (aprox.)
+2729|Trump, Xi e Putin à mesma mesa: a primeira cimeira a três
+2730|Trump, Xi e Putin: a primeira cimeira a três
+2731|Confiança
+2732|Confiança através de regras
+2733|A confiança não é uma promessa. É algo que pode verificar. Não confie. Verifique.
+2734|Uma confiança que dependia demasiado de instituições centrais e da sua autorização
+2735|Experimente
+2736|Tentar de novo
+2737|Experimente com o TMN
+2738|Experimente: leia um relatório de reservas
+2739|A Turquia quer ser o centro energético do mundo
+2740|O plano da Turquia para ser um centro energético

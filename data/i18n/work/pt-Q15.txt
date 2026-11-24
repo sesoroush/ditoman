@@ -1,0 +1,72 @@
+1422|Como se calcula o juro bancário? | Ditoman Learn
+1423|Quanto dinheiro deve estar sempre à mão?
+1424|Quanto dinheiro deve estar sempre à mão? Imagem da lição Ditoman
+1425|Quanto dinheiro deve estar sempre à mão? | Ditoman Learn
+1426|Como não perder o seu dinheiro digital
+1427|Como não perder o seu dinheiro digital, imagem da lição Ditoman
+1428|Como não perder o seu dinheiro digital | Ditoman Learn
+1429|Como vai a IA mudar o futuro do nosso dinheiro?
+1430|Como vai a IA mudar o futuro do nosso dinheiro? Imagem da lição Ditoman
+1431|Como vai a IA mudar o futuro do nosso dinheiro? | Ditoman Learn
+1432|Como funciona uma transação cripto
+1433|Que tamanho de rede de segurança, onde guardá-la, como começar.
+1434|Qual é a dimensão do problema
+1435|Qual é a dimensão deste mercado
+1436|Como as grandes notícias movem a Bitcoin
+1437|Como as grandes notícias movem a Bitcoin, imagem da lição Ditoman
+1438|Que tamanho deve ter?
+1439|Como a blockchain leva a confiança das instituições e plataformas para sistemas transparentes que qualquer pessoa pode verificar.
+1440|Como funcionam as blockchains, como verificar um token antes de lhe tocar e como se proteger de burlas.
+1441|Como pode o valor circular sem guardiões centralizados?
+1442|Como pode provar que uma transferência chegou?
+1443|Quão comum é ter um?
+1444|Como funcionam os cheques digitais, o roteiro do banco central para 80% de quota eletrónica, lições de Hong Kong, Singapura, Índia e Reino Unido, e como usá-los com segurança.
+1445|Como é que a maioria das pessoas perde cripto?
+1446|Em que difere um pagamento confirmado em blockchain de um pagamento com cartão?
+1447|Como funcionam os mercados de eletricidade e o que isso significa para a sua fatura.
+1448|Até onde chegou?
+1449|Como se faz o pó de ouro, as máquinas e os seus preços, a economia da joalharia no Irão e a ideia de ouro redesenhável.
+1450|Quantos bitcoin criou a primeira era (50 por bloco, 210 000 blocos)?
+1451|Quantos blocos há entre halvings?
+1452|Quanto ETH é preciso para operar um validador sozinho?
+1453|Quanto mudou o consumo de energia
+1454|Quanto de cada um, se algum, depende do seu rendimento, das suas necessidades e das regras do seu país. É uma decisão pessoal que esta lição não pode tomar por si.
+1455|Como não perder o seu dinheiro digital
+1456|Com que frequência se ajusta a dificuldade da Bitcoin?
+1457|Comparação com as cripto
+1458|Como verificar qualquer token
+1459|Como verificar qualquer token antes de lhe tocar
+1460|Como adicionar o TMN à sua carteira
+1461|Como verificar você mesmo qualquer bloqueio
+1462|Como verificar qualquer token
+1463|Como verificar qualquer token antes de lhe tocar
+1464|Como verificar qualquer token antes de lhe tocar, imagem da lição Ditoman
+1465|Como se proteger
+1466|Como ler os dados de mercado do TMN
+1467|Como começar pequeno
+1468|Como se fazem os tokens
+1469|Como vai a IA mudar o futuro do dinheiro?
+1470|FMI, Back to Basics: inflação
+1471|FMI, Finance & Development: Back to Basics, taxas de câmbio, regimes flutuantes e fixos
+1472|Se 1 euro valer 1,10 dólares, a camisa de 50 euros custa 50 × 1,10 = 55 dólares. Se a taxa passar para 1,20 dólares por euro, a mesma camisa custa 50 × 1,20 = 60 dólares. A camisa não mudou. O dinheiro mudou.
+1473|Se o banco A de um país quiser pagar ao banco B de outro, os dois precisam de um lugar onde ambos tenham conta. Normalmente é um grande banco internacional, chamado
+1474|Se a Bitcoin é independente, porque cai com as ações?
+1475|Se a função owner de um contrato devolver um endereço só de zeros, o que significa?
+1476|Se a equipa de um projeto tiver o recibo, pode esvaziar o pool de um dia para o outro. Os detentores ficam com tokens que já não conseguem vender. Chama-se rug pull e é uma das formas mais comuns de perder dinheiro com tokens pequenos.
+1477|Se o destinatário disser que nada chegou, o explorador resolve. Se mostrar sucesso para o endereço certo na rede certa, as moedas estão lá.
+1478|Se um pequeno número de carteiras tiver quase tudo, uma única decisão de uma única pessoa pode mover todo o mercado. A concentração não prova má intenção, e muitos projetos jovens começam assim. Mas é sempre um risco, e mais vale sabê-lo antes de agir do que depois.
+1479|Se um validador agir de forma desonesta, parte ou todo o seu depósito pode ser destruído. Esta penalização chama-se slashing. Segundo o ethereum.org, a penalização inicial começa em 1/4096 do saldo efetivo, com um máximo de 0,5 ETH, e depois o validador é removido.
+1480|Se um assistente puder gastar, dê-lhe um limite pequeno e reveja o que fez.
+1481|Se as aplicações substituíram os balcões, o que substitui o toque no ecrã? A lição 21 olha para a inteligência artificial no dinheiro: o que já funciona e onde estão os novos riscos.
+1482|Se os detentores duvidarem da reserva, ou o mercado for pouco profundo, o preço pode cair abaixo de um dólar. Quem precisa de dinheiro primeiro costuma ficar com o pior negócio, porque vende em pânico. Por isso a verdadeira pergunta não é só quanto o token diz valer, mas quem o consegue converter em dinheiro e a que preço.
+1483|Se não encaixar
+1484|Se já aconteceu
+1485|Se devolver um endereço só de zeros, a propriedade foi renunciada. Esses poderes desapareceram para sempre e ninguém os pode recuperar, nem a equipa original.
+1486|Se as necessidades passarem dos 50%, não desista. Mantenha a ideia e mude os números: talvez 60/25/15 por agora. O que importa é que existam os três montes e que a poupança seja um monte e não o que sobra.
+1487|Se outra pessoa vir a frase,
+1488|Se alguém…
+1489|Se algo correr mal, proteja o que resta, guarde as provas e ignore quem venda recuperação.
+1490|Se a resposta for não, o plano de prestações está a decidir por si.
+1491|Se a instituição falir
+1492|Se o emissor só resgatar a clientes aprovados, o que pode normalmente fazer um detentor comum?
+1493|Se a função owner devolver um endereço só de zeros, o que significa isso?

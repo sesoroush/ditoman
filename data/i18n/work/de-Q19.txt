@@ -1,0 +1,71 @@
+1699|Lektion 05 • Sicherheitsreihe
+1700|Lektion 05: Den Token prüfen
+1701|Lektion 06 | Fünf Fragen vor dem Kauf | Ditoman Learn
+1702|Lektion 06 • Sicherheitsreihe
+1703|Lektion 06: Fünf Fragen
+1704|Lektion 07: Wie Nachrichten Preise bewegen
+1705|Lektion 11 fragte, was hinter einem digitalen Dollar steht, und Lektion 20, ob Banken verschwinden werden. Beide Fragen sind leichter, wenn man die Rolle der Zentralbank selbst kennt.
+1706|Lektion 11 fragt, was hinter einem digitalen Dollar steht. Lektion 20 fragt, ob Banken verschwinden werden.
+1707|Lektion 12 erklärt, wie steigende Preise die Kaufkraft aushöhlen. Lektion 26 zeigt die Institution, die oft hinter einer Währung steht: die Zentralbank.
+1708|Lektion 12 erklärt die Inflation, die Menschen nach Alternativen suchen lässt. Lektion 06 gibt fünf Fragen, die man sich vor jedem Kauf stellen sollte.
+1709|Lektion 12 erklärt, warum ein Budget bei steigenden Preisen angepasst werden muss. Lektion 19 zeigt, wie Ratenpläne still einen größeren Teil des nächsten Monatseinkommens beanspruchen.
+1710|Lektion 12 zeigte, was Inflation mit ruhendem Bargeld macht. Der naheliegende nächste Gedanke: Dann sollte ich etwas anderes halten. In vielen Familien lautet die Antwort seit Generationen gleich: Gold oder Dollar. In den letzten Jahren ist ein dritter Name dazugekommen: Bitcoin.
+1711|Lektion 12 zeigte, warum stabile Preise wichtig sind: Steigende Preise schmälern, was ein Gehalt kaufen kann. Die Zentralbank ist die Institution, die diese Erosion klein und vorhersehbar halten soll.
+1712|Lektion 12 zeigt, warum Zinsen mit Preissteigerungen verglichen werden müssen. Lektion 19 zeigt die Kostenseite: was Raten wirklich ausmachen.
+1713|Lektion 14 verfolgte eine Kartenzahlung durch fünf Unternehmen. Eine Krypto-Überweisung hat keines davon. Es gibt Sie, den Empfänger und ein Computernetzwerk, das jeder einsehen kann.
+1714|Lektion 16 erklärte, warum das so wichtig ist: Eine Blockchain-Überweisung lässt sich nicht rückgängig machen. Eine Bank kann Geld manchmal zurückholen. Eine Blockchain nicht. Vorbeugung ist also alles, und die gute Nachricht: Vorbeugung ist vor allem eine Frage der Gewohnheit.
+1715|Lektion 16 verfolgt eine Krypto-Überweisung auf dieselbe Weise: Adresse, Netzwerk, Gebühr und Bestätigung. Lektion 11 erklärt, was hinter den Stablecoins steht, die für solche Zahlungen genutzt werden.
+1716|Lektion 17 behandelt die Betrugsmuster, die KI jetzt überzeugender macht. Lektion 20 erklärt den Wechsel von Filialen zu Apps, der diesem Schritt vorausging.
+1717|Lektion 20 verfolgte das Geld von der Filiale zur App. Der nächste Schritt hat schon begonnen: von der App zu einem Assistenten, der Dinge für Sie erledigt.
+1718|Lektion 22 zeigt, wie man die 20 % zum Sparen in einem Monatsbudget findet. Lektion 18 vergleicht Gold, Dollar und Bitcoin als Orte für Ersparnisse.
+1719|Lektion 27 erklärt, wer die Blockbelohnung verdient und warum. Lektion 18 vergleicht Bitcoin mit Gold und Dollar als Wertaufbewahrung.
+1720|Lektion 27 erklärt, wer die Chain ehrlich hält. Lektion 29 zeigt, was Smart Contracts möglich machten: Tokens.
+1721|Lektion 28 erklärt die Smart Contracts, die Tokens erzeugen. Lektion 5 zeigt, wie man jeden Token prüft, bevor man ihn anfasst.
+1722|Lektion 28 zeigt, was Ethereum darauf laufen lässt: Programme, die sich selbst ausführen. Lektion 30 erklärt den Zeitplan, nach dem die Miner von Bitcoin bezahlt werden.
+1723|Lektionsinhalt
+1724|Lektionsüberblick
+1725|Lektionen
+1726|Lektionen, kurze Nachrichtenerklärungen und Updates, auf Persisch und Englisch. Keine Signale, kein Hype.
+1727|Niveau
+1728|Hebel und Zwangsverkäufe
+1729|Hebel und Margin
+1730|Ein Hebel verschärft das. Fällt ein Preis, können Händler mit geliehenem Geld automatisch zum Verkauf gezwungen werden, und diese Zwangsverkäufe drücken den Preis weiter. Schnelle Bewegungen sind oft teilweise mechanisch und nicht nur ein Urteil über die Nachricht.
+1731|Hebel: Handeln mit geliehenem Geld
+1732|Licht an
+1733|Licht an: dokumentierte iranische Leistungen
+1734|Grenzen für Besitz oder Handel
+1735|Grenzen:
+1736|Linear
+1737|Liquidation und Liquidationskaskade
+1738|Liquidation: Die Börse schließt die Position für Sie
+1739|Liquidationen, Hebel, fünf Ursachen, ein Einjahresvergleich, drei Szenarien und was das für iranische Anleger bedeutet.
+1740|Liquidität
+1741|Liquiditätssperre und Freigabedatum
+1742|Liquiditätspool
+1743|Liquiditätspools, LP-Tokens und Rug Pulls, mit der TMN-eigenen Sperre als Praxisbeispiel, und was eine Sperre nicht beweist.
+1744|Lira
+1745|Nennen Sie die Prüfungen vor dem Senden.
+1746|Nennen Sie die ersten Schritte nach einem Verlust.
+1747|Nennen Sie die vier neuen Risiken.
+1748|Nennen Sie die Hauptaufgaben einer Zentralbank.
+1749|Nennen Sie die Belohnung von 2009 bis 2024.
+1750|Nennen Sie drei Wege, wie in einer eigenen Wallet Geld verloren gehen kann.
+1751|Live-Preise
+1752|Wird geladen
+1753|Wird geladen…
+1754|Kreditstapelung
+1755|Logarithmisch
+1756|Lange vor den Banken nutzten Händler Vertrauensnetzwerke. Der Absender zahlt einen Vermittler in einer Stadt, und dessen Partner in einer anderen Stadt zahlt den Empfänger. Die beiden Vermittler rechnen später untereinander ab. In vielen Ländern heißt das Hawala, und es bewegt noch immer große Summen, wo Banken langsam, teuer oder nicht verfügbar sind.
+1757|Lange schwache Phasen
+1758|Schauen Sie vor einem großen Trade ins Orderbuch, nicht nur auf den Chart.
+1759|Achten Sie auf die reale Rendite: Zins minus Inflation.
+1760|Beobachten Sie einen Monat lang, bevor Sie etwas ändern.
+1761|Suchen Sie zuerst den größten Bedarf
+1762|Eine Transaktion in einem Block-Explorer nachschlagen.
+1763|Verlustzahlen sind Schätzungen aus Blockchain-Analysen und werden später meist nach oben korrigiert. Die Muster sind wichtiger als die Summen.
+1764|Verlorener Schlüssel, Betrug, insolvente Börse
+1765|Mio. Toman
+1766|Modell für maschinelles Lernen
+1767|Haupt
+1768|Künstliche Dringlichkeit
+1769|Viele Apps bitten Ihre Wallet, eine Genehmigung zu signieren. Manche Genehmigungen erlauben einem Vertrag, Ihre Tokens zu bewegen, manchmal ohne Limit und ohne Enddatum. Ein falscher Airdrop oder eine „Free Mint“-Seite nutzt genau das: Sie glauben, ein Geschenk abzuholen, und geben den Zugriff ab.

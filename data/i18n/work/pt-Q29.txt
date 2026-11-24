@@ -1,0 +1,62 @@
+2511|A chave costuma ser mostrada uma vez como uma
+2512|A própria chave
+2513|A última lição foi sobre verificar o token. Esta é sobre verificar
+2514|A última lição foi sobre verificar o token. Esta é sobre verificar-se a si próprio.
+2515|A última transação foi a 100 dólares. Há um comprador a 100 e o seguinte a 95. Vende duas unidades a mercado. Qual é o seu preço médio?
+2516|O piloto «aprender e ganhar» está aberto: leia dez lições, passe num teste de dez perguntas e receba 500 000 TMN, para as primeiras 1 000 pessoas.
+2517|O percurso de aprendizagem, passo a passo
+2518|A lição não é que os algoritmos sejam maus. É que uma promessa sustentada apenas pela confiança e por um segundo token pode desaparecer em dias. Hoje, a pergunta a fazer é simples: se a confiança se quebrasse amanhã, o que resta realmente para pagar aos detentores?
+2519|O nível varia muito. A União Europeia limita a taxa de intercâmbio a 0,2 por cento nos cartões de débito e 0,3 por cento nos de crédito. Noutros mercados a taxa total pode ser de dois ou três por cento. No Irão o arranjo tem sido invulgar: durante anos os bancos pagaram o custo e as lojas não pagavam nada pelas compras com cartão.
+2520|A ligação entre a Bitcoin e as taxas de juro também muda com o tempo. Por vezes é forte. Por vezes desaparece. Quem lhe der uma previsão confiante está a vender uma certeza que não existe.
+2521|O exemplo do empréstimo é aritmética arredondada para mostrar o método. As ofertas reais têm as suas próprias taxas, comissões e regras.
+2522|As principais funções
+2523|O mapa de ministérios, organismos e licenças, do registo de uma empresa à licença de cada setor.
+2524|O mercado já se tinha movido antecipadamente com base no resultado esperado
+2525|A oferta máxima é de 21 milhões de bitcoins, e a última deverá surgir por volta de 2140.
+2526|O comerciante:
+2527|As eleições intercalares realizam-se a meio do mandato de um presidente. Estão em disputa os 435 lugares da Câmara dos Representantes e cerca de um terço do Senado, pelo que o resultado pode mudar o que é politicamente possível nos dois anos seguintes.
+2528|O modelo pode crescer muito. O brasileiro Nubank, fundado em 2013 e que começou com um único cartão de crédito, indicou mais de 112 milhões de clientes em janeiro de 2026 e disse que isso o tornava a maior instituição financeira privada do Brasil em número de clientes.
+2529|O hábito mais útil no orçamento é pequeno. No dia em que o rendimento chega, mova primeiro a parte da poupança, antes de gastar seja o que for. Se esperar pelo fim do mês, normalmente já não há nada para mover.
+2530|A parte mais visível desse calendário é o halving.
+2531|O nome usado pelo criador ou criadores desconhecidos da Bitcoin
+2532|O nome usado pelo criador ou criadores desconhecidos da Bitcoin.
+2533|A rede procura produzir um novo bloco a cada cerca de 10 minutos. A cada 2 016 blocos, cerca de duas semanas, a dificuldade ajusta-se para o ritmo se manter estável, independentemente de quantos mineradores entram ou saem.
+2534|A rede regista o resultado para todos
+2535|A rede encaminha-o
+2536|A rede:
+2537|A rede: que estrada segue
+2538|A nova indústria: IA integrada nas empresas
+2539|Os novos riscos
+2540|Os sistemas de IA mais recentes entendem linguagem comum. Isso põe três coisas ao alcance das pessoas comuns.
+2541|A próxima mudança já chegou
+2542|O próximo halving é no bloco 1 050 000, previsto para cerca de 2028. A recompensa passará então a 1,5625 bitcoin por bloco.
+2543|O número na nota mantém-se, mas o que ela compra encolhe. Esta lição explica a inflação com exemplos simples, mostra como medir o que faz às poupanças e analisa com honestidade se a bitcoin ou as stablecoins podem
+2544|O número na nota mantém-se, mas o que ela compra encolhe. Esta lição explica a inflação com exemplos simples, mostra como medir o que faz às poupanças e analisa com honestidade se a bitcoin ou as stablecoins podem ajudar.
+2545|A antiga via informal
+2546|O banco central mais antigo do mundo é o da Suécia. O museu do Banco de Inglaterra refere que o Riksens Ständers Bank, hoje Sveriges Riksbank, foi fundado em 1668 a partir dos restos de um banco anterior falido, e chama-lhe o banco central mais antigo do mundo.
+2547|O mais antigo é o Riksbank da Suécia, de 1668; o Banco de Inglaterra seguiu-se em 1694; a lei da Reserva Federal dos EUA foi assinada a 23 de dezembro de 1913.
+2548|O teste numa linha
+2549|O único contrato, pool e canais oficiais do TMN. Se um link não estiver nesta lista, não é nosso.
+2550|As percentagens aplicam-se a que dinheiro?
+2551|A utilidade planeada ainda não está construída.
+2552|O objetivo das cinco
+2553|O preço já não pode mudar
+2554|O preço da Bitcoin
+2555|O preço do dinheiro emprestado
+2556|O preço do dólar muda todos os dias. Esta lição explica o que é uma taxa de câmbio, quem a define e qual a diferença entre uma flutuante e uma
+2557|O preço do dólar muda todos os dias. Esta lição explica o que é uma taxa de câmbio, quem a define e qual a diferença entre uma flutuante e uma fixa.
+2558|O preço no ecrã nem sempre é o seu preço
+2559|A função da estabilidade de preços
+2560|O problema a resolver
+2561|O projeto é gerido pelos seus dois fundadores, em pequena escala.
+2562|A corrida quântica
+2563|A questão não é qual é melhor. É saber qual delas tem.
+2564|A discreta economia dos brinquedos
+2565|Os anos discretos
+2566|A taxa passa para 1,20 dólares por euro. A camisa custa agora:
+2567|As taxas nesta lição são números redondos escolhidos para o exemplo. Não são as taxas de hoje.
+2568|O terminal lê o cartão e o valor.
+2569|O custo real é a comissão mais a margem da taxa de câmbio. Pergunte quanto chega.
+2570|O preço real de um empréstimo
+2571|As perguntas que realmente importam
+2572|O banco do destinatário credita a conta

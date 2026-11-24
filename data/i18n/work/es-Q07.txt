@@ -1,0 +1,59 @@
+623|Bancos. Gobiernos. Sistemas.
+624|=
+625|=
+626|Tipo de interés de referencia
+627|Fundamentos
+628|Sé honesto, porque solo tú sabrás la respuesta.
+629|Como todos los tokens que cumplen la norma hablan el mismo idioma, una billetera o app que la admite funciona con cualquiera de ellos sin código especial.
+630|Porque muestra cómo Bitcoin creció más allá de una persona.
+631|Porque se basaba en reglas abiertas, verificación y participación en la red.
+632|Como la recompensa sigue reduciéndose a la mitad, el total es limitado. La oferta máxima es de 21 millones de bitcoins. Se espera el último bitcoin hacia el año 2140, en el bloque 6.930.000.
+633|Como los tres fallan de maneras distintas, no siempre caen juntos. Tener más de un tipo de activo, en cantidades acordes con cuándo necesitarás el dinero, se llama
+634|Antes de cambiar nada, pasa un mes solo observando. Apunta cada pago o usa la lista que tu app del banco ya guarda.
+635|Antes de pulsar Enviar
+636|Antes de confiar en una, pregunta tres cosas: ¿quién la emite? ¿Qué la respalda y se publica? ¿Puedes canjearla por dólares?
+637|Antes de que tu margen llegue a cero, el exchange cierra tu posición automáticamente vendiéndola a mercado. Esto es una
+638|Principiante
+639|Guardarse en un teléfono móvil
+640|Gastarse con una tarjeta bancaria
+641|Medicamentos biosimilares, reactivos de laboratorio y proteínas recombinantes
+642|=
+643|=
+644|Bitcoin cayó a la mitad desde su máximo
+645|El origen de Bitcoin
+646|El libro blanco de Bitcoin
+647|Bitcoin se hizo más fuerte porque no siguió dependiendo de un fundador ni de una organización central.
+648|Guía para desarrolladores de Bitcoin: transacciones
+649|Bitcoin tiene un calendario de emisión fijo escrito en sus reglas. Esta lección muestra cómo la recompensa se reduce a la mitad, cuántas monedas deja eso y por qué el último bitcoin llega hacia el año
+650|Bitcoin tiene un calendario de emisión fijo escrito en sus reglas. Esta lección muestra cómo la recompensa se reduce a la mitad, cuántas monedas deja eso y por qué el último bitcoin llega hacia el año 2140.
+651|Bitcoin tiene un límite fijo de 21 millones de monedas, así que nadie puede imprimir más. Es una diferencia real con el dinero corriente. Pero una oferta fija no significa un precio estable. Bitcoin ha caído más de la mitad varias veces. Puede proteger el poder adquisitivo en un periodo y dañarlo en otro.
+652|Bitcoin tiene oferta fija pero precio inestable. Una stablecoin sigue al dólar y depende de su emisor.
+653|Bitcoin solo ha cotizado con volumen relevante en tres elecciones de mitad de mandato en EE. UU.: 2014, 2018 y 2022. Tres observaciones no son un patrón. En esos años pasaban además otras cosas, como cambios en los tipos de interés y el propio ciclo de oferta de Bitcoin, así que es imposible decir qué causó qué.
+654|Bitcoin introdujo sistemas donde la confianza podía pasar de las instituciones a reglas y redes transparentes.
+655|Emisión de bitcoin por era
+656|Bitcoin lleva un registro de quién tiene qué. Ethereum guarda además programas. Esta lección explica qué es un contrato inteligente, con la máquina expendedora, y qué puede y qué no puede
+657|Bitcoin lleva un registro de quién tiene qué. Ethereum guarda además programas. Esta lección explica qué es un contrato inteligente, con la máquina expendedora, y qué puede y qué no puede hacer.
+658|Mineros de Bitcoin
+659|Bitcoin produce un bloque cada diez minutos aproximadamente. Muchas redes más nuevas tardan pocos segundos. Los exchanges suelen esperar varias confirmaciones antes de abonar un depósito, por eso una transferencia puede figurar como hecha en tu billetera y seguir pendiente al otro lado.
+660|Bitcoin sustituyó la confianza personal por reglas abiertas, verificación y participación en la red.
+661|Desplome del bitcoin, noviembre de 2026
+662|Bitcoin demostró que el valor podía moverse digitalmente sin guardianes centralizados.
+663|Bitcoin cotiza las 24 horas, y en los grandes exchanges se pueden vender grandes cantidades en minutos. En la práctica, sin embargo, tu propia liquidez depende de tu acceso a un exchange y a un banco o intermediario al otro lado.
+664|Bitcoin usa prueba de trabajo. Los mineros reúnen transacciones pendientes en un bloque y buscan un número que, combinado con los datos del bloque y pasado por el hash, dé un resultado por debajo de un objetivo. Como explica learnmeabitcoin, esto significa calcular el hash de la cabecera del bloque, con doble SHA-256, una y otra vez hasta que el resultado quede por debajo del objetivo.
+665|Bitcoin nació de un problema más profundo.
+666|Bitcoin se lanzó en 2009. Satoshi ayudó a construir el software inicial, se comunicó con desarrolladores y luego fue desapareciendo poco a poco de la actividad pública.
+667|¿A qué problema respondía sobre todo Bitcoin?
+668|Bitcoin no se creó solo para ser otro activo digital. Surgió de un problema global de confianza más profundo, relacionado con instituciones, control, permisos y sistemas centralizados.
+669|Bitcoin no fue solo innovación.
+670|Bitcoin no pesa nada, pero guardarlo con seguridad implica gestionar una clave o confiar en un custodio, como explicó la lección 13.
+671|Bitcoin • Halving
+672|El actual CEO de Bitcoin
+673|La red de Bitcoin no depende de ningún gobierno ni empresa (lecciones 01 a 04). Su precio es otra cuestión. Muchos inversores tienen acciones y cripto, y cuando quieren menos riesgo venden algo de ambas. Una red puede ser independiente mientras su precio se mueve con el ánimo de la misma gente.
+674|La oferta de Bitcoin es fija. ¿Qué significa eso para su precio?
+675|Bitcoin, Ether y USDT para minoristas solo a través de intermediarios con licencia, con un tope de 300.000 rublos.
+676|Bitcoin: un sistema de efectivo electrónico entre pares (libro blanco)
+677|Función de lista negra
+678|Bloque y confirmación
+679|Explorador de bloques
+680|Recompensa por bloque
+681|Las recompensas por bloque se reducen, pero las comisiones de transacción siguen. A largo plazo, la idea es que la red se pague con comisiones. Si eso funciona es una pregunta abierta, no una promesa.

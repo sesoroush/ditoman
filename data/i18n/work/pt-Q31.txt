@@ -1,0 +1,37 @@
+2625|Estas perguntas poderão mais tarde fazer parte dos questionários do Ditoman, das pontuações de participação e de uma eventual elegibilidade para recompensas em TMN.
+2626|Estes sistemas são importantes, mas também criam dependência. Quando a confiança é posta apenas numa instituição, numa empresa ou numa plataforma, os utilizadores têm de aceitar que o sistema agirá corretamente, se manterá honesto e protegerá o seu acesso.
+2627|Estes usos estão maduros. Tornam as finanças mais rápidas e baratas, e apanham muita fraude que as pessoas não veriam.
+2628|Eram promoções pensadas para testar o sistema e incentivar o consumo, não regras sobre as poupanças normais das pessoas. Nenhum país pôs uma data de validade nos saldos diários de CBDC.
+2629|Tese versus movimento de preço
+2630|Não funcionam. O respaldo, o emissor e o resgate diferem, e deve verificar cada um separadamente.
+2631|Pense na última vez que esteve num balcão de banco. Para muitas pessoas foi há anos. Abrir conta, enviar dinheiro, pagar uma fatura e até pedir um empréstimo faz-se agora no telemóvel.
+2632|Pense no que o fundo tem de fazer: estar lá no próximo mês, com o mesmo valor. Um ativo cujo preço pode cair a pique, como mostraram as lições 10 e 18, não serve bem essa função. Não é um conselho sobre qualquer produto, apenas a descrição da tarefa desse dinheiro.
+2633|Veja-o como um mapa. Um mapa não o impede de andar; mostra onde está. Sem ele, os gastos parecem aleatórios. Com ele, pode escolher.
+2634|Veja esta lição como uma curta história de detetives. Cada stablecoin tem um suspeito (o emissor), um esconderijo (o respaldo) e uma saída (o resgate). A sua tarefa é verificar os três.
+2635|Trinta lições pela ordem que as torna mais fáceis de aprender. Comece no passo 1, ou salte para a fase de que precisa.
+2636|Isto mudou a forma como as pessoas pensam a confiança.
+2637|Este desaparecimento tornou a história ainda mais poderosa. A Bitcoin não continuou porque um fundador a controlava. Continuou porque o sistema era suficientemente aberto para que outros o verificassem, executassem, melhorassem e protegessem.
+2638|Isto não significa que todas as corretoras sejam desonestas. Significa que o saldo vale o que vale a empresa por trás dele.
+2639|Esta área muda depressa. Os nomes dos produtos e as datas de lançamento são os indicados nas fontes e podem já ter mudado.
+2640|Isto segue os passos anteriores: propriedade do contrato renunciada, pelo que nunca poderão ser criados novos TMN, e 10% da oferta original retirados.
+2641|É um rumo, não um produto acabado. As funcionalidades serão anunciadas quando estiverem construídas, não antes.
+2642|É também por isso que a taxa de juro de um banco merece uma segunda leitura. Se um depósito paga 20 por cento e os preços sobem 40 por cento, o saldo cresce mas o seu poder de compra cai. O número honesto é o juro menos a inflação, chamado
+2643|Isto é diferente do dinheiro na sua conta bancária. Um depósito bancário é um crédito sobre um banco. Uma stablecoin é um crédito sobre quem a emite, e as condições desse crédito estão escritas nos documentos do emissor, não num balcão de banco. Leia essas condições antes de confiar nelas.
+2644|Isto é liquidez: voltar a transformar o ativo em dinheiro utilizável depressa e perto do preço cotado.
+2645|Esta é uma das armadilhas mais comuns, e é visível no código antes de gastar o que quer que seja.
+2646|Isto é uma ajuda real e, para quem nunca teve acesso a um consultor financeiro, é novo.
+2647|Este é o erro caro mais comum dos principiantes. Antes de enviar, peça duas coisas ao destinatário: o endereço e a rede.
+2648|É a experiência com dinheiro mais comum do mundo, e tem uma causa simples. Os pagamentos pequenos esquecem-se facilmente, e um mês é tempo suficiente para os esconder. Um orçamento não é mais do que uma forma de ver o mês antes de ele acontecer.
+2649|Esta é a pergunta que quase ninguém faz, e é a mais valiosa aqui.
+2650|É por isso que a blockchain importa.
+2651|É por isso que, em muitos países, os credores têm de mostrar uma taxa anual que inclua todas as comissões. Quando um plano mostra só a prestação mensal, calcule o total por si.
+2652|Esta lição não julga nenhum projeto. Apenas explica uma categoria de token, para que a reconheça quando a encontrar.
+2653|Esta lição desenvolve a publicação oficial do Ditoman no Instagram sobre Satoshi Nakamoto num recurso de aprendizagem estruturado. A publicação original apresenta o mistério por trás do criador da Bitcoin e explica porque a identidade importa menos do que o sistema que continuou depois de Satoshi desaparecer.
+2654|Esta lição explica como funcionam os mercados. Não é uma recomendação de compra ou venda.
+2655|Esta lição é sobre pessoas que tentam ficar com o seu dinheiro. A lição 05 é sobre o próprio token: cinco verificações que pode fazer a qualquer contrato. A lição 06 é sobre as suas próprias razões para comprar.
+2656|Esta lição é sobre compreender o mercado à sua volta, não sobre o TMN.
+2657|Esta lição foi apresentada primeiro no Instagram do Ditoman, como parte da Série Educação. A versão do Instagram explica como a blockchain muda a confiança, e esta página oferece a versão completa da lição.
+2658|Esta lição foi apresentada primeiro no Instagram do Ditoman, como parte da Série Educação. A versão do Instagram dá um breve resumo visual, e esta página oferece a versão completa da lição.
+2659|Esta lição foi apresentada primeiro no Instagram do Ditoman, como parte da Série Segurança. A versão do Instagram dá um breve resumo visual, e esta página oferece a versão completa da lição.
+2660|Esta lição foi apresentada primeiro no Instagram do Ditoman. A versão do Instagram dá um breve resumo visual, e esta página oferece a versão completa da lição.
+2661|Isto importa porque uma oferta que pode crescer sem limite pode diluir todos os detentores do token.

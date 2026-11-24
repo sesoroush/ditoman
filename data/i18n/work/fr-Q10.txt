@@ -1,0 +1,118 @@
+931|Fréquence de capitalisation
+932|La capitalisation aide les épargnants et pénalise les emprunteurs.
+933|Concentrée chez les fondateurs
+934|Erreur assurée (hallucination)
+935|Erreurs assurées :
+936|Confirmation : quand c'est fait
+937|Les confirmations rendent une transaction définitive, et une transaction définitive ne peut pas être annulée.
+938|Confirmé dans le code
+939|Relier la blockchain aux infrastructures, aux données et aux systèmes futurs.
+940|Relier la blockchain à l'avenir des systèmes numériques.
+941|Mécanisme de consensus
+942|Consentement au partage des données
+943|Consumer Financial Protection Bureau : guide essentiel pour constituer un fonds d'urgence
+944|Consumer Financial Protection Bureau : qu'est-ce que l'intérêt composé (définition et exemple de 1 000 dollars à 5 %)
+945|Consumer Financial Services Law Monitor : résumé du rapport du CFPB
+946|Contrat sur BscScan
+947|Code source du contrat vérifié, environ 20 % de l'offre retirés de la circulation en deux étapes sur la chaîne, propriété abandonnée définitivement, leçons bilingues publiées et livre blanc fixé comme orientation finale.
+948|Vérification du contrat
+949|Contrat vérifié, propriété abandonnée, environ 20 % de l'offre hors circulation, leçons bilingues publiées, livre blanc finalisé.
+950|Contrat, faits et transparence honnête
+951|Contrôle
+952|Le contrôle et les données sont répartis sur un réseau
+953|Croissance maîtrisée
+954|Convertissez un prix à un taux donné.
+955|Faux convaincants :
+956|CoolWallet : autopsie de Terra
+957|Copier
+958|Copier le message
+959|Copiez le message, ouvrez
+960|Copiez votre adresse
+961|Idée centrale
+962|Corporate Finance Institute : ce qui est arrivé à Terra
+963|Bonne réponse : A
+964|Bonne réponse : B
+965|Bonne réponse : B. Personne d'honnête ne la demande jamais.
+966|Bonne réponse : C
+967|Bonne réponse : C (les Bahamas, la Jamaïque et le Nigeria)
+968|Bonne réponse : C. Il a chuté de plus de 75 % entre novembre 2021 et novembre 2022.
+969|Bonne réponse : C. Le rendement réel est négatif.
+970|Bonne réponse : C. L'UST n'avait pas de réserve en dollars ; il reposait sur LUNA et sur la création et la destruction.
+971|Bonne réponse : D
+972|Bonne réponse : Faux
+973|Bonne réponse : Faux. Les dates d'expiration n'ont servi que dans des essais promotionnels limités, comme à Shenzhen en janvier 2021, pas sur les soldes courants.
+974|Bonne réponse : Faux. Il empêche seulement que la liquidité verrouillée soit retirée avant la date de déverrouillage.
+975|Bonne réponse : Faux. Beaucoup d'investisseurs détiennent les deux et vendent les deux quand ils veulent moins de risque.
+976|Bonne réponse : Faux. Les vérifications techniques décrivent le token, pas votre raisonnement, votre timing ni votre risque.
+977|Bonne réponse : Faux. Trois observations ne font pas une tendance, et bien d'autres facteurs étaient à l'œuvre.
+978|Bonne réponse : Faux. Sans liquidité, pas de sortie.
+979|Bonne réponse : des règles inscrites dans l'argent lui-même, par exemple une date d'expiration ou des limites sur les lieux de dépense.
+980|Bonne réponse : les actifs sûrs rapportent plus, donc les actifs risqués paraissent moins attrayants, et emprunter pour les acheter coûte plus cher.
+981|Bonne réponse : que votre vie puisse continuer normalement si le montant tombait à zéro sans jamais revenir.
+982|Bonne réponse : quand la plateforme ferme automatiquement une position à effet de levier parce que la marge s'épuise.
+983|Bonne réponse : quand celui qui détient les tokens LP retire la liquidité, laissant les détenteurs incapables de vendre.
+984|Bonnes réponses : A, B, C
+985|Bonnes réponses : A, B, C, D
+986|Bonnes réponses : A, B, D
+987|Corrélation et causalité
+988|Banque correspondante
+989|Coût du prêt
+990|Créer mon code
+991|Créez le portefeuille et écrivez les 12 mots de récupération sur papier. Ne les donnez jamais à personne.
+992|Créé par
+993|Créés pendant l'ère
+994|Décisions de crédit :
+995|Reconnaissance de l'engagement réel : leçons terminées, contributions utiles, bonnes discussions et premiers soutiens.
+996|Notation de crédit
+997|Crédit • Dette
+998|Paiement transfrontalier
+999|Crypto
+1000|Krach du marché crypto : 550 milliards effacés
+1001|La crypto et l'argent, en pratique
+1002|Garantie en crypto :
+1003|La crypto va un cran plus loin que la fintech. Un portefeuille personnel déplace de l'argent sans aucune banque en dessous, et certaines applications prêtent et échangent uniquement par le code.
+1004|La crypto a la même distinction, avec les mots coin et token.
+1005|Marché crypto
+1006|Krach du marché crypto
+1007|Crypto • Transactions
+1008|CryptoSlate, 5 nov. 2026 : Nasdaq 100 −5,5 %, liquidations d'environ 1 milliard de dollars, plus de 201 000 traders
+1009|Devises
+1010|Caisse d'émission
+1011|Le marché des changes est immense, et le dollar américain se trouve d'un côté de la plupart des échanges.
+1012|Garde
+1013|Service client :
+1014|Cyberattaques contre les banques
+1015|Cyberattaques contre les banques
+1016|Cybersécurité
+1017|D. Des frais payés aux plateformes
+1018|D. Un vote de gouvernance
+1019|D. Tout ce qui précède
+1020|D. N'importe qui peut désormais créer de nouveaux tokens
+1021|D. Parce que les plateformes ferment en semaine
+1022|D. Parce qu'elle retire toute technologie de la finance
+1023|D. Parce que les marchés ferment la nuit
+1024|D. La blockchain n'est utile qu'aux banques
+1025|D. Banques commerciales uniquement
+1026|D. Identité numérique
+1027|D. Les plateformes ont fixé un prix
+1028|D. Combien de pays en parlent
+1029|D. On en parle beaucoup en ligne
+1030|D. C'est exigé par les plateformes
+1031|D. Cela empêche le token d'être listé où que ce soit
+1032|D. Aucun
+1033|D. Aucune de ces réponses
+1034|D. Uniquement des registres privés
+1035|D. Se passer d'Internet
+1036|D. Le prix futur du token
+1037|D. Le token n'a pas de limite d'offre
+1038|D. Les utilisateurs ne peuvent rien vérifier
+1039|D. Vérification
+1040|D. Quand les fondateurs le décident
+1041|=
+1042|Le calcul quotidien compte parce qu'il montre combien de temps l'argent est resté où. L'argent qui arrive en fin de mois rapporte moins de jours, et un prêt remboursé en retard coûte plus de jours.
+1043|Intérêts journaliers
+1044|Rapports de marché quotidiens
+1045|Revue de presse quotidienne
+1046|Prix du jour
+1047|Rapport quotidien
+1048|Daniel Chidiac sur la rumination, les limites et l'autosabotage, et pourquoi un espace entre l'événement et la réaction compte dans les décisions d'argent.

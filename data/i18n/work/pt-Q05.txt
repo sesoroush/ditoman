@@ -1,0 +1,76 @@
+400|Agente
+401|Pagamentos por agentes
+402|Combinar uma palavra-código em família
+403|Agrotecnologia
+404|Agroindústria
+405|Os altifalantes dos aeroportos falam agora diretamente aos seus ouvidos
+406|Modelo algorítmico
+407|Modelo algorítmico:
+408|Todas
+409|Todas as lições
+410|Todas as lições e o percurso de aprendizagem
+411|Todos os preços e gráficos →
+412|Os três oscilam, mas não na mesma medida.
+413|=
+414|=
+415|Quase toda a oferta em circulação está numa carteira do fundador, visível a qualquer pessoa no BscScan.
+416|Quase todos os países têm um, e as notícias falam dele todos os dias. Esta lição explica em palavras simples o que é um banco central, de onde veio a ideia e quais são as suas principais funções
+417|Quase todos os países têm um, e as notícias falam dele todos os dias. Esta lição explica em palavras simples o que é um banco central, de onde veio a ideia e quais são as suas principais funções.
+418|Estou a comprar porque percebo, ou porque tenho medo de ficar de fora?
+419|=
+420|Montante
+421|Montante recebido
+422|Um império sem bandeira?
+423|Um sistema iraniano de triagem com IA encontra um comércio de exportação centenário.
+424|Um medicamento iraniano autorizado em toda a Europa
+425|Um medicamento iraniano autorizado em toda a Europa
+426|Um robô cirúrgico iraniano: o que está documentado e o que ainda é afirmação do fabricante.
+427|Um catalisador de EO feito no Irão faz agora funcionar a unidade de glicol da Morvarid Petrochemical à capacidade máxima.
+428|Um endereço é como um número de conta: uma longa sequência de letras e números que identifica uma carteira. Na Ethereum e na BNB Smart Chain começa por 0x e tem 42 caracteres. Os endereços de Bitcoin e Tron são diferentes.
+429|Um endereço é público. Partilhá-lo é seguro, porque só permite que lhe enviem. O que tem de ficar secreto é a chave privada ou a frase de recuperação da lição 13.
+430|O endereço diz onde. A rede diz por que caminho. Ambos têm de coincidir com o destinatário.
+431|Um fundo de emergência é dinheiro posto de parte só para custos necessários e imprevistos: uma reparação súbita, uma conta médica, um intervalo entre empregos. Não é para férias, saldos ou investimentos.
+432|Um fundo de emergência transforma uma crise num incómodo.
+433|Um império sem bandeira? O investimento da China no estrangeiro
+434|Um saldo na corretora é um crédito sobre uma empresa, normalmente sem garantia.
+435|Um saldo na corretora também é uma promessa
+436|Uma taxa de câmbio é o preço de uma moeda noutra.
+437|A taxa de juro é o preço do dinheiro
+438|Um relatório antigo só fala do passado.
+439|Loja de aplicações Android para falantes de persa; mais de 500 000 apps
+440|Taxa anual com comissões incluídas
+441|Responda às dez perguntas.
+442|Qualquer futura retirada de oferta será uma transferência das carteiras do fundador para um endereço público de queima, com cada hash de transação publicado nesta página. Estas transferências tiram tokens de circulação mas não alteram o totalSupply que o contrato mostra, e descrevê-las-emos assim.
+443|Qualquer livro-razão precisa de uma regra: todos têm de concordar sobre a página seguinte. Se duas pessoas pudessem acrescentar duas páginas seguintes diferentes, o dinheiro poderia ser gasto duas vezes.
+444|Agora qualquer pessoa pode criar novos tokens
+445|Aplique o teste de uma linha a qualquer ativo.
+446|Faça três perguntas antes de confiar em qualquer stablecoin.
+447|Aplicar a verificação 5 ao TMN
+448|O suporte ósseo de magnésio e óxido de grafeno da Universidade de Arak: resultados de laboratório, como a Alemanha e a Coreia chegaram ao mercado, o 5.º lugar do Irão na área e o caminho até ao bloco operatório.
+449|Há restrições escondidas?
+450|A chegar; regras em elaboração
+451|Inteligência artificial
+452|A inteligência artificial já decide se o seu pagamento com cartão parece suspeito, e começa a comprar e pagar em nome das pessoas. Esta lição separa o que é real hoje do que ainda é promessa, e nomeia os novos riscos
+453|A inteligência artificial já decide se o seu pagamento com cartão parece suspeito, e começa a comprar e pagar em nome das pessoas. Esta lição separa o que é real hoje do que ainda é promessa, e nomeia os novos riscos com clareza.
+454|A inteligência artificial, ou IA, é um nome amplo para software que aprende padrões a partir de dados em vez de seguir só regras fixas. Vale a pena olhar com atenção, porque no dinheiro as histórias esperançosas e as assustadoras são ambas em parte verdade.
+455|=
+456|Como explicou a lição 27, os mineradores recebem uma recompensa por cada bloco que acrescentam. O halving corta essa recompensa a metade, automaticamente, a cada 210 000 blocos. A cerca de um bloco a cada dez minutos, isso dá uns quatro anos.
+457|Faça quatro perguntas sobre qualquer relatório de reservas: o que está guardado? Quanto é dinheiro? Quem verifica? Com que frequência é publicado?
+458|Peça que explique e depois verifique os factos importantes
+459|Faça uma pergunta: este ativo tem a sua própria cadeia ou vive na de outro? Isso resolve.
+460|Pergunte ao destinatário
+461|Pergunte de onde vem o dinheiro.
+462|Pergunte porque foi tomada uma decisão
+463|=
+464|=
+465|Assistente
+466|A 5% sobre 1 000 durante 20 anos: 2 000 em juro simples contra cerca de 2 653 em composto.
+467|No essencial, a blockchain é um sistema para registar informação de forma transparente, segura e difícil de alterar.
+468|No endereço morto
+469|No fim do dia, os pagamentos aprovados são reunidos e somados. Isto é a
+470|No fim do mês, divida os pagamentos em três montes: o que tem de pagar, o que escolheu pagar e o dinheiro que pôs de parte. A maioria das pessoas surpreende-se com o tamanho de pelo menos um dos montes.
+471|Atlantic Council, monitor de moedas digitais de bancos centrais
+472|Atestação versus auditoria
+473|Auracast em Frankfurt, Munique e Brighton, o mercado global, a IA, as empresas, as normas e a oportunidade para o Irão.
+474|Autorização
+475|A autorização é instantânea. A compensação e a liquidação levam horas ou dias.

@@ -1,0 +1,84 @@
+3212|uma armadilha de assinatura
+3213|um reembolso de impostos, uma prenda, um bónus.
+3214|cerca de 25%
+3215|com o contrato original, o site oficial ou uma pessoa responsável.
+3216|toda a liquidez TMN/BNB da carteira principal do projeto bloqueada até 29 out 2027.
+3217|um assistente pode explicar um contrato, uma tabela de comissões ou um termo financeiro em palavras simples, na sua própria língua.
+3218|um assistente só é tão útil quanto os dados que lhe dá. Extratos bancários, saldos e documentos de identidade são exatamente o que um criminoso também quer.
+3219|um fundo de emergência, um objetivo maior, pagamentos extra de dívidas.
+3220|um conhecido online que o encaminha para um investimento está a seguir um guião. Pare aí, e fale com alguém que conheça pessoalmente antes de enviar o que quer que seja.
+3221|e Instagram.
+3222|and Medical
+3223|e compare os quatro primeiros e os quatro últimos caracteres.
+3224|e de hora para hora. A carteira mostra a taxa antes de confirmar. Leia-a.
+3225|e procure-o num explorador de blocos.
+3226|e pode descontar uma comissão.
+3227|e envie-o para lá.
+3228|e a conta da loja é creditada.
+3229|pede a sua frase de recuperação
+3230|à sua própria taxa e envia uma instrução, muitas vezes através da SWIFT.
+3231|faz a média de todo o ano anterior, por isso move-se mais devagar.
+3232|saldo, PIN e sinais de fraude, e depois responde sim ou não.
+3233|como os bancos estão no meio, um pagamento com cartão pode ser revertido. Isso protege os compradores. É também um custo e um risco para as lojas.
+3234|por trás do futuro.
+3235|podem ser impostas condições aos saldos comuns, ou só a pagamentos específicos com que concorde?
+3236|os assistentes de chat respondem a perguntas de rotina a qualquer hora.
+3237|compensação
+3238|compara os preços deste mês com os do mesmo mês do ano passado.
+3239|juro composto
+3240|banco correspondente
+3241|ditoman.com
+3242|diversificação
+3243|funciona sem internet, como o dinheiro físico?
+3244|o dinheiro físico continua disponível em paralelo?
+3245|refeições fora, entretenimento, viagens, subscrições, roupa extra.
+3246|O ethereum.org nota que um ERC-20 simples pode perder tokens enviados para um contrato que não sabe lidar com eles. Os tokens não são mágicos: enviar para um endereço errado continua a ser um erro irreversível.
+3247|ethereum.org: gas e taxas
+3248|ethereum.org: carteiras, chaves e frases de recuperação
+3249|ethereum.org: introdução aos contratos inteligentes (definição, código e estado num endereço, metáfora da máquina de venda automática, não podem ser apagados por defeito)
+3250|ethereum.org: prova de participação, o depósito de 32 ETH, pools de staking e slashing
+3251|ethereum.org: a norma de tokens ERC-20 (interface comum, risco de tokens enviados para contratos que não os sabem tratar)
+3252|para as taxas.
+3253|o endereço e a rede.
+3254|para a taxa, e leia a taxa.
+3255|para pedidos urgentes de dinheiro por telefone ou vídeo. Uma voz clonada não a sabe.
+3256|tem longos períodos calmos e depois movimentos bruscos. Depois do pico de 2011, perto de 1 900 dólares a onça, caiu cerca de 45 por cento nos quatro anos seguintes antes de recuperar mais tarde.
+3257|ter licença, ser supervisionado e ter por trás uma garantia de depósitos, como na lição 13.
+3258|guardar depósitos e devolvê-los quando pedidos.
+3259|habitação, serviços, transportes, mercearia, roupa básica, seguros, cuidados de saúde e os pagamentos mínimos das dívidas.
+3260|numa semana melhor, ponha o excedente no fundo.
+3261|nas finanças, não existe rendimento alto sem risco. Pergunte de onde vem o dinheiro. Se a resposta honesta for «de novos membros», é uma pirâmide.
+3262|em moeda local.
+3263|os bancos intermediários podem descontar cada um uma comissão, por isso chega menos do que foi enviado.
+3264|é aceitar risco por um rendimento que vem de algo produtivo: um negócio, um imóvel, um empréstimo.
+3265|é comprar algo sobretudo porque espera que o preço suba.
+3266|é pôr dinheiro de lado para que esteja lá quando precisar. O objetivo é manter o poder de compra.
+3267|há um limite ao valor que pode ter? O euro digital prevê um, para proteger os bancos.
+3268|pode expor as opções de uma decisão e as perguntas a fazer.
+3269|pode classificar um ano de gastos por categorias e mostrar para onde foi o dinheiro.
+3270|emite as notas e gere os sistemas que movem dinheiro entre bancos.
+3271|guarda as reservas de ouro do país.
+3272|define a Bank Rate, o custo base do crédito que influencia todas as outras taxas.
+3273|aprenda e ganhe TMN
+3274|learnmeabitcoin: mineração e recompensas de bloco
+3275|learnmeabitcoin: mineração, tempo de bloco, ajuste de dificuldade a cada 2 016 blocos, maturação da coinbase, ataque de 51%
+3276|os credores usam modelos para estimar quem vai pagar, e é assim que um empréstimo pode ser aprovado num minuto, como na lição 19.
+3277|liquidação
+3278|bloqueada até 29 de outubro de 2027
+3279|margem
+3280|contacta-o primeiro como «apoio»
+3281|é o que menos se move face aos bens no curto prazo, embora perca poder de compra lentamente pela sua própria inflação. A inflação dos EUA atingiu o pico acima de 9 por cento em meados de 2022.
+3282|movimenta o saldo entre as contas dos dois bancos. Pode haver mais do que um.
+3283|e toque em Receber.
+3284|nunca siga links de mensagens, anúncios ou resultados de pesquisa para nada que guarde dinheiro. Escreva o endereço por si ou use um marcador guardado. E lembre-se da regra da lição 13: ninguém legítimo pede alguma vez uma frase de recuperação.
+3285|nada de frase de recuperação, número de cartão ou código único. A regra da lição 13 não tem exceção para máquinas.
+3286|de 10 certas
+3287|oferece um token grátis para «reclamar»
+3288|no PinkLock. Até lá, essa liquidez não pode ser retirada.
+3289|uma transação
+3290|pagamentos, transferências e cartões, como na lição 14.
+3291|contrato do pool
+3292|pressão para o impedir de pensar
+3293|chave privada
+3294|promete um rendimento alto fixo
+3295|leia o que a carteira lhe pede para assinar. Se não perceber, rejeite. Tenha uma carteira separada com pequenos valores para experimentar sites novos, e nunca ligue a carteira que guarda as suas poupanças.

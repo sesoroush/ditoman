@@ -1,0 +1,130 @@
+801|C. Rien
+802|C. Rien ; le token vaut un dollar de toute façon
+803|C. Sur papier, en lieu sûr
+804|C. Une fois par jour
+805|C. Seulement si vous la partagez une fois
+806|C. Seulement l'épargne déjà constituée
+807|C. Seulement avec votre autorisation
+808|C. Ouvrir un second compte bancaire
+809|C. La propriété a été abandonnée et les fonctions réservées au propriétaire ne peuvent plus être utilisées
+810|C. Payer les dettes en dernier
+811|C. Plateformes
+812|C. Imprimer des billets
+813|C. Fixer les taux de la banque centrale
+814|C. Arrêter complètement d'épargner
+815|C. Superviser les banques
+816|C. Impôts
+817|C. La Banque d'Angleterre, 1694
+818|C. Le compte est clôturé plus tôt
+819|C. La moyenne des dix dernières années
+820|C. La carte est annulée
+821|C. La banque centrale imprime un reçu
+822|C. Les coins peuvent ne pas apparaître et être perdus
+823|C. La plateforme où ils ont été achetés
+824|C. Le réseau
+825|C. Le réseau supprime les anciens portefeuilles
+826|C. Le prix peut encore varier fortement
+827|C. Le prix ne peut plus changer
+828|C. Le prix du bitcoin
+829|C. Le destinataire paie les frais
+830|C. Le pays du destinataire
+831|C. Le prix de la chemise
+832|C. Le site peut être lent
+833|C. Le token ne peut pas être échangé
+834|C. La date de déverrouillage
+835|C. Le poids d'une pièce
+836|C. Leur prix ne baisse jamais
+837|C. Elles n'arrivent qu'en anglais
+838|C. Pour extraire de l'or
+839|C. Des systèmes transparents et vérifiables
+840|=
+841|C. Illimitée
+842|C. En général rien ; vous attendez avec les autres créanciers
+843|C. Vérifier par un autre canal ou avec le mot de passe familial
+844|C. La fermeture du week-end
+845|C. Si de nouveaux tokens peuvent être créés
+846|C. Chez la boutique d'applications
+847|C. Oui, une semaine
+848|C. Oui, d'ici une semaine
+849|CBDC Wiki, état du rial numérique iranien (mars 2026)
+850|CBDC ou cryptomonnaie
+851|Les CBDC et la crypto ne sont pas la même chose
+852|CVJ : présentation de TerraUSD (UST)
+853|=
+854|Calculez l'intérêt simple à la main.
+855|Calculez le prix moyen d'un ordre au marché dans un carnet d'ordres peu profond.
+856|Calendrier
+857|Cambridge Centre for Alternative Finance : la consommation électrique d'Ethereum après le Merge (15 septembre 2022)
+858|Puis-je me permettre de tout perdre ?
+859|Le bitcoin ou les stablecoins peuvent-ils aider ?
+860|Peut-on encore créer de nouveaux tokens ?
+861|La majorité peut-elle tricher ?
+862|Le carbone fléchit, le solaire et l'éolien s'envolent
+863|Réseau de cartes
+864|Les paiements par carte peuvent être annulés. Les paiements sur blockchain, non. Chacun a un coût.
+865|Les terminaux, les réseaux et les systèmes antifraude coûtent de l'argent. Dans la plupart des pays, le commerçant paie un petit pourcentage de chaque vente, et une partie de ces frais, appelée commission d'interchange, revient à la banque qui a émis la carte.
+866|Porteur de carte et commerçant
+867|Porter la confiance :
+868|Étude de cas : comment l'UST a perdu son ancrage
+869|Espèces et obligations d'État :
+870|Espèces, obligations d'État à court terme, autres actifs. Quelle part est quasi liquide ?
+871|Espèces :
+872|Banque centrale
+873|Monnaies numériques de banque centrale et « monnaie programmable » : ce qu'elles sont, où elles en sont, ce qui est réel et ce qui est exagéré, et où en est le rial numérique iranien
+874|Monnaies numériques de banque centrale et « monnaie programmable » : ce qu'elles sont, où elles en sont, ce qui est réel et ce qui est exagéré, et où en est le rial numérique iranien.
+875|Monnaies numériques de banque centrale et monnaie programmable : ce qui est réel, ce qui est exagéré et où en est le rial numérique iranien.
+876|Monnaies numériques de banque centrale, monnaie programmable, les vrais essais derrière les titres et le rial numérique iranien.
+877|Monnaie numérique de banque centrale (CBDC)
+878|Chainalysis : recherches sur la criminalité crypto
+879|Variation sur la période
+880|Réglementation changeante
+881|Rétrofacturation
+882|Vérifiez adresse et réseau deux fois,
+883|Vérifiez avant de faire confiance
+884|Vérifiez d'abord. Décidez ensuite.
+885|Vérifiez vous-même
+886|Vérifiez les faits importants
+887|Vérifiez le calcul de l'émission.
+888|Vérifiez le token. Puis vérifiez-vous vous-même.
+889|Voyez ce que vous avez retenu. La réponse est sous chaque question.
+890|Vérifiez s'il existe un vrai pool de liquidité et quelle est sa profondeur. Sans liquidité, pas de sortie, quel que soit le chiffre affiché.
+891|Vérifiez si de nouveaux tokens peuvent encore être créés.
+892|Vérifiez que vous détenez le coin du réseau
+893|Consulter les données publiques du marché.
+894|Vérifier le calcul
+895|La Chine il y a 40 ans, il y a 20 ans et aujourd'hui : 3 400 milliards de dollars investis à l'étranger, 168 ports dans 90 pays, prêts, compétences, et la comparaison avec le Royaume-Uni, la France, les États-Unis et le Japon.
+896|Industrie de haute technologie chinoise
+897|L'économie chinoise à deux vitesses : la haute technologie s'envole, la consommation cale
+898|Yuan chinois
+899|Yuan chinois (quotidien)
+900|Choisissez le même réseau
+901|=
+902|Circle et Paribu signent un protocole d'accord : comment fonctionne le dollar numérique, la leçon de la Turquie après 85 % d'inflation, la place de l'Iran et les emplois à venir.
+903|Compensation
+904|Climat et économie
+905|Fermer
+906|Panneaux et profilés en MDF revêtu, panneaux muraux en PVC, pierre artificielle, dalles de plafond ; zone franche d'Anzali, Gilan
+907|Coin
+908|Coin ou token
+909|CoinGecko : historique du prix du bitcoin
+910|Garantie
+911|Banque commerciale
+912|Banques commerciales uniquement
+913|Structure de la communauté
+914|Entreprises
+915|Les exemples d'entreprises décrivent la façon dont chaque service dit être organisé. Ce ne sont pas des recommandations, et les dispositifs peuvent changer.
+916|Fiches d'entreprises, avec sources
+917|Comparez les résultats à 10 et 20 ans au même taux.
+918|Comparez un paiement par carte réversible à un paiement définitif sur blockchain.
+919|Comparez les actifs sur les mêmes quatre questions : variation, liquidité, coût de conservation et ce qui peut mal tourner.
+920|Comparez le dollar, l'or et le bitcoin sur les variations de prix.
+921|Comparer les marchés
+922|Comparez les offres sur la même période et avec la même capitalisation.
+923|Comparez la protection derrière un compte bancaire et un compte sur une plateforme.
+924|Comparez deux offres sur la même base.
+925|Par rapport à un audit complet, que montre un rapport d'attestation ?
+926|Terminé
+927|Contrôles de conformité
+928|Composé
+929|Intérêts composés
+930|Les intérêts composés jouent dans les deux sens. Sur l'épargne, ils aident ; sur une dette, ils expliquent pourquoi le solde peut grossir même quand vous payez. La leçon 19 a montré comment les coûts des mensualités s'accumulent, et voici le moteur en dessous.

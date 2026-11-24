@@ -1,0 +1,71 @@
+1699|Lição 05 • Série Segurança
+1700|Lição 05: Verifique o token
+1701|Lição 06 | Cinco perguntas a fazer antes de comprar | Ditoman Learn
+1702|Lição 06 • Série Segurança
+1703|Lição 06: Cinco perguntas
+1704|Lição 07: Como as notícias movem os preços
+1705|A lição 11 perguntou o que sustenta um dólar digital, e a lição 20 perguntou se os bancos vão desaparecer. Ambas as perguntas ficam mais fáceis quando se conhece o papel do próprio banco central.
+1706|A lição 11 pergunta o que está por trás de um dólar digital. A lição 20 pergunta se os bancos vão desaparecer.
+1707|A lição 12 explica como a subida de preços corrói o poder de compra. A lição 26 mostra a instituição que muitas vezes está por trás de uma moeda: o banco central.
+1708|A lição 12 explica a inflação que leva as pessoas a procurar alternativas. A lição 06 dá cinco perguntas a fazer a si mesmo antes de comprar seja o que for.
+1709|A lição 12 explica porque um orçamento precisa de ser atualizado quando os preços sobem. A lição 19 mostra como os planos de prestações levam, sem dar nas vistas, uma fatia maior do rendimento do mês seguinte.
+1710|A lição 12 mostrou o que a inflação faz ao dinheiro parado. O pensamento natural seguinte é: então devo guardar outra coisa. Em muitas famílias a resposta é a mesma há gerações: ouro ou dólares. Nos últimos anos, um terceiro nome entrou na conversa: a bitcoin.
+1711|A lição 12 mostrou porque os preços estáveis importam: a subida de preços corrói o que um salário compra. O banco central é a instituição encarregada de manter essa erosão pequena e previsível.
+1712|A lição 12 mostra porque o juro deve ser comparado com a subida dos preços. A lição 19 mostra o lado do custo: quanto somam realmente as prestações.
+1713|A lição 14 seguiu um pagamento com cartão através de cinco empresas. Uma transferência cripto não tem nenhuma delas. Há você, o destinatário e uma rede de computadores que qualquer pessoa pode inspecionar.
+1714|A lição 16 explicou porque isto importa tanto: uma transferência em blockchain não pode ser revertida. Um banco por vezes consegue recuperar dinheiro. Uma blockchain não. Por isso a prevenção é tudo, e a boa notícia é que a prevenção é sobretudo uma questão de hábito.
+1715|A lição 16 segue uma transferência cripto da mesma forma: endereço, rede, taxa e confirmação. A lição 11 explica o que está por trás das stablecoins usadas nestes pagamentos.
+1716|A lição 17 aborda os padrões de burla que a IA está a tornar mais convincentes. A lição 20 explica a passagem dos balcões para as aplicações que antecedeu este passo.
+1717|A lição 20 seguiu o dinheiro do balcão até à aplicação. O passo seguinte já começou: da aplicação para um assistente que faz as coisas por si.
+1718|A lição 22 mostra como encontrar os 20% para poupança num orçamento mensal. A lição 18 compara ouro, dólares e bitcoin como lugares para guardar poupanças.
+1719|A lição 27 explica quem ganha a recompensa de bloco e porquê. A lição 18 compara a bitcoin com o ouro e o dólar como reserva de poupança.
+1720|A lição 27 explica quem mantém a cadeia honesta. A lição 29 mostra o que os contratos inteligentes tornaram possível: tokens.
+1721|A lição 28 explica os contratos inteligentes que criam tokens. A lição 5 mostra como verificar qualquer token antes de lhe tocar.
+1722|A lição 28 mostra o que a Ethereum corre por cima disto: programas que se executam sozinhos. A lição 30 explica o calendário que define como são pagos os mineradores da Bitcoin.
+1723|Conteúdo da lição
+1724|Visão geral da lição
+1725|Lições
+1726|Lições, notícias explicadas de forma breve e atualizações, em persa e inglês. Sem sinais, sem exageros.
+1727|Nível
+1728|Alavancagem e vendas forçadas
+1729|Alavancagem e margem
+1730|A alavancagem torna tudo mais brusco. Quando um preço cai, quem negoceia com dinheiro emprestado pode ser forçado a vender automaticamente, e essas vendas forçadas empurram o preço ainda mais para baixo. Os movimentos rápidos são muitas vezes em parte mecânicos, e não só um veredicto sobre a notícia.
+1731|Alavancagem: negociar com dinheiro emprestado
+1732|Luzes acesas
+1733|Luzes acesas: conquistas iranianas documentadas
+1734|Limites à detenção ou negociação
+1735|Limites:
+1736|Linear
+1737|Liquidação e liquidação em cascata
+1738|Liquidação: a corretora fecha a operação por si
+1739|Liquidações, alavancagem, cinco causas, uma comparação de um ano, três cenários e o que significa para investidores iranianos.
+1740|Liquidez
+1741|Bloqueio de liquidez e data de desbloqueio
+1742|Pool de liquidez
+1743|Pools de liquidez, tokens LP e rug pulls, com o próprio bloqueio do TMN como exemplo prático, e o que um bloqueio não prova.
+1744|Lira
+1745|Liste as verificações a fazer antes de enviar.
+1746|Liste os primeiros passos a dar depois de uma perda.
+1747|Liste os quatro novos riscos.
+1748|Liste as principais funções de um banco central.
+1749|Liste a recompensa de 2009 a 2024.
+1750|Liste três formas de perder dinheiro numa carteira pessoal.
+1751|Preços ao vivo
+1752|A carregar
+1753|A carregar…
+1754|Acumulação de empréstimos
+1755|Logarítmica
+1756|Muito antes dos bancos, os comerciantes usavam redes de confiança. Quem envia paga a um intermediário numa cidade, e o parceiro desse intermediário noutra cidade paga ao destinatário. Os dois intermediários acertam contas mais tarde. Em muitos países isto chama-se hawala, e ainda movimenta grandes somas onde os bancos são lentos, caros ou inexistentes.
+1757|Longos períodos fracos
+1758|Antes de uma operação grande, olhe para o livro de ordens, não só para o gráfico.
+1759|Olhe para o rendimento real: juro menos inflação.
+1760|Observe durante um mês antes de mudar alguma coisa.
+1761|Procure primeiro a maior necessidade
+1762|Procure uma transação num explorador de blocos.
+1763|Os valores das perdas são estimativas da análise da blockchain e costumam ser revistos em alta mais tarde. Os padrões importam mais do que os totais.
+1764|Chave perdida, burlas, corretora falida
+1765|M tomans
+1766|Modelo de aprendizagem automática
+1767|Principal
+1768|Urgência fabricada
+1769|Muitas aplicações pedem à sua carteira que assine uma aprovação. Algumas aprovações dão a um contrato permissão para mover os seus tokens, por vezes sem limite e sem data de fim. Um falso airdrop ou um site de «mint grátis» usa exatamente isto: julga que está a receber um presente e está a ceder o acesso.

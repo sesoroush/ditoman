@@ -1,0 +1,78 @@
+1139|O CFPB define um tamanho fixo para o fundo de emergência?
+1140|Esta lição afirma que o halving causa subidas de preço?
+1141|Fazer negócios no Irão
+1142|Dólar (NIMA)
+1143|Dólar (livre)
+1144|Dólar, ouro e todos os relatórios diários
+1145|Dólar, ouro, moedas e mercados mundiais
+1146|Dólares (numerário)
+1147|Os dólares e as moedas de ouro têm mercados profundos em quase todo o lado, mas os preços de compra e de venda diferem. Essa diferença, o
+1148|=
+1149|=
+1150|Inflação de dois dígitos em 46 de 50 anos: porque quem começa tarde fica mais atrás, porque não é culpa sua e o que ainda está nas nossas mãos.
+1151|Queda desde o pico
+1152|=
+1153|Regulamento (UE) 2015/751 relativo às taxas de intercâmbio nas operações de pagamento com cartão
+1154|Cada banco faz as suas verificações
+1155|Cada era tem 210 000 blocos, por isso o montante criado numa era é 210 000 vezes a recompensa dessa era.
+1156|Cada linha é um tipo de risco diferente. Repare que nenhuma coluna está vazia.
+1157|Cada pergunta do teste vem de uma destas lições. Cada lição leva cerca de cinco
+1158|Cada pergunta do teste vem de uma destas lições. Cada lição leva cerca de cinco minutos.
+1159|Cada carteira só pode receber a recompensa uma vez.
+1160|Comer fora, entretenimento, viagens, subscrições
+1161|Calendário económico
+1162|Os economistas discutem os pormenores, mas três origens aparecem uma e outra vez.
+1163|Economia
+1164|Economia e vida
+1165|Economia significava em tempos gerir uma casa: como as famílias vivem realmente a economia, o orçamento familiar iraniano em números e as competências que usam para se aguentar.
+1166|Economia, IA e comércio, todos os dias às 16:00
+1167|Rendimento anual efetivo
+1168|As eleições decidem quem escreve e aprova as regras. Nos Estados Unidos, o Congresso aprova as leis sobre impostos, despesa e a forma como os produtos financeiros, incluindo as cripto, são regulados.
+1169|Eleições, Congresso e regulação
+1170|Eletricidade e equipamento
+1171|Moeda Emami
+1172|Moeda Emami (diário)
+1173|Fundo de emergência
+1174|Fundo de emergência, objetivos, pagamentos extra de dívidas
+1175|Energia
+1176|Energia e água
+1177|Economia da energia
+1178|Tecnologia energética
+1179|Consumo de energia
+1180|Inglês
+1181|Lição em inglês
+1182|Introduza o endereço da sua carteira na BNB Smart Chain. É criado um código pessoal. Copie a mensagem pronta e envie-a à Ditoman.
+1183|Entrar ·
+1184|Era
+1185|Era de 210 000 blocos
+1186|Os totais por era e os números do próximo halving são cálculos nossos (210 000 × recompensa; bloco 1 050 000 com recompensa 1,5625), arredondados como indicado. A data de 2028 é uma expectativa baseada em blocos de dez minutos, não uma data fixa. Não é uma previsão de preço.
+1187|Español (em breve)
+1188|Español · em breve
+1189|Despesas essenciais
+1190|Ethereum e contratos inteligentes: um programa que funciona sozinho
+1191|Ethereum e contratos inteligentes: um programa que funciona sozinho, imagem da lição Ditoman
+1192|Ethereum e contratos inteligentes: um programa que funciona sozinho | Ditoman Learn
+1193|Ethereum e contratos inteligentes
+1194|A Ethereum passou para a prova de participação. Em vez de gastar energia, os validadores põem dinheiro em risco. Para operar um validador sozinho deposita 32 ETH, e existem pools para quem tem menos.
+1195|A Ethereum tem uma norma para isto chamada ERC-20, para tokens fungíveis, em que uma unidade é intercambiável com outra. A norma fixa os nomes comuns das funções: nome, símbolo, casas decimais, oferta total, saldo de um endereço, transferir e aprovar, e dois eventos que registam transferências e aprovações.
+1196|A documentação da Ethereum diz que, depois de implementado, nenhum utilizador controla um contrato e, por defeito, não pode ser apagado. Essa é a força e também o risco. Uma regra que não muda dá confiança. Um erro que não muda fica.
+1197|A própria documentação da Ethereum diz que um contrato inteligente é simplesmente um programa que corre na blockchain Ethereum. É um conjunto de código, chamado funções, e de dados, chamado estado, que vive num endereço específico da cadeia.
+1198|=
+1199|Euronews, comissão do Parlamento Europeu apoia o euro digital (junho de 2026)
+1200|Euronews: dados de inflação do Centro de Estatística do Irão para o mês terminado a 21 de junho de 2026
+1201|A Europa representa metade da despesa social mundial e a sua dívida está a subir: quem paga, porque a Europa não é uma só história e as oportunidades que abre para a região.
+1202|O Estado social caro da Europa: quem paga a conta?
+1203|O Estado social caro da Europa: quem paga a conta?
+1204|Comissão Europeia: sistemas de garantia de depósitos
+1205|Comissão Europeia: serviços de pagamento (PSD2) e open banking
+1206|Mesmo um montante pequeno conta. O hábito importa mais do que o valor, e o valor pode crescer depois.
+1207|Cada ação exige computação, e os utilizadores pagam uma comissão, conhecida na Ethereum como gas. As operações simples custam pouco; as complexas custam mais.
+1208|Todo o pagamento com cartão tem o mesmo elenco, seja qual for o país.
+1209|Todas as publicações do canal, na web
+1210|Cada verificação abaixo é gratuita, pública e leva cerca de um minuto. Não precisa de conhecimentos técnicos. Só precisa de saber onde procurar.
+1211|Todos os dias, registado.
+1212|Cada nova lição chega primeiro ao Telegram
+1213|Todos os pagamentos precisam de aprovação do governo
+1214|De vez em quando, todo o mercado parece suster a respiração antes de um anúncio marcado. Os dois maiores exemplos são as decisões sobre taxas de juro e as eleições.
+1215|Cada transação recebe uma identificação, chamada hash. Cole-a num explorador de blocos, como o BscScan para a BNB Smart Chain, e vê o remetente, o destinatário, o montante, a comissão e o estado. Não é preciso a palavra de nenhuma empresa.
+1216|Cada transação paga uma comissão a quem gere a rede. Chama-se muitas vezes gas. A comissão paga um lugar no bloco seguinte, por isso depende do congestionamento da rede, não do montante que envia. Enviar 10 dólares ou 10 000 dólares pode custar o mesmo.

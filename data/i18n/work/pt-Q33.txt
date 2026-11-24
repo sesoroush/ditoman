@@ -1,0 +1,91 @@
+2741|Inflação a doze meses
+2742|Vinte e uma lições pela ordem que as torna mais fáceis de aprender. Comece no passo 1, ou salte para a fase de que precisa.
+2743|Dois pormenores surpreendem os principiantes.
+2744|Duas lições relacionadas
+2745|Duas lições que acompanham esta
+2746|Dois números que verá nas notícias
+2747|Duas reduções de oferta na cadeia
+2748|Duas pessoas ganham o mesmo salário. Um dia, ambas enfrentam uma conta inesperada. A primeira paga-a com uma pequena reserva e segue em frente. A segunda pede emprestado, atrasa-se noutros pagamentos e passa meses a recuperar.
+2749|Duas histórias do site
+2750|Funções típicas: notas e pagamentos, supervisão dos bancos, definição da taxa de juro de referência, gestão das reservas.
+2751|US Bureau of Labor Statistics: Índice de Preços no Consumidor
+2752|Consumer Financial Protection Bureau dos EUA: uso do «compre agora, pague depois» pelos consumidores (janeiro de 2025)
+2753|Reserva Federal dos EUA
+2754|Federal Trade Commission dos EUA: o que saber sobre criptomoedas e burlas
+2755|SEC dos EUA, Investor.gov: calculadora de juro composto
+2756|SEC dos EUA, Investor.gov: noções básicas de poupança e investimento
+2757|Dólar americano
+2758|A lei americana impõe agora regras mais firmes. Ao abrigo da Lei GENIUS, as stablecoins têm de ser garantidas por ativos líquidos, como dólares americanos e bilhetes do Tesouro de curto prazo, e os emissores têm de divulgar publicamente a composição das reservas todos os meses. Os emissores acima de 50 mil milhões de dólares têm também de fazer auditorias anuais. São boas perguntas a fazer a qualquer emissor, em qualquer parte do mundo.
+2759|USDT, UNI, TMN
+2760|Com o open banking, quando pode outra empresa ler os dados da sua conta?
+2761|Compreender os fundamentos da blockchain
+2762|Compreender os sistemas descentralizados
+2763|Compreender como a blockchain muda o lugar onde se deposita a confiança.
+2764|Compreender a diferença entre sistemas centralizados e distribuídos.
+2765|Compreender a crise de confiança
+2766|Compreender a transparência
+2767|Compreender o que significa blockchain.
+2768|Compreender quem é Satoshi Nakamoto na história da Bitcoin.
+2769|Compreender porque a identidade de Satoshi continua desconhecida.
+2770|Compreender porque a blockchain é maior do que as cripto.
+2771|Compreender porque a blockchain não é só sobre cripto.
+2772|Compreender porque a liquidez determina se existe uma saída.
+2773|Compreender porque a concentração da oferta é um risco.
+2774|Compreender porque o desaparecimento de Satoshi tornou a Bitcoin mais descentralizada.
+2775|Compreender porque a ideia por trás da Bitcoin se tornou mais importante do que o criador.
+2776|Compreender a blockchain não será opcional.
+2777|Compreender a inflação não lhe diz o que comprar. Diz-lhe que pergunta fazer primeiro.
+2778|Compreender o que possui
+2779|Nações Unidas: ODS 10, meta 10.c sobre o custo das remessas
+2780|A United proibiu agentes de IA de comprar bilhetes: as razões oficiais, o «nenhum novo intermediário» do CEO, o dinheiro numa indústria de 1,165 biliões de dólares e o que isso significa para o Irão.
+2781|A dívida por pagar cresce sobre si própria através do juro composto e das multas por atraso.
+2782|Até 29 out 2027
+2783|Não verificado não significa automaticamente desonesto. Mas significa que está a confiar numa promessa em vez de ler as regras por si.
+2784|A urgência é o fio condutor. Uma oportunidade real sobrevive a um dia de reflexão.
+2785|A urgência é o sinal de alerta mais fiável de toda esta área. As oportunidades reais não costumam desaparecer nos dez minutos seguintes. Tudo o que é feito para o levar a agir antes de pensar, seja uma contagem decrescente, uma multidão ou um amigo convicto, merece mais desconfiança, não menos.
+2786|Use a IA para compreender. Guarde os segredos e as decisões finais para si.
+2787|Use uma carteira pessoal para tokens que uma corretora não suporta. O TMN é um exemplo: tem de ser recebido numa carteira pessoal BNB Smart Chain, como mostra o guia do TMN.
+2788|Use uma carteira pessoal na BNB Smart Chain, não um endereço de corretora.
+2789|Usar quatro perguntas para avaliar uma oferta a prestações.
+2790|Use ordens limitadas em vez de ordens a mercado quando os mercados se movem depressa, para escolher o seu preço.
+2791|Use apenas o site oficial.
+2792|Use a lista de verificação da lição 05 em qualquer token, stablecoin ou não.
+2793|Use a página de transparência ou de reservas do próprio emissor, não um site de resumos.
+2794|Usar a regra dos 72 para estimar a rapidez com que os preços duplicam.
+2795|Usar a máquina de venda automática para o explicar.
+2796|Os utilizadores não podem verificar nada
+2797|Usar bem a IA com o dinheiro
+2798|Usá-lo é o seu propósito. Reponha-o depois.
+2799|Usá-lo e repô-lo
+2800|Usar o fundo não é um fracasso. É exatamente para isso que existe. Depois, faça da sua reposição o primeiro objetivo dos meses seguintes.
+2801|Usar a regra quando ela não se aplica
+2802|Normalmente de um banco parceiro
+2803|Normalmente sem garantia
+2804|Validador e slashing
+2805|Validadores
+2806|O valor pode mover-se online sem um guardião central
+2807|Verificação
+2808|Verificado
+2809|Verificar o TMN na BscScan
+2810|Verificar na BscScan
+2811|Verificar o bloqueio
+2812|Verificar o bloqueio
+2813|Verificar o bloqueio no PinkLock
+2814|Muito baixa
+2815|Ver publicação do Instagram
+2816|Ver no Instagram
+2817|Veja abaixo a publicação original do Instagram:
+2818|Ver o registo
+2819|Volatilidade
+2820|Espere um dia.
+2821|Endereço da carteira
+2822|Endereço da carteira (começa por 0x)
+2823|Compatibilidade de carteiras
+2824|Drenador de carteiras
+2825|Guia de carteiras
+2826|Desejos
+2827|Trabalho desperdiçado
+2828|Vemos isto juntos porque quase todas as decisões sobre dinheiro, de poupar a pedir emprestado ou comprar cripto, começam com uma pergunta: quanto vai valer este dinheiro mais tarde?
+2829|Não pedimos a ninguém que o faça. A oferta do TMN está concentrada. Leia a <a href="tmn.html">página do TMN</a> e avalie-o com as mesmas verificações que usaria para qualquer token.
+2830|Também listamos os pontos fracos, porque a nossa <a href="lesson05.html">lição de verificação de tokens</a> ensina a procurá-los.
+2831|Dizemos isto com clareza porque a nossa

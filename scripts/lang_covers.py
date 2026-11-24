@@ -21,9 +21,10 @@ ROOT = Path(__file__).resolve().parent.parent
 GEO = ROOT / "assets" / "geo"
 LOGO = ROOT / "tmn-logo-512.png"
 FONT = {"zh": '"Noto Sans CJK SC", "Noto Sans SC", Inter, sans-serif',
-        "tr": 'Inter, "Noto Sans", Arial, sans-serif', "ru": 'Inter, "Noto Sans", Arial, sans-serif'}
-KICK_FALLBACK = {"zh": "报道", "tr": "Rapor", "ru": "Материал"}
-HTMLLANG = {"zh": "zh-CN", "tr": "tr", "ru": "ru"}
+        "tr": 'Inter, "Noto Sans", Arial, sans-serif', "ru": 'Inter, "Noto Sans", Arial, sans-serif',
+        **{l: 'Inter, "Noto Sans", Arial, sans-serif' for l in ("pt", "es", "fr", "de")}}
+KICK_FALLBACK = {"zh": "报道", "tr": "Rapor", "ru": "Материал", "pt": "Reportagem", "es": "Reportaje", "fr": "Reportage", "de": "Bericht"}
+HTMLLANG = {"zh": "zh-CN", "tr": "tr", "ru": "ru", "pt": "pt", "es": "es", "fr": "fr", "de": "de"}
 
 
 def clean(s):

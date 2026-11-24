@@ -1,0 +1,74 @@
+1859|Nasdaq: US-Präsidialerlass verbietet eine CBDC (Januar 2025)
+1860|Nativer Internetwert
+1861|Nativer Vermögenswert
+1862|Bedürfnisse
+1863|Bedürfnisse und Wünsche
+1864|Die Bedürfnisse liegen über 50 % Ihres Einkommens. Was schlägt die Lektion vor?
+1865|Erfordert Zugang zu einer Börse
+1866|Negative Großhandelsstrompreise
+1867|Neobank
+1868|Neobanken, Fintech und Open Banking, erklärt.
+1869|Netzwerk
+1870|Netzwerk (Blockchain)
+1871|Netzwerk-Coin
+1872|Netzwerkgebühr (Gas)
+1873|Netzwerkunabhängigkeit vs. Preisverhalten
+1874|Nie Geheimnisse einfügen:
+1875|Teilen Sie nie eine Wiederherstellungsphrase, signieren Sie nie, was Sie nicht lesen können, folgen Sie nie einem Link zu Ihrem Geld.
+1876|Tippen Sie nie eine Adresse von Hand. Kopieren und einfügen oder den QR-Code scannen und dann die ersten vier und letzten vier Zeichen mit dem Original vergleichen. Ein falsches Zeichen bedeutet eine andere Wallet.
+1877|Neue Assistenten erklären und ordnen gut. Sie können sich aber auch selbstsicher irren.
+1878|Neue Lektionen werden zuerst auf Ditomans Telegram und Instagram angekündigt.
+1879|Neue Lektionen werden zuerst auf Ditomans Kanälen angekündigt.
+1880|Neue Ausgabe
+1881|Täglich neue Berichte und Lektionen auf Ditomans Kanälen
+1882|Neuer
+1883|Neuer ›
+1884|Neueste
+1885|Neueste Lektion
+1886|Nachrichten lösen den Fall aus. Dünne Orderbücher und geliehenes Geld entscheiden, wie weit er geht.
+1887|Nachrichten lösen den Fall aus. Diese Lektion zeigt, was danach in einer Börse passiert: Käufer ziehen sich zurück, Slippage, Hebel und die Liquidationskaskade, mit dem Ausverkauf vom 5. November 2026 als
+1888|Nachrichten lösen den Fall aus. Diese Lektion zeigt, was danach in einer Börse passiert: Käufer ziehen sich zurück, Slippage, Hebel und die Liquidationskaskade, mit dem Ausverkauf vom 5. November 2026 als Beispiel.
+1889|Weiter
+1890|Nächste Lektion
+1891|Als Nächstes: wo Ihr Geld wirklich liegt
+1892|Keine Lösung ist für alle die beste. Viele nutzen mehrere, jede für einen anderen Zweck.
+1893|Kein Unternehmen besitzt Bitcoin oder Ethereum, und doch wachsen ihre Bücher korrekt weiter. Diese Lektion erklärt, wie Miner und Validatoren die Bücher ehrlich halten und warum das etwas
+1894|Kein Unternehmen besitzt Bitcoin oder Ethereum, und doch wachsen ihre Bücher korrekt weiter. Diese Lektion erklärt, wie Miner und Validatoren die Bücher ehrlich halten und warum das etwas kostet.
+1895|Kein Marketing, keine Werbung, kein Token-Verkauf. Diese Jahre dienten dazu, über mehrere Whitepaper-Entwürfe herauszuarbeiten, was Ditoman wirklich sein soll.
+1896|Kein Zurücksetzen; nur die Wiederherstellungsphrase
+1897|Keine einzelne Instanz kontrolliert das Netzwerk oder besitzt die Teilnahme.
+1898|Nein. Ditoman ist ein Bildungsprojekt. Nichts hier ist Anlageberatung, und die Lektionen sollen Ihnen helfen, selbst zu entscheiden.
+1899|Niemand
+1900|Niemand Seriöses wird Sie je nach der Phrase fragen. Nicht der Support, nicht ein Wallet-Anbieter, nicht Ditoman.
+1901|Niemand stimmt darüber ab, und niemand kann es im Moment abschalten. Es ist Teil der Regeln, die jeder Node prüft.
+1902|Node
+1903|Nodes prüfen die Regeln, auch ohne Blöcke zu erzeugen.
+1904|Nodes: die Prüfer
+1905|Keine
+1906|Keine (an 0x0 abgegeben)
+1907|Keine der drei zahlt Zinsen fürs Stillliegen. Das ist ein echter Unterschied zu einer Einlage, einer Anleihe oder einem Unternehmen.
+1908|Keine dieser Fragen verrät Ihnen, welcher Token Erfolg haben wird. Nichts tut das, und wer etwas anderes behauptet, will etwas verkaufen.
+1909|Nicht „würde es wehtun“. Kann Ihr Leben normal weitergehen, wenn dieser Betrag auf null fällt und nie zurückkommt?
+1910|Nicht jeder Verlust hat mit einem Kriminellen zu tun. Man verliert auch Geld, wenn man über das falsche Netzwerk sendet, die falsche Adresse einfügt oder den Zettel mit der Wiederherstellungsphrase verliert. Die Lektionen 13 und 16 behandeln das, und die Gewohnheit ist immer dieselbe: langsamer werden, zweimal prüfen, mit einem kleinen Betrag testen.
+1911|Nicht der Name. Nicht das Logo. Was macht dieses Projekt, und was müsste es erreichen, damit der Token von Bedeutung ist?
+1912|Hinweis
+1913|Am Zinssatz hat sich nichts geändert. Nur die Basis, auf die er angewendet wird. Das CFPB ergänzt, dass häufigere Verzinsung, ein höherer Satz oder zusätzliche Einzahlungen Ersparnisse schneller wachsen lassen.
+1914|Nichts hier ist eine Empfehlung, etwas zu kaufen oder zu verkaufen.
+1915|Achten Sie auf die Wörter „kann“ und „könnte“. Das sind Einflüsse, keine Regeln.
+1916|Jetzt
+1917|Jetzt bei uns anwenden
+1918|Geben Sie jetzt Ihre Wallet-Adresse ein, um Ihren Belohnungscode zu erhalten.
+1919|Jetzt alles zusammen. Schlechte Nachrichten lassen Käufer zurückweichen. Ein kleiner Rückgang löst die ersten Liquidationen aus. Diese Zwangsverkäufe treffen auf ein dünnes Orderbuch, und der Preis rutscht weiter. Der niedrigere Preis löst die nächste Gruppe von Liquidationen aus, und so weiter. Darum kann Krypto in Minuten weit stärker fallen, als die Nachricht allein rechtfertigen würde, und darum erholt sie sich oft, sobald die Zwangsverkäufe vorbei sind.
+1920|Nubank-Newsroom: mehr als 112 Millionen Kunden (22. Januar 2026)
+1921|Offiziell
+1922|Offizielle Links
+1923|Offizieller Kurs: SANA (Wechselstuben der Banken) bis November 2018, danach NIMA (System der Exporteure). Lücken in der offiziellen Linie sind Zeiträume, in denen die Quelle nichts veröffentlichte. Quelle: TGJU-Tagesschlusskurse.
+1924|Offizielle Website:
+1925|Offiziell, aktuell
+1926|Offline-Nutzung:
+1927|Öl, Gas, Strom, Erneuerbare, Wasser
+1928|Älter
+1929|Am 29. Oktober 2026 wurden alle TMN/BNB-Liquiditätstokens in der Haupt-Wallet des Projekts
+1930|Am 29. Oktober 2026 haben wir alle TMN/BNB-LP-Tokens der Haupt-Wallet des Projekts in PinkLock auf der BNB Smart Chain gesperrt: zuerst 0,2277 LP und dann, nachdem am selben Tag weitere BNB-Liquidität hinzugefügt wurde, insgesamt 0,3461 LP aus dem PancakeSwap-V2-Pool. Das Freigabedatum ist der 29. Oktober 2027. Der Eintrag ist öffentlich:
+1931|Welcher Anteil der rund 1 Milliarde Dollar Krypto-Liquidationen am 5. November 2026 waren ungefähr Wetten auf steigende Kurse?
+1932|Am Donnerstag, dem 5. November 2026, gerieten Tech-Aktien wegen Sorgen über KI-Ausgaben unter Druck. Der Nasdaq 100 fiel an einem Tag um etwa 5,5 %, der Nasdaq Composite um 4,9 %. Bitcoin fiel unter 76.000 Dollar und erreichte etwa 75.500. In denselben 24 Stunden zeigten CoinGlass-Daten, dass gehebelte Krypto-Positionen im Wert von etwa 1 Milliarde Dollar zwangsweise geschlossen wurden, betroffen waren über 201.000 Händler. Rund 89 % davon, etwa 927 Millionen Dollar, waren Wetten auf steigende Kurse.

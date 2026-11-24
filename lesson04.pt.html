@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+
+  <title>Ditoman Learn | Lição 04 | Quem é Satoshi Nakamoto?</title>
+
+  <meta name="description" content="A lição 04 da Ditoman explica quem é Satoshi Nakamoto, porque o mistério importa e porque a ideia por trás da Bitcoin se tornou mais importante do que a identidade do seu criador." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #12343b 0%, #071116 36%, #03070a 100%);
+      color: #f4f7f8;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(4, 10, 14, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 3px;
+      box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #7ff5de;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #d8ffff;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7ff5de;
+    }
+
+    .hero {
+      padding: 76px 0 34px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.1);
+      border: 1px solid rgba(127, 245, 222, 0.22);
+      color: #7ff5de;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 0 auto 28px;
+      color: #b8d7d9;
+      font-size: 1.08rem;
+    }
+
+    .hero-image {
+      margin-top: 34px;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(127, 245, 222, 0.18);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .section {
+      padding: 44px 0;
+    }
+
+    .lesson-card {
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 26px;
+      padding: 34px;
+      margin-bottom: 26px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      color: #a7c6c9;
+      margin-bottom: 24px;
+      max-width: 850px;
+    }
+
+    .lesson-meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .meta-box {
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(127, 245, 222, 0.08);
+      border: 1px solid rgba(127, 245, 222, 0.16);
+    }
+
+    .meta-box span {
+      display: block;
+      color: #7ff5de;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+
+    .meta-box strong {
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .content-block p {
+      color: #c4dcde;
+      margin-bottom: 18px;
+      font-size: 1.04rem;
+    }
+
+    .highlight {
+      color: #7ff5de;
+      font-weight: 700;
+    }
+
+    .side-box {
+      background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.14), rgba(255, 191, 73, 0.06));
+      border: 1px solid rgba(127, 245, 222, 0.18);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .side-box h3 {
+      color: #ffffff;
+      margin-bottom: 14px;
+      font-size: 1.35rem;
+    }
+
+    .side-box p {
+      color: #c1dbde;
+      margin-bottom: 14px;
+    }
+
+    .list {
+      display: grid;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .list-item {
+      background: rgba(5, 13, 18, 0.72);
+      border: 1px solid rgba(127, 245, 222, 0.14);
+      border-radius: 18px;
+      padding: 18px;
+      color: #c6dcdf;
+    }
+
+    .list-item strong {
+      display: block;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .persian {
+      direction: rtl;
+      text-align: right;
+      font-family: "IRANYekanX", Tahoma, sans-serif;
+    }
+
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .quiz-card {
+      background: rgba(5, 13, 18, 0.72);
+      border: 1px solid rgba(127, 245, 222, 0.14);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .quiz-card span {
+      color: #7ff5de;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .quiz-card h4 {
+      color: #ffffff;
+      margin: 8px 0;
+      font-size: 1.05rem;
+    }
+
+    .quiz-card p {
+      color: #a8c4c7;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.12);
+      border: 1px solid rgba(127, 245, 222, 0.32);
+      color: #7ff5de;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: linear-gradient(90deg, #49e3c2, #2db7ff);
+      color: #041015;
+      border: none;
+    }
+
+    footer {
+      border-top: 1px solid rgba(127, 245, 222, 0.12);
+      padding: 28px 0 40px;
+      color: #8fb2b7;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .content-grid,
+      .lesson-meta,
+      .quiz-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .hero {
+        padding-top: 62px;
+      }
+
+      .lesson-card {
+        padding: 24px;
+      }
+
+      .brand-logo {
+        width: 38px;
+        height: 38px;
+      }
+    }
+  </style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson04.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson04.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson04.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson04.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson04.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson04.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson04.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson04.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson04.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson04.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson04.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson04.pt.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Ditoman Learn | Lição 04 | Quem é Satoshi Nakamoto?" />
+<meta property="og:description" content="A lição 04 da Ditoman explica quem é Satoshi Nakamoto, porque o mistério importa e porque a ideia por trás da Bitcoin se tornou mais importante do que a identidade do seu criador." />
+<meta property="og:url" content="https://ditoman.com/lesson04.pt.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson04.pt.html#page",
+   "url": "https://ditoman.com/lesson04.pt.html",
+   "name": "Ditoman Learn | Lição 04 | Quem é Satoshi Nakamoto?",
+   "description": "A lição 04 da Ditoman explica quem é Satoshi Nakamoto, porque o mistério importa e porque a ideia por trás da Bitcoin se tornou mais importante do que a identidade do seu criador.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Ditoman Learn | Lição 04 | Quem é Satoshi Nakamoto?",
+     "item": "https://ditoman.com/lesson04.pt.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.pt.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+        <div class="logo-text brand-en">DITOMAN</div>
+        <img src="tmn-logo-256.png" alt="" class="brand-logo">
+        <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+      </a>
+
+      <nav class="nav-links">
+<a href="learn.pt.html" class="active">Aprender</a>
+<a href="iran.en.html">Irão</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.pt.html">Preços</a>
+<a href="calendar.en.html">Calendário</a>
+<a href="tmn.pt.html">TMN</a>
+<a href="index.pt.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicações</a>
+</nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div lang="en">
+<div class="hero-badge">Lição 04 • Série Fundamentos</div>
+        <h1>Quem é Satoshi Nakamoto?</h1>
+        <p>
+          O criador desconhecido por trás da Bitcoin e porque o mistério importa mais do que a identidade.
+        </p>
+</div>
+<div lang="fa" dir="rtl">
+<div class="hero-badge" style="letter-spacing:0">درس ۰۴ • مجموعه مبانی</div>
+<h1>ساتوشی ناکاموتو کیست؟</h1>
+<p>
+سازنده ناشناس بیت‌کوین، و اینکه چرا این راز از هویت او مهم‌تر است.
+</p>
+</div>
+
+        <div class="hero-image">
+          <img src="lesson04-satoshi-nakamoto.jpg" alt="Quem é Satoshi Nakamoto, imagem principal da lição Ditoman">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div lang="en" class="lesson-card">
+          <h2 class="section-title">Visão geral da lição</h2>
+          <p class="section-subtitle">
+            Satoshi Nakamoto é o nome usado pela pessoa ou grupo que apresentou a Bitcoin ao mundo. Mas a verdadeira importância de Satoshi não está só no mistério da identidade. Está na ideia de que um sistema pode continuar sem depender de uma pessoa central.
+          </p>
+
+          <div class="lesson-meta">
+            <div class="meta-box">
+              <span>Nível</span>
+              <strong>Iniciante</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Tempo de leitura</span>
+              <strong>6 minutos</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Pontos de aprendizagem</span>
+              <strong>15 LP</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Foco</span>
+              <strong>Origem da Bitcoin</strong>
+            </div>
+          </div>
+        </div>
+<div class="lesson-card" lang="fa" dir="rtl">
+<h2 class="section-title">مرور درس</h2>
+<p class="section-subtitle">
+ساتوشی ناکاموتو نامی است که شخص یا گروهی که بیت‌کوین را به دنیا معرفی کرد از آن استفاده کرده است. اما اهمیت واقعی ساتوشی فقط در راز هویت او نیست؛ در این ایده است که یک سیستم می‌تواند بدون وابستگی به یک فرد مرکزی ادامه پیدا کند.
+</p>
+<div class="lesson-meta">
+<div class="meta-box">
+<span style="letter-spacing:0">سطح</span>
+<strong>مقدماتی</strong>
+</div>
+<div class="meta-box">
+<span style="letter-spacing:0">زمان مطالعه</span>
+<strong>۶ دقیقه</strong>
+</div>
+<div class="meta-box">
+<span style="letter-spacing:0">امتیاز یادگیری</span>
+<strong>۱۵ امتیاز</strong>
+</div>
+<div class="meta-box">
+<span style="letter-spacing:0">موضوع</span>
+<strong>پیدایش بیت‌کوین</strong>
+</div>
+</div>
+</div>
+
+        <div lang="en" class="lesson-card">
+          <div class="content-grid">
+            <div class="content-block">
+              <h2 class="section-title">O nome por trás da Bitcoin</h2>
+
+              <p>
+                Satoshi Nakamoto é o nome associado à criação da Bitcoin. Em 2008, este nome apareceu com um documento que explicava um novo tipo de dinheiro digital. Não era controlado por um banco, governo ou empresa.
+              </p>
+
+              <p>
+                A ideia era simples mas poderosa: as pessoas podiam enviar valor diretamente umas às outras através de um sistema baseado em verificação, criptografia e regras partilhadas.
+              </p>
+
+              <p>
+                A Bitcoin foi lançada em 2009. Satoshi ajudou a construir o software inicial, comunicou com programadores e depois foi desaparecendo da atividade pública.
+              </p>
+
+              <p>
+                Este desaparecimento tornou a história ainda mais poderosa. A Bitcoin não continuou porque um fundador a controlava. Continuou porque o sistema era suficientemente aberto para que outros o verificassem, executassem, melhorassem e protegessem.
+              </p>
+
+              <p>
+                É por isso que o mistério de Satoshi importa. Mostra que a parte mais forte da Bitcoin não é uma pessoa. É a estrutura.
+              </p>
+            </div>
+
+            <div class="side-box">
+              <h3>Ideia central</h3>
+              <p>
+                Satoshi importa porque a Bitcoin foi desenhada para ir além da autoridade pessoal.
+              </p>
+              <p>
+                O criador desapareceu, mas o sistema continuou.
+              </p>
+              <p class="highlight">
+                Isto mudou a forma como as pessoas pensam a confiança.
+              </p>
+            </div>
+          </div>
+        </div>
+<div class="lesson-card" lang="fa" dir="rtl">
+<div class="content-grid">
+<div class="content-block">
+<h2 class="section-title">نامی پشت بیت‌کوین</h2>
+<p>
+            ساتوشی ناکاموتو نامی است که با ساخت بیت‌کوین شناخته می‌شود. هنوز مشخص نیست ساتوشی یک نفر بوده یا یک گروه، اما اهمیت اصلی ساتوشی فقط در هویت او نیست.
+          </p>
+<p>
+            اهمیت ساتوشی در ایده‌ای است که معرفی کرد. ایده‌ای که نشان داد پول دیجیتال می‌تواند بدون بانک، بدون دولت، بدون شرکت مرکزی و بدون اجازه گرفتن از یک نهاد واحد کار کند.
+          </p>
+<p>
+            در سال ۲۰۰۸، ساتوشی وایت‌پیپر بیت‌کوین را منتشر کرد. این متن توضیح می‌داد که چگونه مردم می‌توانند ارزش را به صورت مستقیم و با کمک یک شبکه قابل بررسی منتقل کنند.
+          </p>
+<p>
+            بیت‌کوین در سال ۲۰۰۹ شروع به کار کرد. ساتوشی در مراحل اولیه به توسعه نرم‌افزار کمک کرد، با برنامه‌نویسان صحبت کرد و بعد کم‌کم از فضای عمومی کنار رفت.
+          </p>
+<p>
+            همین موضوع یکی از مهم‌ترین بخش‌های داستان بیت‌کوین است. سازنده رفت، اما سیستم باقی ماند. بیت‌کوین به یک فرد وابسته نماند، بلکه به قوانین شفاف، بررسی عمومی و مشارکت شبکه تکیه کرد.
+          </p>
+<p>
+            برای همین، راز ساتوشی فقط یک داستان مرموز نیست. این راز نشان می‌دهد که در سیستم‌های جدید، گاهی ایده از هویت سازنده مهم‌تر می‌شود.
+          </p>
+</div>
+<div class="side-box">
+<h3>ایده اصلی</h3>
+<p>
+ساتوشی مهم است چون بیت‌کوین طوری طراحی شد که از اقتدار یک فرد فراتر برود.
+</p>
+<p>
+سازنده کنار رفت، اما سیستم ادامه داد.
+</p>
+<p class="highlight">
+همین، نگاه مردم به اعتماد را تغییر داد.
+</p>
+</div>
+</div>
+</div>
+
+        <div lang="en" class="lesson-card">
+          <h2 class="section-title">Conceitos-chave</h2>
+
+          <div class="list">
+            <div class="list-item">
+              <strong>Satoshi Nakamoto</strong>
+              O nome usado pelo criador ou criadores desconhecidos da Bitcoin.
+            </div>
+
+            <div class="list-item">
+              <strong>Livro branco da Bitcoin</strong>
+              O documento publicado em 2008 que apresentou a Bitcoin como um sistema de dinheiro eletrónico entre pares.
+            </div>
+
+            <div class="list-item">
+              <strong>Origem descentralizada</strong>
+              A Bitcoin tornou-se mais forte porque não ficou dependente de um fundador ou de uma organização central.
+            </div>
+
+            <div class="list-item">
+              <strong>Confiança através de regras</strong>
+              A Bitcoin substituiu a confiança pessoal por regras abertas, verificação e participação na rede.
+            </div>
+          </div>
+        </div>
+<div class="lesson-card" lang="fa" dir="rtl">
+<h2 class="section-title">مفاهیم کلیدی</h2>
+<div class="list">
+<div class="list-item">
+<strong>ساتوشی ناکاموتو</strong>
+نامی که سازنده یا سازندگان ناشناس بیت‌کوین از آن استفاده کردند.
+</div>
+<div class="list-item">
+<strong>وایت‌پیپر بیت‌کوین</strong>
+سندی که در سال ۲۰۰۸ منتشر شد و بیت‌کوین را به عنوان یک سیستم پول الکترونیکی همتا به همتا معرفی کرد.
+</div>
+<div class="list-item">
+<strong>پیدایش غیرمتمرکز</strong>
+بیت‌کوین قوی‌تر شد چون به یک بنیان‌گذار یا سازمان مرکزی وابسته نماند.
+</div>
+<div class="list-item">
+<strong>اعتماد از راه قوانین</strong>
+بیت‌کوین اعتماد شخصی را با قوانین باز، بررسی‌پذیری و مشارکت شبکه جایگزین کرد.
+</div>
+</div>
+</div>
+
+        <div lang="en" class="lesson-card">
+          <h2 class="section-title">Objetivos de aprendizagem</h2>
+
+          <div class="list">
+            <div class="list-item">
+              Compreender quem é Satoshi Nakamoto na história da Bitcoin.
+            </div>
+
+            <div class="list-item">
+              Compreender porque a identidade de Satoshi continua desconhecida.
+            </div>
+
+            <div class="list-item">
+              Compreender porque o desaparecimento de Satoshi tornou a Bitcoin mais descentralizada.
+            </div>
+
+            <div class="list-item">
+              Compreender porque a ideia por trás da Bitcoin se tornou mais importante do que o criador.
+            </div>
+          </div>
+        </div>
+<div class="lesson-card" lang="fa" dir="rtl">
+<h2 class="section-title">اهداف یادگیری</h2>
+<div class="list">
+<div class="list-item">
+بفهمیم ساتوشی ناکاموتو در تاریخ بیت‌کوین چه جایگاهی دارد.
+</div>
+<div class="list-item">
+بفهمیم چرا هویت ساتوشی هنوز ناشناخته مانده است.
+</div>
+<div class="list-item">
+بفهمیم چرا کنار رفتن ساتوشی، بیت‌کوین را غیرمتمرکزتر کرد.
+</div>
+<div class="list-item">
+بفهمیم چرا ایده پشت بیت‌کوین از سازنده‌اش مهم‌تر شد.
+</div>
+</div>
+</div>
+        <div lang="en" class="lesson-card">
+          <h2 class="section-title">Teste de conhecimentos</h2>
+          <p class="section-subtitle">
+            Estas perguntas poderão mais tarde fazer parte dos questionários do Ditoman, das pontuações de participação e de uma eventual elegibilidade para recompensas em TMN.
+          </p>
+
+          <div class="quiz-grid">
+            <div class="quiz-card">
+              <span>Pergunta 01</span>
+              <h4>Quem é Satoshi Nakamoto?</h4>
+              <p>O criador ou criadores desconhecidos que apresentaram a Bitcoin.</p>
+            </div>
+
+            <div class="quiz-card">
+              <span>Pergunta 02</span>
+              <h4>Porque é que a identidade de Satoshi ainda importa?</h4>
+              <p>Porque mostra como a Bitcoin cresceu para além de uma pessoa.</p>
+            </div>
+
+            <div class="quiz-card">
+              <span>Pergunta 03</span>
+              <h4>O que publicou Satoshi em 2008?</h4>
+              <p>O whitepaper da Bitcoin.</p>
+            </div>
+
+            <div class="quiz-card">
+              <span>Pergunta 04</span>
+              <h4>Porque continuou a Bitcoin depois de Satoshi desaparecer?</h4>
+              <p>Porque assentava em regras abertas, verificação e participação na rede.</p>
+            </div>
+
+            <div class="quiz-card">
+              <span>Pergunta 05</span>
+              <h4>Qual é a principal lição da história de Satoshi?</h4>
+              <p>A ideia tornou-se mais importante do que a identidade.</p>
+            </div>
+          </div>
+        </div>
+<div class="lesson-card" lang="fa" dir="rtl">
+<h2 class="section-title">سنجش دانش</h2>
+<p class="section-subtitle">
+این سؤال‌ها ممکن است بعدها بخشی از آزمون‌های دیتومان، امتیاز مشارکت و احتمالاً شرایط دریافت پاداش TMN شوند.
+</p>
+<div class="quiz-grid">
+<div class="quiz-card">
+<span style="letter-spacing:0">سؤال ۰۱</span>
+<h4>ساتوشی ناکاموتو کیست؟</h4>
+<p>سازنده یا سازندگان ناشناسی که بیت‌کوین را معرفی کردند.</p>
+</div>
+<div class="quiz-card">
+<span style="letter-spacing:0">سؤال ۰۲</span>
+<h4>چرا هویت ساتوشی هنوز مهم است؟</h4>
+<p>چون نشان می‌دهد بیت‌کوین چطور از یک فرد فراتر رفت.</p>
+</div>
+<div class="quiz-card">
+<span style="letter-spacing:0">سؤال ۰۳</span>
+<h4>ساتوشی در سال ۲۰۰۸ چه چیزی منتشر کرد؟</h4>
+<p>وایت‌پیپر بیت‌کوین.</p>
+</div>
+<div class="quiz-card">
+<span style="letter-spacing:0">سؤال ۰۴</span>
+<h4>چرا بیت‌کوین بعد از کنار رفتن ساتوشی ادامه داد؟</h4>
+<p>چون بر پایه قوانین باز، بررسی‌پذیری و مشارکت شبکه بنا شده بود.</p>
+</div>
+<div class="quiz-card">
+<span style="letter-spacing:0">سؤال ۰۵</span>
+<h4>درس اصلی داستان ساتوشی چیست؟</h4>
+<p>ایده از هویت مهم‌تر شد.</p>
+</div>
+</div>
+</div>
+
+        <div lang="en" class="lesson-card">
+          <h2 class="section-title">Resumo no Instagram</h2>
+          <p>
+            Esta lição desenvolve a publicação oficial do Ditoman no Instagram sobre Satoshi Nakamoto num recurso de aprendizagem estruturado. A publicação original apresenta o mistério por trás do criador da Bitcoin e explica porque a identidade importa menos do que o sistema que continuou depois de Satoshi desaparecer.
+          </p>
+
+          <p>
+            Veja abaixo a publicação original do Instagram:
+          </p>
+
+          <div class="cta-row">
+            <a class="button" href="https://www.instagram.com/p/DXe1iTujYR6/?img_index=6&igsh=MWliNTJ3dGVhY3Qy" target="_blank" rel="noopener noreferrer">Abrir publicação do Instagram</a>
+          </div>
+        </div>
+<div class="lesson-card" lang="fa" dir="rtl">
+<h2 class="section-title">خلاصه اینستاگرام</h2>
+<p>
+این درس، پست رسمی دیتومان در اینستاگرام درباره ساتوشی ناکاموتو را به یک منبع آموزشی منظم تبدیل می‌کند. پست اصلی راز سازنده بیت‌کوین را معرفی می‌کند و توضیح می‌دهد چرا هویت او اهمیت کمتری از سیستمی دارد که پس از کنار رفتن ساتوشی ادامه پیدا کرد.
+</p>
+<p>
+پست اصلی اینستاگرام را این‌جا ببینید:
+</p>
+<div class="cta-row">
+<a class="button" href="https://www.instagram.com/p/DXe1iTujYR6/?img_index=6&igsh=MWliNTJ3dGVhY3Qy" target="_blank" rel="noopener noreferrer">باز کردن پست اینستاگرام</a>
+</div>
+</div>
+
+        <div lang="en" class="lesson-card">
+          <h2 class="section-title">Lição seguinte</h2>
+          <p>
+            A lição 05 passa da história à prática:
+          </p>
+          <p class="highlight">
+            Como verificar qualquer token antes de lhe tocar
+          </p>
+
+          <div class="cta-row">
+            <a class="button primary" href="lesson05.pt.html">Lição seguinte</a>
+            <a class="button" href="learn.pt.html">Voltar a Aprender</a>
+            <a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Entrar no Telegram</a>
+          </div>
+        </div>
+<div class="lesson-card" lang="fa" dir="rtl">
+<h2 class="section-title">درس بعدی</h2>
+<p>
+درس ۰۵ از تاریخ به سمت عمل می‌رود:
+</p>
+<p class="highlight">
+پیش از دست زدن به هر توکن، این‌ها را بررسی کنید
+</p>
+<div class="cta-row">
+<a class="button primary" href="lesson05.pt.html">درس بعدی</a>
+<a class="button" href="learn.pt.html">بازگشت به آموزش</a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">عضویت در تلگرام</a>
+</div>
+</div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span lang="en">Ditoman • Aprender. Ligar. Evoluir.</span><span lang="fa" dir="rtl">دیتومان • یاد بگیر. وصل شو. رشد کن.</span>
+    </div>
+  </footer>
+
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-pt.js?v=20261121a"></script>
+</body>
+</html>
+  

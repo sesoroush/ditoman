@@ -1,0 +1,147 @@
+476|Automatisez :
+477|Automatisez de petits virements ; l'habitude compte plus que le montant.
+478|Virement automatique
+479|Disponible maintenant
+480|=
+481|B. 1er janvier 1900
+482|B. 14 millions
+483|B. 20 % par an
+484|B. 210 millions
+485|B. 29 octobre 2027
+486|=
+487|B. Un dépôt bancaire
+488|B. Une banque où deux autres banques ont un compte
+489|B. Une banque sans clients
+490|B. Une créance sur la banque
+491|B. Un coin sur Bitcoin
+492|B. Une remise sur les frais
+493|B. Un ami en est certain
+494|B. Une hausse générale des prix dans le temps
+495|B. Une réservation a été faite et sera levée
+496|B. Un prêt
+497|B. Un message à vous-même dans une messagerie
+498|B. Une nouvelle machine de minage
+499|B. Un accord papier signé chez un avocat
+500|B. Une photo d'un instant
+501|B. Une question sur l'inflation
+502|B. Un reçu pour l'argent ajouté à un pool de liquidité
+503|B. Une arnaque
+504|B. Une seule entreprise
+505|B. Un petit nombre de détenteurs peut faire bouger tout le marché d'une décision
+506|B. Un outil qui rapporte pendant des années
+507|B. Une machine à laver
+508|B. Un vote annuel
+509|B. Environ 50
+510|B. Environ 50 %
+511|B. Environ 7 ans
+512|B. Environ 96 millions de dollars
+513|B. Doté d'intelligence artificielle
+514|B. Demander à l'assistant si le visage semble réel
+515|B. Les banques l'exigent
+516|B. Parce que les banques ajoutent une taxe cachée
+517|B. Parce qu'elle est contrôlée par les banques centrales
+518|B. Parce que la pression à agir avant de réfléchir est un trait courant de la manipulation
+519|B. Parce que le système peut être vérifié
+520|B. Des fonctions de liste noire ou de blocage d'adresses
+521|B. La blockchain change le fonctionnement de la confiance
+522|B. Une garantie en crypto
+523|B. Données
+524|B. Exiger un remboursement de la banque centrale
+525|B. À chaque bloc
+526|B. Chaque seconde
+527|B. L'or
+528|B. Les États
+529|B. Garantit un profit
+530|B. Cacher le registre
+531|B. Stocker des données
+532|B. Les dépenses de vacances
+533|B. Combien d'agences a-t-il ?
+534|B. Immuabilité
+535|B. Dans le papier du ticket
+536|B. Des intérêts prélevés une seule fois
+537|B. Son prix est-il élevé ?
+538|B. Impossible d'envoyer ; les frais exigent du BNB
+539|B. Il transmet des instructions de paiement entre institutions
+540|B. Elle est définitive et aucune banque ne peut l'annuler
+541|B. Sa détention est illégale
+542|B. Il permet de juger les événements ultérieurs selon un critère clair au lieu de les excuser
+543|B. Il vous revient au bout d'un jour
+544|B. Il reste le même
+545|B. Son auteur peut le modifier librement
+546|B. Sa conception et la loi qui l'encadre : vie privée, plafonds, programmabilité, usage hors ligne
+547|B. Son drapeau
+548|B. Garder l'idée et changer les chiffres
+549|B. Conserver du pouvoir d'achat pour le moment où l'argent servira
+550|B. Garder une valeur proche d'un dollar
+551|B. Mettre de côté la part épargne le jour où arrive le revenu
+552|B. Non, cela dépend de votre situation
+553|B. Seulement les primes
+554|B. Seulement si la banque accepte
+555|B. Imprimer des billets
+556|B. Imprimer le ticket
+557|B. Remplacer tous les sites web
+558|B. Envoyer votre phrase de récupération pour qu'ils vérifient
+559|B. Fixer le taux directeur
+560|B. La Réserve fédérale, 1913
+561|B. L'acquéreur
+562|B. Le montant verrouillé et sa part du pool
+563|B. Le montant que vous envoyez
+564|B. La banque relève le taux chaque année
+565|B. La blockchain
+566|B. La banque correspondante à l'étape intermédiaire
+567|B. La banque centrale du pays
+568|B. La première publicité d'une recherche
+569|B. Le marché a déjà bougé à l'avance sur le résultat attendu
+570|B. Le réseau est contrôlé par une seule banque
+571|B. Le prix ne peut que monter
+572|B. Le prix de l'emprunt
+573|B. Le prix des tokens
+574|B. Le même mois l'an dernier
+575|B. La signature peut permettre à un contrat de déplacer vos tokens
+576|B. Le code source ne peut pas être lu ni vérifié par le public
+577|B. Le token a été supprimé
+578|B. Le hash de la transaction dans un explorateur de blocs
+579|B. Le support de l'entreprise du portefeuille
+580|B. L'intérêt annuel
+581|B. On les persuade ou les presse de donner l'accès
+582|B. Elles seront moins visibles, mais les métiers restent
+583|B. Elles peuvent sembler sûres et exactes
+584|B. Ils ne rapportent rien en restant immobiles
+585|B. Pour gérer des supermarchés
+586|B. Transformer des dépôts à court terme en prêts à long terme
+587|=
+588|B. Attendre la fin du mois
+589|B. Envies
+590|B. Observer et noter un mois de dépenses
+591|B. Pour qui il agit, ses limites et qui est responsable
+592|B. Son prix va-t-il monter ?
+593|B. Dans une banque agréée derrière l'application
+594|B. Oui, toujours
+595|B. Oui, cela permet seulement de vous envoyer des fonds
+596|B. Votre banque répond à une demande et bloque le montant
+597|=
+598|BIS CPMI : programme sur les paiements transfrontaliers
+599|BIS CPMI : glossaire des paiements et des infrastructures de marché
+600|BIS Working Paper 1041 : l'effet du crédit fintech sur l'accès au crédit des petites entreprises américaines
+601|Documentation BNB Chain : présentation de BNB Smart Chain
+602|=
+603|BTC et ETH sont des coins ; USDT et UNI sont des tokens.
+604|=
+605|Retour à Apprendre
+606|=
+607|Compte bancaire
+608|Banque des règlements internationaux, rapport annuel 2024 : l'intelligence artificielle et l'économie
+609|Banque des règlements internationaux : le marché des changes mondial atteint 9 600 milliards de dollars par jour en avril 2025 (communiqué, 30 septembre 2025)
+610|Monnaie bancaire et monnaie de banque centrale
+611|Banque d'Angleterre
+612|Musée de la Banque d'Angleterre : la Riksens Ständers Bank (1668), plus ancienne banque centrale du monde ; la Banque d'Angleterre, 1694
+613|Banque d'Angleterre : l'inflation et la cible de 2 % fixée par le gouvernement
+614|Banque d'Angleterre : ce que fait la Banque d'Angleterre (billets, paiements, supervision de plus de 1 300 établissements, Bank Rate, réserves d'or)
+615|La Banque de Russie ouvre un marché régulé du bitcoin
+616|Banque, plateforme ou portefeuille personnel : qui détient la clé ?
+617|Banque
+618|Licence bancaire
+619|Les banques entrent dans la course aux stablecoins
+620|Les banques deviennent moins visibles, pas moins nécessaires.
+621|Les banques entrent dans la course aux stablecoins : le projet Faro
+622|Les banques de fuseaux horaires différents ouvrent à des heures différentes, et beaucoup de systèmes de paiement ferment la nuit et le week-end. Chaque banque du parcours doit aussi vérifier le paiement au regard des règles anti-blanchiment et des sanctions. Un détail flou peut bloquer un paiement pendant des jours.

@@ -1,0 +1,66 @@
+2445|A resposta regressa
+2446|A aplicação e o seu parceiro
+2447|O custo médio vem do relatório Remittance Prices Worldwide do Banco Mundial para o primeiro trimestre de 2025. Os trimestres seguintes podem diferir.
+2448|O banco
+2449|O banco converte a moeda
+2450|O banco repõe-na
+2451|O banco, através da aplicação
+2452|O bip é a resposta a uma pergunta. O dinheiro move-se mais tarde.
+2453|O caminho do crédito.
+2454|O edifício está a desaparecer. As funções não.
+2455|O titular do cartão:
+2456|A cascata
+2457|As regras da própria cadeia
+2458|A mudança deu-se a 15 de setembro de 2022, o dia do Merge. O Cambridge Centre for Alternative Finance estimou que o consumo de eletricidade da Ethereum caiu cerca de 99,99%.
+2459|O gráfico mostra a última transação. Para vender, precisa de um comprador. Imagine que a última transação foi a 100 dólares, mas só há um comprador a 100 e o seguinte está a 95. Se vender duas unidades de uma vez, recebe 100 pela primeira e 95 pela segunda: uma média de 97,50. Essa diferença chama-se
+2460|As verificações falam-lhe do token. Estas perguntas falam-lhe do seu próprio raciocínio, do seu risco e de porque está a comprar agora.
+2461|A empresa dona da Bitcoin
+2462|O contrato está avariado
+2463|O código do contrato verifica as regras
+2464|O custo é o objetivo. Os mineradores gastam eletricidade e equipamento reais, por isso fazer batota tem de valer mais do que o custo de agir honestamente.
+2465|O custo de funcionamento
+2466|O banco central do país
+2467|O criador desapareceu, mas o sistema continuou.
+2468|O caminho da moeda.
+2469|A decisão foi cancelada
+2470|A definição e os dois primeiros anos vêm do CFPB. Os valores a 10 anos, 20 anos, diário e de rendimento efetivo são cálculos nossos (1 000 × 1,05^10 e 1,05^20; 1 000 × 0,05 × 30 ÷ 365; capitalização mensal de 5%), arredondados. Orientação geral, não aconselhamento pessoal.
+2471|A diferença entre elas não é o rendimento. É uma reserva que já existia antes de a surpresa chegar.
+2472|A diferença resume-se a uma pergunta que podemos fazer sobre qualquer saldo: se quiser este dinheiro agora, quem tem de dizer que sim?
+2473|A diferença é a proteção por trás. A maioria das contas em corretoras não tem garantia de depósitos. Quando a corretora FTX colapsou em novembro de 2022, os clientes descobriram que faltavam milhares de milhões de dólares dos seus ativos, e tiveram de esperar por um tribunal de falências.
+2474|A diferença começa ínfima e depois cresce. Aos mesmos 5% ao ano:
+2475|O documento publicado em 2008 que apresentou a Bitcoin como um sistema de dinheiro eletrónico entre pares.
+2476|O dólar
+2477|O dólar é mais estável mas perde valor devagar. O ouro é antigo e lento, com longos períodos fracos. A bitcoin pode subir depressa e cair mais de metade.
+2478|As taxas do euro e do dólar no exemplo são números redondos escolhidos para mostrar o cálculo, não taxas atuais. Os números do tamanho do mercado vêm do inquérito trienal do BIS. Explicação geral, não uma previsão de qualquer taxa.
+2479|A zona euro prepara um euro digital. Uma comissão do Parlamento Europeu aprovou a sua posição em junho de 2026, e o lançamento mais cedo em discussão é 2029. Os Estados Unidos seguiram o caminho oposto: uma ordem executiva de janeiro de 2025 proibiu o trabalho numa CBDC americana.
+2480|A corretora
+2481|A margem da taxa de câmbio:
+2482|A corretora repõe-na
+2483|A data de validade é real, mas só em testes. Em janeiro de 2021, Shenzhen, na China, deu por sorteio 200 yuan digitais a cada um de 100 000 residentes. O dinheiro só podia ser gasto entre 7 e 17 de janeiro em comerciantes designados, não podia ser transferido e os valores não usados foram retirados. Em 2021, Chengdu distribuiu yuan digital que só podia ser usado em transportes públicos e bicicletas partilhadas.
+2484|A taxa é paga na moeda da própria rede e depende do tráfego, não do valor.
+2485|A taxa é paga na moeda da própria rede.
+2486|A taxa: pagar pelo espaço
+2487|A quinta era, iniciada em 2024, cria mais 656 250. E assim por diante, cada vez menos, até os valores se aproximarem dos 21 milhões.
+2488|A primeira era criou 10 500 000 bitcoins. A segunda criou 5 250 000, a terceira 2 625 000 e a quarta 1 312 500. No total, 19 687 500 até ao fim da quarta era, em 2024.
+2489|A primeira coisa a saber é que o dinheiro não atravessa de facto a fronteira. O que atravessa é uma mensagem, e depois os bancos ajustam os seus registos.
+2490|Os cinco intervenientes
+2491|A base está concluída
+2492|As quatro funções de um banco
+2493|O texto persa completo do whitepaper. Se as duas versões alguma vez diferirem, o texto inglês é a referência.
+2494|O rumo completo, em PDF
+2495|O fundo tem de ser seguro, acessível e um pouco incómodo de gastar. O CFPB indica como um dos lugares mais seguros uma conta num banco ou cooperativa de crédito, um cartão pré-pago que não permite gastar a mais, ou numerário guardado num lugar seguro, com o aviso de que o numerário pode ser perdido ou roubado.
+2496|A distância entre as duas linhas é o que a taxa oficial esconde. Preços em tomans.
+2497|O governador do banco central do Japão
+2498|O hábito que importa
+2499|O hábito:
+2500|O halving corta para metade a recompensa de bloco dos mineradores a cada 210 000 blocos, cerca de quatro anos.
+2501|O coração da cadeia da garrafa PET, agora feito no Irão
+2502|A história até agora
+2503|Os erros honestos
+2504|A ideia tornou-se mais importante do que a identidade.
+2505|A ideia por trás das cripto e de onde veio.
+2506|A ideia era simples mas poderosa: as pessoas podiam enviar valor diretamente umas às outras através de um sistema baseado em verificação, criptografia e regras partilhadas.
+2507|O implante que desaparece depois de o osso sarar
+2508|As palavras importantes são «com a sua autorização». Leia a que uma aplicação pede acesso e retire a autorização quando deixar de a usar.
+2509|O emissor:
+2510|Os principais acontecimentos de cada dia

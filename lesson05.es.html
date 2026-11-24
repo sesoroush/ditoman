@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Lección 05 | Cómo comprobar cualquier token antes de tocarlo | Ditoman Learn</title>
+<meta name="description" content="Ditoman Learn, lección 05. Cinco comprobaciones gratuitas que cualquiera puede hacer con cualquier token antes de interactuar con él: verificación del contrato, distribución entre tenedores, propiedad, funciones ocultas y liquidez." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.check-table {
+display: grid;
+gap: 12px;
+margin: 24px 0;
+}
+.check-row {
+display: grid;
+grid-template-columns: 1fr auto;
+gap: 16px;
+align-items: center;
+padding: 16px 20px;
+border-radius: 16px;
+background: rgba(5, 15, 22, 0.7);
+border: 1px solid rgba(78, 227, 206, 0.14);
+}
+.check-row span {
+color: #c1dbde;
+}
+.check-row strong {
+font-weight: 800;
+white-space: nowrap;
+}
+.pass {
+color: #7ff5de;
+}
+.fail {
+color: #ffb74d;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+.check-row {
+grid-template-columns: 1fr;
+gap: 6px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson05.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson05.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson05.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson05.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson05.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson05.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson05.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson05.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson05.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson05.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson05.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson05.es.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Lección 05 | Cómo comprobar cualquier token antes de tocarlo | Ditoman Learn" />
+<meta property="og:description" content="Ditoman Learn, lección 05. Cinco comprobaciones gratuitas que cualquiera puede hacer con cualquier token antes de interactuar con él: verificación del contrato, distribución entre tenedores, propiedad, funciones ocultas y liquidez." />
+<meta property="og:url" content="https://ditoman.com/lesson05.es.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson05.es.html#page",
+   "url": "https://ditoman.com/lesson05.es.html",
+   "name": "Lección 05 | Cómo comprobar cualquier token antes de tocarlo | Ditoman Learn",
+   "description": "Ditoman Learn, lección 05. Cinco comprobaciones gratuitas que cualquiera puede hacer con cualquier token antes de interactuar con él: verificación del contrato, distribución entre tenedores, propiedad, funciones ocultas y liquidez.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Lección 05 | Cómo comprobar cualquier token antes de tocarlo",
+     "item": "https://ditoman.com/lesson05.es.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.es.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.es.html" class="active">Aprender</a>
+<a href="iran.en.html">Irán</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.es.html">Precios</a>
+<a href="calendar.en.html">Calendario</a>
+<a href="tmn.es.html">TMN</a>
+<a href="index.es.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicaciones</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img src="lesson05-token-checklist.png" alt="Cómo comprobar cualquier token antes de tocarlo, imagen de la lección Ditoman">
+</div>
+<div lang="en">
+<div class="lesson-badge">Lección 05 • Serie Seguridad</div>
+<h1>Cómo comprobar cualquier token antes de tocarlo</h1>
+<p class="subtitle">
+Cinco comprobaciones. Cinco minutos. Sin coste. La mayoría de quienes pierden dinero en cripto nunca las hizo.
+</p>
+<div class="meta-grid">
+<div class="meta-box">
+<span>Nivel</span>
+<strong>Principiante</strong>
+</div>
+<div class="meta-box">
+<span>Tiempo de lectura</span>
+<strong>7 minutos</strong>
+</div>
+<div class="meta-box">
+<span>Puntos de aprendizaje</span>
+<strong>15 LP</strong>
+</div>
+<div class="meta-box">
+<span>Cuestionario futuro</span>
+<strong>5 preguntas</strong>
+</div>
+</div>
+</div>
+<div lang="fa" dir="rtl">
+<div class="lesson-badge" style="letter-spacing:0">درس ۰۵ • مجموعه امنیت</div>
+<h1>پیش از دست زدن به هر توکن، این‌ها را بررسی کنید</h1>
+<p class="subtitle">پنج بررسی. پنج دقیقه. بدون هزینه. بیشتر کسانی که در کریپتو پول از دست می‌دهند، هیچ‌وقت این بررسی‌ها را انجام نداده‌اند.</p>
+<div class="meta-grid">
+<div class="meta-box"><span style="letter-spacing:0">سطح</span><strong>مقدماتی</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">زمان مطالعه</span><strong>۷ دقیقه</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">امتیاز یادگیری</span><strong>۱۵ امتیاز</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">آزمون آینده</span><strong>۵ سؤال</strong></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div lang="en">
+<h2 class="section-title">Contenido de la lección</h2>
+<p class="section-subtitle">
+Lee la lección en inglés o persa. Esta estructura está pensada para futuros sistemas de cuestionarios, puntuación, reputación y recompensas.
+</p>
+</div>
+<div lang="fa" dir="rtl">
+<h2 class="section-title">متن درس</h2>
+<p class="section-subtitle">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمون‌ها، امتیازها، اعتبار و سیستم‌های پاداش آینده طراحی شده است.</p>
+</div>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Inglés</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p>La mayoría de quienes pierden dinero con un token no eligieron el proyecto equivocado. Nunca comprobaron lo correcto.</p>
+<p>Cada comprobación de abajo es gratuita, pública y lleva un minuto. No necesitas conocimientos técnicos. Solo saber dónde mirar.</p>
+
+<h3><span class="check-number">01.</span> ¿Está verificado el contrato?</h3>
+<p>Abre el token en un explorador de bloques como BscScan y ve a la pestaña Contract. Si el código fuente está verificado, verás código legible y una marca de confirmación. Si no lo está, solo ves código máquina, lo que significa que nadie fuera del equipo puede leer lo que hace realmente el token.</p>
+<p>No verificado no significa automáticamente deshonesto. Pero significa que confías en una promesa en lugar de leer tú mismo las reglas.</p>
+
+<h3><span class="check-number">02.</span> ¿Quién tiene la oferta?</h3>
+<p>Abre la pestaña Holders. Mira cuánto del suministro total controlan las mayores billeteras.</p>
+<p>Si unas pocas billeteras tienen casi todo, una sola decisión de una sola persona puede mover todo el mercado. La concentración no prueba mala intención, y muchos proyectos jóvenes empiezan así. Pero siempre es un riesgo, y mejor saberlo antes de actuar que después.</p>
+
+<h3><span class="check-number">03.</span> ¿Aún se pueden crear nuevos tokens?</h3>
+<p>En la sección Read Contract, busca una función llamada owner. Si devuelve una dirección de billetera normal, esa persona aún controla las funciones exclusivas del propietario, que pueden incluir crear nuevos tokens.</p>
+<p>Si devuelve una dirección de solo ceros, se ha renunciado a la propiedad. Esos poderes han desaparecido para siempre y nadie puede recuperarlos, ni siquiera el equipo original.</p>
+<p>Esto importa porque una oferta que puede crecer sin límite puede diluir a todos los que tienen el token.</p>
+
+<h3><span class="check-number">04.</span> ¿Hay restricciones ocultas?</h3>
+<p>Lee el código del contrato en busca de impuestos de transferencia, funciones de pausa o la capacidad de bloquear direcciones concretas. Algunos tokens están hechos para que comprar funcione con normalidad pero vender no.</p>
+<p>Es una de las trampas más comunes, y se ve en el código antes de gastar nada.</p>
+
+<h3><span class="check-number">05.</span> ¿Hay liquidez real?</h3>
+<p>Un precio en una pantalla no es dinero. Solo se convierte en dinero cuando alguien está dispuesto a operar contra él.</p>
+<p>Comprueba si existe un pool de liquidez real y qué profundidad tiene. Sin liquidez no hay salida, muestre el número que muestre.</p>
+
+<h3>El hábito que importa</h3>
+<p>Estas cinco comprobaciones no te darán la razón sobre qué proyectos triunfarán. Nada lo hace.</p>
+<p>Lo que hacen es eliminar las formas más comunes y evitables de perder dinero: tokens que no se podían leer, oferta que no se veía, poderes que no se sabía que existían y salidas que nunca estuvieron ahí.</p>
+<p>Primero comprueba. Después decide.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p>بیشتر کسانی که روی یک توکن ضرر می‌کنند، پروژه اشتباهی را انتخاب نکرده‌اند. آن‌ها هرگز چیزهای درست را بررسی نکرده‌اند.</p>
+<p>همه بررسی‌های زیر رایگان، عمومی و حدود یک دقیقه‌ای هستند. به دانش فنی نیاز ندارید. فقط باید بدانید کجا را نگاه کنید.</p>
+
+<h3><span class="check-number">۰۱.</span> آیا قرارداد تأیید شده است؟</h3>
+<p>توکن را در یک بلاک اکسپلورر مانند BscScan باز کنید و به بخش Contract بروید. اگر سورس کد تأیید شده باشد، کد قابل خواندن و یک علامت تأیید می‌بینید. اگر تأیید نشده باشد، فقط کد ماشین دیده می‌شود، یعنی هیچ‌کس بیرون از تیم نمی‌تواند بفهمد این توکن واقعاً چه کاری انجام می‌دهد.</p>
+<p>تأیید نشدن لزوماً به معنای نادرستی نیست. اما یعنی شما به جای خواندن قوانین، به یک وعده اعتماد می‌کنید.</p>
+
+<h3><span class="check-number">۰۲.</span> چه کسی عرضه را در اختیار دارد؟</h3>
+<p>بخش Holders را باز کنید و ببینید کیف‌پول‌های اصلی چه مقدار از کل عرضه را کنترل می‌کنند.</p>
+<p>اگر تعداد کمی کیف پول تقریباً همه چیز را در اختیار داشته باشند، یک تصمیم از یک نفر می‌تواند کل بازار را جابه‌جا کند. تمرکز عرضه به‌خودی‌خود نشانه نیت بد نیست و بسیاری از پروژه‌های تازه این‌گونه شروع می‌شوند. اما همیشه یک ریسک است، و بهتر است پیش از اقدام از آن باخبر باشید، نه بعد از آن.</p>
+
+<h3><span class="check-number">۰۳.</span> آیا هنوز می‌توان توکن جدید ساخت؟</h3>
+<p>در بخش Read Contract دنبال تابعی به نام owner بگردید. اگر یک آدرس معمولی برگرداند، آن شخص هنوز کنترل توابع مخصوص مالک را دارد که می‌تواند شامل ساخت توکن جدید باشد.</p>
+<p>اگر آدرسی که تماماً از صفر تشکیل شده برگرداند، مالکیت سلب شده است. آن اختیارات برای همیشه از بین رفته‌اند و هیچ‌کس، حتی تیم اولیه، نمی‌تواند آن‌ها را بازگرداند.</p>
+<p>این موضوع مهم است، چون عرضه‌ای که بدون محدودیت رشد کند، ارزش دارایی همه دارندگان را کاهش می‌دهد.</p>
+
+<h3><span class="check-number">۰۴.</span> آیا محدودیت پنهانی وجود دارد؟</h3>
+<p>کد قرارداد را از نظر مالیات انتقال، تابع توقف، یا امکان مسدود کردن آدرس‌های مشخص بررسی کنید. برخی توکن‌ها طوری ساخته شده‌اند که خرید به‌درستی کار می‌کند اما فروش انجام نمی‌شود.</p>
+<p>این یکی از رایج‌ترین تله‌هاست و پیش از آنکه پولی خرج کنید، در کد قابل مشاهده است.</p>
+
+<h3><span class="check-number">۰۵.</span> آیا نقدشوندگی واقعی وجود دارد؟</h3>
+<p>قیمتی که روی صفحه می‌بینید پول نیست. وقتی پول می‌شود که کسی حاضر باشد در مقابل آن معامله کند.</p>
+<p>بررسی کنید که آیا استخر نقدشوندگی واقعی وجود دارد و چه عمقی دارد. بدون نقدشوندگی، راه خروجی وجود ندارد، هر عددی هم که نمایش داده شود.</p>
+
+<h3>عادتی که اهمیت دارد</h3>
+<p>این پنج بررسی باعث نمی‌شود در تشخیص پروژه‌های موفق درست عمل کنید. هیچ چیز چنین تضمینی نمی‌دهد.</p>
+<p>کاری که انجام می‌دهند این است: رایج‌ترین و قابل‌پیشگیری‌ترین راه‌های از دست دادن پول را حذف می‌کنند. توکن‌هایی که نمی‌شد خواند، عرضه‌ای که دیده نمی‌شد، اختیاراتی که از آن‌ها خبر نداشتید، و راه خروجی که اصلاً وجود نداشت.</p>
+<p>اول بررسی کنید. بعد تصمیم بگیرید.</p>
+</div>
+</div>
+</section>
+
+<section lang="en" class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title">Ahora aplícalo a nosotros</h2>
+<p>
+Una lista de comprobación solo es honesta si se aplica a quien la publica. Aquí está TMN medido con las mismas cinco comprobaciones, incluidas las que no superamos.
+</p>
+<div class="check-table">
+<div class="check-row">
+<span>01. Código fuente del contrato verificado en BscScan</span>
+<strong class="pass">Sí</strong>
+</div>
+<div class="check-row">
+<span>02. Distribución de la oferta entre los tenedores</span>
+<strong class="fail">Muy concentrada</strong>
+</div>
+<div class="check-row">
+<span>03. Propiedad renunciada, no es posible crear nuevos tokens</span>
+<strong class="pass">Sí, permanente</strong>
+</div>
+<div class="check-row">
+<span>04. Sin impuesto de transferencia, sin lista negra, sin función de pausa</span>
+<strong class="pass">Confirmado en el código</strong>
+</div>
+<div class="check-row">
+<span>05. Tokens de liquidez bloqueados</span>
+<strong class="pass">Hasta el 29 oct 2027</strong>
+</div>
+</div>
+<p>
+TMN se desplegó en 2022 y nunca se distribuyó ni promocionó, por eso la oferta sigue concentrada. Lo decimos abiertamente en lugar de dejar que se descubra, porque un proyecto que pide a la gente que compruebe las cosas debe ser comprobable él mismo.
+</p>
+<div class="cta-row">
+<a class="cta" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">Verificar TMN en BscScan</a>
+<a class="button" href="tmn.es.html">Página del token TMN</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title">حالا روی خودمان امتحان کنیم</h2>
+<p>
+یک چک‌لیست فقط وقتی صادقانه است که برای منتشرکننده‌اش هم به کار برود. این‌جا TMN را با همین پنج بررسی می‌سنجیم، از جمله مواردی که در آن‌ها قبول نمی‌شویم.
+</p>
+<div class="check-table">
+<div class="check-row">
+<span>۰۱. سورس کد قرارداد در BscScan تأیید شده است</span>
+<strong class="pass">بله</strong>
+</div>
+<div class="check-row">
+<span>۰۲. پراکندگی عرضه میان دارندگان</span>
+<strong class="fail">بسیار متمرکز</strong>
+</div>
+<div class="check-row">
+<span>۰۳. مالکیت واگذار شده و ساخت توکن جدید ممکن نیست</span>
+<strong class="pass">بله، برای همیشه</strong>
+</div>
+<div class="check-row">
+<span>۰۴. بدون مالیات انتقال، بدون لیست سیاه، بدون تابع توقف</span>
+<strong class="pass">در کد تأیید شده</strong>
+</div>
+<div class="check-row">
+<span>۰۵. قفل توکن‌های نقدینگی</span>
+<strong class="pass">تا ۷ آبان ۱۴۰۶</strong>
+</div>
+</div>
+<p>
+TMN در سال ۲۰۲۲ ساخته شد و هیچ‌وقت توزیع یا تبلیغ نشد. به همین دلیل عرضه هنوز متمرکز است. این را آشکارا می‌گوییم و منتظر نمی‌مانیم کسی خودش آن را کشف کند، چون پروژه‌ای که از مردم می‌خواهد همه چیز را بررسی کنند، خودش هم باید قابل بررسی باشد.
+</p>
+<p>
+همین پنج بررسی را روی TMN انجام دهید. نقاط قوت و نقاط ضعف ما هر دو در این جدول آمده است. عرضه همچنان متمرکز است و ما این را پنهان نمی‌کنیم.
+</p>
+<div class="cta-row">
+<a class="cta" href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener noreferrer">بررسی TMN در BscScan</a>
+<a class="button" href="tmn.es.html">صفحه توکن TMN</a>
+</div>
+</div>
+</div>
+</section>
+
+<section lang="en" class="section">
+<div class="container grid-two">
+<div class="card">
+<h3>Conceptos clave</h3>
+<ul>
+<li>Verificación del contrato</li>
+<li>Explorador de bloques</li>
+<li>Distribución entre tenedores</li>
+<li>Concentración de la oferta</li>
+<li>Renuncia a la propiedad</li>
+<li>Acuñación</li>
+<li>Impuesto de transferencia</li>
+<li>Función de lista negra</li>
+<li>Pool de liquidez</li>
+</ul>
+</div>
+<div class="card">
+<h3>Objetivos de aprendizaje</h3>
+<ul>
+<li>Saber dónde encontrar el contrato de un token y leer su estado.</li>
+<li>Entender por qué la concentración de la oferta es un riesgo.</li>
+<li>Comprueba si aún se pueden crear nuevos tokens.</li>
+<li>Reconocer restricciones ocultas escritas en un contrato.</li>
+<li>Entender por qué la liquidez determina si existe una salida.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container grid-two">
+<div class="card">
+<h3>مفاهیم کلیدی</h3>
+<ul style="padding-left:0;padding-right:22px">
+<li>تأیید قرارداد</li>
+<li>بلاک اکسپلورر</li>
+<li>پراکندگی دارندگان</li>
+<li>تمرکز عرضه</li>
+<li>واگذاری مالکیت</li>
+<li>ساخت توکن جدید (مینت)</li>
+<li>مالیات انتقال</li>
+<li>تابع لیست سیاه</li>
+<li>استخر نقدشوندگی</li>
+</ul>
+</div>
+<div class="card">
+<h3>اهداف یادگیری</h3>
+<ul style="padding-left:0;padding-right:22px">
+<li>بدانیم قرارداد یک توکن را کجا پیدا کنیم و وضعیتش را چطور بخوانیم.</li>
+<li>بفهمیم چرا تمرکز عرضه یک ریسک است.</li>
+<li>بررسی کنیم که آیا هنوز می‌شود توکن جدید ساخت.</li>
+<li>محدودیت‌های پنهانی را که در قرارداد نوشته شده‌اند تشخیص دهیم.</li>
+<li>بفهمیم چرا نقدشوندگی تعیین می‌کند راه خروجی وجود دارد یا نه.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section lang="en" class="section">
+<div class="container">
+<h2 class="section-title">Banco de preguntas futuro</h2>
+<p class="section-subtitle">
+Estas preguntas están preparadas para el futuro sistema de cuestionarios y participación de Ditoman. Más adelante podrían sustentar puntuaciones de aprendizaje, capas de reputación y una posible elegibilidad para recompensas en TMN.
+</p>
+
+<div class="quiz-list">
+<div class="quiz-item">
+<h3>Pregunta 1</h3>
+<p>¿Qué significa un contrato no verificado?</p>
+<p>A. El token es sin duda una estafa</p>
+<p>B. El público no puede leer ni comprobar el código fuente</p>
+<p>C. El token no se puede negociar</p>
+<p>D. El token no tiene límite de oferta</p>
+<p class="answer">Respuesta correcta: B</p>
+</div>
+
+<div class="quiz-item">
+<h3>Pregunta 2</h3>
+<p>Si la función owner devuelve una dirección de solo ceros, ¿qué significa?</p>
+<p>A. El contrato está roto</p>
+<p>B. El token se ha borrado</p>
+<p>C. Se ha renunciado a la propiedad y las funciones exclusivas del propietario ya no pueden usarse</p>
+<p>D. Ahora cualquiera puede crear nuevos tokens</p>
+<p class="answer">Respuesta correcta: C</p>
+</div>
+
+<div class="quiz-item">
+<h3>Pregunta 3</h3>
+<p>¿Cuál de estas cosas se puede descubrir leyendo el contrato de un token?</p>
+<p>A. Impuestos de transferencia</p>
+<p>B. Funciones de lista negra o bloqueo de direcciones</p>
+<p>C. Si se pueden crear nuevos tokens</p>
+<p>D. El precio futuro del token</p>
+<p class="answer">Respuestas correctas: A, B, C</p>
+</div>
+
+<div class="quiz-item">
+<h3>Pregunta 4</h3>
+<p>Verdadero o falso: un precio mostrado en una web de seguimiento demuestra que puedes vender el token.</p>
+<p class="answer">Respuesta correcta: Falso. Sin liquidez no hay salida.</p>
+</div>
+
+<div class="quiz-item">
+<h3>Pregunta 5</h3>
+<p>¿Por qué importa la concentración de la oferta?</p>
+<p>A. Siempre significa que el proyecto es deshonesto</p>
+<p>B. Un pequeño número de tenedores puede mover todo el mercado con una decisión</p>
+<p>C. Hace que el contrato no se pueda verificar</p>
+<p>D. Impide que el token cotice en ningún sitio</p>
+<p class="answer">Respuesta correcta: B</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container">
+<h2 class="section-title">بانک سؤالات آزمون آینده</h2>
+<p class="section-subtitle">این سؤال‌ها برای سیستم آزمون و مشارکت آینده دیتومان آماده شده‌اند. ممکن است بعدها پایه امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN باشند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3>سؤال ۱</h3>
+<p>قرارداد تأییدنشده یعنی چه؟</p>
+<p>الف. توکن قطعاً کلاهبرداری است</p>
+<p>ب. سورس کد برای عموم قابل خواندن و بررسی نیست</p>
+<p>ج. توکن قابل معامله نیست</p>
+<p>د. عرضه توکن سقف ندارد</p>
+<p class="answer">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۲</h3>
+<p>اگر تابع owner آدرسی برگرداند که تماماً از صفر تشکیل شده، یعنی چه؟</p>
+<p>الف. قرارداد خراب است</p>
+<p>ب. توکن حذف شده است</p>
+<p>ج. مالکیت واگذار شده و دیگر نمی‌شود از توابع مخصوص مالک استفاده کرد</p>
+<p>د. حالا هر کسی می‌تواند توکن جدید بسازد</p>
+<p class="answer">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۳</h3>
+<p>کدام موارد را می‌شود با خواندن قرارداد یک توکن فهمید؟</p>
+<p>الف. مالیات انتقال</p>
+<p>ب. توابع لیست سیاه یا مسدود کردن آدرس</p>
+<p>ج. اینکه آیا هنوز می‌شود توکن جدید ساخت</p>
+<p>د. قیمت آینده توکن</p>
+<p class="answer">پاسخ‌های درست: الف، ب، ج</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۴</h3>
+<p>درست یا نادرست: قیمتی که در یک سایت ردیابی قیمت نمایش داده می‌شود ثابت می‌کند که می‌توانید توکن را بفروشید.</p>
+<p class="answer">پاسخ درست: نادرست. بدون نقدشوندگی، راه خروجی وجود ندارد.</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۵</h3>
+<p>چرا تمرکز عرضه اهمیت دارد؟</p>
+<p>الف. همیشه یعنی پروژه صادق نیست</p>
+<p>ب. تعداد کمی دارنده می‌توانند با یک تصمیم کل بازار را جابه‌جا کنند</p>
+<p>ج. قرارداد را غیرقابل تأیید می‌کند</p>
+<p>د. مانع لیست شدن توکن در هر جایی می‌شود</p>
+<p class="answer">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section lang="en" class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">Resumen en Instagram</h2>
+<p>
+Esta lección se presentó primero en el Instagram de Ditoman como parte de la Serie Educación. La versión de Instagram ofrece un breve resumen visual, y esta página ofrece la versión completa.
+</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Ver en Instagram</a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Únete en Telegram</a>
+<a class="button" href="lesson06.es.html">Siguiente lección</a>
+<a class="button" href="learn.es.html">Volver a Aprender</a>
+<a class="button" href="lesson04.es.html">Lección anterior</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">خلاصه اینستاگرام</h2>
+<p>خلاصه تصویری این درس ابتدا در اینستاگرام دیتومان منتشر شد. نسخه اینستاگرام یک معرفی کوتاه و تصویری است، اما این صفحه نسخه کامل آموزشی آن است.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">مشاهده در اینستاگرام</a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">عضویت در تلگرام</a>
+<a class="button" href="lesson06.es.html">درس بعدی</a>
+<a class="button" href="learn.es.html">بازگشت به آموزش</a>
+<a class="button" href="lesson04.es.html">درس قبلی</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman Learn • Construido con estructura, impulsado por el descubrimiento.</span><span lang="fa" dir="rtl">آموزش دیتومان • بر پایه ساختار، با انگیزه کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-es.js?v=20261121a"></script>
+</body>
+</html>

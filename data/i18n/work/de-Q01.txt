@@ -1,0 +1,41 @@
+108|Eine CBDC ist staatliches Geld in digitaler Form. Bitcoin und Tokens wie TMN werden von keiner Zentralbank ausgegeben, und ihre Regeln legt öffentlicher Code fest statt einer Regierung. Genau dieser Unterschied macht diese Lektion für alle wichtig, die sich mit Krypto befassen.
+109|Ein Jahrhundert Elektrizität im Iran
+110|Ein von einem Nobelpreisträger geleitetes Gremium stützt OpenAIs Yang-Mills-Existenzbeweis; die Massenlücke und der Preis von 1 Million Dollar bleiben offen.
+111|Eine Telegram-Community mit echten Regeln, Startlektionen und klarem Einstieg, noch vor jeder Einladung.
+112|Ein Kontostand ist nicht immer Geld in der Hand. Fragen Sie, wer Ja sagen muss, bevor es sich bewegt.
+113|Ein Kontostand auf dem Bildschirm kann drei sehr verschiedene Dinge bedeuten. Diese Lektion vergleicht ein Bankkonto, ein Börsenkonto und eine persönliche Wallet und zeigt, wer das Geld jeweils wirklich kontrolliert
+114|Ein Kontostand auf dem Bildschirm kann drei sehr verschiedene Dinge bedeuten. Diese Lektion vergleicht ein Bankkonto, ein Börsenkonto und eine persönliche Wallet und zeigt, wer das Geld jeweils wirklich kontrolliert.
+115|Ein Verbot von Kreditkarten
+116|Ein Bankguthaben ist ein Versprechen
+117|Eine Bankeinlage ist eine Forderung an eine Bank, mit Aufsicht und einer Garantie bis zu einer Obergrenze.
+118|Eine Bank hat vier Aufgaben: aufbewahren, bewegen, verleihen und Vertrauen tragen.
+119|Eine Bank hat einen Eigentümer, einen Manager und eine Telefonnummer. Eine öffentliche Blockchain hat nichts davon. Tausende Computer weltweit führen dasselbe Hauptbuch, und niemand hat das Sagen.
+120|Der Zinssatz der Bank sagt nur, wie die Zahl wächst. Lektion 12 erklärt, dass auch Preise sich aufzinsen. Ob Ihr Geld wirklich wächst, hängt vom Zins im Vergleich zum Preisanstieg ab, nicht vom Zins allein.
+121|Eine Bank löst das, indem sie der einzige Schiedsrichter ist. Eine Blockchain löst es mit einer Methode, dem Konsensmechanismus, bei dem sich viele Fremde einigen, ohne einander zu vertrauen.
+122|Eine Banküberweisung zwischen zwei Ländern
+123|Ein zweisprachiges Bildungsprojekt mit drei Säulen: praktisches Krypto- und Finanzwissen, ehrliche Analyse von KI, Energie und der Zukunft der Arbeit sowie Berichte über echte Leistungen iranischer Menschen und Unternehmen.
+124|Ein Block-Explorer zeigt die Wahrheit über jede Überweisung.
+125|Eine Blockchain lässt sich als digitales Register von Ereignissen oder Transaktionen verstehen. Einmal hinzugefügt, sind Informationen sehr schwer zu ändern oder zu löschen. Das schafft Vertrauen, nicht weil Menschen einander blind vertrauen, sondern weil das System selbst überprüfbar ist.
+126|Eine Blockchain braucht einen Weg, wie sich Fremde auf die nächste Seite einigen.
+127|Ein Budget ist die Landkarte Ihres Monats, keine Strafe.
+128|Ein Budget ist ein Plan für Ihr Einkommen: wie viel hereinkommt und wofür jeder Teil gedacht ist. Es ist keine Strafe und kein Versprechen, zu allem Nein zu sagen.
+129|Eine Autoreparatur, eine Arztrechnung, ein Monat ohne Einkommen: Überraschungen sind normal. Diese Lektion erklärt, was ein Notgroschen ist, wie groß er sein sollte, wo man ihn aufbewahrt und wie man
+130|Eine Autoreparatur, eine Arztrechnung, ein Monat ohne Einkommen: Überraschungen sind normal. Diese Lektion erklärt, was ein Notgroschen ist, wie groß er sein sollte, wo man ihn aufbewahrt und wie man klein anfängt.
+131|Eine Kartenzahlung wirkt sofort, aber in diesen zwei Sekunden sprechen mehrere Firmen miteinander, und das Geld selbst kommt später an. Diese Lektion verfolgt einen Einkauf vom Kartenterminal bis zum Konto
+132|Eine Kartenzahlung wirkt sofort, aber in diesen zwei Sekunden sprechen mehrere Firmen miteinander, und das Geld selbst kommt später an. Diese Lektion verfolgt einen Einkauf vom Kartenterminal bis zum Konto des Geschäfts.
+133|Eine Kartenzahlung ist eine Kette vertrauenswürdiger Firmen, die Nachrichten weitergeben, mit späterer Abwicklung. Eine Blockchain-Zahlung hat keinen Herausgeber, keinen Acquirer und kein Netzwerk. Die Überweisung selbst ist die Abwicklung, und einmal bestätigt kann keine Bank sie rückgängig machen.
+134|Eine digitale Zentralbankwährung, kurz CBDC, ist digitales Geld, das direkt von der Zentralbank eines Landes ausgegeben wird. Sie ist die digitale Version des Geldscheins in Ihrem Portemonnaie.
+135|Eine Zentralbank führt nicht Ihr Konto und verwahrt nicht Ihre Ersparnisse. Das tun Geschäftsbanken. Sie steuert auch nicht jeden Preis. Sie beeinflusst die Bedingungen, und die Ergebnisse kommen verzögert und unsicher.
+136|Eine Zentralbank ist eine öffentliche Institution im Zentrum des Geldsystems eines Landes. Gewöhnliche Banken bedienen Kunden. Die Zentralbank bedient die Banken, den Staat und das System als Ganzes.
+137|Eine Zentralbank ist die öffentliche Institution im Zentrum des Geldsystems eines Landes.
+138|Eine Zentralbank legt die Grundkosten des Kreditnehmens in ihrer Währung fest. Sind diese Kosten hoch, sind Kredite teuer und Sparen lohnt sich. Sind sie niedrig, sind Kredite billig und Sparen bringt wenig.
+139|Ein Jahrhundert Elektrizität im Iran
+140|Eine Checkliste ist nur ehrlich, wenn sie auch für die gilt, die sie veröffentlichen. Hier ist TMN, gemessen an denselben fünf Prüfungen, einschließlich derer, die wir nicht bestehen.
+141|Eine Forderung an die Bank
+142|Eine Forderung an das Unternehmen
+143|Ein Coin hängt von der Sicherheit seiner eigenen Chain ab. Ein Token hängt von seiner Chain und seinem Vertrag ab. Zu verstehen, worauf ein Vermögenswert beruht, zeigt, was schiefgehen kann und wer ihn, wenn überhaupt, ändern kann.
+144|Ein Coin ist auf seiner eigenen Blockchain heimisch. Ein Token baut auf einer anderen Blockchain auf. Krakens Leitfaden nennt Beispiele: BTC und ETH sind Coins; USDT und UNI sind Tokens.
+145|Ein Coin ist auf seiner Blockchain heimisch; ein Token baut auf einer anderen auf.
+146|Der Coin ist das, was die Chain selbst nutzt. Er bezahlt die Gebühren und belohnt die, die sie am Laufen halten, wie Lektion 27 zeigte. Ohne den Coin hätte das Netzwerk keine Möglichkeit, seinen eigenen Betrieb zu bezahlen.
+147|Ein Unternehmen hat ihn übernommen
+148|Eine bestätigte Transaktion ist endgültig. Keine Bank, kein Support und kein Gerichtsbeschluss kann sie auf der Blockchain rückgängig machen. Der einzige Weg zurück ist, dass der Empfänger sie zurückschickt.

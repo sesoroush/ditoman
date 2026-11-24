@@ -1,0 +1,108 @@
+0|„Marktkapitalisierung“ ist kein echter Wert.
+1|„Später bezahlen“ ist ein Kredit, egal was auf dem Knopf steht.
+2|„Smart“ heißt automatisch, nicht klug.
+3|„Die Analphabeten des 21. Jahrhunderts werden nicht die sein, die nicht lesen und schreiben können, sondern die, die nicht lernen, verlernen und
+4|„Die Analphabeten des 21. Jahrhunderts werden nicht die sein, die nicht lesen und schreiben können, sondern die, die nicht lernen, verlernen und neu lernen können.“
+5|% Veränderung
+6|„Ich würde diesem Token vertrauen, weil …“ oder „Ich würde ihm nicht vertrauen, weil …“. Ihre Begründung ist die eigentliche Lektion.
+7|(Chuka)
+8|(Stand: Mai 2026)
+9|, geprüft am 27. Oktober 2026. Automatische Scanner melden „mintable“, weil die Funktion im Code existiert. Nur der Eigentümer kann sie aufrufen, und der Eigentümer ist die Nulladresse, also kann sie niemand je aufrufen.
+10|, Stunden oder Tage später.
+11|, sind Kosten, die Sie zweimal zahlen. Bei kleinen Goldstücken und bei Schmuck mit Verarbeitungskosten ist die Spanne groß.
+12|, oder Sicherheit) steuern eine Position von 1.000 Dollar. Steigt der Preis um 10 %, verdoppeln Sie Ihr Geld. Fällt er um etwa 10 %, sind Ihre 100 Dollar weg.
+13|. Das Konto von Bank A dort sinkt, das von Bank B steigt, und die Zahlung ist erledigt.
+14|. Ditoman fragt nie nach privaten Schlüsseln oder Seed-Phrasen und schickt nie Tokens an Leute, die zuerst schreiben.
+15|. Es beseitigt das Risiko nicht. Es vermeidet, von der Richtigkeit einer einzigen Geschichte abzuhängen.
+16|. Niemand besitzt ihren Schlüssel, daher können diese Tokens nie wieder bewegt werden, zählen aber weiterhin zum totalSupply.
+17|. Diese hat das totalSupply tatsächlich verringert, von 21.000.000.000.000 auf 18.901.056.445.783,85.
+18|. Wenn sich Käufer nach schlechten Nachrichten zurückziehen, werden die Lücken zwischen ihnen größer, und jede Markt-Verkaufsorder drückt den Preis weiter nach unten.
+19|. Nicht Sie wählen den Moment, sondern der Preis.
+20|01. Quellcode des Vertrags auf BscScan verifiziert
+21|02. Verteilung des Angebots auf die Inhaber
+22|03. Eigentum aufgegeben, keine neuen Tokens möglich
+23|04. Keine Transfersteuer, keine Sperrliste, keine Pausenfunktion
+24|05. Liquiditäts-Tokens gesperrt
+25|=
+26|1 Euro = 1,10 Dollar
+27|1 Euro = 1,10 Dollar. Ein Hemd kostet 50 Euro. Sein Preis in Dollar ist:
+28|1 Euro = 1,20 Dollar
+29|1.000 zu 5 % pro Jahr: einfach vs. Zinseszins
+30|1.000 zu 5 % mit Zinseszins über 20 Jahre ergeben etwa:
+31|1.000 zu 5 % einfachem Zins über 10 Jahre ergeben:
+32|1. Finden Sie die offizielle Seite.
+33|1. Geld und Vertrauen
+34|1. Die gefälschte Seite (Phishing)
+35|10 Millionen digitale Schecks im Iran
+36|10 Millionen digitale Schecks im Iran
+37|10 Jahre:
+38|100 Millionen
+39|114 Millionen
+40|12 Minuten
+41|14 Millionen
+42|18-Karat-Gold
+43|18-Karat-Gold / g
+44|18-Karat-Gold pro Gramm und die Emami-Münze, in Toman.
+45|18-Karat-Gold, Gramm
+46|18-Karat-Gold, Gramm, aktuell
+47|18 Karat, Gramm
+48|19 Millionen
+49|2.098.943.554.216,15 TMN (etwa 10 %) wurden über die eigene Burn-Funktion des Vertrags verbrannt in
+50|2.100.000.000.000 TMN (10 %) wurden an die öffentliche Dead-Adresse geschickt
+51|2. Blockchain und Bitcoin
+52|2. Prüfen Sie das Datum.
+53|2. Der falsche Helfer
+54|20. April 2024
+55|20 Jahre:
+56|20 % fürs Sparen:
+57|21 globale Banken sagen dem Projekt Faro rund 270 Mio. Dollar zu: die Geschichte, der 295-Mrd.-Markt, Fintech, Blockchain und was es für den Iran bedeutet.
+58|21 kurze zweisprachige Lektionen, Schritt für Schritt: von Geld und Inflation zu Banken, Blockchain und KI.
+59|24-h-Veränderung
+60|24-h-Volumen
+61|29. Okt. 2026:
+62|3. Listen Sie die Reserven auf.
+63|3. Die Blindsignatur
+64|3. Krypto sicher nutzen
+65|30 Jahre, zwei Linien: CO2 biegt ab, Sonne und Wind steigen steil
+66|30 kurze Lektionen, Schritt für Schritt: von Geld und Inflation zu Banken, Blockchain und KI.
+67|30 % für Wünsche:
+68|36 Millionen
+69|3D-Drucker +86 %, Batterien +30 %, Roboter +26 %, während der Einzelhandel nur um 0,4 % wuchs: was das für die Welt und den Iran bedeutet.
+70|4. Bestimmen Sie die Art des Berichts.
+71|4. Märkte und Sparen
+72|4. Der geduldige Freund
+73|40 Millionen
+74|40 % der britischen Kinder fragen KI um Geldrat: was sie fragen, wie genau die Antworten sind und wo der Iran und seine Nachbarn stehen.
+75|5 Minuten
+76|5 Fragen
+77|5. Finden Sie die Rücknahmebedingungen.
+78|5. Die Zukunft des Geldes
+79|5. Die garantierte Rendite
+80|50 % für Bedürfnisse:
+81|50, 25, 12,5, 6,25, 3,125: der Zeitplan hinter den 21 Millionen.
+82|50/30/20 ist eine Faustregel, kein offizieller Standard. Alles andere in dieser Lektion ist allgemeine Orientierung, keine persönliche Finanzberatung.
+83|50/30/20 ist eine Faustregel: Bedürfnisse, Wünsche, Sparen. Passen Sie die Zahlen an Ihr Leben an.
+84|50/30/20-Regel
+85|51-%-Angriff
+86|58 Millionen
+87|6 Minuten
+88|6 Fragen
+89|6. Schreiben Sie einen Satz.
+90|65 % der 18- bis 29-Jährigen lesen Nachrichten zuerst online, 2,5 % lesen oft gedruckte Zeitungen, und die Wirtschaft ist das meistgelesene Ressort.
+91|7 Minuten
+92|71 Millionen
+93|78 Millionen
+94|8.112 Pflanzenarten, ein Jahrhundert Wandel, die Wirtschaft der Bäume und Pflanzen, der Iran neben seinen Nachbarn und 21 Unternehmen.
+95|83 Millionen
+96|86 Millionen
+97|9,5 Millionen
+98|95 Millionen
+99|: 12 oder 24 gewöhnliche Wörter. Wer diese Wörter hat, kontrolliert das Geld. Es gibt keinen „Passwort vergessen“-Knopf und kein Büro, das man anrufen kann.
+100|: Die Banken bezahlen sich tatsächlich gegenseitig, meist über Konten bei der Zentralbank, und dem Konto des Geschäfts wird gutgeschrieben. Das geschieht oft am nächsten Werktag, manchmal später.
+101|: ermitteln, wer wem was schuldet.
+102|@benutzername
+103|Ein Betrugsfall über 129 Mio. Dollar, angeblich mit geklonten Stimmen und Gesichtern, und drei Regeln zum Selbstschutz.
+104|Ein 40 Meter langer Polymerisationsreaktor, gebaut in Schiras für einen Petrochemiekomplex in Asaluyeh, und die Firmen dahinter.
+105|Ein 500-Tonnen-Reaktor aus Schiras
+106|Eine Grafik von John Authers in Bloomberg Opinion zeigt die Weltbörsen (Index FTSE All-World) zwei Jahre lang steigen, unterbrochen von einigen scharfen Einbrüchen, die jeweils mit einem großen politischen oder wirtschaftlichen Schock zusammenhängen. Das Muster ist die Lektion: Preise bewegen sich am stärksten, wenn Nachrichten von den Erwartungen abweichen, und Angst verbreitet sich schneller als Ruhe.
+107|Eine CBDC ist ein Werkzeug. Dieselbe Technik kann Zahlungen billiger und schneller machen oder dem, der sie kontrolliert, weit mehr Einblick und Macht über das Geld geben, als Bargeld es je tat. Was man bekommt, entscheidet sich im Design und im Gesetz.

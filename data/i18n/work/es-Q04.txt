@@ -1,0 +1,129 @@
+271|A. Porque devolviste parte del dinero cada mes
+272|A. La blockchain solo sirve para negociar monedas
+273|A. Reservas en efectivo
+274|A. Efectivo guardado a tu nombre
+275|A. Comprobar el PIN
+276|A. Convertir el dinero local en el token y de vuelta
+277|A. Recortar todos los gastos a la vez
+278|A. Destruir parte o todo el depósito de un validador deshonesto
+279|A. ¿Tiene su propia blockchain?
+280|A. Dólares
+281|=
+282|A. Cada 2.016 bloques, unas dos semanas
+283|A. Subida rápida del precio
+284|A. Detección de fraude en pagos con tarjeta
+285|A. Renunciar al presupuesto
+286|A. Sistemas ocultos
+287|A. Llevar las cuentas de ahorro personales de todos
+288|A. Lo congestionada que está la red
+289|A. En el margen del tipo de cambio
+290|A. Una política de tipos independiente
+291|A. Infraestructura
+292|A. Dentro del teléfono
+293|A. Se ganan intereses también sobre intereses anteriores
+294|A. Interés que baja cada año
+295|A. Siempre significa que el proyecto es deshonesto
+296|A. Garantiza beneficios
+297|A. Guarda el dinero de los bancos
+298|A. Aumenta
+299|A. Su color y su logo
+300|A. El mes pasado
+301|A. Sobre todo para prestar al gobierno para una guerra
+302|A. Hacer que hacer trampa cueste más que ser honesto
+303|A. El dinero pasa a la cuenta de la tienda
+304|A. Ningún usuario lo controla y no se puede borrar
+305|A. No, es una regla de oferta, no una previsión
+306|A. No, permite a otros quedarse con tus monedas
+307|A. Una empresa controla todos los registros
+308|A. Que un producto se encarezca
+309|A. Pagar rápido antes de que se pierda el rastro
+310|A. Leer información externa, como el tiempo
+311|A. Registrar información de forma transparente y verificable
+312|A. Elimina todo el riesgo
+313|A. Ahorro
+314|A. Vender en el mercado, con el riesgo de que el precio caiga por debajo de un dólar
+315|A. Enviarlo enseguida
+316|A. Fijar el precio del oro
+317|A. Gastar primero en deseos
+318|A. La oferta y la demanda
+319|A. El Riksbank de Suecia, fundado en 1668
+320|A. El sueldo neto, después de impuestos
+321|A. El color de la app
+322|A. Las funciones comunes de los tokens fungibles
+323|A. El contrato está roto
+324|A. La decisión se ha cancelado
+325|A. La comisión se descuenta del USDT
+326|A. El fondo tiene que estar ahí el mes siguiente con el mismo importe
+327|A. La diferencia entre el precio de compra y el de venta
+328|A. La mayor rentabilidad posible
+329|A. El emisor
+330|A. Las redes lo convierten automáticamente
+331|A. La dirección del par
+332|A. El precio es estable
+333|A. El precio subió la semana pasada
+334|A. Lo mismo que una auditoría completa
+335|A. La tienda se quedó el dinero
+336|A. El token es sin duda una estafa
+337|A. El token podría ser poco
+338|A. Siempre son evidentes
+339|A. Pagan intereses mientras los tienes
+340|A. Impuestos de transferencia
+341|A. Transparencia
+342|A. Gastos necesarios e imprevistos
+343|A. ¿Cuál es la comisión anunciada?
+344|A. Cuando quiera
+345|A. ¿Quién la emite?
+346|A. Quien tenga la clave privada o la frase de recuperación
+347|A. Sí, exactamente seis meses
+348|A. Sí, en cinco años
+349|IA y mercados
+350|IA y ciencia
+351|Hackeo con IA en menos de tres horas
+352|La IA da un gran paso en un problema del Milenio
+353|Agente de IA
+354|La IA y las pequeñas empresas de Irán: guía completa
+355|La IA y las pequeñas empresas de Irán
+356|IA y negocios
+357|La IA y la avalancha cibernética
+358|La IA y el problema de Yang-Mills
+359|IA y viajes
+360|Hackeo con IA en menos de tres horas: el caso ARTEX
+361|La IA lleva años trabajando en la trastienda de las finanzas, sobre todo contra el fraude y en el crédito.
+362|IA en la línea del pistacho
+363|Control de calidad con IA en una línea de pistachos (ilustración)
+364|La IA que paga por ti está llegando, y las reglas de responsabilidad aún se están escribiendo.
+365|IA, energía y el futuro del trabajo
+366|Diseño de ASIC, SoC y FPGA; el microprocesador Aristo de 32 bits
+367|Alrededor del 1%
+368|Alrededor del 10%
+369|Al final de la cuarta era se habían emitido unos 19,69 millones de bitcoins.
+370|Alrededor del 20% de la oferta
+371|Alrededor del 20% de los 21 billones de TMN originales se ha retirado de la circulación en dos pasos. Ambos son públicos y se pueden comprobar en BscScan.
+372|Alrededor del 50%
+373|Alrededor de un 99,99% menos tras el Merge (estimación)
+374|Sobre TMN
+375|Acceso
+376|Según el monitor del Atlantic Council, ¿cuántos países han lanzado plenamente una CBDC?
+377|Según el monitor del Atlantic Council, 146 países y uniones monetarias, que suman más del 98% de la economía mundial, están estudiando una CBDC. De ahí salen las cifras grandes que ves en las publicaciones.
+378|Según el BIS, ¿cuánto se negoció en divisas al día, aproximadamente, en abril de 2025?
+379|Adquirente
+380|Ley firmada el 23 de diciembre, tras el pánico de 1907
+381|Añade TMN a tu billetera
+382|Añade TMN a tu billetera ↓
+383|Añadir el token
+384|Suma todos los plazos y todas las comisiones.
+385|Dirección
+386|Envenenamiento de direcciones
+387|Dirección, red, comisión: cómo funciona una transacción cripto
+388|Dirección, red, comisión: cómo funciona una transacción cripto, imagen de la lección Ditoman
+389|Dirección, red, comisión: cómo funciona una transacción cripto | Ditoman Learn
+390|Los adultos compran hoy uno de cada cinco juguetes. Cincuenta años de juguetes, por qué los niños aún los quieren y la oportunidad de Irán de ser un centro regional del juguete.
+391|Al cabo de 1 año
+392|Al cabo de 10 años: 1.000 + 10 × 50 = 1.500. Al cabo de 20 años: 2.000. El saldo crece en línea recta.
+393|Al cabo de 3 años
+394|Al cabo de 5 años
+395|Tras el pánico financiero de 1907, EE. UU. era la única gran potencia financiera sin banco central. El presidente Woodrow Wilson firmó la Ley de la Reserva Federal el 23 de diciembre de 1913, que creó la Reserva Federal.
+396|Tras un robo, alguien se ofrece a recuperar tu dinero a cambio de un pago por adelantado. ¿Qué debes hacer?
+397|Tras el halving del 20 de abril de 2024, la recompensa por bloque es:
+398|Después de usarlo: reponer primero, antes de nuevos deseos
+399|Después de pulsar Enviar, la transacción espera a ser incluida en un bloque. Una vez incluida, tiene una confirmación. Cada bloque posterior añade otra, y cuantas más tenga, más difícil sería deshacerla.

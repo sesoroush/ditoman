@@ -1,0 +1,71 @@
+1538|La inflación significa que el mismo dinero compra menos con el tiempo.
+1539|La inflación reduce el valor del dinero, incluido el que debes. La lección 12 explica la rentabilidad real, y la misma cuenta sirve para un préstamo: el coste real es el tipo del préstamo menos la inflación.
+1540|Objetivo de inflación
+1541|Inflación, rentabilidad real y la regla del 72, con palabras sencillas.
+1542|=
+1543|Dentro de un país, la red conecta a todos los bancos. Entre países no hay una red única, y ahí empiezan el coste y el retraso. La lección 15 sigue un pago al extranjero.
+1544|Dentro de un país, la lección 14 mostró una sola red que conecta a todos los bancos. Entre países no existe esa red. Ese único hecho explica casi todo en esta lección.
+1545|=
+1546|Resumen en Instagram
+1547|Instala una billetera personal, por ejemplo Trust Wallet o SafePal. No se acepta una dirección de exchange.
+1548|Plazo
+1549|Los botones de pago a plazos están ya junto a casi cada caja. Esta lección muestra cómo calcular lo que cuesta de verdad un préstamo o un plan a plazos, cómo crecen los intereses sobre intereses y cuatro preguntas que hacerte antes de pulsar «pagar
+1550|Los botones de pago a plazos están ya junto a casi cada caja. Esta lección muestra cómo calcular lo que cuesta de verdad un préstamo o un plan a plazos, cómo crecen los intereses sobre intereses y cuatro preguntas que hacerte antes de pulsar «pagar después».
+1551|En lugar de que una autoridad central controle todo el sistema, la blockchain reparte la información por una red. Eso hace el sistema más abierto, más verificable y menos dependiente de un único punto de control.
+1552|Entidad
+1553|Instituciones
+1554|Tasa de intercambio
+1555|El interés significa poco si no lo comparas con la subida de precios.
+1556|Interés sobre interés
+1557|Tipo de interés
+1558|El tipo de interés como precio del dinero
+1559|Los tipos de interés sirven a un objetivo. En el Reino Unido, el gobierno fija el objetivo de inflación del Banco en el 2% anual, medido por los precios al consumo. Subir el tipo tiende a enfriar el gasto y la subida de precios; bajarlo tiende a animar el crédito y el gasto.
+1560|Los tipos de interés sirven a un objetivo: precios estables, como el objetivo del 2% en el Reino Unido.
+1561|Tipos de interés, elecciones y expectativas: cómo un anuncio puede llegar al mercado y por qué la historia rara vez da una respuesta clara.
+1562|Tipos de interés, elecciones y expectativas: por qué un anuncio en Washington puede sacudir un mercado que nunca duerme, y por qué nadie puede decir con seguridad en qué
+1563|Tipos de interés, elecciones y expectativas: por qué un anuncio en Washington puede sacudir un mercado que nunca duerme, y por qué nadie puede decir con seguridad en qué dirección.
+1564|Tipos de interés:
+1565|Comisiones de intermediarios
+1566|Inversión
+1567|Irán
+1568|Iran Navigator: la guía de licencias
+1569|Iran Wood and
+1570|Iran Wood and Paper Industries (Chuka)
+1571|Irán y el tesoro del zinc
+1572|Irán y el tesoro del zinc
+1573|Irán en el espejo de sus árboles
+1574|Irán en el espejo de sus árboles
+1575|Resumen de prensa iraní
+1576|El reactor de 500 toneladas de Irán
+1577|El rial digital de Irán
+1578|El parque de vehículos de Irán, cincuenta años de fabricación e importación, y cómo se compara con Turquía, Rusia, Pakistán, Arabia Saudí e Irak.
+1579|El dólar de mercado libre de Irán frente al tipo oficial, el oro de 18 quilates y la moneda Emami, desde 2010 hasta hoy, más el archivo de informes diarios del mercado de Ditoman. En persa e inglés.
+1580|El dólar de mercado libre de Irán frente al tipo oficial, el oro y la moneda Emami, con más de una década de historial. Abajo, todos los informes diarios del mercado de Ditoman, por fecha. Los datos nuevos se añaden automáticamente cada noche.
+1581|Los titulares de Irán, cada día a las 10:00
+1582|Los titulares de Irán, cada día a las 16:00
+1583|Las luces de Irán están encendidas
+1584|Logro iraní
+1585|Empresas iraníes
+1586|Comercio electrónico iraní; desde 2006
+1587|Los medios digitales de Irán: 10 grandes actores
+1588|Hierro, cobre, zinc, piedra, minerales
+1589|Irreversibilidad
+1590|Transferencia irreversible
+1591|¿Es una atestación o una auditoría? ¿Quién la firmó?
+1592|¿Es seguro compartir la dirección de tu billetera?
+1593|¿Está verificado el contrato?
+1594|¿Hay liquidez real?
+1595|¿Es esto asesoramiento financiero?
+1596|Calendario de emisión
+1597|Emisor
+1598|Afecta a la infraestructura, los datos, el acceso, la toma de decisiones, la identidad digital, las finanzas y la forma en que la gente se relaciona con los sistemas.
+1599|Tampoco responde a las demás comprobaciones. La oferta de TMN sigue concentrada en billeteras de los fundadores, cosa que puedes ver en BscScan. Lo decimos abiertamente, y deberías comprobarlo en cualquier token, también en el nuestro.
+1600|También explica algo igual de importante: por qué nada de esto te dice lo que pasará después.
+1601|Siempre significa que el proyecto es deshonesto
+1602|Puede ser rápido y barato. También depende por completo de la honradez del intermediario y, en muchos lugares, queda fuera de la protección legal.
+1603|Puede hacer que la información sea más fácil de verificar, la propiedad más fácil de demostrar, las transacciones más fáciles de seguir y los sistemas más difíciles de manipular sin que se vea.
+1604|Cambia cómo entendemos la confianza, el valor y los sistemas.
+1605|Depende del régimen que elija el país.
+1606|No fue así, al menos todavía no. Lo que viajó en esos dos segundos fue una pregunta y una respuesta. El dinero llega después. Ver la diferencia explica las comisiones, las devoluciones, los pagos fallidos y, más adelante en esta serie, por qué los pagos con cripto funcionan de forma tan distinta.
+1607|No saca la confianza del mundo. Cambia dónde se coloca. En lugar de depender solo de personas o instituciones, la blockchain permite que la confianza pase a sistemas transparentes, registros compartidos y reglas verificables.
+1608|No te dice nada del precio futuro. El calendario se conoce con años de antelación, y esta lección no afirma que un halving provoque un movimiento de precio. Es una regla sobre la oferta, no una previsión sobre el valor.

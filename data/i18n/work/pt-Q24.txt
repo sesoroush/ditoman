@@ -1,0 +1,107 @@
+2145|Reveja uma vez por mês e mude uma coisa de cada vez.
+2146|Recompensa por bloco
+2147|Recompensa por pessoa
+2148|As recompensas são enviadas em lotes a cada poucos dias.
+2149|Transporte por aplicação com preços fixos; lançado em fevereiro de 2014
+2150|Capital de risco
+2151|Roteiro
+2152|Estradas, ferrovia, portos, aeroportos, logística
+2153|Burla romântica de investimento
+2154|Água de rosas, destilados de ervas, xaropes naturais e ervas secas; Cidade Industrial Amirkabir 1, Kashan
+2155|Aproximadamente quanto juro simples rendem 1 000 a 5% ao ano em 30 dias?
+2156|Com que frequência aproximada a rede Bitcoin procura produzir um bloco?
+2157|Rug pull
+2158|Regra dos 72
+2159|Regra prática
+2160|Regras
+2161|Regras escritas no próprio dinheiro, como uma data de validade ou limites sobre onde é gasto
+2162|A Rússia abre a cripto regulada
+2163|Rússia, Arábia Saudita e Austrália são os maiores exportadores de CO2 da história; o Irão é o quinto. O dinheiro, os empregos, a lei e porque as regras climáticas atuais quase não o contam.
+2164|A SWIFT transporta instruções. Os bancos correspondentes movem os saldos.
+2165|A SWIFT transporta a instrução. Não guarda nem move o dinheiro. O dinheiro move-se pelas contas correspondentes descritas acima. É também por isso que ficar fora da SWIFT pesa tanto aos bancos de um país: sem as mensagens, a via normal fica fechada.
+2166|A SWIFT é uma rede de mensagens segura que mais de 11 000 instituições financeiras em mais de 200 países usam para enviar instruções de pagamento umas às outras. Foi fundada em 1973.
+2167|SWIFT, bancos correspondentes, custos ocultos e stablecoins.
+2168|SWIFT: sobre nós
+2169|Ativos seguros versus ativos de risco
+2170|Segurança
+2171|A mesma pergunta, através de uma fronteira
+2172|=
+2173|Satoshi Nakamoto é o nome associado à criação da Bitcoin. Em 2008, este nome apareceu com um documento que explicava um novo tipo de dinheiro digital. Não era controlado por um banco, governo ou empresa.
+2174|Satoshi Nakamoto é o nome usado pela pessoa ou grupo que apresentou a Bitcoin ao mundo. Mas a verdadeira importância de Satoshi não está só no mistério da identidade. Está na ideia de que um sistema pode continuar sem depender de uma pessoa central.
+2175|Satoshi importa porque a Bitcoin foi desenhada para ir além da autoridade pessoal.
+2176|Satoshi ainda a controla em segredo
+2177|Poupe o dinheiro pontual:
+2178|Guarde o hash da transação
+2179|Poupar
+2180|Poupança • Ativos
+2181|Poupar, investir, especular
+2182|Poupanças
+2183|Taxa de poupança
+2184|Dizer o que a SWIFT faz e o que não faz.
+2185|Dizer o que é e o que não é um orçamento.
+2186|Dizer o que um banco central não faz.
+2187|Dizer o que é um banco central.
+2188|Dizer o que um assistente de linguagem faz bem e onde pode falhar.
+2189|Dizer o que é um neobanco e o que verificar antes de o usar.
+2190|Dizer o que faz um nó.
+2191|Dizer o que uma aprovação de token pode permitir.
+2192|Dizer o que a diversificação faz e não faz.
+2193|Dizer o que é o halving e com que frequência acontece.
+2194|Dizer onde pode ser guardado em segurança.
+2195|Dizer porque um contrato implementado é difícil de mudar.
+2196|Dizer porque uma loja recebe o dinheiro mais tarde do que o cliente pensa.
+2197|Dizer porque ajuda uma norma como o ERC-20.
+2198|Dizer porque nem a bitcoin nem uma stablecoin são uma resposta sem risco à inflação.
+2199|Dizer porque o remetente e o destinatário têm de usar a mesma rede.
+2200|Dizer porque a taxa anual real é mais alta do que a percentagem simples.
+2201|Escala
+2202|Verificação por um segundo canal
+2203|Secções
+2204|Segurança
+2205|Verificação de segurança
+2206|Relatório de segurança (GoPlus)
+2207|Segurança • Burlas
+2208|Segurança • Verificação de tokens
+2209|Ver os detentores de tokens LP na BscScan
+2210|Ver todas as empresas
+2211|Ver todas as lições
+2212|Ver tudo →
+2213|Ver a via cripto em detalhe
+2214|Ver o histórico completo
+2215|Material de aprendizagem selecionado e espaços comunitários.
+2216|Vendê-lo
+2217|Semicondutores
+2218|Envie primeiro um pequeno teste
+2219|Envie um pequeno teste,
+2220|Enviar no Bale
+2221|Enviar no Telegram
+2222|Enviar o endereço
+2223|Envie o seu código e o endereço da carteira
+2224|Enviar cripto exige três decisões: que endereço, que rede e que taxa. Errar uma delas pode fazer perder o dinheiro para sempre. Esta lição segue uma transferência desde o botão Enviar até à
+2225|Enviar cripto exige três decisões: que endereço, que rede e que taxa. Errar uma delas pode fazer perder o dinheiro para sempre. Esta lição segue uma transferência desde o botão Enviar até à confirmação final.
+2226|Enviar, verificar e proteger, antes de mover dinheiro real.
+2227|Separar uma regra de oferta de uma previsão de preço.
+2228|Separar exemplos reais de testes de afirmações exageradas.
+2229|Série
+2230|Definir limites e rever
+2231|Criado sobretudo para emprestar ao governo para uma guerra
+2232|Liquidação
+2233|Vários tokens sem relação usam o ticker TMN. Verifique sempre o endereço completo do contrato.
+2234|Vários tokens sem relação usam o ticker TMN. Este é o único contrato oficial:
+2235|Shaparak: a rede iraniana de pagamentos eletrónicos com cartão
+2236|Parte do salário líquido
+2237|Faz compras e paga por si
+2238|Lições curtas bilingues com questionários
+2239|Lições curtas por tema, de cerca de cinco minutos cada, nas duas línguas, cada uma a terminar com um questionário.
+2240|Lições curtas sobre cripto e dinheiro
+2241|Lições curtas e gratuitas em persa e inglês. Cada uma leva cerca de cinco minutos e termina com um questionário para verificar o que ficou.
+2242|Devo comprar TMN?
+2243|Mostrar todas as histórias
+2244|Shush, Rey e Hamadã estão entre dez cidades antigas que continuaram habitadas e mantiveram os seus nomes, e ligam o Irão à Síria e ao Líbano.
+2245|Prata ($)
+2246|Simples
+2247|Hábitos simples que evitam a maioria das perdas
+2248|Juro simples
+2249|O juro simples aplica-se ao valor original; o juro composto aplica-se ao valor mais os juros passados.
+2250|Percentagem simples
+2251|Juro simples, composto e diário parecem iguais, mas ao fim de dez ou vinte anos dão resultados muito diferentes. Esta lição mostra os três com números pequenos que pode verificar

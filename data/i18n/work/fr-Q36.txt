@@ -1,0 +1,112 @@
+3028|Quel est l'endroit le plus sûr pour une phrase de récupération ?
+3029|D'où cela vient
+3030|Où il se trouve
+3031|Où en est-on
+3032|Là où aucune entité unique ne contrôle le réseau.
+3033|Où se cache le coût
+3034|Où l'idée est née
+3035|Où part le mois, et une répartition simple 50/30/20.
+3036|Où cela peut mener
+3037|Où le conserver
+3038|Là où les transactions sont vérifiables.
+3039|Qu'une CBDC soit bonne ou mauvaise dépend presque entièrement de sa conception et du droit qui l'encadre. Voici les questions qui comptent, pour tout pays :
+3040|Quels domaines la blockchain peut-elle toucher ?
+3041|Quelle banque a émis votre carte et détient votre compte ?
+3042|Quel organisme délivre quoi, et par où commencer, secteur par secteur.
+3043|Quelle machine du quotidien est la métaphore classique ?
+3044|Quelle habitude le CFPB suggère-t-il pour constituer une épargne ?
+3045|À quelles institutions fait-on souvent confiance aujourd'hui ?
+3046|Quelle est une vraie raison d'attendre qu'un token prenne de la valeur ?
+3047|Laquelle est décrite comme la plus ancienne banque centrale du monde ?
+3048|Quelle est la bonne question à poser avant de faire confiance à un stablecoin ?
+3049|Quelle est la façon la plus sûre d'ouvrir le site de votre plateforme ou portefeuille ?
+3050|Sur quel type de garantie reposait l'UST, qui a échoué en mai 2022 ?
+3051|Lequel des trois a connu les plus fortes chutes de prix ?
+3052|Lesquelles sont des caractéristiques clés de la blockchain ?
+3053|Lequel de ces éléments peut-on découvrir en lisant le contrat d'un token ?
+3054|Laquelle n'est PAS une mission typique d'une banque centrale ?
+3055|Laquelle est une vraie raison d'attendre qu'un token prenne de la valeur ?
+3056|Lequel de ces éléments fait partie des quatre métiers d'une banque ?
+3057|Que faut-il vérifier dans un enregistrement de verrouillage ?
+3058|Lequel est un coin ?
+3059|Quelle partie d'un paiement international un stablecoin ne supprime-t-il pas ?
+3060|Quel achat se prête le mieux à l'emprunt ?
+3061|Quelle question compte le plus pour juger une CBDC ?
+3062|Quelle affirmation sur un verrouillage de liquidité est vraie ?
+3063|Quelle affirmation est vraie pour les trois actifs ?
+3064|Livre blanc
+3065|Livre blanc : orientation finale
+3066|Qui est Satoshi Nakamoto, image principale de la leçon Ditoman
+3067|Qui est Satoshi Nakamoto ?
+3068|Qui sera le prochain Nvidia ? Mémoire, réseaux et puces sur mesure
+3069|À qui appartient le carbone ?
+3070|Qui fait tourner une blockchain ?
+3071|Qui fait tourner une blockchain ? Image de la leçon Ditoman
+3072|Qui fait tourner une blockchain ? | Ditoman Learn
+3073|Qui approuve un transfert
+3074|Qui peut déplacer les coins d'un portefeuille personnel ?
+3075|Qui peut demander le remboursement, quel est le montant minimum, quels frais s'appliquent et combien de temps cela prend-il ?
+3076|Qui fait quoi
+3077|Qui corrige une erreur
+3078|Qui détient l'offre ?
+3079|Qui est Satoshi Nakamoto ?
+3080|Qui est dans la course, pourquoi le quantique se range avec l'IA et le nucléaire, et ce que cela signifie pour le chiffrement et Bitcoin.
+3081|Qui sera le prochain Nvidia
+3082|Qui émet une CBDC ?
+3083|Qui émet une monnaie numérique de banque centrale (CBDC) ?
+3084|À qui appartient le carbone ? Les plus grands exportateurs de CO2
+3085|Qui paie tout cela ?
+3086|Qui propose les blocs
+3087|Qui fait tourner une blockchain ?
+3088|Qui fixe le prix
+3089|Quiconque ajoute de l'argent au pool reçoit des tokens LP (tokens de fournisseur de liquidité). Voyez-les comme un reçu. Celui qui détient le reçu peut le rendre au pool à tout moment et retirer sa part de BNB et de tokens.
+3090|Pourquoi Bitcoin a été créé
+3091|Pourquoi Bitcoin a été créé
+3092|Pourquoi la blockchain compte
+3093|Pourquoi la blockchain compte, image de la leçon Ditoman
+3094|Pourquoi les prix s'effondrent-ils soudainement ?
+3095|Pourquoi les prix s'effondrent-ils soudainement ? Actualité, effet de levier et liquidations | Ditoman Learn
+3096|Pourquoi l'argent perd-il son pouvoir d'achat ?
+3097|Pourquoi l'argent perd-il son pouvoir d'achat ? Image de la leçon Ditoman
+3098|Pourquoi l'argent perd-il son pouvoir d'achat ? | Ditoman Learn
+3099|Pourquoi envoyer de l'argent à l'étranger reste-t-il lent et cher ?
+3100|Pourquoi envoyer de l'argent à l'étranger reste-t-il lent et cher ? Image de la leçon Ditoman
+3101|Pourquoi envoyer de l'argent à l'étranger reste-t-il lent et cher ? | Ditoman Learn
+3102|Pourquoi United a interdit aux agents d'IA de réserver des vols
+3103|Pourquoi United a interdit aux agents d'IA de réserver des vols
+3104|Pourquoi nous avons cessé de nous retrouver
+3105|Pourquoi une norme aide
+3106|Pourquoi des règles transparentes sont-elles importantes ?
+3107|Pourquoi la blockchain compte
+3108|Pourquoi les prix des cryptos peuvent-ils bouger vite autour d'une grande nouvelle, même le week-end ?
+3109|Pourquoi des taux d'intérêt plus élevés peuvent-ils peser sur des actifs risqués comme le bitcoin ?
+3110|Pourquoi les coins existent
+3111|Pourquoi comparer les offres sur la même base de capitalisation ?
+3112|Pourquoi la crypto a chuté avec la tech et l'or : la Fed, les valeurs de l'IA, les sorties des ETF et la géopolitique, avec des scénarios à une semaine, quatre semaines et six mois.
+3113|Pourquoi la crypto réagit en premier et le plus fort
+3114|Pourquoi décider à l'avance ce qui prouverait que vous avez tort ?
+3115|Pourquoi Bitcoin a-t-il continué après la disparition de Satoshi ?
+3116|Pourquoi Bitcoin a-t-il continué à fonctionner après le retrait de Satoshi ?
+3117|Pourquoi est-ce que je pense que cela vaudra plus plus tard ?
+3118|Pourquoi les prix s'effondrent-ils soudainement ?
+3119|Pourquoi les prix s'effondrent-ils soudainement ? Image de la leçon Ditoman
+3120|Pourquoi la blockchain crée-t-elle de la confiance ?
+3121|Pourquoi l'argent perd-il son pouvoir d'achat ?
+3122|Pourquoi la concentration de l'offre compte-t-elle ?
+3123|Pourquoi les élections comptent
+3124|Pourquoi l'identité de Satoshi compte-t-elle encore ?
+3125|Pourquoi un actif dont le prix chute fortement convient-il mal à un fonds d'urgence ?
+3126|Pourquoi envoyer de l'argent à l'étranger reste-t-il difficile ?
+3127|Pourquoi le vrai taux annuel de ce prêt dépasse-t-il 14 % ?
+3128|Pourquoi l'urgence est-elle traitée comme un signal d'alarme ?
+3129|Pourquoi cela semble gratuit
+3130|Pourquoi il est « intelligent »
+3131|Pourquoi c'est lent
+3132|Pourquoi cela compte pour les gens ordinaires
+3133|Pourquoi l'argent perd son pouvoir d'achat
+3134|Pourquoi pas de politique ?
+3135|Pourquoi les paiements échouent ou reviennent parfois
+3136|Pourquoi on répartit son épargne
+3137|Pourquoi les prix bougent et en quoi les actifs diffèrent.
+3138|Pourquoi des producteurs paient pour vendre de l'électricité, les chiffres de l'Allemagne et de la France, et pourquoi un prix de gros négatif n'est pas une facture négative.
+3139|Pourquoi des producteurs paient parfois pour vendre de l'électricité, et pourquoi votre facture ne devient pas négative.

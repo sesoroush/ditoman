@@ -1,0 +1,78 @@
+1139|Le CFPB fixe-t-il une taille précise pour le fonds d'urgence ?
+1140|Cette leçon affirme-t-elle que le halving fait monter le prix ?
+1141|Faire des affaires en Iran
+1142|Dollar (NIMA)
+1143|Dollar (libre)
+1144|Dollar, or et tous les rapports quotidiens
+1145|Dollar, or, pièces et marchés mondiaux
+1146|Dollars (espèces)
+1147|Les dollars et les pièces d'or ont des marchés profonds presque partout, mais les prix d'achat et de vente diffèrent. Cet écart, la
+1148|=
+1149|=
+1150|Une inflation à deux chiffres pendant 46 ans sur 50 : pourquoi ceux qui commencent tard partent de plus loin, pourquoi ce n'est pas leur faute et ce qui reste entre nos mains.
+1151|Baisse depuis le sommet
+1152|=
+1153|Règlement (UE) 2015/751 relatif aux commissions d'interchange pour les opérations de paiement liées à une carte
+1154|Chaque banque fait ses vérifications
+1155|Chaque ère compte 210 000 blocs, donc la quantité créée dans une ère est 210 000 fois la récompense de cette ère.
+1156|Chaque ligne est un type de risque différent. Remarquez qu'aucune colonne n'est vide.
+1157|Chaque question du test vient de l'une de ces leçons. Chaque leçon prend environ cinq
+1158|Chaque question du test vient de l'une de ces leçons. Chaque leçon prend environ cinq minutes.
+1159|Chaque portefeuille ne peut recevoir la récompense qu'une fois.
+1160|Restaurants, loisirs, voyages, abonnements
+1161|Calendrier économique
+1162|Les économistes débattent des détails, mais trois sources reviennent sans cesse.
+1163|Économie
+1164|Économie et vie
+1165|L'économie désignait autrefois la tenue d'un foyer : comment les familles vivent réellement l'économie, le budget des ménages iraniens en chiffres et les savoir-faire qui les aident à s'en sortir.
+1166|Économie, IA et commerce, chaque jour à 16 h
+1167|Rendement annuel effectif
+1168|Les élections décident qui écrit et adopte les règles. Aux États-Unis, le Congrès vote les lois sur les impôts, les dépenses et la régulation des produits financiers, y compris la crypto.
+1169|Élections, Congrès et régulation
+1170|Électricité et matériel
+1171|Pièce Emami
+1172|Pièce Emami (quotidien)
+1173|Fonds d'urgence
+1174|Fonds d'urgence, objectifs, remboursements anticipés
+1175|Énergie
+1176|Énergie et eau
+1177|Économie de l'énergie
+1178|Technologies de l'énergie
+1179|Consommation d'énergie
+1180|Anglais
+1181|Leçon en anglais
+1182|Saisissez l'adresse de votre portefeuille BNB Smart Chain. Un code personnel est créé. Copiez le message prêt et envoyez-le à Ditoman.
+1183|Entrer ·
+1184|Ère
+1185|Ère de 210 000 blocs
+1186|Les totaux par ère et les chiffres du prochain halving sont nos propres calculs (210 000 × récompense ; bloc 1 050 000 avec une récompense de 1,5625), arrondis comme indiqué. La date de 2028 est une attente fondée sur des blocs de dix minutes, pas une date fixe. Pas une prévision de prix.
+1187|Español (bientôt)
+1188|Español · bientôt
+1189|Dépenses essentielles
+1190|Ethereum et les contrats intelligents : un programme qui fonctionne tout seul
+1191|Ethereum et les contrats intelligents : un programme qui fonctionne tout seul, image de la leçon Ditoman
+1192|Ethereum et les contrats intelligents : un programme qui fonctionne tout seul | Ditoman Learn
+1193|Ethereum et les contrats intelligents
+1194|Ethereum est passé à la preuve d'enjeu. Au lieu de dépenser de l'énergie, les validateurs mettent de l'argent en jeu. Pour faire tourner seul un validateur, on dépose 32 ETH, et des pools existent pour ceux qui ont moins.
+1195|Ethereum a une norme pour cela appelée ERC-20, pour les tokens fongibles, où une unité est interchangeable avec une autre. La norme fixe les noms communs des fonctions : nom, symbole, décimales, offre totale, solde d'une adresse, transfert et approbation, et deux événements qui enregistrent transferts et approbations.
+1196|La documentation d'Ethereum indique qu'une fois déployé, aucun utilisateur ne contrôle un contrat et que, par défaut, il ne peut pas être supprimé. C'est sa force et aussi son risque. Une règle immuable inspire confiance. Une erreur immuable reste.
+1197|La documentation d'Ethereum dit qu'un contrat intelligent est simplement un programme qui tourne sur la blockchain Ethereum. C'est un ensemble de code, appelé fonctions, et de données, appelées état, qui réside à une adresse précise de la chaîne.
+1198|=
+1199|Euronews, une commission du Parlement européen soutient l'euro numérique (juin 2026)
+1200|Euronews : chiffres de l'inflation du Centre statistique d'Iran pour le mois clos le 21 juin 2026
+1201|L'Europe représente la moitié des dépenses sociales mondiales et sa dette augmente : qui paie, pourquoi l'Europe n'est pas une seule histoire et les opportunités qu'elle ouvre pour la région.
+1202|Le coûteux État-providence européen : qui paie l'addition ?
+1203|Le coûteux État-providence européen : qui paie l'addition ?
+1204|Commission européenne : systèmes de garantie des dépôts
+1205|Commission européenne : services de paiement (DSP2) et open banking
+1206|Même une petite somme compte. L'habitude compte plus que le montant, et le montant peut grandir ensuite.
+1207|Chaque action demande du calcul, et les utilisateurs paient des frais, appelés gas sur Ethereum. Les opérations simples coûtent peu ; les complexes coûtent plus.
+1208|Chaque paiement par carte a la même distribution, quel que soit le pays.
+1209|Chaque publication de la chaîne, sur le web
+1210|Chaque vérification ci-dessous est gratuite, publique et prend environ une minute. Pas besoin de connaissances techniques. Il suffit de savoir où regarder.
+1211|Chaque jour, consigné.
+1212|Chaque nouvelle leçon arrive d'abord sur Telegram
+1213|Chaque paiement a besoin de l'accord de l'État
+1214|De temps en temps, tout le marché semble retenir son souffle avant une annonce prévue. Les deux plus grands exemples sont les décisions de taux et les élections.
+1215|Chaque transaction reçoit un identifiant, appelé hash. Collez-le dans un explorateur de blocs, comme BscScan pour BNB Smart Chain, et vous voyez l'expéditeur, le destinataire, le montant, les frais et le statut. Nul besoin de la parole d'une entreprise.
+1216|Chaque transaction paie des frais à ceux qui font tourner le réseau. On parle souvent de gas. Ces frais paient une place dans le prochain bloc, ils dépendent donc de l'encombrement du réseau, pas du montant envoyé. Envoyer 10 dollars ou 10 000 dollars peut coûter pareil.

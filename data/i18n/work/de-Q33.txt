@@ -1,0 +1,91 @@
+2741|Zwölfmonatsinflation
+2742|Einundzwanzig Lektionen in der Reihenfolge, in der sie am leichtesten zu lernen sind. Beginnen Sie bei Schritt 1 oder springen Sie zur Phase, die Sie brauchen.
+2743|Zwei Details überraschen Einsteiger.
+2744|Zwei verwandte Lektionen
+2745|Zwei Lektionen, die dazu passen
+2746|Zwei Zahlen, die Sie in den Nachrichten sehen
+2747|Zwei Angebotsreduzierungen on-chain
+2748|Zwei Menschen verdienen dasselbe Gehalt. Eines Tages bekommen beide eine unerwartete Rechnung. Die erste zahlt sie aus einer kleinen Reserve und macht weiter. Die zweite leiht sich Geld, gerät mit anderen Zahlungen in Verzug und braucht Monate, um aufzuholen.
+2749|Zwei Geschichten von der Website
+2750|Typische Aufgaben: Banknoten und Zahlungen, Bankenaufsicht, Festlegung des Leitzinses, Verwaltung der Reserven.
+2751|US Bureau of Labor Statistics: Verbraucherpreisindex
+2752|US Consumer Financial Protection Bureau: Nutzung von „Jetzt kaufen, später zahlen“ (Januar 2025)
+2753|US-Notenbank Federal Reserve
+2754|US Federal Trade Commission: Was man über Kryptowährungen und Betrug wissen sollte
+2755|US SEC Investor.gov: Zinseszinsrechner
+2756|US SEC Investor.gov: Grundlagen des Sparens und Investierens
+2757|US-Dollar
+2758|Das US-Recht setzt nun strengere Regeln. Nach dem GENIUS Act müssen Stablecoins durch liquide Vermögenswerte wie US-Dollar und kurzfristige Schatzwechsel gedeckt sein, und Herausgeber müssen die Zusammensetzung ihrer Reserven monatlich offenlegen. Herausgeber mit mehr als 50 Milliarden Dollar müssen zudem jährlich geprüft werden. Das sind gute Fragen an jeden Herausgeber, überall auf der Welt.
+2759|USDT, UNI, TMN
+2760|Wann darf beim Open Banking ein anderes Unternehmen Ihre Kontodaten lesen?
+2761|Grundlagen der Blockchain verstehen
+2762|Dezentrale Systeme verstehen
+2763|Verstehen, wie die Blockchain verändert, wo Vertrauen liegt.
+2764|Den Unterschied zwischen zentralen und verteilten Systemen verstehen.
+2765|Die Vertrauenskrise verstehen
+2766|Transparenz verstehen
+2767|Verstehen, was Blockchain bedeutet.
+2768|Verstehen, wer Satoshi Nakamoto in der Geschichte von Bitcoin ist.
+2769|Verstehen, warum Satoshis Identität unbekannt bleibt.
+2770|Verstehen, warum die Blockchain größer ist als Krypto.
+2771|Verstehen, warum es bei der Blockchain nicht nur um Krypto geht.
+2772|Verstehen, warum Liquidität entscheidet, ob es einen Ausstieg gibt.
+2773|Verstehen, warum Angebotskonzentration ein Risiko ist.
+2774|Verstehen, warum Satoshis Verschwinden Bitcoin dezentraler machte.
+2775|Verstehen, warum die Idee hinter Bitcoin wichtiger wurde als sein Schöpfer.
+2776|Die Blockchain zu verstehen wird nicht optional sein.
+2777|Inflation zu verstehen sagt Ihnen nicht, was Sie kaufen sollen. Es sagt Ihnen, welche Frage Sie zuerst stellen sollten.
+2778|Verstehen, was man besitzt
+2779|Vereinte Nationen: SDG 10, Ziel 10.c zu Überweisungskosten
+2780|United verbot KI-Agenten den Ticketkauf: die offiziellen Gründe, das „kein neuer Mittelsmann“ des CEO, das Geld in einer 1,165-Billionen-Dollar-Branche und was das für Iran bedeutet.
+2781|Unbezahlte Schulden wachsen durch Zinseszins und Mahngebühren von selbst.
+2782|Bis 29. Okt. 2027
+2783|Nicht verifiziert heißt nicht automatisch unehrlich. Aber es heißt, dass Sie einem Versprechen vertrauen, statt die Regeln selbst zu lesen.
+2784|Dringlichkeit ist der rote Faden. Eine echte Chance übersteht einen Tag Nachdenken.
+2785|Dringlichkeit ist das zuverlässigste Warnsignal in diesem ganzen Bereich. Echte Chancen verschwinden meist nicht in den nächsten zehn Minuten. Alles, was Sie zum Handeln vor dem Denken bringen soll, ob Countdown, Menge oder ein überzeugter Freund, verdient mehr Misstrauen, nicht weniger.
+2786|Nutzen Sie KI zum Verstehen. Geheimnisse und letzte Entscheidungen behalten Sie für sich.
+2787|Nutzen Sie eine eigene Wallet für Tokens, die eine Börse nicht unterstützt. TMN ist ein Beispiel: Er muss in einer eigenen BNB-Smart-Chain-Wallet empfangen werden, wie der TMN-Leitfaden zeigt.
+2788|Nutzen Sie eine eigene Wallet auf der BNB Smart Chain, keine Börsenadresse.
+2789|Mit vier Fragen ein Ratenangebot beurteilen.
+2790|Nutzen Sie Limit-Orders statt Market-Orders, wenn sich Märkte schnell bewegen, damit Sie Ihren Preis wählen.
+2791|Nutzen Sie nur die offizielle Website.
+2792|Wenden Sie die Checkliste aus Lektion 05 auf jeden Token an, ob Stablecoin oder nicht.
+2793|Nutzen Sie die Transparenz- oder Reserveseite des Herausgebers selbst, keine Übersichtsseite.
+2794|Mit der 72er-Regel abschätzen, wie schnell sich Preise verdoppeln.
+2795|Es mit dem Verkaufsautomaten erklären.
+2796|Nutzer können nichts überprüfen
+2797|KI gut für Geldfragen nutzen
+2798|Ihn zu nutzen ist sein Zweck. Füllen Sie ihn danach wieder auf.
+2799|Nutzen und wieder auffüllen
+2800|Den Fonds zu nutzen ist kein Versagen. Genau dafür existiert er. Machen Sie das Auffüllen danach zum ersten Ziel der nächsten Monate.
+2801|Die Regel anwenden, wo sie nicht passt
+2802|Meist die einer Partnerbank
+2803|Meist keine Garantie
+2804|Validator und Slashing
+2805|Validatoren
+2806|Werte können online ohne zentralen Torwächter fließen
+2807|Überprüfung
+2808|Verifiziert
+2809|TMN auf BscScan prüfen
+2810|Auf BscScan prüfen
+2811|Die Sperre prüfen
+2812|Die Sperre prüfen
+2813|Die Sperre auf PinkLock prüfen
+2814|Sehr gering
+2815|Instagram-Beitrag ansehen
+2816|Auf Instagram ansehen
+2817|Den ursprünglichen Instagram-Beitrag unten ansehen:
+2818|Den Eintrag ansehen
+2819|Volatilität
+2820|Warten Sie einen Tag.
+2821|Wallet-Adresse
+2822|Wallet-Adresse (beginnt mit 0x)
+2823|Wallet-Kompatibilität
+2824|Wallet-Drainer
+2825|Wallet-Leitfaden
+2826|Wünsche
+2827|Verschwendete Arbeit
+2828|Wir sehen uns das gemeinsam an, weil fast jede Geldentscheidung, vom Sparen über Leihen bis zum Kauf von Krypto, mit einer Frage beginnt: Was wird dieses Geld später wert sein?
+2829|Wir bitten niemanden darum. Das TMN-Angebot ist konzentriert. Lesen Sie die <a href="tmn.html">TMN-Seite</a> und beurteilen Sie ihn mit denselben Prüfungen wie jeden anderen Token.
+2830|Wir nennen auch die Schwachstellen, denn unsere <a href="lesson05.html">Lektion zur Token-Prüfung</a> lehrt Sie, danach zu suchen.
+2831|Wir sagen das klar, weil unsere

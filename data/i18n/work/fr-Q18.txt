@@ -1,0 +1,90 @@
+1609|Elle introduit une nouvelle façon de construire des systèmes où la transparence est intégrée, où les données peuvent être vérifiées et où le contrôle n'appartient pas à une seule entité.
+1610|C'est une nouvelle façon de construire des systèmes.
+1611|C'est une règle éditoriale permanente. Nous documentons le savoir réel et les réussites réelles, et restons à l'écart du commentaire politique, de quelque bord que ce soit.
+1612|C'est une règle d'offre, pas une prévision de prix.
+1613|Elle est aussi très différente du bitcoin. Le bitcoin n'a pas d'émetteur ni personne qui puisse changer ses règles seul. Une CBDC est émise, contrôlée et conçue par l'État.
+1614|Il n'est pas intelligent. Il est automatique. Le nom signifie que les règles sont écrites en code et s'exécutent exactement comme écrites, quel que soit l'appelant.
+1615|Ce n'est pas votre banque, et elle ne contrôle pas tous les prix.
+1616|Ce n'est pas le cas.
+1617|C'est probablement…
+1618|C'est le plus grand marché financier du monde. La Banque des règlements internationaux a indiqué que les échanges de devises atteignaient en moyenne environ 9 600 milliards de dollars par jour en avril 2025, soit environ 28 % de plus qu'en 2022. Le dollar américain était d'un côté d'environ 89 % des transactions.
+1619|C'est la même force qui aide l'épargnant, mais en sens inverse. Une dette de 100 millions à 30 % par an, laissée telle quelle, devient 130 millions après un an, 169 millions après deux et environ 220 millions après trois. La règle de 72 de la leçon 12 s'applique aussi : à 30 %, une dette double en deux ans et demi environ.
+1620|On est le vingt du mois et le compte est presque vide. Rien d'inhabituel : pas d'urgence, pas de gros achat. Et pourtant l'argent a disparu.
+1621|Cela rend le contrat invérifiable
+1622|Cela signifie que le token ne pourra jamais être vendu
+1623|Cela signifie que le créateur du token est anonyme
+1624|Il ne connaît que ce qui est sur la chaîne.
+1625|Il empêche seulement que la liquidité verrouillée soit retirée avant la date de déverrouillage
+1626|Il prouve que le prix du token va monter
+1627|Cela ressemble à de la science-fiction, mais cela touche quelque chose de réel. Les banques centrales du monde entier étudient une nouvelle forme de monnaie, dont une partie peut techniquement porter de telles règles. Cette leçon sépare le réel de l'exagéré.
+1628|Il empêche le token d'être listé où que ce soit
+1629|C'était une réponse.
+1630|Ce n'était pas le cas.
+1631|Ce sera essentiel.
+1632|Sa chaîne
+1633|Sa chaîne et son contrat
+1634|Son rôle est de transformer une crise en contrariété. Quand la surprise arrive, vous payez avec le fonds au lieu d'emprunter cher, comme l'a averti la leçon 19.
+1635|Ses règles ouvertes permettent à d'autres de vérifier, faire tourner et protéger le réseau
+1636|La sienne
+1637|Son propre exemple : 1 000 dollars à 5 % par an donnent 1 050 après un an et 1 102,50 après deux. Les 2,50 de plus sont des intérêts sur les intérêts.
+1638|La sienne ou celle d'une banque partenaire
+1639|Son prix change chaque jour
+1640|Son prix a monté la semaine dernière
+1641|Rejoindre sur Telegram
+1642|Rejoindre la chaîne
+1643|Arrivée dans les communautés crypto et de la diaspora en persan, et premier retrait public d'offre avec preuve.
+1644|Aller à
+1645|=
+1646|=
+1647|Gardez un peu du coin du réseau
+1648|Gardez une part plus petite, mais gardez-la
+1649|Gardez-le en sécurité, accessible et un peu hors de portée immédiate.
+1650|Gardez la décision finale pour vous.
+1651|Le conserver
+1652|Garder l'argent :
+1653|Notions clés
+1654|Sachez que l'effet de levier multiplie les pertes autant que les gains ; la plupart des débutants s'en portent mieux sans.
+1655|Connaissez la date, pour qu'une grande annonce ne vous prenne pas par surprise. Demandez-vous ce qui est déjà attendu, car c'est ce que le prix contient déjà. Soyez très prudent avec l'argent emprunté autour des grands événements. Et dimensionnez toute position selon ce que vous pouvez vous permettre de perdre, comme dans la leçon précédente.
+1656|Savoir où trouver le contrat d'un token et lire son état.
+1657|Savoir si vous épargnez, investissez ou spéculez avant de choisir un actif.
+1658|Testez vos connaissances
+1659|Entreprises technologiques et fondées sur le savoir
+1660|Papier kraft et semi-kraft, carton ondulé et caisses, carton ; zone industrielle de Yazd
+1661|Kraken Learn : la différence entre coins et tokens crypto (BTC et ETH sont des coins ; USDT et UNI sont des tokens)
+1662|Les tokens LP sont un reçu
+1663|Les tokens LP comme reçu
+1664|Assistant linguistique
+1665|Pénalité de retard
+1666|Les pénalités de retard jouent dans le même sens. Une mensualité manquée ajoute une pénalité, et la pénalité rend le paiement suivant plus difficile.
+1667|Plus tard, les banques règlent
+1668|Dernières
+1669|Derniers articles
+1670|Latham & Watkins : le GENIUS Act de 2025
+1671|Apprendre
+1672|Apprendre et gagner
+1673|Apprenez et gagnez du TMN
+1674|Apprenez et gagnez du TMN | Ditoman
+1675|Comprendre les systèmes
+1676|Découvrez pourquoi Bitcoin est né d'une méfiance croissante envers les systèmes centralisés.
+1677|Découvrez pourquoi Bitcoin a été créé, la crise de confiance derrière lui et comment les systèmes décentralisés ont changé l'avenir de la valeur et des réseaux.
+1678|Découvrez pourquoi des règles visibles et la vérification comptent dans les réseaux numériques.
+1679|Apprendre · Relier · Évoluer
+1680|Apprendre • Relier • Évoluer • Ditoman.com
+1681|Apprendre et gagner
+1682|Programme pilote « apprendre et gagner »
+1683|Apprendre. Relier. Évoluer.
+1684|Objectifs d'apprentissage
+1685|Points d'apprentissage
+1686|Parcours d'apprentissage
+1687|Prêteur en dernier ressort
+1688|Prêter :
+1689|Leçon 01 | Qu'est-ce que la blockchain ? | Ditoman Learn
+1690|Leçon 01 • Série Fondations
+1691|Leçon 02 | Pourquoi la blockchain compte | Ditoman Learn
+1692|Leçon 02 • Série Fondations
+1693|Leçon 03 | Pourquoi Bitcoin a été créé | Ditoman Learn
+1694|Leçon 03 • Série Fondations
+1695|Leçon 04 • Série Fondations
+1696|La leçon 05 passe de l'histoire à la pratique :
+1697|La leçon 05 a montré que TMN échouait à deux des cinq vérifications : offre concentrée et liquidité non verrouillée. Avec le verrouillage d'aujourd'hui, la liquidité détenue dans le portefeuille principal du projet est verrouillée jusqu'en octobre 2027. La concentration de l'offre reste un sujet ouvert, et nous en rendrons compte à mesure qu'elle évolue.
+1698|Leçon 05 | Comment vérifier n'importe quel token avant d'y toucher | Ditoman Learn

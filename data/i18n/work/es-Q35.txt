@@ -1,0 +1,74 @@
+2954|Qué significa
+2955|Qué es la liquidez
+2956|¿Qué hace que el interés se componga?
+2957|¿Qué hace que el dinero sea «programable»?
+2958|¿Qué hace que el dinero sea «programable»?
+2959|Lo que cobran los mineros
+2960|Lo que ganan los mineros cuando se agoten las recompensas
+2961|Lo que mueve un mercado es la sorpresa: la distancia entre lo esperado y lo que realmente pasó. Una bajada de tipos que todos esperaban puede cambiar muy poco. Un mantenimiento que nadie esperaba puede mover mucho.
+2962|Lo que mueve los mercados, cada día
+2963|Qué es la banca abierta
+2964|¿A qué problema respondía Bitcoin?
+2965|¿Qué no debe pegarse nunca en un asistente de IA?
+2966|Lo que cambian las stablecoins
+2967|Lo que prueban los Emiratos, dónde encaja en Irán, cómo protege el suelo y qué empresas iraníes ya lo hacen.
+2968|Lo que el halving no te dice
+2969|Qué es el halving
+2970|Lo que hacen es asegurarse de que la decisión es realmente tuya: comprendida, bien dimensionada y tomada con una idea clara de lo que sería equivocarse.
+2971|Lo que hacen es eliminar las formas más comunes y evitables de perder dinero: tokens que no se podían leer, oferta que no se veía, poderes que no se sabía que existían y salidas que nunca estuvieron ahí.
+2972|Lo que el tiempo hace con la diferencia
+2973|Qué hacer con todo esto
+2974|Qué sacar de esto
+2975|¿Qué suele proteger un saldo en un exchange si el exchange quiebra?
+2976|Lo que hicimos con TMN
+2977|Lo que funciona hoy, lo que viene y los nuevos riesgos.
+2978|¿Qué me demostraría que estaba equivocado?
+2979|Lo que tienes
+2980|Lo que debes saber
+2981|Cuando la electricidad se vuelve negativa
+2982|Cuando acercas la tarjeta, ¿cómo se mueve el dinero?
+2983|Cuando acercas la tarjeta, ¿cómo se mueve el dinero? Imagen de la lección de Ditoman
+2984|Cuando acercas la tarjeta, ¿cómo se mueve el dinero? | Ditoman Learn
+2985|Cuando un banco central baja los tipos de interés
+2986|Cuando una deuda no se amortiza, el interés se suma a la deuda, y la próxima vez el interés se cobra sobre la cantidad mayor. Eso es
+2987|Cuando se añade un nuevo token a un exchange
+2988|Cuando una tienda hace descuento por pagar en efectivo, o añade un recargo por tarjeta, esta comisión suele ser la razón.
+2989|Cuando un emisor dice que un token está totalmente respaldado, la afirmación puede venir de un informe llamado atestación. Una atestación suele ser una foto de un momento, preparada para una fecha concreta. Una auditoría completa va más a fondo y cubre un periodo más largo. Son herramientas distintas, y un titular rara vez te dice cuál estás leyendo.
+2990|¿Cuándo firmó Woodrow Wilson la Ley de la Reserva Federal?
+2991|¿Cuándo se desbloquea la liquidez bloqueada de TMN?
+2992|Cuando los precios de la electricidad se vuelven negativos
+2993|Cuando la gente imagina perder cripto, piensa en un hacker en una habitación oscura descifrando un código. Rara vez ocurre así. En la mayoría de los casos el propio dueño abre la puerta: escribiendo una frase en una página falsa, aprobando algo sin leerlo o enviando dinero a un nuevo «amigo».
+2994|Cuando se dice «el banco central subió los tipos» o «el banco central imprimió dinero», se habla de él como de una sola persona poderosa. En realidad es una institución con una lista corta de funciones, y cada función tiene una razón.
+2995|Cuando suben los precios, los mismos ingresos compran menos, como mostró la lección 12. Un presupuesto hecho hace seis meses puede estar ya desfasado. Revisa las cifras cuando cambie el coste de lo básico, no solo en una fecha fija.
+2996|Cuando los activos seguros, como los bonos del Estado o los ahorros, pagan más, los activos de riesgo parecen menos atractivos en comparación. El dinero puede ir hacia la seguridad. Cuando los activos seguros pagan menos, el dinero busca rentabilidad en otra parte.
+2997|Cuando alguien retira el beneficio de sus operaciones
+2998|Cuando esa confianza se rompió, surgió una nueva idea.
+2999|Cuando el exchange cierra automáticamente una posición apalancada porque el margen se está agotando
+3000|Cuando los dos bancos no comparten corresponsal, el pago salta por dos o tres bancos seguidos. Cada salto añade tiempo, una comisión y un control de cumplimiento.
+3001|Cuando compares dos ofertas, compáralas sobre la misma base: el mismo periodo y la misma capitalización. Un tipo de reclamo por sí solo no basta.
+3002|Cuando depositas dinero, no se queda en una caja con tu nombre. El banco presta la mayor parte. Lo que tienes es un derecho: el banco te debe esa cantidad y promete pagarla cuando la pidas.
+3003|Cuando veas una afirmación dramática sobre el dinero digital, pregunta tres cosas: ¿es una prueba o el sistema real?, ¿qué país? y ¿qué dice realmente la ley?
+3004|Cuando acercas la tarjeta, el lector envía un mensaje a través del adquirente y la red a tu banco: esta tarjeta, este importe, esta tienda. ¿Está bien?
+3005|Donde la IA ya trabaja en silencio
+3006|¿De dónde sacan los iraníes sus noticias?
+3007|¿Adónde va mi dinero del mes?
+3008|¿Adónde va mi dinero del mes? Imagen de la lección de Ditoman
+3009|¿Adónde va mi dinero del mes? | Ditoman Learn
+3010|¿De dónde sale un tipo de cambio?
+3011|¿De dónde sale un tipo de cambio? Imagen de la lección de Ditoman
+3012|¿De dónde sale un tipo de cambio? | Ditoman Learn
+3013|Dónde viven los iraníes y por qué: un siglo del mapa de población, agua, infraestructura y los próximos 20 años.
+3014|¿Dónde está mi dinero?
+3015|¿Dónde está mi dinero? De la cuenta bancaria a la billetera digital
+3016|¿Dónde está mi dinero? De la cuenta bancaria a la billetera digital, imagen de la lección de Ditoman
+3017|¿Dónde está mi dinero? De la cuenta bancaria a la billetera digital | Ditoman Learn
+3018|Dónde encaja TMN
+3019|Dónde encajan las cripto
+3020|¿Dónde consigo una dirección de billetera?
+3021|¿Por dónde empiezo?
+3022|¿De dónde sacan los iraníes sus noticias?
+3023|¿Hacia dónde desplaza la blockchain la confianza?
+3024|¿Adónde va mi dinero del mes?
+3025|¿Dónde suele estar el dinero cuando usas una app fintech?
+3026|¿Dónde lleva años trabajando la IA en las finanzas?
+3027|¿Dónde se esconde con más frecuencia el coste de una transferencia?

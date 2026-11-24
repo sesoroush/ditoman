@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+
+  <title>Lección 01 | ¿Qué es la blockchain? | Ditoman Learn</title>
+
+  <meta name="description" content="Ditoman Learn, lección 01. ¿Qué es la blockchain? Una lección bilingüe sobre confianza, transparencia, descentralización, seguridad y sistemas del futuro." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+      color: #f4f7f8;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(4, 10, 14, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 3px;
+      box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #7ff5de;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #d8ffff;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7ff5de;
+    }
+
+    .hero {
+      padding: 70px 0 34px;
+    }
+
+    .hero-image {
+      width: 100%;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(127, 245, 222, 0.2);
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+      margin-bottom: 34px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .lesson-badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.1);
+      border: 1px solid rgba(127, 245, 222, 0.22);
+      color: #7ff5de;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 1.1;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      max-width: 850px;
+      color: #b8d7d9;
+      font-size: 1.12rem;
+      margin-bottom: 24px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .meta-box {
+      border-radius: 18px;
+      padding: 16px;
+      background: rgba(127, 245, 222, 0.08);
+      border: 1px solid rgba(127, 245, 222, 0.16);
+    }
+
+    .meta-box span {
+      display: block;
+      color: #7ff5de;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .meta-box strong {
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    .section {
+      padding: 42px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      color: #a7c6c9;
+      margin-bottom: 26px;
+      max-width: 850px;
+    }
+
+    .language-toggle {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+    }
+
+    .lang-button {
+      border: 1px solid rgba(127, 245, 222, 0.32);
+      background: rgba(127, 245, 222, 0.12);
+      color: #7ff5de;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .lang-button.active {
+      background: linear-gradient(90deg, #49e3c2, #2db7ff);
+      color: #041015;
+    }
+
+    .lesson-content {
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 24px;
+      padding: 32px;
+    }
+
+    .lesson-content p {
+      color: #c1dbde;
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .fa {
+      direction: rtl;
+      text-align: right;
+      display: none;
+    }
+
+    .en {
+      display: block;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      color: #ffffff;
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+
+    .card ul {
+      padding-left: 22px;
+      color: #a8c4c7;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+    }
+
+    .quiz-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .quiz-item {
+      background: rgba(8, 18, 24, 0.86);
+      border: 1px solid rgba(78, 227, 206, 0.14);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .quiz-item h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .quiz-item p {
+      color: #a8c4c7;
+      margin-bottom: 8px;
+    }
+
+    .answer {
+      color: #7ff5de !important;
+      font-weight: 700;
+    }
+
+    .instagram-box {
+      background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+      border: 1px solid rgba(127, 245, 222, 0.18);
+      border-radius: 24px;
+      padding: 30px;
+    }
+
+    .instagram-box p {
+      color: #c1dbde;
+      margin-bottom: 18px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: rgba(127, 245, 222, 0.12);
+      border: 1px solid rgba(127, 245, 222, 0.32);
+      color: #7ff5de;
+      font-weight: 700;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 26px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #49e3c2, #2db7ff);
+      color: #041015;
+      font-weight: 700;
+      box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+    }
+
+    footer {
+      border-top: 1px solid rgba(127, 245, 222, 0.12);
+      padding: 28px 0 40px;
+      color: #8fb2b7;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .meta-grid,
+      .grid-two {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .meta-grid,
+      .grid-two {
+        grid-template-columns: 1fr;
+      }
+
+      .lesson-content {
+        padding: 24px;
+      }
+    }
+  </style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson01.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson01.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson01.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson01.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson01.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson01.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson01.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson01.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson01.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson01.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson01.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson01.es.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Lección 01 | ¿Qué es la blockchain? | Ditoman Learn" />
+<meta property="og:description" content="Ditoman Learn, lección 01. ¿Qué es la blockchain? Una lección bilingüe sobre confianza, transparencia, descentralización, seguridad y sistemas del futuro." />
+<meta property="og:url" content="https://ditoman.com/lesson01.es.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson01.es.html#page",
+   "url": "https://ditoman.com/lesson01.es.html",
+   "name": "Lección 01 | ¿Qué es la blockchain? | Ditoman Learn",
+   "description": "Ditoman Learn, lección 01. ¿Qué es la blockchain? Una lección bilingüe sobre confianza, transparencia, descentralización, seguridad y sistemas del futuro.",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Lección 01 | ¿Qué es la blockchain?",
+     "item": "https://ditoman.com/lesson01.es.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.es.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+        <div class="logo-text brand-en">DITOMAN</div>
+        <img src="tmn-logo-256.png" alt="" class="brand-logo">
+        <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+      </a>
+
+      <nav class="nav-links">
+<a href="learn.es.html" class="active">Aprender</a>
+<a href="iran.en.html">Irán</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.es.html">Precios</a>
+<a href="calendar.en.html">Calendario</a>
+<a href="tmn.es.html">TMN</a>
+<a href="index.es.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicaciones</a>
+</nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-image">
+          <img src="lesson01-blockchain.jpg" alt="Qué es la blockchain, imagen de la lección de Ditoman">
+        </div>
+
+        <div lang="en">
+<div class="lesson-badge">Lección 01 • Serie Fundamentos</div>
+
+        <h1>¿Qué es la blockchain?</h1>
+
+        <p class="subtitle">
+          La blockchain no es solo cosa de criptomonedas. Es una nueva forma de incorporar confianza, transparencia y seguridad a los sistemas digitales.
+        </p>
+
+        <div class="meta-grid">
+          <div class="meta-box">
+            <span>Nivel</span>
+            <strong>Principiante</strong>
+          </div>
+
+          <div class="meta-box">
+            <span>Tiempo de lectura</span>
+            <strong>5 minutos</strong>
+          </div>
+
+          <div class="meta-box">
+            <span>Puntos de aprendizaje</span>
+            <strong>10 LP</strong>
+          </div>
+
+          <div class="meta-box">
+            <span>Cuestionario futuro</span>
+            <strong>5 preguntas</strong>
+          </div>
+        </div>
+</div>
+<div lang="fa" dir="rtl">
+<div class="lesson-badge" style="letter-spacing:0">درس ۰۱ • مجموعه مبانی</div>
+<h1>بلاکچین چیست؟</h1>
+<p class="subtitle">بلاکچین فقط به ارز دیجیتال مربوط نیست. روشی تازه برای ساختن اعتماد، شفافیت و امنیت در سیستم‌های دیجیتال است.</p>
+<div class="meta-grid">
+<div class="meta-box"><span style="letter-spacing:0">سطح</span><strong>مقدماتی</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">زمان مطالعه</span><strong>۵ دقیقه</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">امتیاز یادگیری</span><strong>۱۰ امتیاز</strong></div>
+<div class="meta-box"><span style="letter-spacing:0">آزمون آینده</span><strong>۵ سؤال</strong></div>
+</div>
+</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div lang="en">
+<h2 class="section-title">Contenido de la lección</h2>
+        <p class="section-subtitle">
+          Lee la lección en inglés o persa. Esta estructura está pensada para futuros sistemas de cuestionarios, puntuación, reputación y recompensas.
+        </p>
+</div>
+<div lang="fa" dir="rtl">
+<h2 class="section-title">متن درس</h2>
+<p class="section-subtitle">درس را به فارسی یا انگلیسی بخوانید. این ساختار برای آزمون‌ها، امتیازها، اعتبار و سیستم‌های پاداش آینده طراحی شده است.</p>
+</div>
+
+        <div class="language-toggle">
+          <button class="lang-button active" onclick="showLanguage('en')">Inglés</button>
+          <button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+        </div>
+
+        <div class="lesson-content en" id="en-content">
+          <p>La mayoría cree que la blockchain solo va de criptomonedas.</p>
+
+          <p>Pero la blockchain es mucho más que eso.</p>
+
+          <p>En esencia, la blockchain es un sistema para registrar información de forma transparente, segura y difícil de cambiar.</p>
+
+          <p>En lugar de que una autoridad central controle todo el sistema, la blockchain reparte la información por una red. Eso hace el sistema más abierto, más verificable y menos dependiente de un único punto de control.</p>
+
+          <p>Una blockchain puede entenderse como un registro digital de hechos o transacciones. Una vez añadida, la información es muy difícil de cambiar o borrar. Eso genera confianza no porque la gente confíe ciegamente, sino porque el propio sistema se puede comprobar y verificar.</p>
+
+          <p>Por eso importa la blockchain.</p>
+
+          <p>Introduce una nueva forma de construir sistemas donde la transparencia viene de serie, los datos se pueden verificar y el control no está en manos de una sola entidad.</p>
+
+          <p>En los próximos años, entender la blockchain no será útil solo para quien está en las cripto. Será importante para cualquiera que quiera entender la identidad digital, las finanzas, la propiedad, las infraestructuras, las cadenas de suministro, los sistemas de IA y el futuro de la confianza.</p>
+
+          <p>La blockchain no es solo una tecnología.</p>
+
+          <p>Es una nueva forma de construir sistemas.</p>
+        </div>
+
+        <div class="lesson-content fa" id="fa-content">
+          <p>بیشتر مردم فکر می‌کنند بلاکچین فقط مربوط به کریپتو و ارز دیجیتال است.</p>
+
+          <p>اما بلاکچین بسیار بزرگ‌تر از این موضوع است.</p>
+
+          <p>در اصل، بلاکچین یک سیستم برای ثبت اطلاعات است. سیستمی که اطلاعات را شفاف، امن و قابل بررسی نگه می‌دارد و تغییر دادن آن بعد از ثبت شدن بسیار سخت است.</p>
+
+          <p>در بلاکچین، یک نهاد مرکزی همه چیز را کنترل نمی‌کند. اطلاعات میان یک شبکه پخش می‌شود. همین موضوع باعث می‌شود سیستم بازتر، قابل اعتمادتر، و کمتر وابسته به یک نقطه کنترل باشد.</p>
+
+          <p>می‌توان بلاکچین را مثل یک دفتر ثبت دیجیتال تصور کرد. هر اطلاعات یا تراکنشی که در آن ثبت شود، بعداً به راحتی قابل تغییر یا حذف نیست. به همین دلیل اعتماد در بلاکچین فقط بر پایه اعتماد به افراد نیست، بلکه بر پایه قابلیت بررسی و تأیید خود سیستم ساخته می‌شود.</p>
+
+          <p>اهمیت بلاکچین همینجاست.</p>
+
+          <p>بلاکچین راه تازه‌ای برای ساختن سیستم‌هایی معرفی می‌کند که در آن شفافیت از ابتدا وجود دارد، داده‌ها قابل بررسی هستند، و کنترل فقط در دست یک نفر یا یک سازمان نیست.</p>
+
+          <p>در سال‌های آینده، فهم بلاکچین فقط برای افراد فعال در کریپتو مهم نخواهد بود. این موضوع برای درک هویت دیجیتال، اقتصاد، مالکیت، زیرساخت، زنجیره تأمین، هوش مصنوعی، و آینده اعتماد ضروری خواهد شد.</p>
+
+          <p>بلاکچین فقط یک تکنولوژی نیست.</p>
+
+          <p>بلاکچین یک روش جدید برای ساختن سیستم‌هاست.</p>
+        </div>
+      </div>
+    </section>
+
+    <section lang="en" class="section">
+      <div class="container grid-two">
+        <div class="card">
+          <h3>Conceptos clave</h3>
+          <ul>
+            <li>Blockchain</li>
+            <li>Confianza</li>
+            <li>Descentralización</li>
+            <li>Transparencia</li>
+            <li>Seguridad</li>
+            <li>Inmutabilidad</li>
+            <li>Registro digital</li>
+            <li>Verificación</li>
+            <li>Red</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Objetivos de aprendizaje</h3>
+          <ul>
+            <li>Entender qué significa blockchain.</li>
+            <li>Entender la diferencia entre sistemas centralizados y distribuidos.</li>
+            <li>Reconocer por qué importan la transparencia y la seguridad.</li>
+            <li>Entender por qué la blockchain no va solo de cripto.</li>
+            <li>Conectar la blockchain con el futuro de los sistemas digitales.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container grid-two">
+<div class="card">
+<h3>مفاهیم کلیدی</h3>
+<ul style="padding-left:0;padding-right:22px">
+<li>بلاکچین</li>
+<li>اعتماد</li>
+<li>تمرکززدایی</li>
+<li>شفافیت</li>
+<li>امنیت</li>
+<li>تغییرناپذیری</li>
+<li>دفتر ثبت دیجیتال</li>
+<li>تأیید و بررسی</li>
+<li>شبکه</li>
+</ul>
+</div>
+<div class="card">
+<h3>اهداف یادگیری</h3>
+<ul style="padding-left:0;padding-right:22px">
+<li>بفهمیم بلاکچین یعنی چه.</li>
+<li>تفاوت سیستم‌های متمرکز و توزیع‌شده را بشناسیم.</li>
+<li>ببینیم چرا شفافیت و امنیت اهمیت دارند.</li>
+<li>بفهمیم چرا بلاکچین فقط به کریپتو محدود نیست.</li>
+<li>بلاکچین را به آینده سیستم‌های دیجیتال ربط دهیم.</li>
+</ul>
+</div>
+</div>
+</section>
+
+    <section lang="en" class="section">
+      <div class="container">
+        <h2 class="section-title">Banco de preguntas futuro</h2>
+        <p class="section-subtitle">
+          Estas preguntas están preparadas para el futuro sistema de cuestionarios y participación de Ditoman. Más adelante podrían sustentar puntuaciones de aprendizaje, capas de reputación y una posible elegibilidad para recompensas en TMN.
+        </p>
+
+        <div class="quiz-list">
+          <div class="quiz-item">
+            <h3>Pregunta 1</h3>
+            <p>¿Para qué se usa principalmente la blockchain?</p>
+            <p>A. Registrar información de forma transparente y verificable</p>
+            <p>B. Sustituir todas las webs</p>
+            <p>C. Ocultar todas las transacciones para siempre</p>
+            <p>D. Prescindir de internet</p>
+            <p class="answer">Respuesta correcta: A</p>
+          </div>
+
+          <div class="quiz-item">
+            <h3>Pregunta 2</h3>
+            <p>¿Qué significa descentralización en blockchain?</p>
+            <p>A. Una empresa controla todos los registros</p>
+            <p>B. La red la controla un solo banco</p>
+            <p>C. El control y los datos se reparten por una red</p>
+            <p>D. Los usuarios no pueden verificar nada</p>
+            <p class="answer">Respuesta correcta: C</p>
+          </div>
+
+          <div class="quiz-item">
+            <h3>Pregunta 3</h3>
+            <p>¿Cuáles de estas son características clave de la blockchain?</p>
+            <p>A. Transparencia</p>
+            <p>B. Inmutabilidad</p>
+            <p>C. Control centralizado</p>
+            <p>D. Verificación</p>
+            <p class="answer">Respuestas correctas: A, B, D</p>
+          </div>
+
+          <div class="quiz-item">
+            <h3>Pregunta 4</h3>
+            <p>Verdadero o falso: la blockchain solo sirve para las criptomonedas.</p>
+            <p class="answer">Respuesta correcta: Falso</p>
+          </div>
+
+          <div class="quiz-item">
+            <h3>Pregunta 5</h3>
+            <p>¿Por qué crea confianza la blockchain?</p>
+            <p>A. Porque nadie puede ver los datos</p>
+            <p>B. Porque el sistema se puede comprobar y verificar</p>
+            <p>C. Porque una persona controla toda la red</p>
+            <p>D. Porque elimina toda la tecnología de las finanzas</p>
+            <p class="answer">Respuesta correcta: B</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container">
+<h2 class="section-title">بانک سؤالات آزمون آینده</h2>
+<p class="section-subtitle">این سؤال‌ها برای سیستم آزمون و مشارکت آینده دیتومان آماده شده‌اند. ممکن است بعدها پایه امتیاز یادگیری، لایه‌های اعتبار و احتمالاً شرایط دریافت پاداش TMN باشند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3>سؤال ۱</h3>
+<p>بلاکچین بیشتر برای چه کاری استفاده می‌شود؟</p>
+<p>الف. ثبت اطلاعات به شکلی شفاف و قابل بررسی</p>
+<p>ب. جایگزین کردن همه وب‌سایت‌ها</p>
+<p>ج. پنهان کردن همیشگی همه تراکنش‌ها</p>
+<p>د. حذف نیاز به اینترنت</p>
+<p class="answer">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۲</h3>
+<p>تمرکززدایی در بلاکچین یعنی چه؟</p>
+<p>الف. یک شرکت همه سوابق را کنترل می‌کند</p>
+<p>ب. شبکه در اختیار یک بانک است</p>
+<p>ج. کنترل و داده‌ها میان یک شبکه پخش شده‌اند</p>
+<p>د. کاربران نمی‌توانند چیزی را بررسی کنند</p>
+<p class="answer">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۳</h3>
+<p>کدام‌یک از این‌ها از ویژگی‌های اصلی بلاکچین هستند؟</p>
+<p>الف. شفافیت</p>
+<p>ب. تغییرناپذیری</p>
+<p>ج. کنترل متمرکز</p>
+<p>د. قابلیت بررسی و تأیید</p>
+<p class="answer">پاسخ‌های درست: الف، ب، د</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۴</h3>
+<p>درست یا نادرست: بلاکچین فقط برای ارز دیجیتال کاربرد دارد.</p>
+<p class="answer">پاسخ درست: نادرست</p>
+</div>
+<div class="quiz-item">
+<h3>سؤال ۵</h3>
+<p>چرا بلاکچین اعتماد ایجاد می‌کند؟</p>
+<p>الف. چون هیچ‌کس هرگز داده‌ها را نمی‌بیند</p>
+<p>ب. چون سیستم قابل بررسی و تأیید است</p>
+<p>ج. چون یک نفر کل شبکه را کنترل می‌کند</p>
+<p>د. چون همه فناوری‌ها را از حوزه مالی حذف می‌کند</p>
+<p class="answer">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+    <section lang="en" class="section">
+      <div class="container">
+        <div class="instagram-box">
+          <h2 class="section-title">Resumen en Instagram</h2>
+
+          <p>
+            Esta lección se presentó primero en el Instagram de Ditoman como parte de la Serie Educación. La versión de Instagram ofrece un breve resumen visual, y esta página ofrece la versión completa.
+          </p>
+
+          <div class="cta-row">
+            <a class="cta" href="https://www.instagram.com/reel/DXZzUCqNvKx/" target="_blank" rel="noopener noreferrer">Ver en Instagram</a>
+            <a class="button" href="learn.es.html">Volver a Aprender</a>
+            <a class="button" href="lesson02.es.html">Siguiente lección</a>
+            <a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Únete en Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="section" lang="fa" dir="rtl">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title">خلاصه اینستاگرام</h2>
+<p>خلاصه تصویری این درس ابتدا در اینستاگرام دیتومان منتشر شد. نسخه اینستاگرام یک معرفی کوتاه و تصویری است، اما این صفحه نسخه کامل آموزشی آن است.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/reel/DXZzUCqNvKx/" target="_blank" rel="noopener noreferrer">مشاهده در اینستاگرام</a>
+<a class="button" href="learn.es.html">بازگشت به آموزش</a>
+<a class="button" href="lesson02.es.html">درس بعدی</a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">عضویت در تلگرام</a>
+</div>
+</div>
+</div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span lang="en">Ditoman Learn • Construido con estructura, impulsado por el descubrimiento.</span><span lang="fa" dir="rtl">آموزش دیتومان • بر پایه ساختار، با انگیزه کشف.</span>
+    </div>
+  </footer>
+
+  <script>
+    function showLanguage(language) {
+      const englishContent = document.getElementById("en-content");
+      const persianContent = document.getElementById("fa-content");
+      const buttons = document.querySelectorAll(".lang-button");
+
+      buttons.forEach(button => button.classList.remove("active"));
+
+      if (language === "en") {
+        englishContent.style.display = "block";
+        persianContent.style.display = "none";
+        buttons[0].classList.add("active");
+      } else {
+        englishContent.style.display = "none";
+        persianContent.style.display = "block";
+        buttons[1].classList.add("active");
+      }
+    }
+  </script>
+
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-es.js?v=20261121a"></script>
+</body>
+</html>

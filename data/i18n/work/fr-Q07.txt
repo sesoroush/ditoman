@@ -1,0 +1,59 @@
+623|Banques. États. Systèmes.
+624|=
+625|=
+626|Taux directeur
+627|Les bases
+628|Soyez honnête, car vous seul connaîtrez la réponse.
+629|Comme tous les tokens conformes parlent la même langue, un portefeuille ou une application qui prend en charge la norme peut fonctionner avec n'importe lequel sans code spécial.
+630|Parce que cela montre comment Bitcoin a grandi au-delà d'une seule personne.
+631|Parce qu'il reposait sur des règles ouvertes, la vérification et la participation au réseau.
+632|Comme la récompense continue d'être divisée par deux, le total est limité. L'offre maximale est de 21 millions de bitcoins. Le dernier bitcoin est attendu vers 2140, au bloc 6 930 000.
+633|Comme les trois échouent de façons différentes, ils ne chutent pas toujours ensemble. Détenir plus d'un type d'actif, en montants adaptés au moment où vous aurez besoin de l'argent, s'appelle la
+634|Avant de changer quoi que ce soit, passez un mois à simplement observer. Notez chaque paiement ou utilisez la liste que votre application bancaire tient déjà.
+635|Avant d'appuyer sur Envoyer
+636|Avant de lui faire confiance, posez trois questions : qui l'émet ? Qu'est-ce qui le garantit, et est-ce publié ? Pouvez-vous le rembourser en dollars ?
+637|Avant que votre marge n'atteigne zéro, la plateforme ferme automatiquement votre position en la vendant au marché. C'est une
+638|Débutant
+639|Être conservé sur un téléphone
+640|Être dépensé avec une carte bancaire
+641|Médicaments biosimilaires, réactifs de laboratoire et protéines recombinantes
+642|=
+643|=
+644|Le bitcoin divisé par deux depuis son sommet
+645|L'origine de Bitcoin
+646|Livre blanc de Bitcoin
+647|Bitcoin est devenu plus fort parce qu'il n'est pas resté dépendant d'un fondateur ou d'une organisation centrale.
+648|Guide du développeur Bitcoin : les transactions
+649|Bitcoin a un calendrier d'émission fixe inscrit dans ses règles. Cette leçon montre comment la récompense est divisée par deux, combien de coins cela laisse et pourquoi le dernier bitcoin arrive vers l'année
+650|Bitcoin a un calendrier d'émission fixe inscrit dans ses règles. Cette leçon montre comment la récompense est divisée par deux, combien de coins cela laisse et pourquoi le dernier bitcoin arrive vers l'année 2140.
+651|Le bitcoin a une limite fixe de 21 millions d'unités, donc personne ne peut en imprimer davantage. C'est une vraie différence avec la monnaie ordinaire. Mais une offre fixe ne signifie pas un prix stable. Le bitcoin a chuté de plus de moitié plusieurs fois. Il peut protéger le pouvoir d'achat sur une période et le détruire sur une autre.
+652|Le bitcoin a une offre fixe mais un prix instable. Un stablecoin suit le dollar et dépend de son émetteur.
+653|Le bitcoin ne s'est échangé avec un volume significatif que lors de trois élections de mi-mandat américaines : 2014, 2018 et 2022. Trois observations ne font pas une tendance. D'autres choses se passaient ces années-là, notamment des changements de taux et le propre cycle d'offre du bitcoin, si bien qu'il est impossible de dire quoi a causé quoi.
+654|Bitcoin a introduit des systèmes où la confiance pouvait passer des institutions à des règles et des réseaux transparents.
+655|Émission de bitcoins par ère
+656|Bitcoin tient un registre de qui possède quoi. Ethereum conserve aussi des programmes. Cette leçon explique ce qu'est un contrat intelligent, avec le distributeur automatique, et ce qu'il peut et ne peut pas
+657|Bitcoin tient un registre de qui possède quoi. Ethereum conserve aussi des programmes. Cette leçon explique ce qu'est un contrat intelligent, avec le distributeur automatique, et ce qu'il peut et ne peut pas faire.
+658|Mineurs de bitcoin
+659|Bitcoin produit un bloc environ toutes les dix minutes. Beaucoup de réseaux plus récents prennent quelques secondes. Les plateformes attendent souvent plusieurs confirmations avant de créditer un dépôt, c'est pourquoi un transfert peut paraître réussi dans votre portefeuille et rester en attente de l'autre côté.
+660|Bitcoin a remplacé la confiance personnelle par des règles ouvertes, la vérification et la participation au réseau.
+661|Chute du bitcoin, novembre 2026
+662|Bitcoin a montré que la valeur pouvait circuler numériquement sans gardiens centralisés.
+663|Le bitcoin s'échange 24 h/24, et de gros montants peuvent être vendus en quelques minutes sur les grandes plateformes. En pratique, votre propre liquidité dépend toutefois de votre accès à une plateforme et à une banque ou un intermédiaire de l'autre côté.
+664|Bitcoin utilise la preuve de travail. Les mineurs rassemblent les transactions en attente dans un bloc puis cherchent un nombre qui, combiné aux données du bloc et haché, donne un résultat inférieur à une cible. Comme l'explique learnmeabitcoin, il s'agit de hacher l'en-tête du bloc, en double SHA-256, encore et encore jusqu'à passer sous la cible.
+665|Bitcoin est né d'un problème plus profond.
+666|Bitcoin a été lancé en 2009. Satoshi a aidé à construire les premiers logiciels, a échangé avec des développeurs, puis s'est peu à peu retiré de la vie publique.
+667|À quel problème Bitcoin répondait-il principalement ?
+668|Bitcoin n'a pas été créé simplement pour devenir un actif numérique de plus. Il est né d'un problème mondial de confiance plus profond, lié aux institutions, au contrôle, aux autorisations et aux systèmes centralisés.
+669|Bitcoin n'était pas seulement une innovation.
+670|Le bitcoin ne pèse rien, mais le conserver en sécurité suppose de gérer une clé ou de faire confiance à un dépositaire, comme l'a expliqué la leçon 13.
+671|Bitcoin • Halving
+672|Le PDG actuel de Bitcoin
+673|Le réseau Bitcoin ne dépend d'aucun gouvernement ni d'aucune entreprise (leçons 01 à 04). Son prix, c'est autre chose. Beaucoup d'investisseurs détiennent à la fois des actions et de la crypto, et quand ils veulent moins de risque, ils vendent un peu des deux. Un réseau peut être indépendant tandis que son prix suit l'humeur des mêmes personnes.
+674|L'offre de bitcoins est fixe. Qu'est-ce que cela signifie pour son prix ?
+675|Bitcoin, Ether et USDT pour les particuliers uniquement via des intermédiaires agréés, avec un plafond de 300 000 roubles.
+676|Bitcoin : un système de paiement électronique pair-à-pair (livre blanc)
+677|Fonction de liste noire
+678|Bloc et confirmation
+679|Explorateur de blocs
+680|Récompense de bloc
+681|Les récompenses de bloc diminuent, mais les frais de transaction restent. À long terme, le réseau doit être financé par les frais. Que cela fonctionne est une question ouverte, pas une promesse.

@@ -1,0 +1,59 @@
+623|Bancos. Governos. Sistemas.
+624|=
+625|=
+626|Taxa de juro de referência
+627|Noções básicas
+628|Seja honesto, porque só você saberá a resposta.
+629|Como todos os tokens conformes falam a mesma língua, uma carteira ou aplicação que suporte a norma funciona com qualquer um deles sem código especial.
+630|Porque mostra como a Bitcoin cresceu para além de uma pessoa.
+631|Porque assentava em regras abertas, verificação e participação na rede.
+632|Como a recompensa continua a cair para metade, o total é limitado. A oferta máxima é de 21 milhões de bitcoin. O último bitcoin é esperado por volta de 2140, no bloco 6 930 000.
+633|Como os três falham de formas diferentes, nem sempre caem juntos. Ter mais de um tipo de ativo, em quantias ajustadas a quando vai precisar do dinheiro, chama-se
+634|Antes de mudar alguma coisa, passe um mês só a observar. Anote cada pagamento ou use a lista que a aplicação do banco já guarda.
+635|Antes de carregar em Enviar
+636|Antes de confiar numa, pergunte três coisas: quem a emite? O que a respalda, e isso é publicado? Pode resgatá-la em dólares?
+637|Antes de a sua margem chegar a zero, a corretora fecha a posição automaticamente, vendendo-a a mercado. Isto é uma
+638|Iniciante
+639|Ser guardado num telemóvel
+640|Ser gasto com um cartão bancário
+641|Medicamentos biossimilares, reagentes de laboratório e proteínas recombinantes
+642|=
+643|=
+644|A Bitcoin caiu para metade do seu pico
+645|Origem da Bitcoin
+646|Livro branco da Bitcoin
+647|A Bitcoin tornou-se mais forte porque não ficou dependente de um fundador ou de uma organização central.
+648|Guia do programador Bitcoin: transações
+649|A Bitcoin tem um calendário de emissão fixo escrito nas suas regras. Esta lição mostra como a recompensa cai para metade, quantas moedas isso deixa e porque o último bitcoin chega por volta do ano
+650|A Bitcoin tem um calendário de emissão fixo escrito nas suas regras. Esta lição mostra como a recompensa cai para metade, quantas moedas isso deixa e porque o último bitcoin chega por volta do ano 2140.
+651|A Bitcoin tem um limite fixo de 21 milhões de moedas, por isso ninguém pode imprimir mais. É uma diferença real face ao dinheiro comum. Mas oferta fixa não significa preço estável. A Bitcoin já caiu mais de metade várias vezes. Pode proteger o poder de compra num período e prejudicá-lo noutro.
+652|A Bitcoin tem oferta fixa mas preço instável. Uma stablecoin segue o dólar e depende do emissor.
+653|A Bitcoin só foi negociada com volume relevante em três eleições intercalares dos EUA: 2014, 2018 e 2022. Três observações não são um padrão. Nesses anos também aconteciam outras coisas, incluindo mudanças nas taxas de juro e o próprio ciclo de oferta da Bitcoin, por isso é impossível dizer o que causou o quê.
+654|A Bitcoin introduziu sistemas em que a confiança podia passar das instituições para regras e redes transparentes.
+655|Emissão de bitcoin por era
+656|A Bitcoin guarda um registo de quem tem o quê. A Ethereum guarda também programas. Esta lição explica o que é um contrato inteligente, com a máquina de venda automática, e o que pode e não pode
+657|A Bitcoin guarda um registo de quem tem o quê. A Ethereum guarda também programas. Esta lição explica o que é um contrato inteligente, com a máquina de venda automática, e o que pode e não pode fazer.
+658|Mineradores de Bitcoin
+659|A Bitcoin produz um bloco a cada dez minutos, mais ou menos. Muitas redes mais recentes levam poucos segundos. As corretoras esperam muitas vezes várias confirmações antes de creditar um depósito, por isso uma transferência pode aparecer como concluída na sua carteira e ainda estar pendente do outro lado.
+660|A Bitcoin substituiu a confiança pessoal por regras abertas, verificação e participação na rede.
+661|Venda forte de bitcoin, novembro de 2026
+662|A Bitcoin mostrou que o valor podia circular digitalmente sem guardiões centralizados.
+663|A Bitcoin negoceia 24 horas por dia, e grandes quantias podem ser vendidas em minutos nas grandes corretoras. Na prática, porém, a sua liquidez depende do seu acesso a uma corretora e a um banco ou intermediário do outro lado.
+664|A Bitcoin usa prova de trabalho. Os mineradores juntam transações pendentes num bloco e tentam encontrar um número que, combinado com os dados do bloco e passado pelo hash, dê um resultado abaixo de um alvo. Como explica o learnmeabitcoin, isto significa fazer o hash do cabeçalho do bloco, com duplo SHA-256, vezes sem conta até um resultado ficar abaixo do alvo.
+665|A Bitcoin nasceu de um problema mais profundo.
+666|A Bitcoin foi lançada em 2009. Satoshi ajudou a construir o software inicial, comunicou com programadores e depois foi desaparecendo da atividade pública.
+667|A Bitcoin foi sobretudo uma resposta a que problema?
+668|A Bitcoin não foi criada apenas para ser mais um ativo digital. Surgiu de um problema global mais profundo de confiança, envolvendo instituições, controlo, autorização e sistemas centralizados.
+669|A Bitcoin não foi apenas inovação.
+670|A Bitcoin não pesa nada, mas guardá-la em segurança significa gerir uma chave ou confiar num custodiante, como explicou a lição 13.
+671|Bitcoin • Halving
+672|O atual CEO da Bitcoin
+673|A rede Bitcoin não depende de nenhum governo nem empresa (lições 01 a 04). O preço é outra questão. Muitos investidores têm ações e cripto, e quando querem menos risco vendem um pouco de ambos. Uma rede pode ser independente enquanto o seu preço se move com o humor das mesmas pessoas.
+674|A oferta da Bitcoin é fixa. O que significa isso para o preço?
+675|Bitcoin, Ether e USDT para o retalho apenas através de intermediários licenciados, com um limite de 300 000 rublos.
+676|Bitcoin: um sistema de dinheiro eletrónico entre pares (livro branco)
+677|Função de lista negra
+678|Bloco e confirmação
+679|Explorador de blocos
+680|Recompensa por bloco
+681|As recompensas por bloco diminuem, mas as comissões de transação ficam. A longo prazo, a ideia é que a rede seja paga pelas comissões. Se isso resulta é uma questão em aberto, não uma promessa.

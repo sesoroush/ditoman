@@ -1,0 +1,135 @@
+2010|Petroquímica
+2011|Farmacéutica
+2012|Fases, no fechas. El whitepaper evita a propósito promesas de calendario que no se puedan cumplir.
+2013|Fases, no fechas. Informamos del progreso con honestidad, incluido lo que no funcionó.
+2014|Phishing
+2015|Foto:
+2016|Los dólares físicos y el oro deben guardarse en un lugar seguro frente a robos, incendios y daños. Los billetes gastados o antiguos pueden ser más difíciles de vender.
+2017|Elige cualquier stablecoin que conozcas y sigue estos seis pasos. Lleva unos diez minutos.
+2018|Guía ilustrada y vídeo para SafePal, Trust Wallet, MetaMask y TokenPocket
+2019|Pila
+2020|Piloto frente a lanzamiento
+2021|Registro PinkLock #2089923
+2022|Registro PinkLock #2089923, bloqueo de liquidez TMN/WBNB
+2023|Sitúa TMN correctamente.
+2024|Planifica una revisión mensual de diez minutos.
+2025|Planificar:
+2026|Plataformas, fintech, empresas del conocimiento, salud
+2027|Inflación interanual
+2028|La inflación interanual compara los precios de este mes con…
+2029|Gránulos de polietileno, el producto principal de Arya Sasol (foto de muestra)
+2030|Esquemas Ponzi y piramidales
+2031|Población
+2032|Português
+2033|Português
+2034|Tamaño de la posición
+2035|Publicaciones
+2036|Libra
+2037|La presión para actuar antes de pensar es un rasgo común de la manipulación
+2038|Anterior
+2039|Lección anterior
+2040|Precio
+2041|Precio (USD)
+2042|Historial de precios | Dólar, oro e informes diarios del mercado | Ditoman
+2043|Cesta de precios (IPC)
+2044|Historial de precios.
+2045|Precio en dólares
+2046|Precio en euros
+2047|Precios
+2048|Los precios cambian, así que el presupuesto también
+2049|Capital
+2050|Privacidad:
+2051|Clave privada
+2052|Programabilidad:
+2053|Dinero programable
+2054|Prueba de participación
+2055|Prueba de participación (Ethereum)
+2056|Prueba de participación: validadores
+2057|Prueba de participación: los validadores arriesgan dinero y pueden ser penalizados (slashing).
+2058|Prueba de trabajo
+2059|Prueba de trabajo (Bitcoin)
+2060|Prueba de trabajo frente a prueba de participación
+2061|Prueba de trabajo: los mineros gastan energía calculando hashes hasta que un resultado queda por debajo del objetivo.
+2062|Prueba de trabajo: minería
+2063|Protocolo
+2064|Proxy (actualizable)
+2065|La información pública sobre el piloto es limitada: no hay cifras verificadas de forma independiente sobre cuántas personas lo usan, ni fecha pública para un lanzamiento nacional. Por ahora es una prueba, no un dinero que manejen la mayoría de los iraníes.
+2066|Registros públicos de bloqueo
+2067|Publicado cada noche a las 20:00, hora de Teherán, en
+2068|Pasta y papel; Guilán
+2069|Dicho de otro modo, una gran parte de los adultos del país más rico del mundo tendría problemas ante una pequeña sorpresa. Tener una reserva es de sentido común, pero no es lo común.
+2070|Cuarto de moneda
+2071|Pregunta 01
+2072|Pregunta 02
+2073|Pregunta 03
+2074|Pregunta 04
+2075|Pregunta 05
+2076|Pregunta 1
+2077|Pregunta 1: ¿cuánto oscila el precio?
+2078|Pregunta 2
+2079|Pregunta 2: ¿con qué facilidad se vende?
+2080|Pregunta 3
+2081|Pregunta 3: ¿cuánto cuesta guardarlo?
+2082|Pregunta 4
+2083|Pregunta 4: ¿qué puede salir mal?
+2084|Pregunta 5
+2085|Preguntas
+2086|Cuestionario
+2087|RTE News: condenado el fundador de FTX por la pérdida de fondos de clientes (28 de marzo de 2024)
+2088|Rango
+2089|Tipo
+2090|Los cambios de tipos pueden fortalecer o debilitar el dólar estadounidense, y la mayoría de las cripto cotizan en dólares. Un dólar más fuerte puede pesar sobre los precios medidos en dólares. Este efecto es real, pero poco fiable.
+2091|Tipo frente a rendimiento
+2092|Leer un registro de bloqueo y comprobar el par, la cantidad, la fecha y la parte del pool.
+2093|Leer un informe de reservas paso a paso y escribir un veredicto razonado.
+2094|Leído automáticamente de datos públicos de exchanges, o directamente del pool de PancakeSwap cuando ningún agregador lista TMN.
+2095|Leído directamente del pool de PancakeSwap V2 en BNB Smart Chain (
+2096|Leer en persa (PDF)
+2097|Leer lección
+2098|Lee diez lecciones, aprueba un test de diez preguntas y recibe 500.000 TMN, para las primeras 1.000 personas.
+2099|Lee diez lecciones, aprueba un test de diez preguntas y recibe 500.000 TMN, para las primeras 1.000 personas. Empieza aquí
+2100|Lee diez lecciones, aprueba el test, recibe TMN
+2101|Lee el código del contrato en busca de impuestos de transferencia, funciones de pausa o la capacidad de bloquear direcciones concretas. Algunos tokens están hechos para que comprar funcione con normalidad pero vender no.
+2102|Leer la lección
+2103|Lee la lección en inglés o persa.
+2104|Lee la lección en inglés o persa. Esta lección explica por qué la blockchain no va solo de cripto, sino de confianza, verificación y de cómo se construyen los sistemas del futuro.
+2105|Lee la lección en inglés o persa. Esta estructura está pensada para futuros sistemas de cuestionarios, puntuación, reputación y recompensas.
+2106|Lee la penalización antes de necesitar saberla.
+2107|Leer la historia
+2108|Leer las diez lecciones
+2109|Leer el whitepaper
+2110|Leer el whitepaper (PDF)
+2111|Tiempo de lectura
+2112|¿Listo para probar una billetera personal?
+2113|Logros iraníes reales
+2114|¿Real o exagerado?
+2115|Rendimiento real
+2116|Primero, comprender de verdad.
+2117|Reconocer restricciones ocultas escritas en un contrato.
+2118|Reconocer los cinco patrones de estafa más comunes.
+2119|Reconocer la urgencia como señal de alarma y no como oportunidad.
+2120|Reconocer por qué tres casos históricos no forman un patrón.
+2121|Reconocimiento
+2122|Reconocer por qué importan la transparencia y la seguridad.
+2123|Reconocer por qué importan la transparencia y la verificación.
+2124|Registrar información de forma transparente y verificable
+2125|Frase de recuperación
+2126|Estafa de recuperación
+2127|Reciclar baterías de litio solo con agua
+2128|Reciclar baterías de litio con agua
+2129|Reembolso
+2130|Reembolso: la prueba que más importa
+2131|Reponer el fondo
+2132|Reembolsos y disputas:
+2133|Remesa
+2134|Eliminar la necesidad de internet
+2135|Renunciado
+2136|Alquila el Sol
+2137|Alquila el Sol: luz solar desde el espacio por la noche
+2138|Sustituir todos los sitios web
+2139|Informes, lecciones e historias esperanzadoras, cada día en los canales de Ditoman.
+2140|Informe de investigación
+2141|Respaldo en reservas
+2142|Reservas
+2143|Reservas:
+2144|Recursos y minería

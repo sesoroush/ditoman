@@ -1,0 +1,74 @@
+2954|Was es bedeutet
+2955|Was Liquidität ist
+2956|Was lässt Zinsen sich verzinsen?
+2957|Was macht Geld „programmierbar“?
+2958|Was macht Geld „programmierbar“?
+2959|Was Miner bezahlt bekommen
+2960|Was Miner verdienen, wenn die Belohnungen auslaufen
+2961|Was einen Markt bewegt, ist die Überraschung: die Lücke zwischen Erwartung und tatsächlichem Ereignis. Eine Zinssenkung, die alle erwartet haben, ändert oft wenig. Ein Stillhalten, das niemand erwartet hat, kann viel bewegen.
+2962|Was die Märkte bewegt, jeden Tag
+2963|Was Open Banking ist
+2964|Auf welches Problem reagierte Bitcoin?
+2965|Was sollte man nie in einen KI-Assistenten einfügen?
+2966|Was Stablecoins verändern
+2967|Was die VAE testen, wo es im Iran passt, wie es den Boden schützt und welche iranischen Unternehmen es schon tun.
+2968|Was das Halving Ihnen nicht sagt
+2969|Was das Halving ist
+2970|Sie sorgen dafür, dass die Entscheidung wirklich Ihre ist: verstanden, richtig bemessen und getroffen mit einer klaren Vorstellung davon, wie ein Irrtum aussähe.
+2971|Sie beseitigen die häufigsten und vermeidbarsten Arten, Geld zu verlieren: Tokens, die man nicht lesen konnte, Angebot, das man nicht sah, Befugnisse, von denen man nichts wusste, und Ausstiege, die es nie gab.
+2972|Was die Zeit mit der Lücke macht
+2973|Was man mit all dem macht
+2974|Was man daraus mitnimmt
+2975|Was schützt ein Börsenguthaben normalerweise, wenn die Börse pleitegeht?
+2976|Was wir mit TMN gemacht haben
+2977|Was heute funktioniert, was kommt und die neuen Risiken.
+2978|Was würde mir zeigen, dass ich falschlag?
+2979|Was Sie halten
+2980|Was Sie wissen sollten
+2981|Wenn Strom negativ wird
+2982|Wenn Sie Ihre Karte auflegen, wie bewegt sich das Geld?
+2983|Wenn Sie Ihre Karte auflegen, wie bewegt sich das Geld? Ditoman-Lektionsbild
+2984|Wenn Sie Ihre Karte auflegen, wie bewegt sich das Geld? | Ditoman Learn
+2985|Wenn eine Zentralbank die Zinsen senkt
+2986|Wird eine Schuld nicht getilgt, werden die Zinsen zur Schuld addiert, und beim nächsten Mal werden Zinsen auf den größeren Betrag berechnet. Das ist
+2987|Wenn ein neuer Token an einer Börse aufgenommen wird
+2988|Wenn ein Geschäft Rabatt für Barzahlung gibt oder einen Kartenaufschlag verlangt, ist meist diese Gebühr der Grund.
+2989|Wenn ein Herausgeber sagt, ein Token sei voll gedeckt, kann die Aussage aus einem Bericht namens Bestätigung (Attestation) stammen. Eine Bestätigung ist meist eine Momentaufnahme zu einem bestimmten Datum. Eine vollständige Prüfung geht tiefer und deckt einen längeren Zeitraum ab. Das sind verschiedene Werkzeuge, und eine Schlagzeile verrät selten, welches Sie gerade lesen.
+2990|Wann unterzeichnete Woodrow Wilson den Federal Reserve Act?
+2991|Wann wird die gesperrte TMN-Liquidität freigegeben?
+2992|Wenn Strompreise negativ werden
+2993|Wenn Menschen sich vorstellen, Krypto zu verlieren, denken sie an einen Hacker im dunklen Raum, der einen Code knackt. So passiert es selten. Meist öffnet der Besitzer selbst die Tür: indem er eine Phrase auf einer falschen Seite eintippt, etwas ungelesen genehmigt oder einem neuen „Freund“ Geld schickt.
+2994|Wenn es heißt „Die Zentralbank hat die Zinsen erhöht“ oder „Die Zentralbank hat Geld gedruckt“, klingt es wie eine einzelne mächtige Person. Tatsächlich ist sie eine Institution mit einer kurzen Liste von Aufgaben, und jede hat ihren Grund.
+2995|Steigen die Preise, kauft dasselbe Einkommen weniger, wie Lektion 12 zeigte. Ein vor sechs Monaten erstelltes Budget kann schon veraltet sein. Prüfen Sie die Zahlen, wenn sich die Kosten des Grundbedarfs ändern, nicht nur an einem festen Datum.
+2996|Wenn sichere Anlagen wie Staatsanleihen oder Sparguthaben mehr abwerfen, wirken riskante Anlagen im Vergleich weniger attraktiv. Geld kann in die Sicherheit wandern. Werfen sichere Anlagen weniger ab, sucht Geld anderswo Rendite.
+2997|Wenn jemand seinen Handelsgewinn abhebt
+2998|Als dieses Vertrauen zerbrach, entstand eine neue Idee.
+2999|Wenn die Börse eine gehebelte Position automatisch schließt, weil die Margin aufgebraucht ist
+3000|Haben die beiden Banken keine gemeinsame Korrespondenzbank, springt die Zahlung über zwei oder drei Banken nacheinander. Jeder Sprung kostet Zeit, eine Gebühr und eine Compliance-Prüfung.
+3001|Wenn Sie zwei Angebote vergleichen, dann auf gleicher Basis: gleicher Zeitraum und gleiche Verzinsung. Ein Lockzins allein reicht nicht.
+3002|Wenn Sie Geld einzahlen, liegt es nicht in einer Kiste mit Ihrem Namen. Die Bank verleiht den Großteil. Was Sie besitzen, ist eine Forderung: Die Bank schuldet Ihnen den Betrag und verspricht, ihn auf Verlangen auszuzahlen.
+3003|Wenn Sie eine dramatische Behauptung über digitales Geld sehen, fragen Sie drei Dinge: Ist es ein Test oder das echte System, welches Land, und was sagt das Gesetz tatsächlich?
+3004|Wenn Sie die Karte auflegen, sendet das Lesegerät über den Acquirer und das Netzwerk eine Nachricht an Ihre Bank: diese Karte, dieser Betrag, dieses Geschäft. Ist das in Ordnung?
+3005|Wo KI schon still arbeitet
+3006|Woher bekommen Iraner ihre Nachrichten?
+3007|Wohin geht mein Geld im Monat?
+3008|Wohin geht mein Geld im Monat? Ditoman-Lektionsbild
+3009|Wohin geht mein Geld im Monat? | Ditoman Learn
+3010|Woher kommt ein Wechselkurs?
+3011|Woher kommt ein Wechselkurs? Ditoman-Lektionsbild
+3012|Woher kommt ein Wechselkurs? | Ditoman Learn
+3013|Wo Iraner leben und warum: ein Jahrhundert Bevölkerungskarte, Wasser, Infrastruktur und die nächsten 20 Jahre.
+3014|Wo ist mein Geld?
+3015|Wo ist mein Geld? Vom Bankkonto zur digitalen Wallet
+3016|Wo ist mein Geld? Vom Bankkonto zur digitalen Wallet, Ditoman-Lektionsbild
+3017|Wo ist mein Geld? Vom Bankkonto zur digitalen Wallet | Ditoman Learn
+3018|Wo TMN einzuordnen ist
+3019|Wo Krypto einzuordnen ist
+3020|Woher bekomme ich eine Wallet-Adresse?
+3021|Wo fange ich an?
+3022|Woher bekommen Iraner ihre Nachrichten?
+3023|Wohin verlagert die Blockchain Vertrauen?
+3024|Wohin geht mein Geld im Monat?
+3025|Wo liegt das Geld meist, wenn Sie eine Fintech-App nutzen?
+3026|Wo arbeitet KI im Finanzwesen schon seit Jahren?
+3027|Wo verstecken sich die Kosten einer Überweisung am häufigsten?

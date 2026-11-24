@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>¿Qué hace un banco central? | Ditoman Learn</title>
+<meta name="description" content="Casi todos los países tienen uno, y las noticias lo mencionan a diario. Esta lección explica con palabras sencillas qué es un banco central, de dónde salió la idea y cuáles son sus principales funciones" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson26.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson26.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson26.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson26.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson26.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson26.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson26.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson26.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson26.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson26.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson26.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson26.es.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="¿Qué hace un banco central? | Ditoman Learn" />
+<meta property="og:description" content="Casi todos los países tienen uno, y las noticias lo mencionan a diario. Esta lección explica con palabras sencillas qué es un banco central, de dónde salió la idea y cuáles son sus principales funciones" />
+<meta property="og:url" content="https://ditoman.com/lesson26.es.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson26.es.html#page",
+   "url": "https://ditoman.com/lesson26.es.html",
+   "name": "¿Qué hace un banco central? | Ditoman Learn",
+   "description": "Casi todos los países tienen uno, y las noticias lo mencionan a diario. Esta lección explica con palabras sencillas qué es un banco central, de dónde salió la idea y cuáles son sus principales funciones",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "¿Qué hace un banco central?",
+     "item": "https://ditoman.com/lesson26.es.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.es.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.es.html" class="active">Aprender</a>
+<a href="iran.en.html">Irán</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.es.html">Precios</a>
+<a href="calendar.en.html">Calendario</a>
+<a href="tmn.es.html">TMN</a>
+<a href="index.es.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicaciones</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson26-cover.jpg" alt="¿Qué hace un banco central? Imagen de la lección de Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson26-cover-en.jpg" alt="¿Qué hace un banco central? Imagen de la lección de Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Dinero • Bancos centrales</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پول • بانک مرکزی</div>
+<h1 lang="en">¿Qué hace un banco central?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">بانک مرکزی چه کار می‌کند؟</h1>
+<p class="subtitle" lang="en">Casi todos los países tienen uno, y las noticias lo mencionan a diario. Esta lección explica con palabras sencillas qué es un banco central, de dónde salió la idea y cuáles son sus principales funciones.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">تقریباً هر کشوری یکی دارد و خبرها هر روز اسمش را می‌آورند. این درس ساده توضیح می‌دهد بانک مرکزی چیست، ایده‌اش از کجا آمد و کارهای اصلی‌اش کدام‌اند.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Nivel</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Principiante</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Tiempo de lectura</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 minutos</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Puntos de aprendizaje</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Cuestionario</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 preguntas</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Contenido de la lección</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Lee la lección en inglés o persa.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Inglés</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Cuando se dice «el banco central subió los tipos» o «el banco central imprimió dinero», se habla de él como de una sola persona poderosa. En realidad es una institución con una lista corta de funciones, y cada función tiene una razón.</p>
+<h3><span class="check-number">01.</span> Qué es un banco central</h3>
+<p lang="en">Un banco central es una institución pública en el centro del sistema monetario de un país. Los bancos comunes atienden a clientes. El banco central atiende a los bancos, al gobierno y al sistema en su conjunto.</p>
+<h3><span class="check-number">02.</span> Dónde empezó la idea</h3>
+<p lang="en">El banco central más antiguo del mundo es el de Suecia. El museo del Banco de Inglaterra señala que el Riksens Ständers Bank, hoy Sveriges Riksbank, se fundó en 1668 a partir de los restos de un banco anterior quebrado, y lo llama el banco central más antiguo del mundo.</p>
+<p lang="en">El Banco de Inglaterra llegó después, en 1694, creado sobre todo para prestar al gobierno y financiar una guerra. Así que los primeros bancos centrales nacieron de las necesidades de los Estados, no de la teoría.</p>
+<h3><span class="check-number">03.</span> Por qué Estados Unidos llegó tarde</h3>
+<p lang="en">Tras el pánico financiero de 1907, EE. UU. era la única gran potencia financiera sin banco central. El presidente Woodrow Wilson firmó la Ley de la Reserva Federal el 23 de diciembre de 1913, que creó la Reserva Federal.</p>
+<figure class="lz-fig"><figcaption>Tres bancos centrales antiguos</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>Entidad</th>
+<th>Año</th>
+<th>Nota</th>
+</tr></thead><tbody>
+<tr><td>Riksbank de Suecia</td><td>1668</td><td>Descrito como el banco central más antiguo del mundo</td></tr>
+<tr><td>Banco de Inglaterra</td><td>1694</td><td>Creado sobre todo para prestar al gobierno para una guerra</td></tr>
+<tr><td>Reserva Federal de EE. UU.</td><td>1913</td><td>Ley firmada el 23 de diciembre, tras el pánico de 1907</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> Las funciones principales</h3>
+<p lang="en">La propia descripción del Banco de Inglaterra muestra la lista típica.</p>
+<p lang="en"><strong>Dinero y pagos:</strong> emite los billetes y gestiona los sistemas que mueven el dinero entre bancos.</p>
+<p lang="en"><strong>Supervisar a los bancos:</strong> a través de su Prudential Regulation Authority supervisa más de 1.300 entidades, para que un banco en apuros no arrastre al resto.</p>
+<p lang="en"><strong>Tipos de interés:</strong> fija el Bank Rate, el coste base del crédito que influye en todos los demás tipos.</p>
+<p lang="en"><strong>Reservas:</strong> custodia las reservas de oro del país.</p>
+<h3><span class="check-number">05.</span> La función de estabilidad de precios</h3>
+<p lang="en">Los tipos de interés sirven a un objetivo. En el Reino Unido, el gobierno fija el objetivo de inflación del Banco en el 2% anual, medido por los precios al consumo. Subir el tipo tiende a enfriar el gasto y la subida de precios; bajarlo tiende a animar el crédito y el gasto.</p>
+<p lang="en">La lección 12 mostró por qué importan los precios estables: la subida de precios erosiona lo que compra un sueldo. El banco central es la institución encargada de que esa erosión sea pequeña y previsible.</p>
+<h3><span class="check-number">06.</span> Prestamista de última instancia</h3>
+<p lang="en">En un pánico, un banco sano puede quedarse de repente sin efectivo porque todos quieren su dinero a la vez. El banco central puede prestarle contra buenas garantías. Esa es la idea del «banco de los bancos».</p>
+<h3><span class="check-number">07.</span> Qué no hace</h3>
+<p lang="en">Un banco central no lleva tu cuenta ni guarda tus ahorros. Eso lo hacen los bancos comerciales. Tampoco controla todos los precios. Influye en las condiciones, y los resultados llegan con retraso e incertidumbre.</p>
+<h3><span class="check-number">08.</span> Por qué esto se conecta con el dinero digital</h3>
+<p lang="en">La lección 11 preguntó qué respalda a un dólar digital, y la lección 20 preguntó si los bancos desaparecerán. Ambas preguntas son más fáciles cuando conoces el papel del propio banco central.</p>
+<h3>Qué sacar de esto</h3>
+<p lang="en">Un banco central es la institución pública en el centro del sistema monetario de un país.</p>
+<p lang="en">El más antiguo es el Riksbank de Suecia, de 1668; el Banco de Inglaterra le siguió en 1694; la Ley de la Reserva Federal de EE. UU. se firmó el 23 de diciembre de 1913.</p>
+<p lang="en">Funciones típicas: billetes y pagos, supervisión de los bancos, fijación del tipo de interés oficial, gestión de reservas.</p>
+<p lang="en">Los tipos de interés sirven a un objetivo: precios estables, como el objetivo del 2% en el Reino Unido.</p>
+<p lang="en">No es tu banco y no controla todos los precios.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">وقتی می‌گویند «بانک مرکزی نرخ را بالا برد» یا «بانک مرکزی پول چاپ کرد»، از آن مثل یک آدم قدرتمند حرف می‌زنند. در واقع نهادی است با فهرست کوتاهی از وظایف، و هر وظیفه دلیلی دارد.</p>
+<h3><span class="check-number">۰۱.</span> بانک مرکزی چیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بانک مرکزی نهادی عمومی در مرکز نظام پولی کشور است. بانک‌های معمولی به مشتری‌ها خدمت می‌دهند. بانک مرکزی به بانک‌ها، دولت و کل نظام خدمت می‌دهد.</p>
+<h3><span class="check-number">۰۲.</span> ایده از کجا شروع شد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">قدیمی‌ترین بانک مرکزی دنیا سوئدی است. موزه‌ی بانک انگلستان یادآوری می‌کند که «بانک مجلس ملک» (Riksens Ständers Bank)، که امروز «ریکسبانک سوئد» است، در ۱۶۶۸ از بازمانده‌ی یک بانک ورشکسته‌ی قبلی تأسیس شد و آن را قدیمی‌ترین بانک مرکزی دنیا می‌نامد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بانک انگلستان بعد از آن، در ۱۶۹۴ آمد و عمدتاً برای این ساخته شد که به دولت وام بدهد تا هزینه‌ی یک جنگ تأمین شود. پس نخستین بانک‌های مرکزی از نیاز دولت‌ها متولد شدند، نه از نظریه.</p>
+<h3><span class="check-number">۰۳.</span> چرا آمریکا دیر رسید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بعد از هراس مالی ۱۹۰۷، آمریکا تنها قدرت مالی بزرگی بود که بانک مرکزی نداشت. رئیس‌جمهور وودرو ویلسون قانون فدرال رزرو را در ۲۳ دسامبر ۱۹۱۳ امضا کرد و فدرال رزرو شکل گرفت.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>سه بانک مرکزی اولیه</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>نهاد</th>
+<th>سال</th>
+<th>توضیح</th>
+</tr></thead><tbody>
+<tr><td>ریکسبانک سوئد</td><td>۱۶۶۸</td><td>قدیمی‌ترین بانک مرکزی دنیا</td></tr>
+<tr><td>بانک انگلستان</td><td>۱۶۹۴</td><td>عمدتاً برای وام به دولت در جنگ تأسیس شد</td></tr>
+<tr><td>فدرال رزرو آمریکا</td><td>۱۹۱۳</td><td>قانون در ۲۳ دسامبر، پس از هراس ۱۹۰۷ امضا شد</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۴.</span> وظایف اصلی</h3>
+<p lang="fa" dir="rtl" style="text-align:right">توصیف خود بانک انگلستان فهرست معمولی را نشان می‌دهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>پول و پرداخت:</strong> اسکناس منتشر می‌کند و سامانه‌هایی را اداره می‌کند که پول را بین بانک‌ها جابه‌جا می‌کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>نظارت بر بانک‌ها:</strong> از طریق «مرجع نظارت احتیاطی» خود بر بیش از ۱٬۳۰۰ مؤسسه نظارت می‌کند تا بانکی که شکست می‌خورد بقیه را با خود نکشد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>نرخ بهره:</strong> «نرخ بانکی» را تعیین می‌کند، یعنی هزینه‌ی پایه‌ی وام‌گرفتن که روی همه‌ی نرخ‌های دیگر اثر می‌گذارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>ذخایر:</strong> از ذخایر طلای کشور نگهداری می‌کند.</p>
+<h3><span class="check-number">۰۵.</span> وظیفه‌ی ثبات قیمت‌ها</h3>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ بهره در خدمت یک هدف است. در بریتانیا دولت هدف تورم بانک را سالانه ۲٪ تعیین می‌کند که با قیمت مصرف‌کننده سنجیده می‌شود. بالا بردن نرخ معمولاً خرج و افزایش قیمت‌ها را خنک می‌کند؛ پایین آوردنش معمولاً وام‌گرفتن و خرج را تشویق می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۲ نشان داد چرا قیمت‌های باثبات مهم‌اند: افزایش قیمت‌ها آنچه حقوق می‌خرد را می‌فرساید. بانک مرکزی نهادی است که مأموریت دارد این فرسایش را کوچک و قابل‌پیش‌بینی نگه دارد.</p>
+<h3><span class="check-number">۰۶.</span> وام‌دهنده‌ی آخرین پناه</h3>
+<p lang="fa" dir="rtl" style="text-align:right">در هراس مالی، یک بانک سالم هم ممکن است ناگهان نقدینگی نداشته باشد، چون همه یک‌جا پولشان را می‌خواهند. بانک مرکزی می‌تواند در برابر وثیقه‌ی خوب به آن وام بدهد. ایده‌ی «بانکِ بانک‌ها» همین است.</p>
+<h3><span class="check-number">۰۷.</span> کارهایی که نمی‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بانک مرکزی حساب شما را اداره نمی‌کند و پس‌انداز شما را نگه نمی‌دارد؛ بانک‌های تجاری این کار را می‌کنند. همه‌ی قیمت‌ها را هم کنترل نمی‌کند. بر شرایط اثر می‌گذارد و نتیجه‌ها با تأخیر و عدم قطعیت می‌آیند.</p>
+<h3><span class="check-number">۰۸.</span> چرا به پول دیجیتال ربط دارد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۱ پرسید پشتوانه‌ی دلار دیجیتال چیست و درس ۲۰ پرسید آیا بانک‌ها ناپدید می‌شوند. هر دو پرسش وقتی ساده‌تر می‌شوند که نقش خود بانک مرکزی را بدانید.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بانک مرکزی نهادی عمومی در مرکز نظام پولی کشور است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">قدیمی‌ترین، ریکسبانک سوئد از ۱۶۶۸ است؛ بانک انگلستان در ۱۶۹۴ آمد؛ قانون فدرال رزرو آمریکا در ۲۳ دسامبر ۱۹۱۳ امضا شد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">وظایف معمول: اسکناس و پرداخت، نظارت بر بانک‌ها، تعیین نرخ بهره‌ی پایه، نگهداری ذخایر.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ بهره در خدمت یک هدف است: قیمت‌های باثبات، مثلاً هدف ۲٪ در بریتانیا.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بانک شما نیست و همه‌ی قیمت‌ها را کنترل نمی‌کند.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Dos lecciones relacionadas</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو درس مرتبط</h2>
+<p lang="en">La lección 11 pregunta qué hay detrás de un dólar digital. La lección 20 pregunta si los bancos desaparecerán.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۱ می‌پرسد پشت دلار دیجیتال چه چیزی ایستاده. درس ۲۰ می‌پرسد آیا بانک‌ها ناپدید می‌شوند.</p>
+<div class="cta-row">
+<a class="cta" href="lesson11.es.html"><span lang="en">Dólares digitales: ¿qué los respalda?</span><span lang="fa">دلار دیجیتال، پشتوانه‌اش کجاست؟</span></a>
+<a class="button" href="lesson20.es.html"><span lang="en">¿Desaparecerán los bancos en el futuro?</span><span lang="fa">آیا بانک‌ها در آینده ناپدید می‌شوند؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Conceptos clave</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Banco central</li><li>Banco comercial</li><li>Tipo de interés de referencia</li><li>Objetivo de inflación</li><li>Supervisión</li><li>Prestamista de última instancia</li><li>Reservas</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>بانک مرکزی</li><li>بانک تجاری</li><li>نرخ بهره‌ی پایه</li><li>هدف تورم</li><li>نظارت</li><li>وام‌دهنده‌ی آخرین پناه</li><li>ذخایر</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Objetivos de aprendizaje</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Decir qué es un banco central.</li><li>Nombra tres bancos centrales antiguos y sus años.</li><li>Enumera las principales funciones de un banco central.</li><li>Explica por qué los tipos de interés sirven a la estabilidad de precios.</li><li>Decir qué no hace un banco central.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>بگویید بانک مرکزی چیست.</li><li>سه بانک مرکزی اولیه و سال‌هایشان را نام ببرید.</li><li>وظایف اصلی بانک مرکزی را فهرست کنید.</li><li>توضیح بدهید چرا نرخ بهره در خدمت ثبات قیمت‌هاست.</li><li>بگویید بانک مرکزی چه کارهایی نمی‌کند.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Cuestionario</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Mira qué se te ha quedado. La respuesta está bajo cada pregunta.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Pregunta 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">¿Cuál se describe como el banco central más antiguo del mundo?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام قدیمی‌ترین بانک مرکزی دنیا توصیف شده است؟</p>
+<p lang="en">A. El Riksbank de Suecia, fundado en 1668</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ریکسبانک سوئد، ۱۶۶۸</p>
+<p lang="en">B. La Reserva Federal, 1913</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. فدرال رزرو، ۱۹۱۳</p>
+<p lang="en">C. El Banco de Inglaterra, 1694</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. بانک انگلستان، ۱۶۹۴</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">¿Por qué se creó el Banco de Inglaterra en 1694?</p>
+<p lang="fa" dir="rtl" style="text-align:right">بانک انگلستان در ۱۶۹۴ چرا ساخته شد؟</p>
+<p lang="en">A. Sobre todo para prestar al gobierno para una guerra</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. عمدتاً برای وام به دولت در جنگ</p>
+<p lang="en">B. Para dirigir supermercados</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. برای اداره‌ی فروشگاه‌ها</p>
+<p lang="en">C. Para extraer oro</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. برای استخراج طلا</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">¿Cuándo firmó Woodrow Wilson la Ley de la Reserva Federal?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ودرو ویلسون قانون فدرال رزرو را کی امضا کرد؟</p>
+<p lang="en">A. 23 de diciembre de 1913</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۲۳ دسامبر ۱۹۱۳</p>
+<p lang="en">B. 1 de enero de 1900</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۱ ژانویه ۱۹۰۰</p>
+<p lang="en">C. 4 de julio de 1776</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۴ ژوئیه ۱۷۷۶</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">¿Cuál es el objetivo de inflación del Reino Unido fijado por el gobierno?</p>
+<p lang="fa" dir="rtl" style="text-align:right">هدف تورم بریتانیا که دولت تعیین می‌کند چند درصد است؟</p>
+<p lang="en">A. 2% anual</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. سالانه ۲٪</p>
+<p lang="en">B. 20% anual</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. سالانه ۲۰٪</p>
+<p lang="en">C. 0,2% anual</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. سالانه ۰٫۲٪</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">¿Cuál de estas NO es una función típica de un banco central?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام یک وظیفه‌ی معمول بانک مرکزی نیست؟</p>
+<p lang="en">A. Llevar las cuentas de ahorro personales de todos</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. نگهداری حساب‌های پس‌انداز شخصی همه</p>
+<p lang="en">B. Fijar el tipo de interés de referencia</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. تعیین نرخ بهره‌ی پایه</p>
+<p lang="en">C. Supervisar a los bancos</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. نظارت بر بانک‌ها</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Fuentes</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.bankofengland.co.uk/museum/online-collections/blog/world-first-central-bank-invention-of-banknotes" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Museo del Banco de Inglaterra: el Riksens Ständers Bank (1668), el banco central más antiguo del mundo; el Banco de Inglaterra, 1694</a></li><li><a href="https://www.bankofengland.co.uk/explainers/what-does-the-bank-of-england-do" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Banco de Inglaterra: qué hace el Banco de Inglaterra (billetes, pagos, supervisión de más de 1.300 entidades, Bank Rate, reservas de oro)</a></li><li><a href="https://www.bankofengland.co.uk/monetary-policy/Inflation" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Banco de Inglaterra: la inflación y el objetivo del 2% fijado por el Gobierno</a></li><li><a href="https://www.federalreservehistory.org/essays/federal-reserve-act-signed" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Federal Reserve History: la Ley de la Reserva Federal firmada el 23 de diciembre de 1913</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Los detalles de las funciones se toman del Banco de Inglaterra como ejemplo típico; otros bancos centrales difieren. No se citan los niveles actuales de los tipos porque cambian. Explicación general, no asesoramiento financiero.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">جزئیات وظایف از بانک انگلستان به‌عنوان یک نمونه‌ی معمول گرفته شده؛ بانک‌های مرکزی دیگر متفاوت‌اند. سطح فعلی نرخ بهره نیامده چون تغییر می‌کند. توضیح عمومی است، نه مشاوره‌ی مالی.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Síguenos</span></h2>
+<p lang="en">Las nuevas lecciones se anuncian primero en los canales de Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.es.html"><span lang="en">Volver a Aprender</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson25.es.html"><span lang="en">Lección anterior</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson27.es.html"><span lang="en">Siguiente lección</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Construido con estructura, impulsado por el descubrimiento.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-es.js?v=20261121a"></script>
+</body>
+</html>

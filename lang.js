@@ -371,8 +371,8 @@
   FLAG_BOX.ar = "0 0 11880 7920";
   var LANGS = [
     ["fa", "فارسی", "Persian", true], ["en", "English", "English", true], ["ar", "العربية", "Arabic", true],
-    ["pt", "Português", "Portuguese", false], ["es", "Español", "Spanish", false], ["fr", "Français", "French", false],
-    ["zh", "中文", "Chinese", true], ["de", "Deutsch", "German", false], ["tr", "Türkçe", "Turkish", true], ["ru", "Русский", "Russian", true]
+    ["pt", "Português", "Portuguese", true], ["es", "Español", "Spanish", true], ["fr", "Français", "French", true],
+    ["zh", "中文", "Chinese", true], ["de", "Deutsch", "German", true], ["tr", "Türkçe", "Turkish", true], ["ru", "Русский", "Russian", true]
   ];
   if (!document.getElementById("lang-menu-css")) {
     var lcss = document.createElement("style");
@@ -437,7 +437,7 @@
   function switchTo(to) {
     var alt = document.querySelector('link[rel="alternate"][hreflang="' + to + '"]');
     // Arabic exists for a first set of pages; elsewhere the switch opens the Arabic home page
-    if ((to === "ar" || to === "zh" || to === "tr" || to === "ru") && !alt) { location.href = (location.protocol === "file:" ? "" : location.origin + "/") + "index." + to + ".html"; return; }
+    if (/^(ar|zh|tr|ru|pt|es|fr|de)$/.test(to) && !alt) { location.href = (location.protocol === "file:" ? "" : location.origin + "/") + "index." + to + ".html"; return; }
     try { localStorage.setItem(KEY, to); } catch (e) {}
     if (alt && alt.href) {
       var target = alt.href.replace(/^https:\/\/ditoman\.com\//, location.protocol === "file:" ? "" : location.origin + "/");

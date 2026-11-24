@@ -1,0 +1,129 @@
+271|A. Porque reembolsou parte do dinheiro todos os meses
+272|A. A blockchain é só para negociar moedas
+273|A. Reservas em dinheiro
+274|A. Dinheiro guardado em seu nome
+275|A. Verificar o PIN
+276|A. Converter dinheiro local no token e de volta
+277|A. Cortar todas as despesas de uma vez
+278|A. Destruir parte ou todo o depósito de um validador desonesto
+279|A. Tem a sua própria blockchain?
+280|A. Dólares
+281|=
+282|A. A cada 2 016 blocos, cerca de duas semanas
+283|A. Subida rápida do preço
+284|A. Deteção de fraude em pagamentos com cartão
+285|A. Desistir do orçamento
+286|A. Sistemas ocultos
+287|A. Guardar as contas-poupança pessoais de todos
+288|A. O congestionamento da rede
+289|A. Na margem da taxa de câmbio
+290|A. Política de juros independente
+291|A. Infraestrutura
+292|A. Dentro do telemóvel
+293|A. Ganha-se juro também sobre juros anteriores
+294|A. Juro que desce todos os anos
+295|A. Significa sempre que o projeto é desonesto
+296|A. Garante lucro
+297|A. Guarda o dinheiro dos bancos
+298|A. Aumenta
+299|A. A cor e o logótipo
+300|A. O mês passado
+301|A. Sobretudo para emprestar ao governo para uma guerra
+302|A. Tornar a batota mais cara do que a honestidade
+303|A. O dinheiro vai para a conta da loja
+304|A. Nenhum utilizador o controla e não pode ser apagado
+305|A. Não, é uma regra de oferta, não uma previsão
+306|A. Não, permite que outros fiquem com as suas moedas
+307|A. Uma empresa controla todos os registos
+308|A. Um produto ficar mais caro
+309|A. Pagar depressa antes que o rasto desapareça
+310|A. Ler informação externa, como o tempo
+311|A. Registar informação de forma transparente e verificável
+312|A. Elimina todo o risco
+313|A. Poupança
+314|A. Vender no mercado, com o risco de o preço cair abaixo de um dólar
+315|A. Enviar logo
+316|A. Fixar o preço do ouro
+317|A. Gastar primeiro nos desejos
+318|A. A oferta e a procura
+319|A. O Riksbank da Suécia, fundado em 1668
+320|A. O rendimento líquido, depois de impostos
+321|A. A cor da aplicação
+322|A. As funções comuns dos tokens fungíveis
+323|A. O contrato está avariado
+324|A. A decisão foi cancelada
+325|A. A comissão é retirada do USDT
+326|A. O fundo tem de estar lá no mês seguinte com o mesmo valor
+327|A. A diferença entre o preço de compra e o de venda
+328|A. O maior retorno possível
+329|A. O emissor
+330|A. As redes convertem automaticamente
+331|A. O endereço do par
+332|A. O preço é estável
+333|A. O preço subiu na semana passada
+334|A. O mesmo que uma auditoria completa
+335|A. A loja ficou com o dinheiro
+336|A. O token é de certeza uma burla
+337|A. O token pode ser pouco
+338|A. São sempre evidentes
+339|A. Pagam juros enquanto os detém
+340|A. Taxas de transferência
+341|A. Transparência
+342|A. Custos necessários e imprevistos
+343|A. Qual é a comissão anunciada?
+344|A. Sempre que quiser
+345|A. Quem o emite?
+346|A. Quem tiver a chave privada ou a frase de recuperação
+347|A. Sim, exatamente seis meses
+348|A. Sim, dentro de cinco anos
+349|IA e mercados
+350|IA e ciência
+351|Pirataria com IA em menos de três horas
+352|A IA dá um grande passo num problema do Prémio do Milénio
+353|Agente de IA
+354|A IA e as pequenas empresas do Irão: guia completo
+355|A IA e as pequenas empresas do Irão
+356|IA e negócios
+357|A IA e a avalanche cibernética
+358|A IA e o problema de Yang-Mills
+359|IA e viagens
+360|Pirataria com IA em menos de três horas: o caso ARTEX
+361|A IA trabalha há anos nos bastidores das finanças, sobretudo contra a fraude e no crédito.
+362|IA na linha do pistácio
+363|Controlo de qualidade com IA numa linha de pistácio (ilustração)
+364|A IA que paga por si está a chegar, e as regras de responsabilidade ainda estão a ser escritas.
+365|IA, energia e o futuro do trabalho
+366|Desenho de ASIC, SoC e FPGA; o microprocessador Aristo de 32 bits
+367|Cerca de 1%
+368|Cerca de 10%
+369|Cerca de 19,69 milhões de bitcoin tinham sido emitidos no fim da quarta era.
+370|Cerca de 20% da oferta
+371|Cerca de 20% dos 21 biliões de TMN originais foram retirados de circulação em dois passos. Ambos são públicos e podem ser verificados no BscScan.
+372|Cerca de 50%
+373|Cerca de 99,99% menos após o Merge (estimativa)
+374|Sobre o TMN
+375|Acesso
+376|Segundo o monitor do Atlantic Council, quantos países lançaram por completo uma CBDC?
+377|Segundo o monitor do Atlantic Council, 146 países e uniões monetárias, que somam mais de 98% da economia mundial, estão a estudar uma CBDC. É daí que vêm os números grandes que vê nas publicações.
+378|Segundo o BIS, quanto se negociou em divisas por dia, aproximadamente, em abril de 2025?
+379|Adquirente
+380|Lei assinada a 23 de dezembro, após o pânico de 1907
+381|Adicione o TMN à sua carteira
+382|Adicione o TMN à sua carteira ↓
+383|Adicionar o token
+384|Some todas as prestações e todas as comissões.
+385|Endereço
+386|Envenenamento de endereços
+387|Endereço, rede, comissão: como funciona uma transação cripto
+388|Endereço, rede, comissão: como funciona uma transação cripto, imagem da lição Ditoman
+389|Endereço, rede, comissão: como funciona uma transação cripto | Ditoman Learn
+390|Os adultos compram hoje um em cada cinco brinquedos. Cinquenta anos de brinquedos, porque as crianças ainda os querem, e a oportunidade de o Irão ser um polo regional de brinquedos.
+391|Após 1 ano
+392|Após 10 anos: 1 000 + 10 × 50 = 1 500. Após 20 anos: 2 000. O saldo cresce em linha reta.
+393|Após 3 anos
+394|Após 5 anos
+395|Depois do pânico financeiro de 1907, os EUA eram a única grande potência financeira sem banco central. O presidente Woodrow Wilson assinou a Lei da Reserva Federal a 23 de dezembro de 1913, criando a Reserva Federal.
+396|Depois de um roubo, alguém oferece recuperar o seu dinheiro mediante pagamento adiantado. O que deve fazer?
+397|Depois do halving de 20 de abril de 2024, a recompensa por bloco é:
+398|Depois de usar: repor primeiro, antes de novos desejos
+399|Depois de carregar em Enviar, a transação espera para ser incluída num bloco. Uma vez incluída, tem uma confirmação. Cada bloco seguinte acrescenta outra, e quanto mais confirmações tiver, mais difícil seria desfazê-la.

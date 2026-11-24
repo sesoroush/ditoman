@@ -1,0 +1,119 @@
+682|Blockzeiten und Gebühren ändern sich mit Netzwerk-Upgrades. Lesen Sie vor dem Bestätigen immer die Gebühr und das Netzwerk in Ihrer eigenen Wallet.
+683|=
+684|Blockchain verändert, wie Vertrauen funktioniert
+685|Die Blockchain verändert diese Struktur.
+686|Bei der Blockchain geht es darum, wie Vertrauen funktioniert.
+687|Die Blockchain ist nicht nur eine Technologie.
+688|Bei der Blockchain geht es nicht nur um Kryptowährungen. Sie ist eine neue Art, Vertrauen, Transparenz und Sicherheit in digitale Systeme einzubauen.
+689|Blockchain dreht sich nur um den Handel mit Coins
+690|Blockchain nützt nur Banken
+691|Die Blockchain ist wichtig, weil sie verändert, wie Vertrauen funktioniert. Sie verlagert Vertrauen von Institutionen und Plattformen hin zu transparenten, überprüfbaren und dezentralen Systemen.
+692|Blockchain macht alle Systeme überflüssig
+693|Blockchain • Coins und Tokens
+694|Blockchain • Mining und Staking
+695|Blockchain • Smart Contracts
+696|Bloomberg Opinion, John Authers: Chart des FTSE-All-World-Index (Instagram-Beitrag, November 2026)
+697|Bloomberg via BNN: Trump unterzeichnet Stablecoin-Gesetz
+698|Blubank (Saman Bank)
+699|Buchzusammenfassung
+700|Buchzusammenfassung: Stop Letting Everything Affect You
+701|Buchzusammenfassung: The Absent Superpower
+702|Leihen Sie für Dinge, die länger halten als die Raten.
+703|Beide wollen Betrug teurer machen als Ehrlichkeit.
+704|Beide Systeme beantworten dieselbe Frage: Betrug teurer machen als Ehrlichkeit.
+705|Filialen
+706|Filialen schließen und Apps öffnen. Diese Lektion trennt, was eine Bank tut, davon, wo sie es tut, erklärt Neobanken und Open Banking in einfachen Worten und zeigt, welche Aufgaben noch eine Bank hinter dem
+707|Filialen schließen und Apps öffnen. Diese Lektion trennt, was eine Bank tut, davon, wo sie es tut, erklärt Neobanken und Open Banking in einfachen Worten und zeigt, welche Aufgaben noch eine Bank hinter dem Bildschirm brauchen.
+708|Brent-Öl
+709|Brent-Öl ($)
+710|Lektionen ansehen
+711|Vertragsseite auf BscScan
+712|BscScan, Token-Vertrag DiToman (TMN)
+713|BscScan, TMN/WBNB-Paar auf PancakeSwap (LP-Token)
+714|BscScan: Block-Explorer der BNB Smart Chain
+715|Budget
+716|Die Community aufbauen
+717|Den Fonds in vier Schritten aufbauen
+718|Aber die Blockchain ist viel größer als das.
+719|Aber Bequemlichkeit birgt Risiken. Je schwächer die Deckung, desto größer der Schaden, wenn das Vertrauen bricht. Tempo wirkt in beide Richtungen: Es hilft Ihnen, schnell hineinzukommen, und hilft allen, schnell hinauszukommen.
+720|Aber prüfen ist nicht einführen. Laut demselben Tracker haben nur drei Länder eine vollständig eingeführt: die Bahamas, Jamaika und Nigeria. Rund 41 Pilotprojekte laufen. Chinas digitaler Yuan ist das größte Pilotprojekt der Welt.
+721|Beachten Sie aber, dass Sie die vollen 100 Millionen nicht das ganze Jahr hatten. Sie gaben sie Monat für Monat zurück, im Schnitt hatten Sie also nur etwa die Hälfte. Damit ist der echte Jahreszins etwa doppelt so hoch, wie er zuerst scheint, rund 25 Prozent in diesem Beispiel, nicht 14.
+722|Aber die schwierigen Teile wandern an die beiden Enden. Der Absender muss erst lokales Geld in den Token tauschen, und der Empfänger muss ihn zurücktauschen, meist über eine Börse oder einen Vermittler mit eigener Gebühr, eigenem Kurs und eigenen Regeln. Und der Token bringt die Risiken aus Lektion 11 mit: Herausgeber, Deckung und Ausweg.
+723|Kauf- / Verkaufssteuer
+724|Heute kaufen, morgen zahlen: Chance oder Schuldenfalle?
+725|Heute kaufen, morgen zahlen: Chance oder Schuldenfalle? Ditoman-Lektionsbild
+726|Heute kaufen, morgen zahlen: Chance oder Schuldenfalle? | Ditoman Learn
+727|Spanne zwischen Kauf und Verkauf
+728|Jetzt kaufen, später zahlen
+729|Kaufsteuer / Verkaufssteuer
+730|Heute kaufen, morgen zahlen
+731|Kaufkraft
+732|Was passiert standardmäßig mit einem bereitgestellten Vertrag?
+733|C. 0,2 % pro Jahr
+734|=
+735|=
+736|C. 4. Juli 1776
+737|C. Eine Bank, die nur mit Krypto arbeitet
+738|C. Ein Lesezeichen, das Sie selbst gespeichert haben
+739|C. Eine Zentralbank
+740|C. Ein Rückgang der Zahl der Banknoten
+741|C. Ein Finanzbegriff, den Sie erklärt haben möchten
+742|C. Ein Geschenk des Geschäfts
+743|C. Eine staatliche Garantie
+744|C. Ein Amt, das Überweisungen genehmigt
+745|C. Eine gesetzliche Pflicht
+746|C. Eine Nachricht vom Support
+747|C. Ein neuer Coin
+748|C. Ein Drucker
+749|C. Ein zweites Handy, das Sie nicht brauchten
+750|C. Ein Anteil an der Bank
+751|C. Ein Stablecoin
+752|C. Ein Rabatt auf Handelsgebühren
+753|C. Eine Art Bankkonto
+754|C. Etwa 0,41
+755|C. Etwa 1 Milliarde Dollar
+756|C. Etwa 12 Jahre
+757|C. Etwa 89 %
+758|C. Algorithmisches Modell mit einem zweiten Token
+759|C. Immer profitabel
+760|C. Vermeidet die Abhängigkeit davon, dass ein einziger Wert richtig liegt
+761|C. Banken, die sich tatsächlich gegenseitig bezahlen
+762|C. Banken weigern sich, ihn aufzubewahren
+763|C. Die Renditen anderer schlagen
+764|C. Weil schnelle Entscheidungen immer falsch sind
+765|C. Weil Monate kürzer sind als Jahre
+766|C. Weil Nachrichten nur Krypto betreffen
+767|C. Weil eine Person das ganze Netzwerk kontrolliert
+768|=
+769|C. Bitcoin-Miner
+770|C. Blockzeit
+771|C. Blockchain macht alle Systeme überflüssig
+772|C. Leihen, um zu sparen
+773|C. Im Ausverkauf kaufen
+774|C. Zentrale Kontrolle
+775|C. Ein Unternehmen zum Chef bestimmen
+776|C. Kontrolle und Daten sind über ein Netzwerk verteilt
+777|C. Entscheidungsfindung
+778|C. Haben meine Freunde gekauft?
+779|C. Wie viel kommt genau in der anderen Währung an?
+780|C. Die Zentralbank vollständig ersetzen
+781|C. Eine Adresse haben
+782|C. Jede Transaktion für immer verbergen
+783|C. Wie schnell sein Preis steigt
+784|C. Wie viele Sprachen er spricht
+785|C. Ignorieren; das ist ein zweiter Betrug
+786|C. In der Telefonrechnung des Empfängers
+787|C. Zinsen, die auch auf frühere Zinsen berechnet werden
+788|C. Ist sein Name kurz?
+789|C. Es kostet immer drei Prozent
+790|C. Er verfällt nach einem Jahr
+791|C. Sie sinkt
+792|C. Es macht den Vertrag unüberprüfbar
+793|C. Es erhöht den Satz
+794|C. Es macht den Token sicherer
+795|C. Es legt Wechselkurse fest
+796|C. Seine Importe
+797|C. Eine eigene Blockchain
+798|C. Mehr Menschen nutzen, was es leistet
+799|C. Nie
+800|C. Nein, nichts ändert sich

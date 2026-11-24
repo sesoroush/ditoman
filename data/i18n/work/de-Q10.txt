@@ -1,0 +1,118 @@
+931|Verzinsungshäufigkeit
+932|Zinseszins hilft Sparern und schadet Schuldnern.
+933|Bei den Gründern konzentriert
+934|Selbstsicherer Fehler (Halluzination)
+935|Selbstsichere Fehler:
+936|Bestätigung: wann es erledigt ist
+937|Bestätigungen machen eine Transaktion endgültig, und eine endgültige Transaktion lässt sich nicht rückgängig machen.
+938|Im Code bestätigt
+939|Blockchain mit Infrastruktur, Daten und künftigen Systemen verbinden.
+940|Blockchain mit der Zukunft digitaler Systeme verbinden.
+941|Konsensmechanismus
+942|Einwilligung zur Datenfreigabe
+943|Consumer Financial Protection Bureau: Leitfaden zum Aufbau eines Notgroschens
+944|Consumer Financial Protection Bureau: Was ist Zinseszins (Definition und das Beispiel 1.000 Dollar zu 5 %)
+945|Consumer Financial Services Law Monitor: Zusammenfassung des CFPB-Berichts
+946|Vertrag auf BscScan
+947|Quellcode des Vertrags verifiziert, rund 20 % des Angebots in zwei On-Chain-Schritten aus dem Umlauf genommen, Eigentum endgültig aufgegeben, zweisprachige Lektionen veröffentlicht und das Whitepaper als endgültige Richtung festgelegt.
+948|Vertragsverifizierung
+949|Vertrag verifiziert, Eigentum aufgegeben, rund 20 % des Angebots außer Umlauf, zweisprachige Lektionen veröffentlicht, Whitepaper final.
+950|Vertrag, Fakten und ehrliche Offenlegung
+951|Kontrolle
+952|Kontrolle und Daten sind über ein Netzwerk verteilt
+953|Kontrolliertes Wachstum
+954|Rechnen Sie einen Preis mit einem gegebenen Kurs um.
+955|Überzeugende Fälschungen:
+956|CoolWallet: Terra-Autopsie
+957|Kopieren
+958|Nachricht kopieren
+959|Kopieren Sie die Nachricht, öffnen Sie
+960|Kopieren Sie Ihre Adresse
+961|Kernidee
+962|Corporate Finance Institute: Was mit Terra geschah
+963|Richtige Antwort: A
+964|Richtige Antwort: B
+965|Richtige Antwort: B. Niemand Seriöses fragt je danach.
+966|Richtige Antwort: C
+967|Richtige Antwort: C (Bahamas, Jamaika und Nigeria)
+968|Richtige Antwort: C. Er fiel zwischen November 2021 und November 2022 um mehr als 75 %.
+969|Richtige Antwort: C. Die reale Rendite ist negativ.
+970|Richtige Antwort: C. UST hatte keine Dollarreserve; es stützte sich auf LUNA sowie Prägen und Verbrennen.
+971|Richtige Antwort: D
+972|Richtige Antwort: Falsch
+973|Richtige Antwort: Falsch. Verfallsdaten gab es nur in begrenzten Werbetests, etwa in Shenzhen im Januar 2021, nicht bei alltäglichen Guthaben.
+974|Richtige Antwort: Falsch. Sie verhindert nur, dass die gesperrte Liquidität vor dem Freigabedatum abgezogen wird.
+975|Richtige Antwort: Falsch. Viele Anleger halten beides und verkaufen beides, wenn sie weniger Risiko wollen.
+976|Richtige Antwort: Falsch. Technische Prüfungen beschreiben den Token, nicht Ihre Überlegung, Ihr Timing oder Ihr Risiko.
+977|Richtige Antwort: Falsch. Drei Beobachtungen sind kein Muster, und viele andere Faktoren wirkten mit.
+978|Richtige Antwort: Falsch. Ohne Liquidität gibt es keinen Ausgang.
+979|Richtige Antwort: Regeln, die ins Geld selbst geschrieben sind, etwa ein Verfallsdatum oder Grenzen, wo es ausgegeben werden kann.
+980|Richtige Antwort: Sichere Anlagen bringen mehr, also wirken riskante weniger attraktiv, und Kredite für ihren Kauf werden teurer.
+981|Richtige Antwort: Dass Ihr Leben normal weitergehen könnte, wenn der Betrag auf null fiele und nie zurückkäme.
+982|Richtige Antwort: Wenn die Börse eine gehebelte Position automatisch schließt, weil die Margin ausgeht.
+983|Richtige Antwort: Wenn derjenige, der die LP-Tokens hält, die Liquidität abzieht und die Inhaber nicht mehr verkaufen können.
+984|Richtige Antworten: A, B, C
+985|Richtige Antworten: A, B, C, D
+986|Richtige Antworten: A, B, D
+987|Korrelation und Kausalität
+988|Korrespondenzbank
+989|Kosten des Kredits
+990|Meinen Code erstellen
+991|Erstellen Sie die Wallet und schreiben Sie die 12 Wiederherstellungswörter auf Papier. Geben Sie sie niemals jemandem.
+992|Erstellt von
+993|In der Ära erzeugt
+994|Kreditentscheidungen:
+995|Anerkennung für echtes Engagement: abgeschlossene Lektionen, nützliche Beiträge, gute Diskussionen und frühe Unterstützer.
+996|Kreditbewertung
+997|Kredit • Schulden
+998|Grenzüberschreitende Zahlung
+999|Krypto
+1000|Krypto-Crash: 550 Mrd. ausgelöscht
+1001|Krypto und Geld, praxisnah
+1002|Krypto-Sicherheiten:
+1003|Krypto geht einen Schritt weiter als Fintech. Eine persönliche Wallet bewegt Geld ganz ohne Bank darunter, und manche Anwendungen verleihen und handeln allein über Code.
+1004|Krypto kennt dieselbe Trennung, und die Wörter heißen Coin und Token.
+1005|Kryptomarkt
+1006|Krypto-Crash
+1007|Krypto • Transaktionen
+1008|CryptoSlate, 5. Nov. 2026: Nasdaq 100 −5,5 %, Liquidationen von rund 1 Mrd. Dollar, über 201.000 Trader
+1009|Währungen
+1010|Currency Board
+1011|Der Devisenhandel ist riesig, und der US-Dollar steht auf einer Seite des Großteils davon.
+1012|Verwahrung
+1013|Kundenservice:
+1014|Cyberangriffe auf Banken
+1015|Cyberangriffe auf Banken
+1016|Cybersicherheit
+1017|D. Eine an Börsen gezahlte Gebühr
+1018|D. Eine Governance-Abstimmung
+1019|D. Alle genannten
+1020|D. Jetzt kann jeder neue Tokens erzeugen
+1021|D. Weil Börsen an Werktagen schließen
+1022|D. Weil sie alle Technik aus dem Finanzwesen entfernt
+1023|D. Weil Märkte nachts schließen
+1024|D. Blockchain nützt nur Banken
+1025|D. Nur Geschäftsbanken
+1026|D. Digitale Identität
+1027|D. Börsen haben einen festen Preis gesetzt
+1028|D. Wie viele Länder darüber sprechen
+1029|D. Online wird viel darüber geredet
+1030|D. Börsen verlangen es
+1031|D. Es verhindert, dass der Token irgendwo gelistet wird
+1032|D. Keine
+1033|D. Nichts davon
+1034|D. Nur private Einträge
+1035|D. Das Internet überflüssig machen
+1036|D. Der künftige Preis des Tokens
+1037|D. Der Token hat keine Angebotsgrenze
+1038|D. Nutzer können nichts überprüfen
+1039|D. Überprüfung
+1040|D. Wann immer die Gründer wollen
+1041|=
+1042|Die tägliche Berechnung ist wichtig, weil sie zeigt, wie lange Geld wo lag. Geld, das spät im Monat eingeht, verdient an weniger Tagen, und ein spät zurückgezahlter Kredit kostet mehr Tage.
+1043|Tageszins
+1044|Tägliche Marktberichte
+1045|Tägliche Presseschau
+1046|Tagespreise
+1047|Tagesbericht
+1048|Daniel Chidiac über Grübeln, Grenzen und Selbstsabotage, und warum ein Abstand zwischen Ereignis und Reaktion bei Geldentscheidungen zählt.

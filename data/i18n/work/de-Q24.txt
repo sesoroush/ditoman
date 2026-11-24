@@ -1,0 +1,107 @@
+2145|Einmal im Monat prüfen und jeweils eine Sache ändern.
+2146|Belohnung pro Block
+2147|Belohnung pro Person
+2148|Belohnungen werden alle paar Tage gebündelt versendet.
+2149|Fahrdienst mit Festpreisen; gestartet im Februar 2014
+2150|Risikokapital
+2151|Fahrplan
+2152|Straßen, Schiene, Häfen, Flughäfen, Logistik
+2153|Romance-Anlagebetrug
+2154|Rosenwasser, Kräuterdestillate, natürliche Sirupe und getrocknete Kräuter; Industriestadt Amirkabir 1, Kashan
+2155|Wie viel einfache Zinsen bringen 1.000 zu 5 % im Jahr ungefähr in 30 Tagen?
+2156|Wie oft versucht das Bitcoin-Netzwerk ungefähr, einen Block zu erzeugen?
+2157|Rug Pull
+2158|72er-Regel
+2159|Faustregel
+2160|Regeln
+2161|Im Geld selbst festgeschriebene Regeln, etwa ein Ablaufdatum oder Grenzen dafür, wo es ausgegeben wird
+2162|Russland öffnet regulierte Kryptowährungen
+2163|Russland, Saudi-Arabien und Australien sind die größten CO2-Exporteure der Geschichte; Iran liegt auf Platz fünf. Das Geld, die Jobs, das Recht und warum die heutigen Klimaregeln das kaum erfassen.
+2164|SWIFT überträgt Anweisungen. Korrespondenzbanken bewegen die Salden.
+2165|SWIFT überträgt die Anweisung. Es hält oder bewegt kein Geld. Das Geld bewegt sich über die oben beschriebenen Korrespondenzkonten. Deshalb wiegt ein Ausschluss von SWIFT für die Banken eines Landes so schwer: Ohne die Nachrichten ist der normale Weg versperrt.
+2166|SWIFT ist ein sicheres Nachrichtennetz, über das mehr als 11.000 Finanzinstitute in über 200 Ländern einander Zahlungsanweisungen senden. Es wurde 1973 gegründet.
+2167|SWIFT, Korrespondenzbanken, versteckte Kosten und Stablecoins.
+2168|SWIFT: Über uns
+2169|Sichere und riskante Anlagen
+2170|Sicherheit
+2171|Dieselbe Frage, über eine Grenze hinweg
+2172|=
+2173|Satoshi Nakamoto ist der Name, der mit der Schaffung von Bitcoin verbunden ist. 2008 erschien dieser Name mit einem Dokument, das eine neue Art digitalen Geldes erklärte. Es wurde von keiner Bank, Regierung oder Firma kontrolliert.
+2174|Satoshi Nakamoto ist der Name, den die Person oder Gruppe nutzte, die Bitcoin der Welt vorstellte. Doch Satoshis eigentliche Bedeutung liegt nicht nur im Rätsel der Identität. Sie liegt in der Idee, dass ein System weiterlaufen kann, ohne von einer zentralen Person abzuhängen.
+2175|Satoshi ist wichtig, weil Bitcoin so entworfen wurde, dass es über persönliche Autorität hinausgeht.
+2176|Satoshi kontrolliert es noch heimlich
+2177|Einmaliges Geld sparen:
+2178|Den Transaktions-Hash aufbewahren
+2179|Sparen
+2180|Sparen • Anlagen
+2181|Sparen, investieren, spekulieren
+2182|Ersparnisse
+2183|Sparquote
+2184|Sagen, was SWIFT tut und was nicht.
+2185|Sagen, was ein Budget ist und was nicht.
+2186|Sagen, was eine Zentralbank nicht tut.
+2187|Sagen, was eine Zentralbank ist.
+2188|Sagen, was ein Sprachassistent gut kann und wo er versagen kann.
+2189|Sagen, was eine Neobank ist und was man vor der Nutzung prüfen sollte.
+2190|Sagen, was ein Node tut.
+2191|Sagen, was eine Token-Genehmigung erlauben kann.
+2192|Sagen, was Diversifikation leistet und was nicht.
+2193|Sagen, was das Halving ist und wie oft es stattfindet.
+2194|Sagen, wo es sicher aufbewahrt werden kann.
+2195|Sagen, warum ein bereitgestellter Vertrag schwer zu ändern ist.
+2196|Sagen, warum ein Geschäft sein Geld später erhält, als der Kunde denkt.
+2197|Sagen, warum ein Standard wie ERC-20 hilft.
+2198|Sagen, warum weder Bitcoin noch ein Stablecoin eine risikofreie Antwort auf Inflation ist.
+2199|Sagen, warum Sender und Empfänger dasselbe Netzwerk nutzen müssen.
+2200|Sagen, warum der echte Jahreszins höher ist als der einfache Prozentsatz.
+2201|Skala
+2202|Prüfung über einen zweiten Kanal
+2203|Bereiche
+2204|Sicherheit
+2205|Sicherheitscheck
+2206|Sicherheitsbericht (GoPlus)
+2207|Sicherheit • Betrug
+2208|Sicherheit • Token-Prüfung
+2209|LP-Token-Inhaber auf BscScan ansehen
+2210|Alle Unternehmen ansehen
+2211|Alle Lektionen ansehen
+2212|Alle ansehen →
+2213|Den Krypto-Weg im Detail ansehen
+2214|Den ganzen Verlauf ansehen
+2215|Ausgewähltes Lernmaterial und Community-Räume.
+2216|Verkaufen
+2217|Halbleiter
+2218|Zuerst einen kleinen Test senden
+2219|Einen kleinen Test senden,
+2220|Über Bale senden
+2221|Über Telegram senden
+2222|Die Adresse senden
+2223|Senden Sie Ihren Code und Ihre Wallet-Adresse
+2224|Krypto zu senden erfordert drei Entscheidungen: welche Adresse, welches Netzwerk und welche Gebühr. Ist eine falsch, kann das Geld für immer verloren sein. Diese Lektion verfolgt eine Überweisung vom Senden-Knopf bis zur
+2225|Krypto zu senden erfordert drei Entscheidungen: welche Adresse, welches Netzwerk und welche Gebühr. Ist eine falsch, kann das Geld für immer verloren sein. Diese Lektion verfolgt eine Überweisung vom Senden-Knopf bis zur endgültigen Bestätigung.
+2226|Senden, prüfen und schützen, bevor echtes Geld bewegt wird.
+2227|Eine Angebotsregel von einer Preisprognose unterscheiden.
+2228|Echte Testbeispiele von übertriebenen Behauptungen unterscheiden.
+2229|Reihe
+2230|Grenzen setzen und prüfen
+2231|Vor allem gegründet, um dem Staat für einen Krieg Geld zu leihen
+2232|Abrechnung
+2233|Mehrere nicht verwandte Tokens nutzen das Kürzel TMN. Prüfen Sie immer die vollständige Vertragsadresse.
+2234|Mehrere nicht verwandte Tokens nutzen das Kürzel TMN. Dies ist der einzige offizielle Vertrag:
+2235|Shaparak: Irans elektronisches Kartenzahlungsnetz
+2236|Anteil am Nettolohn
+2237|Kauft ein und zahlt für Sie
+2238|Kurze zweisprachige Lektionen mit Quiz
+2239|Kurze Lektionen nach Thema, je etwa fünf Minuten, in beiden Sprachen, jede mit einem Quiz am Ende.
+2240|Kurze Lektionen über Krypto und Geld
+2241|Kurze, kostenlose Lektionen auf Persisch und Englisch. Jede dauert etwa fünf Minuten und endet mit einem Quiz, damit Sie prüfen können, was hängen geblieben ist.
+2242|Soll ich TMN kaufen?
+2243|Alle Geschichten zeigen
+2244|Susa, Rey und Hamadan gehören zu zehn antiken Städten, die bewohnt blieben und ihre Namen behielten, und sie verbinden Iran mit Syrien und dem Libanon.
+2245|Silber ($)
+2246|Einfach
+2247|Einfache Gewohnheiten, die die meisten Verluste verhindern
+2248|Einfache Zinsen
+2249|Einfache Zinsen gelten für den ursprünglichen Betrag; Zinseszinsen für den Betrag plus bisherige Zinsen.
+2250|Einfacher Prozentsatz
+2251|Einfache, Zinseszins- und Tageszinsen klingen ähnlich, liefern aber über zehn oder zwanzig Jahre sehr unterschiedliche Ergebnisse. Diese Lektion zeigt alle drei mit kleinen Zahlen, die Sie

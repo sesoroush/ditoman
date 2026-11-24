@@ -1,0 +1,44 @@
+1494|Si les pièces s'assemblent, le tableau est encourageant : un assistant qui guette un meilleur taux, prévient avant des frais, repère une arnaque avant que vous ne répondiez et explique chaque étape dans votre langue. Un bon conseil financier, autrefois réservé aux riches, pourrait devenir ordinaire.
+1495|Si vous achetez aujourd'hui parce que vous redoutez ce que vous ressentirez demain, ce n'est pas de l'analyse. C'est de la pression.
+1496|Si le portefeuille ou la plateforme du destinataire attend un réseau et que vous envoyez sur un autre, les coins peuvent ne jamais apparaître, et les récupérer va du difficile à l'impossible.
+1497|Si les règles sont respectées, l'état est mis à jour
+1498|Si vous ne pouvez pas l'expliquer en deux ou trois phrases simples à quelqu'un qui ne connaît rien à la crypto, vous ne le comprenez pas encore. Ce n'est pas une honte. C'est une raison d'attendre.
+1499|Si vous oubliez le mot de passe
+1500|Si vous perdez la phrase de récupération,
+1501|Si vous envoyez à la mauvaise adresse ou sur le mauvais réseau,
+1502|Imaginez un contrat simple : « Si l'expéditeur paie le prix, donnez-lui un billet et enregistrez que le billet est à lui. » Il n'y a pas de caissier. Le réseau vérifie le paiement et le programme met le registre à jour.
+1503|Immuabilité
+1504|Usurpation d'identité
+1505|Important :
+1506|Impossible
+1507|En 2022, TerraUSD (UST) était l'un des stablecoins les plus connus. C'était un token algorithmique : il n'était adossé ni à des dollars ni à aucun autre actif. Il tenait son ancrage grâce à une paire de tokens. On pouvait toujours créer un UST en brûlant l'équivalent d'un dollar de LUNA, et un UST pouvait être échangé contre un dollar de LUNA. C'était tout le mécanisme.
+1508|En dollars américains
+1509|Dans un régime flottant, qu'est-ce qui fixe principalement le taux ?
+1510|Dans une panique, une banque saine peut soudain manquer de liquidités parce que tout le monde veut récupérer son argent en même temps. La banque centrale peut lui prêter contre de bonnes garanties. C'est l'idée de la « banque des banques ».
+1511|Dans un magasin, vous pouvez payer avec les billets du pays ou avec un bon émis par le magasin lui-même. Au quotidien, les deux s'appellent de l'argent, mais ils ne vivent pas au même endroit.
+1512|Dans son livre *All Your Worth* de 2005, la juriste américaine, devenue sénatrice, Elizabeth Warren a décrit une répartition simple du salaire net, l'argent qui arrive réellement sur votre compte après impôts.
+1513|Dans la leçon 05, nous avons listé cinq vérifications à faire sur tout token avant d'y toucher. La cinquième était : y a-t-il une vraie liquidité, et est-elle verrouillée ? Aujourd'hui, nous l'avons fait pour notre propre token. Cette leçon explique ce que nous avons fait et ce que cela signifie.
+1514|Dans la leçon 07, nous avons vu comment l'actualité change les attentes du marché. Cette leçon va plus loin : une fois la nouvelle tombée, que se passe-t-il dans une plateforme pour transformer une baisse normale en krach ? En bref, trois choses qui agissent ensemble : des acheteurs nerveux, des carnets d'ordres peu profonds et de l'argent emprunté.
+1515|Dans la plupart des pays, le réseau est Visa ou Mastercard. En Iran, Shaparak relie les terminaux et les passerelles en ligne aux banques, et Shetab relie les banques entre elles.
+1516|En cours
+1517|En preuve de travail, quelqu'un qui contrôlerait l'essentiel de la puissance de minage pourrait réécrire l'histoire récente. C'est l'attaque des 51 %. Elle demande d'énormes ressources, et la cible est d'autant plus faible que le réseau est petit.
+1518|Dans la règle 50/30/20, que représente le 20 ?
+1519|Dans l'enquête 2024 de la Réserve fédérale, quelle part des adultes américains couvrirait une urgence de 400 dollars en espèces ou équivalent ?
+1520|Dans la section Read Contract, cherchez une fonction appelée owner. Si elle renvoie une adresse de portefeuille normale, cette personne contrôle encore les fonctions réservées au propriétaire, qui peuvent inclure la création de nouveaux tokens.
+1521|Aux États-Unis, la Réserve fédérale interroge les ménages chaque année. Dans son enquête 2024, 63 % des adultes ont dit qu'ils couvriraient une dépense imprévue de 400 dollars en espèces ou équivalent. Et 55 % ont dit avoir mis de côté de quoi couvrir trois mois de dépenses.
+1522|Aux États-Unis, le GENIUS Act a été promulgué le 18 juillet 2025. Il a créé le premier cadre fédéral pour les stablecoins. La loi entre en vigueur à la première de deux dates : 18 mois après sa promulgation, ou 120 jours après la publication des règles finales par les principaux régulateurs.
+1523|En coulisses
+1524|Dans les années à venir, comprendre la blockchain ne sera pas utile qu'aux gens de la crypto. Ce sera important pour quiconque veut comprendre l'identité numérique, la finance, la propriété, les infrastructures, les chaînes d'approvisionnement, les systèmes d'IA et l'avenir de la confiance.
+1525|Dans l'exemple, un euro plus fort a rendu la chemise plus chère pour l'Américain, et un euro plus faible la rend moins chère. Pour un ménage, la logique joue en sens inverse : quand votre monnaie s'affaiblit, les importations et les voyages à l'étranger coûtent plus cher, tout comme ce qui est fabriqué avec des pièces importées. La leçon 12 a montré comment la hausse des prix ronge le pouvoir d'achat ; le taux de change est l'une des routes par lesquelles elle arrive.
+1526|Dans la leçon précédente, nous avons vu comment vérifier un token : le contrat est-il vérifié, qui détient l'offre, peut-on créer de nouveaux tokens, y a-t-il des restrictions cachées, existe-t-il une vraie liquidité.
+1527|Dans les termes les plus simples, qu'est-ce qu'un taux d'intérêt ?
+1528|Dans le portefeuille, choisissez le
+1529|Revenu et salaire net
+1530|Groupe industriel
+1531|Industrie et fabrication
+1532|Industrie contre marchés : usages, le déficit, le record et le krach de 2026, l'or et les autres métaux, et les perspectives.
+1533|Industrie, énergie, mines, transports, tech, tourisme
+1534|Industrie, énergie, transports, mines, tech, tourisme
+1535|Inflation
+1536|L'inflation se compose aussi
+1537|L'inflation est une hausse générale des prix dans le temps. Un produit qui devient plus cher n'est pas de l'inflation. L'inflation, c'est quand le prix de la plupart des choses monte ensemble, si bien que chaque unité de monnaie achète moins.

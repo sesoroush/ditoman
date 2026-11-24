@@ -1,0 +1,107 @@
+2145|Revisa una vez al mes y cambia una cosa cada vez.
+2146|Recompensa por bloque
+2147|Recompensa por persona
+2148|Las recompensas se envían por lotes cada pocos días.
+2149|Transporte con conductor a precio fijo; lanzado en febrero de 2014
+2150|Capital de riesgo
+2151|Hoja de ruta
+2152|Carreteras, ferrocarril, puertos, aeropuertos, logística
+2153|Estafa romántica de inversión
+2154|Agua de rosas, destilados de hierbas, jarabes naturales y hierbas secas; Ciudad Industrial Amirkabir 1, Kashan
+2155|¿Aproximadamente cuánto interés simple generan 1.000 al 5% anual en 30 días?
+2156|¿Con qué frecuencia aproximada intenta la red Bitcoin producir un bloque?
+2157|Rug pull
+2158|Regla del 72
+2159|Regla práctica
+2160|Reglas
+2161|Reglas escritas en el propio dinero, como una fecha de caducidad o límites sobre dónde se gasta
+2162|Rusia abre la cripto regulada
+2163|Rusia, Arabia Saudí y Australia son los mayores exportadores de CO2 de la historia; Irán es el quinto. El dinero, los empleos, la ley y por qué las reglas climáticas actuales apenas lo cuentan.
+2164|SWIFT transmite instrucciones. Los bancos corresponsales mueven los saldos.
+2165|SWIFT transmite la instrucción. No guarda ni mueve el dinero. El dinero se mueve por las cuentas corresponsales descritas arriba. Por eso quedar fuera de SWIFT importa tanto a los bancos de un país: sin los mensajes, la vía normal queda cerrada.
+2166|SWIFT es una red de mensajería segura que más de 11.000 instituciones financieras de más de 200 países usan para enviarse instrucciones de pago. Se fundó en 1973.
+2167|SWIFT, bancos corresponsales, costes ocultos y stablecoins.
+2168|SWIFT: quiénes somos
+2169|Activos seguros frente a activos de riesgo
+2170|Seguridad
+2171|La misma pregunta, cruzando una frontera
+2172|=
+2173|Satoshi Nakamoto es el nombre asociado a la creación de Bitcoin. En 2008, este nombre apareció con un documento que explicaba un nuevo tipo de dinero digital. No lo controlaba ningún banco, gobierno ni empresa.
+2174|Satoshi Nakamoto es el nombre usado por la persona o el grupo que presentó Bitcoin al mundo. Pero la verdadera importancia de Satoshi no es solo el misterio de su identidad. Es la idea de que un sistema puede continuar sin depender de una persona central.
+2175|Satoshi importa porque Bitcoin se diseñó para ir más allá de la autoridad personal.
+2176|Satoshi todavía lo controla en secreto
+2177|Ahorra el dinero puntual:
+2178|Guarda el hash de la transacción
+2179|Ahorrar
+2180|Ahorro • Activos
+2181|Ahorrar, invertir, especular
+2182|Ahorros
+2183|Tasa de ahorro
+2184|Decir qué hace SWIFT y qué no hace.
+2185|Decir qué es y qué no es un presupuesto.
+2186|Decir qué no hace un banco central.
+2187|Decir qué es un banco central.
+2188|Decir qué hace bien un asistente de lenguaje y dónde puede fallar.
+2189|Decir qué es un neobanco y qué comprobar antes de usarlo.
+2190|Decir qué hace un nodo.
+2191|Decir qué puede permitir una aprobación de token.
+2192|Decir qué hace y qué no hace la diversificación.
+2193|Decir qué es el halving y cada cuánto ocurre.
+2194|Decir dónde se puede guardar de forma segura.
+2195|Decir por qué un contrato desplegado es difícil de cambiar.
+2196|Decir por qué una tienda recibe su dinero más tarde de lo que cree el cliente.
+2197|Decir por qué ayuda un estándar como ERC-20.
+2198|Decir por qué ni bitcoin ni una stablecoin son una respuesta sin riesgo a la inflación.
+2199|Decir por qué el emisor y el receptor deben usar la misma red.
+2200|Decir por qué la tasa anual real es mayor que el porcentaje simple.
+2201|Escala
+2202|Verificación por un segundo canal
+2203|Secciones
+2204|Seguridad
+2205|Comprobación de seguridad
+2206|Informe de seguridad (GoPlus)
+2207|Seguridad • Estafas
+2208|Seguridad • Comprobación de tokens
+2209|Ver los poseedores de tokens LP en BscScan
+2210|Ver todas las empresas
+2211|Ver todas las lecciones
+2212|Ver todo →
+2213|Ver la vía cripto en detalle
+2214|Ver el historial completo
+2215|Material de aprendizaje seleccionado y espacios de la comunidad.
+2216|Venderlo
+2217|Semiconductores
+2218|Envía primero una prueba pequeña
+2219|Envía una prueba pequeña,
+2220|Enviar por Bale
+2221|Enviar por Telegram
+2222|Enviar la dirección
+2223|Envía tu código y la dirección de tu billetera
+2224|Enviar cripto exige tres decisiones: qué dirección, qué red y qué comisión. Si fallas en una, el dinero puede perderse para siempre. Esta lección sigue una transferencia desde el botón Enviar hasta la
+2225|Enviar cripto exige tres decisiones: qué dirección, qué red y qué comisión. Si fallas en una, el dinero puede perderse para siempre. Esta lección sigue una transferencia desde el botón Enviar hasta la confirmación final.
+2226|Enviar, comprobar y proteger, antes de mover dinero real.
+2227|Separar una regla de oferta de una previsión de precio.
+2228|Separar ejemplos reales de pruebas de afirmaciones exageradas.
+2229|Serie
+2230|Pon límites y revisa
+2231|Creado sobre todo para prestar al gobierno para una guerra
+2232|Liquidación
+2233|Varios tokens sin relación usan el ticker TMN. Comprueba siempre la dirección completa del contrato.
+2234|Varios tokens sin relación usan el ticker TMN. Este es el único contrato oficial:
+2235|Shaparak: la red iraní de pagos electrónicos con tarjeta
+2236|Parte del sueldo neto
+2237|Compra y paga por ti
+2238|Lecciones cortas bilingües con cuestionarios
+2239|Lecciones cortas por tema, de unos cinco minutos cada una, en ambos idiomas, y cada una termina con un cuestionario.
+2240|Lecciones cortas sobre cripto y dinero
+2241|Lecciones cortas y gratuitas en persa e inglés. Cada una dura unos cinco minutos y termina con un cuestionario para que compruebes lo que te ha quedado.
+2242|¿Debería comprar TMN?
+2243|Mostrar todas las historias
+2244|Susa, Rey y Hamadán están entre diez ciudades antiguas que siguieron habitadas y conservaron su nombre, y unen a Irán con Siria y Líbano.
+2245|Plata ($)
+2246|Simple
+2247|Hábitos sencillos que evitan la mayoría de las pérdidas
+2248|Interés simple
+2249|El interés simple se aplica a la cantidad original; el compuesto, a la cantidad más los intereses anteriores.
+2250|Porcentaje simple
+2251|El interés simple, el compuesto y el diario suenan parecidos, pero a diez o veinte años dan resultados muy distintos. Esta lección muestra los tres con números pequeños que puedes comprobar

@@ -1,0 +1,130 @@
+801|C. Nichts
+802|C. Nichts; der Token ist ohnehin einen Dollar wert
+803|C. Auf Papier an einem sicheren Ort
+804|C. Einmal am Tag
+805|C. Nur wenn Sie sie einmal teilen
+806|C. Nur bereits gebildete Ersparnisse
+807|C. Nur mit Ihrer Erlaubnis
+808|C. Ein zweites Bankkonto eröffnen
+809|C. Das Eigentum wurde aufgegeben, und Eigentümer-Funktionen können nicht mehr genutzt werden
+810|C. Schulden zuletzt bezahlen
+811|C. Plattformen
+812|C. Banknoten drucken
+813|C. Zentralbankzinsen festlegen
+814|C. Ganz aufhören zu sparen
+815|C. Banken beaufsichtigen
+816|C. Steuern
+817|C. Die Bank of England, 1694
+818|C. Das Konto wird vorzeitig geschlossen
+819|C. Den Durchschnitt der letzten zehn Jahre
+820|C. Die Karte wird gesperrt
+821|C. Die Zentralbank druckt einen Beleg
+822|C. Die Coins tauchen eventuell nicht auf und sind verloren
+823|C. Die Börse, bei der sie gekauft wurden
+824|C. Das Netzwerk
+825|C. Das Netzwerk löscht alte Wallets
+826|C. Der Preis kann trotzdem stark schwanken
+827|C. Der Preis kann sich nicht mehr ändern
+828|C. Der Bitcoin-Preis
+829|C. Der Empfänger zahlt die Gebühr
+830|C. Das Land des Empfängers
+831|C. Der Preis des Hemdes
+832|C. Die Seite könnte langsam sein
+833|C. Der Token kann nicht gehandelt werden
+834|C. Das Freigabedatum
+835|C. Das Gewicht einer Münze
+836|C. Ihr Preis fällt nie
+837|C. Sie kommen nur auf Englisch vor
+838|C. Um Gold abzubauen
+839|C. Transparente und überprüfbare Systeme
+840|=
+841|C. Unbegrenzt
+842|C. Meist nichts; Sie warten mit den anderen Gläubigern
+843|C. Über einen zweiten Kanal oder mit dem Familien-Codewort prüfen
+844|C. Die Schließung am Wochenende
+845|C. Ob neue Tokens erzeugt werden können
+846|C. Beim App-Store
+847|C. Ja, eine Woche
+848|C. Ja, innerhalb einer Woche
+849|CBDC Wiki, Stand des digitalen Rial im Iran (März 2026)
+850|CBDC oder Kryptowährung
+851|CBDCs und Krypto sind nicht dasselbe
+852|CVJ: Überblick über TerraUSD (UST)
+853|=
+854|Berechnen Sie einfache Zinsen von Hand.
+855|Berechnen Sie den Durchschnittspreis einer Market-Order in einem dünnen Orderbuch.
+856|Kalender
+857|Cambridge Centre for Alternative Finance: Ethereums Stromverbrauch nach dem Merge (15. September 2022)
+858|Kann ich es mir leisten, das komplett zu verlieren?
+859|Können Bitcoin oder Stablecoins helfen?
+860|Können noch neue Tokens erzeugt werden?
+861|Kann die Mehrheit betrügen?
+862|CO2 biegt ab, Sonne und Wind steigen steil
+863|Kartennetzwerk
+864|Kartenzahlungen lassen sich rückgängig machen. Blockchain-Zahlungen nicht. Beides hat seinen Preis.
+865|Kartenterminals, Netzwerke und Betrugssysteme kosten Geld. In den meisten Ländern zahlt der Händler einen kleinen Prozentsatz jedes Verkaufs, und ein Teil dieser Gebühr, das Interchange-Entgelt, geht an die Bank, die die Karte ausgegeben hat.
+866|Karteninhaber und Händler
+867|Vertrauen tragen:
+868|Fallstudie: Wie UST seine Bindung verlor
+869|Bargeld und Staatsanleihen:
+870|Bargeld, kurzfristige Staatsanleihen, andere Vermögenswerte. Welcher Anteil ist bargeldähnlich?
+871|Bargeld:
+872|Zentralbank
+873|Digitale Zentralbankwährungen und „programmierbares Geld“: was sie sind, wie weit sie sind, was real und was übertrieben ist, und wo Irans digitaler Rial steht
+874|Digitale Zentralbankwährungen und „programmierbares Geld“: was sie sind, wie weit sie sind, was real und was übertrieben ist, und wo Irans digitaler Rial steht.
+875|Digitale Zentralbankwährungen und programmierbares Geld: was real ist, was übertrieben ist und wo Irans digitaler Rial steht.
+876|Digitale Zentralbankwährungen, programmierbares Geld, die echten Tests hinter den Schlagzeilen und Irans digitaler Rial.
+877|Digitale Zentralbankwährung (CBDC)
+878|Chainalysis: Forschung zu Krypto-Kriminalität
+879|Veränderung im Zeitraum
+880|Sich wandelnde Regulierung
+881|Rückbuchung
+882|Prüfen Sie Adresse und Netzwerk zweimal,
+883|Prüfen, bevor Sie vertrauen
+884|Erst prüfen. Dann entscheiden.
+885|Prüfen Sie es selbst
+886|Prüfen Sie die wichtigen Fakten
+887|Prüfen Sie die Ausgabe-Rechnung.
+888|Prüfen Sie den Token. Dann prüfen Sie sich selbst.
+889|Prüfen Sie, was hängen geblieben ist. Die Antwort steht unter jeder Frage.
+890|Prüfen Sie, ob es einen echten Liquiditätspool gibt und wie tief er ist. Ohne Liquidität gibt es keinen Ausgang, egal welche Zahl angezeigt wird.
+891|Prüfen Sie, ob noch neue Tokens erzeugt werden können.
+892|Prüfen Sie, ob Sie den Netzwerk-Coin haben
+893|Öffentliche Marktdaten prüfen.
+894|Die Rechnung prüfen
+895|China vor 40 Jahren, vor 20 Jahren und heute: 3,4 Billionen Dollar im Ausland investiert, 168 Häfen in 90 Ländern, Kredite, Know-how und der Vergleich mit Großbritannien, Frankreich, den USA und Japan.
+896|Chinas Hightech-Fertigung
+897|Chinas Wirtschaft mit zwei Geschwindigkeiten: Hightech boomt, der Konsum stockt
+898|Chinesischer Yuan
+899|Chinesischer Yuan (täglich)
+900|Wählen Sie dasselbe Netzwerk
+901|=
+902|Circle und Paribu unterzeichnen eine Absichtserklärung: wie der digitale Dollar funktioniert, die Lehre der Türkei aus 85 % Inflation, wo der Iran steht und die kommenden Jobs.
+903|Clearing
+904|Klima und Wirtschaft
+905|Schließen
+906|Beschichtete MDF-Platten und -Profile, PVC-Wandpaneele, Kunststein, Deckenplatten; Freihandelszone Anzali, Gilan
+907|Coin
+908|Coin oder Token
+909|CoinGecko: Bitcoin-Preisverlauf
+910|Sicherheit
+911|Geschäftsbank
+912|Nur Geschäftsbanken
+913|Struktur der Community
+914|Unternehmen
+915|Die Unternehmensbeispiele beschreiben, wie der jeweilige Dienst nach eigenen Angaben aufgebaut ist. Sie sind keine Empfehlungen, und Vereinbarungen können sich ändern.
+916|Unternehmensprofile mit Quellen
+917|Vergleichen Sie Ergebnisse nach 10 und 20 Jahren bei gleichem Satz.
+918|Vergleichen Sie eine umkehrbare Kartenzahlung mit einer endgültigen Blockchain-Zahlung.
+919|Vergleichen Sie Vermögenswerte mit denselben vier Fragen: Schwankung, Liquidität, Aufbewahrungskosten und was schiefgehen kann.
+920|Vergleichen Sie Dollar, Gold und Bitcoin nach Preisschwankungen.
+921|Märkte vergleichen
+922|Vergleichen Sie Angebote über denselben Zeitraum und mit derselben Verzinsung.
+923|Vergleichen Sie den Schutz hinter einem Bankkonto und einem Börsenkonto.
+924|Vergleichen Sie zwei Angebote auf derselben Grundlage.
+925|Was zeigt ein Bestätigungsbericht im Vergleich zu einer vollständigen Prüfung?
+926|Abgeschlossen
+927|Compliance-Prüfungen
+928|Zinseszins
+929|Zinseszins
+930|Zinseszins wirkt in beide Richtungen. Beim Sparen hilft er; bei Schulden ist er der Grund, warum ein Saldo wachsen kann, obwohl Sie etwas zahlen. Lektion 19 zeigte, wie sich Ratenkosten aufbauen, und hier ist der Motor darunter.

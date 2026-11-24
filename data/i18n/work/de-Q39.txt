@@ -1,0 +1,60 @@
+3296|reale Rendite
+3297|echter Support beginnt keine privaten Chats. Wer Sie zuerst kontaktiert, ist ein Fremder, egal was sein Profilbild sagt.
+3298|Wiederherstellungsphrase
+3299|sagt, Sie müssten sofort handeln
+3300|Abrechnung
+3301|einfach 1.500, Zinseszins etwa 1.628,89.
+3302|einfach 2.000, Zinseszins etwa 2.653,30.
+3303|Slippage
+3304|Spread
+3305|Angebot und Nachfrage entscheiden. Wollen mehr Menschen eine Währung kaufen als verkaufen, steigt ihr Preis. Der IWF merkt an, dass eine Zentralbank dennoch Devisen kaufen oder verkaufen kann, um plötzliche Schwankungen zu glätten.
+3306|schwankt viel stärker. Von etwa 69.000 Dollar im November 2021 fiel er ein Jahr später unter 16.000 Dollar, ein Rückgang von mehr als 75 Prozent, und stieg später auf neue Höchststände über 126.000 Dollar im Oktober 2025.
+3307|lehrt, genau danach zu suchen.
+3308|der sie bewegen kann. Niemand sonst muss eine Überweisung genehmigen.
+3309|die Gebühr, die Sie beim Senden sehen.
+3310|das Land bindet sein Geld an eine andere Währung oder einen Korb. Manche gehen ganz: Panama nutzt den US-Dollar, und Hongkong betreibt ein Currency Board.
+3311|die Reservierung wurde gesetzt, aber die Antwort erreichte das Lesegerät nie. Die Reservierung wird später aufgehoben, deshalb „kommt“ das Geld nach einer Weile „zurück“.
+3312|der Kartenherausgeber hat Nein gesagt, wegen Guthaben, Limits oder einer Betrugsprüfung.
+3313|der Herausgeber hält für die ausgegebenen Tokens Bargeld oder kurzfristige Staatsanleihen. Das ist das häufigste Modell unter den großen Stablecoins. Die Frage ist immer, wie sicher diese Reserven wirklich sind und wie leicht sie sich verkaufen lassen.
+3314|das Geld ist weg, obwohl es auf der Blockchain noch sichtbar ist.
+3315|der Anbieter tauscht zu einem schlechteren Kurs als dem Marktkurs und behält die Differenz. Das ist oft der größere Teil und steht auf keinem Beleg.
+3316|das der Empfänger genannt hat.
+3317|dieselbe Technik erzeugt geklonte Stimmen und Gesichter. 2024 überwies ein Mitarbeiter des Ingenieurbüros Arup in Hongkong rund 25 Millionen Dollar nach einem Videoanruf, in dem alle anderen Teilnehmer Fälschungen waren. Lektion 17 zeigte, wie schnell Identitätsbetrug wächst.
+3318|Sender und Empfänger müssen dasselbe Netzwerk nutzen.
+3319|die Bank oder der Zahlungsdienstleister des Geschäfts, der das Lesegerät stellt und das Geld für das Geschäft einzieht.
+3320|das Geschäft.
+3321|das System in der Mitte, das alle Banken miteinander verbindet und die Regeln festlegt.
+3322|der Token ist durch andere als Sicherheit gesperrte Kryptowerte gedeckt, meist mit höherem Wert als die ausgegebenen Tokens. Fallen diese stark, wird das System auf die Probe gestellt und braucht einen Sicherheitspuffer, um intakt zu bleiben.
+3323|Diebstahl
+3324|prüfen Sie dann auf dem Bestätigungsbildschirm noch einmal die ersten und letzten Zeichen.
+3325|es gibt keine echte Reserve. Das System versucht, den Preis mit Angebotsregeln und einem zweiten Token zu halten. Dieses Modell scheiterte im Mai 2022, die Fallstudie unten.
+3326|es gibt meist keinen Weg zurück. Lektion 16 behandelt das Schritt für Schritt.
+3327|sie können die Wallet von überall auf der Welt leeren, und die Überweisung lässt sich nicht rückgängig machen.
+3328|über ihre Prudential Regulation Authority beaufsichtigt sie mehr als 1.300 Firmen, damit eine scheiternde Bank nicht den Rest mitreißt.
+3329|zum Bestehen. Lesen Sie diese Lektionen noch einmal:
+3330|an die Bank, die Ihre Karte ausgegeben hat.
+3331|an das Netzwerk.
+3332|an das Lesegerät: der Piepton.
+3333|Lektion zur Token-Prüfung
+3334|Toman
+3335|die kurzfristigen Einlagen vieler Menschen in langfristige Kredite für Wohnungen und Unternehmen verwandeln.
+3336|bis der Empfänger bestätigt.
+3337|warten Sie, bis er ankommt, und senden Sie dann den Rest.
+3338|wenn Energie, Importe oder Löhne teurer werden, geben Hersteller die Kosten weiter.
+3339|wenn alle steigende Preise erwarten, erhöhen Verkäufer früh und Käufer kaufen eilig, was die Preise weiter treibt.
+3340|wenn die Adresse neu oder der Betrag groß ist.
+3341|wenn die Geldmenge einer Volkswirtschaft schneller wächst als die verfügbaren Güter, steigen die Preise.
+3342|wenn Ihre Bank die Frage aus Lektion 14 beantwortet, vergleicht ein Modell die Zahlung in Sekundenbruchteilen mit Millionen anderer. Ein Kauf an einem ungewöhnlichen Ort zu einer ungewöhnlichen Uhrzeit wird blockiert oder geprüft.
+3343|wer kann Ihre Zahlungen sehen, und nach welchen Regeln?
+3344|Sie.
+3345|Ihre Bank, die Ihnen die Karte gegeben hat und Ihr Konto führt.
+3346|— Anchor-Rendite von 18 bis 20 Prozent und der erste Rückgang auf 98 Cent
+3347|— Regel zum Inkrafttreten (18 Monate oder 120 Tage nach den endgültigen Vorschriften)
+3348|— Volle Dollardeckung und jährliche Prüfungen für Herausgeber über 50 Milliarden Dollar
+3349|— Wie die UST-Bindung funktionierte und die ersten Tage des Zusammenbruchs
+3350|— Deckung durch liquide Vermögenswerte und monatliche Offenlegung der Reservezusammensetzung
+3351|— Verbleibende Reserve der Luna Foundation Guard am 16. Mai 2022
+3352|— Unterzeichnungsdatum und erster Bundesrahmen für Zahlungs-Stablecoins
+3353|— Überblick über den Terra-Zusammenbruch und Marktverluste
+3354|„Bitcoin war nicht nur Innovation. Es war eine Antwort.“
+3355|‹ Älter

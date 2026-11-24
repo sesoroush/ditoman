@@ -1,0 +1,118 @@
+931|Frecuencia de capitalización
+932|La capitalización ayuda a quien ahorra y perjudica a quien debe.
+933|Concentrada en los fundadores
+934|Error con aplomo (alucinación)
+935|Errores con aplomo:
+936|Confirmación: cuándo está hecho
+937|Las confirmaciones hacen definitiva una transacción, y una transacción definitiva no se puede revertir.
+938|Confirmado en el código
+939|Conectar la blockchain con la infraestructura, los datos y los sistemas del futuro.
+940|Conectar la blockchain con el futuro de los sistemas digitales.
+941|Mecanismo de consenso
+942|Consentimiento para compartir datos
+943|Consumer Financial Protection Bureau: guía esencial para crear un fondo de emergencia
+944|Consumer Financial Protection Bureau: qué es el interés compuesto (definición y el ejemplo de 1.000 dólares al 5%)
+945|Consumer Financial Services Law Monitor: resumen del informe del CFPB
+946|Contrato en BscScan
+947|Código fuente del contrato verificado, alrededor del 20% de la oferta retirado de circulación en dos pasos en la cadena, propiedad renunciada para siempre, lecciones bilingües publicadas y el libro blanco fijado como dirección final.
+948|Verificación del contrato
+949|Contrato verificado, propiedad renunciada, alrededor del 20% de la oferta fuera de circulación, lecciones bilingües publicadas, libro blanco definitivo.
+950|Contrato, hechos y transparencia honesta
+951|Control
+952|El control y los datos se reparten por una red
+953|Crecimiento controlado
+954|Convierte un precio con un tipo dado.
+955|Falsificaciones convincentes:
+956|CoolWallet: autopsia de Terra
+957|Copiar
+958|Copiar mensaje
+959|Copia el mensaje, abre
+960|Copia tu dirección
+961|Idea central
+962|Corporate Finance Institute: qué le pasó a Terra
+963|Respuesta correcta: A
+964|Respuesta correcta: B
+965|Respuesta correcta: B. Nadie legítimo la pide nunca.
+966|Respuesta correcta: C
+967|Respuesta correcta: C (Bahamas, Jamaica y Nigeria)
+968|Respuesta correcta: C. Cayó más de un 75% entre noviembre de 2021 y noviembre de 2022.
+969|Respuesta correcta: C. La rentabilidad real es negativa.
+970|Respuesta correcta: C. UST no tenía reserva en dólares; dependía de LUNA y de acuñar y quemar.
+971|Respuesta correcta: D
+972|Respuesta correcta: Falso
+973|Respuesta correcta: Falso. Las fechas de caducidad se usaron en pruebas promocionales limitadas, como Shenzhen en enero de 2021, no en los saldos cotidianos.
+974|Respuesta correcta: Falso. Solo impide que la liquidez bloqueada se retire antes de la fecha de desbloqueo.
+975|Respuesta correcta: Falso. Muchos inversores tienen ambos y venden ambos cuando quieren menos riesgo.
+976|Respuesta correcta: Falso. Las comprobaciones técnicas describen el token, no tu razonamiento, tu momento ni tu riesgo.
+977|Respuesta correcta: Falso. Tres observaciones no son un patrón, y había muchos otros factores en juego.
+978|Respuesta correcta: Falso. Sin liquidez no hay salida.
+979|Respuesta correcta: reglas escritas en el propio dinero, por ejemplo una fecha de caducidad o límites sobre dónde se puede gastar.
+980|Respuesta correcta: los activos seguros rinden más, así que los arriesgados resultan menos atractivos, y pedir prestado para comprarlos sale más caro.
+981|Respuesta correcta: que tu vida pudiera seguir con normalidad si la cantidad llegara a cero y no volviera.
+982|Respuesta correcta: cuando el exchange cierra automáticamente una posición apalancada porque el margen se agota.
+983|Respuesta correcta: cuando quien tiene los tokens LP retira la liquidez y deja a los tenedores sin poder vender.
+984|Respuestas correctas: A, B, C
+985|Respuestas correctas: A, B, C, D
+986|Respuestas correctas: A, B, D
+987|Correlación frente a causalidad
+988|Banco corresponsal
+989|Coste del préstamo
+990|Crear mi código
+991|Crea la billetera y escribe las 12 palabras de recuperación en papel. Nunca se las des a nadie.
+992|Creado por
+993|Creados en la era
+994|Decisiones de crédito:
+995|Reconocimiento por la participación real: lecciones terminadas, aportes útiles, buen debate y primeros apoyos.
+996|Calificación crediticia
+997|Crédito • Deuda
+998|Pago transfronterizo
+999|Cripto
+1000|Desplome del mercado cripto: 550.000 millones borrados
+1001|Cripto y dinero, en la práctica
+1002|Garantía en cripto:
+1003|Las cripto van un paso más allá que las fintech. Una billetera personal mueve dinero sin ningún banco debajo, y algunas aplicaciones prestan y operan solo mediante código.
+1004|Las cripto tienen la misma división, y las palabras son moneda y token.
+1005|Mercado cripto
+1006|Desplome del mercado cripto
+1007|Cripto • Transacciones
+1008|CryptoSlate, 5 nov 2026: Nasdaq 100 −5,5%, liquidaciones de unos mil millones de dólares, más de 201.000 traders
+1009|Divisas
+1010|Caja de conversión
+1011|El comercio de divisas es enorme, y el dólar estadounidense está en un lado de la mayor parte.
+1012|Custodia
+1013|Atención al cliente:
+1014|Ciberataques a bancos
+1015|Ciberataques a bancos
+1016|Ciberseguridad
+1017|D. Una comisión que se paga a los exchanges
+1018|D. Una votación de gobernanza
+1019|D. Todas las anteriores
+1020|D. Ahora cualquiera puede crear nuevos tokens
+1021|D. Porque los exchanges cierran entre semana
+1022|D. Porque elimina toda la tecnología de las finanzas
+1023|D. Porque los mercados cierran de noche
+1024|D. La blockchain solo es útil para los bancos
+1025|D. Solo bancos comerciales
+1026|D. Identidad digital
+1027|D. Los exchanges han fijado un precio
+1028|D. Cuántos países hablan de ella
+1029|D. Se habla mucho de ello en internet
+1030|D. Lo exigen los exchanges
+1031|D. Impide que el token cotice en ningún sitio
+1032|D. Ninguno
+1033|D. Ninguna de las anteriores
+1034|D. Solo registros privados
+1035|D. Prescindir de internet
+1036|D. El precio futuro del token
+1037|D. El token no tiene límite de oferta
+1038|D. Los usuarios no pueden verificar nada
+1039|D. Verificación
+1040|D. Cuando decidan los fundadores
+1041|=
+1042|El cálculo diario importa porque muestra cuánto tiempo estuvo el dinero en cada sitio. El dinero que llega a final de mes rinde menos días, y un préstamo pagado tarde cuesta más días.
+1043|Interés diario
+1044|Informes diarios del mercado
+1045|Resumen diario de prensa
+1046|Precios diarios
+1047|Informe diario
+1048|Daniel Chidiac sobre pensar demasiado, los límites y el autosabotaje, y por qué un espacio entre el hecho y la reacción importa en las decisiones de dinero.

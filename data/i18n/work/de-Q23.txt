@@ -1,0 +1,135 @@
+2010|Petrochemie
+2011|Pharma
+2012|Phasen, keine Termine. Das Whitepaper vermeidet bewusst Zeitversprechen, die nicht zu halten sind.
+2013|Phasen, keine Termine. Wir berichten ehrlich über den Fortschritt, auch über das, was nicht funktioniert hat.
+2014|Phishing
+2015|Foto:
+2016|Physische Dollar und Gold müssen sicher vor Diebstahl, Feuer und Schäden aufbewahrt werden. Abgenutzte oder ältere Scheine lassen sich teils schwerer verkaufen.
+2017|Wählen Sie einen Stablecoin, den Sie kennen, und folgen Sie diesen sechs Schritten. Es dauert etwa zehn Minuten.
+2018|Bildanleitung und Video für SafePal, Trust Wallet, MetaMask und TokenPocket
+2019|Stapel
+2020|Pilot oder Einführung
+2021|PinkLock-Eintrag #2089923
+2022|PinkLock-Eintrag #2089923, TMN/WBNB-Liquiditätssperre
+2023|TMN richtig einordnen.
+2024|Einen zehnminütigen Monatsrückblick planen.
+2025|Planen:
+2026|Plattformen, Fintech, wissensbasierte Firmen, Gesundheit
+2027|Inflation zum Vorjahresmonat
+2028|Die Inflation zum Vorjahresmonat vergleicht die Preise dieses Monats mit…
+2029|Polyethylen-Granulat, das Hauptprodukt von Arya Sasol (Beispielfoto)
+2030|Ponzi- und Schneeballsysteme
+2031|Bevölkerung
+2032|Português
+2033|Português
+2034|Positionsgröße
+2035|Beiträge
+2036|Pfund
+2037|Druck, vor dem Nachdenken zu handeln, ist ein typisches Merkmal von Manipulation
+2038|Zurück
+2039|Vorherige Lektion
+2040|Preis
+2041|Preis (USD)
+2042|Preisverlauf | Dollar, Gold und tägliche Marktberichte | Ditoman
+2043|Warenkorb (VPI)
+2044|Preisverlauf.
+2045|Preis in Dollar
+2046|Preis in Euro
+2047|Preise
+2048|Preise ändern sich, also auch das Budget
+2049|Kapital
+2050|Datenschutz:
+2051|Privater Schlüssel
+2052|Programmierbarkeit:
+2053|Programmierbares Geld
+2054|Proof of Stake
+2055|Proof of Stake (Ethereum)
+2056|Proof of Stake: Validatoren
+2057|Proof of Stake: Validatoren setzen Geld ein und können bestraft werden (Slashing).
+2058|Proof of Work
+2059|Proof of Work (Bitcoin)
+2060|Proof of Work vs. Proof of Stake
+2061|Proof of Work: Miner verbrauchen Energie beim Hashen, bis ein Ergebnis unter dem Zielwert liegt.
+2062|Proof of Work: Mining
+2063|Protokoll
+2064|Proxy (aktualisierbar)
+2065|Öffentliche Informationen über den Pilot sind begrenzt: Es gibt keine unabhängig geprüften Zahlen zur Nutzerzahl und kein öffentliches Datum für eine landesweite Einführung. Vorerst ist es ein Test, kein Geld, mit dem die meisten Iraner umgehen.
+2066|Öffentliche Sperreinträge
+2067|Jeden Abend um 20:00 Uhr Teheraner Zeit veröffentlicht auf
+2068|Zellstoff und Papier; Gilan
+2069|Anders gesagt: Ein großer Teil der Erwachsenen im reichsten Land der Welt hätte mit einer kleinen Überraschung Mühe. Eine Reserve zu haben ist gesunder Menschenverstand, aber keine gängige Praxis.
+2070|Viertelmünze
+2071|Frage 01
+2072|Frage 02
+2073|Frage 03
+2074|Frage 04
+2075|Frage 05
+2076|Frage 1
+2077|Frage 1: Wie stark schwankt der Preis?
+2078|Frage 2
+2079|Frage 2: Wie leicht lässt es sich verkaufen?
+2080|Frage 3
+2081|Frage 3: Was kostet die Aufbewahrung?
+2082|Frage 4
+2083|Frage 4: Was kann schiefgehen?
+2084|Frage 5
+2085|Fragen
+2086|Quiz
+2087|RTE News: FTX-Gründer wegen des Verlusts von Kundengeldern verurteilt (28. März 2024)
+2088|Zeitraum
+2089|Zinssatz
+2090|Zinsänderungen können den US-Dollar stärken oder schwächen, und die meisten Kryptowerte werden in Dollar bewertet. Ein stärkerer Dollar kann auf in Dollar gemessene Preise drücken. Dieser Effekt ist real, aber unzuverlässig.
+2091|Zinssatz oder Rendite
+2092|Einen Sperreintrag lesen und Paar, Menge, Datum und Anteil am Pool prüfen.
+2093|Einen Reservebericht Schritt für Schritt lesen und ein begründetes Urteil schreiben.
+2094|Automatisch aus öffentlichen Börsendaten gelesen oder direkt aus dem PancakeSwap-Pool, wenn kein Tracker TMN listet.
+2095|Direkt aus dem PancakeSwap-V2-Pool auf der BNB Smart Chain gelesen (
+2096|Auf Persisch lesen (PDF)
+2097|Lektion lesen
+2098|Lesen Sie zehn Lektionen, bestehen Sie einen Test mit zehn Fragen und erhalten Sie 500.000 TMN, für die ersten 1.000 Personen.
+2099|Lesen Sie zehn Lektionen, bestehen Sie einen Test mit zehn Fragen und erhalten Sie 500.000 TMN, für die ersten 1.000 Personen. Hier starten
+2100|Zehn Lektionen lesen, Test bestehen, TMN erhalten
+2101|Lesen Sie den Vertragscode auf Transfersteuern, Pausenfunktionen oder die Möglichkeit, bestimmte Adressen zu sperren. Manche Tokens sind so gebaut, dass Kaufen normal funktioniert, Verkaufen aber nicht.
+2102|Die Lektion lesen
+2103|Lesen Sie die Lektion auf Englisch oder Persisch.
+2104|Lesen Sie die Lektion auf Englisch oder Persisch. Diese Lektion erklärt, warum es bei der Blockchain nicht nur um Krypto geht, sondern um Vertrauen, Überprüfung und darum, wie künftige Systeme gebaut werden.
+2105|Lesen Sie die Lektion auf Englisch oder Persisch. Diese Struktur ist für künftige Quiz-, Punkte-, Reputations- und Belohnungssysteme gedacht.
+2106|Lesen Sie die Strafregelung, bevor Sie sie kennen müssen.
+2107|Die Geschichte lesen
+2108|Die zehn Lektionen lesen
+2109|Das Whitepaper lesen
+2110|Das Whitepaper lesen (PDF)
+2111|Lesezeit
+2112|Bereit, eine eigene Wallet auszuprobieren?
+2113|Echte iranische Leistung
+2114|Real oder übertrieben?
+2115|Reale Rendite
+2116|Echtes Verständnis kommt zuerst.
+2117|Versteckte Einschränkungen in einem Vertrag erkennen.
+2118|Die fünf häufigen Betrugsmuster erkennen.
+2119|Dringlichkeit als Warnsignal statt als Chance erkennen.
+2120|Erkennen, warum drei historische Fälle kein Muster ergeben.
+2121|Anerkennung
+2122|Erkennen, warum Transparenz und Sicherheit wichtig sind.
+2123|Erkennen, warum Transparenz und Überprüfung wichtig sind.
+2124|Informationen transparent und überprüfbar erfassen
+2125|Wiederherstellungsphrase
+2126|Rückholbetrug
+2127|Lithiumbatterien nur mit Wasser recyceln
+2128|Lithiumbatterien mit Wasser recyceln
+2129|Rücktausch
+2130|Rücktausch: der wichtigste Test
+2131|Den Fonds wieder auffüllen
+2132|Erstattungen und Reklamationen:
+2133|Auslandsüberweisung
+2134|Das Internet überflüssig machen
+2135|Verzichtet
+2136|Die Sonne mieten
+2137|Die Sonne mieten: Sonnenlicht aus dem All bei Nacht
+2138|Alle Websites ersetzen
+2139|Berichte, Lektionen und Mut machende Geschichten, täglich auf Ditomans Kanälen.
+2140|Forschungsbericht
+2141|Deckung durch Reserven
+2142|Reserven
+2143|Reserven:
+2144|Rohstoffe und Bergbau

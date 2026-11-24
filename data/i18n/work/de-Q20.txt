@@ -1,0 +1,89 @@
+1770|Viele Krypto-Börsen erlauben den Handel mit Hebel. Mit 10-fachem Hebel werden aus 100 Dollar eigenem Geld (Ihrer
+1771|Viele Ratgeber nennen drei bis sechs Monate an notwendigen Ausgaben als Faustregel, und die Drei-Monats-Frage der Federal Reserve folgt derselben Idee. Sehen Sie es als Richtung, nicht als Prüfung.
+1772|Vieles bewegt Angebot und Nachfrage: wie viel ein Land ins Ausland verkauft und von dort kauft, Zinsen, Inflation und Erwartungen an die Zukunft. Erwartungen zählen mehr, als viele denken, denn Händler handeln nach dem, was sie erwarten, nicht nur nach dem, was geschehen ist.
+1773|Viele Händler kaufen riskante Anlagen mit geliehenem Geld. Höhere Zinsen verteuern diese Kredite und verringern das Geld, das in die Märkte fließt. Niedrigere Zinsen bewirken das Gegenteil.
+1774|Marktkalender
+1775|Marktdaten
+1776|Marktrückblick
+1777|Märkte
+1778|Märkte heute Abend
+1779|Märkte schließen nachts
+1780|Märkte warten nicht auf die Ankündigung. Sie erraten sie vorab, und die Preise bewegen sich auf diese Vermutung hin. Wenn die Entscheidung kommt, ist das erwartete Ergebnis schon „eingepreist“.
+1781|Märkte reagieren auf Überraschungen
+1782|Märkte • Wie sich Preise bewegen
+1783|Märkte • Risiko
+1784|Ausgereift, seit Jahren genutzt
+1785|Maximale Menge
+1786|Mayer Brown: GENIUS Act unterzeichnet (18. Juli 2025)
+1787|Medien
+1788|Irans Unternehmen kennenlernen
+1789|Mehr News: Kartenzahlungsgebühren im Iran und wer sie bezahlt hat
+1790|Menü
+1791|Metalle
+1792|Micron, SK hynix, AMD, Arista und Marvell: offizielle Zahlen, Eigentümerstruktur, der Ausstieg von Jensen Huang und Szenarien bis 2030.
+1793|Weltweiter Microsoft-Ausfall: 16 Stunden ohne E-Mail und Teams
+1794|Weltweiter Microsoft-Ausfall
+1795|Miner
+1796|Miner und Validatoren schlagen Blöcke vor, aber jeder Computer, der die Software ausführt, ein Node, kann die Regeln prüfen. Ein Block, der gegen die Regeln verstößt, wird abgelehnt, auch wenn er teuer in der Herstellung war.
+1797|Miner, Validatoren und Nodes: wie sich Fremde einigen.
+1798|Mining und Schwierigkeit
+1799|Mint-Funktion
+1800|Minting
+1801|Modus
+1802|Geldpolitische Autonomie
+1803|Geld und Krypto, praxisnah
+1804|Geld und Zahlungen:
+1805|Geld kann niemals digital sein
+1806|Geld überquert keine Grenzen. Nachrichten tun es, und Banken passen die Konten an, die sie beieinander führen.
+1807|Geld reist nicht
+1808|Geld reserviert, aber Kauf fehlgeschlagen:
+1809|Finanzbildung
+1810|Ruhendes Geld verliert Kaufkraft im Tempo der Inflation. Die Tabelle zeigt, was 100 Millionen in bar nach einigen Jahren noch kaufen können.
+1811|Geld • Budget
+1812|Geld • Zentralbanken
+1813|Geld • Verwahrung
+1814|Geld • Digitale Währungen
+1815|Geld • Wechselkurse
+1816|Geld • Inflation
+1817|Geld • Zinsen
+1818|Geld • Sicherheitsnetz
+1819|Geld • Stablecoins
+1820|Monatliche Rate
+1821|Monatlicher Rückblick
+1822|Mehr Kontrolle, mehr Verantwortung
+1823|Mehr Geld als Waren:
+1824|Mehr Menschen nutzen, was sie leistet
+1825|Weitere Themen
+1826|Die meisten Fintechs haben keine Banklizenz. Sie bauen den Bildschirm, den Sie berühren, und dahinter verwahrt eine lizenzierte Bank das Geld. Sie sehen die App. Die Bank ist der Motor darunter.
+1827|Die meisten Verluste entstehen nicht durch komplizierte Fehler. Sie entstehen durch den Kauf von etwas, das niemand Beteiligtes klar beschreiben konnte.
+1828|Die meisten Verluste beginnen mit Überredung, nicht mit Hacking.
+1829|Das meiste Geld kann geschaffen werden, wann immer sein Herausgeber es beschließt. Bitcoin nicht. Seine Ausgabe folgt einem Zeitplan, und der gilt für alle gleich.
+1830|Vor allem: Handeln Sie nicht die Schlagzeile. Verstehen Sie das System, in dem die Schlagzeile steht.
+1831|Die meisten Menschen haben das Gefühl, dass das Geld vor Monatsende verschwindet. Diese Lektion zeigt einen einfachen Weg zu sehen, wohin es geht, mit einer bekannten Faustregel und einer
+1832|Die meisten Menschen haben das Gefühl, dass das Geld vor Monatsende verschwindet. Diese Lektion zeigt einen einfachen Weg zu sehen, wohin es geht, mit einer bekannten Faustregel und einer einmonatigen Gewohnheit.
+1833|Die meisten glauben, Bitcoin sei geschaffen worden, um eine digitale Münze zu sein.
+1834|Die meisten glauben, bei der Blockchain gehe es um Krypto.
+1835|Die meisten glauben, bei der Blockchain gehe es nur um Kryptowährungen.
+1836|Die meisten, die Krypto verlieren, werden nicht gehackt. Sie werden überredet, gehetzt oder machen einfach einen kleinen Fehler. Diese Lektion behandelt die fünf häufigsten Arten, Geld zu verlieren, und die einfachen Gewohnheiten, die jede
+1837|Die meisten, die Krypto verlieren, werden nicht gehackt. Sie werden überredet, gehetzt oder machen einfach einen kleinen Fehler. Diese Lektion behandelt die fünf häufigsten Arten, Geld zu verlieren, und die einfachen Gewohnheiten, die jede davon verhindern.
+1838|Die meisten, die mit einem Token Geld verlieren, haben nicht das falsche Projekt gewählt. Sie haben nie die richtigen Dinge geprüft.
+1839|Die meisten Stablecoins stützen sich auf eine von drei Arten der Deckung. Das Bild unten zeigt sie nebeneinander.
+1840|Verschieben Sie alles Verbleibende in eine neue Wallet mit neuer Wiederherstellungsphrase. Bewahren Sie die Transaktions-Hashes und die Nachrichten auf. Melden Sie es der beteiligten Plattform und der Polizei in Ihrem Land.
+1841|Legen Sie das Sparen zuerst zur Seite, am Tag, an dem das Einkommen eingeht.
+1842|Geld bewegen:
+1843|Mythos 1: Ein Stablecoin ist immer sicher, wie Geld auf der Bank.
+1844|Mythos 2: „Voll gedeckt“ heißt, er kann nicht brechen.
+1845|Mythos 3: Alle Stablecoins funktionieren gleich.
+1846|Name
+1847|Nennen Sie eine Grenze dessen, was ein Vertrag wissen kann.
+1848|Nennen Sie für jede der drei ein Aufbewahrungsrisiko.
+1849|Nennen Sie praktische Wege, diese Risiken zu verringern.
+1850|Nennen Sie die Gestaltungsfragen, die entscheiden, ob eine CBDC für Nutzer sicher ist.
+1851|Nennen Sie die fünf Beteiligten einer Kartenzahlung und was jeder tut.
+1852|Nennen Sie die vier Aufgaben einer Bank.
+1853|Nennen Sie die Gewohnheiten, die eine Wiederherstellungsphrase schützen.
+1854|Nennen Sie die drei Hauptarten der Deckung und das Hauptrisiko jeder.
+1855|Nennen Sie drei frühe Zentralbanken und ihre Gründungsjahre.
+1856|Nennen Sie drei Bereiche, in denen KI im Finanzwesen schon arbeitet.
+1857|Nennen Sie, was eine Sperre Ihnen über einen Token nicht verrät.
+1858|Naqsh-e-Jahan-Platz in Isfahan mit einer Fliesenblume und Rosen

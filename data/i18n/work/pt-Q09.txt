@@ -1,0 +1,130 @@
+801|C. Nada
+802|C. Nada; o token vale um dólar de qualquer forma
+803|C. Em papel, num lugar seguro
+804|C. Uma vez por dia
+805|C. Só se o partilhar uma vez
+806|C. Só as poupanças já feitas
+807|C. Só com a sua autorização
+808|C. Abrir uma segunda conta bancária
+809|C. A propriedade foi renunciada e as funções exclusivas do proprietário já não podem ser usadas
+810|C. Pagar as dívidas por último
+811|C. Plataformas
+812|C. Imprimir notas
+813|C. Fixar as taxas de juro do banco central
+814|C. Deixar de poupar por completo
+815|C. Supervisionar os bancos
+816|C. Impostos
+817|C. O Banco de Inglaterra, 1694
+818|C. A conta é fechada antecipadamente
+819|C. A média dos últimos dez anos
+820|C. O cartão é cancelado
+821|C. O banco central imprime um recibo
+822|C. As moedas podem não aparecer e perder-se
+823|C. A corretora onde foram compradas
+824|C. A rede
+825|C. A rede apaga as carteiras antigas
+826|C. O preço ainda pode oscilar muito
+827|C. O preço já não pode mudar
+828|C. O preço da Bitcoin
+829|C. O destinatário paga a comissão
+830|C. O país do destinatário
+831|C. O preço da camisa
+832|C. O site pode ser lento
+833|C. O token não pode ser negociado
+834|C. A data de desbloqueio
+835|C. O peso de uma moeda
+836|C. O preço nunca desce
+837|C. Só acontecem em inglês
+838|C. Para extrair ouro
+839|C. Sistemas transparentes e verificáveis
+840|=
+841|C. Ilimitada
+842|C. Normalmente nada; espera com os outros credores
+843|C. Confirmar por outro canal ou com a palavra-código da família
+844|C. O fecho ao fim de semana
+845|C. Se podem ser criados novos tokens
+846|C. Na loja de aplicações
+847|C. Sim, uma semana
+848|C. Sim, numa semana
+849|CBDC Wiki, estado do rial digital do Irão (março de 2026)
+850|CBDC versus criptomoeda
+851|As CBDC e as cripto não são a mesma coisa
+852|CVJ: visão geral do TerraUSD (UST)
+853|=
+854|Calcule o juro simples à mão.
+855|Calcule o preço médio de uma ordem a mercado num livro de ordens pouco profundo.
+856|Calendário
+857|Cambridge Centre for Alternative Finance: o consumo de eletricidade da Ethereum após o Merge (15 de setembro de 2022)
+858|Posso dar-me ao luxo de perder isto por completo?
+859|A Bitcoin ou as stablecoins podem ajudar?
+860|Ainda podem ser criados novos tokens?
+861|A maioria pode fazer batota?
+862|O carbono abranda, o sol e o vento disparam
+863|Rede de cartões
+864|Os pagamentos com cartão podem ser revertidos. Os pagamentos em blockchain não. Cada um tem um custo.
+865|Os terminais, as redes e os sistemas antifraude custam dinheiro. Na maioria dos países o comerciante paga uma pequena percentagem de cada venda, e parte dessa taxa, chamada interchange, vai para o banco que emitiu o cartão.
+866|Titular do cartão e comerciante
+867|Transportar confiança:
+868|Estudo de caso: como o UST perdeu a paridade
+869|Dinheiro e títulos do Estado:
+870|Dinheiro, títulos do Estado de curto prazo, outros ativos. Que parte é quase dinheiro?
+871|Dinheiro vivo:
+872|Banco central
+873|Moedas digitais de bancos centrais e «dinheiro programável»: o que são, até onde chegaram, o que é real e o que é exagerado, e onde está o rial digital do Irão
+874|Moedas digitais de bancos centrais e «dinheiro programável»: o que são, até onde chegaram, o que é real e o que é exagerado, e onde está o rial digital do Irão.
+875|Moedas digitais de bancos centrais e dinheiro programável: o que é real, o que é exagerado e onde está o rial digital do Irão.
+876|Moedas digitais de bancos centrais, dinheiro programável, os testes reais por trás das manchetes e o rial digital do Irão.
+877|Moeda digital de banco central (CBDC)
+878|Chainalysis: investigação sobre crime cripto
+879|Variação no período
+880|Regulação em mudança
+881|Estorno (chargeback)
+882|Verifique endereço e rede duas vezes,
+883|Verifique antes de confiar
+884|Verifique primeiro. Decida depois.
+885|Verifique você mesmo
+886|Verifique os factos importantes
+887|Confirme as contas da emissão.
+888|Verifique o token. Depois verifique-se a si próprio.
+889|Veja o que ficou consigo. A resposta está por baixo de cada pergunta.
+890|Verifique se existe um pool de liquidez real e qual a sua profundidade. Sem liquidez não há saída, seja qual for o número mostrado.
+891|Verifique se ainda podem ser criados novos tokens.
+892|Confirme que tem a moeda da rede
+893|Consultar dados públicos de mercado.
+894|Confirmar as contas
+895|A China há 40 anos, há 20 e hoje: 3,4 biliões de dólares investidos no estrangeiro, 168 portos em 90 países, empréstimos, competências, e a comparação com o Reino Unido, a França, os EUA e o Japão.
+896|Indústria de alta tecnologia da China
+897|A economia chinesa a duas velocidades: a alta tecnologia dispara, o consumo trava
+898|Yuan chinês
+899|Yuan chinês (diário)
+900|Escolha a mesma rede
+901|=
+902|A Circle e a Paribu assinam um memorando: como funciona o dólar digital, a lição da Turquia com 85% de inflação, onde está o Irão e os empregos que aí vêm.
+903|Compensação
+904|Clima e economia
+905|Fechar
+906|Placas e perfis de MDF revestido, painéis de parede em PVC, pedra artificial, placas de teto; Zona Franca de Anzali, Gilan
+907|Moeda
+908|Moeda vs token
+909|CoinGecko: histórico de preços da Bitcoin
+910|Garantia
+911|Banco comercial
+912|Só bancos comerciais
+913|Estrutura da comunidade
+914|Empresas
+915|Os exemplos de empresas descrevem como cada serviço diz estar organizado. Não são recomendações, e as condições podem mudar.
+916|Fichas de empresas, com fontes
+917|Compare os resultados a 10 e a 20 anos com a mesma taxa.
+918|Compare um pagamento com cartão reversível com um pagamento final em blockchain.
+919|Compare ativos com as mesmas quatro perguntas: oscilação, liquidez, custo de guarda e o que pode correr mal.
+920|Compare dólares, ouro e bitcoin quanto às oscilações de preço.
+921|Comparar mercados
+922|Compare ofertas no mesmo período e com a mesma capitalização.
+923|Compare a proteção de uma conta bancária e de uma conta numa corretora.
+924|Compare duas ofertas na mesma base.
+925|Comparado com uma auditoria completa, o que mostra um relatório de atestação?
+926|Completo
+927|Verificações de conformidade
+928|Composto
+929|Juro composto
+930|O juro composto funciona nos dois sentidos. Na poupança ajuda; numa dívida é a razão por que o saldo pode crescer mesmo quando paga alguma coisa. A lição 19 mostrou como os custos das prestações se acumulam, e este é o motor por baixo.

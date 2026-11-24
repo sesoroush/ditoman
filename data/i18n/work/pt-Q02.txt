@@ -1,0 +1,44 @@
+149|Um contrato é implementado na blockchain e a partir daí fica num endereço, como uma conta. Qualquer pessoa pode chamar as suas funções. Como muitos computadores o executam, o resultado não depende de uma empresa se manter honesta ou online.
+150|Um contrato só sabe o que está na cadeia. Não consegue ler um jornal nem ver o tempo sozinho; a informação de fora tem de ser trazida. E não corrige uma má ideia: código que faz exatamente o que diz pode ainda assim fazer algo insensato.
+151|Uma pepita de cobre sobre uma mina a céu aberto
+152|Um banco correspondente
+153|Um país que importa 95% do gás planeia navios-central, GNL e um corredor elétrico. Os números, quem ganha, quem se preocupa e o que ainda não está provado.
+154|Uma corretora de cripto funciona da mesma forma num ponto importante: as moedas estão nas carteiras da corretora, e a sua conta mostra o que a corretora lhe deve. Tem um crédito sobre uma empresa.
+155|Um depósito (32 ETH para operar sozinho)
+156|Um depósito rende 20% e a inflação é de 40%. O que acontece ao seu poder de compra?
+157|Um banco digital com 2,9 milhões de clientes foi intervencionado, o presidente afastado, e o que as garantias de depósito cobrem de facto.
+158|Uma stablecoin em dólares pode passar entre duas carteiras em minutos, a qualquer hora, por uma pequena taxa de rede. Nenhum banco correspondente participa nesse passo. É a principal razão por que as stablecoins são cada vez mais usadas em pagamentos internacionais.
+159|Uma stablecoin em dólares segue o dólar, como explicou a lição 11. Pode ser mais estável do que uma moeda mais fraca, mas o dólar também tem inflação, e o token acrescenta os seus próprios riscos: o emissor, a reserva e a saída.
+160|Uma resposta falsa aponta para o próprio preço: subiu na semana passada, alguém disse que vai continuar, toda a gente fala disso. Isso não é uma razão. É uma observação sobre o comportamento dos outros, e os outros podem parar a qualquer momento.
+161|Uma taxa paga às corretoras
+162|Poucos detentores podem mover todo o mercado com uma decisão
+163|Há alguns anos, uma única nota pagava um saco cheio de compras. Hoje a mesma nota compra parte desse saco. Ninguém levou a nota. O que mudou foi quanto ela compra. Essa mudança silenciosa tem nome: inflação.
+164|Um limite fixo
+165|Um amigo tem a certeza
+166|Um chip brilhante diante do horizonte de Teerão e da Torre Milad
+167|Uma votação de governança
+168|Um governo voltou a ativá-lo
+169|Uma paridade rígida dá estabilidade a importadores e viajantes, mas o país abdica da sua própria política de juros, porque tem de seguir a moeda a que está ligado. Um câmbio flutuante mantém essa liberdade, ao preço de uma taxa que se move.
+170|Uma paridade rígida troca a política de juros independente.
+171|Uma grande oscilação não é boa nem má por si. Decide quanto tempo tem de conseguir esperar.
+172|Uma financeira paga hoje à loja por si. Você reembolsa a financeira em prestações. Na versão curta habitual são quatro pagamentos em poucas semanas, sem juros, e a financeira ganha com uma taxa paga pela loja e com multas por atraso.
+173|Um bloqueio coloca os tokens LP num contrato inteligente separado com uma data de desbloqueio. Até essa data, ninguém os pode retirar, incluindo quem os bloqueou. Serviços como PinkLock, UNCX e Team Finance publicam cada bloqueio como registo público, para que qualquer pessoa o possa verificar.
+174|Um bloqueio elimina um risco específico: que a liquidez bloqueada seja retirada antes da data de desbloqueio. Não prova que um token tem valor, que o projeto vai ter sucesso ou que o preço vai subir.
+175|Uma mensagem atravessa o mundo num segundo, mas o dinheiro pode levar dias e perder vários por cento pelo caminho. Esta lição mostra o que acontece entre dois bancos em dois países, onde se esconde o custo e o que as stablecoins mudam e não
+176|Uma mensagem atravessa o mundo num segundo, mas o dinheiro pode levar dias e perder vários por cento pelo caminho. Esta lição mostra o que acontece entre dois bancos em dois países, onde se esconde o custo e o que as stablecoins mudam e não mudam.
+177|Uma revisão mensal em dez minutos
+178|Uma ponte de autoestrada na montanha com um camião e um comboio de mercadorias
+179|Um neobanco é um banco sem balcões. Tudo, da verificação de identidade à entrega do cartão, acontece numa aplicação.
+180|Um neobanco é um banco sem balcões. Pergunte quem tem a licença e se os depósitos estão garantidos.
+181|Uma carteira pessoal dá-lhe a chave e toda a responsabilidade que vem com ela.
+182|Uma carteira pessoal é uma chave
+183|Uma carteira pessoal, também chamada de autocustódia, é diferente. As moedas estão registadas na blockchain, e a carteira guarda a
+184|Um telemóvel custa 40 milhões. Hoje não tem 40 milhões. Um botão por baixo do preço diz: quatro prestações, sem papelada, aprovado num minuto. Um toque e o telemóvel é seu.
+185|Um aglutinante de baterias feito de plantas e água: o mercado, as emissões, a saúde, os preços, novos negócios e a oportunidade para o Irão.
+186|Uma forma prática de pensar é por degraus. Primeiro, uma pequena reserva para uma surpresa típica. Depois, um mês de despesas essenciais. Depois, três meses, ou mais se o rendimento for irregular ou sustentar outras pessoas.
+187|Um preço num ecrã não é dinheiro. Só se torna dinheiro quando alguém está disposto a negociar contra ele.
+188|Uma empresa privada
+189|Um programa que funciona sozinho, como uma máquina de venda automática.
+190|Um projeto paga 2% fixos por dia e um bónus por convidar amigos. O que é mais provável que seja?
+191|Um projeto promete um retorno fixo e alto, pago diária ou semanalmente, com bónus por trazer amigos. Os primeiros membros recebem mesmo, com dinheiro dos membros seguintes. Quando os novos depósitos abrandam, para.
+192|Uma forma rápida de estimar: divida 72 pela taxa de inflação. O resultado é aproximadamente quantos anos os preços levam a duplicar. A 6 por cento, cerca de doze anos. A 36 por cento, cerca de dois anos.

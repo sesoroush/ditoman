@@ -1,0 +1,147 @@
+476|Automatisieren Sie es:
+477|Automatisieren Sie kleine Überweisungen; die Gewohnheit zählt mehr als der Betrag.
+478|Automatische Überweisung
+479|Jetzt verfügbar
+480|=
+481|B. 1. Januar 1900
+482|B. 14 Millionen
+483|B. 20 % pro Jahr
+484|B. 210 Millionen
+485|B. 29. Oktober 2027
+486|=
+487|B. Eine Bankeinlage
+488|B. Eine Bank, bei der zwei andere Banken Konten haben
+489|B. Eine Bank ohne Kunden
+490|B. Eine Forderung an die Bank
+491|B. Ein Coin auf Bitcoin
+492|B. Ein Gebührenrabatt
+493|B. Ein Freund ist sich sicher
+494|B. Ein allgemeiner Preisanstieg über die Zeit
+495|B. Ein Betrag wurde vorgemerkt und wird freigegeben
+496|B. Ein Kredit
+497|B. Eine Nachricht an sich selbst in einer Chat-App
+498|B. Ein neues Mining-Gerät
+499|B. Ein Papiervertrag, beim Anwalt unterschrieben
+500|B. Ein Bild eines Moments
+501|B. Eine Frage zur Inflation
+502|B. Eine Quittung für Geld, das einem Liquiditätspool hinzugefügt wurde
+503|B. Ein Betrug
+504|B. Ein einziges Unternehmen
+505|B. Wenige Inhaber können mit einer Entscheidung den ganzen Markt bewegen
+506|B. Ein Werkzeug, das jahrelang Einkommen bringt
+507|B. Eine Waschmaschine
+508|B. Eine jährliche Abstimmung
+509|B. Etwa 50
+510|B. Etwa 50 %
+511|B. Etwa 7 Jahre
+512|B. Etwa 96 Millionen Dollar
+513|B. Mit künstlicher Intelligenz
+514|B. Den Assistenten fragen, ob das Gesicht echt aussieht
+515|B. Banken verlangen es
+516|B. Weil Banken eine versteckte Steuer aufschlagen
+517|B. Weil sie von Zentralbanken kontrolliert wird
+518|B. Weil Druck, vor dem Nachdenken zu handeln, ein typisches Merkmal von Manipulation ist
+519|B. Weil das System überprüft werden kann
+520|B. Sperrlisten- oder Adressblockierungs-Funktionen
+521|B. Blockchain verändert, wie Vertrauen funktioniert
+522|B. Krypto-Sicherheiten
+523|B. Daten
+524|B. Von der Zentralbank Erstattung verlangen
+525|B. Jeden Block
+526|B. Jede Sekunde
+527|B. Gold
+528|B. Regierungen
+529|B. Garantiert Gewinn
+530|B. Das Hauptbuch verbergen
+531|B. Daten speichern
+532|B. Urlaubsausgaben
+533|B. Wie viele Filialen hat es?
+534|B. Unveränderlichkeit
+535|B. Im Kassenbonpapier
+536|B. Zinsen, die nur einmal berechnet werden
+537|B. Ist sein Preis hoch?
+538|B. Es kann nicht gesendet werden; die Gebühr braucht BNB
+539|B. Es überträgt Zahlungsanweisungen zwischen Instituten
+540|B. Sie ist endgültig, keine Bank kann sie rückgängig machen
+541|B. Der Besitz ist illegal
+542|B. Sie ermöglicht, spätere Ereignisse an einem klaren Maßstab zu messen, statt sie wegzuerklären
+543|B. Es kommt nach einem Tag zu Ihnen zurück
+544|B. Sie bleibt gleich
+545|B. Sein Autor kann ihn frei bearbeiten
+546|B. Ihr Design und das Recht dazu: Datenschutz, Obergrenzen, Programmierbarkeit, Offline-Nutzung
+547|B. Seine Flagge
+548|B. Die Idee behalten und die Zahlen ändern
+549|B. Kaufkraft bewahren, bis das Geld gebraucht wird
+550|B. Den Wert nahe einem Dollar halten
+551|B. Den Sparanteil am Tag des Geldeingangs abzweigen
+552|B. Nein, es hängt von Ihrer Lage ab
+553|B. Nur Boni
+554|B. Nur wenn die Bank zustimmt
+555|B. Banknoten drucken
+556|B. Den Beleg drucken
+557|B. Alle Websites ersetzen
+558|B. Ihre Wiederherstellungsphrase zur Prüfung schicken
+559|B. Den Leitzins festlegen
+560|B. Die Federal Reserve, 1913
+561|B. Der Acquirer
+562|B. Die gesperrte Menge und ihr Anteil am Pool
+563|B. Der Betrag, den Sie senden
+564|B. Die Bank erhöht den Satz jedes Jahr
+565|B. Die Blockchain
+566|B. Die Korrespondenzbank im mittleren Schritt
+567|B. Die Zentralbank des Landes
+568|B. Die erste Anzeige in einer Suche
+569|B. Der Markt hat sich bereits vorab auf das erwartete Ergebnis bewegt
+570|B. Das Netzwerk wird von einer einzigen Bank kontrolliert
+571|B. Der Preis kann nur steigen
+572|B. Der Preis für geliehenes Geld
+573|B. Der Preis der Tokens
+574|B. Denselben Monat im Vorjahr
+575|B. Die Signatur kann einem Vertrag erlauben, Ihre Tokens zu bewegen
+576|B. Der Quellcode kann von der Öffentlichkeit nicht gelesen oder geprüft werden
+577|B. Der Token wurde gelöscht
+578|B. Der Transaktions-Hash in einem Block-Explorer
+579|B. Das Support-Team des Wallet-Anbieters
+580|B. Der Jahreszins
+581|B. Sie werden überredet oder gedrängt, Zugriff zu geben
+582|B. Sie werden weniger sichtbar, aber die Aufgaben bleiben
+583|B. Sie können selbstsicher und richtig klingen
+584|B. Sie bringen nichts, wenn sie nur liegen
+585|B. Um Supermärkte zu betreiben
+586|B. Kurzfristige Einlagen in langfristige Kredite verwandeln
+587|=
+588|B. Bis zum Monatsende warten
+589|B. Wünsche
+590|B. Einen Monat lang Ausgaben beobachten und notieren
+591|B. Für wen er handelt, seine Grenzen und wer verantwortlich ist
+592|B. Wird sein Preis steigen?
+593|B. Bei einer lizenzierten Bank hinter der App
+594|B. Ja, immer
+595|B. Ja, damit kann man Ihnen nur etwas senden
+596|B. Ihre Bank beantwortet eine Anfrage und merkt den Betrag vor
+597|=
+598|BIZ CPMI: Programm für grenzüberschreitende Zahlungen
+599|BIZ CPMI: Glossar der Zahlungs- und Marktinfrastruktur-Begriffe
+600|BIZ Working Paper 1041: Wie Fintech-Kredite den Kreditzugang kleiner US-Unternehmen beeinflussen
+601|BNB-Chain-Dokumentation: Überblick über die BNB Smart Chain
+602|=
+603|BTC und ETH sind Coins; USDT und UNI sind Tokens.
+604|=
+605|Zurück zu Lernen
+606|=
+607|Bankkonto
+608|Bank für Internationalen Zahlungsausgleich, Jahresbericht 2024: Künstliche Intelligenz und Wirtschaft
+609|Bank für Internationalen Zahlungsausgleich: Der weltweite Devisenhandel erreicht im April 2025 9,6 Billionen Dollar pro Tag (Pressemitteilung, 30. September 2025)
+610|Bankgeld und Zentralbankgeld
+611|Bank of England
+612|Bank of England Museum: die Riksens Ständers Bank (1668) als älteste Zentralbank der Welt; die Bank of England, 1694
+613|Bank of England: Inflation und das von der Regierung gesetzte 2-%-Ziel
+614|Bank of England: Was die Bank of England tut (Banknoten, Zahlungen, Aufsicht über mehr als 1.300 Firmen, Bank Rate, Goldreserven)
+615|Russlands Zentralbank öffnet regulierten Bitcoin-Handel
+616|Bank, Börse oder persönliche Wallet: Wer hat den Schlüssel?
+617|Bankwesen
+618|Banklizenz
+619|Banken steigen in das Stablecoin-Rennen ein
+620|Banken werden weniger sichtbar, nicht weniger notwendig.
+621|Banken steigen in das Stablecoin-Rennen ein: Projekt Faro
+622|Banken in verschiedenen Zeitzonen haben zu verschiedenen Zeiten geöffnet, und viele Zahlungssysteme schließen nachts und am Wochenende. Jede Bank auf dem Weg muss die Zahlung zudem auf Geldwäsche- und Sanktionsregeln prüfen. Ein unklares Detail kann eine Zahlung tagelang aufhalten.

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Wie Sie Ihr digitales Geld nicht verlieren | Ditoman Learn</title>
+<meta name="description" content="Die meisten, die Krypto verlieren, werden nicht gehackt. Sie werden überredet, gehetzt oder machen einfach einen kleinen Fehler. Diese Lektion behandelt die fünf häufigsten Arten, Geld zu verlieren, und die einfachen Gewohnheiten, die jede" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson17.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson17.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson17.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson17.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson17.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson17.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson17.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson17.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson17.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson17.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson17.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson17.de.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Wie Sie Ihr digitales Geld nicht verlieren | Ditoman Learn" />
+<meta property="og:description" content="Die meisten, die Krypto verlieren, werden nicht gehackt. Sie werden überredet, gehetzt oder machen einfach einen kleinen Fehler. Diese Lektion behandelt die fünf häufigsten Arten, Geld zu verlieren, und die einfachen Gewohnheiten, die jede" />
+<meta property="og:url" content="https://ditoman.com/lesson17.de.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson17.de.html#page",
+   "url": "https://ditoman.com/lesson17.de.html",
+   "name": "Wie Sie Ihr digitales Geld nicht verlieren | Ditoman Learn",
+   "description": "Die meisten, die Krypto verlieren, werden nicht gehackt. Sie werden überredet, gehetzt oder machen einfach einen kleinen Fehler. Diese Lektion behandelt die fünf häufigsten Arten, Geld zu verlieren, und die einfachen Gewohnheiten, die jede",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Wie Sie Ihr digitales Geld nicht verlieren",
+     "item": "https://ditoman.com/lesson17.de.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.de.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.de.html" class="active">Lernen</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Unternehmen</a>
+<a href="prices.de.html">Preise</a>
+<a href="calendar.en.html">Kalender</a>
+<a href="tmn.de.html">TMN</a>
+<a href="index.de.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Beiträge</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson17-cover.jpg" alt="Wie Sie Ihr digitales Geld nicht verlieren, Ditoman-Lektionsbild" style="width:100%;height:auto"><img lang="en" src="lesson17-cover-en.jpg" alt="Wie Sie Ihr digitales Geld nicht verlieren, Ditoman-Lektionsbild" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Sicherheit • Betrug</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">امنیت • کلاهبرداری</div>
+<h1 lang="en">Wie Sie Ihr digitales Geld nicht verlieren</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">چطور پول دیجیتالمان را از دست ندهیم؟</h1>
+<p class="subtitle" lang="en">Die meisten, die Krypto verlieren, werden nicht gehackt. Sie werden überredet, gehetzt oder machen einfach einen kleinen Fehler. Diese Lektion behandelt die fünf häufigsten Arten, Geld zu verlieren, und die einfachen Gewohnheiten, die jede davon verhindern.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">بیشتر کسانی که کریپتو از دست می‌دهند هک نمی‌شوند. قانع می‌شوند، عجله می‌کنند یا فقط یک اشتباه کوچک می‌کنند. این درس پنج راه رایج از دست رفتن پول و عادت‌های ساده‌ای را که جلوی هر کدام را می‌گیرد مرور می‌کند.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Niveau</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Einsteiger</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Lesezeit</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">7 Minuten</strong><strong lang="fa" dir="rtl" style="display:block">۷ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Lernpunkte</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 Fragen</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Lektionsinhalt</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Lesen Sie die Lektion auf Englisch oder Persisch.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Englisch</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Wenn Menschen sich vorstellen, Krypto zu verlieren, denken sie an einen Hacker im dunklen Raum, der einen Code knackt. So passiert es selten. Meist öffnet der Besitzer selbst die Tür: indem er eine Phrase auf einer falschen Seite eintippt, etwas ungelesen genehmigt oder einem neuen „Freund“ Geld schickt.</p>
+<p lang="en">Lektion 16 erklärte, warum das so wichtig ist: Eine Blockchain-Überweisung lässt sich nicht rückgängig machen. Eine Bank kann Geld manchmal zurückholen. Eine Blockchain nicht. Vorbeugung ist also alles, und die gute Nachricht: Vorbeugung ist vor allem eine Frage der Gewohnheit.</p>
+<h3>Wie groß das Problem ist</h3>
+<p lang="en">Die Analysefirma Chainalysis schätzte, dass Krypto-Betrug Opfern 2025 mehr als 17 Milliarden Dollar abnahm, ein Rekord. Betrug, bei dem sich Kriminelle als jemand anderes ausgeben, etwa als Beamter, Firma oder Support-Mitarbeiter, wuchs binnen eines Jahres um mehr als 1.400 Prozent, unterstützt von KI-Werkzeugen, die falsche Stimmen, Gesichter und Nachrichten überzeugend machen.</p>
+<p lang="en">Diese Zahlen sind kein Grund zur Angst. Sie sind ein Grund, fünf Muster zu lernen.</p>
+<h3>1. Die gefälschte Seite (Phishing)</h3>
+<p lang="en">Sie erhalten einen Link, der wie Ihre Wallet, Ihre Börse oder die Website eines Tokens aussieht. Die Seite ist eine Kopie. Sie verlangt, dass Sie sich anmelden oder Ihre Wallet durch Eingabe der Wiederherstellungsphrase „verifizieren“. In dem Moment, in dem Sie es tun, ist die Wallet leer.</p>
+<p lang="en"><strong>Die Gewohnheit:</strong> folgen Sie nie Links aus Nachrichten, Anzeigen oder Suchergebnissen zu etwas, das Geld verwahrt. Tippen Sie die Adresse selbst ein oder nutzen Sie ein gespeichertes Lesezeichen. Und denken Sie an die Regel aus Lektion 13: Niemand Seriöses fragt je nach einer Wiederherstellungsphrase.</p>
+<h3>2. Der falsche Helfer</h3>
+<p lang="en">Sie stellen in einer öffentlichen Gruppe eine Frage. Innerhalb einer Minute schreibt Ihnen ein „Support-Mitarbeiter“ privat und bietet freundlich Hilfe an. Er fragt nach Ihrer Phrase, Ihrem Bildschirm oder einer kleinen „Verifizierungszahlung“.</p>
+<p lang="en"><strong>Die Gewohnheit:</strong> echter Support beginnt keine privaten Chats. Wer Sie zuerst kontaktiert, ist ein Fremder, egal was sein Profilbild sagt.</p>
+<h3>3. Die Blindsignatur</h3>
+<p lang="en">Viele Apps bitten Ihre Wallet, eine Genehmigung zu signieren. Manche Genehmigungen erlauben einem Vertrag, Ihre Tokens zu bewegen, manchmal ohne Limit und ohne Enddatum. Ein falscher Airdrop oder eine „Free Mint“-Seite nutzt genau das: Sie glauben, ein Geschenk abzuholen, und geben den Zugriff ab.</p>
+<p lang="en"><strong>Die Gewohnheit:</strong> lesen Sie, was die Wallet Sie signieren lässt. Wenn Sie es nicht verstehen, lehnen Sie ab. Halten Sie eine separate Wallet mit kleinen Beträgen zum Testen neuer Seiten, und verbinden Sie nie die Wallet mit Ihren Ersparnissen.</p>
+<h3>4. Der geduldige Freund</h3>
+<p lang="en">Eine freundliche Person taucht in einer sozialen App oder auf einer Dating-Seite auf. Es folgen Wochen angenehmer Gespräche. Dann erwähnt sie eine Anlage, die großartig läuft, und zeigt Ihnen, wie Sie einsteigen. Die Plattform zeigt wachsende Gewinne. Wenn Sie abheben wollen, sind zuerst „Steuern“ und „Gebühren“ fällig. Die Gewinne waren nie echt.</p>
+<p lang="en"><strong>Die Gewohnheit:</strong> eine Online-Bekanntschaft, die Sie zu einer Anlage lenkt, folgt einem Drehbuch. Hören Sie dort auf und sprechen Sie mit jemandem, den Sie persönlich kennen, bevor Sie etwas senden.</p>
+<h3>5. Die garantierte Rendite</h3>
+<p lang="en">Ein Projekt verspricht eine feste, hohe Rendite, täglich oder wöchentlich ausgezahlt, mit Boni für das Werben von Freunden. Frühe Mitglieder werden tatsächlich bezahlt, mit Geld späterer Mitglieder. Wenn neue Einzahlungen nachlassen, ist Schluss.</p>
+<p lang="en"><strong>Die Gewohnheit:</strong> im Finanzwesen gibt es keine hohe Rendite ohne Risiko. Fragen Sie, woher das Geld kommt. Lautet die ehrliche Antwort „von neuen Mitgliedern“, ist es eine Pyramide.</p>
+<figure class="lz-fig"><figcaption>Fünf Warnzeichen und eine Antwort auf jedes</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>Wenn jemand…</th>
+<th>Wahrscheinlich ist es…</th>
+<th>So geht's</th>
+</tr></thead><tbody>
+<tr><td>fragt nach Ihrer Wiederherstellungsphrase</td><td>Diebstahl</td><td>Stopp. Niemand braucht sie.</td></tr>
+<tr><td>schreibt Ihnen zuerst als „Support“</td><td>ein falscher Helfer</td><td>Nutzen Sie nur die offizielle Website.</td></tr>
+<tr><td>sagt, Sie müssten sofort handeln</td><td>Druck, damit Sie nicht nachdenken</td><td>Warten Sie einen Tag.</td></tr>
+<tr><td>verspricht eine feste hohe Rendite</td><td>eine Pyramide</td><td>Fragen Sie, woher das Geld kommt.</td></tr>
+<tr><td>bietet einen kostenlosen Token zum „Abholen“</td><td>eine Signaturfalle</td><td>Verbinden Sie nicht Ihre Haupt-Wallet.</td></tr>
+</tbody></table></div>
+</figure>
+<h3>Die ehrlichen Fehler</h3>
+<p lang="en">Nicht jeder Verlust hat mit einem Kriminellen zu tun. Man verliert auch Geld, wenn man über das falsche Netzwerk sendet, die falsche Adresse einfügt oder den Zettel mit der Wiederherstellungsphrase verliert. Die Lektionen 13 und 16 behandeln das, und die Gewohnheit ist immer dieselbe: langsamer werden, zweimal prüfen, mit einem kleinen Betrag testen.</p>
+<p lang="en">Ein neuerer Trick liegt zwischen Fehler und Betrug. Ein Betrüger sendet einen winzigen Betrag von einer Adresse, die so beginnt und endet wie eine, die Sie nutzen. Später kopieren Sie diese ähnliche Adresse aus dem Verlauf statt der echten. Kopieren Sie Adressen also aus der Quelle, nicht aus früheren Transaktionen.</p>
+<h3>Wenn es schon passiert ist</h3>
+<p lang="en">Verschieben Sie alles Verbleibende in eine neue Wallet mit neuer Wiederherstellungsphrase. Bewahren Sie die Transaktions-Hashes und die Nachrichten auf. Melden Sie es der beteiligten Plattform und der Polizei in Ihrem Land.</p>
+<p lang="en">Dann seien Sie ein zweites Mal vorsichtig. Bestohlene werden oft von „Rückholdiensten“ kontaktiert, die versprechen, das Geld gegen eine Vorabgebühr zurückzuholen. Das ist dasselbe Verbrechen, wiederholt.</p>
+<h3>Was man daraus mitnimmt</h3>
+<p lang="en">Die meisten Verluste beginnen mit Überredung, nicht mit Hacking.</p>
+<p lang="en">Fünf Muster decken die meisten Fälle ab: gefälschte Seite, falscher Helfer, Blindsignatur, geduldiger Freund, garantierte Rendite.</p>
+<p lang="en">Dringlichkeit ist der rote Faden. Eine echte Chance übersteht einen Tag Nachdenken.</p>
+<p lang="en">Teilen Sie nie eine Wiederherstellungsphrase, signieren Sie nie, was Sie nicht lesen können, folgen Sie nie einem Link zu Ihrem Geld.</p>
+<p lang="en">Geht etwas schief, sichern Sie, was übrig ist, bewahren Sie Beweise auf und ignorieren Sie alle, die „Rückholung“ verkaufen.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">وقتی به از دست دادن کریپتو فکر می‌کنیم، هکری در اتاقی تاریک به ذهن می‌آید که رمزی را می‌شکند. کمتر پیش می‌آید که این‌طور باشد. در بیشتر موارد خودِ صاحب پول در را باز می‌کند: عبارتی را در یک صفحه‌ی جعلی وارد می‌کند، چیزی را نخوانده تأیید می‌کند یا برای یک «دوست» تازه پول می‌فرستد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۶ توضیح داد چرا این موضوع این‌قدر مهم است: انتقال روی بلاکچین برگشت ندارد. بانک گاهی می‌تواند پول را برگرداند، بلاکچین نمی‌تواند. پس همه‌چیز به پیشگیری برمی‌گردد و خبر خوب این است که پیشگیری بیشتر یک عادت است.</p>
+<h3>مسئله چقدر بزرگ است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">شرکت تحلیلی Chainalysis برآورد کرده که کلاهبرداری‌های کریپتویی در سال ۲۰۲۵ بیش از ۱۷ میلیارد دلار از قربانیان گرفته‌اند؛ یک رکورد. کلاهبرداری‌هایی که در آن فرد خودش را جای کس دیگری می‌زند، مثل مأمور، شرکت یا پشتیبانی، در یک سال بیش از ۱۴۰۰ درصد رشد کرده است. ابزارهای هوش مصنوعی هم که صدا، چهره و پیام جعلی را باورپذیر می‌کنند به این رشد کمک کرده‌اند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این عددها دلیلی برای ترس نیستند. دلیلی‌اند برای یاد گرفتن پنج الگو.</p>
+<h3>۱. صفحه‌ی جعلی (فیشینگ)</h3>
+<p lang="fa" dir="rtl" style="text-align:right">لینکی می‌رسد که شبیه کیف پول، صرافی یا سایت یک توکن است. صفحه یک کپی است. از شما می‌خواهد وارد شوید یا برای «تأیید» کیف پول، عبارت بازیابی را وارد کنید. همان لحظه که وارد کنید، کیف پول خالی می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>عادت:</strong> برای رسیدن به هر چیزی که پول در آن است، هیچ‌وقت از لینکِ داخل پیام، تبلیغ یا نتیجه‌ی جست‌وجو استفاده نکنید. آدرس را خودتان تایپ کنید یا از نشانک ذخیره‌شده وارد شوید. قاعده‌ی درس ۱۳ را هم به یاد داشته باشید: هیچ فرد یا شرکت درستی عبارت بازیابی نمی‌خواهد.</p>
+<h3>۲. کمک‌کننده‌ی جعلی</h3>
+<p lang="fa" dir="rtl" style="text-align:right">در یک گروه عمومی سؤالی می‌پرسید. در کمتر از یک دقیقه یک «کارشناس پشتیبانی» در پیام خصوصی، با مهربانی پیشنهاد حل مشکل می‌دهد. بعد عبارت بازیابی، تصویر صفحه یا یک پرداخت کوچک برای «تأیید» می‌خواهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>عادت:</strong> پشتیبانی واقعی گفت‌وگوی خصوصی را شروع نمی‌کند. هر کس اول سراغ شما بیاید غریبه است، عکس پروفایلش هر چه باشد.</p>
+<h3>۳. امضای نخوانده</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بسیاری از برنامه‌ها از کیف پول شما می‌خواهند یک «مجوز» را امضا کند. بعضی مجوزها به یک قرارداد اجازه می‌دهند توکن‌های شما را جابه‌جا کند؛ گاهی بدون سقف و بدون تاریخ پایان. ایردراپ جعلی یا سایت «مینت رایگان» دقیقاً از همین استفاده می‌کند: فکر می‌کنید هدیه می‌گیرید ولی دسترسی را واگذار می‌کنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>عادت:</strong> چیزی را که کیف پول برای امضا نشان می‌دهد بخوانید. اگر نمی‌فهمید، رد کنید. برای امتحان سایت‌های تازه یک کیف پول جدا با مبلغ کم داشته باشید و کیف پولی را که پس‌اندازتان در آن است هرگز به جایی وصل نکنید.</p>
+<h3>۴. دوست صبور</h3>
+<p lang="fa" dir="rtl" style="text-align:right">کسی خوش‌برخورد در یک شبکه‌ی اجتماعی یا اپ دوست‌یابی پیدا می‌شود. چند هفته گفت‌وگوی خوشایند ادامه دارد. بعد از سرمایه‌گذاری‌ای می‌گوید که عالی پیش می‌رود و راه ورود را یادتان می‌دهد. پلتفرم سودهای رو به رشد نشان می‌دهد. وقتی می‌خواهید برداشت کنید، اول باید «مالیات» و «کارمزد» بدهید. آن سودها هیچ‌وقت واقعی نبوده‌اند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>عادت:</strong> آشنای اینترنتی‌ای که شما را به سمت یک سرمایه‌گذاری می‌برد، از روی یک متن آماده جلو می‌رود. همان‌جا بایستید و پیش از فرستادن هر مبلغی، با کسی که از نزدیک می‌شناسید حرف بزنید.</p>
+<h3>۵. سود تضمینی</h3>
+<p lang="fa" dir="rtl" style="text-align:right">پروژه‌ای سود ثابت و بالا وعده می‌دهد، با پرداخت روزانه یا هفتگی و پاداش برای آوردن دوستان. اعضای اول واقعاً پول می‌گیرند؛ از پول اعضای بعدی. وقتی واریزهای تازه کم شود، همه‌چیز می‌ایستد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>عادت:</strong> در امور مالی، سود بالای بدون ریسک وجود ندارد. بپرسید این پول از کجا می‌آید. اگر جواب صادقانه «از اعضای جدید» باشد، طرح هرمی است.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>پنج نشانه‌ی هشدار و یک جواب برای هر کدام</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>اگر کسی…</th>
+<th>احتمالاً…</th>
+<th>این کار را بکنید</th>
+</tr></thead><tbody>
+<tr><td>عبارت بازیابی را بخواهد</td><td>دزدی است</td><td>بایستید. هیچ‌کس به آن نیاز ندارد.</td></tr>
+<tr><td>اول به اسم «پشتیبانی» پیام بدهد</td><td>کمک‌کننده‌ی جعلی است</td><td>فقط از سایت رسمی کمک بگیرید.</td></tr>
+<tr><td>بگوید همین حالا باید اقدام کنید</td><td>فشار برای فکر نکردن است</td><td>یک روز صبر کنید.</td></tr>
+<tr><td>سود ثابت و بالا وعده بدهد</td><td>طرح هرمی است</td><td>بپرسید پول از کجا می‌آید.</td></tr>
+<tr><td>توکن رایگان برای «دریافت» پیشنهاد بدهد</td><td>تله‌ی امضاست</td><td>کیف پول اصلی را وصل نکنید.</td></tr>
+</tbody></table></div>
+</figure>
+<h3>اشتباه‌های صادقانه</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هر ضرری کار یک کلاهبردار نیست. آدم‌ها با فرستادن روی شبکه‌ی اشتباه، جای‌گذاری آدرس اشتباه یا گم کردن کاغذ عبارت بازیابی هم پول از دست می‌دهند. درس‌های ۱۳ و ۱۶ این‌ها را توضیح داده‌اند و عادت در همه‌شان یکی است: آرام‌تر پیش بروید، دو بار بررسی کنید و اول مبلغ کم بفرستید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">یک ترفند تازه‌تر هم میان اشتباه و کلاهبرداری قرار دارد. کلاهبردار مبلغ خیلی کمی از آدرسی می‌فرستد که اول و آخرش شبیه آدرسی است که شما استفاده می‌کنید. بعداً شما به‌جای آدرس واقعی، همان آدرس شبیه را از تاریخچه کپی می‌کنید. پس آدرس را از منبع اصلی کپی کنید، نه از تراکنش‌های قبلی.</p>
+<h3>اگر اتفاق افتاده است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هر چه مانده را به یک کیف پول تازه با عبارت بازیابی تازه منتقل کنید. هش تراکنش‌ها و پیام‌ها را نگه دارید. موضوع را به پلتفرم مربوط و به پلیس کشور خودتان گزارش دهید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بعد یک بار دیگر مراقب باشید. با کسانی که پولشان رفته اغلب «سرویس‌های بازگرداندن پول» تماس می‌گیرند و قول می‌دهند با گرفتن مبلغی از پیش، پول را برگردانند. این همان جرم است که دوباره تکرار می‌شود.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بیشتر ضررها با قانع شدن شروع می‌شود، نه با هک.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پنج الگو بیشتر موارد را می‌پوشاند: صفحه‌ی جعلی، کمک‌کننده‌ی جعلی، امضای نخوانده، دوست صبور و سود تضمینی.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نقطه‌ی مشترک همه عجله است. فرصت واقعی با یک روز فکر کردن از دست نمی‌رود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">عبارت بازیابی را به کسی ندهید، چیزی را که نمی‌توانید بخوانید امضا نکنید و با لینک سراغ پولتان نروید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر مشکلی پیش آمد، باقی‌مانده را امن کنید، مدارک را نگه دارید و به فروشنده‌های «بازگرداندن پول» اعتنا نکنید.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Prüfen, bevor Sie vertrauen</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">پیش از اعتماد، بررسی کنید</h2>
+<p lang="en">In dieser Lektion geht es um Menschen, die Ihnen Ihr Geld abnehmen wollen. Lektion 05 handelt vom Token selbst: fünf Prüfungen für jeden Vertrag. Lektion 06 handelt von Ihren eigenen Kaufgründen.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این درس درباره‌ی کسانی است که سراغ پول شما می‌آیند. درس ۵ درباره‌ی خودِ توکن است: پنج بررسی که روی هر قراردادی می‌شود انجام داد. درس ۶ درباره‌ی دلیل‌های خودتان برای خرید است.</p>
+<div class="cta-row">
+<a class="cta" href="lesson05.de.html"><span lang="en">So prüfen Sie jeden Token</span><span lang="fa">بررسی هر توکن پیش از استفاده</span></a>
+<a class="button" href="lesson06.de.html"><span lang="en">Fünf Fragen vor dem Kauf</span><span lang="fa">پنج پرسش پیش از خرید</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Schlüsselbegriffe</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Phishing</li><li>Identitätsbetrug</li><li>Token-Genehmigung</li><li>Wallet-Drainer</li><li>Romance-Anlagebetrug</li><li>Ponzi- und Schneeballsysteme</li><li>Adressvergiftung</li><li>Rückholbetrug</li><li>Unumkehrbarkeit</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>فیشینگ</li><li>جعل هویت</li><li>مجوز توکن</li><li>خالی‌کننده‌ی کیف پول</li><li>کلاهبرداری سرمایه‌گذاری با رابطه‌ی عاطفی</li><li>طرح پانزی و هرمی</li><li>آدرس شبیه‌سازی‌شده</li><li>کلاهبرداری بازگرداندن پول</li><li>برگشت‌ناپذیری</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Lernziele</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Die fünf häufigen Betrugsmuster erkennen.</li><li>Erklären Sie, warum Dringlichkeit der rote Faden ist.</li><li>Sagen, was eine Token-Genehmigung erlauben kann.</li><li>Beschreiben Sie den Trick mit der ähnlichen Adresse und wie man ihn vermeidet.</li><li>Nennen Sie die ersten Schritte nach einem Verlust.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>پنج الگوی رایج کلاهبرداری را تشخیص دهید.</li><li>توضیح دهید چرا عجله نقطه‌ی مشترک همه است.</li><li>بگویید یک مجوز توکن چه اجازه‌ای می‌تواند بدهد.</li><li>ترفند آدرس شبیه را توضیح دهید و بگویید چطور از آن دور بمانیم.</li><li>اولین قدم‌ها بعد از یک ضرر را بشمارید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Quiz</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Prüfen Sie, was hängen geblieben ist. Die Antwort steht unter jeder Frage.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Frage 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Wie verlieren die meisten Menschen Krypto?</p>
+<p lang="fa" dir="rtl" style="text-align:right">بیشتر آدم‌ها کریپتو را چطور از دست می‌دهند؟</p>
+<p lang="en">A. Ein Hacker knackt die Blockchain</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. هکری بلاکچین را می‌شکند</p>
+<p lang="en">B. Sie werden überredet oder gedrängt, Zugriff zu geben</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. قانع می‌شوند یا با عجله دسترسی می‌دهند</p>
+<p lang="en">C. Das Netzwerk löscht alte Wallets</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. شبکه کیف پول‌های قدیمی را پاک می‌کند</p>
+<p class="answer" lang="en">Richtige Antwort: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Eine Website bietet einen kostenlosen Token, wenn Sie Ihre Wallet verbinden und signieren. Was ist das Hauptrisiko?</p>
+<p lang="fa" dir="rtl" style="text-align:right">سایتی می‌گوید اگر کیف پول را وصل و امضا کنید توکن رایگان می‌دهد. خطر اصلی چیست؟</p>
+<p lang="en">A. Der Token könnte gering sein</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. توکن ممکن است کم باشد</p>
+<p lang="en">B. Die Signatur kann einem Vertrag erlauben, Ihre Tokens zu bewegen</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. امضا ممکن است به یک قرارداد اجازه‌ی جابه‌جایی توکن‌هایتان را بدهد</p>
+<p lang="en">C. Die Seite könnte langsam sein</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. سایت ممکن است کند باشد</p>
+<p class="answer" lang="en">Richtige Antwort: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Was ist der sicherste Weg, die Website Ihrer Börse oder Wallet zu öffnen?</p>
+<p lang="fa" dir="rtl" style="text-align:right">امن‌ترین راه برای باز کردن سایت صرافی یا کیف پول کدام است؟</p>
+<p lang="en">A. Ein Link in einer Nachricht</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. لینکی در یک پیام</p>
+<p lang="en">B. Die erste Anzeige in einer Suche</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. اولین تبلیغ در جست‌وجو</p>
+<p lang="en">C. Ein Lesezeichen, das Sie selbst gespeichert haben</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. نشانکی که خودتان ذخیره کرده‌اید</p>
+<p class="answer" lang="en">Richtige Antwort: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Ein Projekt zahlt feste 2 % pro Tag und einen Bonus für das Werben von Freunden. Was ist es am wahrscheinlichsten?</p>
+<p lang="fa" dir="rtl" style="text-align:right">پروژه‌ای روزی ۲٪ سود ثابت و برای دعوت دوستان پاداش می‌دهد. به احتمال زیاد چیست؟</p>
+<p lang="en">A. Ein Schneeballsystem</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. طرح هرمی</p>
+<p lang="en">B. Eine Bankeinlage</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. سپرده‌ی بانکی</p>
+<p lang="en">C. Ein Stablecoin</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. استیبل‌کوین</p>
+<p class="answer" lang="en">Richtige Antwort: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Nach einem Diebstahl bietet jemand an, Ihr Geld gegen eine Vorabgebühr zurückzuholen. Was sollten Sie tun?</p>
+<p lang="fa" dir="rtl" style="text-align:right">بعد از سرقت، کسی می‌گوید با گرفتن مبلغی از پیش، پولتان را برمی‌گرداند. چه باید کرد؟</p>
+<p lang="en">A. Schnell zahlen, bevor die Spur kalt wird</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. زود پرداخت کنید تا ردّ پول گم نشود</p>
+<p lang="en">B. Ihre Wiederherstellungsphrase zur Prüfung schicken</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. عبارت بازیابی را بفرستید تا بررسی کنند</p>
+<p lang="en">C. Ignorieren; das ist ein zweiter Betrug</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. اعتنا نکنید؛ این کلاهبرداری دوم است</p>
+<p class="answer" lang="en">Richtige Antwort: C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Quellen</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://decrypt.co/354624/ai-impersonation-drove-crypto-scam-losses-record-17-billion-2025-chainalysis" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Decrypt: Schätzung von Chainalysis zu den Krypto-Betrugsverlusten 2025 (14. Januar 2026)</a></li><li><a href="https://www.chainalysis.com/blog/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Chainalysis: Forschung zu Krypto-Kriminalität</a></li><li><a href="https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">US Federal Trade Commission: Was man über Kryptowährungen und Betrug wissen sollte</a></li><li><a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">FBI Internet Crime Complaint Center (IC3)</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Verlustzahlen sind Schätzungen aus Blockchain-Analysen und werden später meist nach oben korrigiert. Die Muster sind wichtiger als die Summen.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">رقم‌های ضرر برآورد تحلیل بلاکچین‌اند و معمولاً بعدها رو به بالا اصلاح می‌شوند. الگوها از جمع رقم‌ها مهم‌ترند.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Bleiben Sie dran</span></h2>
+<p lang="en">Neue Lektionen werden zuerst auf Ditomans Kanälen angekündigt.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.de.html"><span lang="en">Zurück zu Lernen</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson16.de.html"><span lang="en">Vorherige Lektion</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson18.de.html"><span lang="en">Nächste Lektion</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Auf Struktur gebaut, von Entdeckung getrieben.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-de.js?v=20261121a"></script>
+</body>
+</html>

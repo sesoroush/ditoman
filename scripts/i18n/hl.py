@@ -4,11 +4,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 BASE = "https://ditoman.com/"
 HSTART, HEND = "<!-- hreflang:start -->", "<!-- hreflang:end -->"
-ORDER = ["fa", "en", "ar", "zh", "tr", "ru"]
+ORDER = ["fa", "en", "ar", "zh", "tr", "ru", "pt", "es", "fr", "de"]
 
 
 def base_of(name):
-    for suf in (".en.html", ".ar.html", ".zh.html", ".tr.html", ".ru.html", ".html"):
+    for suf in (".en.html", ".ar.html", ".zh.html", ".tr.html", ".ru.html", ".pt.html", ".es.html", ".fr.html", ".de.html", ".html"):
         if name.endswith(suf):
             return name[: -len(suf)]
     return name

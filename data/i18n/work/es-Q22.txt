@@ -1,0 +1,77 @@
+1933|En un préstamo que se paga mensualmente, la tasa anual real es aproximadamente el doble del porcentaje simple.
+1934|En otra blockchain
+1935|En su propia blockchain
+1936|Datos on-chain
+1937|Rampas de entrada y salida
+1938|Una vez al mes, siéntate diez minutos con tres preguntas. ¿Adónde fue la mayor parte del dinero? ¿Qué me sorprendió? ¿Cuál es el único cambio que probaré el mes que viene?
+1939|Una vez desplegado, es difícil de cambiar
+1940|Una vez desplegado, ningún usuario lo controla y, por defecto, no se puede borrar.
+1941|Una vez que sabes lo que hace la inflación, la siguiente pregunta es dónde se guarda el dinero y quién lo controla. La lección 13 compara una cuenta bancaria, una cuenta en un exchange y una billetera personal.
+1942|Un pago con tarjeta, paso a paso
+1943|Con un cambio basta. Los presupuestos fracasan cuando intentan arreglarlo todo a la vez.
+1944|Una empresa controla todos los registros
+1945|Un solo yacimiento en Yazd tiene casi tanto zinc como todas las reservas de Perú.
+1946|Un documento marca el rumbo. Léelo antes de fiarte de nada de lo que decimos.
+1947|Un mes de gastos esenciales
+1948|Un truco más reciente está entre el error y la estafa. Un estafador envía una cantidad ínfima desde una dirección que empieza y termina como una que usas. Más tarde copias esa dirección parecida de tu historial en lugar de la real. Así que copia las direcciones de la fuente, no de transacciones pasadas.
+1949|Uno de los mayores productores de etileno y polietileno de Irán, en Asaluyeh, que exporta más del 70% de su producción
+1950|Una regla editorial permanente en los tres: conocimiento real y logros reales, sin comentario político de ningún lado.
+1951|Un pool: TMN / WBNB en PancakeSwap V2, creado en febrero de 2022.
+1952|Una compra, cinco actores y dinero que llega más tarde.
+1953|Una pregunta distingue una moneda de un token.
+1954|Una advertencia del estándar
+1955|Una regla práctica conocida: 50/30/20
+1956|Solo los bancos pueden mover valor en línea
+1957|Usa solo dinero cuya pérdida no rompa el presupuesto de tu hogar.
+1958|Solo tú
+1959|Abrir publicación de Instagram
+1960|Abres una app bancaria y ves un número. Abres una app de exchange y ves otro. Abres una billetera cripto y hay un tercero. Todos parecen «mi dinero». No son el mismo tipo de cosa.
+1961|Banca abierta
+1962|La banca abierta permite que otras apps usen tus datos bancarios, solo con tu permiso.
+1963|Abrir a tamaño completo
+1964|Abrir menú
+1965|Abrir ahora
+1966|Abre la pestaña Holders. Mira cuánto del suministro total controlan las mayores billeteras.
+1967|Abrir el mapa completo ·
+1968|Abrir la guía
+1969|Abre el registro del bloqueo y confirma cuatro cosas: que la dirección del par coincide con el pool real del token, la cantidad bloqueada, la fecha de desbloqueo y qué parte del pool total representa esa cantidad. Un bloqueo que termina la semana que viene, o que cubre una parte mínima del pool, significa muy poco.
+1970|Abre el libro de órdenes de cualquier moneda en un exchange que uses. Suma cuánto hay en órdenes de compra dentro del 1% y del 5% del precio actual. Pregúntate: si vendiera ahora toda mi posición a mercado, ¿qué precio medio obtendría?
+1971|Abre el token en un explorador de bloques como BscScan y ve a la pestaña Contract. Si el código fuente está verificado, verás código legible y una marca de confirmación. Si no lo está, solo ves código máquina, lo que significa que nadie fuera del equipo puede leer lo que hace realmente el token.
+1972|Abierto, verificado
+1973|Espejos en órbita, las cuentas energéticas, el uso del suelo, la alarma de los astrónomos y cuatro escenarios de futuro.
+1974|Libro de órdenes y profundidad de mercado
+1975|Al dinero corriente no le importa lo que hagas con él. El dinero programable es dinero con reglas escritas dentro. La regla viaja con el propio dinero, no con la persona.
+1976|Organizar:
+1977|Publicación educativa original de Ditoman en Instagram:
+1978|Otras cadenas tienen sus propias versiones. BNB Smart Chain usa BEP-20, que sigue la misma idea. TMN, el tomán digital, es un token BEP-20 en BNB Smart Chain, como se describe en su página de este sitio.
+1979|Otras cadenas, estándares similares
+1980|Fuera de circulación
+1981|Propietario
+1982|Propiedad
+1983|Renuncia a la propiedad
+1984|Se renunció a la propiedad y las funciones exclusivas del propietario ya no pueden usarse
+1985|Después se renunció a la propiedad, lo que cerró para siempre tanto la acuñación como la función de quema del contrato. Nadie podrá volver a crear TMN.
+1986|Pool de PancakeSwap
+1987|Industrias papeleras
+1988|Papel y cartón
+1989|El colapso bancario de Paraguay
+1990|El colapso del banco Ueno en Paraguay
+1991|=
+1992|=
+1993|Banco socio
+1994|Los movimientos de precio pasados son ejemplos de cómo se ha comportado cada activo. No predicen lo que viene.
+1995|Pega la dirección
+1996|Pausa, lista negra, lista blanca
+1997|Págate a ti primero
+1998|Las redes de pago se están preparando. Mastercard dijo que el primer pago hecho por un agente de IA se realizó en su red en el tercer trimestre de 2025, y está desplegando un servicio que registra y verifica a esos agentes. Visa está creando herramientas similares. Algunos proyectos cripto diseñan pagos entre agentes de software con stablecoins.
+1999|Pagos • Tarjetas
+2000|Pagos • Transfronterizos
+2001|Paridad (peg)
+2002|Penalización por hacer trampa
+2003|La gente discute cuál es el mejor como si hubiera una sola respuesta. No la hay, porque los tres son cosas de distinto tipo. Podemos compararlos con justicia con las mismas cuatro preguntas.
+2004|La gente usa las dos palabras como si fueran lo mismo. No lo son. Esta lección da una prueba sencilla y muestra por qué importa, incluido dónde encaja TMN
+2005|La gente usa las dos palabras como si fueran lo mismo. No lo son. Esta lección da una prueba sencilla y muestra por qué importa, incluido dónde encaja TMN.
+2006|Billetera personal (autocustodia)
+2007|Billetera cripto personal
+2008|Billetera personal
+2009|El libro de 2016 de Peter Zeihan sobre el esquisto y un mundo sin Estados Unidos como policía, con un balance de sus pronósticos.

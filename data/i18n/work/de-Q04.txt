@@ -1,0 +1,129 @@
+271|A. Weil Sie jeden Monat einen Teil zurückgezahlt haben
+272|A. Blockchain dreht sich nur um den Handel mit Coins
+273|A. Barreserven
+274|A. Bargeld, das auf Ihren Namen verwahrt wird
+275|A. Die PIN-Prüfung
+276|A. Lokales Geld in den Token umtauschen und zurück
+277|A. Alle Ausgaben auf einmal kürzen
+278|A. Die Einlage eines unehrlichen Validators ganz oder teilweise vernichten
+279|A. Hat es eine eigene Blockchain?
+280|A. Dollar
+281|=
+282|A. Alle 2.016 Blöcke, etwa zwei Wochen
+283|A. Schnelles Preiswachstum
+284|A. Betrugserkennung bei Kartenzahlungen
+285|A. Das Budgetieren aufgeben
+286|A. Verborgene Systeme
+287|A. Die privaten Sparkonten aller führen
+288|A. Wie ausgelastet das Netzwerk ist
+289|A. In der Wechselkursmarge
+290|A. Eine unabhängige Zinspolitik
+291|A. Infrastruktur
+292|A. Im Handy
+293|A. Auch auf frühere Zinsen gibt es Zinsen
+294|A. Zinsen, die jedes Jahr sinken
+295|A. Es bedeutet immer, dass das Projekt unehrlich ist
+296|A. Es garantiert Gewinn
+297|A. Es verwahrt das Geld der Banken
+298|A. Sie steigt
+299|A. Farbe und Logo
+300|A. Den Vormonat
+301|A. Vor allem, um dem Staat einen Krieg zu finanzieren
+302|A. Betrug teurer machen als Ehrlichkeit
+303|A. Das Geld geht auf das Konto des Geschäfts
+304|A. Kein Nutzer kontrolliert ihn und er kann nicht gelöscht werden
+305|A. Nein, es ist eine Angebotsregel, keine Prognose
+306|A. Nein, damit können andere Ihre Coins nehmen
+307|A. Ein Unternehmen kontrolliert alle Einträge
+308|A. Ein Produkt wird teurer
+309|A. Schnell zahlen, bevor die Spur kalt wird
+310|A. Informationen von außen wie das Wetter lesen
+311|A. Informationen transparent und überprüfbar festhalten
+312|A. Beseitigt jedes Risiko
+313|A. Sparen
+314|A. Am Markt verkaufen, mit dem Risiko, dass der Preis unter einen Dollar fällt
+315|A. Sofort schicken
+316|A. Den Goldpreis festlegen
+317|A. Zuerst für Wünsche ausgeben
+318|A. Angebot und Nachfrage
+319|A. Die schwedische Riksbank, gegründet 1668
+320|A. Das Nettoeinkommen nach Steuern
+321|A. Die Farbe der App
+322|A. Die gemeinsamen Funktionen fungibler Tokens
+323|A. Der Vertrag ist defekt
+324|A. Die Entscheidung wurde abgesagt
+325|A. Die Gebühr wird vom USDT abgezogen
+326|A. Der Fonds muss nächsten Monat in gleicher Höhe da sein
+327|A. Die Spanne zwischen Kauf- und Verkaufspreis
+328|A. Die höchstmögliche Rendite
+329|A. Der Herausgeber
+330|A. Die Netzwerke wandeln es automatisch um
+331|A. Die Adresse des Paares
+332|A. Der Preis ist stabil
+333|A. Der Preis ist letzte Woche gestiegen
+334|A. Dasselbe wie eine vollständige Prüfung
+335|A. Das Geschäft hat das Geld genommen
+336|A. Der Token ist sicher Betrug
+337|A. Der Token könnte gering sein
+338|A. Sie sind immer offensichtlich
+339|A. Sie zahlen Zinsen, solange man sie hält
+340|A. Transfersteuern
+341|A. Transparenz
+342|A. Ungeplante, notwendige Kosten
+343|A. Wie hoch ist die beworbene Gebühr?
+344|A. Wann immer sie will
+345|A. Wer gibt ihn heraus?
+346|A. Wer den privaten Schlüssel oder die Wiederherstellungsphrase hat
+347|A. Ja, genau sechs Monate
+348|A. Ja, innerhalb von fünf Jahren
+349|KI und Märkte
+350|KI und Wissenschaft
+351|KI-Hacking in unter drei Stunden
+352|KI macht einen großen Schritt bei einem Millennium-Problem
+353|KI-Agent
+354|KI und Irans kleine Unternehmen: ein vollständiger Leitfaden
+355|KI und Irans kleine Unternehmen
+356|KI und Wirtschaft
+357|KI und die Cyberflut
+358|KI und das Yang-Mills-Problem
+359|KI und Reisen
+360|KI-Hacking in unter drei Stunden: der Fall ARTEX
+361|KI arbeitet seit Jahren im Hintergrund der Finanzwelt, vor allem gegen Betrug und bei Krediten.
+362|KI an der Pistazien-Linie
+363|KI-Qualitätskontrolle an einer Pistazien-Linie (Illustration)
+364|KI, die für Sie bezahlt, kommt, und die Regeln der Verantwortung werden noch geschrieben.
+365|KI, Energie und die Zukunft der Arbeit
+366|ASIC-, SoC- und FPGA-Design; der 32-Bit-Mikroprozessor Aristo
+367|Etwa 1 %
+368|Etwa 10 %
+369|Bis zum Ende der vierten Ära wurden etwa 19,69 Millionen Bitcoin ausgegeben.
+370|Etwa 20 % des Angebots
+371|Etwa 20 % der ursprünglich 21 Billionen TMN wurden in zwei Schritten aus dem Umlauf genommen. Beide sind öffentlich und auf BscScan überprüfbar.
+372|Etwa 50 %
+373|Etwa 99,99 % weniger nach dem Merge (Schätzung)
+374|Über TMN
+375|Zugang
+376|Wie viele Länder haben laut dem Tracker des Atlantic Council eine CBDC vollständig eingeführt?
+377|Laut dem Tracker des Atlantic Council prüfen 146 Länder und Währungsunionen, zusammen über 98 % der Weltwirtschaft, eine CBDC. Daher kommen die großen Zahlen, die Sie in Beiträgen sehen.
+378|Wie viel Devisen wurden laut BIZ im April 2025 ungefähr pro Tag gehandelt?
+379|Acquirer
+380|Gesetz unterzeichnet am 23. Dezember, nach der Panik von 1907
+381|TMN zur Wallet hinzufügen
+382|TMN zur Wallet hinzufügen ↓
+383|Token hinzufügen
+384|Zählen Sie jede Rate und jede Gebühr zusammen.
+385|Adresse
+386|Adressvergiftung
+387|Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion
+388|Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion, Ditoman-Lektionsbild
+389|Adresse, Netzwerk, Gebühr: So funktioniert eine Krypto-Transaktion | Ditoman Learn
+390|Erwachsene kaufen inzwischen jedes fünfte Spielzeug. Fünfzig Jahre Spielzeug, warum Kinder es immer noch wollen, und Irans Chance, ein regionales Spielzeugzentrum zu werden.
+391|Nach 1 Jahr
+392|Nach 10 Jahren: 1.000 + 10 × 50 = 1.500. Nach 20 Jahren: 2.000. Der Saldo wächst geradlinig.
+393|Nach 3 Jahren
+394|Nach 5 Jahren
+395|Nach einer Finanzpanik 1907 waren die USA die einzige große Finanzmacht ohne Zentralbank. Präsident Woodrow Wilson unterzeichnete am 23. Dezember 1913 den Federal Reserve Act und schuf damit die Federal Reserve.
+396|Nach einem Diebstahl bietet jemand an, Ihr Geld gegen eine Vorabgebühr zurückzuholen. Was sollten Sie tun?
+397|Nach dem Halving vom 20. April 2024 beträgt die Belohnung pro Block:
+398|Nach Gebrauch: zuerst auffüllen, vor neuen Wünschen
+399|Nachdem Sie auf Senden gedrückt haben, wartet die Transaktion auf die Aufnahme in einen Block. Ist sie aufgenommen, hat sie eine Bestätigung. Jeder spätere Block fügt eine weitere hinzu, und je mehr Bestätigungen, desto schwerer wäre es, sie rückgängig zu machen.

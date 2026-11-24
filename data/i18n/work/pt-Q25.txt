@@ -1,0 +1,64 @@
+2252|Juro simples, composto e diário parecem iguais, mas ao fim de dez ou vinte anos dão resultados muito diferentes. Esta lição mostra os três com números pequenos que pode verificar à mão.
+2253|Juro simples, composto e diário com números que pode verificar.
+2254|Sistema cirúrgico robótico Sina
+2255|=
+2256|Sina Robotics and Medical Innovators
+2257|Robô cirúrgico Sina
+2258|Robô cirúrgico Sina (ilustração)
+2259|Dimensione uma posição pelo que pode perder por completo.
+2260|Corte do depósito (slashing)
+2261|Slippage
+2262|Slippage, alavancagem e liquidação em cascata: o que acontece dentro de uma corretora depois de más notícias, e como se proteger.
+2263|Perda lenta para a inflação
+2264|Sites lentos
+2265|Prestações pequenas escondem o total. Some-o.
+2266|Pequenas recompensas ligadas a aprendizagem verificável. O primeiro piloto está aberto:
+2267|Contrato inteligente
+2268|Megafonia e chamadas públicas inteligentes
+2269|=
+2270|Por isso, uma stablecoin pode encurtar o meio do percurso. Não elimina o primeiro nem o último passo.
+2271|Por isso é justo perguntar: se já não precisamos do edifício, ainda precisamos do banco? Para responder, temos de ver o que um banco realmente faz. Não é uma função. São quatro.
+2272|Por isso nenhum deles é um escudo em que se possa confiar sem pensar. São ferramentas com riscos próprios, e as perguntas da lição 06 continuam a aplicar-se.
+2273|Por isso as regras detalhadas ainda estão a ser escritas, e não são iguais em todo o lado. A União Europeia, Hong Kong e outros têm os seus próprios quadros. Leia cada nova regra com as três perguntas em mente: quem a emite, o que a sustenta e se o resgate é real.
+2274|Por isso os hábitos importam mais do que em qualquer outro lugar das finanças.
+2275|Assim, o talão da loja é uma promessa de que o dinheiro vem a caminho. Para o cliente parece instantâneo. Para a loja não é.
+2276|Então, quem decide que transações entram a seguir? E porque haveria alguém de fazer batota, ou não?
+2277|Então, os bancos vão desaparecer?
+2278|SoFi: o orçamento 50/30/20, popularizado por Elizabeth Warren em All Your Worth (2005), e as suas três categorias
+2279|Algumas contas e empréstimos calculam o juro ao dia. Com juro simples diário a 5% ao ano, um dia rende 1 000 × 0,05 ÷ 365, e 30 dias rendem cerca de 4,11.
+2280|Alguns neobancos têm licença própria. Outros são uma marca construída sobre um banco tradicional. No Irão, os exemplos conhecidos pertencem a este segundo grupo: o Blubank funciona sobre o Saman Bank, o Bankino sobre o Middle East Bank e o Wepod sobre o Pasargad Bank.
+2281|Alguns agregadores ainda mostram os 21 biliões originais. O próprio contrato indica 18,90 biliões após a queima de 13 de setembro de 2026.
+2282|Alguns usos são inofensivos ou até úteis: um pagamento que se liberta automaticamente quando a mercadoria chega, ou ajuda que chega às pessoas certas. A preocupação é sobre quem escreve as regras, e se podem ser aplicadas ao dinheiro do dia a dia sem o seu acordo.
+2283|Alguém paga sempre pelo sistema, normalmente o comerciante, e as regras variam de país para país.
+2284|Alguém simpático aparece numa aplicação social ou num site de encontros. Seguem-se semanas de conversa agradável. Depois fala de um investimento que corre lindamente e mostra-lhe como entrar. A plataforma mostra lucros a crescer. Quando tenta levantar, há «impostos» e «taxas» a pagar primeiro. Os lucros nunca foram reais.
+2285|Alguém do «apoio» pede a sua frase de recuperação para resolver um problema. O que é isto?
+2286|Alguém envia um pagamento e um pedido
+2287|Alguém continua a ter de guardar os depósitos em segurança, emprestar a vinte anos e responder perante um regulador quando as coisas correm mal. Estas funções são difíceis sem licença e capital, e é por isso que até as aplicações mais modernas assentam normalmente num banco.
+2288|Tecnologia de som
+2289|Código-fonte
+2290|Fonte:
+2291|Fonte: fechos diários da TGJU.
+2292|Fontes
+2293|Relatório especial
+2294|Especular
+2295|Dividir um preço em quatro torna cada número pequeno, e a mente julga o número pequeno. Quarenta milhões pesam. Dez milhões parecem bem. O total é o mesmo.
+2296|Deteta fraude, avalia empréstimos
+2297|Spread
+2298|Stablecoin
+2299|Stablecoins e TMN não são a mesma coisa
+2300|As stablecoins podem mover dinheiro mais depressa e mais barato do que muitos canais tradicionais, e funcionam a toda a hora. Onde as pessoas procuram uma reserva de valor mais estável, dão acesso a dinheiro baseado no dólar, o que é uma das razões do seu crescimento tão rápido.
+2301|Stablecoins explicadas: a paridade, os três tipos de respaldo, relatórios de reservas versus auditorias, o colapso da UST em 2022 e o resgate, o teste que mais importa.
+2302|As stablecoins parecem simples: um token, um dólar. Mas essa ligação é uma promessa, e uma promessa vale o que estiver por trás dela. Nesta lição verá o que está por trás das stablecoins, como uma stablecoin famosa colapsou em maio de 2022 e o único teste que mais importa antes de confiar em qualquer token.
+2303|As stablecoins parecem simples: um token, um dólar. Mas essa ligação é uma promessa, e uma promessa vale o que estiver por trás dela. Nesta lição verá o que está por trás das stablecoins, como uma stablecoin famosa colapsou em maio de 2022 e o único teste que mais importa antes de confiar em qualquer…
+2304|As stablecoins aceleram o meio do percurso. Entrar e sair continua a ser onde estão o custo e o risco.
+2305|Fase
+2306|Norma
+2307|Normas como ERC-20 e BEP-20 permitem que as carteiras funcionem com muitos tokens.
+2308|Comece um pequeno hábito automático.
+2309|Comece por observar, não por cortar
+2310|Começar do início
+2311|Comece aqui
+2312|Comece aqui: quanto vale o dinheiro, onde está e como se move.
+2313|Começar a aprender
+2314|Comece por uma lição
+2315|Comece com um valor pequeno e pratique receber e enviar antes de mover algo que importe.

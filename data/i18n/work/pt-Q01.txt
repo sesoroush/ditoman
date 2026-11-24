@@ -1,0 +1,41 @@
+108|Uma CBDC é dinheiro do Estado em forma digital. A Bitcoin e tokens como o TMN não são emitidos por nenhum banco central, e as suas regras são definidas por código público e não por um governo. Essa diferença é exatamente a razão por que esta lição importa a quem aprende sobre cripto.
+109|Um século de eletricidade no Irão
+110|Um painel liderado por um Nobel apoia a prova de existência de Yang-Mills da OpenAI; o hiato de massa e o prémio de 1 milhão de dólares continuam em aberto.
+111|Uma comunidade no Telegram com regras reais, lições iniciais e uma entrada clara, antes de qualquer convite.
+112|Um saldo nem sempre é dinheiro na mão. Pergunte quem tem de dizer sim antes de ele se mover.
+113|Um saldo num ecrã pode significar três coisas muito diferentes. Esta lição compara uma conta bancária, uma conta numa corretora e uma carteira pessoal, e mostra quem controla realmente o dinheiro em cada
+114|Um saldo num ecrã pode significar três coisas muito diferentes. Esta lição compara uma conta bancária, uma conta numa corretora e uma carteira pessoal, e mostra quem controla realmente o dinheiro em cada uma.
+115|Proibição de cartões de crédito
+116|Um saldo bancário é uma promessa
+117|Um depósito bancário é um crédito sobre um banco, com supervisão e uma garantia até um limite.
+118|Um banco faz quatro trabalhos: guardar, movimentar, emprestar e transportar confiança.
+119|Um banco tem um dono, um gestor e um número de telefone. Uma blockchain pública não tem nada disto. Milhares de computadores no mundo guardam o mesmo livro-razão, e ninguém manda nele.
+120|A taxa do banco só diz quanto cresce o número. A lição 12 explica que os preços também se compõem. Se o seu dinheiro cresce mesmo depende do juro comparado com a subida dos preços, não só do juro.
+121|Um banco resolve isto sendo o único árbitro. Uma blockchain resolve-o com um método, chamado mecanismo de consenso, em que muitos desconhecidos chegam a acordo sem confiarem uns nos outros.
+122|Uma transferência bancária entre dois países
+123|Um projeto educativo bilingue assente em três pilares: literacia prática em cripto e finanças, análise honesta de IA, energia e o futuro do trabalho, e cobertura de conquistas reais de pessoas e empresas iranianas.
+124|Um explorador de blocos mostra a verdade sobre qualquer transferência.
+125|Uma blockchain pode ser entendida como um registo digital de acontecimentos ou transações. Depois de adicionada, a informação torna-se muito difícil de alterar ou apagar. Isto cria confiança não porque as pessoas confiem cegamente umas nas outras, mas porque o próprio sistema pode ser verificado.
+126|Uma blockchain precisa de uma forma de desconhecidos chegarem a acordo sobre a página seguinte.
+127|Um orçamento é o mapa do seu mês, não um castigo.
+128|Um orçamento é um plano para o seu rendimento: quanto entra e para que serve cada parte. Não é um castigo nem uma promessa de dizer não a tudo.
+129|Uma reparação do carro, uma conta médica, um mês sem rendimento: as surpresas são normais. Esta lição explica o que é um fundo de emergência, que tamanho deve ter, onde guardá-lo e como começar
+130|Uma reparação do carro, uma conta médica, um mês sem rendimento: as surpresas são normais. Esta lição explica o que é um fundo de emergência, que tamanho deve ter, onde guardá-lo e como começar pequeno.
+131|Um pagamento com cartão parece instantâneo, mas várias empresas falam entre si nesses dois segundos, e o dinheiro em si chega mais tarde. Esta lição segue uma compra do terminal até à conta
+132|Um pagamento com cartão parece instantâneo, mas várias empresas falam entre si nesses dois segundos, e o dinheiro em si chega mais tarde. Esta lição segue uma compra do terminal até à conta da loja.
+133|Um pagamento com cartão é uma cadeia de empresas de confiança a trocar mensagens, com a liquidação mais tarde. Um pagamento em blockchain não tem emissor, adquirente nem rede. A própria transferência é a liquidação e, uma vez confirmada, nenhum banco a pode reverter.
+134|Uma moeda digital de banco central, ou CBDC, é dinheiro digital emitido diretamente pelo banco central de um país. É a versão digital da nota que tem na carteira.
+135|Um banco central não gere a sua conta nem guarda as suas poupanças. Isso fazem os bancos comerciais. Também não controla todos os preços. Influencia as condições, e os resultados chegam com atraso e incerteza.
+136|Um banco central é uma instituição pública no centro do sistema monetário de um país. Os bancos comuns servem clientes. O banco central serve os bancos, o governo e o sistema no seu todo.
+137|Um banco central é a instituição pública no centro do sistema monetário de um país.
+138|Um banco central define o custo básico de pedir emprestado na sua moeda. Quando esse custo é alto, os empréstimos são caros e poupar compensa. Quando é baixo, os empréstimos são baratos e poupar rende pouco.
+139|Um século de eletricidade no Irão
+140|Uma lista de verificação só é honesta se se aplicar a quem a publica. Aqui está o TMN medido pelas mesmas cinco verificações, incluindo as que não passamos.
+141|Um crédito sobre o banco
+142|Um crédito sobre a empresa
+143|Uma moeda depende da segurança da sua própria cadeia. Um token depende da sua cadeia e do seu contrato. Perceber onde assenta um ativo diz-lhe o que pode correr mal e quem, se alguém, o pode alterar.
+144|Uma moeda é nativa da sua própria blockchain. Um token é construído em cima de outra blockchain. O guia da Kraken dá os exemplos: BTC e ETH são moedas; USDT e UNI são tokens.
+145|Uma moeda é nativa da sua blockchain; um token é construído sobre outra.
+146|A moeda é o que a própria cadeia usa. Paga as comissões e recompensa quem a mantém a funcionar, como mostrou a lição 27. Sem a moeda, a rede não teria forma de pagar o seu próprio funcionamento.
+147|Uma empresa ficou com ele
+148|Uma transação confirmada é final. Nenhum banco, apoio ao cliente ou ordem judicial a pode reverter na blockchain. A única forma de voltar atrás é o destinatário devolvê-la.

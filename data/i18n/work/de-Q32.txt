@@ -1,0 +1,79 @@
+2662|Das wiegt schwerer für Menschen, deren Währung ohnehin instabil ist, weil die Versuchung größer und das Polster dünner ist. Liegt Geld für Miete, Essen, Medikamente oder Familie in einem Token, investieren Sie nicht. Sie sind ausgeliefert.
+2663|Dieser Wandel ist größer als Geld.
+2664|Diese Zahlen sind kein Grund zur Angst. Sie sind ein Grund, fünf Muster zu lernen.
+2665|Drei Guthaben, drei Bedeutungen
+2666|Drei Prüfungen, bevor Sie auf Senden tippen.
+2667|Drei frühe Zentralbanken
+2668|Drei Monate, bei unregelmäßigem Einkommen mehr
+2669|Drei Mythen, die man ablegen sollte
+2670|Drei Wege von den Zinsen zu Bitcoin
+2671|Drei Phasen der KI im Geldwesen
+2672|Drei Dinge, zu denen Menschen greifen, wenn sie Bargeld nicht mehr trauen. Diese Lektion sagt nicht, was man kaufen soll. Sie vergleicht sie anhand von vier einfachen Fragen: wie stark der Preis schwankt, wie leicht es sich verkauft, was die Aufbewahrung kostet und was schief
+2673|Drei Dinge, zu denen Menschen greifen, wenn sie Bargeld nicht mehr trauen. Diese Lektion sagt nicht, was man kaufen soll. Sie vergleicht sie anhand von vier einfachen Fragen: wie stark der Preis schwankt, wie leicht es sich verkauft, was die Aufbewahrung kostet und was schiefgehen kann.
+2674|Drei Themen, die wir behandeln
+2675|Drei Arten der Deckung von Stablecoins: Bargeld und Staatsanleihen, Krypto-Sicherheiten, algorithmisches Modell
+2676|Drei Wege, einen Token zu decken
+2677|Über die lizenzierte Bank
+2678|Wählen Sie oben mindestens einen Markt aus.
+2679|Wählen Sie die Märkte, die Sie sehen möchten. In „% Veränderung“ beginnt jede Linie bei null, sodass Sie sehen, welcher im selben Zeitraum stärker stieg oder fiel.
+2680|Zeit
+2681|Zeithorizont
+2682|Um zwei Kredite zu vergleichen, fassen Sie alles in einer Zahl zusammen: die Gesamtrückzahlung minus das, was Sie erhalten haben.
+2683|Um Anbieter zu vergleichen, ignorieren Sie die beworbene Gebühr und stellen Sie eine Frage: Wenn ich diesen Betrag zahle, wie viel kommt genau in der anderen Währung an?
+2684|Um einen Token auf der BNB Smart Chain zu senden, braucht man etwas BNB. Auf Ethereum braucht man ETH, auf Tron TRX. Eine Wallet mit Tokens, aber ohne Netzwerk-Coin, kann nichts senden.
+2685|Heute haben wir die TMN-Liquidität gesperrt. Diese Lektion nimmt unsere eigene Sperre als Beispiel: was ein Liquiditätspool ist, was LP-Tokens sind, wovor eine Sperre schützt, was sie nicht beweist und wie man jede Sperre
+2686|Heute haben wir die TMN-Liquidität gesperrt. Diese Lektion nimmt unsere eigene Sperre als Beispiel: was ein Liquiditätspool ist, was LP-Tokens sind, wovor eine Sperre schützt, was sie nicht beweist und wie man jede Sperre selbst prüft.
+2687|Heute verlassen sich Menschen auf Institutionen, um zu prüfen, zu kontrollieren, zu schützen und Zugang zu gewähren. Banken halten und verwalten Geld. Regierungen machen Regeln und setzen sie durch. Plattformen speichern Daten, kontrollieren Konten und entscheiden, wer digitale Räume betreten oder verlassen darf.
+2688|Gemeinsam lernen wir Irans Industrie, Unternehmen und Wirtschaftslandschaft kennen und verstehen Krypto und Fintech in einfacher Sprache.
+2689|Token
+2690|Token-Genehmigung
+2691|Token-Fakten
+2692|Token-Fakten und Offenlegung
+2693|Tokens werden von Smart Contracts erzeugt, ohne dass eine neue Chain nötig ist.
+2694|Tokens werden von Smart Contracts erzeugt, den Programmen aus Lektion 28. Ein Entwickler schreibt einen Vertrag, der eine Liste von Guthaben und Regeln für deren Übertragung führt. Eine neue Blockchain ist nicht nötig.
+2695|Toman- und Dollarpreise (Feinunze Gold, Silber, Öl, Bitcoin) werden im Modus „Preis“ logarithmisch dargestellt, damit sie zusammenpassen. Quelle: TGJU-Tagesschlusskurse.
+2696|Tomaten in der Wüste: Anbau mit jedem Tropfen
+2697|Tomaten in der Wüste
+2698|Gesamtkosten des Kredits
+2699|Gesamtrückzahlung
+2700|Gesamtmenge
+2701|Tourismus und Kultur
+2702|Hin zu einem einzigen Unternehmen
+2703|Hin zu verborgenen Systemen
+2704|Hin zu ausschließlich privaten Einträgen
+2705|Hin zu transparenten, überprüfbaren Systemen
+2706|Erfassen Sie einen Monat lang Ausgaben und sortieren Sie sie in drei Stapel.
+2707|Den Fluss verfolgen:
+2708|Tracker multiplizieren die Gesamtmenge mit dem Preis in einem einzigen Pool. Das Ergebnis ist eine Rechnung, kein Wert, zu dem die gesamte Menge verkauft werden könnte.
+2709|Traditionelle Bank
+2710|Transaktionsgebühren
+2711|Transaktions-Hash
+2712|Transaktionen wurden durch verteilte Register sichtbar und überprüfbar.
+2713|Transfersteuer
+2714|Transparenz
+2715|Verkehr und Straßen
+2716|Behandeln Sie einen Assistenten als belesenen Helfer, nicht als Autorität.
+2717|Trezor Learn: Bitcoin-Halving 2024 (20. April 2024, Belohnung von 6,25 auf 3,125, alle 210.000 Blöcke, Obergrenze 21 Millionen, letzter Bitcoin um 2140)
+2718|Trezors Leitfaden nennt das jüngste: Das Halving vom 20. April 2024 senkte die Belohnung von 6,25 auf 3,125 Bitcoin pro Block.
+2719|Hier kürzen, bevor Sie die Ersparnisse anrühren
+2720|Richtig oder falsch: Ein auf einer Tracking-Website angezeigter Preis beweist, dass Sie den Token verkaufen können.
+2721|Richtig oder falsch: Ein Token, der jede technische Prüfung besteht, ist automatisch eine gute Entscheidung für Sie.
+2722|Richtig oder falsch: Weil Bitcoin vor drei früheren Zwischenwahlen fiel, wird er vor der nächsten fallen.
+2723|Richtig oder falsch: Die Blockchain ist nur wichtig, weil sie digitales Geld schafft.
+2724|Richtig oder falsch: Die Blockchain ist nur für Kryptowährungen nützlich.
+2725|Richtig oder falsch: Guthaben in Chinas digitalem Yuan verfallen für alle.
+2726|Richtig oder falsch: Eine Liquiditätssperre beweist, dass der Preis eines Tokens steigen wird.
+2727|Richtig oder falsch: Wenn das Bitcoin-Netzwerk von Regierungen unabhängig ist, kann sein Preis nicht zusammen mit Aktien fallen.
+2728|Echter Jahreszins (ca.)
+2729|Trump, Xi und Putin an einem Tisch: der erste Dreiergipfel
+2730|Trump, Xi und Putin: der erste Dreiergipfel
+2731|Vertrauen
+2732|Vertrauen durch Regeln
+2733|Vertrauen ist kein Versprechen. Es ist etwas, das man prüfen kann. Nicht vertrauen. Prüfen.
+2734|Vertrauen, das zu sehr von zentralen Institutionen und ihrer Erlaubnis abhing
+2735|Selbst ausprobieren
+2736|Erneut versuchen
+2737|Mit TMN ausprobieren
+2738|Selbst ausprobieren: einen Reservebericht lesen
+2739|Die Türkei will das Energiedrehkreuz der Welt werden
+2740|Der Plan der Türkei für ein Energiedrehkreuz

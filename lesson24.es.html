@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>¿Cómo se calcula el interés bancario? | Ditoman Learn</title>
+<meta name="description" content="El interés simple, el compuesto y el diario suenan parecidos, pero a diez o veinte años dan resultados muy distintos. Esta lección muestra los tres con números pequeños que puedes comprobar" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson24.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson24.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson24.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson24.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson24.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson24.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson24.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson24.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson24.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson24.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson24.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson24.es.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="¿Cómo se calcula el interés bancario? | Ditoman Learn" />
+<meta property="og:description" content="El interés simple, el compuesto y el diario suenan parecidos, pero a diez o veinte años dan resultados muy distintos. Esta lección muestra los tres con números pequeños que puedes comprobar" />
+<meta property="og:url" content="https://ditoman.com/lesson24.es.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson24.es.html#page",
+   "url": "https://ditoman.com/lesson24.es.html",
+   "name": "¿Cómo se calcula el interés bancario? | Ditoman Learn",
+   "description": "El interés simple, el compuesto y el diario suenan parecidos, pero a diez o veinte años dan resultados muy distintos. Esta lección muestra los tres con números pequeños que puedes comprobar",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "¿Cómo se calcula el interés bancario?",
+     "item": "https://ditoman.com/lesson24.es.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.es.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.es.html" class="active">Aprender</a>
+<a href="iran.en.html">Irán</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.es.html">Precios</a>
+<a href="calendar.en.html">Calendario</a>
+<a href="tmn.es.html">TMN</a>
+<a href="index.es.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicaciones</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson24-cover.jpg" alt="¿Cómo se calcula el interés bancario? Imagen de la lección Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson24-cover-en.jpg" alt="¿Cómo se calcula el interés bancario? Imagen de la lección Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Dinero • Interés</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پول • سود</div>
+<h1 lang="en">¿Cómo se calcula el interés bancario?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">سود بانکی چطور حساب می‌شود؟</h1>
+<p class="subtitle" lang="en">El interés simple, el compuesto y el diario suenan parecidos, pero a diez o veinte años dan resultados muy distintos. Esta lección muestra los tres con números pequeños que puedes comprobar a mano.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">سود ساده، مرکب و روزشمار شبیه هم به نظر می‌رسند، ولی در ده یا بیست سال نتیجه‌های خیلی متفاوتی می‌دهند. این درس هر سه را با عددهای کوچکی نشان می‌دهد که می‌شود با دست حساب کرد.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Nivel</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Principiante</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Tiempo de lectura</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 minutos</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Puntos de aprendizaje</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Cuestionario</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 preguntas</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Contenido de la lección</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Lee la lección en inglés o persa.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Inglés</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Pones 1.000 unidades en una cuenta que paga un 5% anual. Al cabo de un año tienes 1.050. Todos están de acuerdo. El desacuerdo empieza el segundo año.</p>
+<p lang="en">¿El 5% se aplica de nuevo a 1.000 o a 1.050? Esa pequeña pregunta es toda la diferencia entre interés simple y compuesto.</p>
+<h3><span class="check-number">01.</span> Interés simple</h3>
+<p lang="en">Con interés simple, el tipo siempre se aplica a la cantidad original. El interés es el 5% de 1.000, es decir, 50 cada año.</p>
+<p lang="en">Al cabo de 10 años: 1.000 + 10 × 50 = 1.500. Al cabo de 20 años: 2.000. El saldo crece en línea recta.</p>
+<h3><span class="check-number">02.</span> Interés compuesto</h3>
+<p lang="en">La Oficina de Protección Financiera del Consumidor de EE. UU. lo explica así: el interés compuesto es cuando ganas intereses sobre el dinero que ahorraste y sobre los intereses que fuiste ganando.</p>
+<p lang="en">Su propio ejemplo es 1.000 dólares al 5% anual: 1.050 al final del primer año y 1.102,50 al final del segundo. Los 2,50 de más son interés sobre interés.</p>
+<figure class="lz-fig"><figcaption>1.000 al 5% anual: simple frente a compuesto</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>Año</th>
+<th>Simple</th>
+<th>Compuesto</th>
+</tr></thead><tbody>
+<tr><td>1</td><td>1,050</td><td>1,050</td></tr>
+<tr><td>2</td><td>1,100</td><td>1,102.50</td></tr>
+<tr><td>10</td><td>1,500</td><td>1,628.89</td></tr>
+<tr><td>20</td><td>2,000</td><td>2,653.30</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">03.</span> Lo que el tiempo hace con la diferencia</h3>
+<p lang="en">La diferencia empieza siendo mínima y luego crece. Al mismo 5% anual:</p>
+<p lang="en"><strong>10 años:</strong> simple 1.500, compuesto unos 1.628,89.</p>
+<p lang="en"><strong>20 años:</strong> simple 2.000, compuesto unos 2.653,30.</p>
+<p lang="en">Nada cambió en el tipo. Solo cambió la base a la que se aplica. La CFPB añade que una capitalización más frecuente, un tipo más alto o aportar más al capital hacen crecer el ahorro más rápido.</p>
+<h3><span class="check-number">04.</span> Interés diario</h3>
+<p lang="en">Algunas cuentas y préstamos calculan el interés por días. Con un interés simple diario del 5% anual, un día genera 1.000 × 0,05 ÷ 365, y 30 días generan unos 4,11.</p>
+<p lang="en">El cálculo diario importa porque muestra cuánto tiempo estuvo el dinero en cada sitio. El dinero que llega a final de mes rinde menos días, y un préstamo pagado tarde cuesta más días.</p>
+<h3><span class="check-number">05.</span> Tipo frente a rendimiento</h3>
+<p lang="en">Un tipo anunciado como 5% anual, capitalizado mensualmente, no da exactamente un 5% en el año. Como los intereses de cada mes generan intereses, el resultado anual efectivo es de alrededor del 5,12%.</p>
+<p lang="en">Cuando compares dos ofertas, compáralas sobre la misma base: el mismo periodo y la misma capitalización. Un tipo de reclamo por sí solo no basta.</p>
+<h3><span class="check-number">06.</span> Las mismas matemáticas juegan en tu contra</h3>
+<p lang="en">El interés compuesto funciona en ambos sentidos. En el ahorro ayuda; en una deuda es la razón por la que el saldo puede crecer aunque pagues algo. La lección 19 mostró cómo se acumulan los costes de los plazos, y este es el motor de fondo.</p>
+<h3><span class="check-number">07.</span> La inflación también se capitaliza</h3>
+<p lang="en">El tipo del banco solo te dice cuánto crece el número. La lección 12 explica que los precios también se capitalizan. Si tu dinero crece de verdad depende del interés comparado con la subida de precios, no solo del interés.</p>
+<h3>Qué sacar de esto</h3>
+<p lang="en">El interés simple se aplica a la cantidad original; el compuesto, a la cantidad más los intereses anteriores.</p>
+<p lang="en">Al 5% sobre 1.000 durante 20 años: 2.000 con interés simple frente a unos 2.653 con compuesto.</p>
+<p lang="en">Compara ofertas con el mismo periodo y la misma capitalización.</p>
+<p lang="en">La capitalización ayuda a quien ahorra y perjudica a quien debe.</p>
+<p lang="en">El interés significa poco si no lo comparas con la subida de precios.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">هزار واحد در حسابی می‌گذارید که سالی ۵٪ سود می‌دهد. بعد از یک سال ۱٬۰۵۰ دارید. همه با این موافق‌اند. اختلاف از سال دوم شروع می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آیا ۵٪ دوباره روی ۱٬۰۰۰ حساب می‌شود یا روی ۱٬۰۵۰؟ همین پرسش کوچک تمام فرق سود ساده و سود مرکب است.</p>
+<h3><span class="check-number">۰۱.</span> سود ساده</h3>
+<p lang="fa" dir="rtl" style="text-align:right">در سود ساده، نرخ همیشه روی مبلغ اولیه اعمال می‌شود. سود هر سال ۵٪ از ۱٬۰۰۰ است، یعنی ۵۰.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بعد از ۱۰ سال: ۱٬۰۰۰ + ۱۰ × ۵۰ = ۱٬۵۰۰. بعد از ۲۰ سال: ۲٬۰۰۰. موجودی در خط راست بالا می‌رود.</p>
+<h3><span class="check-number">۰۲.</span> سود مرکب</h3>
+<p lang="fa" dir="rtl" style="text-align:right">اداره‌ی حمایت مالی از مصرف‌کننده‌ی آمریکا (CFPB) این‌طور می‌گوید: سود مرکب یعنی هم روی پولی که پس‌انداز کرده‌اید سود می‌گیرید و هم روی سودی که در مسیر به دست آورده‌اید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">مثال خودش ۱٬۰۰۰ دلار با سود سالانه‌ی ۵٪ است: بعد از سال اول ۱٬۰۵۰ و بعد از سال دوم ۱٬۱۰۲٫۵۰. آن ۲٫۵۰ اضافه، سودِ سود است.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>۱٬۰۰۰ با سود ۵٪ در سال: ساده و مرکب</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>سال</th>
+<th>ساده</th>
+<th>مرکب</th>
+</tr></thead><tbody>
+<tr><td>۱</td><td>۱٬۰۵۰</td><td>۱٬۰۵۰</td></tr>
+<tr><td>۲</td><td>۱٬۱۰۰</td><td>۱٬۱۰۲٫۵۰</td></tr>
+<tr><td>۱۰</td><td>۱٬۵۰۰</td><td>۱٬۶۲۸٫۸۹</td></tr>
+<tr><td>۲۰</td><td>۲٬۰۰۰</td><td>۲٬۶۵۳٫۳۰</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۳.</span> زمان با این فاصله چه می‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">فاصله کوچک شروع می‌شود و بعد بزرگ می‌شود. با همان ۵٪ در سال:</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۱۰ سال:</strong> ساده ۱٬۵۰۰، مرکب حدود ۱٬۶۲۸٫۸۹.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۲۰ سال:</strong> ساده ۲٬۰۰۰، مرکب حدود ۲٬۶۵۳٫۳۰.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ هیچ تغییری نکرد. فقط پایه‌ای که نرخ رویش اعمال می‌شود عوض شد. CFPB اضافه می‌کند که مرکب‌شدن مکرر‌تر، نرخ بالاتر، یا اضافه‌کردن به اصل پول، همه رشد پس‌انداز را سریع‌تر می‌کنند.</p>
+<h3><span class="check-number">۰۴.</span> سود روزشمار</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بعضی حساب‌ها و وام‌ها سود را روزانه حساب می‌کنند. با سود ساده‌ی روزشمار و نرخ سالانه‌ی ۵٪، هر روز ۱٬۰۰۰ × ۰٫۰۵ ÷ ۳۶۵ سود می‌آورد و ۳۰ روز حدود ۴٫۱۱.</p>
+<p lang="fa" dir="rtl" style="text-align:right">حساب روزانه از این جهت مهم است که نشان می‌دهد پول چند روز کجا بوده. پولی که اواخر ماه می‌رسد روزهای کمتری سود می‌گیرد و وامی که دیر پرداخت شود روزهای بیشتری هزینه دارد.</p>
+<h3><span class="check-number">۰۵.</span> نرخ در برابر بازده</h3>
+<p lang="fa" dir="rtl" style="text-align:right">نرخی که «۵٪ در سال با مرکب‌شدن ماهانه» اعلام می‌شود، در طول سال دقیقاً ۵٪ نمی‌دهد. چون سود هر ماه خودش سود می‌آورد، نتیجه‌ی مؤثر سالانه حدود ۵٫۱۲٪ است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی دو پیشنهاد را مقایسه می‌کنید، آن‌ها را روی یک مبنا بسنجید: همان دوره و همان نوع مرکب‌شدن. نرخ تبلیغاتی به‌تنهایی کافی نیست.</p>
+<h3><span class="check-number">۰۶.</span> همین ریاضی علیه شما هم کار می‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">سود مرکب در هر دو جهت کار می‌کند. روی پس‌انداز مفید است؛ روی بدهی دلیل آن است که موجودی حتی وقتی چیزی می‌پردازید ممکن است بزرگ شود. درس ۱۹ نشان داد هزینه‌ی قسط‌ها چطور انباشته می‌شود و این همان موتور زیر آن است.</p>
+<h3><span class="check-number">۰۷.</span> تورم هم مرکب می‌شود</h3>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ بانکی فقط رشد عدد را می‌گوید. درس ۱۲ توضیح می‌دهد قیمت‌ها هم مرکب می‌شوند. این‌که پولتان واقعاً رشد می‌کند یا نه، به مقایسه‌ی سود با افزایش قیمت‌ها بستگی دارد، نه به سود به‌تنهایی.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">سود ساده روی مبلغ اولیه اعمال می‌شود؛ سود مرکب روی مبلغ به‌علاوه‌ی سودهای گذشته.</p>
+<p lang="fa" dir="rtl" style="text-align:right">با ۵٪ روی ۱٬۰۰۰ در ۲۰ سال: ۲٬۰۰۰ ساده در برابر حدود ۲٬۶۵۳ مرکب.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پیشنهادها را روی یک دوره و یک نوع مرکب‌شدن مقایسه کنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">مرکب‌شدن به نفع پس‌اندازکننده و به ضرر بدهکار است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">سود بدون مقایسه با افزایش قیمت‌ها معنای کمی دارد.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Dos lecciones relacionadas</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو درس مرتبط</h2>
+<p lang="en">La lección 12 muestra por qué el interés debe compararse con la subida de precios. La lección 19 muestra el lado del coste: cuánto suman realmente los plazos.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۲ نشان می‌دهد چرا سود را باید با افزایش قیمت‌ها مقایسه کرد. درس ۱۹ سمت هزینه را نشان می‌دهد: قسط‌ها در نهایت چقدر می‌شوند.</p>
+<div class="cta-row">
+<a class="cta" href="lesson12.es.html"><span lang="en">¿Por qué pierde el dinero poder adquisitivo?</span><span lang="fa">چرا پول ما هر سال قدرت خریدش را از دست می‌دهد؟</span></a>
+<a class="button" href="lesson19.es.html"><span lang="en">Compra hoy, paga mañana</span><span lang="fa">خرید امروز، پرداخت فردا</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Conceptos clave</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Capital</li><li>Tipo de interés</li><li>Interés simple</li><li>Interés compuesto</li><li>Interés diario</li><li>Rendimiento anual efectivo</li><li>Frecuencia de capitalización</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>اصل پول</li><li>نرخ سود</li><li>سود ساده</li><li>سود مرکب</li><li>سود روزشمار</li><li>بازده مؤثر سالانه</li><li>تعداد دفعات مرکب‌شدن</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Objetivos de aprendizaje</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Calcula el interés simple a mano.</li><li>Explica el interés compuesto como interés sobre interés.</li><li>Compara resultados a 10 y 20 años con el mismo tipo.</li><li>Calcular un importe de interés diario.</li><li>Compara dos ofertas con la misma base.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>سود ساده را با دست حساب کنید.</li><li>سود مرکب را به‌عنوان سودِ سود توضیح بدهید.</li><li>نتیجه‌ی ۱۰ و ۲۰ ساله را با یک نرخ مقایسه کنید.</li><li>سود روزانه را حساب کنید.</li><li>دو پیشنهاد را روی یک مبنا مقایسه کنید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Cuestionario</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Mira qué se te ha quedado. La respuesta está bajo cada pregunta.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Pregunta 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">1.000 al 5% de interés simple durante 10 años da:</p>
+<p lang="fa" dir="rtl" style="text-align:right">۱٬۰۰۰ با سود ساده‌ی ۵٪ در ۱۰ سال می‌شود:</p>
+<p lang="en">A. 1,500</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۱٬۵۰۰</p>
+<p lang="en">B. 1,628.89</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۱٬۶۲۸٫۸۹</p>
+<p lang="en">C. 1,050</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۱٬۰۵۰</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">¿Qué hace que el interés se componga?</p>
+<p lang="fa" dir="rtl" style="text-align:right">چه چیزی سود را مرکب می‌کند؟</p>
+<p lang="en">A. Se ganan intereses también sobre intereses anteriores</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. روی سودهای قبلی هم سود می‌آید</p>
+<p lang="en">B. El banco sube el tipo cada año</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. بانک هر سال نرخ را بالا می‌برد</p>
+<p lang="en">C. La cuenta se cierra antes de tiempo</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. حساب زودتر بسته می‌شود</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">1.000 al 5% compuesto durante 20 años da aproximadamente:</p>
+<p lang="fa" dir="rtl" style="text-align:right">۱٬۰۰۰ با ۵٪ مرکب در ۲۰ سال حدود چقدر می‌شود؟</p>
+<p lang="en">A. 2,000</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۲٬۰۰۰</p>
+<p lang="en">B. 2,653</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۲٬۶۵۳</p>
+<p lang="en">C. 5,000</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۵٬۰۰۰</p>
+<p class="answer" lang="en">Respuesta correcta: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">¿Aproximadamente cuánto interés simple generan 1.000 al 5% anual en 30 días?</p>
+<p lang="fa" dir="rtl" style="text-align:right">تقریباً ۱٬۰۰۰ با سود ساده‌ی ۵٪ سالانه در ۳۰ روز چقدر سود می‌آورد؟</p>
+<p lang="en">A. Unos 4,11</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. حدود ۴٫۱۱</p>
+<p lang="en">B. Unos 50</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. حدود ۵۰</p>
+<p lang="en">C. Unos 0,41</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. حدود ۰٫۴۱</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">¿Por qué comparar ofertas con la misma base de capitalización?</p>
+<p lang="fa" dir="rtl" style="text-align:right">چرا پیشنهادها را روی یک مبنای مرکب‌شدن مقایسه کنیم؟</p>
+<p lang="en">A. Un tipo anunciado por sí solo oculta el resultado anual</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. نرخ تبلیغاتی به‌تنهایی نتیجه‌ی سالانه را پنهان می‌کند</p>
+<p lang="en">B. Los bancos lo exigen</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. بانک‌ها الزام می‌کنند</p>
+<p lang="en">C. Hace que el tipo sea más alto</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. نرخ را بالاتر می‌کند</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Fuentes</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.consumerfinance.gov/ask-cfpb/what-is-compound-interest-en-1683/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Consumer Financial Protection Bureau: qué es el interés compuesto (definición y el ejemplo de 1.000 dólares al 5%)</a></li></ul>
+<p lang="en" style="font-size:0.95rem">La definición y los dos primeros años proceden de la CFPB. Las cifras a 10 años, 20 años, diarias y de rendimiento efectivo son cálculos nuestros (1.000 × 1,05^10 y 1,05^20; 1.000 × 0,05 × 30 ÷ 365; capitalización mensual del 5%), redondeados. Orientación general, no asesoramiento personal.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">تعریف و دو سال اول از CFPB است. عددهای ۱۰ ساله، ۲۰ ساله، روزشمار و بازده مؤثر حساب خودمان است (۱٬۰۰۰ × ۱٫۰۵ به توان ۱۰ و ۲۰؛ ۱٬۰۰۰ × ۰٫۰۵ × ۳۰ ÷ ۳۶۵؛ مرکب‌شدن ماهانه‌ی ۵٪) و گرد شده. راهنمای عمومی است، نه مشاوره‌ی شخصی.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Síguenos</span></h2>
+<p lang="en">Las nuevas lecciones se anuncian primero en los canales de Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.es.html"><span lang="en">Volver a Aprender</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson23.es.html"><span lang="en">Lección anterior</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson25.es.html"><span lang="en">Siguiente lección</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Construido con estructura, impulsado por el descubrimiento.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-es.js?v=20261121a"></script>
+</body>
+</html>

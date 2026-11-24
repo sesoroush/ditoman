@@ -1,0 +1,72 @@
+3140|Por qué Estados Unidos llegó tarde
+3141|Por qué te importa la diferencia
+3142|Por qué esto se conecta con el dinero digital
+3143|Por qué importa esto
+3144|Por qué esto importa a la gente corriente
+3145|¿Por qué se creó Bitcoin?
+3146|¿Por qué se creó el Banco de Inglaterra en 1694?
+3147|¿Será 2027 el año más caluroso?
+3148|¿Será 2027 el año más caluroso registrado?
+3149|¿Desaparecerán los bancos en el futuro?
+3150|¿Desaparecerán los bancos en el futuro? Imagen de la lección de Ditoman
+3151|¿Desaparecerán los bancos en el futuro? | Ditoman Learn
+3152|¿Desaparecerán los bancos en el futuro?
+3153|¿Desaparecerán los bancos?
+3154|¿Se recompensará a quienes aprendan?
+3155|Con un apalancamiento de 10× y 100 dólares de margen, ¿cuánto debe caer aproximadamente el precio para que desaparezca el margen?
+3156|Con un apalancamiento de 10× y 100 dólares de margen, ¿cuánto debe caer aproximadamente el precio para que desaparezca tu margen?
+3157|Con una inflación anual del 36%, ¿cuánto tardan aproximadamente los precios en duplicarse (regla del 72)?
+3158|Con un banco, confías en una institución y recibes ayuda cuando algo sale mal. Con una billetera personal, confías en ti mismo y cargas con toda la responsabilidad.
+3159|Con interés simple, el tipo siempre se aplica a la cantidad original. El interés es el 5% de 1.000, es decir, 50 cada año.
+3160|Sin sucursales que pagar, un neobanco puede cobrar menos y moverse más rápido. Las preguntas son las mismas que para cualquier banco: ¿quién tiene la licencia y está mi depósito cubierto por una garantía?
+3161|Sin guardianes. Sin control centralizado.
+3162|Sin contratos inteligentes no habría tokens construidos sobre Ethereum, que es el tema de la próxima lección.
+3163|Sin esto, cada caída de precio se convierte en algo que justificar en lugar de algo de lo que aprender. La gente no suele perderlo todo en una sola decisión. Lo pierde al negarse a aceptar una serie de pequeñas señales.
+3164|Madera y tableros
+3165|Calcular un importe de interés diario.
+3166|Calcular un rendimiento real a partir de un tipo de interés y una tasa de inflación.
+3167|Calcular el coste total de un préstamo a partir de sus cuotas.
+3168|Banco Mundial: Remittance Prices Worldwide
+3169|World Gold Council: historial del precio del oro
+3170|Economía mundial
+3171|Patrimonio mundial, naturaleza, artesanía, gastronomía, arte
+3172|Resumen de prensa mundial
+3173|Mundo, en dólares
+3174|¿Lo compraría a este precio al contado?
+3175|Apunta todas las cuotas que vencen en los próximos tres meses, de todas las apps.
+3176|Escribe la frase de recuperación en papel y guárdala en un lugar seguro y seco. No le hagas fotos ni la guardes en un chat, un correo o una app de notas.
+3177|Año
+3178|Inflación anual
+3179|Sí
+3180|Sí, permanente
+3181|Sí, hasta un límite
+3182|Sí. El piloto «aprende y gana» está abierto: lee diez lecciones, aprueba un test de diez preguntas y recibe 500.000 TMN, para las primeras 1.000 personas.
+3183|No te quedaste atrás; la pista avanzó
+3184|Ya has superado:
+3185|Haces una pregunta en un grupo público. En un minuto un «agente de soporte» te escribe en privado y se ofrece amablemente a arreglarlo. Te pide tu frase, tu pantalla o un pequeño pago de «verificación».
+3186|Pides prestados 100 millones y devuelves 9,5 millones al mes durante 12 meses. ¿Cuánto costó el préstamo?
+3187|Puedes ver las cotizaciones en vivo, incluido el tomán digital, en nuestra página de precios.
+3188|No te quedaste atrás; la pista avanzó
+3189|Llevas años usando IA en las finanzas sin verla.
+3190|Seguramente has visto USDT, USDC y otros tokens cotizar casi exactamente a un dólar, día tras día, mientras bitcoin salta miles. ¿Por qué? Porque alguien ha prometido mantener el token ahí. Que debas creer esa promesa depende de tres cosas: quién la hace, qué hay detrás y si puedes volver a convertir el token en dólares.
+3191|Tienes USDT en BNB Smart Chain pero nada de BNB. ¿Qué pasa cuando intentas enviar?
+3192|Acercas la tarjeta al lector, oyes un pitido, coges el ticket y te vas. Dos segundos. Parece que el dinero saltó de tu cuenta a la tienda.
+3193|Quizá hayas visto una publicación que empieza con una pregunta: ¿y si tu dinero tuviera fecha de caducidad? Gástalo antes del viernes o desaparece. Gástalo solo en tiendas autorizadas o no funcionará.
+3194|Necesitas al menos
+3195|Has superado:
+3196|Pones 1.000 unidades en una cuenta que paga un 5% anual. Al cabo de un año tienes 1.050. Todos están de acuerdo. El desacuerdo empieza el segundo año.
+3197|Echas una moneda en una máquina expendedora y pulsas B4. Nadie revisa tu petición y nadie puede convencer a la máquina de darte dos snacks. Si se cumplen las reglas, entrega. Si no, no hace nada.
+3198|Recibes un enlace que parece de tu billetera, tu exchange o la web de un token. La página es una copia. Te pide iniciar sesión o «verificar» tu billetera introduciendo tu frase de recuperación. En cuanto lo haces, la billetera queda vacía.
+3199|Enviaste por una red distinta a la que esperaba el receptor. ¿Cuál es el resultado probable?
+3200|Acercas la tarjeta.
+3201|Verás afirmaciones como «Bitcoin siempre cae antes de las elecciones de medio mandato y sube después». Mira qué poco las respalda.
+3202|Tu banco comprueba
+3203|Tu banco comprueba que la tarjeta es válida, que el PIN o el contacto son correctos, que hay saldo suficiente y que nada parece fraude. Luego responde sí o no. Si es sí, retiene el importe. Todo eso es el pitido.
+3204|Tu código
+3205|Tu parte
+3206|Yuan
+3207|un falso ayudante
+3208|un modelo de lenguaje puede afirmar algo falso con voz tranquila y fluida. Puede inventar una cifra, una regla o una fuente. Con el dinero, un error que suena bien es más peligroso que uno que suena mal.
+3209|un modelo entrenado con decisiones pasadas puede repetir sesgos pasados y rechazar a personas por motivos que nadie sabe explicarles.
+3210|una pirámide
+3211|una transferencia periódica, por pequeña que sea, el día que llegan los ingresos.

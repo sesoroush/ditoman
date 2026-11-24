@@ -1,0 +1,79 @@
+2662|Cela compte davantage pour ceux dont la monnaie est déjà instable, car la tentation est plus forte et le coussin plus mince. Si l'argent du loyer, de la nourriture, des médicaments ou de la famille est placé dans un token, vous n'investissez pas. Vous êtes exposé.
+2663|Ce changement dépasse l'argent.
+2664|Ces chiffres ne sont pas une raison d'avoir peur. Ce sont une raison d'apprendre cinq schémas.
+2665|Trois soldes, trois significations
+2666|Trois vérifications avant d'appuyer sur Envoyer.
+2667|Trois banques centrales anciennes
+2668|Trois mois, ou plus si les revenus sont irréguliers
+2669|Trois mythes à abandonner
+2670|Trois chemins des taux d'intérêt au bitcoin
+2671|Trois étapes de l'IA dans l'argent
+2672|Trois choses vers lesquelles on se tourne quand on ne fait plus confiance aux espèces. Cette leçon ne dit pas laquelle acheter. Elle les compare sur quatre questions simples : combien le prix varie, s'il se vend facilement, ce qu'il coûte à conserver et ce qui peut mal
+2673|Trois choses vers lesquelles on se tourne quand on ne fait plus confiance aux espèces. Cette leçon ne dit pas laquelle acheter. Elle les compare sur quatre questions simples : combien le prix varie, s'il se vend facilement, ce qu'il coûte à conserver et ce qui peut mal tourner.
+2674|Trois choses que nous abordons
+2675|Trois types de garantie des stablecoins : espèces et obligations d'État, collatéral crypto, modèle algorithmique
+2676|Trois façons de garantir un token
+2677|Via la banque agréée
+2678|Cochez au moins un marché ci-dessus.
+2679|Cochez les marchés que vous voulez voir. En « % de variation », chaque ligne part de zéro, pour voir laquelle a le plus monté ou baissé sur la même période.
+2680|Temps
+2681|Horizon de temps
+2682|Pour comparer deux prêts, ramenez tout à un seul chiffre : le total remboursé, moins ce que vous avez reçu.
+2683|Pour comparer les prestataires, ignorez les frais affichés et posez une question : si je paie ce montant, combien arrive exactement dans l'autre devise ?
+2684|Pour envoyer un token sur BNB Smart Chain, il faut un peu de BNB. Sur Ethereum il faut de l'ETH, sur Tron du TRX. Un portefeuille avec des tokens mais sans le coin du réseau ne peut rien envoyer.
+2685|Aujourd'hui, nous avons verrouillé la liquidité de TMN. Cette leçon prend notre propre verrouillage comme exemple : ce qu'est un pool de liquidité, ce que sont les tokens LP, contre quoi protège un verrouillage, ce qu'il ne prouve pas et comment vérifier n'importe quel verrouillage
+2686|Aujourd'hui, nous avons verrouillé la liquidité de TMN. Cette leçon prend notre propre verrouillage comme exemple : ce qu'est un pool de liquidité, ce que sont les tokens LP, contre quoi protège un verrouillage, ce qu'il ne prouve pas et comment vérifier vous-même n'importe quel verrouillage.
+2687|Aujourd'hui, on compte sur des institutions pour vérifier, contrôler, protéger et donner accès. Les banques détiennent et gèrent l'argent. Les gouvernements font les règles et les appliquent. Les plateformes stockent les données, contrôlent les comptes et décident qui peut entrer ou sortir des espaces numériques.
+2688|Ensemble, nous découvrons l'industrie, les entreprises et le paysage économique de l'Iran, et apprenons la crypto et la fintech en langage simple.
+2689|Token
+2690|Autorisation de token
+2691|Faits sur le token
+2692|Faits et transparence sur le token
+2693|Les tokens sont créés par des contrats intelligents, sans nouvelle chaîne.
+2694|Les tokens sont créés par des contrats intelligents, les programmes de la leçon 28. Un développeur écrit un contrat qui tient une liste de soldes et des règles pour les déplacer. Pas besoin d'une nouvelle blockchain.
+2695|Les prix en tomans et en dollars (once d'or, argent, pétrole, bitcoin) sont tracés sur une échelle logarithmique en mode « Prix » pour tenir ensemble. Source : clôtures quotidiennes de TGJU.
+2696|Des tomates dans le désert : cultiver avec chaque goutte
+2697|Des tomates dans le désert
+2698|Coût total du crédit
+2699|Total remboursé
+2700|Offre totale
+2701|Tourisme et culture
+2702|Vers une seule entreprise
+2703|Vers des systèmes cachés
+2704|Vers des registres uniquement privés
+2705|Vers des systèmes transparents et vérifiables
+2706|Suivez un mois de dépenses et répartissez-les en trois piles.
+2707|Suivez le flux :
+2708|Les agrégateurs multiplient l'offre totale par le prix dans un seul pool. Le résultat est un calcul, pas une valeur à laquelle toute l'offre pourrait être vendue.
+2709|Banque traditionnelle
+2710|Frais de transaction
+2711|Hash de transaction
+2712|Les transactions sont devenues visibles et vérifiables grâce aux registres distribués.
+2713|Taxe de transfert
+2714|Transparence
+2715|Transports et routes
+2716|Traitez un assistant comme un aide cultivé, pas comme une autorité.
+2717|Trezor Learn : le halving du bitcoin de 2024 (20 avril 2024, récompense de 6,25 à 3,125, tous les 210 000 blocs, plafond de 21 millions, dernier bitcoin vers 2140)
+2718|Le guide de Trezor cite le plus récent : le halving du 20 avril 2024 a fait passer la récompense de 6,25 à 3,125 bitcoins par bloc.
+2719|Rognez ici avant de toucher à l'épargne
+2720|Vrai ou faux : un prix affiché sur un site de suivi prouve que vous pouvez vendre le token.
+2721|Vrai ou faux : un token qui passe toutes les vérifications techniques est automatiquement une bonne décision pour vous.
+2722|Vrai ou faux : comme le bitcoin a baissé avant trois élections de mi-mandat passées, il baissera avant la prochaine.
+2723|Vrai ou faux : la blockchain n'est importante que parce qu'elle crée de la monnaie numérique.
+2724|Vrai ou faux : la blockchain ne sert qu'aux cryptomonnaies.
+2725|Vrai ou faux : les soldes en yuan numérique chinois expirent pour tout le monde.
+2726|Vrai ou faux : un verrouillage de liquidité prouve que le prix d'un token va monter.
+2727|Vrai ou faux : si le réseau Bitcoin est indépendant des gouvernements, son prix ne peut pas baisser en même temps que les actions.
+2728|Vrai taux annuel (env.)
+2729|Trump, Xi et Poutine à la même table : le premier sommet à trois
+2730|Trump, Xi et Poutine : le premier sommet à trois
+2731|Confiance
+2732|La confiance par les règles
+2733|La confiance n'est pas une promesse. C'est quelque chose que l'on peut vérifier. Ne faites pas confiance. Vérifiez.
+2734|Une confiance trop dépendante d'institutions centrales et de leur autorisation
+2735|À vous de jouer
+2736|Réessayer
+2737|Essayez avec TMN
+2738|À vous de jouer : lire un rapport de réserves
+2739|La Turquie veut devenir la plaque tournante énergétique du monde
+2740|Le projet de la Turquie de devenir une plaque tournante énergétique

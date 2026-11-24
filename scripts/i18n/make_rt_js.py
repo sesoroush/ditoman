@@ -12,15 +12,20 @@ MONTHS = {
     "zh": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
     "tr": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"],
     "ru": ["янв.", "февр.", "мар.", "апр.", "мая", "июн.", "июл.", "авг.", "сент.", "окт.", "нояб.", "дек."],
+    "pt": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
+    "es": ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sept", "oct", "nov", "dic"],
+    "fr": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."],
+    "de": ["Jan.", "Feb.", "März", "Apr.", "Mai", "Juni", "Juli", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."],
 }
 FMT = {  # d = day, m = month name, y = year
     "zh": ("{y}年{mn}月{d}日", "{y}年{mn}月"),
     "tr": ("{d} {m} {y}", "{m} {y}"),
     "ru": ("{d} {m} {y}", "{m} {y}"),
+    "pt": ("{d} {m} {y}", "{m} {y}"), "es": ("{d} {m} {y}", "{m} {y}"), "fr": ("{d} {m} {y}", "{m} {y}"), "de": ("{d}. {m} {y}", "{m} {y}"),
 }
-REPORT = {"zh": "每日市场报告 {d}", "tr": "Günlük piyasa raporu {d}", "ru": "Ежедневный обзор рынка {d}"}
-UPDATED = {"zh": "更新于：", "tr": "Güncelleme: ", "ru": "Обновлено: "}
-POOL = {"zh": "），更新于 {t}。", "tr": "), güncelleme {t}.", "ru": "), обновлено {t}."}
+REPORT = {"zh": "每日市场报告 {d}", "tr": "Günlük piyasa raporu {d}", "ru": "Ежедневный обзор рынка {d}", "pt": "Relatório diário do mercado {d}", "es": "Informe diario del mercado {d}", "fr": "Rapport quotidien du marché {d}", "de": "Täglicher Marktbericht {d}"}
+UPDATED = {"zh": "更新于：", "tr": "Güncelleme: ", "ru": "Обновлено: ", "pt": "Atualizado: ", "es": "Actualizado: ", "fr": "Mis à jour : ", "de": "Aktualisiert: "}
+POOL = {"zh": "），更新于 {t}。", "tr": "), güncelleme {t}.", "ru": "), обновлено {t}.", "pt": "), atualizado {t}.", "es": "), actualizado {t}.", "fr": "), mis à jour {t}.", "de": "), aktualisiert {t}."}
 
 JS = r'''/* %(lang)s pages (X.%(lang)s.html): translates the English text that scripts write after the page loads
    (price strip, quiz, charts, search). Page text itself is translated at build time by scripts/build_lang_pages.py.
@@ -79,7 +84,7 @@ JS = r'''/* %(lang)s pages (X.%(lang)s.html): translates the English text that s
 '''
 
 rt = set(json.loads((ROOT / "data/i18n/work/rt.json").read_text(encoding="utf-8")))
-for lang in ("zh", "tr", "ru"):
+for lang in ("zh", "tr", "ru", "pt", "es", "fr", "de"):
     srcs = sorted((ROOT / "data/i18n/src").glob(f"{lang}-*.json"))
     if not srcs:
         continue

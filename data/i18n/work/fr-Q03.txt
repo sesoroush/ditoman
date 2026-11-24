@@ -1,0 +1,78 @@
+193|Un taux annoncé à 5 % par an, capitalisé chaque mois, ne donne pas exactement 5 % sur l'année. Comme les intérêts de chaque mois produisent des intérêts, le résultat annuel effectif est d'environ 5,12 %.
+194|Une vraie réponse désigne quelque chose de précis : plus de gens qui l'utilisent, un problème qu'il résout, une offre qui ne peut pas augmenter, un réseau qui se renforce en grandissant.
+195|Un exemple réel : le 5 novembre 2026
+196|Un reçu pour l'argent ajouté à un pool de liquidité
+197|Un proche appelle en vidéo pour demander de l'argent en urgence. Quelle est la démarche la plus sûre ?
+198|Une réserve peut être réelle et pourtant peu liquide, ou détenue sous une forme qui ne se vend pas vite. Même un token bien adossé peut vaciller quand la peur se propage plus vite que l'argent.
+199|Un rapport de réserves et un audit complet sont des outils différents. Comprenez la différence avant de lire le titre.
+200|Un rapport de réserves n'est pas un audit
+201|Un second effet compte davantage. Chaque plan semble inoffensif seul, alors ils s'accumulent. Une étude du régulateur américain de la finance des consommateurs a montré que 63 % des emprunteurs « payer plus tard » avaient plus d'un tel prêt en même temps dans l'année, et qu'environ un tiers avaient emprunté auprès de plus d'un prêteur. Chaque prêteur ne voit que son prêt. Vous seul voyez le total.
+202|Un outil de test de sécurité utilisé dans de vraies attaques contre des banques sud-coréennes : ce que le FBI, CrowdStrike et Check Point ont confirmé, ce qui reste non prouvé, et que faire.
+203|Un compte séparé aide, car il garde l'argent hors de vue au quotidien.
+204|Une part de l'entreprise du token
+205|Une chemise dans une boutique de Lisbonne coûte 50 euros. Un voyageur des États-Unis demande : combien en dollars ? La réponse n'est pas écrite sur la chemise. Elle dépend d'un nombre, le taux de change.
+206|Une version visuelle courte de cette leçon est sur Instagram. Cette page est la version complète.
+207|Une pénurie de billets
+208|Le signe que l'argent pouvait devenir natif d'Internet.
+209|Une introduction simple à la blockchain, nouvelle façon de stocker, vérifier et protéger l'information.
+210|Une seule banque gère le réseau
+211|Un site offre un token gratuit si vous connectez votre portefeuille et signez. Quel est le principal risque ?
+212|Une petite réserve pour une surprise ordinaire
+213|Un petit transfert de test est l'assurance la moins chère qui soit.
+214|Un contrat intelligent
+215|Un contrat intelligent est un programme stocké sur une blockchain : du code et des données à une adresse.
+216|Un stablecoin est une créance sur son émetteur, pas une garantie de l'État. Sa sécurité dépend de la réserve, des règles de remboursement et du comportement de l'émetteur.
+217|Un stablecoin est un token numérique conçu pour garder une valeur proche d'un dollar américain. Ce lien au dollar s'appelle l'ancrage (peg). Pensez à une carte cadeau censée toujours valoir un dollar : la carte n'est qu'un bout de plastique, et sa valeur vient entièrement de la promesse qui la soutient.
+218|Un stablecoin est une promesse. Sa valeur dépend de ce qui le garantit et de la possibilité réelle de le rembourser.
+219|Un stablecoin ne vaut un dollar que si vous pouvez, en pratique, le changer en dollars. En général, l'émetteur ne rembourse que des clients agréés, selon des conditions et des montants minimums. La plupart des gens ne peuvent que vendre sur le marché, à un autre acheteur, au prix qu'offre le marché.
+220|D'abord une communauté Telegram structurée, avant toute invitation ou promotion.
+221|Une carte structurée de ce qui est fabriqué, extrait, transporté et vu en Iran : six branches, leurs sous-branches officielles, les entreprises de premier plan et une source pour chaque chiffre.
+222|Un système où les règles sont visibles.
+223|Une taxe sur la crypto
+224|Un token peut passer toutes ces vérifications et rester une mauvaise décision pour vous.
+225|Un outil de travail, une formation qui augmente vos revenus ou un logement peuvent passer ce test. Des vacances, un repas au restaurant ou un téléphone dont vous n'aviez pas besoin, généralement pas : le plaisir s'arrête et les mensualités continuent.
+226|Une réduction sur les frais de trading
+227|Un contrat distributeur automatique
+228|Un El Niño très fort, ajouté au réchauffement de long terme, pourrait faire de 2027 une année record. Ce que cela signifie pour les prix alimentaires, l'électricité, l'eau et l'Iran.
+229|Une goutte d'eau reflétant une raffinerie de gaz au coucher du soleil sur la côte du golfe Persique
+230|Un travailleur à l'étranger envoie 200 dollars à sa famille. Une étudiante doit payer des frais d'université dans un autre pays. Une petite entreprise paie un fournisseur à l'étranger. Tous trois ont la même surprise : le transfert prend des jours et une part visible de l'argent disparaît en route.
+231|Un monde où la confiance dépendait trop des institutions, du contrôle et des autorisations.
+232|A. 2 % par an
+233|A. 21 millions
+234|A. 23 décembre 1913
+235|A. 29 octobre 2026
+236|=
+237|=
+238|A. 9,5 millions
+239|A. Une banque peut l'annuler
+240|A. Une banque qui imprime des devises
+241|A. Une banque sans agences
+242|A. Une garantie des dépôts, comme une banque
+243|A. Une remise
+244|A. Un pirate casse la blockchain
+245|A. Un taux affiché seul cache le résultat annuel
+246|A. Un lien dans un message
+247|A. Une étape de sécurité normale
+248|A. Une photo dans la galerie du téléphone
+249|A. Une entreprise privée
+250|A. Un programme qui tourne sur une blockchain
+251|A. Un système pyramidal
+252|A. Une phrase de récupération ou un code à usage unique
+253|A. Un repas au restaurant
+254|A. Une capture d'écran de votre portefeuille
+255|A. Une part de l'entreprise du token
+256|A. Un contrat intelligent
+257|A. Une taxe sur la crypto
+258|A. Un distributeur automatique
+259|A. Environ 11 %
+260|A. Environ 2 ans
+261|A. Environ 4,11
+262|A. Environ 9 600 milliards de dollars
+263|A. Environ toutes les 10 minutes
+264|A. Des virements automatiques réguliers
+265|A. Automatique : les règles s'exécutent telles qu'écrites
+266|A. BEP-20 sur BNB Smart Chain
+267|A. Les banques
+268|A. Parce que les bonnes occasions sont toujours lentes
+269|A. Parce qu'elle s'échange 24 h/24, et que l'effet de levier peut forcer des ventes
+270|A. Parce que personne ne peut jamais voir les données

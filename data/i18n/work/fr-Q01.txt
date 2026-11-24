@@ -1,0 +1,41 @@
+108|Une CBDC est de la monnaie d'État sous forme numérique. Le bitcoin et des tokens comme TMN ne sont émis par aucune banque centrale, et leurs règles sont fixées par un code public plutôt que par un gouvernement. C'est précisément pour cette différence que cette leçon compte pour quiconque apprend la crypto.
+109|Un siècle d'électricité en Iran
+110|Un panel mené par un Nobel soutient la preuve d'existence de Yang-Mills d'OpenAI ; le gap de masse et le prix d'un million de dollars restent ouverts.
+111|Une communauté Telegram avec de vraies règles, des leçons de départ et un accueil clair, avant toute invitation.
+112|Un solde n'est pas toujours de l'argent en main. Demandez qui doit dire oui avant qu'il ne bouge.
+113|Un solde à l'écran peut signifier trois choses très différentes. Cette leçon compare un compte bancaire, un compte sur une plateforme d'échange et un portefeuille personnel, et montre qui contrôle vraiment l'argent dans chaque
+114|Un solde à l'écran peut signifier trois choses très différentes. Cette leçon compare un compte bancaire, un compte sur une plateforme d'échange et un portefeuille personnel, et montre qui contrôle vraiment l'argent dans chaque cas.
+115|Une interdiction des cartes de crédit
+116|Un solde bancaire est une promesse
+117|Un dépôt bancaire est une créance sur une banque, avec supervision et une garantie jusqu'à un plafond.
+118|Une banque fait quatre métiers : garder, déplacer, prêter et porter la confiance.
+119|Une banque a un propriétaire, un directeur et un numéro de téléphone. Une blockchain publique n'a rien de tout cela. Des milliers d'ordinateurs dans le monde tiennent le même registre, et personne n'en est responsable.
+120|Le taux de la banque ne dit que la croissance du chiffre. La leçon 12 explique que les prix se composent aussi. Que votre argent grandisse vraiment dépend de l'intérêt comparé à la hausse des prix, pas de l'intérêt seul.
+121|Une banque règle cela en étant l'arbitre unique. Une blockchain le règle avec une méthode, appelée mécanisme de consensus, où de nombreux inconnus s'accordent sans se faire confiance.
+122|Un virement bancaire entre deux pays
+123|Un projet éducatif bilingue fondé sur trois piliers : culture pratique de la crypto et de la finance, analyse honnête de l'IA, de l'énergie et de l'avenir du travail, et couverture des réussites réelles de personnes et d'entreprises iraniennes.
+124|Un explorateur de blocs montre la vérité sur tout transfert.
+125|Une blockchain peut être vue comme un registre numérique d'événements ou de transactions. Une fois ajoutée, l'information devient très difficile à modifier ou à effacer. La confiance naît non parce que les gens se font aveuglément confiance, mais parce que le système lui-même peut être vérifié.
+126|Une blockchain a besoin d'un moyen pour que des inconnus s'accordent sur la page suivante.
+127|Un budget est la carte de votre mois, pas une punition.
+128|Un budget est un plan pour vos revenus : combien rentre et à quoi sert chaque part. Ce n'est pas une punition ni une promesse de tout refuser.
+129|Une réparation de voiture, une facture médicale, un mois sans revenu : les surprises sont normales. Cette leçon explique ce qu'est un fonds d'urgence, sa taille, où le garder et comment commencer
+130|Une réparation de voiture, une facture médicale, un mois sans revenu : les surprises sont normales. Cette leçon explique ce qu'est un fonds d'urgence, sa taille, où le garder et comment commencer petit.
+131|Un paiement par carte semble instantané, mais plusieurs entreprises se parlent en ces deux secondes, et l'argent lui-même arrive plus tard. Cette leçon suit un achat du terminal jusqu'au compte
+132|Un paiement par carte semble instantané, mais plusieurs entreprises se parlent en ces deux secondes, et l'argent lui-même arrive plus tard. Cette leçon suit un achat du terminal jusqu'au compte du commerçant.
+133|Un paiement par carte est une chaîne d'entreprises de confiance qui se passent des messages, avec un règlement plus tard. Un paiement sur blockchain n'a ni émetteur, ni acquéreur, ni réseau. Le transfert lui-même est le règlement et, une fois confirmé, aucune banque ne peut l'annuler.
+134|Une monnaie numérique de banque centrale, ou CBDC, est de l'argent numérique émis directement par la banque centrale d'un pays. C'est la version numérique du billet dans votre portefeuille.
+135|Une banque centrale ne gère pas votre compte et ne garde pas votre épargne. Ce sont les banques commerciales. Elle ne contrôle pas non plus tous les prix. Elle influence les conditions, et les résultats arrivent avec retard et incertitude.
+136|Une banque centrale est une institution publique au cœur du système monétaire d'un pays. Les banques ordinaires servent des clients. La banque centrale sert les banques, l'État et le système dans son ensemble.
+137|Une banque centrale est l'institution publique au cœur du système monétaire d'un pays.
+138|Une banque centrale fixe le coût de base de l'emprunt dans sa monnaie. Quand ce coût est élevé, les prêts sont chers et l'épargne rapporte. Quand il est bas, les prêts sont bon marché et l'épargne rapporte peu.
+139|Un siècle d'électricité en Iran
+140|Une liste de contrôle n'est honnête que si elle s'applique à ceux qui la publient. Voici TMN mesuré avec les mêmes cinq vérifications, y compris celles que nous ne passons pas.
+141|Une créance sur la banque
+142|Une créance sur l'entreprise
+143|Un coin dépend de la sécurité de sa propre chaîne. Un token dépend de sa chaîne et de son contrat. Savoir sur quoi repose un actif vous dit ce qui peut mal tourner et qui, le cas échéant, peut le modifier.
+144|Un coin est natif de sa propre blockchain. Un token est construit sur une autre blockchain. Le guide de Kraken donne les exemples : BTC et ETH sont des coins ; USDT et UNI sont des tokens.
+145|Un coin est natif de sa blockchain ; un token est construit sur une autre.
+146|Le coin est ce que la chaîne utilise elle-même. Il paie les frais et récompense ceux qui la font tourner, comme l'a montré la leçon 27. Sans lui, le réseau n'aurait aucun moyen de payer son propre fonctionnement.
+147|Une entreprise l'a repris
+148|Une transaction confirmée est définitive. Aucune banque, aucun service client ni aucune décision de justice ne peut l'annuler sur la blockchain. Le seul retour possible est que le destinataire la renvoie.

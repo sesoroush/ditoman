@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>¿Adónde va mi dinero del mes? | Ditoman Learn</title>
+<meta name="description" content="La mayoría de la gente siente que el dinero desaparece antes de fin de mes. Esta lección muestra una forma sencilla de ver adónde va, con una regla práctica conocida y un" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson22.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson22.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson22.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson22.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson22.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson22.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson22.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson22.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson22.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson22.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson22.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson22.es.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="¿Adónde va mi dinero del mes? | Ditoman Learn" />
+<meta property="og:description" content="La mayoría de la gente siente que el dinero desaparece antes de fin de mes. Esta lección muestra una forma sencilla de ver adónde va, con una regla práctica conocida y un" />
+<meta property="og:url" content="https://ditoman.com/lesson22.es.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson22.es.html#page",
+   "url": "https://ditoman.com/lesson22.es.html",
+   "name": "¿Adónde va mi dinero del mes? | Ditoman Learn",
+   "description": "La mayoría de la gente siente que el dinero desaparece antes de fin de mes. Esta lección muestra una forma sencilla de ver adónde va, con una regla práctica conocida y un",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "¿Adónde va mi dinero del mes?",
+     "item": "https://ditoman.com/lesson22.es.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.es.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.es.html" class="active">Aprender</a>
+<a href="iran.en.html">Irán</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.es.html">Precios</a>
+<a href="calendar.en.html">Calendario</a>
+<a href="tmn.es.html">TMN</a>
+<a href="index.es.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicaciones</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson22-cover.jpg" alt="¿Adónde va mi dinero del mes? Imagen de la lección de Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson22-cover-en.jpg" alt="¿Adónde va mi dinero del mes? Imagen de la lección de Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Dinero • Presupuesto</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پول • بودجه‌بندی</div>
+<h1 lang="en">¿Adónde va mi dinero del mes?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">پول ماهانه‌ام کجا می‌رود؟</h1>
+<p class="subtitle" lang="en">La mayoría de la gente siente que el dinero desaparece antes de fin de mes. Esta lección muestra una forma sencilla de ver adónde va, con una regla práctica conocida y un hábito de un mes.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">بیشتر ما حس می‌کنیم پول پیش از پایان ماه آب می‌شود. این درس یک راه ساده نشان می‌دهد تا ببینیم کجا می‌رود؛ با یک قاعده‌ی سرانگشتیِ شناخته‌شده و یک عادت یک‌ماهه.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Nivel</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Principiante</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Tiempo de lectura</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 minutos</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Puntos de aprendizaje</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Cuestionario</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 preguntas</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Contenido de la lección</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Lee la lección en inglés o persa.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Inglés</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Es día veinte del mes y la cuenta está casi vacía. No pasó nada raro: ninguna emergencia, ninguna compra grande. Aun así, el dinero se fue.</p>
+<p lang="en">Es la experiencia con el dinero más común del mundo, y tiene una causa sencilla. Los pagos pequeños se olvidan con facilidad, y un mes es tiempo suficiente para esconderlos. Un presupuesto no es más que una forma de ver el mes antes de que ocurra.</p>
+<h3><span class="check-number">01.</span> Qué es un presupuesto, y qué no es</h3>
+<p lang="en">Un presupuesto es un plan para tus ingresos: cuánto entra y para qué sirve cada parte. No es un castigo ni una promesa de decir que no a todo.</p>
+<p lang="en">Piénsalo como un mapa. Un mapa no te impide caminar; te muestra dónde estás. Sin él, el gasto parece aleatorio. Con él, puedes elegir.</p>
+<h3><span class="check-number">02.</span> Empieza por mirar, no por recortar</h3>
+<p lang="en">Antes de cambiar nada, pasa un mes solo observando. Apunta cada pago o usa la lista que tu app del banco ya guarda.</p>
+<p lang="en">A final de mes, reparte los pagos en tres montones: lo que debes pagar, lo que elegiste pagar y el dinero que apartaste. A la mayoría le sorprende el tamaño de al menos un montón.</p>
+<p lang="en">No juzgues los números. Este primer mes es solo para ver.</p>
+<h3><span class="check-number">03.</span> Una regla práctica conocida: 50/30/20</h3>
+<p lang="en">En su libro de 2005 *All Your Worth*, la jurista estadounidense y luego senadora Elizabeth Warren describió un reparto sencillo del sueldo neto, el dinero que de verdad llega a tu cuenta después de impuestos.</p>
+<p lang="en"><strong>50% para necesidades:</strong> vivienda, suministros, transporte, comida, ropa básica, seguros, atención sanitaria y los pagos mínimos de las deudas.</p>
+<p lang="en"><strong>30% para deseos:</strong> comer fuera, ocio, viajes, suscripciones, ropa extra.</p>
+<p lang="en"><strong>20% para ahorro:</strong> un fondo de emergencia, un objetivo mayor, pagos extra de deudas.</p>
+<figure class="lz-fig"><figcaption>La regla 50/30/20 de un vistazo</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>Pila</th>
+<th>Parte del sueldo neto</th>
+<th>Ejemplos</th>
+<th>Si no encaja</th>
+</tr></thead><tbody>
+<tr><td>Necesidades</td><td>50%</td><td>Vivienda, suministros, transporte, compra, seguros, pagos mínimos de deudas</td><td>Busca primero la necesidad más grande</td></tr>
+<tr><td>Deseos</td><td>30%</td><td>Comer fuera, ocio, viajes, suscripciones</td><td>Recorta aquí antes de tocar el ahorro</td></tr>
+<tr><td>Ahorros</td><td>20%</td><td>Fondo de emergencia, objetivos, pagos extra de deudas</td><td>Guarda una parte menor, pero guárdala</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> Aplicar la regla cuando no encaja</h3>
+<p lang="en">La regla es un punto de partida, no una ley. En algunas ciudades el alquiler por sí solo se lleva más de la mitad del sueldo. Algunos meses una factura médica lo cambia todo.</p>
+<p lang="en">Si las necesidades superan el 50%, no te rindas. Mantén la idea y cambia los números: quizá 60/25/15 por ahora. Lo que importa es que existan los tres montones y que el ahorro sea un montón y no lo que sobra.</p>
+<h3><span class="check-number">05.</span> Págate a ti primero</h3>
+<p lang="en">El hábito más útil en un presupuesto es pequeño. El día que llegan tus ingresos, mueve primero la parte del ahorro, antes de gastar nada. Si esperas a fin de mes, normalmente no queda nada que mover.</p>
+<p lang="en">Hasta una cantidad pequeña cuenta. El hábito importa más que el tamaño, y el tamaño puede crecer después.</p>
+<h3><span class="check-number">06.</span> Una revisión mensual en diez minutos</h3>
+<p lang="en">Una vez al mes, siéntate diez minutos con tres preguntas. ¿Adónde fue la mayor parte del dinero? ¿Qué me sorprendió? ¿Cuál es el único cambio que probaré el mes que viene?</p>
+<p lang="en">Con un cambio basta. Los presupuestos fracasan cuando intentan arreglarlo todo a la vez.</p>
+<h3><span class="check-number">07.</span> Los precios cambian, así que el presupuesto también</h3>
+<p lang="en">Cuando suben los precios, los mismos ingresos compran menos, como mostró la lección 12. Un presupuesto hecho hace seis meses puede estar ya desfasado. Revisa las cifras cuando cambie el coste de lo básico, no solo en una fecha fija.</p>
+<h3>Qué sacar de esto</h3>
+<p lang="en">Un presupuesto es el mapa de tu mes, no un castigo.</p>
+<p lang="en">Observa durante un mes antes de cambiar nada.</p>
+<p lang="en">50/30/20 es una regla práctica: necesidades, deseos, ahorro. Ajusta los números a tu vida.</p>
+<p lang="en">Mueve primero el ahorro, el día que llegan los ingresos.</p>
+<p lang="en">Revisa una vez al mes y cambia una cosa cada vez.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">بیستم ماه است و حساب تقریباً خالی. اتفاق عجیبی نیفتاده: نه اورژانسی بوده و نه خرید بزرگی. ولی پول رفته است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این رایج‌ترین تجربه‌ی مالی دنیاست و دلیلش ساده است: پرداخت‌های کوچک را راحت فراموش می‌کنیم و یک ماه آن‌قدر بلند است که آن‌ها را پنهان کند. بودجه چیزی نیست جز راهی برای دیدن ماه، پیش از آن‌که بگذرد.</p>
+<h3><span class="check-number">۰۱.</span> بودجه چیست و چه نیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بودجه برنامه‌ای برای درآمد است: چقدر می‌آید و هر بخشش برای چیست. تنبیه نیست و قول دادن به «نه» گفتن به همه‌چیز هم نیست.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آن را مثل یک نقشه ببینید. نقشه جلوی راه رفتن را نمی‌گیرد؛ نشان می‌دهد کجا ایستاده‌اید. بدون نقشه، خرج‌کردن تصادفی به نظر می‌رسد. با نقشه می‌شود انتخاب کرد.</p>
+<h3><span class="check-number">۰۲.</span> اول نگاه کنید، نه کم کنید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">پیش از آن‌که چیزی را عوض کنید، یک ماه فقط تماشا کنید. هر پرداخت را بنویسید یا از فهرستی استفاده کنید که اپ بانک‌تان خودش نگه می‌دارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">آخر ماه پرداخت‌ها را در سه دسته بریزید: چیزهایی که باید می‌پرداختید، چیزهایی که خودتان انتخاب کردید و پولی که کنار گذاشتید. بیشتر آدم‌ها از اندازه‌ی دست‌کم یکی از این دسته‌ها تعجب می‌کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درباره‌ی عددها قضاوت نکنید. این ماه اول فقط برای دیدن است.</p>
+<h3><span class="check-number">۰۳.</span> یک قاعده‌ی سرانگشتیِ شناخته‌شده: ۵۰/۳۰/۲۰</h3>
+<p lang="fa" dir="rtl" style="text-align:right">الیزابت وارن، حقوقدان آمریکایی و بعدها سناتور، در کتاب ۲۰۰۵ خود به نام «All Your Worth» تقسیمی ساده از درآمد خالص را معرفی کرد؛ یعنی پولی که بعد از مالیات واقعاً به حسابتان می‌رسد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۵۰٪ برای نیازها:</strong> مسکن، قبض‌ها، رفت‌وآمد، خوراک، پوشاک اولیه، بیمه، درمان و حداقل قسط بدهی‌ها.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۳۰٪ برای خواسته‌ها:</strong> بیرون غذا خوردن، سرگرمی، سفر، اشتراک‌ها، لباس اضافه.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۲۰٪ برای پس‌انداز:</strong> صندوق روز مبادا، یک هدف بزرگ‌تر، پرداخت اضافه‌ی بدهی.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>قاعده‌ی ۵۰/۳۰/۲۰ در یک نگاه</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>دسته</th>
+<th>سهم از درآمد خالص</th>
+<th>نمونه‌ها</th>
+<th>اگر جور درنیامد</th>
+</tr></thead><tbody>
+<tr><td>نیازها</td><td>۵۰٪</td><td>مسکن، قبض‌ها، رفت‌وآمد، خوراک، بیمه، حداقل قسط</td><td>اول بزرگ‌ترین نیاز را بررسی کنید</td></tr>
+<tr><td>خواسته‌ها</td><td>۳۰٪</td><td>بیرون غذا خوردن، سرگرمی، سفر، اشتراک‌ها</td><td>پیش از دست‌زدن به پس‌انداز، از اینجا کم کنید</td></tr>
+<tr><td>پس‌انداز</td><td>۲۰٪</td><td>صندوق روز مبادا، هدف‌ها، پرداخت اضافه‌ی بدهی</td><td>سهم کوچک‌تر، ولی حتماً باشد</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۴.</span> وقتی قاعده جور درنمی‌آید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">این قاعده نقطه‌ی شروع است، نه قانون. در بعضی شهرها اجاره به‌تنهایی بیش از نیمی از حقوق را می‌برد. در بعضی ماه‌ها یک قبض درمان همه‌چیز را عوض می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر نیازها از ۵۰٪ بیشتر است، دست نکشید. ایده را نگه دارید و عددها را عوض کنید؛ مثلاً فعلاً ۶۰/۲۵/۱۵. مهم این است که هر سه دسته وجود داشته باشند و پس‌انداز یک دسته باشد، نه چیزی که ته ماه می‌ماند.</p>
+<h3><span class="check-number">۰۵.</span> اول به خودتان بپردازید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">مفیدترین عادت در بودجه‌بندی کوچک است: روزی که درآمد می‌رسد، پیش از هر خرجی سهم پس‌انداز را کنار بگذارید. اگر منتظر آخر ماه بمانید، معمولاً چیزی برای کنار گذاشتن نمانده است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">مبلغ کوچک هم حساب است. عادت مهم‌تر از اندازه است و اندازه را بعداً می‌شود بزرگ‌تر کرد.</p>
+<h3><span class="check-number">۰۶.</span> مرور ماهانه در ده دقیقه</h3>
+<p lang="fa" dir="rtl" style="text-align:right">ماهی یک بار ده دقیقه با سه پرسش بنشینید. بیشترِ پول کجا رفت؟ چه چیزی مرا غافلگیر کرد؟ فقط یک تغییری که ماه بعد امتحان می‌کنم چیست؟</p>
+<p lang="fa" dir="rtl" style="text-align:right">یک تغییر کافی است. بودجه‌ها وقتی شکست می‌خورند که می‌خواهند همه‌چیز را یک‌جا درست کنند.</p>
+<h3><span class="check-number">۰۷.</span> قیمت‌ها عوض می‌شوند، پس بودجه هم باید عوض شود</h3>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی قیمت‌ها بالا می‌روند، همان درآمد کمتر می‌خرد؛ همان‌طور که درس ۱۲ نشان داد. بودجه‌ای که شش ماه پیش نوشته‌اید شاید حالا کهنه شده باشد. عددها را وقتی مرور کنید که هزینه‌ی چیزهای پایه جابه‌جا می‌شود، نه فقط در یک تاریخ ثابت.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بودجه نقشه‌ی ماه ماست، نه تنبیه.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پیش از هر تغییری یک ماه فقط نگاه کنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">۵۰/۳۰/۲۰ یک قاعده‌ی سرانگشتی است: نیاز، خواسته، پس‌انداز. عددها را با زندگی خودتان تنظیم کنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پس‌انداز را اول کنار بگذارید، همان روزی که درآمد می‌رسد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">ماهی یک بار مرور کنید و هر بار یک چیز را عوض کنید.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Dos lecciones relacionadas</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو درس مرتبط</h2>
+<p lang="en">La lección 12 explica por qué un presupuesto debe actualizarse cuando suben los precios. La lección 19 muestra cómo los planes a plazos se llevan, sin hacer ruido, una parte mayor de los ingresos del mes siguiente.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۲ توضیح می‌دهد چرا وقتی قیمت‌ها بالا می‌روند بودجه باید به‌روز شود. درس ۱۹ نشان می‌دهد قسط‌ها چطور بی‌صدا سهم بزرگ‌تری از درآمد ماه بعد را می‌برند.</p>
+<div class="cta-row">
+<a class="cta" href="lesson12.es.html"><span lang="en">¿Por qué pierde el dinero poder adquisitivo?</span><span lang="fa">چرا پول ما هر سال قدرت خریدش را از دست می‌دهد؟</span></a>
+<a class="button" href="lesson19.es.html"><span lang="en">Compra hoy, paga mañana</span><span lang="fa">خرید امروز، پرداخت فردا</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Conceptos clave</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Presupuesto</li><li>Ingresos y sueldo neto</li><li>Necesidades y deseos</li><li>Tasa de ahorro</li><li>Regla 50/30/20</li><li>Págate a ti primero</li><li>Revisión mensual</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>بودجه</li><li>درآمد و درآمد خالص</li><li>نیاز و خواسته</li><li>نرخ پس‌انداز</li><li>قاعده‌ی ۵۰/۳۰/۲۰</li><li>اول به خود بپردازید</li><li>مرور ماهانه</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Objetivos de aprendizaje</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Decir qué es y qué no es un presupuesto.</li><li>Registra un mes de gastos y sepáralos en tres montones.</li><li>Explica la regla 50/30/20 y ajústala a tus números.</li><li>Describe por qué el ahorro debe apartarse primero.</li><li>Planifica una revisión mensual de diez minutos.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>بگویید بودجه چیست و چه نیست.</li><li>خرج یک ماه را ثبت کنید و در سه دسته بریزید.</li><li>قاعده‌ی ۵۰/۳۰/۲۰ را توضیح بدهید و با عددهای خودتان تنظیم کنید.</li><li>توضیح بدهید چرا پس‌انداز باید اول کنار برود.</li><li>یک مرور ماهانه‌ی ده‌دقیقه‌ای برنامه‌ریزی کنید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Cuestionario</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Mira qué se te ha quedado. La respuesta está bajo cada pregunta.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Pregunta 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">¿Cuál es el mejor primer paso en un presupuesto?</p>
+<p lang="fa" dir="rtl" style="text-align:right">بهترین قدم اول در بودجه‌بندی چیست؟</p>
+<p lang="en">A. Recortar todos los gastos a la vez</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. همه‌ی دسته‌های خرج را یک‌جا کم کنید</p>
+<p lang="en">B. Observar y anotar un mes de gastos</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. یک ماه خرج را تماشا و ثبت کنید</p>
+<p lang="en">C. Abrir una segunda cuenta bancaria</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. یک حساب بانکی دوم باز کنید</p>
+<p class="answer" lang="en">Respuesta correcta: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">En la regla 50/30/20, ¿qué representa el 20?</p>
+<p lang="fa" dir="rtl" style="text-align:right">در قاعده‌ی ۵۰/۳۰/۲۰، عدد ۲۰ برای چیست؟</p>
+<p lang="en">A. Ahorro</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. پس‌انداز</p>
+<p lang="en">B. Deseos</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. خواسته‌ها</p>
+<p lang="en">C. Impuestos</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. مالیات</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">¿A qué dinero se aplican los porcentajes?</p>
+<p lang="fa" dir="rtl" style="text-align:right">درصدها به کدام پول مربوط‌اند؟</p>
+<p lang="en">A. El sueldo neto, después de impuestos</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. درآمد خالص، بعد از مالیات</p>
+<p lang="en">B. Solo las pagas extra</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. فقط پاداش‌ها</p>
+<p lang="en">C. Solo los ahorros ya hechos</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. فقط پس‌اندازی که قبلاً شده</p>
+<p class="answer" lang="en">Respuesta correcta: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Las necesidades superan el 50% de tus ingresos. ¿Qué sugiere la lección?</p>
+<p lang="fa" dir="rtl" style="text-align:right">نیازها بیش از ۵۰٪ درآمد شده‌اند. درس چه پیشنهادی دارد؟</p>
+<p lang="en">A. Renunciar al presupuesto</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. بودجه‌بندی را رها کنید</p>
+<p lang="en">B. Mantener la idea y cambiar los números</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ایده را نگه دارید و عددها را عوض کنید</p>
+<p lang="en">C. Dejar de ahorrar por completo</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. پس‌انداز را کاملاً قطع کنید</p>
+<p class="answer" lang="en">Respuesta correcta: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pregunta 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">¿Qué significa «págate a ti primero»?</p>
+<p lang="fa" dir="rtl" style="text-align:right">«اول به خودتان بپردازید» یعنی چه؟</p>
+<p lang="en">A. Gastar primero en deseos</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. اول خرج خواسته‌ها را بکنید</p>
+<p lang="en">B. Apartar la parte del ahorro el día que llegan los ingresos</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. همان روز رسیدن درآمد سهم پس‌انداز را کنار بگذارید</p>
+<p lang="en">C. Pagar las deudas al final</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. بدهی‌ها را آخر بپردازید</p>
+<p class="answer" lang="en">Respuesta correcta: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Fuentes</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.sofi.com/learn/content/50-30-20-budget/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">SoFi: el presupuesto 50/30/20, popularizado por Elizabeth Warren en All Your Worth (2005), y sus tres categorías</a></li></ul>
+<p lang="en" style="font-size:0.95rem">50/30/20 es una regla práctica, no un estándar oficial. Todo lo demás en esta lección es orientación general, no asesoramiento financiero personal.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">۵۰/۳۰/۲۰ یک قاعده‌ی سرانگشتی است، نه یک استاندارد رسمی. بقیه‌ی مطالب این درس راهنمای عمومی است و مشاوره‌ی مالی شخصی نیست.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Síguenos</span></h2>
+<p lang="en">Las nuevas lecciones se anuncian primero en los canales de Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.es.html"><span lang="en">Volver a Aprender</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson21.es.html"><span lang="en">Lección anterior</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson23.es.html"><span lang="en">Siguiente lección</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Construido con estructura, impulsado por el descubrimiento.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-es.js?v=20261121a"></script>
+</body>
+</html>

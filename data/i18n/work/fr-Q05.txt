@@ -1,0 +1,76 @@
+400|Agent
+401|Paiements par agents
+402|Convenir d'un mot de passe familial
+403|Agritech
+404|Agro-industrie
+405|Les haut-parleurs des aéroports parlent désormais directement dans vos oreilles
+406|Modèle algorithmique
+407|Modèle algorithmique :
+408|Tout
+409|Toutes les leçons
+410|Toutes les leçons et le parcours
+411|Tous les prix et graphiques →
+412|Les trois bougent, mais pas dans la même mesure.
+413|=
+414|=
+415|Presque toute l'offre en circulation se trouve dans un portefeuille du fondateur, visible par tous sur BscScan.
+416|Presque chaque pays en a une, et l'actualité en parle tous les jours. Cette leçon explique simplement ce qu'est une banque centrale, d'où vient l'idée et quelles sont ses principales missions
+417|Presque chaque pays en a une, et l'actualité en parle tous les jours. Cette leçon explique simplement ce qu'est une banque centrale, d'où vient l'idée et quelles sont ses principales missions.
+418|Est-ce que j'achète parce que je comprends, ou parce que j'ai peur de rater quelque chose ?
+419|=
+420|Montant
+421|Montant reçu
+422|Un empire sans drapeau ?
+423|Un système iranien de tri par IA rencontre un commerce d'exportation centenaire.
+424|Un médicament iranien autorisé dans toute l'Europe
+425|Un médicament iranien autorisé dans toute l'Europe
+426|Un robot chirurgical iranien : ce qui est documenté et ce qui relève encore de l'affirmation du fabricant.
+427|Un catalyseur EO fabriqué en Iran fait désormais tourner l'unité de glycol de Morvarid Petrochemical à pleine capacité.
+428|Une adresse est comme un numéro de compte : une longue suite de lettres et de chiffres qui identifie un portefeuille. Sur Ethereum et BNB Smart Chain, elle commence par 0x et compte 42 caractères. Les adresses Bitcoin et Tron sont différentes.
+429|Une adresse est publique. La partager est sans danger, car elle permet seulement de vous envoyer des fonds. Ce qui doit rester secret, c'est la clé privée ou la phrase de récupération de la leçon 13.
+430|L'adresse dit où. Le réseau dit par quelle route. Les deux doivent correspondre à ceux du destinataire.
+431|Un fonds d'urgence est de l'argent mis de côté uniquement pour des dépenses nécessaires et imprévues : une réparation soudaine, une facture médicale, une période entre deux emplois. Il n'est pas fait pour les vacances, les soldes ou les placements.
+432|Un fonds d'urgence transforme une crise en simple contrariété.
+433|Un empire sans drapeau ? Les investissements de la Chine à l'étranger
+434|Un solde sur une plateforme est une créance sur une entreprise, généralement sans garantie.
+435|Un solde sur une plateforme est aussi une promesse
+436|Un taux de change est le prix d'une monnaie dans une autre.
+437|Le taux d'intérêt est le prix de l'argent
+438|Un vieux rapport ne parle que du passé.
+439|Boutique d'applications Android pour persanophones ; plus de 500 000 applications
+440|Taux annuel frais compris
+441|Répondez aux dix questions.
+442|Tout futur retrait d'offre sera un transfert des portefeuilles du fondateur vers une adresse publique de destruction, avec chaque hash de transaction publié sur cette page. Ces transferts sortent des tokens de la circulation mais ne changent pas le totalSupply affiché par le contrat, et nous les décrirons ainsi.
+443|Tout registre a besoin d'une règle : tout le monde doit s'accorder sur la page suivante. Si deux personnes pouvaient ajouter deux pages suivantes différentes, l'argent pourrait être dépensé deux fois.
+444|N'importe qui peut désormais créer de nouveaux tokens
+445|Appliquez le test en une ligne à n'importe quel actif.
+446|Posez trois questions avant de faire confiance à un stablecoin.
+447|Appliquer la vérification 5 à TMN
+448|L'échafaudage osseux en magnésium et oxyde de graphène de l'université d'Arak : résultats de laboratoire, comment l'Allemagne et la Corée sont arrivées sur le marché, la 5e place de l'Iran dans le domaine et la route vers le bloc opératoire.
+449|Y a-t-il des restrictions cachées ?
+450|En approche ; règles en cours d'écriture
+451|Intelligence artificielle
+452|L'intelligence artificielle décide déjà si votre paiement par carte semble suspect, et elle commence à acheter et à payer pour les gens. Cette leçon distingue ce qui est réel aujourd'hui de ce qui reste une promesse, et nomme les nouveaux risques
+453|L'intelligence artificielle décide déjà si votre paiement par carte semble suspect, et elle commence à acheter et à payer pour les gens. Cette leçon distingue ce qui est réel aujourd'hui de ce qui reste une promesse, et nomme clairement les nouveaux risques.
+454|L'intelligence artificielle, ou IA, désigne largement des logiciels qui apprennent des motifs à partir de données au lieu de suivre seulement des règles fixes. Elle mérite un regard attentif, car autour de l'argent les récits optimistes et les récits inquiétants sont tous deux en partie vrais.
+455|=
+456|Comme l'a expliqué la leçon 27, les mineurs reçoivent une récompense pour chaque bloc qu'ils ajoutent. Le halving divise cette récompense par deux, automatiquement, tous les 210 000 blocs. À environ un bloc toutes les dix minutes, cela fait à peu près quatre ans.
+457|Posez quatre questions sur tout rapport de réserves : qu'est-ce qui est détenu ? Quelle part en espèces ? Qui vérifie ? À quelle fréquence est-il publié ?
+458|Demandez-lui d'expliquer, puis vérifiez les faits importants
+459|Posez une question : cet actif a-t-il sa propre chaîne, ou vit-il sur celle d'un autre ? Cela tranche.
+460|Demandez au destinataire
+461|Demandez d'où vient l'argent.
+462|Demandez pourquoi une décision a été prise
+463|=
+464|=
+465|Assistant
+466|À 5 % sur 1 000 pendant 20 ans : 2 000 en simple contre environ 2 653 en composé.
+467|Au fond, la blockchain est un système pour enregistrer l'information de façon transparente, sûre et difficile à modifier.
+468|À l'adresse morte
+469|En fin de journée, les paiements approuvés sont rassemblés et totalisés. C'est la
+470|En fin de mois, triez les paiements en trois piles : ce que vous devez payer, ce que vous avez choisi de payer et l'argent mis de côté. La plupart des gens sont surpris par la taille d'au moins une pile.
+471|Atlantic Council, suivi des monnaies numériques de banque centrale
+472|Attestation ou audit
+473|Auracast à Francfort, Munich et Brighton, le marché mondial, l'IA, les entreprises, les normes et l'opportunité pour l'Iran.
+474|Autorisation
+475|L'autorisation est instantanée. La compensation et le règlement prennent des heures ou des jours.

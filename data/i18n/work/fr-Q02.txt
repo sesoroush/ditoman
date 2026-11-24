@@ -1,0 +1,44 @@
+149|Un contrat est déployé sur la blockchain et réside ensuite à une adresse, comme un compte. N'importe qui peut appeler ses fonctions. Comme de nombreux ordinateurs l'exécutent, le résultat ne dépend pas de l'honnêteté ou de la disponibilité d'une seule entreprise.
+150|Un contrat ne connaît que ce qui est sur la chaîne. Il ne peut pas lire un journal ni consulter la météo tout seul ; l'information extérieure doit y être apportée. Et il ne corrige pas une mauvaise idée : un code qui fait exactement ce qu'il dit peut quand même faire quelque chose d'imprudent.
+151|Une pépite de cuivre au-dessus d'une mine à ciel ouvert
+152|Une banque correspondante
+153|Un pays qui importe 95 % de son gaz prévoit des navires-centrales, du GNL et un corridor électrique. Les chiffres, les gagnants, les inquiets et ce qui reste à prouver.
+154|Une plateforme d'échange crypto fonctionne de la même façon sur un point important : les coins sont dans ses portefeuilles, et votre compte montre ce qu'elle vous doit. Vous détenez une créance sur une entreprise.
+155|Un dépôt (32 ETH pour opérer seul)
+156|Un dépôt rapporte 20 % et l'inflation est de 40 %. Qu'arrive-t-il à son pouvoir d'achat ?
+157|Une banque numérique de 2,9 millions de clients a été mise sous tutelle, le président écarté, et ce que couvrent vraiment les garanties des dépôts.
+158|Un stablecoin en dollars peut passer d'un portefeuille à un autre en quelques minutes, à toute heure, pour de faibles frais de réseau. Aucune banque correspondante n'intervient à cette étape. C'est la principale raison pour laquelle les stablecoins servent de plus en plus aux paiements internationaux.
+159|Un stablecoin en dollars suit le dollar, comme l'a expliqué la leçon 11. Il peut être plus stable qu'une monnaie plus faible, mais le dollar connaît aussi l'inflation, et le token ajoute ses propres risques : l'émetteur, la réserve et la sortie.
+160|Une fausse réponse désigne le prix lui-même : il a monté la semaine dernière, quelqu'un a dit que ça continuera, tout le monde en parle. Ce n'est pas une raison. C'est une observation sur le comportement des autres, et les autres peuvent s'arrêter à tout moment.
+161|Des frais payés aux plateformes
+162|Quelques détenteurs peuvent faire bouger tout le marché d'une seule décision
+163|Il y a quelques années, un seul billet payait un sac entier de courses. Aujourd'hui, le même billet n'en achète qu'une partie. Personne n'a pris le billet. Ce qui a changé, c'est ce qu'il permet d'acheter. Ce changement silencieux a un nom : l'inflation.
+164|Un plafond fixe
+165|Un ami en est certain
+166|Une puce lumineuse devant la ligne d'horizon de Téhéran et la tour Milad
+167|Un vote de gouvernance
+168|Un gouvernement l'a relancé
+169|Un ancrage strict apporte de la stabilité aux importateurs et aux voyageurs, mais le pays renonce à sa propre politique de taux, car il doit suivre la monnaie à laquelle il est lié. Un taux flottant garde cette liberté, au prix d'un cours qui bouge.
+170|Un ancrage strict sacrifie une politique de taux indépendante.
+171|Une forte variation n'est ni bonne ni mauvaise en soi. Elle décide combien de temps vous devez pouvoir attendre.
+172|Une société de crédit paie le commerçant à votre place aujourd'hui. Vous la remboursez en plusieurs fois. Dans la version courte habituelle, ce sont quatre paiements sur quelques semaines sans intérêts, et le prêteur gagne sa vie grâce à des frais payés par le commerçant et aux pénalités de retard.
+173|Un verrouillage place les tokens LP dans un contrat intelligent séparé avec une date de déverrouillage. Jusqu'à cette date, personne ne peut les reprendre, pas même celui qui les a verrouillés. Des services comme PinkLock, UNCX et Team Finance publient chaque verrouillage comme un registre public, vérifiable par tous.
+174|Un verrouillage supprime un risque précis : que la liquidité verrouillée soit retirée avant la date de déverrouillage. Il ne prouve pas qu'un token a de la valeur, que le projet réussira ni que le prix montera.
+175|Un message traverse le monde en une seconde, mais l'argent peut mettre des jours et perdre plusieurs pour cent en route. Cette leçon montre ce qui se passe entre deux banques de deux pays, où se cache le coût et ce que les stablecoins changent et ne
+176|Un message traverse le monde en une seconde, mais l'argent peut mettre des jours et perdre plusieurs pour cent en route. Cette leçon montre ce qui se passe entre deux banques de deux pays, où se cache le coût et ce que les stablecoins changent et ne changent pas.
+177|Un bilan mensuel en dix minutes
+178|Un pont autoroutier en montagne avec un camion et un train de marchandises
+179|Une néobanque est une banque sans agences. Tout, de la vérification d'identité à la livraison de la carte, se fait dans une application.
+180|Une néobanque est une banque sans agences. Demandez qui détient la licence et si les dépôts sont garantis.
+181|Un portefeuille personnel vous donne la clé et toute la responsabilité qui va avec.
+182|Un portefeuille personnel est une clé
+183|Un portefeuille personnel, dit aussi en auto-garde, est différent. Les coins sont inscrits sur la blockchain, et le portefeuille détient la
+184|Un téléphone coûte 40 millions. Vous n'avez pas 40 millions aujourd'hui. Un bouton sous le prix dit : quatre versements, sans paperasse, accepté en une minute. Un geste et le téléphone est à vous.
+185|Un liant de batterie à base de plantes et d'eau : le marché, les émissions, la santé, les prix, de nouvelles entreprises et l'opportunité pour l'Iran.
+186|Une façon pratique d'y penser est par paliers. D'abord une petite réserve pour une surprise ordinaire. Puis un mois de dépenses essentielles. Puis trois mois, ou plus si vos revenus sont irréguliers ou si vous faites vivre d'autres personnes.
+187|Un prix à l'écran n'est pas de l'argent. Il ne le devient que lorsque quelqu'un est prêt à échanger à ce prix.
+188|Une entreprise privée
+189|Un programme qui fonctionne tout seul, comme un distributeur automatique.
+190|Un projet verse 2 % fixes par jour et une prime pour inviter des amis. De quoi s'agit-il le plus probablement ?
+191|Un projet promet un rendement fixe et élevé, versé chaque jour ou chaque semaine, avec des primes pour faire venir des amis. Les premiers membres sont vraiment payés, avec l'argent des suivants. Quand les nouveaux dépôts ralentissent, tout s'arrête.
+192|Une façon rapide d'estimer : divisez 72 par le taux d'inflation. Le résultat donne à peu près le nombre d'années pour que les prix doublent. À 6 %, environ douze ans. À 36 %, environ deux ans.

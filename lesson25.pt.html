@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>De onde vem uma taxa de câmbio? | Ditoman Learn</title>
+<meta name="description" content="O preço do dólar muda todos os dias. Esta lição explica o que é uma taxa de câmbio, quem a define e qual a diferença entre uma flutuante e uma" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson25.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson25.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson25.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson25.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson25.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson25.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson25.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson25.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson25.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson25.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson25.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson25.pt.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="De onde vem uma taxa de câmbio? | Ditoman Learn" />
+<meta property="og:description" content="O preço do dólar muda todos os dias. Esta lição explica o que é uma taxa de câmbio, quem a define e qual a diferença entre uma flutuante e uma" />
+<meta property="og:url" content="https://ditoman.com/lesson25.pt.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson25.pt.html#page",
+   "url": "https://ditoman.com/lesson25.pt.html",
+   "name": "De onde vem uma taxa de câmbio? | Ditoman Learn",
+   "description": "O preço do dólar muda todos os dias. Esta lição explica o que é uma taxa de câmbio, quem a define e qual a diferença entre uma flutuante e uma",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "De onde vem uma taxa de câmbio?",
+     "item": "https://ditoman.com/lesson25.pt.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.pt.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.pt.html" class="active">Aprender</a>
+<a href="iran.en.html">Irão</a>
+<a href="companies.en.html">Empresas</a>
+<a href="prices.pt.html">Preços</a>
+<a href="calendar.en.html">Calendário</a>
+<a href="tmn.pt.html">TMN</a>
+<a href="index.pt.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Publicações</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson25-cover.jpg" alt="De onde vem uma taxa de câmbio? Imagem da lição Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson25-cover-en.jpg" alt="De onde vem uma taxa de câmbio? Imagem da lição Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Dinheiro • Taxas de câmbio</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پول • نرخ ارز</div>
+<h1 lang="en">De onde vem uma taxa de câmbio?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">نرخ ارز از کجا می‌آید؟</h1>
+<p class="subtitle" lang="en">O preço do dólar muda todos os dias. Esta lição explica o que é uma taxa de câmbio, quem a define e qual a diferença entre uma flutuante e uma fixa.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">قیمت دلار هر روز عوض می‌شود. این درس توضیح می‌دهد نرخ ارز چیست، چه کسی تعیینش می‌کند و فرق نرخ شناور با نرخ ثابت چیست.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Nível</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Iniciante</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Tempo de leitura</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">6 minutos</strong><strong lang="fa" dir="rtl" style="display:block">۶ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Pontos de aprendizagem</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Questionário</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 perguntas</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Conteúdo da lição</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Leia a lição em inglês ou persa.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Inglês</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Uma camisa numa loja em Lisboa custa 50 euros. Um viajante dos Estados Unidos pergunta: quanto é em dólares? A resposta não está escrita na camisa. Depende de um número, a taxa de câmbio.</p>
+<p lang="en">As taxas nesta lição são números redondos escolhidos para o exemplo. Não são as taxas de hoje.</p>
+<h3><span class="check-number">01.</span> O que é uma taxa de câmbio</h3>
+<p lang="en">O FMI define-a de forma simples: a taxa de câmbio é o preço da moeda de um país expresso na moeda de outro.</p>
+<p lang="en">Se 1 euro valer 1,10 dólares, a camisa de 50 euros custa 50 × 1,10 = 55 dólares. Se a taxa passar para 1,20 dólares por euro, a mesma camisa custa 50 × 1,20 = 60 dólares. A camisa não mudou. O dinheiro mudou.</p>
+<figure class="lz-fig"><figcaption>A mesma camisa, duas taxas (ilustrativo)</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>Taxa</th>
+<th>Preço em euros</th>
+<th>Preço em dólares</th>
+</tr></thead><tbody>
+<tr><td>1 euro = 1,10 dólares</td><td>50</td><td>55</td></tr>
+<tr><td>1 euro = 1,20 dólares</td><td>50</td><td>60</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">02.</span> Quem define o preço</h3>
+<p lang="en">Depende do regime que o país escolhe.</p>
+<p lang="en"><strong>Flutuante:</strong> decidem a oferta e a procura. Se mais pessoas quiserem comprar uma moeda do que vendê-la, o seu preço sobe. O FMI nota que um banco central pode ainda assim comprar ou vender divisas para suavizar oscilações bruscas.</p>
+<p lang="en"><strong>Fixo (paridade):</strong> o país liga a sua moeda a outra moeda ou a um cabaz. Alguns vão até ao fim: o Panamá usa o dólar americano, e Hong Kong tem um conselho monetário.</p>
+<h3><span class="check-number">03.</span> O que move uma taxa flutuante</h3>
+<p lang="en">Muitas coisas mexem na oferta e na procura: quanto um país vende ao estrangeiro e compra ao estrangeiro, as taxas de juro, a inflação e as expectativas sobre o futuro. As expectativas importam mais do que se pensa, porque os operadores agem com base no que acreditam que vai acontecer, não só no que já aconteceu.</p>
+<h3><span class="check-number">04.</span> O preço de uma taxa fixa</h3>
+<p lang="en">Uma paridade rígida dá estabilidade a importadores e viajantes, mas o país abdica da sua própria política de juros, porque tem de seguir a moeda a que está ligado. Um câmbio flutuante mantém essa liberdade, ao preço de uma taxa que se move.</p>
+<p lang="en">O FMI alerta também que as paridades flexíveis, em que a taxa está fixada mas não totalmente garantida, são vulneráveis e tendem a não durar.</p>
+<h3><span class="check-number">05.</span> Qual é a dimensão deste mercado</h3>
+<p lang="en">É o maior mercado financeiro do planeta. O Banco de Pagamentos Internacionais indicou que a negociação cambial atingiu em média cerca de 9,6 biliões de dólares por dia em abril de 2025, cerca de 28% acima de 2022. O dólar americano estava num dos lados de cerca de 89% das operações.</p>
+<p lang="en">É por isso que o dólar funciona como uma régua comum para os preços em todo o mundo.</p>
+<h3><span class="check-number">06.</span> Porque importa às pessoas comuns</h3>
+<p lang="en">No exemplo, um euro mais forte tornou a camisa mais cara para o americano, e um euro mais fraco torna-a mais barata. Para uma família, a mesma lógica funciona ao contrário: quando a sua moeda enfraquece, as importações e as viagens ao estrangeiro ficam mais caras, e também tudo o que é feito com peças importadas. A lição 12 mostrou como a subida dos preços come o poder de compra; a taxa de câmbio é um dos caminhos por onde ela chega.</p>
+<p lang="en">Pode ver as cotações ao vivo, incluindo o toman digital, na nossa página de preços.</p>
+<h3>O que retirar disto</h3>
+<p lang="en">Uma taxa de câmbio é o preço de uma moeda noutra.</p>
+<p lang="en">A mesma camisa de 50 euros pode custar 55 ou 60 dólares quando só muda a taxa.</p>
+<p lang="en">O câmbio flutuante segue a oferta e a procura; o fixo está ligado por decisão política.</p>
+<p lang="en">Uma paridade rígida troca a política de juros independente.</p>
+<p lang="en">A negociação de divisas é enorme, e o dólar americano está num dos lados da maior parte dela.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">در یک مغازه‌ی لیسبون، یک پیراهن ۵۰ یورو قیمت دارد. مسافری از آمریکا می‌پرسد: این چند دلار است؟ جواب روی پیراهن نوشته نیست. به یک عدد بستگی دارد: نرخ ارز.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ‌های این درس عددهای گرد و انتخابی برای مثال‌اند؛ نرخ امروز نیستند.</p>
+<h3><span class="check-number">۰۱.</span> نرخ ارز چیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">صندوق بین‌المللی پول ساده تعریفش می‌کند: نرخ ارز قیمت پول یک کشور بر حسب پول کشور دیگر است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر ۱ یورو برابر ۱٫۱۰ دلار باشد، پیراهن ۵۰ یورویی ۵۰ × ۱٫۱۰ = ۵۵ دلار می‌شود. اگر نرخ به ۱٫۲۰ دلار برای هر یورو برسد، همان پیراهن ۵۰ × ۱٫۲۰ = ۶۰ دلار می‌شود. پیراهن عوض نشده. پول عوض شده.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>یک پیراهن، دو نرخ (برای مثال)</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>نرخ</th>
+<th>قیمت به یورو</th>
+<th>قیمت به دلار</th>
+</tr></thead><tbody>
+<tr><td>۱ یورو = ۱٫۱۰ دلار</td><td>۵۰</td><td>۵۵</td></tr>
+<tr><td>۱ یورو = ۱٫۲۰ دلار</td><td>۵۰</td><td>۶۰</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۲.</span> چه کسی قیمت را تعیین می‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بسته به نظامی است که کشور انتخاب می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>شناور:</strong> عرضه و تقاضا تصمیم می‌گیرند. اگر خریداران یک پول بیش از فروشندگانش باشند، قیمتش بالا می‌رود. صندوق می‌گوید بانک مرکزی همچنان ممکن است ارز خارجی بخرد یا بفروشد تا نوسان‌های ناگهانی را آرام کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>ثابت (مهارشده):</strong> کشور پولش را به یک پول دیگر یا سبدی از پول‌ها گره می‌زند. بعضی تا آخر می‌روند: پاناما دلار آمریکا را به کار می‌برد و هنگ‌کنگ با «هیئت ارزی» کار می‌کند.</p>
+<h3><span class="check-number">۰۳.</span> چه چیزی نرخ شناور را حرکت می‌دهد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">چیزهای زیادی عرضه و تقاضا را هل می‌دهند: این‌که کشور چقدر به خارج می‌فروشد و چقدر می‌خرد، نرخ بهره، تورم و انتظار از آینده. انتظارها بیش از آنچه فکر می‌کنیم اثر دارند، چون معامله‌گران بر اساس آنچه باور دارند رخ می‌دهد حرکت می‌کنند، نه فقط آنچه رخ داده.</p>
+<h3><span class="check-number">۰۴.</span> بده‌بستان نرخ ثابت</h3>
+<p lang="fa" dir="rtl" style="text-align:right">مهار سخت برای واردکنندگان و مسافران ثبات می‌آورد، ولی کشور سیاست نرخ بهره‌ی مستقل خود را از دست می‌دهد، چون باید دنباله‌رو پولی باشد که به آن گره خورده. نرخ شناور این آزادی را نگه می‌دارد، به قیمت نرخی که حرکت می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">صندوق هشدار هم می‌دهد که مهارهای نرم، یعنی نرخ ثابتی که پشتوانه‌ی کامل ندارد، آسیب‌پذیرند و معمولاً دوام نمی‌آورند.</p>
+<h3><span class="check-number">۰۵.</span> این بازار چقدر بزرگ است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بزرگ‌ترین بازار مالی روی زمین است. بانک تسویه‌های بین‌المللی (BIS) گزارش کرد معاملات ارز در آوریل ۲۰۲۵ به‌طور میانگین روزی حدود ۹٫۶ تریلیون دلار بود، تقریباً ۲۸٪ بیشتر از ۲۰۲۲. دلار آمریکا در حدود ۸۹٪ معاملات یک طرف بود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای همین دلار مثل یک خط‌کش مشترک برای قیمت‌ها در دنیا عمل می‌کند.</p>
+<h3><span class="check-number">۰۶.</span> چرا برای مردم عادی مهم است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">در مثال، یورو قوی‌تر پیراهن را برای آمریکایی گران‌تر کرد و یورو ضعیف‌تر ارزان‌ترش می‌کند. برای یک خانوار منطق همین است، فقط برعکس: وقتی پول خودتان ضعیف می‌شود، واردات و سفر خارجی گران‌تر می‌شود و هر چیزی هم که از قطعات وارداتی ساخته شود. درس ۱۲ نشان داد افزایش قیمت‌ها چطور قدرت خرید را می‌خورد؛ نرخ ارز یکی از راه‌های رسیدنشان است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ‌های زنده، از جمله تومان دیجیتال، را در صفحه‌ی قیمت‌های ما ببینید.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ ارز قیمت یک پول بر حسب پول دیگر است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">یک پیراهن ۵۰ یورویی می‌تواند ۵۵ یا ۶۰ دلار باشد، وقتی فقط نرخ عوض شده.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ شناور از عرضه و تقاضا می‌آید؛ نرخ مهارشده با سیاست گره خورده است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">مهار سخت، سیاست نرخ بهره‌ی مستقل را فدا می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">معاملات ارز بسیار بزرگ است و دلار آمریکا یک طرف بیشترش است.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Duas lições relacionadas</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو درس مرتبط</h2>
+<p lang="en">A lição 12 explica como a subida de preços corrói o poder de compra. A lição 26 mostra a instituição que muitas vezes está por trás de uma moeda: o banco central.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۲ توضیح می‌دهد افزایش قیمت‌ها چطور قدرت خرید را می‌فرساید. درس ۲۶ نهادی را نشان می‌دهد که اغلب پشت یک پول ایستاده: بانک مرکزی.</p>
+<div class="cta-row">
+<a class="cta" href="lesson12.pt.html"><span lang="en">Porque perde o dinheiro poder de compra?</span><span lang="fa">چرا پول ما هر سال قدرت خریدش را از دست می‌دهد؟</span></a>
+<a class="button" href="lesson26.pt.html"><span lang="en">O que faz um banco central?</span><span lang="fa">بانک مرکزی چه کار می‌کند؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Conceitos-chave</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Taxa de câmbio</li><li>Câmbio flutuante</li><li>Câmbio fixo (paridade)</li><li>Conselho monetário (currency board)</li><li>Mercado cambial</li><li>Autonomia monetária</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>نرخ ارز</li><li>نرخ شناور</li><li>نرخ ثابت (مهارشده)</li><li>هیئت ارزی</li><li>بازار ارز</li><li>استقلال پولی</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Objetivos de aprendizagem</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Defina taxa de câmbio.</li><li>Converta um preço com uma taxa dada.</li><li>Distinguir uma taxa flutuante de uma fixa.</li><li>Explique a contrapartida de uma paridade rígida.</li><li>Descreva a dimensão do mercado cambial.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>نرخ ارز را تعریف کنید.</li><li>با یک نرخ داده‌شده قیمت را تبدیل کنید.</li><li>نرخ شناور را از نرخ مهارشده تشخیص بدهید.</li><li>بده‌بستان مهار سخت را توضیح بدهید.</li><li>اندازه‌ی بازار ارز را توصیف کنید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Questionário</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Veja o que ficou consigo. A resposta está por baixo de cada pergunta.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Pergunta 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">1 euro = 1,10 dólares. Uma camisa custa 50 euros. O seu preço em dólares é:</p>
+<p lang="fa" dir="rtl" style="text-align:right">۱ یورو = ۱٫۱۰ دلار. یک پیراهن ۵۰ یورو است. قیمتش به دلار:</p>
+<p lang="en">A. 55</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۵۵</p>
+<p lang="en">B. 45</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۴۵</p>
+<p lang="en">C. 5.5</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۵٫۵</p>
+<p class="answer" lang="en">Resposta certa: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pergunta 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">A taxa passa para 1,20 dólares por euro. A camisa custa agora:</p>
+<p lang="fa" dir="rtl" style="text-align:right">نرخ به ۱٫۲۰ دلار برای هر یورو می‌رسد. پیراهن حالا چند دلار است؟</p>
+<p lang="en">A. 60</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ۶۰</p>
+<p lang="en">B. 55</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ۵۵</p>
+<p lang="en">C. 41.67</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ۴۱٫۶۷</p>
+<p class="answer" lang="en">Resposta certa: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pergunta 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Num regime flutuante, o que define principalmente a taxa?</p>
+<p lang="fa" dir="rtl" style="text-align:right">در نظام شناور، چه چیزی عمدتاً نرخ را تعیین می‌کند؟</p>
+<p lang="en">A. A oferta e a procura</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. عرضه و تقاضا</p>
+<p lang="en">B. Uma votação anual</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. یک رأی‌گیری سالانه</p>
+<p lang="en">C. O preço da camisa</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. قیمت پیراهن</p>
+<p class="answer" lang="en">Resposta certa: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pergunta 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">De que abdica um país com uma paridade rígida?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کشور در مهار سخت از چه چیزی می‌گذرد؟</p>
+<p lang="en">A. Política de juros independente</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. سیاست نرخ بهره‌ی مستقل</p>
+<p lang="en">B. A bandeira</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. پرچمش</p>
+<p lang="en">C. As suas importações</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. واردات</p>
+<p class="answer" lang="en">Resposta certa: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Pergunta 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Segundo o BIS, quanto se negociou em divisas por dia, aproximadamente, em abril de 2025?</p>
+<p lang="fa" dir="rtl" style="text-align:right">طبق BIS، در آوریل ۲۰۲۵ روزانه حدود چقدر معامله‌ی ارز انجام شد؟</p>
+<p lang="en">A. Cerca de 9,6 biliões de dólares</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. حدود ۹٫۶ تریلیون دلار</p>
+<p lang="en">B. Cerca de 96 milhões de dólares</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. حدود ۹۶ میلیون دلار</p>
+<p lang="en">C. Cerca de mil milhões de dólares</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. حدود یک میلیارد دلار</p>
+<p class="answer" lang="en">Resposta certa: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Fontes</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.imf.org/external/pubs/ft/fandd/2008/03/basics.htm" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">FMI, Finance &amp; Development: Back to Basics, taxas de câmbio, regimes flutuantes e fixos</a></li><li><a href="https://www.bis.org/media-releases/20250930-global-fx-trading-hits-96-trillion-day-april-2025-and-otc-interest-rate-derivatives-surge-79" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Banco de Pagamentos Internacionais: o mercado cambial global atinge 9,6 biliões de dólares por dia em abril de 2025 (comunicado, 30 de setembro de 2025)</a></li></ul>
+<p lang="en" style="font-size:0.95rem">As taxas do euro e do dólar no exemplo são números redondos escolhidos para mostrar o cálculo, não taxas atuais. Os números do tamanho do mercado vêm do inquérito trienal do BIS. Explicação geral, não uma previsão de qualquer taxa.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">نرخ‌های یورو و دلار در مثال عددهای گردِ انتخابی برای نشان‌دادن محاسبه‌اند، نه نرخ‌های فعلی. اندازه‌ی بازار از پیمایش سه‌ساله‌ی BIS است. توضیح عمومی است و پیش‌بینی هیچ نرخی نیست.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Acompanhe</span></h2>
+<p lang="en">As novas lições são anunciadas primeiro nos canais do Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.pt.html"><span lang="en">Voltar a Aprender</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson24.pt.html"><span lang="en">Lição anterior</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson26.pt.html"><span lang="en">Lição seguinte</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Construído com estrutura, movido pela descoberta.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-pt.js?v=20261121a"></script>
+</body>
+</html>

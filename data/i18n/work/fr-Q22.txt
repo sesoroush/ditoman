@@ -1,0 +1,77 @@
+1933|Pour un prêt remboursé mensuellement, le vrai taux annuel est environ le double du pourcentage simple.
+1934|Sur une autre blockchain
+1935|Sur sa propre blockchain
+1936|Données on-chain
+1937|Entrée et sortie (on-ramp et off-ramp)
+1938|Une fois par mois, prenez dix minutes avec trois questions. Où est partie la plus grande part de l'argent ? Qu'est-ce qui m'a surpris ? Quel est le seul changement que j'essaierai le mois prochain ?
+1939|Une fois déployé, il est difficile à modifier
+1940|Une fois déployé, aucun utilisateur ne le contrôle et, par défaut, il ne peut pas être supprimé.
+1941|Une fois qu'on sait ce que fait l'inflation, la question suivante est où l'argent est conservé et qui le contrôle. La leçon 13 compare un compte bancaire, un compte sur une plateforme et un portefeuille personnel.
+1942|Un paiement par carte, étape par étape
+1943|Un seul changement suffit. Les budgets échouent quand ils veulent tout corriger à la fois.
+1944|Une entreprise contrôle tous les registres
+1945|Un seul gisement à Yazd contient à peu près autant de zinc que toutes les réserves du Pérou.
+1946|Un document fixe le cap. Lisez-le avant de vous fier à quoi que ce soit que nous disons.
+1947|Un mois de dépenses essentielles
+1948|Une ruse plus récente se situe entre l'erreur et l'arnaque. Un escroc envoie un montant infime depuis une adresse qui commence et finit comme l'une des vôtres. Plus tard, vous copiez cette adresse sosie dans votre historique au lieu de la vraie. Copiez donc les adresses depuis la source, pas depuis les transactions passées.
+1949|L'un des plus grands producteurs d'éthylène et de polyéthylène d'Iran, à Asaluyeh, qui exporte plus de 70 % de sa production
+1950|Une règle éditoriale permanente pour les trois : savoir réel et réussites réelles, sans commentaire politique d'aucun bord.
+1951|Un pool : TMN / WBNB sur PancakeSwap V2, créé en février 2022.
+1952|Un achat, cinq acteurs, et de l'argent qui arrive plus tard.
+1953|Une question distingue un coin d'un token.
+1954|Un avertissement de la norme
+1955|Une règle empirique connue : 50/30/20
+1956|Seules les banques peuvent déplacer de la valeur en ligne
+1957|N'utilisez que de l'argent dont la perte ne mettrait pas en péril le budget du foyer.
+1958|Vous seul
+1959|Ouvrir la publication Instagram
+1960|Ouvrez une appli bancaire : vous voyez un chiffre. Ouvrez une appli de plateforme : un autre chiffre. Ouvrez un portefeuille crypto : un troisième. Tous ressemblent à « mon argent ». Ce n'est pas la même chose.
+1961|Open banking
+1962|L'open banking permet à d'autres applis d'utiliser vos données bancaires, uniquement avec votre autorisation.
+1963|Ouvrir en taille réelle
+1964|Ouvrir le menu
+1965|Ouvrir maintenant
+1966|Ouvrez l'onglet Holders. Regardez quelle part de l'offre totale contrôlent les plus gros portefeuilles.
+1967|Ouvrir la carte complète ·
+1968|Ouvrir le guide
+1969|Ouvrez l'enregistrement du verrouillage et vérifiez quatre choses : l'adresse de la paire correspond au vrai pool du token, le montant verrouillé, la date de déverrouillage et la part du pool total que ce montant représente. Un verrouillage qui expire la semaine prochaine, ou qui couvre une infime partie du pool, ne veut presque rien dire.
+1970|Ouvrez le carnet d'ordres de n'importe quel coin sur une plateforme que vous utilisez. Additionnez les offres d'achat à moins de 1 % et de 5 % du prix actuel. Demandez-vous : si je vendais toute ma position au marché maintenant, quel prix moyen obtiendrais-je ?
+1971|Ouvrez le token sur un explorateur de blocs comme BscScan et allez à l'onglet Contract. Si le code source est vérifié, vous verrez du code lisible et une coche de confirmation. Sinon, vous ne voyez que du code machine, ce qui signifie que personne hors de l'équipe ne peut lire ce que fait vraiment le token.
+1972|Ouvert, vérifié
+1973|Miroirs en orbite, calculs énergétiques, usage des sols, inquiétude des astronomes et quatre scénarios d'avenir.
+1974|Carnet d'ordres et profondeur de marché
+1975|L'argent ordinaire se moque de ce que vous en faites. L'argent programmable est de l'argent avec des règles inscrites dedans. La règle voyage avec l'argent lui-même, pas avec la personne.
+1976|Organiser :
+1977|Publication éducative originale de Ditoman sur Instagram :
+1978|D'autres chaînes ont leurs propres versions. BNB Smart Chain utilise le BEP-20, qui suit la même idée. TMN, le toman numérique, est un token BEP-20 sur BNB Smart Chain, comme décrit sur sa page de ce site.
+1979|Autres chaînes, normes similaires
+1980|Hors circulation
+1981|Propriétaire
+1982|Propriété
+1983|Renonciation à la propriété
+1984|La propriété a été abandonnée et les fonctions réservées au propriétaire ne peuvent plus être utilisées
+1985|La propriété a ensuite été abandonnée, ce qui a fermé définitivement l'émission et la fonction de destruction du contrat. Personne ne pourra jamais créer de nouveaux TMN.
+1986|Pool PancakeSwap
+1987|Industries du papier
+1988|Papier et carton
+1989|L'effondrement d'une banque au Paraguay
+1990|L'effondrement de la banque Ueno au Paraguay
+1991|=
+1992|=
+1993|Banque partenaire
+1994|Les variations de prix passées sont des exemples du comportement de chaque actif. Elles ne prédisent pas la suite.
+1995|Collez l'adresse
+1996|Pause, liste noire, liste blanche
+1997|Payez-vous en premier
+1998|Les réseaux de paiement s'y préparent. Mastercard a indiqué que le premier paiement effectué par un agent d'IA a eu lieu sur son réseau au troisième trimestre 2025, et déploie un service qui enregistre et vérifie ces agents. Visa développe des outils similaires. Certains projets crypto conçoivent des paiements entre agents logiciels en stablecoins.
+1999|Paiements • Cartes
+2000|Paiements • International
+2001|Parité (peg)
+2002|Sanction en cas de triche
+2003|On débat de la meilleure option comme s'il n'y avait qu'une réponse. Il n'y en a pas, car les trois sont de nature différente. On peut les comparer équitablement avec les quatre mêmes questions.
+2004|On emploie les deux mots comme s'ils étaient identiques. Ils ne le sont pas. Cette leçon donne un test simple et montre pourquoi c'est important, y compris où se situe TMN
+2005|On emploie les deux mots comme s'ils étaient identiques. Ils ne le sont pas. Cette leçon donne un test simple et montre pourquoi c'est important, y compris où se situe TMN.
+2006|Portefeuille personnel (auto-conservation)
+2007|Portefeuille crypto personnel
+2008|Portefeuille personnel
+2009|Le livre de 2016 de Peter Zeihan sur le schiste et un monde sans l'Amérique pour gendarme, avec un bilan de ses prévisions.

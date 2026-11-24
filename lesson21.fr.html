@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Comment l'IA va-t-elle changer l'avenir de notre argent ? | Ditoman Learn</title>
+<meta name="description" content="L&#x27;intelligence artificielle décide déjà si votre paiement par carte semble suspect, et elle commence à acheter et à payer pour les gens. Cette leçon distingue ce qui est réel aujourd&#x27;hui de ce qui reste une promesse, et nomme les nouveaux risques" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+<style>
+.lz-fig { margin: 26px 0; padding: 20px; border-radius: 18px; background: rgba(87,217,199,.06); border: 1px solid rgba(87,217,199,.28); }
+.lz-fig figcaption { font-weight: 800; color: #57d9c7; margin-bottom: 14px; font-size: 1.02rem; }
+.lz-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lz-flow li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: #101f22; border: 1px solid rgba(242,240,233,.12); line-height: 1.7; }
+.lz-flow b { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #ffad00; color: #101f22; font-weight: 800; }
+.lz-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.lz-table { width: 100%; border-collapse: collapse; min-width: 460px; font-size: .95rem; }
+.lz-table th, .lz-table td { padding: 10px 12px; border-bottom: 1px solid rgba(242,240,233,.12); text-align: start; vertical-align: top; line-height: 1.6; }
+.lz-table th { color: #ffad00; font-weight: 800; white-space: nowrap; }
+.lz-lat { font-family: var(--en); direction: ltr; unicode-bidi: isolate; }
+.lz-table td:first-child { font-weight: 700; color: #f2f0e9; }
+</style>
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson21.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson21.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson21.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson21.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson21.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson21.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson21.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson21.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson21.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson21.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson21.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson21.fr.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Comment l&#x27;IA va-t-elle changer l&#x27;avenir de notre argent ? | Ditoman Learn" />
+<meta property="og:description" content="L&#x27;intelligence artificielle décide déjà si votre paiement par carte semble suspect, et elle commence à acheter et à payer pour les gens. Cette leçon distingue ce qui est réel aujourd&#x27;hui de ce qui reste une promesse, et nomme les nouveaux risques" />
+<meta property="og:url" content="https://ditoman.com/lesson21.fr.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson21.fr.html#page",
+   "url": "https://ditoman.com/lesson21.fr.html",
+   "name": "Comment l'IA va-t-elle changer l'avenir de notre argent ? | Ditoman Learn",
+   "description": "L'intelligence artificielle décide déjà si votre paiement par carte semble suspect, et elle commence à acheter et à payer pour les gens. Cette leçon distingue ce qui est réel aujourd'hui de ce qui reste une promesse, et nomme les nouveaux risques",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Comment l'IA va-t-elle changer l'avenir de notre argent ?",
+     "item": "https://ditoman.com/lesson21.fr.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.fr.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.fr.html" class="active">Apprendre</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Entreprises</a>
+<a href="prices.fr.html">Prix</a>
+<a href="calendar.en.html">Calendrier</a>
+<a href="tmn.fr.html">TMN</a>
+<a href="index.fr.html#whitepapers">Livre blanc</a>
+<a href="posts.en.html">Publications</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson21-cover.jpg" alt="Comment l&#x27;IA va-t-elle changer l&#x27;avenir de notre argent ? Image de la leçon Ditoman" style="width:100%;height:auto"><img lang="en" src="lesson21-cover-en.jpg" alt="Comment l&#x27;IA va-t-elle changer l&#x27;avenir de notre argent ? Image de la leçon Ditoman" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Avenir • IA</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">آینده • هوش مصنوعی</div>
+<h1 lang="en">Comment l'IA va-t-elle changer l'avenir de notre argent ?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی چطور آینده‌ی پول ما را تغییر می‌دهد؟</h1>
+<p class="subtitle" lang="en">L'intelligence artificielle décide déjà si votre paiement par carte semble suspect, et elle commence à acheter et à payer pour les gens. Cette leçon distingue ce qui est réel aujourd'hui de ce qui reste une promesse, et nomme clairement les nouveaux risques.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">هوش مصنوعی همین حالا تصمیم می‌گیرد پرداخت کارتی ما مشکوک است یا نه، و کم‌کم دارد به‌جای آدم‌ها خرید و پرداخت می‌کند. این درس آنچه امروز واقعی است را از آنچه هنوز وعده است جدا می‌کند و ریسک‌های تازه را روشن نام می‌برد.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Niveau</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Débutant</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Temps de lecture</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">7 minutes</strong><strong lang="fa" dir="rtl" style="display:block">۷ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Points d'apprentissage</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">20 LP</strong><strong lang="fa" dir="rtl" style="display:block">۲۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک</span><strong lang="en">5 questions</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Contenu de la leçon</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Lisez la leçon en anglais ou en persan.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Anglais</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">La leçon 20 a suivi l'argent de l'agence à l'appli. L'étape suivante a déjà commencé : de l'appli à un assistant qui agit pour vous.</p>
+<p lang="en">L'intelligence artificielle, ou IA, désigne largement des logiciels qui apprennent des motifs à partir de données au lieu de suivre seulement des règles fixes. Elle mérite un regard attentif, car autour de l'argent les récits optimistes et les récits inquiétants sont tous deux en partie vrais.</p>
+<h3><span class="check-number">01.</span> Là où l'IA travaille déjà discrètement</h3>
+<p lang="en">Vous utilisez l'IA dans la finance depuis des années sans la voir.</p>
+<p lang="en"><strong>Détection de fraude :</strong> quand votre banque répond à la question de la leçon 14, un modèle compare le paiement à des millions d'autres en une fraction de seconde. Un achat dans un lieu inhabituel à une heure inhabituelle est bloqué ou vérifié.</p>
+<p lang="en"><strong>Décisions de crédit :</strong> les prêteurs utilisent des modèles pour estimer qui remboursera, et c'est ainsi qu'un prêt peut être accordé en une minute, comme dans la leçon 19.</p>
+<p lang="en"><strong>Service client :</strong> les assistants de chat répondent aux questions courantes à toute heure.</p>
+<p lang="en">Ces usages sont matures. Ils rendent la finance plus rapide et moins chère, et repèrent beaucoup de fraudes que les humains manqueraient.</p>
+<h3><span class="check-number">02.</span> Ce qui est nouveau : des assistants à qui parler</h3>
+<p lang="en">Les systèmes d'IA récents comprennent le langage courant. Cela met trois choses à la portée de tous.</p>
+<p lang="en"><strong>Expliquer :</strong> un assistant peut expliquer un contrat, une grille de frais ou un terme financier en mots simples, dans votre langue.</p>
+<p lang="en"><strong>Organiser :</strong> il peut classer une année de dépenses par catégories et montrer où est parti l'argent.</p>
+<p lang="en"><strong>Planifier :</strong> il peut exposer les options d'une décision et les questions à poser.</p>
+<p lang="en">C'est une aide réelle et, pour ceux qui n'ont jamais eu accès à un conseiller financier, c'est nouveau.</p>
+<h3><span class="check-number">03.</span> Ce qui arrive : l'IA qui paie</h3>
+<p lang="en">L'étape en construction est un assistant qui ne se contente pas de conseiller mais agit : il trouve le produit, compare les prix et paie.</p>
+<p lang="en">Les réseaux de paiement s'y préparent. Mastercard a indiqué que le premier paiement effectué par un agent d'IA a eu lieu sur son réseau au troisième trimestre 2025, et déploie un service qui enregistre et vérifie ces agents. Visa développe des outils similaires. Certains projets crypto conçoivent des paiements entre agents logiciels en stablecoins.</p>
+<p lang="en">Pour que ce soit sûr, trois choses doivent être claires à chaque paiement : pour qui l'agent agit, quelles limites cette personne a fixées et qui est responsable s'il achète la mauvaise chose. Ces règles sont encore en cours d'écriture.</p>
+<figure class="lz-fig"><figcaption>Trois étapes de l'IA dans l'argent</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>Étape</th>
+<th>Ce qu'il fait</th>
+<th>Où en est-on</th>
+<th>Votre part</th>
+</tr></thead><tbody>
+<tr><td>En coulisses</td><td>Détecte la fraude, note les prêts</td><td>Mature, utilisée depuis des années</td><td>Demandez pourquoi une décision a été prise</td></tr>
+<tr><td>Assistant</td><td>Explique, organise, planifie</td><td>Disponible maintenant</td><td>Vérifiez les faits importants</td></tr>
+<tr><td>Agent</td><td>Fait vos achats et paie pour vous</td><td>En approche ; règles en cours d'écriture</td><td>Fixer des limites et faire le point</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">04.</span> Les nouveaux risques</h3>
+<p lang="en"><strong>Faux convaincants :</strong> la même technologie produit des voix et des visages clonés. En 2024, un employé du cabinet d'ingénierie Arup à Hong Kong a envoyé environ 25 millions de dollars après un appel vidéo où tous les autres participants étaient faux. La leçon 17 a montré la croissance rapide des arnaques à l'usurpation d'identité.</p>
+<p lang="en"><strong>Erreurs assurées :</strong> un modèle de langage peut affirmer quelque chose de faux d'une voix calme et fluide. Il peut inventer un chiffre, une règle ou une source. Avec l'argent, une erreur qui sonne juste est plus dangereuse qu'une erreur qui sonne faux.</p>
+<p lang="en"><strong>Injustice cachée :</strong> un modèle entraîné sur des décisions passées peut reproduire des biais passés, en refusant des personnes pour des raisons que personne ne sait leur expliquer.</p>
+<p lang="en"><strong>Confidentialité :</strong> un assistant n'est utile qu'à la mesure des données que vous lui donnez. Relevés bancaires, soldes et pièces d'identité sont exactement ce que veut aussi un criminel.</p>
+<h3><span class="check-number">05.</span> Bien utiliser l'IA avec l'argent</h3>
+<p lang="en">Traitez un assistant comme un aide cultivé, pas comme une autorité.</p>
+<p lang="en"><strong>Demandez-lui d'expliquer, puis vérifiez les faits importants</strong> avec le contrat d'origine, le site officiel ou une personne responsable.</p>
+<p lang="en"><strong>Ne collez jamais de secrets :</strong> pas de phrase de récupération, pas de numéro de carte, pas de code à usage unique. La règle de la leçon 13 n'a pas d'exception pour les machines.</p>
+<p lang="en"><strong>Convenir d'un mot de passe familial</strong> pour les demandes d'argent urgentes par téléphone ou vidéo. Une voix clonée ne le connaît pas.</p>
+<p lang="en"><strong>Gardez la décision finale pour vous.</strong> Si un assistant peut dépenser, donnez-lui une petite limite et vérifiez ce qu'il a fait.</p>
+<h3><span class="check-number">06.</span> Où cela peut mener</h3>
+<p lang="en">Si les pièces s'assemblent, le tableau est encourageant : un assistant qui guette un meilleur taux, prévient avant des frais, repère une arnaque avant que vous ne répondiez et explique chaque étape dans votre langue. Un bon conseil financier, autrefois réservé aux riches, pourrait devenir ordinaire.</p>
+<p lang="en">Y arriver dépend moins de modèles plus intelligents que de règles claires, d'une conception honnête et de personnes qui comprennent ce que ces outils peuvent et ne peuvent pas faire. C'est à cette dernière partie que servent ces leçons.</p>
+<h3>Ce qu'il faut en retenir</h3>
+<p lang="en">L'IA travaille depuis des années en coulisses dans la finance, surtout contre la fraude et dans le crédit.</p>
+<p lang="en">Les nouveaux assistants expliquent et organisent bien. Ils peuvent aussi se tromper avec aplomb.</p>
+<p lang="en">L'IA qui paie pour vous arrive, et les règles de responsabilité sont encore en cours d'écriture.</p>
+<p lang="en">Les mêmes outils alimentent de meilleures arnaques. Vérifiez les demandes urgentes par un second canal.</p>
+<p lang="en">Utilisez l'IA pour comprendre. Gardez les secrets et les décisions finales pour vous.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">درس ۲۰ پول را از شعبه تا اپ دنبال کرد. قدم بعدی هم شروع شده: از اپ به دستیاری که کارها را به‌جای ما انجام می‌دهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی نام کلیِ نرم‌افزارهایی است که به‌جای پیروی از قواعد ثابت، الگوها را از داده یاد می‌گیرند. می‌ارزد با دقت نگاهش کنیم، چون درباره‌ی پول، هم روایت‌های امیدوارکننده و هم روایت‌های ترسناک هر دو تا حدی درست‌اند.</p>
+<h3><span class="check-number">۰۱.</span> جاهایی که هوش مصنوعی از قبل بی‌صدا کار می‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">سال‌هاست در امور مالی از هوش مصنوعی استفاده می‌کنیم، بی‌آن‌که ببینیمش.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>تشخیص تقلب:</strong> وقتی بانک ما به پرسش درس ۱۴ جواب می‌دهد، یک مدل در کسری از ثانیه آن پرداخت را با میلیون‌ها پرداخت دیگر مقایسه می‌کند. خریدی در جایی غیرعادی و ساعتی غیرعادی، مسدود یا بررسی می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>تصمیم اعتباری:</strong> وام‌دهنده‌ها با مدل تخمین می‌زنند چه کسی وام را پس می‌دهد. برای همین وام می‌تواند در یک دقیقه تأیید شود؛ همان درس ۱۹.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>پاسخ‌گویی به مشتری:</strong> دستیارهای گفت‌وگو در هر ساعتی به پرسش‌های معمول جواب می‌دهند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این کاربردها جاافتاده‌اند. امور مالی را سریع‌تر و ارزان‌تر می‌کنند و جلوی مقدار زیادی از تقلب‌هایی را می‌گیرند که از چشم آدم‌ها دور می‌ماند.</p>
+<h3><span class="check-number">۰۲.</span> چیز تازه: دستیاری که می‌شود با آن حرف زد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">سامانه‌های جدیدتر زبان معمولی را می‌فهمند. این، سه چیز را در دسترس آدم‌های معمولی می‌گذارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>توضیح دادن:</strong> دستیار می‌تواند یک قرارداد، جدول کارمزد یا اصطلاح مالی را به زبان ساده و به زبان خودمان توضیح بدهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>مرتب کردن:</strong> می‌تواند خرج یک سال را دسته‌بندی کند و نشان بدهد پول کجا رفته است.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>برنامه‌ریزی:</strong> می‌تواند گزینه‌های یک تصمیم و پرسش‌هایی را که باید پرسید کنار هم بگذارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این کمکی واقعی است و برای کسانی که هیچ‌وقت به مشاور مالی دسترسی نداشته‌اند، تازه است.</p>
+<h3><span class="check-number">۰۳.</span> چیزی که در راه است: هوش مصنوعی‌ای که پرداخت می‌کند</h3>
+<p lang="fa" dir="rtl" style="text-align:right">قدمی که حالا ساخته می‌شود دستیاری است که فقط مشورت نمی‌دهد و خودش عمل می‌کند: کالا را پیدا می‌کند، قیمت‌ها را مقایسه می‌کند و می‌پردازد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">شبکه‌های پرداخت خودشان را برای این آماده می‌کنند. مسترکارت گفته اولین پرداختی که یک عامل هوش مصنوعی انجام داد، در فصل سوم ۲۰۲۵ روی شبکه‌اش ثبت شده و سرویسی را راه انداخته که این عامل‌ها را ثبت و تأیید می‌کند. ویزا هم ابزارهای مشابهی می‌سازد. بعضی پروژه‌های کریپتو هم پرداخت میان عامل‌های نرم‌افزاری را با استیبل‌کوین طراحی می‌کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای این‌که این کار امن باشد، در هر پرداخت سه چیز باید روشن باشد: عامل به‌جای چه کسی عمل می‌کند، آن فرد چه سقفی گذاشته و اگر چیز اشتباهی خرید، مسئول کیست. این قواعد هنوز در حال نوشته شدن است.</p>
+<figure class="lz-fig" dir="rtl"><figcaption>سه مرحله‌ی هوش مصنوعی در پول</figcaption>
+<div class="lz-scroll"><table class="lz-table"><thead><tr>
+<th>مرحله</th>
+<th>چه می‌کند</th>
+<th>در چه وضعی است</th>
+<th>سهم ما</th>
+</tr></thead><tbody>
+<tr><td>در پس‌زمینه</td><td>تقلب را می‌گیرد، وام را می‌سنجد</td><td>جاافتاده، سال‌هاست در کار است</td><td>بپرسید تصمیم چرا گرفته شد</td></tr>
+<tr><td>دستیار</td><td>توضیح می‌دهد، مرتب می‌کند، برنامه می‌ریزد</td><td>همین حالا در دسترس</td><td>نکته‌های مهم را بررسی کنید</td></tr>
+<tr><td>عامل</td><td>به‌جای ما خرید و پرداخت می‌کند</td><td>در راه؛ قواعدش نوشته می‌شود</td><td>سقف بگذارید و مرور کنید</td></tr>
+</tbody></table></div>
+</figure>
+<h3><span class="check-number">۰۴.</span> ریسک‌های تازه</h3>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>جعل باورپذیر:</strong> همین فناوری صدا و چهره‌ی جعلی هم می‌سازد. در سال ۲۰۲۴ کارمند شرکت مهندسی «آروپ» در هنگ‌کنگ، بعد از یک تماس تصویری که همه‌ی شرکت‌کنندگان دیگرش جعلی بودند، حدود ۲۵ میلیون دلار منتقل کرد. درس ۱۷ نشان داد کلاهبرداری با جعل هویت چقدر سریع رشد می‌کند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>اشتباه با اعتمادبه‌نفس:</strong> یک مدل زبانی می‌تواند چیزی نادرست را با لحنی آرام و روان بگوید. ممکن است یک عدد، قاعده یا منبع را از خودش بسازد. در پول، اشتباهی که درست به نظر می‌رسد از اشتباهی که غلط به نظر می‌رسد خطرناک‌تر است.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>بی‌عدالتی پنهان:</strong> مدلی که از تصمیم‌های گذشته یاد گرفته، می‌تواند سوگیری گذشته را تکرار کند و آدم‌ها را به دلیل‌هایی رد کند که کسی نمی‌تواند برایشان توضیح بدهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>حریم خصوصی:</strong> دستیار فقط به اندازه‌ی داده‌ای که به او می‌دهیم کمک می‌کند. صورت‌حساب بانکی، موجودی و مدارک هویتی دقیقاً همان چیزهایی‌اند که کلاهبردار هم می‌خواهد.</p>
+<h3><span class="check-number">۰۵.</span> استفاده‌ی درست از هوش مصنوعی در پول</h3>
+<p lang="fa" dir="rtl" style="text-align:right">با دستیار مثل یک همراه پرمطالعه رفتار کنید، نه مثل یک مرجع.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>بخواهید توضیح بدهد و بعد نکته‌های مهم را بررسی کنید؛</strong> با اصل قرارداد، سایت رسمی یا کسی که پاسخ‌گوست.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>هیچ رازی را وارد نکنید:</strong> نه عبارت بازیابی، نه شماره‌ی کارت، نه رمز یک‌بارمصرف. قاعده‌ی درس ۱۳ برای ماشین‌ها هم استثنا ندارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>در خانواده یک کلمه‌ی رمز قرار بگذارید</strong> برای درخواست‌های فوری پول در تماس تلفنی یا تصویری. صدای جعلی آن را نمی‌داند.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>تصمیم نهایی را خودتان بگیرید.</strong> اگر دستیار می‌تواند خرج کند، سقف کوچکی برایش بگذارید و کارهایش را مرور کنید.</p>
+<h3><span class="check-number">۰۶.</span> این مسیر به کجا می‌رود</h3>
+<p lang="fa" dir="rtl" style="text-align:right">اگر تکه‌ها کنار هم بنشینند، تصویر امیدوارکننده است: دستیاری که دنبال نرخ بهتر می‌گردد، پیش از یک کارمزد هشدار می‌دهد، کلاهبرداری را پیش از آن‌که جوابش را بدهیم می‌گیرد و هر قدم را به زبان خودمان توضیح می‌دهد. کمک مالی خوب، که روزی فقط در دسترس ثروتمندان بود، می‌تواند عادی شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">رسیدن به آن‌جا کمتر به مدل‌های باهوش‌تر و بیشتر به قواعد روشن، طراحی صادقانه و آدم‌هایی بستگی دارد که بدانند این ابزارها چه می‌توانند و چه نمی‌توانند. این درس‌ها برای همین بخش آخر است.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی سال‌هاست در پس‌زمینه‌ی امور مالی کار می‌کند؛ بیشتر برای مقابله با تقلب و در وام‌دهی.</p>
+<p lang="fa" dir="rtl" style="text-align:right">دستیارهای تازه خوب توضیح می‌دهند و مرتب می‌کنند. ممکن است با اعتمادبه‌نفس هم اشتباه کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی‌ای که به‌جای ما پرداخت می‌کند در راه است و قواعد مسئولیتش هنوز نوشته می‌شود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">همین ابزارها کلاهبرداری را هم قوی‌تر کرده‌اند. درخواست فوری را از یک راه دوم تأیید کنید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">از هوش مصنوعی برای فهمیدن استفاده کنید. رازها و تصمیم نهایی را پیش خودتان نگه دارید.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Deux histoires du site</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">دو روایت از همین سایت</h2>
+<p lang="en">La leçon 17 couvre les arnaques que l'IA rend désormais plus convaincantes. La leçon 20 explique le passage des agences aux applis qui a précédé cette étape.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس ۱۷ الگوهای کلاهبرداری‌ای را مرور می‌کند که هوش مصنوعی حالا باورپذیرترشان کرده است. درس ۲۰ حرکت از شعبه به اپ را توضیح می‌دهد که پیش از این قدم آمد.</p>
+<div class="cta-row">
+<a class="cta" href="lesson17.fr.html"><span lang="en">Comment ne pas perdre votre argent numérique</span><span lang="fa">چطور پول دیجیتالمان را از دست ندهیم؟</span></a>
+<a class="button" href="lesson20.fr.html"><span lang="en">Les banques vont-elles disparaître ?</span><span lang="fa">آیا بانک‌ها ناپدید می‌شوند؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Notions clés</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Intelligence artificielle</li><li>Modèle d'apprentissage automatique</li><li>Détection de fraude</li><li>Notation de crédit</li><li>Assistant linguistique</li><li>Agent d'IA</li><li>Paiements par agents</li><li>Hypertrucage (deepfake)</li><li>Erreur assurée (hallucination)</li><li>Vérification par un second canal</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>هوش مصنوعی</li><li>مدل یادگیری ماشین</li><li>تشخیص تقلب</li><li>اعتبارسنجی</li><li>دستیار زبانی</li><li>عامل هوش مصنوعی</li><li>پرداخت به‌دست عامل</li><li>جعل عمیق</li><li>اشتباه با اعتمادبه‌نفس</li><li>تأیید از راه دوم</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Objectifs d'apprentissage</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Citez trois domaines où l'IA travaille déjà dans la finance.</li><li>Dire ce qu'un assistant linguistique fait bien et où il peut échouer.</li><li>Expliquez ce qu'est un agent d'IA qui paie, et quelles trois choses doivent être claires.</li><li>Listez les quatre nouveaux risques.</li><li>Décrivez les bonnes pratiques pour utiliser l'IA avec l'argent.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>سه جایی را که هوش مصنوعی از قبل در امور مالی کار می‌کند نام ببرید.</li><li>بگویید دستیار زبانی چه کاری را خوب انجام می‌دهد و کجا ممکن است خطا کند.</li><li>توضیح دهید عامل هوش مصنوعیِ پرداخت‌کننده چیست و کدام سه چیز باید روشن باشد.</li><li>چهار ریسک تازه را بشمارید.</li><li>عادت‌های امن استفاده از هوش مصنوعی در پول را توضیح دهید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Quiz</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">آزمونک</h2>
+<p class="section-subtitle" lang="en">Voyez ce que vous avez retenu. La réponse est sous chaque question.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">ببین چه چیزی در ذهنت مانده. پاسخ زیر هر پرسش آمده است.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Question 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Où l'IA travaille-t-elle dans la finance depuis des années ?</p>
+<p lang="fa" dir="rtl" style="text-align:right">هوش مصنوعی سال‌هاست کجای امور مالی کار می‌کند؟</p>
+<p lang="en">A. La détection de fraude sur les paiements par carte</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. تشخیص تقلب در پرداخت کارتی</p>
+<p lang="en">B. Imprimer des billets</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. چاپ اسکناس</p>
+<p lang="en">C. Fixer les taux de la banque centrale</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. تعیین نرخ بهره‌ی بانک مرکزی</p>
+<p class="answer" lang="en">Bonne réponse : A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Quel est le principal danger des erreurs d'un assistant linguistique ?</p>
+<p lang="fa" dir="rtl" style="text-align:right">خطر اصلی اشتباه‌های یک دستیار زبانی چیست؟</p>
+<p lang="en">A. Elles sont toujours évidentes</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. همیشه آشکارند</p>
+<p lang="en">B. Elles peuvent sembler sûres et exactes</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. می‌توانند مطمئن و درست به نظر برسند</p>
+<p lang="en">C. Elles n'arrivent qu'en anglais</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. فقط در انگلیسی پیش می‌آیند</p>
+<p class="answer" lang="en">Bonne réponse : B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Pour qu'un agent d'IA paie en sécurité, qu'est-ce qui doit être clair ?</p>
+<p lang="fa" dir="rtl" style="text-align:right">برای این‌که عامل هوش مصنوعی امن پرداخت کند، چه چیزی باید روشن باشد؟</p>
+<p lang="en">A. La couleur de l'application</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. رنگ اپ</p>
+<p lang="en">B. Pour qui il agit, ses limites et qui est responsable</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. به‌جای چه کسی عمل می‌کند، سقفش چیست و مسئول کیست</p>
+<p lang="en">C. Combien de langues il parle</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. چند زبان بلد است</p>
+<p class="answer" lang="en">Bonne réponse : B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Un proche appelle en vidéo pour demander de l'argent en urgence. Quelle est la démarche la plus sûre ?</p>
+<p lang="fa" dir="rtl" style="text-align:right">یکی از بستگان در تماس تصویری فوری پول می‌خواهد. امن‌ترین کار چیست؟</p>
+<p lang="en">A. L'envoyer tout de suite</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. فوراً بفرستید</p>
+<p lang="en">B. Demander à l'assistant si le visage semble réel</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. از دستیار بپرسید چهره واقعی است یا نه</p>
+<p lang="en">C. Vérifier par un autre canal ou avec le mot de passe familial</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. از راه دوم یا با کلمه‌ی رمز خانوادگی تأیید کنید</p>
+<p class="answer" lang="en">Bonne réponse : C</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Question 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Que ne faut-il jamais coller dans un assistant d'IA ?</p>
+<p lang="fa" dir="rtl" style="text-align:right">چه چیزی را هرگز نباید در دستیار هوش مصنوعی وارد کرد؟</p>
+<p lang="en">A. Une phrase de récupération ou un code à usage unique</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. عبارت بازیابی یا رمز یک‌بارمصرف</p>
+<p lang="en">B. Une question sur l'inflation</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. پرسشی درباره‌ی تورم</p>
+<p lang="en">C. Un terme financier que vous voulez faire expliquer</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. اصطلاحی مالی که می‌خواهید توضیح داده شود</p>
+<p class="answer" lang="en">Bonne réponse : A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Sources</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.digitalcommerce360.com/2025/10/31/mastercard-agentic-commerce-is-here/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Digital Commerce 360 : la première transaction par agent de Mastercard et le déploiement d'Agent Pay (31 octobre 2025)</a></li><li><a href="https://decrypt.co/354624/ai-impersonation-drove-crypto-scam-losses-record-17-billion-2025-chainalysis" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Decrypt : IA et usurpation d'identité dans les arnaques crypto de 2025, Chainalysis</a></li><li><a href="https://fortune.com/europe/2024/05/17/arup-deepfake-fraud-scam-victim-hong-kong-25-million-cfo/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Fortune : Arup confirmée comme victime de la fraude au deepfake de 25 millions de dollars à Hong Kong (17 mai 2024)</a></li><li><a href="https://www.bis.org/publ/arpdf/ar2024e3.htm" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Banque des règlements internationaux, rapport annuel 2024 : l'intelligence artificielle et l'économie</a></li></ul>
+<p lang="en" style="font-size:0.95rem">Ce domaine évolue vite. Les noms de produits et dates de déploiement sont ceux rapportés par les sources et peuvent avoir changé.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">این حوزه سریع تغییر می‌کند. نام محصول‌ها و تاریخ‌ها همان است که در منبع‌ها آمده و ممکن است عوض شده باشد.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Suivez-nous</span></h2>
+<p lang="en">Les nouvelles leçons sont d'abord annoncées sur les canaux de Ditoman.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس‌های تازه اول در کانال‌های دیتومان معرفی می‌شوند.</p>
+<div class="cta-row">
+<a class="button" href="learn.fr.html"><span lang="en">Retour à Apprendre</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson20.fr.html"><span lang="en">Leçon précédente</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson22.fr.html"><span lang="en">Leçon suivante</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Bâti sur la structure, porté par la découverte.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-fr.js?v=20261121a"></script>
+</body>
+</html>

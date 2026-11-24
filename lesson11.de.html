@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr" data-lang="en" data-lang-lock="en" data-site-lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Digitale Dollar: Was deckt sie? | Ditoman Learn</title>
+<meta name="description" content="Stablecoins wirken einfach: ein Token, ein Dollar. Doch diese Verbindung ist ein Versprechen, und ein Versprechen ist nur so stark wie das, was dahinter steht. In dieser Lektion sehen Sie, was hinter Stablecoins steht, wie ein bekannter Stablecoin im Mai 2022 zusammenbrach, und den wichtigsten Test, bevor Sie einem…" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/lesson11.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/lesson11.en.html" />
+  <link rel="alternate" hreflang="ar" href="https://ditoman.com/lesson11.ar.html" />
+  <link rel="alternate" hreflang="zh" href="https://ditoman.com/lesson11.zh.html" />
+  <link rel="alternate" hreflang="tr" href="https://ditoman.com/lesson11.tr.html" />
+  <link rel="alternate" hreflang="ru" href="https://ditoman.com/lesson11.ru.html" />
+  <link rel="alternate" hreflang="pt" href="https://ditoman.com/lesson11.pt.html" />
+  <link rel="alternate" hreflang="es" href="https://ditoman.com/lesson11.es.html" />
+  <link rel="alternate" hreflang="fr" href="https://ditoman.com/lesson11.fr.html" />
+  <link rel="alternate" hreflang="de" href="https://ditoman.com/lesson11.de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/lesson11.html" />
+  <!-- hreflang:end -->
+  <link rel="stylesheet" href="i18n.css?v=20261121a" />
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/lesson11.de.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Digitale Dollar: Was deckt sie? | Ditoman Learn" />
+<meta property="og:description" content="Stablecoins wirken einfach: ein Token, ein Dollar. Doch diese Verbindung ist ein Versprechen, und ein Versprechen ist nur so stark wie das, was dahinter steht. In dieser Lektion sehen Sie, was hinter Stablecoins steht, wie ein bekannter Stablecoin im Mai 2022 zusammenbrach, und den wichtigsten Test, bevor Sie einem…" />
+<meta property="og:url" content="https://ditoman.com/lesson11.de.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/lesson11.de.html#page",
+   "url": "https://ditoman.com/lesson11.de.html",
+   "name": "Digitale Dollar: Was deckt sie? | Ditoman Learn",
+   "description": "Stablecoins wirken einfach: ein Token, ein Dollar. Doch diese Verbindung ist ein Versprechen, und ein Versprechen ist nur so stark wie das, was dahinter steht. In dieser Lektion sehen Sie, was hinter Stablecoins steht, wie ein bekannter Stablecoin im Mai 2022 zusammenbrach, und den wichtigsten Test, bevor Sie einem…",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Digitale Dollar: Was deckt sie?",
+     "item": "https://ditoman.com/lesson11.de.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.de.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.de.html" class="active">Lernen</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Unternehmen</a>
+<a href="prices.de.html">Preise</a>
+<a href="calendar.en.html">Kalender</a>
+<a href="tmn.de.html">TMN</a>
+<a href="index.de.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html">Beiträge</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image">
+<img lang="fa" src="lesson11-stablecoin-cover.jpg" alt="Digitale Dollar: Was deckt sie? Ditoman-Lektionsbild" style="width:100%;height:auto"><img lang="en" src="lesson11-stablecoin-cover-en.jpg" alt="Digitale Dollar: Was deckt sie? Ditoman-Lektionsbild" style="width:100%;height:auto">
+</div>
+<div class="lesson-badge" lang="en">Geld • Stablecoins</div>
+<div class="lesson-badge" lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none;display:table;margin-left:auto">پول • استیبل‌کوین</div>
+<h1 lang="en">Digitale Dollar: Was deckt sie?</h1>
+<h1 lang="fa" dir="rtl" style="text-align:right">دلار دیجیتال، پشتوانه‌اش کجاست؟</h1>
+<p class="subtitle" lang="en">Stablecoins wirken einfach: ein Token, ein Dollar. Doch diese Verbindung ist ein Versprechen, und ein Versprechen ist nur so stark wie das, was dahinter steht. In dieser Lektion sehen Sie, was hinter Stablecoins steht, wie ein bekannter Stablecoin im Mai 2022 zusammenbrach, und den wichtigsten Test, bevor Sie einem Token vertrauen.</p>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">استیبل‌کوین‌ها ساده به نظر می‌رسند: یک توکن، یک دلار. ولی این ارتباط یک قول است و قول فقط به اندازه‌ی چیزی که پشتش است محکم است. در این درس می‌بینید پشت استیبل‌کوین‌ها چه چیزی هست، چطور یکی از مشهورترین استیبل‌کوین‌ها در مه ۲۰۲۲ فروپاشید، و کدام آزمون پیش از اعتماد به هر توکن از همه مهم‌تر است.</p>
+<div class="meta-grid">
+<div class="meta-box"><span lang="en">Niveau</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">سطح</span><strong lang="en">Einsteiger</strong><strong lang="fa" dir="rtl" style="display:block">مقدماتی</strong></div>
+<div class="meta-box"><span lang="en">Lesezeit</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">زمان مطالعه</span><strong lang="en">12 Minuten</strong><strong lang="fa" dir="rtl" style="display:block">۱۲ دقیقه</strong></div>
+<div class="meta-box"><span lang="en">Lernpunkte</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">امتیاز یادگیری</span><strong lang="en">30 LP</strong><strong lang="fa" dir="rtl" style="display:block">۳۰ امتیاز</strong></div>
+<div class="meta-box"><span lang="en">Künftiges Quiz</span><span lang="fa" dir="rtl" style="letter-spacing:0;text-transform:none">آزمونک آینده</span><strong lang="en">5 Fragen</strong><strong lang="fa" dir="rtl" style="display:block">۵ پرسش</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Lektionsinhalt</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">محتوای درس</h2>
+<p class="section-subtitle" lang="en">Lesen Sie die Lektion auf Englisch oder Persisch.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">درس را به فارسی یا انگلیسی بخوانید.</p>
+
+<div class="language-toggle">
+<button class="lang-button active" onclick="showLanguage('en')">Englisch</button>
+<button class="lang-button" onclick="showLanguage('fa')">فارسی</button>
+</div>
+
+<div class="lesson-content en" id="en-content">
+<p lang="en">Sie haben wahrscheinlich gesehen, dass USDT, USDC und andere Tokens Tag für Tag fast genau bei einem Dollar notieren, während Bitcoin um Tausende springt. Warum? Weil jemand versprochen hat, den Token dort zu halten. Ob Sie diesem Versprechen glauben sollten, hängt von drei Dingen ab: wer es gibt, was dahintersteht und ob Sie den Token wieder in Dollar tauschen können.</p>
+<p lang="en">Sehen Sie diese Lektion als kurze Detektivgeschichte. Jeder Stablecoin hat einen Verdächtigen (den Herausgeber), ein Versteck (die Deckung) und einen Ausgang (den Rücktausch). Ihre Aufgabe ist, alle drei zu prüfen.</p>
+<h3><span class="check-number">01.</span> Was ein Stablecoin ist</h3>
+<p lang="en">Ein Stablecoin ist ein digitaler Token, der seinen Wert nahe einem US-Dollar halten soll. Diese Bindung an den Dollar heißt Peg. Denken Sie an eine Geschenkkarte, die immer einen Dollar wert sein soll: Die Karte selbst ist nur Plastik, ihr Wert kommt ganz aus dem Versprechen dahinter.</p>
+<p lang="en">Das unterscheidet sich vom Geld auf Ihrem Bankkonto. Eine Bankeinlage ist eine Forderung an eine Bank. Ein Stablecoin ist eine Forderung an seinen Herausgeber, und die Bedingungen stehen in dessen Unterlagen, nicht in einer Bankfiliale. Lesen Sie diese Bedingungen, bevor Sie sich darauf verlassen.</p>
+<h3><span class="check-number">02.</span> Drei Wege, einen Token zu decken</h3>
+<p lang="en">Die meisten Stablecoins stützen sich auf eine von drei Arten der Deckung. Das Bild unten zeigt sie nebeneinander.</p>
+<p lang="en"><strong>Bargeld und Staatsanleihen:</strong> der Herausgeber hält für die ausgegebenen Tokens Bargeld oder kurzfristige Staatsanleihen. Das ist das häufigste Modell unter den großen Stablecoins. Die Frage ist immer, wie sicher diese Reserven wirklich sind und wie leicht sie sich verkaufen lassen.</p>
+<p lang="en"><strong>Krypto-Sicherheiten:</strong> der Token ist durch andere als Sicherheit gesperrte Kryptowerte gedeckt, meist mit höherem Wert als die ausgegebenen Tokens. Fallen diese stark, wird das System auf die Probe gestellt und braucht einen Sicherheitspuffer, um intakt zu bleiben.</p>
+<p lang="en"><strong>Algorithmisches Modell:</strong> es gibt keine echte Reserve. Das System versucht, den Preis mit Angebotsregeln und einem zweiten Token zu halten. Dieses Modell scheiterte im Mai 2022, die Fallstudie unten.</p>
+<figure style="margin:24px 0"><img src="lesson11-backing-types-en.jpg" alt="Drei Arten der Deckung von Stablecoins: Bargeld und Staatsanleihen, Krypto-Sicherheiten, algorithmisches Modell" style="width:100%;height:auto;border-radius:12px"></figure>
+<h3><span class="check-number">03.</span> Ein Reservebericht ist keine Prüfung</h3>
+<p lang="en">Wenn ein Herausgeber sagt, ein Token sei voll gedeckt, kann die Aussage aus einem Bericht namens Bestätigung (Attestation) stammen. Eine Bestätigung ist meist eine Momentaufnahme zu einem bestimmten Datum. Eine vollständige Prüfung geht tiefer und deckt einen längeren Zeitraum ab. Das sind verschiedene Werkzeuge, und eine Schlagzeile verrät selten, welches Sie gerade lesen.</p>
+<p lang="en">Das US-Recht setzt nun strengere Regeln. Nach dem GENIUS Act müssen Stablecoins durch liquide Vermögenswerte wie US-Dollar und kurzfristige Schatzwechsel gedeckt sein, und Herausgeber müssen die Zusammensetzung ihrer Reserven monatlich offenlegen. Herausgeber mit mehr als 50 Milliarden Dollar müssen zudem jährlich geprüft werden. Das sind gute Fragen an jeden Herausgeber, überall auf der Welt.</p>
+<p lang="en">Stellen Sie zu jedem Reservebericht vier Fragen: Was wird gehalten? Wie viel davon ist Bargeld? Wer prüft es? Wie oft wird er veröffentlicht?</p>
+<h3><span class="check-number">04.</span> Rücktausch: der wichtigste Test</h3>
+<p lang="en">Ein Stablecoin ist nur einen Dollar wert, wenn Sie ihn praktisch in Dollar umtauschen können. Meist löst der Herausgeber Tokens nur für zugelassene Kunden ein, zu festen Bedingungen und Mindestbeträgen. Die meisten können nur am Markt an einen anderen Käufer verkaufen, zu dem Preis, den der Markt bietet.</p>
+<p lang="en">Zweifeln die Inhaber an der Deckung oder ist der Markt dünn, kann der Preis unter einen Dollar fallen. Wer zuerst Bargeld braucht, bekommt oft den schlechtesten Preis, weil er in die Panik hinein verkauft. Die eigentliche Frage ist also nicht nur, was der Token zu wert sein behauptet, sondern wer ihn zu welchem Preis einlösen kann.</p>
+<h3><span class="check-number">05.</span> Fallstudie: Wie UST seine Bindung verlor</h3>
+<p lang="en">2022 war TerraUSD (UST) einer der bekanntesten Stablecoins. Er war ein algorithmischer Token: weder durch Dollar noch durch andere Werte gedeckt. Seine Bindung hielt er über ein Token-Paar. Ein UST ließ sich immer prägen, indem man LUNA im Wert eines Dollars verbrannte, und ein UST ließ sich gegen LUNA im Wert eines Dollars eintauschen. Das war der ganze Mechanismus.</p>
+<p lang="en">Die Nachfrage wurde von Anchor angeheizt, einer Kreditplattform, die rund 18 bis 20 Prozent im Jahr auf UST-Einlagen zahlte. Diese Rendite lag weit über dem Üblichen und stammte nicht aus normalem Kreditgeschäft. Anfang Mai 2022 war UST auf etwa 98 Cent gefallen, und einige große Inhaber begannen abzuziehen.</p>
+<p lang="en">Dann kehrte sich die Schleife um. Als UST unter einem Dollar gehandelt wurde, funktionierte die Arbitrage nicht mehr wie im Design vorgesehen. Die Luna Foundation Guard versuchte, die Bindung zu verteidigen, indem sie ihre Reserven ausgab. Am 16. Mai 2022 erklärte sie, es seien weniger als 100 Millionen Dollar an fungiblen Vermögenswerten übrig. Der Wert von LUNA brach gegen null ein, UST fiel auf wenige Cent, und der Schaden reichte weit über einen Token hinaus.</p>
+<p lang="en">Die Lehre ist nicht, dass Algorithmen böse sind. Sondern dass ein Versprechen, das nur von Vertrauen und einem zweiten Token getragen wird, in Tagen verschwinden kann. Heute lautet die Frage einfach: Wenn das Vertrauen morgen bräche, was bliebe wirklich, um die Inhaber auszuzahlen?</p>
+<h3><span class="check-number">06.</span> Drei Mythen, die man ablegen sollte</h3>
+<p lang="en"><strong>Mythos 1: Ein Stablecoin ist immer sicher, wie Geld auf der Bank.</strong> Ein Stablecoin ist eine Forderung an seinen Herausgeber, keine staatliche Garantie. Seine Sicherheit hängt von der Deckung, den Rücknahmeregeln und dem Verhalten des Herausgebers ab.</p>
+<p lang="en"><strong>Mythos 2: „Voll gedeckt“ heißt, er kann nicht brechen.</strong> Eine Reserve kann echt und trotzdem illiquide sein oder in einer Form gehalten werden, die sich nicht schnell verkaufen lässt. Selbst ein gut gedeckter Token kann wackeln, wenn Angst sich schneller verbreitet, als Geld fließen kann.</p>
+<p lang="en"><strong>Mythos 3: Alle Stablecoins funktionieren gleich.</strong> Tun sie nicht. Deckung, Herausgeber und Rücktausch unterscheiden sich, und Sie sollten jeden Punkt einzeln prüfen.</p>
+<h3><span class="check-number">07.</span> Warum das für gewöhnliche Menschen wichtig ist</h3>
+<p lang="en">Stablecoins können Geld schneller und günstiger bewegen als viele traditionelle Kanäle, und das rund um die Uhr. Wo Menschen einen stabileren Wertspeicher suchen, bieten sie Zugang zu dollarbasiertem Geld, ein Grund für ihr schnelles Wachstum.</p>
+<p lang="en">Aber Bequemlichkeit birgt Risiken. Je schwächer die Deckung, desto größer der Schaden, wenn das Vertrauen bricht. Tempo wirkt in beide Richtungen: Es hilft Ihnen, schnell hineinzukommen, und hilft allen, schnell hinauszukommen.</p>
+<h3><span class="check-number">08.</span> Die Regeln werden gerade geschrieben</h3>
+<p lang="en">In den USA wurde der GENIUS Act am 18. Juli 2025 Gesetz. Er schuf den ersten bundesweiten Regulierungsrahmen für Stablecoins. Das Gesetz tritt zum früheren von zwei Terminen in Kraft: 18 Monate nach Verabschiedung oder 120 Tage nach Veröffentlichung der endgültigen Regeln durch die wichtigsten Aufsichtsbehörden.</p>
+<p lang="en">Die detaillierten Regeln werden also noch geschrieben, und sie sind nicht überall gleich. Die Europäische Union, Hongkong und andere haben eigene Rahmenwerke. Lesen Sie jede neue Regel mit den drei Fragen im Kopf: Wer gibt ihn aus, was deckt ihn und ist der Rücktausch echt?</p>
+<h3><span class="check-number">09.</span> Selbst ausprobieren: einen Reservebericht lesen</h3>
+<p lang="en">Wählen Sie einen Stablecoin, den Sie kennen, und folgen Sie diesen sechs Schritten. Es dauert etwa zehn Minuten.</p>
+<p lang="en"><strong>1. Finden Sie die offizielle Seite.</strong> Nutzen Sie die Transparenz- oder Reserveseite des Herausgebers selbst, keine Übersichtsseite.</p>
+<p lang="en"><strong>2. Prüfen Sie das Datum.</strong> Ein alter Bericht erzählt nur von der Vergangenheit.</p>
+<p lang="en"><strong>3. Listen Sie die Reserven auf.</strong> Bargeld, kurzfristige Staatsanleihen, andere Vermögenswerte. Welcher Anteil ist bargeldähnlich?</p>
+<p lang="en"><strong>4. Bestimmen Sie die Art des Berichts.</strong> Ist es eine Bestätigung oder eine Prüfung? Wer hat sie verfasst?</p>
+<p lang="en"><strong>5. Finden Sie die Rücknahmebedingungen.</strong> Wer kann zurücktauschen, wie hoch ist der Mindestbetrag, welche Gebühren fallen an und wie lange dauert es?</p>
+<p lang="en"><strong>6. Schreiben Sie einen Satz.</strong> „Ich würde diesem Token vertrauen, weil …“ oder „Ich würde ihm nicht vertrauen, weil …“. Ihre Begründung ist die eigentliche Lektion.</p>
+<h3><span class="check-number">10.</span> Wo TMN einzuordnen ist</h3>
+<p lang="en">TMN ist kein Stablecoin. Er hat keine Dollarbindung und keinen Herausgeber, der den Rücktausch verspricht, daher bestimmt der Markt seinen Preis. Deshalb sind die Prüfungen aus Lektion 05 und die Liquiditätsideen aus Lektion 09 die richtigen Werkzeuge für TMN, und der Rücktauschtest gilt für ihn nicht.</p>
+<p lang="en">Diese Lektion bewertet kein Projekt. Sie erklärt nur eine Token-Kategorie, damit Sie sie erkennen, wenn sie Ihnen begegnet.</p>
+<h3>Was man daraus mitnimmt</h3>
+<p lang="en">Ein Stablecoin ist ein Versprechen. Sein Wert hängt davon ab, was ihn deckt und ob Sie ihn tatsächlich einlösen können.</p>
+<p lang="en">Bevor Sie einem vertrauen, fragen Sie drei Dinge: Wer gibt ihn heraus? Was deckt ihn, und wird das veröffentlicht? Können Sie ihn in Dollar einlösen?</p>
+<p lang="en">Ein Reservebericht und eine vollständige Prüfung sind verschiedene Werkzeuge. Lesen Sie den Unterschied, bevor Sie die Schlagzeile lesen.</p>
+<p lang="en">Geschichte zählt: Ein Versprechen, das nur von Vertrauen getragen wird, kann in Tagen verschwinden, wie UST 2022 zeigte.</p>
+<p lang="en">Wenden Sie die Checkliste aus Lektion 05 auf jeden Token an, ob Stablecoin oder nicht.</p>
+</div>
+
+<div class="lesson-content fa" id="fa-content">
+<p lang="fa" dir="rtl" style="text-align:right">شاید توکن‌هایی مثل USDT و USDC را دیده باشید که روز به روز تقریباً دقیقاً روی یک دلار ثبت می‌شوند، در حالی که بیت‌کوین هزاران دلار بالا و پایین می‌رود. چرا؟ چون کسی قول داده توکن را همان‌جا نگه دارد. باور کردن این قول به سه چیز بستگی دارد: چه کسی آن را می‌دهد، پشتش چیست، و آیا می‌شود توکن را دوباره به دلار تبدیل کرد؟</p>
+<p lang="fa" dir="rtl" style="text-align:right">این درس را مثل یک پرونده‌ی کوچک ببینید. هر استیبل‌کوین سه بخش دارد: یک ناشر (کسی که قول می‌دهد)، یک پشتوانه (چیزی که پشت قول است)، و یک راه خروج (بازخرید). کار شما بررسی هر سه است.</p>
+<h3><span class="check-number">۰۱.</span> استیبل‌کوین چیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">استیبل‌کوین توکنی دیجیتال است که هدفش نگه داشتن ارزش آن نزدیک به یک دلار آمریکاست. این چسبیدن به دلار را «پگ» (peg) می‌نامند. مثل کارت هدیه‌ای که قرار است همیشه یک دلار ارزش داشته باشد: خود کارت فقط یک تکه پلاستیک است و ارزشش کاملاً از قولی می‌آید که پشتش است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این با پول حساب بانکی فرق دارد. سپرده‌ی بانکی طلب شما از یک بانک است. استیبل‌کوین طلب شما از ناشر آن است، و شرایط این طلب در اسناد ناشر نوشته شده، نه در شعبه‌ی یک بانک. پیش از اتکا به آن، همین شرایط را بخوانید.</p>
+<h3><span class="check-number">۰۲.</span> سه راه پشتیبانی یک توکن</h3>
+<p lang="fa" dir="rtl" style="text-align:right">بیشتر استیبل‌کوین‌ها به یکی از سه نوع پشتوانه تکیه می‌کنند. تصویر زیر هر سه را کنار هم نشان می‌دهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>پول نقد و اوراق دولتی:</strong> ناشر برای هر توکنی که منتشر می‌کند، پول نقد یا اوراق کوتاه‌مدت دولتی نگه می‌دارد. این رایج‌ترین مدل در استیبل‌کوین‌های بزرگ است. پرسش همیشگی این است که این ذخایر واقعاً چقدر امن‌اند و چقدر سریع می‌شود آن‌ها را فروخت.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>وثیقه‌ی کریپتویی:</strong> توکن با دارایی‌های دیجیتال دیگری پشتیبانی می‌شود که به‌عنوان وثیقه قفل شده‌اند، معمولاً با ارزشی بیشتر از توکن‌های منتشرشده. اگر آن دارایی‌ها شدید سقوط کنند، سیستم تحت آزمون قرار می‌گیرد و برای سالم ماندن به حاشیه‌ی اطمینان نیاز دارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>مدل الگوریتمی:</strong> پشتوانه‌ی واقعی وجود ندارد. سیستم سعی می‌کند قیمت را با قواعد عرضه و یک توکن دوم نگه دارد. همین مدل است که در مه ۲۰۲۲ شکست خورد، و مطالعه‌ی موردی زیر درباره‌ی آن است.</p>
+<figure style="margin:24px 0"><img src="lesson11-backing-types.jpg" alt="سه نوع پشتوانه‌ی استیبل‌کوین: پول نقد و اوراق دولتی، وثیقه‌ی کریپتویی، مدل الگوریتمی" style="width:100%;height:auto;border-radius:12px"></figure>
+<h3><span class="check-number">۰۳.</span> گزارش پشتوانه، حسابرسی نیست</h3>
+<p lang="fa" dir="rtl" style="text-align:right">وقتی ناشری می‌گوید توکنی کاملاً پشتوانه دارد، ادعا ممکن است در گزارشی به نام «تأیید پشتوانه» (attestation) آمده باشد. این گزارش معمولاً تصویری از یک لحظه‌ی مشخص است. حسابرسی کامل عمیق‌تر است و دوره‌ی طولانی‌تری را پوشش می‌دهد. این دو ابزار متفاوت‌اند و تیتر خبر معمولاً نمی‌گوید کدام را می‌خوانید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">قانون آمریکا حالا قواعد سخت‌تری دارد. طبق قانون GENIUS، استیبل‌کوین‌ها باید با دارایی‌های نقد مانند دلار و اوراق خزانه‌داری کوتاه‌مدت پشتیبانی شوند، و ناشرها باید ترکیب ذخایرشان را هر ماه به‌طور عمومی منتشر کنند. ناشرهایی که اندازه‌شان از ۵۰ میلیارد دلار بیشتر است، باید حسابرسی سالانه هم داشته باشند. این‌ها پرسش‌های خوبی برای هر ناشری در هر کجای دنیا هستند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درباره‌ی هر گزارش پشتوانه چهار پرسش بپرسید: چه چیزی نگه داشته شده؟ چقدرش نقد است؟ چه کسی بررسی می‌کند؟ هر چند وقت منتشر می‌شود؟</p>
+<h3><span class="check-number">۰۴.</span> بازخرید: مهم‌ترین آزمون</h3>
+<p lang="fa" dir="rtl" style="text-align:right">استیبل‌کوین فقط وقتی واقعاً یک دلار می‌ارزد که در عمل بتوان آن را به دلار تبدیل کرد. معمولاً ناشر فقط برای مشتریان تأییدشده، با شرایط و حداقل مبلغ مشخص، توکن را به دلار برمی‌گرداند. بیشتر مردم فقط می‌توانند در بازار و به خریدار دیگری بفروشند، با هر قیمتی که بازار بدهد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر دارندگان به پشتوانه شک کنند یا بازار کم‌عمق باشد، قیمت می‌تواند زیر یک دلار برود. کسانی که زودتر به نقد نیاز دارند، اغلب بدترین معامله را می‌کنند، چون در وحشت می‌فروشند. پس پرسش واقعی فقط این نیست که توکن خودش را چقدر می‌داند، بلکه این است که چه کسی واقعاً می‌تواند آن را نقد کند و با چه قیمتی.</p>
+<h3><span class="check-number">۰۵.</span> مطالعه‌ی موردی: چطور UST چسبیدن به دلار را از دست داد</h3>
+<p lang="fa" dir="rtl" style="text-align:right">در سال ۲۰۲۲، TerraUSD (UST) یکی از مشهورترین استیبل‌کوین‌ها بود. این توکن الگوریتمی بود: با دلار یا هیچ دارایی دیگری پشتیبانی نمی‌شد. به‌جای آن، با کمک یک توکن دوم، یعنی LUNA، روی یک دلار نگه داشته می‌شد. با سوزاندن LUNA به ارزش یک دلار می‌شد یک UST ساخت، و با هر UST می‌شد LUNA به ارزش یک دلار گرفت. کل مکانیزم همین بود.</p>
+<p lang="fa" dir="rtl" style="text-align:right">تقاضا با Anchor، یک پلتفرم وام‌دهی، تقویت شد؛ این پلتفرم سالانه حدود ۱۸ تا ۲۰ درصد روی سپرده‌های UST پرداخت می‌کرد. این بازده بسیار بالاتر از حد معمول بود و از وام‌دهی عادی تولید نمی‌شد. در اوایل مه ۲۰۲۲ قیمت UST تا حدود ۹۸ سنت افت کرد و برخی دارندگان بزرگ شروع به خروج کردند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">بعد حلقه برعکس چرخید. وقتی UST زیر یک دلار فروخته شد، مکانیزم آربیتراژ دیگر آن‌طور که طراحی شده بود کار نمی‌کرد. بنیاد Luna Foundation Guard با خرج کردن ذخایرش تلاش کرد چسبیدن به دلار را حفظ کند. تا ۱۶ مه ۲۰۲۲ اعلام کرد کمتر از ۱۰۰ میلیون دلار دارایی قابل‌استفاده باقی مانده است. ارزش LUNA به صفر نزدیک شد، UST تا چند سنت افت کرد و آسیب فراتر از یک توکن پخش شد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">درس این نیست که الگوریتم بد است. درس این است که قولی که فقط با اعتماد و یک توکن دوم نگه داشته شده، می‌تواند در چند روز ناپدید شود. پرسش ساده‌ای که باید بپرسید این است: اگر فردا اعتماد بشکند، واقعاً چه چیزی برای پرداخت به دارندگان باقی می‌ماند؟</p>
+<h3><span class="check-number">۰۶.</span> سه باور غلط را کنار بگذاریم</h3>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>باور غلط ۱: استیبل‌کوین مثل پول نقد در بانک، همیشه امن است.</strong> استیبل‌کوین طلب از ناشرش است، نه تضمین یک دولت. امنیتش به پشتوانه، قواعد بازخرید و رفتار ناشر بستگی دارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>باور غلط ۲: «کاملاً پشتوانه‌دار» یعنی هرگز نمی‌شکند.</strong> ذخیره می‌تواند واقعی باشد و در عین حال نقدشونده نباشد، یا به شکلی نگه داشته شود که نتوان سریع فروختش. حتی توکن خوب پشتوانه‌دار هم وقتی ترس سریع‌تر از نقد پخش شود، می‌لرزد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>باور غلط ۳: همه‌ی استیبل‌کوین‌ها یک‌جور کار می‌کنند.</strong> نمی‌کنند. پشتوانه، ناشر و بازخرید هرکدام فرق دارد، و باید هرکدام را جداگانه بررسی کرد.</p>
+<h3><span class="check-number">۰۷.</span> چرا این برای مردم عادی مهم است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">استیبل‌کوین‌ها می‌توانند پول را سریع‌تر و ارزان‌تر از بسیاری از مسیرهای سنتی جابه‌جا کنند، و شبانه‌روزی کار می‌کنند. در جاهایی که مردم دنبال نگهداری ارزش پایدارتر هستند، دسترسی به پولی با پایه‌ی دلار هم جذاب است؛ به همین دلیل رشد این بازار سریع بوده است.</p>
+<p lang="fa" dir="rtl" style="text-align:right">اما راحتی هزینه‌ای دارد. هرچه پشتوانه ضعیف‌تر باشد، وقتی اعتماد بشکند آسیب بزرگ‌تر است. سرعت در هر دو جهت کار می‌کند: هم به شما کمک می‌کند سریع وارد شوید، هم به همه کمک می‌کند سریع خارج شوند.</p>
+<h3><span class="check-number">۰۸.</span> قواعد در حال نوشته شدن است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">در آمریکا قانون GENIUS در ۱۸ ژوئیه‌ی ۲۰۲۵ امضا شد و نخستین چارچوب قانونی فدرال برای استیبل‌کوین‌ها را ساخت. این قانون زودتر از دو تاریخ اجرایی می‌شود: ۱۸ ماه پس از تصویب، یا ۱۲۰ روز پس از آنکه نهادهای اصلی ناظر قواعد نهایی را منتشر کنند.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پس قواعد جزئی هنوز در حال نوشته شدن است و در همه‌ی کشورها یکسان نیست. اتحادیه‌ی اروپا، هنگ‌کنگ و دیگران چارچوب‌های خودشان را دارند. هر قاعده‌ی تازه را با همان سه پرسش بخوانید: ناشرش کیست، پشتوانه‌اش چیست و بازخرید واقعی است یا نه.</p>
+<h3><span class="check-number">۰۹.</span> خودتان امتحان کنید: یک گزارش پشتوانه را بخوانید</h3>
+<p lang="fa" dir="rtl" style="text-align:right">یک استیبل‌کوینی که می‌شناسید انتخاب کنید و این شش گام را دنبال کنید. حدود ده دقیقه طول می‌کشد.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۱. صفحه‌ی رسمی را پیدا کنید.</strong> از صفحه‌ی شفافیت یا پشتوانه‌ی خود ناشر استفاده کنید، نه خلاصه‌ی یک سایت دیگر.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۲. تاریخ را بررسی کنید.</strong> گزارش قدیمی فقط درباره‌ی گذشته به شما می‌گوید.</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۳. ذخایر را فهرست کنید.</strong> نقد، اوراق کوتاه‌مدت دولتی، دارایی‌های دیگر. چه سهمی شبیه پول نقد است؟</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۴. نوع گزارش را تشخیص دهید.</strong> تأیید پشتوانه است یا حسابرسی؟ چه کسی آن را نوشته؟</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۵. شرایط بازخرید را پیدا کنید.</strong> چه کسی می‌تواند بازخرید کند، حداقل مبلغ چقدر است، کارمزد چیست و چقدر زمان می‌برد؟</p>
+<p lang="fa" dir="rtl" style="text-align:right"><strong>۶. یک جمله بنویسید.</strong> «به این توکن اعتماد می‌کنم چون…» یا «اعتماد نمی‌کنم چون…». دلیل شما همان درس واقعی است.</p>
+<h3><span class="check-number">۱۰.</span> TMN کجای این بحث است</h3>
+<p lang="fa" dir="rtl" style="text-align:right">TMN استیبل‌کوین نیست. نه به دلار چسبیده و نه ناشری دارد که قول بازخرید بدهد، پس قیمتش در بازار تعیین می‌شود. به همین دلیل برای TMN بررسی‌های درس ۰۵ و مفاهیم نقدشوندگی درس ۰۹ ابزار درست‌اند، و آزمون بازخرید به آن ربطی ندارد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">این درس درباره‌ی هیچ پروژه‌ای قضاوت نمی‌کند. فقط یک دسته از توکن‌ها را توضیح می‌دهد تا وقتی با آن روبه‌رو شدید، دسته‌اش را بشناسید.</p>
+<h3>چه برداشتی کنیم</h3>
+<p lang="fa" dir="rtl" style="text-align:right">استیبل‌کوین یک قول است. ارزشش به پشتوانه‌اش و به این بستگی دارد که واقعاً بشود آن را به دلار تبدیل کرد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">پیش از اعتماد به هر استیبل‌کوین سه چیز بپرسید: ناشرش کیست؟ پشتوانه‌اش چیست و آیا منتشر می‌شود؟ آیا می‌شود آن را به دلار تبدیل کرد؟</p>
+<p lang="fa" dir="rtl" style="text-align:right">گزارش پشتوانه و حسابرسی کامل دو ابزار متفاوت‌اند. پیش از تیتر خبر، تفاوتشان را بخوانید.</p>
+<p lang="fa" dir="rtl" style="text-align:right">تاریخ مهم است: قولی که فقط با اعتماد نگه داشته شده، می‌تواند در چند روز ناپدید شود، همان‌طور که UST در ۲۰۲۲ نشان داد.</p>
+<p lang="fa" dir="rtl" style="text-align:right">چک‌لیست درس ۰۵ را روی هر توکنی به کار ببرید، استیبل‌کوین باشد یا نه.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="self-check">
+<h2 class="section-title" lang="en">Stablecoins und TMN sind nicht dasselbe</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">استیبل‌کوین و TMN یک چیز نیستند</h2>
+<p lang="en">TMN ist kein Stablecoin und hat keine Dollarbindung. Sein Preis wird vom Markt bestimmt, daher sind die Prüfungen aus Lektion 05 und die Liquiditätsideen aus Lektion 09 die richtigen Werkzeuge. Diese Lektion erklärt die Kategorie, kein Projekt.</p>
+<p lang="fa" dir="rtl" style="text-align:right">TMN استیبل‌کوین نیست و به دلار چسبیده نیست. قیمتش در بازار تعیین می‌شود، پس بررسی‌های درس ۰۵ و مفاهیم نقدشوندگی درس ۰۹ ابزارهای درستی برای خواندنش هستند. این درس دسته‌ی دارایی را توضیح می‌دهد، نه پروژه‌ای را.</p>
+<div class="cta-row">
+<a class="cta" href="lesson05.de.html"><span lang="en">So prüfen Sie jeden Token</span><span lang="fa">بررسی هر توکن پیش از استفاده</span></a>
+<a class="button" href="lesson09.de.html"><span lang="en">Was bedeutet eine Liquiditätssperre?</span><span lang="fa">قفل لیکوئیدیتی یعنی چه؟</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container grid-two">
+<div class="card">
+<h3 lang="en">Schlüsselbegriffe</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">مفاهیم کلیدی</h3>
+<ul lang="en"><li>Stablecoin</li><li>Kopplung (Peg)</li><li>Deckung durch Reserven</li><li>Bestätigung oder Prüfung</li><li>Rücktausch</li><li>Sicherheit</li><li>Algorithmisches Modell</li><li>Entkopplung (Depeg)</li><li>GENIUS Act</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>استیبل‌کوین</li><li>پگ (چسبیدن به دلار)</li><li>پشتوانه‌ی ذخیره</li><li>تأیید پشتوانه در برابر حسابرسی</li><li>بازخرید</li><li>وثیقه</li><li>مدل الگوریتمی</li><li>دپگ (خروج از پگ)</li><li>قانون GENIUS</li></ul>
+</div>
+<div class="card">
+<h3 lang="en">Lernziele</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">اهداف یادگیری</h3>
+<ul lang="en"><li>Erklären Sie, was ein Stablecoin ist und was der Peg bedeutet.</li><li>Nennen Sie die drei Hauptarten der Deckung und das Hauptrisiko jeder.</li><li>Einen Bestätigungsbericht von einer vollständigen Prüfung unterscheiden und sagen, was der GENIUS Act verlangt.</li><li>Erklären Sie am Fall UST, warum die Rücknahme entscheidet, ob die Bindung hält.</li><li>Einen Reservebericht Schritt für Schritt lesen und ein begründetes Urteil schreiben.</li><li>Stellen Sie drei Fragen, bevor Sie einem Stablecoin vertrauen.</li></ul>
+<ul lang="fa" dir="rtl" style="padding-left:0;padding-right:22px"><li>توضیح دهید استیبل‌کوین چیست و پگ یعنی چه.</li><li>سه نوع اصلی پشتوانه و ریسک اصلی هر کدام را نام ببرید.</li><li>گزارش تأیید پشتوانه را از حسابرسی کامل تشخیص دهید و بگویید قانون GENIUS چه چیزی لازم می‌داند.</li><li>با کمک مطالعه‌ی UST توضیح دهید چرا بازخرید تعیین می‌کند پگ حفظ می‌شود یا نه.</li><li>یک گزارش پشتوانه را گام‌به‌گام بخوانید و یک قضاوت مستدل بنویسید.</li><li>پیش از اعتماد به هر استیبل‌کوین سه پرسش را به کار ببرید.</li></ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title" lang="en">Künftiger Fragenpool</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">بانک پرسش‌های آزمونک آینده</h2>
+<p class="section-subtitle" lang="en">Diese Fragen sind für das künftige Quiz- und Beteiligungssystem von Ditoman vorbereitet.</p>
+<p class="section-subtitle" lang="fa" dir="rtl" style="text-align:right;margin-left:auto">این پرسش‌ها برای سامانه‌ی آزمونک و مشارکت آینده‌ی دیتومان آماده شده‌اند.</p>
+<div class="quiz-list">
+<div class="quiz-item">
+<h3 lang="en">Frage 1</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۱</h3>
+<p lang="en">Was ist das Hauptziel eines Stablecoins?</p>
+<p lang="fa" dir="rtl" style="text-align:right">هدف اصلی استیبل‌کوین چیست؟</p>
+<p lang="en">A. Schnelles Preiswachstum</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. رشد سریع قیمت</p>
+<p lang="en">B. Den Wert nahe einem Dollar halten</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. ثابت نگه داشتن ارزش نزدیک به یک دلار</p>
+<p lang="en">C. Die Zentralbank vollständig ersetzen</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. جایگزینی کامل بانک مرکزی</p>
+<p class="answer" lang="en">Richtige Antwort: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 2</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۲</h3>
+<p lang="en">Auf welche Art der Deckung stützte sich UST, das im Mai 2022 scheiterte?</p>
+<p lang="fa" dir="rtl" style="text-align:right">UST به کدام نوع پشتوانه تکیه داشت که در مه ۲۰۲۲ شکست خورد؟</p>
+<p lang="en">A. Barreserven</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ذخایر نقدی</p>
+<p lang="en">B. Krypto-Sicherheiten</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. وثیقه‌ی کریپتویی</p>
+<p lang="en">C. Algorithmisches Modell mit einem zweiten Token</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. مدل الگوریتمی با یک توکن دوم</p>
+<p class="answer" lang="en">Richtige Antwort: C. UST hatte keine Dollarreserve; es stützte sich auf LUNA sowie Prägen und Verbrennen.</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ج. UST ذخیره‌ی دلاری نداشت و به LUNA و سازوکار ساخت و سوزاندن تکیه داشت.</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 3</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۳</h3>
+<p lang="en">Was zeigt ein Bestätigungsbericht im Vergleich zu einer vollständigen Prüfung?</p>
+<p lang="fa" dir="rtl" style="text-align:right">در مقایسه با حسابرسی کامل، گزارش تأیید پشتوانه (attestation) چه چیزی را نشان می‌دهد؟</p>
+<p lang="en">A. Dasselbe wie eine vollständige Prüfung</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. همان حسابرسی کامل</p>
+<p lang="en">B. Ein Bild eines Moments</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. تصویری از یک لحظه</p>
+<p lang="en">C. Eine staatliche Garantie</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. ضمانت دولتی</p>
+<p class="answer" lang="en">Richtige Antwort: B</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: ب</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 4</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۴</h3>
+<p lang="en">Wenn der Herausgeber nur für zugelassene Kunden einlöst, was kann ein gewöhnlicher Inhaber dann meist tun?</p>
+<p lang="fa" dir="rtl" style="text-align:right">اگر ناشر فقط برای مشتریان تأییدشده بازخرید کند، دارنده‌ی عادی معمولاً چه کار می‌تواند بکند؟</p>
+<p lang="en">A. Am Markt verkaufen, mit dem Risiko, dass der Preis unter einen Dollar fällt</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. در بازار بفروشد، با این ریسک که قیمت زیر یک دلار برود</p>
+<p lang="en">B. Von der Zentralbank Erstattung verlangen</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. از بانک مرکزی بازپرداخت بخواهد</p>
+<p lang="en">C. Nichts; der Token ist ohnehin einen Dollar wert</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. هیچ کاری؛ توکن در هر حال یک دلار می‌ارزد</p>
+<p class="answer" lang="en">Richtige Antwort: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+<div class="quiz-item">
+<h3 lang="en">Frage 5</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">پرسش ۵</h3>
+<p lang="en">Welche Frage sollte man stellen, bevor man einem Stablecoin vertraut?</p>
+<p lang="fa" dir="rtl" style="text-align:right">کدام پرسش درست پیش از اعتماد به یک استیبل‌کوین است؟</p>
+<p lang="en">A. Wer gibt ihn heraus?</p>
+<p lang="fa" dir="rtl" style="text-align:right">الف. ناشرش کیست؟</p>
+<p lang="en">B. Wird sein Preis steigen?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ب. آیا قیمتش بالا می‌رود؟</p>
+<p lang="en">C. Haben meine Freunde gekauft?</p>
+<p lang="fa" dir="rtl" style="text-align:right">ج. آیا دوستانم خریده‌اند؟</p>
+<p class="answer" lang="en">Richtige Antwort: A</p>
+<p class="answer" lang="fa" dir="rtl" style="text-align:right">پاسخ درست: الف</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="card">
+<h3 lang="en">Quellen</h3>
+<h3 lang="fa" dir="rtl" style="text-align:right">منابع</h3>
+<ul><li><a href="https://www.mayerbrown.com/en/insights/publications/2025/07/genius-act-signed-into-law-us-enacts-federal-stablecoin-legislation" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Mayer Brown: GENIUS Act unterzeichnet (18. Juli 2025)</a> — Unterzeichnungsdatum und erster Bundesrahmen für Zahlungs-Stablecoins</li><li><a href="https://www.lw.com/en/insights/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Latham &amp; Watkins: Der GENIUS Act von 2025</a> — Regel zum Inkrafttreten (18 Monate oder 120 Tage nach den endgültigen Vorschriften)</li><li><a href="https://www.bnnbloomberg.ca/markets/crypto/2025/07/18/trump-signs-stablecoin-law-as-crypto-industry-aims-for-mainstream-adoption/" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Bloomberg via BNN: Trump unterzeichnet Stablecoin-Gesetz</a> — Deckung durch liquide Vermögenswerte und monatliche Offenlegung der Reservezusammensetzung</li><li><a href="https://www.theblock.co/news/markets/2025-07-18-trump-signs-stablecoin-genius-act-cementing-first-major-crypto-framework-in-us-law-363425" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">The Block: Trump unterzeichnet den GENIUS Act</a> — Volle Dollardeckung und jährliche Prüfungen für Herausgeber über 50 Milliarden Dollar</li><li><a href="https://www.theblock.co/post/146444/terra-luna-and-ust-how-we-got-here" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">The Block: Terra, Luna und UST, wie es dazu kam (11. Mai 2022)</a> — Wie die UST-Bindung funktionierte und die ersten Tage des Zusammenbruchs</li><li><a href="https://corporatefinanceinstitute.com/resources/cryptocurrency/what-happened-to-terra" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">Corporate Finance Institute: Was mit Terra geschah</a> — Überblick über den Terra-Zusammenbruch und Marktverluste</li><li><a href="https://www.coolwallet.io/?p=77881" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">CoolWallet: Terra-Autopsie</a> — Verbleibende Reserve der Luna Foundation Guard am 16. Mai 2022</li><li><a href="https://cvj.ch/en/?p=42494" target="_blank" rel="noopener noreferrer" style="color:#7ff5de">CVJ: Überblick über TerraUSD (UST)</a> — Anchor-Rendite von 18 bis 20 Prozent und der erste Rückgang auf 98 Cent</li></ul>
+<p lang="en" style="font-size:0.95rem">Die Zahlen zum Fall UST stammen aus den obigen Quellen und können durch spätere Forschung korrigiert werden. Die drei Mythen und die Leseübung dienen der Bildung und sind keine Anlageberatung.</p>
+<p lang="fa" dir="rtl" style="text-align:right;font-size:0.95rem">ارقام مطالعه‌ی UST از منابع بالا آمده و ممکن است با پژوهش‌های بعدی اصلاح شود. باورهای غلط و تمرین خواندن گزارش آموزشی‌اند و توصیه‌ی سرمایه‌گذاری نیستند.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title" lang="en">Instagram-Zusammenfassung</h2>
+<h2 class="section-title" lang="fa" dir="rtl" style="text-align:right">خلاصه در اینستاگرام</h2>
+<p lang="en">Eine kurze visuelle Version dieser Lektion gibt es auf Instagram. Diese Seite ist die vollständige Lernversion.</p>
+<p lang="fa" dir="rtl" style="text-align:right">نسخه‌ی تصویری کوتاه این درس در اینستاگرام منتشر شده است. این صفحه نسخه‌ی کامل آموزشی آن است.</p>
+<div class="cta-row">
+<a class="cta" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer"><span lang="en">Auf Instagram ansehen</span><span lang="fa">دیدن در اینستاگرام</span></a>
+<a class="button" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer"><span lang="en">Auf Telegram beitreten</span><span lang="fa">عضویت در تلگرام</span></a>
+<a class="button" href="learn.de.html"><span lang="en">Zurück zu Lernen</span><span lang="fa">بازگشت به آموزش</span></a>
+<a class="button" href="lesson10.de.html"><span lang="en">Vorherige Lektion</span><span lang="fa">درس قبلی</span></a>
+<a class="button" href="lesson12.de.html"><span lang="en">Nächste Lektion</span><span lang="fa">درس بعدی</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" lang="en">
+Ditoman Learn • Auf Struktur gebaut, von Entdeckung getrieben.
+</div>
+<div class="container" lang="fa" dir="rtl">آموزش دیتومان • با ساختار می‌سازیم، با کشف پیش می‌رویم.</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const englishContent = document.getElementById("en-content");
+const persianContent = document.getElementById("fa-content");
+const buttons = document.querySelectorAll(".lang-button");
+
+buttons.forEach(button => button.classList.remove("active"));
+
+if (language === "en") {
+englishContent.style.display = "block";
+persianContent.style.display = "none";
+buttons[0].classList.add("active");
+} else {
+englishContent.style.display = "none";
+persianContent.style.display = "block";
+buttons[1].classList.add("active");
+}
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+
+<script src="search.js?v=20261121b" defer></script>
+<script src="i18n-de.js?v=20261121a"></script>
+</body>
+</html>

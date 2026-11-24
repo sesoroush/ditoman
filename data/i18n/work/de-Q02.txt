@@ -1,0 +1,44 @@
+149|Ein Vertrag wird auf die Blockchain gebracht und liegt danach unter einer Adresse wie ein Konto. Jeder kann seine Funktionen aufrufen. Weil viele Computer ihn ausführen, hängt das Ergebnis nicht davon ab, dass eine Firma ehrlich oder online bleibt.
+150|Ein Vertrag kennt nur, was auf der Chain steht. Er kann keine Zeitung lesen oder selbst das Wetter prüfen; Informationen von außen müssen hereingeholt werden. Und er repariert keine schlechte Idee: Code, der genau tut, was er sagt, kann trotzdem etwas Unkluges tun.
+151|Ein Kupfernugget über einem Tagebau
+152|Eine Korrespondenzbank
+153|Ein Land, das 95 % seines Gases importiert, plant Kraftwerksschiffe, LNG und einen Stromkorridor. Die Zahlen, wer gewinnt, wer sich sorgt und was noch unbewiesen ist.
+154|Eine Krypto-Börse funktioniert in einem wichtigen Punkt genauso: Die Coins liegen in den Wallets der Börse, und Ihr Konto zeigt, was die Börse Ihnen schuldet. Sie halten eine Forderung an ein Unternehmen.
+155|Eine Einlage (32 ETH für den Alleinbetrieb)
+156|Eine Einlage bringt 20 % und die Inflation liegt bei 40 %. Was passiert mit ihrer Kaufkraft?
+157|Eine Digitalbank mit 2,9 Mio. Kunden wurde unter Aufsicht gestellt, der Präsident abgesetzt, und was Einlagengarantien wirklich abdecken.
+158|Ein Dollar-Stablecoin kann in Minuten zwischen zwei Wallets wechseln, zu jeder Stunde, für eine kleine Netzwerkgebühr. An diesem Schritt ist keine Korrespondenzbank beteiligt. Das ist der Hauptgrund, warum Stablecoins zunehmend für grenzüberschreitende Zahlungen genutzt werden.
+159|Ein Dollar-Stablecoin folgt dem Dollar, wie Lektion 11 erklärt hat. Das kann stabiler sein als eine schwächere Währung, aber auch der Dollar hat Inflation, und der Token bringt eigene Risiken mit: den Herausgeber, die Deckung und den Ausweg.
+160|Eine falsche Antwort zeigt auf den Preis selbst: Er ist letzte Woche gestiegen, jemand sagte, es geht weiter, alle reden davon. Das ist kein Grund. Das ist eine Beobachtung über das Verhalten anderer, und andere können jederzeit aufhören.
+161|Eine an Börsen gezahlte Gebühr
+162|Wenige Inhaber können mit einer Entscheidung den ganzen Markt bewegen
+163|Vor einigen Jahren bezahlte ein einziger Geldschein eine ganze Tüte Lebensmittel. Heute kauft derselbe Schein nur einen Teil davon. Niemand hat den Schein weggenommen. Verändert hat sich, wie viel er kaufen kann. Dieser stille Wandel hat einen Namen: Inflation.
+164|Eine feste Obergrenze
+165|Ein Freund ist sich sicher
+166|Ein leuchtender Chip vor der Skyline Teherans und dem Milad-Turm
+167|Eine Governance-Abstimmung
+168|Eine Regierung hat ihn wieder in Gang gesetzt
+169|Eine harte Bindung gibt Importeuren und Reisenden Stabilität, aber das Land gibt seine eigene Zinspolitik auf, weil es der Währung folgen muss, an die es gebunden ist. Ein freier Wechselkurs behält diese Freiheit, um den Preis eines beweglichen Kurses.
+170|Eine harte Bindung opfert eine unabhängige Zinspolitik.
+171|Ein großer Ausschlag ist an sich weder gut noch schlecht. Er entscheidet, wie lange Sie warten können müssen.
+172|Ein Kreditanbieter bezahlt heute das Geschäft für Sie. Sie zahlen in Raten zurück. In der üblichen Kurzversion sind es vier Zahlungen über einige Wochen ohne Zinsen, und der Anbieter verdient an einer Gebühr des Geschäfts und an Mahngebühren.
+173|Eine Sperre legt die LP-Tokens in einen separaten Smart Contract mit einem Freigabedatum. Bis dahin kann sie niemand zurückholen, auch nicht, wer sie gesperrt hat. Dienste wie PinkLock, UNCX und Team Finance veröffentlichen jede Sperre als öffentlichen Eintrag, den jeder prüfen kann.
+174|Eine Sperre beseitigt ein bestimmtes Risiko: dass die gesperrte Liquidität vor dem Freigabedatum abgezogen wird. Sie beweist nicht, dass ein Token wertvoll ist, dass das Projekt Erfolg hat oder dass der Preis steigt.
+175|Eine Nachricht geht in einer Sekunde um die Welt, doch Geld kann Tage brauchen und unterwegs mehrere Prozent verlieren. Diese Lektion zeigt, was zwischen zwei Banken in zwei Ländern passiert, wo sich die Kosten verstecken und was Stablecoins ändern und was nicht
+176|Eine Nachricht geht in einer Sekunde um die Welt, doch Geld kann Tage brauchen und unterwegs mehrere Prozent verlieren. Diese Lektion zeigt, was zwischen zwei Banken in zwei Ländern passiert, wo sich die Kosten verstecken und was Stablecoins ändern und was nicht.
+177|Ein Monatsrückblick in zehn Minuten
+178|Eine Gebirgsautobahnbrücke mit einem Lkw und einem Güterzug
+179|Eine Neobank ist eine Bank ohne Filialen. Alles, von der Identitätsprüfung bis zur Kartenzustellung, läuft über eine App.
+180|Eine Neobank ist eine Bank ohne Filialen. Fragen Sie, wer die Lizenz hält und ob Einlagen garantiert sind.
+181|Eine persönliche Wallet gibt Ihnen den Schlüssel und die volle Verantwortung, die damit einhergeht.
+182|Eine persönliche Wallet ist ein Schlüssel
+183|Eine persönliche Wallet, auch Self-Custody-Wallet genannt, ist anders. Die Coins sind auf der Blockchain verbucht, und die Wallet hält den
+184|Ein Handy kostet 40 Millionen. Sie haben heute keine 40 Millionen. Ein Knopf unter dem Preis sagt: vier Raten, kein Papierkram, in einer Minute genehmigt. Ein Tippen und das Handy gehört Ihnen.
+185|Ein Batteriebindemittel aus Pflanzen und Wasser: der Markt, Emissionen, Gesundheit, Preise, neue Geschäfte und die Chance für den Iran.
+186|Praktisch denkt man in Stufen. Zuerst ein kleiner Puffer für eine typische Überraschung. Dann ein Monat Grundausgaben. Dann drei Monate, oder mehr, wenn Ihr Einkommen unregelmäßig ist oder Sie andere unterstützen.
+187|Ein Preis auf dem Bildschirm ist kein Geld. Er wird erst zu Geld, wenn jemand bereit ist, dagegen zu handeln.
+188|Ein privates Unternehmen
+189|Ein Programm, das von selbst läuft, wie ein Verkaufsautomat.
+190|Ein Projekt zahlt feste 2 % pro Tag und einen Bonus für das Werben von Freunden. Was ist es am wahrscheinlichsten?
+191|Ein Projekt verspricht eine feste, hohe Rendite, täglich oder wöchentlich ausgezahlt, mit Boni für das Werben von Freunden. Frühe Mitglieder werden tatsächlich bezahlt, mit Geld späterer Mitglieder. Wenn neue Einzahlungen nachlassen, ist Schluss.
+192|Eine schnelle Schätzung: Teilen Sie 72 durch die Inflationsrate. Das Ergebnis ist ungefähr die Zahl der Jahre, bis sich die Preise verdoppeln. Bei 6 Prozent etwa zwölf Jahre. Bei 36 Prozent etwa zwei Jahre.

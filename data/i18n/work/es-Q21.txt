@@ -1,0 +1,74 @@
+1859|Nasdaq: orden ejecutiva de EE. UU. que prohíbe una CBDC (enero de 2025)
+1860|Valor nativo de Internet
+1861|Activo nativo
+1862|Necesidades
+1863|Necesidades y deseos
+1864|Las necesidades superan el 50% de tus ingresos. ¿Qué sugiere la lección?
+1865|Requiere acceso a un exchange
+1866|Precios mayoristas negativos de la electricidad
+1867|Neobanco
+1868|Neobancos, fintech y banca abierta, explicados.
+1869|Red
+1870|Red (blockchain)
+1871|Moneda de la red
+1872|Comisión de red (gas)
+1873|Independencia de la red frente al comportamiento del precio
+1874|Nunca pegues secretos:
+1875|Nunca compartas una frase de recuperación, nunca firmes lo que no puedes leer, nunca sigas un enlace hacia tu dinero.
+1876|Nunca escribas una dirección a mano. Cópiala y pégala, o escanea el código QR, y luego compara los cuatro primeros y los cuatro últimos caracteres con el original. Un carácter distinto significa otra billetera.
+1877|Los nuevos asistentes explican y organizan bien. También pueden equivocarse con total seguridad.
+1878|Las nuevas lecciones se anuncian primero en el Telegram y el Instagram de Ditoman.
+1879|Las nuevas lecciones se anuncian primero en los canales de Ditoman.
+1880|Nueva emisión
+1881|Nuevos informes y lecciones cada día en los canales de Ditoman
+1882|Más reciente
+1883|Más reciente ›
+1884|Lo más nuevo
+1885|Lección más reciente
+1886|La noticia inicia la caída. Los libros de órdenes poco profundos y el dinero prestado deciden hasta dónde llega.
+1887|La noticia inicia la caída. Esta lección muestra lo que pasa después dentro de un exchange: compradores que se retiran, deslizamiento, apalancamiento y la liquidación en cascada, con la venta masiva del 5 de noviembre de 2026 como
+1888|La noticia inicia la caída. Esta lección muestra lo que pasa después dentro de un exchange: compradores que se retiran, deslizamiento, apalancamiento y la liquidación en cascada, con la venta masiva del 5 de noviembre de 2026 como ejemplo.
+1889|Siguiente
+1890|Siguiente lección
+1891|A continuación: dónde está realmente tu dinero
+1892|Ninguna opción es la mejor para todos. Mucha gente usa más de una, cada una para un fin distinto.
+1893|Ninguna empresa es dueña de Bitcoin o Ethereum y, aun así, sus registros siguen creciendo correctamente. Esta lección explica cómo mineros y validadores mantienen honestas las cuentas, y por qué eso cuesta
+1894|Ninguna empresa es dueña de Bitcoin o Ethereum y, aun así, sus registros siguen creciendo correctamente. Esta lección explica cómo mineros y validadores mantienen honestas las cuentas, y por qué eso cuesta algo.
+1895|Sin marketing, sin promoción, sin venta de tokens. Estos años se dedicaron a definir qué debía ser realmente Ditoman, a lo largo de varios borradores del whitepaper.
+1896|Sin restablecimiento; solo la frase de recuperación
+1897|Ninguna autoridad única controla la red ni es dueña de la participación.
+1898|No. Ditoman es un proyecto educativo. Nada de lo que hay aquí es asesoramiento de inversión, y las lecciones están pensadas para ayudarte a decidir por ti mismo.
+1899|Nadie
+1900|Nadie legítimo te pedirá nunca la frase. Ni el soporte, ni una empresa de billeteras, ni Ditoman.
+1901|Nadie lo vota y nadie puede apagarlo en ese momento. Forma parte de las reglas que comprueba cada nodo.
+1902|Nodo
+1903|Los nodos comprueban las reglas, aunque no produzcan bloques.
+1904|Nodos: quienes comprueban
+1905|Ninguno
+1906|Ninguno (renunciado a 0x0)
+1907|Ninguno de los tres paga intereses por estar quieto. Es una diferencia real frente a un depósito, un bono o un negocio.
+1908|Ninguna de estas preguntas te dirá qué token tendrá éxito. Nada lo hace, y quien diga lo contrario está vendiendo algo.
+1909|No se trata de «¿dolería?». Se trata de si tu vida puede seguir con normalidad si esta cantidad llega a cero y nunca vuelve.
+1910|No toda pérdida implica a un delincuente. La gente también pierde dinero enviando por la red equivocada, pegando la dirección equivocada o perdiendo el papel con su frase de recuperación. Las lecciones 13 y 16 lo tratan, y el hábito es el mismo en todos los casos: ve despacio, comprueba dos veces, prueba con una cantidad pequeña.
+1911|No el nombre. No el logo. ¿Qué hace este proyecto y qué tendría que lograr para que el token importe?
+1912|Nota
+1913|Nada cambió en el tipo. Solo cambió la base a la que se aplica. La CFPB añade que una capitalización más frecuente, un tipo más alto o aportar más al capital hacen crecer el ahorro más rápido.
+1914|Nada de lo que hay aquí es una recomendación de compra o venta.
+1915|Fíjate en las palabras «puede» y «podría». Son presiones, no reglas.
+1916|Ahora
+1917|Ahora aplícalo a nosotros
+1918|Ahora introduce la dirección de tu billetera para obtener tu código de recompensa.
+1919|Ahora júntalo todo. Las malas noticias hacen que los compradores se retiren. Una pequeña caída activa las primeras liquidaciones. Esas ventas forzosas golpean un libro de órdenes poco profundo, y el precio resbala más. El precio más bajo activa el siguiente grupo de liquidaciones, y así sucesivamente. Por eso las cripto pueden caer en minutos mucho más de lo que justificaría la noticia, y por eso a menudo rebotan cuando terminan las ventas forzosas.
+1920|Sala de prensa de Nubank: más de 112 millones de clientes (22 de enero de 2026)
+1921|Oficial
+1922|Enlaces oficiales
+1923|Tipo oficial: SANA (casas de cambio de los bancos) hasta noviembre de 2018, NIMA (sistema de exportadores) desde entonces. Los huecos en la línea oficial son periodos en que la fuente no publicó. Fuente: cierres diarios de TGJU.
+1924|Sitio web oficial:
+1925|Oficial, el más reciente
+1926|Uso sin conexión:
+1927|Petróleo, gas, electricidad, renovables, agua
+1928|Más antiguo
+1929|El 29 de octubre de 2026, todos los tokens de liquidez TMN/BNB de la billetera principal del proyecto fueron
+1930|El 29 de octubre de 2026 bloqueamos todos los tokens LP TMN/BNB de la billetera principal del proyecto en PinkLock, en BNB Smart Chain: primero 0,2277 LP y luego, tras añadir más liquidez en BNB el mismo día, un total de 0,3461 LP del pool de PancakeSwap V2. La fecha de desbloqueo es el 29 de octubre de 2027. El registro es público:
+1931|El 5 de noviembre de 2026, ¿qué parte aproximada de las liquidaciones cripto de unos 1.000 millones de dólares eran apuestas al alza?
+1932|El jueves 5 de noviembre de 2026, las acciones tecnológicas cayeron por el temor al gasto en IA. El Nasdaq 100 bajó cerca de un 5,5% en un día y el Nasdaq Composite un 4,9%. Bitcoin cayó por debajo de 76.000 dólares y tocó unos 75.500. En esas mismas 24 horas, los datos de CoinGlass mostraron unos 1.000 millones de dólares en posiciones cripto apalancadas cerradas a la fuerza, que afectaron a más de 201.000 operadores. Alrededor del 89%, unos 927 millones de dólares, eran apuestas a que los precios subirían.

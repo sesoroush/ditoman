@@ -1,0 +1,89 @@
+1770|Muitas corretoras cripto permitem negociar com alavancagem. Com alavancagem de 10×, 100 dólares do seu próprio dinheiro (a sua
+1771|Muitos guias usam três a seis meses de despesas essenciais como regra prática, e a pergunta dos três meses da Reserva Federal segue a mesma ideia. Trate-a como uma direção, não como um teste.
+1772|Muitas coisas mexem na oferta e na procura: quanto um país vende ao estrangeiro e compra ao estrangeiro, as taxas de juro, a inflação e as expectativas sobre o futuro. As expectativas importam mais do que se pensa, porque os operadores agem com base no que acreditam que vai acontecer, não só no que já aconteceu.
+1773|Muitos operadores usam dinheiro emprestado para comprar ativos de risco. Taxas mais altas encarecem esse crédito e reduzem o dinheiro que entra nos mercados. Taxas mais baixas fazem o contrário.
+1774|Calendário dos mercados
+1775|Dados de mercado
+1776|Revisão de mercado
+1777|Mercados
+1778|Mercados esta noite
+1779|Os mercados fecham à noite
+1780|Os mercados não esperam pelo anúncio. Adivinham-no antes, e os preços mexem com a aposta. Quando a decisão chega, o resultado esperado já está «descontado».
+1781|Os mercados reagem a surpresas
+1782|Mercados • Como os preços se movem
+1783|Mercados • Risco
+1784|Madura, usada há anos
+1785|Oferta máxima
+1786|Mayer Brown: Lei GENIUS promulgada (18 de julho de 2025)
+1787|Media
+1788|Conheça as empresas do Irão
+1789|Mehr News: taxas de pagamento com cartão no Irão e quem as pagou
+1790|Menu
+1791|Metais
+1792|Micron, SK hynix, AMD, Arista e Marvell: números oficiais, estrutura acionista, a saída de Jensen Huang e cenários até 2030.
+1793|Falha global da Microsoft: 16 horas sem email nem Teams
+1794|Falha global da Microsoft
+1795|Mineradores
+1796|Mineradores e validadores propõem blocos, mas qualquer computador que corra o software, um nó, pode verificar as regras. Um bloco que viole as regras é rejeitado, mesmo que tenha sido caro de produzir.
+1797|Mineradores, validadores e nós: como desconhecidos chegam a acordo.
+1798|Mineração e dificuldade
+1799|Função mint
+1800|Cunhagem
+1801|Modo
+1802|Autonomia monetária
+1803|Dinheiro e cripto, na prática
+1804|Dinheiro e pagamentos:
+1805|O dinheiro nunca pode ser digital
+1806|O dinheiro não atravessa fronteiras. As mensagens sim, e os bancos ajustam as contas que têm uns com os outros.
+1807|O dinheiro não viaja
+1808|Dinheiro retido mas a compra falhou:
+1809|Literacia financeira
+1810|O dinheiro parado perde poder de compra ao ritmo da inflação. A tabela mostra o que 100 milhões em numerário ainda compram ao fim de alguns anos.
+1811|Dinheiro • Orçamento
+1812|Dinheiro • Bancos centrais
+1813|Dinheiro • Custódia
+1814|Dinheiro • Moedas digitais
+1815|Dinheiro • Taxas de câmbio
+1816|Dinheiro • Inflação
+1817|Dinheiro • Juros
+1818|Dinheiro • Rede de segurança
+1819|Dinheiro • Stablecoins
+1820|Prestação mensal
+1821|Revisão mensal
+1822|Mais controlo, mais responsabilidade
+1823|Mais dinheiro do que bens:
+1824|Mais pessoas usam o que ela faz
+1825|Mais temas
+1826|A maioria das fintechs não tem licença bancária. Constroem o ecrã em que toca, e por trás do ecrã um banco licenciado guarda o dinheiro. Vê a aplicação. O banco é o motor por baixo.
+1827|A maioria das perdas não vem de erros complicados. Vem de comprar algo que ninguém envolvido sabia descrever com clareza.
+1828|A maioria das perdas começa com persuasão, não com pirataria.
+1829|A maior parte do dinheiro pode ser criada sempre que o emissor decide. A Bitcoin não. A sua emissão é um calendário, e o calendário é igual para todos.
+1830|Acima de tudo, não negoceie o título. Compreenda o sistema em que o título se insere.
+1831|A maioria das pessoas sente que o dinheiro desaparece antes do fim do mês. Esta lição mostra uma forma simples de ver para onde vai, usando uma regra prática bem conhecida e um
+1832|A maioria das pessoas sente que o dinheiro desaparece antes do fim do mês. Esta lição mostra uma forma simples de ver para onde vai, usando uma regra prática bem conhecida e um hábito de um mês.
+1833|A maioria das pessoas pensa que a Bitcoin foi criada para ser uma moeda digital.
+1834|A maioria das pessoas pensa que a blockchain é sobre cripto.
+1835|A maioria das pessoas pensa que a blockchain é só sobre criptomoedas.
+1836|A maioria das pessoas que perde cripto não é pirateada. É persuadida, apressada ou comete simplesmente um pequeno erro. Esta lição aborda as cinco formas mais comuns de perder dinheiro e os hábitos simples que travam cada
+1837|A maioria das pessoas que perde cripto não é pirateada. É persuadida, apressada ou comete simplesmente um pequeno erro. Esta lição aborda as cinco formas mais comuns de perder dinheiro e os hábitos simples que travam cada uma.
+1838|A maioria de quem perde dinheiro num token não escolheu o projeto errado. Nunca verificou as coisas certas.
+1839|A maioria das stablecoins assenta num de três tipos de respaldo. A imagem abaixo mostra-os lado a lado.
+1840|Mova o que restar para uma nova carteira com uma nova frase de recuperação. Guarde os hashes das transações e as mensagens. Denuncie à plataforma envolvida e à polícia do seu país.
+1841|Mova primeiro a poupança, no dia em que o rendimento chega.
+1842|Movimentar dinheiro:
+1843|Mito 1: uma stablecoin é sempre segura, como dinheiro no banco.
+1844|Mito 2: «totalmente garantida» significa que não pode falhar.
+1845|Mito 3: todas as stablecoins funcionam da mesma forma.
+1846|Nome
+1847|Indique um limite do que um contrato pode saber.
+1848|Indique um risco de guarda para cada um dos três.
+1849|Indique formas práticas de reduzir estes riscos.
+1850|Indique as questões de desenho que decidem se uma CBDC é segura para os utilizadores.
+1851|Indique os cinco intervenientes num pagamento com cartão e o que cada um faz.
+1852|Indique as quatro funções de um banco.
+1853|Indique os hábitos que mantêm segura uma frase de recuperação.
+1854|Indique os três principais tipos de respaldo e o principal risco de cada um.
+1855|Indique três bancos centrais antigos e os seus anos.
+1856|Indique três áreas onde a IA já trabalha nas finanças.
+1857|Indique o que um bloqueio não lhe diz sobre um token.
+1858|Praça Naqsh-e Jahan em Isfahan com uma flor de azulejo e rosas

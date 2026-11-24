@@ -1,0 +1,90 @@
+1049|Dados
+1050|Onde a dívida e a inflação se encontram
+1051|Descentralização
+1052|Origem descentralizada
+1053|Decida antecipadamente o que conta como emergência.
+1054|Decida antecipadamente o que conta como emergência. Uns saldos numa coisa que queria não são uma.
+1055|Decida antecipadamente o que provaria que a ideia está errada.
+1056|Decida antecipadamente o que lhe diria que a ideia não resultou. Uma promessa não cumprida. Uma equipa que fica em silêncio. Um uso que nunca aparece. Escreva-o antes de comprar, enquanto ainda pensa com clareza.
+1057|Decidir a saída antecipadamente
+1058|Casas decimais
+1059|Tomada de decisões
+1060|Recusado:
+1061|Decrypt: IA e usurpação de identidade nas burlas cripto de 2025, Chainalysis
+1062|Decrypt: estimativa da Chainalysis das perdas com burlas cripto em 2025 (14 de janeiro de 2026)
+1063|Deepfake
+1064|Caso de fraude com deepfake de um CEO
+1065|Defina um contrato inteligente numa frase.
+1066|Defina taxa de câmbio.
+1067|Os atrasos vêm dos fusos horários, dos sistemas fechados e das verificações de conformidade.
+1068|A procura foi impulsionada pela Anchor, uma plataforma de empréstimos que pagava cerca de 18 a 20 por cento ao ano nos depósitos de UST. Esse rendimento estava muito acima do normal e não vinha de empréstimos comuns. No início de maio de 2022, o UST tinha descido para cerca de 98 cêntimos, e alguns grandes detentores começaram a retirar-se.
+1069|Perda de paridade (depeg)
+1070|Depende de
+1071|Depende do parceiro
+1072|Implementado
+1073|Implementação
+1074|O depósito como crédito
+1075|Garantia de depósitos
+1076|Descreva, por degraus, que tamanho pode ter.
+1077|Descreva a dimensão do mercado cambial.
+1078|Descreva como funcionam a alavancagem e a margem, e quando acontece uma liquidação.
+1079|Descreva a prova de participação e o slashing.
+1080|Descreva a prova de trabalho em palavras simples.
+1081|Descreva hábitos seguros para usar IA com dinheiro.
+1082|Descreva o truque do endereço parecido e como o evitar.
+1083|Descreva três formas de as mudanças de juros chegarem à Bitcoin.
+1084|Descreva o que representam os tokens LP.
+1085|Descreva o que é uma confirmação.
+1086|Descreva o que faz um banco correspondente.
+1087|Descreva o que fazem uma chave privada e uma frase de recuperação.
+1088|Descreva o que torna o dinheiro programável.
+1089|Descreva porque a poupança deve ser separada primeiro.
+1090|Descrito como o banco central mais antigo do mundo
+1091|Os detalhes das funções foram tirados do Banco de Inglaterra como exemplo típico; outros bancos centrais diferem. Os níveis atuais das taxas de juro não são indicados porque mudam. Explicação geral, não aconselhamento financeiro.
+1092|Deutsch (em breve)
+1093|Deutsch · em breve
+1094|=
+1095|=
+1096|Token DiToman (TMN) | Contrato 0x86a5...790d
+1097|Sites diferentes mostram ofertas diferentes.
+1098|=
+1099|Digital Commerce 360: a primeira transação por agente da Mastercard e o lançamento do Agent Pay (31 de outubro de 2025)
+1100|Dólares digitais em Istambul
+1101|Dólares digitais: o que os respalda?
+1102|Banca digital
+1103|Dólares digitais em Istambul
+1104|Dólares digitais, dinheiro do banco central, novos bancos e IA.
+1105|Dólares digitais: o que os respalda?
+1106|Dólares digitais: o que os respalda? Imagem da lição Ditoman
+1107|Dólares digitais: o que os respalda? | Ditoman Learn
+1108|Registo digital
+1109|Rial digital
+1110|Dirham
+1111|Descubra as ideias mais profundas por trás da blockchain e dos sistemas de valor digital.
+1112|=
+1113|Ditoman (TMN) | O Irão está a construir. Nós documentamos.
+1114|=
+1115|Ditoman Learn, lição 01. O que é a blockchain? Uma lição bilingue sobre confiança, transparência, descentralização, segurança e sistemas do futuro.
+1116|Ditoman Learn, lição 02. Porque importa a blockchain. Uma lição bilingue sobre confiança, instituições, verificação, transparência, sistemas e a infraestrutura digital do futuro.
+1117|Ditoman Learn, lição 05. Cinco verificações gratuitas que qualquer pessoa pode fazer a qualquer token antes de interagir com ele: verificação do contrato, distribuição pelos detentores, propriedade, funções escondidas e liquidez.
+1118|Ditoman Learn | Lição 04 | Quem é Satoshi Nakamoto?
+1119|Ditoman Learn • Construído com estrutura, movido pela descoberta.
+1120|A lição 04 da Ditoman explica quem é Satoshi Nakamoto, porque o mistério importa e porque a ideia por trás da Bitcoin se tornou mais importante do que a identidade do seu criador.
+1121|Lição 07 da Ditoman: como as grandes notícias movem a Bitcoin
+1122|Logótipo da Ditoman
+1123|A Ditoman é um projeto educativo. Nada nesta página é aconselhamento financeiro ou de investimento, nem promessa de valor futuro. Os ativos digitais envolvem risco elevado. Não incentivamos ninguém a comprar TMN. Antes de interagir com qualquer token, verifique você mesmo o endereço do contrato, a rede, a liquidez e a distribuição pelos detentores.
+1124|A Ditoman tira o nome do toman, o nome corrente do dinheiro iraniano: um «toman digital». O TMN foi implementado na BNB Smart Chain em fevereiro de 2022 com uma pergunta por trás: pode o próprio conhecimento ter valor real?
+1125|A Ditoman não toma posição política sobre a política monetária de nenhum governo. Explicamos como os sistemas funcionam e o que mostram os dados.
+1126|A Ditoman não toma posição sobre eleições, governos ou políticas de nenhum lado. Explicamos como os sistemas funcionam e deixamos as opiniões consigo.
+1127|Ditoman • Aprender. Ligar. Evoluir.
+1128|Ditoman • Aprender. Ligar. Evoluir. • Desde 2022
+1129|O piloto da Ditoman para quem quer aprender cripto a sério. Leia as lições, faça o teste de dez perguntas e, com pelo menos oito respostas certas, recebe uma recompensa em TMN.
+1130|Ditoman: <span class="spectrum">as luzes do Irão estão acesas</span>
+1131|Diversificação
+1132|Não ligue a sua carteira principal.
+1133|Não decida nos primeiros minutos de uma queda; a venda forçada muitas vezes acaba tão depressa como começa.
+1134|Não julgue os números. Este primeiro mês serve só para ver.
+1135|Faça isto
+1136|Documentar o que pessoas e empresas iranianas construíram, com uma fonte para cada número.
+1137|Não depende de um só
+1138|Os 5% aplicam-se outra vez a 1 000 ou a 1 050? Essa pequena pergunta é toda a diferença entre juro simples e composto.

@@ -1,0 +1,76 @@
+400|Agente
+401|Pagos por agentes
+402|Acordar una palabra clave familiar
+403|Agrotecnología
+404|Agroindustria
+405|Los altavoces de los aeropuertos ya te hablan directamente al oído
+406|Modelo algorítmico
+407|Modelo algorítmico:
+408|Todas
+409|Todas las lecciones
+410|Todas las lecciones y el itinerario de aprendizaje
+411|Todos los precios y gráficos →
+412|Los tres se mueven, pero no en la misma medida.
+413|=
+414|=
+415|Casi toda la oferta en circulación está en una billetera del fundador, visible para cualquiera en BscScan.
+416|Casi todos los países tienen uno, y las noticias lo mencionan a diario. Esta lección explica con palabras sencillas qué es un banco central, de dónde salió la idea y cuáles son sus principales funciones
+417|Casi todos los países tienen uno, y las noticias lo mencionan a diario. Esta lección explica con palabras sencillas qué es un banco central, de dónde salió la idea y cuáles son sus principales funciones.
+418|¿Compro porque lo entiendo o porque tengo miedo de quedarme fuera?
+419|=
+420|Importe
+421|Importe recibido
+422|¿Un imperio sin bandera?
+423|Un sistema iraní de clasificación con IA se encuentra con un comercio de exportación centenario.
+424|Un medicamento iraní autorizado en toda Europa
+425|Un medicamento iraní autorizado en toda Europa
+426|Un robot quirúrgico iraní: qué está documentado y qué sigue siendo afirmación del fabricante.
+427|Un catalizador de EO fabricado en Irán hace funcionar ya la unidad de glicol de Morvarid Petrochemical a plena capacidad.
+428|Una dirección es como un número de cuenta: una larga cadena de letras y cifras que identifica una billetera. En Ethereum y BNB Smart Chain empieza por 0x y tiene 42 caracteres. Las de Bitcoin y Tron son distintas.
+429|Una dirección es pública. Compartirla es seguro, porque solo permite que te envíen. Lo que debe quedar en secreto es la clave privada o la frase de recuperación de la lección 13.
+430|La dirección dice dónde. La red dice por qué camino. Ambas deben coincidir con las del receptor.
+431|Un fondo de emergencia es dinero apartado solo para gastos necesarios e imprevistos: una reparación repentina, una factura médica, un hueco entre empleos. No es para vacaciones, rebajas ni inversiones.
+432|Un fondo de emergencia convierte una crisis en una molestia.
+433|¿Un imperio sin bandera? La inversión de China en el exterior
+434|Un saldo en un exchange es un derecho frente a una empresa, normalmente sin garantía.
+435|Un saldo en un exchange también es una promesa
+436|Un tipo de cambio es el precio de una moneda en otra.
+437|El tipo de interés es el precio del dinero
+438|Un informe antiguo solo habla del pasado.
+439|Tienda de apps Android para hablantes de persa; más de 500.000 apps
+440|Tasa anual con comisiones incluidas
+441|Responde las diez preguntas.
+442|Cualquier retirada futura de oferta será una transferencia desde las billeteras del fundador a una dirección pública de quema, con cada hash de transacción publicado en esta página. Estas transferencias sacan tokens de circulación pero no cambian el totalSupply que muestra el contrato, y así lo describiremos.
+443|Todo libro contable necesita una regla: todos deben estar de acuerdo sobre la página siguiente. Si dos personas pudieran añadir dos páginas siguientes distintas, el dinero podría gastarse dos veces.
+444|Ahora cualquiera puede crear nuevos tokens
+445|Aplica la prueba de una línea a cualquier activo.
+446|Hazte tres preguntas antes de confiar en cualquier stablecoin.
+447|Aplicar la comprobación 5 a TMN
+448|El andamio óseo de magnesio y óxido de grafeno de la Universidad de Arak: resultados de laboratorio, cómo llegaron Alemania y Corea al mercado, el 5.º puesto de Irán en el campo y el camino al quirófano.
+449|¿Hay restricciones ocultas?
+450|En camino; reglas en redacción
+451|Inteligencia artificial
+452|La inteligencia artificial ya decide si tu pago con tarjeta parece sospechoso, y empieza a comprar y pagar en nombre de la gente. Esta lección separa lo que es real hoy de lo que aún es promesa, y nombra los nuevos riesgos
+453|La inteligencia artificial ya decide si tu pago con tarjeta parece sospechoso, y empieza a comprar y pagar en nombre de la gente. Esta lección separa lo que es real hoy de lo que aún es promesa, y nombra los nuevos riesgos con claridad.
+454|La inteligencia artificial, o IA, es un nombre amplio para el software que aprende patrones a partir de datos en lugar de seguir solo reglas fijas. Merece una mirada atenta, porque en torno al dinero las historias esperanzadoras y las inquietantes son en parte ciertas.
+455|=
+456|Como explicó la lección 27, los mineros reciben una recompensa por cada bloque que añaden. El halving reduce esa recompensa a la mitad, automáticamente, cada 210.000 bloques. A un bloque cada diez minutos, eso son unos cuatro años.
+457|Haz cuatro preguntas sobre cualquier informe de reservas: ¿qué se tiene? ¿Cuánto es efectivo? ¿Quién lo comprueba? ¿Con qué frecuencia se publica?
+458|Pídele que lo explique y luego comprueba los datos importantes
+459|Haz una pregunta: ¿este activo tiene su propia cadena o vive en la de otro? Eso lo resuelve.
+460|Pregunta al receptor
+461|Pregunta de dónde sale el dinero.
+462|Pregunta por qué se tomó una decisión
+463|=
+464|=
+465|Asistente
+466|Al 5% sobre 1.000 durante 20 años: 2.000 con interés simple frente a unos 2.653 con compuesto.
+467|En esencia, la blockchain es un sistema para registrar información de forma transparente, segura y difícil de cambiar.
+468|En la dirección muerta
+469|Al final del día se reúnen y suman los pagos aprobados. Esto es la
+470|A final de mes, reparte los pagos en tres montones: lo que debes pagar, lo que elegiste pagar y el dinero que apartaste. A la mayoría le sorprende el tamaño de al menos un montón.
+471|Atlantic Council, monitor de monedas digitales de bancos centrales
+472|Atestación frente a auditoría
+473|Auracast en Fráncfort, Múnich y Brighton, el mercado global, la IA, las empresas, los estándares y la oportunidad para Irán.
+474|Autorización
+475|La autorización es instantánea. La compensación y la liquidación tardan horas o días.

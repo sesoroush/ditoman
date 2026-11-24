@@ -1,0 +1,77 @@
+1933|Num empréstimo pago mensalmente, a taxa anual real é aproximadamente o dobro da percentagem simples.
+1934|Noutra blockchain
+1935|Na sua própria blockchain
+1936|Dados on-chain
+1937|Entrada e saída (on-ramp e off-ramp)
+1938|Uma vez por mês, sente-se dez minutos com três perguntas. Para onde foi a maior parte do dinheiro? O que me surpreendeu? Qual é a única mudança que vou experimentar no próximo mês?
+1939|Depois de implementado, é difícil de mudar
+1940|Depois de implementado, nenhum utilizador o controla e, por defeito, não pode ser apagado.
+1941|Depois de saber o que a inflação faz, a pergunta seguinte é onde se guarda o dinheiro e quem o controla. A lição 13 compara uma conta bancária, uma conta numa corretora e uma carteira pessoal.
+1942|Um pagamento com cartão, passo a passo
+1943|Uma mudança chega. Os orçamentos falham quando tentam resolver tudo de uma vez.
+1944|Uma empresa controla todos os registos
+1945|Um único jazigo em Yazd contém quase tanto zinco como todas as reservas do Peru.
+1946|Um documento define o rumo. Leia-o antes de confiar em qualquer coisa que dizemos.
+1947|Um mês de despesas essenciais
+1948|Um truque mais recente fica entre o erro e a burla. Um burlão envia um valor ínfimo de um endereço que começa e acaba como um que usa. Mais tarde, copia esse endereço parecido do histórico em vez do verdadeiro. Por isso, copie endereços da fonte, não de transações passadas.
+1949|Um dos maiores produtores de etileno e polietileno do Irão, em Asaluyeh, que exporta mais de 70% da produção
+1950|Uma regra editorial permanente nos três: conhecimento real e conquistas reais, sem comentário político de nenhum lado.
+1951|Um pool: TMN / WBNB na PancakeSwap V2, criado em fevereiro de 2022.
+1952|Uma compra, cinco intervenientes e dinheiro que chega mais tarde.
+1953|Uma pergunta distingue uma moeda de um token.
+1954|Um aviso da norma
+1955|Uma regra prática bem conhecida: 50/30/20
+1956|Só os bancos podem mover valor online
+1957|Use apenas dinheiro cuja perda não desequilibre o orçamento da casa.
+1958|Só você
+1959|Abrir publicação do Instagram
+1960|Abra uma aplicação bancária e vê um número. Abra uma aplicação de corretora e vê outro. Abra uma carteira cripto e há um terceiro. Todos parecem «o meu dinheiro». Não são o mesmo tipo de coisa.
+1961|Open banking
+1962|O open banking permite que outras aplicações usem os seus dados bancários, apenas com a sua autorização.
+1963|Abrir em tamanho real
+1964|Abrir menu
+1965|Abrir agora
+1966|Abra o separador Holders. Veja quanto da oferta total controlam as maiores carteiras.
+1967|Abrir o mapa completo ·
+1968|Abrir o guia
+1969|Abra o registo do bloqueio e confirme quatro coisas: o endereço do par corresponde ao pool real do token, o valor bloqueado, a data de desbloqueio e que parte do pool inteiro esse valor representa. Um bloqueio que acaba na próxima semana, ou que cobre uma parte ínfima do pool, significa muito pouco.
+1970|Abra o livro de ordens de qualquer moeda numa corretora que use. Some quanto está em ofertas de compra até 1% e até 5% do preço atual. Pergunte-se: se vendesse agora toda a minha posição a mercado, que preço médio obteria?
+1971|Abra o token num explorador de blocos como a BscScan e vá ao separador Contract. Se o código-fonte estiver verificado, verá código legível e uma marca de confirmação. Se não estiver, só vê código de máquina, o que significa que ninguém fora da equipa consegue ler o que o token realmente faz.
+1972|Aberto, verificado
+1973|Espelhos em órbita, as contas da energia, o uso do solo, o alarme dos astrónomos e quatro cenários para o futuro.
+1974|Livro de ordens e profundidade de mercado
+1975|O dinheiro comum não se importa com o que faz com ele. Dinheiro programável é dinheiro com regras escritas nele. A regra viaja com o próprio dinheiro, não com a pessoa.
+1976|Organizar:
+1977|Publicação educativa original do Ditoman no Instagram:
+1978|Outras cadeias têm as suas versões. A BNB Smart Chain usa o BEP-20, que segue a mesma ideia. O TMN, o toman digital, é um token BEP-20 na BNB Smart Chain, como descrito na sua página neste site.
+1979|Outras cadeias, normas semelhantes
+1980|Fora de circulação
+1981|Proprietário
+1982|Propriedade
+1983|Renúncia à propriedade
+1984|A propriedade foi renunciada e as funções exclusivas do proprietário já não podem ser usadas
+1985|A propriedade foi depois renunciada, o que fechou para sempre tanto a cunhagem como a função de queima do contrato. Ninguém pode voltar a criar TMN.
+1986|Pool da PancakeSwap
+1987|Indústrias de papel
+1988|Papel e cartão
+1989|O colapso de um banco no Paraguai
+1990|O colapso do banco Ueno no Paraguai
+1991|=
+1992|=
+1993|Banco parceiro
+1994|Os movimentos de preço passados são exemplos de como cada ativo se comportou. Não preveem o que vem a seguir.
+1995|Cole o endereço
+1996|Pausa, lista negra, lista branca
+1997|Pague-se primeiro a si
+1998|As redes de pagamento estão a preparar-se para isto. A Mastercard disse que o primeiro pagamento feito por um agente de IA ocorreu na sua rede no terceiro trimestre de 2025, e tem vindo a lançar um serviço que regista e verifica esses agentes. A Visa está a construir ferramentas semelhantes. Alguns projetos cripto estão a desenhar pagamentos entre agentes de software com stablecoins.
+1999|Pagamentos • Cartões
+2000|Pagamentos • Internacionais
+2001|Paridade (peg)
+2002|Penalização por fraude
+2003|As pessoas discutem qual é o melhor como se houvesse uma só resposta. Não há, porque os três são coisas de tipo diferente. Podemos compará-los de forma justa com as mesmas quatro perguntas.
+2004|As pessoas usam as duas palavras como se fossem iguais. Não são. Esta lição dá um teste simples e mostra porque importa, incluindo onde o TMN
+2005|As pessoas usam as duas palavras como se fossem iguais. Não são. Esta lição dá um teste simples e mostra porque importa, incluindo onde o TMN se encaixa.
+2006|Carteira pessoal (autocustódia)
+2007|Carteira cripto pessoal
+2008|Carteira pessoal
+2009|O livro de 2016 de Peter Zeihan sobre o xisto e um mundo sem a América como polícia, com um balanço das suas previsões.

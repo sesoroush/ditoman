@@ -1,0 +1,44 @@
+1494|Si las piezas encajan, el panorama es esperanzador: un asistente que busca un tipo mejor, avisa antes de una comisión, detecta una estafa antes de que respondas y explica cada paso en tu idioma. La buena ayuda financiera, que antes era cosa de ricos, podría volverse corriente.
+1495|Si la razón por la que compras hoy es el miedo a cómo te sentirás mañana, eso no es análisis. Es presión.
+1496|Si la billetera o el exchange del receptor espera una red y envías por otra, puede que las monedas nunca aparezcan, y recuperarlas va de difícil a imposible.
+1497|Si se cumplen las reglas, se actualiza el estado
+1498|Si no puedes explicarlo en dos o tres frases sencillas a alguien que no sabe nada de cripto, aún no lo entiendes. No es motivo de vergüenza. Es motivo para esperar.
+1499|Si olvidas la contraseña
+1500|Si pierdes la frase de recuperación,
+1501|Si envías a la dirección o la red equivocadas,
+1502|Imagina un contrato sencillo: «Si el remitente paga el precio, dale una entrada y registra que la entrada es suya.» No hay cajero. La red comprueba el pago y el programa actualiza el registro.
+1503|Inmutabilidad
+1504|Suplantación de identidad
+1505|Importante:
+1506|Imposible
+1507|En 2022, TerraUSD (UST) era una de las stablecoins más conocidas. Era un token algorítmico: no tenía respaldo en dólares ni en ningún otro activo. Mantenía la paridad mediante un par de tokens. Siempre se podía acuñar un UST quemando el equivalente a un dólar en LUNA, y un UST se podía canjear por LUNA por valor de un dólar. Ese era todo el mecanismo.
+1508|En dólares estadounidenses
+1509|En un régimen flotante, ¿qué fija principalmente el tipo?
+1510|En un pánico, un banco sano puede quedarse de repente sin efectivo porque todos quieren su dinero a la vez. El banco central puede prestarle contra buenas garantías. Esa es la idea del «banco de los bancos».
+1511|En una tienda puedes pagar con los billetes del país o con un vale que emitió la propia tienda. En el día a día ambos se llaman dinero, pero viven en sitios distintos.
+1512|En su libro de 2005 *All Your Worth*, la jurista estadounidense y luego senadora Elizabeth Warren describió un reparto sencillo del sueldo neto, el dinero que de verdad llega a tu cuenta después de impuestos.
+1513|En la lección 05 enumeramos cinco comprobaciones que hacer con cualquier token antes de tocarlo. La quinta era: ¿hay liquidez real y está bloqueada? Hoy lo hicimos con nuestro propio token. Esta lección explica qué hicimos y qué significa.
+1514|En la lección 07 vimos cómo las noticias cambian lo que espera el mercado. Esta lección va un paso más allá: cuando llega la noticia, ¿qué pasa dentro de un exchange que puede convertir una bajada normal en un desplome? La respuesta corta son tres cosas a la vez: compradores nerviosos, libros de órdenes poco profundos y dinero prestado.
+1515|En la mayor parte del mundo la red es Visa o Mastercard. En Irán, Shaparak conecta los datáfonos y las pasarelas online con los bancos, y Shetab conecta a los bancos entre sí.
+1516|En curso
+1517|En la prueba de trabajo, quien controle la mayor parte de la potencia de minería podría reescribir la historia reciente. Se llama ataque del 51%. Requiere recursos enormes, y el objetivo es más débil cuanto más pequeña es la red.
+1518|En la regla 50/30/20, ¿qué representa el 20?
+1519|En la encuesta de 2024 de la Reserva Federal, ¿qué porcentaje de adultos de EE. UU. cubriría una emergencia de 400 dólares con efectivo o equivalente?
+1520|En la sección Read Contract, busca una función llamada owner. Si devuelve una dirección de billetera normal, esa persona aún controla las funciones exclusivas del propietario, que pueden incluir crear nuevos tokens.
+1521|En Estados Unidos, la Reserva Federal pregunta a los hogares cada año. En su encuesta de 2024, el 63% de los adultos dijo que cubriría un gasto de emergencia de 400 dólares con efectivo o equivalente. Y el 55% dijo haber apartado lo suficiente para tres meses de gastos.
+1522|En Estados Unidos, la Ley GENIUS se promulgó el 18 de julio de 2025. Creó el primer marco regulatorio federal para las stablecoins. La ley entra en vigor en la primera de dos fechas: 18 meses después de su promulgación o 120 días después de que los principales reguladores publiquen sus normas finales.
+1523|En segundo plano
+1524|En los próximos años, entender la blockchain no será útil solo para quien está en las cripto. Será importante para cualquiera que quiera entender la identidad digital, las finanzas, la propiedad, las infraestructuras, las cadenas de suministro, los sistemas de IA y el futuro de la confianza.
+1525|En el ejemplo, un euro más fuerte encareció la camisa para el estadounidense y un euro más débil la abarata. Para un hogar la misma lógica funciona al revés: cuando tu moneda se debilita, las importaciones y los viajes al extranjero se encarecen, y también lo que se fabrica con piezas importadas. La lección 12 mostró cómo la subida de precios se come el poder adquisitivo; el tipo de cambio es uno de los caminos por los que llega.
+1526|En la lección anterior vimos cómo comprobar un token: ¿está verificado el contrato?, ¿quién tiene la oferta?, ¿se pueden crear nuevos tokens?, ¿hay restricciones ocultas?, ¿hay liquidez real?
+1527|En los términos más sencillos, ¿qué es un tipo de interés?
+1528|En la billetera, elige la
+1529|Ingresos y sueldo neto
+1530|Grupo industrial
+1531|Industria y manufactura
+1532|Industria frente a mercados: usos, el déficit, el récord y el desplome de 2026, el oro y otros metales, y las perspectivas.
+1533|Industria, energía, minas, transporte, tecnología, turismo
+1534|Industria, energía, transporte, minas, tecnología, turismo
+1535|Inflación
+1536|La inflación también se capitaliza
+1537|La inflación es una subida general de los precios con el tiempo. Que un producto se encarezca no es inflación. Inflación es cuando el precio de la mayoría de las cosas sube a la vez, así que cada unidad de dinero compra menos.

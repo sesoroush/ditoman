@@ -1,0 +1,119 @@
+682|Les temps de bloc et les frais changent quand les réseaux sont mis à jour. Lisez toujours les frais et le réseau affichés dans votre propre portefeuille avant de confirmer.
+683|=
+684|La blockchain change le fonctionnement de la confiance
+685|La blockchain change cette structure.
+686|La blockchain, c'est une question de confiance.
+687|La blockchain n'est pas seulement une technologie.
+688|La blockchain ne concerne pas que les cryptomonnaies. C'est une nouvelle façon d'intégrer confiance, transparence et sécurité aux systèmes numériques.
+689|La blockchain ne sert qu'à échanger des coins
+690|La blockchain n'est utile qu'aux banques
+691|La blockchain compte parce qu'elle change le fonctionnement de la confiance. Elle déplace la confiance des institutions et des plateformes vers des systèmes transparents, vérifiables et décentralisés.
+692|La blockchain supprime le besoin de tous les systèmes
+693|Blockchain • Coins et tokens
+694|Blockchain • Minage et staking
+695|Blockchain • Contrats intelligents
+696|Bloomberg Opinion, John Authers : graphique de l'indice FTSE All-World (publication Instagram, novembre 2026)
+697|Bloomberg via BNN : Trump signe la loi sur les stablecoins
+698|Blubank (banque Saman)
+699|Résumé de livre
+700|Résumé de livre : Stop Letting Everything Affect You
+701|Résumé de livre : The Absent Superpower
+702|Empruntez pour des choses qui durent plus longtemps que les remboursements.
+703|Les deux visent à rendre la triche plus coûteuse que l'honnêteté.
+704|Les deux systèmes répondent à la même question : rendre la triche plus coûteuse que l'honnêteté.
+705|Agences
+706|Les agences ferment et les applications ouvrent. Cette leçon distingue ce que fait une banque de l'endroit où elle le fait, explique simplement les néobanques et l'open banking, et montre quels métiers ont encore besoin d'une banque derrière l'
+707|Les agences ferment et les applications ouvrent. Cette leçon distingue ce que fait une banque de l'endroit où elle le fait, explique simplement les néobanques et l'open banking, et montre quels métiers ont encore besoin d'une banque derrière l'écran.
+708|Pétrole Brent
+709|Pétrole Brent ($)
+710|Parcourir les leçons
+711|Page du contrat sur BscScan
+712|BscScan, contrat du token DiToman (TMN)
+713|BscScan, paire TMN/WBNB sur PancakeSwap (token LP)
+714|BscScan : explorateur de blocs de BNB Smart Chain
+715|Budget
+716|Construire la communauté
+717|Constituer le fonds en quatre étapes
+718|Mais la blockchain est bien plus que cela.
+719|Mais la commodité comporte un risque. Plus la réserve est faible, plus les dégâts sont grands quand la confiance se brise. La vitesse joue dans les deux sens : elle vous aide à entrer vite, et elle aide tout le monde à sortir vite.
+720|Mais étudier n'est pas lancer. Selon le même suivi, seuls trois pays en ont pleinement lancé une : les Bahamas, la Jamaïque et le Nigeria. Environ 41 projets pilotes sont en cours. Le yuan numérique chinois est le plus grand pilote au monde.
+721|Mais remarquez que vous n'avez pas eu les 100 millions entiers toute l'année. Vous les rendiez mois après mois, donc en moyenne vous n'en aviez que la moitié environ. Le taux annuel réel est donc à peu près le double de ce qu'il paraît, autour de 25 % dans cet exemple, pas 14.
+722|Mais les parties difficiles se déplacent aux deux bouts. L'expéditeur doit d'abord convertir sa monnaie locale en token, et le destinataire doit le reconvertir, généralement via une plateforme ou un intermédiaire avec ses propres frais, taux et règles. Et le token apporte les risques de la leçon 11 : l'émetteur, la réserve et la sortie.
+723|Taxe à l'achat / à la vente
+724|Achetez aujourd'hui, payez demain : opportunité ou piège de la dette ?
+725|Achetez aujourd'hui, payez demain : opportunité ou piège de la dette ? Image de la leçon Ditoman
+726|Achetez aujourd'hui, payez demain : opportunité ou piège de la dette ? | Ditoman Learn
+727|Écart d'achat et de vente
+728|Achetez maintenant, payez plus tard
+729|Taxe à l'achat / taxe à la vente
+730|Acheter aujourd'hui, payer demain
+731|Pouvoir d'achat
+732|Par défaut, qu'arrive-t-il à un contrat déployé ?
+733|C. 0,2 % par an
+734|=
+735|=
+736|C. 4 juillet 1776
+737|C. Une banque qui ne traite que de la crypto
+738|C. Un favori que vous avez enregistré vous-même
+739|C. Une banque centrale
+740|C. Une baisse du nombre de billets
+741|C. Un terme financier que vous voulez faire expliquer
+742|C. Un cadeau du magasin
+743|C. Une garantie de l'État
+744|C. Un bureau public qui approuve les virements
+745|C. Une obligation légale
+746|C. Un message du support
+747|C. Un nouveau coin
+748|C. Une imprimante
+749|C. Un deuxième téléphone dont vous n'aviez pas besoin
+750|C. Une part de la banque
+751|C. Un stablecoin
+752|C. Une remise sur les frais de trading
+753|C. Un type de compte bancaire
+754|C. Environ 0,41
+755|C. Environ 1 milliard de dollars
+756|C. Environ 12 ans
+757|C. Environ 89 %
+758|C. Modèle algorithmique avec un second token
+759|C. Toujours rentable
+760|C. Évite de dépendre de la réussite d'un seul actif
+761|C. Les banques qui se paient réellement entre elles
+762|C. Les banques refusent de le garder
+763|C. Battre les rendements des autres
+764|C. Parce que les décisions rapides sont toujours mauvaises
+765|C. Parce que les mois sont plus courts que les années
+766|C. Parce que l'actualité ne touche que la crypto
+767|C. Parce qu'une personne contrôle tout le réseau
+768|=
+769|C. Les mineurs de bitcoin
+770|C. Le temps de bloc
+771|C. La blockchain supprime le besoin de tous les systèmes
+772|C. Emprunter pour épargner
+773|C. Acheter en soldes
+774|C. Contrôle centralisé
+775|C. Choisir une entreprise comme chef
+776|C. Le contrôle et les données sont répartis sur un réseau
+777|C. Prise de décision
+778|C. Mes amis en ont-ils acheté ?
+779|C. Combien arrive exactement dans l'autre monnaie ?
+780|C. Remplacer entièrement la banque centrale
+781|C. Avoir une adresse
+782|C. Cacher chaque transaction pour toujours
+783|C. La vitesse de hausse de son prix
+784|C. Combien de langues il parle
+785|C. L'ignorer ; c'est une seconde arnaque
+786|C. Dans la facture de téléphone du destinataire
+787|C. Des intérêts prélevés aussi sur les intérêts précédents
+788|C. Son nom est-il court ?
+789|C. Il coûte toujours trois pour cent
+790|C. Il expire au bout d'un an
+791|C. Il baisse
+792|C. Cela rend le contrat invérifiable
+793|C. Cela augmente le taux
+794|C. Cela rend le token plus sûr
+795|C. Il fixe les taux de change
+796|C. Ses importations
+797|C. Sa propre blockchain
+798|C. Davantage de gens utilisent ce qu'il fait
+799|C. Jamais
+800|C. Non, rien ne change
