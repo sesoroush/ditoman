@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Everyone Is Asking the Wrong AI Question | همه درباره‌ی هوش مصنوعی سؤال را اشتباه می‌پرسند | Ditoman</title>
+<meta name="description" content="شواهد امسال درباره‌ی هوش مصنوعی و شغل‌ها: اخراج گسترده‌ای نیست، ولی وظیفه‌ها و راه ورود تازه‌کارها عوض می‌شود. چطور تغییر را درست بفهمیم. Ditoman report on AI and jobs: tasks, not jobs." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/ai-jobs-wrong-question.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/ai-jobs-wrong-question.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/ai-jobs-wrong-question.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/ai-jobs-wrong-question.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Everyone Is Asking the Wrong AI Question | همه درباره‌ی هوش مصنوعی سؤال را اشتباه می‌پرسند | Ditoman" />
+<meta property="og:description" content="شواهد امسال درباره‌ی هوش مصنوعی و شغل‌ها: اخراج گسترده‌ای نیست، ولی وظیفه‌ها و راه ورود تازه‌کارها عوض می‌شود. چطور تغییر را درست بفهمیم. Ditoman report on AI and jobs: tasks, not jobs." />
+<meta property="og:url" content="https://ditoman.com/ai-jobs-wrong-question.html" />
+<meta property="og:image" content="https://ditoman.com/social/ai-jobs-wrong-question/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/ai-jobs-wrong-question.html#article",
+   "mainEntityOfPage": "https://ditoman.com/ai-jobs-wrong-question.html",
+   "headline": "Everyone Is Asking the Wrong AI Question | همه درباره‌ی هوش مصنوعی سؤال را اشتباه می‌پرسند",
+   "description": "شواهد امسال درباره‌ی هوش مصنوعی و شغل‌ها: اخراج گسترده‌ای نیست، ولی وظیفه‌ها و راه ورود تازه‌کارها عوض می‌شود. چطور تغییر را درست بفهمیم. Ditoman report on AI and jobs: tasks, not jobs.",
+   "image": "https://ditoman.com/social/ai-jobs-wrong-question/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Everyone Is Asking the Wrong AI Question | همه درباره‌ی هوش مصنوعی سؤال را اشتباه می‌پرسند",
+     "item": "https://ditoman.com/ai-jobs-wrong-question.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/ai-jobs-wrong-question/card.webp" srcset="social/ai-jobs-wrong-question/card.webp 900w, social/ai-jobs-wrong-question/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Everyone is asking the wrong AI question" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/ai-jobs-wrong-question/en-card.webp" srcset="social/ai-jobs-wrong-question/en-card.webp 900w, social/ai-jobs-wrong-question/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Everyone is asking the wrong AI question" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Special report · AI and work</span><span lang="fa">گزارش ویژه · هوش مصنوعی و کار</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">همه درباره‌ی هوش مصنوعی سؤال را اشتباه می‌پرسند</h1>
+<h1 lang="en">Everyone is asking the wrong AI question</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">مسئله «کارم را می‌گیرد؟» نیست؛ وظیفه‌ها عوض می‌شوند. شواهد امسال و راه درست فهمیدن تغییر</p>
+<p class="subtitle" lang="en">The question is not “will it take my job?”; tasks are changing. This year’s evidence and how to read the change</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۳۲٪ ← ۱۴٪</b><b lang="en">32% → 14%</b><span lang="fa">انتظار کاهش نیرو در برابر کاهش واقعی (McKinsey)</span><span lang="en">expected headcount cuts vs actual (McKinsey)</span></div>
+<div class="stat"><b lang="fa">۱٪</b><b lang="en">~1%</b><span lang="fa">سهم اخراج‌ها از نیروی کار آمریکا در سپتامبر</span><span lang="en">layoffs as a share of the US workforce, September</span></div>
+<div class="stat"><b lang="fa">۴۱٪</b><b lang="en">41%</b><span lang="fa">وظیفه‌هایی که می‌توانند خودکار یا تقویت شوند</span><span lang="en">of tasks can be automated or augmented</span></div>
+<div class="stat"><b lang="fa">۱ از ۳</b><b lang="en">1 in 3</b><span lang="fa">آزمایش‌های هوش مصنوعی در شرکت‌ها موفق است</span><span lang="en">AI experiments in firms succeed</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>دو سال است یک سؤال همه‌جا تکرار می‌شود: «هوش مصنوعی کار ما را می‌گیرد؟» داده‌های امسال نشان می‌دهد سؤال را اشتباه می‌پرسیم. اخراج گسترده‌ای رخ نداده، ولی چیز دیگری دارد عوض می‌شود: <strong>وظیفه‌های داخل شغل‌ها و راه ورود تازه‌کارها.</strong> این گزارش می‌گوید شواهد چیست، چرا «کار را می‌گیرد» قاب غلطی است و چطور تغییر را درست بفهمیم.</blockquote>
+<h3>در یک نگاه</h3>
+<ul>
+<li><strong>ترس و واقعیت:</strong> در پیمایش‌های McKinsey، ۳۲٪ پیش‌بینی کرده بودند هوش مصنوعی نیرو کم می‌کند؛ ۱۴٪ کاهش واقعی گزارش دادند</li>
+</ul>
+<ul>
+<li><strong>اخراج:</strong> طبق داده‌های رسمی آمریکا، اخراج‌ها هنوز حدود ۱٪ نیروی کار است و گلدمن‌ساکس انتظار دارد بازار کار یک سال دیگر «کم‌استخدام، کم‌اخراج» بماند</li>
+</ul>
+<ul>
+<li><strong>جایی که واقعاً حس می‌شود:</strong> استخدام تازه‌کارها و فارغ‌التحصیلان</li>
+</ul>
+<ul>
+<li><strong>قاب درست:</strong> شغل مجموعه‌ای از وظیفه‌هاست و هوش مصنوعی اول وظیفه‌ها را عوض می‌کند</li>
+</ul>
+<h3><span class="check-number">1.</span> ترس بزرگ، واقعیت کوچک‌تر</h3>
+<p>سال‌هاست پیش‌بینی‌های بزرگی می‌شنویم. مثلاً مدیرعامل شرکت Anthropic در ۲۰۲۵ گفت هوش مصنوعی ممکن است در یک تا پنج سال نیمی از شغل‌های یقه‌سفیدِ سطح ورودی را حذف کند.</p>
+<p>داده‌ها تاکنون چه می‌گویند؟</p>
+<ul>
+<li>طبق <a href="https://www.mckinsey.com/featured-insights/charts/ai-job-losses-fall-short-of-forecasts" target="_blank" rel="noopener" style="color:#57D9C7">نمودار McKinsey</a>، ۳۲٪ پاسخ‌دهندگان در یک پیمایش انتظار کاهش نیرو داشتند، اما در پیمایش بعدی فقط ۱۴٪ کاهش واقعی را گزارش دادند. حدود دو سوم گفتند تغییر کلی اشتغالشان کم یا صفر بوده.</li>
+</ul>
+<ul>
+<li><a href="https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality" target="_blank" rel="noopener" style="color:#57D9C7">بریف دانشگاه استنفورد (SIEPR)</a> می‌گوید بیکاری از ۲۰۲۲ در گروه شغل‌های بیشترین‌درمعرض هوش مصنوعی ۰٫۷۷ واحد درصد بالا رفته و در کمترین‌درمعرض ۰٫۸۵ واحد؛ یعنی تفاوتی دیده نمی‌شود. در داده‌ی سرشماری آمریکا فقط حدود ۵٪ شرکت‌ها از اثر بر اشتغال خبر داده‌اند و افزایش و کاهش‌ها تقریباً برابر است.</li>
+</ul>
+<ul>
+<li>طبق <a href="https://fortune.com/2026/11/16/why-no-ai-layoff-wave-goldman-sachs-outlook-recession-jobs/" target="_blank" rel="noopener" style="color:#57D9C7">فورچون</a>، اخراج‌ها در سپتامبر حدود ۱٪ نیروی کار بوده و گلدمن‌ساکس انتظار دارد «کم‌استخدام، کم‌اخراج» یک سال دیگر ادامه یابد.</li>
+</ul>
+<ul>
+<li><a href="https://www.thestar.com.my/tech/tech-news/2026/11/10/ai-was-supposed-to-come-for-our-jobs-so-far-evidence-is-mixed" target="_blank" rel="noopener" style="color:#57D9C7">نیویورک‌تایمز</a> می‌نویسد اخراج‌ها حتی در مشاغل یقه‌سفید پایین مانده است.</li>
+</ul>
+<p><strong>چرا هنوز نیامده؟</strong> <a href="https://news.harvard.edu/gazette/story/2026/09/why-ai-hasnt-triggered-mass-layoffs-yet/" target="_blank" rel="noopener" style="color:#57D9C7">هاروارد</a> چند دلیل ساده می‌آورد: طبق جوزف فولر (دانشکده‌ی کسب‌وکار هاروارد) فقط حدود یک‌سوم آزمایش‌های هوش مصنوعی در شرکت‌ها موفق است، بیشتر شرکت‌ها کارمندانشان را آموزش نمی‌دهند و رافائلا سادون (همان دانشکده) حذف نیروی انسانی را «تله‌ای بسیار بد» برای مدیران می‌داند.</p>
+<h3><span class="check-number">2.</span> قاب غلط: «شغل را می‌گیرد»</h3>
+<p>شغل یک بسته‌ی وظیفه است، نه یک کار واحد. هوش مصنوعی معمولاً بخشی از وظیفه‌ها را می‌گیرد، نه کل بسته را.</p>
+<p><strong>مثال رادیولوژی:</strong><br><a href="https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/amp/" target="_blank" rel="noopener" style="color:#57D9C7">مجله‌ی MIT Technology Review</a> یادآوری می‌کند که چند سال پیش گفته می‌شد آموزش رادیولوژیست‌ها را باید متوقف کرد. امروز هوش مصنوعی تصویرها را غربال می‌کند، اما تعداد رادیولوژیست‌ها از همیشه بیشتر است، چون تفسیر نتیجه و ارتباط با بیمار هنوز کار انسان است. گزارش ۲۰۱۶ دولت آمریکا هم پیش‌بینی کرده بود خودروهای خودران ۲٫۲ تا ۳٫۱ میلیون شغل را حذف کنند؛ این اتفاق نیفتاد.</p>
+<p><strong>عدد مهم:</strong><br>مدل فولر می‌گوید حدود ۴۱٪ از وظیفه‌های کاری می‌توانند با هوش مصنوعی خودکار یا تقویت شوند. «تقویت شوند» با «حذف شوند» فرق دارد.</p>
+<p><strong>تجربه‌ی مستقیم:</strong><br>در یک پژوهش مرکز تماس، دستیار هوش مصنوعی بهره‌وری را حدود ۱۵٪ بالا برد؛ برای کارمندان تازه‌کار حدود ۳۰٪ و برای برترین‌ها تقریباً صفر (<a href="https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality" target="_blank" rel="noopener" style="color:#57D9C7">SIEPR</a>). یعنی ابزار، اول از همه شکاف مهارت را کم می‌کند.</p>
+<h3><span class="check-number">3.</span> چیزی که واقعاً عوض شده</h3>
+<p><strong>استخدام تازه‌کارها:</strong><br>بیکاری فارغ‌التحصیلان تازه در اوایل ۲۰۲۶ به ۵٫۶٪ رسیده، ۱٫۶ واحد بیشتر از سه سال پیش. پژوهش دانشگاه استنفورد (به نقل از فورچون) می‌گوید اشتغال ۲۲ تا ۲۵ ساله‌ها در شغل‌های بیشترین‌درمعرض حدود ۱۹٪ زیر سطح انتظار است و مهم‌تر اینکه این به‌خاطر <strong>استخدام کمتر</strong> است، نه اخراج بیشتر.</p>
+<p><strong>ولی علت را قطعی نکنیم:</strong><br>نویسندگان SIEPR هم می‌گویند بخشی از این روند با افزایش نرخ بهره از ۲۰۲۲ و کار از راه دور هم‌زمان بوده و جدا کردن اثر هوش مصنوعی هنوز «سؤال پژوهشی باز» است.</p>
+<p><strong>شرکت‌ها چه می‌کنند؟</strong><br>طبق <a href="https://techradar.com/pro/the-ai-layoffs-may-have-finally-ended-and-businesses-might-be-hiring-more-workers-just-to-be-able-to-use-ai-effectively" target="_blank" rel="noopener" style="color:#57D9C7">گزارش بانک فدرال نیویورک</a> به نقل از TechRadar، حدود ۴٪ شرکت‌های خدماتیِ استفاده‌کننده از هوش مصنوعی در شش ماه گذشته به این دلیل نیرو کم کرده‌اند، ولی حدود ۱۳٪ نیرو بیشتر استخدام کرده‌اند، اغلب برای راه‌اندازی خود فناوری. در عین حال، سهم شرکت‌هایی که «به‌خاطر هوش مصنوعی کمتر استخدام می‌کنند» از ۱۲٪ به ۱۵٪ رسیده. یعنی تصویر مخلوط است.</p>
+<h3><span class="check-number">4.</span> آینده قطعی نیست</h3>
+<p>عدم قطعیت را نباید پنهان کرد:</p>
+<ul>
+<li><strong>دوگ المندورف</strong> (دانشکده‌ی کندی هاروارد) می‌گوید شواهد امروز «قدرت پیش‌بینی بسیار کمی» برای ۵ تا ۱۵ سال بعد دارد و انتظار دارد در دهه‌های آینده شغل‌های زیادی از بین برود، هرچند بیشتر آدم‌ها کار تازه می‌یابند.</li>
+</ul>
+<ul>
+<li><strong>گلدمن‌ساکس</strong> برآورد می‌کند تا حدود ۹٪ نیروی کار در دوران گذار ممکن است جابه‌جا شوند و اثر در رکودها تندتر است.</li>
+</ul>
+<ul>
+<li><strong>مدل NBER</strong> سناریویی با حدود ۳ میلیون بیکار هم‌زمان، یعنی ۲٪ نیروی کار آمریکا، بررسی می‌کند.</li>
+</ul>
+<p>پس نتیجه این نیست که «خیالتان راحت باشد». نتیجه این است که <strong>سرعت تغییر سؤال اصلی است</strong> و فرصت آمادگی هنوز هست.</p>
+<h3><span class="check-number">5.</span> چطور تغییر را درست بفهمیم؟</h3>
+<p><strong>۱. وظیفه‌هایت را فهرست کن، نه عنوان شغلت را.</strong><br>بنویس در هفته چه کارهایی می‌کنی. کدام تکراری و قابل‌واگذاری به ابزار است؟ کدام قضاوت، ارتباط و مسئولیت می‌خواهد؟ وقت آزادشده را سمت دومی ببر. مهارت‌های انسانی مثل ارتباط، قضاوت و حل مسئله را هم تقویت کن.</p>
+<p><strong>۲. شکاف آموزش را خودت پر کن.</strong><br>فولر می‌گوید بیشتر شرکت‌ها کارمندان را آموزش نمی‌دهند و کارمندان فقط مثل موتور جست‌وجو از هوش مصنوعی استفاده می‌کنند. ابزارها در دسترس‌اند؛ آنچه فرق می‌سازد این است که بلد باشی در کارت درست از آن‌ها استفاده کنی.</p>
+<p><strong>۳. برای تازه‌کارها: عمق و گستره بساز.</strong><br>اگر مسیر ورود باریک‌تر شده، پروژه‌ی واقعی، نمونه‌کار و مهارت‌های هم‌جوار (فروش، محصول، ارتباط با مشتری) ارزش بیشتری پیدا می‌کنند. طبق هاروارد، شرکت‌ها هم می‌دانند بدون جونیور، سینیورِ فردا ساخته نمی‌شود.</p>
+<p><strong>۴. تیتر را با داده بسنج.</strong><br>«کشتار شغلی» و «همه چیز آرام است» هر دو تیتر هستند. ببین چه کسی، با چه داده‌ای و برای چه بازه‌ای می‌گوید.</p>
+<p><strong>۵. برای کسب‌وکار: اول آموزش، بعد ابزار.</strong><br>طبق فولر، یکی از دلایل شکست آزمایش‌های هوش مصنوعی، نبودن داده‌ی خوب و آموزش کارکنان است. آموزش آدم‌ها بخشی از پروژه است، نه کار جانبی.</p>
+<h3>تحلیل دیتومان</h3>
+<p>سؤال «کار را می‌گیرد؟» ترس می‌سازد و کمی کمک می‌کند. سؤال بهتر این است: <strong>«کدام وظیفه‌های من عوض می‌شود و من چه چیزی را یاد بگیرم؟»</strong></p>
+<p>داده‌های امسال می‌گویند هنوز جا برای یادگیری هست؛ اخراج گسترده‌ای نیست، ولی راه ورود تازه‌کارها سخت‌تر شده و آینده‌ی دورتر نامعلوم است. دیتومان این را با هم دنبال می‌کند: خبر درست، تعبیر درست و مهارتی که همین امروز می‌شود شروعش کرد.</p>
+<p>این گزارش آموزشی است و توصیه‌ی شغلی یا سرمایه‌گذاری نیست. عددهای فورچون و TechRadar از منابع ثانویه آمده‌اند و مستقیم با اصل گزارش‌ها تطبیق داده نشده‌اند.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="weight-loss-drugs-economy-glp1.html">آمپولی که سبد خرید دنیا را عوض کرد</a></li><li><a href="us-treasury-fincen-cyber-incident.html">نفوذ سایبری به خزانه‌داری آمریکا</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.mckinsey.com/featured-insights/charts/ai-job-losses-fall-short-of-forecasts" target="_blank" rel="noopener">McKinsey: AI job losses fall short of forecasts</a></li><li><a href="https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality" target="_blank" rel="noopener">Stanford SIEPR policy brief: What is really happening to jobs? Separating AI hype from reality (July 2026)</a></li><li><a href="https://fortune.com/2026/11/16/why-no-ai-layoff-wave-goldman-sachs-outlook-recession-jobs/" target="_blank" rel="noopener">Fortune: Why there is no AI layoff wave (16 Nov 2026)</a></li><li><a href="https://www.thestar.com.my/tech/tech-news/2026/11/10/ai-was-supposed-to-come-for-our-jobs-so-far-evidence-is-mixed" target="_blank" rel="noopener">New York Times via The Star: AI was supposed to come for our jobs, so far evidence is mixed (10 Nov 2026)</a></li><li><a href="https://news.harvard.edu/gazette/story/2026/09/why-ai-hasnt-triggered-mass-layoffs-yet/" target="_blank" rel="noopener">Harvard Gazette: Why AI hasn't triggered mass layoffs yet (29 Sep 2026)</a></li><li><a href="https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/amp/" target="_blank" rel="noopener">MIT Technology Review: A reality check on the AI jobs hysteria (26 May 2026)</a></li><li><a href="https://techradar.com/pro/the-ai-layoffs-may-have-finally-ended-and-businesses-might-be-hiring-more-workers-just-to-be-able-to-use-ai-effectively" target="_blank" rel="noopener">TechRadar on a New York Fed analysis (2 Sep 2026)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۴ آذر ۱۴۰۵. پژوهش‌ها را از صفحه‌ی منبع بررسی کردیم؛ عددهای فورچون و TechRadar از منابع ثانویه‌اند و با اصل گزارش‌ها تطبیق داده نشده‌اند. این گزارش آموزشی است و توصیه‌ی شغلی یا سرمایه‌گذاری نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>For two years one question has echoed everywhere: "Will AI take our jobs?" This year's data suggests we are asking the wrong one. There has been no wave of mass layoffs, but something else is changing: <strong>the tasks inside jobs, and the way in for newcomers.</strong> This report sets out the evidence, why "it takes the job" is the wrong frame, and how to read the change correctly.</blockquote>
+<h3>At a glance</h3>
+<ul>
+<li><strong>Fear versus reality:</strong> in McKinsey surveys, 32% expected AI to cut headcount; 14% reported an actual reduction</li>
+</ul>
+<ul>
+<li><strong>Layoffs:</strong> per US official data, layoffs are still about 1% of the workforce, and Goldman Sachs expects a "low-hire, low-fire" market to last another year</li>
+</ul>
+<ul>
+<li><strong>Where it is actually felt:</strong> hiring of newcomers and recent graduates</li>
+</ul>
+<ul>
+<li><strong>The right frame:</strong> a job is a bundle of tasks, and AI changes the tasks first</li>
+</ul>
+<h3><span class="check-number">1.</span> Big fear, smaller reality</h3>
+<p>Big predictions have been around for years. In 2025, for example, Anthropic's CEO said AI could eliminate half of entry-level white-collar jobs within one to five years.</p>
+<p>What does the data say so far?</p>
+<ul>
+<li>According to a <a href="https://www.mckinsey.com/featured-insights/charts/ai-job-losses-fall-short-of-forecasts" target="_blank" rel="noopener" style="color:#57D9C7">McKinsey chart</a>, 32% of respondents in one survey expected headcount cuts, but only 14% reported an actual reduction in a later one. About two-thirds said total employment changed little or not at all.</li>
+</ul>
+<ul>
+<li>A <a href="https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality" target="_blank" rel="noopener" style="color:#57D9C7">Stanford SIEPR brief</a> says unemployment since 2022 rose 0.77 percentage points in the most AI-exposed occupations and 0.85 in the least exposed; no visible gap. In US Census data only about 5% of firms report any employment impact, with gains and losses roughly equal.</li>
+</ul>
+<ul>
+<li>According to <a href="https://fortune.com/2026/11/16/why-no-ai-layoff-wave-goldman-sachs-outlook-recession-jobs/" target="_blank" rel="noopener" style="color:#57D9C7">Fortune</a>, September layoffs were about 1% of the workforce and Goldman Sachs expects "low-hire, low-fire" to last another year.</li>
+</ul>
+<ul>
+<li>The <a href="https://www.thestar.com.my/tech/tech-news/2026/11/10/ai-was-supposed-to-come-for-our-jobs-so-far-evidence-is-mixed" target="_blank" rel="noopener" style="color:#57D9C7">New York Times</a> reports layoffs remain low even in white-collar sectors.</li>
+</ul>
+<p><strong>Why hasn't it arrived?</strong> <a href="https://news.harvard.edu/gazette/story/2026/09/why-ai-hasnt-triggered-mass-layoffs-yet/" target="_blank" rel="noopener" style="color:#57D9C7">Harvard</a> gives simple reasons: according to Joseph Fuller (Harvard Business School) only about a third of firms' AI experiments succeed, most firms do not train staff, and Raffaella Sadun (same school) calls cutting human capital "a terrible trap" for executives.</p>
+<h3><span class="check-number">2.</span> The wrong frame: "it takes the job"</h3>
+<p>A job is a bundle of tasks, not one single activity. AI usually takes part of the bundle, not all of it.</p>
+<p><strong>The radiology example:</strong><br><a href="https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/amp/" target="_blank" rel="noopener" style="color:#57D9C7">MIT Technology Review</a> recalls that some years ago it was said training radiologists should stop. Today AI screens images, yet there are more radiologists than ever, because interpreting results and talking to patients remain human work. A 2016 US government report also projected 2.2 to 3.1 million job losses from self-driving vehicles; that did not happen.</p>
+<p><strong>The key number:</strong><br>Fuller's model says about 41% of work tasks could be automated or augmented by AI. "Augmented" is not the same as "eliminated".</p>
+<p><strong>Direct evidence:</strong><br>In a call-centre study an AI assistant raised productivity about 15%; roughly 30% for novice agents and about zero for the top performers (<a href="https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality" target="_blank" rel="noopener" style="color:#57D9C7">SIEPR</a>). The tool narrows the skill gap first.</p>
+<h3><span class="check-number">3.</span> What has really changed</h3>
+<p><strong>Hiring of newcomers:</strong><br>New-graduate unemployment reached 5.6% in early 2026, 1.6 points higher than three years earlier. A Stanford study (via Fortune) finds employment of 22- to 25-year-olds in the most exposed jobs about 19% below the expected level, and, importantly, this reflects <strong>less hiring</strong>, not more firing.</p>
+<p><strong>But do not treat the cause as settled:</strong><br>The SIEPR authors say part of this timing coincides with interest-rate rises from 2022 and remote work, and that isolating AI's effect is still "an open research question".</p>
+<p><strong>What are firms doing?</strong><br>According to a <a href="https://techradar.com/pro/the-ai-layoffs-may-have-finally-ended-and-businesses-might-be-hiring-more-workers-just-to-be-able-to-use-ai-effectively" target="_blank" rel="noopener" style="color:#57D9C7">New York Fed analysis</a> as reported by TechRadar, about 4% of AI-using service firms laid off workers because of AI in the past six months, while about 13% hired more, often to deploy the technology itself. At the same time, the share hiring fewer people because of AI rose from 12% to 15%. The picture is mixed.</p>
+<h3><span class="check-number">4.</span> The future is not settled</h3>
+<p>Uncertainty should not be hidden:</p>
+<ul>
+<li><strong>Doug Elmendorf</strong> (Harvard Kennedy School) says today's evidence has "very little predictive power" for 5 to 15 years out, and expects significant job losses over coming decades, though most displaced workers will likely find new work.</li>
+</ul>
+<ul>
+<li><strong>Goldman Sachs</strong> estimates up to 9% of workers could be displaced during the transition, with the effect sharper in downturns.</li>
+</ul>
+<ul>
+<li>An <strong>NBER model</strong> explores a scenario with about 3 million people out of work at any moment, roughly 2% of the US labour force.</li>
+</ul>
+<p>So the conclusion is not "relax". It is that <strong>the speed of change is the central question</strong> and there is still time to prepare.</p>
+<h3><span class="check-number">5.</span> How to understand the change correctly</h3>
+<p><strong>1. List your tasks, not your job title.</strong><br>Write down what you do in a week. Which parts are repetitive and delegable to a tool? Which need judgement, relationships and accountability? Move freed-up time toward the second kind. Strengthen human skills too: communication, judgement and problem solving.</p>
+<p><strong>2. Fill the training gap yourself.</strong><br>Fuller says most firms do not train staff, so employees use AI like a search engine. The tools are within reach; what makes the difference is knowing how to use them well in your own work.</p>
+<p><strong>3. For newcomers: build depth and breadth.</strong><br>If the way in has narrowed, real projects, a portfolio and adjacent skills (sales, product, customer work) gain value. According to Harvard, firms also know that without juniors tomorrow's seniors are not built.</p>
+<p><strong>4. Test headlines against data.</strong><br>"Jobs bloodbath" and "all is calm" are both headlines. Ask who is saying it, on what data and over what period.</p>
+<p><strong>5. For businesses: training first, tools second.</strong><br>According to Fuller, poor data and untrained staff are among the reasons AI experiments fail. Training people is part of the project, not a side task.</p>
+<h3>Ditoman's view</h3>
+<p>"Will it take my job?" produces fear and helps little. A better question is: <strong>"Which of my tasks will change, and what should I learn?"</strong></p>
+<p>This year's data says there is still room to learn: no wave of layoffs, but a narrower way in for newcomers and a longer-term future that is unknown. Ditoman follows it with you: the right news, the right interpretation, and a skill you can start today.</p>
+<p>This report is educational, not career or investment advice. Figures from Fortune and TechRadar come from secondary sources and were not checked directly against the original reports.</p>
+<h3>Read more</h3><ul><li><a href="weight-loss-drugs-economy-glp1.en.html">The shot that rewired the shopping basket</a></li><li><a href="us-treasury-fincen-cyber-incident.en.html">The US Treasury cyber incident</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.mckinsey.com/featured-insights/charts/ai-job-losses-fall-short-of-forecasts" target="_blank" rel="noopener">McKinsey: AI job losses fall short of forecasts</a></li><li><a href="https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality" target="_blank" rel="noopener">Stanford SIEPR policy brief: What is really happening to jobs? Separating AI hype from reality (July 2026)</a></li><li><a href="https://fortune.com/2026/11/16/why-no-ai-layoff-wave-goldman-sachs-outlook-recession-jobs/" target="_blank" rel="noopener">Fortune: Why there is no AI layoff wave (16 Nov 2026)</a></li><li><a href="https://www.thestar.com.my/tech/tech-news/2026/11/10/ai-was-supposed-to-come-for-our-jobs-so-far-evidence-is-mixed" target="_blank" rel="noopener">New York Times via The Star: AI was supposed to come for our jobs, so far evidence is mixed (10 Nov 2026)</a></li><li><a href="https://news.harvard.edu/gazette/story/2026/09/why-ai-hasnt-triggered-mass-layoffs-yet/" target="_blank" rel="noopener">Harvard Gazette: Why AI hasn't triggered mass layoffs yet (29 Sep 2026)</a></li><li><a href="https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/amp/" target="_blank" rel="noopener">MIT Technology Review: A reality check on the AI jobs hysteria (26 May 2026)</a></li><li><a href="https://techradar.com/pro/the-ai-layoffs-may-have-finally-ended-and-businesses-might-be-hiring-more-workers-just-to-be-able-to-use-ai-effectively" target="_blank" rel="noopener">TechRadar on a New York Fed analysis (2 Sep 2026)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 25 November 2026. Studies were read from the source pages; figures from Fortune and TechRadar are secondary and were not checked against the original reports. This is an educational report, not career or investment advice.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
