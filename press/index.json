@@ -1,5 +1,162 @@
 [
  {
+  "date": "2026-11-25",
+  "jalali": "1405/09/04",
+  "weekday_fa": "چهارشنبه",
+  "post": "press/2026-11-25-post.webp",
+  "post_en": "press/2026-11-25-post-en.webp",
+  "lead_fa": "چهارم آذر با جهش دلار به ۲۸۳ هزار تومان شروع شد، سکه امامی به ۲۶۲ میلیون رسید، بورس دیروز ۲٫۴ درصد پرید و نفت برنت به ۹۰ دلار برگشت. روی جلد روزنامه‌ها بیشتر سیاسی است؛ ما سراغ خبرهای زندگی و جیب رفته‌ایم و برای هر کدام نوشته‌ایم یعنی چه. با هم دنبال می‌کنیم.",
+  "lead_en": "4 Azar opened with the dollar jumping to 283,000 tomans, the Emami coin at 262 million, a 2.4% leap on the Tehran exchange yesterday and Brent back at $90. Most front pages are political; we picked the news that touches daily life and the wallet, with one line on what each means.",
+  "front_fa": "دنیای اقتصاد: «چرا ایران از تجارت اوراسیا و قفقاز جا ماند؟» · فرهیختگان: «تخفیف‌های واقعی و نمایشی در بلک‌فرایدی ایران» · پیام ما: «تداوم قاچاق چوب در جنگل‌های هیرکانی» · خبرورزشی: «عملیات احیای سهراب»",
+  "front_en": "Donya-e-Eqtesad: “Why Iran missed out on Eurasian and Caucasus trade” · Farhikhtegan: “Real and fake discounts in Iran’s Black Friday” · Payam-e Ma: “Timber smuggling goes on in the Hyrcanian forests” · Khabar Varzeshi: “Operation revive Sohrab”",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازار",
+    "en": "Economy & markets",
+    "items": [
+     {
+      "fa": "دلار ۲۸۳ هزار تومان، یورو ۳۱۱ هزار: بازار ارز صبح امروز با جهش ۴٫۷۷ درصدی دلار آزاد باز شد و یورو ۱۵ هزار تومان بالا رفت. یعنی در یک روز، هر ۱۰۰ میلیون تومان پس‌انداز ریالی حدود ۳۵۰ دلار از ارزش دلاری‌اش را از دست داده؛ قیمت کالای وارداتی با تأخیر چند هفته‌ای این عدد را دنبال می‌کند.",
+      "en": "Dollar 283,000 tomans, euro 311,000: the free market opened with a 4.77% jump in the dollar and the euro up 15,000 tomans. In one day, every 100 million tomans of rial savings lost about $350 of dollar value; imported goods usually follow this number with a lag of a few weeks.",
+      "src": "جماران، خبرآنلاین، خبر پتروشیمی",
+      "url": "https://www.khabaronline.ir/news/2306652/"
+     },
+     {
+      "fa": "سکه امامی ۲۶۲ میلیون، طلای ۱۸ عیار ۵٫۴ درصد بالاتر: جهش دلار یک‌راست روی طلای داخلی نشست و سکه در یک روز میلیونی گران شد. یعنی طلای داخل این بار از دلار خط گرفته، نه از اونس؛ فاصله‌ی قیمت سکه با ارزش ذاتی‌اش (حباب) را پیش از هر خرید بپرسید.",
+      "en": "Emami coin 262 million, 18-karat gold up 5.4%: the dollar jump passed straight through to domestic gold and the coin gained millions in a day. This time local gold is taking its cue from the dollar, not the ounce; ask about the coin’s premium over intrinsic value before any purchase.",
+      "src": "جهان صنعت، خبر پتروشیمی",
+      "url": "https://jahansanatnews.ir/628203-"
+     },
+     {
+      "fa": "بورس ۸ میلیون و ۵۹۱ هزار: شاخص کل سه‌شنبه ۲۰۱ هزار واحد (۲٫۴ درصد) جهش کرد و پول حقیقی برای سومین روز پیاپی وارد شد. یعنی بورس دارد با دلار هم‌صدا می‌شود؛ سهام شرکت‌های صادراتی که درآمد ارزی دارند، اولین جایی است که دلار گران‌تر به سود تبدیل می‌شود.",
+      "en": "Tehran index 8,591,000: the main index jumped 201,000 points (2.4%) on Tuesday and retail money flowed in for a third straight day. The exchange is moving in step with the dollar; exporters with hard-currency revenue are where a pricier dollar turns into profit first.",
+      "src": "خبرآنلاین، دنیای اقتصاد، تجارت‌نیوز",
+      "url": "https://www.khabaronline.ir/live/2306324/"
+     },
+     {
+      "fa": "نفت برنت ۹۰ دلار: نفت از اوج دیروز عقب نشست و روی ۹۰ دلار ایستاد. یعنی هر بشکه حدود ۲ دلار از دیروزِ خودمان (۸۸ دلار) بالاتر است و درآمد ارزی کشور کمی نفس تازه کرده؛ مسیر دلار داخلی اما این روزها بیشتر از انتظارات داخل خط می‌گیرد.",
+      "en": "Brent $90: oil pulled back from yesterday’s high and settled at $90. That is about $2 above our previous note ($88), a little breathing room for export revenue; the domestic dollar, though, is tracking local expectations more than oil these days.",
+      "src": "قدس آنلاین، سیگنال",
+      "url": "https://www.qudsonline.ir/news/1177482/"
+     },
+     {
+      "fa": "خودرو رکورد زد؛ دناپلاس ۱۶۰ میلیون گران شد: بازار خودرو امروز با دلار ۲۸۳ هزار تومانی جهش چندصدمیلیونی محصولات ایران‌خودرو و سایپا را دید. یعنی فروشنده‌ها با دلار جدید قیمت می‌دهند و خریدار صبر می‌کند؛ در چنین روزی معامله کم و قیمت‌های اعلامی بیشتر «پیشنهاد» است تا «قیمت معامله».",
+      "en": "Car prices hit a record; Dena Plus up 160 million: with the dollar at 283,000, Iran Khodro and Saipa models jumped by hundreds of millions today. Sellers are quoting at the new dollar while buyers wait; on a day like this trades are thin and the posted numbers are asking prices, not deal prices.",
+      "src": "قدس آنلاین، اقتصادآنلاین، رکنا",
+      "url": "https://www.qudsonline.ir/news/1177454/"
+     },
+     {
+      "fa": "متری ۳۱۰ میلیون تومان در اوج رکود: میانگین قیمت هر متر خانه در تهران در آبان رکورد زد. یعنی یک آپارتمان ۸۵ متری معمولی حدود ۲۶ میلیارد تومان است و وام ۲ میلیاردی مسکن کمتر از یک‌دهم آن را می‌پوشاند؛ رکود معاملات قیمت را پایین نیاورده، فقط خریدار را کم کرده.",
+      "en": "310 million tomans a square metre at the height of a slump: Tehran’s average home price set a record in Aban. A typical 85 m² flat is about 26 billion tomans and the 2-billion housing loan covers less than a tenth of it; the slump in deals has cut buyers, not prices.",
+      "src": "اقتصادآنلاین، خبر پتروشیمی",
+      "url": "https://www.eghtesadonline.com/fa/news/2177675/"
+     },
+     {
+      "fa": "افزایش ۵۰۰ هزار تومانی کالابرگ در انتظار فهرست نهایی: افزایش اعتبار برای برخی خانوارها هنوز واریز نشده، چون فهرست نهایی مشمولان ارسال نشده است. یعنی اگر کالابرگ‌تان هنوز ۵۰۰ هزار تومان بیشتر نشده، حذف نشده‌اید؛ صف اداری است، نه تصمیم.",
+      "en": "The 500,000-toman top-up to the food voucher awaits the final list: some households have not yet received the increase because the final list of eligible families has not been sent. If your voucher has not grown by 500,000 yet, you have not been cut; it is a paperwork queue, not a decision.",
+      "src": "اقتصادنیوز، جهان نیوز، سرمایه و بورس",
+      "url": "https://www.jahannews.com/news/1010074/"
+     },
+     {
+      "fa": "بلک‌فرایدی ایرانی، تخفیف واقعی یا نمایشی: فرهیختگان بررسی کرده کدام حراج‌ها واقعی‌اند و پلیس هم با فروشندگانی که اول قیمت را بالا برده‌اند و بعد «تخفیف» زده‌اند برخورد کرده. یعنی پیش از خرید، قیمت دو هفته‌ی قبلِ همان کالا را در سایت‌های ردیاب قیمت ببینید؛ درصد تخفیف به‌تنهایی چیزی نمی‌گوید.",
+      "en": "Iran’s Black Friday, real or staged discounts: Farhikhtegan checks which sales are genuine, and police have acted against sellers who raised prices first and then “discounted”. Before buying, check the same item’s price two weeks ago on a price-tracking site; a discount percentage alone tells you nothing.",
+      "src": "فرهیختگان، شفقنا، پرسون",
+      "url": "https://fa.shafaqna.com/news/2409887/"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و تولید",
+    "en": "Industry & production",
+    "items": [
+     {
+      "fa": "صادرات ۸۰۰ میلیون دلاری سرب و روی: صداوسیما روایت صنعت سرب و روی را منتشر کرده که به رقم ۸۰۰ میلیون دلار صادرات رسیده. یعنی یک رشته‌ی معدنی کم‌صدا به اندازه‌ی یک پالایشگاه کوچک ارز می‌آورد و زنجیره‌ی آن از معدن تا شمش داخل کشور بسته شده.",
+      "en": "Lead and zinc exports at $800 million: state TV profiles an industry that has reached $800 million in exports. A quiet mining sector earns as much hard currency as a small refinery, with the chain from mine to ingot closed inside the country.",
+      "src": "صداوسیما",
+      "url": "https://www.irib-news.ir/fa/news/5975543/"
+     },
+     {
+      "fa": "جاماندن از ترانزیت قفقاز: دنیای اقتصاد می‌پرسد چرا ایران از تجارت اوراسیا و قفقاز جا ماند و فرارو از معادلات جدید ترانزیتی بدون ایران می‌نویسد. یعنی مسیرهای تازه‌ی شمال-جنوب دارند دور ایران می‌چرخند و هر کامیونی که از جای دیگر رد شود، درآمد ترانزیتی و کار بندری ماست که کم می‌شود.",
+      "en": "Missing the Caucasus transit game: Donya-e-Eqtesad asks why Iran fell behind in Eurasian and Caucasus trade, and Fararu writes about new transit arrangements without Iran. New north–south routes are bending around Iran, and every truck that passes elsewhere is lost transit income and port work.",
+      "src": "دنیای اقتصاد، فرارو",
+      "url": "https://fararu.com/fa/news/1019012/"
+     }
+    ]
+   },
+   {
+    "fa": "فناوری",
+    "en": "Technology",
+    "items": [
+     {
+      "fa": "اینترنت ADSL مخابرات بیش از سه برابر شد: تعرفه‌های جدید بسته‌های ADSL اعلام شد و هزینه‌ی هر گیگابایت در برخی بسته‌ها بیش از ۴ برابر شده؛ دیجیاتو آن را با رقبا مقایسه کرده. یعنی اگر هنوز روی خط مسی هستید، وقت مقایسه با فیبر و TD-LTE است؛ در بسیاری از شهرها فیبر حالا هم سریع‌تر و هم ارزان‌تر از ADSL تمام می‌شود.",
+      "en": "TCI’s ADSL internet more than triples: new ADSL package tariffs are out, with the cost per gigabyte up more than fourfold on some plans; Digiato compares them with rivals. If you are still on a copper line, it is time to compare fibre and TD-LTE; in many cities fibre now works out both faster and cheaper than ADSL.",
+      "src": "اقتصادنیوز، خبرآنلاین، دیجیاتو",
+      "url": "https://www.khabaronline.ir/news/2306224/"
+     },
+     {
+      "fa": "نخستین مجوز «اپراتور هوش مصنوعی»: دیجیاتو گزارش داده گرین‌وب نخستین موافقت اصولی اپراتوری هوش مصنوعی را گرفته است. یعنی هوش مصنوعی در ایران دارد مثل اینترنت و موبایل «اپراتور» رسمی پیدا می‌کند؛ کسب‌وکارها به‌جای سرور خارجی، یک فروشنده‌ی داخلی ظرفیت پردازشی خواهند داشت.",
+      "en": "First “AI operator” licence: Digiato reports that GreenWeb has received the first in-principle approval to operate as an AI operator. AI in Iran is getting official operators the way internet and mobile did; businesses will have a domestic seller of compute instead of foreign servers.",
+      "src": "دیجیاتو",
+      "url": "https://digiato.com/iran-technology-news/greenweb-first-ai-operator-in-principle-approval"
+     }
+    ]
+   },
+   {
+    "fa": "جامعه و محیط‌زیست",
+    "en": "Society & environment",
+    "items": [
+     {
+      "fa": "هشدار باران و برف در ۹ استان: سامانه‌ی بارشی از امروز به شمال کشور می‌رسد، با رعدوبرق و کاهش دما در چند استان. یعنی جاده‌های شمال از امروز لغزنده است و برای تهران، باران همان چیزی است که آلودگی چندروزه را می‌شوید.",
+      "en": "Rain and snow warning in 9 provinces: a weather system reaches the north today with thunderstorms and falling temperatures in several provinces. Northern roads turn slippery from today, and for Tehran this rain is what finally washes out several days of smog.",
+      "src": "مهر، آفتاب‌نیوز، شهرآرا",
+      "url": "https://www.mehrnews.com/news/7021219/"
+     },
+     {
+      "fa": "تهران: زوج و فرد اجرا می‌شود، هشدار آلودگی ادامه دارد: طرح زوج و فرد امروز در تهران برقرار است و اعلام تعطیلی مدارس تا صبح تأیید نشده بود. یعنی قبل از بیرون رفتن، پلاک و روز را چک کنید و کودکان و سالمندان تا رسیدن باران فعالیت بیرونی را کم کنند.",
+      "en": "Tehran: odd–even traffic scheme in force, pollution warning continues: the odd–even scheme runs today and no school closure had been confirmed by morning. Check your plate and the day before heading out, and keep children and the elderly indoors until the rain arrives.",
+      "src": "هفت صبح، نبض قیمت",
+      "url": "https://7sobh.com/"
+     },
+     {
+      "fa": "قاچاق چوب در هیرکانی ادامه دارد: پیام ما روایت کرده که برداشت غیرقانونی چوب از جنگل‌های ثبت‌جهانی شمال همچنان ادامه دارد. یعنی جنگلی که ۲۵ میلیون سال عمر دارد با اره‌ی شبانه آب می‌رود و هر درخت قطع‌شده، سیل بهار بعدی را به روستای پایین‌دست نزدیک‌تر می‌کند.",
+      "en": "Timber smuggling goes on in the Hyrcanian forests: Payam-e Ma reports that illegal logging in the north’s World Heritage forests continues. A forest 25 million years old is being drained by night saws, and every felled tree brings next spring’s flood closer to the village downstream.",
+      "src": "پیام ما، شفقنا",
+      "url": "https://media.shafaqna.com/news/580844/"
+     }
+    ]
+   },
+   {
+    "fa": "سلامت",
+    "en": "Health",
+    "items": [
+     {
+      "fa": "در پیک آنفلوآنزا هستیم: مرکز مدیریت بیماری‌های واگیر می‌گوید پیک آنفلوآنزا شروع شده و ممکن است چند هفته ادامه یابد؛ پیک کرونا اما پشت سر گذاشته شده. یعنی تب و بدن‌درد این هفته‌ها به احتمال زیاد آنفلوآنزاست، نه کرونا؛ استراحت، مایعات و ماسک در جمع کافی است و آنتی‌بیوتیک بی‌فایده.",
+      "en": "We are at the flu peak: the communicable-disease centre says the flu peak has begun and may last several weeks, while the Covid peak has passed. Fever and body aches these weeks are most likely flu, not Covid; rest, fluids and a mask in crowds are enough, and antibiotics do nothing.",
+      "src": "فرارو، انتخاب، نورنیوز",
+      "url": "https://fararu.com/fa/news/1019482/"
+     },
+     {
+      "fa": "۲۰ فوتی و ۳۵۶ مسموم در موج مسمومیت الکلی: آمار رسمی از ۱۰ آبان تا ۳ آذر اعلام شد. یعنی الکل دست‌ساز این هفته‌ها با متانول آلوده است و تاری دید بعد از مصرف، اورژانس است، نه خواب.",
+      "en": "20 dead and 356 poisoned in the alcohol-poisoning wave: official figures cover 10 Aban to 3 Azar. Bootleg alcohol these weeks is laced with methanol; blurred vision after drinking is an emergency, not something to sleep off.",
+      "src": "صداوسیما، اقتصادآنلاین، مشرق",
+      "url": "https://www.irib-news.ir/fa/news/5975824/"
+     }
+    ]
+   },
+   {
+    "fa": "ورزش و فرهنگ",
+    "en": "Sport & culture",
+    "items": [
+     {
+      "fa": "«عملیات احیای سهراب»: تیتر خبرورزشی درباره‌ی پشتیبانی باشگاه استقلال از سهراب بختیاری‌زاده؛ مدیرعامل از تمدید قرارداد او، بازگشت دو بازیکن و تعیین تکلیف پنجره‌ی نقل‌وانتقالات خبر داده. یعنی بعد از نمایش آسیایی برابر العین، نیمکت استقلال ثابت می‌ماند و نیم‌فصل دوم با بازیکن بیشتر شروع می‌شود.",
+      "en": "“Operation revive Sohrab”: Khabar Varzeshi’s headline on Esteghlal backing coach Sohrab Bakhtiarizadeh; the CEO announced his contract extension, the return of two players and a settled transfer window. After the Asian showing against Al Ain, Esteghlal’s bench stays put and the second half starts with a fuller squad.",
+      "src": "خبرورزشی، وانانیوز، پارس فوتبال",
+      "url": "https://www.khabarvarzeshi.com/news/564573/"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-24",
   "jalali": "1405/09/03",
   "weekday_fa": "سه‌شنبه",
