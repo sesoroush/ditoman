@@ -1,30 +1,43 @@
-"""One-off reachability probe for Iranian official company-data sources (run by probe.yml from a GitHub runner).
-Writes data/probe/result.json: status code, final URL and the first 3,000 characters of each page."""
-import json, pathlib, urllib.request, urllib.parse
+"""Probe IMI-100 (Industrial Management Institute ranking of Iran's top companies) from a GitHub runner.
+Saves every link on the IMI-100 site's main pages and the text of pages that look like ranking tables."""
+import json, pathlib, re, urllib.request, urllib.parse, html
 OUT = pathlib.Path(__file__).resolve().parent.parent.parent / "data" / "probe"
 OUT.mkdir(parents=True, exist_ok=True)
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
-q = urllib.parse.quote("شیرین عسل")
-URLS = [
-    "https://www.rrk.ir/",
-    "https://newspaper.rrk.ir/",
-    f"https://newspaper.rrk.ir/Search?keyword={q}",
-    "https://ilenc.ir/",
-    "https://www.ilenc.ir/",
-    "https://www.codal.ir/",
-    "https://search.codal.ir/api/search/v2/q?&Audited=true&AuditorRef=-1&Category=-1&Childs=true&CompanyState=-1&CompanyType=-1&Consolidatable=true&IsNotAudited=false&Length=-1&LetterType=-1&Mains=true&NotAudited=true&NotConsolidatable=true&PageNumber=1&Publisher=false&TracingNo=-1&search=false",
-    "https://imi100.imi.ir/",
-    "https://imi.ir/",
-    "https://www.tsetmc.com/",
-]
-res = []
-for u in URLS:
+BASE = "https://imi100.imi.ir/"
+
+
+def get(u):
+    req = urllib.request.Request(u, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        return r.read().decode("utf-8", "replace"), r.geturl()
+
+
+def text(h):
+    h = re.sub(r"(?s)<(script|style)[^>]*>.*?</\1>", " ", h)
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
+
+
+res = {"pages": {}, "links": {}}
+seen, queue = set(), [BASE]
+while queue and len(seen) < 40:
+    u = queue.pop(0)
+    if u in seen:
+        continue
+    seen.add(u)
     try:
-        req = urllib.request.Request(u, headers={"User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            body = r.read(200000).decode("utf-8", "replace")
-            res.append({"url": u, "status": r.status, "final": r.geturl(), "head": body[:3000]})
+        h, final = get(u)
     except Exception as e:  # noqa
-        res.append({"url": u, "error": str(e)[:200]})
-(OUT / "result.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
-print(json.dumps([{k: v for k, v in r.items() if k != "head"} for r in res], ensure_ascii=False, indent=1))
+        res["pages"][u] = {"error": str(e)[:200]}; continue
+    links = {}
+    for href, label in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', h, re.S):
+        full = urllib.parse.urljoin(final, html.unescape(href))
+        links[full] = text(label)[:80]
+    res["links"][u] = links
+    res["pages"][u] = {"final": final, "text": text(h)[:20000], "tables": h.count("<table")}
+    for l, lab in links.items():
+        if l.startswith(BASE) and not re.search(r"\.(jpg|png|pdf|xlsx?|zip)$", l, re.I) and \
+                re.search(r"رتبه|۵۰۰|500|100|۱۰۰|IMI|شرکت|فهرست|جدول|ranking|rank", lab + l, re.I):
+            queue.append(l)
+(OUT / "imi.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
+print(len(seen), "pages")
