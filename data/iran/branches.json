@@ -691,21 +691,21 @@
         },
         {
           "fa": "دیجی‌کالا",
-          "en": "Digikala",
+          "en": "Digikala", "slug": "digikala",
           "sub": "platforms",
           "listed": false,
           "ownership": "private"
         },
         {
           "fa": "اسنپ",
-          "en": "Snapp",
+          "en": "Snapp", "slug": "snapp",
           "sub": "platforms",
           "listed": false,
           "ownership": "private"
         },
         {
           "fa": "کافه‌بازار",
-          "en": "Cafe Bazaar",
+          "en": "Cafe Bazaar", "slug": "cafebazaar",
           "sub": "platforms",
           "listed": false,
           "ownership": "private"

@@ -1,0 +1,1848 @@
+{
+ "as_of": {
+  "fa": "آذر ۱۴۰۵",
+  "en": "November 2026"
+ },
+ "title": {
+  "fa": "بزرگ‌ترین شرکت‌های خصوصی بیرون از بورس",
+  "en": "The largest private companies outside the exchange"
+ },
+ "lead": {
+  "fa": "شرکت‌هایی که مال افراد، خانواده‌ها یا بنیان‌گذاران و سرمایه‌گذاران خصوصی‌اند؛ نه در بورس و فرابورس، نه دولتی و نه شبه‌دولتی.",
+  "en": "Companies owned by individuals, families or private founders and investors: not on the Bourse or Farabourse, and neither state-owned nor semi-public."
+ },
+ "method": {
+  "fa": "شرکت‌های خصوصی صورت مالی و ارزش دارایی‌شان را منتشر نمی‌کنند و رتبه‌بندی رسمی برایشان نیست. ترتیب این فهرست برآورد ما از اندازه‌ی هر شرکت است، بر پایه‌ی نشانه‌های عمومی مثل سهم بازار، گستره‌ی محصول و شبکه‌ی فروش، تعداد کارکنان و صادرات؛ پس رتبه‌ها تقریبی‌اند و با رسیدن داده‌ی رسمی به‌روز می‌شوند. شرکت‌هایی که بخشی از گروهشان در بورس است ولی خود شرکت بیرون از بورس و در مالکیت خصوصی است، در این فهرست آمده‌اند.",
+  "en": "Private companies do not publish their accounts or asset values, and there is no official ranking for them. The order here is our estimate of each company's size from public signals such as market share, product range and sales network, staff numbers and exports, so the ranks are approximate and will be updated as official data appears. Companies whose group has a listed arm, but which are themselves unlisted and privately owned, are included."
+ },
+ "companies": [
+  {
+   "rank": 1,
+   "tier": 1,
+   "fa": "گروه صنعتی گلرنگ",
+   "en": "Golrang Industrial Group",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private",
+   "slug": "golrang"
+  },
+  {
+   "rank": 2,
+   "tier": 1,
+   "fa": "گروه سولیکو (کاله)",
+   "en": "Solico Group (Kalleh)",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private",
+   "slug": "kalleh"
+  },
+  {
+   "rank": 3,
+   "tier": 1,
+   "fa": "دیجی‌کالا",
+   "en": "Digikala",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "digikala"
+  },
+  {
+   "rank": 4,
+   "tier": 1,
+   "fa": "اسنپ",
+   "en": "Snapp",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "snapp"
+  },
+  {
+   "rank": 5,
+   "tier": 1,
+   "fa": "شیرین عسل",
+   "en": "Shirin Asal",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 6,
+   "tier": 1,
+   "fa": "آیدین",
+   "en": "Aidin",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 7,
+   "tier": 1,
+   "fa": "لبنیات میهن",
+   "en": "Mihan Dairy",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 8,
+   "tier": 1,
+   "fa": "دامداران",
+   "en": "Damdaran",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 9,
+   "tier": 1,
+   "fa": "تک ماکارون",
+   "en": "Tak Makaron",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 10,
+   "tier": 1,
+   "fa": "بهروز",
+   "en": "Behrouz",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 11,
+   "tier": 1,
+   "fa": "امرسان",
+   "en": "Emersun",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 12,
+   "tier": 1,
+   "fa": "پاکشوما",
+   "en": "Pakshoma",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 13,
+   "tier": 1,
+   "fa": "کرمان موتور",
+   "en": "Kerman Motor",
+   "branch": "industry",
+   "sub": "auto",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 14,
+   "tier": 1,
+   "fa": "مدیران خودرو",
+   "en": "Modiran Vehicle (MVM)",
+   "branch": "industry",
+   "sub": "auto",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 15,
+   "tier": 1,
+   "fa": "کافه‌بازار",
+   "en": "Cafe Bazaar",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "cafebazaar"
+  },
+  {
+   "rank": 16,
+   "tier": 1,
+   "fa": "دیوار",
+   "en": "Divar",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "divar"
+  },
+  {
+   "rank": 17,
+   "tier": 1,
+   "fa": "علی‌بابا",
+   "en": "Alibaba Travel",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private",
+   "leader": true
+  },
+  {
+   "rank": 18,
+   "tier": 1,
+   "fa": "سیناژن",
+   "en": "CinnaGen",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private",
+   "slug": "cinnagen-pharma"
+  },
+  {
+   "rank": 19,
+   "tier": 1,
+   "fa": "هاکوپیان",
+   "en": "Hacoupian",
+   "branch": "industry",
+   "sub": "textile",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 20,
+   "tier": 1,
+   "fa": "نوبیتکس",
+   "en": "Nobitex",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 21,
+   "tier": 1,
+   "fa": "گروه بهستان",
+   "en": "Behestan Group",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 22,
+   "tier": 1,
+   "fa": "چوپان",
+   "en": "Choopan Dairy",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 23,
+   "tier": 1,
+   "fa": "دومینو",
+   "en": "Domino Dairy",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 24,
+   "tier": 1,
+   "fa": "فرمند",
+   "en": "Farmand",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 25,
+   "tier": 1,
+   "fa": "مزمز",
+   "en": "Maz Maz",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 26,
+   "tier": 1,
+   "fa": "چی‌توز",
+   "en": "Cheetoz",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 27,
+   "tier": 1,
+   "fa": "سن‌ایچ",
+   "en": "Sunich",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 28,
+   "tier": 1,
+   "fa": "گلستان",
+   "en": "Golestan Food",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 29,
+   "tier": 1,
+   "fa": "گلها",
+   "en": "Golha",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 30,
+   "tier": 1,
+   "fa": "مهیا پروتئین",
+   "en": "Mahya Protein",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 31,
+   "tier": 1,
+   "fa": "سام الکترونیک",
+   "en": "Sam Electronic",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 32,
+   "tier": 1,
+   "fa": "گلدیران (جی‌پلاس)",
+   "en": "Goldiran (G Plus)",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 33,
+   "tier": 1,
+   "fa": "تیپاکس",
+   "en": "Tipax",
+   "branch": "transport",
+   "sub": "logistics",
+   "listed": false,
+   "ownership": "private",
+   "slug": "tipax"
+  },
+  {
+   "rank": 34,
+   "tier": 1,
+   "fa": "ترب",
+   "en": "Torob",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "torob"
+  },
+  {
+   "rank": 35,
+   "tier": 1,
+   "fa": "شیپور",
+   "en": "Sheypoor",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "sheypoor"
+  },
+  {
+   "rank": 36,
+   "tier": 1,
+   "fa": "اسنپ‌تریپ",
+   "en": "Snapptrip",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private",
+   "leader": true
+  },
+  {
+   "rank": 37,
+   "tier": 1,
+   "fa": "هتل‌های اسپیناس",
+   "en": "Espinas Hotels",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private",
+   "leader": true
+  },
+  {
+   "rank": 38,
+   "tier": 1,
+   "fa": "باریج اسانس",
+   "en": "Barij Essence",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private",
+   "slug": "barij-essence"
+  },
+  {
+   "rank": 39,
+   "tier": 1,
+   "fa": "آتا",
+   "en": "ATA Airlines",
+   "branch": "transport",
+   "sub": "air",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 40,
+   "tier": 1,
+   "fa": "هواپیمایی کاسپین",
+   "en": "Caspian Airlines",
+   "branch": "transport",
+   "sub": "air",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 41,
+   "tier": 1,
+   "fa": "هواپیمایی زاگرس",
+   "en": "Zagros Airlines",
+   "branch": "transport",
+   "sub": "air",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 42,
+   "tier": 1,
+   "fa": "هواپیمایی وارش",
+   "en": "Varesh Airlines",
+   "branch": "transport",
+   "sub": "air",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 43,
+   "tier": 1,
+   "fa": "گروه صنعتی زر",
+   "en": "Zar Industrial Group",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 44,
+   "tier": 2,
+   "fa": "دکتر بیز",
+   "en": "Dr. Biz",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 45,
+   "tier": 2,
+   "fa": "هواپیمایی تابان",
+   "en": "Taban Air",
+   "branch": "transport",
+   "sub": "air",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 46,
+   "tier": 2,
+   "fa": "هواپیمایی سپهران",
+   "en": "Sepehran Airlines",
+   "branch": "transport",
+   "sub": "air",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 47,
+   "tier": 2,
+   "fa": "کوبل دارو",
+   "en": "Cobel Darou",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 48,
+   "tier": 2,
+   "fa": "اکتوور",
+   "en": "Actoverco",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 49,
+   "tier": 2,
+   "fa": "سامی ساز",
+   "en": "Sami Saz",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 50,
+   "tier": 2,
+   "fa": "رامو فارمین",
+   "en": "Ramopharmin",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 51,
+   "tier": 2,
+   "fa": "پویش دارو",
+   "en": "Pooyesh Darou",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 52,
+   "tier": 2,
+   "fa": "نانو الوند",
+   "en": "Nano Alvand",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 53,
+   "tier": 2,
+   "fa": "آریا تینا ژن",
+   "en": "Arya Tina Gene",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 54,
+   "tier": 2,
+   "fa": "بهوزان",
+   "en": "Behvazan",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 55,
+   "tier": 2,
+   "fa": "داروسازی فاران شیمی",
+   "en": "Faran Shimi Pharmaceutical",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private",
+   "slug": "faran-shimi"
+  },
+  {
+   "rank": 56,
+   "tier": 2,
+   "fa": "داروسازی روناک",
+   "en": "Ronak Pharmaceutical",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private",
+   "slug": "ronak"
+  },
+  {
+   "rank": 57,
+   "tier": 2,
+   "fa": "داروسازی زردبند",
+   "en": "Zardband Pharmaceuticals",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private",
+   "slug": "zardband-pharmaceuticals"
+  },
+  {
+   "rank": 58,
+   "tier": 2,
+   "fa": "تولیپرس",
+   "en": "Tolypers",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 59,
+   "tier": 2,
+   "fa": "هراز",
+   "en": "Haraz Dairy",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 60,
+   "tier": 2,
+   "fa": "رامک",
+   "en": "Ramak Dairy",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 61,
+   "tier": 2,
+   "fa": "شونیز",
+   "en": "Shoniz",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 62,
+   "tier": 2,
+   "fa": "دلپذیر",
+   "en": "Delpazir",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 63,
+   "tier": 2,
+   "fa": "بیژن",
+   "en": "Bijan",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 64,
+   "tier": 2,
+   "fa": "نوین زعفران",
+   "en": "Novin Saffron",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 65,
+   "tier": 2,
+   "fa": "زعفران سحرخیز",
+   "en": "Saharkhiz Saffron",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private",
+   "slug": "saharkhiz-saffron"
+  },
+  {
+   "rank": 66,
+   "tier": 2,
+   "fa": "زعفران اسفدان",
+   "en": "Esfedan Saffron",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private",
+   "slug": "esfedan-saffron"
+  },
+  {
+   "rank": 67,
+   "tier": 2,
+   "fa": "کامچین",
+   "en": "Kamchin",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 68,
+   "tier": 2,
+   "fa": "دلنوش",
+   "en": "Delnoosh",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 69,
+   "tier": 2,
+   "fa": "آشی‌مشی",
+   "en": "Ashi Mashi",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 70,
+   "tier": 2,
+   "fa": "شهسوند",
+   "en": "Shahsavand",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 71,
+   "tier": 2,
+   "fa": "چای دوغزال",
+   "en": "Do Ghazal Tea",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 72,
+   "tier": 2,
+   "fa": "هیمالیا",
+   "en": "Himalia",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 73,
+   "tier": 2,
+   "fa": "الکترواستیل",
+   "en": "Electrosteel",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 74,
+   "tier": 2,
+   "fa": "فردا موتورز",
+   "en": "Farda Motors",
+   "branch": "industry",
+   "sub": "auto",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 75,
+   "tier": 2,
+   "fa": "نیلپر",
+   "en": "Nilper",
+   "branch": "industry",
+   "sub": "wood",
+   "listed": false,
+   "ownership": "private",
+   "slug": "nilper"
+  },
+  {
+   "rank": 76,
+   "tier": 2,
+   "fa": "باسلام",
+   "en": "Basalam",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 77,
+   "tier": 2,
+   "fa": "جاباما",
+   "en": "Jabama",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 78,
+   "tier": 2,
+   "fa": "فلای‌تودی",
+   "en": "Flytoday",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 79,
+   "tier": 2,
+   "fa": "لست‌سکند",
+   "en": "Lastsecond",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 80,
+   "tier": 2,
+   "fa": "والکس",
+   "en": "Wallex",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 81,
+   "tier": 2,
+   "fa": "بیت‌پین",
+   "en": "Bitpin",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 82,
+   "tier": 2,
+   "fa": "رمزینکس",
+   "en": "Ramzinex",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 83,
+   "tier": 2,
+   "fa": "اکسکوینو",
+   "en": "Excoino",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 84,
+   "tier": 2,
+   "fa": "زرین‌پال",
+   "en": "Zarinpal",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private",
+   "slug": "zarinpal"
+  },
+  {
+   "rank": 85,
+   "tier": 2,
+   "fa": "زیبال",
+   "en": "Zibal",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 86,
+   "tier": 2,
+   "fa": "وندار",
+   "en": "Vandar",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 87,
+   "tier": 2,
+   "fa": "پی‌پینگ",
+   "en": "PayPing",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 88,
+   "tier": 2,
+   "fa": "ازکی",
+   "en": "Azki",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 89,
+   "tier": 2,
+   "fa": "بیمه‌بازار",
+   "en": "Bimebazar",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 90,
+   "tier": 2,
+   "fa": "لندو",
+   "en": "Lendo",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 91,
+   "tier": 2,
+   "fa": "شاتل",
+   "en": "Shatel",
+   "branch": "technology",
+   "sub": "telecom",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 92,
+   "tier": 2,
+   "fa": "رسپینا",
+   "en": "Respina",
+   "branch": "technology",
+   "sub": "telecom",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 93,
+   "tier": 2,
+   "fa": "ابر آروان",
+   "en": "ArvanCloud",
+   "branch": "technology",
+   "sub": "telecom",
+   "listed": false,
+   "ownership": "private",
+   "slug": "arvan-cloud"
+  },
+  {
+   "rank": 94,
+   "tier": 2,
+   "fa": "صباایده (آپارات و فیلیمو)",
+   "en": "Sabaidea (Aparat, Filimo)",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "sabaidea"
+  },
+  {
+   "rank": 95,
+   "tier": 2,
+   "fa": "طاقچه",
+   "en": "Taaghche",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "taaghche"
+  },
+  {
+   "rank": 96,
+   "tier": 2,
+   "fa": "فیدیبو",
+   "en": "Fidibo",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private",
+   "slug": "fidibo"
+  },
+  {
+   "rank": 97,
+   "tier": 2,
+   "fa": "ورزش سه",
+   "en": "Varzesh3",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 98,
+   "tier": 2,
+   "fa": "چاپار",
+   "en": "Chapar",
+   "branch": "transport",
+   "sub": "logistics",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 99,
+   "tier": 2,
+   "fa": "ماهکس",
+   "en": "Mahex",
+   "branch": "transport",
+   "sub": "logistics",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 100,
+   "tier": 2,
+   "fa": "الوپیک",
+   "en": "Alopeyk",
+   "branch": "transport",
+   "sub": "logistics",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 101,
+   "tier": 2,
+   "fa": "میاره",
+   "en": "Miare",
+   "branch": "transport",
+   "sub": "logistics",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 102,
+   "tier": 2,
+   "fa": "قلم‌چی",
+   "en": "Ghalamchi",
+   "branch": "technology",
+   "sub": "education",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 103,
+   "tier": 2,
+   "fa": "گاج",
+   "en": "Gaj",
+   "branch": "technology",
+   "sub": "education",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 104,
+   "tier": 2,
+   "fa": "خیلی سبز",
+   "en": "Kheili Sabz",
+   "branch": "technology",
+   "sub": "education",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 105,
+   "tier": 2,
+   "fa": "مبتکران",
+   "en": "Mobtakeran",
+   "branch": "technology",
+   "sub": "education",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 106,
+   "tier": 2,
+   "fa": "همراه مکانیک",
+   "en": "Hamrah Mechanic",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 107,
+   "tier": 2,
+   "fa": "کارنامه",
+   "en": "Karnameh",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 108,
+   "tier": 2,
+   "fa": "روژین تاک",
+   "en": "Rojin Tak",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 109,
+   "tier": 2,
+   "fa": "کیک مامان",
+   "en": "Maman Cake",
+   "branch": "industry",
+   "sub": "food",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 110,
+   "tier": 2,
+   "fa": "کاشی نیلو",
+   "en": "Niloo Tile",
+   "branch": "industry",
+   "sub": "construction",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 111,
+   "tier": 2,
+   "fa": "چینی مقصود",
+   "en": "Maghsoud Porcelain",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 112,
+   "tier": 2,
+   "fa": "جین‌وست",
+   "en": "Jean West",
+   "branch": "industry",
+   "sub": "textile",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 113,
+   "tier": 2,
+   "fa": "فولاد کویر",
+   "en": "Kavir Steel",
+   "branch": "industry",
+   "sub": "steel",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 114,
+   "tier": 2,
+   "fa": "آذویکو",
+   "en": "Azvico",
+   "branch": "industry",
+   "sub": "auto",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 115,
+   "tier": 2,
+   "fa": "سینره",
+   "en": "Cinere",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 116,
+   "tier": 2,
+   "fa": "فیروز",
+   "en": "Firooz",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 117,
+   "tier": 2,
+   "fa": "مریدنت",
+   "en": "Merident",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 118,
+   "tier": 2,
+   "fa": "هاردستون",
+   "en": "Hardstone",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 119,
+   "tier": 2,
+   "fa": "فلر",
+   "en": "Feller",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 120,
+   "tier": 2,
+   "fa": "داتیس",
+   "en": "Datis",
+   "branch": "industry",
+   "sub": "consumer",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 121,
+   "tier": 2,
+   "fa": "پیشتاز طب",
+   "en": "Pishtaz Teb Diagnostics",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 122,
+   "tier": 2,
+   "fa": "پادتن علم",
+   "en": "Padtan Elm",
+   "branch": "industry",
+   "sub": "pharma",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 123,
+   "tier": 2,
+   "fa": "هامون",
+   "en": "Hamoon Furniture",
+   "branch": "industry",
+   "sub": "wood",
+   "listed": false,
+   "ownership": "private",
+   "slug": "hamoon-furniture"
+  },
+  {
+   "rank": 124,
+   "tier": 2,
+   "fa": "گروه صنعتی پاک‌چوب",
+   "en": "Pakchoob Industrial Group",
+   "branch": "industry",
+   "sub": "wood",
+   "listed": false,
+   "ownership": "private",
+   "slug": "pakchoob-group"
+  },
+  {
+   "rank": 125,
+   "tier": 2,
+   "fa": "گروه صنعتی نوین چوب",
+   "en": "Novin Choob Industrial Group",
+   "branch": "industry",
+   "sub": "wood",
+   "listed": false,
+   "ownership": "private",
+   "slug": "novin-choob-industrial-group"
+  },
+  {
+   "rank": 126,
+   "tier": 2,
+   "fa": "تکنولایف",
+   "en": "Technolife",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 127,
+   "tier": 2,
+   "fa": "لایون کامپیوتر",
+   "en": "Lion Computer",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 128,
+   "tier": 2,
+   "fa": "آبان‌تتر",
+   "en": "Abantether",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 129,
+   "tier": 2,
+   "fa": "تترلند",
+   "en": "Tetherland",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 130,
+   "tier": 2,
+   "fa": "اوکی‌اکسچنج",
+   "en": "OK Exchange",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 131,
+   "tier": 2,
+   "fa": "مستربلیط",
+   "en": "Mrbilit",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 132,
+   "tier": 2,
+   "fa": "سفرمارکت",
+   "en": "Safarmarket",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 133,
+   "tier": 2,
+   "fa": "ایران‌هتل‌آنلاین",
+   "en": "Iranhotelonline",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 134,
+   "tier": 2,
+   "fa": "اقامت۲۴",
+   "en": "Eghamat24",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 135,
+   "tier": 2,
+   "fa": "هتل شایان کیش",
+   "en": "Shayan Hotel Kish",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 136,
+   "tier": 2,
+   "fa": "هتل قصر طلایی مشهد",
+   "en": "Ghasr Talaee Hotel Mashhad",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 137,
+   "tier": 2,
+   "fa": "هتل درویشی مشهد",
+   "en": "Darvishi Royal Hotel Mashhad",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 138,
+   "tier": 3,
+   "fa": "جابینجا",
+   "en": "Jobinja",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 139,
+   "tier": 3,
+   "fa": "ای‌استخدام",
+   "en": "E-estekhdam",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 140,
+   "tier": 3,
+   "fa": "مکتب‌خونه",
+   "en": "Maktabkhooneh",
+   "branch": "technology",
+   "sub": "education",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 141,
+   "tier": 3,
+   "fa": "فرادرس",
+   "en": "Faradars",
+   "branch": "technology",
+   "sub": "education",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 142,
+   "tier": 3,
+   "fa": "کوئرا",
+   "en": "Quera",
+   "branch": "technology",
+   "sub": "education",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 143,
+   "tier": 3,
+   "fa": "کیلید",
+   "en": "Kilid",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 144,
+   "tier": 3,
+   "fa": "ایمالز",
+   "en": "Emalls",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 145,
+   "tier": 3,
+   "fa": "تخفیفان",
+   "en": "Takhfifan",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 146,
+   "tier": 3,
+   "fa": "دکترتو",
+   "en": "Doctoreto",
+   "branch": "technology",
+   "sub": "health",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 147,
+   "tier": 3,
+   "fa": "پذیرش۲۴",
+   "en": "Paziresh24",
+   "branch": "technology",
+   "sub": "health",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 148,
+   "tier": 3,
+   "fa": "تپسل",
+   "en": "Tapsell",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 149,
+   "tier": 3,
+   "fa": "یکتانت",
+   "en": "Yektanet",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 150,
+   "tier": 3,
+   "fa": "کاوه‌نگار",
+   "en": "Kavenegar",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 151,
+   "tier": 3,
+   "fa": "هم‌روش",
+   "en": "Hamravesh",
+   "branch": "technology",
+   "sub": "telecom",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 152,
+   "tier": 3,
+   "fa": "لیارا",
+   "en": "Liara",
+   "branch": "technology",
+   "sub": "telecom",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 153,
+   "tier": 3,
+   "fa": "پارس‌پک",
+   "en": "ParsPack",
+   "branch": "technology",
+   "sub": "telecom",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 154,
+   "tier": 3,
+   "fa": "ایران‌سرور",
+   "en": "Iranserver",
+   "branch": "technology",
+   "sub": "telecom",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 155,
+   "tier": 3,
+   "fa": "هاست‌ایران",
+   "en": "Hostiran",
+   "branch": "technology",
+   "sub": "telecom",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 156,
+   "tier": 3,
+   "fa": "محک",
+   "en": "Mahak Software",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 157,
+   "tier": 3,
+   "fa": "چارگون",
+   "en": "Chargoon",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 158,
+   "tier": 3,
+   "fa": "تدبیرپرداز",
+   "en": "Tadbir Pardaz",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 159,
+   "tier": 3,
+   "fa": "رای‌ورز",
+   "en": "Rayvarz",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 160,
+   "tier": 3,
+   "fa": "دوران افزار",
+   "en": "Douran Software",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 161,
+   "tier": 3,
+   "fa": "زومیت",
+   "en": "Zoomit",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 162,
+   "tier": 3,
+   "fa": "دیجیاتو",
+   "en": "Digiato",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 163,
+   "tier": 3,
+   "fa": "هتل داریوش کیش",
+   "en": "Dariush Grand Hotel Kish",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 164,
+   "tier": 3,
+   "fa": "هتل ترنج کیش",
+   "en": "Toranj Marine Hotel Kish",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 165,
+   "tier": 3,
+   "fa": "جاجیگا",
+   "en": "Jajiga",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 166,
+   "tier": 3,
+   "fa": "شب",
+   "en": "Shab",
+   "branch": "tourism",
+   "sub": "hotels",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 167,
+   "tier": 3,
+   "fa": "نت‌برگ",
+   "en": "Netbarg",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 168,
+   "tier": 3,
+   "fa": "مدیسه",
+   "en": "Modiseh",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 169,
+   "tier": 3,
+   "fa": "بانی‌مد",
+   "en": "Banimode",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 170,
+   "tier": 3,
+   "fa": "زنبیل",
+   "en": "Zanbil",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 171,
+   "tier": 3,
+   "fa": "ویرگول",
+   "en": "Virgool",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 172,
+   "tier": 3,
+   "fa": "آچاره",
+   "en": "Achareh",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 173,
+   "tier": 3,
+   "fa": "هومینگا",
+   "en": "Homing",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 174,
+   "tier": 3,
+   "fa": "ارزدیجیتال",
+   "en": "Arzdigital",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 175,
+   "tier": 3,
+   "fa": "کارپینو",
+   "en": "Carpino",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 176,
+   "tier": 3,
+   "fa": "پیندو",
+   "en": "Pindo",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 177,
+   "tier": 3,
+   "fa": "پونیشا",
+   "en": "Ponisha",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 178,
+   "tier": 3,
+   "fa": "کارلنسر",
+   "en": "Karlancer",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 179,
+   "tier": 3,
+   "fa": "بیمیتو",
+   "en": "Bimito",
+   "branch": "technology",
+   "sub": "fintech",
+   "listed": false,
+   "ownership": "private"
+  },
+  {
+   "rank": 180,
+   "tier": 3,
+   "fa": "قاصدک",
+   "en": "Ghasedak",
+   "branch": "technology",
+   "sub": "platforms",
+   "listed": false,
+   "ownership": "private"
+  }
+ ]
+}

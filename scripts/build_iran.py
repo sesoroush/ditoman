@@ -17,6 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "iran" / "branches.json").read_text(encoding="utf-8"))
 COMPANIES = ROOT / "data" / "companies"
 TOP = json.loads((ROOT / "data" / "iran" / "listed.json").read_text(encoding="utf-8"))
+PRIV = json.loads((ROOT / "data" / "iran" / "private.json").read_text(encoding="utf-8"))
 BASE = "https://ditoman.com/"
 REVIEWED = {"fa": "۱۵ آبان ۱۴۰۵", "en": "6 November 2026"}
 
@@ -639,6 +640,9 @@ def branch_page(b, companies):
     top = sorted((c for c in TOP["companies"] if c["branch"] == b["slug"]), key=lambda c: c["rank"])
     syms = {c["sym"] for c in top}
     rest = [x for x in b.get("leaders", []) if x.get("sym") not in syms]
+    seen = {x.get("slug") or x["fa"] for x in rest}
+    rest += [{k: v for k, v in x.items() if k != "rank"} for x in PRIV["companies"] if x["branch"] == b["slug"] and (x.get("slug") or x["fa"]) not in seen
+             and not (x.get("leader") and any(y["en"] == x["en"] for y in rest))]
     subs_ids = [x["id"] for x in b["subs"]]
     wmax = max([c["weight"] for c in top] or [1])
     leaders = "".join(leader_card(x, subname, tint(b["accent"], subs_ids.index(x["sub"])),
@@ -804,6 +808,36 @@ def top_section(branches):
     <script>{TOP_JS}</script>'''
 
 
+def private_section(branches):
+    bmap = {b["slug"]: b for b in branches}
+    rows = []
+    for c in PRIV["companies"]:
+        b = bmap[c["branch"]]
+        sub = {s["id"]: s for s in b["subs"]}[c["sub"]]
+        name = t(c)
+        if c.get("slug"):
+            name = f'<a href="{e(c["slug"])}.html">{name}</a>'
+        rows.append(
+            f'<tr data-branch="{b["slug"]}"><td class="n">{t({"fa": "≈" + fa_digits(c["rank"]), "en": "≈" + str(c["rank"])})}</td>'
+            f'<td class="name">{name}</td>'
+            f'<td><a href="iran-{b["slug"]}.html#leaders"><span class="dot" style="background:{e(b["accent"])}"></span>{t(b["name"])}</a>'
+            f' <small style="color:var(--muted)">· {t(sub)}</small></td></tr>')
+    n = len(PRIV["companies"])
+    chips = chip("branch", "", UI["all_branches"], True) + "".join(
+        chip("branch", b["slug"], b["name"]) for b in branches if any(c["branch"] == b["slug"] for c in PRIV["companies"]))
+    head = "".join(f"<th>{t(UI[k])}</th>" for k in ("col_rank", "col_name", "col_branch"))
+    title = {"fa": PRIV["title"]["fa"] + " (" + fa_digits(n) + " شرکت)", "en": PRIV["title"]["en"] + f" ({n} companies)"}
+    return f'''<section class="ir-sec" id="private">
+      <h2>{t(title)}</h2>
+      <p class="ir-lead" style="margin:0 0 18px">{t(PRIV["lead"])}</p>
+      <details class="ir-top-list"><summary>{t({"fa": "نمایش فهرست", "en": "Show the list"})}</summary>
+      <div class="ir-lf" role="group"><div class="ir-lf-row"><span class="ir-lf-k">{t(UI["col_branch"])}</span>{chips}</div></div>
+      <div class="ir-top-wrap"><table class="ir-top"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div></details>
+      <p class="ir-top-note"><b>{t(UI["top_method"])}:</b> {t(PRIV["method"])}</p>
+    </section>
+    <script>{TOP_JS.replace('"top100"', '"private"').replace('var src = document.getElementById("ir-map-data")', 'var src = null')}</script>'''
+
+
 def hub_page(branches):
     s = DATA["section"]
     feats = "".join(feature_card(f, "hub") for f in s.get("features", []))
@@ -817,6 +851,7 @@ def hub_page(branches):
     <div class="ir-grid">{cards}</div>
     <p class="ir-note">{t(s["method"])} <a href="companies.html">{t(UI["all"])}</a></p>
     {top_section(branches)}
+    {private_section(branches)}
     <div class="ir-notice"><span>{t(UI["notice"])}</span><span>{t(UI["reviewed"])}</span></div>
   </main>"""
     return page("What Iran Has | ایران چه دارد | Ditoman", s["lead"]["en"], "iran.html", body)
