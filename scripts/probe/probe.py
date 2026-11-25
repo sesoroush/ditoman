@@ -1,5 +1,5 @@
 """Render the public IMI-100 ranking pages in a headless browser (from a GitHub runner) and save their text.
-IMI-100 (Industrial Management Institute) ranks Iran's 500 largest companies by sales; the list is drawn by script."""
+IMI-100 (the Industrial Management Institute) ranks Iran's 500 largest companies by sales; the list is drawn by script."""
 import json, pathlib
 from playwright.sync_api import sync_playwright
 OUT = pathlib.Path(__file__).resolve().parent.parent.parent / "data" / "probe"
