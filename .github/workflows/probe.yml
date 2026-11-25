@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: pip install playwright==1.47.0 && python -m playwright install --with-deps chromium
       - run: python3 scripts/probe/probe.py || true
       - run: |
           git config user.name "ditoman-bot"; git config user.email "ditoman-bot@users.noreply.github.com"
