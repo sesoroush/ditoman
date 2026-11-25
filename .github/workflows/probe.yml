@@ -1,0 +1,18 @@
+name: Probe Iranian company-data sources
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/probe/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/probe/probe.py || true
+      - run: |
+          git config user.name "ditoman-bot"; git config user.email "ditoman-bot@users.noreply.github.com"
+          git add data/probe || true; git commit -m "Probe result" || exit 0
+          git pull --rebase origin main; git push origin HEAD:main
