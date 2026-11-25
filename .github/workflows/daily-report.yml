@@ -11,6 +11,11 @@ on:
     paths:
       - "market/trigger-report.txt"
   workflow_dispatch:
+    inputs:
+      skip_telegram:
+        description: "Set to true to build and archive the report but not post the photo to Telegram"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -56,7 +61,10 @@ jobs:
 
       - name: One-time Telegram skip (Soroush's request, 25 Nov 2026 morning only)
         id: tgskip
+        env:
+          INPUT_SKIP: ${{ github.event.inputs.skip_telegram }}
         run: |
+          if [ "$INPUT_SKIP" = "true" ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; echo "Skipping the Telegram photo (input)"; exit 0; fi
           D="$(TZ=Asia/Tehran date +%F)"; H="$(TZ=Asia/Tehran date +%H)"
           if [ "$D" = "2026-11-25" ] && [ "$((10#$H))" -lt 12 ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; echo "Skipping the Telegram photo this once"; else echo "skip=false" >> "$GITHUB_OUTPUT"; fi
 
