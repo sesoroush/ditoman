@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>What We Know About the FinCEN Cyber Incident | آنچه درباره‌ی نفوذ سایبری به FinCEN می‌دانیم | Ditoman</title>
+<meta name="description" content="دسترسی غیرمجاز به بخشی از سامانه‌های FinCEN در خزانه‌داری آمریکا: چه چیزی تأیید شده، چه چیزی نامعلوم است و چطور تیتر و واقعیت را جدا کنیم. Ditoman fact check of the FinCEN cybersecurity incident." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/us-treasury-fincen-cyber-incident.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/us-treasury-fincen-cyber-incident.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/us-treasury-fincen-cyber-incident.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/us-treasury-fincen-cyber-incident.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="What We Know About the FinCEN Cyber Incident | آنچه درباره‌ی نفوذ سایبری به FinCEN می‌دانیم | Ditoman" />
+<meta property="og:description" content="دسترسی غیرمجاز به بخشی از سامانه‌های FinCEN در خزانه‌داری آمریکا: چه چیزی تأیید شده، چه چیزی نامعلوم است و چطور تیتر و واقعیت را جدا کنیم. Ditoman fact check of the FinCEN cybersecurity incident." />
+<meta property="og:url" content="https://ditoman.com/us-treasury-fincen-cyber-incident.html" />
+<meta property="og:image" content="https://ditoman.com/social/us-treasury-fincen-cyber-incident/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/us-treasury-fincen-cyber-incident.html#article",
+   "mainEntityOfPage": "https://ditoman.com/us-treasury-fincen-cyber-incident.html",
+   "headline": "What We Know About the FinCEN Cyber Incident | آنچه درباره‌ی نفوذ سایبری به FinCEN می‌دانیم",
+   "description": "دسترسی غیرمجاز به بخشی از سامانه‌های FinCEN در خزانه‌داری آمریکا: چه چیزی تأیید شده، چه چیزی نامعلوم است و چطور تیتر و واقعیت را جدا کنیم. Ditoman fact check of the FinCEN cybersecurity incident.",
+   "image": "https://ditoman.com/social/us-treasury-fincen-cyber-incident/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "What We Know About the FinCEN Cyber Incident | آنچه درباره‌ی نفوذ سایبری به FinCEN می‌دانیم",
+     "item": "https://ditoman.com/us-treasury-fincen-cyber-incident.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/us-treasury-fincen-cyber-incident/card.webp" srcset="social/us-treasury-fincen-cyber-incident/card.webp 900w, social/us-treasury-fincen-cyber-incident/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="US Treasury FinCEN cyber incident" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/us-treasury-fincen-cyber-incident/en-card.webp" srcset="social/us-treasury-fincen-cyber-incident/en-card.webp 900w, social/us-treasury-fincen-cyber-incident/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="US Treasury FinCEN cyber incident" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">News check · Cybersecurity</span><span lang="fa">راستی‌آزمایی خبر · امنیت سایبری</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">نفوذ سایبری به خزانه‌داری آمریکا؛ چه می‌دانیم؟</h1>
+<h1 lang="en">The US Treasury cyber incident: what we know</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">دسترسی غیرمجاز به بخشی از سامانه‌های FinCEN: آنچه تأیید شده، آنچه نامعلوم است و راه جدا کردن تیتر از واقعیت</p>
+<p class="subtitle" lang="en">Unauthorized access to part of FinCEN’s systems: what is confirmed, what is unknown, and how to separate headline from fact</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۱</b><b lang="en">1</b><span lang="fa">شعبه‌ی خزانه‌داری (FinCEN) درگیر است</span><span lang="en">Treasury bureau (FinCEN) affected</span></div>
+<div class="stat"><b lang="fa">محدود</b><b lang="en">Limited</b><span lang="fa">دامنه‌ی اعلام‌شده‌ی سامانه‌ها</span><span lang="en">scope of systems, per FinCEN</span></div>
+<div class="stat"><b lang="fa">۹ دی</b><b lang="en">30 Dec</b><span lang="fa">موعد جدید گزارش‌های بخشی از مؤسسه‌ها</span><span lang="en">new deadline for some filers</span></div>
+<div class="stat"><b lang="fa">؟</b><b lang="en">?</b><span lang="fa">سرقت داده: هنوز اعلام نشده</span><span lang="en">data theft: not announced</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>«خزانه‌داری آمریکا هک شد»؛ این تیتر امروز در شبکه‌های اجتماعی چرخید. اما بیانیه‌ی رسمی چیز دقیق‌تری می‌گوید: یکی از شعبه‌های خزانه‌داری، <strong>FinCEN</strong>، اعلام کرده به بخش محدودی از سامانه‌هایش دسترسی غیرمجاز پیدا شده است. این گزارش می‌گوید چه چیزی تأیید شده، چه چیزی هنوز معلوم نیست و چطور می‌شود در این‌جور خبرها بین تیتر و واقعیت فرق گذاشت.</blockquote>
+<h3>در یک نگاه</h3>
+<ul>
+<li><strong>چه کسی؟</strong> FinCEN، شبکه‌ی مبارزه با جرایم مالی در وزارت خزانه‌داری آمریکا</li>
+</ul>
+<ul>
+<li><strong>چه شده؟</strong> «دسترسی غیرمجاز به بخش محدودی از سامانه‌ها»؛ برخی سامانه‌ها به‌عنوان احتیاط از دسترس خارج شده‌اند</li>
+</ul>
+<ul>
+<li><strong>چه کار می‌کند؟</strong> سایت ثبت گزارش‌های بانکی (BSA E-Filing) فعال است، ولی بعضی خدمات ممکن است موقتاً در دسترس نباشد</li>
+</ul>
+<ul>
+<li><strong>مهلت‌ها:</strong> موعد ارسال بخشی از گزارش‌ها تا ۳۰ دسامبر (۹ دی) عقب رفته است</li>
+</ul>
+<ul>
+<li><strong>نامعلوم:</strong> سرقت داده، عامل حمله و ارتباط با سایر رخدادها هنوز تأیید نشده</li>
+</ul>
+<h3><span class="check-number">1.</span> چه اتفاقی افتاد؟</h3>
+<p><strong>۳ آذر ۱۴۰۵ (۲۴ نوامبر):</strong><br>FinCEN اعلام کرد در حال بررسی یک رخداد امنیتی سایبری است که به «دسترسی غیرمجاز به بخش محدودی از سامانه‌هایش» انجام شده. به گفته‌ی <a href="https://abcnews.com/US/treasurys-fincen-cybersecurity-incident-includes-unauthorized-access-systems/story?id=138432822" target="_blank" rel="noopener" style="color:#57D9C7">ABC News</a>، این نهاد برخی سامانه‌ها را به‌عنوان اقدام احتیاطی از دسترس خارج کرده، اما نگفته کدام‌ها.</p>
+<p><strong>سایت ثبت گزارش‌ها:</strong><br>وب‌سایت BSA E-Filing، جایی که مؤسسه‌های مالی گزارش‌های مشکوک را ثبت می‌کنند، همچنان فعال است؛ هرچند ممکن است برخی خدمات موقتاً در دسترس نباشد. طبق <a href="https://news.sulat.com/2026/11/25/fincen-cybersecurity-incident/" target="_blank" rel="noopener" style="color:#57D9C7">گزارش Sulat</a>، خط تلفن مؤسسه‌های مالی هم اختلالی نداشته.</p>
+<p><strong>اعلام قبلی:</strong><br>در اطلاعیه‌ی BSA E-Filing در ۲۹ آبان (۲۰ نوامبر)، اختلال در مسیر «ارسال دسته‌ای» (SDTM) گزارش شده بود. FinCEN نگفته این اختلال با دسترسی غیرمجاز یک ماجراست یا نه.</p>
+<p><strong>مهلت‌ها:</strong><br>دستور FIN-2026-R002 (۳ آذر) موعد ارسال را برای سه گروه تا ۳۰ دسامبر عقب برد: ارسال‌کنندگان دسته‌ای، گزارش‌دهندگان مالکیت ذی‌نفع و به‌روزرسانی‌کنندگان FinCEN ID. این دستور گزارش‌های سررسید ۲۷ آبان تا ۸ دی را پوشش می‌دهد. متن دستور به «اختلال خدمات» اشاره می‌کند، نه به رخداد سایبری. FinCEN می‌گوید ممکن است مهلت را باز هم تمدید کند.</p>
+<h3><span class="check-number">2.</span> FinCEN چیست و چرا مهم است؟</h3>
+<p>FinCEN یکی از شعبه‌های وزارت خزانه‌داری آمریکاست. بانک‌ها و مؤسسه‌های مالی گزارش‌های فعالیت مشکوک و گزارش‌های قانونی دیگر را به آن می‌دهند و FinCEN از آن‌ها برای مبارزه با پول‌شویی و جرایم مالی استفاده می‌کند.</p>
+<p>پس اختلال در سامانه‌های آن یعنی <strong>اختلال در گزارش‌دهی مالی</strong>؛ نه در پرداخت‌ها، نه در بازار اوراق و نه در حساب مردم. چنین خبری برای بانک‌ها و شرکت‌هایی که گزارش می‌دهند مهم است، چون مهلت‌هایشان جابه‌جا می‌شود.</p>
+<h3><span class="check-number">3.</span> چه چیزهایی هنوز معلوم نیست؟</h3>
+<ul>
+<li><strong>سرقت داده:</strong> FinCEN نگفته داده‌ای برداشته شده یا نه. <a href="https://news.sulat.com/2026/11/25/fincen-cybersecurity-incident/" target="_blank" rel="noopener" style="color:#57D9C7">منابع</a> چیزی نیافته‌اند که نشان دهد گزارش‌های بانکی باز شده باشد.</li>
+</ul>
+<ul>
+<li><strong>عامل:</strong> هیچ نهادی مسئول معرفی نشده است.</li>
+</ul>
+<ul>
+<li><strong>ارتباط با CIA و ODNI:</strong> نیویورک‌تایمز در ساعاتی پیش‌تر از نفوذ به یک سامانه‌ی اطلاعات منبع‌باز در این دو نهاد نوشته بود. به نقل از همان گزارش، روشن نیست این دو رخداد به هم ربط دارند و FinCEN هم چنین ارتباطی را اعلام نکرده است.</li>
+</ul>
+<ul>
+<li><strong>بیانیه‌ی وزیر خزانه‌داری:</strong> گزارشی از اظهارنظر مستقیم وزارت یا وزیر درباره‌ی این رخداد پیدا نکردیم.</li>
+</ul>
+<h3><span class="check-number">4.</span> چطور تیتر و واقعیت را از هم جدا کنیم؟</h3>
+<p><strong>۱. منبع را بپرس.</strong> «خزانه‌داری هک شد» یک جمله‌ی کوتاه و پرکلیک است؛ بیانیه‌ی رسمی «بخش محدودی از سامانه‌های یک شعبه» می‌گوید.</p>
+<p><strong>۲. بین «دسترسی» و «سرقت» فرق بگذار.</strong> دسترسی غیرمجاز یعنی کسی وارد شده؛ سرقت داده یعنی چیزی برده شده. تا نهاد مربوطه اعلام نکند، دومی ثابت نشده است.</p>
+<p><strong>۳. «شاید مرتبط باشد» مدرک نیست.</strong> وقتی دو رخداد هم‌زمان‌اند، رسانه‌ها اغلب آن‌ها را به هم وصل می‌کنند. تا بیانیه نیاید، فقط می‌شود گفت همزمان بوده‌اند.</p>
+<p><strong>۴. به پست‌های تبلیغاتی دقت کن.</strong> برخی از پست‌های پرتکرار همین خبر در کنار کد تخفیف، پاداش معامله یا پیش‌بینی بازار آمده‌اند. خبر و تبلیغ دو چیزند.</p>
+<p><strong>۵. واکنش سریع نشانه‌ی ضعف نیست.</strong> قطع احتیاطی سامانه و عقب انداختن مهلت‌ها همان روالی است که سازمان‌ها در رخداد امنیتی طی می‌کنند.</p>
+<h3><span class="check-number">5.</span> این برای ما چه معنایی دارد؟</h3>
+<p>برای خواننده‌ی عادی، پیامی مستقیم برای حساب یا پول ندارد. اما یادآوری خوبی است که زیرساخت مالی هم، مثل هر سیستم دیجیتال دیگر، به امنیت سایبری وابسته است و این حوزه یکی از رشته‌های پرتقاضای کاری آینده است: امنیت اطلاعات، پاسخ به رخداد، حسابرسی سایبری و انطباق.</p>
+<h3>تحلیل دیتومان</h3>
+<p><strong>آنچه می‌دانیم:</strong> یک نهاد زیرمجموعه‌ی خزانه‌داری آمریکا دسترسی غیرمجاز به بخش محدودی از سامانه‌هایش را تأیید کرده و برای احتیاط، بخشی را قطع و مهلت‌ها را عقب انداخته است.</p>
+<p><strong>آنچه نمی‌دانیم:</strong> دامنه‌ی دقیق، سرقت داده، عامل و ارتباط با رخدادهای دیگر.</p>
+<p><strong>نتیجه:</strong> تا اطلاعات رسمی بیشتر نیاید، دقیق‌ترین جمله این است: «بخشی از سامانه‌های FinCEN مورد دسترسی غیرمجاز قرار گرفته و تحقیقات ادامه دارد.» ما این خبر را با هم دنبال می‌کنیم و اگر بیانیه‌ی تازه‌ای آمد، همین‌جا به‌روز می‌کنیم.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="bitcoin-weekly-outlook-fear-zone.html">بازار در منطقه‌ی ترس شدید</a></li><li><a href="turkey-digital-dollar-circle-paribu.html">دلار دیجیتال در استانبول</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://abcnews.com/US/treasurys-fincen-cybersecurity-incident-includes-unauthorized-access-systems/story?id=138432822" target="_blank" rel="noopener">ABC News: Treasury's FinCEN says 'cybersecurity incident' includes 'unauthorized access' of some systems (25 Nov 2026)</a></li><li><a href="https://news.sulat.com/2026/11/25/fincen-cybersecurity-incident/" target="_blank" rel="noopener">Sulat AI & Tech News: FinCEN probes unauthorised access, moves filing deadlines to 30 Dec (25 Nov 2026)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۴ آذر ۱۴۰۵. این گزارش بر پایه‌ی دو گزارش رسانه‌ای (ABC News و Sulat) نوشته شده و متن اصلی بیانیه‌ی FinCEN را مستقیم بررسی نکرده‌ایم. خبر در حال تحول است و هر بیانیه‌ی تازه اینجا به‌روز می‌شود.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>"US Treasury hacked" is the headline that spread on social media today. The official statement says something more precise: <strong>FinCEN</strong>, a bureau inside the Treasury Department, says unauthorized access reached a limited subset of its systems. This report sets out what is confirmed, what is still unknown, and how to tell a headline from the facts in stories like this.</blockquote>
+<h3>At a glance</h3>
+<ul>
+<li><strong>Who?</strong> FinCEN, the Financial Crimes Enforcement Network inside the US Treasury</li>
+</ul>
+<ul>
+<li><strong>What happened?</strong> "Unauthorized access to a limited subset of its systems"; some systems were taken offline as a precaution</li>
+</ul>
+<ul>
+<li><strong>What still works?</strong> The BSA E-Filing website, where banks file reports, remains operational, though some services may be temporarily unavailable</li>
+</ul>
+<ul>
+<li><strong>Deadlines:</strong> the due date for some filings has moved to 30 December</li>
+</ul>
+<ul>
+<li><strong>Unknown:</strong> data theft, who is behind it, and any link to other incidents are not confirmed</li>
+</ul>
+<h3><span class="check-number">1.</span> What happened?</h3>
+<p><strong>24 November 2026:</strong><br>FinCEN said it is investigating a cybersecurity incident that resulted in "unauthorized access to a limited subset of its systems". According to <a href="https://abcnews.com/US/treasurys-fincen-cybersecurity-incident-includes-unauthorized-access-systems/story?id=138432822" target="_blank" rel="noopener" style="color:#57D9C7">ABC News</a>, it took some systems offline as a precaution but did not say which.</p>
+<p><strong>The filing site:</strong><br>The BSA E-Filing website, where financial institutions submit suspicious-activity reports, remains operational, though some services may be temporarily unavailable. Per <a href="https://news.sulat.com/2026/11/25/fincen-cybersecurity-incident/" target="_blank" rel="noopener" style="color:#57D9C7">Sulat's report</a>, the financial institutions hotline was reported as unaffected.</p>
+<p><strong>An earlier notice:</strong><br>A BSA E-Filing alert on 20 November had reported a disruption to the server-to-server batch filing route (SDTM). FinCEN has not said whether that outage and the unauthorized access are the same event.</p>
+<p><strong>Deadlines:</strong><br>Order FIN-2026-R002 (24 November) moved the deadline to 30 December for three groups: batch filers, beneficial ownership reporters and FinCEN ID updaters. It covers reports due from 18 November to 29 December. The order cites "a service disruption" rather than a cyber incident, and FinCEN says it may extend the date again.</p>
+<h3><span class="check-number">2.</span> What is FinCEN and why does it matter?</h3>
+<p>FinCEN is one of the bureaus of the US Treasury Department. Banks and other financial institutions send it suspicious-activity reports and other legally required filings, and it uses them to fight money laundering and financial crime.</p>
+<p>So a problem with its systems means <strong>a disruption to financial reporting</strong>, not to payments, the bond market or people's accounts. It matters most to the banks and companies that file, because their deadlines move.</p>
+<h3><span class="check-number">3.</span> What is still unknown?</h3>
+<ul>
+<li><strong>Data theft:</strong> FinCEN has not said whether any data was taken. <a href="https://news.sulat.com/2026/11/25/fincen-cybersecurity-incident/" target="_blank" rel="noopener" style="color:#57D9C7">Reporting</a> found nothing suggesting filed reports were accessed.</li>
+</ul>
+<ul>
+<li><strong>Who is responsible:</strong> no party has been named.</li>
+</ul>
+<ul>
+<li><strong>Link to the CIA and ODNI:</strong> The New York Times reported, hours earlier, a breach of an open-source intelligence system at those two agencies. As relayed in that same reporting, it is unclear whether the two incidents are related, and FinCEN has not linked them.</li>
+</ul>
+<ul>
+<li><strong>A statement from the Treasury Secretary:</strong> we found no direct statement from the Department or the Secretary about this incident.</li>
+</ul>
+<h3><span class="check-number">4.</span> How to tell the headline from the facts</h3>
+<p><strong>1. Ask for the source.</strong> "Treasury hacked" is short and clickable; the official statement says "a limited subset of one bureau's systems".</p>
+<p><strong>2. Separate "access" from "theft".</strong> Unauthorized access means someone got in; data theft means something was taken. Until the agency says so, the second is unproven.</p>
+<p><strong>3. "Possibly related" is not evidence.</strong> When two incidents land at the same time, media often join them. Without a statement, all you can say is that they were simultaneous.</p>
+<p><strong>4. Watch for promotional posts.</strong> Some widely shared posts about this story came bundled with sign-up codes, trading bonuses or market forecasts. News and advertising are two different things.</p>
+<p><strong>5. A fast response is not a sign of weakness.</strong> Taking systems offline and moving deadlines is the routine organisations follow in a security incident.</p>
+<h3><span class="check-number">5.</span> What does this mean for us?</h3>
+<p>For an ordinary reader there is no direct message about accounts or money. But it is a reminder that financial infrastructure, like any digital system, depends on cybersecurity, and that this field is one of the most in-demand career areas ahead: information security, incident response, cyber audit and compliance.</p>
+<h3>Ditoman's view</h3>
+<p><strong>What we know:</strong> a bureau of the US Treasury has confirmed unauthorized access to a limited subset of its systems, and as a precaution it has taken some offline and moved deadlines.</p>
+<p><strong>What we do not know:</strong> the exact scope, any data theft, who is behind it and any link to other incidents.</p>
+<p><strong>Bottom line:</strong> until more official information arrives, the most accurate sentence is: "Part of FinCEN's systems was accessed without authorization and the investigation is continuing." We are following this together and will update this page if a new statement appears.</p>
+<h3>Read more</h3><ul><li><a href="bitcoin-weekly-outlook-fear-zone.en.html">The market in extreme fear</a></li><li><a href="turkey-digital-dollar-circle-paribu.en.html">Digital dollars in Istanbul</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://abcnews.com/US/treasurys-fincen-cybersecurity-incident-includes-unauthorized-access-systems/story?id=138432822" target="_blank" rel="noopener">ABC News: Treasury's FinCEN says 'cybersecurity incident' includes 'unauthorized access' of some systems (25 Nov 2026)</a></li><li><a href="https://news.sulat.com/2026/11/25/fincen-cybersecurity-incident/" target="_blank" rel="noopener">Sulat AI & Tech News: FinCEN probes unauthorised access, moves filing deadlines to 30 Dec (25 Nov 2026)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 25 November 2026. This report rests on two news reports (ABC News and Sulat); we have not checked FinCEN’s own statement directly. The story is developing and any new statement will be added here.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
