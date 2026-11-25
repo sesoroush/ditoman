@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>DOTO: Babak Zanjani's Crypto Project | دوتو؛ رمزارز بابک زنجانی زیر ذره‌بین | Ditoman</title>
+<meta name="description" content="دوتو، رمزارز بابک زنجانی، شدنی است؟ اعتبار، تحریم‌ها، مجوز، نقدینگی، محل معامله و هشدار کلاه‌برداری. Ditoman check on DOTO and DotOne Smart Chain." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/doto-dotone-zanjani-crypto.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/doto-dotone-zanjani-crypto.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/doto-dotone-zanjani-crypto.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/doto-dotone-zanjani-crypto.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="DOTO: Babak Zanjani&#x27;s Crypto Project | دوتو؛ رمزارز بابک زنجانی زیر ذره‌بین | Ditoman" />
+<meta property="og:description" content="دوتو، رمزارز بابک زنجانی، شدنی است؟ اعتبار، تحریم‌ها، مجوز، نقدینگی، محل معامله و هشدار کلاه‌برداری. Ditoman check on DOTO and DotOne Smart Chain." />
+<meta property="og:url" content="https://ditoman.com/doto-dotone-zanjani-crypto.html" />
+<meta property="og:image" content="https://ditoman.com/social/doto-dotone-zanjani-crypto/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/doto-dotone-zanjani-crypto.html#article",
+   "mainEntityOfPage": "https://ditoman.com/doto-dotone-zanjani-crypto.html",
+   "headline": "DOTO: Babak Zanjani's Crypto Project | دوتو؛ رمزارز بابک زنجانی زیر ذره‌بین",
+   "description": "دوتو، رمزارز بابک زنجانی، شدنی است؟ اعتبار، تحریم‌ها، مجوز، نقدینگی، محل معامله و هشدار کلاه‌برداری. Ditoman check on DOTO and DotOne Smart Chain.",
+   "image": "https://ditoman.com/social/doto-dotone-zanjani-crypto/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "DOTO: Babak Zanjani's Crypto Project | دوتو؛ رمزارز بابک زنجانی زیر ذره‌بین",
+     "item": "https://ditoman.com/doto-dotone-zanjani-crypto.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/doto-dotone-zanjani-crypto/card.webp" srcset="social/doto-dotone-zanjani-crypto/card.webp 900w, social/doto-dotone-zanjani-crypto/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="DOTO: Babak Zanjani’s crypto project" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/doto-dotone-zanjani-crypto/en-card.webp" srcset="social/doto-dotone-zanjani-crypto/en-card.webp 900w, social/doto-dotone-zanjani-crypto/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="DOTO: Babak Zanjani’s crypto project" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">News check · Crypto</span><span lang="fa">راستی‌آزمایی · رمزارز</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">دوتو؛ رمزارز بابک زنجانی زیر ذره‌بین</h1>
+<h1 lang="en">DOTO: Babak Zanjani’s crypto project under the lens</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">شدنی است؟ چقدر اعتبار دارد؟ کجا و چطور معامله می‌شود؟</p>
+<p class="subtitle" lang="en">Is it feasible? How credible is it? Where and how can it be traded?</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۱۰۰ میلیارد</b><b lang="en">100B</b><span lang="fa">عرضه‌ی کل اعلام‌شده‌ی دوتو</span><span lang="en">announced total DOTO supply</span></div>
+<div class="stat"><b lang="fa">۲ میلیارد دلار</b><b lang="en">$2B</b><span lang="fa">ارزش نظری کل عرضه، نه سرمایه‌ی واردشده</span><span lang="en">theoretical value, not capital raised</span></div>
+<div class="stat"><b lang="fa">۵ میلیون دلار</b><b lang="en">$5M</b><span lang="fa">نقدینگی اولیه‌ی اعلام‌شده</span><span lang="en">announced initial liquidity</span></div>
+<div class="stat"><b lang="fa">۰٫۲۵٪</b><b lang="en">0.25%</b><span lang="fa">نسبت نقدینگی به ارزش نظری</span><span lang="en">liquidity as a share of theoretical value</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>بابک زنجانی با رمزارز <strong>DOTO (دوتو)</strong> و شبکه‌ی اختصاصی <strong>DotOne Smart Chain</strong> وارد دنیای بلاکچین شده و طبق اعلام پروژه، معاملات رسمی دوتو از <strong>۹ آذر ۱۴۰۵ (۳۰ نوامبر)</strong> آغاز می‌شود. سر و صدا زیاد است: کد دعوت در آگهی‌ها خرید و فروش می‌شود و سایت‌های جعلی هم پیدا شده‌اند. ما سه سؤال ساده را بررسی کردیم: <strong>آیا شدنی است؟ چقدر اعتبار دارد؟ و کجا و چطور می‌شود آن را معامله کرد؟</strong></blockquote>
+<h3>در یک نگاه</h3>
+<ul>
+<li><strong>چیست:</strong> رمزارز بومی یک بلاکچین اختصاصی با سازوکار اثبات سهام (PoS) که با کیف‌پول‌های سازگار با اتریوم کار می‌کند</li>
+</ul>
+<ul>
+<li><strong>شبکه واقعاً روشن است:</strong> مرورگر بلاکچین آن فعال است و بلوک‌هایی با شماره‌ی بالای ۱۱ میلیون در آن دیده می‌شود. این یعنی شبکه کار می‌کند، نه اینکه استفاده‌ی واقعی دارد.</li>
+</ul>
+<ul>
+<li><strong>مجوز داخلی ندارد:</strong> وزارت اقتصاد می‌گوید دات‌وان مجوز صرافی رمزارز ندارد و ناظر مجلس پیش‌فروش را غیرقانونی خوانده</li>
+</ul>
+<ul>
+<li><strong>راه بین‌المللی بسته است:</strong> خود زنجانی، دو صرافی رمزارز مرتبط با او و گروه دات‌وان در فهرست تحریم آمریکا هستند</li>
+</ul>
+<ul>
+<li><strong>کجا معامله می‌شود:</strong> هیچ صرافی معتبر بین‌المللی یا دارای مجوز داخلی آن را فهرست نکرده و فروش فعلاً از مسیر فروش دعوتی و ابزارهای خود پروژه است</li>
+</ul>
+<ul>
+<li><strong>جمع‌بندی دیتومان:</strong> ساختن بلاکچین کار سختی نیست؛ ساختن اعتماد و اقتصاد واقعی دور آن سخت است. امروز دوتو <strong>پروژه‌ای پرریسک</strong> است.</li>
+</ul>
+<h3><span class="check-number">1.</span> دوتو چیست؟ عددهای اعلام‌شده</h3>
+<p>این ارقام اعلام خود پروژه‌اند و ما نتوانستیم آن‌ها را مستقل تأیید کنیم.</p>
+<div class="tw"><table><tr><th>مشخصه</th><th>مقدار اعلام‌شده</th></tr><tr><td>عرضه‌ی کل</td><td>۱۰۰ میلیارد واحد</td></tr><tr><td>قیمت پایه</td><td>۰٫۰۲ دلار</td></tr><tr><td>ارزش نظری کل عرضه</td><td>۲ میلیارد دلار</td></tr><tr><td>نقدینگی اولیه</td><td>۵ میلیون دلار</td></tr><tr><td>شبکه</td><td>DotOne Smart Chain</td></tr><tr><td>سازوکار اعتبارسنجی</td><td>اثبات سهام (PoS)</td></tr><tr><td>شناسه‌ی زنجیره</td><td>۵۰۵</td></tr><tr><td>آغاز معاملات</td><td>۹ آذر ۱۴۰۵</td></tr></table></div>
+<p>شناسه‌ی زنجیره (۵۰۵) و بومی بودن دوتو در درخواستی آمده که ۲۴ نوامبر برای افزودن این شبکه به کیف‌پول متامسک ثبت شده و هنوز بررسی نشده (<a href="https://github.com/MetaMask/metamask-extension/issues/48217" target="_blank" rel="noopener" style="color:#57D9C7">GitHub</a>). یکی از سایت‌هایی که خود را سایت رسمی فروش معرفی می‌کند، قیمت را ۰٫۰۱۷ تتر نشان می‌دهد و پول را به‌صورت تتر روی شبکه‌ی BNB می‌گیرد. ما رسمی بودن آن سایت را نتوانستیم تأیید کنیم.</p>
+<p><strong>یک نکته‌ی مهم:</strong> «ارزش نظری ۲ میلیارد دلار» یعنی ۱۰۰ میلیارد واحد ضرب در ۰٫۰۲ دلار؛ <strong>یعنی ورود ۲ میلیارد دلار سرمایه به پروژه نیست.</strong> ارزش واقعی بازار پس از آغاز معاملات، از روی عرضه‌ی در گردش، تقاضا و نقدشوندگی معلوم می‌شود.</p>
+<h3><span class="check-number">2.</span> قرار است چه کاری بکند؟</h3>
+<p>طبق <a href="https://docs.dotone.online/resources/whitepaper" target="_blank" rel="noopener" style="color:#57D9C7">وایت‌پیپر دات‌وان</a>، پروژه می‌خواهد مجموعه‌ای از خدمات بلاکچینی بسازد:</p>
+<ul>
+<li>صرافی متمرکز و غیرمتمرکز</li>
+</ul>
+<ul>
+<li>پرداخت کارمزد و اعتبارسنجی شبکه</li>
+</ul>
+<ul>
+<li>ارتباط با بلاکچین‌های دیگر (پل)</li>
+</ul>
+<ul>
+<li>دیجیتالی‌کردن دارایی‌های واقعی مثل طلا و املاک</li>
+</ul>
+<ul>
+<li>برنامه‌های مالی و تجاری</li>
+</ul>
+<p>بخشی از این ابزارها، یعنی <a href="https://dotscan.one" target="_blank" rel="noopener" style="color:#57D9C7">مرورگر بلاکچین</a>، پل، سواپ و سایت استیکینگ، اکنون روی دامنه‌های پروژه دیده می‌شوند و بخشی هنوز در نقشه‌ی راه است.</p>
+<h3><span class="check-number">3.</span> آیا شدنی است؟ ظرفیت واقعی</h3>
+<p><strong>ساختن بلاکچین آسان‌ترین بخش است.</strong> امروز با کدهای متن‌باز، ساختن یک زنجیره‌ی سازگار با اتریوم کار چند ماه است. سخت‌ترین بخش ساختن اقتصادی است که مردم واقعاً از آن استفاده کنند.</p>
+<p><strong>نقدینگی را جدی بگیرید.</strong> ۵ میلیون دلار نقدینگی در برابر ۲ میلیارد دلار ارزش نظری یعنی فقط <strong>۰٫۲۵٪</strong>. یک مثال ساده: اگر کل این نقدینگی در یک استخر معمولی صرافی غیرمتمرکز باشد (نصف دوتو، نصف دلار)، فروش حدود <strong>۲۵۰ هزار دلار</strong> دوتو قیمت را حدود <strong>۱۷٪</strong> پایین می‌آورد و فروش <strong>۱ میلیون دلار</strong> حدود <strong>۴۹٪</strong>. ساختار واقعی استخرها هنوز اعلام نشده؛ این عدد فقط برای فهم ابعاد است.</p>
+<p><strong>کاربرد واقعی از کجا می‌تواند بیاید؟</strong> گروه دات‌وان در ریل، هواپیمایی، طلا و تهاتر فعالیت دارد؛ از جمله قراردادی حدود ۸۰۰ میلیون دلاری با راه‌آهن ایران در آوریل ۲۰۲۵ (<a href="https://www.occrp.org/en/news/us-sanctions-family-of-iranian-tycoon-in-crackdown-on-alleged-irgc-crypto-network" target="_blank" rel="noopener" style="color:#57D9C7">OCCRP</a>). اگر پرداخت این خدمات با دوتو ممکن شود، تقاضای داخلی واقعی شکل می‌گیرد. اما همین شرکت‌ها تحریم‌اند، پس این کاربرد احتمالاً به داخل ایران محدود می‌ماند.</p>
+<p><strong>امنیت شبکه به اعتبارسنج‌ها بستگی دارد.</strong> در اثبات سهام، امنیت و استقلال شبکه به تعداد اعتبارسنج‌ها و اینکه چه کسانی هستند وابسته است. ما فهرست مستقل و قابل‌اتکایی از اعتبارسنج‌ها پیدا نکردیم. اگر چند اعتبارسنج محدود زیر نظر یک گروه باشند، شبکه در عمل متمرکز است.</p>
+<h3><span class="check-number">4.</span> اعتبار: سابقه، تحریم‌ها و مجوز</h3>
+<p><strong>سابقه‌ی بنیان‌گذار.</strong> بابک زنجانی در اسفند ۱۳۹۴ (مارس ۲۰۱۶) به اتهام اختلاس و افساد فی‌الارض به اعدام محکوم شد و دیوان عالی کشور حکم را در دسامبر همان سال تأیید کرد. در اردیبهشت ۱۴۰۳ (آوریل ۲۰۲۴)، پس از بازگرداندن حدود ۲٫۱ میلیارد دلار دارایی، حکم به ۲۰ سال حبس تقلیل یافت و او پس از آن دوباره در فعالیت‌های اقتصادی ظاهر شد (<a href="https://en.wikipedia.org/wiki/Babak_Zanjani" target="_blank" rel="noopener" style="color:#57D9C7">ویکی‌پدیا</a>).</p>
+<p><strong>تحریم‌ها.</strong></p>
+<div class="tw"><table><tr><th>تاریخ</th><th>چه کسی</th><th>چه کسی یا چه چیزی تحریم شد</th></tr><tr><td>دسامبر ۲۰۱۲</td><td>اتحادیه‌ی اروپا</td><td>بابک زنجانی</td></tr><tr><td>آوریل ۲۰۱۳</td><td>وزارت خزانه‌داری آمریکا</td><td>بابک زنجانی</td></tr><tr><td>۳۰ ژانویه‌ی ۲۰۲۶</td><td>وزارت خزانه‌داری آمریکا</td><td>صرافی‌های رمزارز Zedcex و Zedxion؛ نخستین صرافی‌های رمزارزی که به‌دلیل ارتباط با سپاه تحریم شدند</td></tr><tr><td>۲۴ ژوئیه‌ی ۲۰۲۶</td><td>وزارت خزانه‌داری آمریکا</td><td>گروه ارزش‌آفرینی دات‌وان و پنج زیرمجموعه (طلا، ریل، تهاتر، هواپیمایی، دات‌وان تریپ)، به‌همراه چهار نفر و سه شرکت در استانبول و دبی</td></tr></table></div>
+<p>طبق تحلیل TRM Labs، حدود ۱ میلیارد دلار جریان استیبل‌کوین مرتبط با سپاه در ۲۰۲۳ تا ۲۰۲۵ از زیرساخت Zedcex گذشته است (<a href="https://trmlabs.com/resources/blog/ofac-sanctions-zedcex-and-zedxion-in-first-ever-designation-of-an-irgc-linked-digital-asset-exchange" target="_blank" rel="noopener" style="color:#57D9C7">TRM Labs</a>). وزارت خزانه‌داری آمریکا «توکن طلا» (Tala Token) را هم توکنی «ظاهراً پشتوانه‌دار به طلا» توصیف کرده که از همین زیرساخت گذشته است (<a href="https://home.treasury.gov/news/press-releases/sb0576" target="_blank" rel="noopener" style="color:#57D9C7">Treasury</a>). زنجانی در واکنش در ایکس نوشته شرکت‌ها و افراد تحریم‌شده‌ی خارج از ایران با او رابطه‌ی تجاری ندارند (OCCRP).</p>
+<p><strong>این برای خریدار چه معنایی دارد؟</strong> طبق قواعد تحریم آمریکا، اشخاص آمریکایی از هر معامله با اموال اشخاص تحریم‌شده منع‌اند و شرکت‌هایی که ۵۰٪ یا بیشتر متعلق به آن‌ها باشند هم تحریم‌شده حساب می‌شوند. ما نتوانستیم تأیید کنیم ناشر دوتو کدام شرکت است، ولی برند و مدیریت با گروه تحریم‌شده یکی است. در عمل یعنی صرافی‌های بزرگ بین‌المللی سراغ فهرست کردن آن نمی‌روند و نشانی‌های تتر مرتبط با شبکه‌های تحریم‌شده ممکن است از سوی صادرکننده‌ی تتر مسدود شوند.</p>
+<p><strong>مجوز داخلی.</strong> در ۱ آذر ۱۴۰۵، <strong>هادی محمدپور</strong>، ناظر مجلس در شورای عالی بورس، پیش‌فروش این رمزارز را «اقدامی آسیب‌زا» خواند و گفت هر کسی بدون مجوز بانک مرکزی رمزارز بفروشد یا پیش‌فروش کند، غیرقانونی عمل کرده. <strong>هادی محضرنیا</strong>، رئیس مرکز ملی پایش و بهبود محیط کسب‌وکار وزارت اقتصاد، هم گفت دات‌وان مجوز فعالیت به‌عنوان صرافی رمزارز ندارد (<a href="https://mihanblockchain.com/babak-zanjani-dotone-crypto-warning/" target="_blank" rel="noopener" style="color:#57D9C7">میهن بلاکچین</a>).</p>
+<h3><span class="check-number">5.</span> کجا می‌شود خرید؟ قابل معامله است؟</h3>
+<div class="tw"><table><tr><th>مسیر</th><th>وضعیت</th><th>ریسک</th></tr><tr><td>صرافی‌های بزرگ بین‌المللی</td><td>هیچ فهرستی پیدا نکردیم</td><td>به‌دلیل تحریم‌ها بعید است</td></tr><tr><td>صرافی‌های داخلی دارای مجوز</td><td>طبق مسئولان، مجوز هنوز صادر نشده</td><td>بلاتکلیفی قانونی</td></tr><tr><td>فروش دعوتی و سایت‌های فروش پروژه</td><td>فعال است</td><td>رسمی بودن سایت‌ها را نتوانستیم تأیید کنیم؛ سایت‌های جعلی گزارش شده</td></tr><tr><td>سواپ و پل خود شبکه</td><td>روی دامنه‌های پروژه دیده می‌شود</td><td>نقدینگی کم و وابستگی کامل به خود پروژه</td></tr><tr><td>کیف‌پول</td><td>سازگار با اتریوم؛ متامسک هنوز رسماً اضافه نکرده</td><td>اضافه کردن دستی شبکه یعنی دقت بیشتر</td></tr></table></div>
+<p><strong>هشدار کلاه‌برداری.</strong> رسانه‌های رمزارزی ایران از سایت‌ها و کانال‌های جعلی فروش دوتو خبر داده‌اند و کد دعوت آن در آگهی‌های اینترنتی خرید و فروش می‌شود. چند قاعده:</p>
+<ul>
+<li>هرگز برای «کد دعوت» به حساب شخصی پول واریز نکنید</li>
+</ul>
+<ul>
+<li>دامنه را حرف‌به‌حرف چک کنید؛ نام‌های شبیه به هم زیادند</li>
+</ul>
+<ul>
+<li>عبارت بازیابی (سید) کیف‌پولتان را به هیچ سایت، ربات یا پشتیبانی ندهید</li>
+</ul>
+<ul>
+<li>پیش از خرید بپرسید: <strong>اگر بخواهم بفروشم، کجا و با چه نقدینگی؟</strong> خریدن بدون راه خروج، ریسک اصلی است</li>
+</ul>
+<h3><span class="check-number">6.</span> شباهت جالب دوتو و دیتومان</h3>
+<p>نام DOTO از نظر آوایی به «دو تومن» شبیه است؛ هرچند منشأ این نام‌گذاری تأیید نشده. دیتومان (Ditoman) هم نامش را از ترکیب Digital و Toman گرفته و توکن TMN آن در فوریه‌ی ۲۰۲۲ روی شبکه‌ی BNB Smart Chain ساخته شده (<a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener" style="color:#57D9C7">قرارداد TMN در BscScan</a>).</p>
+<p>با وجود شباهت نام‌ها، فلسفه‌ی دو پروژه متفاوت است. دوتو می‌خواهد زیرساخت بلاکچینی برای خدمات مالی و تجاری بسازد. دیتومان رسانه و پلتفرمی آموزشی است که از TMN برای پیوند دادن یادگیری و مشارکت با دسترسی، قدردانی و پاداش استفاده می‌کند.</p>
+<h3><span class="check-number">7.</span> از ۹ آذر به بعد چه چیزهایی را باید دید؟</h3>
+<ul>
+<li>آیا <strong>عرضه‌ی در گردش و جدول توزیع</strong> (سهم تیم، قفل‌ها، آزادسازی) شفاف منتشر می‌شود؟</li>
+</ul>
+<ul>
+<li>آیا <strong>فهرست اعتبارسنج‌ها</strong> و صاحبانشان معلوم است؟</li>
+</ul>
+<ul>
+<li><strong>حجم معاملات واقعی</strong> چقدر است و چقدرش در استخرهای خود پروژه است؟</li>
+</ul>
+<ul>
+<li>آیا صرافی <strong>دارای مجوز</strong> آن را فهرست می‌کند و نهادهای ناظر چه موضعی می‌گیرند؟</li>
+</ul>
+<ul>
+<li>آیا قراردادها <strong>حسابرسی امنیتی مستقل</strong> دارند؟</li>
+</ul>
+<ul>
+<li>آیا <strong>برداشت و فروش</strong> بدون مانع انجام می‌شود؟</li>
+</ul>
+<h3>تحلیل دیتومان</h3>
+<p>ورود پروژه‌های ایرانی به زیرساخت بلاکچین از نظر فناوری قابل‌توجه است و روشن بودن شبکه نشان می‌دهد کار فنی انجام شده. ولی <strong>معیار موفقیت یک رمزارز قیمت یا تعداد واحدهایش نیست؛ این است که چه مسئله‌ای را حل می‌کند، چه کسانی از آن استفاده می‌کنند و چه ارزش واقعی می‌سازد.</strong></p>
+<p>امروز دوتو سه گره جدی دارد: <strong>تحریم بین‌المللی، نبود مجوز داخلی و نقدینگی بسیار کم نسبت به ارزش اعلام‌شده.</strong> هر کدام می‌تواند خرید را آسان و فروش را سخت کند. دوتو را پس از آغاز معاملات با همین معیارها دنبال می‌کنیم.</p>
+<p>این گزارش آموزشی است و توصیه‌ی خرید، فروش یا سرمایه‌گذاری نیست.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="bitcoin-weekly-outlook-fear-zone.html">بیت‌کوین در منطقه‌ی ترس؛ هفته‌ی پیش رو</a></li><li><a href="us-treasury-fincen-cyber-incident.html">نفوذ به خزانه‌داری آمریکا؛ چه چیزی تأیید شده؟</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://docs.dotone.online/resources/whitepaper" target="_blank" rel="noopener">DotOne whitepaper (project document; we could not open it directly)</a></li><li><a href="https://dotscan.one" target="_blank" rel="noopener">Dotscan: DotOne Smart Chain block explorer</a></li><li><a href="https://github.com/MetaMask/metamask-extension/issues/48217" target="_blank" rel="noopener">GitHub: MetaMask request to add DotOne Smart Chain (24 Nov 2026)</a></li><li><a href="https://mihanblockchain.com/babak-zanjani-dotone-crypto-warning/" target="_blank" rel="noopener">Mihan Blockchain: Parliament says Zanjani crypto pre-sale is illegal; DotOne has no exchange licence (22 Nov 2026)</a></li><li><a href="https://home.treasury.gov/news/press-releases/sb0576" target="_blank" rel="noopener">US Treasury: Treasury Further Dismantles Iranian Financier Zanjani's Network (24 Jul 2026)</a></li><li><a href="https://trmlabs.com/resources/blog/ofac-sanctions-zedcex-and-zedxion-in-first-ever-designation-of-an-irgc-linked-digital-asset-exchange" target="_blank" rel="noopener">TRM Labs: OFAC sanctions Zedcex and Zedxion (30 Jan 2026)</a></li><li><a href="https://www.occrp.org/en/news/us-sanctions-family-of-iranian-tycoon-in-crackdown-on-alleged-irgc-crypto-network" target="_blank" rel="noopener">OCCRP: US sanctions family of Iranian tycoon in crackdown on alleged IRGC crypto network</a></li><li><a href="https://www.intellinews.com/istanbul-dubai-fintechs-feel-heat-as-us-sanctions-fire-turned-on-iranian-billionaire-babak-zanjani-457462/" target="_blank" rel="noopener">bne IntelliNews: Istanbul, Dubai fintechs feel heat as US sanctions turn on Zanjani</a></li><li><a href="https://en.wikipedia.org/wiki/Babak_Zanjani" target="_blank" rel="noopener">Wikipedia: Babak Zanjani</a></li><li><a href="https://ramzarz.news/news/doto-fake-channel-scam/" target="_blank" rel="noopener">Ramzarz News: fake DOTO sale sites and channels (headline)</a></li><li><a href="https://khabarjadid.com/%D8%AE%D8%B1%DB%8C%D8%AF%D9%88%D9%81%D8%B1%D9%88%D8%B4-%D8%B1%D9%85%D8%B2%D8%A7%D8%B1%D8%B2-doto-%D8%AA%D8%A7-%DA%A9%D9%85%D8%AA%D8%B1-%D8%A7%D8%B2-%DB%B7-%D8%B1%D9%88%D8%B2-%D8%AF%DB%8C%DA%AF%D8%B1/" target="_blank" rel="noopener">Khabar Jadid: DOTO trading in under 7 days; exchange licences not yet issued (headline)</a></li><li><a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener">BscScan: TMN token contract</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۵ آذر ۱۴۰۵. تحریم‌ها از بیانیه‌ی وزارت خزانه‌داری آمریکا و TRM Labs و موضع مجلس و وزارت اقتصاد از گزارش میهن بلاکچین بررسی شد. عددهای عرضه، قیمت و نقدینگی اعلام خود پروژه‌اند؛ وایت‌پیپر و چند رسانه‌ی داخلی (گزارش‌های کلاه‌برداری و مجوز صرافی‌ها) را نتوانستیم مستقیم باز کنیم و فقط عنوانشان را دیدیم. این گزارش توصیه‌ی خرید، فروش یا سرمایه‌گذاری نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>Babak Zanjani has entered blockchain with the <strong>DOTO</strong> coin and a dedicated network, <strong>DotOne Smart Chain</strong>. According to the project, official DOTO trading starts on <strong>30 November 2026 (9 Azar 1405)</strong>. The buzz is loud: invite codes are being bought and sold in online ads, and fake sale sites have appeared. We checked three simple questions: <strong>Is it feasible? How credible is it? And where and how can it be traded?</strong></blockquote>
+<h3>At a glance</h3>
+<ul>
+<li><strong>What it is:</strong> the native coin of a dedicated proof-of-stake (PoS) blockchain that works with Ethereum-compatible wallets</li>
+</ul>
+<ul>
+<li><strong>The network is live:</strong> its block explorer is running and shows block numbers above 11 million. That shows the chain works, not that it has real use.</li>
+</ul>
+<ul>
+<li><strong>No domestic licence:</strong> Iran's Ministry of Economy says DotOne has no crypto-exchange licence, and a parliamentary supervisor called the pre-sale illegal</li>
+</ul>
+<ul>
+<li><strong>The international route is closed:</strong> Zanjani, two crypto exchanges linked to him and the DotOne group are on the US sanctions list</li>
+</ul>
+<ul>
+<li><strong>Where it trades:</strong> no reputable international exchange or licensed Iranian exchange lists it; for now, sales run through invite-based sales and the project's own tools</li>
+</ul>
+<ul>
+<li><strong>Ditoman's take:</strong> building a blockchain is not the hard part; building trust and a real economy around it is. Today DOTO is a <strong>high-risk project.</strong></li>
+</ul>
+<h3><span class="check-number">1.</span> What is DOTO? The announced figures</h3>
+<p>These figures were announced by the project, and we could not verify them independently.</p>
+<div class="tw"><table><tr><th>Item</th><th>Announced value</th></tr><tr><td>Total supply</td><td>100 billion units</td></tr><tr><td>Base price</td><td>$0.02</td></tr><tr><td>Theoretical value of total supply</td><td>$2 billion</td></tr><tr><td>Initial liquidity</td><td>$5 million</td></tr><tr><td>Network</td><td>DotOne Smart Chain</td></tr><tr><td>Consensus</td><td>Proof of stake (PoS)</td></tr><tr><td>Chain ID</td><td>505</td></tr><tr><td>Trading starts</td><td>30 November 2026</td></tr></table></div>
+<p>The chain ID (505) and DOTO's status as the native coin appear in a request filed on 24 November to add the network to the MetaMask wallet; it has not yet been reviewed (<a href="https://github.com/MetaMask/metamask-extension/issues/48217" target="_blank" rel="noopener" style="color:#57D9C7">GitHub</a>). One site presenting itself as the official sale page shows a price of 0.017 USDT and takes payment in USDT on BNB Chain. We could not confirm that site is official.</p>
+<p><strong>An important point:</strong> the "$2 billion theoretical value" is just 100 billion units times $0.02; <strong>it does not mean $2 billion of capital has gone into the project.</strong> The real market value will be set after trading starts, by circulating supply, demand and liquidity.</p>
+<h3><span class="check-number">2.</span> What is it supposed to do?</h3>
+<p>According to the <a href="https://docs.dotone.online/resources/whitepaper" target="_blank" rel="noopener" style="color:#57D9C7">DotOne whitepaper</a>, the project aims to build a set of blockchain services:</p>
+<ul>
+<li>Centralised and decentralised exchanges</li>
+</ul>
+<ul>
+<li>Paying fees and validating the network</li>
+</ul>
+<ul>
+<li>Links to other blockchains (a bridge)</li>
+</ul>
+<ul>
+<li>Tokenising real assets such as gold and property</li>
+</ul>
+<ul>
+<li>Financial and commercial applications</li>
+</ul>
+<p>Some of these tools, namely the <a href="https://dotscan.one" target="_blank" rel="noopener" style="color:#57D9C7">block explorer</a>, a bridge, a swap and a staking site, are already visible on the project's domains; others are still on the roadmap.</p>
+<h3><span class="check-number">3.</span> Is it feasible? The real capacity</h3>
+<p><strong>Building a blockchain is the easiest part.</strong> With open-source code, an Ethereum-compatible chain takes months, not years. The hard part is building an economy people actually use.</p>
+<p><strong>Take liquidity seriously.</strong> $5 million of liquidity against a $2 billion theoretical value is just <strong>0.25%</strong>. A simple illustration: if all of that liquidity sat in one standard decentralised-exchange pool (half DOTO, half dollars), selling about <strong>$250,000</strong> of DOTO would push the price down about <strong>17%</strong>, and selling <strong>$1 million</strong> about <strong>49%</strong>. The real pool structure has not been announced; the figures only show the scale.</p>
+<p><strong>Where could real use come from?</strong> The DotOne group works in rail, aviation, gold and barter, including a contract of about $800 million with Iran's railways in April 2025 (<a href="https://www.occrp.org/en/news/us-sanctions-family-of-iranian-tycoon-in-crackdown-on-alleged-irgc-crypto-network" target="_blank" rel="noopener" style="color:#57D9C7">OCCRP</a>). If those services could be paid for in DOTO, real domestic demand would form. But those same companies are sanctioned, so that use would likely stay inside Iran.</p>
+<p><strong>Network security depends on validators.</strong> In proof of stake, security and independence depend on how many validators there are and who they are. We found no independent, reliable list of validators. If a handful of validators sit under one group, the network is centralised in practice.</p>
+<h3><span class="check-number">4.</span> Credibility: track record, sanctions and licences</h3>
+<p><strong>The founder's record.</strong> In March 2016 Babak Zanjani was convicted of embezzlement and "corruption on earth" and sentenced to death; Iran's Supreme Court upheld the sentence in December that year. In April 2024, after about $2.1 billion of assets were returned, the sentence was reduced to 20 years in prison, and he later reappeared in business (<a href="https://en.wikipedia.org/wiki/Babak_Zanjani" target="_blank" rel="noopener" style="color:#57D9C7">Wikipedia</a>).</p>
+<p><strong>Sanctions.</strong></p>
+<div class="tw"><table><tr><th>Date</th><th>Who</th><th>Who or what was sanctioned</th></tr><tr><td>December 2012</td><td>European Union</td><td>Babak Zanjani</td></tr><tr><td>April 2013</td><td>US Treasury</td><td>Babak Zanjani</td></tr><tr><td>30 January 2026</td><td>US Treasury</td><td>Crypto exchanges Zedcex and Zedxion, the first crypto exchanges designated for links to the IRGC</td></tr><tr><td>24 July 2026</td><td>US Treasury</td><td>DotOne Value Creation Group and five subsidiaries (gold, rail, barter, airlines, DotOne Trip), plus four people and three companies in Istanbul and Dubai</td></tr></table></div>
+<p>According to TRM Labs, about $1 billion of IRGC-associated stablecoin flows passed through Zedcex infrastructure from 2023 to 2025 (<a href="https://trmlabs.com/resources/blog/ofac-sanctions-zedcex-and-zedxion-in-first-ever-designation-of-an-irgc-linked-digital-asset-exchange" target="_blank" rel="noopener" style="color:#57D9C7">TRM Labs</a>). The US Treasury described Tala Token as an "allegedly gold-backed" token that also moved through that infrastructure (<a href="https://home.treasury.gov/news/press-releases/sb0576" target="_blank" rel="noopener" style="color:#57D9C7">Treasury</a>). Zanjani responded on X that the sanctioned companies and individuals outside Iran have no commercial relationship with him (OCCRP).</p>
+<p><strong>What does this mean for a buyer?</strong> Under US sanctions rules, US persons are barred from dealing in the property of designated persons, and companies 50% or more owned by them are treated as blocked too. We could not confirm which company issues DOTO, but the brand and management are the same as the sanctioned group. In practice, major international exchanges are unlikely to list it, and USDT addresses linked to sanctioned networks can be frozen by the issuer.</p>
+<p><strong>Domestic licence.</strong> On 22 November 2026, <strong>Hadi Mohammadpour</strong>, parliament's supervisor on the Supreme Council of the Stock Exchange, called the pre-sale "harmful" and said anyone selling or pre-selling crypto without a central bank licence is acting illegally. <strong>Hadi Mohzarnia</strong>, head of the Ministry of Economy's National Center for Monitoring and Improving the Business Environment, said DotOne has no licence to operate as a crypto exchange (<a href="https://mihanblockchain.com/babak-zanjani-dotone-crypto-warning/" target="_blank" rel="noopener" style="color:#57D9C7">Mihan Blockchain</a>).</p>
+<h3><span class="check-number">5.</span> Where can you buy it? Is it tradeable?</h3>
+<div class="tw"><table><tr><th>Route</th><th>Status</th><th>Risk</th></tr><tr><td>Major international exchanges</td><td>No listing found</td><td>Unlikely because of sanctions</td></tr><tr><td>Licensed Iranian exchanges</td><td>Licences not yet issued, according to officials</td><td>Legal uncertainty</td></tr><tr><td>Invite-based sales and the project's sale sites</td><td>Active</td><td>We could not confirm the sites are official; fake sites have been reported</td></tr><tr><td>The network's own swap and bridge</td><td>Visible on the project's domains</td><td>Low liquidity and full dependence on the project</td></tr><tr><td>Wallet</td><td>Ethereum-compatible; MetaMask has not added it officially</td><td>Adding the network manually needs care</td></tr></table></div>
+<p><strong>Scam warning.</strong> Iranian crypto media have reported fake DOTO sale sites and channels, and invite codes are traded in online classified ads. A few rules:</p>
+<ul>
+<li>Never pay a private person for an "invite code"</li>
+</ul>
+<ul>
+<li>Check the domain letter by letter; there are many look-alike names</li>
+</ul>
+<ul>
+<li>Never give your wallet's recovery phrase to any site, bot or "support"</li>
+</ul>
+<ul>
+<li>Before buying, ask: <strong>if I want to sell, where, and with what liquidity?</strong> Buying without a way out is the main risk</li>
+</ul>
+<h3><span class="check-number">6.</span> A curious likeness: DOTO and Ditoman</h3>
+<p>The name DOTO sounds like "do toman" (two toman) in Persian, though the origin of the name is not confirmed. Ditoman also takes its name from Digital and Toman, and its TMN token was created on BNB Smart Chain in February 2022 (<a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener" style="color:#57D9C7">TMN contract on BscScan</a>).</p>
+<p>Despite the similar names, the two projects have different philosophies. DOTO aims to build blockchain infrastructure for financial and commercial services. Ditoman is a media and learning platform that uses TMN to link learning and participation with access, recognition and rewards.</p>
+<h3><span class="check-number">7.</span> What to watch from 30 November</h3>
+<ul>
+<li>Is the <strong>circulating supply and distribution table</strong> (team share, locks, unlocks) published transparently?</li>
+</ul>
+<ul>
+<li>Is the <strong>validator list</strong> and who owns them known?</li>
+</ul>
+<ul>
+<li>How much <strong>real trading volume</strong> is there, and how much of it is in the project's own pools?</li>
+</ul>
+<ul>
+<li>Does a <strong>licensed</strong> exchange list it, and what stance do regulators take?</li>
+</ul>
+<ul>
+<li>Do the contracts have an <strong>independent security audit</strong>?</li>
+</ul>
+<ul>
+<li>Do <strong>withdrawals and sales</strong> work without obstacles?</li>
+</ul>
+<h3>Ditoman's view</h3>
+<p>Iranian projects entering blockchain infrastructure is notable from a technology standpoint, and a running network shows the technical work has been done. But <strong>a coin's success is not measured by its price or number of units; it is measured by what problem it solves, who uses it and what real value it creates.</strong></p>
+<p>Today DOTO has three serious knots: <strong>international sanctions, no domestic licence, and very thin liquidity relative to its announced value.</strong> Each can make buying easy and selling hard. We will follow DOTO after trading starts, by these same measures.</p>
+<p>This report is educational and is not a recommendation to buy, sell or invest.</p>
+<h3>Read more</h3><ul><li><a href="bitcoin-weekly-outlook-fear-zone.en.html">Bitcoin in the fear zone: the week ahead</a></li><li><a href="us-treasury-fincen-cyber-incident.en.html">US Treasury FinCEN cyber incident: what is confirmed</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://docs.dotone.online/resources/whitepaper" target="_blank" rel="noopener">DotOne whitepaper (project document; we could not open it directly)</a></li><li><a href="https://dotscan.one" target="_blank" rel="noopener">Dotscan: DotOne Smart Chain block explorer</a></li><li><a href="https://github.com/MetaMask/metamask-extension/issues/48217" target="_blank" rel="noopener">GitHub: MetaMask request to add DotOne Smart Chain (24 Nov 2026)</a></li><li><a href="https://mihanblockchain.com/babak-zanjani-dotone-crypto-warning/" target="_blank" rel="noopener">Mihan Blockchain: Parliament says Zanjani crypto pre-sale is illegal; DotOne has no exchange licence (22 Nov 2026)</a></li><li><a href="https://home.treasury.gov/news/press-releases/sb0576" target="_blank" rel="noopener">US Treasury: Treasury Further Dismantles Iranian Financier Zanjani's Network (24 Jul 2026)</a></li><li><a href="https://trmlabs.com/resources/blog/ofac-sanctions-zedcex-and-zedxion-in-first-ever-designation-of-an-irgc-linked-digital-asset-exchange" target="_blank" rel="noopener">TRM Labs: OFAC sanctions Zedcex and Zedxion (30 Jan 2026)</a></li><li><a href="https://www.occrp.org/en/news/us-sanctions-family-of-iranian-tycoon-in-crackdown-on-alleged-irgc-crypto-network" target="_blank" rel="noopener">OCCRP: US sanctions family of Iranian tycoon in crackdown on alleged IRGC crypto network</a></li><li><a href="https://www.intellinews.com/istanbul-dubai-fintechs-feel-heat-as-us-sanctions-fire-turned-on-iranian-billionaire-babak-zanjani-457462/" target="_blank" rel="noopener">bne IntelliNews: Istanbul, Dubai fintechs feel heat as US sanctions turn on Zanjani</a></li><li><a href="https://en.wikipedia.org/wiki/Babak_Zanjani" target="_blank" rel="noopener">Wikipedia: Babak Zanjani</a></li><li><a href="https://ramzarz.news/news/doto-fake-channel-scam/" target="_blank" rel="noopener">Ramzarz News: fake DOTO sale sites and channels (headline)</a></li><li><a href="https://khabarjadid.com/%D8%AE%D8%B1%DB%8C%D8%AF%D9%88%D9%81%D8%B1%D9%88%D8%B4-%D8%B1%D9%85%D8%B2%D8%A7%D8%B1%D8%B2-doto-%D8%AA%D8%A7-%DA%A9%D9%85%D8%AA%D8%B1-%D8%A7%D8%B2-%DB%B7-%D8%B1%D9%88%D8%B2-%D8%AF%DB%8C%DA%AF%D8%B1/" target="_blank" rel="noopener">Khabar Jadid: DOTO trading in under 7 days; exchange licences not yet issued (headline)</a></li><li><a href="https://bscscan.com/token/0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d" target="_blank" rel="noopener">BscScan: TMN token contract</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 26 November 2026. Sanctions were checked against the US Treasury release and TRM Labs, and the parliament and Ministry of Economy statements against Mihan Blockchain. Supply, price and liquidity figures are the project’s own; we could not open the whitepaper or several Iranian outlets (scam and exchange-licence reports) and saw only their headlines. This is not a recommendation to buy, sell or invest.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
