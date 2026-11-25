@@ -143,8 +143,28 @@
    289491.0
   ]
  },
- "gold_oz": "error: TimeoutError('The read operation timed out')",
- "silver_oz": "error: TimeoutError('The read operation timed out')",
+ "gold_oz": {
+  "rows": 12200,
+  "first": [
+   "1979-12-26",
+   499.0
+  ],
+  "last": [
+   "2026-11-24",
+   3554.89
+  ]
+ },
+ "silver_oz": {
+  "rows": 11553,
+  "first": [
+   "1982-07-01",
+   5.8
+  ],
+  "last": [
+   "2026-11-24",
+   40.8
+  ]
+ },
  "brent": {
   "rows": 5811,
   "first": [
