@@ -1,0 +1,142 @@
+{
+ "date": "2026-11-25",
+ "kind": "world",
+ "lead_fa": "بازارهای جهان چشم به آمار تورم و رشد آمریکا دارند؛ سهام تراشه در آسیا عقب نشست و بورس هند جهش کرد. مرور رسانه‌های جهان از نیویورک تا بمبئی، ریاض و سیدنی؛ برای هر خبر یک خط هم نوشته‌ایم که برای ما یعنی چه. با هم دنبال می‌کنیم.",
+ "lead_en": "Markets await US inflation and growth data; Asian chip stocks slid while India jumped. A tour of world media from New York to Mumbai, Riyadh and Sydney, with one line on what each story means for us.",
+ "front_fa": "وال‌استریت ژورنال: «آمریکا تعرفه‌های بالاتر بر چین، اروپا و دیگران را آماده می‌کند» · تک‌کرانچ: «سهام آنتروپیک زیر قیمت عرضه‌ی اولیه رفت» · اچ‌دی‌اف‌سی اسکای: «سنسکس با ۱٬۵۰۲ واحد جهش، برخلاف ضعف آسیا»",
+ "front_en": "WSJ: US preparing higher tariffs on China, EU and others · TechCrunch: Anthropic shares fall below IPO price · HDFC Sky: Sensex jumps 1,502 points, defying weak Asia",
+ "sections": [
+  {
+   "fa": "اقتصاد و بازارهای جهانی",
+   "en": "Global economy & markets",
+   "items": [
+    {
+     "fa": "نزدک ۱٫۴۸٪ پایین، داو بالای ۵۰ هزار: سه‌شنبه نزدک به ۲۳٬۷۳۴ رسید و داو با ۰٫۸۵٪ رشد روی ۵۰٬۰۱۹ بسته شد. یعنی سهام فناوری بعد از رالی دوشنبه دوباره پرنوسان شده و پول به سهام سنتی‌تر می‌رود.",
+     "en": "Nasdaq fell 1.48% to 23,734 while the Dow rose 0.85% to 50,019; US futures lower today. Tech is volatile again and money rotates to old-economy stocks.",
+     "src": "ژورنال آرتا",
+     "url": "https://journalarta.com/en/2026/11/25/asia-stocks-today-nikkei-and-asx-200-rise-as-nasdaq-futures-slide/"
+    },
+    {
+     "fa": "۹۷٪ احتمال افزایش نرخ بهره فدرال رزرو در دسامبر: بازار پول آمریکا بیش از ۹۷٪ احتمال افزایش ۲۵ صدم واحدی نرخ بهره را قیمت‌گذاری کرده و امروز آمار تورم PCE و رشد فصل سوم منتشر می‌شود. یعنی دلار جهانی قوی‌تر می‌ماند و طلا و رمزارز را سنگین‌تر می‌کند.",
+     "en": "Markets price a >97% chance of a 25bp Fed hike in December; PCE and Q3 GDP due today. A firmer dollar weighs on gold, crypto and regional currencies.",
+     "src": "نیوزاسکوآک",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-opening-news---25th-november-2026"
+    },
+    {
+     "fa": "طلا حدود ۳٬۵۵۰ دلار: اونس طلا ۰٫۷٪ افت کرد و بین ۳٬۵۱۲ و ۳٬۵۷۵ دلار نوسان داشت. یعنی بخشی از نوسان سکه و طلای داخلی امروز از بازار جهانی می‌آید.",
+     "en": "Gold fell 0.7%, trading $3,512–3,575 on a firmer dollar and Fed hike bets. Part of local gold swings comes from abroad.",
+     "src": "نیوزاسکوآک",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-opening-news---25th-november-2026"
+    },
+    {
+     "fa": "بیت‌کوین زیر ۶۰ هزار دلار: بیت‌کوین حدود ۵۹٬۴۵۹ دلار است و در ۲۴ ساعت ۲٫۸٪ افت کرده. یعنی فضای رمزارز همچنان محتاط است و نوسان تتر و رمزارز داخلی ادامه دارد.",
+     "en": "Bitcoin around $59,459, down 2.8% in 24h; Ether $1,670. Crypto mood stays cautious.",
+     "src": "پیک‌اکس",
+     "url": "https://www.pickaxe.io/resources/news/crypto-markets-slide-on-nov-25-btc-holds-59k"
+    },
+    {
+     "fa": "برنت حدود ۸۸ دلار: نفت برنت بین ۸۶٫۹۵ و ۸۸٫۷۵ دلار نوسان کرد. یعنی قیمت سوخت و هزینه‌ی حمل در دنیا هنوز بالاتر از ماه‌های آرام است.",
+     "en": "Brent traded $86.95–88.75; WTI near $80. Fuel and freight costs remain elevated.",
+     "src": "نیوزاسکوآک",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-opening-news---25th-november-2026"
+    }
+   ]
+  },
+  {
+   "fa": "صنعت و انرژی",
+   "en": "Industry & energy",
+   "items": [
+    {
+     "fa": "سقف قیمت انرژی بریتانیا ۲۶٪ بالاتر: از اول ژانویه سقف قبض سالانه‌ی برق و گاز خانوار بریتانیایی به ۲٬۱۶۶ پوند می‌رسد. یعنی گرانی انرژی در اروپا هزینه‌ی تولید و قیمت کالاهای وارداتی اروپایی را بالا می‌برد.",
+     "en": "UK Ofgem cap rises 26% y/y from 1 Jan to £2,166 a year. Pricier European energy lifts costs of European goods.",
+     "src": "نیوزاسکوآک",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-opening-news---25th-november-2026"
+    },
+    {
+     "fa": "فولاد سبز با ۴۰۰ مگاوات هیدروژن: اِنویژن (Envision) و گرین‌استیل استرالیا ساخت سامانه‌ی هیدروژن سبز ۴۰۰ مگاواتی برای فولاد کم‌کربن را بررسی می‌کنند. یعنی فولاد کم‌کربن کم‌کم به استاندارد بازارهای صادراتی تبدیل می‌شود.",
+     "en": "Envision and Greensteel Australia study a 400MW green hydrogen system for low-carbon steel. Low-carbon steel is becoming an export standard.",
+     "src": "نیوز فور ایجنت",
+     "url": "https://newsforagent.com/news/2026-11-25/envision-greensteel-australia-hydrogen-partnership"
+    }
+   ]
+  },
+  {
+   "fa": "هوش مصنوعی و فناوری",
+   "en": "AI & technology",
+   "items": [
+    {
+     "fa": "سهام آنتروپیک زیر قیمت عرضه: سهام آنتروپیک (Anthropic) برای اولین بار زیر قیمت عرضه‌ی اولیه‌ی ۸۳ دلار بسته شد. یعنی هیجان سرمایه‌گذاری در هوش مصنوعی واقع‌بین‌تر شده و جذب سرمایه برای استارتاپ‌ها سخت‌تر.",
+     "en": "Anthropic shares closed below their $83 IPO price for the first time. AI investing is getting more realistic; startup funding gets harder.",
+     "src": "تک‌کرانچ",
+     "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/"
+    },
+    {
+     "fa": "ترجمه‌ی ۱۰۲ زبان، متن‌باز: تنسنت (Tencent) سه مدل ترجمه‌ی Hy-MT۳ را برای ۱۰۲ زبان رایگان منتشر کرد. یعنی ابزار ترجمه‌ی خوب و رایگان برای کسب‌وکارهای کوچک و صادرکننده‌ها در دسترس‌تر می‌شود.",
+     "en": "Tencent open-sourced three Hy-MT3 translation models covering 102 languages (up from 38). Free, good translation for small exporters.",
+     "src": "ای‌آی دات اینفو",
+     "url": "https://ai.info/news/tencent-hy-mt3-translation-models-open-source"
+    }
+   ]
+  },
+  {
+   "fa": "تجارت و کسب‌وکار",
+   "en": "Trade & business",
+   "items": [
+    {
+     "fa": "چین: تعلیق محدودیت صادرات تا ۲۷ ژانویه: چین تعلیق بخشی از کنترل صادرات کالاهای دوکاربردی به آمریکا و برخی محدودیت‌های مواد معدنی حیاتی را تمدید کرد. یعنی عرضه‌ی مواد معدنی کمیاب برای باتری و الکترونیک فعلاً آرام‌تر می‌ماند.",
+     "en": "China extended the suspension of some dual-use export controls on the US to 27 Jan 2027 and eased some critical-mineral curbs.",
+     "src": "نیوزاسکوآک",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-opening-news---25th-november-2026"
+    },
+    {
+     "fa": "تعرفه‌های تازه‌ی آمریکا: به گزارش وال‌استریت ژورنال، آمریکا تعرفه‌ی بالاتری برای چین، اروپا و دیگران آماده می‌کند. یعنی زنجیره‌ی تأمین جهانی دوباره جابه‌جا می‌شود و قیمت کالاهای چینی و واسطه‌ای نوسان می‌گیرد.",
+     "en": "WSJ: the US is preparing higher tariffs on China, the EU and others; EU, Japan and Korea may face 15% or less. Supply chains reshuffle again.",
+     "src": "نیوزاسکوآک",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-opening-news---25th-november-2026"
+    }
+   ]
+  },
+  {
+   "fa": "از آسیا تا استرالیا",
+   "en": "Asia & Oceania",
+   "items": [
+    {
+     "fa": "سنسکس هند ۱٬۵۰۲ واحد بالا: بورس بمبئی با ۱٫۸۲٪ رشد به ۸۳٬۹۳۸ رسید؛ نیفتی هم ۱٫۸۵٪ بالا رفت. یعنی هند در روز ضعف آسیا مقصد پول خارجی ماند.",
+     "en": "Sensex rose 1,502 points (1.82%) to 83,938; Nifty +1.85%, FMCG +3.79%. India drew foreign money on a weak Asian day.",
+     "src": "اچ‌دی‌اف‌سی اسکای",
+     "url": "https://hdfcsky.com/news/stock-markets-defy-weak-asia-sensex-jumps-1502-pts-nifty-climbs-to-25819-as-banks-fmcg-rally-november-25-2026"
+    },
+    {
+     "fa": "کوسپی ۶٫۱۶٪ پایین: بورس کره با فروش سهام تراشه به ۴٬۶۹۸ رسید. یعنی قیمت تراشه و حافظه، که روی گوشی و لپ‌تاپ اثر دارد، پرنوسان مانده است.",
+     "en": "Kospi fell 6.16% to 4,697.51 on chip stocks; Taiwan -4.8%. Chip and memory prices stay volatile.",
+     "src": "اچ‌دی‌اف‌سی اسکای",
+     "url": "https://hdfcsky.com/news/stock-markets-defy-weak-asia-sensex-jumps-1502-pts-nifty-climbs-to-25819-as-banks-fmcg-rally-november-25-2026"
+    },
+    {
+     "fa": "بودجه‌ی ۱٫۳۹ هزار میلیارد ریالی عربستان: بودجه‌ی ۲۰۲۷ عربستان ۱٫۳۹ هزار میلیارد ریال هزینه و ۱٫۲ هزار میلیارد ریال درآمد دارد. یعنی بزرگ‌ترین اقتصاد عربی همچنان خرج پروژه‌ها را بالا نگه می‌دارد؛ فرصت برای پیمانکاران منطقه.",
+     "en": "Saudi 2027 budget: SAR1.39tn spending vs SAR1.2tn revenue, a ~SAR190bn deficit. Big project spending continues.",
+     "src": "فاینیمایز",
+     "url": "https://finimize.com/content/gulf-stocks-turn-mixed-as-traders-wait-on-us-pce"
+    },
+    {
+     "fa": "تورم استرالیا ۴٫۹٪: تورم سالانه‌ی اکتبر استرالیا ۴٫۹٪ شد، بالاتر از انتظار ۴٫۷٪. یعنی تورم بالا فقط مشکل ما نیست؛ بانک‌های مرکزی ثروتمند هم با آن درگیرند.",
+     "en": "Australia's October CPI hit 4.9% y/y vs 4.7% expected. High inflation is a global problem.",
+     "src": "نیوزاسکوآک",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-opening-news---25th-november-2026"
+    }
+   ]
+  },
+  {
+   "fa": "فرهنگ و خبرهای عجیب",
+   "en": "Culture & curious news",
+   "items": [
+    {
+     "fa": "تایدال میلیون‌ها آهنگ هوش مصنوعی را حذف می‌کند: سرویس موسیقی تایدال (Tidal) آهنگ‌های ساخته‌شده با هوش مصنوعی را ممنوع و میلیون‌ها قطعه را پاک می‌کند.",
+     "en": "Tidal will ban and remove millions of AI-generated tracks.",
+     "src": "تک‌کرانچ",
+     "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/"
+    }
+   ]
+  }
+ ]
+}
