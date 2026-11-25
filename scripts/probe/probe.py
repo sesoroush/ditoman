@@ -16,7 +16,10 @@ with sync_playwright() as p:
     pg = b.new_page(locale="fa-IR")
     pg.goto("https://imi100.imi.ir/Ranking/p/500", wait_until="networkidle", timeout=90000)
     for year in (1403, 1402):
-        st, body = pg.evaluate(JS, [year, 500])
-        (OUT / f"imi500_{year}.json").write_text(body, encoding="utf-8")
-        print(year, st, len(body))
+        rows = []
+        for n in (100, 200, 300, 400, 500):
+            st, body = pg.evaluate(JS, [year, n])
+            rows += json.loads(body).get("Data", [])
+            print(year, n, st, len(body))
+        (OUT / f"imi500_{year}.json").write_text(json.dumps(rows, ensure_ascii=False, indent=0), encoding="utf-8")
     b.close()
