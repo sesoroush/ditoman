@@ -7,6 +7,17 @@
   var src = document.getElementById("ir-map-data");
   if (!host || !src) return;
   var D = JSON.parse(src.textContent);
+  if (D.z) {
+    D.items = D.z.map(function (z) {
+      var facts = D.K.map(function (k) { return { k: k, v: null }; });
+      facts[0].v = z.v; facts[1].v = D.M[z.m];
+      (z.x || []).forEach(function (f) { facts[f[0]].v = f[1]; });
+      return { rank: z.r, sym: z.s, fa: z.fa, en: z.en, w: z.w, short: z.en.replace(/\s*\(.*?\)/g, ""), approx: !!z.a, val: z.v,
+        b: z.b, bname: D.B[z.b], sub: z.u, subname: D.U[z.u], g: D.only ? z.u : z.b, gname: D.only ? D.U[z.u] : D.B[z.b],
+        color: D.C[z.c], fam: z.f || null, famname: z.f ? D.F[z.f] : null, facts: facts,
+        href: D.only ? null : "iran-" + z.b + ".html#leaders" };
+    });
+  }
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function fa(n) { return String(n).replace(/[0-9]/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }); }
@@ -45,18 +56,20 @@
 
   /* ---- groups ---- */
   var groups = {};
-  D.items.forEach(function (c) {
-    var g = groups[c.g] || (groups[c.g] = { key: c.g, name: c.gname, color: c.color, v: 0, items: [] });
-    g.items.push(c); g.v += c.w;
+  var MAXT = 240; /* the smallest companies stay in the list below; tiles that small cannot be read or tapped */
+  D.items.forEach(function (c, i) {
+    var g = groups[c.g] || (groups[c.g] = { key: c.g, name: c.gname, color: c.color, v: 0, n: 0, items: [] });
+    g.n++;
+    if (i < MAXT) { g.items.push(c); g.v += c.w; }
   });
-  var glist = Object.keys(groups).map(function (k) { return groups[k]; }).sort(function (a, b) { return b.v - a.v; });
+  var glist = Object.keys(groups).map(function (k) { return groups[k]; }).filter(function (g) { return g.items.length; }).sort(function (a, b) { return b.v - a.v; });
 
   /* legend */
   var legend = document.createElement("div");
   legend.className = "ir-map-legend";
   legend.innerHTML = glist.map(function (g) {
     return '<button type="button" data-g="' + g.key + '" style="--c:' + g.color + '"><i></i>' + both(g.name) +
-      '<small>' + both({ fa: fa(g.items.length) + " شرکت", en: g.items.length + (g.items.length === 1 ? " company" : " companies") }) + "</small></button>";
+      '<small>' + both({ fa: fa(g.n) + " شرکت", en: g.n + (g.n === 1 ? " company" : " companies") }) + "</small></button>";
   }).join("");
   host.parentNode.insertBefore(legend, host);
 

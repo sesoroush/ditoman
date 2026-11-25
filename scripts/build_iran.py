@@ -16,7 +16,7 @@ import html, json, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "iran" / "branches.json").read_text(encoding="utf-8"))
 COMPANIES = ROOT / "data" / "companies"
-TOP = json.loads((ROOT / "data" / "iran" / "top200.json").read_text(encoding="utf-8"))
+TOP = json.loads((ROOT / "data" / "iran" / "listed.json").read_text(encoding="utf-8"))
 BASE = "https://ditoman.com/"
 REVIEWED = {"fa": "۱۵ آبان ۱۴۰۵", "en": "6 November 2026"}
 
@@ -255,12 +255,12 @@ UI = {
     "subs_lead": {"fa": "هر زیرشاخه با مرجع مجوز و کد رسمی رشته‌ی فعالیتش؛ همان کدی که روی پروانه‌ی بهره‌برداری و در آمار رسمی ثبت می‌شود.", "en": "Each sub-branch with its licensing authority and ISIC code: the same code that appears on an operating licence and in official statistics."},
     "companies": {"fa": "شرکت‌های این شاخه", "en": "Companies in this branch"},
     "leaders": {"fa": "بزرگ‌ترین‌های این شاخه", "en": "The biggest in this branch"},
-    "leaders_note": {"fa": "اول، شرکت‌های این شاخه از میان ۲۰۰ شرکت بزرگ بورس و فرابورس، به ترتیب ارزش بازار؛ بعد، چند نام بزرگِ بیرون از بورس. سال تأسیس، فروش و دارایی از صورت‌های مالی رسمی کم‌کم اضافه می‌شود.",
-                     "en": "First, this branch's companies from the 200 largest on the Tehran Stock Exchange and Farabourse, by market value; then a few big names outside the exchange. Founding year, sales and assets are added from official statements over time."},
-    "top_title": {"fa": "۲۰۰ شرکت بزرگ بورس و فرابورس", "en": "The 200 largest listed companies"},
-    "top_lead": {"fa": "بزرگ‌ترین شرکت‌های بورس تهران و فرابورس به ترتیب ارزش بازار، هر کدام در شاخه‌ی خودش.", "en": "The largest companies on the Tehran Stock Exchange and Farabourse by market value, each filed under its branch."},
+    "leaders_note": {"fa": "اول، شرکت‌های این شاخه از میان همه‌ی شرکت‌های بورس، فرابورس و بازار پایه، به ترتیب ارزش بازار؛ بعد، چند نام بزرگِ بیرون از بورس. سال تأسیس، فروش و دارایی از صورت‌های مالی رسمی کم‌کم اضافه می‌شود.",
+                     "en": "First, this branch's companies from every company listed on the Tehran Stock Exchange, Farabourse and base market, by market value; then a few big names outside the exchange. Founding year, sales and assets are added from official statements over time."},
+    "top_title": {"fa": "همه‌ی شرکت‌های بورس و فرابورس", "en": "Every listed company"},
+    "top_lead": {"fa": "همه‌ی شرکت‌های بورس تهران، فرابورس و بازار پایه به ترتیب ارزش بازار، هر کدام در شاخه‌ی خودش.", "en": "Every company on the Tehran Stock Exchange, the Farabourse and its base market, by market value, each filed under its branch."},
     "top_method": {"fa": "روش و منبع", "en": "Method and source"},
-    "top_link": {"fa": "فهرست کامل ۲۰۰ شرکت ←", "en": "The full list of 200 →"},
+    "top_link": {"fa": "فهرست کامل شرکت‌های بورسی ←", "en": "The full list of listed companies →"},
     "col_rank": {"fa": "رتبه", "en": "Rank"},
     "col_sym": {"fa": "نماد", "en": "ISIN"},
     "col_name": {"fa": "شرکت", "en": "Company"},
@@ -543,7 +543,7 @@ def leader_card(x, subname, color=None, share=None):
     if x.get("family"):
         tags.append(t(TOP["families"][x["family"]]))
     tags_html = '<p class="ir-tags">' + "".join(f"<span>{g}</span>" for g in tags) + "</p>" if tags else ""
-    more = f'<details class="ir-more-d"><summary>{t({"fa": "همه‌ی مشخصات", "en": "All details"})}</summary><dl class="ir-lf-facts">{rows}</dl></details>'
+    more = "" if not any(field_value(x, k) for k in ("founded", "sales", "assets", "ownership")) else f'<details class="ir-more-d"><summary>{t({"fa": "همه‌ی مشخصات", "en": "All details"})}</summary><dl class="ir-lf-facts">{rows}</dl></details>'
     return f'<li {" ".join(data)}>{head}{big}{bar}{tags_html}{more}</li>'
 
 
@@ -704,8 +704,11 @@ def tint(hexc, i):
 
 
 def map_section(branches, only=None):
+    """Compact payload: shared names and labels sent once; iran-map.js expands each item."""
     bmap = {b["slug"]: b for b in branches}
-    items = []
+    keys = [FIELDS[0][1], {"fa": "بازار", "en": "Market"}, {"fa": "صادرکننده", "en": "Exporter"}, {"fa": "نوع مالکیت", "en": "Ownership"},
+            {"fa": "سال تأسیس", "en": "Founded"}, {"fa": "فروش سالانه", "en": "Annual sales"}, {"fa": "دارایی کل", "en": "Total assets"}]
+    B, U, C, items = {}, {}, [], []
     for c in TOP["companies"]:
         if only and c["branch"] != only:
             continue
@@ -713,34 +716,52 @@ def map_section(branches, only=None):
         subs = [x["id"] for x in b["subs"]]
         sub = b["subs"][subs.index(c["sub"])]
         color = tint(b["accent"], subs.index(c["sub"])) if only else b["accent"]
-        facts = [{"k": FIELDS[0][1], "v": mcap_value(c)},
-                 {"k": {"fa": "بازار", "en": "Market"}, "v": MARKETS[c["market"]]},
-                 {"k": {"fa": "صادرکننده", "en": "Exporter"}, "v": YESNO[True] if c.get("exporter") else None},
-                 {"k": {"fa": "نوع مالکیت", "en": "Ownership"}, "v": OWNERSHIP.get(c.get("ownership"))},
-                 {"k": {"fa": "سال تأسیس", "en": "Founded"}, "v": field_value(c, "founded")},
-                 {"k": {"fa": "فروش سالانه", "en": "Annual sales"}, "v": field_value(c, "sales")},
-                 {"k": {"fa": "دارایی کل", "en": "Total assets"}, "v": field_value(c, "assets")}]
-        items.append({
-            "rank": c["rank"], "sym": c["sym"], "fa": c["fa"], "en": c["en"], "w": c["weight"],
-            "short": re.sub(r"\s*\(.*?\)", "", c["en"]),
-            "approx": bool(c.get("stale")) or not c.get("mcap"), "val": mcap_value(c), "b": b["slug"], "bname": b["name"],
-            "sub": c["sub"], "subname": {"fa": sub["fa"], "en": sub["en"]},
-            "g": c["sub"] if only else b["slug"], "gname": {"fa": sub["fa"], "en": sub["en"]} if only else b["name"],
-            "color": color, "fam": c.get("family"), "famname": TOP["families"].get(c.get("family"), None),
-            "facts": facts, "href": None if only else f'iran-{b["slug"]}.html#leaders'})
+        if color not in C:
+            C.append(color)
+        B[b["slug"]] = b["name"]
+        U[c["sub"]] = {"fa": sub["fa"], "en": sub["en"]}
+        x = [[i, v] for i, v in ((2, YESNO[True] if c.get("exporter") else None), (3, OWNERSHIP.get(c.get("ownership"))),
+                                 (4, field_value(c, "founded")), (5, field_value(c, "sales")), (6, field_value(c, "assets"))) if v]
+        it = {"r": c["rank"], "s": c["sym"], "fa": c["fa"], "en": c["en"], "w": c["weight"], "v": mcap_value(c),
+              "b": b["slug"], "u": c["sub"], "c": C.index(color), "m": c["market"], "i": c["isin"]}
+        if bool(c.get("stale")) or not c.get("mcap"):
+            it["a"] = 1
+        if c.get("family"):
+            it["f"] = c["family"]
+        if x:
+            it["x"] = x
+        items.append(it)
     if not items:
         return ""
-    data = json.dumps({"items": items, "pending": PENDING}, ensure_ascii=False).replace("</", "<\\/")
-    hint = {"fa": "اندازه‌ی هر کاشی، ارزش بازار شرکت است. روی هر کاشی بزنید تا جزئیات و شرکت‌های هم‌خانواده و هم‌رشته‌اش روشن شوند.",
-            "en": "Each tile's size is the company's market value. Tap a tile to see its details and light up its family and its sub-branch."}
+    data = json.dumps({"z": items, "pending": PENDING, "K": keys, "B": B, "U": U, "C": C, "M": MARKETS,
+                       "F": TOP["families"], "only": bool(only)}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    hint = {"fa": "اندازه‌ی هر کاشی، ارزش بازار شرکت است. روی هر کاشی بزنید تا جزئیات و شرکت‌های هم‌خانواده و هم‌رشته‌اش روشن شوند."
+                  + (" نقشه ۲۴۰ شرکت بزرگ‌تر را نشان می‌دهد؛ همه‌ی شرکت‌ها در فهرست پایین هستند." if len(items) > 240 else ""),
+            "en": "Each tile's size is the company's market value. Tap a tile to see its details and light up its family and its sub-branch."
+                  + (" The map shows the 240 largest; every company is in the list below." if len(items) > 240 else "")}
     return (f'<p class="ir-map-hint">{t(hint)}</p><div class="ir-map" role="group"></div>'
             f'<script type="application/json" id="ir-map-data">{data}</script>'
-            f'<script src="iran-map.js?v=2" defer></script>')
+            f'<script src="iran-map.js?v=4" defer></script>')
 
 
 TOP_JS = r"""
 (function () {
   var sec = document.getElementById("top100"); if (!sec) return;
+  var src = document.getElementById("ir-map-data"), tb = sec.querySelector("tbody");
+  if (src && tb) {
+    var D = JSON.parse(src.textContent), html = [];
+    function fa(n) { return String(n).replace(/[0-9]/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }); }
+    function both(o) { return '<span class="i-fa" lang="fa">' + o.fa + '</span><span class="i-en" lang="en">' + o.en + "</span>"; }
+    D.z.forEach(function (z) {
+      if (z.r <= 200) return;
+      var p = z.a ? "≈" : "";
+      html.push('<tr data-branch="' + z.b + '"><td class="n">' + both({ fa: p + fa(z.r), en: p + z.r }) + "</td><td>" + both({ fa: z.s, en: z.i }) +
+        '</td><td class="name">' + both(z) + '</td><td><a href="iran-' + z.b + '.html#leaders"><span class="dot" style="background:' + D.C[z.c] +
+        '"></span>' + both(D.B[z.b]) + '</a> <small style="color:var(--muted)">· ' + both(D.U[z.u]) + "</small></td><td>" + both(D.M[z.m]) +
+        '</td><td class="v' + (z.a ? " min" : "") + '">' + both(z.v || D.pending) + "</td></tr>");
+    });
+    tb.insertAdjacentHTML("beforeend", html.join(""));
+  }
   var rows = sec.querySelectorAll("tbody tr");
   sec.querySelectorAll(".ir-chip").forEach(function (b) {
     b.addEventListener("click", function () {
@@ -756,7 +777,7 @@ TOP_JS = r"""
 def top_section(branches):
     bmap = {b["slug"]: b for b in branches}
     rows = []
-    for c in TOP["companies"]:
+    for c in TOP["companies"][:200]:  # the rest are drawn by TOP_JS from the map payload
         b = bmap[c["branch"]]
         sub = {s["id"]: s for s in b["subs"]}[c["sub"]]
         v = mcap_value(c)
