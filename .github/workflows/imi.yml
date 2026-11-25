@@ -1,19 +1,16 @@
-name: Probe Iranian company-data sources
+name: Fetch IMI-100 ranking
 on:
-  push:
-    branches: [main]
-    paths: ["scripts/probe/**"]
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
-  probe:
+  imi:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: pip install "playwright>=1.55" && python -m playwright install --with-deps chromium
-      - run: python3 scripts/probe/probe.py || true
+      - run: python3 scripts/imi/fetch.py || true
       - run: |
           git config user.name "ditoman-bot"; git config user.email "ditoman-bot@users.noreply.github.com"
-          git add data/probe || true; git commit -m "Probe result" || exit 0
+          git add data/iran/imi || true; git commit -m "IMI-100 ranking fetch" || exit 0
           git pull --rebase origin main; git push origin HEAD:main

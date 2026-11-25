@@ -1,8 +1,9 @@
-"""Fetch the public IMI-100 ranking (the Industrial Management Institute's list of Iran's largest companies by sales)
-through the page's own data service, from a headless browser on a GitHub runner. Saves data/probe/imi500_<year>.json."""
+"""Fetch the public IMI-100 ranking (the Industrial Management Institute's list of Iran's 500 largest companies by sales)
+through the page's own data service, from a headless browser. Run by imi.yml by hand: the site answers GitHub runners.
+Saves data/iran/imi/imi500_<year>.json; scripts/make_listed.py and data/iran/private.json use the 1403 file."""
 import json, pathlib
 from playwright.sync_api import sync_playwright
-OUT = pathlib.Path(__file__).resolve().parent.parent.parent / "data" / "probe"
+OUT = pathlib.Path(__file__).resolve().parent.parent.parent / "data" / "iran" / "imi"
 OUT.mkdir(parents=True, exist_ok=True)
 JS = """async ([year, n]) => {
   const r = await fetch('/DesktopModules/BusinessEngine/API/Service/RunService', {method: 'POST',

@@ -68,6 +68,34 @@ for code, c in best.items():
         br, sub = "industry", "chem"
     out.append(dict(sym=c["sym"], fa=fa, en=en, branch=br, sub=sub, isin=c["isin"], market=MK[c["yVal"]],
                     listed=True, mcap=c["mcap"], weight=c["mcap"], stale=False))
+# --- Sales from IMI-100 (Industrial Management Institute ranking of Iran's 500 largest companies, fiscal 1403) ---
+IMI = json.load(open(R / "data/iran/imi/imi500_1403.json", encoding="utf-8"))
+SKIP = {199, 203, 267, 300, 426, 458, 477, 489, 491, 493}  # fuzzy matches that are a different company
+FORCE = {147: "خوساز"}
+
+
+def imi_norm(s):
+    s = s.replace("ي", "ی").replace("ك", "ک").replace("\u200c", "")
+    for w in ["(هولدینگ)", "هولدینگ", "(هلدینگ)", "هلدینگ", "شرکت", "سهامی عام", "سهامی خاص", "(", ")", "-", ".", "«", "»", " "]:
+        s = s.replace(w, "")
+    return s
+
+
+idx = {imi_norm(c["fa"]): c for c in out}
+bysym = {c["sym"]: c for c in out}
+for x in sorted(IMI, key=lambda x: x["RankingSalesThisYear"]):
+    r = x["RankingSalesThisYear"]
+    if r in SKIP:
+        continue
+    n = imi_norm(x["CompanyNameFa"])
+    c = bysym.get(FORCE.get(r)) or idx.get(n)
+    if not c:
+        hits = [k for k in idx if len(n) > 6 and len(k) > 6 and (n in k or k in n)]
+        c = idx[hits[0]] if len(hits) == 1 else None
+    if c and "sales" not in c:
+        c["sales"] = round(x["Sales"] / 10)  # billion rial -> billion toman
+        c["figures_year"] = 1403
+        c["imi_rank"] = r
 if missing:
     raise SystemExit(f"no English name for {len(missing)}: {missing[:20]}")
 out.sort(key=lambda c: -c["mcap"])

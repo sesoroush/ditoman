@@ -818,14 +818,16 @@ def private_section(branches):
         if c.get("slug"):
             name = f'<a href="{e(c["slug"])}.html">{name}</a>'
         rows.append(
-            f'<tr data-branch="{b["slug"]}"><td class="n">{t({"fa": "≈" + fa_digits(c["rank"]), "en": "≈" + str(c["rank"])})}</td>'
+            f'<tr data-branch="{b["slug"]}"><td class="n">{t({"fa": ("" if c.get("sales") else "≈") + fa_digits(c["rank"]), "en": ("" if c.get("sales") else "≈") + str(c["rank"])})}</td>'
             f'<td class="name">{name}</td>'
             f'<td><a href="iran-{b["slug"]}.html#leaders"><span class="dot" style="background:{e(b["accent"])}"></span>{t(b["name"])}</a>'
-            f' <small style="color:var(--muted)">· {t(sub)}</small></td></tr>')
+            f' <small style="color:var(--muted)">· {t(sub)}</small></td>'
+            f'<td class="{"v" if c.get("sales") else "v na"}">{t(field_value(c, "sales") or {"fa": "منتشر نمی‌شود", "en": "Not published"})}</td></tr>')
     n = len(PRIV["companies"])
     chips = chip("branch", "", UI["all_branches"], True) + "".join(
         chip("branch", b["slug"], b["name"]) for b in branches if any(c["branch"] == b["slug"] for c in PRIV["companies"]))
-    head = "".join(f"<th>{t(UI[k])}</th>" for k in ("col_rank", "col_name", "col_branch"))
+    head = "".join(f"<th>{t(UI[k])}</th>" for k in ("col_rank", "col_name", "col_branch")) + \
+        f'<th>{t({"fa": "فروش سالانه (IMI)", "en": "Annual sales (IMI)"})}</th>'
     title = {"fa": PRIV["title"]["fa"] + " (" + fa_digits(n) + " شرکت)", "en": PRIV["title"]["en"] + f" ({n} companies)"}
     return f'''<section class="ir-sec" id="private">
       <h2>{t(title)}</h2>

@@ -63,7 +63,10 @@
    "mcap": 3972960,
    "weight": 3972960,
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 193178,
+   "figures_year": 1403,
+   "imi_rank": 12
   },
   {
    "rank": 2,
@@ -79,7 +82,10 @@
    "weight": 1980000,
    "family": "pgpic",
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 663509,
+   "figures_year": 1403,
+   "imi_rank": 1
   },
   {
    "rank": 3,
@@ -95,7 +101,10 @@
    "weight": 996525,
    "family": "mobarakeh",
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 352171,
+   "figures_year": 1403,
+   "imi_rank": 8
   },
   {
    "rank": 4,
@@ -154,7 +163,10 @@
    "listed": true,
    "mcap": 553972,
    "weight": 553972,
-   "stale": false
+   "stale": false,
+   "sales": 443736,
+   "figures_year": 1403,
+   "imi_rank": 5
   },
   {
    "rank": 8,
@@ -170,7 +182,10 @@
    "weight": 539136,
    "family": "ghadir",
    "ownership": "semi",
-   "stale": false
+   "stale": false,
+   "sales": 419439,
+   "figures_year": 1403,
+   "imi_rank": 6
   },
   {
    "rank": 9,
@@ -184,7 +199,10 @@
    "listed": true,
    "mcap": 509667,
    "weight": 509667,
-   "stale": false
+   "stale": false,
+   "sales": 445918,
+   "figures_year": 1403,
+   "imi_rank": 4
   },
   {
    "rank": 10,
@@ -199,7 +217,10 @@
    "mcap": 507384,
    "weight": 507384,
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 320651,
+   "figures_year": 1403,
+   "imi_rank": 9
   },
   {
    "rank": 11,
@@ -245,7 +266,10 @@
    "mcap": 405984,
    "weight": 405984,
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 174611,
+   "figures_year": 1403,
+   "imi_rank": 15
   },
   {
    "rank": 14,
@@ -276,7 +300,10 @@
    "mcap": 281922,
    "weight": 281922,
    "exporter": true,
-   "stale": true
+   "stale": true,
+   "sales": 44245,
+   "figures_year": 1403,
+   "imi_rank": 53
   },
   {
    "rank": 16,
@@ -293,7 +320,10 @@
    "family": "pasargad",
    "ownership": "private",
    "stale": true,
-   "mcap": 268112
+   "mcap": 268112,
+   "sales": 239019,
+   "figures_year": 1403,
+   "imi_rank": 11
   },
   {
    "rank": 17,
@@ -309,7 +339,10 @@
    "weight": 266585,
    "family": "golgohar",
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 134174,
+   "figures_year": 1403,
+   "imi_rank": 19
   },
   {
    "rank": 18,
@@ -323,7 +356,10 @@
    "listed": true,
    "mcap": 255930,
    "weight": 255930,
-   "stale": false
+   "stale": false,
+   "sales": 34619,
+   "figures_year": 1403,
+   "imi_rank": 60
   },
   {
    "rank": 19,
@@ -337,7 +373,10 @@
    "listed": true,
    "mcap": 253380,
    "weight": 253380,
-   "stale": false
+   "stale": false,
+   "sales": 141076,
+   "figures_year": 1403,
+   "imi_rank": 18
   },
   {
    "rank": 20,
@@ -352,7 +391,10 @@
    "mcap": 234562,
    "weight": 234562,
    "ownership": "semi",
-   "stale": true
+   "stale": true,
+   "sales": 64117,
+   "figures_year": 1403,
+   "imi_rank": 32
   },
   {
    "rank": 21,
@@ -369,7 +411,10 @@
    "family": "pgpic",
    "exporter": true,
    "mcap": 233163,
-   "stale": false
+   "stale": false,
+   "sales": 103002,
+   "figures_year": 1403,
+   "imi_rank": 22
   },
   {
    "rank": 22,
@@ -400,7 +445,10 @@
    "weight": 230166,
    "exporter": true,
    "mcap": 230166,
-   "stale": false
+   "stale": false,
+   "sales": 52765,
+   "figures_year": 1403,
+   "imi_rank": 45
   },
   {
    "rank": 24,
@@ -417,7 +465,10 @@
    "family": "mapna",
    "exporter": true,
    "mcap": 219420,
-   "stale": false
+   "stale": false,
+   "sales": 177474,
+   "figures_year": 1403,
+   "imi_rank": 14
   },
   {
    "rank": 25,
@@ -432,7 +483,10 @@
    "mcap": 207690,
    "weight": 207690,
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 55543,
+   "figures_year": 1403,
+   "imi_rank": 41
   },
   {
    "rank": 26,
@@ -446,7 +500,10 @@
    "listed": true,
    "mcap": 193088,
    "weight": 193088,
-   "stale": false
+   "stale": false,
+   "sales": 31673,
+   "figures_year": 1403,
+   "imi_rank": 67
   },
   {
    "sym": "میدکو",
@@ -460,7 +517,10 @@
    "mcap": 187630,
    "weight": 187630,
    "stale": false,
-   "rank": 27
+   "rank": 27,
+   "sales": 62719,
+   "figures_year": 1403,
+   "imi_rank": 35
   },
   {
    "rank": 28,
@@ -475,7 +535,10 @@
    "mcap": 183452,
    "weight": 183452,
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 69867,
+   "figures_year": 1403,
+   "imi_rank": 30
   },
   {
    "rank": 29,
@@ -490,7 +553,10 @@
    "weight": 181935,
    "exporter": true,
    "mcap": 181935,
-   "stale": false
+   "stale": false,
+   "sales": 70431,
+   "figures_year": 1403,
+   "imi_rank": 29
   },
   {
    "rank": 30,
@@ -532,7 +598,10 @@
    "listed": true,
    "mcap": 168951,
    "weight": 168951,
-   "stale": true
+   "stale": true,
+   "sales": 360752,
+   "figures_year": 1403,
+   "imi_rank": 7
   },
   {
    "rank": 33,
@@ -547,7 +616,10 @@
    "mcap": 160740,
    "weight": 160740,
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 79541,
+   "figures_year": 1403,
+   "imi_rank": 25
   },
   {
    "rank": 34,
@@ -563,7 +635,10 @@
    "family": "saman",
    "ownership": "private",
    "mcap": 152944,
-   "stale": false
+   "stale": false,
+   "sales": 63607,
+   "figures_year": 1403,
+   "imi_rank": 34
   },
   {
    "rank": 35,
@@ -607,7 +682,10 @@
    "family": "pasargad",
    "ownership": "private",
    "mcap": 146556,
-   "stale": false
+   "stale": false,
+   "sales": 30372,
+   "figures_year": 1403,
+   "imi_rank": 72
   },
   {
    "rank": 38,
@@ -667,7 +745,10 @@
    "family": "pgpic",
    "exporter": true,
    "mcap": 122368,
-   "stale": false
+   "stale": false,
+   "sales": 78664,
+   "figures_year": 1403,
+   "imi_rank": 26
   },
   {
    "rank": 42,
@@ -697,7 +778,10 @@
    "mcap_min": 29682,
    "weight": 121443,
    "mcap": 121443,
-   "stale": false
+   "stale": false,
+   "sales": 31091,
+   "figures_year": 1403,
+   "imi_rank": 69
   },
   {
    "rank": 44,
@@ -758,7 +842,10 @@
    "listed": true,
    "mcap": 117160,
    "weight": 117160,
-   "stale": false
+   "stale": false,
+   "sales": 94731,
+   "figures_year": 1403,
+   "imi_rank": 24
   },
   {
    "rank": 48,
@@ -805,7 +892,10 @@
    "mcap": 109073,
    "weight": 109073,
    "ownership": "private",
-   "stale": false
+   "stale": false,
+   "sales": 64042,
+   "figures_year": 1403,
+   "imi_rank": 33
   },
   {
    "rank": 51,
@@ -820,7 +910,10 @@
    "weight": 104960,
    "family": "mapna",
    "mcap": 104960,
-   "stale": false
+   "stale": false,
+   "sales": 9807,
+   "figures_year": 1403,
+   "imi_rank": 140
   },
   {
    "rank": 52,
@@ -834,7 +927,10 @@
    "listed": true,
    "mcap": 102456,
    "weight": 102456,
-   "stale": false
+   "stale": false,
+   "sales": 182854,
+   "figures_year": 1403,
+   "imi_rank": 13
   },
   {
    "rank": 53,
@@ -863,7 +959,10 @@
    "mcap": 100860,
    "weight": 100860,
    "stale": false,
-   "rank": 54
+   "rank": 54,
+   "sales": 22060,
+   "figures_year": 1403,
+   "imi_rank": 87
   },
   {
    "rank": 55,
@@ -877,7 +976,10 @@
    "listed": true,
    "mcap": 97200,
    "weight": 97200,
-   "stale": false
+   "stale": false,
+   "sales": 9210,
+   "figures_year": 1403,
+   "imi_rank": 144
   },
   {
    "rank": 56,
@@ -908,7 +1010,10 @@
    "mcap": 93835,
    "weight": 93835,
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 97470,
+   "figures_year": 1403,
+   "imi_rank": 23
   },
   {
    "rank": 58,
@@ -923,7 +1028,10 @@
    "mcap": 92800,
    "weight": 92800,
    "ownership": "private",
-   "stale": false
+   "stale": false,
+   "sales": 152117,
+   "figures_year": 1403,
+   "imi_rank": 17
   },
   {
    "rank": 59,
@@ -953,7 +1061,10 @@
    "weight": 88100,
    "family": "ghadir",
    "ownership": "semi",
-   "stale": false
+   "stale": false,
+   "sales": 43716,
+   "figures_year": 1403,
+   "imi_rank": 54
   },
   {
    "rank": 61,
@@ -967,7 +1078,10 @@
    "listed": true,
    "weight": 87665,
    "mcap": 87665,
-   "stale": false
+   "stale": false,
+   "sales": 752,
+   "figures_year": 1403,
+   "imi_rank": 359
   },
   {
    "rank": 62,
@@ -982,7 +1096,10 @@
    "mcap": 87276,
    "weight": 87276,
    "exporter": true,
-   "stale": false
+   "stale": false,
+   "sales": 27340,
+   "figures_year": 1403,
+   "imi_rank": 77
   },
   {
    "rank": 63,
@@ -1013,7 +1130,10 @@
    "weight": 86280,
    "exporter": true,
    "mcap": 86280,
-   "stale": false
+   "stale": false,
+   "sales": 19524,
+   "figures_year": 1403,
+   "imi_rank": 98
   },
   {
    "rank": 65,
@@ -1029,7 +1149,10 @@
    "weight": 85280,
    "exporter": true,
    "mcap": 85280,
-   "stale": false
+   "stale": false,
+   "sales": 15505,
+   "figures_year": 1403,
+   "imi_rank": 116
   },
   {
    "sym": "کالا",
@@ -1075,7 +1198,10 @@
    "mcap": 80348,
    "weight": 80348,
    "family": "saderat",
-   "stale": false
+   "stale": false,
+   "sales": 164062,
+   "figures_year": 1403,
+   "imi_rank": 16
   },
   {
    "rank": 69,
@@ -1090,7 +1216,10 @@
    "mcap_min": 56316,
    "weight": 80343,
    "mcap": 80343,
-   "stale": false
+   "stale": false,
+   "sales": 17513,
+   "figures_year": 1403,
+   "imi_rank": 109
   },
   {
    "rank": 70,
@@ -1105,7 +1234,10 @@
    "mcap_min": 52615,
    "weight": 76750,
    "mcap": 76750,
-   "stale": false
+   "stale": false,
+   "sales": 22675,
+   "figures_year": 1403,
+   "imi_rank": 85
   },
   {
    "rank": 71,
@@ -1120,7 +1252,10 @@
    "mcap": 76195,
    "weight": 76195,
    "family": "pgpic",
-   "stale": false
+   "stale": false,
+   "sales": 54526,
+   "figures_year": 1403,
+   "imi_rank": 43
   },
   {
    "rank": 72,
@@ -1135,7 +1270,10 @@
    "mcap_min": 59714,
    "weight": 73268,
    "mcap": 73268,
-   "stale": false
+   "stale": false,
+   "sales": 16646,
+   "figures_year": 1403,
+   "imi_rank": 113
   },
   {
    "rank": 73,
@@ -1208,7 +1346,10 @@
    "mcap_min": 54334,
    "weight": 67932,
    "mcap": 67932,
-   "stale": false
+   "stale": false,
+   "sales": 11425,
+   "figures_year": 1403,
+   "imi_rank": 135
   },
   {
    "rank": 78,
@@ -1269,7 +1410,10 @@
    "weight": 64040,
    "ownership": "private",
    "mcap": 64040,
-   "stale": false
+   "stale": false,
+   "sales": 4368,
+   "figures_year": 1403,
+   "imi_rank": 193
   },
   {
    "rank": 82,
@@ -1283,7 +1427,10 @@
    "listed": true,
    "mcap": 63770,
    "weight": 63770,
-   "stale": false
+   "stale": false,
+   "sales": 36839,
+   "figures_year": 1403,
+   "imi_rank": 59
   },
   {
    "rank": 83,
@@ -1298,7 +1445,10 @@
    "weight": 63612,
    "exporter": true,
    "mcap": 63612,
-   "stale": false
+   "stale": false,
+   "sales": 49092,
+   "figures_year": 1403,
+   "imi_rank": 47
   },
   {
    "rank": 84,
@@ -1312,7 +1462,10 @@
    "listed": true,
    "weight": 63588,
    "mcap": 63588,
-   "stale": false
+   "stale": false,
+   "sales": 19227,
+   "figures_year": 1403,
+   "imi_rank": 100
   },
   {
    "rank": 85,
@@ -1327,7 +1480,10 @@
    "weight": 63240,
    "family": "golgohar",
    "mcap": 63240,
-   "stale": false
+   "stale": false,
+   "sales": 24698,
+   "figures_year": 1403,
+   "imi_rank": 82
   },
   {
    "rank": 86,
@@ -1342,7 +1498,10 @@
    "mcap_min": 28260,
    "weight": 62010,
    "mcap": 62010,
-   "stale": false
+   "stale": false,
+   "sales": 8931,
+   "figures_year": 1403,
+   "imi_rank": 145
   },
   {
    "rank": 87,
@@ -1357,7 +1516,10 @@
    "mcap_min": 46000,
    "weight": 62001,
    "mcap": 62001,
-   "stale": false
+   "stale": false,
+   "sales": 27604,
+   "figures_year": 1403,
+   "imi_rank": 76
   },
   {
    "rank": 88,
@@ -1374,7 +1536,10 @@
    "family": "tamin",
    "ownership": "semi",
    "mcap": 60522,
-   "stale": false
+   "stale": false,
+   "sales": 1586,
+   "figures_year": 1403,
+   "imi_rank": 273
   },
   {
    "rank": 89,
@@ -1403,7 +1568,10 @@
    "mcap_est": true,
    "weight": 58951,
    "stale": true,
-   "mcap": 58951
+   "mcap": 58951,
+   "sales": 272648,
+   "figures_year": 1403,
+   "imi_rank": 10
   },
   {
    "rank": 91,
@@ -1419,7 +1587,10 @@
    "family": "mobarakeh",
    "exporter": true,
    "mcap": 57655,
-   "stale": false
+   "stale": false,
+   "sales": 32791,
+   "figures_year": 1403,
+   "imi_rank": 65
   },
   {
    "rank": 92,
@@ -1519,7 +1690,10 @@
    "mcap": 48933,
    "weight": 48933,
    "stale": false,
-   "rank": 98
+   "rank": 98,
+   "sales": 23782,
+   "figures_year": 1403,
+   "imi_rank": 83
   },
   {
    "rank": 99,
@@ -1562,7 +1736,10 @@
    "mcap": 45980,
    "weight": 45980,
    "stale": false,
-   "rank": 101
+   "rank": 101,
+   "sales": 20026,
+   "figures_year": 1403,
+   "imi_rank": 95
   },
   {
    "rank": 102,
@@ -1606,7 +1783,10 @@
    "weight": 44652,
    "exporter": true,
    "mcap": 44652,
-   "stale": false
+   "stale": false,
+   "sales": 33210,
+   "figures_year": 1403,
+   "imi_rank": 61
   },
   {
    "rank": 105,
@@ -1649,7 +1829,10 @@
    "mcap": 42360,
    "weight": 42360,
    "stale": false,
-   "rank": 107
+   "rank": 107,
+   "sales": 25841,
+   "figures_year": 1403,
+   "imi_rank": 80
   },
   {
    "sym": "فسبزوار",
@@ -1677,7 +1860,10 @@
    "mcap": 41786,
    "weight": 41786,
    "stale": false,
-   "rank": 109
+   "rank": 109,
+   "sales": 8760,
+   "figures_year": 1403,
+   "imi_rank": 146
   },
   {
    "sym": "نماد",
@@ -1691,7 +1877,10 @@
    "mcap": 41580,
    "weight": 41580,
    "stale": false,
-   "rank": 110
+   "rank": 110,
+   "sales": 6742,
+   "figures_year": 1403,
+   "imi_rank": 161
   },
   {
    "sym": "شاوان",
@@ -1705,7 +1894,10 @@
    "mcap": 41344,
    "weight": 41344,
    "stale": false,
-   "rank": 111
+   "rank": 111,
+   "sales": 75615,
+   "figures_year": 1403,
+   "imi_rank": 28
   },
   {
    "sym": "بترانس",
@@ -1719,7 +1911,10 @@
    "mcap": 40860,
    "weight": 40860,
    "stale": false,
-   "rank": 112
+   "rank": 112,
+   "sales": 22854,
+   "figures_year": 1403,
+   "imi_rank": 84
   },
   {
    "sym": "واحیا",
@@ -1733,7 +1928,10 @@
    "mcap": 40528,
    "weight": 40528,
    "stale": false,
-   "rank": 113
+   "rank": 113,
+   "sales": 15456,
+   "figures_year": 1403,
+   "imi_rank": 117
   },
   {
    "sym": "خبهمن",
@@ -1747,7 +1945,10 @@
    "mcap": 40122,
    "weight": 40122,
    "stale": false,
-   "rank": 114
+   "rank": 114,
+   "sales": 76631,
+   "figures_year": 1403,
+   "imi_rank": 27
   },
   {
    "sym": "ذوب",
@@ -1776,7 +1977,10 @@
    "mcap_min": 23530,
    "weight": 40016,
    "mcap": 40016,
-   "stale": false
+   "stale": false,
+   "sales": 3224,
+   "figures_year": 1403,
+   "imi_rank": 212
   },
   {
    "sym": "گنگین",
@@ -1790,7 +1994,10 @@
    "mcap": 39690,
    "weight": 39690,
    "stale": false,
-   "rank": 117
+   "rank": 117,
+   "sales": 32614,
+   "figures_year": 1403,
+   "imi_rank": 66
   },
   {
    "rank": 118,
@@ -1833,7 +2040,10 @@
    "mcap": 38250,
    "weight": 38250,
    "stale": false,
-   "rank": 120
+   "rank": 120,
+   "sales": 4909,
+   "figures_year": 1403,
+   "imi_rank": 184
   },
   {
    "sym": "البرز",
@@ -1847,7 +2057,10 @@
    "mcap": 37386,
    "weight": 37386,
    "stale": false,
-   "rank": 121
+   "rank": 121,
+   "sales": 39440,
+   "figures_year": 1403,
+   "imi_rank": 57
   },
   {
    "rank": 122,
@@ -1891,7 +2104,10 @@
    "mcap_min": 34452,
    "weight": 35844,
    "mcap": 35844,
-   "stale": false
+   "stale": false,
+   "sales": 20276,
+   "figures_year": 1403,
+   "imi_rank": 93
   },
   {
    "rank": 125,
@@ -1934,7 +2150,10 @@
    "mcap": 34822,
    "weight": 34822,
    "stale": false,
-   "rank": 127
+   "rank": 127,
+   "sales": 3120,
+   "figures_year": 1403,
+   "imi_rank": 215
   },
   {
    "sym": "شساخت",
@@ -1976,7 +2195,10 @@
    "mcap": 33843,
    "weight": 33843,
    "stale": false,
-   "rank": 130
+   "rank": 130,
+   "sales": 5956,
+   "figures_year": 1403,
+   "imi_rank": 168
   },
   {
    "sym": "غزر",
@@ -2060,7 +2282,10 @@
    "mcap": 30868,
    "weight": 30868,
    "stale": false,
-   "rank": 136
+   "rank": 136,
+   "sales": 1338,
+   "figures_year": 1403,
+   "imi_rank": 291
   },
   {
    "sym": "پترول",
@@ -2131,7 +2356,10 @@
    "mcap": 28753,
    "weight": 28753,
    "stale": false,
-   "rank": 141
+   "rank": 141,
+   "sales": 22443,
+   "figures_year": 1403,
+   "imi_rank": 86
   },
   {
    "sym": "دسینا",
@@ -2173,7 +2401,10 @@
    "mcap": 27204,
    "weight": 27204,
    "stale": false,
-   "rank": 144
+   "rank": 144,
+   "sales": 4476,
+   "figures_year": 1403,
+   "imi_rank": 191
   },
   {
    "sym": "دی",
@@ -2215,7 +2446,10 @@
    "mcap": 26940,
    "weight": 26940,
    "stale": false,
-   "rank": 147
+   "rank": 147,
+   "sales": 19510,
+   "figures_year": 1403,
+   "imi_rank": 99
   },
   {
    "sym": "دالبر",
@@ -2287,7 +2521,10 @@
    "mcap": 25470,
    "weight": 25470,
    "stale": false,
-   "rank": 152
+   "rank": 152,
+   "sales": 26811,
+   "figures_year": 1403,
+   "imi_rank": 78
   },
   {
    "sym": "تایرا",
@@ -2371,7 +2608,10 @@
    "listed": true,
    "weight": 24050,
    "mcap": 24050,
-   "stale": false
+   "stale": false,
+   "sales": 18000,
+   "figures_year": 1403,
+   "imi_rank": 105
   },
   {
    "sym": "سرود",
@@ -2399,7 +2639,10 @@
    "mcap": 23916,
    "weight": 23916,
    "stale": false,
-   "rank": 160
+   "rank": 160,
+   "sales": 4096,
+   "figures_year": 1403,
+   "imi_rank": 196
   },
   {
    "sym": "فوکا",
@@ -2497,7 +2740,10 @@
    "mcap": 21604,
    "weight": 21604,
    "stale": false,
-   "rank": 167
+   "rank": 167,
+   "sales": 3049,
+   "figures_year": 1403,
+   "imi_rank": 217
   },
   {
    "sym": "حسینا",
@@ -2511,7 +2757,10 @@
    "mcap": 21444,
    "weight": 21444,
    "stale": false,
-   "rank": 168
+   "rank": 168,
+   "sales": 6238,
+   "figures_year": 1403,
+   "imi_rank": 165
   },
   {
    "sym": "حتاید",
@@ -2539,7 +2788,10 @@
    "mcap": 21089,
    "weight": 21089,
    "stale": false,
-   "rank": 170
+   "rank": 170,
+   "sales": 16673,
+   "figures_year": 1403,
+   "imi_rank": 112
   },
   {
    "sym": "محتشم",
@@ -2651,7 +2903,10 @@
    "mcap": 20270,
    "weight": 20270,
    "stale": false,
-   "rank": 178
+   "rank": 178,
+   "sales": 20799,
+   "figures_year": 1403,
+   "imi_rank": 90
   },
   {
    "sym": "دپارس",
@@ -2738,7 +2993,10 @@
    "family": "saman",
    "ownership": "private",
    "mcap": 19448,
-   "stale": false
+   "stale": false,
+   "sales": 6909,
+   "figures_year": 1403,
+   "imi_rank": 160
   },
   {
    "sym": "بمپنا",
@@ -2864,7 +3122,10 @@
    "mcap": 18220,
    "weight": 18220,
    "stale": false,
-   "rank": 193
+   "rank": 193,
+   "sales": 9754,
+   "figures_year": 1403,
+   "imi_rank": 141
   },
   {
    "sym": "وسنا",
@@ -2976,6 +3237,9 @@
    "mcap": 17189,
    "weight": 17189,
    "stale": false,
+   "sales": 19096,
+   "figures_year": 1403,
+   "imi_rank": 101,
    "rank": 201
   },
   {
@@ -3004,6 +3268,9 @@
    "mcap": 16755,
    "weight": 16755,
    "stale": false,
+   "sales": 1782,
+   "figures_year": 1403,
+   "imi_rank": 265,
    "rank": 203
   },
   {
@@ -3228,6 +3495,9 @@
    "mcap": 14707,
    "weight": 14707,
    "stale": false,
+   "sales": 20582,
+   "figures_year": 1403,
+   "imi_rank": 91,
    "rank": 219
   },
   {
@@ -3284,6 +3554,9 @@
    "mcap": 14320,
    "weight": 14320,
    "stale": false,
+   "sales": 55603,
+   "figures_year": 1403,
+   "imi_rank": 40,
    "rank": 223
   },
   {
@@ -3326,6 +3599,9 @@
    "mcap": 14215,
    "weight": 14215,
    "stale": false,
+   "sales": 3837,
+   "figures_year": 1403,
+   "imi_rank": 202,
    "rank": 226
   },
   {
@@ -3368,6 +3644,9 @@
    "mcap": 14119,
    "weight": 14119,
    "stale": false,
+   "sales": 14559,
+   "figures_year": 1403,
+   "imi_rank": 119,
    "rank": 229
   },
   {
@@ -3466,6 +3745,9 @@
    "mcap": 13680,
    "weight": 13680,
    "stale": false,
+   "sales": 17153,
+   "figures_year": 1403,
+   "imi_rank": 110,
    "rank": 236
   },
   {
@@ -3564,6 +3846,9 @@
    "mcap": 13193,
    "weight": 13193,
    "stale": false,
+   "sales": 1267,
+   "figures_year": 1403,
+   "imi_rank": 298,
    "rank": 243
   },
   {
@@ -3788,6 +4073,9 @@
    "mcap": 12152,
    "weight": 12152,
    "stale": false,
+   "sales": 2972,
+   "figures_year": 1403,
+   "imi_rank": 224,
    "rank": 259
   },
   {
@@ -4026,6 +4314,9 @@
    "mcap": 10987,
    "weight": 10987,
    "stale": false,
+   "sales": 466,
+   "figures_year": 1403,
+   "imi_rank": 429,
    "rank": 276
   },
   {
@@ -4040,6 +4331,9 @@
    "mcap": 10775,
    "weight": 10775,
    "stale": false,
+   "sales": 1027,
+   "figures_year": 1403,
+   "imi_rank": 323,
    "rank": 277
   },
   {
@@ -4166,6 +4460,9 @@
    "mcap": 10305,
    "weight": 10305,
    "stale": false,
+   "sales": 2563,
+   "figures_year": 1403,
+   "imi_rank": 233,
    "rank": 286
   },
   {
@@ -4264,6 +4561,9 @@
    "mcap": 9925,
    "weight": 9925,
    "stale": false,
+   "sales": 33061,
+   "figures_year": 1403,
+   "imi_rank": 63,
    "rank": 293
   },
   {
@@ -4320,6 +4620,9 @@
    "mcap": 9540,
    "weight": 9540,
    "stale": false,
+   "sales": 13223,
+   "figures_year": 1403,
+   "imi_rank": 125,
    "rank": 297
   },
   {
@@ -4362,6 +4665,9 @@
    "mcap": 9423,
    "weight": 9423,
    "stale": false,
+   "sales": 1879,
+   "figures_year": 1403,
+   "imi_rank": 261,
    "rank": 300
   },
   {
@@ -4432,6 +4738,9 @@
    "mcap": 9304,
    "weight": 9304,
    "stale": false,
+   "sales": 2318,
+   "figures_year": 1403,
+   "imi_rank": 240,
    "rank": 305
   },
   {
@@ -4446,6 +4755,9 @@
    "mcap": 9154,
    "weight": 9154,
    "stale": false,
+   "sales": 3911,
+   "figures_year": 1403,
+   "imi_rank": 198,
    "rank": 306
   },
   {
@@ -4474,6 +4786,9 @@
    "mcap": 9128,
    "weight": 9128,
    "stale": false,
+   "sales": 1568,
+   "figures_year": 1403,
+   "imi_rank": 275,
    "rank": 308
   },
   {
@@ -4516,6 +4831,9 @@
    "mcap": 9017,
    "weight": 9017,
    "stale": false,
+   "sales": 5654,
+   "figures_year": 1403,
+   "imi_rank": 173,
    "rank": 311
   },
   {
@@ -4558,6 +4876,9 @@
    "mcap": 8939,
    "weight": 8939,
    "stale": false,
+   "sales": 3682,
+   "figures_year": 1403,
+   "imi_rank": 205,
    "rank": 314
   },
   {
@@ -4628,6 +4949,9 @@
    "mcap": 8572,
    "weight": 8572,
    "stale": false,
+   "sales": 2739,
+   "figures_year": 1403,
+   "imi_rank": 227,
    "rank": 319
   },
   {
@@ -4698,6 +5022,9 @@
    "mcap": 8444,
    "weight": 8444,
    "stale": false,
+   "sales": 30563,
+   "figures_year": 1403,
+   "imi_rank": 71,
    "rank": 324
   },
   {
@@ -4782,6 +5109,9 @@
    "mcap": 8167,
    "weight": 8167,
    "stale": false,
+   "sales": 356,
+   "figures_year": 1403,
+   "imi_rank": 473,
    "rank": 330
   },
   {
@@ -4880,6 +5210,9 @@
    "mcap": 7994,
    "weight": 7994,
    "stale": false,
+   "sales": 2091,
+   "figures_year": 1403,
+   "imi_rank": 250,
    "rank": 337
   },
   {
@@ -4950,6 +5283,9 @@
    "mcap": 7735,
    "weight": 7735,
    "stale": false,
+   "sales": 1357,
+   "figures_year": 1403,
+   "imi_rank": 289,
    "rank": 342
   },
   {
@@ -5006,6 +5342,9 @@
    "mcap": 7660,
    "weight": 7660,
    "stale": false,
+   "sales": 6651,
+   "figures_year": 1403,
+   "imi_rank": 162,
    "rank": 346
   },
   {
@@ -5020,6 +5359,9 @@
    "mcap": 7595,
    "weight": 7595,
    "stale": false,
+   "sales": 5748,
+   "figures_year": 1403,
+   "imi_rank": 172,
    "rank": 347
   },
   {
@@ -5034,6 +5376,9 @@
    "mcap": 7580,
    "weight": 7580,
    "stale": false,
+   "sales": 3029,
+   "figures_year": 1403,
+   "imi_rank": 221,
    "rank": 348
   },
   {
@@ -5076,6 +5421,9 @@
    "mcap": 7541,
    "weight": 7541,
    "stale": false,
+   "sales": 1461,
+   "figures_year": 1403,
+   "imi_rank": 283,
    "rank": 351
   },
   {
@@ -5090,6 +5438,9 @@
    "mcap": 7504,
    "weight": 7504,
    "stale": false,
+   "sales": 1197,
+   "figures_year": 1403,
+   "imi_rank": 305,
    "rank": 352
   },
   {
@@ -5160,6 +5511,9 @@
    "mcap": 7354,
    "weight": 7354,
    "stale": false,
+   "sales": 4152,
+   "figures_year": 1403,
+   "imi_rank": 195,
    "rank": 357
   },
   {
@@ -5216,6 +5570,9 @@
    "mcap": 7215,
    "weight": 7215,
    "stale": false,
+   "sales": 2282,
+   "figures_year": 1403,
+   "imi_rank": 243,
    "rank": 361
   },
   {
@@ -5244,6 +5601,9 @@
    "mcap": 7166,
    "weight": 7166,
    "stale": false,
+   "sales": 1063,
+   "figures_year": 1403,
+   "imi_rank": 316,
    "rank": 363
   },
   {
@@ -5258,6 +5618,9 @@
    "mcap": 7165,
    "weight": 7165,
    "stale": false,
+   "sales": 3193,
+   "figures_year": 1403,
+   "imi_rank": 213,
    "rank": 364
   },
   {
@@ -5286,6 +5649,9 @@
    "mcap": 7069,
    "weight": 7069,
    "stale": false,
+   "sales": 2918,
+   "figures_year": 1403,
+   "imi_rank": 225,
    "rank": 366
   },
   {
@@ -5300,6 +5666,9 @@
    "mcap": 7040,
    "weight": 7040,
    "stale": false,
+   "sales": 944,
+   "figures_year": 1403,
+   "imi_rank": 334,
    "rank": 367
   },
   {
@@ -5356,6 +5725,9 @@
    "mcap": 6838,
    "weight": 6838,
    "stale": false,
+   "sales": 1053,
+   "figures_year": 1403,
+   "imi_rank": 317,
    "rank": 371
   },
   {
@@ -5370,6 +5742,9 @@
    "mcap": 6820,
    "weight": 6820,
    "stale": false,
+   "sales": 1420,
+   "figures_year": 1403,
+   "imi_rank": 284,
    "rank": 372
   },
   {
@@ -5468,6 +5843,9 @@
    "mcap": 6534,
    "weight": 6534,
    "stale": false,
+   "sales": 378,
+   "figures_year": 1403,
+   "imi_rank": 465,
    "rank": 379
   },
   {
@@ -5510,6 +5888,9 @@
    "mcap": 6485,
    "weight": 6485,
    "stale": false,
+   "sales": 10967,
+   "figures_year": 1403,
+   "imi_rank": 137,
    "rank": 382
   },
   {
@@ -5524,6 +5905,9 @@
    "mcap": 6480,
    "weight": 6480,
    "stale": false,
+   "sales": 4425,
+   "figures_year": 1403,
+   "imi_rank": 192,
    "rank": 383
   },
   {
@@ -5678,6 +6062,9 @@
    "mcap": 6284,
    "weight": 6284,
    "stale": false,
+   "sales": 2242,
+   "figures_year": 1403,
+   "imi_rank": 246,
    "rank": 394
   },
   {
@@ -5706,6 +6093,9 @@
    "mcap": 6224,
    "weight": 6224,
    "stale": false,
+   "sales": 2055,
+   "figures_year": 1403,
+   "imi_rank": 251,
    "rank": 396
   },
   {
@@ -5734,6 +6124,9 @@
    "mcap": 6156,
    "weight": 6156,
    "stale": false,
+   "sales": 688,
+   "figures_year": 1403,
+   "imi_rank": 372,
    "rank": 398
   },
   {
@@ -5804,6 +6197,9 @@
    "mcap": 5934,
    "weight": 5934,
    "stale": false,
+   "sales": 3121,
+   "figures_year": 1403,
+   "imi_rank": 214,
    "rank": 403
   },
   {
@@ -5818,6 +6214,9 @@
    "mcap": 5921,
    "weight": 5921,
    "stale": false,
+   "sales": 1571,
+   "figures_year": 1403,
+   "imi_rank": 274,
    "rank": 404
   },
   {
@@ -5846,6 +6245,9 @@
    "mcap": 5904,
    "weight": 5904,
    "stale": false,
+   "sales": 7662,
+   "figures_year": 1403,
+   "imi_rank": 153,
    "rank": 406
   },
   {
@@ -5874,6 +6276,9 @@
    "mcap": 5824,
    "weight": 5824,
    "stale": false,
+   "sales": 1903,
+   "figures_year": 1403,
+   "imi_rank": 260,
    "rank": 408
   },
   {
@@ -5902,6 +6307,9 @@
    "mcap": 5760,
    "weight": 5760,
    "stale": false,
+   "sales": 7798,
+   "figures_year": 1403,
+   "imi_rank": 150,
    "rank": 410
   },
   {
@@ -5916,6 +6324,9 @@
    "mcap": 5748,
    "weight": 5748,
    "stale": false,
+   "sales": 3384,
+   "figures_year": 1403,
+   "imi_rank": 208,
    "rank": 411
   },
   {
@@ -5930,6 +6341,9 @@
    "mcap": 5746,
    "weight": 5746,
    "stale": false,
+   "sales": 738,
+   "figures_year": 1403,
+   "imi_rank": 361,
    "rank": 412
   },
   {
@@ -5944,6 +6358,9 @@
    "mcap": 5723,
    "weight": 5723,
    "stale": false,
+   "sales": 709,
+   "figures_year": 1403,
+   "imi_rank": 366,
    "rank": 413
   },
   {
@@ -6028,6 +6445,9 @@
    "mcap": 5593,
    "weight": 5593,
    "stale": false,
+   "sales": 576,
+   "figures_year": 1403,
+   "imi_rank": 399,
    "rank": 419
   },
   {
@@ -6070,6 +6490,9 @@
    "mcap": 5476,
    "weight": 5476,
    "stale": false,
+   "sales": 874,
+   "figures_year": 1403,
+   "imi_rank": 342,
    "rank": 422
   },
   {
@@ -6140,6 +6563,9 @@
    "mcap": 5352,
    "weight": 5352,
    "stale": false,
+   "sales": 5296,
+   "figures_year": 1403,
+   "imi_rank": 177,
    "rank": 427
   },
   {
@@ -6168,6 +6594,9 @@
    "mcap": 5285,
    "weight": 5285,
    "stale": false,
+   "sales": 1401,
+   "figures_year": 1403,
+   "imi_rank": 286,
    "rank": 429
   },
   {
@@ -6182,6 +6611,9 @@
    "mcap": 5113,
    "weight": 5113,
    "stale": false,
+   "sales": 2216,
+   "figures_year": 1403,
+   "imi_rank": 247,
    "rank": 430
   },
   {
@@ -6280,6 +6712,9 @@
    "mcap": 4985,
    "weight": 4985,
    "stale": false,
+   "sales": 1400,
+   "figures_year": 1403,
+   "imi_rank": 287,
    "rank": 437
   },
   {
@@ -6448,6 +6883,9 @@
    "mcap": 4722,
    "weight": 4722,
    "stale": false,
+   "sales": 560,
+   "figures_year": 1403,
+   "imi_rank": 403,
    "rank": 449
   },
   {
@@ -6504,6 +6942,9 @@
    "mcap": 4674,
    "weight": 4674,
    "stale": false,
+   "sales": 598,
+   "figures_year": 1403,
+   "imi_rank": 394,
    "rank": 453
   },
   {
@@ -6546,6 +6987,9 @@
    "mcap": 4617,
    "weight": 4617,
    "stale": false,
+   "sales": 1147,
+   "figures_year": 1403,
+   "imi_rank": 307,
    "rank": 456
   },
   {
@@ -6700,6 +7144,9 @@
    "mcap": 4405,
    "weight": 4405,
    "stale": false,
+   "sales": 6169,
+   "figures_year": 1403,
+   "imi_rank": 166,
    "rank": 467
   },
   {
@@ -6770,6 +7217,9 @@
    "mcap": 4265,
    "weight": 4265,
    "stale": false,
+   "sales": 1465,
+   "figures_year": 1403,
+   "imi_rank": 281,
    "rank": 472
   },
   {
@@ -6812,6 +7262,9 @@
    "mcap": 4248,
    "weight": 4248,
    "stale": false,
+   "sales": 971,
+   "figures_year": 1403,
+   "imi_rank": 330,
    "rank": 475
   },
   {
@@ -6826,6 +7279,9 @@
    "mcap": 4221,
    "weight": 4221,
    "stale": false,
+   "sales": 1744,
+   "figures_year": 1403,
+   "imi_rank": 268,
    "rank": 476
   },
   {
@@ -6952,6 +7408,9 @@
    "mcap": 4083,
    "weight": 4083,
    "stale": false,
+   "sales": 7103,
+   "figures_year": 1403,
+   "imi_rank": 158,
    "rank": 485
   },
   {
@@ -6966,6 +7425,9 @@
    "mcap": 4054,
    "weight": 4054,
    "stale": false,
+   "sales": 4868,
+   "figures_year": 1403,
+   "imi_rank": 186,
    "rank": 486
   },
   {
@@ -7036,6 +7498,9 @@
    "mcap": 3931,
    "weight": 3931,
    "stale": false,
+   "sales": 776,
+   "figures_year": 1403,
+   "imi_rank": 356,
    "rank": 491
   },
   {
@@ -7050,6 +7515,9 @@
    "mcap": 3921,
    "weight": 3921,
    "stale": false,
+   "sales": 489,
+   "figures_year": 1403,
+   "imi_rank": 421,
    "rank": 492
   },
   {
@@ -7134,6 +7602,9 @@
    "mcap": 3823,
    "weight": 3823,
    "stale": false,
+   "sales": 5867,
+   "figures_year": 1403,
+   "imi_rank": 170,
    "rank": 498
   },
   {
@@ -7162,6 +7633,9 @@
    "mcap": 3802,
    "weight": 3802,
    "stale": false,
+   "sales": 584,
+   "figures_year": 1403,
+   "imi_rank": 397,
    "rank": 500
   },
   {
@@ -7190,6 +7664,9 @@
    "mcap": 3731,
    "weight": 3731,
    "stale": false,
+   "sales": 1014,
+   "figures_year": 1403,
+   "imi_rank": 324,
    "rank": 502
   },
   {
@@ -7204,6 +7681,9 @@
    "mcap": 3724,
    "weight": 3724,
    "stale": false,
+   "sales": 3288,
+   "figures_year": 1403,
+   "imi_rank": 210,
    "rank": 503
   },
   {
@@ -7274,6 +7754,9 @@
    "mcap": 3639,
    "weight": 3639,
    "stale": false,
+   "sales": 2557,
+   "figures_year": 1403,
+   "imi_rank": 234,
    "rank": 508
   },
   {
@@ -7330,6 +7813,9 @@
    "mcap": 3584,
    "weight": 3584,
    "stale": false,
+   "sales": 1603,
+   "figures_year": 1403,
+   "imi_rank": 272,
    "rank": 512
   },
   {
@@ -7386,6 +7872,9 @@
    "mcap": 3446,
    "weight": 3446,
    "stale": false,
+   "sales": 464,
+   "figures_year": 1403,
+   "imi_rank": 431,
    "rank": 516
   },
   {
@@ -7512,6 +8001,9 @@
    "mcap": 3336,
    "weight": 3336,
    "stale": false,
+   "sales": 1012,
+   "figures_year": 1403,
+   "imi_rank": 325,
    "rank": 525
   },
   {
@@ -7540,6 +8032,9 @@
    "mcap": 3302,
    "weight": 3302,
    "stale": false,
+   "sales": 622,
+   "figures_year": 1403,
+   "imi_rank": 390,
    "rank": 527
   },
   {
@@ -7554,6 +8049,9 @@
    "mcap": 3291,
    "weight": 3291,
    "stale": false,
+   "sales": 673,
+   "figures_year": 1403,
+   "imi_rank": 378,
    "rank": 528
   },
   {
@@ -7568,6 +8066,9 @@
    "mcap": 3283,
    "weight": 3283,
    "stale": false,
+   "sales": 1875,
+   "figures_year": 1403,
+   "imi_rank": 262,
    "rank": 529
   },
   {
@@ -7596,6 +8097,9 @@
    "mcap": 3251,
    "weight": 3251,
    "stale": false,
+   "sales": 1225,
+   "figures_year": 1403,
+   "imi_rank": 302,
    "rank": 531
   },
   {
@@ -7624,6 +8128,9 @@
    "mcap": 3239,
    "weight": 3239,
    "stale": false,
+   "sales": 1083,
+   "figures_year": 1403,
+   "imi_rank": 314,
    "rank": 533
   },
   {
@@ -7806,6 +8313,9 @@
    "mcap": 3099,
    "weight": 3099,
    "stale": false,
+   "sales": 704,
+   "figures_year": 1403,
+   "imi_rank": 368,
    "rank": 546
   },
   {
@@ -7876,6 +8386,9 @@
    "mcap": 3046,
    "weight": 3046,
    "stale": false,
+   "sales": 322,
+   "figures_year": 1403,
+   "imi_rank": 485,
    "rank": 551
   },
   {
@@ -7960,6 +8473,9 @@
    "mcap": 2917,
    "weight": 2917,
    "stale": false,
+   "sales": 347,
+   "figures_year": 1403,
+   "imi_rank": 475,
    "rank": 557
   },
   {
@@ -8030,6 +8546,9 @@
    "mcap": 2870,
    "weight": 2870,
    "stale": false,
+   "sales": 780,
+   "figures_year": 1403,
+   "imi_rank": 355,
    "rank": 562
   },
   {
@@ -8044,6 +8563,9 @@
    "mcap": 2869,
    "weight": 2869,
    "stale": false,
+   "sales": 980,
+   "figures_year": 1403,
+   "imi_rank": 329,
    "rank": 563
   },
   {
@@ -8128,6 +8650,9 @@
    "mcap": 2802,
    "weight": 2802,
    "stale": false,
+   "sales": 336,
+   "figures_year": 1403,
+   "imi_rank": 479,
    "rank": 569
   },
   {
@@ -8184,6 +8709,9 @@
    "mcap": 2754,
    "weight": 2754,
    "stale": false,
+   "sales": 435,
+   "figures_year": 1403,
+   "imi_rank": 443,
    "rank": 573
   },
   {
@@ -8338,6 +8866,9 @@
    "mcap": 2631,
    "weight": 2631,
    "stale": false,
+   "sales": 8405,
+   "figures_year": 1403,
+   "imi_rank": 147,
    "rank": 584
   },
   {
@@ -8394,6 +8925,9 @@
    "mcap": 2554,
    "weight": 2554,
    "stale": false,
+   "sales": 332,
+   "figures_year": 1403,
+   "imi_rank": 481,
    "rank": 588
   },
   {
@@ -8436,6 +8970,9 @@
    "mcap": 2478,
    "weight": 2478,
    "stale": false,
+   "sales": 659,
+   "figures_year": 1403,
+   "imi_rank": 381,
    "rank": 591
   },
   {
@@ -8464,6 +9001,9 @@
    "mcap": 2457,
    "weight": 2457,
    "stale": false,
+   "sales": 312,
+   "figures_year": 1403,
+   "imi_rank": 488,
    "rank": 593
   },
   {
@@ -8506,6 +9046,9 @@
    "mcap": 2424,
    "weight": 2424,
    "stale": false,
+   "sales": 1113,
+   "figures_year": 1403,
+   "imi_rank": 312,
    "rank": 596
   },
   {
@@ -8618,6 +9161,9 @@
    "mcap": 2286,
    "weight": 2286,
    "stale": false,
+   "sales": 2462,
+   "figures_year": 1403,
+   "imi_rank": 236,
    "rank": 604
   },
   {
@@ -8646,6 +9192,9 @@
    "mcap": 2274,
    "weight": 2274,
    "stale": false,
+   "sales": 302,
+   "figures_year": 1403,
+   "imi_rank": 497,
    "rank": 606
   },
   {
@@ -8674,6 +9223,9 @@
    "mcap": 2265,
    "weight": 2265,
    "stale": false,
+   "sales": 1032,
+   "figures_year": 1403,
+   "imi_rank": 321,
    "rank": 608
   },
   {
@@ -8786,6 +9338,9 @@
    "mcap": 2180,
    "weight": 2180,
    "stale": false,
+   "sales": 1938,
+   "figures_year": 1403,
+   "imi_rank": 256,
    "rank": 616
   },
   {
@@ -8982,6 +9537,9 @@
    "mcap": 1971,
    "weight": 1971,
    "stale": false,
+   "sales": 433,
+   "figures_year": 1403,
+   "imi_rank": 445,
    "rank": 630
   },
   {
@@ -9136,6 +9694,9 @@
    "mcap": 1849,
    "weight": 1849,
    "stale": false,
+   "sales": 485,
+   "figures_year": 1403,
+   "imi_rank": 424,
    "rank": 641
   },
   {
@@ -9150,6 +9711,9 @@
    "mcap": 1814,
    "weight": 1814,
    "stale": false,
+   "sales": 536,
+   "figures_year": 1403,
+   "imi_rank": 409,
    "rank": 642
   },
   {
@@ -9164,6 +9728,9 @@
    "mcap": 1813,
    "weight": 1813,
    "stale": false,
+   "sales": 434,
+   "figures_year": 1403,
+   "imi_rank": 444,
    "rank": 643
   },
   {
@@ -9304,6 +9871,9 @@
    "mcap": 1708,
    "weight": 1708,
    "stale": false,
+   "sales": 1281,
+   "figures_year": 1403,
+   "imi_rank": 296,
    "rank": 653
   },
   {
@@ -9318,6 +9888,9 @@
    "mcap": 1704,
    "weight": 1704,
    "stale": false,
+   "sales": 828,
+   "figures_year": 1403,
+   "imi_rank": 348,
    "rank": 654
   },
   {
@@ -9332,6 +9905,9 @@
    "mcap": 1695,
    "weight": 1695,
    "stale": false,
+   "sales": 794,
+   "figures_year": 1403,
+   "imi_rank": 352,
    "rank": 655
   },
   {
@@ -9360,6 +9936,9 @@
    "mcap": 1674,
    "weight": 1674,
    "stale": false,
+   "sales": 336,
+   "figures_year": 1403,
+   "imi_rank": 478,
    "rank": 657
   },
   {
@@ -9402,6 +9981,9 @@
    "mcap": 1652,
    "weight": 1652,
    "stale": false,
+   "sales": 1403,
+   "figures_year": 1403,
+   "imi_rank": 285,
    "rank": 660
   },
   {
@@ -9430,6 +10012,9 @@
    "mcap": 1636,
    "weight": 1636,
    "stale": false,
+   "sales": 654,
+   "figures_year": 1403,
+   "imi_rank": 382,
    "rank": 662
   },
   {
@@ -9458,6 +10043,9 @@
    "mcap": 1629,
    "weight": 1629,
    "stale": false,
+   "sales": 557,
+   "figures_year": 1403,
+   "imi_rank": 405,
    "rank": 664
   },
   {
@@ -9486,6 +10074,9 @@
    "mcap": 1583,
    "weight": 1583,
    "stale": false,
+   "sales": 392,
+   "figures_year": 1403,
+   "imi_rank": 457,
    "rank": 666
   },
   {
@@ -9514,6 +10105,9 @@
    "mcap": 1558,
    "weight": 1558,
    "stale": false,
+   "sales": 888,
+   "figures_year": 1403,
+   "imi_rank": 341,
    "rank": 668
   },
   {
@@ -9542,6 +10136,9 @@
    "mcap": 1543,
    "weight": 1543,
    "stale": false,
+   "sales": 1032,
+   "figures_year": 1403,
+   "imi_rank": 320,
    "rank": 670
   },
   {
@@ -9808,6 +10405,9 @@
    "mcap": 1305,
    "weight": 1305,
    "stale": false,
+   "sales": 477,
+   "figures_year": 1403,
+   "imi_rank": 425,
    "rank": 689
   },
   {
@@ -9822,6 +10422,9 @@
    "mcap": 1295,
    "weight": 1295,
    "stale": false,
+   "sales": 303,
+   "figures_year": 1403,
+   "imi_rank": 494,
    "rank": 690
   },
   {
@@ -9864,6 +10467,9 @@
    "mcap": 1284,
    "weight": 1284,
    "stale": false,
+   "sales": 487,
+   "figures_year": 1403,
+   "imi_rank": 423,
    "rank": 693
   },
   {
@@ -9878,6 +10484,9 @@
    "mcap": 1273,
    "weight": 1273,
    "stale": false,
+   "sales": 327,
+   "figures_year": 1403,
+   "imi_rank": 483,
    "rank": 694
   },
   {
@@ -9906,6 +10515,9 @@
    "mcap": 1247,
    "weight": 1247,
    "stale": false,
+   "sales": 1869,
+   "figures_year": 1403,
+   "imi_rank": 263,
    "rank": 696
   },
   {
@@ -9920,6 +10532,9 @@
    "mcap": 1244,
    "weight": 1244,
    "stale": false,
+   "sales": 443,
+   "figures_year": 1403,
+   "imi_rank": 440,
    "rank": 697
   },
   {
@@ -9934,6 +10549,9 @@
    "mcap": 1237,
    "weight": 1237,
    "stale": false,
+   "sales": 303,
+   "figures_year": 1403,
+   "imi_rank": 495,
    "rank": 698
   },
   {
@@ -9976,6 +10594,9 @@
    "mcap": 1197,
    "weight": 1197,
    "stale": false,
+   "sales": 356,
+   "figures_year": 1403,
+   "imi_rank": 474,
    "rank": 701
   },
   {
@@ -10032,6 +10653,9 @@
    "mcap": 1138,
    "weight": 1138,
    "stale": false,
+   "sales": 599,
+   "figures_year": 1403,
+   "imi_rank": 393,
    "rank": 705
   },
   {
@@ -10046,6 +10670,9 @@
    "mcap": 1122,
    "weight": 1122,
    "stale": false,
+   "sales": 418,
+   "figures_year": 1403,
+   "imi_rank": 448,
    "rank": 706
   },
   {
@@ -10074,6 +10701,9 @@
    "mcap": 1090,
    "weight": 1090,
    "stale": false,
+   "sales": 308,
+   "figures_year": 1403,
+   "imi_rank": 490,
    "rank": 708
   },
   {
@@ -10466,6 +11096,9 @@
    "mcap": 768,
    "weight": 768,
    "stale": false,
+   "sales": 375,
+   "figures_year": 1403,
+   "imi_rank": 466,
    "rank": 736
   },
   {
@@ -10564,6 +11197,9 @@
    "mcap": 605,
    "weight": 605,
    "stale": false,
+   "sales": 452,
+   "figures_year": 1403,
+   "imi_rank": 434,
    "rank": 743
   },
   {
@@ -10676,6 +11312,9 @@
    "mcap": 470,
    "weight": 470,
    "stale": false,
+   "sales": 304,
+   "figures_year": 1403,
+   "imi_rank": 492,
    "rank": 751
   },
   {
