@@ -1,0 +1,48 @@
+[
+ {
+  "url": "https://www.rrk.ir/",
+  "error": "<urlopen error timed out>"
+ },
+ {
+  "url": "https://newspaper.rrk.ir/",
+  "error": "<urlopen error [Errno -2] Name or service not known>"
+ },
+ {
+  "url": "https://newspaper.rrk.ir/Search?keyword=%D8%B4%DB%8C%D8%B1%DB%8C%D9%86%20%D8%B9%D8%B3%D9%84",
+  "error": "<urlopen error [Errno -2] Name or service not known>"
+ },
+ {
+  "url": "https://ilenc.ir/",
+  "error": "<urlopen error [Errno -2] Name or service not known>"
+ },
+ {
+  "url": "https://www.ilenc.ir/",
+  "error": "<urlopen error [Errno -2] Name or service not known>"
+ },
+ {
+  "url": "https://www.codal.ir/",
+  "error": "<urlopen error timed out>"
+ },
+ {
+  "url": "https://search.codal.ir/api/search/v2/q?&Audited=true&AuditorRef=-1&Category=-1&Childs=true&CompanyState=-1&CompanyType=-1&Consolidatable=true&IsNotAudited=false&Length=-1&LetterType=-1&Mains=true&NotAudited=true&NotConsolidatable=true&PageNumber=1&Publisher=false&TracingNo=-1&search=false",
+  "error": "<urlopen error timed out>"
+ },
+ {
+  "url": "https://imi100.imi.ir/",
+  "status": 200,
+  "final": "https://imi100.imi.ir/",
+  "head": "<!DOCTYPE html>\r\n<html  lang=\"fa-IR\">\r\n<head id=\"Head\">     \r\n          <!-- Google tag (gtag.js) -->\r\n          <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-5C3WCYXFX8\"></script>\r\n          <script>\r\n            window.dataLayer = window.dataLayer || [];\r\n            function gtag(){dataLayer.push(arguments);}\r\n            gtag('js', new Date());\r\n\r\n            gtag('config', 'G-5C3WCYXFX8');\r\n          </script>\r\n        <meta content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\" />\n<title>\r\n\tرتبه بندی صد شرکت برتر ایران - سازمان مدیریت صنعتی\r\n</title><meta id=\"MetaDescription\" name=\"description\" content=\"​سازمان مدیریت صنعتی، رتبه‌بندی شرکت های برتر ایران را هر سال با هدف ارائه آمار و اطلاعات شفاف بنگاه‌های اقتصادی به مدیران، سیاست‌گذاران و پژوهشگران انجام می دهد تا شناخت و درک دقیق‌تری از مقیاس، ساختار مالی و اقتصادی صنایع و بنگاه‌های اقتصادی بزرگ کشور بیابند.\n\" /><meta id=\"MetaRobots\" name=\"robots\" content=\"INDEX, FOLLOW\" /><link href=\"/Resources/Shared/stylesheets/dnndefault/7.0.0/default.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&amp;subset=&amp;cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/bootstrap/bootstrap.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/Magnific-Popup-master/dist/magnific-popup.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/ilightbox/css/ilightbox.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/swiper/swiper.min.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/soon/soon.min.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/easing/easing.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"https://use.fontawesome.com/releases/v5.8.2/css/all.css?cdv=1501\" integrity=\"sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay\" crossorigin=\"anonymous\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/font-linearicons.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/jquery.mmenu.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/animate.min.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/backtop.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/Layouts/11/LayoutDB.Header.creative-04.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/Layouts/11/LayoutDB.Content.default.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins"
+ },
+ {
+  "url": "https://imi.ir/",
+  "status": 200,
+  "final": "https://www.imi.ir/",
+  "head": "<!DOCTYPE html>\r\n<html  lang=\"fa-IR\">\r\n<head id=\"Head\"><meta content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\" />\n<meta name=\"google-site-verification\" content=\"wjlA6uyHeid9BVE4GTVPidyjrwTgt2Krsa9Ven3Y7aM\"/><title>\r\n\tسازمان مدیریت صنعتی؛ آموزش، مشاوره و تحقیق\r\n</title><meta id=\"MetaDescription\" name=\"description\" content=\"سازمان مدیریت صنعتی پیشرو آموزش فنون و مهارت های مدیریت و تحقیق به منظور توسعه مدیریت علمی در سازمان ها، مشاوره به سازمان های دولتی و خصوصی برای بهبود سیستم ها و روش‌های مدیریت\n\" /><meta id=\"MetaRobots\" name=\"robots\" content=\"INDEX, FOLLOW\" /><link href=\"/Resources/Shared/stylesheets/dnndefault/7.0.0/default.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&amp;subset=&amp;cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/bootstrap/bootstrap.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/Magnific-Popup-master/dist/magnific-popup.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/ilightbox/css/ilightbox.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/swiper/swiper.min.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/soon/soon.min.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/vendor/easing/easing.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/fontawesome-5.15.4/css/all.css?cdv=1501\" integrity=\"\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/font-linearicons.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/jquery.mmenu.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/animate.min.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/backtop.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/Layouts/0/LayoutDB.Header.creative-04.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/Layouts/0/LayoutDB.Content.creative-04.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/Layouts/0/LayoutDB.Footer.imi-footer.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Resources/Search/SearchSkinObjectPreview.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/skin.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource/css/shortcode/button.rtl.css?cdv=1501\" type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/amiri/resource"
+ },
+ {
+  "url": "https://www.tsetmc.com/",
+  "status": 200,
+  "final": "https://www.tsetmc.com/",
+  "head": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"/favicon.ico?v=2\" type=\"image/x-icon\"/><link rel=\"shortcut icon\" href=\"/favicon.ico?v=2\"/><meta name=\"theme-color\" content=\"#000000\"/><meta http-equiv=\"cache-control\" content=\"no-cache\"><meta http-equiv=\"expires\" content=\"0\"><meta http-equiv=\"pragma\" content=\"no-cache\"><meta name=\"description\" content=\"TSETMC\"/><link rel=\"apple-touch-icon\" href=\"/logo.png\"/><script src=\"/charting_library/charting_library.min.js\"></script><title>.:TSETMC:. :: مدیریت فناوری بورس تهران</title><script defer=\"defer\" src=\"/main.5096250ec802ff7453cb.js\"></script><link href=\"/static/css/main.2600f1a8.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div></body></html>"
+ }
+]
