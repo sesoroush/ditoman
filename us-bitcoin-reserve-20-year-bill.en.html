@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>US Bitcoin Reserve: a 20-Year Lock | Ditoman</title>
+<meta name="description" content="The Strategic Bitcoin Reserve bill reaches the House floor, but it is not law yet and buys" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/us-bitcoin-reserve-20-year-bill.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/us-bitcoin-reserve-20-year-bill.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/us-bitcoin-reserve-20-year-bill.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/us-bitcoin-reserve-20-year-bill.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="US Bitcoin Reserve: a 20-Year Lock | Ditoman" />
+<meta property="og:description" content="The Strategic Bitcoin Reserve bill reaches the House floor, but it is not law yet and buys" />
+<meta property="og:url" content="https://ditoman.com/us-bitcoin-reserve-20-year-bill.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/us-bitcoin-reserve-20-year-bill.en.html#page",
+   "url": "https://ditoman.com/us-bitcoin-reserve-20-year-bill.en.html",
+   "name": "US Bitcoin Reserve: a 20-Year Lock | Ditoman",
+   "description": "The Strategic Bitcoin Reserve bill reaches the House floor, but it is not law yet and buys",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "US Bitcoin Reserve: a 20-Year Lock",
+     "item": "https://ditoman.com/us-bitcoin-reserve-20-year-bill.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/us-bitcoin-reserve-20-year-bill/card.webp" srcset="social/us-bitcoin-reserve-20-year-bill/card.webp 900w, social/us-bitcoin-reserve-20-year-bill/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="US bitcoin reserve: a 20-year lock" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/us-bitcoin-reserve-20-year-bill/en-card.webp" srcset="social/us-bitcoin-reserve-20-year-bill/en-card.webp 900w, social/us-bitcoin-reserve-20-year-bill/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="US bitcoin reserve: a 20-year lock" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Markets · Bitcoin</span><span lang="fa">بازار و اقتصاد · بیت‌کوین</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">آمریکا می‌خواهد بیت‌کوین‌هایش را تا ۲۰۴۶ نفروشد</h1>
+<h1 lang="en">The US wants to hold its bitcoin until 2046</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">طرح ذخیره‌ی استراتژیک بیت‌کوین به صحن مجلس رسید؛ ولی هنوز قانون نیست و خریدی هم در آن نیست</p>
+<p class="subtitle" lang="en">The Strategic Bitcoin Reserve bill reaches the House floor, but it is not law yet and buys nothing</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۲۰ سال</b><b lang="en">20 years</b><span lang="fa">حداقل دوره‌ی ممنوعیت فروش</span><span lang="en">minimum no-sale period</span></div>
+<div class="stat"><b lang="fa">۳۰۶٬۷۹۵</b><b lang="en">306,795</b><span lang="fa">بیت‌کوین منتسب به دولت آمریکا (Arkham)</span><span lang="en">BTC linked to the US government (Arkham)</span></div>
+<div class="stat"><b lang="fa">۱٫۴۶٪</b><b lang="en">1.46%</b><span lang="fa">از سقف ۲۱ میلیونی بیت‌کوین</span><span lang="en">of bitcoin’s 21M cap</span></div>
+<div class="stat"><b lang="fa">۲۸ به ۲۱</b><b lang="en">28–21</b><span lang="fa">رأی کمیته‌ی خدمات مالی</span><span lang="en">Financial Services Committee vote</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>در شرایطی که بازار رمزارزها زیر فشار فروش است، طرحی در کنگره‌ی آمریکا یک قدم جلو رفته که می‌تواند جایگاه بیت‌کوین را در نظام مالی تغییر دهد: <strong>بیت‌کوین‌های دولت آمریکا دست‌کم ۲۰ سال، یعنی تا حدود ۲۰۴۶، فروخته نشوند.</strong> اصل خبر درست است، ولی طرح هنوز قانون نشده و مهم‌تر از آن، <strong>دولت را به خرید بیت‌کوین جدید ملزم نمی‌کند.</strong></blockquote>
+<h3>در یک نگاه</h3>
+<ul>
+<li><strong>چه شد:</strong> طرح H.R.8957 با نام «قانون نوسازی ذخایر آمریکا ۲۰۲۶» در ۲۴ نوامبر رسماً برای رأی‌گیری به صحن مجلس نمایندگان فرستاده شد</li>
+</ul>
+<ul>
+<li><strong>چه می‌گوید:</strong> ذخیره‌ی بیت‌کوین دست‌کم ۲۰ سال نه فروخته، نه مبادله، نه حراج و نه وثیقه می‌شود</li>
+</ul>
+<ul>
+<li><strong>چه نمی‌گوید:</strong> هیچ خریدی را مجاز نمی‌کند؛ فقط بررسی می‌کند که آیا خرید بیشتر بدون هزینه برای مالیات‌دهندگان ممکن است</li>
+</ul>
+<ul>
+<li><strong>چقدر بیت‌کوین:</strong> طبق داده‌های Arkham، حدود <strong>۳۰۶٬۸۰۰ بیت‌کوین</strong> به ارزش بیش از <strong>۱۸٫۷ میلیارد دلار</strong>؛ حدود <strong>۱٫۴۶٪</strong> سقف ۲۱ میلیونی</li>
+</ul>
+<ul>
+<li><strong>شانس تصویب:</strong> کم. کنگره‌ی فعلی ۳ ژانویه تمام می‌شود و طرح هنوز باید از مجلس نمایندگان، سنا و امضای رئیس‌جمهور بگذرد</li>
+</ul>
+<h3><span class="check-number">1.</span> سه اتفاق متفاوت که نباید قاطی شوند</h3>
+<div class="tw"><table><tr><th>اتفاق</th><th>وضعیت</th><th>اثر اقتصادی</th></tr><tr><td>تشکیل ذخیره با فرمان اجرایی</td><td>انجام شده (۶ مارس ۲۰۲۵)</td><td>دولت بیت‌کوین‌های مصادره‌ای را نگه می‌دارد، ولی رئیس‌جمهور بعدی می‌تواند تغییرش دهد</td></tr><tr><td>تبدیل ذخیره به قانون (همین طرح)</td><td>در انتظار رأی مجلس نمایندگان</td><td>نگه‌داشتن ۲۰ ساله الزامی و پایدارتر می‌شود</td></tr><tr><td>خرید بیت‌کوین جدید توسط دولت</td><td>الزامی وجود ندارد</td><td>فقط این اتفاق تقاضای تازه در بازار می‌سازد</td></tr></table></div>
+<p><strong>جلوگیری از فروش با ایجاد تقاضای جدید یکی نیست.</strong> این طرح عرضه‌ی احتمالی دولت را از بازار بیرون می‌برد، ولی خریدار تازه‌ای به بازار اضافه نمی‌کند.</p>
+<h3><span class="check-number">2.</span> این طرح دقیقاً چه می‌گوید؟</h3>
+<p>نسخه‌ای که از کمیته گذشت (با جایگزین پیشنهادی برایان استیل، نماینده‌ی جمهوری‌خواه ویسکانسین):</p>
+<ul>
+<li>وزارت خزانه‌داری ظرف <strong>۱۸۰ روز</strong> پس از تصویب، «ذخیره‌ی استراتژیک بیت‌کوین» و یک «انبار دارایی دیجیتال» جداگانه برای رمزارزهای دیگر را راه می‌اندازد</li>
+</ul>
+<ul>
+<li>نهادهای فدرال ظرف <strong>۶۰ روز</strong> باید دارایی‌های دیجیتال خود را گزارش کنند</li>
+</ul>
+<ul>
+<li>بیت‌کوین واردشده به ذخیره دست‌کم <strong>۲۰ سال</strong> نمی‌تواند «فروخته، مبادله، حراج، وثیقه یا به هر شکل دیگری واگذار» شود</li>
+</ul>
+<ul>
+<li>همه‌ی بیت‌کوین‌هایی که دولت فدرال مالک است، نه فقط بیت‌کوین‌های مصادره‌ای، واجد شرایط ورود به ذخیره‌اند</li>
+</ul>
+<ul>
+<li>گزارش <strong>اثبات ذخایر</strong> سالانه می‌شود (در متن اولیه فصلی بود)</li>
+</ul>
+<ul>
+<li>تأمین ذخیره فقط از راه مبادله‌ی دارایی، مصادره و برنامه‌های همکاری با ایالت‌ها است</li>
+</ul>
+<ul>
+<li><strong>هیچ خریدی مجاز نیست.</strong> وزارت خزانه‌داری و وزارت بازرگانی ظرف ۱۸۰ روز بررسی می‌کنند که آیا خرید بیشتر بدون هزینه برای مالیات‌دهندگان ممکن است؛ استقراض یا وثیقه گذاشتن ممنوع است</li>
+</ul>
+<p><strong>آنچه از متن اولیه حذف شد:</strong> استفاده از منابع فدرال رزرو، ارزش‌گذاری دوباره‌ی گواهی‌های طلا، درآمد تعرفه‌ها و هدیه (<a href="https://decrypt.co/378457/house-committee-advances-us-bitcoin-reserve-bill-on-party-line-split" target="_blank" rel="noopener" style="color:#57D9C7">Decrypt</a>). یعنی نسخه‌ی فعلی از نسخه‌ی اولیه محتاط‌تر است.</p>
+<h3><span class="check-number">3.</span> آمریکا چقدر بیت‌کوین دارد؟</h3>
+<p>طبق داده‌های Arkham که <a href="https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house" target="_blank" rel="noopener" style="color:#57D9C7">CoinDesk</a> گزارش کرده، نشانی‌های منتسب به دولت آمریکا حدود <strong>۳۰۶٬۷۹۵ بیت‌کوین</strong> دارند که بیش از <strong>۱۸٫۷ میلیارد دلار</strong> ارزش دارد. این حدود <strong>۱٫۴۶٪</strong> سقف ۲۱ میلیونی بیت‌کوین است.</p>
+<p>این رقم برآورد یک شرکت داده از روی نشانی‌های منتسب است، نه آمار رسمی. حساب رسمی را خود طرح بعد از تصویب از نهادهای فدرال می‌خواهد.</p>
+<p><strong>ارزش فرضی همین تعداد بیت‌کوین در قیمت‌های مختلف:</strong></p>
+<div class="tw"><table><tr><th>قیمت هر بیت‌کوین</th><th>ارزش کل ذخیره</th></tr><tr><td>حدود ۶۱ هزار دلار (زمان گزارش)</td><td>۱۸٫۷ میلیارد دلار</td></tr><tr><td>۱۰۰ هزار دلار</td><td>۳۰٫۷ میلیارد دلار</td></tr><tr><td>۲۵۰ هزار دلار</td><td>۷۶٫۷ میلیارد دلار</td></tr><tr><td>۵۰۰ هزار دلار</td><td>۱۵۳٫۴ میلیارد دلار</td></tr><tr><td>۱ میلیون دلار</td><td>۳۰۶٫۸ میلیارد دلار</td></tr></table></div>
+<p>این‌ها سناریوی محاسباتی‌اند، <strong>نه پیش‌بینی قیمت.</strong></p>
+<h3><span class="check-number">4.</span> چرا ۲۰ سال؟</h3>
+<p>فلسفه‌ی طرح این است که بیت‌کوین از چرخه‌ی تصمیم‌های کوتاه‌مدت سیاسی و بودجه‌ای بیرون بیاید و به یک دارایی بلندمدت ملی تبدیل شود. آمریکا دهه‌هاست طلا را بخشی از ذخایر خود نگه می‌دارد؛ گروهی از قانون‌گذاران معتقدند بیت‌کوین می‌تواند در اقتصاد دیجیتال نقشی مکمل داشته باشد.</p>
+<p>قفل ۲۰ ساله دو پیام دارد: برای بازار، یعنی دولت آمریکا فروشنده‌ی بالقوه‌ی بزرگی نیست؛ برای سیاست‌گذاران، یعنی هیچ دولتی نمی‌تواند در یک بحران بودجه‌ای سراغ فروش آن برود.</p>
+<h3><span class="check-number">5.</span> مسیر تصویب: کجاییم؟</h3>
+<div class="tw"><table><tr><th>تاریخ</th><th>مرحله</th><th>وضعیت</th></tr><tr><td>۶ مارس ۲۰۲۵</td><td>فرمان اجرایی ترامپ برای تشکیل ذخیره</td><td>انجام شده</td></tr><tr><td>۲۱ مه ۲۰۲۶</td><td>ارائه‌ی طرح به کنگره (نیک بگیچ، جمهوری‌خواه آلاسکا، و جرد گلدن، دموکرات)</td><td>انجام شده</td></tr><tr><td>۱۶ سپتامبر ۲۰۲۶</td><td>تصویب در کمیته‌ی خدمات مالی با ۲۸ رأی موافق و ۲۱ مخالف</td><td>انجام شده</td></tr><tr><td>۲۴ نوامبر ۲۰۲۶</td><td>ارسال رسمی به صحن مجلس نمایندگان</td><td>انجام شده</td></tr><tr><td>هنوز تعیین نشده</td><td>رأی‌گیری مجلس نمایندگان</td><td>در انتظار</td></tr><tr><td>هنوز تعیین نشده</td><td>تصویب سنا و امضای رئیس‌جمهور</td><td>انجام نشده</td></tr></table></div>
+<ul>
+<li>رأی کمیته کاملاً حزبی بود: همه‌ی ۲۸ موافق جمهوری‌خواه و همه‌ی ۲۱ مخالف دموکرات. اصلاحیه‌ی ماکسین واترز (دموکرات) که داشتن سهم کنترلی در دارایی دیجیتال را برای رئیس‌جمهور، معاون او، نمایندگان کنگره و خانواده‌شان ممنوع می‌کرد، با همان نسبت ۲۱ به ۲۸ رد شد.</li>
+</ul>
+<ul>
+<li>کنگره‌ی فعلی <strong>۳ ژانویه‌ی ۲۰۲۷</strong> تمام می‌شود؛ یعنی کمی بیش از پنج هفته، که بخش زیادی‌اش تعطیلات است.</li>
+</ul>
+<ul>
+<li>در بازار پیش‌بینی Polymarket، احتمال تشکیل ذخیره‌ی ملی بیت‌کوین تا پایان سال حدود <strong>۴٪</strong> است؛ این رقم یک سال پیش ۶۰٪ و در ماه مه ۳۴٪ بود (<a href="https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778" target="_blank" rel="noopener" style="color:#57D9C7">The Block</a>). این قیمت بازار است، نه احتمال رسمی.</li>
+</ul>
+<ul>
+<li>اگر طرح در این دوره تصویب نشود، باید در کنگره‌ی بعدی دوباره ارائه شود. به نوشته‌ی CoinDesk و The Block، ترکیب کنگره‌ی بعدی پس از انتخابات نوامبر می‌تواند این کار را سخت‌تر کند. <strong>فرمان اجرایی ۲۰۲۵ سر جایش می‌ماند</strong>، ولی رئیس‌جمهور بعدی می‌تواند بدون کنگره آن را تغییر دهد.</li>
+</ul>
+<h3><span class="check-number">6.</span> برای بازار بیت‌کوین چه معنایی دارد؟</h3>
+<ul>
+<li><strong>کوتاه‌مدت:</strong> اثر مستقیم کم است. طرح خرید جدید ندارد و شانس تصویبش در این دوره پایین است.</li>
+</ul>
+<ul>
+<li><strong>عرضه:</strong> اگر تصویب شود، حدود ۱٫۴۶٪ سقف بیت‌کوین برای ۲۰ سال از فهرست «فروشنده‌های احتمالی» بیرون می‌رود.</li>
+</ul>
+<ul>
+<li><strong>پیام:</strong> دارایی‌ای که سال‌ها بیرون از نظام مالی سنتی دیده می‌شد، حالا موضوع قانون‌گذاری برای نگهداری بلندمدت توسط بزرگ‌ترین اقتصاد جهان است.</li>
+</ul>
+<ul>
+<li><strong>موانع:</strong> نوسان شدید قیمت، امنیت نگهداری، هزینه‌ی فرصت سرمایه و اختلاف سیاسی همچنان جدی‌اند.</li>
+</ul>
+<h3>تحلیل دیتومان</h3>
+<p>اهمیت این خبر لزوماً در قیمت فردای بیت‌کوین نیست؛ در <strong>تغییر نگاه سیاست‌گذاران به ماهیت آن</strong> است. اگر کشورهای دیگر هم چنین سیاستی بگیرند، شاید روزی شاهد رقابت دولت‌ها بر سر مالکیت دارایی‌های دیجیتال کمیاب باشیم.</p>
+<p>ولی واقع‌بین باشیم: طرح هنوز قانون نیست، شانس تصویبش در این دوره کم است و حتی اگر تصویب شود، خریدی در کار نیست. شاید سؤال مهم آینده این نباشد که هر بیت‌کوین چقدر قیمت دارد؛ <strong>بلکه این باشد که کدام کشورها مالک چه مقدار از آن هستند.</strong></p>
+<p>این گزارش آموزشی است و توصیه‌ی خرید یا فروش نیست.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="bitcoin-weekly-outlook-fear-zone.en.html">بیت‌کوین در منطقه‌ی ترس؛ هفته‌ی پیش رو</a></li><li><a href="doto-dotone-zanjani-crypto.en.html">دوتو؛ رمزارز بابک زنجانی زیر ذره‌بین</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house" target="_blank" rel="noopener">CoinDesk: Bill to lock up U.S. government bitcoin for 20 years advances to full House (26 Nov 2026)</a></li><li><a href="https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778" target="_blank" rel="noopener">The Block: House committee advances Strategic Bitcoin Reserve bill with narrow path to passage (25 Nov 2026)</a></li><li><a href="https://decrypt.co/378457/house-committee-advances-us-bitcoin-reserve-bill-on-party-line-split" target="_blank" rel="noopener">Decrypt: House committee advances US bitcoin reserve bill on party-line split (17 Sep 2026)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۵ آذر ۱۴۰۵. مفاد طرح، رأی کمیته و جدول زمانی از CoinDesk، The Block و Decrypt بررسی شد؛ متن طرح در congress.gov از این‌جا باز نشد. رقم دارایی‌های دولت برآورد Arkham است، نه آمار رسمی. سناریوهای قیمت محاسبه‌اند، نه پیش‌بینی. این گزارش توصیه‌ی خرید یا فروش نیست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>With crypto markets under selling pressure, a bill in the US Congress has moved a step forward that could change bitcoin's place in the financial system: <strong>US government bitcoin would not be sold for at least 20 years, until around 2046.</strong> The core of the story is true, but the bill is not law yet and, more importantly, <strong>it does not require the government to buy any new bitcoin.</strong></blockquote>
+<h3>At a glance</h3>
+<ul>
+<li><strong>What happened:</strong> H.R.8957, the American Reserve Modernization Act of 2026, was formally sent to the House floor for a vote on 24 November</li>
+</ul>
+<ul>
+<li><strong>What it says:</strong> reserve bitcoin cannot be sold, swapped, auctioned or pledged for at least 20 years</li>
+</ul>
+<ul>
+<li><strong>What it does not say:</strong> it authorises no purchases; it only studies whether buying more is possible at no cost to taxpayers</li>
+</ul>
+<ul>
+<li><strong>How much bitcoin:</strong> per Arkham data, about <strong>306,800 BTC</strong> worth more than <strong>$18.7 billion</strong>, about <strong>1.46%</strong> of the 21 million cap</li>
+</ul>
+<ul>
+<li><strong>Odds of passage:</strong> low. The current Congress ends on 3 January, and the bill still has to pass the House, the Senate and be signed by the president</li>
+</ul>
+<h3><span class="check-number">1.</span> Three different things that should not be mixed up</h3>
+<div class="tw"><table><tr><th>Event</th><th>Status</th><th>Economic effect</th></tr><tr><td>Reserve created by executive order</td><td>Done (6 March 2025)</td><td>The government keeps forfeited bitcoin, but a future president can change it</td></tr><tr><td>Reserve written into law (this bill)</td><td>Awaiting a House vote</td><td>The 20-year hold becomes mandatory and more durable</td></tr><tr><td>Government buys new bitcoin</td><td>No requirement</td><td>Only this would create new demand in the market</td></tr></table></div>
+<p><strong>Preventing sales is not the same as creating new demand.</strong> The bill takes potential government supply off the market, but adds no new buyer.</p>
+<h3><span class="check-number">2.</span> What exactly does the bill say?</h3>
+<p>The version that passed committee (with a substitute from Rep. Bryan Steil, R-Wis.):</p>
+<ul>
+<li>Within <strong>180 days</strong> of enactment, the Treasury sets up a Strategic Bitcoin Reserve and a separate Digital Asset Stockpile for other cryptocurrencies</li>
+</ul>
+<ul>
+<li>Federal agencies must report their digital-asset holdings within <strong>60 days</strong></li>
+</ul>
+<ul>
+<li>Bitcoin deposited in the reserve cannot be "sold, swapped, auctioned, encumbered, or otherwise disposed of" for at least <strong>20 years</strong></li>
+</ul>
+<ul>
+<li>All bitcoin the federal government owns, not just forfeited coins, qualifies for the reserve</li>
+</ul>
+<ul>
+<li><strong>Proof-of-reserve</strong> reporting becomes annual (it was quarterly in the original text)</li>
+</ul>
+<ul>
+<li>The reserve is funded only through asset swaps, forfeitures and cooperative programmes with states</li>
+</ul>
+<ul>
+<li><strong>No purchases are authorised.</strong> The Treasury and Commerce departments will study within 180 days whether buying more is possible at no cost to taxpayers; borrowing or pledging is prohibited</li>
+</ul>
+<p><strong>Dropped from the original text:</strong> Federal Reserve funding routes, revaluing gold certificates, tariff revenue and gifts (<a href="https://decrypt.co/378457/house-committee-advances-us-bitcoin-reserve-bill-on-party-line-split" target="_blank" rel="noopener" style="color:#57D9C7">Decrypt</a>). The current version is more cautious than the original.</p>
+<h3><span class="check-number">3.</span> How much bitcoin does the US hold?</h3>
+<p>According to Arkham data reported by <a href="https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house" target="_blank" rel="noopener" style="color:#57D9C7">CoinDesk</a>, addresses linked to the US government hold about <strong>306,795 BTC</strong>, worth more than <strong>$18.7 billion</strong>. That is about <strong>1.46%</strong> of bitcoin's 21 million cap.</p>
+<p>This is a data firm's estimate based on attributed addresses, not an official figure. The bill itself would require federal agencies to provide an official account after enactment.</p>
+<p><strong>Hypothetical value of the same number of bitcoin at different prices:</strong></p>
+<div class="tw"><table><tr><th>Price per bitcoin</th><th>Total value of the reserve</th></tr><tr><td>About $61,000 (at time of reporting)</td><td>$18.7 billion</td></tr><tr><td>$100,000</td><td>$30.7 billion</td></tr><tr><td>$250,000</td><td>$76.7 billion</td></tr><tr><td>$500,000</td><td>$153.4 billion</td></tr><tr><td>$1 million</td><td>$306.8 billion</td></tr></table></div>
+<p>These are arithmetic scenarios, <strong>not price forecasts.</strong></p>
+<h3><span class="check-number">4.</span> Why 20 years?</h3>
+<p>The idea is to take bitcoin out of short-term political and budget decisions and make it a long-term national asset. The US has held gold in its reserves for decades; some lawmakers believe bitcoin can play a complementary role in the digital economy.</p>
+<p>A 20-year lock sends two messages: to the market, that the US government is not a large potential seller; to policymakers, that no administration can reach for it in a budget crisis.</p>
+<h3><span class="check-number">5.</span> The path to passage: where are we?</h3>
+<div class="tw"><table><tr><th>Date</th><th>Step</th><th>Status</th></tr><tr><td>6 March 2025</td><td>Trump executive order creating the reserve</td><td>Done</td></tr><tr><td>21 May 2026</td><td>Bill introduced (Nick Begich, R-Alaska, and Jared Golden, a Democrat)</td><td>Done</td></tr><tr><td>16 September 2026</td><td>Passed the Financial Services Committee 28 to 21</td><td>Done</td></tr><tr><td>24 November 2026</td><td>Formally sent to the House floor</td><td>Done</td></tr><tr><td>Not yet scheduled</td><td>House vote</td><td>Pending</td></tr><tr><td>Not yet scheduled</td><td>Senate passage and presidential signature</td><td>Not done</td></tr></table></div>
+<ul>
+<li>The committee vote was entirely along party lines: all 28 yes votes were Republican and all 21 no votes Democratic. An amendment from Maxine Waters (D) that would have barred the president, vice president, members of Congress and their families from controlling stakes in digital assets failed by the same 21 to 28 margin.</li>
+</ul>
+<ul>
+<li>The current Congress ends on <strong>3 January 2027</strong>, leaving just over five weeks, much of it holidays.</li>
+</ul>
+<ul>
+<li>On the prediction market Polymarket, the odds of a national bitcoin reserve being established by year-end are about <strong>4%</strong>, down from 60% a year earlier and 34% in May (<a href="https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778" target="_blank" rel="noopener" style="color:#57D9C7">The Block</a>). That is a market price, not an official probability.</li>
+</ul>
+<ul>
+<li>If the bill does not pass this session, it must be reintroduced in the next Congress. CoinDesk and The Block note that the make-up of the next Congress after the November election could make that harder. <strong>The 2025 executive order stays in place</strong>, but a future president could change it without Congress.</li>
+</ul>
+<h3><span class="check-number">6.</span> What does it mean for the bitcoin market?</h3>
+<ul>
+<li><strong>Short term:</strong> the direct effect is small. The bill has no new purchases and its chance of passing this session is low.</li>
+</ul>
+<ul>
+<li><strong>Supply:</strong> if passed, about 1.46% of bitcoin's cap would leave the list of "possible sellers" for 20 years.</li>
+</ul>
+<ul>
+<li><strong>Signal:</strong> an asset long seen as outside the traditional financial system is now the subject of legislation for long-term holding by the world's largest economy.</li>
+</ul>
+<ul>
+<li><strong>Obstacles:</strong> extreme volatility, custody security, the opportunity cost of capital and political disagreement remain serious.</li>
+</ul>
+<h3>Ditoman's view</h3>
+<p>The significance of this story is not necessarily bitcoin's price tomorrow; it is <strong>the shift in how policymakers see the asset.</strong> If other countries adopt similar policies, we may one day see governments compete to own scarce digital assets.</p>
+<p>But let's be realistic: the bill is not law, its chance of passing this session is low, and even if it passes, there are no purchases. Perhaps the important question of the future will not be what each bitcoin costs, <strong>but which countries own how much of it.</strong></p>
+<p>This report is educational and is not a recommendation to buy or sell.</p>
+<h3>Read more</h3><ul><li><a href="bitcoin-weekly-outlook-fear-zone.en.html">Bitcoin in the fear zone: the week ahead</a></li><li><a href="doto-dotone-zanjani-crypto.en.html">DOTO: Babak Zanjani’s crypto project under the lens</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house" target="_blank" rel="noopener">CoinDesk: Bill to lock up U.S. government bitcoin for 20 years advances to full House (26 Nov 2026)</a></li><li><a href="https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778" target="_blank" rel="noopener">The Block: House committee advances Strategic Bitcoin Reserve bill with narrow path to passage (25 Nov 2026)</a></li><li><a href="https://decrypt.co/378457/house-committee-advances-us-bitcoin-reserve-bill-on-party-line-split" target="_blank" rel="noopener">Decrypt: House committee advances US bitcoin reserve bill on party-line split (17 Sep 2026)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 26 November 2026. The bill’s provisions, committee vote and timeline were checked against CoinDesk, The Block and Decrypt; the bill text on congress.gov could not be opened from here. Government holdings are an Arkham estimate, not an official figure. Price scenarios are arithmetic, not forecasts. This is not a recommendation to buy or sell.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.en.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.en.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
