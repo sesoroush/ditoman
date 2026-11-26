@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The World in Five Frames · 2025 | جهان در پنج قاب | Ditoman</title>
+<meta name="description" content="پنج عکس به‌یادماندنی ۲۰۲۵ از رویترز و نشنال جئوگرافیک و داستان پشت هر کدام: ماه کاراکاس، مسابقه‌ی ربات‌ها، شکل‌گیری جوجه، کوسه‌ی سفید مین و خرس قطبی سوالبارد." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/world-in-five-frames-2025.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/world-in-five-frames-2025.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/world-in-five-frames-2025.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/world-in-five-frames-2025.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The World in Five Frames · 2025 | جهان در پنج قاب | Ditoman" />
+<meta property="og:description" content="پنج عکس به‌یادماندنی ۲۰۲۵ از رویترز و نشنال جئوگرافیک و داستان پشت هر کدام: ماه کاراکاس، مسابقه‌ی ربات‌ها، شکل‌گیری جوجه، کوسه‌ی سفید مین و خرس قطبی سوالبارد." />
+<meta property="og:url" content="https://ditoman.com/world-in-five-frames-2025.html" />
+<meta property="og:image" content="https://ditoman.com/social/world-in-five-frames-2025/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/world-in-five-frames-2025.html#article",
+   "mainEntityOfPage": "https://ditoman.com/world-in-five-frames-2025.html",
+   "headline": "The World in Five Frames · 2025 | جهان در پنج قاب",
+   "description": "پنج عکس به‌یادماندنی ۲۰۲۵ از رویترز و نشنال جئوگرافیک و داستان پشت هر کدام: ماه کاراکاس، مسابقه‌ی ربات‌ها، شکل‌گیری جوجه، کوسه‌ی سفید مین و خرس قطبی سوالبارد.",
+   "image": "https://ditoman.com/social/world-in-five-frames-2025/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The World in Five Frames · 2025 | جهان در پنج قاب",
+     "item": "https://ditoman.com/world-in-five-frames-2025.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/world-in-five-frames-2025/card.webp" srcset="social/world-in-five-frames-2025/card.webp 900w, social/world-in-five-frames-2025/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="The World in Five Frames · 2025" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/world-in-five-frames-2025/en-card.webp" srcset="social/world-in-five-frames-2025/en-card.webp 900w, social/world-in-five-frames-2025/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="The World in Five Frames · 2025" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Ditoman picks · Photos</span><span lang="fa">انتخاب دیتومان · عکس</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">جهان در پنج قاب؛ پنج تصویر به‌یادماندنی ۲۰۲۵</h1>
+<h1 lang="en">The World in Five Frames: five unforgettable pictures of 2025</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">پنج عکس، پنج داستان، یک سیاره</p>
+<p class="subtitle" lang="en">Five images, five stories, one planet</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۵ قاب</b><b lang="en">5 frames</b><span lang="fa">از چهار کشور و دو قطب طبیعت و فناوری</span><span lang="en">four countries, nature and technology</span></div>
+<div class="stat"><b lang="fa">۱۶ کشور</b><b lang="en">16 countries</b><span lang="fa">در نخستین بازی‌های ربات‌های انسان‌نما</span><span lang="en">at the first humanoid robot games</span></div>
+<div class="stat"><b lang="fa">۱۰ هزار ساعت</b><b lang="en">10,000 hours</b><span lang="fa">زیر آب، تجربه‌ی برایان اسکری</span><span lang="en">underwater, Brian Skerry’s experience</span></div>
+<div class="stat"><b lang="fa">۸۲ درجه</b><b lang="en">82° N</b><span lang="fa">عرض شمالی لاشه‌ی نهنگ در قطب</span><span lang="en">latitude of the Arctic whale carcass</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>گاهی یک عکس بیشتر از صدها صفحه گزارش درباره‌ی جهان حرف می‌زند. از کودکی که در کاراکاس جلوی ماه بادبادک هوا می‌کند تا ربات‌هایی که در پکن می‌دوند؛ از شکل گرفتن یک زندگی تا شگفتی‌های اقیانوس و قطب. دیتومان پنج قاب از عکس‌های منتخب سال ۲۰۲۵ را انتخاب کرده؛ پنج تصویر، پنج داستان، یک سیاره.</blockquote>
+<h3><span class="check-number">1.</span> کودکی در برابر ماه</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/1.webp" alt="کاراکاس، ونزوئلا · مارس ۲۰۲۵ · عکس: Gaby Oraa / Reuters" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">کاراکاس، ونزوئلا · مارس ۲۰۲۵ · عکس: Gaby Oraa / Reuters</figcaption></figure>
+<p>📍 محله‌ی پتاره، کاراکاس، ونزوئلا</p>
+<p>📅 مارس ۲۰۲۵</p>
+<p>📷 گابی اورا، رویترز</p>
+<p>گابی اورا سال‌ها تلاش کرده بود طلوع ماه را بر فراز محله‌ی پتاره ثبت کند. هر بار یا ابر جلوی ماه را می‌گرفت یا ماه آن‌قدر بالا می‌آمد که قاب درست نمی‌شد. خودش می‌گوید حساب ماه‌های کاملی را که دنبالشان رفت گم کرده است.</p>
+<p>سرانجام در مارس ۲۰۲۵ آسمان صاف شد، نور نرم بود و کودکی با بادبادکش روی پشت‌بامی درست جلوی ماه ظاهر شد. اورا این لحظه را «هدیه‌ای کوچک» و یادآوری‌ای برای دست نکشیدن خواند.</p>
+<p>درس این قاب: صبر و پشتکار، و توجه به لحظه‌های ساده‌ی زندگی.</p>
+<p><a href="https://www.reutersconnect.com/item/some-of-the-best-reuters-pictures-of-2025-and-their-stories/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMllCREE5TzVOWQ" target="_blank" rel="noopener" style="color:#57D9C7">دیدن عکس اصلی در رویترز</a> · <a href="https://theprint.in/world/some-of-the-best-reuters-photos-of-2025-and-the-stories-behind-them/2806806" target="_blank" rel="noopener" style="color:#57D9C7">داستان پشت عکس</a></p>
+<h3><span class="check-number">2.</span> وقتی ربات‌ها وارد پیست دو شدند</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/2.webp" alt="بازی‌های جهانی ربات‌های انسان‌نما، پکن · اوت ۲۰۲۵" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">بازی‌های جهانی ربات‌های انسان‌نما، پکن · اوت ۲۰۲۵</figcaption></figure>
+<p>📍 سالن ملی اسکیت سرعت، پکن، چین</p>
+<p>📅 اوت ۲۰۲۵</p>
+<p>🤖 نخستین بازی‌های جهانی ربات‌های انسان‌نما</p>
+<p>در اوت ۲۰۲۵، پکن میزبان نخستین بازی‌های جهانی ربات‌های انسان‌نما بود: ۲۸۰ تیم از ۱۶ کشور در ۲۶ رشته، از دوومیدانی و فوتبال تا کیک‌بوکسینگ و کارهای عملی مثل مرتب کردن دارو. ربات‌های H1 شرکت Unitree در دوی ۴۰۰ و ۱۵۰۰ متر طلا گرفتند (<a href="https://www.koreatimes.co.kr/amp/world/20250819/chinas-unitree-x-humanoid-top-medal-total-in-the-worlds-first-humanoid-robot-games" target="_blank" rel="noopener" style="color:#57D9C7">Korea Times</a>).</p>
+<p>تینگ‌شو وانگ، عکاس رویترز، عکس منتخبش را از همین رویداد گرفت: یک ربات Unitree که کنار مهندسش در دوی ۴۰۰ متر می‌دود. او اول سعی کرد ربات‌ها را مثل ورزشکار انسانی نشان دهد، ولی زود فهمید داستان اصلی رابطه‌ی ربات‌ها با مهندسانشان است.</p>
+<p>این مسابقه‌ها فقط سرگرمی نبودند؛ آزمونی برای تعادل، کنترل حرکت و هماهنگی بودند. فناوری‌ای که امروز روی پیست آزموده می‌شود، فردا ممکن است در کارخانه، بیمارستان و محیط کار به کمک انسان بیاید.</p>
+<p><a href="https://www.reutersconnect.com/item/some-of-the-best-reuters-pictures-of-2025-and-their-stories/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMko3R0FYVlUyVA" target="_blank" rel="noopener" style="color:#57D9C7">دیدن عکس رویترز از تینگ‌شو وانگ</a></p>
+<h3><span class="check-number">3.</span> زندگی چگونه شکل می‌گیرد؟</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/3.webp" alt="از پروژه‌ی نشنال جئوگرافیک درباره‌ی شکل‌گیری جوجه · ۲۰۲۵ · National Geographic" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">از پروژه‌ی نشنال جئوگرافیک درباره‌ی شکل‌گیری جوجه · ۲۰۲۵ · National Geographic</figcaption></figure>
+<p>📍 برکلی، کالیفرنیا، آمریکا</p>
+<p>📅 عکس‌های سال ۲۰۲۵ نشنال جئوگرافیک</p>
+<p>📷 پروژه‌ی آناند وارما، نشنال جئوگرافیک</p>
+<p>آناند وارما، عکاس علمی نشنال جئوگرافیک، سال‌ها روی یک پرسش کار کرد: چطور می‌شود تبدیل تخم‌مرغ به جوجه را به تصویر کشید؟</p>
+<p>عکس معروف این پروژه که در فهرست عکس‌های سال آمده، جنین یک جوجه‌ی ۱۲ روزه را داخل پوسته‌ای مصنوعی نشان می‌دهد؛ مرحله‌ای که شکل پرنده پیداست و زرده هنوز دیده می‌شود. وارما چند جنین را هم تا جوجه شدن بزرگ کرد؛ پایان همان مسیری که در این قاب می‌بینید.</p>
+<p>ترکیبی از علم، عکاسی و کنجکاوی انسان برای شناختن آغاز زندگی (<a href="https://www.popsci.com/environment/5-captivating-images-from-national-geographics-pictures-of-the-year" target="_blank" rel="noopener" style="color:#57D9C7">Popular Science</a>).</p>
+<p><a href="https://interactives.natgeofe.com/high-touch/ngm-25-POY-BTS/builds/main/html/_graphic.html" target="_blank" rel="noopener" style="color:#57D9C7">داستان پشت عکس در نشنال جئوگرافیک</a> · <a href="https://www.nationalgeographic.com/impact/article/anand-varma-explorer-story" target="_blank" rel="noopener" style="color:#57D9C7">درباره‌ی آناند وارما</a></p>
+<h3><span class="check-number">4.</span> دیدار با یکی از بزرگ‌ترین شکارچیان اقیانوس</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/4.webp" alt="ساحل هارپسول، ایالت مین، آمریکا · ژوئیه ۲۰۲۵ · عکس: Brian Skerry / National Geographic" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">ساحل هارپسول، ایالت مین، آمریکا · ژوئیه ۲۰۲۵ · عکس: Brian Skerry / National Geographic</figcaption></figure>
+<p>📍 حدود ۲۴ کیلومتری ساحل هارپسول، ایالت مین، آمریکا</p>
+<p>📅 ۸ ژوئیه ۲۰۲۵ (انتشار: ۱۴ ژوئیه)</p>
+<p>📷 برایان اسکری، نشنال جئوگرافیک</p>
+<p>برایان اسکری بیش از ۱۰ هزار ساعت زیر آب گذرانده است. با این همه، در ژوئیه ۲۰۲۵ تصویری کم‌سابقه گرفت: یک کوسه‌ی سفید بزرگ جوان، نزدیک به ۳ متر، در آب‌های مین. به گفته‌ی پژوهشگران، احتمالاً نخستین عکس زیرآبی تأییدشده از کوسه‌ی سفید در این ایالت است.</p>
+<p>چرا کوسه‌ها بیشتر دیده می‌شوند؟ حمایت قانونی از فک‌ها از ۱۹۷۲ و محدود شدن صید کوسه از ۱۹۹۷. پژوهشگران بین ۲۰۱۲ و ۲۰۲۳ بیش از ۱۰۰ کوسه‌ی سفید را در آب‌های مین شناسایی کرده‌اند.</p>
+<p>این قاب، جدا از زیبایی، نشان می‌دهد حفاظت از یک حلقه‌ی زنجیره‌ی غذایی چطور کل اکوسیستم را جان می‌دهد.</p>
+<p><a href="https://www.nationalgeographic.com/animals/article/great-white-shark-maine-photo" target="_blank" rel="noopener" style="color:#57D9C7">دیدن عکس و گزارش اصلی نشنال جئوگرافیک</a></p>
+<h3><span class="check-number">5.</span> ضیافتی کم‌سابقه در قطب شمال</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/5.webp" alt="نزدیک سوالبارد، نروژ · ژوئیه ۲۰۲۵ · عکس: Roie Galitz / National Geographic" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">نزدیک سوالبارد، نروژ · ژوئیه ۲۰۲۵ · عکس: Roie Galitz / National Geographic</figcaption></figure>
+<p>📍 حدود ۸۲ درجه‌ی شمالی، نزدیک مجمع‌الجزایر سوالبارد، نروژ</p>
+<p>📅 اوایل ژوئیه ۲۰۲۵</p>
+<p>📷 روی گالیتز، نشنال جئوگرافیک</p>
+<p>روی گالیتز در سفری اکتشافی به سمت قطب شمال، لکه‌ای تیره را در افق دید: لاشه‌ی یک نهنگ عنبر میان یخ‌های دریا. کشتی یخ‌شکن حدود ۲۴ ساعت در میان یخ‌ها راه پیمود تا به آن برسد. یک خرس قطبی نر کنار لاشه بود و بعد یک خرس ماده هم آمد. گالیتز با پهپاد، ابعاد این صحنه را از آسمان ثبت کرد.</p>
+<p>نهنگ‌های عنبر معمولاً از یخ دوری می‌کنند و در آب‌های معتدل‌اند؛ برای همین دیدن لاشه‌ی آن در چنین عرضی برای پژوهشگران هم شگفت‌انگیز بود. کارشناسان فکر می‌کنند جریان‌ها و باد لاشه را به شمال آورده‌اند.</p>
+<p>این قاب نمونه‌ای از چرخه‌ی بازیافت غذا در طبیعت و سازگاری جانوران با محیط است.</p>
+<p><a href="https://www.nationalgeographic.com/photography/article/polar-bear-sperm-whale-ice-arctic" target="_blank" rel="noopener" style="color:#57D9C7">دیدن عکس و گزارش اصلی نشنال جئوگرافیک</a></p>
+<h3>پنج قاب، پنج داستان، یک سیاره</h3>
+<p>از پشت‌بام‌های کاراکاس تا آزمایشگاه‌های کالیفرنیا، از پیست ربات‌ها در پکن تا اعماق اقیانوس و یخ‌های قطب، جهان هنوز پر از لحظه‌های شگفت‌انگیز و ناشناخته‌هایی است که ارزش شناختن دارند.</p>
+<p>حق نشر همه‌ی عکس‌ها با عکاسان و ناشران آن‌هاست: رویترز، نشنال جئوگرافیک و دیگر منابع. برای دیدن نسخه‌ی کامل و باکیفیت، از لینک زیر هر قاب استفاده کنید.</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="eu-50-billion-sovereign-tech-fund.html">اروپا با ۵۰ میلیارد یورو به رقابت فناوری آینده می‌آید</a></li><li><a href="ai-jobs-wrong-question.html">همه درباره‌ی هوش مصنوعی سؤال را اشتباه می‌پرسند</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://theprint.in/world/some-of-the-best-reuters-photos-of-2025-and-the-stories-behind-them/2806806" target="_blank" rel="noopener">Reuters via ThePrint: Some of the best Reuters photos of 2025 and the stories behind them (16 Dec 2025)</a></li><li><a href="https://www.reutersconnect.com/item/some-of-the-best-reuters-pictures-of-2025-and-their-stories/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMllCREE5TzVOWQ" target="_blank" rel="noopener">Reuters Connect: Gaby Oraa, moonrise over Petare</a></li><li><a href="https://www.reutersconnect.com/item/some-of-the-best-reuters-pictures-of-2025-and-their-stories/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMko3R0FYVlUyVA" target="_blank" rel="noopener">Reuters Connect: Tingshu Wang, World Humanoid Robot Games</a></li><li><a href="https://www.koreatimes.co.kr/amp/world/20250819/chinas-unitree-x-humanoid-top-medal-total-in-the-worlds-first-humanoid-robot-games" target="_blank" rel="noopener">Korea Times: Unitree, X-Humanoid top medal total at the world's first humanoid robot games</a></li><li><a href="https://interactives.natgeofe.com/high-touch/ngm-25-POY-BTS/builds/main/html/_graphic.html" target="_blank" rel="noopener">National Geographic: Pictures of the Year 2025, behind the scenes</a></li><li><a href="https://www.popsci.com/environment/5-captivating-images-from-national-geographics-pictures-of-the-year" target="_blank" rel="noopener">Popular Science: 5 captivating images from National Geographic's Pictures of the Year</a></li><li><a href="https://www.nationalgeographic.com/impact/article/anand-varma-explorer-story" target="_blank" rel="noopener">National Geographic: Anand Varma's photography</a></li><li><a href="https://www.nationalgeographic.com/animals/article/great-white-shark-maine-photo" target="_blank" rel="noopener">National Geographic: Rare image of great white shark captured off the coast of Maine (14 Jul 2025)</a></li><li><a href="https://www.nationalgeographic.com/photography/article/polar-bear-sperm-whale-ice-arctic" target="_blank" rel="noopener">National Geographic: Rare images of polar bear scavenging on a sperm whale in the Arctic (18 Sep 2025)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۵ آذر ۱۴۰۵. داستان عکس‌ها از گزارش رویترز (ThePrint)، نشنال جئوگرافیک و Popular Science بررسی شد. عکاس عکس ربات‌ها مشخص نیست و عکس منتخب رویترز از تینگ‌شو وانگ نیست. حق نشر همه‌ی عکس‌ها با عکاسان و ناشران آن‌هاست.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>Sometimes one photo says more about the world than hundreds of pages of reporting. From a child flying a kite in front of the moon in Caracas to robots racing in Beijing; from the start of a life to the wonders of the ocean and the Arctic. Ditoman has picked five frames from the standout pictures of 2025: five images, five stories, one planet.</blockquote>
+<h3><span class="check-number">1.</span> A child against the moon</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/1.webp" alt="Caracas, Venezuela · March 2025 · Photo: Gaby Oraa / Reuters" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">Caracas, Venezuela · March 2025 · Photo: Gaby Oraa / Reuters</figcaption></figure>
+<p>📍 Petare, Caracas, Venezuela</p>
+<p>📅 March 2025</p>
+<p>📷 Gaby Oraa, Reuters</p>
+<p>Gaby Oraa had spent years trying to capture the moon rising over the Petare neighbourhood. Each time, clouds hid it or it rose too high to frame well. She says she lost count of the full moons she chased.</p>
+<p>Finally, in March 2025, the sky cleared, the light was soft and a child with a kite appeared on a rooftop right in front of the moon. Oraa called the moment "a small gift" and a reminder not to give up.</p>
+<p>The lesson of this frame: patience, persistence and attention to life's simple moments.</p>
+<p><a href="https://www.reutersconnect.com/item/some-of-the-best-reuters-pictures-of-2025-and-their-stories/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMllCREE5TzVOWQ" target="_blank" rel="noopener" style="color:#57D9C7">See the original photo at Reuters</a> · <a href="https://theprint.in/world/some-of-the-best-reuters-photos-of-2025-and-the-stories-behind-them/2806806" target="_blank" rel="noopener" style="color:#57D9C7">The story behind it</a></p>
+<h3><span class="check-number">2.</span> When robots took to the track</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/2.webp" alt="World Humanoid Robot Games, Beijing · August 2025" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">World Humanoid Robot Games, Beijing · August 2025</figcaption></figure>
+<p>📍 National Speed Skating Oval, Beijing, China</p>
+<p>📅 August 2025</p>
+<p>🤖 The first World Humanoid Robot Games</p>
+<p>In August 2025 Beijing hosted the first World Humanoid Robot Games: 280 teams from 16 countries in 26 events, from athletics and football to kickboxing and practical tasks such as sorting medicines. Unitree's H1 robots won gold in the 400 m and 1,500 m races (<a href="https://www.koreatimes.co.kr/amp/world/20250819/chinas-unitree-x-humanoid-top-medal-total-in-the-worlds-first-humanoid-robot-games" target="_blank" rel="noopener" style="color:#57D9C7">Korea Times</a>).</p>
+<p>Reuters photographer Tingshu Wang took her pick of the year at this event: a Unitree robot running the 400 m alongside its engineer. She first tried to show the robots like human athletes, but soon realised the real story was the relationship between the robots and their engineers.</p>
+<p>These races were not just entertainment; they tested balance, motion control and coordination. Technology tested on the track today may help people in factories, hospitals and workplaces tomorrow.</p>
+<p><a href="https://www.reutersconnect.com/item/some-of-the-best-reuters-pictures-of-2025-and-their-stories/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMko3R0FYVlUyVA" target="_blank" rel="noopener" style="color:#57D9C7">See Tingshu Wang's Reuters photo</a></p>
+<h3><span class="check-number">3.</span> How does a life take shape?</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/3.webp" alt="From National Geographic&#x27;s project on how a chick forms · 2025 · National Geographic" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">From National Geographic&#x27;s project on how a chick forms · 2025 · National Geographic</figcaption></figure>
+<p>📍 Berkeley, California, USA</p>
+<p>📅 National Geographic Pictures of the Year 2025</p>
+<p>📷 Anand Varma's project, National Geographic</p>
+<p>Anand Varma, a National Geographic science photographer, spent years on one question: how can you picture an egg turning into a chick?</p>
+<p>The project's best-known image, chosen among the pictures of the year, shows a 12-day-old chick embryo inside an artificial shell, at the stage when the bird's shape is clear and the yolk is still visible. Varma also raised some embryos all the way to chicks; the end of the journey you see in this frame.</p>
+<p>A blend of science, photography and human curiosity about where life begins (<a href="https://www.popsci.com/environment/5-captivating-images-from-national-geographics-pictures-of-the-year" target="_blank" rel="noopener" style="color:#57D9C7">Popular Science</a>).</p>
+<p><a href="https://interactives.natgeofe.com/high-touch/ngm-25-POY-BTS/builds/main/html/_graphic.html" target="_blank" rel="noopener" style="color:#57D9C7">The story behind the photo at National Geographic</a> · <a href="https://www.nationalgeographic.com/impact/article/anand-varma-explorer-story" target="_blank" rel="noopener" style="color:#57D9C7">About Anand Varma</a></p>
+<h3><span class="check-number">4.</span> Meeting one of the ocean's great predators</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/4.webp" alt="Off Harpswell, Maine, USA · July 2025 · Photo: Brian Skerry / National Geographic" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">Off Harpswell, Maine, USA · July 2025 · Photo: Brian Skerry / National Geographic</figcaption></figure>
+<p>📍 About 15 miles (24 km) off Harpswell, Maine, USA</p>
+<p>📅 8 July 2025 (published 14 July)</p>
+<p>📷 Brian Skerry, National Geographic</p>
+<p>Brian Skerry has spent more than 10,000 hours underwater. Even so, in July 2025 he took a rare image: a juvenile great white shark, nearly 3 metres long, in Maine waters. Researchers say it is likely the first confirmed underwater photo of a great white in the state.</p>
+<p>Why are more great whites being seen? Legal protection for seals since 1972 and limits on shark fishing since 1997. Researchers identified more than 100 great whites in Maine waters between 2012 and 2023.</p>
+<p>Beyond its beauty, this frame shows how protecting one link in the food chain can bring a whole ecosystem back to life.</p>
+<p><a href="https://www.nationalgeographic.com/animals/article/great-white-shark-maine-photo" target="_blank" rel="noopener" style="color:#57D9C7">See the photo and original National Geographic report</a></p>
+<h3><span class="check-number">5.</span> A rare feast in the Arctic</h3>
+<figure style="margin:18px 0"><img src="social/world-in-five-frames-2025/5.webp" alt="Near Svalbard, Norway · July 2025 · Photo: Roie Galitz / National Geographic" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block"><figcaption style="color:#9fb6b9;font-size:.85em;margin-top:6px">Near Svalbard, Norway · July 2025 · Photo: Roie Galitz / National Geographic</figcaption></figure>
+<p>📍 About 82° north, near the Svalbard archipelago, Norway</p>
+<p>📅 Early July 2025</p>
+<p>📷 Roie Galitz, National Geographic</p>
+<p>On an expedition towards the North Pole, Roie Galitz spotted a dark blob on the horizon: the carcass of a sperm whale among the sea ice. The icebreaker spent about 24 hours pushing through the ice to reach it. A male polar bear was by the carcass, and a female joined later. Galitz captured the scale of the scene from above with a drone.</p>
+<p>Sperm whales usually avoid ice and stay in temperate waters, so finding one this far north surprised researchers too. Experts think currents and wind carried the carcass north.</p>
+<p>This frame is an example of nature's food-recycling cycle and of animals adapting to their environment.</p>
+<p><a href="https://www.nationalgeographic.com/photography/article/polar-bear-sperm-whale-ice-arctic" target="_blank" rel="noopener" style="color:#57D9C7">See the photo and original National Geographic report</a></p>
+<h3>Five frames, five stories, one planet</h3>
+<p>From the rooftops of Caracas to the labs of California, from the robot track in Beijing to the depths of the ocean and the Arctic ice, the world is still full of astonishing moments and unknowns worth getting to know.</p>
+<p>Copyright in every photo belongs to its photographers and publishers: Reuters, National Geographic and other sources. For the full, high-quality versions, use the link under each frame.</p>
+<h3>Read more</h3><ul><li><a href="eu-50-billion-sovereign-tech-fund.en.html">Europe’s €50 billion bet on future tech</a></li><li><a href="ai-jobs-wrong-question.en.html">Everyone is asking the wrong AI question</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://theprint.in/world/some-of-the-best-reuters-photos-of-2025-and-the-stories-behind-them/2806806" target="_blank" rel="noopener">Reuters via ThePrint: Some of the best Reuters photos of 2025 and the stories behind them (16 Dec 2025)</a></li><li><a href="https://www.reutersconnect.com/item/some-of-the-best-reuters-pictures-of-2025-and-their-stories/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMllCREE5TzVOWQ" target="_blank" rel="noopener">Reuters Connect: Gaby Oraa, moonrise over Petare</a></li><li><a href="https://www.reutersconnect.com/item/some-of-the-best-reuters-pictures-of-2025-and-their-stories/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMko3R0FYVlUyVA" target="_blank" rel="noopener">Reuters Connect: Tingshu Wang, World Humanoid Robot Games</a></li><li><a href="https://www.koreatimes.co.kr/amp/world/20250819/chinas-unitree-x-humanoid-top-medal-total-in-the-worlds-first-humanoid-robot-games" target="_blank" rel="noopener">Korea Times: Unitree, X-Humanoid top medal total at the world's first humanoid robot games</a></li><li><a href="https://interactives.natgeofe.com/high-touch/ngm-25-POY-BTS/builds/main/html/_graphic.html" target="_blank" rel="noopener">National Geographic: Pictures of the Year 2025, behind the scenes</a></li><li><a href="https://www.popsci.com/environment/5-captivating-images-from-national-geographics-pictures-of-the-year" target="_blank" rel="noopener">Popular Science: 5 captivating images from National Geographic's Pictures of the Year</a></li><li><a href="https://www.nationalgeographic.com/impact/article/anand-varma-explorer-story" target="_blank" rel="noopener">National Geographic: Anand Varma's photography</a></li><li><a href="https://www.nationalgeographic.com/animals/article/great-white-shark-maine-photo" target="_blank" rel="noopener">National Geographic: Rare image of great white shark captured off the coast of Maine (14 Jul 2025)</a></li><li><a href="https://www.nationalgeographic.com/photography/article/polar-bear-sperm-whale-ice-arctic" target="_blank" rel="noopener">National Geographic: Rare images of polar bear scavenging on a sperm whale in the Arctic (18 Sep 2025)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 26 November 2026. The photo stories were checked against Reuters (via ThePrint), National Geographic and Popular Science. The robot photo’s photographer is not known, and it is not Tingshu Wang’s Reuters pick. Copyright in every photo belongs to its photographers and publishers.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
