@@ -179,8 +179,8 @@ html[data-lang="en"] .home-hero::before {
 .masthead h1 .spectrum { color: var(--yellow); background: none; -webkit-text-fill-color: currentColor; }
 .masthead p { margin-top: 14px; color: #d6dcd8; font-size: 1.02rem; line-height: 1.95; max-width: 46ch; }
 .masthead .tagline {
-  margin-top: 18px; font-family: "Playfair Display", Georgia, "Times New Roman", serif; font-style: italic;
-  font-size: 1.05rem; letter-spacing: 0.04em; color: var(--mint);
+  margin-top: 18px; font-family: var(--en); font-style: normal; font-weight: 600;
+  font-size: 1rem; letter-spacing: 0.06em; color: var(--mint);
 }
 html[data-lang="fa"] .masthead { direction: rtl; text-align: right; }
 html[data-lang="fa"] .masthead .tagline { direction: ltr; text-align: right; }
@@ -1247,7 +1247,7 @@ html[data-lang="fa"] .ls-intro { direction: rtl; text-align: right; }
 .quote-block blockquote { margin: 0; padding: 28px 32px; border-inline-start: 4px solid var(--accent, #2fbfa3); background: rgba(47,191,163,0.07); border-radius: 0 16px 16px 0; }
 html[dir="rtl"] .quote-block blockquote { border-radius: 16px 0 0 16px; }
 .quote-block p { margin: 0; font-size: clamp(1.15rem, 2.2vw, 1.6rem); line-height: 1.6; font-weight: 700; color: var(--text); }
-.quote-block p[lang="en"] { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 600; direction: ltr; }
+.quote-block p[lang="en"] { font-family: var(--en); font-style: normal; font-weight: 600; direction: ltr; }
 .quote-block p[lang="fa"] { font-family: "IRANYekanX", Tahoma, sans-serif; direction: rtl; }
 .quote-block p + p { margin-top: 14px; opacity: 0.8; font-size: clamp(1rem, 1.6vw, 1.2rem); font-weight: 500; }
 .quote-block cite { display: block; margin-top: 16px; font-style: normal; font-size: 0.9rem; letter-spacing: 0.06em; color: var(--ink-muted, #5b6b68); font-family: var(--en, inherit); }
@@ -1386,3 +1386,4 @@ html[data-lang="en"] .hero-art::after { background: linear-gradient(to right, rg
 .hero-lights { max-width: 100%; }
 .hero-lights b { white-space: nowrap; }
 .hero-lights span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+@media (max-width: 700px) { .hero2 .masthead .hero-cta .tagline { font-size: 0.78rem; letter-spacing: 0.02em; } .hero-cta { gap: 8px 12px; } }
