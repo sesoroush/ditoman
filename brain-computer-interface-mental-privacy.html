@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The Last Frontier of Privacy: when the brain connects to the internet | آخرین حریم خصوصی انسان | Ditoman</title>
+<meta name="description" content="تراشه‌های مغزی به فلج‌ها صدا و حرکت برمی‌گردانند. علم، شرکت‌ها، بازار ۴۰۰ میلیارد دلاری، کسب‌وکارهایی که تغییر می‌کنند و پرسش بزرگ: داده‌ی مغز ما مال کیست؟" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261126a" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/brain-computer-interface-mental-privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/brain-computer-interface-mental-privacy.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/brain-computer-interface-mental-privacy.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/brain-computer-interface-mental-privacy.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The Last Frontier of Privacy: when the brain connects to the internet | آخرین حریم خصوصی انسان | Ditoman" />
+<meta property="og:description" content="تراشه‌های مغزی به فلج‌ها صدا و حرکت برمی‌گردانند. علم، شرکت‌ها، بازار ۴۰۰ میلیارد دلاری، کسب‌وکارهایی که تغییر می‌کنند و پرسش بزرگ: داده‌ی مغز ما مال کیست؟" />
+<meta property="og:url" content="https://ditoman.com/brain-computer-interface-mental-privacy.html" />
+<meta property="og:image" content="https://ditoman.com/social/brain-computer-interface-mental-privacy/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/brain-computer-interface-mental-privacy.html#article",
+   "mainEntityOfPage": "https://ditoman.com/brain-computer-interface-mental-privacy.html",
+   "headline": "The Last Frontier of Privacy: when the brain connects to the internet | آخرین حریم خصوصی انسان",
+   "description": "تراشه‌های مغزی به فلج‌ها صدا و حرکت برمی‌گردانند. علم، شرکت‌ها، بازار ۴۰۰ میلیارد دلاری، کسب‌وکارهایی که تغییر می‌کنند و پرسش بزرگ: داده‌ی مغز ما مال کیست؟",
+   "image": "https://ditoman.com/social/brain-computer-interface-mental-privacy/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The Last Frontier of Privacy: when the brain connects to the internet | آخرین حریم خصوصی انسان",
+     "item": "https://ditoman.com/brain-computer-interface-mental-privacy.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/brain-computer-interface-mental-privacy/card.webp" srcset="social/brain-computer-interface-mental-privacy/card.webp 900w, social/brain-computer-interface-mental-privacy/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="The last frontier of privacy: when the brain connects to the internet" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/brain-computer-interface-mental-privacy/en-card.webp" srcset="social/brain-computer-interface-mental-privacy/en-card.webp 900w, social/brain-computer-interface-mental-privacy/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="The last frontier of privacy: when the brain connects to the internet" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Technology · Brain and AI</span><span lang="fa">فناوری · مغز و هوش مصنوعی</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">آخرین حریم خصوصی انسان؛ وقتی مغز به اینترنت وصل می‌شود</h1>
+<h1 lang="en">The last frontier of privacy: when the brain connects to the internet</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">تراشه‌های مغزی چطور کار می‌کنند، چه کسانی را درمان می‌کنند، چه شرکت‌ها و چه پولی پشتشان است، کدام کسب‌وکارها را تغییر می‌دهند و داده‌ی مغز ما مال کیست</p>
+<p class="subtitle" lang="en">How brain chips work, whom they help, which companies and how much money are behind them, which businesses they change, and who owns the data in our brains</p>
+<div class="stats">
+<div class="stat"><b lang="fa">حدود ۲۶</b><b lang="en">~26</b><span lang="fa">نفر با تراشه‌ی Neuralink</span><span lang="en">people living with a Neuralink implant</span></div>
+<div class="stat"><b lang="fa">۹۷٫۵٪</b><b lang="en">97.5%</b><span lang="fa">دقت گفتار بازسازی‌شده در بیمار ALS</span><span lang="en">accuracy of restored speech in an ALS patient</span></div>
+<div class="stat"><b lang="fa">۴۰۰ میلیارد دلار</b><b lang="en">$400bn</b><span lang="fa">بازار بالقوه فقط در آمریکا، برآورد مورگان استنلی</span><span lang="en">potential US market, Morgan Stanley estimate</span></div>
+<div class="stat"><b lang="fa">۲۹ از ۳۰</b><b lang="en">29 of 30</b><span lang="fa">شرکت عصبی مصرفی با دسترسی به داده‌ی مغز</span><span lang="en">consumer neurotech firms with access to brain data</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>فناوری‌ای که می‌تواند به آدم فلج دوباره صدا و استقلال بدهد، هم‌زمان یکی از مهم‌ترین پرسش‌های عصر دیجیتال را پیش کشیده است: اطلاعات مغز ما مال چه کسی است؟ این گزارش از علم شروع می‌کند، به شرکت‌ها و پولی که پشتشان است می‌رسد، بازار و کسب‌وکارهایی را که تغییر می‌کنند نشان می‌دهد و در آخر به سراغ حریم خصوصی ذهن می‌رود.</blockquote>
+<p>تصور کنید کسی که سال‌ها نتوانسته دستش را تکان بدهد، فقط با اراده کردن ماوس را حرکت بدهد، برای خانواده‌اش پیام بنویسد یا با صدای بازسازی‌شده‌ی خودش حرف بزند. این دیگر تخیل نیست؛ در آزمایشگاه‌ها و بیمارستان‌های آمریکا، اروپا و چین اتفاق افتاده است.</p>
+<p>حالا تصور کنید روزی مدیر یک شرکت بتواند میزان تمرکز کارکنانش را از روی سیگنال مغزشان بسنجد. فاصله‌ی این دو تصویر، یکی از بزرگ‌ترین چالش‌های علمی، اقتصادی و اخلاقی دهه‌های آینده است.</p>
+<p>مجله‌ی Fortune در گزارشی در ۲۱ نوامبر ۲۰۲۶ به همین مسابقه پرداخته است. نیتا فراهانی، استاد دانشگاه دوک و از چهره‌های اصلی اخلاق فناوری عصبی، در آن گزارش می‌گوید: «آنچه فکر و احساس می‌کنید، آخرین فضای واقعاً خصوصی شماست» (<a href="https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/" target="_blank" rel="noopener" style="color:#57D9C7">Fortune</a>).</p>
+<h3>در یک نگاه</h3>
+<ul>
+<li>حدود ۲۶ نفر با تراشه‌ی Neuralink و ۱۵ نفر با دستگاه Synchron زندگی می‌کنند؛ و Neuralink روز ۲۵ نوامبر ۲۰۲۶ از تأیید نخستین آزمایش «محوری» (pivotal) خود در آمریکا خبر داد</li>
+</ul>
+<ul>
+<li>چین در مارس ۲۰۲۶ نخستین رابط مغزی کاشتنی را برای فروش تجاری تأیید کرد و اروپا در ژوئیه‌ی ۲۰۲۶ تراشه‌ی شبکیه‌ی PRIMA را</li>
+</ul>
+<ul>
+<li>رابط‌های گفتاری در پژوهش‌های دانشگاهی به دقت حدود ۹۷٪ رسیده‌اند</li>
+</ul>
+<ul>
+<li>بازار امروز کوچک است، چند صد میلیون دلار؛ ولی مورگان استنلی بازار بالقوه را فقط در آمریکا ۴۰۰ میلیارد دلار برآورد می‌کند</li>
+</ul>
+<ul>
+<li>یونسکو در نوامبر ۲۰۲۵ نخستین چارچوب جهانی اخلاق فناوری عصبی را تصویب کرد؛ ولی قانون‌ها هنوز از فناوری عقب‌اند</li>
+</ul>
+<h3><span class="check-number">۱.</span> تراشه‌ی مغزی چطور کار می‌کند؟</h3>
+<p>مغز برای هر حرکت و هر کلمه سیگنال الکتریکی تولید می‌کند. رابط مغز و کامپیوتر (Brain-Computer Interface یا BCI) با الکترودهای بسیار کوچک بخشی از این سیگنال‌ها را می‌گیرد و هوش مصنوعی آن‌ها را به فرمان دیجیتال تبدیل می‌کند.</p>
+<ul>
+<li>دریافت سیگنال مغز</li>
+</ul>
+<ul>
+<li>رمزگشایی با هوش مصنوعی</li>
+</ul>
+<ul>
+<li>اجرای فرمان: حرکت ماوس، تایپ، صدا، حرکت بازوی رباتیک</li>
+</ul>
+<p>کسی که به خاطر آسیب نخاع نمی‌تواند دستش را حرکت بدهد، هنوز در مغز سیگنال «قصد حرکت» را تولید می‌کند. کامپیوتر این الگو را می‌شناسد و نشانگر را جابه‌جا می‌کند.</p>
+<p>نکته‌ی مهم: فناوری امروز ذهن‌خوانی نیست. این دستگاه‌ها الگوهای مشخصی از فعالیت چند ناحیه‌ی مغز را تفسیر می‌کنند، باید برای هر فرد آموزش ببینند و ممکن است اشتباه کنند.</p>
+<p>چهار راه اصلی برای «گوش دادن» به مغز وجود دارد:</p>
+<div class="tw"><table><tr><th>روش</th><th>چطور</th><th>نمونه</th><th>دقت و خطر</th></tr><tr><td>غیرتهاجمی</td><td>هدست یا هدفون با حسگر روی پوست سر (EEG)</td><td>هدست‌های تمرکز و خواب</td><td>ارزان و بی‌جراحی، ولی سیگنال ضعیف و کم‌دقت</td></tr><tr><td>از راه رگ</td><td>دستگاه شبکه‌ای که با کاتتر از رگ به کنار مغز می‌رسد</td><td>Synchron</td><td>بدون باز کردن جمجمه، دقت متوسط</td></tr><tr><td>روی سطح مغز</td><td>لایه‌ی نازک الکترود روی قشر مغز</td><td>Precision Neuroscience، Neuracle چین</td><td>دقت بالا، جراحی کمتر تهاجمی</td></tr><tr><td>درون بافت مغز</td><td>سوزن‌ها یا رشته‌های ریز در قشر مغز</td><td>Neuralink، Paradromics، آرایه‌ی یوتا</td><td>بالاترین دقت، بیشترین خطر جراحی</td></tr></table></div>
+<h3><span class="check-number">۲.</span> از ۱۹۲۴ تا امروز</h3>
+<div class="tw"><table><tr><th>سال</th><th>رویداد</th></tr><tr><td>۱۹۲۴</td><td>هانس برگر نخستین نوار مغزی (EEG) انسان را ثبت کرد</td></tr><tr><td>۱۹۷۳</td><td>ژاک ویدال در دانشگاه UCLA اصطلاح «رابط مغز و کامپیوتر» را مطرح کرد</td></tr><tr><td>۲۰۰۴</td><td>در برنامه‌ی BrainGate، مردی فلج با کاشت آرایه‌ی یوتا نشانگر کامپیوتر را با فکر حرکت داد</td></tr><tr><td>۲۰۱۲</td><td>زنی فلج با بازوی رباتیک و فقط با فکر، برای نخستین بار پس از ۱۵ سال خودش قهوه نوشید (مجله‌ی Nature)</td></tr><tr><td>۲۰۱۶</td><td>تأسیس Neuralink</td></tr><tr><td>۲۰۲۱</td><td>شیلی نخستین کشوری شد که «حقوق عصبی» را در قانون اساسی آورد</td></tr><tr><td>۲۰۲۳</td><td>دو مقاله در Nature: سرعت گفتار بازسازی‌شده به ۶۲ و ۷۸ کلمه در دقیقه رسید</td></tr><tr><td>ژانویه‌ی ۲۰۲۴</td><td>نخستین کاشت Neuralink در انسان (نولند آربا)</td></tr><tr><td>اوت ۲۰۲۴</td><td>دانشگاه UC Davis: بیمار ALS با دقت ۹۷٫۵٪ «حرف زد» (NEJM)</td></tr><tr><td>آوریل ۲۰۲۵</td><td>مجوز FDA برای الکترود سطحی Precision، برای کاشت تا ۳۰ روز</td></tr><tr><td>نوامبر ۲۰۲۵</td><td>تصویب توصیه‌نامه‌ی یونسکو؛ ۲۰۰ میلیون دلار سرمایه برای Synchron؛ مجوز آزمایش انسانی Paradromics</td></tr><tr><td>مارس ۲۰۲۶</td><td>چین نخستین رابط مغزی کاشتنی را برای فروش تجاری تأیید کرد</td></tr><tr><td>ژوئیه‌ی ۲۰۲۶</td><td>تراشه‌ی شبکیه‌ی PRIMA مجوز فروش در اروپا گرفت</td></tr><tr><td>نوامبر ۲۰۲۶</td><td>Neuralink از تأیید آزمایش محوری LINK در آمریکا خبر داد</td></tr></table></div>
+<h3><span class="check-number">۳.</span> دستاوردهای علمی: صدا، حرکت و بینایی</h3>
+<h3>صدا برای کسانی که حرفشان در ذهن مانده</h3>
+<p>در اوت ۲۰۲۳، دو تیم از دانشگاه استنفورد و دانشگاه کالیفرنیا سان‌فرانسیسکو (UCSF) هم‌زمان در Nature نشان دادند که می‌شود گفتار را از سیگنال مغز بازسازی کرد. تیم استنفورد به ۶۲ کلمه در دقیقه رسید و تیم UCSF به ۷۸ کلمه، همراه با یک چهره‌ی دیجیتال که حرف می‌زد (<a href="https://www.nature.com/articles/s41586-023-06377-x" target="_blank" rel="noopener" style="color:#57D9C7">Nature، استنفورد</a>، <a href="https://www.nature.com/articles/s41586-023-06443-4" target="_blank" rel="noopener" style="color:#57D9C7">Nature، UCSF</a>). گفت‌وگوی عادی حدود ۱۶۰ کلمه در دقیقه است.</p>
+<p>یک سال بعد، تیم UC Davis در مجله‌ی پزشکی نیوانگلند (NEJM) گزارش داد که کیسی هارل، مردی ۴۵ ساله مبتلا به ALS، در همان جلسه‌ی اول با دقت ۹۹٫۶٪ و با واژگان ۵۰ کلمه‌ای حرف زد. در ادامه با واژگان ۱۲۵ هزار کلمه‌ای، دقت به ۹۷٫۵٪ رسید و او بیش از ۲۴۸ ساعت از این سیستم استفاده کرد (<a href="https://www.brown.edu/news/2024-08-14/bci-speak-again" target="_blank" rel="noopener" style="color:#57D9C7">Brown University</a>).</p>
+<h3>حرکت دوباره</h3>
+<p>نولند آربا، نخستین بیمار Neuralink، که از شانه به پایین فلج است، با فکر کامپیوتر را کنترل می‌کند و شطرنج بازی می‌کند. در چین، دستگاه NEO شرکت Neuracle به افراد فلج با آسیب نخاع گردنی کمک می‌کند با یک دستکش بادی چیزی را بگیرند یا لیوانی را بردارند؛ کاشت آن از روی پرده‌ی سخت مغز است و به بافت مغز آسیب نمی‌زند (<a href="https://en.people.cn/n3/2026/0314/c90000-20436044.html" target="_blank" rel="noopener" style="color:#57D9C7">People's Daily</a>).</p>
+<h3>بازگشت بینایی</h3>
+<p>تراشه‌ی PRIMA از شرکت Science Corp. یک تراشه‌ی ۲ در ۲ میلی‌متری با ۳۷۸ پیکسل است که زیر شبکیه‌ی آسیب‌دیده کاشته می‌شود. در آزمایشی که در NEJM منتشر شد، ۳۸ بیمار در ۱۷ مرکز در پنج کشور آن را دریافت کردند و حدود ۸۰٪ کسانی که ارزیابی ۱۲ ماهه را تمام کردند، دست‌کم ۱۰ حرف بیشتر روی جدول بینایی خواندند. این دستگاه برای نوعی پیشرفته از تحلیل ماکولای خشک است که بیش از پنج میلیون نفر در جهان به آن مبتلا هستند (<a href="https://newatlas.com/medical-tech/vision-restoring-retinal-implant-approval-europe/" target="_blank" rel="noopener" style="color:#57D9C7">New Atlas</a>).</p>
+<h3><span class="check-number">۴.</span> مسابقه‌ی شرکت‌ها؛ چه کسی کجاست؟</h3>
+<div class="tw"><table><tr><th>شرکت</th><th>روش</th><th>وضعیت</th><th>پول و ارزش</th></tr><tr><td>Neuralink (آمریکا)</td><td>۶۴ رشته‌ی نازک‌تر از مو درون قشر مغز، کاشت با ربات</td><td>حدود ۲۶ کاربر؛ اعلام تأیید آزمایش محوری LINK در نوامبر ۲۰۲۶</td><td>حدود ۱٫۳ میلیارد دلار سرمایه؛ ارزش حدود ۹٫۷ میلیارد دلار</td></tr><tr><td>Synchron (آمریکا)</td><td>دستگاه شبکه‌ای از راه رگ، بدون باز کردن جمجمه</td><td>۱۵ کاربر؛ آماده‌سازی آزمایش محوری</td><td>۲۰۰ میلیون دلار در نوامبر ۲۰۲۵؛ ارزش نزدیک ۱ میلیارد دلار</td></tr><tr><td>Paradromics (آمریکا)</td><td>آرایه‌ی پرچگال با بیشترین حجم داده، تمرکز بر گفتار</td><td>مجوز FDA نوامبر ۲۰۲۵؛ نخستین کاشت دائمی، ژوئن ۲۰۲۶</td><td>شرکت خصوصی</td></tr><tr><td>Precision Neuroscience (آمریکا)</td><td>لایه‌ی بسیار نازک الکترود روی سطح مغز</td><td>مجوز FDA برای کاشت تا ۳۰ روز؛ آزمایش روی ۳۷ بیمار</td><td>شرکت خصوصی</td></tr><tr><td>Science Corp. (آمریکا)</td><td>تراشه‌ی شبکیه برای بازگرداندن بینایی</td><td>مجوز فروش در اروپا، ژوئیه‌ی ۲۰۲۶</td><td>شرکت خصوصی</td></tr><tr><td>Neuracle (چین)</td><td>الکترود روی پرده‌ی سخت مغز، کنترل دستکش</td><td>نخستین مجوز فروش تجاری در جهان، مارس ۲۰۲۶</td><td>پشتیبانی برنامه‌ی ملی چین</td></tr><tr><td>Merge Labs (آمریکا)</td><td>رویکرد غیرتهاجمی با مولکول و فراصوت</td><td>مرحله‌ی پژوهش، بدون محصول</td><td>۲۵۲ میلیون دلار؛ ارزش حدود ۸۵۰ میلیون دلار؛ OpenAI بزرگ‌ترین سرمایه‌گذار</td></tr></table></div>
+<p>منابع: <a href="https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/" target="_blank" rel="noopener" style="color:#57D9C7">Fortune</a>، <a href="https://glitchwire.com/news/neuralink-says-fda-has-approved-its-first-pivotal-trial-for-an-implantable-brain/" target="_blank" rel="noopener" style="color:#57D9C7">Glitchwire</a>، <a href="https://www.medtechdive.com/news/synchron-funding-bci-200m/804977/" target="_blank" rel="noopener" style="color:#57D9C7">MedTech Dive</a>، <a href="https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/" target="_blank" rel="noopener" style="color:#57D9C7">Paradromics</a>، <a href="https://www.globenewswire.com/news-release/2025/04/17/3063418/0/en/Precision-Neuroscience-Receives-FDA-Clearance-for-High-Resolution-Cortical-Electrode-Array.html" target="_blank" rel="noopener" style="color:#57D9C7">Precision Neuroscience</a> و <a href="https://www.techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/" target="_blank" rel="noopener" style="color:#57D9C7">TechCrunch</a>.</p>
+<p>نکته: تأیید آزمایش محوری را خود Neuralink اعلام کرده است و تا زمان انتشار خبرها، FDA آن را جداگانه تأیید نکرده بود. هنوز هیچ تراشه‌ی مغزی در بازار آمریکا فروخته نمی‌شود.</p>
+<h3><span class="check-number">۵.</span> زندگی چه کسانی عوض می‌شود؟</h3>
+<p>نخستین بازار این فناوری، پزشکی است؛ کسانی که بیشترین نیاز را دارند:</p>
+<ul>
+<li>افراد با آسیب نخاع: سازمان جهانی بهداشت تعداد آن‌ها را در سال ۲۰۲۱ حدود ۱۵٫۴ میلیون نفر در جهان برآورد کرده است (<a href="https://www.who.int/news-room/fact-sheets/detail/spinal-cord-injury" target="_blank" rel="noopener" style="color:#57D9C7">WHO</a>)</li>
+</ul>
+<ul>
+<li>بیماران ALS و بیماری‌های نورون حرکتی، که به‌تدریج توان حرکت و حرف زدن را از دست می‌دهند</li>
+</ul>
+<ul>
+<li>بازماندگان سکته‌ی مغزی و بیماران ام‌اس؛ مورگان استنلی این گروه‌ها را جزو نخستین بازارها می‌داند</li>
+</ul>
+<ul>
+<li>بیش از پنج میلیون نفر مبتلا به نوع پیشرفته‌ی تحلیل ماکولا که بینایی مرکزی‌شان را از دست داده‌اند</li>
+</ul>
+<ul>
+<li>در آینده: درمان دقیق‌تر صرع، پارکینسون و افسردگی مقاوم با تحریک عصبی</li>
+</ul>
+<p>ارزش واقعی این فناوری برای یک بیمار فقط سرعت تایپ نیست؛ این است که بتواند بدون وابستگی دائمی به دیگران پیام بدهد، کار کند و تصمیم بگیرد.</p>
+<h3><span class="check-number">۶.</span> بازار چقدر است؟</h3>
+<p>برآوردها بسیار با هم فرق دارند، چون هر کدام چیز متفاوتی را می‌شمارند:</p>
+<div class="tw"><table><tr><th>برآورد</th><th>رقم</th><th>چه چیزی را می‌شمارد</th></tr><tr><td>MarketsandMarkets</td><td>۲۶۲ میلیون دلار در ۲۰۲۴ به ۵۰۶ میلیون دلار در ۲۰۲۹ (رشد سالانه ۱۴٫۱٪)</td><td>فروش فعلی دستگاه‌های BCI، بیشتر غیرتهاجمی و پژوهشی</td></tr><tr><td>CSIS</td><td>بیش از ۳۸ میلیارد دلار تا ۲۰۳۲</td><td>کل بازار فناوری عصبی، از جمله تحریک عصبی</td></tr><tr><td>Morgan Stanley</td><td>۴۰۰ میلیارد دلار بازار بالقوه فقط در آمریکا</td><td>همه‌ی بیمارانی که در نظریه می‌توانند استفاده کنند</td></tr></table></div>
+<p>منابع: <a href="https://www.marketsandmarkets.com/ResearchInsight/brain-computer-interface-market-size-and-share.asp" target="_blank" rel="noopener" style="color:#57D9C7">MarketsandMarkets</a>، <a href="https://www.csis.org/analysis/when-thought-becomes-data-mind-act-and-coming-debate-over-neurotechnology" target="_blank" rel="noopener" style="color:#57D9C7">CSIS</a> و <a href="https://www.massdevice.com/analysts-see-400b-bci-opportunity/" target="_blank" rel="noopener" style="color:#57D9C7">MassDevice</a>.</p>
+<p>خود مورگان استنلی هم واقع‌بین است: در ۲۰ سال اول پس از عرضه «نفوذ محدود» پیش‌بینی می‌کند، درآمد تجمعی کمتر از ۱٫۵ میلیارد دلار تا ۲۰۳۵ و حدود ۱ میلیارد دلار درآمد سالانه تا ۲۰۴۱. یعنی سرمایه امروز روی آینده شرط می‌بندد، نه روی فروش امروز.</p>
+<p>هزینه هم بالاست: برآوردهای تحلیلگران برای هر عمل Neuralink، با جراحی و پشتیبانی، حدود ۴۰ هزار دلار است (<a href="https://sacra.com/c/neuralink/" target="_blank" rel="noopener" style="color:#57D9C7">Sacra</a>). این عدد برآورد است، نه قیمت رسمی. بیمه‌ها معمولاً فقط پس از مجوز نهایی FDA هزینه را پوشش می‌دهند.</p>
+<h3><span class="check-number">۷.</span> کدام کسب‌وکارها به هم می‌ریزند و کدام زاده می‌شوند؟</h3>
+<div class="tw"><table><tr><th>حوزه</th><th>فرصت یا تغییر</th></tr><tr><td>پزشکی و توان‌بخشی</td><td>تجهیزات کاشت، جراحی رباتیک، مراکز توان‌بخشی تخصصی</td></tr><tr><td>هوش مصنوعی</td><td>مدل‌های رمزگشایی سیگنال عصبی، شبیه همان مدل‌های زبانی که گفتار را بازسازی می‌کنند</td></tr><tr><td>تراشه و الکترونیک</td><td>تراشه‌های کم‌مصرف، باتری، انتقال بی‌سیم داده از درون بدن</td></tr><tr><td>نرم‌افزار</td><td>سیستم‌عامل‌ها و رابط‌هایی که با فکر کنترل می‌شوند</td></tr><tr><td>امنیت سایبری</td><td>محافظت از دستگاه‌های کاشته‌شده و داده‌های عصبی</td></tr><tr><td>بیمه و مالی</td><td>مدل‌های پوشش هزینه‌ی کاشت و پشتیبانی بلندمدت</td></tr><tr><td>رباتیک و پروتز</td><td>بازوها و دست‌های مصنوعی که مستقیم با مغز کار می‌کنند</td></tr><tr><td>محصولات مصرفی</td><td>هدفون و هدبندهای سنجش تمرکز و خواب</td></tr></table></div>
+<p>کسب‌وکارهایی هم زیر فشار می‌روند: ابزارهای کمکی قدیمی مثل سیستم‌های ردیابی چشم، بخشی از خدمات مراقبتی و شاید روزی خود صفحه‌کلید و صفحه‌ی لمسی.</p>
+<p>سؤال اصلی اقتصادی این است: این صنعت از فروش تجهیزات و خدمات پول درمی‌آورد، یا از تحلیل و فروش داده‌های کاربران؟ تفاوت این دو مدل، آینده‌ی حریم خصوصی را تعیین می‌کند.</p>
+<h3><span class="check-number">۸.</span> رابطه‌ی انسان و فناوری: از صفحه‌کلید تا فکر</h3>
+<p>رابطه‌ی ما با کامپیوتر هر چند دهه یک قدم به بدنمان نزدیک‌تر شده است: صفحه‌کلید، ماوس، صفحه‌ی لمسی، صدا و حالا فکر. هر قدم داده‌ی بیشتری از ما گرفته است:</p>
+<div class="tw"><table><tr><th>ابزار</th><th>چه چیزی از ما می‌داند</th></tr><tr><td>اینترنت</td><td>چه چیزی جست‌وجو می‌کنیم</td></tr><tr><td>تلفن هوشمند</td><td>کجا می‌رویم و با چه کسی حرف می‌زنیم</td></tr><tr><td>شبکه‌های اجتماعی</td><td>به چه چیزی علاقه داریم</td></tr><tr><td>ساعت هوشمند</td><td>ضربان قلب، فعالیت و خواب</td></tr><tr><td>فناوری عصبی</td><td>بخشی از الگوهای فعالیت مغز و وضعیت ذهنی</td></tr></table></div>
+<p>این جدول مقایسه‌ی مفهومی است، نه آماری.</p>
+<p>تفاوت بزرگ این است که بخشی از داده‌ی مغز بدون تصمیم آگاهانه‌ی ما تولید می‌شود. نیتا فراهانی از آینده‌ای با «شفافیت مغز» هشدار می‌دهد، جایی که شرکت‌ها ترجیح ما را زودتر از خودمان بفهمند. او درباره‌ی پیوند انسان و هوش مصنوعی می‌پرسد: «هوش مصنوعی کجا تمام می‌شود و انسان کجا شروع می‌شود؟» (<a href="https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/" target="_blank" rel="noopener" style="color:#57D9C7">Fortune</a>).</p>
+<p>این نگرانی فقط برای تراشه‌های کاشتنی نیست. بنیاد Neurorights محصولات ۳۰ شرکت فروشنده‌ی ابزارهای عصبی مصرفی را بررسی کرد: ۲۹ شرکت به داده‌ی مغزی کاربران دسترسی داشتند و تقریباً همه می‌توانستند آن را با دیگران به اشتراک بگذارند (<a href="https://kffhealthnews.org/mental-health/colorado-california-montana-states-neural-data-privacy-laws-neurorights/" target="_blank" rel="noopener" style="color:#57D9C7">KFF Health News</a>).</p>
+<h3><span class="check-number">۹.</span> هفت پرسش که به زندگی ما مربوط است</h3>
+<ul>
+<li>محیط کار: آیا شرکت می‌تواند کارمند را به استفاده از هدست سنجش تمرکز وادار کند؟ و آیا تمرکز اندازه‌گیری‌شده واقعاً همان بهره‌وری است؟</li>
+</ul>
+<ul>
+<li>تبلیغات: اگر واکنش مغز ما به یک تبلیغ قابل سنجش باشد، مرز میان شناخت نیاز مشتری و دست‌کاری تصمیم او کجاست؟</li>
+</ul>
+<ul>
+<li>اختیار: رابط‌ها هم داده می‌گیرند و هم می‌توانند بخش‌هایی از سیستم عصبی را تحریک کنند. ترکیب تحریک با هوش مصنوعی، پرسش استقلال تصمیم را پیش می‌کشد؛ هرچند کنترل کامل ذهن با فناوری فعلی ممکن نیست</li>
+</ul>
+<ul>
+<li>کودکان: سنجش دائمی توجه دانش‌آموزان ممکن است تفاوت‌های طبیعی را «ضعف» نشان بدهد و داده‌ی کودکی به پرونده‌ای دائمی تبدیل شود</li>
+</ul>
+<ul>
+<li>بیمه و بانک: اگر داده‌ی عصبی به دست شخص ثالث برسد، می‌تواند در ارزیابی سلامت و ریسک به کار رود. این یک سناریوی احتمالی است، نه کاربرد امروز</li>
+</ul>
+<ul>
+<li>هک و ورشکستگی: تراشه‌ی مغزی مثل گوشی نیست که کنارش بگذارید. نمونه‌ی واقعی داریم: Second Sight، سازنده‌ی چشم مصنوعی Argus II، پشتیبانی را متوقف کرد و صدها بیمار با دستگاهی ماندند که دیگر کسی تعمیرش نمی‌کرد (<a href="https://spectrum.ieee.org/bionic-eye-obsolete" target="_blank" rel="noopener" style="color:#57D9C7">IEEE Spectrum</a>)</li>
+</ul>
+<ul>
+<li>شکاف اجتماعی: اگر روزی این ابزارها توان افراد سالم را هم بالا ببرند، آیا فقط ثروتمندان به آن دسترسی خواهند داشت؟</li>
+</ul>
+<p>خود جراحی هم خطر دارد: عفونت، خونریزی و آسیب بافت. به همین دلیل روش‌های کمتر تهاجمی، مثل کاشت از راه رگ یا روی سطح مغز، مسیر مهمی شده‌اند.</p>
+<h3><span class="check-number">۱۰.</span> قانون‌ها کجا هستند؟</h3>
+<div class="tw"><table><tr><th>کجا</th><th>چه شد</th></tr><tr><td>شیلی، ۲۰۲۱</td><td>نخستین کشوری که حقوق عصبی را در قانون اساسی آورد</td></tr><tr><td>کلرادو، ۲۰۲۴</td><td>داده‌ی عصبی جزو داده‌ی حساس؛ رضایت صریح برای جمع‌آوری و حق حذف</td></tr><tr><td>کالیفرنیا و مونتانا</td><td>افزودن داده‌ی عصبی به قانون‌های حریم خصوصی</td></tr><tr><td>چین، اوت ۲۰۲۵</td><td>برنامه‌ی ملی BCI: پیشرفت‌های کلیدی تا ۲۰۲۷ و ۲ تا ۳ شرکت پیشروی جهانی تا ۲۰۳۰</td></tr><tr><td>سنای آمریکا، سپتامبر ۲۰۲۵</td><td>طرح قانون MIND برای مطالعه و قاعده‌گذاری داده‌ی عصبی؛ هنوز تصویب نشده</td></tr><tr><td>یونسکو، نوامبر ۲۰۲۵</td><td>نخستین چارچوب جهانی اخلاق فناوری عصبی؛ غیرالزام‌آور</td></tr></table></div>
+<p>منابع: <a href="https://kffhealthnews.org/mental-health/colorado-california-montana-states-neural-data-privacy-laws-neurorights/" target="_blank" rel="noopener" style="color:#57D9C7">KFF Health News</a>، <a href="https://english.www.gov.cn/news/202508/07/content_WS6894aab8c6d0868f4e8f4b24.html" target="_blank" rel="noopener" style="color:#57D9C7">دولت چین</a>، <a href="https://www.csis.org/analysis/when-thought-becomes-data-mind-act-and-coming-debate-over-neurotechnology" target="_blank" rel="noopener" style="color:#57D9C7">CSIS</a> و <a href="https://news.un.org/en/story/2025/11/1166277" target="_blank" rel="noopener" style="color:#57D9C7">UN News</a>.</p>
+<p>دافنا فاینهولتس از یونسکو می‌گوید: «مردم می‌گویند چیزی برای پنهان کردن ندارم، ولی نمی‌دانند چه چیزی را از دست می‌دهند.» پژوهشگران دانشکده‌ی پزشکی هاروارد و بیمارستان Mass General Brigham هم در مقاله‌ای که ۲۷ ژوئیه‌ی ۲۰۲۶ در مجله‌ی Communications Medicine منتشر شد، نتیجه گرفتند که قانون‌های فعلی مثل HIPAA آمریکا و GDPR اروپا داده‌ی تراشه‌های مغزی را کامل پوشش نمی‌دهند. آن‌ها پنج خلأ را نام بردند: تکیه‌ی بیش از حد بر بی‌نام‌سازی داده، کنترل محدود فرد، یکی گرفتن رضایت درمان با رضایت داده، نبود سد کافی در برابر سوءاستفاده و روشن نبودن مالکیت داده (<a href="https://www.nature.com/articles/s43856-026-01797-y" target="_blank" rel="noopener" style="color:#57D9C7">Communications Medicine</a>).</p>
+<h3><span class="check-number">۱۱.</span> اصولی که باید رعایت شود</h3>
+<p>از نگاه دیتومان، توسعه‌ی مسئولانه‌ی این فناوری به این اصول نیاز دارد:</p>
+<ul>
+<li>حق کنترل هر فرد بر داده‌ی مغز خودش</li>
+</ul>
+<ul>
+<li>ممنوعیت اجبار به استفاده از ابزار عصبی در محیط کار</li>
+</ul>
+<ul>
+<li>رضایت جداگانه برای درمان، جمع‌آوری داده و استفاده‌ی تجاری</li>
+</ul>
+<ul>
+<li>امکان قطع ارتباط و حذف داده</li>
+</ul>
+<ul>
+<li>منع تبعیض بر اساس داده‌ی عصبی</li>
+</ul>
+<ul>
+<li>تضمین امنیت و پشتیبانی بلندمدت، حتی اگر سازنده تعطیل شود</li>
+</ul>
+<h3><span class="check-number">۱۲.</span> فرصتی برای متخصصان ایرانی</h3>
+<p>بخش بزرگی از این صنعت دیگر فقط جراحی و سخت‌افزار نیست؛ پردازش سیگنال، یادگیری ماشین، طراحی تراشه‌های کم‌مصرف، نرم‌افزار و توان‌بخشی است. این‌ها حوزه‌هایی هستند که مهندسان، پزشکان و پژوهشگران ایرانی در آن‌ها سابقه و توان دارند.</p>
+<p>کسی که امروز در رمزگشایی سیگنال عصبی، هوش مصنوعی پزشکی یا امنیت دستگاه‌های پزشکی تخصص بسازد، برای بازاری آماده می‌شود که به گفته‌ی تحلیلگران تازه در آغاز راه است.</p>
+<h3>تحلیل دیتومان</h3>
+<p>تراشه‌های مغزی می‌توانند یکی از ارزشمندترین دستاوردهای پزشکی قرن بیست‌ویکم باشند. اینکه انسانی که توان حرکت یا حرف زدن را از دست داده، دوباره پیام بنویسد، حرف بزند یا ببیند، دستاورد کوچکی نیست.</p>
+<p>ولی موفقیت این فناوری نباید با تعداد تراشه‌های فروخته‌شده یا ارزش شرکت‌های سازنده سنجیده شود؛ باید با استقلال، سلامت و کیفیت زندگی انسان‌ها سنجیده شود.</p>
+<p>ما نباید برای بهره بردن از پیشرفت علم، مجبور شویم اختیار ذهنمان را واگذار کنیم. آخرین حریم خصوصی انسان، ارزش آن را دارد که قانونش پیش از بازارش نوشته شود.</p>
+<p>اگر روزی یک تراشه‌ی مغزی بتواند توان یادگیری، کار و ارتباط شما را بالا ببرد، حاضرید از آن استفاده کنید؟ و چه کسی باید به داده‌ی آن دسترسی داشته باشد؟</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="eu-50-billion-sovereign-tech-fund.html">صندوق ۵۰ میلیارد یورویی اروپا برای فناوری</a></li><li><a href="world-depends-on-countries-iran.html">جهان به کدام کشورها وابسته است؟</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/" target="_blank" rel="noopener">Fortune: Inside the race to put computers in the human brain (21 Nov 2026)</a></li><li><a href="https://glitchwire.com/news/neuralink-says-fda-has-approved-its-first-pivotal-trial-for-an-implantable-brain/" target="_blank" rel="noopener">Glitchwire: Neuralink says FDA approved its first pivotal trial (25 Nov 2026)</a></li><li><a href="https://www.nature.com/articles/s41586-023-06377-x" target="_blank" rel="noopener">Nature: A high-performance speech neuroprosthesis (Stanford, 2023)</a></li><li><a href="https://www.nature.com/articles/s41586-023-06443-4" target="_blank" rel="noopener">Nature: A high-performance neuroprosthesis for speech decoding and avatar control (UCSF, 2023)</a></li><li><a href="https://www.brown.edu/news/2024-08-14/bci-speak-again" target="_blank" rel="noopener">Brown University / UC Davis: BCI allows man with ALS to speak again (NEJM, 2024)</a></li><li><a href="https://www.nature.com/articles/s43856-026-01797-y" target="_blank" rel="noopener">Communications Medicine: Advancing data protections for implantable BCIs (July 2026)</a></li><li><a href="https://mgriblog.org/project/strategies-to-strengthen-data-privacy-for-brain-computer-interface-users/" target="_blank" rel="noopener">Mass General Brigham: Strategies to strengthen data privacy for BCI users</a></li><li><a href="https://www.medtechdive.com/news/synchron-funding-bci-200m/804977/" target="_blank" rel="noopener">MedTech Dive: Synchron raises $200M Series D</a></li><li><a href="https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/" target="_blank" rel="noopener">Paradromics: First human Connexus BCI implantation</a></li><li><a href="https://www.globenewswire.com/news-release/2025/04/17/3063418/0/en/Precision-Neuroscience-Receives-FDA-Clearance-for-High-Resolution-Cortical-Electrode-Array.html" target="_blank" rel="noopener">Precision Neuroscience: FDA clearance for cortical electrode array</a></li><li><a href="https://en.people.cn/n3/2026/0314/c90000-20436044.html" target="_blank" rel="noopener">People's Daily: China grants first market approval for invasive BCI</a></li><li><a href="https://newatlas.com/medical-tech/vision-restoring-retinal-implant-approval-europe/" target="_blank" rel="noopener">New Atlas: PRIMA retinal implant approved in Europe</a></li><li><a href="https://www.techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/" target="_blank" rel="noopener">TechCrunch: OpenAI invests in Merge Labs</a></li><li><a href="https://sacra.com/c/neuralink/" target="_blank" rel="noopener">Sacra: Neuralink funding and estimates</a></li><li><a href="https://www.marketsandmarkets.com/ResearchInsight/brain-computer-interface-market-size-and-share.asp" target="_blank" rel="noopener">MarketsandMarkets: BCI market size</a></li><li><a href="https://www.massdevice.com/analysts-see-400b-bci-opportunity/" target="_blank" rel="noopener">MassDevice: Morgan Stanley sees $400B BCI opportunity</a></li><li><a href="https://www.csis.org/analysis/when-thought-becomes-data-mind-act-and-coming-debate-over-neurotechnology" target="_blank" rel="noopener">CSIS: When thought becomes data, the MIND Act</a></li><li><a href="https://kffhealthnews.org/mental-health/colorado-california-montana-states-neural-data-privacy-laws-neurorights/" target="_blank" rel="noopener">KFF Health News: States pass neural data privacy laws</a></li><li><a href="https://news.un.org/en/story/2025/11/1166277" target="_blank" rel="noopener">UN News: UNESCO adopts global standard on neurotechnology ethics</a></li><li><a href="https://english.www.gov.cn/news/202508/07/content_WS6894aab8c6d0868f4e8f4b24.html" target="_blank" rel="noopener">Chinese government: BCI industry guideline</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/spinal-cord-injury" target="_blank" rel="noopener">WHO: Spinal cord injury fact sheet</a></li><li><a href="https://spectrum.ieee.org/bionic-eye-obsolete" target="_blank" rel="noopener">IEEE Spectrum: Their bionic eyes are now obsolete and unsupported</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۵ آذر ۱۴۰۵. رقم‌های شرکت‌ها از Fortune و اطلاعیه‌های رسمی شرکت‌ها، نتایج علمی از مقاله‌های Nature و NEJM، و برآوردهای بازار از گزارش‌های منتشرشده بررسی شد. تأیید آزمایش محوری Neuralink را خود شرکت اعلام کرده است. برآوردهای بازار و هزینه پیش‌بینی هستند، نه رقم قطعی. سناریوهای آینده جدا از کاربردهای امروز آمده‌اند. بخش تحلیل، ارزیابی دیتومان است.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>A technology that can give a paralysed person their voice and independence back is also raising one of the biggest questions of the digital age: who owns the information in our brains? This report starts with the science, moves to the companies and the money behind them, shows the market and the businesses it will change, and ends with the privacy of the mind.</blockquote>
+<p>Imagine someone who has not moved their hands for years moving a cursor just by intending to, writing to their family, or speaking in a rebuilt version of their own voice. This is no longer fiction; it has happened in labs and hospitals in the United States, Europe and China.</p>
+<p>Now imagine a manager one day measuring staff concentration from their brain signals. The distance between those two pictures is one of the great scientific, economic and ethical challenges of the coming decades.</p>
+<p>Fortune covered this race in a report on 21 November 2026. Nita Farahany, a Duke University professor and a leading voice on neurotechnology ethics, told the magazine: "What you're thinking and feeling is your last space of true privacy" (<a href="https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/" target="_blank" rel="noopener" style="color:#57D9C7">Fortune</a>).</p>
+<h3>At a glance</h3>
+<ul>
+<li>About 26 people live with a Neuralink implant and 15 with a Synchron device; on 25 November 2026 Neuralink announced approval of its first US pivotal trial</li>
+</ul>
+<ul>
+<li>China approved the first implantable brain interface for commercial sale in March 2026, and Europe approved the PRIMA retinal chip in July 2026</li>
+</ul>
+<ul>
+<li>Speech interfaces in university research have reached about 97% accuracy</li>
+</ul>
+<ul>
+<li>Today's market is small, a few hundred million dollars; but Morgan Stanley puts the potential market at $400 billion in the US alone</li>
+</ul>
+<ul>
+<li>UNESCO adopted the first global framework on neurotechnology ethics in November 2025; laws still lag behind the technology</li>
+</ul>
+<h3><span class="check-number">1.</span> How does a brain chip work?</h3>
+<p>The brain produces electrical signals for every movement and every word. A brain-computer interface (BCI) picks up part of these signals with tiny electrodes, and AI turns them into digital commands.</p>
+<ul>
+<li>Record the brain signal</li>
+</ul>
+<ul>
+<li>Decode it with AI</li>
+</ul>
+<ul>
+<li>Carry out the command: move a cursor, type, speak, move a robotic arm</li>
+</ul>
+<p>A person who cannot move their hand after a spinal cord injury still produces the brain signal for "intending to move". The computer recognises the pattern and moves the cursor.</p>
+<p>The key point: today's technology is not mind reading. These devices interpret specific patterns of activity in a few areas of the brain, must be trained for each person, and can make mistakes.</p>
+<p>There are four main ways to "listen" to the brain:</p>
+<div class="tw"><table><tr><th>Method</th><th>How</th><th>Example</th><th>Precision and risk</th></tr><tr><td>Non-invasive</td><td>Headset or headphones with sensors on the scalp (EEG)</td><td>Focus and sleep headsets</td><td>Cheap, no surgery, but weak and imprecise signal</td></tr><tr><td>Through a blood vessel</td><td>A mesh device guided by catheter to sit beside the brain</td><td>Synchron</td><td>No opening of the skull, moderate precision</td></tr><tr><td>On the brain's surface</td><td>A thin electrode film on the cortex</td><td>Precision Neuroscience, China's Neuracle</td><td>High precision, less invasive surgery</td></tr><tr><td>Inside brain tissue</td><td>Tiny needles or threads in the cortex</td><td>Neuralink, Paradromics, Utah array</td><td>Highest precision, highest surgical risk</td></tr></table></div>
+<h3><span class="check-number">2.</span> From 1924 to today</h3>
+<div class="tw"><table><tr><th>Year</th><th>Event</th></tr><tr><td>1924</td><td>Hans Berger recorded the first human electroencephalogram (EEG)</td></tr><tr><td>1973</td><td>Jacques Vidal at UCLA introduced the term "brain-computer interface"</td></tr><tr><td>2004</td><td>In the BrainGate programme, a paralysed man moved a computer cursor by thought with an implanted Utah array</td></tr><tr><td>2012</td><td>A paralysed woman used a robotic arm, by thought alone, to drink coffee by herself for the first time in 15 years (Nature)</td></tr><tr><td>2016</td><td>Neuralink founded</td></tr><tr><td>2021</td><td>Chile became the first country to put "neurorights" in its constitution</td></tr><tr><td>2023</td><td>Two Nature papers: restored speech reached 62 and 78 words per minute</td></tr><tr><td>January 2024</td><td>First Neuralink human implant (Noland Arbaugh)</td></tr><tr><td>August 2024</td><td>UC Davis: a man with ALS "spoke" with 97.5% accuracy (NEJM)</td></tr><tr><td>April 2025</td><td>FDA clearance for Precision's surface electrode, for implants of up to 30 days</td></tr><tr><td>November 2025</td><td>UNESCO recommendation adopted; $200 million for Synchron; Paradromics cleared for human trials</td></tr><tr><td>March 2026</td><td>China approved the first implantable brain interface for commercial sale</td></tr><tr><td>July 2026</td><td>The PRIMA retinal chip won approval for sale in Europe</td></tr><tr><td>November 2026</td><td>Neuralink announced approval of its LINK pivotal trial in the US</td></tr></table></div>
+<h3><span class="check-number">3.</span> Scientific breakthroughs: voice, movement and sight</h3>
+<h3>A voice for those whose words are trapped</h3>
+<p>In August 2023, two teams from Stanford University and the University of California, San Francisco (UCSF) showed in Nature that speech can be rebuilt from brain signals. Stanford's team reached 62 words per minute and UCSF's 78, along with a digital face that spoke (<a href="https://www.nature.com/articles/s41586-023-06377-x" target="_blank" rel="noopener" style="color:#57D9C7">Nature, Stanford</a>, <a href="https://www.nature.com/articles/s41586-023-06443-4" target="_blank" rel="noopener" style="color:#57D9C7">Nature, UCSF</a>). Natural conversation runs at about 160 words per minute.</p>
+<p>A year later, a UC Davis team reported in the New England Journal of Medicine (NEJM) that Casey Harrell, a 45-year-old man with ALS, spoke with 99.6% accuracy in his very first session on a 50-word vocabulary. With a 125,000-word vocabulary, accuracy then reached 97.5%, and he used the system for more than 248 hours (<a href="https://www.brown.edu/news/2024-08-14/bci-speak-again" target="_blank" rel="noopener" style="color:#57D9C7">Brown University</a>).</p>
+<h3>Moving again</h3>
+<p>Noland Arbaugh, Neuralink's first patient, who is paralysed from the shoulders down, controls a computer and plays chess by thought. In China, Neuracle's NEO device helps people paralysed by cervical spinal cord injury grip objects or lift a cup with a pneumatic glove; it is implanted on the brain's protective outer membrane and does not damage brain tissue (<a href="https://en.people.cn/n3/2026/0314/c90000-20436044.html" target="_blank" rel="noopener" style="color:#57D9C7">People's Daily</a>).</p>
+<h3>Sight restored</h3>
+<p>Science Corp.'s PRIMA is a 2 by 2 millimetre chip with 378 pixels implanted beneath the damaged retina. In a trial published in NEJM, 38 patients at 17 sites in five countries received it, and about 80% of those who completed the 12-month assessment read at least 10 more letters on an eye chart. It is designed for an advanced form of dry macular degeneration that affects more than five million people worldwide (<a href="https://newatlas.com/medical-tech/vision-restoring-retinal-implant-approval-europe/" target="_blank" rel="noopener" style="color:#57D9C7">New Atlas</a>).</p>
+<h3><span class="check-number">4.</span> The company race: who stands where?</h3>
+<div class="tw"><table><tr><th>Company</th><th>Approach</th><th>Status</th><th>Money and value</th></tr><tr><td>Neuralink (US)</td><td>64 threads thinner than a hair inside the cortex, implanted by robot</td><td>About 26 users; announced pivotal LINK trial approval in November 2026</td><td>About $1.3 billion raised; valued at about $9.7 billion</td></tr><tr><td>Synchron (US)</td><td>Mesh device through a blood vessel, no skull opening</td><td>15 users; preparing pivotal trials</td><td>$200 million in November 2025; valued at nearly $1 billion</td></tr><tr><td>Paradromics (US)</td><td>High-density array with the highest data rate, focused on speech</td><td>FDA approval November 2025; first permanent implant announced June 2026</td><td>Private company</td></tr><tr><td>Precision Neuroscience (US)</td><td>Ultra-thin electrode film on the brain's surface</td><td>FDA cleared for implants of up to 30 days; tested in 37 patients</td><td>Private company</td></tr><tr><td>Science Corp. (US)</td><td>Retinal chip to restore sight</td><td>Approved for sale in Europe, July 2026</td><td>Private company</td></tr><tr><td>Neuracle (China)</td><td>Electrodes on the brain's outer membrane, glove control</td><td>World's first commercial sale approval, March 2026</td><td>Backed by China's national programme</td></tr><tr><td>Merge Labs (US)</td><td>Non-invasive approach using molecules and ultrasound</td><td>Research stage, no product</td><td>$252 million; valued at about $850 million; OpenAI the largest investor</td></tr></table></div>
+<p>Sources: <a href="https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/" target="_blank" rel="noopener" style="color:#57D9C7">Fortune</a>, <a href="https://glitchwire.com/news/neuralink-says-fda-has-approved-its-first-pivotal-trial-for-an-implantable-brain/" target="_blank" rel="noopener" style="color:#57D9C7">Glitchwire</a>, <a href="https://www.medtechdive.com/news/synchron-funding-bci-200m/804977/" target="_blank" rel="noopener" style="color:#57D9C7">MedTech Dive</a>, <a href="https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/" target="_blank" rel="noopener" style="color:#57D9C7">Paradromics</a>, <a href="https://www.globenewswire.com/news-release/2025/04/17/3063418/0/en/Precision-Neuroscience-Receives-FDA-Clearance-for-High-Resolution-Cortical-Electrode-Array.html" target="_blank" rel="noopener" style="color:#57D9C7">Precision Neuroscience</a> and <a href="https://www.techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/" target="_blank" rel="noopener" style="color:#57D9C7">TechCrunch</a>.</p>
+<p>Note: the pivotal trial approval was announced by Neuralink itself, and the FDA had not separately confirmed it when the news broke. No brain implant is yet sold on the US market.</p>
+<h3><span class="check-number">5.</span> Whose lives change?</h3>
+<p>The first market for this technology is medicine, and the people who need it most:</p>
+<ul>
+<li>People with spinal cord injury: the World Health Organization estimated about 15.4 million worldwide in 2021 (<a href="https://www.who.int/news-room/fact-sheets/detail/spinal-cord-injury" target="_blank" rel="noopener" style="color:#57D9C7">WHO</a>)</li>
+</ul>
+<ul>
+<li>People with ALS and other motor neuron diseases, who gradually lose the ability to move and speak</li>
+</ul>
+<ul>
+<li>Stroke survivors and people with MS; Morgan Stanley sees these among the first markets</li>
+</ul>
+<ul>
+<li>More than five million people with advanced macular degeneration who have lost central vision</li>
+</ul>
+<ul>
+<li>In future: more precise treatment of epilepsy, Parkinson's and treatment-resistant depression through neural stimulation</li>
+</ul>
+<p>For a patient, the real value is not typing speed; it is being able to message, work and decide without constant dependence on others.</p>
+<h3><span class="check-number">6.</span> How big is the market?</h3>
+<p>Estimates differ widely, because each counts something different:</p>
+<div class="tw"><table><tr><th>Estimate</th><th>Figure</th><th>What it counts</th></tr><tr><td>MarketsandMarkets</td><td>$262 million in 2024 to $506 million in 2029 (14.1% a year)</td><td>Current BCI device sales, mostly non-invasive and research</td></tr><tr><td>CSIS</td><td>More than $38 billion by 2032</td><td>The whole neurotechnology market, including neural stimulation</td></tr><tr><td>Morgan Stanley</td><td>$400 billion potential market in the US alone</td><td>Every patient who could in theory use one</td></tr></table></div>
+<p>Sources: <a href="https://www.marketsandmarkets.com/ResearchInsight/brain-computer-interface-market-size-and-share.asp" target="_blank" rel="noopener" style="color:#57D9C7">MarketsandMarkets</a>, <a href="https://www.csis.org/analysis/when-thought-becomes-data-mind-act-and-coming-debate-over-neurotechnology" target="_blank" rel="noopener" style="color:#57D9C7">CSIS</a> and <a href="https://www.massdevice.com/analysts-see-400b-bci-opportunity/" target="_blank" rel="noopener" style="color:#57D9C7">MassDevice</a>.</p>
+<p>Morgan Stanley itself is realistic: it expects "limited penetration" in the first 20 years after launch, cumulative revenue of just under $1.5 billion through 2035, and about $1 billion a year by 2041. Money today is betting on the future, not on today's sales.</p>
+<p>The cost is high too: analyst estimates put each Neuralink procedure, with surgery and support, at about $40,000 (<a href="https://sacra.com/c/neuralink/" target="_blank" rel="noopener" style="color:#57D9C7">Sacra</a>). This is an estimate, not an official price. Insurers usually cover costs only after final FDA approval.</p>
+<h3><span class="check-number">7.</span> Which businesses are disrupted, and which are born?</h3>
+<div class="tw"><table><tr><th>Field</th><th>Opportunity or change</th></tr><tr><td>Medicine and rehabilitation</td><td>Implant hardware, robotic surgery, specialist rehab centres</td></tr><tr><td>Artificial intelligence</td><td>Neural decoding models, much like the language models that rebuild speech</td></tr><tr><td>Chips and electronics</td><td>Low-power chips, batteries, wireless data transfer from inside the body</td></tr><tr><td>Software</td><td>Operating systems and interfaces controlled by thought</td></tr><tr><td>Cybersecurity</td><td>Protecting implanted devices and neural data</td></tr><tr><td>Insurance and finance</td><td>Models to cover implants and long-term support</td></tr><tr><td>Robotics and prosthetics</td><td>Arms and hands that work directly with the brain</td></tr><tr><td>Consumer products</td><td>Headphones and headbands that measure focus and sleep</td></tr></table></div>
+<p>Some businesses come under pressure: older assistive tools such as eye-tracking systems, parts of care services, and perhaps one day the keyboard and touchscreen themselves.</p>
+<p>The key economic question: will this industry make money from selling devices and services, or from analysing and selling users' data? The difference between those two models will decide the future of privacy.</p>
+<h3><span class="check-number">8.</span> Humans and technology: from keyboard to thought</h3>
+<p>Every few decades our relationship with computers has moved one step closer to the body: keyboard, mouse, touchscreen, voice, and now thought. Each step has taken more data from us:</p>
+<div class="tw"><table><tr><th>Tool</th><th>What it knows about us</th></tr><tr><td>The internet</td><td>What we search for</td></tr><tr><td>Smartphones</td><td>Where we go and who we talk to</td></tr><tr><td>Social media</td><td>What we care about</td></tr><tr><td>Smartwatches</td><td>Heart rate, activity and sleep</td></tr><tr><td>Neurotechnology</td><td>Some patterns of brain activity and mental state</td></tr></table></div>
+<p>This is a conceptual comparison, not a statistical one.</p>
+<p>The big difference is that some brain data is produced without our conscious choice. Nita Farahany warns of a future of "brain transparency", where companies learn our preferences before we do. On the merging of humans and AI she asks: "Where does the AI end, and where does the human begin?" (<a href="https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/" target="_blank" rel="noopener" style="color:#57D9C7">Fortune</a>).</p>
+<p>The concern is not only about implants. The Neurorights Foundation reviewed 30 companies selling consumer neurotechnology: 29 had access to users' brain data, and almost all could share it with third parties (<a href="https://kffhealthnews.org/mental-health/colorado-california-montana-states-neural-data-privacy-laws-neurorights/" target="_blank" rel="noopener" style="color:#57D9C7">KFF Health News</a>).</p>
+<h3><span class="check-number">9.</span> Seven questions that touch our lives</h3>
+<ul>
+<li>Work: can a company require staff to wear a focus-measuring headset? And is measured focus really productivity?</li>
+</ul>
+<ul>
+<li>Advertising: if our brain's reaction to an ad can be measured, where is the line between understanding a customer and manipulating a decision?</li>
+</ul>
+<ul>
+<li>Autonomy: interfaces both read data and can stimulate parts of the nervous system. Combining stimulation with AI raises questions about independent decisions, although full mind control is not possible with today's technology</li>
+</ul>
+<ul>
+<li>Children: constantly measuring pupils' attention could mislabel natural differences as "weakness" and turn childhood data into a permanent record</li>
+</ul>
+<ul>
+<li>Insurance and banks: if neural data reaches third parties, it could be used to judge health and risk. This is a possible scenario, not a use today</li>
+</ul>
+<ul>
+<li>Hacking and bankruptcy: a brain chip is not a phone you can set aside. There is a real precedent: Second Sight, maker of the Argus II bionic eye, stopped support, leaving hundreds of patients with devices nobody would repair (<a href="https://spectrum.ieee.org/bionic-eye-obsolete" target="_blank" rel="noopener" style="color:#57D9C7">IEEE Spectrum</a>)</li>
+</ul>
+<ul>
+<li>Inequality: if these tools one day boost healthy people's abilities, will only the wealthy have access?</li>
+</ul>
+<p>Surgery itself carries risk: infection, bleeding and tissue damage. That is why less invasive approaches, through blood vessels or on the brain's surface, have become an important path.</p>
+<h3><span class="check-number">10.</span> Where are the laws?</h3>
+<div class="tw"><table><tr><th>Where</th><th>What happened</th></tr><tr><td>Chile, 2021</td><td>First country to put neurorights in its constitution</td></tr><tr><td>Colorado, 2024</td><td>Neural data classed as sensitive; express consent to collect and a right to delete</td></tr><tr><td>California and Montana</td><td>Neural data added to privacy laws</td></tr><tr><td>China, August 2025</td><td>National BCI plan: key breakthroughs by 2027 and 2 to 3 globally leading firms by 2030</td></tr><tr><td>US Senate, September 2025</td><td>MIND Act proposed to study and regulate neural data; not yet passed</td></tr><tr><td>UNESCO, November 2025</td><td>First global framework on neurotechnology ethics; non-binding</td></tr></table></div>
+<p>Sources: <a href="https://kffhealthnews.org/mental-health/colorado-california-montana-states-neural-data-privacy-laws-neurorights/" target="_blank" rel="noopener" style="color:#57D9C7">KFF Health News</a>, <a href="https://english.www.gov.cn/news/202508/07/content_WS6894aab8c6d0868f4e8f4b24.html" target="_blank" rel="noopener" style="color:#57D9C7">Chinese government</a>, <a href="https://www.csis.org/analysis/when-thought-becomes-data-mind-act-and-coming-debate-over-neurotechnology" target="_blank" rel="noopener" style="color:#57D9C7">CSIS</a> and <a href="https://news.un.org/en/story/2025/11/1166277" target="_blank" rel="noopener" style="color:#57D9C7">UN News</a>.</p>
+<p>UNESCO's Dafna Feinholz says: "People say 'I have nothing to hide,' but they don't understand what they're giving away." Researchers from Harvard Medical School and Mass General Brigham, in a paper published on 27 July 2026 in Communications Medicine, concluded that current laws such as the US HIPAA and Europe's GDPR do not fully protect data from brain implants. They named five gaps: overreliance on de-identification, limited individual control, conflated consent for treatment and for data, weak guardrails against misuse, and unclear ownership of the data (<a href="https://www.nature.com/articles/s43856-026-01797-y" target="_blank" rel="noopener" style="color:#57D9C7">Communications Medicine</a>).</p>
+<h3><span class="check-number">11.</span> Principles that should apply</h3>
+<p>In Ditoman's view, responsible development of this technology needs these principles:</p>
+<ul>
+<li>Each person's right to control their own brain data</li>
+</ul>
+<ul>
+<li>No forced use of neural devices at work</li>
+</ul>
+<ul>
+<li>Separate consent for treatment, data collection and commercial use</li>
+</ul>
+<ul>
+<li>The ability to disconnect and delete data</li>
+</ul>
+<ul>
+<li>No discrimination based on neural data</li>
+</ul>
+<ul>
+<li>Guaranteed security and long-term support, even if the maker closes down</li>
+</ul>
+<h3><span class="check-number">12.</span> An opportunity for Iranian specialists</h3>
+<p>Much of this industry is no longer just surgery and hardware; it is signal processing, machine learning, low-power chip design, software and rehabilitation. These are fields where Iranian engineers, doctors and researchers have a track record and real ability.</p>
+<p>Anyone who builds expertise today in neural signal decoding, medical AI or medical device security is preparing for a market that analysts say is only just beginning.</p>
+<h3>Ditoman's view</h3>
+<p>Brain chips could be among the most valuable medical achievements of the 21st century. A person who has lost the ability to move or speak writing, speaking or seeing again is no small thing.</p>
+<p>But this technology's success should not be measured by chips sold or the value of the companies that make them; it should be measured by people's independence, health and quality of life.</p>
+<p>We should not have to hand over control of our minds to benefit from scientific progress. The last frontier of human privacy deserves laws written before its markets.</p>
+<p>If one day a brain chip could boost your ability to learn, work and connect, would you use it? And who should have access to its data?</p>
+<h3>Read more</h3><ul><li><a href="eu-50-billion-sovereign-tech-fund.en.html">Europe’s €50 billion sovereign tech fund</a></li><li><a href="world-depends-on-countries-iran.en.html">Who the world depends on, and where Iran fits</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/" target="_blank" rel="noopener">Fortune: Inside the race to put computers in the human brain (21 Nov 2026)</a></li><li><a href="https://glitchwire.com/news/neuralink-says-fda-has-approved-its-first-pivotal-trial-for-an-implantable-brain/" target="_blank" rel="noopener">Glitchwire: Neuralink says FDA approved its first pivotal trial (25 Nov 2026)</a></li><li><a href="https://www.nature.com/articles/s41586-023-06377-x" target="_blank" rel="noopener">Nature: A high-performance speech neuroprosthesis (Stanford, 2023)</a></li><li><a href="https://www.nature.com/articles/s41586-023-06443-4" target="_blank" rel="noopener">Nature: A high-performance neuroprosthesis for speech decoding and avatar control (UCSF, 2023)</a></li><li><a href="https://www.brown.edu/news/2024-08-14/bci-speak-again" target="_blank" rel="noopener">Brown University / UC Davis: BCI allows man with ALS to speak again (NEJM, 2024)</a></li><li><a href="https://www.nature.com/articles/s43856-026-01797-y" target="_blank" rel="noopener">Communications Medicine: Advancing data protections for implantable BCIs (July 2026)</a></li><li><a href="https://mgriblog.org/project/strategies-to-strengthen-data-privacy-for-brain-computer-interface-users/" target="_blank" rel="noopener">Mass General Brigham: Strategies to strengthen data privacy for BCI users</a></li><li><a href="https://www.medtechdive.com/news/synchron-funding-bci-200m/804977/" target="_blank" rel="noopener">MedTech Dive: Synchron raises $200M Series D</a></li><li><a href="https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/" target="_blank" rel="noopener">Paradromics: First human Connexus BCI implantation</a></li><li><a href="https://www.globenewswire.com/news-release/2025/04/17/3063418/0/en/Precision-Neuroscience-Receives-FDA-Clearance-for-High-Resolution-Cortical-Electrode-Array.html" target="_blank" rel="noopener">Precision Neuroscience: FDA clearance for cortical electrode array</a></li><li><a href="https://en.people.cn/n3/2026/0314/c90000-20436044.html" target="_blank" rel="noopener">People's Daily: China grants first market approval for invasive BCI</a></li><li><a href="https://newatlas.com/medical-tech/vision-restoring-retinal-implant-approval-europe/" target="_blank" rel="noopener">New Atlas: PRIMA retinal implant approved in Europe</a></li><li><a href="https://www.techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/" target="_blank" rel="noopener">TechCrunch: OpenAI invests in Merge Labs</a></li><li><a href="https://sacra.com/c/neuralink/" target="_blank" rel="noopener">Sacra: Neuralink funding and estimates</a></li><li><a href="https://www.marketsandmarkets.com/ResearchInsight/brain-computer-interface-market-size-and-share.asp" target="_blank" rel="noopener">MarketsandMarkets: BCI market size</a></li><li><a href="https://www.massdevice.com/analysts-see-400b-bci-opportunity/" target="_blank" rel="noopener">MassDevice: Morgan Stanley sees $400B BCI opportunity</a></li><li><a href="https://www.csis.org/analysis/when-thought-becomes-data-mind-act-and-coming-debate-over-neurotechnology" target="_blank" rel="noopener">CSIS: When thought becomes data, the MIND Act</a></li><li><a href="https://kffhealthnews.org/mental-health/colorado-california-montana-states-neural-data-privacy-laws-neurorights/" target="_blank" rel="noopener">KFF Health News: States pass neural data privacy laws</a></li><li><a href="https://news.un.org/en/story/2025/11/1166277" target="_blank" rel="noopener">UN News: UNESCO adopts global standard on neurotechnology ethics</a></li><li><a href="https://english.www.gov.cn/news/202508/07/content_WS6894aab8c6d0868f4e8f4b24.html" target="_blank" rel="noopener">Chinese government: BCI industry guideline</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/spinal-cord-injury" target="_blank" rel="noopener">WHO: Spinal cord injury fact sheet</a></li><li><a href="https://spectrum.ieee.org/bionic-eye-obsolete" target="_blank" rel="noopener">IEEE Spectrum: Their bionic eyes are now obsolete and unsupported</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 26 November 2026. Company figures were checked against Fortune and company announcements, scientific results against Nature and NEJM papers, and market estimates against published reports. Neuralink’s pivotal trial approval was announced by the company itself. Market and cost estimates are forecasts, not settled figures. Future scenarios are kept apart from today’s uses. The analysis section is Ditoman’s assessment.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
