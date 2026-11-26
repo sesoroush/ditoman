@@ -1030,7 +1030,7 @@ html:not([dir="rtl"]) .feat-newer svg { transform: scaleX(-1); }
 }
 
 /* ---------- Sideways rows (16 Nov 2026): story rows, lesson row ---------- */
-.hrow { margin-top: 26px; min-width: 0; }
+.hrow { margin-top: 26px; min-width: 0; scroll-margin-top: 150px; }
 .hrow:first-child { margin-top: 0; }
 .hrow-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
 .hrow-head h2, .hrow-head h3 { margin: 0; font-size: clamp(1.1rem, 2vw, 1.3rem); font-weight: 800; line-height: 1.5; display: flex; align-items: baseline; gap: 10px; }
@@ -1401,3 +1401,6 @@ a.xl, .lesson-content a.xl {
 }
 a.xl:hover, .lesson-content a.xl:hover { color: #FFAD00; text-decoration-style: solid; text-decoration-color: #FFAD00; }
 a.xl:focus-visible { outline: 2px solid #57D9C7; outline-offset: 2px; border-radius: 3px; }
+
+/* The old hero let clicks through to the map behind it; the new hero has nothing behind, so its cards and links must take clicks */
+.hero2 .hero-inner, .hero2 .hero-paths, .hero2 .hero-paths a, .hero2 .hero-lights { pointer-events: auto; }

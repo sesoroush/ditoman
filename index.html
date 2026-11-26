@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 
   <link rel="stylesheet" href="site.css?v=20261113" />
-  <link rel="stylesheet" href="theme.css?v=20261126a" />
+  <link rel="stylesheet" href="theme.css?v=20261126c" />
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="fa" href="https://ditoman.com/" />
   <link rel="alternate" hreflang="en" href="https://ditoman.com/index.en.html" />
@@ -244,7 +244,7 @@
               <span class="co-cat"><span lang="fa">فناوری</span><span lang="en">Tech</span></span>
               <h3>The Last Frontier of Privacy <span lang="fa">آخرین حریم خصوصی انسان؛ وقتی مغز به اینترنت وصل می‌شود</span></h3>
               <span class="co-time"><span lang="fa">۵ آذر · ۱۵ دقیقه مطالعه</span><span lang="en">26 Nov · 15 min read</span></span>
-              <p>Brain chips are giving paralysed people their voice back. The science, the companies, a 00 billion market, the businesses it changes, and who owns the data in our brains.</p>
+              <p>Brain chips are giving paralysed people their voice back. The science, the companies, a $400 billion market, the businesses it changes, and who owns the data in our brains.</p>
               <p class="co-fa" lang="fa">تراشه‌های مغزی، شرکت‌ها و پول پشتشان، بازار، کسب‌وکارهایی که تغییر می‌کنند و پرسش بزرگ: داده‌ی مغز ما مال کیست؟</p>
               <span class="co-go">Read the story</span>
             </div>
@@ -1668,14 +1668,20 @@
         order.sort(function (x, y) { return by[y].length - by[x].length; });
         box.appendChild(row("تازه‌ترین‌ها", "Newest", cards.slice(0, 12), ""));
         var rest = [];
-        order.forEach(function (k) { if (by[k].length >= 2) box.appendChild(row(k, names[k], by[k], k)); else rest = rest.concat(by[k]); });
+        var canon = { "Lights On": "چراغ روشن", "Iranian achievement": "چراغ روشن", "Technology": "فناوری", "Tech": "فناوری" };  // same key in every language edition
+        order.forEach(function (k) { if (by[k].length >= 2) box.appendChild(row(k, names[k], by[k], canon[names[k]] || k)); else rest = rest.concat(by[k]); });
         if (rest.length) box.appendChild(row("موضوع‌های دیگر", "More topics", rest, ""));
         grid.parentNode.insertBefore(box, grid);
         sec.classList.add("rows");
         document.querySelectorAll("a[data-cat]").forEach(function (a) {
           a.addEventListener("click", function (e) {
             var r = box.querySelector('.hrow[data-cat="' + a.getAttribute("data-cat") + '"]');
-            if (r) { e.preventDefault(); r.scrollIntoView({ behavior: "smooth", block: "center" }); }
+            if (!r) return;
+            e.preventDefault();
+            if (!r.offsetHeight) showAll();   // category rows stay folded until asked for
+            var go = function (smooth) { r.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" }); };
+            go(true);
+            setTimeout(function () { var t = r.getBoundingClientRect().top; if (t < 60 || t > 260) go(false); }, 900);   // rows above may have just unfolded
           });
         });
       }
