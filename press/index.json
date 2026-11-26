@@ -1,5 +1,186 @@
 [
  {
+  "date": "2026-11-26",
+  "jalali": "1405/09/05",
+  "weekday_fa": "پنجشنبه",
+  "post": "press/2026-11-26-post.webp",
+  "post_en": "press/2026-11-26-post-en.webp",
+  "lead_fa": "پنجم آذر با دلار حدود ۲۹۵ هزار تومان شروع شد؛ دومین روز جهش. سکه اما جای دیروز ماند، بورس چهارشنبه ۸۲ هزار واحد دیگر بالا رفت و نفت برنت از ۹۵ دلار گذشت. روی جلد روزنامه‌ها بیشتر سیاسی است؛ ما سراغ خبرهای زندگی و جیب رفته‌ایم و برای هر کدام نوشته‌ایم یعنی چه. با هم دنبال می‌کنیم.",
+  "lead_en": "5 Azar opened with the dollar near 295,000 tomans, a second day of jumps; the coin stayed where it was, the Tehran exchange added another 82,000 points on Wednesday and Brent passed $95. Most front pages are political; we picked the news that touches daily life and the wallet, with one line on what each means.",
+  "front_fa": "همشهری: «هجوم دیابت به دنیای کودکان» · خبرورزشی: «رقابت پنهانی بیفوما و یاسر آسانی»",
+  "front_en": "Hamshahri: “Diabetes invades the world of children” · Khabar Varzeshi: “The quiet rivalry of Bifouma and Yaser Asani”",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازار",
+    "en": "Economy & markets",
+    "items": [
+     {
+      "fa": "دلار ۲۹۳ تا ۲۹۵ هزار تومان، یورو ۳۲۱ هزار و ۸۰۰: گزارش‌های صبح امروز دلار آزاد را بین ۲۹۲ هزار و ۸۹۰ تا ۲۹۵ هزار و ۱۰۰ تومان نشان می‌دهد و یورو در بازگشایی ۱۰ هزار تومان گران شد؛ دیروز دلار ۲۸۳ هزار بود. یعنی در دو روز حدود ۱۲ هزار تومان روی هر دلار آمده؛ قیمت گوشی، لوازم خانگی و قطعات وارداتی معمولاً با چند هفته تأخیر همین مسیر را می‌رود.",
+      "en": "Dollar 293,000–295,000 tomans, euro 321,800: this morning’s reports put the free-market dollar between 292,890 and 295,100 tomans and the euro opened 10,000 higher; yesterday the dollar was 283,000. About 12,000 tomans have been added to each dollar in two days; phones, appliances and imported parts usually follow with a lag of a few weeks.",
+      "src": "اندیشه معاصر، خبرآنلاین، تعادل",
+      "url": "https://www.khabaronline.ir/news/2307080/"
+     },
+     {
+      "fa": "سکه ۲۶۱ میلیون، طلای ۱۸ عیار ۲۵٫۵ میلیون تومان: سکه امامی با وجود جهش دلار تقریباً جای دیروز (۲۶۲ میلیون) ماند و هر گرم طلای ۱۸ عیار حدود ۲۵ میلیون و ۵۰۰ هزار تومان است؛ اونس جهانی حدود ۳۵۶۰ دلار. یعنی این بار طلا دنبال دلار نرفته و حباب سکه کمی آب رفته؛ فاصله‌ی قیمت سکه با طلای آب‌شده را قبل از هر معامله بپرسید.",
+      "en": "Emami coin 261 million, 18k gold 25.5 million tomans: despite the dollar’s jump the Emami coin stayed roughly where it was yesterday (262 million) and 18k gold is about 25.5 million tomans a gram, with the ounce near $3,560. Gold did not chase the dollar this time and the coin’s premium shrank a little; ask for the gap between coin and melt price before any trade.",
+      "src": "اندیشه معاصر، دنیای اقتصاد، اقتصادآنلاین",
+      "url": "https://www.eghtesadonline.com/fa/news/2178113/"
+     },
+     {
+      "fa": "بورس ۸ میلیون و ۶۷۳ هزار واحد: شاخص کل چهارشنبه ۸۲ هزار و ۱۷۷ واحد (حدود یک درصد) بالا رفت و ارزش معاملات به ۵۵ همت رسید؛ جمع دو روز حدود ۳٫۴ درصد. یعنی بورس هنوز با دلار هم‌جهت است و پول به شرکت‌های صادراتی می‌رود؛ این هفته‌ی کاری با سه روز صعودی پشت سر هم بسته شد.",
+      "en": "Tehran index at 8,673,000: the main index rose 82,177 points (about 1%) on Wednesday with 55 trillion tomans traded, about 3.4% over two days. The exchange is still moving with the dollar and money is flowing to exporters; the trading week closed with three up days in a row.",
+      "src": "خبرآنلاین، مهر، چارسو اقتصاد",
+      "url": "https://www.mehrnews.com/news/7022847/"
+     },
+     {
+      "fa": "نفت برنت بالای ۹۵ دلار: برنت که اول هفته ۹۰ دلار بود، امروز از مرز ۹۵ دلار گذشت. یعنی برای هر میلیون بشکه صادرات روزانه، هر ۵ دلار افزایش ۵ میلیون دلار در روز درآمد بیشتر است؛ عددی که با تأخیر به بودجه و بازار ارز می‌رسد.",
+      "en": "Brent above $95: Brent, at $90 at the start of the week, crossed $95 today. For every million barrels exported a day, each $5 rise is $5 million a day more revenue, a number that reaches the budget and the currency market with a lag.",
+      "src": "شهرآرا، خبر پتروشیمی، اقتصادآنلاین",
+      "url": "https://shahraranews.ir/fa/news/462469/"
+     },
+     {
+      "fa": "کالابرگ گروه آخر فردا شارژ می‌شود: کالابرگ آبان گروه سوم دیروز واریز شد و گروه آخر، کد ملی‌های ۷، ۸ و ۹، فردا شارژ می‌شود. یعنی اگر هنوز چیزی نیامده، نوبت شماست نه حذف؛ اعتبار را در فروشگاه‌های طرف قرارداد با کارت بانکی سرپرست خانوار می‌توان خرج کرد.",
+      "en": "Last Kalabarg group charged tomorrow: the third group’s Aban credit was paid yesterday and the last group, national IDs 7, 8 and 9, is charged tomorrow. If nothing has arrived yet it is your turn, not a removal; the credit is spent at partner stores with the head of household’s bank card.",
+      "src": "مهر، شهرآرا",
+      "url": "https://www.mehrnews.com/news/7023010/"
+     },
+     {
+      "fa": "گوسفند زنده در مرز ۸۵۰ هزار تومان: قیمت دام زنده چهارشنبه به کیلویی ۸۵۰ هزار تومان نزدیک شد. یعنی گوشت گوسفندی که با قیمت تمام‌شده‌ی دام چند هفته قبل در قصابی است، با تأخیر این عدد را دنبال می‌کند؛ گوشت گوساله و مرغ گزینه‌ی ارزان‌تر همین هفته‌هاست.",
+      "en": "Live sheep near 850,000 tomans a kilo: live animal prices approached 850,000 tomans on Wednesday. The lamb in the butcher’s today reflects animal prices from weeks ago and will follow this number with a lag; beef and chicken are the cheaper option these weeks.",
+      "src": "وانانیوز، نورنیوز",
+      "url": "https://vananews.com/fa/news/671250/"
+     },
+     {
+      "fa": "قیمت خودرو رکورد زد: همشهری و اقتصادآنلاین می‌نویسند افزایش قیمت محصولات ایران‌خودرو و سایپا امروز شتاب گرفته و به رکورد رسیده. یعنی فروشنده با دلار ۲۹۵ هزار تومانی قیمت می‌دهد و خریدار منتظر است؛ تا بازار ارز آرام نشود، قیمت‌های اعلامی بیشتر «پیشنهاد» است تا «معامله».",
+      "en": "Car prices hit a record: Hamshahri and Eghtesad Online report that price rises for Iran Khodro and Saipa models accelerated to a record today. Sellers quote at a 295,000-toman dollar and buyers wait; until the currency market calms, listed prices are offers rather than deals.",
+      "src": "همشهری، اقتصادآنلاین",
+      "url": "https://www.eghtesadonline.com/fa/news/2178112/"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و تولید",
+    "en": "Industry & production",
+    "items": [
+     {
+      "fa": "پلمب انبار ۱۰ هزار خودروی ایران‌خودرو: دادستانی تهران محل نگهداری ۱۰ هزار دستگاه از محصولات ایران‌خودرو را پلمب کرد. یعنی خودروهایی که ساخته شده ولی به دست مشتری نرسیده بود شمارش می‌شود؛ ورودشان به بازار عرضه را بالا می‌برد، نه قیمت را.",
+      "en": "Storage site with 10,000 Iran Khodro cars sealed: Tehran’s prosecutor sealed a site holding 10,000 Iran Khodro vehicles. Cars that were built but never reached customers are now being counted; their release would add supply, not price.",
+      "src": "دیجیاتو",
+      "url": "https://digiato.com/car-news/tehran-prosecutor-seals-storage-site-holding-10000-iran-khodro-vehicles"
+     },
+     {
+      "fa": "۲۱ شرکت دانش‌بنیان پنج‌ستاره‌ی صادراتی: خبرگزاری آنا می‌نویسد ۲۱ شرکت دانش‌بنیان به بالاترین رتبه‌ی صادراتی رسیده‌اند. یعنی صادرات فناوری دیگر چند شرکت انگشت‌شمار نیست؛ دارو و تجهیزات پزشکی سال‌هاست رکورددار این فهرست‌اند.",
+      "en": "21 knowledge-based firms rated five-star exporters: ANA reports 21 knowledge-based companies have reached the top export rating. Tech exports are no longer a handful of firms; pharma and medical equipment have led this list for years.",
+      "src": "آنا",
+      "url": "https://ana.ir/fa/news/1098654/"
+     }
+    ]
+   },
+   {
+    "fa": "فناوری",
+    "en": "Technology",
+    "items": [
+     {
+      "fa": "۱۵ هزار امضا علیه گرانی ADSL مخابرات: مخابرات تأیید کرد برخی بسته‌ها سه تا چهار برابر شده؛ کف ماهانه ۱۰۹ هزار تومان برای ۴ مگ، ۱۲۳ هزار برای ۸ مگ و ۱۶۴ هزار برای ۱۶ مگ، و مثال خودش: بسته‌ی ۴۳ هزار تومانی ۱۲ گیگ شد ۱۰۹ هزار تومانی ۲۱ گیگ. یعنی قیمت هر گیگ حدود ۴۵ درصد بالا رفته نه سه برابر، ولی حداقل پرداخت ماهانه دو و نیم برابر شده؛ اگر مصرف کم دارید، فیبر یا بسته‌های حجمی موبایل را مقایسه کنید.",
+      "en": "15,000 signatures against TCI’s ADSL hike: the telecom company confirmed some packages tripled or quadrupled; monthly floors are 109,000 tomans for 4 Mbps, 123,000 for 8 and 164,000 for 16, and its own example is a 43,000-toman 12 GB plan becoming 109,000 for 21 GB. The price per gigabyte is up about 45%, not threefold, but the minimum monthly bill is two and a half times higher; light users should compare fibre or mobile data bundles.",
+      "src": "زومیت، مخابرات ایران",
+      "url": "https://www.zoomit.ir/iran-news/471860-tci-internet-price-hike-petition/"
+     },
+     {
+      "fa": "ترانزیت اینترنت ایران ۶٫۵ ترابیت بر ثانیه: ترافیک عبوری از شبکه‌ی ایران به ۶٫۵ ترابیت بر ثانیه رسیده و کریدور ارتباطی با آذربایجان سال آینده تکمیل می‌شود. یعنی ایران پل داده‌ی شرق و غرب شده و بابت هر ترابیت ارز می‌گیرد؛ کسب‌وکاری که به نفت ربطی ندارد.",
+      "en": "Iran’s internet transit at 6.5 Tbps: traffic passing through Iran’s network has reached 6.5 terabits a second and the link corridor with Azerbaijan is due next year. Iran is becoming the data bridge between east and west and earns hard currency per terabit, a business that has nothing to do with oil.",
+      "src": "خبرآنلاین",
+      "url": "https://www.khabaronline.ir/news/2306966/"
+     }
+    ]
+   },
+   {
+    "fa": "جامعه و محیط‌زیست",
+    "en": "Society & environment",
+    "items": [
+     {
+      "fa": "تهران: آلودگی تا صبح امروز، بعد باد: هواشناسی گفته بود آلودگی تا اوایل صبح پنجشنبه می‌ماند و بعد باد شدید می‌وزد و دما در بیشتر کشور کمی پایین می‌آید. یعنی از ظهر امروز هوای پایتخت کم‌کم باز می‌شود؛ باد شدید یعنی اشیای سبک بالکن را جمع کنید.",
+      "en": "Tehran: smog until this morning, then wind: forecasters said pollution would last until early Thursday, followed by strong winds and slightly lower temperatures across most of the country. From midday the capital’s air should start clearing; strong wind means securing anything loose on balconies.",
+      "src": "آنا، راهبرد معاصر، هفت صبح",
+      "url": "https://ana.ir/fa/news/1099931/"
+     },
+     {
+      "fa": "ذخایر سدهای دریاچه ارومیه ۱۲۷ درصد بیشتر شد: بارش‌های پاییز ذخیره‌ی سدهای حوضه را بیش از دو برابر پارسال کرده و عصر ایران می‌نویسد دریاچه در ۴۸ ساعت جان تازه گرفته. یعنی آب هست، ولی فعلاً پشت سد است؛ احیای واقعی به رهاسازی همین آب به سمت دریاچه بستگی دارد.",
+      "en": "Reservoirs feeding Lake Urmia up 127%: autumn rain has more than doubled the basin’s dam storage versus last year and Asr-e Iran says the lake came back to life within 48 hours. The water exists, but for now it sits behind dams; real recovery depends on releasing it toward the lake.",
+      "src": "جهان صنعت، دیده‌بان ایران، عصر ایران",
+      "url": "https://www.asriran.com/fa/news/1205143/"
+     },
+     {
+      "fa": "۳۳ هزار و ۹۰۰ معلم از بازنشستگی انصراف دادند: آموزش‌وپرورش با کمبود معلم روبه‌روست و نزدیک ۳۴ هزار فرهنگی بازنشستگی را عقب انداخته‌اند. یعنی کلاس درس امسال با معلم‌های باتجربه‌ای پر می‌شود که می‌توانستند بروند؛ کمبود اما با انصراف حل نمی‌شود، با استخدام حل می‌شود.",
+      "en": "33,900 teachers postponed retirement: the education ministry is short of teachers and nearly 34,000 staff have deferred retirement. Classrooms this year are staffed by experienced teachers who could have left; the shortage is bridged, not solved, until new hiring catches up.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     }
+    ]
+   },
+   {
+    "fa": "سلامت",
+    "en": "Health",
+    "items": [
+     {
+      "fa": "آنفلوآنزای امسال از نوع B و بیشتر در کودکان: در ابتدای آذر حدود ۳۰ درصد نمونه‌های تنفسی مثبت بوده، ۶۷٫۶ درصد موارد نوع B است و ۵۲٫۵ درصد مبتلایان کودک‌اند؛ پیک سه هفته زودتر از پارسال آمده. یعنی تب و بدن‌درد بچه‌ی مدرسه‌ای این هفته‌ها به احتمال زیاد آنفلوآنزاست؛ واکسن امسال نوع B را هم پوشش می‌دهد.",
+      "en": "This year’s flu is type B and mostly in children: about 30% of respiratory samples tested positive in early Azar, 67.6% of cases are type B and 52.5% of patients are children; the peak came three weeks earlier than last year. A schoolchild’s fever and aches these weeks are most likely flu; this year’s vaccine covers type B too.",
+      "src": "تابناک، وزارت بهداشت",
+      "url": "https://tabnak.ir/fa/news/4204158/"
+     },
+     {
+      "fa": "آنتی‌بیوتیک برای سرماخوردگی و آنفلوآنزا بی‌اثر است: سازمان غذا و دارو دوباره هشدار داده که این داروها روی ویروس اثر ندارند. یعنی آموکسی‌سیلین خودسرانه فقط باکتری‌های بدن را مقاوم می‌کند؛ برای آنفلوآنزا استراحت، مایعات و در موارد شدید داروی ضدویروس با نسخه.",
+      "en": "Antibiotics do nothing for colds and flu: the Food and Drug Organisation has warned again that these drugs have no effect on viruses. Self-prescribed amoxicillin only breeds resistant bacteria; for flu it is rest, fluids and, in severe cases, a prescribed antiviral.",
+      "src": "دنیای اقتصاد، سازمان غذا و دارو",
+      "url": "https://donya-e-eqtesad.com/"
+     },
+     {
+      "fa": "دیابت نوع ۲ به کودکان رسیده: تیتر یک همشهری؛ رئیس انجمن پزشکان کودکان می‌گوید چاقی کودکان که پیش از کرونا زیر ۱۴ درصد بود، بعد از تعطیلی مدارس بالا رفت و صبحانه نخوردن خطر را بیشتر می‌کند. یعنی دیابتی که قبلاً بیماری میان‌سالی بود حالا در مدرسه دیده می‌شود؛ صبحانه و نیم ساعت بازی روزانه ساده‌ترین پیشگیری است.",
+      "en": "Type 2 diabetes reaches children: Hamshahri’s lead; the head of the paediatricians’ association says childhood obesity, under 14% before Covid, rose after school closures, and skipping breakfast raises the risk. A disease once of middle age is now seen at school; breakfast and half an hour of daily play are the simplest prevention.",
+      "src": "همشهری، شفقنا",
+      "url": "https://media.shafaqna.com/news/580895/"
+     },
+     {
+      "fa": "مسمومیت الکلی در نیشابور ۵ نفر را کشت: موج مسمومیت با الکل دست‌ساز به خراسان رسیده است. یعنی متانول این هفته‌ها در بازار سیاه است و تاری دید بعد از مصرف، اورژانس است، نه خواب.",
+      "en": "Alcohol poisoning kills 5 in Neyshabur: the wave of bootleg-alcohol poisonings has reached Khorasan. Methanol is in the black market these weeks; blurred vision after drinking is an emergency, not something to sleep off.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     }
+    ]
+   },
+   {
+    "fa": "ورزش و فرهنگ",
+    "en": "Sport & culture",
+    "items": [
+     {
+      "fa": "«رقابت پنهانی بیفوما و یاسر آسانی»: تیتر خبرورزشی درباره‌ی دو وینگر پرسپولیس پیش از سفر به اراک برای بازی با آلومینیوم. یعنی تارتار دو مهاجم کناری در فرم دارد و باید یکی را روی نیمکت بگذارد؛ در زمینی که پرسپولیس خاطره‌ی تلخ حذف از آن دارد.",
+      "en": "“The quiet rivalry of Bifouma and Yaser Asani”: Khabar Varzeshi’s lead on Persepolis’s two wingers ahead of the trip to Arak to face Aluminium. Coach Tartar has two in-form wide forwards and must bench one, on a pitch where Persepolis has a bitter memory of elimination.",
+      "src": "خبرورزشی، پارس فوتبال",
+      "url": "https://www.khabarvarzeshi.com/news/564672/"
+     },
+     {
+      "fa": "شانس ۸۳ درصدی استقلال برای صعود در آسیا: مدل‌های آماری احتمال رسیدن استقلال به یک‌هشتم لیگ نخبگان آسیا را ۸۳ درصد می‌دانند. یعنی با وجود نیم‌فصل پرنوسان، راه آسیا برای آبی‌ها هنوز باز است و بختیاری‌زاده فرصت دارد.",
+      "en": "Esteghlal’s 83% chance of advancing in Asia: statistical models put Esteghlal’s odds of reaching the Champions League Elite round of 16 at 83%. Despite a bumpy half-season the Asian path is still open for the Blues, and Bakhtiarizadeh has time.",
+      "src": "پارس فوتبال",
+      "url": "https://parsfootball.com/na/2507270/"
+     },
+     {
+      "fa": "بسکتبال دنبال دو برد در پنجره‌ی جهانی: تیم ملی بسکتبال در پنجره‌ی سخت انتخابی جام جهانی به دو برد نیاز دارد. یعنی دو شب بسکتبال که سرنوشت حضور ایران در جام جهانی را روشن می‌کند.",
+      "en": "Basketball chasing two wins in the World Cup window: the national team needs two wins in a tough qualifying window. Two nights of basketball that decide Iran’s place at the World Cup.",
+      "src": "پارس فوتبال",
+      "url": "https://parsfootball.com/na/news/2507287/"
+     },
+     {
+      "fa": "کنسرت علیرضا قربانی در مشهد مجوز گرفت: «ایرانم» از ۸ تا ۱۲ آذر پنج شب در سالن ۶ هزار نفری شاندیز اجرا می‌شود. یعنی قفل کنسرت‌های بزرگ مشهد بعد از سال‌ها باز شد؛ ۳۰ هزار صندلی برای شهری که مدت‌ها فقط تماشاگر کنسرت‌های تهران بود.",
+      "en": "Alireza Ghorbani’s Mashhad concert approved: “Iranam” runs five nights, 8–12 Azar, in Shandiz’s 6,000-seat hall. The lock on big concerts in Mashhad has opened after years; 30,000 seats for a city that long only watched Tehran’s concerts.",
+      "src": "همشهری، پرسون",
+      "url": "https://www.hamshahrionline.ir/news/1089689/"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-25",
   "jalali": "1405/09/04",
   "weekday_fa": "چهارشنبه",
