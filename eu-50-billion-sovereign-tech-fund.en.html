@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-lang-lock="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>Europe’s €50B Tech Bet | Ditoman</title>
+<meta name="description" content="From AI to quantum: the STEF fund and the Quantum Act, who gains and where it works" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/eu-50-billion-sovereign-tech-fund.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/eu-50-billion-sovereign-tech-fund.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/eu-50-billion-sovereign-tech-fund.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/eu-50-billion-sovereign-tech-fund.en.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="Europe’s €50B Tech Bet | Ditoman" />
+<meta property="og:description" content="From AI to quantum: the STEF fund and the Quantum Act, who gains and where it works" />
+<meta property="og:url" content="https://ditoman.com/eu-50-billion-sovereign-tech-fund.en.html" />
+<meta property="og:image" content="https://ditoman.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://ditoman.com/eu-50-billion-sovereign-tech-fund.en.html#page",
+   "url": "https://ditoman.com/eu-50-billion-sovereign-tech-fund.en.html",
+   "name": "Europe’s €50B Tech Bet | Ditoman",
+   "description": "From AI to quantum: the STEF fund and the Quantum Act, who gains and where it works",
+   "isPartOf": {
+    "@id": "https://ditoman.com/#website"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Europe’s €50B Tech Bet",
+     "item": "https://ditoman.com/eu-50-billion-sovereign-tech-fund.en.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.en.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.en.html">Learn</a>
+<a href="iran.en.html">Iran</a>
+<a href="companies.en.html">Companies</a>
+<a href="prices.en.html">Prices</a>
+<a href="calendar.en.html">Calendar</a>
+<a href="tmn.en.html">TMN</a>
+<a href="index.en.html#whitepapers">Whitepaper</a>
+<a href="posts.en.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/eu-50-billion-sovereign-tech-fund/card.webp" srcset="social/eu-50-billion-sovereign-tech-fund/card.webp 900w, social/eu-50-billion-sovereign-tech-fund/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="Europe’s €50 billion bet on future tech" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/eu-50-billion-sovereign-tech-fund/en-card.webp" srcset="social/eu-50-billion-sovereign-tech-fund/en-card.webp 900w, social/eu-50-billion-sovereign-tech-fund/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="Europe’s €50 billion bet on future tech" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Tech · Europe</span><span lang="fa">فناوری · اروپا</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">اروپا با ۵۰ میلیارد یورو به رقابت فناوری آینده می‌آید</h1>
+<h1 lang="en">Europe’s €50 billion bet on future tech</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">از هوش مصنوعی تا کوانتوم: صندوق STEF و قانون کوانتوم، چه کسانی می‌برند و کجا بیشتر جواب می‌دهد</p>
+<p class="subtitle" lang="en">From AI to quantum: the STEF fund and the Quantum Act, who gains and where it works best</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۵۰ میلیارد یورو</b><b lang="en">€50B</b><span lang="fa">هدف صندوق STEF، نه پول قطعی</span><span lang="en">STEF target, not committed money</span></div>
+<div class="stat"><b lang="fa">یک‌سوم</b><b lang="en">One-third</b><span lang="fa">سهم اتحادیه از شرکت‌های کوانتومی جهان</span><span lang="en">EU share of the world’s quantum companies</span></div>
+<div class="stat"><b lang="fa">۵٪</b><b lang="en">5%</b><span lang="fa">سهم اروپا از سرمایه‌ی خصوصی کوانتوم در ۲۰۲۵</span><span lang="en">Europe’s share of private quantum funding, 2025</span></div>
+<div class="stat"><b lang="fa">۱۰ برابر</b><b lang="en">10×</b><span lang="fa">اندازه‌ی هدف نسبت به صندوق Scaleup Europe</span><span lang="en">target size vs the Scaleup Europe Fund</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>کمیسیون اروپا در ۲۵ نوامبر ۲۰۲۶ «قانون کوانتوم» را پیشنهاد داد و زمینه‌ی یک صندوق سرمایه‌گذاری سهامی تازه را چید: <strong>صندوق سهام فناوری مستقل اروپا (Sovereign Tech Equity Fund یا STEF)</strong> با هدف تا <strong>۵۰ میلیارد یورو</strong> برای هوش مصنوعی، کوانتوم، تراشه و زیرساخت ابری. هنّا ویرکونن، معاون اجرایی کمیسیون در امور حاکمیت فناوری، گفت: «اروپا باید همین حالا سرعت بگیرد.» این گزارش می‌گوید این پول از کجا می‌آید، با برنامه‌های قبلی چه فرقی دارد، به چه کسانی بیشتر می‌رسد و در کدام مناطق اروپا احتمالاً بیشتر جواب می‌دهد.</blockquote>
+<h3>در یک نگاه</h3>
+<ul>
+<li><strong>چه شد:</strong> پیشنهاد قانون کوانتوم و طرح اولیه‌ی صندوق STEF در یک روز</li>
+</ul>
+<ul>
+<li><strong>رقم:</strong> تا ۵۰ میلیارد یورو، ولی <strong>هدف است، نه پول قطعی.</strong> سهم پول عمومی هنوز در مذاکره است</li>
+</ul>
+<ul>
+<li><strong>فرق اصلی:</strong> چک‌های بزرگ‌تر، ریسک بیشتر و نگهداری طولانی‌تر سهام نسبت به برنامه‌های فعلی</li>
+</ul>
+<ul>
+<li><strong>ذی‌نفع اصلی:</strong> شرکت‌هایی که از مرحله‌ی استارتاپ گذشته‌اند و برای بزرگ شدن به صدها میلیون یورو نیاز دارند</li>
+</ul>
+<ul>
+<li><strong>زمان:</strong> جزئیات در فوریه؛ تأمین مالی به بودجه‌ی هفت‌ساله‌ی ۲۰۲۸ تا ۲۰۳۴ گره خورده</li>
+</ul>
+<h3><span class="check-number">1.</span> دقیقاً چه اتفاقی افتاد؟</h3>
+<p>کمیسیون اروپا دو کار را با هم انجام داد (<a href="https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial" target="_blank" rel="noopener" style="color:#57D9C7">کمیسیون اروپا</a>):</p>
+<ul>
+<li><strong>قانون کوانتوم:</strong> چارچوبی برای اینکه پژوهش کوانتومی اروپا به محصول و صنعت تبدیل شود، زنجیره‌ی تأمین امن شود و سامانه‌های دیجیتال برای رمزنگاری پساکوانتومی آماده شوند</li>
+</ul>
+<ul>
+<li><strong>صندوق STEF:</strong> ابزار تازه‌ای برای سرمایه‌گذاری سهامی و شبه‌سهامی در فناوری‌هایی که برای حاکمیت فناوری و امنیت اقتصادی اروپا حیاتی‌اند. کمیسیون می‌گوید آن را «به‌سرعت» با گروه بانک سرمایه‌گذاری اروپا (EIB) و کشورهای عضو راه می‌اندازد</li>
+</ul>
+<p>ویرکونن گفته: «می‌خواهیم صندوقی بسازیم و هدف ما اکنون ۵۰ میلیارد یورو است» و این رقم را «نقطه‌ی شروع» خوانده (<a href="https://www.implicator.ai/sources-eu-plans-mobilize-up-50b-sovereign-tech-equity-fund/" target="_blank" rel="noopener" style="color:#57D9C7">Implicator</a>). طبق گزارش‌ها، امانوئل مکرون هم از همین رقم حمایت کرده و کمیسیون کل نیاز سرمایه‌گذاری برای حاکمیت فناوری را حدود <strong>۵۰۰ میلیارد یورو</strong> برآورد می‌کند (<a href="https://hedgeco.net/news/11/2026/european-commission-proposes-a-e50-billion-sovereign-tech-equity-fund-to-take-large-stakes-in-ai-and-quantum-companies.html" target="_blank" rel="noopener" style="color:#57D9C7">HedgeCo</a>).</p>
+<h3><span class="check-number">2.</span> چرا اروپا به چنین صندوقی نیاز دارد؟</h3>
+<div class="tw"><table><tr><th>شاخص</th><th>اروپا</th><th>مقایسه</th></tr><tr><td>سهم از شرکت‌های کوانتومی جهان</td><td>حدود یک‌سوم</td><td>بیشترین سهم در جهان</td></tr><tr><td>سرمایه‌ی خصوصی استارتاپ‌های کوانتومی در ۲۰۲۵</td><td>۱٫۱ میلیارد یورو (حدود ۵٪ جهان)</td><td>آمریکا: ۷ میلیارد یورو</td></tr><tr><td>سهم از جریان جهانی سرمایه‌گذاری خطرپذیر</td><td>حدود ۵٪</td><td>آمریکا ۵۲٪، چین ۴۰٪</td></tr><tr><td>یونیکورن‌هایی که به خارج می‌روند</td><td>نزدیک ۳۰٪</td><td></td></tr><tr><td>وابستگی به تأمین‌کنندگان غیراروپایی در محصولات و مالکیت فکری دیجیتال کلیدی</td><td>بیش از ۸۰٪</td><td></td></tr></table></div>
+<p>منابع: <a href="https://quantumcomputingreport.com/european-commission-proposes-eu-quantum-act-and-sovereign-tech-equity-fund-to-scale-industrial-capacity-by-2030/" target="_blank" rel="noopener" style="color:#57D9C7">Quantum Computing Report</a> و <a href="https://political.org/2026/11/24/eu-plans-up-to-e50-billion-sovereign-tech-fund-to-reduce-reliance-on-us-and-chinese-technology/" target="_blank" rel="noopener" style="color:#57D9C7">Political.org</a>.</p>
+<p>خلاصه‌ی مشکل: اروپا در پژوهش قوی است، ولی وقتی شرکت‌ها می‌خواهند بزرگ شوند، <strong>چک‌های بزرگ در داخل قاره کم است.</strong> طبق مطالعه‌ی بانک سرمایه‌گذاری اروپا، اسکیل‌آپ‌های اروپایی تا سال دهم حدود نصف همتایان سان‌فرانسیسکویی سرمایه جذب می‌کنند. نتیجه این است که شرکت‌ها برای سرمایه، خریدار یا ورود به بورس به آمریکا می‌روند.</p>
+<p>یک مقام کمیسیون این‌طور گفته: «آنچه در این منظره کم است، چک‌های بزرگ‌تر برای تأمین مالی شرکت‌های راهبردی ماست.»</p>
+<h3><span class="check-number">3.</span> مقایسه با برنامه‌های قبلی</h3>
+<div class="tw"><table><tr><th>برنامه</th><th>سال</th><th>اندازه</th><th>اندازه‌ی چک برای هر شرکت</th><th>ویژگی</th></tr><tr><td>صندوق شورای نوآوری اروپا (EIC)</td><td>در حال فعالیت</td><td></td><td>تا ۳۰ میلیون یورو</td><td>استارتاپ‌های فناوری عمیق</td></tr><tr><td>طرح قهرمانان فناوری اروپا (ETCI)</td><td>۲۰۲۳</td><td>صندوق صندوق‌ها</td><td>از طریق صندوق‌های بزرگ</td><td>۱۵ صندوق بزرگ و ۱۲ یونیکورن</td></tr><tr><td>صندوق Scaleup Europe</td><td>۲۰۲۵ تا ۲۰۲۶</td><td>هدف ۵ میلیارد یورو (۱ میلیارد از کمیسیون)</td><td>حدود ۱۰۰ تا ۳۰۰ میلیون یورو</td><td>مدیریت EQT؛ از سری B به بعد</td></tr><tr><td>نسخه‌ی دوم ETCI</td><td>ژوئیه‌ی ۲۰۲۶</td><td>تا ۱۵ میلیارد یورو، بسیج تا ۸۰ میلیارد</td><td>میانگین ۲۰۰ میلیون یورو</td><td>بیش از ۱۵۰۰ اسکیل‌آپ، هر ۲۷ کشور</td></tr><tr><td>صندوق STEF</td><td>پیشنهاد نوامبر ۲۰۲۶</td><td>هدف تا ۵۰ میلیارد یورو</td><td>«بزرگ‌تر» (هنوز اعلام نشده)</td><td>سهم مستقیم، پرریسک‌تر و بلندمدت‌تر</td></tr></table></div>
+<p>منابع: <a href="https://www.eib.org/en/press/all/2026-244-europe-launches-eur80-billion-investment-alliance-to-scale-up-tech-leaders?lang=nl" target="_blank" rel="noopener" style="color:#57D9C7">EIB</a>، <a href="https://www.emdesk.com/horizon-2020-horizon-europe-basics-guide/scaleup-europe-fund-first-investments" target="_blank" rel="noopener" style="color:#57D9C7">EMDESK</a>، HedgeCo.</p>
+<p><strong>تفاوت اصلی STEF:</strong> برنامه‌های قبلی بیشتر «صندوق صندوق‌ها» بودند و پول را به مدیران خصوصی می‌سپردند. STEF قرار است مستقیم‌تر وارد شود، سهم بزرگ‌تر بگیرد و صبورتر بماند. اندازه‌اش هم ده برابر هدف Scaleup Europe است.</p>
+<p><strong>پیش‌زمینه‌ی بزرگ‌تر:</strong> گزارش ماریو دراگی در سپتامبر ۲۰۲۴ گفت اروپا باید سالانه حدود <strong>۸۰۰ میلیارد یورو</strong> بیشتر سرمایه‌گذاری کند؛ یعنی حدود ۵ واحد درصد تولید ناخالص داخلی. برای مقایسه، طرح مارشال سالانه ۱ تا ۲ درصد بود (<a href="https://www.brusselstimes.com/1217102/staying-in-the-global-game-eu-must-raise-spending-by-unprecedented-e800-billion-a-year-tbtb" target="_blank" rel="noopener" style="color:#57D9C7">Brussels Times</a>). STEF تکه‌ای از پاسخ به همان شکاف است.</p>
+<h3><span class="check-number">4.</span> قانون کوانتوم چه می‌خواهد؟</h3>
+<div class="tw"><table><tr><th>هدف</th><th>زمان</th></tr><tr><td>حدود ۱۰۰ کیوبیت منطقیِ تصحیح‌خطا در هر سیستم</td><td>۲۰۳۰</td></tr><tr><td>هزاران کیوبیت منطقی</td><td>۲۰۳۵</td></tr><tr><td>ناوبری و زمان‌سنجی بدون ماهواره</td><td>۲۰۳۰</td></tr><tr><td>شبکه‌های کوانتومی شهری ۵۰ کیلومتری</td><td></td></tr><tr><td>شبکه‌ی ارتباط کوانتومی زمینی و فضایی اروپا (EuroQCI)</td><td>۲۰۳۱</td></tr><tr><td>شروع مهاجرت به رمزنگاری مقاوم در برابر کوانتوم</td><td>پایان ۲۰۲۶</td></tr><tr><td>امن‌سازی سامانه‌های پرخطر</td><td>پایان ۲۰۳۰</td></tr></table></div>
+<p>ابزارهای دیگر قانون: شبکه‌ی پژوهشگاه‌های برتر، چالش‌های بزرگ با تأمین مالی هدفمند، هاب‌های نوآوری برای استارتاپ‌ها، پروژه‌های راهبردی صنعتی، پایش زنجیره‌ی تأمین و <strong>اولویت خرید عمومی برای تأمین‌کنندگان اروپایی و شرکای متقابل</strong>. کمیسیون می‌گوید این به معنای ساخت همه‌ی قطعات در اروپا نیست.</p>
+<p>طبق راهبرد کوانتوم کمیسیون (۲۰۲۵)، پول عمومی کوانتوم در اتحادیه و کشورهای عضو بیش از ۱۱ میلیارد یورو بوده و نیاز تأمین مالی ۲۰۲۸ تا ۲۰۳۴ بین ۱۲٫۹ و ۱۸٫۱ میلیارد یورو برآورد شده است (<a href="https://quantumcomputingreport.com/european-commission-proposes-eu-quantum-act-and-sovereign-tech-equity-fund-to-scale-industrial-capacity-by-2030/" target="_blank" rel="noopener" style="color:#57D9C7">Quantum Computing Report</a>).</p>
+<h3><span class="check-number">5.</span> کاربردها: چرا کوانتوم مهم است؟</h3>
+<ul>
+<li><strong>پزشکی:</strong> شبیه‌سازی مولکول‌ها و تسریع کشف دارو؛ قانون از تصویربرداری پزشکی کوانتومی هم نام می‌برد</li>
+</ul>
+<ul>
+<li><strong>انرژی:</strong> طراحی مواد پیشرفته و باتری‌های کارآمدتر</li>
+</ul>
+<ul>
+<li><strong>حمل‌ونقل:</strong> بهینه‌سازی مسیرها و ناوبری مستقل از ماهواره</li>
+</ul>
+<ul>
+<li><strong>صنعت:</strong> شبیه‌سازی مواد و فرایندهای پیچیده‌ی تولید</li>
+</ul>
+<ul>
+<li><strong>امنیت دیجیتال:</strong> رمزنگاری مقاوم در برابر کامپیوترهای کوانتومی آینده</li>
+</ul>
+<p>بسیاری از این کاربردها هنوز در مرحله‌ی پژوهش‌اند؛ برای همین است که پول صبور اهمیت دارد.</p>
+<h3><span class="check-number">6.</span> چه کسانی بیشتر سود می‌برند؟</h3>
+<p>این بخش تحلیل دیتومان است که بر پایه‌ی داده‌های بالا ساخته شده.</p>
+<div class="tw"><table><tr><th>گروه</th><th>چرا</th></tr><tr><td>اسکیل‌آپ‌های هوش مصنوعی، کوانتوم و تراشه</td><td>گره اصلی آن‌ها چک‌های صدها میلیونی است؛ دقیقاً همان چیزی که STEF هدف گرفته</td></tr><tr><td>صندوق‌های بزرگ رشد و سرمایه‌گذاران نهادی</td><td>پول عمومی قرار است کنارشان بیاید و ریسکشان را کم کند (هدف: تا ۶ یورو پول خصوصی به ازای هر ۱ یورو پول اتحادیه)</td></tr><tr><td>پژوهشگاه‌ها و دانشگاه‌های قطب‌ها</td><td>شبکه‌ی پژوهشگاه‌ها، زیرساخت مشترک و چالش‌های بزرگ</td></tr><tr><td>خریداران عمومی و صنایع امنیتی</td><td>اولویت خرید اروپایی و مهاجرت اجباری به رمزنگاری پساکوانتومی</td></tr><tr><td>استارتاپ‌های خیلی نوپا</td><td>سود کمتر و غیرمستقیم؛ STEF برای مراحل بزرگ‌تر است</td></tr></table></div>
+<h3><span class="check-number">7.</span> در کدام مناطق اروپا احتمالاً بیشتر جواب می‌دهد؟</h3>
+<p>پول سهامی معمولاً به جایی می‌رود که شرکت‌های آماده‌ی رشد وجود دارند. طبق یک بررسی تازه‌ی پژوهشی از ۹۳۵ شرکت فناوری کوانتومی جهان، اتحادیه‌ی اروپا ۲۶۳ شرکت دارد (حدود ۲۸٪)، آمریکا ۱۸۹ و چین ۱۰۰ (<a href="https://arxiv.org/pdf/2611.16838" target="_blank" rel="noopener" style="color:#57D9C7">arXiv</a>).</p>
+<div class="tw"><table><tr><th>منطقه</th><th>پایه‌ی موجود</th><th>ارزیابی دیتومان</th></tr><tr><td>آلمان (مونیخ و جنوب)</td><td>۸۱ شرکت کوانتومی؛ بیشترین در اتحادیه</td><td>احتمالاً بزرگ‌ترین ذی‌نفع</td></tr><tr><td>فرانسه (پاریس و ساکلی)</td><td>۳۳ شرکت کوانتومی؛ اکوسیستم قوی هوش مصنوعی</td><td>ذی‌نفع بزرگ؛ حمایت سیاسی مکرون از رقم ۵۰ میلیارد</td></tr><tr><td>هلند (دلفت و آیندهوون)</td><td>۲۹ شرکت کوانتومی؛ صنعت تراشه</td><td>ذی‌نفع قوی در کوانتوم و تراشه</td></tr><tr><td>شمال اروپا (فنلاند، سوئد، دانمارک)</td><td>شرکت‌هایی مثل IQM؛ سرمایه‌گذاران بزرگی مثل EQT، والنبرگ و Novo Holdings</td><td>هم شرکت دارد، هم سرمایه‌گذار</td></tr><tr><td>جنوب اروپا (اسپانیا، ایتالیا)</td><td>بانک‌ها و بنیادهایی مثل سانتاندر، BBVA و اینتسا سان‌پائولو سرمایه‌گذارند</td><td>بیشتر به‌عنوان تأمین‌کننده‌ی پول تا گیرنده</td></tr><tr><td>شرق و مرکز اروپا</td><td>قطب‌های کوچک‌تر</td><td>خطر عقب‌ماندن، مگر اینکه سهمیه یا شبکه‌ی هاب‌ها جبران کند</td></tr></table></div>
+<p>بریتانیا با ۷۰ شرکت کوانتومی بیرون از اتحادیه است؛ اینکه شرکت‌های بریتانیایی بتوانند از STEF پول بگیرند، هنوز اعلام نشده.</p>
+<h3><span class="check-number">8.</span> آینده: چه چیزهایی را باید دید؟</h3>
+<ul>
+<li><strong>فوریه:</strong> جزئیات صندوق، پیش از نشست رهبران اتحادیه درباره‌ی رقابت‌پذیری</li>
+</ul>
+<ul>
+<li><strong>بودجه‌ی ۲۰۲۸ تا ۲۰۳۴:</strong> اندازه‌ی نهایی صندوق به مذاکرات بودجه‌ی هفت‌ساله و «صندوق رقابت‌پذیری اروپا» گره خورده</li>
+</ul>
+<ul>
+<li><strong>پارلمان و شورا:</strong> قانون کوانتوم باید از روند عادی قانون‌گذاری بگذرد</li>
+</ul>
+<ul>
+<li><strong>حکمرانی:</strong> چه کسی تصمیم سرمایه‌گذاری را می‌گیرد و سود با سرمایه‌گذاران خصوصی چطور تقسیم می‌شود</li>
+</ul>
+<p><strong>نقدها:</strong> تحلیلگران می‌پرسند آیا صندوق دولتی بزرگ سرمایه‌ی خصوصی را کنار نمی‌زند؟ سرمایه‌گذاری پرریسک‌تر یعنی احتمال زیان برای مالیات‌دهندگان. برخی می‌گویند مقررات‌زدایی بیشتر از صندوق دولتی کمک می‌کند و برخی دیگر از سرمایه‌گذاری عمومی استقبال می‌کنند ولی سازوکار پاسخ‌گویی می‌خواهند.</p>
+<h3><span class="check-number">9.</span> برای بازار کار و برای ما چه معنایی دارد؟</h3>
+<p>اگر برنامه موفق شود، تقاضا برای متخصصان <strong>نرم‌افزار، الکترونیک، مهندسی مواد، فیزیک، امنیت سایبری و هوش مصنوعی</strong> در اروپا بیشتر می‌شود. شرکت‌های کوچک و دانشگاه‌ها هم با دسترسی بهتر به تجهیزات و سرمایه، ایده را به محصول نزدیک‌تر می‌کنند.</p>
+<p>برای دانشجویان، مهندسان و کارآفرینان ایرانی، به‌ویژه کسانی که در اروپا هستند، دنبال کردن هاب‌های کوانتومی، چالش‌های بزرگ و شرکت‌هایی که از این صندوق‌ها پول می‌گیرند، نقشه‌ی خوبی از فرصت‌های شغلی و پژوهشی چند سال آینده است.</p>
+<h3>تحلیل دیتومان</h3>
+<p>رقابت فناوری در جهان دیگر فقط بر سر ساختن مدل‌های پیشرفته‌تر هوش مصنوعی نیست؛ بر سر <strong>مالکیت زیرساخت، توان پردازش، دانش فنی و ظرفیت تولید صنعتی</strong> است. اروپا می‌گوید پژوهش و استعداد کم ندارد؛ <strong>چک بزرگ</strong> کم دارد.</p>
+<p>ولی رقم ۵۰ میلیارد یورو فعلاً یک هدف است، قانون کوانتوم هنوز تصویب نشده و پول واقعی به بودجه‌ی ۲۰۲۸ گره خورده. معیار موفقیت این نیست که صندوق چقدر بزرگ اعلام شود؛ این است که چند شرکت اروپایی به لطف آن <strong>در اروپا می‌مانند و بزرگ می‌شوند.</strong></p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="ai-jobs-wrong-question.en.html">همه درباره‌ی هوش مصنوعی سؤال را اشتباه می‌پرسند</a></li><li><a href="remote-income-from-iran.en.html">درآمد ارزی از ایران؛ فرصت‌های واقعی</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial" target="_blank" rel="noopener">European Commission: Commission proposes Quantum Act and new Sovereign Tech Equity Fund (25 Nov 2026)</a></li><li><a href="https://thequantuminsider.com/2026/11/25/european-commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund/" target="_blank" rel="noopener">The Quantum Insider: European Commission proposes Quantum Act and new Sovereign Tech Equity Fund (25 Nov 2026)</a></li><li><a href="https://quantumcomputingreport.com/european-commission-proposes-eu-quantum-act-and-sovereign-tech-equity-fund-to-scale-industrial-capacity-by-2030/" target="_blank" rel="noopener">Quantum Computing Report: EU Quantum Act and Sovereign Tech Equity Fund to scale industrial capacity by 2030</a></li><li><a href="https://www.implicator.ai/sources-eu-plans-mobilize-up-50b-sovereign-tech-equity-fund/" target="_blank" rel="noopener">Implicator: EU plans to mobilise up to €50B Sovereign Tech Equity Fund (25 Nov 2026)</a></li><li><a href="https://hedgeco.net/news/11/2026/european-commission-proposes-a-e50-billion-sovereign-tech-equity-fund-to-take-large-stakes-in-ai-and-quantum-companies.html" target="_blank" rel="noopener">HedgeCo: Commission proposes €50 billion Sovereign Tech Equity Fund (citing Politico)</a></li><li><a href="https://political.org/2026/11/24/eu-plans-up-to-e50-billion-sovereign-tech-fund-to-reduce-reliance-on-us-and-chinese-technology/" target="_blank" rel="noopener">Political.org: EU plans up to €50 billion sovereign tech fund (24 Nov 2026)</a></li><li><a href="https://www.eib.org/en/press/all/2026-244-europe-launches-eur80-billion-investment-alliance-to-scale-up-tech-leaders?lang=nl" target="_blank" rel="noopener">EIB: Europe launches €80 billion investment alliance to scale up tech leaders (ETCI 2.0, 10 Jul 2026)</a></li><li><a href="https://www.emdesk.com/horizon-2020-horizon-europe-basics-guide/scaleup-europe-fund-first-investments" target="_blank" rel="noopener">EMDESK: Scaleup Europe Fund, the EIC's €5 billion growth vehicle</a></li><li><a href="https://arxiv.org/pdf/2611.16838" target="_blank" rel="noopener">arXiv: The landscape of quantum technology companies in 2026 (Seskir, Koçak, Aydinoglu)</a></li><li><a href="https://www.brusselstimes.com/1217102/staying-in-the-global-game-eu-must-raise-spending-by-unprecedented-e800-billion-a-year-tbtb" target="_blank" rel="noopener">Brussels Times: EU must raise spending by €800 billion a year (Draghi report, 9 Sep 2024)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۵ آذر ۱۴۰۵. مفاد قانون کوانتوم از اطلاعیه‌ی کمیسیون اروپا و رقم‌ها و جزئیات صندوق از گزارش‌های Implicator، HedgeCo (به نقل از Politico) و Quantum Computing Report بررسی شد. رقم ۵۰ میلیارد یورو هدف است، نه پول قطعی. بخش‌های ذی‌نفعان و مناطق تحلیل دیتومان است. متن کامل پیشنهاد قانون و برگه‌ی اطلاعات کمیسیون را مستقیم نخواندیم.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>On 25 November 2026 the European Commission proposed a "Quantum Act" and laid the groundwork for a new equity vehicle: the <strong>Sovereign Tech Equity Fund (STEF)</strong>, with a target of up to <strong>€50 billion</strong> for AI, quantum, chips and cloud infrastructure. Henna Virkkunen, Executive Vice-President for Tech Sovereignty, said: "Europe needs to accelerate now." This report sets out where the money would come from, how it differs from earlier programmes, who is likely to gain most, and which parts of Europe it is likely to work best in.</blockquote>
+<h3>At a glance</h3>
+<ul>
+<li><strong>What happened:</strong> a Quantum Act proposal and the first outline of the STEF fund, on the same day</li>
+</ul>
+<ul>
+<li><strong>The figure:</strong> up to €50 billion, but <strong>a target, not committed money.</strong> The public share is still being negotiated</li>
+</ul>
+<ul>
+<li><strong>Key difference:</strong> bigger tickets, more risk and longer holding periods than existing programmes</li>
+</ul>
+<ul>
+<li><strong>Main beneficiaries:</strong> companies past the startup stage that need hundreds of millions of euros to scale</li>
+</ul>
+<ul>
+<li><strong>Timing:</strong> details in February; funding is tied to the 2028–2034 seven-year EU budget</li>
+</ul>
+<h3><span class="check-number">1.</span> What exactly happened?</h3>
+<p>The Commission did two things at once (<a href="https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial" target="_blank" rel="noopener" style="color:#57D9C7">European Commission</a>):</p>
+<ul>
+<li><strong>Quantum Act:</strong> a framework to turn European quantum research into products and industry, secure supply chains and prepare digital systems for post-quantum cryptography</li>
+</ul>
+<ul>
+<li><strong>STEF:</strong> a new vehicle for equity and quasi-equity investment in technologies critical to Europe's tech sovereignty and economic security. The Commission says it will set it up "swiftly" with the European Investment Bank (EIB) Group and member states</li>
+</ul>
+<p>Virkkunen said: "We want to build a fund and our target scale is now €50 billion," calling the figure a "starting point" (<a href="https://www.implicator.ai/sources-eu-plans-mobilize-up-50b-sovereign-tech-equity-fund/" target="_blank" rel="noopener" style="color:#57D9C7">Implicator</a>). French President Emmanuel Macron has reportedly backed the figure, and the Commission estimates total tech-sovereignty investment needs at about <strong>€500 billion</strong> (<a href="https://hedgeco.net/news/11/2026/european-commission-proposes-a-e50-billion-sovereign-tech-equity-fund-to-take-large-stakes-in-ai-and-quantum-companies.html" target="_blank" rel="noopener" style="color:#57D9C7">HedgeCo</a>).</p>
+<h3><span class="check-number">2.</span> Why does Europe need such a fund?</h3>
+<div class="tw"><table><tr><th>Indicator</th><th>Europe</th><th>Comparison</th></tr><tr><td>Share of the world's quantum companies</td><td>About one-third</td><td>Largest share in the world</td></tr><tr><td>Private funding for quantum startups, 2025</td><td>€1.1 billion (about 5% of the world)</td><td>US: €7 billion</td></tr><tr><td>Share of global venture capital flows</td><td>About 5%</td><td>US 52%, China 40%</td></tr><tr><td>Unicorns that move abroad</td><td>Nearly 30%</td><td></td></tr><tr><td>Dependence on non-EU providers for key digital products and IP</td><td>Over 80%</td><td></td></tr></table></div>
+<p>Sources: <a href="https://quantumcomputingreport.com/european-commission-proposes-eu-quantum-act-and-sovereign-tech-equity-fund-to-scale-industrial-capacity-by-2030/" target="_blank" rel="noopener" style="color:#57D9C7">Quantum Computing Report</a> and <a href="https://political.org/2026/11/24/eu-plans-up-to-e50-billion-sovereign-tech-fund-to-reduce-reliance-on-us-and-chinese-technology/" target="_blank" rel="noopener" style="color:#57D9C7">Political.org</a>.</p>
+<p>The problem in short: Europe is strong in research, but when companies want to scale, <strong>big cheques are scarce on the continent.</strong> An EIB study found European scale-ups raise about half as much as their San Francisco peers by year ten. The result is that companies go to the US for capital, buyers or listings.</p>
+<p>As one Commission official put it: "What is missing in this landscape, is therefore larger tickets aimed to finance our strategic companies."</p>
+<h3><span class="check-number">3.</span> How it compares with earlier programmes</h3>
+<div class="tw"><table><tr><th>Programme</th><th>Year</th><th>Size</th><th>Ticket per company</th><th>Feature</th></tr><tr><td>European Innovation Council (EIC) Fund</td><td>Active</td><td></td><td>Up to €30 million</td><td>Deep-tech startups</td></tr><tr><td>European Tech Champions Initiative (ETCI)</td><td>2023</td><td>Fund of funds</td><td>Via large funds</td><td>15 mega-funds, 12 unicorns</td></tr><tr><td>Scaleup Europe Fund</td><td>2025–2026</td><td>€5 billion target (€1 billion from the Commission)</td><td>About €100–300 million</td><td>Managed by EQT; Series B onward</td></tr><tr><td>ETCI 2.0</td><td>July 2026</td><td>Up to €15 billion, mobilising up to €80 billion</td><td>€200 million on average</td><td>1,500+ scale-ups, all 27 states</td></tr><tr><td>STEF</td><td>Proposed Nov 2026</td><td>Target up to €50 billion</td><td>"Larger" (not yet announced)</td><td>Direct stakes, riskier, longer term</td></tr></table></div>
+<p>Sources: <a href="https://www.eib.org/en/press/all/2026-244-europe-launches-eur80-billion-investment-alliance-to-scale-up-tech-leaders?lang=nl" target="_blank" rel="noopener" style="color:#57D9C7">EIB</a>, <a href="https://www.emdesk.com/horizon-2020-horizon-europe-basics-guide/scaleup-europe-fund-first-investments" target="_blank" rel="noopener" style="color:#57D9C7">EMDESK</a>, HedgeCo.</p>
+<p><strong>What sets STEF apart:</strong> earlier programmes were mostly funds of funds that handed money to private managers. STEF is meant to go in more directly, take larger stakes and stay longer. It is also ten times the Scaleup Europe Fund's target.</p>
+<p><strong>The bigger picture:</strong> Mario Draghi's September 2024 report said Europe must invest about <strong>€800 billion</strong> more a year, roughly 5 percentage points of GDP; the Marshall Plan, by comparison, was 1–2% a year (<a href="https://www.brusselstimes.com/1217102/staying-in-the-global-game-eu-must-raise-spending-by-unprecedented-e800-billion-a-year-tbtb" target="_blank" rel="noopener" style="color:#57D9C7">Brussels Times</a>). STEF is one piece of the answer to that gap.</p>
+<h3><span class="check-number">4.</span> What does the Quantum Act aim for?</h3>
+<div class="tw"><table><tr><th>Goal</th><th>When</th></tr><tr><td>About 100 error-corrected logical qubits per system</td><td>2030</td></tr><tr><td>Thousands of logical qubits</td><td>2035</td></tr><tr><td>Satellite-free positioning, navigation and timing</td><td>2030</td></tr><tr><td>50 km metropolitan quantum networks</td><td></td></tr><tr><td>EuroQCI terrestrial-space quantum communication network</td><td>2031</td></tr><tr><td>Start migrating to quantum-resistant cryptography</td><td>End of 2026</td></tr><tr><td>Secure high-risk systems</td><td>End of 2030</td></tr></table></div>
+<p>Other tools in the Act: a network of top research institutes, Grand Challenges with targeted funding, innovation hubs for startups, strategic industrial projects, supply-chain monitoring, and <strong>public-procurement preference for European and reciprocal suppliers</strong>. The Commission says this does not mean every component must be made in the EU.</p>
+<p>According to the Commission's 2025 quantum strategy, public quantum funding by the EU and member states has exceeded €11 billion, and financing needs for 2028–2034 are estimated at €12.9–18.1 billion (<a href="https://quantumcomputingreport.com/european-commission-proposes-eu-quantum-act-and-sovereign-tech-equity-fund-to-scale-industrial-capacity-by-2030/" target="_blank" rel="noopener" style="color:#57D9C7">Quantum Computing Report</a>).</p>
+<h3><span class="check-number">5.</span> Applications: why quantum matters</h3>
+<ul>
+<li><strong>Medicine:</strong> simulating molecules and speeding up drug discovery; the Act also mentions quantum-enhanced medical imaging</li>
+</ul>
+<ul>
+<li><strong>Energy:</strong> designing advanced materials and more efficient batteries</li>
+</ul>
+<ul>
+<li><strong>Transport:</strong> route optimisation and satellite-free navigation</li>
+</ul>
+<ul>
+<li><strong>Industry:</strong> simulating materials and complex manufacturing processes</li>
+</ul>
+<ul>
+<li><strong>Digital security:</strong> cryptography that resists future quantum computers</li>
+</ul>
+<p>Many of these applications are still at the research stage, which is why patient money matters.</p>
+<h3><span class="check-number">6.</span> Who stands to gain most?</h3>
+<p>This section is Ditoman's analysis, built on the data above.</p>
+<div class="tw"><table><tr><th>Group</th><th>Why</th></tr><tr><td>AI, quantum and chip scale-ups</td><td>Their main bottleneck is cheques of hundreds of millions; exactly what STEF targets</td></tr><tr><td>Large growth funds and institutional investors</td><td>Public money is meant to sit alongside them and lower their risk (aim: up to €6 of private money per €1 of EU money)</td></tr><tr><td>Research institutes and universities in the hubs</td><td>Research network, shared infrastructure and Grand Challenges</td></tr><tr><td>Public buyers and security industries</td><td>Buy-European preference and mandatory post-quantum migration</td></tr><tr><td>Very early-stage startups</td><td>Smaller, indirect gains; STEF is for later stages</td></tr></table></div>
+<h3><span class="check-number">7.</span> Which parts of Europe is it likely to work best in?</h3>
+<p>Equity money usually goes where scale-ready companies already are. A new research survey of 935 quantum technology companies worldwide counts 263 in the EU (about 28%), 189 in the US and 100 in China (<a href="https://arxiv.org/pdf/2611.16838" target="_blank" rel="noopener" style="color:#57D9C7">arXiv</a>).</p>
+<div class="tw"><table><tr><th>Region</th><th>Existing base</th><th>Ditoman's assessment</th></tr><tr><td>Germany (Munich and the south)</td><td>81 quantum companies, the most in the EU</td><td>Likely the biggest beneficiary</td></tr><tr><td>France (Paris and Saclay)</td><td>33 quantum companies; a strong AI ecosystem</td><td>A major beneficiary; Macron backs the €50 billion figure</td></tr><tr><td>Netherlands (Delft and Eindhoven)</td><td>29 quantum companies; a chip industry</td><td>Strong in quantum and chips</td></tr><tr><td>The Nordics (Finland, Sweden, Denmark)</td><td>Companies such as IQM; big investors such as EQT, Wallenberg and Novo Holdings</td><td>Has both companies and capital</td></tr><tr><td>Southern Europe (Spain, Italy)</td><td>Banks and foundations such as Santander, BBVA and Intesa Sanpaolo invest</td><td>More a source of money than a recipient</td></tr><tr><td>Central and Eastern Europe</td><td>Smaller hubs</td><td>At risk of falling behind unless quotas or a hub network compensate</td></tr></table></div>
+<p>The UK, with 70 quantum companies, is outside the EU; whether UK firms could receive STEF money has not been announced.</p>
+<h3><span class="check-number">8.</span> The future: what to watch</h3>
+<ul>
+<li><strong>February:</strong> fund details, ahead of an EU leaders' meeting on competitiveness</li>
+</ul>
+<ul>
+<li><strong>The 2028–2034 budget:</strong> the fund's final size depends on the seven-year budget talks and the European Competitiveness Fund</li>
+</ul>
+<ul>
+<li><strong>Parliament and Council:</strong> the Quantum Act must go through the ordinary legislative procedure</li>
+</ul>
+<ul>
+<li><strong>Governance:</strong> who makes investment decisions, and how returns are shared with private co-investors</li>
+</ul>
+<p><strong>Criticism:</strong> analysts ask whether a large state fund could crowd out private capital. Riskier investments mean potential losses for taxpayers. Some argue deregulation would help more than a state fund; others welcome public investment but want accountability safeguards.</p>
+<h3><span class="check-number">9.</span> What it means for jobs, and for us</h3>
+<p>If the plan succeeds, demand in Europe will grow for specialists in <strong>software, electronics, materials engineering, physics, cybersecurity and AI</strong>. Small companies and universities will also get closer from idea to product, with better access to equipment and capital.</p>
+<p>For Iranian students, engineers and entrepreneurs, especially those in Europe, following the quantum hubs, the Grand Challenges and the companies that receive money from these funds is a good map of job and research opportunities over the next few years.</p>
+<h3>Ditoman's view</h3>
+<p>The global tech race is no longer only about building more advanced AI models; it is about <strong>owning infrastructure, computing power, know-how and industrial capacity.</strong> Europe says it is not short of research or talent; it is short of <strong>big cheques.</strong></p>
+<p>But €50 billion is for now a target, the Quantum Act is not yet law, and the real money is tied to the 2028 budget. Success will not be measured by how big the fund is announced; it will be measured by how many European companies <strong>stay in Europe and grow</strong> because of it.</p>
+<h3>Read more</h3><ul><li><a href="ai-jobs-wrong-question.en.html">Everyone is asking the wrong AI question</a></li><li><a href="remote-income-from-iran.en.html">Remote income from Iran: real opportunities</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial" target="_blank" rel="noopener">European Commission: Commission proposes Quantum Act and new Sovereign Tech Equity Fund (25 Nov 2026)</a></li><li><a href="https://thequantuminsider.com/2026/11/25/european-commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund/" target="_blank" rel="noopener">The Quantum Insider: European Commission proposes Quantum Act and new Sovereign Tech Equity Fund (25 Nov 2026)</a></li><li><a href="https://quantumcomputingreport.com/european-commission-proposes-eu-quantum-act-and-sovereign-tech-equity-fund-to-scale-industrial-capacity-by-2030/" target="_blank" rel="noopener">Quantum Computing Report: EU Quantum Act and Sovereign Tech Equity Fund to scale industrial capacity by 2030</a></li><li><a href="https://www.implicator.ai/sources-eu-plans-mobilize-up-50b-sovereign-tech-equity-fund/" target="_blank" rel="noopener">Implicator: EU plans to mobilise up to €50B Sovereign Tech Equity Fund (25 Nov 2026)</a></li><li><a href="https://hedgeco.net/news/11/2026/european-commission-proposes-a-e50-billion-sovereign-tech-equity-fund-to-take-large-stakes-in-ai-and-quantum-companies.html" target="_blank" rel="noopener">HedgeCo: Commission proposes €50 billion Sovereign Tech Equity Fund (citing Politico)</a></li><li><a href="https://political.org/2026/11/24/eu-plans-up-to-e50-billion-sovereign-tech-fund-to-reduce-reliance-on-us-and-chinese-technology/" target="_blank" rel="noopener">Political.org: EU plans up to €50 billion sovereign tech fund (24 Nov 2026)</a></li><li><a href="https://www.eib.org/en/press/all/2026-244-europe-launches-eur80-billion-investment-alliance-to-scale-up-tech-leaders?lang=nl" target="_blank" rel="noopener">EIB: Europe launches €80 billion investment alliance to scale up tech leaders (ETCI 2.0, 10 Jul 2026)</a></li><li><a href="https://www.emdesk.com/horizon-2020-horizon-europe-basics-guide/scaleup-europe-fund-first-investments" target="_blank" rel="noopener">EMDESK: Scaleup Europe Fund, the EIC's €5 billion growth vehicle</a></li><li><a href="https://arxiv.org/pdf/2611.16838" target="_blank" rel="noopener">arXiv: The landscape of quantum technology companies in 2026 (Seskir, Koçak, Aydinoglu)</a></li><li><a href="https://www.brusselstimes.com/1217102/staying-in-the-global-game-eu-must-raise-spending-by-unprecedented-e800-billion-a-year-tbtb" target="_blank" rel="noopener">Brussels Times: EU must raise spending by €800 billion a year (Draghi report, 9 Sep 2024)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 26 November 2026. Quantum Act provisions were checked against the Commission’s announcement, and fund figures and details against Implicator, HedgeCo (citing Politico) and Quantum Computing Report. The €50 billion figure is a target, not committed money. The beneficiaries and regions sections are Ditoman’s analysis. We did not read the full legislative proposal or the Commission factsheet directly.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.en.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.en.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.en.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
