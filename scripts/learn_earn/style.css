@@ -39,11 +39,11 @@
   .le-result .le-btn { justify-self: start; }
   .le-claim { max-width: 720px; display: grid; gap: 14px; padding: 26px; border-radius: 22px; background: var(--surface); border: 1px solid rgba(87,217,199,.45); }
   .le-field { display: grid; gap: 6px; font-weight: 700; }
-  .le-field input { width: 100%; padding: 13px 14px; border-radius: 12px; border: 1px solid var(--line-strong); background: #101F22; color: var(--text); font: 600 1rem/1.3 ui-monospace, Menlo, Consolas, monospace; }
+  .le-field input { width: 100%; padding: 13px 14px; border-radius: 12px; border: 1px solid var(--line-strong); background: #101F22; color: var(--text); font: 600 1rem/1.3 var(--en); }
   .le-field input:focus { outline: 2px solid #57D9C7; outline-offset: 1px; }
   .le-claim > .le-btn { justify-self: start; }
   .le-ticket { display: grid; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line); }
-  .le-code { font: 800 1.7rem/1.2 ui-monospace, Menlo, Consolas, monospace; color: #FFAD00; letter-spacing: .04em; }
+  .le-code { font: 800 1.7rem/1.2 var(--en); color: #FFAD00; letter-spacing: .04em; }
   .le-msg { white-space: pre-wrap; overflow-wrap: anywhere; unicode-bidi: plaintext; text-align: start; margin: 0; padding: 14px; border-radius: 12px; background: #101F22; border: 1px solid var(--line); font: 500 .95rem/1.8 var(--en); color: var(--text); }
   .le-actions { display: flex; flex-wrap: wrap; gap: 10px; }
   @media (max-width: 520px) { .le-claim { padding: 20px 16px; } .le-q { padding: 16px 12px 8px; } .le-code { font-size: 1.35rem; } }

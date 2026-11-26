@@ -22,7 +22,7 @@
   <meta name="theme-color" content="#04090c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="site.css?v=20261113" />
   <link rel="stylesheet" href="vendor/uPlot.min.css" />
   <style>
@@ -515,7 +515,7 @@
       var w = el.clientWidth, h = el.clientHeight;
       var xs = s.dates.map(ts);
       var data = [xs, s.a]; if (s.b) data.push(s.b);
-      var axisFont = "600 12px Bricolage Grotesque, system-ui, sans-serif";
+      var axisFont = "600 12px Inter, system-ui, sans-serif";
       var opts = {
         width: w, height: h, padding: [12, 8, 0, 0],
         cursor: { y: false, points: { size: 8 } },
@@ -672,7 +672,7 @@
         var b = firstVal(arr);
         return arr.map(function (v) { return v == null || !b ? null : (v - b) / b * 100; });
       });
-      var axisFont = "600 12px Bricolage Grotesque, system-ui, sans-serif";
+      var axisFont = "600 12px Inter, system-ui, sans-serif";
       var fmtPct = function (v) { return (v > 0 ? "+" : v < 0 ? "−" : "") + enNum(Math.abs(v), Math.abs(v) < 10 ? 1 : 0) + "%"; };
       var opts = {
         width: el.clientWidth, height: el.clientHeight, padding: [12, 8, 0, 0],
