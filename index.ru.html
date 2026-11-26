@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 
   <link rel="stylesheet" href="site.css?v=20261113" />
-  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <link rel="stylesheet" href="theme.css?v=20261126a" />
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="fa" href="https://ditoman.com/" />
   <link rel="alternate" hreflang="en" href="https://ditoman.com/index.en.html" />
@@ -237,6 +237,17 @@
         </div>
         <div class="st-filter" aria-label="دسته‌ها"></div>
         <div class="co-grid story-grid">
+          <a class="co-card" data-kicker="انتخاب دیتومان | DITOMAN PICKS" href="world-in-five-frames-2025.en.html">
+            <div class="co-art"><img lang="fa" src="social/world-in-five-frames-2025/thumb.webp" srcset="social/world-in-five-frames-2025/thumb.webp 240w, social/world-in-five-frames-2025/card.webp 900w" sizes="(max-width: 600px) 84px, 112px" width="240" height="240" alt="Мир в пяти кадрах: 2025" loading="lazy" /><img lang="en" src="social/world-in-five-frames-2025/en-thumb.webp" srcset="social/world-in-five-frames-2025/en-thumb.webp 240w, social/world-in-five-frames-2025/en-card.webp 900w" sizes="(max-width: 600px) 84px, 112px" width="240" height="240" alt="Мир в пяти кадрах: 2025" loading="lazy" /></div>
+            <div class="co-body">
+              <span class="co-cat"><span lang="fa">انتخاب دیتومان</span><span lang="en">Выбор Ditoman</span></span>
+              <h3>Мир в пяти кадрах <span lang="fa">جهان در پنج قاب؛ پنج تصویر به‌یادماندنی ۲۰۲۵</span></h3>
+              <span class="co-time"><span lang="fa">۵ آذر · ۶ دقیقه مطالعه</span><span lang="en">26 нояб. · 6 мин чтения</span></span>
+              <p>Восход луны в Каракасе, бегущие роботы в Пекине, новая жизнь, большая белая акула у берегов Мэна и белый медведь на ките: пять снимков 2025 года и их истории.</p>
+              <p class="co-fa" lang="fa">ماه کاراکاس، ربات‌های پکن، شکل‌گیری زندگی، کوسه‌ی مین و خرس قطبی؛ پنج عکس ۲۰۲۵ و داستانشان.</p>
+              <span class="co-go">Читать материал</span>
+            </div>
+          </a>
           <a class="co-card" data-kicker="فناوری | TECH" href="eu-50-billion-sovereign-tech-fund.en.html">
             <div class="co-art"><img lang="fa" src="social/eu-50-billion-sovereign-tech-fund/thumb.webp" srcset="social/eu-50-billion-sovereign-tech-fund/thumb.webp 240w, social/eu-50-billion-sovereign-tech-fund/card.webp 900w" sizes="(max-width: 600px) 84px, 112px" width="240" height="240" alt="Ставка Европы на технологии будущего: 50 млрд евро" loading="lazy" /><img lang="en" src="social/eu-50-billion-sovereign-tech-fund/en-thumb.webp" srcset="social/eu-50-billion-sovereign-tech-fund/en-thumb.webp 240w, social/eu-50-billion-sovereign-tech-fund/en-card.webp 900w" sizes="(max-width: 600px) 84px, 112px" width="240" height="240" alt="Ставка Европы на технологии будущего: 50 млрд евро" loading="lazy" /></div>
             <div class="co-body">
@@ -1023,6 +1034,25 @@
         slot.appendChild(wrap);
       })();
     </script>
+
+    <section class="block home-frames" id="frames">
+      <style>
+        .home-frames .fr-row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;-webkit-overflow-scrolling:touch}
+        .home-frames .fr-card{position:relative;flex:0 0 clamp(240px,38vw,380px);aspect-ratio:3/2;border-radius:16px;overflow:hidden;scroll-snap-align:start;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+        .home-frames .fr-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+        .home-frames .fr-card:hover img{transform:scale(1.04)}
+        .home-frames .fr-cap{position:absolute;inset:auto 0 0 0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;display:flex;flex-direction:column;gap:2px}
+        .home-frames .fr-cap b{font-size:1rem} .home-frames .fr-cap small{font-size:.78rem;opacity:.8}
+        .home-frames .fr-lead{opacity:.8;margin:-4px 0 14px}
+      </style>
+      <div class="wrap">
+        <div class="head">
+          <h2>Мир в пяти кадрах<span lang="fa">جهان در پنج قاب</span></h2>
+        </div>
+        <p class="fr-lead"><span lang="fa" dir="rtl">پنج عکس به‌یادماندنی ۲۰۲۵ و داستان پشت هر کدام؛ عکس‌ها از رویترز، نشنال جئوگرافیک و دیگران.</span><span lang="en">Пять незабываемых снимков 2025 года и история каждого; фотографии Reuters, National Geographic и других.</span></p>
+        <div class="fr-row"><a class="fr-card" href="world-in-five-frames-2025.en.html"><img src="social/world-in-five-frames-2025/1-card.webp" alt="Ребёнок на фоне луны" loading="lazy" width="640" height="427"><span class="fr-cap"><b><span lang="fa" dir="rtl">کودکی در برابر ماه</span><span lang="en">Ребёнок на фоне луны</span></b><small><span lang="fa" dir="rtl">کاراکاس · Reuters</span><span lang="en">Каракас · Reuters</span></small></span></a><a class="fr-card" href="world-in-five-frames-2025.en.html"><img src="social/world-in-five-frames-2025/2-card.webp" alt="Роботы на дорожке" loading="lazy" width="640" height="427"><span class="fr-cap"><b><span lang="fa" dir="rtl">ربات‌ها در پیست دو</span><span lang="en">Роботы на дорожке</span></b><small><span lang="fa" dir="rtl">پکن · بازی‌های ربات‌ها</span><span lang="en">Пекин · Игры роботов</span></small></span></a><a class="fr-card" href="world-in-five-frames-2025.en.html"><img src="social/world-in-five-frames-2025/3-card.webp" alt="Как зарождается жизнь" loading="lazy" width="640" height="427"><span class="fr-cap"><b><span lang="fa" dir="rtl">زندگی چگونه شکل می‌گیرد</span><span lang="en">Как зарождается жизнь</span></b><small><span lang="fa" dir="rtl">کالیفرنیا · National Geographic</span><span lang="en">Калифорния · National Geographic</span></small></span></a><a class="fr-card" href="world-in-five-frames-2025.en.html"><img src="social/world-in-five-frames-2025/4-card.webp" alt="Встреча с большой белой акулой" loading="lazy" width="640" height="427"><span class="fr-cap"><b><span lang="fa" dir="rtl">دیدار با کوسه‌ی سفید</span><span lang="en">Встреча с большой белой акулой</span></b><small><span lang="fa" dir="rtl">مین، آمریکا · National Geographic</span><span lang="en">Мэн, США · National Geographic</span></small></span></a><a class="fr-card" href="world-in-five-frames-2025.en.html"><img src="social/world-in-five-frames-2025/5-card.webp" alt="Пир в Арктике" loading="lazy" width="640" height="427"><span class="fr-cap"><b><span lang="fa" dir="rtl">ضیافتی در قطب شمال</span><span lang="en">Пир в Арктике</span></b><small><span lang="fa" dir="rtl">سوالبارد · National Geographic</span><span lang="en">Шпицберген · National Geographic</span></small></span></a></div>
+      </div>
+    </section>
 
     <section class="block home-lessons" id="lessons">
       <div class="wrap">

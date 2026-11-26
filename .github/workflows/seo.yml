@@ -37,6 +37,8 @@ jobs:
         run: pip install --quiet pillow && python3 scripts/make_thumbs.py
       - name: Build site search index
         run: python3 scripts/build_search.py
+      - name: Cross-links in the text
+        run: python3 scripts/build_links.py
       - name: Commit result
         run: |
           git config user.name "ditoman-bot"

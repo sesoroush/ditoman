@@ -16,6 +16,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from build_links import strip  # noqa: E402  (cross-links are re-added by build_links.py, the last step)
 sys.path.insert(0, str(ROOT / "scripts" / "i18n"))
 import hl  # noqa: E402
 import lang_rules  # noqa: E402
@@ -116,7 +118,7 @@ def run(lang, names):
         p = ROOT / f"{name}.en.html"
         if not p.exists():
             continue
-        out = make(p.read_text(encoding="utf-8"), name)
+        out = make(strip(p.read_text(encoding="utf-8")), name)
         built.append((name, out))
     return built, missing
 

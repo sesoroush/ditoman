@@ -35,7 +35,7 @@ class P(HTMLParser):
 
 
 def strings(path):
-    p = P(); p.feed(open(path, encoding="utf-8").read()); return p.out
+    p = P(); p.feed(re.sub(r'<a class="xl" href="[^"]*">(.*?)</a>', r"\1", open(path, encoding="utf-8").read(), flags=re.S)); return p.out
 
 
 if __name__ == "__main__":

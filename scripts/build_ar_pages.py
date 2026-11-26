@@ -18,6 +18,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from build_links import strip  # noqa: E402  (cross-links are re-added by build_links.py, the last step)
 sys.path.insert(0, str(ROOT / "scripts" / "i18n"))
 import ar_rules  # noqa: E402
 import hl  # noqa: E402
@@ -133,7 +135,7 @@ def make_ar(src, name):
 def main():
     for name in AR_PAGES:
         p = ROOT / name
-        src = p.read_text(encoding="utf-8")
+        src = strip(p.read_text(encoding="utf-8"))
         (ROOT / ar_name(name)).write_text(make_ar(src, name), encoding="utf-8")
         for twin in (p, ROOT / (name[:-5] + ".en.html")):
             if twin.exists():

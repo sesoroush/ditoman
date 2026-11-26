@@ -16,9 +16,12 @@ Running it twice changes nothing.
 """
 import html
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from build_links import strip  # noqa: E402  (cross-links are re-added by build_links.py, the last step)
 BASE = "https://ditoman.com/"
 SKIP = {"404.html"}
 FA = re.compile(r"[؀-ۿ]")
@@ -150,7 +153,7 @@ def main():
     pages = sorted(p for p in ROOT.glob("*.html") if not p.name.endswith((".en.html", ".ar.html", ".zh.html", ".tr.html", ".ru.html", ".pt.html", ".es.html", ".fr.html", ".de.html")) and p.name not in SKIP)
     names = {p.name for p in pages}
     for p in pages:
-        src = p.read_text(encoding="utf-8")
+        src = strip(p.read_text(encoding="utf-8"))
         old, fa_title, _ = titles(src, p.name)
         new = src
         if fa_title:

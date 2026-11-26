@@ -248,7 +248,7 @@ def page(title, desc, path, body, image=None):
   <link rel="stylesheet" href="fonts.css?v=1" />
   <link rel="stylesheet" href="site.css?v=20261113" />
   <style>{CSS}</style>
-  <link rel="stylesheet" href="theme.css?v=20261121b" />
+  <link rel="stylesheet" href="theme.css?v=20261126a" />
 </head>
 <body data-lang="fa">
 

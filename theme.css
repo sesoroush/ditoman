@@ -1387,3 +1387,17 @@ html[data-lang="en"] .hero-art::after { background: linear-gradient(to right, rg
 .hero-lights b { white-space: nowrap; }
 .hero-lights span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 @media (max-width: 700px) { .hero2 .masthead .hero-cta .tagline { font-size: 0.78rem; letter-spacing: 0.02em; } .hero-cta { gap: 8px 12px; } }
+
+/* Cross-links written by scripts/build_links.py: a term in the text that has its own page */
+a.xl, .lesson-content a.xl {
+  color: var(--mint, #57D9C7);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: rgba(87, 217, 199, 0.6);
+  text-underline-offset: 4px;
+  font-weight: inherit;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+a.xl:hover, .lesson-content a.xl:hover { color: #FFAD00; text-decoration-style: solid; text-decoration-color: #FFAD00; }
+a.xl:focus-visible { outline: 2px solid #57D9C7; outline-offset: 2px; border-radius: 3px; }
