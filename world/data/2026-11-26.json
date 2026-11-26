@@ -1,0 +1,166 @@
+{
+ "date": "2026-11-26",
+ "kind": "world",
+ "lead_fa": "بازار آمریکا برای روز شکرگزاری تعطیل است و سهام آسیا و اروپا با بازگشت خریداران سهام هوش مصنوعی بالا رفتند؛ نفت دوباره نزدیک ۹۵ دلار است. مرور رسانه‌های جهان از نیویورک تا دبی، توکیو و سیدنی؛ برای هر خبر یک خط هم نوشته‌ایم که برای ما یعنی چه. با هم دنبال می‌کنیم.",
+ "lead_en": "US markets are closed for Thanksgiving while Asian and European shares rose as AI stocks rebounded; oil is back near $95. A tour of world media from New York to Dubai, Tokyo and Sydney, with one line on what each story means for us.",
+ "front_fa": "بی‌ان‌ان بلومبرگ: «سهام جهان بالا رفت، بازار آمریکا برای شکرگزاری تعطیل است» · رویترز: «آمریکا مجوز یک میلیون ماهواره‌ی مرکز داده‌ی اسپیس‌ایکس را داد» · فایننشال تایمز: «انویدیا ارسال سرور هوش مصنوعی به چهار کشور جنوب شرق آسیا را متوقف کرد» · گلف نیوز: «۵۶٫۵ میلیارد درهم قرارداد برای فرودگاه آل‌مکتوم دبی»",
+ "front_en": "BNN Bloomberg: World shares rise as US markets close for Thanksgiving · Reuters: US authorizes SpaceX to deploy 1 million satellites for space data centers · FT: Nvidia halts AI server shipments to four Southeast Asian countries · Gulf News: Dh56.5bn contracts for Dubai's Al Maktoum airport",
+ "sections": [
+  {
+   "fa": "اقتصاد و بازارهای جهانی",
+   "en": "Global economy & markets",
+   "items": [
+    {
+     "fa": "نیکی ۰٫۹٪ و تایوان ۲٫۵٪ بالا: پنجشنبه نیکی ژاپن به ۵۷٬۴۹۹ رسید، هنگ‌سنگ ۱٫۲٪ و ای‌اس‌ایکس ۲۰۰ استرالیا ۰٫۸٪ رشد کردند و بورس‌های اروپا هم بالا باز شدند. یعنی بعد از دو روز فروش سنگین، خریداران سهام فناوری و هوش مصنوعی برگشته‌اند.",
+     "en": "Nikkei rose 0.9% to 57,499, Taiwan 2.5%, Hang Seng 1.2%, ASX 200 0.8%, and Europe opened higher. After two days of heavy selling, buyers returned to tech and AI stocks.",
+     "src": "بی‌ان‌ان بلومبرگ",
+     "url": "https://www.bnnbloomberg.ca/markets/2026/11/26/world-shares-push-higher-while-markets-in-us-will-be-closed-for-thanksgiving/"
+    },
+    {
+     "fa": "تورم PCE آمریکا ۳٫۸٪: تورم هسته‌ای اکتبر به ۳٫۳٪، بالاترین از نوامبر ۲۰۲۳، رسید و رشد فصل سوم به ۴٫۳٪ اصلاح شد؛ بازار افزایش نرخ بهره در نشست ۸ و ۹ دسامبر را قیمت‌گذاری کرده. یعنی دلار جهانی قوی می‌ماند و روی طلا و رمزارز اثر دارد.",
+     "en": "US October PCE inflation 3.8%, core 3.3% (highest since Nov 2023); Q3 GDP revised to 4.3%; markets price a Dec 8–9 Fed hike. A firm dollar weighs on gold, crypto and regional currencies.",
+     "src": "اچ‌دی‌اف‌سی اسکای",
+     "url": "https://hdfcsky.com/news/bse-nse-sensex-november-26-2026-open-report-sensex-nifty-diverge-at-open-on-thursday-as-strong-asia-steady-oil-offset-hot-us-inflation"
+    },
+    {
+     "fa": "برنت حدود ۹۵ دلار: نفت برنت در جلسه‌ی قبل ۳٫۵٪ بالا رفت و روی ۹۴٫۶۱ دلار بسته شد، پس از خبر آسیب به پالایشگاه راس‌تنوره‌ی عربستان. یعنی هزینه‌ی سوخت، حمل و بیمه‌ی کشتی در منطقه‌ی ما گران‌تر می‌شود.",
+     "en": "Brent jumped 3.5% to close at $94.61 after damage to Saudi Arabia's Ras Tanura refinery. Fuel, freight and shipping insurance in our region get pricier.",
+     "src": "د نشنال",
+     "url": "https://www.thenationalnews.com/business/energy/2026/11/26/oil-rebounds-to-95-per-barrel-after-saudi-refinery-attack/"
+    },
+    {
+     "fa": "بیت‌کوین بالای ۶۱ هزار دلار: بیت‌کوین در ۲۴ ساعت ۲٫۴۶٪ و اتریوم ۲٫۵۳٪ بالا رفت؛ اونس طلا هم از ۳٬۶۰۰ دلار گذشت. یعنی بعد از هفته‌های افت، فضای رمزارز و طلا کمی آرام‌تر شده و این به قیمت تتر و طلای داخلی هم می‌رسد.",
+     "en": "Bitcoin rose 2.46% to above $61,000 and Ether 2.53%; gold topped $3,600/oz. Crypto and gold calm after weeks of declines, which feeds into local prices.",
+     "src": "کوکوین نیوز",
+     "url": "https://www.kucoin.com/news/flash/global-stock-markets-rise-crypto-and-precious-metals-rebound-oil-prices-drop"
+    }
+   ]
+  },
+  {
+   "fa": "صنعت و انرژی",
+   "en": "Industry & energy",
+   "items": [
+    {
+     "fa": "اوپک‌پلاس ۲۹ نوامبر تصمیم می‌گیرد: نشست اوپک‌پلاس درباره‌ی تولید ۲۰۲۷ یکشنبه برگزار می‌شود و آژانس بین‌المللی انرژی می‌گوید ذخایر نفت خام در اکتبر روزانه ۱٫۷ میلیون بشکه زیاد شد. یعنی جهت قیمت نفت در ماه‌های آینده به این نشست بستگی زیادی دارد.",
+     "en": "OPEC+ meets Nov 29 on 2027 output; the IEA says crude stocks rose 1.7m bpd in October. The oil price path for coming months hinges on this meeting.",
+     "src": "د نشنال",
+     "url": "https://www.thenationalnews.com/business/energy/2026/11/26/oil-rebounds-to-95-per-barrel-after-saudi-refinery-attack/"
+    },
+    {
+     "fa": "کیوکسیا ۱۲٫۶٪ جهش: سهام سازنده‌ی ژاپنی حافظه کیوکسیا (Kioxia) پس از همکاری با انویدیا برای حافظه‌ی پتابایتی پردازنده‌های گرافیکی با SSD به ۷٬۷۶۲ ین رسید. یعنی حافظه و ذخیره‌سازی به گلوگاه تازه‌ی هوش مصنوعی تبدیل شده؛ چیزی که روی قیمت لپ‌تاپ و گوشی هم اثر دارد.",
+     "en": "Kioxia jumped 12.6% to ¥7,762 on an Nvidia partnership for petabyte-scale GPU memory via SSDs. Memory is AI's new bottleneck, keeping SSD prices high.",
+     "src": "تریدینگ‌کی",
+     "url": "https://www.tradingkey.com/analysis/stocks/more/262323392-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey"
+    },
+    {
+     "fa": "۱۰۰ میلیون دلار برای اتصال نوری: استارتاپ اَویسنا (Avicena) برای اتصال‌های نوری میکروLED در مراکز داده‌ی هوش مصنوعی سری C صد میلیون دلاری جذب کرد؛ اس‌کی‌هاینیکس، سامسونگ و AMD هم سرمایه‌گذارند. یعنی رقابت بعدی مراکز داده بر سر کم‌کردن مصرف برق و سرعت انتقال داده است.",
+     "en": "Avicena raised a $100M+ Series C for microLED optical interconnects for AI data centers, backed by SK hynix, Samsung and AMD. The next data center race is about power and data speed.",
+     "src": "اویسنا",
+     "url": "https://avicena.tech/avicena-raises-100-million-series-c-to-accelerate-commercialization-of-microled-optical-interconnects-for-ai-infrastructure/"
+    }
+   ]
+  },
+  {
+   "fa": "هوش مصنوعی و فناوری",
+   "en": "AI & technology",
+   "items": [
+    {
+     "fa": "یک میلیون ماهواره‌ی مرکز داده: کمیسیون ارتباطات آمریکا به اسپیس‌ایکس (SpaceX) اجازه داد تا یک میلیون ماهواره برای مراکز داده در فضا پرتاب کند. یعنی رقابت بر سر برق و فضای مراکز داده‌ی هوش مصنوعی حالا به مدار زمین رسیده است.",
+     "en": "The FCC authorized SpaceX to deploy up to 1 million satellites for data centers in space. The race for AI power and capacity has reached orbit.",
+     "src": "رویترز",
+     "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
+    },
+    {
+     "fa": "ارزش ۳۳ میلیارد دلاری الون‌لبز: الون‌لبز (ElevenLabs)، سازنده‌ی صدای هوش مصنوعی با درآمد سالانه‌ی ۷۰۰ میلیون دلار، برای جذب سرمایه با ارزش ۳۳ میلیارد دلار مذاکره می‌کند؛ سپتامبر ۲۲ میلیارد بود. یعنی دوبله، کتاب صوتی و پشتیبانی صوتی سریع به سمت هوش مصنوعی می‌رود.",
+     "en": "ElevenLabs, with $700M ARR, is in talks to raise at a $33B valuation, up from $22B in September. Dubbing, audiobooks and voice support move fast to AI.",
+     "src": "بلومبرگ",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-25/elevenlabs-in-early-talks-for-2027-funding-at-33-billion-value"
+    },
+    {
+     "fa": "آزمایش بالینی نورالینک برای ALS: سازمان غذا و داروی آمریکا مجوز مطالعه‌ی اصلی رابط مغز و رایانه‌ی نورالینک (Neuralink) را روی بیماران ALS صادر کرد. یعنی فناوری کنترل رایانه با ذهن یک قدم به درمان واقعی نزدیک‌تر شده است.",
+     "en": "The FDA cleared Neuralink's pivotal brain-computer interface trial in ALS patients. Mind-controlled computing moves a step closer to real treatment.",
+     "src": "بلومبرگ",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-25/neuralink-gets-clearance-for-brain-implant-trial-in-als-patients"
+    }
+   ]
+  },
+  {
+   "fa": "تجارت و کسب‌وکار",
+   "en": "Trade & business",
+   "items": [
+    {
+     "fa": "تعرفه‌ی تازه بر ۱۴ شریک تجاری: نماینده‌ی تجاری آمریکا تعرفه‌ی بخش ۳۰۱ را پیشنهاد داد؛ ۲۰٪ اضافه برای چین و سقف ۱۵٪ برای اروپا، ژاپن، کره و تایوان، پس از جلسات استماع ۲۵ ژانویه. یعنی زنجیره‌ی تأمین جهانی دوباره جابه‌جا می‌شود و قیمت کالای چینی و واسطه‌ای نوسان می‌گیرد.",
+     "en": "USTR proposed Section 301 tariffs on 14 partners: +20% for China, a 15% cap for the EU, Japan, Korea and Taiwan, after Jan 25 hearings. Supply chains shift again.",
+     "src": "اچ‌دی‌اف‌سی اسکای",
+     "url": "https://hdfcsky.com/news/bse-nse-sensex-november-26-2026-open-report-sensex-nifty-diverge-at-open-on-thursday-as-strong-asia-steady-oil-offset-hot-us-inflation"
+    },
+    {
+     "fa": "توقف ارسال سرور انویدیا به چهار کشور: به گزارش فایننشال تایمز، انویدیا (Nvidia) از شرکای تولیدش خواسته ارسال سرور هوش مصنوعی به مالزی، سنگاپور، تایلند و اندونزی را متوقف کنند. یعنی دسترسی به سخت‌افزار هوش مصنوعی در آسیا سخت‌تر و گران‌تر می‌شود.",
+     "en": "Nvidia reportedly told partners to halt AI server shipments to Malaysia, Singapore, Thailand and Indonesia. AI hardware in Asia gets harder and pricier to obtain.",
+     "src": "فایننشال تایمز",
+     "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370"
+    },
+    {
+     "fa": "عرضه‌ی اولیه‌ی ۱۵ میلیارد دلاری فون‌پی: فون‌پی (PhonePe)، اپ پرداخت هندی متعلق به والمارت، آماده‌سازی عرضه‌ی اولیه برای سه‌ماهه‌ی اول ۲۰۲۷ با ارزش ۱۲ تا ۱۵ میلیارد دلار را از سر گرفت. یعنی پرداخت موبایلی در بازارهای نوظهور یکی از پرسودترین مسیرهای استارتاپی است.",
+     "en": "Walmart-backed PhonePe restarted IPO prep for Q1 2027 at a $12–15B valuation. Mobile payments in emerging markets remain a top startup path.",
+     "src": "رویترز",
+     "url": "https://www.reuters.com/world/india/walmart-backed-phonepe-restarts-ipo-process-eyes-up-15-billion-valuation-market-2026-11-25/"
+    }
+   ]
+  },
+  {
+   "fa": "از آسیا تا استرالیا",
+   "en": "Asia & Oceania",
+   "items": [
+    {
+     "fa": "۵۶٫۵ میلیارد درهم برای فرودگاه دبی: دبی قراردادهای تازه‌ی فرودگاه آل‌مکتوم را امضا کرد؛ مجموع قراردادها از ۸۰ میلیارد درهم گذشت و ظرفیت نهایی بیش از ۲۶۰ میلیون مسافر در سال است. یعنی دبی می‌خواهد بزرگ‌ترین گره پرواز جهان بماند؛ فرصت برای پیمانکاران منطقه.",
+     "en": "Dubai awarded Dh56.5bn in new Al Maktoum airport contracts (over Dh80bn total), for 260m+ passengers a year. A big opportunity for regional contractors.",
+     "src": "گلف نیوز",
+     "url": "https://gulfnews.com/business/aviation/dubai-awards-dh565-billion-in-contracts-for-al-maktoum-international-airport-1.500761485"
+    },
+    {
+     "fa": "نرخ بهره‌ی کره ۳٫۲۵٪: بانک مرکزی کره‌ی جنوبی نرخ پایه را ۰٫۲۵ واحد بالا برد، بالاترین در دو سال اخیر؛ کوسپی با این حال ۱٫۷۳٪ بالا رفت. یعنی موج بالا رفتن نرخ بهره از آمریکا به آسیا هم رسیده است.",
+     "en": "Bank of Korea hiked 25bp to 3.25%, a two-year high; Kospi still rose 1.73%. The rate-hike wave has spread from the US to Asia.",
+     "src": "آی‌سی مارکتس",
+     "url": "https://www.ic.com/blog/asian-markets-rebound-as-tech-stocks-rally-26-november-ic/"
+    },
+    {
+     "fa": "سرمایه‌گذاری استرالیا ۱۲٫۲٪ بالا: هزینه‌ی سرمایه‌ای شرکت‌های استرالیایی در فصل سپتامبر ۱۲٫۲٪ رشد کرد و بخش رسانه و مخابرات با مراکز داده ۸۶٫۷٪ جهش داشت. یعنی موج مراکز داده‌ی هوش مصنوعی حالا اقتصادهای منابع‌محور را هم جابه‌جا می‌کند.",
+     "en": "Australian private capex rose 12.2% in the September quarter; media and telecom, driven by data centers, jumped 86.7%. The AI data center wave is reshaping resource economies.",
+     "src": "اداره آمار استرالیا",
+     "url": "https://www.abs.gov.au/media-centre/media-releases/data-centre-investment-continues-drive-new-capital-expenditure"
+    },
+    {
+     "fa": "روپیه در بالاترین سطح هشت‌ماهه: روپیه‌ی هند چهارشنبه ۶۹ پیسه قوی‌تر شد و روی ۹۲٫۲۳ در برابر دلار بسته شد. یعنی پول خارجی دوباره به هند برمی‌گردد و کالای هندی برای خریداران منطقه کمی گران‌تر می‌شود.",
+     "en": "The Indian rupee gained 69 paise to close at 92.23 per dollar, an eight-month high. Foreign money is returning to India.",
+     "src": "اچ‌دی‌اف‌سی اسکای",
+     "url": "https://hdfcsky.com/news/bse-nse-sensex-november-26-2026-open-report-sensex-nifty-diverge-at-open-on-thursday-as-strong-asia-steady-oil-offset-hot-us-inflation"
+    }
+   ]
+  },
+  {
+   "fa": "فرهنگ و خبرهای عجیب",
+   "en": "Culture & curious news",
+   "items": [
+    {
+     "fa": "بزرگ‌ترین موزه‌ی شهری جهان: موزه‌ی لندن پس از بازسازی ۴۳۷ میلیون پوندی شنبه در مکان تازه‌اش باز می‌شود؛ از رومی‌ها تا بنکسی.",
+     "en": "The London Museum, billed as the world's largest city museum, reopens Saturday after a £437m refurbishment.",
+     "src": "گلف تودی",
+     "url": "https://gulftoday.ae/culture/2026/11/26/a-huge-new-london-museum-tells-the-citys-story-from-the-romans-to-banksy"
+    },
+    {
+     "fa": "سایبرتراک متوقف‌شده، پرفروش‌ترین وانت دست‌دوم: تولید سایبرتراک تسلا لغو شده، اما حالا سریع‌ترین فروش را در بازار وانت دست‌دوم آمریکا دارد.",
+     "en": "The canceled Tesla Cybertruck is now the fastest-selling used truck in America.",
+     "src": "تک‌کرانچ",
+     "url": "https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/"
+    },
+    {
+     "fa": "گزارشگر فقید با صدای هوش مصنوعی: بازی EA Sports FC 27 صدای جان موتسون (John Motson) را با هوش مصنوعی و آرشیو صدایش، با اجازه‌ی خانواده‌اش، برمی‌گرداند.",
+     "en": "EA Sports FC 27 brings back late commentator John Motson via AI and archive recordings, with his family's permission.",
+     "src": "بی‌بی‌سی",
+     "url": "https://www.bbc.com/news/articles/c65y10j841jpo"
+    }
+   ]
+  }
+ ]
+}
