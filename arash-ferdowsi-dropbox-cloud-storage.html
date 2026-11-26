@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="fonts.css?v=1" />
+<title>The Iranian behind Dropbox: Arash Ferdowsi and the cloud storage industry | ایرانیِ پشت دراپ‌باکس | Ditoman</title>
+<meta name="description" content="آرش فردوسی، فرزند خانواده‌ای تبریزی، چطور با دراپ‌باکس فایل‌های جهان را به ابر برد؟ صنعت ذخیره‌سازی ابری، داستان تأسیس، نه به استیو جابز و درس‌هایی برای استارتاپ‌های ایرانی." />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "IRANYekanX Fa", Arial, Helvetica, sans-serif;
+background: radial-gradient(circle at top, #12343b 0%, #071116 35%, #03070a 100%);
+color: #f4f7f8;
+line-height: 1.7;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+.container {
+width: 90%;
+max-width: 1180px;
+margin: 0 auto;
+}
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(4, 10, 14, 0.9);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(68, 221, 204, 0.18);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.brand-logo {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.04);
+padding: 3px;
+box-shadow: 0 0 14px rgba(127, 245, 222, 0.18);
+}
+.logo-text {
+font-size: 1.25rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #7ff5de;
+}
+.nav-links {
+display: flex;
+gap: 22px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: #d8ffff;
+transition: 0.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #7ff5de;
+}
+.hero {
+padding: 70px 0 34px;
+}
+.hero-image {
+width: 100%;
+border-radius: 28px;
+overflow: hidden;
+border: 1px solid rgba(127, 245, 222, 0.2);
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+margin-bottom: 34px;
+}
+.hero-image img {
+width: 100%;
+display: block;
+}
+.lesson-badge {
+display: inline-block;
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.1);
+border: 1px solid rgba(127, 245, 222, 0.22);
+color: #7ff5de;
+font-size: 0.9rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h1 {
+font-size: clamp(2.2rem, 5vw, 4.4rem);
+line-height: 1.1;
+margin-bottom: 14px;
+color: #ffffff;
+}
+.subtitle {
+max-width: 850px;
+color: #b8d7d9;
+font-size: 1.12rem;
+margin-bottom: 24px;
+}
+.meta-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 14px;
+margin-top: 24px;
+}
+.meta-box {
+border-radius: 18px;
+padding: 16px;
+background: rgba(127, 245, 222, 0.08);
+border: 1px solid rgba(127, 245, 222, 0.16);
+}
+.meta-box span {
+display: block;
+color: #7ff5de;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+.meta-box strong {
+color: #ffffff;
+font-size: 1rem;
+}
+.section {
+padding: 42px 0;
+}
+.section-title {
+font-size: 2rem;
+color: #ffffff;
+margin-bottom: 14px;
+}
+.section-subtitle {
+color: #a7c6c9;
+margin-bottom: 26px;
+max-width: 850px;
+}
+.language-toggle {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 26px;
+}
+.lang-button {
+border: 1px solid rgba(127, 245, 222, 0.32);
+background: rgba(127, 245, 222, 0.12);
+color: #7ff5de;
+padding: 12px 22px;
+border-radius: 999px;
+font-weight: 700;
+cursor: pointer;
+}
+.lang-button.active {
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+}
+.lesson-content {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 24px;
+padding: 32px;
+}
+.lesson-content p {
+color: #c1dbde;
+margin-bottom: 18px;
+font-size: 1.05rem;
+}
+.lesson-content h3 {
+color: #ffffff;
+font-size: 1.3rem;
+margin-top: 28px;
+margin-bottom: 12px;
+}
+.lesson-content h3:first-child {
+margin-top: 0;
+}
+.check-number {
+color: #7ff5de;
+font-weight: 800;
+}
+.fa {
+direction: rtl;
+text-align: right;
+display: none;
+}
+.en {
+display: block;
+}
+.grid-two {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+.card {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.card h3 {
+color: #ffffff;
+margin-bottom: 12px;
+font-size: 1.25rem;
+}
+.card ul {
+padding-left: 22px;
+color: #a8c4c7;
+}
+.card li {
+margin-bottom: 8px;
+}
+.self-check {
+background:
+radial-gradient(circle at top left, rgba(127, 245, 222, 0.14), transparent 34%),
+linear-gradient(135deg, rgba(8, 18, 24, 0.92), rgba(10, 39, 45, 0.9));
+border: 1px solid rgba(127, 245, 222, 0.22);
+border-radius: 24px;
+padding: 32px;
+}
+.self-check p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.quiz-list {
+display: grid;
+gap: 18px;
+}
+.quiz-item {
+background: rgba(8, 18, 24, 0.86);
+border: 1px solid rgba(78, 227, 206, 0.14);
+border-radius: 22px;
+padding: 24px;
+}
+.quiz-item h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+.quiz-item p {
+color: #a8c4c7;
+margin-bottom: 8px;
+}
+.answer {
+color: #7ff5de !important;
+font-weight: 700;
+}
+.instagram-box {
+background: linear-gradient(135deg, rgba(73, 227, 194, 0.12), rgba(111, 66, 193, 0.16), rgba(255, 191, 73, 0.08));
+border: 1px solid rgba(127, 245, 222, 0.18);
+border-radius: 24px;
+padding: 30px;
+}
+.instagram-box p {
+color: #c1dbde;
+margin-bottom: 18px;
+}
+.cta-row {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 22px;
+}
+.button {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 999px;
+background: rgba(127, 245, 222, 0.12);
+border: 1px solid rgba(127, 245, 222, 0.32);
+color: #7ff5de;
+font-weight: 700;
+}
+.cta {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 999px;
+background: linear-gradient(90deg, #49e3c2, #2db7ff);
+color: #041015;
+font-weight: 700;
+box-shadow: 0 0 24px rgba(73, 227, 194, 0.28);
+}
+footer {
+border-top: 1px solid rgba(127, 245, 222, 0.12);
+padding: 28px 0 40px;
+color: #8fb2b7;
+text-align: center;
+font-size: 0.95rem;
+}
+@media (max-width: 900px) {
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 640px) {
+.nav {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+justify-content: center;
+gap: 16px;
+}
+.meta-grid,
+.grid-two {
+grid-template-columns: 1fr;
+}
+.lesson-content,
+.self-check {
+padding: 24px;
+}
+}
+.lesson-content li{margin-bottom:12px}
+.tw table{table-layout:auto;width:100%;min-width:480px !important}
+.tw td,.tw th{white-space:normal !important;word-break:keep-all;overflow-wrap:normal;vertical-align:top}
+blockquote{border-right:4px solid #ffc94a;background:rgba(255,201,74,.07);padding:14px 18px;border-radius:10px;margin:18px 0;font-weight:700}
+.en blockquote{border-right:0;border-left:4px solid #ffc94a}
+</style>
+<script>try{if(localStorage.getItem("ditoman-lang")==="en")document.documentElement.setAttribute("data-lang","en")}catch(e){}</script>
+  <link rel="stylesheet" href="theme.css?v=20261126c" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="fa" href="https://ditoman.com/arash-ferdowsi-dropbox-cloud-storage.html" />
+  <link rel="alternate" hreflang="en" href="https://ditoman.com/arash-ferdowsi-dropbox-cloud-storage.en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ditoman.com/arash-ferdowsi-dropbox-cloud-storage.html" />
+  <!-- hreflang:end -->
+<!-- seo:start -->
+<link rel="canonical" href="https://ditoman.com/arash-ferdowsi-dropbox-cloud-storage.html" />
+<link rel="icon" href="tmn-logo-256.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ditoman" />
+<meta property="og:title" content="The Iranian behind Dropbox: Arash Ferdowsi and the cloud storage industry | ایرانیِ پشت دراپ‌باکس | Ditoman" />
+<meta property="og:description" content="آرش فردوسی، فرزند خانواده‌ای تبریزی، چطور با دراپ‌باکس فایل‌های جهان را به ابر برد؟ صنعت ذخیره‌سازی ابری، داستان تأسیس، نه به استیو جابز و درس‌هایی برای استارتاپ‌های ایرانی." />
+<meta property="og:url" content="https://ditoman.com/arash-ferdowsi-dropbox-cloud-storage.html" />
+<meta property="og:image" content="https://ditoman.com/social/arash-ferdowsi-dropbox-cloud-storage/card.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://ditoman.com/arash-ferdowsi-dropbox-cloud-storage.html#article",
+   "mainEntityOfPage": "https://ditoman.com/arash-ferdowsi-dropbox-cloud-storage.html",
+   "headline": "The Iranian behind Dropbox: Arash Ferdowsi and the cloud storage industry | ایرانیِ پشت دراپ‌باکس",
+   "description": "آرش فردوسی، فرزند خانواده‌ای تبریزی، چطور با دراپ‌باکس فایل‌های جهان را به ابر برد؟ صنعت ذخیره‌سازی ابری، داستان تأسیس، نه به استیو جابز و درس‌هایی برای استارتاپ‌های ایرانی.",
+   "image": "https://ditoman.com/social/arash-ferdowsi-dropbox-cloud-storage/card.webp",
+   "inLanguage": [
+    "fa",
+    "en"
+   ],
+   "author": {
+    "@id": "https://ditoman.com/#organization"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://ditoman.com/#organization",
+    "name": "Ditoman",
+    "alternateName": [
+     "دیتومان",
+     "DiToman",
+     "Ditoman TMN"
+    ],
+    "url": "https://ditoman.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ditoman.com/tmn-logo-512.png",
+     "width": 512,
+     "height": 512
+    },
+    "foundingDate": "2022",
+    "sameAs": [
+     "https://www.instagram.com/ditoman.tmn/",
+     "https://t.me/Ditoman_tm",
+     "https://ble.ir/Ditoman",
+     "https://eitaa.com/DiToman",
+     "https://rubika.ir/DiToman"
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Ditoman",
+     "item": "https://ditoman.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "The Iranian behind Dropbox: Arash Ferdowsi and the cloud storage industry | ایرانیِ پشت دراپ‌باکس",
+     "item": "https://ditoman.com/arash-ferdowsi-dropbox-cloud-storage.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html" aria-label="Ditoman | دیتومان" style="direction:ltr">
+  <div class="logo-text brand-en">DITOMAN</div>
+  <img src="tmn-logo-256.png" alt="" class="brand-logo">
+  <div class="logo-text brand-fa" dir="rtl" style="font-family:IRANYekanX,Tahoma,sans-serif;letter-spacing:0">دیتومان</div>
+</a>
+<nav class="nav-links">
+<a href="learn.html">Learn</a>
+<a href="iran.html">Iran</a>
+<a href="companies.html">Companies</a>
+<a href="prices.html">Prices</a>
+<a href="calendar.html">Calendar</a>
+<a href="tmn.html">TMN</a>
+<a href="index.html#whitepapers">Whitepaper</a>
+<a href="posts.html" class="active">Posts</a>
+</nav>
+</div>
+</header>
+
+<style>
+.fa{display:block;font-family:"IRANYekanX Fa",Tahoma,Arial,sans-serif}
+html[data-lang="fa"] .hero .container,html[data-lang="fa"] .instagram-box{direction:rtl;text-align:right}
+.en{display:none}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:8px 0 26px}
+.stat{border-radius:18px;padding:18px;background:rgba(127,245,222,.08);border:1px solid rgba(127,245,222,.16)}
+.stat b{display:block;font-size:2rem;color:#7ff5de;line-height:1.1}
+.stat span{color:#c1dbde;font-size:.95rem}
+.timeline{list-style:none;border-inline-start:2px solid rgba(127,245,222,.3);padding-inline-start:18px;margin-bottom:18px}
+.timeline li{color:#c1dbde;margin-bottom:10px}
+.timeline li strong{color:#7ff5de}
+.note{border-radius:18px;padding:18px 20px;background:rgba(255,191,73,.08);border:1px solid rgba(255,191,73,.25);margin:18px 0}
+.note p{margin-bottom:8px !important}
+.lesson-content ul{padding-inline-start:22px;color:#c1dbde;margin-bottom:18px}
+.lesson-content li{margin-bottom:6px}
+.sources li{word-break:break-word}
+.tw{overflow-x:auto;margin:14px 0 20px}.tw table{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}.tw th,.tw td{padding:9px 10px;border-bottom:1px solid rgba(127,245,222,.15);text-align:start;vertical-align:top;color:#c1dbde}.tw th{color:#7ff5de;font-weight:700}.tw tr.me td{background:rgba(127,245,222,.07);color:#fff}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-image"><img lang="fa" src="social/arash-ferdowsi-dropbox-cloud-storage/card.webp" srcset="social/arash-ferdowsi-dropbox-cloud-storage/card.webp 900w, social/arash-ferdowsi-dropbox-cloud-storage/post.webp 1254w" sizes="(max-width: 600px) 92vw, 760px" alt="The Iranian behind Dropbox: Arash Ferdowsi" onerror="this.parentElement.style.display='none'"><img lang="en" src="social/arash-ferdowsi-dropbox-cloud-storage/en-card.webp" srcset="social/arash-ferdowsi-dropbox-cloud-storage/en-card.webp 900w, social/arash-ferdowsi-dropbox-cloud-storage/en.webp 1080w" sizes="(max-width: 600px) 92vw, 760px" alt="The Iranian behind Dropbox: Arash Ferdowsi" onerror="this.parentElement.style.display='none'"></div>
+<div class="lesson-badge"><span lang="en">Opportunity · Founder stories</span><span lang="fa">فرصت و امید · داستان کارآفرینی</span></div>
+<h1 lang="fa" dir="rtl" style="text-align:right">ایرانیِ پشتِ دراپ‌باکس؛ آرش فردوسی و ابری که فایل‌های جهان را نگه می‌دارد</h1>
+<h1 lang="en">The Iranian behind Dropbox: Arash Ferdowsi and the cloud that holds the world’s files</h1>
+<p class="subtitle" lang="fa" dir="rtl" style="text-align:right">صنعت ذخیره‌سازی ابری، داستان یک فلش جامانده، نه به استیو جابز، دراپ‌باکس امروز و درس‌هایی برای استارتاپ‌های ایرانی</p>
+<p class="subtitle" lang="en">The cloud storage industry, the story of a forgotten USB stick, saying no to Steve Jobs, Dropbox today, and lessons for Iranian startups</p>
+<div class="stats">
+<div class="stat"><b lang="fa">۷۰۰ میلیون+</b><b lang="en">700M+</b><span lang="fa">کاربر ثبت‌نام‌شده‌ی دراپ‌باکس</span><span lang="en">registered Dropbox users</span></div>
+<div class="stat"><b lang="fa">۲٫۵ میلیارد دلار</b><b lang="en">$2.5bn</b><span lang="fa">درآمد سالانه‌ی تکرارشونده</span><span lang="en">annual recurring revenue</span></div>
+<div class="stat"><b lang="fa">۱۸٫۲ میلیون</b><b lang="en">18.2M</b><span lang="fa">مشترک پولی</span><span lang="en">paying subscribers</span></div>
+<div class="stat"><b lang="fa">۱۳۷ میلیارد دلار</b><b lang="en">$137bn</b><span lang="fa">بازار جهانی ذخیره‌سازی ابری، ۲۰۲۵</span><span lang="en">global cloud storage market, 2025</span></div>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<div class="language-toggle"><button class="lang-button active" onclick="showLanguage('fa')">فارسی</button><button class="lang-button" onclick="showLanguage('en')">English</button></div>
+<div class="lesson-content fa" id="fa-content" dir="rtl" style="text-align:right">
+<blockquote>هر بار عکسی را در گوشی ذخیره می‌کنید و بعد روی لپ‌تاپ می‌بینیدش، یا فایلی را با یک لینک برای همکارتان می‌فرستید، از ایده‌ای استفاده می‌کنید که حدود ۲۰ سال پیش ساده به نظر نمی‌رسید. یکی از دو نفری که این ایده را به یکی از بزرگ‌ترین شرکت‌های اینترنتی جهان تبدیل کردند، پسری از خانواده‌ای ایرانی بود: آرش فردوسی، هم‌بنیان‌گذار دراپ‌باکس.</blockquote>
+<h3>در یک نگاه</h3>
+<ul>
+<li>بازار جهانی ذخیره‌سازی ابری در ۲۰۲۵ حدود ۱۳۷ میلیارد دلار بود و پیش‌بینی می‌شود تا ۲۰۳۴ به حدود ۵۰۰ میلیارد دلار برسد</li>
+</ul>
+<ul>
+<li>آرش فردوسی، فرزند پدری اهل تبریز، سال ۲۰۰۷ در ۲۱ سالگی دانشگاه MIT را در ترم آخر رها کرد تا دراپ‌باکس را بسازد</li>
+</ul>
+<ul>
+<li>دراپ‌باکس به یک پیشنهاد خرید «نُه رقمی» از استیو جابز نه گفت و سال ۲۰۱۸ با ارزش حدود ۹٫۲ میلیارد دلار وارد بورس شد</li>
+</ul>
+<ul>
+<li>امروز بیش از ۷۰۰ میلیون کاربر ثبت‌نام‌شده، حدود ۱۸ میلیون مشترک پولی و درآمد سالانه‌ی حدود ۲٫۵ میلیارد دلار دارد</li>
+</ul>
+<ul>
+<li>درس بزرگش برای استارتاپ‌ها: یک مشکل روزمره را خیلی ساده حل کن، و کاری کن کاربرانت خودشان تبلیغت را بکنند</li>
+</ul>
+<h3><span class="check-number">۱.</span> فایل‌های ما کجا زندگی می‌کنند؟</h3>
+<p>تا همین ۲۰ سال پیش، فایل‌ها جای مشخصی داشتند: روی هارد کامپیوتر، یک فلاپی، یک سی‌دی یا یک فلش. اگر فلش را جا می‌گذاشتید، فایل هم جا می‌ماند. خیلی‌ها برای اینکه فایلی را در خانه و محل کار داشته باشند، آن را برای خودشان ایمیل می‌کردند.</p>
+<p>ذخیره‌سازی ابری این را عوض کرد. «ابر» در واقع کامپیوترهای بزرگی در مراکز داده است که فایل شما را نگه می‌دارند و هر وقت لازم باشد، روی هر دستگاهی که دارید به شما برمی‌گردانند. نسخه‌ی گوشی، لپ‌تاپ و تبلت همیشه یکی است؛ اسم این کار «همگام‌سازی» (sync) است.</p>
+<p>امروز این صنعت یکی از پایه‌های اقتصاد دیجیتال است:</p>
+<div class="tw"><table><tr><th>شاخص</th><th>رقم</th></tr><tr><td>اندازه‌ی بازار جهانی ذخیره‌سازی ابری، ۲۰۲۵</td><td>حدود ۱۳۶٫۸ میلیارد دلار</td></tr><tr><td>پیش‌بینی ۲۰۳۴</td><td>حدود ۵۰۱ میلیارد دلار</td></tr><tr><td>رشد سالانه‌ی پیش‌بینی‌شده</td><td>حدود ۱۵٪</td></tr><tr><td>مشترکان پولی Google One، مه ۲۰۲۵</td><td>بیش از ۱۵۰ میلیون</td></tr></table></div>
+<p>منابع: <a href="https://www.imarcgroup.com/cloud-storage-market-statistics" target="_blank" rel="noopener" style="color:#57D9C7">IMARC Group</a> و <a href="https://www.thestar.com.my/tech/tech-news/2025/05/16/google-hits-150-million-users-for-subscription-service-with-help-of-ai" target="_blank" rel="noopener" style="color:#57D9C7">The Star / Reuters</a>.</p>
+<h3>بازیگران اصلی</h3>
+<ul>
+<li>زیرساخت ابری شرکت‌ها: آمازون (AWS)، مایکروسافت (Azure)، گوگل و علی‌بابا</li>
+</ul>
+<ul>
+<li>ذخیره‌سازی شخصی: Google Drive، iCloud اپل و OneDrive مایکروسافت؛ که معمولاً همراه گوشی یا سیستم‌عامل می‌آیند</li>
+</ul>
+<ul>
+<li>شرکت‌های مستقل: دراپ‌باکس و Box، که فقط کارشان همین است</li>
+</ul>
+<p>پیشران‌های رشد هم روشن‌اند: کار از راه دور، گوشی‌هایی که هر روز عکس و ویدیوی بیشتری می‌گیرند، و هوش مصنوعی که برای کار کردن به داده‌ی مرتب و در دسترس نیاز دارد.</p>
+<h3><span class="check-number">۲.</span> آرش فردوسی کیست؟</h3>
+<p>آرش فردوسی ۷ اکتبر ۱۹۸۵ در شهر اورلند پارک در ایالت کانزاس آمریکا به دنیا آمد. پدرش، غلام فردوسی، اهل تبریز است و مادرش، تهمینه فریدآذر، هم متولد ایران است. خانواده پس از انقلاب ۱۳۵۷ در آمریکا ماندند (<a href="https://en.wikipedia.org/wiki/Arash_Ferdowsi" target="_blank" rel="noopener" style="color:#57D9C7">Wikipedia</a>).</p>
+<p>آرش در دبیرستان دولتی Blue Valley Northwest شاگرد اول شد و سال ۲۰۰۴ وارد MIT شد تا مهندسی برق و علوم کامپیوتر بخواند. در ترم آخر، فقط چند ماه پیش از گرفتن مدرک، دانشگاه را رها کرد تا با درو هیوستون دراپ‌باکس را بسازد.</p>
+<h3><span class="check-number">۳.</span> تولد دراپ‌باکس: یک فلش جامانده</h3>
+<p>ماجرا از یک اتوبوس شروع شد. درو هیوستون، دانشجوی دیگر MIT، در سفری به نیویورک فهمید فلشش را جا گذاشته است. همان‌جا شروع کرد به نوشتن کد برنامه‌ای که دیگر هیچ‌وقت این مشکل را نداشته باشد (<a href="https://sequoiacap.com/podcast/crucible-moments-dropbox" target="_blank" rel="noopener" style="color:#57D9C7">Sequoia Capital</a>).</p>
+<p>هیوستون برای ورود به شتاب‌دهنده‌ی معروف Y Combinator یک ویدیوی کوتاه از نمونه‌ی اولیه ساخت. ویدیو دو روز در صدر سایت Hacker News ماند، ولی پل گراهام، بنیان‌گذار Y Combinator، به او گفت برای پذیرش به یک هم‌بنیان‌گذار نیاز دارد. یک دوست مشترک، هیوستون را با آرش فردوسی آشنا کرد. آرش دانشگاه را رها کرد و هر دو پذیرفته شدند.</p>
+<div class="tw"><table><tr><th>سال</th><th>اتفاق</th></tr><tr><td>ژوئن ۲۰۰۷</td><td>تأسیس دراپ‌باکس؛ آرش مدیر ارشد فناوری (CTO) شد</td></tr><tr><td>پاییز ۲۰۰۷</td><td>سرمایه‌گذاری اولیه‌ی Sequoia Capital و انتقال به سان‌فرانسیسکو</td></tr><tr><td>۲۰۰۸</td><td>ویدیوی دوم: فهرست انتظار در یک روز از ۵ هزار به ۸۵ هزار نفر رسید</td></tr><tr><td>۲۰۰۸</td><td>عرضه‌ی عمومی؛ برنامه‌ی معرفی دوستان، کاربران را در ۱۰ روز از ۱۰۰ هزار به ۲۰۰ هزار رساند</td></tr><tr><td>۲۰۰۹</td><td>۳ میلیون کاربر؛ نه به پیشنهاد استیو جابز</td></tr><tr><td>۲۰۱۱</td><td>۵۰ میلیون کاربر</td></tr><tr><td>۲۰۱۶</td><td>آرش از سمت CTO کنار رفت</td></tr><tr><td>مارس ۲۰۱۸</td><td>ورود به بورس نزدک با ارزش حدود ۹٫۲ میلیارد دلار</td></tr><tr><td>۲۰۲۰</td><td>آرش از دراپ‌باکس جدا شد</td></tr></table></div>
+<h3>راز رشد: کاربرانی که خودشان تبلیغ می‌کردند</h3>
+<p>دراپ‌باکس تقریباً پولی برای تبلیغ نداد. فکرش ساده بود: هر کس دوستی را دعوت کند، هم خودش و هم دوستش فضای رایگان بیشتری می‌گیرند. این ایده که از برنامه‌ی پی‌پال الهام گرفته بود، رشد را یک‌شبه دو برابر کرد. ویدیوی دوم هم پر از شوخی و «اشاره‌های پنهان» برای کاربران Digg و Reddit بود و دست‌به‌دست شد.</p>
+<p>حتی شکست هم بخشی از داستان است: در نمایش زنده‌ی سال ۲۰۰۸ در کنفرانس TechCrunch، فایل همگام نشد، چون وای‌فای سالن قطع شده بود. بنیان‌گذاران ادامه دادند.</p>
+<h3><span class="check-number">۴.</span> نه به استیو جابز</h3>
+<p>در دسامبر ۲۰۰۹، استیو جابز هیوستون و فردوسی را به دفترش در کوپرتینو دعوت کرد. اپل پیشنهاد خریدی «نُه رقمی»، یعنی صدها میلیون دلار، داد. به گزارش فوربز، جابز وقتی هیوستون خواست نمایش لپ‌تاپش را شروع کند، گفت: «می‌دانم چه کار می‌کنید.» به گفته‌ی گزارش‌ها، به آن‌ها گفت اپل وارد بازارشان می‌شود (<a href="https://techcrunch.com/2011/10/18/dropbox-said-no-to-nine-digits-acquisition-offer-from-apple-steve-jobs" target="_blank" rel="noopener" style="color:#57D9C7">TechCrunch</a>).</p>
+<p>دو بنیان‌گذار جوان نه گفتند. اپل سال ۲۰۱۱ سرویس iCloud را معرفی کرد، ولی دراپ‌باکس نه‌تنها نابود نشد، بلکه هفت سال بعد با ارزشی بیش از ۹ میلیارد دلار وارد بورس شد.</p>
+<h3><span class="check-number">۵.</span> دراپ‌باکس امروز</h3>
+<div class="tw"><table><tr><th>شاخص</th><th>رقم</th></tr><tr><td>درآمد فصل سوم ۲۰۲۶</td><td>۶۳۷٫۳ میلیون دلار</td></tr><tr><td>درآمد سالانه‌ی تکرارشونده (ARR)</td><td>۲٫۵۵۵ میلیارد دلار</td></tr><tr><td>مشترکان پولی</td><td>۱۸٫۲ میلیون</td></tr><tr><td>میانگین پرداخت هر مشترک در سال</td><td>حدود ۱۳۹ دلار</td></tr><tr><td>حاشیه‌ی جریان نقد آزاد</td><td>۳۹٫۵٪</td></tr><tr><td>کاربران ثبت‌نام‌شده</td><td>بیش از ۷۰۰ میلیون</td></tr><tr><td>مشتریان تجاری</td><td>حدود ۵۰۰ هزار</td></tr><tr><td>ارزش بازار، اکتبر ۲۰۲۶</td><td>حدود ۸٫۲ میلیارد دلار</td></tr></table></div>
+<p>منابع: <a href="https://www.morningstar.com/news/business-wire/20261105521246/dropbox-announces-third-quarter-2026-results" target="_blank" rel="noopener" style="color:#57D9C7">Dropbox، نتایج فصل سوم ۲۰۲۶</a>، <a href="https://sequoiacap.com/podcast/crucible-moments-dropbox" target="_blank" rel="noopener" style="color:#57D9C7">Sequoia Capital</a> و <a href="https://stockanalysis.com/stocks/dbx/market-cap/" target="_blank" rel="noopener" style="color:#57D9C7">StockAnalysis</a>.</p>
+<p>دراپ‌باکس امروز شرکتی بسیار سودده است: از هر ۱۰۰ دلار درآمد، حدود ۴۰ دلار پول نقد آزاد می‌سازد. ولی رشدش تقریباً متوقف شده؛ درآمد فصل سوم فقط ۰٫۵٪ بیشتر از سال قبل بود. دلیل اصلی رقابت با غول‌هایی است که فضای ذخیره را همراه گوشی، ایمیل و سیستم‌عامل تقریباً رایگان می‌دهند. حالا دراپ‌باکس روی ابزارهای هوش مصنوعی برای جست‌وجو و سازمان‌دهی کار شرط بسته است.</p>
+<h3><span class="check-number">۶.</span> دراپ‌باکس چه بازاری ساخت؟</h3>
+<ul>
+<li>فایل همه‌جا: پیش از دراپ‌باکس، همگام‌سازی کار متخصصان بود. دراپ‌باکس آن را به یک پوشه‌ی ساده روی دسکتاپ تبدیل کرد که «فقط کار می‌کرد»</li>
+</ul>
+<ul>
+<li>مدل فریمیوم: ۲ گیگابایت رایگان، و پرداخت برای فضای بیشتر. این مدل بعدها الگوی صدها سرویس نرم‌افزاری شد</li>
+</ul>
+<ul>
+<li>رشد با معرفی کاربران: برنامه‌ی «دوستت را دعوت کن» یکی از معروف‌ترین نمونه‌های رشد ویروسی در تاریخ استارتاپ‌هاست</li>
+</ul>
+<ul>
+<li>کار از راه دور: اشتراک یک پوشه با تیم، پیش‌زمینه‌ی کار گروهی ابری امروز بود</li>
+</ul>
+<ul>
+<li>رقابت غول‌ها: موفقیت دراپ‌باکس گوگل، اپل و مایکروسافت را وادار کرد سرویس‌های خودشان را بسازند و کل بازار را بزرگ‌تر کرد</li>
+</ul>
+<h3><span class="check-number">۷.</span> درس‌هایی برای استارتاپ‌های ایرانی</h3>
+<ul>
+<li>از مشکل خودت شروع کن: دراپ‌باکس از یک فلش جامانده شروع شد، نه از یک طرح تجاری</li>
+</ul>
+<ul>
+<li>سادگی، محصول است: کاربر نباید بفهمد پشت صحنه چه می‌گذرد</li>
+</ul>
+<ul>
+<li>کاربرت تبلیغت را می‌کند: اگر محصول خوب باشد، یک انگیزه‌ی کوچک کافی است تا دست‌به‌دست شود</li>
+</ul>
+<ul>
+<li>هم‌بنیان‌گذار مهم است: Y Combinator بدون هم‌بنیان‌گذار، هیوستون را نمی‌پذیرفت</li>
+</ul>
+<ul>
+<li>گاهی باید نه گفت: پیشنهاد بزرگ امروز، همیشه بزرگ‌ترین ارزش فردا نیست</li>
+</ul>
+<h3>تحلیل دیتومان</h3>
+<p>داستان آرش فردوسی فقط داستان یک میلیاردر نیست. داستان پسری است از خانواده‌ای تبریزی که در ۲۱ سالگی، چند ماه پیش از مدرک گرفتن از MIT، روی یک ایده‌ی ساده شرط بست و در ساختن ابزاری سهیم شد که صدها میلیون نفر هر روز از آن استفاده می‌کنند.</p>
+<p>استعداد ایرانی‌ها، هر جای دنیا که باشند، بارها خودش را نشان داده است. همین استعداد امروز در خود ایران هم هست: در برنامه‌نویس‌ها، مهندس‌ها و تیم‌های کوچکی که با منابع کم محصول می‌سازند. اگر به بازار جهانی و سرمایه وصل شوند، آرش فردوسی‌های بعدی می‌توانند از همین‌جا بیرون بیایند.</p>
+<p>شما فکر می‌کنید کدام مشکل روزمره‌ی ما ایرانی‌ها می‌تواند ایده‌ی دراپ‌باکس بعدی باشد؟</p>
+<h3>بیشتر بخوانید</h3><ul><li><a href="brain-computer-interface-mental-privacy.html">آخرین حریم خصوصی انسان؛ تراشه‌های مغزی</a></li><li><a href="remote-income-from-iran.html">درآمد ارزی از ایران؛ فرصت‌های واقعی</a></li></ul>
+<h3>منابع</h3><ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Arash_Ferdowsi" target="_blank" rel="noopener">Wikipedia: Arash Ferdowsi</a></li><li><a href="https://sequoiacap.com/podcast/crucible-moments-dropbox" target="_blank" rel="noopener">Sequoia Capital: Crucible Moments, Dropbox</a></li><li><a href="https://techcrunch.com/2011/10/18/dropbox-said-no-to-nine-digits-acquisition-offer-from-apple-steve-jobs" target="_blank" rel="noopener">TechCrunch: Dropbox said no to a nine-digit offer from Apple (2011)</a></li><li><a href="https://www.morningstar.com/news/business-wire/20261105521246/dropbox-announces-third-quarter-2026-results" target="_blank" rel="noopener">Dropbox: Third quarter 2026 results (Business Wire via Morningstar)</a></li><li><a href="https://stockanalysis.com/stocks/dbx/market-cap/" target="_blank" rel="noopener">StockAnalysis: Dropbox market cap</a></li><li><a href="https://www.imarcgroup.com/cloud-storage-market-statistics" target="_blank" rel="noopener">IMARC Group: Cloud storage market statistics</a></li><li><a href="https://www.thestar.com.my/tech/tech-news/2025/05/16/google-hits-150-million-users-for-subscription-service-with-help-of-ai" target="_blank" rel="noopener">Reuters via The Star: Google One hits 150 million subscribers (May 2025)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">آخرین بازبینی: ۵ آذر ۱۴۰۵. زندگی‌نامه از منابع عمومی، داستان تأسیس از گفت‌وگوی Sequoia Capital با بنیان‌گذاران، و رقم‌های مالی از گزارش رسمی فصل سوم ۲۰۲۶ دراپ‌باکس بررسی شد. اندازه‌ی بازار، برآورد یک مؤسسه‌ی پژوهشی است. بخش تحلیل، ارزیابی دیتومان است.</p></div>
+<div class="lesson-content en" id="en-content" style="display:none">
+<blockquote>Every time you save a photo on your phone and then see it on your laptop, or send a colleague a file as a link, you are using an idea that did not seem simple 20 years ago. One of the two people who turned that idea into one of the world's biggest internet companies was the son of an Iranian family: Arash Ferdowsi, co-founder of Dropbox.</blockquote>
+<h3>At a glance</h3>
+<ul>
+<li>The global cloud storage market was worth about $137 billion in 2025 and is forecast to reach about $500 billion by 2034</li>
+</ul>
+<ul>
+<li>Arash Ferdowsi, whose father is from Tabriz, left MIT in his final semester in 2007, aged 21, to build Dropbox</li>
+</ul>
+<ul>
+<li>Dropbox turned down a "nine-digit" acquisition offer from Steve Jobs and went public in 2018 at a valuation of about $9.2 billion</li>
+</ul>
+<ul>
+<li>Today it has more than 700 million registered users, about 18 million paying subscribers and about $2.5 billion in annual revenue</li>
+</ul>
+<ul>
+<li>Its big lesson for startups: solve an everyday problem very simply, and let your users do your advertising</li>
+</ul>
+<h3><span class="check-number">1.</span> Where do our files live?</h3>
+<p>Until about 20 years ago, files had a fixed home: a computer's hard drive, a floppy disk, a CD or a USB stick. Forget the stick, and you forgot the file. Many people emailed files to themselves just to have them at home and at work.</p>
+<p>Cloud storage changed that. "The cloud" is really large computers in data centres that keep your files and hand them back on any device you own, whenever you need them. The version on your phone, laptop and tablet is always the same; that is called "sync".</p>
+<p>Today this industry is one of the foundations of the digital economy:</p>
+<div class="tw"><table><tr><th>Measure</th><th>Figure</th></tr><tr><td>Global cloud storage market, 2025</td><td>About $136.8 billion</td></tr><tr><td>2034 forecast</td><td>About $501 billion</td></tr><tr><td>Forecast annual growth</td><td>About 15%</td></tr><tr><td>Google One paying subscribers, May 2025</td><td>More than 150 million</td></tr></table></div>
+<p>Sources: <a href="https://www.imarcgroup.com/cloud-storage-market-statistics" target="_blank" rel="noopener" style="color:#57D9C7">IMARC Group</a> and <a href="https://www.thestar.com.my/tech/tech-news/2025/05/16/google-hits-150-million-users-for-subscription-service-with-help-of-ai" target="_blank" rel="noopener" style="color:#57D9C7">The Star / Reuters</a>.</p>
+<h3>The main players</h3>
+<ul>
+<li>Cloud infrastructure for businesses: Amazon (AWS), Microsoft (Azure), Google and Alibaba</li>
+</ul>
+<ul>
+<li>Personal storage: Google Drive, Apple's iCloud and Microsoft's OneDrive, which usually come bundled with a phone or operating system</li>
+</ul>
+<ul>
+<li>Independents: Dropbox and Box, for whom this is the whole business</li>
+</ul>
+<p>The growth drivers are clear: remote work, phones that take more photos and videos every day, and AI, which needs organised, accessible data to work.</p>
+<h3><span class="check-number">2.</span> Who is Arash Ferdowsi?</h3>
+<p>Arash Ferdowsi was born on 7 October 1985 in Overland Park, Kansas. His father, Gholam Ferdowsi, is from Tabriz, and his mother, Tahmineh Faridazar, was also born in Iran. The family settled in the United States after the 1979 revolution (<a href="https://en.wikipedia.org/wiki/Arash_Ferdowsi" target="_blank" rel="noopener" style="color:#57D9C7">Wikipedia</a>).</p>
+<p>Arash graduated first in his class at Blue Valley Northwest, a public high school, and entered MIT in 2004 to study electrical engineering and computer science. In his final semester, just months before graduating, he left to build Dropbox with Drew Houston.</p>
+<h3><span class="check-number">3.</span> The birth of Dropbox: a forgotten USB stick</h3>
+<p>It began on a bus. Drew Houston, another MIT student, realised on a trip to New York that he had left his USB stick behind. Right there he started writing the code for a program that would mean never having that problem again (<a href="https://sequoiacap.com/podcast/crucible-moments-dropbox" target="_blank" rel="noopener" style="color:#57D9C7">Sequoia Capital</a>).</p>
+<p>To get into the famous Y Combinator accelerator, Houston made a short video of his prototype. It stayed at the top of Hacker News for two days, but Paul Graham, Y Combinator's founder, told him he needed a co-founder to get in. A mutual friend introduced Houston to Arash Ferdowsi. Arash left university, and both were accepted.</p>
+<div class="tw"><table><tr><th>Year</th><th>What happened</th></tr><tr><td>June 2007</td><td>Dropbox founded; Arash became chief technology officer (CTO)</td></tr><tr><td>Autumn 2007</td><td>Seed investment from Sequoia Capital; move to San Francisco</td></tr><tr><td>2008</td><td>Second video: the waitlist jumped from 5,000 to 85,000 in a day</td></tr><tr><td>2008</td><td>Public launch; the refer-a-friend programme took users from 100,000 to 200,000 in 10 days</td></tr><tr><td>2009</td><td>3 million users; a no to Steve Jobs</td></tr><tr><td>2011</td><td>50 million users</td></tr><tr><td>2016</td><td>Arash stepped down as CTO</td></tr><tr><td>March 2018</td><td>Nasdaq listing at a valuation of about $9.2 billion</td></tr><tr><td>2020</td><td>Arash left Dropbox</td></tr></table></div>
+<h3>The growth secret: users who did the advertising</h3>
+<p>Dropbox spent almost nothing on ads. The idea was simple: invite a friend, and both you and your friend get more free space. Inspired by PayPal's programme, it doubled growth overnight. The second video, full of jokes and hidden "Easter eggs" for Digg and Reddit users, spread fast too.</p>
+<p>Even failure is part of the story: at a live demo at the 2008 TechCrunch conference, the file did not sync because the hall's Wi-Fi went down. The founders kept going.</p>
+<h3><span class="check-number">4.</span> Saying no to Steve Jobs</h3>
+<p>In December 2009, Steve Jobs invited Houston and Ferdowsi to his office in Cupertino. Apple offered a "nine-digit" price, hundreds of millions of dollars. According to Forbes, when Houston started a demo on his laptop, Jobs said: "I know what you do." Reports say he told them Apple would go after their market (<a href="https://techcrunch.com/2011/10/18/dropbox-said-no-to-nine-digits-acquisition-offer-from-apple-steve-jobs" target="_blank" rel="noopener" style="color:#57D9C7">TechCrunch</a>).</p>
+<p>The two young founders said no. Apple launched iCloud in 2011, but Dropbox was not crushed; seven years later it went public at a value of more than $9 billion.</p>
+<h3><span class="check-number">5.</span> Dropbox today</h3>
+<div class="tw"><table><tr><th>Measure</th><th>Figure</th></tr><tr><td>Q3 2026 revenue</td><td>$637.3 million</td></tr><tr><td>Annual recurring revenue (ARR)</td><td>$2.555 billion</td></tr><tr><td>Paying users</td><td>18.2 million</td></tr><tr><td>Average annual revenue per paying user</td><td>About $139</td></tr><tr><td>Free cash flow margin</td><td>39.5%</td></tr><tr><td>Registered users</td><td>More than 700 million</td></tr><tr><td>Business customers</td><td>About 500,000</td></tr><tr><td>Market value, October 2026</td><td>About $8.2 billion</td></tr></table></div>
+<p>Sources: <a href="https://www.morningstar.com/news/business-wire/20261105521246/dropbox-announces-third-quarter-2026-results" target="_blank" rel="noopener" style="color:#57D9C7">Dropbox Q3 2026 results</a>, <a href="https://sequoiacap.com/podcast/crucible-moments-dropbox" target="_blank" rel="noopener" style="color:#57D9C7">Sequoia Capital</a> and <a href="https://stockanalysis.com/stocks/dbx/market-cap/" target="_blank" rel="noopener" style="color:#57D9C7">StockAnalysis</a>.</p>
+<p>Dropbox is now a very profitable company: from every $100 of revenue it generates about $40 of free cash. But growth has almost stopped; third-quarter revenue was only 0.5% higher than a year earlier. The main reason is competition with giants that give storage away almost free with phones, email and operating systems. Dropbox is now betting on AI tools for search and organising work.</p>
+<h3><span class="check-number">6.</span> What market did Dropbox create?</h3>
+<ul>
+<li>Files everywhere: before Dropbox, sync was a job for specialists. Dropbox turned it into a simple folder on the desktop that "just worked"</li>
+</ul>
+<ul>
+<li>The freemium model: 2 GB free, pay for more space. This later became the template for hundreds of software services</li>
+</ul>
+<ul>
+<li>Referral growth: the "invite a friend" programme is one of the best-known examples of viral growth in startup history</li>
+</ul>
+<ul>
+<li>Remote work: sharing a folder with a team paved the way for today's cloud collaboration</li>
+</ul>
+<ul>
+<li>The giants' race: Dropbox's success pushed Google, Apple and Microsoft to build their own services and made the whole market bigger</li>
+</ul>
+<h3><span class="check-number">7.</span> Lessons for Iranian startups</h3>
+<ul>
+<li>Start with your own problem: Dropbox began with a forgotten USB stick, not a business plan</li>
+</ul>
+<ul>
+<li>Simplicity is the product: users should not need to know what happens behind the scenes</li>
+</ul>
+<ul>
+<li>Your users can advertise for you: if the product is good, a small incentive is enough to make it spread</li>
+</ul>
+<ul>
+<li>Co-founders matter: Y Combinator would not take Houston without one</li>
+</ul>
+<ul>
+<li>Sometimes you have to say no: today's big offer is not always tomorrow's biggest value</li>
+</ul>
+<h3>Ditoman's view</h3>
+<p>Arash Ferdowsi's story is not just a billionaire's story. It is the story of a boy from a Tabrizi family who, at 21 and months away from an MIT degree, bet on a simple idea and helped build a tool hundreds of millions of people use every day.</p>
+<p>The talent of Iranians, wherever they are in the world, has shown itself again and again. The same talent is in Iran today: in programmers, engineers and small teams building products with few resources. Connected to global markets and capital, the next Arash Ferdowsis could come from right there.</p>
+<p>Which everyday problem of ours do you think could be the next Dropbox idea?</p>
+<h3>Read more</h3><ul><li><a href="brain-computer-interface-mental-privacy.en.html">The last frontier of privacy: brain chips</a></li><li><a href="remote-income-from-iran.en.html">Remote income from Iran: real opportunities</a></li></ul>
+<h3>Sources</h3><ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Arash_Ferdowsi" target="_blank" rel="noopener">Wikipedia: Arash Ferdowsi</a></li><li><a href="https://sequoiacap.com/podcast/crucible-moments-dropbox" target="_blank" rel="noopener">Sequoia Capital: Crucible Moments, Dropbox</a></li><li><a href="https://techcrunch.com/2011/10/18/dropbox-said-no-to-nine-digits-acquisition-offer-from-apple-steve-jobs" target="_blank" rel="noopener">TechCrunch: Dropbox said no to a nine-digit offer from Apple (2011)</a></li><li><a href="https://www.morningstar.com/news/business-wire/20261105521246/dropbox-announces-third-quarter-2026-results" target="_blank" rel="noopener">Dropbox: Third quarter 2026 results (Business Wire via Morningstar)</a></li><li><a href="https://stockanalysis.com/stocks/dbx/market-cap/" target="_blank" rel="noopener">StockAnalysis: Dropbox market cap</a></li><li><a href="https://www.imarcgroup.com/cloud-storage-market-statistics" target="_blank" rel="noopener">IMARC Group: Cloud storage market statistics</a></li><li><a href="https://www.thestar.com.my/tech/tech-news/2025/05/16/google-hits-150-million-users-for-subscription-service-with-help-of-ai" target="_blank" rel="noopener">Reuters via The Star: Google One hits 150 million subscribers (May 2025)</a></li></ul><p style="color:#9fb6b9;margin-top:10px">Last reviewed 26 November 2026. The biography was checked against public sources, the founding story against Sequoia Capital’s interview with the founders, and financial figures against Dropbox’s official Q3 2026 results. The market size is a research firm’s estimate. The analysis section is Ditoman’s assessment.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="instagram-box">
+<h2 class="section-title"><span lang="fa">با هم دنبال می‌کنیم</span><span lang="en">Follow along</span></h2>
+<div class="cta-row">
+<a class="cta" href="https://t.me/Ditoman_tm" target="_blank" rel="noopener noreferrer">Join on Telegram</a>
+<a class="button" href="https://www.instagram.com/ditoman.tmn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="button" href="index.html">Home</a>
+</div>
+</div>
+</div>
+</section>
+<!-- storynav:start -->
+<nav class="story-nav" aria-label="Stories"><a class="sn sn-newer" href="oldest-cities.html"><img lang="fa" src="social/oldest-cities/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/oldest-cities/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر جدیدتر</span><span lang="en">Newer story</span></small><b><span lang="fa" dir="rtl">ده شهری که چراغشان هزاران سال خاموش نشده</span><span lang="en">Ten Cities That Never Went Dark</span></b></span></a><a class="sn sn-older" href="household-economy.html"><img lang="fa" src="social/household-economy/thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><img lang="en" src="social/household-economy/en-thumb.webp" alt="" width="72" height="72" loading="lazy" decoding="async" /><span class="sn-t"><small><span lang="fa">خبر قدیمی‌تر</span><span lang="en">Older story</span></small><b><span lang="fa" dir="rtl">اقتصاد یعنی چه؟</span><span lang="en">What Does the Economy Mean?</span></b></span></a></nav>
+<!-- storynav:end -->
+</main>
+
+
+<footer>
+<div class="container">
+<span lang="en">Ditoman • Built on structure, driven by discovery.</span><span lang="fa" dir="rtl">دیتومان • بنا شده بر ساختار، پیش‌رونده با کشف.</span>
+</div>
+</footer>
+
+<script>
+function showLanguage(language) {
+const fa = document.getElementById("fa-content");
+const en = document.getElementById("en-content");
+const buttons = document.querySelectorAll(".lang-button");
+buttons.forEach(b => b.classList.remove("active"));
+if (language === "fa") { fa.style.display = "block"; en.style.display = "none"; buttons[0].classList.add("active"); }
+else { fa.style.display = "none"; en.style.display = "block"; buttons[1].classList.add("active"); }
+}
+</script>
+<script data-goatcounter="https://ditoman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="join-bar.js?v=20261116b" defer></script>
+<script src="lang.js?v=20261121c" defer></script>
+<script src="search.js?v=20261121b" defer></script>
+</body>
+</html>
