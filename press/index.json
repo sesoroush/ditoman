@@ -1,5 +1,192 @@
 [
  {
+  "date": "2026-11-27",
+  "jalali": "1405/09/06",
+  "weekday_fa": "جمعه",
+  "post": "press/2026-11-27-post.webp",
+  "post_en": "press/2026-11-27-post-en.webp",
+  "lead_fa": "جمعه روزنامه چاپ نمی‌شود؛ این مرور، صفحه‌ی اول پنجشنبه و خبرهای سایت‌ها تا صبح امروز است. دلار در کانال ۲۹۲ هزار تومان ایستاد، طلای ۱۸ عیار یک قدم تا رکورد فاصله دارد و بورس هفته را با ۱۲ همت پول تازه‌ی حقیقی سبز بست. برای هر خبر یک خط هم نوشته‌ایم که برای زندگی و جیب ما یعنی چه. با هم دنبال می‌کنیم.",
+  "lead_en": "No papers are printed on Fridays; this review covers Thursday's front pages and the news sites up to this morning. The dollar held in the 292,000-toman range, 18k gold is a step from a record and the Tehran exchange closed the week green with 12 trillion tomans of fresh retail money. For each item we add one line on what it means for daily life and the wallet.",
+  "front_fa": "همشهری: «فسادستیزی؛ مبارزه با اژدهای هفت‌سر» · هفت صبح، دنیای اقتصاد، شرق، اعتماد، ایران و جام‌جم نیز در کیوسک پنجشنبه بودند",
+  "front_en": "Hamshahri: “Fighting corruption; a battle with the seven-headed dragon” · Haft-e Sobh, Donya-e Eqtesad, Shargh, Etemad, Iran and Jam-e Jam were also on Thursday's stands",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازار",
+    "en": "Economy & markets",
+    "items": [
+     {
+      "fa": "دلار در کانال ۲۹۲ هزار تومان: بازار ارز جمعه تعطیل است و آخرین نرخ آزاد، نرخ پایانی پنجشنبه، در کانال ۲۹۲ هزار تومان تثبیت شد؛ دنیای اقتصاد پنجشنبه از «شیب افزایشی» قیمت‌ها نوشته بود. یعنی جهش دو روزه‌ی اول هفته فعلاً ایستاده و شنبه با همین عدد شروع می‌کند؛ تا بازگشایی، قیمت‌های اعلامی گوشی و لوازم خانگی بیشتر «پیشنهاد» است تا «معامله».",
+      "en": "Dollar in the 292,000-toman range: the currency market is closed on Friday and the last free-market rate, Thursday's close, settled in the 292,000 range; Donya-e Eqtesad had written of an upward slope on Thursday. The two-day jump early in the week has paused for now and Saturday opens from this number; until then, quoted prices for phones and appliances are offers rather than deals.",
+      "src": "خبر پتروشیمی، دنیای اقتصاد",
+      "url": "https://donya-e-eqtesad.com/%D8%A8%D8%AE%D8%B4-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%AE%D9%88%D8%A7%D9%86-62/4310865-"
+     },
+     {
+      "fa": "طلای ۱۸ عیار ۲۵ میلیون و ۷۰۰ هزار تومان: هر گرم طلای ۱۸ عیار به ۲۵٫۷ میلیون تومان رسید و میلی‌گلد می‌نویسد «یک قدم تا رکورد جدید» مانده؛ فرارو از جهش طلا و نقره در بازار جهانی خبر می‌دهد. یعنی این بار موتور طلا اونس جهانی است نه دلار؛ اگر اونس برگردد، طلای داخلی هم بدون تکان دلار عقب می‌نشیند.",
+      "en": "18k gold at 25.7 million tomans: a gram of 18k gold reached 25.7 million tomans and Milli Gold writes it is one step from a new record; Fararu reports a jump in world gold and silver. This time the engine is the global ounce, not the dollar; if the ounce turns, domestic gold can retreat without the dollar moving.",
+      "src": "خبر پتروشیمی، میلی‌گلد، فرارو",
+      "url": "https://fararu.com/fa/news/1019920/"
+     },
+     {
+      "fa": "بورس: ۱۲ همت پول حقیقی در یک هفته: شاخص کل هفته را روی ۸ میلیون و ۶۷۳ هزار واحد سبز بست؛ اقتصاد۲۴ از ورود ۱۲ همت پول حقیقی و «فتح قله‌ی ۸٫۶ میلیون واحدی» می‌نویسد و نبض قیمت می‌گوید پول حقیقی به فلزات و شیمیایی‌ها رفت. یعنی این بار خریدار واقعی برگشته و پول دنبال صادراتی‌هاست؛ شنبه آزمون ماندگاری این قله است.",
+      "en": "Tehran exchange: 12 trillion tomans of retail money in a week: the main index closed the week green at 8,673,000; Eghtesad24 reports 12 trillion tomans of real-person inflow and the capture of the 8.6-million peak, and Nabz-e Gheymat says retail money went to metals and chemicals. Real buyers are back and the money is chasing exporters; Saturday tests whether the peak holds.",
+      "src": "خبرآنلاین، اقتصاد۲۴، نبض قیمت، آوش",
+      "url": "https://www.khabaronline.ir/live/2306747/"
+     },
+     {
+      "fa": "نفت برنت ۹۴ دلار: برنت پنجشنبه ۹۴ دلار معامله شد؛ هفته را از ۹۰ دلار شروع کرده بود. یعنی هر دلار نفت مستقیم به درآمد ارزی کشور وصل است و با تأخیر چند ماهه به بودجه و بازار ارز می‌رسد.",
+      "en": "Brent at $94: Brent traded at $94 on Thursday after starting the week at $90. Every dollar on oil feeds straight into the country's currency income and reaches the budget and the exchange market with a lag of months.",
+      "src": "آفتاب نیوز",
+      "url": "https://aftabnews.ir/fa/news/1079879/"
+     },
+     {
+      "fa": "کالابرگ آذر: کدملی‌های ۷، ۸ و ۹ شارژ شد: گروه آخر کالابرگ آذر دیروز واریز شد و ۸۵۰ هزار میلیارد تومان برای اجرای طرح اختصاص یافته است. یعنی اگر هنوز چیزی ندیده‌اید، اعتبار را در فروشگاه‌های طرف قرارداد با کارت بانکی سرپرست خانوار چک کنید؛ طرح پشتوانه‌ی بودجه‌ای دارد و قطع نمی‌شود.",
+      "en": "Azar Kalabarg: national IDs 7, 8 and 9 charged: the last group's Azar credit was paid yesterday and 850 trillion tomans has been allocated to the scheme. If nothing has shown up yet, check the credit at partner stores with the head of household's bank card; the scheme is budgeted and is not being cut.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     },
+     {
+      "fa": "پیشنهاد افزایش ۵۵ درصدی حقوق سال آینده روی میز رفت: پیشنهاد رشد ۵۵ درصدی حقوق کارکنان برای ۱۴۰۶ مطرح شده است. یعنی هنوز پیشنهاد است نه مصوبه؛ عدد نهایی در لایحه‌ی بودجه و مجلس بسته می‌شود و حقوق‌بگیر باید آن را کنار تورم سال بگذارد نه به تنهایی.",
+      "en": "A 55% pay-rise proposal for next year is on the table: a 55% increase in public salaries for 1406 has been proposed. It is a proposal, not a decision; the final number is set in the budget bill and parliament, and wage earners should read it next to the year's inflation, not on its own.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     },
+     {
+      "fa": "صادرات گوجه‌فرنگی گلخانه‌ای آزاد شد: ممنوعیت صادرات گوجه‌ی گلخانه‌ای برداشته شد. یعنی گلخانه‌دار دوباره مشتری خارجی دارد و درآمد ارزی می‌سازد؛ قیمت گوجه در بازار داخلی زمستان را هم باید با همین چشم دنبال کرد.",
+      "en": "Greenhouse tomato exports freed: the export ban on greenhouse tomatoes has been lifted. Growers have foreign customers again and earn hard currency; winter tomato prices at home should be watched with that in mind.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و تولید",
+    "en": "Industry & production",
+    "items": [
+     {
+      "fa": "بارگیری بین‌المللی راه‌آهن قم به ۱۵ هزار تن رسید: بار صادراتی که از ایستگاه قم روی ریل رفته به ۱۵ هزار تن رسیده است. یعنی قم از یک ایستگاه مسافری به گره‌ی ترانزیت ریلی تبدیل می‌شود؛ کالای کارخانه‌های مرکزی کشور بدون کامیون تا مرز می‌رود و هزینه‌ی حمل پایین می‌آید.",
+      "en": "International rail loading at Qom hits 15,000 tonnes: export cargo loaded onto trains at Qom station has reached 15,000 tonnes. Qom is turning from a passenger stop into a rail transit node; goods from central Iran's factories reach the border without trucks and freight costs fall.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     },
+     {
+      "fa": "۱۲ هزار خانه‌ی نهضت ملی در اردبیل با ۵۲ هزار میلیارد ریال: بانک مسکن قرارداد ۵۲ هزار میلیارد ریالی برای ساخت بیش از ۱۲ هزار واحد مسکونی در اردبیل بست. یعنی حدود ۵٫۲ همت برای ۱۲ هزار خانه، یعنی به‌طور متوسط حدود ۴۳۰ میلیون تومان تسهیلات برای هر واحد؛ بقیه‌ی هزینه را متقاضی می‌آورد.",
+      "en": "12,000 National Housing units in Ardabil with 52,000 billion rials: Bank Maskan signed a 52,000-billion-rial contract to build more than 12,000 homes in Ardabil. That is about 5.2 trillion tomans for 12,000 homes, roughly 430 million tomans of finance per unit on average; the applicant brings the rest.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     },
+     {
+      "fa": "۲ هزار محصول تحریمی ساخت دانش‌بنیان‌ها: شرکت‌های دانش‌بنیان ۲ هزار قلم کالایی را که وارداتش تحریم است در داخل می‌سازند و مشرق از کاهش وابستگی صنعت نفت به تجهیزات خارجی می‌نویسد. یعنی قطعه‌ای که قبلاً باید دست‌دوم و گران وارد می‌شد، حالا کارگاه داخلی و شغل دارد.",
+      "en": "2,000 sanctioned products now made by knowledge-based firms: knowledge-based companies make 2,000 items whose import is sanctioned, and Mashregh reports falling dependence of the oil industry on foreign equipment. Parts that used to arrive second-hand and expensive now have a domestic workshop and jobs behind them.",
+      "src": "دفاع پرس، مشرق",
+      "url": "https://www.mashreghnews.ir/news/1855399/"
+     }
+    ]
+   },
+   {
+    "fa": "فناوری",
+    "en": "Technology",
+    "items": [
+     {
+      "fa": "بلک‌فرایدی دیجی‌کالا با ارسال رایگان: دیجیاتو می‌نویسد ارسال بلک‌فرایدی دیجی‌کالا برای سراسر کشور رایگان شد (دیجی‌کالا مگ پیش‌تر از ۱۰ استان نوشته بود) و قرعه‌کشی بنز و پژو ۲۰۷ با ۵۰ درصد تخفیف هم هست. یعنی امروز روز تخفیف است؛ قبل از خرید، قیمت «پیش از تخفیف» را با قیمت یک هفته قبل در ترب مقایسه کنید.",
+      "en": "Digikala Black Friday with free shipping: Digiato reports Digikala's Black Friday shipping is free nationwide (Digikala Mag had earlier named 10 provinces), plus a draw for a Benz and a Peugeot 207 at 50% off. Today is discount day; before buying, compare the pre-discount price with last week's on Torob.",
+      "src": "دیجیاتو، دیجی‌کالا مگ",
+      "url": "https://digiato.com/iran-technology-news/digikala-free-shipping-black-friday-1405"
+     },
+     {
+      "fa": "مدیرعامل دیجی‌کالا: ریسک اصلی تحریم در عصر هوش مصنوعی، از بین رفتن بلندپروازی ایرانی‌هاست: زومیت گفت‌وگوی او را منتشر کرده. یعنی مشکل فقط دسترسی به ابزار نیست؛ اگر تیم‌های ایرانی هدف جهانی نگذارند، فاصله با دنیا بیشتر می‌شود؛ پیام به استارتاپ‌ها این است که بزرگ فکر کنند.",
+      "en": "Digikala CEO: the main risk of sanctions in the AI era is losing Iranians' ambition: Zoomit published his remarks. The problem is not only access to tools; if Iranian teams stop aiming globally, the gap with the world widens. The message to startups is to think big.",
+      "src": "زومیت",
+      "url": "https://www.zoomit.ir/iran-news/471925-digikala-ceo-ai-sanctions-warning/"
+     },
+     {
+      "fa": "کارت گردشگری بانک ملی و بانک شهر به شبکه‌ی پرداخت پیوست: کارت‌های ریالی ویژه‌ی گردشگران خارجی این دو بانک در شبکه‌ی پرداخت کشور فعال شد. یعنی مسافر خارجی بدون کارت بین‌المللی می‌تواند در ایران کارت بکشد؛ درآمد هتل و رستوران و مغازه‌ها از جیب گردشگر راحت‌تر می‌شود.",
+      "en": "Bank Melli and Bank Shahr tourist cards join the payment network: the rial cards these two banks issue to foreign tourists are now live on the national payment network. A foreign visitor can pay by card in Iran without an international card; hotels, restaurants and shops get the tourist's money more easily.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     },
+     {
+      "fa": "سامانه‌های بانک تجارت بامداد امروز به‌روزرسانی شد: بانک تجارت زیرساخت‌ها و سامانه‌هایش را بامداد جمعه ۶ آذر ارتقا داد. یعنی اگر صبح امروز اینترنت‌بانک یا کارت تجارت لحظه‌ای جواب نداد، قطعی برنامه‌ریزی‌شده بوده نه حمله؛ دوباره امتحان کنید.",
+      "en": "Bank Tejarat systems upgraded early this morning: Bank Tejarat upgraded its infrastructure and systems in the early hours of Friday 6 Azar. If online banking or a Tejarat card failed briefly this morning, it was planned downtime, not an attack; try again.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     }
+    ]
+   },
+   {
+    "fa": "جامعه و محیط‌زیست",
+    "en": "Society & environment",
+    "items": [
+     {
+      "fa": "هوای تهران از جمعه‌شب دوباره آلوده می‌شود: هواشناسی می‌گوید سکون جوی از امشب برمی‌گردد و آلودگی تا یکشنبه می‌ماند؛ دما پایین می‌آید و بارش‌ها از شمال‌غرب شروع می‌شود. یعنی امروز آخرین روز هوای قابل‌قبول این هفته است؛ پیاده‌روی و ورزش بیرون را امروز انجام بدهید و برای شنبه و یکشنبه ماسک بچه‌ها را آماده کنید.",
+      "en": "Tehran's air turns polluted again from Friday night: the weather service says stagnant air returns tonight and pollution lasts until Sunday; temperatures fall and rain begins in the northwest. Today is the last acceptable-air day of the week; take the walk or outdoor exercise today and have the kids' masks ready for Saturday and Sunday.",
+      "src": "اقتصادنیوز، نورنیوز، خبرآنلاین",
+      "url": "https://www.khabaronline.ir/news/2307271/"
+     },
+     {
+      "fa": "۳۴ یوزپلنگ در ۱۴ ماه شناسایی شد: مدیرکل محیط‌زیست سمنان می‌گوید ۳۴ یوز آسیایی در ۱۴ ماه گذشته در طبیعت دیده و ثبت شده؛ ۱۳ یوز در ۱۰ سال در تصادف جاده‌ای تلف شده و سازمان برنامه ۸۰ میلیارد تومان برای ایمن‌سازی جاده‌ی توران داده است. یعنی نسل یوز هنوز زنده است و دشمن اصلی‌اش جاده است نه شکارچی؛ در جاده‌ی شاهرود–سبزوار آهسته برانید.",
+      "en": "34 cheetahs identified in 14 months: Semnan's environment chief says 34 Asiatic cheetahs were seen and recorded in the wild over the past 14 months; 13 were killed on roads in ten years and the Plan Organisation has allocated 80 billion tomans to make the Touran road safer. The species is still alive and its main enemy is the road, not poachers; drive slowly on the Shahroud–Sabzevar road.",
+      "src": "خبرگزاری صداوسیما، شرق",
+      "url": "https://www.irib-news.ir/fa/news/5977409/"
+     },
+     {
+      "fa": "تراز دریاچه ارومیه ۱۱۰ سانتی‌متر بالا رفت: تعادل می‌نویسد تراز آب دریاچه ۱۱۰ سانتی‌متر بالا رفته و عصر ایران از «افزایش یک متری» خبر می‌دهد، اما تعادل درباره‌ی یک «فاصله‌ی ۳٫۵ متری» تا تراز هدف هم هشدار می‌دهد. یعنی بارش‌های پاییز دریاچه را از کف برداشته، نه نجات داده؛ یک پاییز خوب کافی نیست و هر مترمکعب آب بالادست حساب است.",
+      "en": "Lake Urmia's level up 110 cm: Taadol reports the lake's level has risen 110 cm and Asr-e Iran speaks of a one-metre rise, but Taadol also warns of a 3.5 m gap still to the target level. Autumn rain has lifted the lake off the floor, not saved it; one good autumn is not enough and every cubic metre upstream counts.",
+      "src": "تعادل، عصر ایران",
+      "url": "https://www.asriran.com/fa/news/1208576/"
+     },
+     {
+      "fa": "شبکه‌ی توزیع الکل متانول در ۴ استان منهدم شد: یک شبکه‌ی توزیع الکل متانولی در چهار استان شناسایی و جمع شد. یعنی متانول این هفته‌ها در بازار سیاه هست؛ تاری دید و سردرد بعد از مصرف مشکوک، اورژانس است نه خواب.",
+      "en": "Methanol distribution network broken up in four provinces: a network selling methanol alcohol across four provinces was identified and shut down. Methanol is circulating on the black market these weeks; blurred vision and headache after a suspect drink mean the emergency room, not sleep.",
+      "src": "پرسون",
+      "url": "https://purson.ir/fa/content/1544481/"
+     }
+    ]
+   },
+   {
+    "fa": "سلامت",
+    "en": "Health",
+    "items": [
+     {
+      "fa": "آنفلوآنزا از آستانه‌ی هشدار گذشت؛ نیمی از مبتلایان کودک‌اند: مرکز بیماری‌های واگیر می‌گوید ۳۰٫۷ درصد نمونه‌های تنفسی مثبت آنفلوآنزاست و ۵۲٫۳ درصد مثبت‌ها کودک؛ بوشهر، خراسان جنوبی و کردستان در هشدار بالا هستند و اوج موج اواسط آذر پیش‌بینی می‌شود. یعنی دو هفته‌ی پیشِ رو سخت‌ترین است؛ واکسن هنوز فایده دارد، آنتی‌بیوتیک خودسرانه نه.",
+      "en": "Flu past the alert threshold; half the cases are children: the communicable-diseases centre says 30.7% of respiratory samples test positive for flu and 52.3% of positives are children; Bushehr, South Khorasan and Kurdistan are on high alert and the peak is expected in mid-Azar. The next two weeks are the hardest; the vaccine still helps, self-prescribed antibiotics do not.",
+      "src": "خبرگزاری صداوسیما، اقتصادنیوز، تابناک",
+      "url": "https://www.irib-news.ir/fa/news/5974597/"
+     },
+     {
+      "fa": "هشدار وزارت بهداشت درباره‌ی خمیردندان‌های «بدون فلوراید»: وزارت بهداشت درباره‌ی تبلیغ خمیردندان‌های بدون فلوراید هشدار داد. یعنی فلوراید همان ماده‌ای است که مینای دندان را ضد پوسیدگی می‌کند؛ «بدون فلوراید» مزیت نیست، حذف اصل کار است.",
+      "en": "Health ministry warning on “fluoride-free” toothpaste: the ministry warned about the advertising of fluoride-free toothpaste. Fluoride is the ingredient that makes enamel resist decay; “fluoride-free” is not a benefit, it removes the point of the product.",
+      "src": "آوش، پرسون",
+      "url": "https://purson.ir/fa/content/1544512/"
+     }
+    ]
+   },
+   {
+    "fa": "ورزش و فرهنگ",
+    "en": "Sport & culture",
+    "items": [
+     {
+      "fa": "پرسپولیس امروز در اراک: هفته‌ی چهاردهم لیگ برتر با ۹ بازی؛ پرسپولیس امروز جمعه مهمان آلومینیوم است، استقلال صدرنشین است و سرخ‌ها در تعقیب. تارتار هم گفته استقلال در آسیا فوق‌العاده کار کرده. یعنی هر لغزش امروز فاصله با صدر را بیشتر می‌کند؛ اراک زمینی است که پرسپولیس خاطره‌ی خوبی از آن ندارد.",
+      "en": "Persepolis in Arak today: week 14 of the Pro League has nine matches; Persepolis visit Aluminium on Friday, Esteghlal lead the table and the reds are chasing. Tartar also said Esteghlal did superbly in Asia. Any slip today widens the gap to the top; Arak is a ground Persepolis has poor memories of.",
+      "src": "اندیشه معاصر، آنا، پارس فوتبال",
+      "url": "https://ana.ir/fa/news/1100472/"
+     },
+     {
+      "fa": "آذر پررونق‌ترین ماه کنسرت: ۱۸ کنسرت در تهران و بیش از ۶۰ کنسرت در شهرستان‌ها در آذر برگزار می‌شود؛ امشب گرشا رضایی در سالن میلاد نمایشگاه است. یعنی بعد از سال‌ها، صحنه‌ی موسیقی زنده به شهرستان‌ها هم رسیده و بلیت کنسرت دیگر فقط کالای تهرانی نیست.",
+      "en": "Azar, the busiest concert month: 18 concerts in Tehran and more than 60 in other cities are scheduled for Azar; Garsha Rezaei plays Milad Hall tonight. After years, live music has reached the provinces and a concert ticket is no longer a Tehran-only item.",
+      "src": "شفقنا، شرق",
+      "url": "https://fa.shafaqna.com/news/2407097/"
+     },
+     {
+      "fa": "جشنواره تئاتر کودک و نوجوان همدان با ۳۳ گروه از ۱۱ استان: پیش‌فروش بلیت سی‌ویکمین جشنواره آغاز شد و جزئیات تازه‌ی معافیت مالیاتی فعالان فرهنگی و هنری هم اعلام شد. یعنی برای تعطیلات آذر برنامه‌ی فرهنگی خانوادگی در همدان هست و اهل فرهنگ باید معافیت مالیاتی‌شان را دوباره بخوانند.",
+      "en": "Hamedan children's theatre festival with 33 groups from 11 provinces: ticket presale for the 31st festival has opened, and new details of the tax exemption for cultural and artistic workers were announced. There is a family cultural plan for Azar in Hamedan, and people in the arts should reread their tax exemption.",
+      "src": "نگار مگ، پرسون",
+      "url": "https://negarmag.com/fa/news/1187469/"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-26",
   "jalali": "1405/09/05",
   "weekday_fa": "پنجشنبه",
