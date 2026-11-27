@@ -1,5 +1,174 @@
 [
  {
+  "date": "2026-11-27",
+  "jalali": "1405/09/06",
+  "weekday_fa": "جمعه",
+  "post": "world/2026-11-27-post.webp",
+  "post_en": "world/2026-11-27-post-en.webp",
+  "lead_fa": "نفت برنت به حدود ۹۷ دلار برگشت، طلا و نقره پس از افت سنگین جان گرفتند و سهام آسیا به بازگشت ادامه داد؛ امروز «جمعه‌ی سیاه» است و بازار آمریکا نیمه‌وقت کار می‌کند. مرور رسانه‌های جهان از لندن تا ریاض، توکیو، بمبئی و سیدنی؛ برای هر خبر یک خط هم نوشته‌ایم که برای ما یعنی چه. با هم دنبال می‌کنیم.",
+  "lead_en": "Brent is back near $97, gold and silver bounced after heavy losses and Asian stocks extended their rebound; it's Black Friday and US markets trade a short session. A tour of world media from London to Riyadh, Tokyo, Mumbai and Sydney, with one line on what each story means for us.",
+  "front_fa": "ساکسو: «برنت از ۹۷ دلار گذشت و سهام آسیا به بازگشت ادامه داد» · ای‌بی‌سی استرالیا: «هشدار بلک‌فرایدی درباره‌ی خرید با هوش مصنوعی» · عرب نیوز: «امارات نخستین اوراق خزانه‌ی دیجیتال را منتشر کرد» · الشرق الاوسط: «عربستان یک تریلیون دلار فرصت سرمایه‌گذاری می‌بیند»",
+  "front_en": "Saxo: Brent tops $97 and Asian stocks extend rebound · ABC Australia: ACCC issues Black Friday AI warning · Arab News: UAE issues first digital treasury bonds · Asharq Al-Awsat: Saudi Arabia eyes $1 trillion in investment opportunities",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازارهای جهانی",
+    "en": "Global economy & markets",
+    "items": [
+     {
+      "fa": "برنت حدود ۹۷ دلار: نفت برنت پس از کف زیر ۹۰ دلار در دوشنبه، با خبر آسیب به پالایشگاه جازان آرامکو به حدود ۹۷ دلار برگشت و در راه نخستین رشد هفتگی در پنج هفته است؛ نشست اوپک‌پلاس یکشنبه برگزار می‌شود. یعنی هزینه‌ی سوخت، حمل و بیمه‌ی کشتی در منطقه‌ی ما دوباره بالا می‌رود.",
+      "en": "Brent rebounded from a sub-$90 Monday low to about $97 after a projectile hit Aramco's Jazan refinery, heading for its first weekly gain in five; OPEC+ meets Sunday. Fuel, freight and shipping insurance costs in our region rise again.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     },
+     {
+      "fa": "طلا ۲٫۶٪ و نقره ۶٫۶٪ بالا: اونس طلا از کف ۳٬۴۲۷ دلاری چهارشنبه به حدود ۳٬۶۶۰ دلار برگشت و نقره به ۴۴٫۳۰ دلار رسید. یعنی بعد از هفته‌ها افت، بازار جهانی فلزات گران‌بها نفسی تازه کرده و این به قیمت طلا و سکه‌ی داخلی هم می‌رسد.",
+      "en": "Gold rebounded 2.6% to about $3,660 from Wednesday's $3,427 low; silver jumped 6.6% to $44.30. Precious metals are catching their breath after weeks of losses, which feeds into local gold and coin prices.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     },
+     {
+      "fa": "بیت‌کوین حدود ۶۱٬۳۶۹ دلار: بیت‌کوین ۱٫۴۴٪ و اتریوم ۲٫۲۹٪ بالا رفتند، در حالی که صندوق‌های ETF بیت‌کوین در نوامبر رکورد ۵٫۳۹ میلیارد دلار خروج سرمایه داشتند و امروز حدود ۷ میلیارد دلار اختیار معامله سررسید می‌شود. یعنی نوسان تتر و رمزارز در روزهای آینده می‌تواند تند بماند.",
+      "en": "Bitcoin rose 1.44% to about $61,369 and ether 2.29%, while US bitcoin ETFs saw a record $5.39bn of outflows in November and about $7bn of options expire today. Crypto and tether prices may stay volatile.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     },
+     {
+      "fa": "بازده اوراق ۱۰ ساله‌ی آمریکا ۴٫۹۲٪: بازار افزایش نرخ بهره در نشست ۸ و ۹ دسامبر فدرال‌رزرو را قیمت‌گذاری کرده و دلار به ۱۵۹٫۳۵ ین رسیده؛ وزیر دارایی ژاپن درباره‌ی حرکت‌های تند ارزی هشدار داد. یعنی پول جهانی گران‌تر می‌شود و دلار قوی روی طلا و رمزارز سنگینی می‌کند.",
+      "en": "US 10-year yield hit 4.918%; markets price a Fed hike on Dec 8–9 and USD/JPY is near 159.35 as Japan warns against sharp moves. Global money gets costlier and a strong dollar weighs on gold and crypto.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     },
+     {
+      "fa": "تورم اسپانیا ۴٫۱٪، کمتر از انتظار: تورم نوامبر اسپانیا ۰٫۸ واحد زیر پیش‌بینی ۴٫۷٪ آمد و تورم فرانسه هم به ۲٫۹٪ (پیش‌بینی ۳٫۲٪) رسید. یعنی فشار قیمت در اروپا کم می‌شود و این برای یورو و کالاهای وارداتی از اروپا مهم است.",
+      "en": "Spain's November CPI came in at 4.1% vs 4.7% expected, France at 2.9% vs 3.2%. Price pressure in Europe is easing, which matters for the euro and European imports.",
+      "src": "ایکس‌تی‌بی",
+      "url": "https://www.xtb.com/en/market-analysis/economic-calendar-inflation-in-europe-surprises-to-the-downside-27-11-2026"
+     },
+     {
+      "fa": "رئیس تازه‌ی بانک مرکزی اروپا: کشورهای منطقه‌ی یورو پابلو هرناندز د کوس (Pablo Hernández de Cos)، رئیس بانک تسویه‌ی بین‌المللی، را جانشین کریستین لاگارد کردند؛ نخستین جلسه‌ی نرخ او ۱۸ مارس است. یعنی تحلیلگران تغییر بزرگی در سیاست پولی اروپا انتظار ندارند و یورو آرام می‌ماند.",
+      "en": "Eurozone countries picked BIS head Pablo Hernández de Cos to succeed Christine Lagarde at the ECB; his first rate meeting is March 18. Analysts expect no major policy shift, so the euro stays steady.",
+      "src": "ای‌بی‌سی استرالیا",
+      "url": "https://www.abc.net.au/news/2026-11-27/asx-markets-business-news-live-updates/107430390"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و انرژی",
+    "en": "Industry & energy",
+    "items": [
+     {
+      "fa": "مس ۵٪ جهش: مس در نیویورک و لندن بزرگ‌ترین رشد ده ماه اخیر را ثبت کرد، پس از آن‌که شورای دولتی چین وعده‌ی حمایت بیشتر از بازارها داد؛ سود صنعتی چین تا اکتبر ۱۶٪ رشد کرده. یعنی تقاضای صنعتی چین زنده است و قیمت مس، سیم و کابل در بازار ما هم تکان می‌خورد.",
+      "en": "Copper jumped about 5%, its biggest gain in ten months, after China's State Council pledged more market support; China's industrial profits rose 16% year-to-date through October. Chinese industrial demand is alive, moving copper, wire and cable prices for us too.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     },
+     {
+      "fa": "کیوکسیا ۹٪ و ASML بیش از ۳٪ بالا: سهام کیوکسیا (Kioxia) با گزارش همکاری احتمالی با انویدیا (Nvidia) جهش کرد و در اروپا ASML و اینفینئون (Infineon) هم بیش از ۳٪ رشد کردند. یعنی حافظه و تجهیزات تراشه هنوز موتور بازار جهانی‌اند و قیمت لپ‌تاپ و گوشی به آن‌ها گره خورده.",
+      "en": "Kioxia rose nearly 9% on reports of a possible Nvidia partnership; in Europe ASML and Infineon gained more than 3%. Memory and chip equipment still drive markets, and laptop and phone prices are tied to them.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     },
+     {
+      "fa": "شکر ۸٪ و کالاها ۱٫۴٪ بالا: شاخص کالاهای بلومبرگ در راه نخستین رشد هفتگی در شش هفته است و از ابتدای سال ۲۲٪ بالا رفته. یعنی قیمت مواد اولیه‌ی غذا و صنعت در جهان هنوز گران است و به سفره‌ی ما هم می‌رسد.",
+      "en": "Sugar rose 8% and the Bloomberg Commodity index 1.4%, heading for its first weekly gain in six weeks and up 22% this year. Global food and industrial inputs remain expensive, reaching our tables too.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     }
+    ]
+   },
+   {
+    "fa": "هوش مصنوعی و فناوری",
+    "en": "AI & technology",
+    "items": [
+     {
+      "fa": "هشدار بلک‌فرایدی درباره‌ی خرید با هوش مصنوعی: نهاد رقابت استرالیا (ACCC) از خریداران خواست پاسخ‌های هوش مصنوعی را چک کنند و برای عامل‌های خرید هوشمند سقف هزینه و مرحله‌ی تأیید بگذارند؛ از فروشگاه‌های جعلی و تبلیغ دیپ‌فیک هم هشدار داد. یعنی خرید با عامل هوش مصنوعی رسیده و مهارت کنترل آن برای همه، از جمله کسب‌وکارهای آنلاین ما، لازم است.",
+      "en": "Australia's ACCC urged Black Friday shoppers to verify AI answers and set spending limits and approval points for AI shopping agents, warning of cloned storefronts and deepfake ads. AI agents are now shopping for people; knowing how to control them matters for everyone, including online businesses.",
+      "src": "ای‌بی‌سی استرالیا",
+      "url": "https://www.abc.net.au/news/2026-11-27/asx-markets-business-news-live-updates/107430390"
+     },
+     {
+      "fa": "گوگل: عامل‌های هوش مصنوعی از درِ امن: گوگل از فوریه‌ی ۲۰۲۷ عامل‌های هوش مصنوعی را ملزم می‌کند از راه سرورهای MCP و ابزار خط فرمان Workspace به جیمیل و اسناد دسترسی بگیرند، نه APIهای قدیمی. یعنی برنامه‌نویسانی که ابزار هوش مصنوعی برای ورک‌اسپیس می‌سازند باید از همین حالا خود را آماده کنند.",
+      "en": "From February 2027 Google will require AI agents to access Workspace through MCP servers and a CLI instead of legacy REST APIs. Developers building AI tools on Workspace should prepare now.",
+      "src": "اینفوسکیوریتی مگزین",
+      "url": "https://riorundown.substack.com/p/ai-news-nov-27-2026-ai-infrastructure"
+     }
+    ]
+   },
+   {
+    "fa": "تجارت و کسب‌وکار",
+    "en": "Trade & business",
+    "items": [
+     {
+      "fa": "جزئیات تازه‌ی تعرفه‌ی ۳۰۱ آمریکا: سقف ۱۵٪ برای ژاپن، کره، تایوان، اروپا و سوئیس، ۲۰٪ برای چین (و ۴۰٪ اگر آتش‌بس تجاری بشکند)، تا ۳۵٪ برای ویتنام و ۱۸٪ برای تایلند؛ جلسه‌ی استماع ۲۵ ژانویه است. یعنی کارخانه‌ها و مسیرهای واردات جهانی دوباره جابه‌جا می‌شوند و کالای آسیایی گران‌تر می‌شود.",
+      "en": "New detail on US Section 301 proposals: 15% caps for Japan, Korea, Taiwan, the EU and Switzerland; 20% for China (40% if the truce collapses); up to 35% for Vietnam and 18% for Thailand; hearing on Jan 25. Supply chains will shift again and Asian goods get dearer.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     },
+     {
+      "fa": "ایمپریال برندز ۱۳٫۳٪ جهش: سهام این شرکت دخانیات بریتانیایی پس از تأیید آلتریا (Altria) برای بررسی پیشنهاد خرید آن بالا رفت. یعنی موج ادغام و خرید شرکت‌های بزرگ ادامه دارد.",
+      "en": "Imperial Brands jumped 13.3% after Altria confirmed it is considering a takeover offer. The wave of big-company M&A continues.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     }
+    ]
+   },
+   {
+    "fa": "از آسیا تا استرالیا",
+    "en": "Asia & Oceania",
+    "items": [
+     {
+      "fa": "امارات: نخستین اوراق خزانه‌ی دیجیتال: وزارت دارایی امارات ۱۸۰ میلیون درهم (۴۹ میلیون دلار) اوراق دوساله با بازده ۴٫۹۸٪ روی زیرساخت دیجیتال یوروکلیر منتشر کرد که در نزدک دبی معامله می‌شود. یعنی بازار بدهی منطقه به سمت دارایی توکنیزه می‌رود؛ مسیری که فین‌تک‌ها باید دنبالش کنند.",
+      "en": "The UAE issued its first federal digital treasury bonds: AED 180m ($49m), two years, 4.98% yield, on Euroclear's digital infrastructure, listed on Nasdaq Dubai. Regional debt markets are moving toward tokenised assets, a path fintechs should watch.",
+      "src": "عرب نیوز",
+      "url": "https://www.arabnews.com/finance/uae-issues-first-digital-treasury-bonds-in-49m-deal-3014236"
+     },
+     {
+      "fa": "عربستان: یک تریلیون دلار فرصت سرمایه‌گذاری: وزیر اقتصاد عربستان فرصت‌های ۸ تا ۱۰ سال آینده را یک تریلیون دلار برآورد کرد و گفت درآمد غیرنفتی حالا حدود ۳۶٪ هزینه‌های دولت را پوشش می‌دهد. یعنی همسایه‌ی ما اقتصادش را از نفت جدا می‌کند و برای پیمانکار و نیروی متخصص منطقه تقاضا می‌سازد.",
+      "en": "Saudi Arabia's economy minister put investment opportunities over 8–10 years at $1 trillion, saying non-oil revenue now covers about 36% of spending. A neighbour is decoupling from oil, creating demand for regional contractors and skills.",
+      "src": "الشرق الاوسط",
+      "url": "https://english.aawsat.com/business/5345639-saudi-arabia-eyes-1-trillion-investment-opportunities-non-oil-revenues-triple"
+     },
+     {
+      "fa": "نیکی ۲٪ بالا، تورم توکیو ۲٫۹٪: سهام آسیا به بازگشت ادامه داد و کوسپی کره پیشتاز بود؛ کره گسترش صندوق تثبیت بازار را بررسی می‌کند و بانک ژاپن افزایش دیگر نرخ را از دسامبر بحث می‌کند. یعنی پول دوباره به سهام فناوری آسیا برگشته است.",
+      "en": "Nikkei rose 2% and Korea's Kospi led gains as Seoul weighs a bigger market stabilisation fund; Tokyo CPI hit 2.9% and the BoJ will discuss another hike from December. Money is flowing back into Asian tech stocks.",
+      "src": "ساکسو",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---brent-tops-usd-97-and-asian-stocks-extend-rebound---27-november-2026-27112026"
+     },
+     {
+      "fa": "سنسکس ۹۸۹ واحد پایین: شاخص بورس بمبئی ۱٫۱۷٪ افت کرد و به ۸۳٬۳۳۹ رسید، با فروش سهام فناوری اطلاعات مثل TCS و اینفوسیس (Infosys)؛ روپیه نزدیک ۹۳ در برابر دلار است. یعنی نفت گران برای واردکننده‌های بزرگ انرژی مثل هند هزینه‌زاست.",
+      "en": "India's Sensex fell 989 points (1.17%) to 83,339 on IT profit-taking (TCS, Infosys); the rupee is near 93 per dollar. Expensive oil hurts big energy importers like India.",
+      "src": "مارکت‌کالز",
+      "url": "https://www.marketcalls.in/futures-and-options/post-market-report-27-november-2026.html"
+     },
+     {
+      "fa": "دلار استرالیا ۶۵٫۳۲ سنت، سنگ‌آهن ۸۹٫۳۵ دلار: سنگ‌آهن ۱٫۲٪ بالا رفت و دلار استرالیا کمی تقویت شد. یعنی تقاضای فولاد آسیا هنوز سرپاست؛ چیزی که روی قیمت آهن‌آلات منطقه اثر دارد.",
+      "en": "The Australian dollar rose to 65.32 US cents and iron ore gained 1.2% to $89.35/t. Asian steel demand is holding up, affecting regional steel prices.",
+      "src": "ای‌بی‌سی استرالیا",
+      "url": "https://www.abc.net.au/news/2026-11-27/asx-markets-business-news-live-updates/107430390"
+     }
+    ]
+   },
+   {
+    "fa": "فرهنگ و خبرهای عجیب",
+    "en": "Culture & curious news",
+    "items": [
+     {
+      "fa": "نخستین دوسالانه‌ی بنارس: دوسالانه‌ی هنری بنارس (Banaras Biennale) در شهر کهن واراناسی هند از ۲۸ نوامبر تا ۳۱ دسامبر با موضوع «شهر به‌عنوان تجربه‌ی حسی» برگزار می‌شود.",
+      "en": "India's first Banaras Biennale opens in Varanasi from Nov 28 to Dec 31 with the theme 'City as Sensorium'.",
+      "src": "اوت‌لوک تراولر",
+      "url": "https://www.outlooktraveller.com/News/7-music-and-cultural-experiences-to-catch-across-india-this-weekend"
+     },
+     {
+      "fa": "بت‌موبیل به حراج می‌رود: خودروی مشهور بتمن از فیلم «بازگشت بتمن» ساخته‌ی تیم برتون (Tim Burton) به حراج گذاشته می‌شود.",
+      "en": "Tim Burton's Batmobile from 'Batman Returns' is heading to auction.",
+      "src": "یورونیوز",
+      "url": "https://www.euronews.com/2026/11/23/batman-returns-tim-burtons-iconic-batmobile-car-heads-to-auction"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-26",
   "jalali": "1405/09/05",
   "weekday_fa": "پنجشنبه",
