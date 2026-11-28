@@ -1,0 +1,411 @@
+{
+  "fetched_utc": "2026-11-28T02:27:12+00:00",
+  "global": {
+    "btc": {
+      "value": 60096.08,
+      "prev": 60494.7109375,
+      "chg": -0.6589517187904956,
+      "source": "Yahoo Finance BTC-USD",
+      "market_time_utc": "2026-11-28T02:27+00:00"
+    },
+    "gold": {
+      "value": 3668.5,
+      "prev": 3535.800048828125,
+      "chg": 3.7530388975433135,
+      "source": "Yahoo Finance GC=F",
+      "market_time_utc": "2026-11-27T19:44+00:00"
+    },
+    "silver": {
+      "value": 43.702,
+      "prev": 40.051998138427734,
+      "chg": 9.11315797268622,
+      "source": "Yahoo Finance SI=F",
+      "market_time_utc": "2026-11-27T19:44+00:00"
+    },
+    "copper": {
+      "value": 5.6005,
+      "prev": 5.332499980926514,
+      "chg": 5.025785654610016,
+      "source": "Yahoo Finance HG=F",
+      "market_time_utc": "2026-11-27T19:44+00:00"
+    },
+    "brent": {
+      "value": 90.84,
+      "prev": 94.61000061035156,
+      "chg": -3.984780241021447,
+      "source": "Yahoo Finance BZ=F",
+      "market_time_utc": "2026-11-27T19:44+00:00"
+    },
+    "natgas": {
+      "value": 3.491,
+      "prev": 3.2690000534057617,
+      "chg": 6.79106586012291,
+      "source": "Yahoo Finance NG=F",
+      "market_time_utc": "2026-11-27T19:44+00:00"
+    },
+    "wheat": {
+      "value": 591.0,
+      "prev": 565.5,
+      "chg": 4.509283819628647,
+      "source": "Yahoo Finance ZW=F",
+      "market_time_utc": "2026-11-27T18:04+00:00"
+    },
+    "corn": {
+      "value": 463.0,
+      "prev": 439.75,
+      "chg": 5.287094940306993,
+      "source": "Yahoo Finance ZC=F",
+      "market_time_utc": "2026-11-27T18:04+00:00"
+    },
+    "soybeans": {
+      "value": 1266.25,
+      "prev": 1244.0,
+      "chg": 1.7885852090032155,
+      "source": "Yahoo Finance ZS=F",
+      "market_time_utc": "2026-11-27T18:04+00:00"
+    },
+    "btc_coingecko": {
+      "value": 60149,
+      "chg": -2.0996304728494097,
+      "source": "CoinGecko (24h change)"
+    },
+    "zinc": {
+      "value": 3546.6,
+      "chg": 0.0,
+      "source": "TGJU basemetal-zinc",
+      "candidates": {
+        "zinc": {
+          "value": 2575.6,
+          "chg": 0.0,
+          "t": "۷ تیر"
+        },
+        "base_global_zinc": {
+          "value": 3696.3,
+          "chg": 0.0,
+          "t": "۲۴ مهر"
+        },
+        "base-us-zinc": {
+          "value": 2297.0,
+          "chg": 0.0,
+          "t": "۲۴ دی"
+        },
+        "basemetal-zinc": {
+          "value": 3546.6,
+          "chg": 0.0,
+          "t": "۶ آذر"
+        }
+      }
+    }
+  },
+  "forex": {
+    "EUR/USD": {
+      "value": 1.0939,
+      "prev": 1.097008466720581,
+      "chg": -0.2833584985787277,
+      "source": "Yahoo Finance EURUSD=X",
+      "market_time_utc": "2026-11-27T22:29+00:00"
+    },
+    "GBP/USD": {
+      "value": 1.3099,
+      "prev": 1.3113033771514893,
+      "chg": -0.10702154634404389,
+      "source": "Yahoo Finance GBPUSD=X",
+      "market_time_utc": "2026-11-27T22:29+00:00"
+    },
+    "USD/JPY": {
+      "value": 159.515,
+      "prev": 159.21499633789062,
+      "chg": 0.1884267619318252,
+      "source": "Yahoo Finance JPY=X",
+      "market_time_utc": "2026-11-27T22:00+00:00"
+    },
+    "USD/CHF": {
+      "value": 0.8357,
+      "prev": 0.8312100172042847,
+      "chg": 0.5401742884207611,
+      "source": "Yahoo Finance CHF=X",
+      "market_time_utc": "2026-11-27T22:00+00:00"
+    },
+    "USD/CNY": {
+      "value": 6.6537,
+      "prev": 6.664000034332275,
+      "chg": -0.15456233912381298,
+      "source": "Yahoo Finance CNY=X",
+      "market_time_utc": "2026-11-27T22:09+00:00"
+    },
+    "USD/TRY": {
+      "value": 50.745,
+      "prev": 50.67610168457031,
+      "chg": 0.13595819950503982,
+      "source": "Yahoo Finance TRY=X",
+      "market_time_utc": "2026-11-27T22:09+00:00"
+    }
+  },
+  "iran": {
+    "usd": {
+      "value_rial": 2928900.0,
+      "value_toman": 292890.0,
+      "chg": 0.0,
+      "updated": "۵ آذر",
+      "source": "TGJU price_dollar_rl",
+      "hist_raw": [
+        [
+          "2,938,900",
+          "2,925,500",
+          "2,958,900",
+          "2,928,900",
+          "<span class=\"\" dir=\"ltr\">-</span>",
+          "-",
+          "2026/11/26",
+          "1405/09/05"
+        ],
+        [
+          "2,840,800",
+          "2,838,900",
+          "2,938,900",
+          "2,928,900",
+          "<span class=\"high\" dir=\"ltr\">90000</span>",
+          "<span class=\"high\" dir=\"ltr\">3.17%</span>",
+          "2026/11/25",
+          "1405/09/04"
+        ],
+        [
+          "2,787,000",
+          "2,787,000",
+          "2,852,000",
+          "2,838,900",
+          "<span class=\"high\" dir=\"ltr\">129200</span>",
+          "<span class=\"high\" dir=\"ltr\">4.77%</span>",
+          "2026/11/24",
+          "1405/09/03"
+        ]
+      ],
+      "prev_rial": 2928900.0,
+      "chg_hist": 0.0
+    },
+    "eur": {
+      "value_rial": 3221500.0,
+      "value_toman": 322150.0,
+      "chg": 0.0,
+      "updated": "۵ آذر",
+      "source": "TGJU price_eur",
+      "hist_raw": [
+        [
+          "3,228,800",
+          "3,216,800",
+          "3,252,500",
+          "3,221,500",
+          "<span class=\"high\" dir=\"ltr\">3500</span>",
+          "<span class=\"high\" dir=\"ltr\">0.11%</span>",
+          "2026/11/26",
+          "1405/09/05"
+        ],
+        [
+          "3,113,800",
+          "3,113,100",
+          "3,218,200",
+          "3,218,000",
+          "<span class=\"high\" dir=\"ltr\">101200</span>",
+          "<span class=\"high\" dir=\"ltr\">3.25%</span>",
+          "2026/11/25",
+          "1405/09/04"
+        ],
+        [
+          "2,965,300",
+          "2,963,600",
+          "3,131,500",
+          "3,116,800",
+          "<span class=\"high\" dir=\"ltr\">155700</span>",
+          "<span class=\"high\" dir=\"ltr\">5.26%</span>",
+          "2026/11/24",
+          "1405/09/03"
+        ]
+      ],
+      "prev_rial": 3218000.0,
+      "chg_hist": 0.10876320696084525
+    },
+    "aed": {
+      "value_rial": 798190.0,
+      "value_toman": 79819.0,
+      "chg": 0.0,
+      "updated": "۵ آذر",
+      "source": "TGJU price_aed",
+      "hist_raw": [
+        [
+          "800,370",
+          "797,260",
+          "805,810",
+          "798,190",
+          "<span class=\"low\" dir=\"ltr\">1320</span>",
+          "<span class=\"low\" dir=\"ltr\">0.17%</span>",
+          "2026/11/26",
+          "1405/09/05"
+        ],
+        [
+          "774,130",
+          "774,110",
+          "799,550",
+          "799,510",
+          "<span class=\"high\" dir=\"ltr\">27010</span>",
+          "<span class=\"high\" dir=\"ltr\">3.5%</span>",
+          "2026/11/25",
+          "1405/09/04"
+        ],
+        [
+          "739,270",
+          "739,240",
+          "777,210",
+          "772,500",
+          "<span class=\"high\" dir=\"ltr\">33190</span>",
+          "<span class=\"high\" dir=\"ltr\">4.49%</span>",
+          "2026/11/24",
+          "1405/09/03"
+        ]
+      ],
+      "prev_rial": 799510.0,
+      "chg_hist": -0.16510112443871872
+    },
+    "cny": {
+      "value_rial": 440100.0,
+      "value_toman": 44010.0,
+      "chg": 0.0,
+      "updated": "۵ آذر",
+      "source": "TGJU price_cny",
+      "hist_raw": [
+        [
+          "441,000",
+          "439,600",
+          "444,300",
+          "440,100",
+          "<span class=\"high\" dir=\"ltr\">400</span>",
+          "<span class=\"high\" dir=\"ltr\">0.09%</span>",
+          "2026/11/26",
+          "1405/09/05"
+        ],
+        [
+          "426,000",
+          "426,000",
+          "439,700",
+          "439,700",
+          "<span class=\"high\" dir=\"ltr\">14000</span>",
+          "<span class=\"high\" dir=\"ltr\">3.29%</span>",
+          "2026/11/25",
+          "1405/09/04"
+        ],
+        [
+          "407,300",
+          "407,100",
+          "428,300",
+          "425,700",
+          "<span class=\"high\" dir=\"ltr\">18300</span>",
+          "<span class=\"high\" dir=\"ltr\">4.49%</span>",
+          "2026/11/24",
+          "1405/09/03"
+        ]
+      ],
+      "prev_rial": 439700.0,
+      "chg_hist": 0.09097111667045713
+    },
+    "gold18_gram": {
+      "value_rial": 257978000.0,
+      "value_toman": 25797800.0,
+      "chg": 0.0,
+      "updated": "۵ آذر",
+      "source": "TGJU geram18",
+      "hist_raw": [
+        [
+          "254,732,000",
+          "254,732,000",
+          "259,488,000",
+          "257,978,000",
+          "<span class=\"high\" dir=\"ltr\">3223000</span>",
+          "<span class=\"high\" dir=\"ltr\">1.27%</span>",
+          "2026/11/26",
+          "1405/09/05"
+        ],
+        [
+          "253,929,000",
+          "251,039,000",
+          "255,702,000",
+          "254,755,000",
+          "<span class=\"high\" dir=\"ltr\">808000</span>",
+          "<span class=\"high\" dir=\"ltr\">0.32%</span>",
+          "2026/11/25",
+          "1405/09/04"
+        ],
+        [
+          "240,888,000",
+          "240,881,000",
+          "260,178,000",
+          "253,947,000",
+          "<span class=\"high\" dir=\"ltr\">13063000</span>",
+          "<span class=\"high\" dir=\"ltr\">5.42%</span>",
+          "2026/11/24",
+          "1405/09/03"
+        ]
+      ],
+      "prev_rial": 254755000.0,
+      "chg_hist": 1.265137092500638
+    },
+    "coin_emami": {
+      "value_rial": 2647350000.0,
+      "value_toman": 264735000.0,
+      "chg": 0.0,
+      "updated": "۵ آذر",
+      "source": "TGJU sekee",
+      "hist_raw": [
+        [
+          "2,666,950,000",
+          "2,642,800,000",
+          "2,674,000,000",
+          "2,647,350,000",
+          "<span class=\"high\" dir=\"ltr\">34600000</span>",
+          "<span class=\"high\" dir=\"ltr\">1.32%</span>",
+          "2026/11/26",
+          "1405/09/05"
+        ],
+        [
+          "2,639,750,000",
+          "2,608,400,000",
+          "2,663,900,000",
+          "2,612,750,000",
+          "<span class=\"low\" dir=\"ltr\">7250000</span>",
+          "<span class=\"low\" dir=\"ltr\">0.28%</span>",
+          "2026/11/25",
+          "1405/09/04"
+        ],
+        [
+          "2,516,150,000",
+          "2,515,900,000",
+          "2,688,500,000",
+          "2,620,000,000",
+          "<span class=\"high\" dir=\"ltr\">104050000</span>",
+          "<span class=\"high\" dir=\"ltr\">4.14%</span>",
+          "2026/11/24",
+          "1405/09/03"
+        ]
+      ],
+      "prev_rial": 2612750000.0,
+      "chg_hist": 1.3242751889771314
+    }
+  },
+  "errors": {
+    "zinc_te": "RuntimeError('TE zinc value implausible: 151.5')"
+  },
+  "tmn": {
+    "contract": "0x86a56e59f22Eaf3867EEeB41fB9BfA81BacE790d",
+    "pair": "0x6f1836b15de0c6294c16aaec67903515f532fa1c",
+    "reserve_tmn": 927432954.2855902,
+    "reserve_bnb": 3.353559127916146,
+    "bnb_usd": 555.92,
+    "price_bnb": 3.6159585578878015e-09,
+    "price_usd": 2.0101836815009863e-06,
+    "liquidity_usd": 3728.6211807822874,
+    "source": "PancakeSwap V2 pool reserves (on-chain)",
+    "dexscreener": 0,
+    "geckoterminal": 1,
+    "gt_pool": "0x6f1836b15de0c6294c16aaec67903515f532fa1c",
+    "volume_24h_usd": 0.0,
+    "change_24h_pct": 0.0
+  }
+}
