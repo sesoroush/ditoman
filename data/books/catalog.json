@@ -62,7 +62,10 @@
    "authors_fa": "کریس برنیسکی، جک تاتار",
    "year": 2017,
    "note_fa": "ارزش‌گذاری و تحلیل بنیادی رمزارزها",
-   "note_en": "How to value and analyse crypto assets"
+   "note_en": "How to value and analyse crypto assets",
+   "isbn": [
+    "9781260026672"
+   ]
   },
   {
    "n": 3,
@@ -74,7 +77,10 @@
    "authors_fa": "سیف‌الدین عموس",
    "year": 2018,
    "note_fa": "تاریخ پول و دیدگاه طرفداران بیت‌کوین",
-   "note_en": "The history of money and the case made for bitcoin"
+   "note_en": "The history of money and the case made for bitcoin",
+   "isbn": [
+    "9781119473862"
+   ]
   },
   {
    "n": 4,
@@ -86,7 +92,10 @@
    "authors_fa": "کمبل هاروی و همکاران",
    "year": 2021,
    "note_fa": "بانکداری غیرمتمرکز و ساختارهای مالی جدید",
-   "note_en": "Decentralised finance and the new financial plumbing"
+   "note_en": "Decentralised finance and the new financial plumbing",
+   "isbn": [
+    "9781119836018"
+   ]
   },
   {
    "n": 5,
@@ -134,7 +143,10 @@
    "authors_fa": "آندریاس آنتونوپولوس",
    "year": 2016,
    "note_fa": "فلسفه و کاربرد پول اینترنتی",
-   "note_en": "Why internet-native money matters"
+   "note_en": "Why internet-native money matters",
+   "isbn": [
+    "9781537000459"
+   ]
   },
   {
    "n": 9,
@@ -158,7 +170,10 @@
    "authors_fa": "لورا شین",
    "year": 2022,
    "note_fa": "تاریخ شکل‌گیری اتریوم و صنعت کریپتو",
-   "note_en": "The people and the story behind Ethereum's rise"
+   "note_en": "The people and the story behind Ethereum's rise",
+   "isbn": [
+    "9781541763012"
+   ]
   },
   {
    "n": 11,
@@ -170,7 +185,10 @@
    "authors_fa": "سوزان شیشتی، یانوس باربریس",
    "year": 2016,
    "note_fa": "فرصت‌های کارآفرینی و سرمایه‌گذاری در فین‌تک",
-   "note_en": "Fintech opportunities for founders and investors"
+   "note_en": "Fintech opportunities for founders and investors",
+   "isbn": [
+    "9781119218876"
+   ]
   },
   {
    "n": 12,
@@ -182,7 +200,10 @@
    "authors_fa": "اسوار پراساد",
    "year": 2021,
    "note_fa": "آینده‌ی پول، بانک‌ها و ارزهای دیجیتال",
-   "note_en": "Where money, banks and digital currencies are heading"
+   "note_en": "Where money, banks and digital currencies are heading",
+   "isbn": [
+    "9780674258440"
+   ]
   },
   {
    "n": 13,
@@ -194,7 +215,10 @@
    "authors_fa": "مارتین کورزمپا",
    "year": 2022,
    "note_fa": "تجربه‌ی تحول پرداخت و بانکداری چین",
-   "note_en": "How China reinvented payments and banking"
+   "note_en": "How China reinvented payments and banking",
+   "isbn": [
+    "9781541700703"
+   ]
   },
   {
    "n": 14,
@@ -254,7 +278,10 @@
    "authors_fa": "سوزان شیشتی و همکاران",
    "year": 2020,
    "note_fa": "صنعت پرداخت و انتقال پول",
-   "note_en": "The payments industry and how money moves"
+   "note_en": "The payments industry and how money moves",
+   "isbn": [
+    "9781119551911"
+   ]
   },
   {
    "n": 19,
@@ -266,7 +293,10 @@
    "authors_fa": "سوزان شیشتی و همکاران",
    "year": 2020,
    "note_fa": "کاربرد هوش مصنوعی در خدمات مالی",
-   "note_en": "Artificial intelligence in financial services"
+   "note_en": "Artificial intelligence in financial services",
+   "isbn": [
+    "9781119551904"
+   ]
   },
   {
    "n": 20,
@@ -278,7 +308,10 @@
    "authors_fa": "یانوس باربریس و همکاران",
    "year": 2019,
    "note_fa": "فناوری، قوانین و مدیریت ریسک مالی",
-   "note_en": "Technology for regulation, compliance and risk"
+   "note_en": "Technology for regulation, compliance and risk",
+   "isbn": [
+    "9781119362142"
+   ]
   },
   {
    "n": 21,
@@ -302,7 +335,11 @@
    "authors_fa": "الیویه بلانشار",
    "year": 1997,
    "note_fa": "تورم، بیکاری، رشد و سیاست پولی",
-   "note_en": "Inflation, unemployment, growth and monetary policy"
+   "note_en": "Inflation, unemployment, growth and monetary policy",
+   "isbn": [
+    "9780133780581",
+    "9780134897899"
+   ]
   },
   {
    "n": 23,
@@ -326,7 +363,10 @@
    "authors_fa": "پل ساموئلسون، ویلیام نوردهاوس",
    "year": 1948,
    "note_fa": "از منابع کلاسیک آموزش اقتصاد",
-   "note_en": "The classic economics textbook"
+   "note_en": "The classic economics textbook",
+   "isbn": [
+    "9780073511290"
+   ]
   },
   {
    "n": 25,
@@ -362,7 +402,10 @@
    "authors_fa": "تیم CORE",
    "year": 2017,
    "note_fa": "آموزش مدرن اقتصاد با مسائل واقعی جهان",
-   "note_en": "Economics taught through real-world problems"
+   "note_en": "Economics taught through real-world problems",
+   "isbn": [
+    "9780198810247"
+   ]
   },
   {
    "n": 28,
@@ -374,7 +417,11 @@
    "authors_fa": "الیویه بلانشار و همکاران",
    "year": 2010,
    "note_fa": "اقتصاد کلان با تمرکز بر اروپا",
-   "note_en": "Macroeconomics with Europe at the centre"
+   "note_en": "Macroeconomics with Europe at the centre",
+   "isbn": [
+    "9780273728009",
+    "9781292085678"
+   ]
   },
   {
    "n": 29,
@@ -410,7 +457,10 @@
    "authors_fa": "بنجامین گراهام",
    "year": 1949,
    "note_fa": "اصول سرمایه‌گذاری ارزشی",
-   "note_en": "The principles of value investing"
+   "note_en": "The principles of value investing",
+   "isbn": [
+    "9780060555665"
+   ]
   },
   {
    "n": 32,
@@ -434,7 +484,11 @@
    "authors_fa": "جان هال",
    "year": 1989,
    "note_fa": "مهندسی مالی و ابزارهای مشتقه",
-   "note_en": "Financial engineering and derivatives"
+   "note_en": "Financial engineering and derivatives",
+   "isbn": [
+    "9780134472089",
+    "9780136939979"
+   ]
   },
   {
    "n": 34,
@@ -494,7 +548,11 @@
    "authors_fa": "نسیم نیکلاس طالب",
    "year": 2007,
    "note_fa": "رویدادهای غیرمنتظره و عدم قطعیت",
-   "note_en": "Rare events and uncertainty"
+   "note_en": "Rare events and uncertainty",
+   "isbn": [
+    "9781400063512",
+    "9780812973815"
+   ]
   },
   {
    "n": 39,
@@ -542,7 +600,11 @@
    "authors_fa": "جو استادول",
    "year": 2013,
    "note_fa": "توسعه‌ی صنعتی ژاپن، کره، تایوان و چین",
-   "note_en": "How Japan, Korea, Taiwan and China industrialised"
+   "note_en": "How Japan, Korea, Taiwan and China industrialised",
+   "isbn": [
+    "9780802119599",
+    "9780802121325"
+   ]
   },
   {
    "n": 43,
@@ -566,7 +628,10 @@
    "authors_fa": "آمارتیا سن",
    "year": 1999,
    "note_fa": "توسعه‌ی انسانی، آزادی و رفاه",
-   "note_en": "Human development, freedom and well-being"
+   "note_en": "Human development, freedom and well-being",
+   "isbn": [
+    "9780385720274"
+   ]
   },
   {
    "n": 45,
@@ -578,7 +643,10 @@
    "authors_fa": "الیزابت اکونومی",
    "year": 2018,
    "note_fa": "تحول ساختار اقتصادی و سیاسی چین",
-   "note_en": "China's changing economic and political structure"
+   "note_en": "China's changing economic and political structure",
+   "isbn": [
+    "9780190866075"
+   ]
   },
   {
    "n": 46,
@@ -602,7 +670,10 @@
    "authors_fa": "ها-جون چانگ",
    "year": 2002,
    "note_fa": "تاریخ سیاست‌های صنعتی کشورهای توسعه‌یافته",
-   "note_en": "How today's rich countries actually developed"
+   "note_en": "How today's rich countries actually developed",
+   "isbn": [
+    "9781843310273"
+   ]
   },
   {
    "n": 48,
@@ -638,7 +709,10 @@
    "authors_fa": "بری ناتون",
    "year": 2018,
    "note_fa": "ساختار اقتصادی و تحول صنعتی چین",
-   "note_en": "The structure and industrial change of China's economy"
+   "note_en": "The structure and industrial change of China's economy",
+   "isbn": [
+    "9780262534796"
+   ]
   },
   {
    "n": 51,
@@ -662,7 +736,10 @@
    "authors_fa": "توماس پیکتی",
    "year": 2013,
    "note_fa": "تمرکز ثروت و نابرابری اقتصادی",
-   "note_en": "Wealth concentration and inequality"
+   "note_en": "Wealth concentration and inequality",
+   "isbn": [
+    "9780674430006"
+   ]
   },
   {
    "n": 53,
@@ -674,7 +751,10 @@
    "authors_fa": "کارل پولانی",
    "year": 1944,
    "note_fa": "رابطه‌ی بازار، جامعه و دولت",
-   "note_en": "Markets, society and the state"
+   "note_en": "Markets, society and the state",
+   "isbn": [
+    "9780807056431"
+   ]
   },
   {
    "n": 54,
@@ -686,7 +766,10 @@
    "authors_fa": "ری دالیو",
    "year": 2021,
    "note_fa": "چرخه‌های تاریخی قدرت و اقتصاد",
-   "note_en": "The long cycles of power and economies"
+   "note_en": "The long cycles of power and economies",
+   "isbn": [
+    "9781982160272"
+   ]
   },
   {
    "n": 55,
@@ -710,7 +793,11 @@
    "authors_fa": "دنی رودریک",
    "year": 2011,
    "note_fa": "تعارض جهانی‌شدن و سیاست داخلی",
-   "note_en": "When globalisation meets domestic politics"
+   "note_en": "When globalisation meets domestic politics",
+   "isbn": [
+    "9780393341287",
+    "9780393071610"
+   ]
   },
   {
    "n": 57,
@@ -758,7 +845,10 @@
    "authors_fa": "ادواردو گالئانو",
    "year": 1971,
    "note_fa": "دیدگاه انتقادی درباره‌ی تاریخ اقتصادی آمریکای لاتین",
-   "note_en": "A critical view of Latin America's economic history"
+   "note_en": "A critical view of Latin America's economic history",
+   "isbn": [
+    "9780853459910"
+   ]
   }
  ]
 }

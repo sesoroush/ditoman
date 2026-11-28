@@ -1,21 +1,15 @@
 {
  "book-cryptoassets": {
-  "source": "openlibrary",
-  "id": 10315586,
-  "title": "Cryptoassets",
-  "author": "Jack Tatar Chris Burniske",
-  "year": 2018,
-  "w": 313,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   10315586
+  ]
  },
  "book-the-bitcoin-standard": {
-  "source": "openlibrary",
-  "id": 10320866,
-  "title": "The Bitcoin Standard",
-  "author": "Saifedean Ammous",
-  "year": 2018,
-  "w": 312,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   10320866
+  ]
  },
  "book-defi-and-the-future-of-finance": {
   "source": null
@@ -27,7 +21,8 @@
   "author": "Don Tapscott",
   "year": 2016,
   "w": 327,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-mastering-bitcoin": {
   "source": "openlibrary",
@@ -36,7 +31,8 @@
   "author": "Andreas Antonopoulos",
   "year": 2019,
   "w": 381,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-mastering-ethereum": {
   "source": "openlibrary",
@@ -45,16 +41,14 @@
   "author": "Andreas M. Antonopoulos",
   "year": 2018,
   "w": 381,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-the-internet-of-money": {
-  "source": "openlibrary",
-  "id": 12831052,
-  "title": "The Internet of money",
-  "author": "Andreas M. Antonopoulos",
-  "year": 2016,
-  "w": 309,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   12831052
+  ]
  },
  "book-blockchain-crypto-assets-and-financial-innovation": {
   "source": null
@@ -78,7 +72,8 @@
   "author": "Brett King",
   "year": 2018,
   "w": 331,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-the-end-of-banking": {
   "source": "openlibrary",
@@ -87,7 +82,8 @@
   "author": "Jonathan McMillan",
   "year": 2014,
   "w": 324,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-the-future-of-money-investments-and-financial-services": {
   "source": null
@@ -111,16 +107,14 @@
   "author": "N. Gregory Mankiw",
   "year": 1998,
   "w": 388,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-macroeconomics": {
-  "source": "openlibrary",
-  "id": 13806717,
-  "title": "Macroeconomics",
-  "author": "Olivier Blanchard",
-  "year": 2002,
-  "w": 382,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   13806717
+  ]
  },
  "book-microeconomics": {
   "source": "openlibrary",
@@ -129,16 +123,14 @@
   "author": "Robert S. Pindyck",
   "year": 2000,
   "w": 397,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-economics": {
-  "source": "openlibrary",
-  "id": 8763656,
-  "title": "Economics",
-  "author": "Samuelson",
-  "year": 2010,
-  "w": 379,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   8763656
+  ]
  },
  "book-intermediate-microeconomics": {
   "source": "openlibrary",
@@ -147,7 +139,8 @@
   "author": "Hal R. Varian",
   "year": 1987,
   "w": 345,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-advanced-macroeconomics": {
   "source": "openlibrary",
@@ -156,19 +149,24 @@
   "author": "David Romer",
   "year": 1996,
   "w": 344,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-the-economy": {
-  "source": "openlibrary",
-  "id": 6292438,
-  "title": "The economy of cities",
-  "author": "Jane Jacobs",
-  "year": 1969,
-  "w": 292,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   6292438
+  ]
  },
  "book-macroeconomics-a-european-perspective": {
-  "source": null
+  "source": "openlibrary",
+  "id": 13806717,
+  "title": "Macroeconomics",
+  "author": "Olivier Blanchard",
+  "year": 2002,
+  "w": 382,
+  "h": 500,
+  "note": "jacket of the European Perspective edition, reviewed"
  },
  "book-economics-the-users-guide": {
   "source": "openlibrary",
@@ -177,7 +175,8 @@
   "author": "Ha-Joon Chang",
   "year": 2014,
   "w": 300,
-  "h": 455
+  "h": 455,
+  "reviewed": true
  },
  "book-the-undercover-economist": {
   "source": "openlibrary",
@@ -186,16 +185,14 @@
   "author": "Tim Harford",
   "year": 2005,
   "w": 313,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-the-intelligent-investor": {
-  "source": "openlibrary",
-  "id": 36434,
-  "title": "The Intelligent Investor",
-  "author": "Benjamin Graham",
-  "year": 1949,
-  "w": 457,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   36434
+  ]
  },
  "book-a-random-walk-down-wall-street": {
   "source": "openlibrary",
@@ -204,16 +201,14 @@
   "author": "Burton Gordon Malkiel",
   "year": 1973,
   "w": 311,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-options-futures-and-other-derivatives": {
-  "source": "openlibrary",
-  "id": 8702910,
-  "title": "Options, Futures, and Other Derivatives",
-  "author": "John C. Hull",
-  "year": 1989,
-  "w": 356,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   8702910
+  ]
  },
  "book-investment-valuation": {
   "source": "openlibrary",
@@ -222,7 +217,8 @@
   "author": "Aswath Damodaran",
   "year": 2007,
   "w": 350,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-investments": {
   "source": "openlibrary",
@@ -231,7 +227,8 @@
   "author": "Zvi Bodie",
   "year": 1989,
   "w": 375,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-the-psychology-of-money": {
   "source": "openlibrary",
@@ -240,7 +237,8 @@
   "author": "Morgan Housel",
   "year": 2020,
   "w": 319,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-against-the-gods": {
   "source": "openlibrary",
@@ -249,7 +247,8 @@
   "author": "Peter L. Bernstein",
   "year": 1996,
   "w": 326,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-the-black-swan": {
   "source": null
@@ -261,7 +260,8 @@
   "author": "Nassim Nicholas Taleb",
   "year": 2012,
   "w": 322,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-the-concepts-and-practice-of-mathematical-finance": {
   "source": "openlibrary",
@@ -270,7 +270,8 @@
   "author": "M. S. Joshi",
   "year": 2003,
   "w": 315,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-from-third-world-to-first": {
   "source": "openlibrary",
@@ -279,7 +280,8 @@
   "author": "Lee Kuan Yew",
   "year": 2000,
   "w": 320,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-how-asia-works": {
   "source": null
@@ -291,7 +293,8 @@
   "author": "Abhijit Banerjee",
   "year": 2011,
   "w": 326,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-development-as-freedom": {
   "source": null
@@ -306,7 +309,8 @@
   "author": "World Bank",
   "year": 1993,
   "w": 385,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-kicking-away-the-ladder": {
   "source": null
@@ -318,7 +322,8 @@
   "author": "Hernando De Soto",
   "year": 2000,
   "w": 321,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-the-end-of-poverty": {
   "source": "openlibrary",
@@ -327,7 +332,8 @@
   "author": "Jeffrey Sachs",
   "year": 2005,
   "w": 325,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-the-chinese-economy-adaptation-and-growth": {
   "source": null
@@ -339,19 +345,17 @@
   "author": "Daron Acemoglu",
   "year": 2012,
   "w": 300,
-  "h": 456
+  "h": 456,
+  "reviewed": true
  },
  "book-capital-in-the-twenty-first-century": {
   "source": null
  },
  "book-the-great-transformation": {
-  "source": "openlibrary",
-  "id": 966056,
-  "title": "The Great Transformation",
-  "author": "Karl Polanyi",
-  "year": 1944,
-  "w": 290,
-  "h": 475
+  "source": null,
+  "rejected_ids": [
+   966056
+  ]
  },
  "book-principles-for-dealing-with-the-changing-world-order": {
   "source": null
@@ -363,16 +367,14 @@
   "author": "Joseph E. Stiglitz",
   "year": 2002,
   "w": 301,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-the-globalization-paradox": {
-  "source": "openlibrary",
-  "id": 7930194,
-  "title": "The globalization paradox",
-  "author": "Dani Rodrik",
-  "year": 2011,
-  "w": 305,
-  "h": 500
+  "source": null,
+  "rejected_ids": [
+   7930194
+  ]
  },
  "book-the-narrow-corridor": {
   "source": "openlibrary",
@@ -381,7 +383,8 @@
   "author": "Daron Acemoglu",
   "year": 2019,
   "w": 263,
-  "h": 400
+  "h": 400,
+  "reviewed": true
  },
  "book-the-wealth-and-poverty-of-nations": {
   "source": "openlibrary",
@@ -390,7 +393,8 @@
   "author": "David S. Landes",
   "year": 1998,
   "w": 307,
-  "h": 475
+  "h": 475,
+  "reviewed": true
  },
  "book-the-great-convergence": {
   "source": "openlibrary",
@@ -399,9 +403,14 @@
   "author": "Richard Baldwin",
   "year": 2016,
   "w": 331,
-  "h": 500
+  "h": 500,
+  "reviewed": true
  },
  "book-open-veins-of-latin-america": {
   "source": null
+ },
+ "book-cryptocurrency-all-in-one-for-dummies": {
+  "source": "supplied by Soroush",
+  "note": "first-edition jacket"
  }
 }

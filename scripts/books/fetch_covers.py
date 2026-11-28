@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Fetch a jacket image for every book in data/books/catalog.json (runs on the GitHub runner).
 
-For each book without assets/books/<slug>.jpg: look the title up in Open Library, then in
-Google Books, and save the largest front cover found. What was matched goes to
+For each book without assets/books/<slug>.jpg: try the ISBNs listed in the catalog (Open Library, then
+Google Books), then a title and author search in Open Library. What was matched goes to
 data/books/covers.json so every image can be reviewed before it is used on a banner.
 A file placed by hand at assets/books/<slug>.jpg is never replaced.
 """
@@ -53,7 +53,22 @@ def surname(authors):
     return first.split()[-1] if first else ""
 
 
-def open_library(book):
+def by_isbn(book):
+    """Exact edition first: the ISBNs listed for the book in the catalog."""
+    for isbn in book.get("isbn", []):
+        data = get(f"https://covers.openlibrary.org/b/isbn/{isbn}-L.jpg?default=false", tries=1)
+        im = good(data) if data else None
+        if im:
+            return im, {"source": "openlibrary-isbn", "id": isbn, "title": book["en"], "author": book["authors_en"], "year": book["year"]}
+        for zoom in (3, 2):
+            data = get(f"https://books.google.com/books/content?vid=ISBN{isbn}&printsec=frontcover&img=1&zoom={zoom}", tries=1)
+            im = good(data, 300) if data else None
+            if im:
+                return im, {"source": "googlebooks-isbn", "id": isbn, "zoom": zoom, "title": book["en"], "author": book["authors_en"], "year": book["year"]}
+    return None
+
+
+def open_library(book, skip=()):
     q = {"title": book["en"], "limit": "20", "fields": "title,author_name,cover_i,first_publish_year,edition_count"}
     a = surname(book["authors_en"])
     if a:
@@ -62,38 +77,16 @@ def open_library(book):
     if not raw:
         return None
     want = norm(book["en"])
-    docs = [d for d in json.loads(raw).get("docs", []) if d.get("cover_i")]
-    exact = [d for d in docs if norm(d.get("title", "")) == want] or [d for d in docs if norm(d.get("title", "")).startswith(want)]
-    for d in sorted(exact, key=lambda d: -d.get("edition_count", 0))[:4]:
+    docs = [d for d in json.loads(raw).get("docs", []) if d.get("cover_i") and d["cover_i"] not in skip]
+    exact = [d for d in docs if norm(d.get("title", "")) == want]
+    if a:  # a looser title match is only trusted when the author matches too
+        exact = exact or [d for d in docs if norm(d.get("title", "")).startswith(want) and a.lower() in " ".join(d.get("author_name") or []).lower()]
+    for d in sorted(exact, key=lambda d: -d.get("edition_count", 0))[:6]:
         data = get(f"https://covers.openlibrary.org/b/id/{d['cover_i']}-L.jpg")
         im = good(data) if data else None
         if im:
             return im, {"source": "openlibrary", "id": d["cover_i"], "title": d.get("title"),
                         "author": (d.get("author_name") or [""])[0], "year": d.get("first_publish_year")}
-    return None
-
-
-def google_books(book):
-    q = f'intitle:"{book["en"]}"'
-    a = surname(book["authors_en"])
-    if a:
-        q += f" inauthor:{a}"
-    raw = get("https://www.googleapis.com/books/v1/volumes?" + urllib.parse.urlencode({"q": q, "maxResults": "10", "printType": "books"}))
-    if not raw:
-        return None
-    want = norm(book["en"])
-    for item in json.loads(raw).get("items", []):
-        v = item.get("volumeInfo", {})
-        if not norm(v.get("title", "")).startswith(want[:40]):
-            continue
-        if not v.get("imageLinks"):
-            continue
-        for zoom in (3, 2, 1):
-            data = get(f"https://books.google.com/books/content?id={item['id']}&printsec=frontcover&img=1&zoom={zoom}", tries=1)
-            im = good(data, 300 if zoom > 1 else 120) if data else None
-            if im:
-                return im, {"source": "googlebooks", "id": item["id"], "zoom": zoom, "title": v.get("title"),
-                            "author": (v.get("authors") or [""])[0], "year": (v.get("publishedDate") or "")[:4]}
     return None
 
 
@@ -106,13 +99,10 @@ def main():
         dest = OUT / f"{b['slug']}.jpg"
         if dest.exists() or (only and b["slug"] not in only):
             continue
-        found = open_library(b)
-        if not found or found[0].width < 300:
-            alt = google_books(b)
-            if alt and (not found or alt[0].width > found[0].width):
-                found = alt
+        skip = set((log.get(b["slug"]) or {}).get("rejected_ids", []))
+        found = by_isbn(b) or open_library(b, skip)
         if not found:
-            log[b["slug"]] = {"source": None}
+            log[b["slug"]] = {"source": None, "rejected_ids": sorted(skip)}
             print("MISSING", b["n"], b["en"])
             continue
         im, meta = found
