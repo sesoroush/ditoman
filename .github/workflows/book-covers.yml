@@ -1,0 +1,33 @@
+name: Fetch book jackets
+
+# Looks up a jacket image for every book in data/books/catalog.json that has none yet
+# (Open Library, then Google Books) and saves it under assets/books/ for review.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/books/catalog.json"
+      - "scripts/books/fetch_covers.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: book-covers
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet pillow
+      - run: python3 scripts/books/fetch_covers.py
+      - run: |
+          git config user.name "ditoman-bot"
+          git config user.email "ditoman-bot@users.noreply.github.com"
+          git add assets/books data/books/covers.json
+          git commit -m "Fetch book jackets" || exit 0
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
