@@ -1,5 +1,192 @@
 [
  {
+  "date": "2026-11-28",
+  "jalali": "1405/09/07",
+  "weekday_fa": "شنبه",
+  "post": "press/2026-11-28-post.webp",
+  "post_en": "press/2026-11-28-post-en.webp",
+  "lead_fa": "شنبه ۷ آذر؛ بازارها بعد از یک هفته‌ی پرشتاب آرام باز شدند: دلار و تتر حدود ۲۹۴ هزار تومان، طلای ۱۸ عیار نزدیک ۲۶ میلیون و بورس در آستانه‌ی ۸٫۷ میلیون واحد. در زمین واقعی هم خبر هست: قیمت تضمینی گندم ۵۲ درصد بالا رفت، معامله‌ی واقعی مسکن تهران ۱۷ درصد زیر قیمت آگهی بسته می‌شود و موج آنفلوآنزا در ۲۶ استان از آستانه‌ی هشدار گذشته. برای هر خبر یک خط هم نوشته‌ایم که برای زندگی و جیب ما یعنی چه. با هم دنبال می‌کنیم.",
+  "lead_en": "Saturday 7 Azar: after a fast week the markets opened calm — the dollar and tether near 294,000 tomans, 18k gold close to 26 million and the Tehran exchange at the edge of 8.7 million points. On the ground: the guaranteed wheat price rose 52%, real housing deals in Tehran close 17% below asking prices and the flu wave has passed the alert threshold in 26 provinces. For each item we add one line on what it means for daily life and the wallet.",
+  "front_fa": "دنیای اقتصاد: «آینده بازارها در محاصره» (میزگرد سناریوهای مسکن، بورس، دلار و طلا) · شرق: «پشت پرده مرگ‌های متانولی» · هفت صبح، همشهری، اعتماد، ایران، جام‌جم، آرمان ملی، اطلاعات و فرهیختگان نیز در کیوسک امروز هستند",
+  "front_en": "Donya-e Eqtesad: “The future of the markets, besieged” (a round table on housing, stocks, dollar and gold scenarios) · Shargh: “Behind the methanol deaths” · Haft-e Sobh, Hamshahri, Etemad, Iran, Jam-e Jam, Arman-e Melli, Ettelaat and Farhikhtegan are also on today's stands",
+  "sections": [
+   {
+    "fa": "اقتصاد و بازار",
+    "en": "Economy & markets",
+    "items": [
+     {
+      "fa": "دلار ۲۹۴ هزار و ۵۰۰ تومان، تتر ۲۹۴ هزار تومان: نرخ‌های ساعت ۹:۴۵ امروز؛ دلار نسبت به دیروز بدون تغییر و تتر حدود ۳٫۶ هزار تومان پایین‌تر از پایان پنجشنبه (۲۹۷٫۶ هزار). تتر در یک هفته حدود ۸ درصد بالا رفته بود. یعنی جهش هفته‌ی گذشته فعلاً ایستاده و بازار آرام باز شده؛ تتر که ۲۴ ساعته معامله می‌شود، زودتر از اسکناس خنک شده است.",
+      "en": "Dollar 294,500 tomans, tether 294,000: quotes at 09:45 today; the dollar is flat on the day and tether about 3,600 tomans below Thursday's close of 297,600, after an 8% rise over the week. Last week's jump has paused and the market opened calm; tether, which trades around the clock, cooled earlier than banknotes.",
+      "src": "آلن‌چند، خبر پتروشیمی",
+      "url": "https://www.alanchand.com/currencies-price"
+     },
+     {
+      "fa": "طلای ۱۸ عیار ۲۵ میلیون و ۹۰۰ هزار تومان، سکه‌ی امامی ۲۶۸ میلیون: گرم طلا ۰٫۱ درصد پایین‌تر از دیروز و سکه ۳ میلیون تومان بالاتر (۹:۴۵ امروز)؛ مهر می‌نویسد طلا در هفته‌ی اول آذر ۱۲ درصد گران شد. یعنی طلای داخل سکه‌ی امامی با این نرخ گرم حدود ۲۵۳ میلیون تومان می‌ارزد و سکه نزدیک ۶ درصد بالاتر از ارزش طلایش معامله می‌شود؛ وقتی سکه تنها بالا می‌رود، آن اضافه «حباب» است نه طلا.",
+      "en": "18k gold 25.9 million tomans a gram, Emami coin 268 million: the gram is 0.1% below yesterday and the coin 3 million higher (09:45 today); Mehr reports gold rose 12% in the first week of Azar. At this gram price the gold inside an Emami coin is worth about 253 million, so the coin trades roughly 6% above its metal value; when the coin rises alone, the extra is premium, not gold.",
+      "src": "آلن‌چند، باشگاه خبرنگاران، مهر",
+      "url": "https://alanchand.com/gold-price/sekkeh"
+     },
+     {
+      "fa": "بورس: ۱۲ همت پول حقیقی در یک هفته: شاخص کل هفته‌ی گذشته ۳٫۳۶ درصد رشد کرد و روی ۸ میلیون و ۶۷۳ هزار واحد بست؛ خالص ورود پول حقیقی ۱۲ هزار و ۴۰ میلیارد تومان بود که ۷ همتش فقط در سه‌شنبه آمد. هم‌وزن ۷٫۴ درصد بالا رفت. یعنی این بار سهم‌های کوچک و متوسط جلو افتادند و خریدار خرد برگشته؛ امروز اولین روزی است که این قله با دلار آرام آزمایش می‌شود.",
+      "en": "Tehran exchange: 12 trillion tomans of retail money in a week: the main index rose 3.36% last week to close at 8,673,000 points; net retail inflow was 12,040 billion tomans, 7 trillion of it on Tuesday alone, and the equal-weight index gained 7.4%. Small and mid caps led this time and retail buyers are back; today is the first test of this peak with a calm dollar.",
+      "src": "باشگاه خبرنگاران، شهرآرا",
+      "url": "https://www.yjc.ir/fa/news/9153047/"
+     },
+     {
+      "fa": "نفت برنت ۹۵٫۴ دلار: جمعه با ۱٫۲ درصد افت بست اما هفته را حدود ۳ درصد بالاتر تمام کرد، اولین رشد هفتگی در نوامبر؛ نشست اوپک‌پلاس یکشنبه است. یعنی نفت دوباره بالای ۹۰ ماندگار شده و هر دلارش مستقیم به درآمد ارزی کشور و بودجه‌ی سال آینده وصل است.",
+      "en": "Brent at $95.4: it closed Friday 1.2% lower but ended the week up about 3%, the first weekly gain in November; OPEC+ meets on Sunday. Oil has settled above $90 again, and every dollar feeds straight into the country's foreign-currency income and next year's budget.",
+      "src": "شهرآرا، رویترز",
+      "url": "https://www.ibtimes.com.au/oil-prices-brent-weekly-gain-middle-east-attacks-opec-1879508"
+     },
+     {
+      "fa": "مسکن تهران: آگهی متری ۲۷۷ میلیون، معامله متری ۲۳۶ میلیون: میانگین قیمت پیشنهادی آبان ۱۲ درصد نسبت به مهر بالا رفت، اما قیمت معامله‌های واقعی ۱۷ درصد زیر آگهی‌ها بسته شد و فقط حدود ۲ هزار و ۵۶۰ معامله ثبت شد. یعنی عدد روی آگهی قیمت نیست، نقطه‌ی شروع چانه‌زنی است؛ در بازاری با این حجم کم، خریدار واقعی دست بالا را دارد.",
+      "en": "Tehran housing: asking 277 million tomans a square metre, deals at 236 million: the average asking price in Aban rose 12% on Mehr, but actual transactions closed 17% below asking and only about 2,560 deals were recorded. The number on the listing is not the price but the opening bid; in a market this thin, the real buyer holds the upper hand.",
+      "src": "دنیای اقتصاد، پیام جوان، نبض قیمت",
+      "url": "https://payamjavan.com/قیمت-مسکن-در-تهران-به-متری-۱۴۰-تا-۷۳۳-می/"
+     },
+     {
+      "fa": "قیمت تضمینی گندم ۷۳ هزار و ۶۰۰ تومان، ۵۲ درصد بیشتر: شورای قیمت‌گذاری نرخ سال زراعی جدید را تصویب کرد و وزیر جهاد گفت امروز شنبه ابلاغ می‌شود. یعنی گندم‌کار برای کشت پاییزه انگیزه‌ی بیشتری دارد و تکیه به واردات کمتر می‌شود؛ هزینه‌ی این فاصله‌ی قیمت هم به بودجه‌ی یارانه‌ی نان می‌رود، نه به نرخ نان روی پیشخوان.",
+      "en": "Guaranteed wheat price 73,600 tomans a kilo, up 52%: the pricing council approved the new crop-year rate and the agriculture minister said it will be formally issued today. Farmers have more reason to plant this autumn and reliance on imports falls; the price gap is carried by the bread-subsidy budget, not by the loaf at the counter.",
+      "src": "خبرگزاری دانشجو، نورنیوز، تعادل",
+      "url": "https://snn.ir/fa/news/1496435/"
+     },
+     {
+      "fa": "خرید اعتباری تا دو برابر یارانه: سازمان هدفمندی می‌گوید یارانه‌بگیر می‌تواند از فروشگاه‌های طرف قرارداد تا دو برابر یارانه‌ی ماهانه‌اش (مثلاً ۳۰۰ هزار تومان یارانه، ۶۰۰ هزار خرید) نسیه بخرد و ظرف دو ماه پس بدهد، وگرنه از دو یارانه‌ی بعدی کم می‌شود. یعنی این یارانه‌ی اضافه نیست، وام کوتاه‌مدت با وثیقه‌ی یارانه است؛ برای خرید ضروری خوب است، برای خرید تخفیف‌های بلک‌فرایدی نه.",
+      "en": "Credit purchases up to twice the cash subsidy: the Targeted Subsidies Organisation says recipients can buy on credit at contracted stores up to double their monthly subsidy (300,000 tomans of subsidy, 600,000 of purchases) and repay within two months, or it is deducted from the next two payments. This is not extra subsidy but a short loan secured on it; fine for essentials, not for Black Friday bargains.",
+      "src": "باشگاه خبرنگاران",
+      "url": "https://www.yjc.ir/fa/news/9151629/"
+     },
+     {
+      "fa": "تقویم کالابرگ آذر: کدملی‌های ۷، ۸ و ۹ شارژ شده‌اند؛ ۰ تا ۲ به‌همراه خانوارهای بهزیستی و کمیته‌ی امداد ۱۵ آذر و ۳ تا ۶ در ۲۵ آذر؛ اعتبار ۴۰ روز معتبر است. یعنی فاصله‌ی گروه‌ها از ۵ روز به ۱۰ روز رسیده، پس اگر نوبت شما هنوز نیامده، تأخیر نیست، تقویم است.",
+      "en": "Kalabarg calendar for Azar: national IDs ending 7, 8 and 9 have been credited; 0–2 plus welfare and relief-committee households on 15 Azar and 3–6 on 25 Azar; credit stays valid for 40 days. The gap between groups has widened from 5 to 10 days, so if your turn has not come it is the calendar, not a delay.",
+      "src": "باشگاه خبرنگاران",
+      "url": "https://www.yjc.ir/fa/news/9152754/"
+     },
+     {
+      "fa": "سبد خرید این هفته: مرغ کیلویی ۳۵۵ هزار تومان، شانه‌ی ۳۰تایی تخم‌مرغ ۷۱۴ هزار تومان و سه خودروی پرفروش داخلی تا ۲۱۰ میلیون تومان گران‌تر شده‌اند. یعنی گرانی دلار هفته‌ی قبل با یک هفته تأخیر به قفسه و نمایشگاه خودرو رسیده؛ خریدهای بزرگ را با قیمت هفته‌ی قبل مقایسه کنید.",
+      "en": "This week's basket: chicken at 355,000 tomans a kilo, a 30-egg tray at 714,000 and three best-selling domestic cars up to 210 million tomans dearer. Last week's dollar rise reached the shelf and the car showroom with a one-week lag; compare big purchases against last week's price.",
+      "src": "خبرآنلاین، وانانیوز، همشهری",
+      "url": "https://www.khabaronline.ir/news/2307824/"
+     }
+    ]
+   },
+   {
+    "fa": "صنعت و تولید",
+    "en": "Industry & production",
+    "items": [
+     {
+      "fa": "مجوز واردات ۳ هزار اتوبوس بین‌شهری در سال ۱۴۰۵: وزارت صمت اجازه‌ی ثبت سفارش گرفت. یعنی ناوگان فرسوده‌ی جاده‌ای که هر زمستان خبرش را می‌شنویم، بالاخره خون تازه می‌گیرد؛ اثرش را در ایمنی و قیمت بلیت سفرهای نوروز باید دید.",
+      "en": "Import licence for 3,000 intercity buses in 1405: the industry ministry may now register orders. The ageing road fleet that makes the news every winter finally gets fresh blood; watch for the effect on safety and Nowruz ticket prices.",
+      "src": "مهر، تجارت‌نیوز",
+      "url": "https://www.mehrnews.com/news/7025265/"
+     },
+     {
+      "fa": "صادرات شیلات ۵۰ درصد بالا رفت؛ ۱۷۰ هزار تن: معاون وزیر جهاد از رکورد تاریخی تولید میگو خبر داد؛ بوشهر به‌تنهایی ۴۰ هزار تن میگوی پرورشی داشت و ۶۷ همت سرمایه‌گذاری وارد این بخش شده. یعنی میگوی جنوب به یکی از معدود کالاهای غذایی با ارزآوری رو به رشد تبدیل شده و شغلش در روستای ساحلی می‌ماند.",
+      "en": "Fisheries exports up 50% to 170,000 tonnes: the deputy agriculture minister reported a record shrimp harvest; Bushehr alone produced 40,000 tonnes of farmed shrimp and 67 trillion tomans has been invested in the sector. Southern shrimp has become one of the few food products with growing export income, and the jobs stay in coastal villages.",
+      "src": "مهر، آنا",
+      "url": "https://www.mehrnews.com/news/7024598/"
+     },
+     {
+      "fa": "مرکز پرتوفرآیند گیلان افتتاح شد؛ ۱۰ هزار تن برنج در سال: در فاز اول برنج با پرتو در برابر شپشه ضدعفونی می‌شود، ظرفیت تا ۲۰ هزار تن و بعدتر بادام‌زمینی، چای و گیاهان دارویی؛ تا پایان سال ۱۲ مرکز مشابه در کشور باز می‌شود. یعنی برنج شمال بدون سم و بدون سردخانه یک سال سالم می‌ماند؛ ضایعات کمتر، قیمت پایدارتر.",
+      "en": "Gilan irradiation centre opens, 10,000 tonnes of rice a year: phase one treats rice against the rice weevil, with capacity to 20,000 tonnes and later peanuts, tea and medicinal plants; 12 such centres are due nationwide by year-end. Northern rice keeps for a year without pesticide or cold storage — less waste, steadier prices.",
+      "src": "باشگاه خبرنگاران",
+      "url": "https://www.yjc.ir/fa/news/9152743/"
+     },
+     {
+      "fa": "۸۳ هزار تن کیوی و مرکبات مازندران صادر شد: از اول مهر تا ۵ آذر، ۲۵٫۶ هزار تن کیوی و ۵۷٫۹ هزار تن مرکبات در ۴ هزار محموله. یعنی فصل برداشت شمال امسال با صادرات نقد همراه است؛ قیمت کیوی داخل هم با این خروج بالا می‌ماند.",
+      "en": "83,000 tonnes of Mazandaran kiwi and citrus exported: from 1 Mehr to 5 Azar, 25,600 tonnes of kiwi and 57,900 tonnes of citrus in 4,000 consignments. The northern harvest comes with cash exports this year, which also keeps domestic kiwi prices firm.",
+      "src": "باشگاه خبرنگاران",
+      "url": "https://www.yjc.ir/fa/news/9153065/"
+     },
+     {
+      "fa": "تمدید قرارداد گاز ترکیه تا ۲۰۳۲: تسنیم به نقل از بلومبرگ می‌نویسد بوتاش و شرکت ملی گاز بر تمدید قرارداد (پیش‌تر ۱۰ میلیارد مترمکعب در سال) توافق کرده‌اند؛ هیچ‌یک از دو طرف هنوز رسماً تأیید نکرده است. یعنی بزرگ‌ترین بازار صادراتی گاز ایران شش سال دیگر حفظ می‌شود، به شرطی که زمستان‌ها گازِ دادن داشته باشیم.",
+      "en": "Turkey gas contract extended to 2032: Tasnim, citing Bloomberg, says BOTAŞ and the National Iranian Gas Company agreed to extend the contract (previously 10 bcm a year); neither side has confirmed officially. Iran's biggest gas export market is kept for six more years, provided there is gas to spare in winter.",
+      "src": "تسنیم",
+      "url": "https://www.tasnimnews.ir/fa/news/1405/09/06/3759530/"
+     }
+    ]
+   },
+   {
+    "fa": "فناوری",
+    "en": "Technology",
+    "items": [
+     {
+      "fa": "بلک‌فرایدی ایرانی: دیجی‌کالا و اسنپ‌شاپ ارسال سراسری را رایگان کردند و پلیس فتا هشدار داد: لینک‌های «برنده‌ی جشنواره»، «کارت عروسی» و «ابلاغیه‌ی مالیاتی» این روزها کلاهبرداری است. یعنی تخفیف واقعی را با قیمت هفته‌ی قبل در ترب بسنجید و روی هیچ لینکی که از پیامک یا ایتا آمده کلیک نکنید.",
+      "en": "Iranian Black Friday: Digikala and SnappShop made nationwide shipping free, and the cyber police warned that “festival winner”, “wedding invitation” and “tax notice” links doing the rounds are scams. Check a discount against last week's price on Torob, and click nothing that arrives by SMS or Eitaa.",
+      "src": "زومیت، دیجیاتو، مهر",
+      "url": "https://www.zoomit.ir/iran-news/471942-digikala-free-shipping-black-friday/"
+     },
+     {
+      "fa": "انجمن سرمایه‌گذاری خطرپذیر: تا سه سال آینده دیجی‌کالا یا اسنپ جدیدی نخواهیم داشت: پول مرحله‌ی بذری خشک شده و استارتاپ‌های تازه به فاز رشد نمی‌رسند. یعنی غول‌های امروز رقیب نو ندارند و این برای مصرف‌کننده یعنی رقابت کمتر بر سر قیمت و کیفیت؛ برای جوان صاحب ایده یعنی سرمایه را باید از مشتری گرفت نه از صندوق.",
+      "en": "Venture capital association: no new Digikala or Snapp for the next three years, because seed money has dried up and new startups never reach the growth stage. Today's giants face no new challengers — less competition on price and quality for consumers; for founders, the capital will have to come from customers, not funds.",
+      "src": "زومیت، سخت‌افزار مگ",
+      "url": "https://www.zoomit.ir/iran-news/470037-iran-vc-early-stage-startup-crisis/"
+     },
+     {
+      "fa": "گزارش تجربه‌ی کاربری ۳۱ پلتفرم ایرانی: اسنپ و دیجی‌کالا اول شدند، اما «اعتماد کاربر» نقطه‌ی ضعف مشترک همه بود. یعنی اپ‌ها در سرعت و رابط کاربری پیش رفته‌اند و جایی که عقب‌اند، پاسخ‌گویی بعد از خرید است؛ همان‌جایی که مشتری تصمیم می‌گیرد برگردد یا نه.",
+      "en": "User-experience report on 31 Iranian platforms: Snapp and Digikala rank first, but “user trust” is the shared weak spot. The apps have advanced on speed and interface; where they lag is after-sales responsiveness — exactly where a customer decides whether to come back.",
+      "src": "زومیت",
+      "url": "https://www.zoomit.ir/report/470034-iranian-platforms-user-experience-report/"
+     }
+    ]
+   },
+   {
+    "fa": "جامعه و محیط‌زیست",
+    "en": "Society & environment",
+    "items": [
+     {
+      "fa": "هوای تهران امروز و فردا ناسالم؛ باد از یکشنبه‌شب: هواشناسی برای تهران، کرج و اصفهان تا یکشنبه هوای ساکن و آلوده پیش‌بینی کرده و سامانه‌ی بارشی از یکشنبه‌شب وارد غرب کشور می‌شود، با برف و افت محسوس دما در نیمه‌ی غربی و شمالی. یعنی دو روز سخت برای ریه‌ها و بعد یک هفته‌ی سرد و تمیز؛ ورزش بیرون را به سه‌شنبه موکول کنید.",
+      "en": "Tehran air unhealthy today and tomorrow; wind from Sunday night: the Met Office expects stagnant, polluted air in Tehran, Karaj and Isfahan until Sunday, then a rain system entering the west on Sunday night with snow and a sharp temperature drop across the western and northern half. Two hard days for the lungs, then a cold clean week; move outdoor exercise to Tuesday.",
+      "src": "تابناک، جام‌جم، خبرآنلاین",
+      "url": "https://tabnak.ir/fa/news/4204722/"
+     },
+     {
+      "fa": "مدارس تهران باز، مدارس کردستان یک روز مجازی: ستاد بحران کردستان برای قطع زنجیره‌ی آنفلوآنزا همه‌ی مدارس استان را امروز غیرحضوری کرد؛ مهدها، آموزشگاه‌ها و باشگاه‌های کودکان هم تعطیل‌اند و مادران دانش‌آموزان ابتدایی می‌توانند دورکار باشند. در سیرجان هم بعد از فوت دو دانش‌آموز مدارس مجازی شد. یعنی تعطیلی این بار به‌خاطر ویروس است نه هوا؛ کودک تب‌دار را به مدرسه نفرستید، حتی در استان‌هایی که باز است.",
+      "en": "Tehran schools open, Kurdistan's online for a day: the province's crisis council moved all schools to remote learning today to break the flu chain; nurseries, institutes and children's sports clubs are closed and mothers of primary pupils may work from home. Sirjan also went remote after two pupils died. This closure is about the virus, not the air; keep a feverish child home even where schools are open.",
+      "src": "تابناک، مهر، شهرآرا",
+      "url": "https://tabnak.ir/fa/news/4204665/"
+     }
+    ]
+   },
+   {
+    "fa": "سلامت",
+    "en": "Health",
+    "items": [
+     {
+      "fa": "آنفلوآنزا در ۲۶ استان بالای آستانه‌ی هشدار؛ نیمی از مبتلایان زیر ۱۵ سال: در یزد سهم نمونه‌های مثبت در یک هفته به بالای ۳۰ درصد رسید (دو هفته قبل ۱۴٫۵ درصد) و مرکز بیماری‌های واگیر می‌گوید «ظاهراً در اوج هستیم». یعنی این یکی دو هفته، کلاس درس اصلی‌ترین محل انتقال است: ماسک برای بچه‌ی سرماخورده، و آنتی‌بیوتیک بدون نسخه نه.",
+      "en": "Flu above the alert threshold in 26 provinces; half of cases under 15: in Yazd the share of positive samples passed 30% in a week (14.5% two weeks earlier) and the communicable-diseases centre says “we appear to be at the peak”. For the next week or two the classroom is the main transmission point: a mask for a child with a cold, and no antibiotics without a prescription.",
+      "src": "ایران‌وایر، صداوسیما، سلامت‌نیوز",
+      "url": "https://www.irib-news.ir/fa/news/5978670/"
+     },
+     {
+      "fa": "شرق: ۵۴۳ مسمومیت و ۲۳ فوتی با الکل متانولی از ۲۵ آبان: موج تازه از بندرعباس و نیشابور شروع شده و به ده استان رسیده؛ میانگین سنی ۳۱ سال، ۹۲ نفر زیر ۲۰ سال، ۲۰۵ نفر نیازمند دیالیز و ۳۸ نفر با آسیب بینایی. یعنی متانول را نمی‌شود با چشم یا بو از اتانول تشخیص داد؛ تاری دید و تنگی نفس چند ساعت بعد از مصرف یعنی همان لحظه اورژانس، چون پادزهر فقط در ساعت‌های اول اثر دارد.",
+      "en": "Shargh: 543 methanol poisonings and 23 deaths since 25 Aban: the new wave began in Bandar Abbas and Neyshabur and has reached ten provinces; average age 31, 92 under 20, 205 needing dialysis and 38 with eye damage. Methanol cannot be told from ethanol by sight or smell; blurred vision and shortness of breath hours after drinking mean the emergency room at once, because the antidote works only in the first hours.",
+      "src": "شرق، شفقنا",
+      "url": "https://fa.shafaqna.com/news/2412100/"
+     }
+    ]
+   },
+   {
+    "fa": "ورزش و فرهنگ",
+    "en": "Sport & culture",
+    "items": [
+     {
+      "fa": "آلومینیوم ۱–۱ پرسپولیس؛ امروز استقلال–صنعت نفت: زارع با ضربه‌ی سر پرسپولیس را جلو انداخت و موسوی از روی نقطه‌ی پنالتی پس از VAR مساوی کرد؛ سرخ‌ها با ۲۷ امتیاز دوم ماندند. استقلال خوزستان هم ۱–۰ ملوان را برد و ملوان با چهار باخت پیاپی قعرنشین شد. یعنی فرصت صدرنشینی پرسپولیس از دست رفت و امروز نوبت استقلال است که فاصله را حفظ کند یا نه.",
+      "en": "Aluminium 1–1 Persepolis; Esteghlal v Sanat Naft today: Zare headed Persepolis ahead and Mousavi levelled from the spot after VAR; the Reds stay second on 27 points. Esteghlal Khuzestan beat Malavan 1–0, leaving Malavan bottom after four straight defeats. Persepolis missed the chance to go top; today it is Esteghlal's turn to keep or lose the gap.",
+      "src": "باشگاه خبرنگاران، صداوسیما، ورزش سه",
+      "url": "https://www.yjc.ir/fa/news/9153027/"
+     },
+     {
+      "fa": "«بورسیه» از ۱۴۰ میلیارد تومان گذشت: اولین جمعه‌ی آذر پنج فیلم هر کدام بیش از یک میلیارد تومان در یک روز فروختند و جشنواره‌ی فجر تا امروز ۱۵۴ فیلم ثبت‌نامی دارد. یعنی سینما در پاییزی که همه از گرانی می‌گویند پر است؛ بلیت سینما هنوز ارزان‌ترین شب بیرون خانواده است.",
+      "en": "“Scholarship” (Boursieh) passes 140 billion tomans: on the first Friday of Azar five films each grossed over a billion tomans in a day, and the Fajr festival has 154 films registered so far. Cinemas are full in an autumn when everyone talks about prices; a film ticket is still the family's cheapest night out.",
+      "src": "شهرآرا، فوژان، جماران",
+      "url": "https://shahraranews.ir/fa/news/462762/"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-27",
   "jalali": "1405/09/06",
   "weekday_fa": "جمعه",
