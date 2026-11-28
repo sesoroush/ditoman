@@ -1,0 +1,407 @@
+{
+ "book-cryptoassets": {
+  "source": "openlibrary",
+  "id": 10315586,
+  "title": "Cryptoassets",
+  "author": "Jack Tatar Chris Burniske",
+  "year": 2018,
+  "w": 313,
+  "h": 500
+ },
+ "book-the-bitcoin-standard": {
+  "source": "openlibrary",
+  "id": 10320866,
+  "title": "The Bitcoin Standard",
+  "author": "Saifedean Ammous",
+  "year": 2018,
+  "w": 312,
+  "h": 500
+ },
+ "book-defi-and-the-future-of-finance": {
+  "source": null
+ },
+ "book-blockchain-revolution": {
+  "source": "openlibrary",
+  "id": 9384217,
+  "title": "Blockchain Revolution",
+  "author": "Don Tapscott",
+  "year": 2016,
+  "w": 327,
+  "h": 500
+ },
+ "book-mastering-bitcoin": {
+  "source": "openlibrary",
+  "id": 15255062,
+  "title": "Mastering Bitcoin",
+  "author": "Andreas Antonopoulos",
+  "year": 2019,
+  "w": 381,
+  "h": 500
+ },
+ "book-mastering-ethereum": {
+  "source": "openlibrary",
+  "id": 8507633,
+  "title": "Mastering Ethereum: Building Smart Contracts and DApps",
+  "author": "Andreas M. Antonopoulos",
+  "year": 2018,
+  "w": 381,
+  "h": 500
+ },
+ "book-the-internet-of-money": {
+  "source": "openlibrary",
+  "id": 12831052,
+  "title": "The Internet of money",
+  "author": "Andreas M. Antonopoulos",
+  "year": 2016,
+  "w": 309,
+  "h": 500
+ },
+ "book-blockchain-crypto-assets-and-financial-innovation": {
+  "source": null
+ },
+ "book-the-cryptopians": {
+  "source": null
+ },
+ "book-the-fintech-book": {
+  "source": null
+ },
+ "book-the-future-of-money": {
+  "source": null
+ },
+ "book-the-cashless-revolution": {
+  "source": null
+ },
+ "book-bank-4-0": {
+  "source": "openlibrary",
+  "id": 9233384,
+  "title": "Bank 4.0",
+  "author": "Brett King",
+  "year": 2018,
+  "w": 331,
+  "h": 500
+ },
+ "book-the-end-of-banking": {
+  "source": "openlibrary",
+  "id": 8431764,
+  "title": "The End of Banking: Money, Credit, and the Digital Revolution",
+  "author": "Jonathan McMillan",
+  "year": 2014,
+  "w": 324,
+  "h": 500
+ },
+ "book-the-future-of-money-investments-and-financial-services": {
+  "source": null
+ },
+ "book-frontiers-of-digital-finance": {
+  "source": null
+ },
+ "book-the-paytech-book": {
+  "source": null
+ },
+ "book-the-ai-book": {
+  "source": null
+ },
+ "book-the-regtech-book": {
+  "source": null
+ },
+ "book-principles-of-economics": {
+  "source": "openlibrary",
+  "id": 19884,
+  "title": "Principles of Economics",
+  "author": "N. Gregory Mankiw",
+  "year": 1998,
+  "w": 388,
+  "h": 475
+ },
+ "book-macroeconomics": {
+  "source": "openlibrary",
+  "id": 13806717,
+  "title": "Macroeconomics",
+  "author": "Olivier Blanchard",
+  "year": 2002,
+  "w": 382,
+  "h": 500
+ },
+ "book-microeconomics": {
+  "source": "openlibrary",
+  "id": 6818922,
+  "title": "Microeconomics",
+  "author": "Robert S. Pindyck",
+  "year": 2000,
+  "w": 397,
+  "h": 500
+ },
+ "book-economics": {
+  "source": "openlibrary",
+  "id": 8763656,
+  "title": "Economics",
+  "author": "Samuelson",
+  "year": 2010,
+  "w": 379,
+  "h": 500
+ },
+ "book-intermediate-microeconomics": {
+  "source": "openlibrary",
+  "id": 253189,
+  "title": "Intermediate microeconomics",
+  "author": "Hal R. Varian",
+  "year": 1987,
+  "w": 345,
+  "h": 475
+ },
+ "book-advanced-macroeconomics": {
+  "source": "openlibrary",
+  "id": 64722,
+  "title": "Advanced macroeconomics",
+  "author": "David Romer",
+  "year": 1996,
+  "w": 344,
+  "h": 500
+ },
+ "book-the-economy": {
+  "source": "openlibrary",
+  "id": 6292438,
+  "title": "The economy of cities",
+  "author": "Jane Jacobs",
+  "year": 1969,
+  "w": 292,
+  "h": 500
+ },
+ "book-macroeconomics-a-european-perspective": {
+  "source": null
+ },
+ "book-economics-the-users-guide": {
+  "source": "openlibrary",
+  "id": 8097878,
+  "title": "Economics : the user's guide",
+  "author": "Ha-Joon Chang",
+  "year": 2014,
+  "w": 300,
+  "h": 455
+ },
+ "book-the-undercover-economist": {
+  "source": "openlibrary",
+  "id": 189956,
+  "title": "The Undercover Economist",
+  "author": "Tim Harford",
+  "year": 2005,
+  "w": 313,
+  "h": 475
+ },
+ "book-the-intelligent-investor": {
+  "source": "openlibrary",
+  "id": 36434,
+  "title": "The Intelligent Investor",
+  "author": "Benjamin Graham",
+  "year": 1949,
+  "w": 457,
+  "h": 500
+ },
+ "book-a-random-walk-down-wall-street": {
+  "source": "openlibrary",
+  "id": 246978,
+  "title": "A Random Walk Down Wall Street",
+  "author": "Burton Gordon Malkiel",
+  "year": 1973,
+  "w": 311,
+  "h": 475
+ },
+ "book-options-futures-and-other-derivatives": {
+  "source": "openlibrary",
+  "id": 8702910,
+  "title": "Options, Futures, and Other Derivatives",
+  "author": "John C. Hull",
+  "year": 1989,
+  "w": 356,
+  "h": 500
+ },
+ "book-investment-valuation": {
+  "source": "openlibrary",
+  "id": 13278467,
+  "title": "Investment Valuation",
+  "author": "Aswath Damodaran",
+  "year": 2007,
+  "w": 350,
+  "h": 500
+ },
+ "book-investments": {
+  "source": "openlibrary",
+  "id": 1082994,
+  "title": "Investments",
+  "author": "Zvi Bodie",
+  "year": 1989,
+  "w": 375,
+  "h": 475
+ },
+ "book-the-psychology-of-money": {
+  "source": "openlibrary",
+  "id": 10389354,
+  "title": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "year": 2020,
+  "w": 319,
+  "h": 500
+ },
+ "book-against-the-gods": {
+  "source": "openlibrary",
+  "id": 300823,
+  "title": "Against the gods",
+  "author": "Peter L. Bernstein",
+  "year": 1996,
+  "w": 326,
+  "h": 475
+ },
+ "book-the-black-swan": {
+  "source": null
+ },
+ "book-antifragile": {
+  "source": "openlibrary",
+  "id": 9180157,
+  "title": "Antifragile",
+  "author": "Nassim Nicholas Taleb",
+  "year": 2012,
+  "w": 322,
+  "h": 500
+ },
+ "book-the-concepts-and-practice-of-mathematical-finance": {
+  "source": "openlibrary",
+  "id": 8631890,
+  "title": "The Concepts and practice of mathematical finance",
+  "author": "M. S. Joshi",
+  "year": 2003,
+  "w": 315,
+  "h": 500
+ },
+ "book-from-third-world-to-first": {
+  "source": "openlibrary",
+  "id": 23348,
+  "title": "From Third World to First : The Singapore Story",
+  "author": "Lee Kuan Yew",
+  "year": 2000,
+  "w": 320,
+  "h": 475
+ },
+ "book-how-asia-works": {
+  "source": null
+ },
+ "book-poor-economics": {
+  "source": "openlibrary",
+  "id": 6765497,
+  "title": "Poor Economics",
+  "author": "Abhijit Banerjee",
+  "year": 2011,
+  "w": 326,
+  "h": 500
+ },
+ "book-development-as-freedom": {
+  "source": null
+ },
+ "book-the-third-revolution": {
+  "source": null
+ },
+ "book-the-east-asian-miracle": {
+  "source": "openlibrary",
+  "id": 127158,
+  "title": "The East Asian miracle",
+  "author": "World Bank",
+  "year": 1993,
+  "w": 385,
+  "h": 475
+ },
+ "book-kicking-away-the-ladder": {
+  "source": null
+ },
+ "book-the-mystery-of-capital": {
+  "source": "openlibrary",
+  "id": 298378,
+  "title": "The Mystery of Capital",
+  "author": "Hernando De Soto",
+  "year": 2000,
+  "w": 321,
+  "h": 475
+ },
+ "book-the-end-of-poverty": {
+  "source": "openlibrary",
+  "id": 452515,
+  "title": "The End of Poverty",
+  "author": "Jeffrey Sachs",
+  "year": 2005,
+  "w": 325,
+  "h": 500
+ },
+ "book-the-chinese-economy-adaptation-and-growth": {
+  "source": null
+ },
+ "book-why-nations-fail": {
+  "source": "openlibrary",
+  "id": 7253519,
+  "title": "Why Nations Fail",
+  "author": "Daron Acemoglu",
+  "year": 2012,
+  "w": 300,
+  "h": 456
+ },
+ "book-capital-in-the-twenty-first-century": {
+  "source": null
+ },
+ "book-the-great-transformation": {
+  "source": "openlibrary",
+  "id": 966056,
+  "title": "The Great Transformation",
+  "author": "Karl Polanyi",
+  "year": 1944,
+  "w": 290,
+  "h": 475
+ },
+ "book-principles-for-dealing-with-the-changing-world-order": {
+  "source": null
+ },
+ "book-globalization-and-its-discontents": {
+  "source": "openlibrary",
+  "id": 247709,
+  "title": "Globalization and its discontents",
+  "author": "Joseph E. Stiglitz",
+  "year": 2002,
+  "w": 301,
+  "h": 475
+ },
+ "book-the-globalization-paradox": {
+  "source": "openlibrary",
+  "id": 7930194,
+  "title": "The globalization paradox",
+  "author": "Dani Rodrik",
+  "year": 2011,
+  "w": 305,
+  "h": 500
+ },
+ "book-the-narrow-corridor": {
+  "source": "openlibrary",
+  "id": 8872725,
+  "title": "The Narrow Corridor",
+  "author": "Daron Acemoglu",
+  "year": 2019,
+  "w": 263,
+  "h": 400
+ },
+ "book-the-wealth-and-poverty-of-nations": {
+  "source": "openlibrary",
+  "id": 247065,
+  "title": "The wealth and poverty of nations",
+  "author": "David S. Landes",
+  "year": 1998,
+  "w": 307,
+  "h": 475
+ },
+ "book-the-great-convergence": {
+  "source": "openlibrary",
+  "id": 8802417,
+  "title": "The Great Convergence",
+  "author": "Richard Baldwin",
+  "year": 2016,
+  "w": 331,
+  "h": 500
+ },
+ "book-open-veins-of-latin-america": {
+  "source": null
+ }
+}
